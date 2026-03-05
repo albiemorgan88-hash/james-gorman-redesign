@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outreach Forge — Blue Canvas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0a0f1a;
+  --paper: #f4f1eb;
+  --blue: #1a5cff;
+  --blue-dim: #1a5cff22;
+  --blue-glow: #1a5cff15;
+  --accent: #ff6b35;
+  --accent-dim: #ff6b3520;
+  --slate: #5a6178;
+  --border: #d4d0c8;
+  --card: #fffef9;
+  --success: #2ecc71;
+  --radius: 12px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 2px solid var(--ink);
+}
+
+.header h1 {
+  font-family: 'Instrument Serif', serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.header h1 span {
+  color: var(--blue);
+  font-style: italic;
+}
+
+.header-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--slate);
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+}
+
+/* Layout */
+.forge-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 24px;
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  animation: slideUp 0.6s ease both;
+}
+
+.panel:nth-child(2) { animation-delay: 0.1s; }
+.panel:nth-child(3) { animation-delay: 0.2s; }
+
+.panel-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--slate);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.panel-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+.field:last-child { margin-bottom: 0; }
+
+.field label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  background: var(--paper);
+  color: var(--ink);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px var(--blue-dim);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.template-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 7px 14px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: var(--card);
+  font-family: inherit;
+  color: var(--ink);
+}
+
+.chip:hover {
+  border-color: var(--blue);
+  background: var(--blue-glow);
+}
+
+.chip.active {
+  background: var(--blue);
+  color: white;
+  border-color: var(--blue);
+}
+
+.btn-generate {
+  width: 100%;
+  padding: 14px;
+  background: var(--ink);
+  color: var(--paper);
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s;
+  letter-spacing: 0.02em;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-generate:hover {
+  background: var(--blue);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px var(--blue-dim);
+}
+
+.btn-generate:active { transform: translateY(0); }
+
+/* Output area */
+.output-area {
+  animation: slideUp 0.6s ease 0.15s both;
+}
+
+.output-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.output-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  background: var(--paper);
+}
+
+.output-toolbar .tab-group {
+  display: flex;
+  gap: 4px;
+}
+
+.tab-btn {
+  padding: 6px 16px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: transparent;
+  color: var(--slate);
+  transition: all 0.2s;
+}
+
+.tab-btn.active {
+  background: var(--card);
+  border-color: var(--border);
+  color: var(--ink);
+}
+
+.output-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: var(--card);
+  color: var(--ink);
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.action-btn:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.action-btn.copied {
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.output-body {
+  flex: 1;
+  padding: 32px;
+}
+
+.email-preview {
+  max-width: 640px;
+}
+
+.email-subject {
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.email-meta {
+  font-size: 0.78rem;
+  color: var(--slate);
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.email-body {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  color: #2a2f3a;
+}
+
+.email-body .highlight {
+  background: var(--accent-dim);
+  padding: 1px 4px;
+  border-radius: 3px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Empty state */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  text-align: center;
+}
+
+.empty-icon {
+  width: 80px;
+  height: 80px;
+  border: 2px dashed var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--slate);
+}
+
+.empty-state h3 {
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  font-size: 0.85rem;
+  color: var(--slate);
+  max-width: 280px;
+}
+
+/* Saved templates drawer */
+.saved-section {
+  margin-top: 32px;
+  animation: slideUp 0.6s ease 0.3s both;
+}
+
+.saved-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.saved-header h2 {
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.saved-count {
+  font-size: 0.75rem;
+  color: var(--slate);
+  background: var(--blue-glow);
+  border: 1px solid var(--blue-dim);
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.saved-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.saved-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.saved-card:hover {
+  border-color: var(--blue);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.saved-card-type {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+
+.saved-card-subject {
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.saved-card-preview {
+  font-size: 0.8rem;
+  color: var(--slate);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.saved-card-delete {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  color: var(--slate);
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.saved-card:hover .saved-card-delete { opacity: 1; }
+.saved-card-delete:hover { color: var(--accent); }
+
+/* Variable highlighting in raw view */
+.raw-view {
+  font-family: 'DM Mono', 'SF Mono', monospace;
+  font-size: 0.82rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  color: var(--ink);
+}
+
+/* Animations */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in { animation: fadeIn 0.4s ease both; }
+
+/* Responsive */
+@media (max-width: 800px) {
+  .forge-grid {
+    grid-template-columns: 1fr;
+  }
+  .sidebar { position: static; }
+  .header h1 { font-size: 2.2rem; }
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  z-index: 999;
+  animation: slideUp 0.3s ease;
+  pointer-events: none;
+}
+</style>
+</head>
+<body>
+
+<div class="app">
+  <header class="header">
+    <h1>Outreach <span>Forge</span></h1>
+    <span class="header-tag">Blue Canvas</span>
+  </header>
+
+  <div class="forge-grid">
+    <aside class="sidebar">
+      <div class="panel">
+        <div class="panel-label">Template Type</div>
+        <div class="template-chips" id="typeChips">
+          <button class="chip active" data-type="cold">Cold Intro</button>
+          <button class="chip" data-type="followup">Follow-up</button>
+          <button class="chip" data-type="referral">Referral</button>
+          <button class="chip" data-type="re-engage">Re-engage</button>
+          <button class="chip" data-type="event">Post-Event</button>
+          <button class="chip" data-type="value">Value Add</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-label">Prospect Details</div>
+        <div class="field">
+          <label>Contact Name</label>
+          <input type="text" id="contactName" placeholder="e.g. Sarah Mitchell">
+        </div>
+        <div class="field">
+          <label>Company</label>
+          <input type="text" id="company" placeholder="e.g. Dickson McNulty Solicitors">
+        </div>
+        <div class="field">
+          <label>Industry / Sector</label>
+          <select id="industry">
+            <option value="">Select sector...</option>
+            <option value="legal">Legal</option>
+            <option value="construction">Construction / Trades</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="retail">Retail / E-commerce</option>
+            <option value="finance">Finance / Accounting</option>
+            <option value="property">Property / Estate Agents</option>
+            <option value="hospitality">Hospitality</option>
+            <option value="manufacturing">Manufacturing</option>
+            <option value="education">Education</option>
+            <option value="charity">Charity / Non-profit</option>
+            <option value="tech">Technology</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Pain Point / Hook</label>
+          <textarea id="hook" placeholder="What specific problem can you solve for them? e.g. 'Still using manual quoting process'"></textarea>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-label">Tone & Style</div>
+        <div class="template-chips" id="toneChips">
+          <button class="chip active" data-tone="casual">Casual</button>
+          <button class="chip" data-tone="professional">Professional</button>
+          <button class="chip" data-tone="bold">Bold</button>
+          <button class="chip" data-tone="warm">Warm</button>
+        </div>
+      </div>
+
+      <button class="btn-generate" id="generateBtn">Generate Email →</button>
+    </aside>
+
+    <main class="output-area">
+      <div class="output-card">
+        <div class="output-toolbar">
+          <div class="tab-group">
+            <button class="tab-btn active" data-tab="preview">Preview</button>
+            <button class="tab-btn" data-tab="raw">Plain Text</button>
+          </div>
+          <div class="output-actions">
+            <button class="action-btn" id="copyBtn">📋 Copy</button>
+            <button class="action-btn" id="saveBtn">💾 Save</button>
+          </div>
+        </div>
+        <div class="output-body" id="outputBody">
+          <div class="empty-state">
+            <div class="empty-icon">✉</div>
+            <h3>Ready to forge</h3>
+            <p>Fill in the prospect details and hit generate to craft your outreach email.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="saved-section" id="savedSection" style="display:none">
+        <div class="saved-header">
+          <h2>Saved Templates</h2>
+          <span class="saved-count" id="savedCount">0 saved</span>
+        </div>
+        <div class="saved-grid" id="savedGrid"></div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script>
+const TEMPLATES = {
+  cold: {
+    casual: {
+      subjects: [
+        "Quick thought on {company}'s growth",
+        "AI idea for {company}",
+        "{name} — spotted something interesting"
+      ],
+      body: `Hi {name},
+
+Hope you don't mind me reaching out — I came across {company} and {hook_context}.
+
+I run Blue Canvas, an AI consultancy based in the UK. We help {industry_label} businesses automate the repetitive stuff so their teams can focus on what actually matters.
+
+{value_prop}
+
+No pressure at all — but if you're curious, I'd love a quick 15-min chat to see if there's a fit. And if not, no worries.
+
+Cheers,
+PJ
+Blue Canvas | bluecanvas.ai`
+    },
+    professional: {
+      subjects: [
+        "AI-driven efficiency for {company}",
+        "Streamlining {industry_label} operations with AI",
+        "A tailored approach for {company}"
+      ],
+      body: `Dear {name},
+
+I hope this message finds you well. I'm reaching out because {hook_context}, and I believe there may be an opportunity to discuss how AI could support {company}'s objectives.
+
+Blue Canvas is a UK-based AI consultancy specialising in helping {industry_label} businesses implement practical AI solutions — from automating workflows to enhancing client-facing processes.
+
+{value_prop}
+
+I would welcome the opportunity to schedule a brief introductory call at your convenience. Would 15 minutes this week or next work for you?
+
+Kind regards,
+Phil Patterson
+Blue Canvas | bluecanvas.ai`
+    },
+    bold: {
+      subjects: [
+        "{company} is leaving money on the table",
+        "The AI gap in {industry_label} — and how to close it",
+        "{name}, your competitors are already doing this"
+      ],
+      body: `{name},
+
+I'll be direct: most {industry_label} businesses are still doing {hook_context} manually. That's costing them time and money they don't realise they're losing.
+
+I'm PJ, founder of Blue Canvas. We specialise in one thing: making AI actually work for businesses like {company}. Not theory. Not hype. Practical tools that save hours every week.
+
+{value_prop}
+
+15 minutes. That's all I need to show you what's possible. If it's not relevant, you'll know in the first 5.
+
+Let's talk?
+
+PJ
+Blue Canvas | bluecanvas.ai`
+    },
+    warm: {
+      subjects: [
+        "Thought of {company} — had to reach out",
+        "A friendly hello from Blue Canvas",
+        "{name} — love what {company} is doing"
+      ],
+      body: `Hi {name},
+
+I've been following what {company} has been doing and genuinely impressed — {hook_context}.
+
+I'm PJ, and I run an AI consultancy called Blue Canvas. We work with {industry_label} businesses to take the pain out of repetitive processes using AI — think less admin, more of the work that actually matters.
+
+{value_prop}
+
+Would love to have a chat sometime — even just to share ideas. No hard sell, I promise.
+
+Warm regards,
+PJ
+Blue Canvas | bluecanvas.ai`
+    }
+  },
+  followup: {
+    casual: {
+      subjects: [
+        "Following up — {company}",
+        "Hey {name}, just circling back",
+        "Still on your radar?"
+      ],
+      body: `Hi {name},
+
+Just a quick follow-up on my last message — totally understand if you've been busy.
+
+{hook_context}
+
+I genuinely think there's something here for {company}, even if it's just a quick chat to explore the idea.
+
+Happy to work around your schedule — what works?
+
+Cheers,
+PJ
+Blue Canvas | bluecanvas.ai`
+    },
+    professional: {
+      subjects: [
+        "Following up — AI solutions for {company}",
+        "Re: Streamlining operations at {company}",
+        "Touching base — Blue Canvas"
+      ],
+      body: `Dear {name},
+
+I wanted to follow up on my previous correspondence regarding potential AI solutions for {company}.
+
+{hook_context}
+
+I understand your time is valuable, so I'll keep this brief: I believe a short conversation could quickly establish whether there's a mutual fit. Would 15 minutes this week suit?
+
+Kind regards,
+Phil Patterson
+Blue Canvas | bluecanvas.ai`
+    },
+    bold: {
+      subjects: [
+        "{name} — quick nudge",
+        "The offer still stands, {name}",
+        "Last shot — {company} + AI"
+      ],
+      body: `{name},
+
+I reached out last week about helping {company} with AI. No response, so I'll keep this short:
+
+{hook_context}
+
+If timing's wrong, just say the word and I'll check back in a few months. But if there's even a flicker of interest — 15 minutes, that's all.
+
+PJ
+Blue Canvas | bluecanvas.ai`
+    },
+    warm: {
+      subjects: [
+        "Just checking in, {name}",
+        "Thinking of {company} again",
+        "No rush — just wanted to reconnect"
+      ],
+      body: `Hi {name},
+
+Hope you're doing well! I reached out recently about how Blue Canvas might be able to help {company} with some AI automation.
+
+{hook_context}
+
+Absolutely no pressure — I know how busy things get. But if you fancy a chat at any point, I'm here.
+
+All the best,
+PJ
+Blue Canvas | bluecanvas.ai`
+    }
+  },
+  referral: {
+    casual: {
+      subjects: [
+        "{referrer} suggested I reach out",
+        "Introduction via {referrer}",
+        "{name} — {referrer} thought we should connect"
+      ],
+      body: `Hi {name},
+
+{referrer_context} — they suggested we connect because {hook_context}.
+
+I run Blue Canvas, an AI consultancy. We help {industry_label} businesses cut through the noise and implement AI that actually works.
+
+{value_prop}
+
+Would you be open to a quick intro call? Even 15 minutes would be great.
+
+Cheers,
+PJ
+Blue Canvas | bluecanvas.ai`
+    },
+    professional: {
+      subjects: [
+        "Introduction — referred by a mutual contact",
+        "Connecting re: AI solutions for {company}",
+        "{referrer} recommended we speak"
+      ],
+      body: `Dear {name},
+
+{referrer_context}, and they kindly suggested I reach out to you regarding {hook_context}.
+
+Blue Canvas is a UK-based AI consultancy, and we've been helping {industry_label} organisations implement practical AI solutions that deliver measurable results.
+
+{value_prop}
+
+Would you have availability for a brief introductory conversation this week?
+
+Kind regards,
+Phil Patterson
+Blue Canvas | bluecanvas.ai`
+    },
+    bold: {
+      subjects: [
+        "{referrer} says you need to hear this",
+        "Referred to you — AI for {company}",
+        "{name}, {referrer} sent me your way"
+      ],
+      body: `{name},
+
+{referrer_context}. They told me {hook_context} — and that Blue Canvas is exactly what {company} needs.
+
+{value_prop}
+
+I'll be blunt: the businesses that move on AI now are the ones that win. 15 minutes to see if we're a fit?
+
+PJ
+Blue Canvas | bluecanvas.ai`
+    },
+    warm: {
+      subjects: [
+        "A warm introduction from {referrer}",
+        "{name} — {referrer} speaks very highly of you",
+        "Connecting through {referrer}"
+      ],
+      body: `Hi {name},
+
+{referrer_context} — they had really lovely things to say about {company} and thought we might get along.
+
+I run Blue Canvas, an AI consultancy that helps {industry_label} businesses work smarter. {hook_context}.
+
+{value_prop}
+
+Would be wonderful to have a chat when you're free — no rush at all.
+
+Warm regards,
+PJ
+Blue Canvas | bluecanvas.ai`
+    }
+  },
+  "re-engage": {
+    casual: {
+      subjects: [
+        "Been a while, {name}",
+        "Thought of {company} today",
+        "{name} — things have changed since we last spoke"
+      ],
+      body: `Hi {name},
+
+It's been a while since we last chatted, and I wanted to reach back out. {hook_context}
+
+We've been up to a lot at Blue Canvas since then — {value_prop}
+
+Fancy catching up? Would love to hear how {company} is getting on.
+
+Cheers,
+PJ
+Blue Canvas | bluecanvas.ai`
+    },
+    professional: {
+      subjects: [
+        "Reconnecting — Blue Canvas update",
+        "New developments that may interest {company}",
+        "Following up from our previous conversation"
+      ],
+      body: `Dear {name},
+
+I hope you're well. It's been some time since we last spoke, and I wanted to reconnect with some developments that may be relevant to {company}.
+
+{hook_context}
+
+{value_prop}
+
+Would you be open to a brief catch-up call?
+
+Kind regards,
+Phil Patterson
+Blue Canvas | bluecanvas.ai`
+    },
+    bold: {
+      subjects: [
+        "{name} — the AI landscape has shifted",
+        "Things are different now, {name}",
+        "{company} — time for round 2?"
+      ],
+      body: `{name},
+
+Last time we spoke, the timing wasn't right. Fair enough. But things have moved fast in AI since then, and {hook_context}.
+
+{value_prop}
+
+The window is still open, but it won't be forever. Worth 15 minutes?
+
+PJ
+Blue Canvas | bluecanvas.ai`
+    },
+    warm: {
+      subjects: [
+        "Checking in after a while, {name}",
+        "Hope {company} is thriving",
+        "A friendly reconnection"
+      ],
+      body: `Hi {name},
+
+I was thinking about {company} recently and wanted to check in. Hope everything's going well!
+
+{hook_context}
+
+{value_prop}
+
+Would love to catch up properly if you have time. No agenda — just good to reconnect.
+
+All the best,
+PJ
+Blue Canvas | bluecanvas.ai`
+    }
+  },
+  event: {
+    casual: {
+      subjects: [
+        "Great meeting you at {event}",
+        "{name} — from {event}",
+        "Following up from {event}"
+      ],
+      body: `Hi {name},
+
+Really enjoyed chatting at {event} — {hook_context}.
+
+As I mentioned, Blue Canvas helps {industry_label} businesses implement AI in practical ways. {value_prop}
+
+Would be great to continue the conversation. Free for a quick call this week?
+
+Cheers,
+PJ
+Blue Canvas | bluecanvas.ai`
+    },
+    professional: {
+      subjects: [
+        "A pleasure meeting you at {event}",
+        "Following up from {event} — AI for {company}",
+        "Post-{event} — continuing our conversation"
+      ],
+      body: `Dear {name},
+
+It was a pleasure meeting you at {event}. Our conversation about {hook_context} was particularly insightful.
+
+As discussed, Blue Canvas specialises in helping {industry_label} organisations leverage AI for tangible business outcomes. {value_prop}
+
+I would welcome the opportunity to explore this further. Would a call this week be convenient?
+
+Kind regards,
+Phil Patterson
+Blue Canvas | bluecanvas.ai`
+    },
+    bold: {
+      subjects: [
+        "{name} — let's turn that {event} chat into action",
+        "From {event} small talk to real results",
+        "We talked at {event}. Here's the next step."
+      ],
+      body: `{name},
+
+Good meeting you at {event}. You mentioned {hook_context} — and I could tell it's been nagging you.
+
+Here's the thing: {value_prop}
+
+Let's not let this go cold. 15 minutes this week?
+
+PJ
+Blue Canvas | bluecanvas.ai`
+    },
+    warm: {
+      subjects: [
+        "Lovely to meet you at {event}",
+        "{name} — enjoyed our chat at {event}",
+        "Following up with a smile from {event}"
+      ],
+      body: `Hi {name},
+
+So glad we got to chat at {event}! {hook_context} — it was really interesting to hear your perspective.
+
+I'd love to continue the conversation and share some ideas on how AI could help {company}. {value_prop}
+
+No pressure at all — just thought it would be nice to keep the connection going.
+
+Warm regards,
+PJ
+Blue Canvas | bluecanvas.ai`
+    }
+  },
+  value: {
+    casual: {
+      subjects: [
+        "Thought this would help {company}",
+        "{name} — quick AI insight for {industry_label}",
+        "Something useful for {company}"
+      ],
+      body: `Hi {name},
+
+Came across something I thought might be useful for {company}: {hook_context}.
+
+{value_prop}
+
+No ask here — just thought it was worth sharing. But if you ever want to explore how AI could help {company} more broadly, I'm always happy to chat.
+
+Cheers,
+PJ
+Blue Canvas | bluecanvas.ai`
+    },
+    professional: {
+      subjects: [
+        "AI insight relevant to {company}",
+        "Resource for {industry_label} AI adoption",
+        "Thought leadership: AI in {industry_label}"
+      ],
+      body: `Dear {name},
+
+I recently came across some insights that I believe would be particularly relevant to {company}: {hook_context}.
+
+{value_prop}
+
+I'm sharing this purely as a value-add — no obligation. However, should you wish to discuss how these trends could benefit {company}, I would be happy to arrange a conversation.
+
+Kind regards,
+Phil Patterson
+Blue Canvas | bluecanvas.ai`
+    },
+    bold: {
+      subjects: [
+        "{name} — your competitors read this already",
+        "AI in {industry_label}: the data is clear",
+        "Stop ignoring this, {name}"
+      ],
+      body: `{name},
+
+One stat: {hook_context}.
+
+{value_prop}
+
+I'm not selling anything today. But when {company} is ready to act on this, Blue Canvas is where you call.
+
+PJ
+Blue Canvas | bluecanvas.ai`
+    },
+    warm: {
+      subjects: [
+        "Sharing something that made me think of {company}",
+        "{name} — a little AI inspiration",
+        "Thought you'd find this interesting"
+      ],
+      body: `Hi {name},
+
+I stumbled across something and immediately thought of {company}: {hook_context}.
+
+{value_prop}
+
+Just wanted to share — hope it's helpful! And if you ever want to explore AI possibilities for {company}, I'm always here for a chat.
+
+All the best,
+PJ
+Blue Canvas | bluecanvas.ai`
+    }
+  }
+};
+
+const INDUSTRY_LABELS = {
+  legal: 'legal', construction: 'construction', healthcare: 'healthcare',
+  retail: 'retail', finance: 'finance', property: 'property',
+  hospitality: 'hospitality', manufacturing: 'manufacturing',
+  education: 'education', charity: 'charity / non-profit', tech: 'tech', other: ''
+};
+
+const VALUE_PROPS = {
+  legal: "For example, we recently helped a firm automate document review and client intake — saving them roughly 12 hours a week. The same kind of thing could work for {company}.",
+  construction: "We've been working with construction businesses on automated quoting, project tracking, and supplier comms — the kind of stuff that eats your day but doesn't need to.",
+  healthcare: "We've helped healthcare providers automate patient comms, appointment flows, and reporting — freeing clinical staff to focus on care, not admin.",
+  retail: "We've helped retailers automate inventory forecasting, customer segmentation, and personalised marketing — turning data into revenue without hiring a data team.",
+  finance: "We've worked with finance firms on automated reporting, compliance checks, and client onboarding — cutting hours of manual work down to minutes.",
+  property: "We've helped estate agents automate lead qualification, property matching, and follow-up sequences — so nothing falls through the cracks.",
+  hospitality: "We've helped hospitality businesses automate booking management, guest comms, and review responses — improving the guest experience while reducing staff workload.",
+  manufacturing: "We've worked with manufacturers on predictive maintenance, quality control automation, and supply chain optimisation — real operational gains.",
+  education: "We've helped education providers automate student comms, course recommendations, and administrative workflows — so educators can focus on teaching.",
+  charity: "We've helped non-profits automate donor comms, grant tracking, and impact reporting — getting more done with limited resources.",
+  tech: "We've helped tech companies optimise their internal workflows, automate QA processes, and build smarter customer support — because even tech firms leave AI on the table.",
+  other: "We've helped businesses across sectors implement AI that saves real time and money — from automating admin to building smarter customer journeys."
+};
+
+// State
+let state = {
+  type: 'cold',
+  tone: 'casual',
+  currentEmail: null
+};
+
+let saved = JSON.parse(localStorage.getItem('outreach_saved') || '[]');
+
+// DOM
+const $ = id => document.getElementById(id);
+
+// Chip selection
+document.querySelectorAll('#typeChips .chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('#typeChips .chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    state.type = chip.dataset.type;
+  });
+});
+
+document.querySelectorAll('#toneChips .chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('#toneChips .chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    state.tone = chip.dataset.tone;
+  });
+});
+
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderOutput();
+  });
+});
+
+// Generate
+$('generateBtn').addEventListener('click', generate);
+
+function generate() {
+  const name = $('contactName').value.trim() || '[Name]';
+  const company = $('company').value.trim() || '[Company]';
+  const industry = $('industry').value || 'other';
+  const hook = $('hook').value.trim() || 'you might benefit from AI automation';
+  const firstName = name.split(' ')[0];
+
+  const template = TEMPLATES[state.type]?.[state.tone];
+  if (!template) return;
+
+  const subject = template.subjects[Math.floor(Math.random() * template.subjects.length)];
+  const industryLabel = INDUSTRY_LABELS[industry] || industry;
+
+  const hookContext = hook.toLowerCase().startsWith('i ') || hook.toLowerCase().startsWith('we ') || hook.toLowerCase().startsWith('they ')
+    ? hook : hook.charAt(0).toLowerCase() + hook.slice(1);
+
+  const valueProp = (VALUE_PROPS[industry] || VALUE_PROPS.other).replace(/{company}/g, company);
+
+  const replacements = {
+    '{name}': firstName,
+    '{company}': company,
+    '{industry_label}': industryLabel,
+    '{hook_context}': hookContext,
+    '{value_prop}': valueProp,
+    '{referrer}': '[Referrer Name]',
+    '{referrer_context}': 'A mutual contact mentioned you',
+    '{event}': '[Event Name]'
+  };
+
+  let bodyText = template.body;
+  let subjectText = subject;
+  for (const [key, val] of Object.entries(replacements)) {
+    bodyText = bodyText.replaceAll(key, val);
+    subjectText = subjectText.replaceAll(key, val);
+  }
+
+  state.currentEmail = { subject: subjectText, body: bodyText, type: state.type, tone: state.tone };
+  renderOutput();
+}
+
+function renderOutput() {
+  if (!state.currentEmail) return;
+  const { subject, body } = state.currentEmail;
+  const activeTab = document.querySelector('.tab-btn.active').dataset.tab;
+
+  if (activeTab === 'preview') {
+    $('outputBody').innerHTML = `
+      <div class="email-preview fade-in">
+        <div class="email-subject">${escHtml(subject)}</div>
+        <div class="email-meta">To: ${escHtml($('contactName').value || '[Name]')} · ${escHtml(state.type)} · ${escHtml(state.tone)}</div>
+        <div class="email-body">${formatBody(body)}</div>
+      </div>`;
+  } else {
+    $('outputBody').innerHTML = `
+      <div class="fade-in">
+        <div class="raw-view">Subject: ${escHtml(subject)}\n\n${escHtml(body)}</div>
+      </div>`;
+  }
+}
+
+function formatBody(text) {
+  // Highlight placeholders
+  return escHtml(text).replace(/\[([^\]]+)\]/g, '<span class="highlight">[$1]</span>');
+}
+
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// Copy
+$('copyBtn').addEventListener('click', () => {
+  if (!state.currentEmail) return;
+  const text = `Subject: ${state.currentEmail.subject}\n\n${state.currentEmail.body}`;
+  navigator.clipboard.writeText(text).then(() => {
+    $('copyBtn').classList.add('copied');
+    $('copyBtn').textContent = '✓ Copied';
+    setTimeout(() => {
+      $('copyBtn').classList.remove('copied');
+      $('copyBtn').textContent = '📋 Copy';
+    }, 2000);
+  });
+});
+
+// Save
+$('saveBtn').addEventListener('click', () => {
+  if (!state.currentEmail) return;
+  saved.unshift({
+    ...state.currentEmail,
+    id: Date.now(),
+    contact: $('contactName').value,
+    company: $('company').value,
+    date: new Date().toLocaleDateString()
+  });
+  localStorage.setItem('outreach_saved', JSON.stringify(saved));
+  renderSaved();
+  toast('Template saved');
+});
+
+function renderSaved() {
+  if (saved.length === 0) {
+    $('savedSection').style.display = 'none';
+    return;
+  }
+  $('savedSection').style.display = 'block';
+  $('savedCount').textContent = `${saved.length} saved`;
+  $('savedGrid').innerHTML = saved.map(s => `
+    <div class="saved-card" onclick="loadSaved(${s.id})">
+      <button class="saved-card-delete" onclick="event.stopPropagation();deleteSaved(${s.id})">✕</button>
+      <div class="saved-card-type">${s.type} · ${s.tone}</div>
+      <div class="saved-card-subject">${escHtml(s.subject)}</div>
+      <div class="saved-card-preview">${escHtml(s.body.substring(0, 100))}...</div>
+    </div>`).join('');
+}
+
+window.loadSaved = function(id) {
+  const item = saved.find(s => s.id === id);
+  if (!item) return;
+  state.currentEmail = item;
+  renderOutput();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+window.deleteSaved = function(id) {
+  saved = saved.filter(s => s.id !== id);
+  localStorage.setItem('outreach_saved', JSON.stringify(saved));
+  renderSaved();
+  toast('Template deleted');
+};
+
+function toast(msg) {
+  const el = document.createElement('div');
+  el.className = 'toast';
+  el.textContent = msg;
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 2000);
+}
+
+// Init
+renderSaved();
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+node_modules/
+.next/
+*.log
+.DS_Store
+.vercel/
+screenshots/
+
+# Nested git projects — these have their own repos
+projects/ardmore-cricket/
+projects/showcases/hip-psychology/
+projects/clubdraw-demo/
+projects/uk-trade-jobs/
+projects/tim-clarke-demo/
+projects/mission-control/
+projects/joe-abrahams-demo/

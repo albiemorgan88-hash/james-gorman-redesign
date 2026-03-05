@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 627" width="1200" height="627">
+  <rect width="1200" height="627" fill="#f8f8f8"/>
+  <!-- Accent bar top -->
+  <rect x="0" y="0" width="1200" height="6" fill="#2563eb"/>
+  <!-- Question mark decorative -->
+  <text x="950" y="420" font-family="Helvetica, Arial, sans-serif" font-size="300" font-weight="800" fill="#2563eb" opacity="0.06">?</text>
+  <!-- Content -->
+  <text x="600" y="250" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="700" fill="#131313" text-anchor="middle">Is Your Business</text>
+  <text x="600" y="320" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="700" fill="#2563eb" text-anchor="middle">AI-Ready?</text>
+  <rect x="560" y="345" width="80" height="4" rx="2" fill="#131313"/>
+  <text x="600" y="400" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#777777" text-anchor="middle">Most businesses aren't. And that's okay — it starts with asking.</text>
+  <text x="1060" y="595" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#999999" text-anchor="middle">Blue Canvas AI</text>
+  <text x="1060" y="612" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#bbbbbb" text-anchor="middle">bluecanvas.ai</text>
+</svg>

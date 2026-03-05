@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Half-Day AI Consultancy Agenda | Blue Canvas</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+  
+  :root {
+    --blue: #2B4DAF;
+    --orange: #FF4520;
+    --dark: #1a1a2e;
+    --grey: #f7f8fa;
+    --text: #2d2d3a;
+    --light-text: #6b7280;
+  }
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, sans-serif; color: var(--text); line-height: 1.6; background: white; }
+  .page { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+  
+  .header {
+    background: linear-gradient(135deg, var(--blue) 0%, #1a3580 100%);
+    color: white;
+    padding: 50px 0 40px;
+    position: relative;
+  }
+  .header::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 4px; background: var(--orange); }
+  .header .logo { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; opacity: 0.85; margin-bottom: 20px; }
+  .header h1 { font-size: 30px; font-weight: 700; line-height: 1.2; margin-bottom: 6px; }
+  .header .subtitle { font-size: 16px; font-weight: 300; opacity: 0.85; }
+  
+  .client-bar {
+    background: var(--grey);
+    border-bottom: 1px solid #e5e7eb;
+    padding: 16px 0;
+  }
+  .client-bar .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .client-bar .label { font-size: 13px; color: var(--light-text); }
+  .client-bar .value { font-size: 14px; font-weight: 600; color: var(--dark); }
+  .client-bar .editable {
+    border-bottom: 1px dashed var(--orange);
+    padding-bottom: 1px;
+  }
+  
+  .timeline { padding: 40px 0 20px; }
+  
+  .block {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0;
+    margin-bottom: 0;
+    position: relative;
+  }
+  
+  .block .time-col {
+    padding: 24px 20px 24px 0;
+    text-align: right;
+    border-right: 3px solid #e5e7eb;
+    position: relative;
+  }
+  .block .time-col .time {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--blue);
+  }
+  .block .time-col .dur {
+    font-size: 11px;
+    color: var(--light-text);
+    margin-top: 2px;
+  }
+  .block .time-col::after {
+    content: '';
+    position: absolute;
+    right: -7px;
+    top: 28px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--blue);
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px var(--blue);
+  }
+  
+  .block.break-block .time-col { border-right-color: #e5e7eb; }
+  .block.break-block .time-col::after { background: #d1d5db; box-shadow: 0 0 0 2px #d1d5db; }
+  
+  .block .content-col {
+    padding: 20px 0 20px 28px;
+  }
+  .block .content-col h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 6px;
+  }
+  .block .content-col p {
+    font-size: 14px;
+    color: var(--light-text);
+    margin-bottom: 8px;
+  }
+  
+  .checklist {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .checklist li {
+    font-size: 13px;
+    padding: 4px 0;
+    color: var(--text);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .checklist li::before {
+    content: '☐';
+    color: var(--blue);
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  
+  .block.break-block .content-col h3 {
+    font-size: 14px;
+    color: var(--light-text);
+    font-weight: 500;
+  }
+  
+  .summary-box {
+    background: var(--grey);
+    border-radius: 12px;
+    padding: 28px;
+    margin: 20px 0 40px;
+    border-left: 4px solid var(--orange);
+  }
+  .summary-box h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 12px;
+  }
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .summary-grid .item { font-size: 13px; }
+  .summary-grid .item strong { color: var(--blue); }
+  
+  .deliverables {
+    padding: 0 0 40px;
+  }
+  .deliverables h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 16px;
+  }
+  .del-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .del-item {
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+  }
+  .del-item .icon { font-size: 20px; margin-bottom: 6px; }
+  .del-item .title { font-size: 14px; font-weight: 600; color: var(--dark); }
+  .del-item .desc { font-size: 12px; color: var(--light-text); margin-top: 4px; }
+  
+  .footer {
+    background: var(--dark);
+    color: white;
+    padding: 32px 0;
+    text-align: center;
+  }
+  .footer .brand { font-size: 16px; font-weight: 600; letter-spacing: 1px; }
+  .footer p { color: rgba(255,255,255,0.5); font-size: 13px; margin-top: 6px; }
+  .footer a { color: var(--orange); text-decoration: none; }
+  
+  .note {
+    font-size: 12px;
+    color: var(--light-text);
+    font-style: italic;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #fffbeb;
+    border-radius: 6px;
+    border-left: 3px solid #fbbf24;
+  }
+
+  @media (max-width: 600px) {
+    .block { grid-template-columns: 80px 1fr; }
+    .del-grid, .summary-grid { grid-template-columns: 1fr; }
+    .header h1 { font-size: 24px; }
+  }
+  
+  @media print {
+    .block { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="page">
+    <div class="logo">Blue Canvas AI</div>
+    <h1>Half-Day AI Consultancy Session</h1>
+    <div class="subtitle">Agenda &amp; Session Plan</div>
+  </div>
+</div>
+
+<div class="client-bar">
+  <div class="page">
+    <div class="inner">
+      <div><span class="label">Client: </span><span class="value editable">Tim Clarke, Quay Group</span></div>
+      <div><span class="label">Date: </span><span class="value editable">TBC</span></div>
+      <div><span class="label">Consultant: </span><span class="value">Phil Patterson</span></div>
+      <div><span class="label">Duration: </span><span class="value">~4 hours</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+<div class="timeline">
+
+  <!-- Block 1: Discovery -->
+  <div class="block">
+    <div class="time-col">
+      <div class="time">09:00</div>
+      <div class="dur">60 min</div>
+    </div>
+    <div class="content-col">
+      <h3>Discovery &amp; Current State</h3>
+      <p>Understand how the business operates today — workflows, tools, team structure, and pain points.</p>
+      <ul class="checklist">
+        <li>Walk through a typical recruitment lifecycle end-to-end</li>
+        <li>Map current tech stack (ATS, CRM, spreadsheets, comms tools)</li>
+        <li>Identify top 3 time drains for consultants</li>
+        <li>Understand cross-division workflows and data sharing</li>
+        <li>Discuss client expectations and service level commitments</li>
+        <li>Note any previous tech initiatives — what worked, what didn't</li>
+      </ul>
+      <div class="note">💡 Tip for consultant: Let the client talk 70% of the time here. Listen for the real pain, not the assumed pain.</div>
+    </div>
+  </div>
+
+  <!-- Break -->
+  <div class="block break-block">
+    <div class="time-col">
+      <div class="time">10:00</div>
+      <div class="dur">15 min</div>
+    </div>
+    <div class="content-col">
+      <h3>☕ Break</h3>
+    </div>
+  </div>
+
+  <!-- Block 2: AI Opportunity Mapping -->
+  <div class="block">
+    <div class="time-col">
+      <div class="time">10:15</div>
+      <div class="dur">60 min</div>
+    </div>
+    <div class="content-col">
+      <h3>AI Opportunity Mapping</h3>
+      <p>Present tailored AI opportunities based on pre-session research, adjusted for what was learned in Discovery.</p>
+      <ul class="checklist">
+        <li>Walk through the pre-session brief opportunities</li>
+        <li>Show real-world examples and case studies for each</li>
+        <li>Discuss which resonate most with the client</li>
+        <li>Identify any new opportunities surfaced during Discovery</li>
+        <li>Remove or deprioritise anything that doesn't fit</li>
+      </ul>
+      <div class="note">💡 Use screen sharing to show live examples. Tangible > theoretical.</div>
+    </div>
+  </div>
+
+  <!-- Block 3: Prioritisation -->
+  <div class="block">
+    <div class="time-col">
+      <div class="time">11:15</div>
+      <div class="dur">45 min</div>
+    </div>
+    <div class="content-col">
+      <h3>Prioritisation Workshop</h3>
+      <p>Collaboratively rank opportunities using a simple Impact vs Effort framework.</p>
+      <ul class="checklist">
+        <li>Score each opportunity: Impact (1-5) × Ease (1-5)</li>
+        <li>Plot on a 2×2 matrix (Quick Wins / Strategic Bets / Nice-to-Haves / Avoid)</li>
+        <li>Select top 3 priorities for the next 90 days</li>
+        <li>Discuss budget appetite and internal capacity</li>
+        <li>Agree on "do now / do next / do later" buckets</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Break -->
+  <div class="block break-block">
+    <div class="time-col">
+      <div class="time">12:00</div>
+      <div class="dur">15 min</div>
+    </div>
+    <div class="content-col">
+      <h3>☕ Break</h3>
+    </div>
+  </div>
+
+  <!-- Block 4: Quick Wins Demo -->
+  <div class="block">
+    <div class="time-col">
+      <div class="time">12:15</div>
+      <div class="dur">45 min</div>
+    </div>
+    <div class="content-col">
+      <h3>Quick Wins — Live Demo</h3>
+      <p>Hands-on demonstration of 2–3 tools the client could implement within weeks.</p>
+      <ul class="checklist">
+        <li>Demo 1: AI CV parsing &amp; candidate matching (e.g., with sample CVs)</li>
+        <li>Demo 2: AI-assisted content/report generation</li>
+        <li>Demo 3: Automated outreach or CRM intelligence (if relevant)</li>
+        <li>Let the client interact — hands on keyboard where possible</li>
+        <li>Discuss costs, setup time, and who would manage each tool</li>
+      </ul>
+      <div class="note">💡 Prepare demos in advance with client-relevant data. Generic demos don't land.</div>
+    </div>
+  </div>
+
+  <!-- Block 5: Roadmap -->
+  <div class="block">
+    <div class="time-col">
+      <div class="time">13:00</div>
+      <div class="dur">30 min</div>
+    </div>
+    <div class="content-col">
+      <h3>Roadmap &amp; Next Steps</h3>
+      <p>Wrap up with a concrete action plan and clear next steps.</p>
+      <ul class="checklist">
+        <li>Summarise agreed priorities (top 3)</li>
+        <li>Draft 30-60-90 day implementation timeline</li>
+        <li>Outline estimated costs for each initiative</li>
+        <li>Define what Blue Canvas will deliver vs. client-side actions</li>
+        <li>Agree on follow-up cadence and communication</li>
+        <li>Discuss ongoing support / retainer options</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<!-- Session Summary -->
+<div class="summary-box">
+  <h3>Session Summary</h3>
+  <div class="summary-grid">
+    <div class="item"><strong>Total duration:</strong> ~4 hours (inc. breaks)</div>
+    <div class="item"><strong>Format:</strong> In-person or video call</div>
+    <div class="item"><strong>Prep required:</strong> Pre-session brief (provided)</div>
+    <div class="item"><strong>Follow-up:</strong> Written report within 5 working days</div>
+  </div>
+</div>
+
+<!-- Deliverables -->
+<div class="deliverables">
+  <h2>What the Client Receives</h2>
+  <div class="del-grid">
+    <div class="del-item">
+      <div class="icon">📋</div>
+      <div class="title">Pre-Session Brief</div>
+      <div class="desc">Company research, AI landscape, and tailored opportunities — sent before the session.</div>
+    </div>
+    <div class="del-item">
+      <div class="icon">🗺️</div>
+      <div class="title">AI Opportunity Map</div>
+      <div class="desc">Prioritised list of AI applications with impact/effort scoring.</div>
+    </div>
+    <div class="del-item">
+      <div class="icon">🎯</div>
+      <div class="title">90-Day Roadmap</div>
+      <div class="desc">Concrete implementation plan with costs, timelines, and owners.</div>
+    </div>
+    <div class="del-item">
+      <div class="icon">📄</div>
+      <div class="title">Written Report</div>
+      <div class="desc">Full session summary and recommendations, delivered within 5 working days.</div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <div class="page">
+    <div class="brand">Blue Canvas AI</div>
+    <p>AI consultancy for ambitious businesses</p>
+    <p style="margin-top: 12px;"><a href="https://bluecanvas.ai">bluecanvas.ai</a> · Phil Patterson · phil@bluecanvas.ai</p>
+  </div>
+</div>
+
+</body>
+</html>

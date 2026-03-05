@@ -1,0 +1,154 @@
+# UX Tester — End-to-End UI, Content & Flow Testing
+
+## Purpose
+Rigorously test any web application for bugs, UX issues, content errors, and broken user flows. Think like a real user AND a QA engineer simultaneously. Every issue gets logged, categorised, and fixed where possible.
+
+## When to Use
+- Before deploying any site to production
+- After major feature builds
+- When Phil says "test this"
+- On any ClubDraw, UK Trade Jobs, Blue Canvas, or satellite site
+
+## Testing Framework
+
+### Phase 1: Visual & Layout Audit
+For each page:
+1. Take full-page screenshots at 3 viewports: mobile (375px), tablet (768px), desktop (1440px)
+2. Check for:
+   - Overlapping elements or broken layouts
+   - Text truncation or overflow
+   - Images not loading or wrong aspect ratios
+   - Inconsistent spacing/padding
+   - Fonts not loading (fallback font visible)
+   - Colour contrast issues (text readability)
+   - Missing favicon/meta images
+3. Log every issue with: page, viewport, description, severity (P0-P3)
+
+### Phase 2: Content & Copy Audit
+For each page:
+1. Read ALL text content carefully
+2. Check for:
+   - Spelling/grammar errors
+   - Placeholder text still present (Lorem ipsum, "TODO", "placeholder", etc.)
+   - Incorrect or fabricated information (cross-reference with SPEC or source data)
+   - Inconsistent tone or branding
+   - Missing alt text on images
+   - Broken or placeholder links (href="#", javascript:void, etc.)
+   - Wrong dates, names, numbers
+   - CTA buttons that don't make sense in context
+   - Flag any images that appear to be screenshots, WhatsApp messages, or non-contextual content (e.g. a WhatsApp screenshot on a cricket club website)
+3. Verify ALL facts against the spec/source documents — flag anything unverified
+
+### Phase 3: User Flow Testing
+Test every critical user journey end-to-end:
+
+#### Standard Flows (test on every site):
+- Navigation: every nav link works, mobile menu opens/closes
+- Footer links all work
+- External links open in new tab
+- Back button behaviour is correct
+- Page load times are acceptable
+- 404 page exists and looks right
+
+#### Auth Flows (if applicable):
+- Sign up with email/password
+- Sign up with Google SSO
+- Login with email/password
+- Login with Google SSO
+- Logout
+- Password reset flow
+- Session persistence (refresh page while logged in)
+- Protected routes redirect to login
+- Error states: wrong password, duplicate email, empty fields
+
+#### E-commerce/Payment Flows (if applicable):
+- Product/item selection
+- Add to cart/basket
+- Checkout process
+- Payment integration (Stripe test mode)
+- Success/failure states
+- Email confirmations
+- Refund/cancel flow
+
+#### Draw-Specific Flows (ClubDraw):
+- Browse available numbers
+- Select numbers
+- Assign name to number
+- Checkout and pay
+- Verify number appears as taken after purchase
+- View your numbers in profile
+- Draw countdown displays correctly
+- Draw results display after draw
+- Prize calculation is correct
+- Email notification received
+- Weekly recurring payment setup
+- Cancel subscription
+
+### Phase 4: Technical Checks
+1. Console errors: open browser console, check for JS errors on every page
+2. Network errors: check for failed API calls, 404s, CORS issues
+3. Form validation: test empty submissions, invalid inputs, SQL injection strings, XSS attempts
+4. Responsive breakpoints: resize through all breakpoints smoothly
+5. Performance: check for large unoptimised images, render-blocking resources
+6. SEO basics: title tags, meta descriptions, heading hierarchy, canonical URLs
+7. Accessibility: keyboard navigation, screen reader basics, focus states
+
+### Phase 5: Edge Cases
+- What happens with no data? (empty states)
+- What happens with lots of data? (pagination, overflow)
+- What if the user double-clicks a button?
+- What if the user navigates away mid-flow?
+- What if the API is slow/down? (loading states, error handling)
+- What if the user isn't logged in and tries to access protected features?
+
+## Issue Logging Format
+
+```
+## [PAGE] — [VIEWPORT]
+
+### P0 (Critical — blocks launch)
+- [ ] Description of issue
+  - Steps to reproduce
+  - Expected vs actual behaviour
+  - Fix: [description or "needs investigation"]
+
+### P1 (High — should fix before launch)
+- [ ] Description
+
+### P2 (Medium — fix soon after launch)
+- [ ] Description
+
+### P3 (Low — nice to have)
+- [ ] Description
+```
+
+## Severity Guide
+- **P0**: Site crashes, data loss, payments broken, security issue, complete flow blocker
+- **P1**: Major UX issue, wrong information displayed, key feature not working, layout badly broken on a viewport
+- **P2**: Minor visual glitch, non-critical link broken, copy error, inconsistent styling
+- **P3**: Micro-interaction missing, could-be-nicer styling, enhancement suggestion
+
+## Fix Protocol
+1. Fix all P0s immediately — don't just log them
+2. Fix P1s if straightforward (< 5 min each)
+3. Log P2/P3 for later but don't block on them
+4. After fixing, RE-TEST the fixed area to confirm the fix didn't break something else
+5. Take "after" screenshots to prove fixes
+
+## Tools
+- Playwright for automated browser testing (npm install playwright)
+- Screenshots at 375px, 768px, 1440px viewports
+- Console log capture
+- Network request monitoring
+- Lighthouse for performance/accessibility scores
+
+## Output
+Save full test report to: `projects/[site-name]/test-report-[date].md`
+Include:
+- Summary: total issues by severity
+- Screenshots of every issue
+- Fix status for each issue
+- Final "go/no-go" recommendation
+
+## Golden Rule
+**Think like the end user.** Not a developer, not a tester — a real person using this site on their phone. Would your nan understand how to use the draw? Would a cricket club treasurer trust this with money? If the answer is no, it's a bug.

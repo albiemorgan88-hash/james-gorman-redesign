@@ -1,0 +1,16 @@
+{
+  "name": "wallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@coinbase/cdp-sdk": "^1.44.1",
+    "@coinbase/coinbase-sdk": "^0.25.0"
+  }
+}

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Consultancy Brief — Quay Group | Blue Canvas</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+  
+  :root {
+    --blue: #2B4DAF;
+    --orange: #FF4520;
+    --dark: #1a1a2e;
+    --grey: #f7f8fa;
+    --text: #2d2d3a;
+    --light-text: #6b7280;
+  }
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    background: white;
+  }
+  
+  .page { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+  
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, var(--blue) 0%, #1a3580 100%);
+    color: white;
+    padding: 60px 0 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--orange);
+  }
+  .header .page { position: relative; z-index: 1; }
+  .header .logo {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-bottom: 24px;
+  }
+  .header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .header .subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.9;
+  }
+  .header .meta {
+    margin-top: 24px;
+    font-size: 13px;
+    opacity: 0.7;
+  }
+  .header .prepared-for {
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    border-left: 3px solid var(--orange);
+    font-size: 15px;
+  }
+  .header .prepared-for strong { font-weight: 600; }
+  
+  /* Sections */
+  section { padding: 40px 0; }
+  section + section { border-top: 1px solid #e5e7eb; }
+  
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h2 .num {
+    background: var(--blue);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark);
+    margin: 20px 0 8px;
+  }
+  
+  p { margin-bottom: 12px; color: var(--text); font-size: 15px; }
+  
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 20px 0;
+  }
+  .stat {
+    background: var(--grey);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .stat .number {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--blue);
+  }
+  .stat .label {
+    font-size: 12px;
+    color: var(--light-text);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Opportunity Cards */
+  .opp-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+    position: relative;
+    transition: box-shadow 0.2s;
+  }
+  .opp-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+  .opp-card .opp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .opp-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark);
+  }
+  .opp-card .badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+  .badge.quick { background: #dcfce7; color: #166534; }
+  .badge.medium { background: #fef3c7; color: #92400e; }
+  .badge.strategic { background: #dbeafe; color: #1e40af; }
+  
+  .opp-card p { font-size: 14px; margin-bottom: 8px; }
+  
+  .impact-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    font-size: 12px;
+    color: var(--light-text);
+  }
+  .impact-bar .bar {
+    height: 6px;
+    border-radius: 3px;
+    background: #e5e7eb;
+    flex: 1;
+    max-width: 120px;
+  }
+  .impact-bar .bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: var(--blue);
+  }
+  .impact-bar .bar-fill.high { background: var(--orange); }
+  
+  /* Questions */
+  .questions {
+    list-style: none;
+    padding: 0;
+  }
+  .questions li {
+    padding: 12px 16px;
+    background: var(--grey);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .questions li::before {
+    content: '?';
+    background: var(--orange);
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  
+  /* Expect */
+  .expect-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .expect-item {
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+  }
+  .expect-item .time {
+    font-size: 12px;
+    color: var(--orange);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .expect-item .title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 4px;
+    color: var(--dark);
+  }
+  .expect-item .desc {
+    font-size: 13px;
+    color: var(--light-text);
+    margin-top: 4px;
+  }
+  
+  /* Footer */
+  .footer {
+    background: var(--dark);
+    color: white;
+    padding: 40px 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .footer .brand {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .footer p {
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  .footer a { color: var(--orange); text-decoration: none; }
+  
+  .divider-line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .divider-line span { font-size: 12px; color: var(--light-text); text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+  .divider-line::before, .divider-line::after { content: ''; flex: 1; height: 1px; background: #e5e7eb; }
+
+  @media (max-width: 600px) {
+    .stat-grid { grid-template-columns: 1fr; }
+    .expect-grid { grid-template-columns: 1fr; }
+    .header h1 { font-size: 24px; }
+  }
+  
+  @media print {
+    .page { max-width: 100%; }
+    .opp-card { break-inside: avoid; }
+    section { padding: 24px 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="page">
+    <div class="logo">Blue Canvas AI</div>
+    <h1>AI Readiness &amp; Opportunity Brief</h1>
+    <div class="subtitle">Pre-Session Research &amp; Analysis</div>
+    <div class="prepared-for">
+      Prepared for <strong>Tim Clarke</strong>, Director — <strong>Quay Group</strong>
+    </div>
+    <div class="meta">Prepared by Phil Patterson, Blue Canvas AI · February 2026</div>
+  </div>
+</div>
+
+<div class="page">
+
+<!-- Section 1: Company Overview -->
+<section>
+  <h2><span class="num">1</span> Company Overview</h2>
+  <p><strong>Quay Group</strong> is a specialist UHNW recruitment agency headquartered in Watford, UK. Founded in 2013 as Quay Crew, the company rebranded in June 2025 to reflect its expansion from superyacht crew placement into four specialist divisions:</p>
+  
+  <div class="stat-grid">
+    <div class="stat">
+      <div class="number">2,000+</div>
+      <div class="label">Candidates Placed</div>
+    </div>
+    <div class="stat">
+      <div class="number">350+</div>
+      <div class="label">Superyachts Served</div>
+    </div>
+    <div class="stat">
+      <div class="number">12</div>
+      <div class="label">Years in Market</div>
+    </div>
+  </div>
+  
+  <h3>Four Divisions</h3>
+  <p><strong>Quay Crew</strong> — Superyacht crew recruitment, from deckhands to captains. The flagship division with deep industry expertise.</p>
+  <p><strong>Quay Maritime</strong> — Land-based maritime roles at shipyards, yacht management firms, and marine corporate offices.</p>
+  <p><strong>Quay Estates</strong> — Private estate staff: butlers, estate managers, household personnel for UHNW clients.</p>
+  <p><strong>Quay Family Office</strong> — PAs, executive assistants, and C-suite placements for UHNW family offices.</p>
+  
+  <p>Co-founded and directed by Tim Clarke alongside Caroline Clarke, the company is recognised across the superyacht industry for its thought leadership — publishing annual crew salary surveys, training reports, and market insights.</p>
+</section>
+
+<!-- Section 2: Industry AI Landscape -->
+<section>
+  <h2><span class="num">2</span> AI in Luxury &amp; Maritime Recruitment</h2>
+  <p>The recruitment industry is being transformed by AI, but luxury/UHNW and maritime recruitment lags behind mainstream adoption. This creates both a risk and an opportunity for Quay Group.</p>
+  
+  <h3>Where the industry is heading</h3>
+  <p><strong>AI-powered candidate matching</strong> is replacing keyword-based CV search. Platforms like HireVue, Eightfold, and Fetcher use semantic understanding to match candidates to roles based on skills, experience patterns, and cultural fit — not just keywords.</p>
+  <p><strong>Automated sourcing and outreach</strong> tools can scan global candidate pools, social platforms, and maritime databases to surface passive candidates that manual search would miss.</p>
+  <p><strong>Compliance automation</strong> is critical in maritime — STCW certifications, ENG1 medicals, flag state requirements, and visa status all have expiry dates. AI can track, alert, and verify these automatically.</p>
+  <p><strong>Conversational AI</strong> is handling initial candidate screening, scheduling, and FAQ responses — freeing recruiters for high-value relationship work with UHNW clients.</p>
+  
+  <h3>Quay Group's Advantage</h3>
+  <p>With 12 years of placement data, industry surveys, and deep client relationships, Quay Group has the <em>data foundation</em> that most competitors lack. The question isn't whether to adopt AI — it's which applications deliver the fastest ROI while preserving the personal, high-touch service that UHNW clients expect.</p>
+</section>
+
+<!-- Section 3: AI Opportunities -->
+<section>
+  <h2><span class="num">3</span> AI Opportunities for Quay Group</h2>
+  <p>Ranked by a combination of business impact and ease of implementation. Quick wins first, strategic plays later.</p>
+  
+  <div class="opp-card">
+    <div class="opp-header">
+      <h4>1. AI-Powered CV Screening &amp; Candidate Matching</h4>
+      <span class="badge quick">Quick Win</span>
+    </div>
+    <p>Use AI to parse incoming CVs, extract structured data (certifications, vessel experience, languages), and automatically match candidates to open roles across all four divisions. Reduces time-to-shortlist from hours to minutes.</p>
+    <div class="impact-bar">
+      <span>Impact</span>
+      <div class="bar"><div class="bar-fill high" style="width:90%"></div></div>
+      <span>Ease</span>
+      <div class="bar"><div class="bar-fill" style="width:75%"></div></div>
+    </div>
+  </div>
+  
+  <div class="opp-card">
+    <div class="opp-header">
+      <h4>2. Certification &amp; Compliance Tracker</h4>
+      <span class="badge quick">Quick Win</span>
+    </div>
+    <p>Automated tracking of STCW, ENG1, flag state docs, and visa expiry across your candidate database. Proactive alerts to candidates and clients before expiry. Eliminates manual spreadsheet tracking and reduces placement risk.</p>
+    <div class="impact-bar">
+      <span>Impact</span>
+      <div class="bar"><div class="bar-fill high" style="width:85%"></div></div>
+      <span>Ease</span>
+      <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+    </div>
+  </div>
+  
+  <div class="opp-card">
+    <div class="opp-header">
+      <h4>3. Intelligent Candidate Outreach &amp; Nurturing</h4>
+      <span class="badge medium">Medium Term</span>
+    </div>
+    <p>AI-drafted personalised outreach to passive candidates based on their profile, career stage, and vessel preferences. Multilingual capability is key — superyacht crew come from 50+ nationalities. Automated follow-ups keep your talent pipeline warm without manual effort.</p>
+    <div class="impact-bar">
+      <span>Impact</span>
+      <div class="bar"><div class="bar-fill high" style="width:80%"></div></div>
+      <span>Ease</span>
+      <div class="bar"><div class="bar-fill" style="width:65%"></div></div>
+    </div>
+  </div>
+  
+  <div class="opp-card">
+    <div class="opp-header">
+      <h4>4. Salary &amp; Market Intelligence Automation</h4>
+      <span class="badge medium">Medium Term</span>
+    </div>
+    <p>You already produce industry-leading salary surveys manually. AI can continuously aggregate market data, job postings, and industry trends to provide real-time benchmarking. This becomes a premium product you can offer clients — and a competitive moat.</p>
+    <div class="impact-bar">
+      <span>Impact</span>
+      <div class="bar"><div class="bar-fill high" style="width:85%"></div></div>
+      <span>Ease</span>
+      <div class="bar"><div class="bar-fill" style="width:55%"></div></div>
+    </div>
+  </div>
+  
+  <div class="opp-card">
+    <div class="opp-header">
+      <h4>5. Client Relationship &amp; CRM Intelligence</h4>
+      <span class="badge quick">Quick Win</span>
+    </div>
+    <p>AI-enhanced CRM that surfaces client insights, predicts hiring needs based on vessel schedules/seasons, and drafts personalised check-in communications. Particularly valuable as you scale across four divisions — ensuring no client falls through the cracks.</p>
+    <div class="impact-bar">
+      <span>Impact</span>
+      <div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+      <span>Ease</span>
+      <div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+    </div>
+  </div>
+  
+  <div class="opp-card">
+    <div class="opp-header">
+      <h4>6. Content &amp; Thought Leadership at Scale</h4>
+      <span class="badge quick">Quick Win</span>
+    </div>
+    <p>AI-assisted blog posts, social content, and industry reports. Your existing thought leadership (Tim's articles, salary surveys) can be amplified 3-5x with AI drafting, research, and distribution — maintaining your market authority as you grow.</p>
+    <div class="impact-bar">
+      <span>Impact</span>
+      <div class="bar"><div class="bar-fill" style="width:60%"></div></div>
+      <span>Ease</span>
+      <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+    </div>
+  </div>
+  
+  <div class="opp-card">
+    <div class="opp-header">
+      <h4>7. Cross-Division Candidate Intelligence</h4>
+      <span class="badge strategic">Strategic</span>
+    </div>
+    <p>With four divisions, candidates often transition between sectors (yacht crew → estate staff → family office). An AI system that identifies cross-placement opportunities from your existing database could unlock significant revenue from candidates you've already placed.</p>
+    <div class="impact-bar">
+      <span>Impact</span>
+      <div class="bar"><div class="bar-fill high" style="width:75%"></div></div>
+      <span>Ease</span>
+      <div class="bar"><div class="bar-fill" style="width:45%"></div></div>
+    </div>
+  </div>
+  
+  <div class="opp-card">
+    <div class="opp-header">
+      <h4>8. Rotation &amp; Availability Scheduling</h4>
+      <span class="badge strategic">Strategic</span>
+    </div>
+    <p>Your survey data shows crew rotation is increasingly complex. An AI-powered scheduling system that tracks crew rotation patterns, availability windows, and preference matching could become a value-add platform for yacht management clients.</p>
+    <div class="impact-bar">
+      <span>Impact</span>
+      <div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+      <span>Ease</span>
+      <div class="bar"><div class="bar-fill" style="width:40%"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Questions for the Session -->
+<section>
+  <h2><span class="num">4</span> Discovery Questions</h2>
+  <p>To make the most of our session, it helps to think about these areas in advance:</p>
+  
+  <ul class="questions">
+    <li>What does a typical recruitment workflow look like from job brief to placement? Where are the bottlenecks?</li>
+    <li>How are CVs currently received, stored, and searched? What ATS/CRM do you use?</li>
+    <li>How do you currently track crew certifications and document expiry dates?</li>
+    <li>What's the biggest time drain for your consultants week-to-week?</li>
+    <li>How do the four divisions share candidate data and client relationships today?</li>
+    <li>What does your candidate sourcing process look like for hard-to-fill roles?</li>
+    <li>How are your annual salary surveys currently compiled? What data sources?</li>
+    <li>Are there any tools or software you've tried and abandoned? What didn't work?</li>
+    <li>What would "AI success" look like for Quay Group in 12 months?</li>
+  </ul>
+</section>
+
+<!-- Section 5: What to Expect -->
+<section>
+  <h2><span class="num">5</span> What to Expect from the Session</h2>
+  <p>This is a collaborative, practical half-day — not a lecture. We'll work through your specific business together and leave with a clear action plan.</p>
+  
+  <div class="expect-grid">
+    <div class="expect-item">
+      <div class="time">1 hour</div>
+      <div class="title">Discovery</div>
+      <div class="desc">Deep dive into your current workflows, tools, and pain points across all four divisions.</div>
+    </div>
+    <div class="expect-item">
+      <div class="time">1 hour</div>
+      <div class="title">AI Opportunity Mapping</div>
+      <div class="desc">Walk through tailored AI opportunities with live examples relevant to your business.</div>
+    </div>
+    <div class="expect-item">
+      <div class="time">45 minutes</div>
+      <div class="title">Prioritisation Workshop</div>
+      <div class="desc">Rank opportunities by ROI, feasibility, and strategic fit. Build your shortlist.</div>
+    </div>
+    <div class="expect-item">
+      <div class="time">45 minutes</div>
+      <div class="title">Quick Wins Demo</div>
+      <div class="desc">Hands-on demonstration of 2–3 tools you could implement within weeks.</div>
+    </div>
+    <div class="expect-item" style="grid-column: 1 / -1;">
+      <div class="time">30 minutes</div>
+      <div class="title">Roadmap &amp; Next Steps</div>
+      <div class="desc">Concrete action plan with timeline, estimated costs, and implementation options — including what Blue Canvas can help deliver.</div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<div class="footer">
+  <div class="page">
+    <div class="brand">Blue Canvas AI</div>
+    <p>AI consultancy for ambitious businesses</p>
+    <p style="margin-top: 16px;"><a href="https://bluecanvas.ai">bluecanvas.ai</a> · Phil Patterson · phil@bluecanvas.ai</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0c27f"/>
+      <stop offset="100%" style="stop-color:#e0a85e"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50"/>
+      <stop offset="100%" style="stop-color:#1a252f"/>
+    </linearGradient>
+    <linearGradient id="hoodie" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3a5c"/>
+      <stop offset="100%" style="stop-color:#2a2a4a"/>
+    </linearGradient>
+    <linearGradient id="eye-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d2ff"/>
+      <stop offset="100%" style="stop-color:#7b68ee"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="256" cy="256" r="256" fill="url(#bg)"/>
+  
+  <!-- Subtle circuit pattern in background -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.06" fill="none">
+    <line x1="50" y1="100" x2="150" y2="100"/>
+    <line x1="150" y1="100" x2="150" y2="160"/>
+    <circle cx="150" cy="160" r="3" fill="#fff"/>
+    <line x1="350" y1="80" x2="450" y2="80"/>
+    <line x1="350" y1="80" x2="350" y2="140"/>
+    <circle cx="350" cy="140" r="3" fill="#fff"/>
+    <line x1="80" y1="400" x2="180" y2="400"/>
+    <line x1="380" y1="420" x2="460" y2="420"/>
+  </g>
+
+  <!-- Shoulders / Hoodie -->
+  <ellipse cx="256" cy="480" rx="160" ry="100" fill="url(#hoodie)"/>
+  <!-- Hoodie collar -->
+  <path d="M210,410 Q256,440 302,410" fill="none" stroke="#4a4a6c" stroke-width="3"/>
+  <!-- Hoodie strings -->
+  <line x1="235" y1="415" x2="230" y2="455" stroke="#6a6a8c" stroke-width="2" stroke-linecap="round"/>
+  <line x1="277" y1="415" x2="282" y2="455" stroke="#6a6a8c" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Neck -->
+  <rect x="232" y="355" width="48" height="60" rx="20" fill="url(#skin)"/>
+
+  <!-- Head shape -->
+  <ellipse cx="256" cy="250" rx="105" ry="120" fill="url(#skin)"/>
+  
+  <!-- Hair - messy/textured -->
+  <ellipse cx="256" cy="165" rx="110" ry="75" fill="url(#hair)"/>
+  <path d="M148,190 Q150,130 200,110 Q240,95 256,100 Q280,95 310,110 Q360,130 364,190" fill="url(#hair)"/>
+  <!-- Messy fringe -->
+  <path d="M170,185 Q190,160 215,175 Q230,155 256,165 Q275,150 295,170 Q320,155 340,180" fill="url(#hair)"/>
+  
+  <!-- Ears -->
+  <ellipse cx="152" cy="260" rx="18" ry="25" fill="url(#skin)"/>
+  <ellipse cx="360" cy="260" rx="18" ry="25" fill="url(#skin)"/>
+  <ellipse cx="152" cy="260" rx="10" ry="16" fill="#e0a050" opacity="0.3"/>
+  <ellipse cx="360" cy="260" rx="10" ry="16" fill="#e0a050" opacity="0.3"/>
+  
+  <!-- Eyebrows -->
+  <path d="M195,218 Q215,206 240,212" stroke="#2c3e50" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M275,212 Q300,206 318,218" stroke="#2c3e50" stroke-width="5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Eyes - white -->
+  <ellipse cx="218" cy="248" rx="28" ry="24" fill="white"/>
+  <ellipse cx="296" cy="248" rx="28" ry="24" fill="white"/>
+  
+  <!-- Iris - glowing cyan/purple -->
+  <circle cx="222" cy="250" r="14" fill="url(#eye-glow)"/>
+  <circle cx="300" cy="250" r="14" fill="url(#eye-glow)"/>
+  
+  <!-- Pupil -->
+  <circle cx="222" cy="250" r="7" fill="#0a0a1a"/>
+  <circle cx="300" cy="250" r="7" fill="#0a0a1a"/>
+  
+  <!-- Eye shine -->
+  <circle cx="228" cy="244" r="4" fill="white" opacity="0.9"/>
+  <circle cx="306" cy="244" r="4" fill="white" opacity="0.9"/>
+  <circle cx="218" cy="254" r="2" fill="white" opacity="0.5"/>
+  <circle cx="296" cy="254" r="2" fill="white" opacity="0.5"/>
+  
+  <!-- Nose -->
+  <path d="M250,272 Q256,285 262,272" fill="none" stroke="#c89050" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Mouth - friendly smirk -->
+  <path d="M222,305 Q240,322 260,318 Q280,322 295,310" fill="none" stroke="#a07040" stroke-width="3.5" stroke-linecap="round"/>
+  
+  <!-- Subtle stubble dots -->
+  <g fill="#c0a070" opacity="0.2">
+    <circle cx="225" cy="330" r="1"/>
+    <circle cx="240" cy="335" r="1"/>
+    <circle cx="256" cy="337" r="1"/>
+    <circle cx="272" cy="335" r="1"/>
+    <circle cx="288" cy="330" r="1"/>
+    <circle cx="232" cy="325" r="1"/>
+    <circle cx="248" cy="328" r="1"/>
+    <circle cx="264" cy="328" r="1"/>
+    <circle cx="280" cy="325" r="1"/>
+  </g>
+
+  <!-- Subtle glow around eyes -->
+  <ellipse cx="218" cy="248" rx="32" ry="28" fill="none" stroke="#00d2ff" stroke-width="1" opacity="0.15"/>
+  <ellipse cx="296" cy="248" rx="32" ry="28" fill="none" stroke="#7b68ee" stroke-width="1" opacity="0.15"/>
+</svg>

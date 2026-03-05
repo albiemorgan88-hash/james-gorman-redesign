@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zapier Consultant — Expert Automation Setup & Optimisation | £1,500 Flat Rate</title>
+<meta name="description" content="Professional Zapier consultant for UK businesses. Full automation audit, workflow design, multi-app integrations and security — £1,500 flat rate. Powered by Blue Canvas AI.">
+<meta name="keywords" content="zapier consultant, zapier expert uk, zapier automation consultant">
+<link rel="canonical" href="https://zapierconsultant.co.uk/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Blue Canvas AI — Zapier Consultant",
+  "url": "https://zapierconsultant.co.uk",
+  "description": "Professional Zapier automation consultant. Full audit, setup, workflow design and security — £1,500 flat rate.",
+  "address": {"@type": "PostalAddress", "addressLocality": "Derry", "addressRegion": "Northern Ireland", "addressCountry": "GB"},
+  "parentOrganization": {"@type": "Organization", "name": "Blue Canvas AI", "url": "https://bluecanvas.ai"},
+  "priceRange": "£1,500",
+  "areaServed": "GB"
+}
+</script>
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #0a0a0f;
+  --bg-card: #12121a;
+  --bg-card-hover: #1a1a25;
+  --border: #1e1e2e;
+  --text: #e4e4e7;
+  --text-muted: #a1a1aa;
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+  --accent-glow: rgba(99, 102, 241, 0.15);
+  --green: #22c55e;
+  --radius: 12px;
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+a:hover { color: var(--accent-hover); }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+/* Hero */
+.hero { padding: 100px 0 80px; text-align: center; background: radial-gradient(ellipse at top, rgba(99,102,241,0.08) 0%, transparent 60%); }
+.hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 20px; background: linear-gradient(135deg, #fff, #a5b4fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.hero p { font-size: 1.15rem; color: var(--text-muted); max-width: 640px; margin: 0 auto 32px; }
+.btn { display: inline-block; padding: 14px 32px; background: var(--accent); color: #fff; border-radius: 8px; font-weight: 600; font-size: 1rem; transition: all 0.2s; border: none; cursor: pointer; }
+.btn:hover { background: var(--accent-hover); transform: translateY(-1px); box-shadow: 0 8px 30px var(--accent-glow); color: #fff; }
+.btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); background: transparent; }
+
+/* Section */
+.section { padding: 80px 0; }
+.section-alt { background: var(--bg-card); }
+.section-title { font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 700; text-align: center; margin-bottom: 12px; letter-spacing: -0.02em; }
+.section-sub { text-align: center; color: var(--text-muted); max-width: 600px; margin: 0 auto 48px; font-size: 1.05rem; }
+
+/* Cards Grid */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px 28px; transition: all 0.2s; }
+.card:hover { border-color: rgba(99,102,241,0.3); background: var(--bg-card-hover); }
+.card-icon { font-size: 1.8rem; margin-bottom: 16px; display: block; }
+.card h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 10px; }
+.card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
+
+/* Included */
+.price-badge { display: inline-block; background: var(--accent-glow); border: 1px solid rgba(99,102,241,0.3); color: var(--accent-hover); padding: 8px 20px; border-radius: 20px; font-weight: 700; font-size: 1.1rem; margin-bottom: 40px; }
+.included-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.included-item { display: flex; gap: 16px; padding: 24px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); }
+.included-check { color: var(--green); font-size: 1.3rem; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+.included-item h4 { font-size: 1.05rem; font-weight: 600; margin-bottom: 6px; }
+.included-item p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }
+
+/* Steps */
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; counter-reset: step; }
+.step { text-align: center; position: relative; }
+.step::before { counter-increment: step; content: counter(step); display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; background: var(--accent-glow); border: 1px solid rgba(99,102,241,0.3); border-radius: 50%; color: var(--accent-hover); font-weight: 700; font-size: 1.2rem; margin: 0 auto 16px; }
+.step h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; }
+.step p { color: var(--text-muted); font-size: 0.9rem; }
+
+/* About */
+.about-box { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 48px; max-width: 800px; margin: 0 auto; }
+.about-box h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 8px; color: var(--accent-hover); }
+.about-box h4 { font-size: 1rem; color: var(--text-muted); margin-bottom: 20px; }
+.about-box p { color: var(--text-muted); margin-bottom: 16px; font-size: 0.95rem; }
+
+/* FAQ */
+.faq-list { max-width: 760px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-q { width: 100%; background: none; border: none; color: var(--text); padding: 20px 0; font-size: 1.05rem; font-weight: 600; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-family: inherit; }
+.faq-q::after { content: '+'; font-size: 1.4rem; color: var(--accent); transition: transform 0.2s; }
+.faq-q.active::after { content: '−'; }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+.faq-a p { padding: 0 0 20px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
+
+/* CTA */
+.cta { text-align: center; padding: 80px 0; background: radial-gradient(ellipse at bottom, rgba(99,102,241,0.08) 0%, transparent 60%); }
+.cta h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 700; margin-bottom: 12px; }
+.cta p { color: var(--text-muted); margin-bottom: 32px; font-size: 1.05rem; }
+
+/* Footer */
+.footer { text-align: center; padding: 32px 0; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.85rem; }
+
+@media (max-width: 640px) {
+  .hero { padding: 60px 0 50px; }
+  .section { padding: 50px 0; }
+  .about-box { padding: 28px; }
+  .included-grid { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>Get Your Zapier Automations Done Right</h1>
+    <p>Expert Zapier automation setup &amp; optimisation — all for a simple <strong>£1,500 flat rate</strong>. Powered by Blue Canvas AI, Northern Ireland's leading AI consultancy.</p>
+    <a href="https://bluecanvas.ai/contact" class="btn">Get a Free Discovery Call →</a>
+  </div>
+</section>
+
+<!-- Why -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Why You Need a Zapier Consultant</h2>
+    <p class="section-sub">Zapier is deceptively simple. Point, click, automate. But the gap between "it works" and "it works properly" is where businesses lose money.</p>
+    <div class="cards">
+      <div class="card">
+        <span class="card-icon">🔓</span>
+        <h3>Security Risks</h3>
+        <p>Bad Zaps leak data. Shared connections with overly broad permissions, unencrypted data passing between apps, orphaned automations running on old credentials — one misconfigured Zap can expose your entire stack.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">⏰</span>
+        <h3>Wasted Time</h3>
+        <p>You built 30 Zaps over two years. Half are broken. A quarter are redundant. The rest run but nobody knows what they actually do. You're paying for ghosts. A Zapier expert cleans the mess.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🔧</span>
+        <h3>Missed Potential</h3>
+        <p>Most businesses use Zapier for basic triggers. That's 5% of what it can do. Multi-step workflows, conditional logic, filters, formatters, webhooks, API integrations — there's a whole level most teams never reach.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🔗</span>
+        <h3>Integration Complexity</h3>
+        <p>Connecting two apps is easy. Connecting twelve with conditional routing, error handling and data transformation? That's where it gets complicated — and where you need an expert.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="https://bluecanvas.ai/contact" class="btn btn-outline">Let's Fix Your Automations →</a>
+    </div>
+  </div>
+</section>
+
+<!-- What's Included -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">What's Included</h2>
+    <div style="text-align:center;"><span class="price-badge">£1,500 Flat Rate</span></div>
+    <div class="included-grid">
+      <div class="included-item">
+        <span class="included-check">✓</span>
+        <div>
+          <h4>Full Zapier Audit &amp; Setup</h4>
+          <p>Complete review of your existing Zaps — or a fresh start. We identify broken automations, redundant workflows, security gaps and wasted spend. Then we build it properly.</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <span class="included-check">✓</span>
+        <div>
+          <h4>Workflow Automation Design</h4>
+          <p>We design automations around how your business actually works. Not templates — bespoke workflows built for your specific processes, tools and team.</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <span class="included-check">✓</span>
+        <div>
+          <h4>Multi-App Integrations</h4>
+          <p>CRM, email marketing, project management, accounting, support desks — we connect everything. Complex multi-step Zaps with conditional logic, filters and data formatting.</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <span class="included-check">✓</span>
+        <div>
+          <h4>Error Handling &amp; Monitoring</h4>
+          <p>Automations fail. The question is whether you find out immediately or three weeks later. We build in error handling, alerts and monitoring so nothing slips through.</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <span class="included-check">✓</span>
+        <div>
+          <h4>Security &amp; Access Controls</h4>
+          <p>Connection audits, permission reviews, credential management and access controls. We lock down your Zapier account so your data stays where it should.</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <span class="included-check">✓</span>
+        <div>
+          <h4>30 Days Post-Setup Support</h4>
+          <p>A full month of support after handover. Questions, tweaks, troubleshooting — we've got you covered.</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <span class="included-check">✓</span>
+        <div>
+          <h4>Documentation &amp; Training</h4>
+          <p>Clear docs covering every Zap we build, plus a walkthrough session so your team can manage and modify automations confidently.</p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="https://bluecanvas.ai/contact" class="btn">Get Started →</a>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
+    <p class="section-sub">From first call to full handover — here's the process.</p>
+    <div class="steps">
+      <div class="step">
+        <h3>Discovery Call</h3>
+        <p>We learn about your business, your current Zapier setup and what you actually need automated. No jargon, no upselling.</p>
+      </div>
+      <div class="step">
+        <h3>Audit &amp; Design</h3>
+        <p>We review existing automations, map out workflows and design the optimal Zapier architecture for your business.</p>
+      </div>
+      <div class="step">
+        <h3>Build &amp; Test</h3>
+        <p>We build every Zap, test every workflow, handle edge cases and make sure everything runs clean.</p>
+      </div>
+      <div class="step">
+        <h3>Handover &amp; Support</h3>
+        <p>Full documentation, a training session and 30 days of support. You're never left on your own.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="about-box">
+      <h3>Powered by Blue Canvas AI</h3>
+      <h4>Northern Ireland's Leading AI Consultancy</h4>
+      <p>Blue Canvas AI is a specialist AI consultancy based in Derry, Northern Ireland. We help businesses across the UK adopt automation tools that actually work — not hype, not theory, but practical systems that save time and make money.</p>
+      <p>We've built and managed hundreds of Zapier automations across every industry. When you hire us as your Zapier consultant, you're getting genuine expertise from people who automate businesses every single day.</p>
+      <p>We're not a faceless agency. We're a small, focused team that takes on a limited number of clients so we can deliver properly.</p>
+      <p><a href="https://bluecanvas.ai">See our work at bluecanvas.ai →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div style="height:32px;"></div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.classList.toggle('active');var a=this.nextElementSibling;a.style.maxHeight=a.style.maxHeight?null:a.scrollHeight+'px'">How long does the process take?</button>
+        <div class="faq-a"><p>Most Zapier consultancy engagements are completed within 5–7 working days from the discovery call. Complex setups with dozens of integrations might take longer — we'll give you a clear timeline upfront.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.classList.toggle('active');var a=this.nextElementSibling;a.style.maxHeight=a.style.maxHeight?null:a.scrollHeight+'px'">Can you work with my existing Zaps?</button>
+        <div class="faq-a"><p>Absolutely. We start with a full audit of what you've got. We'll keep what works, fix what's broken and replace what's beyond saving.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.classList.toggle('active');var a=this.nextElementSibling;a.style.maxHeight=a.style.maxHeight?null:a.scrollHeight+'px'">What Zapier plan do I need?</button>
+        <div class="faq-a"><p>Depends on your requirements. We'll recommend the right plan based on your volume and complexity. We'll never push you onto a plan you don't need.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.classList.toggle('active');var a=this.nextElementSibling;a.style.maxHeight=a.style.maxHeight?null:a.scrollHeight+'px'">Do you provide ongoing support?</button>
+        <div class="faq-a"><p>Every engagement includes 30 days of post-setup support. After that, we offer ongoing support packages if you need them. Most clients find the documentation and training is enough to manage day-to-day.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.classList.toggle('active');var a=this.nextElementSibling;a.style.maxHeight=a.style.maxHeight?null:a.scrollHeight+'px'">What apps do you integrate?</button>
+        <div class="faq-a"><p>If Zapier supports it, we can integrate it. HubSpot, Salesforce, Xero, Slack, Google Workspace, Mailchimp, Notion, Airtable, Shopify — you name it.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.classList.toggle('active');var a=this.nextElementSibling;a.style.maxHeight=a.style.maxHeight?null:a.scrollHeight+'px'">Why choose Blue Canvas for Zapier consulting?</button>
+        <div class="faq-a"><p>We're not generalists. We specialise in automation and AI systems. Based in Derry, Northern Ireland, you get genuine expertise, a flat-rate price with no surprises, and a team that actually picks up the phone. <a href="https://bluecanvas.ai">Learn more about Blue Canvas AI</a>.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <h2>Let's Get Started</h2>
+    <p>Ready to get your Zapier automations set up properly? Drop us a message and we'll arrange a free discovery call.</p>
+    <a href="https://bluecanvas.ai/contact" class="btn">Book Your Free Discovery Call →</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>Powered by <a href="https://bluecanvas.ai">Blue Canvas AI</a> — Northern Ireland's leading AI consultancy</p>
+  </div>
+</footer>
+
+</body>
+</html>

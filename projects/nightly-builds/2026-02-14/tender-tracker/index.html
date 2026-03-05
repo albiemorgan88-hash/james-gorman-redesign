@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Canvas AI — Tender Tracker</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e4e4e7;
+    --muted: #9ca3af;
+    --accent: #3b82f6;
+    --green: #22c55e;
+    --amber: #f59e0b;
+    --red: #ef4444;
+    --purple: #8b5cf6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
+  header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem; }
+  h1 { font-size: 1.75rem; font-weight: 700; }
+  h1 span { color: var(--accent); }
+  .meta { color: var(--muted); font-size: 0.85rem; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+  .stat { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; }
+  .stat-val { font-size: 1.75rem; font-weight: 700; }
+  .stat-label { color: var(--muted); font-size: 0.8rem; margin-top: 0.25rem; }
+  .section-title { font-size: 1.1rem; font-weight: 600; margin: 2rem 0 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .badge { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; }
+  .badge-active { background: rgba(34,197,94,0.15); color: var(--green); }
+  .badge-urgent { background: rgba(239,68,68,0.15); color: var(--red); }
+  .badge-warning { background: rgba(245,158,11,0.15); color: var(--amber); }
+  .badge-ok { background: rgba(34,197,94,0.15); color: var(--green); }
+  .badge-pme { background: rgba(139,92,246,0.15); color: var(--purple); }
+  .badge-source { background: rgba(59,130,246,0.1); color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+  th { text-align: left; color: var(--muted); font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+  td { padding: 0.85rem 1rem; border-bottom: 1px solid var(--border); font-size: 0.9rem; vertical-align: top; }
+  tr:hover { background: rgba(59,130,246,0.04); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 1.5rem; }
+  .card-header { padding: 1rem 1.25rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+  .card-body { padding: 0; overflow-x: auto; }
+  .urgency-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 0.5rem; }
+  .dot-red { background: var(--red); box-shadow: 0 0 6px var(--red); }
+  .dot-amber { background: var(--amber); box-shadow: 0 0 6px var(--amber); }
+  .dot-green { background: var(--green); box-shadow: 0 0 6px var(--green); }
+  .tender-title { font-weight: 500; max-width: 350px; }
+  .value { font-weight: 600; white-space: nowrap; }
+  .filter-bar { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+  .filter-btn { padding: 0.4rem 1rem; border-radius: 999px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; font-size: 0.8rem; transition: all 0.2s; }
+  .filter-btn:hover, .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .empty { text-align: center; padding: 2rem; color: var(--muted); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; padding: 2rem 0 1rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+  @media (max-width: 768px) {
+    .container { padding: 1rem; }
+    h1 { font-size: 1.3rem; }
+    td, th { padding: 0.6rem 0.5rem; font-size: 0.8rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div>
+      <h1>🎯 <span>Blue Canvas AI</span> — Tender Tracker</h1>
+      <p class="meta">AI & Digital Transformation Opportunities · Last updated: 14 Feb 2026 03:04 PST</p>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-val" style="color:var(--accent)">2</div>
+      <div class="stat-label">Active Bids</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val" style="color:var(--green)">10</div>
+      <div class="stat-label">Open Opportunities</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val" style="color:var(--amber)">3</div>
+      <div class="stat-label">Closing &lt;14 Days</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val" style="color:var(--purple)">4</div>
+      <div class="stat-label">Pre-Market / PME</div>
+    </div>
+  </div>
+
+  <!-- ACTIVE BIDS -->
+  <div class="section-title">📋 Active Blue Canvas Bids</div>
+  <div class="card">
+    <div class="card-body">
+      <table>
+        <thead><tr><th>Tender</th><th>Authority</th><th>Value</th><th>Status</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="tender-title">AI Training & Digital Skills Programme</td>
+            <td>Donegal County Council</td>
+            <td class="value">€4,200</td>
+            <td><span class="badge badge-active">Submitted</span></td>
+            <td>AI awareness workshops for council staff. Awaiting evaluation.</td>
+          </tr>
+          <tr>
+            <td class="tender-title">Cross-Border AI Innovation Support Programme</td>
+            <td>InterTradeIreland</td>
+            <td class="value">£72,000</td>
+            <td><span class="badge badge-active">In Progress</span></td>
+            <td>AI adoption support for cross-border SMEs. Multi-phase delivery.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- OPEN OPPORTUNITIES -->
+  <div class="section-title">🔍 Open AI/Digital Opportunities</div>
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterTenders('all')">All</button>
+    <button class="filter-btn" onclick="filterTenders('high')">High Relevance</button>
+    <button class="filter-btn" onclick="filterTenders('medium')">Medium</button>
+    <button class="filter-btn" onclick="filterTenders('pme')">Pre-Market</button>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <table id="tenderTable">
+        <thead><tr><th style="width:30px"></th><th>Tender</th><th>Authority</th><th>Deadline</th><th>Value</th><th>Source</th><th>Relevance</th></tr></thead>
+        <tbody>
+          <tr data-relevance="high">
+            <td><span class="urgency-dot dot-amber"></span></td>
+            <td class="tender-title"><a href="https://www.stotles.com/explore/notices/24e34521-b7b8-4b13-a0a7-182056c8cfdd/pro288-provision-of-dpo-and-ai-consultancy-services-to-the-lda-single-party-framework" target="_blank">Provision of DPO and AI Consultancy Services</a></td>
+            <td>Land Development Agency (Ireland)</td>
+            <td>26 Feb 2026</td>
+            <td class="value">—</td>
+            <td><span class="badge badge-source">eTenders</span></td>
+            <td><span class="badge badge-urgent">High</span></td>
+          </tr>
+          <tr data-relevance="high">
+            <td><span class="urgency-dot dot-amber"></span></td>
+            <td class="tender-title"><a href="https://www.stotles.com/explore/notices/054a93db-cada-47ab-a43f-d5c6a6fbc45f/ai-tools-that-assess-and-triage-skin-lesions-for-urgent-skin-cancer-referrals" target="_blank">AI Tools — Skin Lesion Assessment & Triage</a></td>
+            <td>NHS England</td>
+            <td>27 Feb 2026</td>
+            <td class="value">—</td>
+            <td><span class="badge badge-source">Find a Tender</span></td>
+            <td><span class="badge badge-warning">Medium</span></td>
+          </tr>
+          <tr data-relevance="high">
+            <td><span class="urgency-dot dot-red"></span></td>
+            <td class="tender-title"><a href="https://www.find-tender.service.gov.uk/Notice/000007-2026" target="_blank">Conversational AI Platform (CaiP)</a></td>
+            <td>Department for Work & Pensions</td>
+            <td>16 Feb 2026</td>
+            <td class="value">£19,500,000</td>
+            <td><span class="badge badge-source">Find a Tender</span></td>
+            <td><span class="badge badge-warning">Medium</span></td>
+          </tr>
+          <tr data-relevance="medium">
+            <td><span class="urgency-dot dot-green"></span></td>
+            <td class="tender-title"><a href="https://www.stotles.com/explore/notices/38bee5a6-fcb7-457a-8697-b9656cdd3cb2/regulatory-case-management-and-integrated-document-management-solution" target="_blank">Regulatory Case Management & Document Management Solution</a></td>
+            <td>London Borough of Barnet</td>
+            <td>27 Mar 2026</td>
+            <td class="value">£2,133,333</td>
+            <td><span class="badge badge-source">Find a Tender</span></td>
+            <td><span class="badge badge-warning">Medium</span></td>
+          </tr>
+          <tr data-relevance="high" data-pme="true">
+            <td><span class="urgency-dot dot-green"></span></td>
+            <td class="tender-title"><a href="https://www.find-tender.service.gov.uk/Notice/004518-2026" target="_blank">AI Technology Solutions for Public Realm Challenges</a></td>
+            <td>Connected Places Catapult / IPEC</td>
+            <td>Post 23 Feb 2026</td>
+            <td class="value">—</td>
+            <td><span class="badge badge-source">Find a Tender</span></td>
+            <td><span class="badge badge-pme">PME — High</span></td>
+          </tr>
+          <tr data-relevance="high" data-pme="true">
+            <td><span class="urgency-dot dot-green"></span></td>
+            <td class="tender-title"><a href="https://www.find-tender.service.gov.uk/Notice/011096-2025" target="_blank">National AI Tender — Agentic AI for GOV.UK Chat</a></td>
+            <td>DSIT / Government Digital Service</td>
+            <td>TBC (PME)</td>
+            <td class="value">—</td>
+            <td><span class="badge badge-source">Find a Tender</span></td>
+            <td><span class="badge badge-pme">PME — High</span></td>
+          </tr>
+          <tr data-relevance="medium" data-pme="true">
+            <td><span class="urgency-dot dot-green"></span></td>
+            <td class="tender-title"><a href="https://www.find-tender.service.gov.uk/Notice/003259-2026" target="_blank">ICT Managed Service & Digital Transformation Solutions</a></td>
+            <td>YPO</td>
+            <td>13 Feb 2026 (PME closed)</td>
+            <td class="value">—</td>
+            <td><span class="badge badge-source">Find a Tender</span></td>
+            <td><span class="badge badge-pme">PME — Medium</span></td>
+          </tr>
+          <tr data-relevance="medium" data-pme="true">
+            <td><span class="urgency-dot dot-green"></span></td>
+            <td class="tender-title"><a href="https://www.find-tender.service.gov.uk/Notice/078867-2025" target="_blank">Integrated PMIS — Ulster University (NI)</a></td>
+            <td>Ulster University</td>
+            <td>TBC (PME)</td>
+            <td class="value">—</td>
+            <td><span class="badge badge-source">Find a Tender</span></td>
+            <td><span class="badge badge-warning">Medium</span></td>
+          </tr>
+          <tr data-relevance="high">
+            <td><span class="urgency-dot dot-green"></span></td>
+            <td class="tender-title"><a href="https://www.crowncommercial.gov.uk/agreements/RM6200" target="_blank">CCS AI Dynamic Purchasing System (RM6200)</a></td>
+            <td>Crown Commercial Service</td>
+            <td>23 Feb 2029 (ongoing)</td>
+            <td class="value">£400,000,000</td>
+            <td><span class="badge badge-source">CCS</span></td>
+            <td><span class="badge badge-ok">Framework — High</span></td>
+          </tr>
+          <tr data-relevance="high">
+            <td><span class="urgency-dot dot-green"></span></td>
+            <td class="tender-title"><a href="https://www.find-tender.service.gov.uk/Notice/005821-2025" target="_blank">LPS Digital Transformation — Property Valuation (NI)</a></td>
+            <td>Land & Property Services NI</td>
+            <td>TBC</td>
+            <td class="value">—</td>
+            <td><span class="badge badge-source">Find a Tender</span></td>
+            <td><span class="badge badge-ok">High — NI</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- KEY FRAMEWORKS -->
+  <div class="section-title">🏛️ Key Frameworks & DPS to Register On</div>
+  <div class="card">
+    <div class="card-body">
+      <table>
+        <thead><tr><th>Framework</th><th>Managed By</th><th>Relevance</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="tender-title"><a href="https://www.crowncommercial.gov.uk/agreements/RM6200" target="_blank">RM6200 — Artificial Intelligence DPS</a></td>
+            <td>Crown Commercial Service</td>
+            <td><span class="badge badge-ok">Critical</span></td>
+            <td>Register as supplier — all UK Gov AI call-offs use this</td>
+          </tr>
+          <tr>
+            <td class="tender-title"><a href="https://www.contractsfinder.service.gov.uk/Notice/efcd4360-a035-48a2-9543-7e91a97295a3" target="_blank">RM6263 — Digital Specialist & Programmes</a></td>
+            <td>Crown Commercial Service</td>
+            <td><span class="badge badge-ok">High</span></td>
+            <td>Digital transformation consulting framework</td>
+          </tr>
+          <tr>
+            <td class="tender-title"><a href="https://intertradeireland.com/sales-growth/tender-successfully/go-2-tender" target="_blank">Go-2-Tender Programme</a></td>
+            <td>InterTradeIreland</td>
+            <td><span class="badge badge-ok">Training</span></td>
+            <td>Next workshops Mar 2026 — cross-border tendering support</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="section-title">📊 Urgency Legend</div>
+  <div style="display:flex;gap:2rem;margin-bottom:1rem;flex-wrap:wrap;font-size:0.85rem;">
+    <div><span class="urgency-dot dot-red"></span> &lt;7 days to deadline</div>
+    <div><span class="urgency-dot dot-amber"></span> 7–14 days to deadline</div>
+    <div><span class="urgency-dot dot-green"></span> 14+ days / ongoing</div>
+  </div>
+
+  <footer>
+    Blue Canvas AI Tender Tracker · Generated 14 Feb 2026 · Data from Find a Tender, Contracts Finder, eTenders.ie, Stotles, InterTradeIreland<br>
+    Run <code>./check-tenders.sh</code> to refresh · Report issues to phil@bluecanvas.ai
+  </footer>
+</div>
+
+<script>
+function filterTenders(type) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  document.querySelectorAll('#tenderTable tbody tr').forEach(row => {
+    if (type === 'all') { row.style.display = ''; return; }
+    if (type === 'pme') { row.style.display = row.dataset.pme ? '' : 'none'; return; }
+    row.style.display = row.dataset.relevance === type ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>

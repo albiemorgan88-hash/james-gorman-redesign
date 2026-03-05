@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Health Monitor — Blue Canvas</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f7fa;color:#1a1a2e}
+  .header{background:#2B4DAF;color:#fff;padding:2rem;text-align:center}
+  .header h1{font-size:1.8rem;font-weight:700;letter-spacing:-.5px}
+  .header p{opacity:.8;margin-top:.3rem;font-size:.95rem}
+  .timestamp{text-align:center;padding:1rem;color:#666;font-size:.85rem}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1.5rem;padding:1.5rem;max-width:1400px;margin:0 auto}
+  .card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08);transition:transform .2s}
+  .card:hover{transform:translateY(-2px)}
+  .card-header{padding:1.2rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+  .card-header h2{font-size:1.1rem;font-weight:600}
+  .badge{padding:.3rem .8rem;border-radius:20px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+  .badge.green{background:#e6f9ed;color:#1a8a4a}
+  .badge.amber{background:#fff3e0;color:#e67e22}
+  .badge.red{background:#fde8e8;color:#e74c3c}
+  .card-body{padding:0 1.5rem 1.5rem}
+  .metric{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #f0f0f0}
+  .metric:last-child{border:none}
+  .metric-label{color:#666;font-size:.85rem}
+  .metric-value{font-weight:600;font-size:.85rem}
+  .metric-value.good{color:#1a8a4a}
+  .metric-value.warn{color:#e67e22}
+  .metric-value.bad{color:#e74c3c}
+  .issues{margin-top:.8rem}
+  .issue{background:#fff3e0;color:#e67e22;padding:.4rem .8rem;border-radius:6px;font-size:.8rem;margin-bottom:.4rem;border-left:3px solid #FF4520}
+  .pagespeed-bar{height:8px;background:#eee;border-radius:4px;overflow:hidden;margin-top:.3rem}
+  .pagespeed-fill{height:100%;border-radius:4px;transition:width .5s}
+  .uptime-dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:.5rem}
+  .uptime-dot.green{background:#1a8a4a}
+  .uptime-dot.amber{background:#e67e22}
+  .uptime-dot.red{background:#e74c3c}
+  .footer{text-align:center;padding:2rem;color:#999;font-size:.8rem}
+  .loading{text-align:center;padding:4rem;color:#666}
+  .accent{color:#FF4520}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>🛰️ Satellite Site Health Monitor</h1>
+  <p>Automated health checks for Blue Canvas network</p>
+</div>
+<div class="timestamp" id="timestamp">Loading...</div>
+<div class="grid" id="grid"><div class="loading">Loading health data...</div></div>
+<div class="footer">Blue Canvas AI — Site Health Monitor</div>
+
+<script>
+async function load() {
+  try {
+    const r = await fetch('health-data.json');
+    const data = await r.json();
+    document.getElementById('timestamp').textContent = `Last checked: ${new Date(data.timestamp).toLocaleString()}`;
+    const grid = document.getElementById('grid');
+    grid.innerHTML = '';
+    data.sites.forEach(s => {
+      const psColor = s.pagespeed_score >= 90 ? '#1a8a4a' : s.pagespeed_score >= 50 ? '#e67e22' : '#e74c3c';
+      const psClass = s.pagespeed_score >= 90 ? 'good' : s.pagespeed_score >= 50 ? 'warn' : 'bad';
+      const sslClass = s.ssl_days_left > 14 ? 'good' : s.ssl_days_left > 0 ? 'warn' : 'bad';
+      const rtClass = s.response_time_ms < 1000 ? 'good' : s.response_time_ms < 3000 ? 'warn' : 'bad';
+      
+      let issuesHtml = '';
+      if (s.issues && s.issues.length > 0) {
+        issuesHtml = '<div class="issues">' + s.issues.map(i => `<div class="issue">⚠️ ${i}</div>`).join('') + '</div>';
+      }
+
+      grid.innerHTML += `
+        <div class="card">
+          <div class="card-header">
+            <h2><span class="uptime-dot ${s.status}"></span>${s.domain}</h2>
+            <span class="badge ${s.status}">${s.status === 'green' ? 'Healthy' : s.status === 'amber' ? 'Warning' : 'Down'}</span>
+          </div>
+          <div class="card-body">
+            <div class="metric"><span class="metric-label">HTTP Status</span><span class="metric-value ${s.http_code==='200'?'good':'bad'}">${s.http_code}</span></div>
+            <div class="metric"><span class="metric-label">Response Time</span><span class="metric-value ${rtClass}">${s.response_time_ms}ms</span></div>
+            <div class="metric"><span class="metric-label">SSL Certificate</span><span class="metric-value ${sslClass}">${s.ssl_valid ? s.ssl_days_left + ' days left' : 'Invalid'}</span></div>
+            <div class="metric"><span class="metric-label">Sitemap</span><span class="metric-value ${s.sitemap_valid?'good':'bad'}">${s.sitemap_valid ? '✓' : '✗'}</span></div>
+            <div class="metric"><span class="metric-label">Robots.txt</span><span class="metric-value ${s.robots_exists?'good':'bad'}">${s.robots_exists ? '✓' : '✗'}</span></div>
+            <div class="metric"><span class="metric-label">Meta Title</span><span class="metric-value ${s.has_title?'good':'bad'}">${s.has_title ? '✓' : '✗'}</span></div>
+            <div class="metric"><span class="metric-label">Google Indexed</span><span class="metric-value ${s.indexed==='true'?'good':s.indexed==='false'?'bad':'warn'}">${s.indexed === 'true' ? '✓' : s.indexed === 'false' ? '✗' : '?'}</span></div>
+            <div class="metric">
+              <span class="metric-label">PageSpeed (Mobile)</span>
+              <span class="metric-value ${psClass}">${s.pagespeed_score ?? 'N/A'}</span>
+            </div>
+            <div class="pagespeed-bar"><div class="pagespeed-fill" style="width:${s.pagespeed_score||0}%;background:${psColor}"></div></div>
+            ${issuesHtml}
+          </div>
+        </div>`;
+    });
+  } catch(e) {
+    document.getElementById('grid').innerHTML = '<div class="loading">No health data found. Run health-check.sh first.</div>';
+  }
+}
+load();
+</script>
+</body>
+</html>

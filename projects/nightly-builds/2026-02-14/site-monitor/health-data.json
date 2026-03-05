@@ -1,0 +1,73 @@
+{
+    "timestamp": "2026-02-14T11:05:46Z",
+    "sites": [
+        {
+            "domain": "bluecanvas.ai",
+            "url": "https://bluecanvas.ai",
+            "status": "red",
+            "http_code": "301",
+            "response_time_ms": 240,
+            "ssl_valid": true,
+            "ssl_days_left": 59,
+            "sitemap_valid": false,
+            "robots_exists": false,
+            "meta_title": "301 Moved Permanently ",
+            "has_title": true,
+            "pagespeed_score": 66,
+            "indexed": "true",
+            "issues": [
+                "HTTP status: 301",
+                "No sitemap.xml found",
+                "No robots.txt found"
+            ]
+        },
+        {
+            "domain": "openclawconsultant.co.uk",
+            "url": "https://openclawconsultant.co.uk",
+            "status": "green",
+            "http_code": "200",
+            "response_time_ms": 123,
+            "ssl_valid": true,
+            "ssl_days_left": 88,
+            "sitemap_valid": true,
+            "robots_exists": true,
+            "meta_title": "OpenClaw Consultant UK | Expert OpenClaw Setup &amp; AI Assistant Configuration ",
+            "has_title": true,
+            "pagespeed_score": 92,
+            "indexed": "true",
+            "issues": []
+        },
+        {
+            "domain": "zapierconsultant.co.uk",
+            "url": "https://zapierconsultant.co.uk",
+            "status": "green",
+            "http_code": "200",
+            "response_time_ms": 112,
+            "ssl_valid": true,
+            "ssl_days_left": 88,
+            "sitemap_valid": true,
+            "robots_exists": true,
+            "meta_title": "Zapier Consultant UK | Expert Zapier Automation Setup &amp; Optimisation ",
+            "has_title": true,
+            "pagespeed_score": 97,
+            "indexed": "true",
+            "issues": []
+        },
+        {
+            "domain": "aiagentsetup.co.uk",
+            "url": "https://aiagentsetup.co.uk",
+            "status": "green",
+            "http_code": "200",
+            "response_time_ms": 132,
+            "ssl_valid": true,
+            "ssl_days_left": 88,
+            "sitemap_valid": true,
+            "robots_exists": true,
+            "meta_title": "AI Agent Setup UK | Professional AI Automation Consultant &amp; Expert Configuration ",
+            "has_title": true,
+            "pagespeed_score": 77,
+            "indexed": "true",
+            "issues": []
+        }
+    ]
+}

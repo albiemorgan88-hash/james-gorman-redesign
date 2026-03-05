@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>The Wall Group — AI Growth Report | Blue Canvas</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#2B4DAF;--accent:#FF4520;--dark:#0a0f1a;--light:#f4f6fb;--card:#151a2e}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--dark);color:#fff;overflow:hidden;height:100vh;width:100vw;-webkit-tap-highlight-color:transparent;user-select:none}
+.deck{position:relative;width:100%;height:100%}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem 1.5rem;opacity:0;pointer-events:none;transition:opacity .5s,transform .5s;transform:translateX(40px)}
+.slide.active{opacity:1;pointer-events:auto;transform:translateX(0)}
+.slide.exit{opacity:0;transform:translateX(-40px)}
+.progress{position:fixed;top:0;left:0;right:0;display:flex;gap:4px;padding:12px 16px;z-index:100}
+.progress .dot{flex:1;height:3px;border-radius:2px;background:rgba(255,255,255,.15);transition:background .3s}
+.progress .dot.done{background:var(--accent)}
+.progress .dot.now{background:#fff}
+.nav-hint{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);font-size:.7rem;color:rgba(255,255,255,.3);z-index:100;letter-spacing:.1em;text-transform:uppercase;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:.6}}
+h1{font-size:1.8rem;font-weight:800;line-height:1.15;text-align:center;margin-bottom:.75rem}
+h2{font-size:1.35rem;font-weight:700;line-height:1.2;text-align:center;margin-bottom:.5rem}
+h3{font-size:1rem;font-weight:600;margin-bottom:.4rem}
+.sub{font-size:.85rem;color:rgba(255,255,255,.6);text-align:center;line-height:1.5;max-width:320px}
+.accent{color:var(--accent)}
+.blue{color:var(--blue)}
+.tag{display:inline-block;background:var(--accent);color:#fff;font-size:.6rem;font-weight:700;padding:2px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.75rem}
+.card{background:var(--card);border-radius:16px;padding:1.25rem;width:100%;max-width:340px;margin:.5rem 0}
+.score-ring{width:120px;height:120px;margin:1rem auto}
+.score-ring svg{width:100%;height:100%}
+.score-ring circle{fill:none;stroke-width:8;stroke-linecap:round}
+.score-ring .bg{stroke:rgba(255,255,255,.08)}
+.score-ring .fg{stroke:var(--accent);stroke-dasharray:339.292;stroke-dashoffset:339.292;transition:stroke-dashoffset 1.5s ease}
+.score-ring text{fill:#fff;font-size:2rem;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.issue{display:flex;align-items:flex-start;gap:.6rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.issue:last-child{border:none}
+.issue .icon{font-size:1rem;flex-shrink:0;margin-top:2px}
+.issue .text{font-size:.78rem;color:rgba(255,255,255,.75);line-height:1.4}
+.issue .text strong{color:#fff}
+.serp{background:#fff;border-radius:12px;padding:1rem;color:#222;width:100%;max-width:340px}
+.serp .url{font-size:.7rem;color:#188038;margin-bottom:2px}
+.serp .title{font-size:1rem;font-weight:600;color:#1a0dab;margin-bottom:4px;line-height:1.3}
+.serp .desc{font-size:.78rem;color:#545454;line-height:1.45}
+.serp-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem;text-align:center}
+.serp-label.before{color:var(--accent)}
+.serp-label.after{color:#22c55e}
+.vs{font-size:.7rem;color:rgba(255,255,255,.3);margin:.6rem 0;text-align:center}
+.ad-preview{background:#fff;border-radius:12px;padding:1rem;color:#222;width:100%;max-width:340px}
+.ad-preview .sponsored{font-size:.6rem;font-weight:700;color:#545454;text-transform:uppercase;margin-bottom:4px}
+.ad-preview .ad-url{font-size:.7rem;color:#188038}
+.ad-preview .ad-title{font-size:.95rem;font-weight:600;color:#1a0dab;margin:2px 0 4px;line-height:1.3}
+.ad-preview .ad-desc{font-size:.78rem;color:#545454;line-height:1.4}
+.ad-preview .extensions{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.ad-preview .ext{font-size:.7rem;color:#1a0dab;border:1px solid #dadce0;border-radius:4px;padding:2px 8px}
+.chat-demo{width:100%;max-width:340px;background:var(--card);border-radius:16px;overflow:hidden}
+.chat-header{background:var(--blue);padding:.75rem 1rem;font-size:.8rem;font-weight:600;display:flex;align-items:center;gap:.5rem}
+.chat-header .avatar{width:28px;height:28px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:800}
+.chat-body{padding:.75rem;display:flex;flex-direction:column;gap:.5rem;min-height:200px}
+.bubble{max-width:85%;padding:.6rem .8rem;border-radius:12px;font-size:.78rem;line-height:1.4;opacity:0;transform:translateY(8px);animation:bubbleIn .4s forwards}
+.bubble.user{background:var(--blue);align-self:flex-end;border-bottom-right-radius:4px}
+.bubble.bot{background:rgba(255,255,255,.08);align-self:flex-start;border-bottom-left-radius:4px}
+.bubble:nth-child(1){animation-delay:.3s}
+.bubble:nth-child(2){animation-delay:1.2s}
+.bubble:nth-child(3){animation-delay:2.4s}
+.bubble:nth-child(4){animation-delay:3.3s}
+.bubble:nth-child(5){animation-delay:4.2s}
+@keyframes bubbleIn{to{opacity:1;transform:translateY(0)}}
+.roi-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;width:100%;max-width:340px}
+.roi-card{background:var(--card);border-radius:12px;padding:1rem;text-align:center}
+.roi-card .num{font-size:1.5rem;font-weight:800;color:var(--accent);margin-bottom:.25rem}
+.roi-card .label{font-size:.7rem;color:rgba(255,255,255,.5);line-height:1.3}
+.roi-card.wide{grid-column:1/-1}
+.cta-section{text-align:center;width:100%;max-width:340px}
+.cta-btn{display:block;background:var(--accent);color:#fff;text-decoration:none;padding:.9rem;border-radius:12px;font-weight:700;font-size:.95rem;margin:.5rem 0;text-align:center;transition:transform .2s,box-shadow .2s}
+.cta-btn:active{transform:scale(.97)}
+.cta-btn.outline{background:transparent;border:2px solid var(--blue);color:#fff}
+.cta-contact{margin-top:1rem;font-size:.75rem;color:rgba(255,255,255,.4);line-height:1.6}
+.cta-contact a{color:rgba(255,255,255,.6);text-decoration:none}
+.logo-bc{font-size:.7rem;font-weight:800;letter-spacing:.05em;color:var(--blue);margin-top:1.5rem}
+/* Scan animation */
+.scan-wrap{position:relative;width:100%;max-width:300px;margin:1rem auto;aspect-ratio:9/14;background:var(--card);border-radius:12px;overflow:hidden}
+.scan-site{padding:1rem;font-size:.65rem;color:rgba(255,255,255,.4);line-height:1.8}
+.scan-site .sh{height:8px;background:rgba(255,255,255,.06);border-radius:4px;margin:6px 0}
+.scan-site .sh.w60{width:60%}.scan-site .sh.w80{width:80%}.scan-site .sh.w45{width:45%}.scan-site .sh.w70{width:70%}.scan-site .sh.w55{width:55%}
+.scan-line{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);top:0;animation:scanDown 2.5s ease-in-out infinite}
+@keyframes scanDown{0%{top:0;opacity:0}10%{opacity:1}90%{opacity:1}100%{top:100%;opacity:0}}
+.scan-badges{position:absolute;bottom:1rem;left:1rem;right:1rem;display:flex;flex-wrap:wrap;gap:.4rem}
+.scan-badge{background:rgba(255,69,32,.15);border:1px solid rgba(255,69,32,.3);color:var(--accent);font-size:.55rem;font-weight:600;padding:3px 8px;border-radius:6px;opacity:0;animation:badgeIn .3s forwards}
+.scan-badge:nth-child(1){animation-delay:1s}
+.scan-badge:nth-child(2){animation-delay:1.4s}
+.scan-badge:nth-child(3){animation-delay:1.8s}
+.scan-badge:nth-child(4){animation-delay:2.2s}
+.scan-badge:nth-child(5){animation-delay:2.6s}
+.scan-badge:nth-child(6){animation-delay:3s}
+.scan-badge.green{background:rgba(34,197,94,.1);border-color:rgba(34,197,94,.3);color:#22c55e}
+@keyframes badgeIn{to{opacity:1}}
+.before-after{width:100%;max-width:340px}
+@media(min-width:500px){h1{font-size:2.2rem}.slide{padding:2.5rem 2rem}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="deck" id="deck">
+
+<!-- SLIDE 1: Hook -->
+<div class="slide" data-slide="0">
+<div class="tag">AI Growth Report</div>
+<h1>What if AI could transform <span class="accent">The Wall Group</span> overnight?</h1>
+<p class="sub">We scanned wallgroup.co.uk and found opportunities that could drive thousands of new customers to your 12 stores across Belfast.</p>
+<p class="sub" style="margin-top:1rem;font-size:.7rem;color:rgba(255,255,255,.3)">Prepared by Blue Canvas AI · Feb 2026</p>
+</div>
+
+<!-- SLIDE 2: Scan -->
+<div class="slide" data-slide="1">
+<h2>Scanning<br><span class="accent">wallgroup.co.uk</span></h2>
+<div class="scan-wrap">
+<div class="scan-line"></div>
+<div class="scan-site">
+<div style="font-weight:700;color:rgba(255,255,255,.6);margin-bottom:.5rem">wallgroup.co.uk</div>
+<div class="sh w80"></div>
+<div class="sh w60"></div>
+<div style="margin-top:1rem;font-weight:600;color:rgba(255,255,255,.5);font-size:.6rem">At the Heart of the Community</div>
+<div class="sh w70"></div>
+<div class="sh w45"></div>
+<div class="sh w80"></div>
+<div class="sh w55"></div>
+<div class="sh w60"></div>
+<div class="sh w45"></div>
+<div class="sh w70"></div>
+</div>
+<div class="scan-badges">
+<div class="scan-badge">⚠ Title: "Home Page"</div>
+<div class="scan-badge">⚠ No Meta Description</div>
+<div class="scan-badge">⚠ No Schema Markup</div>
+<div class="scan-badge">⚠ No Store Pages</div>
+<div class="scan-badge">⚠ Basic Builder Site</div>
+<div class="scan-badge green">✓ SSL Active</div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 3: SEO Score -->
+<div class="slide" data-slide="2">
+<h2>SEO Health Score</h2>
+<div class="score-ring">
+<svg viewBox="0 0 120 120">
+<circle class="bg" cx="60" cy="60" r="54"/>
+<circle class="fg" id="scoreRing" cx="60" cy="60" r="54" transform="rotate(-90 60 60)"/>
+<text x="60" y="58" id="scoreText">0</text>
+<text x="60" y="74" fill="rgba(255,255,255,.4)" font-size=".55rem" text-anchor="middle">/ 100</text>
+</svg>
+</div>
+<div class="card">
+<div class="issue"><span class="icon">🔴</span><div class="text"><strong>Title tag is "Home Page"</strong> — not branded, no keywords. Google can't understand what you do.</div></div>
+<div class="issue"><span class="icon">🔴</span><div class="text"><strong>No meta description</strong> — Google writes its own snippet. You're losing clicks to competitors.</div></div>
+<div class="issue"><span class="icon">🔴</span><div class="text"><strong>No individual store pages</strong> — 12 stores, zero local SEO. Each should rank for its area.</div></div>
+<div class="issue"><span class="icon">🟡</span><div class="text"><strong>No schema markup</strong> — no store hours, locations, or ratings showing in search results.</div></div>
+<div class="issue"><span class="icon">🟡</span><div class="text"><strong>Basic website builder</strong> — limited speed, no modern SEO features, poor Core Web Vitals.</div></div>
+<div class="issue"><span class="icon">🟡</span><div class="text"><strong>Minimal content</strong> — homepage has ~40 words. Google needs 300+ to rank pages effectively.</div></div>
+</div>
+</div>
+
+<!-- SLIDE 4: Before/After SERP -->
+<div class="slide" data-slide="3">
+<h2>Google Search: Fixed</h2>
+<div class="before-after">
+<div class="serp-label before">❌ Current Listing</div>
+<div class="serp">
+<div class="url">www.wallgroup.co.uk</div>
+<div class="title">Home Page</div>
+<div class="desc">At the Heart of the Community. The Wall Group is at the heart of the communities within which we trade...</div>
+</div>
+<div class="vs">▼ AFTER AI OPTIMISATION ▼</div>
+<div class="serp-label after">✅ Optimised Listing</div>
+<div class="serp" style="border:2px solid #22c55e">
+<div class="url">www.wallgroup.co.uk ★★★★★ · 12 stores</div>
+<div class="title">The Wall Group | SPAR & EuroSpar Stores, Belfast</div>
+<div class="desc">12 community stores across North & West Belfast. Fresh food, daily deli, butchery, Post Office & Barista Bar. Open early til late. Find your nearest store →</div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 5: Google Ads -->
+<div class="slide" data-slide="4">
+<h2>Google Ads Preview</h2>
+<p class="sub" style="margin-bottom:.75rem">Targeting customers searching for convenience stores in Belfast</p>
+<div class="ad-preview">
+<div class="sponsored">Sponsored</div>
+<div class="ad-url">www.wallgroup.co.uk</div>
+<div class="ad-title">The Wall Group — Your Local SPAR Belfast | Fresh Food & Daily Deli</div>
+<div class="ad-desc">12 stores across North & West Belfast. Fresh bakery, hot deli, Barista Bar coffee & Post Office. Open early til late, 7 days. Find your nearest store today.</div>
+<div class="extensions">
+<span class="ext">Store Locator</span>
+<span class="ext">Weekly Offers</span>
+<span class="ext">Fresh Deli Menu</span>
+<span class="ext">Careers</span>
+</div>
+</div>
+<div class="ad-preview" style="margin-top:.75rem">
+<div class="sponsored">Sponsored</div>
+<div class="ad-url">www.wallgroup.co.uk/landscape</div>
+<div class="ad-title">Landscape Filling Station SPAR | Crumlin Road, Belfast</div>
+<div class="ad-desc">Fuel up & stock up — hot food counter, fresh bakery, off-licence & Post Office. Now open til 10pm. Free parking on-site.</div>
+<div class="extensions">
+<span class="ext">Fuel Prices</span>
+<span class="ext">Hot Food</span>
+<span class="ext">The Flacky Off Sales</span>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 6: AI Chat -->
+<div class="slide" data-slide="5">
+<h2>AI Assistant for<br><span class="accent">The Wall Group</span></h2>
+<p class="sub" style="margin-bottom:.5rem">Handling customer queries 24/7 across all 12 stores</p>
+<div class="chat-demo">
+<div class="chat-header">
+<div class="avatar">W</div>
+Wall Group AI Assistant
+</div>
+<div class="chat-body">
+<div class="bubble user">Hi, is the Crumlin Road store open late tonight?</div>
+<div class="bubble bot">Hi! Yes, our Landscape Filling Station on Crumlin Road is open until 10pm tonight. The deli counter closes at 9pm. Can I help with anything else? 😊</div>
+<div class="bubble user">Do you have a Post Office there?</div>
+<div class="bubble bot">Absolutely! We have a full Post Office inside the store, open Mon-Sat 9am-5:30pm. You can send parcels, collect deliveries, pay bills and more.</div>
+<div class="bubble user">Brilliant, I'll call in after work 👍</div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 7: ROI -->
+<div class="slide" data-slide="6">
+<h2>Projected Impact</h2>
+<p class="sub" style="margin-bottom:.75rem">Based on UK convenience retail benchmarks for a 12-store group</p>
+<div class="roi-grid">
+<div class="roi-card">
+<div class="num">+340%</div>
+<div class="label">Search visibility with local SEO per store</div>
+</div>
+<div class="roi-card">
+<div class="num">£8K+</div>
+<div class="label">Monthly revenue from Google Ads traffic</div>
+</div>
+<div class="roi-card">
+<div class="num">65%</div>
+<div class="label">Customer queries handled by AI assistant</div>
+</div>
+<div class="roi-card">
+<div class="num">12</div>
+<div class="label">Individual store pages ranking locally</div>
+</div>
+<div class="roi-card wide">
+<div class="num" style="font-size:1.2rem">5M+ customers/year × better digital presence = <span class="accent">massive growth</span></div>
+<div class="label" style="margin-top:.4rem">Every 1% increase in footfall = ~£50K annual revenue across the group</div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 8: CTA -->
+<div class="slide" data-slide="7">
+<div class="tag">Let's Talk</div>
+<h1>Ready to grow <span class="accent">The Wall Group</span> with AI?</h1>
+<p class="sub">Everything you've seen — SEO, Google Ads, AI assistants — built and managed for you.</p>
+<div class="cta-section">
+<a href="tel:+447828699027" class="cta-btn">📞 Call PJ — +44 7828 699027</a>
+<a href="mailto:contact@bluecanvas.ai?subject=AI%20Growth%20-%20The%20Wall%20Group" class="cta-btn outline">✉ contact@bluecanvas.ai</a>
+<a href="https://bluecanvas.ai" class="cta-btn outline" style="border-color:var(--accent)">🌐 bluecanvas.ai</a>
+<div class="cta-contact">
+PJ Patterson · Blue Canvas AI<br>
+AI Consultancy · Northern Ireland<br>
+<a href="https://bluecanvas.ai">bluecanvas.ai</a>
+</div>
+<div class="logo-bc">BLUE CANVAS</div>
+</div>
+</div>
+
+</div>
+<div class="nav-hint" id="navHint">Tap to continue →</div>
+
+<script>
+(function(){
+const slides=document.querySelectorAll('.slide');
+const total=slides.length;
+let current=0;
+const prog=document.getElementById('progress');
+for(let i=0;i<total;i++){const d=document.createElement('div');d.className='dot';prog.appendChild(d)}
+function show(n,dir){
+if(n<0||n>=total)return;
+const prev=current;current=n;
+slides[prev].classList.remove('active');slides[prev].classList.add('exit');
+setTimeout(()=>slides[prev].classList.remove('exit'),500);
+slides[current].classList.add('active');
+const dots=prog.querySelectorAll('.dot');
+dots.forEach((d,i)=>{d.className='dot';if(i<current)d.classList.add('done');if(i===current)d.classList.add('now')});
+if(current===2)animateScore();
+if(current===total-1)document.getElementById('navHint').style.display='none';
+else document.getElementById('navHint').style.display='block';
+}
+show(0);
+// Tap nav
+document.addEventListener('click',function(e){
+if(e.target.closest('a'))return;
+const x=e.clientX;
+if(x<window.innerWidth*.3)show(current-1);
+else show(current+1);
+});
+// Swipe
+let sx=0;
+document.addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});
+document.addEventListener('touchend',e=>{
+const dx=e.changedTouches[0].clientX-sx;
+if(Math.abs(dx)>40){dx<0?show(current+1):show(current-1)}
+},{passive:true});
+// Keyboard
+document.addEventListener('keydown',e=>{
+if(e.key==='ArrowRight'||e.key===' ')show(current+1);
+if(e.key==='ArrowLeft')show(current-1);
+});
+// Score animation
+function animateScore(){
+const ring=document.getElementById('scoreRing');
+const text=document.getElementById('scoreText');
+const score=23;
+const circ=339.292;
+const offset=circ-(score/100)*circ;
+ring.style.strokeDashoffset=offset;
+let c=0;
+const iv=setInterval(()=>{c++;text.textContent=c;if(c>=score)clearInterval(iv)},40);
+}
+})();
+</script>
+</body>
+</html>

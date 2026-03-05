@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <rect width="1080" height="1080" fill="#2B4DAF"/>
+  <!-- Minimal geometric accent -->
+  <rect x="80" y="80" width="920" height="920" rx="20" fill="none" stroke="white" stroke-width="1" opacity="0.1"/>
+  <rect x="120" y="120" width="840" height="840" rx="16" fill="none" stroke="white" stroke-width="0.5" opacity="0.08"/>
+  <!-- Accent dot -->
+  <circle cx="540" cy="350" r="6" fill="#FF4520"/>
+  <!-- Main text -->
+  <text x="540" y="460" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="68" fill="white" letter-spacing="-1">AI Consultancy</text>
+  <!-- Separator dots -->
+  <circle cx="440" cy="530" r="4" fill="white" opacity="0.4"/>
+  <circle cx="540" cy="530" r="4" fill="white" opacity="0.4"/>
+  <circle cx="640" cy="530" r="4" fill="white" opacity="0.4"/>
+  <!-- Location -->
+  <text x="540" y="610" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="300" font-size="44" fill="white" opacity="0.85">Derry</text>
+  <text x="540" y="670" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="300" font-size="32" fill="white" opacity="0.6">UK &amp; Ireland</text>
+  <!-- Logo -->
+  <text x="540" y="920" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600" font-size="36" fill="white" opacity="0.9">Blue Canvas</text>
+  <text x="1040" y="1050" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="400" font-size="18" fill="white" opacity="0.5">bluecanvas.ai</text>
+</svg>

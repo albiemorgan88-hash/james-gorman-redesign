@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <rect width="1080" height="1080" fill="#2B4DAF"/>
+  <!-- Circuit/node pattern -->
+  <g stroke="#3A5DBF" stroke-width="1.5" fill="none" opacity="0.35">
+    <line x1="200" y1="150" x2="400" y2="150"/><circle cx="200" cy="150" r="6" fill="#3A5DBF"/><circle cx="400" cy="150" r="4" fill="#3A5DBF"/>
+    <line x1="400" y1="150" x2="400" y2="300"/><circle cx="400" cy="300" r="6" fill="#3A5DBF"/>
+    <line x1="680" y1="200" x2="880" y2="200"/><circle cx="680" cy="200" r="4" fill="#3A5DBF"/><circle cx="880" cy="200" r="6" fill="#3A5DBF"/>
+    <line x1="880" y1="200" x2="880" y2="350"/><circle cx="880" cy="350" r="4" fill="#3A5DBF"/>
+    <line x1="150" y1="800" x2="350" y2="800"/><circle cx="150" cy="800" r="4" fill="#3A5DBF"/><circle cx="350" cy="800" r="6" fill="#3A5DBF"/>
+    <line x1="350" y1="800" x2="350" y2="950"/><circle cx="350" cy="950" r="4" fill="#3A5DBF"/>
+    <line x1="700" y1="850" x2="950" y2="850"/><circle cx="700" cy="850" r="6" fill="#3A5DBF"/><circle cx="950" cy="850" r="4" fill="#3A5DBF"/>
+    <line x1="700" y1="850" x2="700" y2="700"/><circle cx="700" cy="700" r="4" fill="#3A5DBF"/>
+  </g>
+  <!-- Text -->
+  <text x="540" y="420" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="72" fill="white" letter-spacing="-1">The Future of Business</text>
+  <text x="540" y="520" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="72" fill="white" letter-spacing="-1">is Automated</text>
+  <!-- Accent underline -->
+  <rect x="420" y="555" width="240" height="4" rx="2" fill="#FF4520"/>
+  <!-- Logo -->
+  <text x="540" y="920" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600" font-size="36" fill="white" opacity="0.9">Blue Canvas</text>
+  <text x="1040" y="1050" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="400" font-size="18" fill="white" opacity="0.5">bluecanvas.ai</text>
+</svg>

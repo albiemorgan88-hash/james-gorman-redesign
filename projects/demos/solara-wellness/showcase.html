@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Solara Wellness Hub — AI Growth Demo</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#2B4DAF;--red:#FF4520;--white:#fff;--light:#f8f9fa;--text:#1a1a2e;--text-light:#666;--gold:#f5a623;--green:#22c55e}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--light);overflow:hidden;height:100vh;-webkit-user-select:none;user-select:none}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 24px;opacity:0;transform:translateX(100%);transition:all .5s cubic-bezier(.4,0,.2,1);pointer-events:none}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:auto}
+.slide.prev{opacity:0;transform:translateX(-100%)}
+.progress{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:100}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(0,0,0,.15);transition:all .3s;cursor:pointer}
+.dot.active{background:var(--blue);width:24px}
+.badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:.5px;text-transform:uppercase}
+.badge-blue{background:rgba(43,77,175,.1);color:var(--blue)}
+.badge-red{background:rgba(255,69,32,.1);color:var(--red)}
+.badge-green{background:rgba(34,197,94,.1);color:var(--green)}
+h1{font-size:28px;color:var(--text);line-height:1.2;text-align:center;margin:16px 0}
+h2{font-size:22px;color:var(--text);line-height:1.3;text-align:center;margin:12px 0}
+p{font-size:15px;color:var(--text-light);line-height:1.6;text-align:center}
+.tap-hint{position:fixed;bottom:48px;left:50%;transform:translateX(-50%);font-size:12px;color:rgba(0,0,0,.3);z-index:100;animation:fadeHint 3s ease forwards}
+@keyframes fadeHint{0%,70%{opacity:1}100%{opacity:0}}
+
+/* Slide 1 — Hook */
+.s1-icon{font-size:64px;margin-bottom:8px}
+.s1-sub{font-size:14px;color:var(--text-light);margin-top:8px}
+.s1-stars{color:var(--gold);font-size:20px;margin:12px 0 4px}
+.s1-reviews{font-size:13px;color:var(--text-light)}
+
+/* Slide 2 — Scan */
+.scan-box{background:var(--white);border-radius:16px;padding:24px;width:100%;max-width:340px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.scan-url{font-size:13px;color:var(--blue);font-family:monospace;margin:12px 0;word-break:break-all}
+.scan-bar{width:100%;height:6px;background:#eee;border-radius:3px;overflow:hidden;margin:16px 0 8px}
+.scan-fill{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--red));border-radius:3px;transition:width 2s ease}
+.scan-items{text-align:left;margin-top:16px}
+.scan-item{font-size:13px;color:var(--text-light);padding:6px 0;opacity:0;transform:translateX(-10px);transition:all .4s ease}
+.scan-item.show{opacity:1;transform:translateX(0)}
+.scan-item .check{color:var(--green);margin-right:8px}
+.scan-item .cross{color:var(--red);margin-right:8px}
+
+/* Slide 3 — Issues */
+.score-card{background:var(--white);border-radius:16px;padding:32px 24px;width:100%;max-width:340px;box-shadow:0 2px 12px rgba(0,0,0,.06);text-align:center}
+.issues-list{text-align:left;margin-top:20px}
+.issue{display:flex;align-items:flex-start;gap:10px;padding:8px 0;font-size:13px;color:var(--text)}
+.issue-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--white)}
+.issue-icon.red{background:var(--red)}
+.issue-icon.orange{background:var(--gold)}
+
+/* Slide 4 — Fixes */
+.fix-card{background:var(--white);border-radius:16px;padding:20px;width:100%;max-width:340px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.search-result{text-align:left;padding:12px 0}
+.result-url{font-size:12px;color:#202124}
+.result-title{font-size:17px;color:#1a0dab;margin:2px 0}
+.result-desc{font-size:13px;color:#4d5156;line-height:1.4}
+.before-after{display:flex;gap:8px;margin-bottom:12px}
+.ba-tab{flex:1;text-align:center;padding:8px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;transition:all .3s}
+.ba-tab.active{background:var(--blue);color:var(--white)}
+.ba-tab.inactive{background:#eee;color:var(--text-light)}
+
+/* Slide 5 — Google Ads */
+.ad-card{background:var(--white);border-radius:16px;padding:20px;width:100%;max-width:340px;box-shadow:0 2px 12px rgba(0,0,0,.06);text-align:left}
+.ad-badge{display:inline-block;background:#f1f3f4;color:#202124;font-size:11px;font-weight:700;padding:2px 6px;border-radius:4px;margin-bottom:4px}
+.ad-title{font-size:17px;color:#1a0dab;margin:4px 0}
+.ad-desc{font-size:13px;color:#4d5156;line-height:1.4}
+.ad-stat{display:flex;justify-content:space-between;margin-top:16px;padding-top:12px;border-top:1px solid #eee}
+.ad-stat div{text-align:center}
+.ad-stat .num{font-size:20px;font-weight:700;color:var(--text)}
+.ad-stat .label{font-size:11px;color:var(--text-light);margin-top:2px}
+
+/* Slide 6 — AI Assistant */
+.chat-box{background:var(--white);border-radius:16px;padding:20px;width:100%;max-width:340px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.chat-header{display:flex;align-items:center;gap:10px;padding-bottom:12px;border-bottom:1px solid #eee;margin-bottom:12px}
+.chat-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#ff9a56,var(--red));display:flex;align-items:center;justify-content:center;color:var(--white);font-size:16px}
+.chat-name{font-size:14px;font-weight:600;color:var(--text)}
+.chat-status{font-size:11px;color:var(--green)}
+.chat-msg{padding:10px 14px;border-radius:16px;font-size:13px;line-height:1.5;max-width:85%;opacity:0;transform:translateY(10px);margin-bottom:8px}
+.chat-msg.show{animation:chatIn .4s ease forwards}
+@keyframes chatIn{to{opacity:1;transform:translateY(0)}}
+.msg-user{background:var(--blue);color:var(--white);margin-left:auto;border-bottom-right-radius:4px}
+.msg-bot{background:#f0f2f5;color:var(--text);border-bottom-left-radius:4px}
+.typing{padding:10px 14px;background:#f0f2f5;border-radius:16px;display:inline-flex;gap:4px;opacity:0;margin-bottom:8px}
+.typing.show{animation:chatIn .3s ease forwards}
+.typing span{width:6px;height:6px;background:#999;border-radius:50%;animation:bounce .6s infinite}
+.typing span:nth-child(2){animation-delay:.15s}
+.typing span:nth-child(3){animation-delay:.3s}
+@keyframes bounce{50%{transform:translateY(-4px)}}
+
+/* Slide 7 — ROI */
+.roi-card{background:var(--white);border-radius:16px;padding:24px;width:100%;max-width:340px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.roi-row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #f0f2f5}
+.roi-row:last-child{border:none}
+.roi-label{font-size:13px;color:var(--text-light)}
+.roi-value{font-size:16px;font-weight:700;color:var(--text)}
+.roi-value.green{color:var(--green)}
+.roi-value.red{color:var(--red)}
+.roi-highlight{background:linear-gradient(135deg,rgba(43,77,175,.05),rgba(255,69,32,.05));border-radius:12px;padding:16px;text-align:center;margin-top:16px}
+.roi-big{font-size:36px;font-weight:800;color:var(--blue)}
+.roi-big-label{font-size:13px;color:var(--text-light);margin-top:4px}
+
+/* Slide 8 — CTA */
+.cta-card{background:var(--white);border-radius:16px;padding:32px 24px;width:100%;max-width:340px;box-shadow:0 2px 12px rgba(0,0,0,.06);text-align:center}
+.cta-btn{display:block;width:100%;padding:14px;border-radius:12px;font-size:15px;font-weight:600;text-decoration:none;margin:8px 0;transition:all .2s;border:none;cursor:pointer}
+.cta-primary{background:var(--blue);color:var(--white)}
+.cta-secondary{background:var(--light);color:var(--text)}
+.cta-whatsapp{background:#25D366;color:var(--white)}
+.cta-divider{font-size:12px;color:var(--text-light);margin:12px 0}
+</style>
+</head>
+<body>
+
+<!-- Slide 1: Hook -->
+<div class="slide active" id="s1">
+  <div class="s1-icon">🧖‍♂️</div>
+  <span class="badge badge-blue">Solara Wellness Hub</span>
+  <h1>What if the right people could find you — without ads?</h1>
+  <p style="margin-top:12px">You've built something brilliant. 86 five-star reviews don't lie.</p>
+  <div class="s1-stars">★★★★★</div>
+  <div class="s1-reviews">5.0 on Booksy · 86 reviews</div>
+  <p style="margin-top:20px;font-size:13px">But right now, people searching Google for<br><strong>"sauna Derry"</strong> aren't finding you.</p>
+  <p style="margin-top:16px;font-size:13px;color:var(--blue)">Let's fix that. →</p>
+</div>
+
+<!-- Slide 2: Scan -->
+<div class="slide" id="s2">
+  <span class="badge badge-blue">Live Scan</span>
+  <h2 style="margin:12px 0 16px">Scanning your online presence</h2>
+  <div class="scan-box">
+    <div class="scan-url">🔍 solarawellnesshub.co.uk</div>
+    <div class="scan-bar"><div class="scan-fill" id="scanFill"></div></div>
+    <div class="scan-items" id="scanItems">
+      <div class="scan-item"><span class="check">✓</span> Website live (WordPress + LiteSpeed)</div>
+      <div class="scan-item"><span class="cross">✗</span> Page title: "Home - Solara Wellness Hub" — no keywords</div>
+      <div class="scan-item"><span class="cross">✗</span> No meta description set</div>
+      <div class="scan-item"><span class="cross">✗</span> Single page only — no content depth for Google</div>
+      <div class="scan-item"><span class="cross">✗</span> Schema: generic, not LocalBusiness</div>
+      <div class="scan-item"><span class="check">✓</span> Booksy listing (86 reviews, 5.0★)</div>
+      <div class="scan-item"><span class="check">✓</span> Instagram active (@solarawellnesshub1)</div>
+      <div class="scan-item"><span class="cross">✗</span> Not ranking for any local keywords</div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 3: Issues / Score -->
+<div class="slide" id="s3">
+  <span class="badge badge-red">Current Score</span>
+  <h2 style="margin:12px 0 4px">Your SEO Health</h2>
+  <p style="margin-bottom:16px">How visible you are on Google right now</p>
+  <div class="score-card">
+    <svg width="120" height="120" viewBox="0 0 120 120" style="margin:0 auto;display:block">
+      <circle cx="60" cy="60" r="50" fill="none" stroke="#eee" stroke-width="8"/>
+      <circle id="scoreRing" cx="60" cy="60" r="50" fill="none" stroke="var(--red)" stroke-width="8" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="314" transform="rotate(-90 60 60)" style="transition:stroke-dashoffset 1.5s ease"/>
+      <text x="60" y="55" text-anchor="middle" font-size="28" font-weight="700" fill="var(--text)"><tspan id="scoreNum">0</tspan></text>
+      <text x="60" y="72" text-anchor="middle" font-size="11" fill="var(--text-light)">out of 100</text>
+    </svg>
+    <div class="issues-list">
+      <div class="issue"><div class="issue-icon red">!</div><div><strong>Page title is "Home".</strong> Google doesn't know you're a sauna. Should be "Private Sauna & Cold Plunge Suites in Derry".</div></div>
+      <div class="issue"><div class="issue-icon red">!</div><div><strong>No meta description.</strong> Google is auto-generating a garbled preview from your page content.</div></div>
+      <div class="issue"><div class="issue-icon red">!</div><div><strong>Single page, no content depth.</strong> Google needs more pages to understand what you do and rank you.</div></div>
+      <div class="issue"><div class="issue-icon orange">!</div><div><strong>Instagram-dependent.</strong> Algorithm changes = your bookings drop overnight. Google is more stable.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 4: Fixes -->
+<div class="slide" id="s4">
+  <span class="badge badge-green">After AI Optimisation</span>
+  <h2 style="margin:12px 0 16px">How Google would see you</h2>
+  <div class="fix-card">
+    <div class="before-after">
+      <div class="ba-tab inactive" onclick="showBA('before')">Before</div>
+      <div class="ba-tab active" id="afterTab" onclick="showBA('after')">After</div>
+    </div>
+    <div id="ba-before" style="display:none">
+      <div style="text-align:center;padding:32px 16px;color:var(--text-light)">
+        <div style="font-size:48px;margin-bottom:12px">🔇</div>
+        <p style="font-size:14px">No results for "sauna Derry"</p>
+        <p style="font-size:12px;margin-top:8px">Solara doesn't appear anywhere in Google Search</p>
+      </div>
+    </div>
+    <div id="ba-after">
+      <div class="search-result" style="border-left:3px solid var(--green);padding-left:12px">
+        <div class="result-url">solarawellnesshub.co.uk</div>
+        <div class="result-title">Solara Wellness Hub — Private Sauna & Cold Plunge Suites, Derry</div>
+        <div class="result-desc">Derry's premium private wellness experience. Infrared & traditional saunas with cold plunge pools. Book your 55-min session from £30. ★★★★★ 86 reviews.</div>
+      </div>
+      <div style="margin-top:16px;padding:12px;background:rgba(34,197,94,.05);border-radius:8px">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-size:11px;color:var(--text-light)">Projected score</div>
+            <div style="font-size:24px;font-weight:700;color:var(--green)">72/100</div>
+          </div>
+          <div style="font-size:13px;color:var(--green);font-weight:600">+64 points ↑</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 5: Google Ads -->
+<div class="slide" id="s5">
+  <span class="badge badge-blue">Instant Visibility</span>
+  <h2 style="margin:12px 0 4px">Show up tomorrow</h2>
+  <p style="margin-bottom:16px">What a targeted Google Ad would look like</p>
+  <div class="ad-card">
+    <div class="ad-badge">Sponsored</div>
+    <div class="ad-title">Private Sauna & Cold Plunge — Derry</div>
+    <div class="result-url" style="margin:2px 0">solarawellnesshub.co.uk</div>
+    <div class="ad-desc">★★★★★ 86 reviews. Derry's #1 rated private wellness experience. Infrared & traditional saunas, cold plunge pools. From £30. Book your session today.</div>
+    <div class="ad-stat">
+      <div><div class="num">£3-5</div><div class="label">Cost per click</div></div>
+      <div><div class="num">210</div><div class="label">Searches/month</div></div>
+      <div><div class="num">~£150</div><div class="label">Monthly spend</div></div>
+    </div>
+  </div>
+  <p style="margin-top:16px;font-size:13px;max-width:300px"><strong>Key searches you'd capture:</strong><br>"sauna Derry" · "cold plunge Derry" · "wellness spa Derry" · "infrared sauna near me"</p>
+</div>
+
+<!-- Slide 6: AI Assistant -->
+<div class="slide" id="s6">
+  <span class="badge badge-blue">AI Booking Assistant</span>
+  <h2 style="margin:12px 0 4px">Never miss an enquiry</h2>
+  <p style="margin-bottom:16px">An AI assistant that answers 24/7</p>
+  <div class="chat-box">
+    <div class="chat-header">
+      <div class="chat-avatar">S</div>
+      <div><div class="chat-name">Solara Assistant</div><div class="chat-status">● Online</div></div>
+    </div>
+    <div class="chat-msg msg-user" style="animation-delay:0s">Hi, do you have any availability for 2 people this Saturday?</div>
+    <div class="typing" id="typing1"><span></span><span></span><span></span></div>
+    <div class="chat-msg msg-bot" id="bot1">Hey! 👋 Yes, we have slots available this Saturday. Our 2-person infrared sauna & cold plunge session is £60 for 55 minutes. Would you prefer morning or afternoon?</div>
+    <div class="chat-msg msg-user" id="user2">Afternoon, maybe around 2pm?</div>
+    <div class="typing" id="typing2"><span></span><span></span><span></span></div>
+    <div class="chat-msg msg-bot" id="bot2">2pm is free! I've reserved it for you. You'll get a private suite with sauna, cold plunge, shower & TV. Want me to send a booking confirmation? 🧖‍♂️</div>
+  </div>
+  <p style="margin-top:12px;font-size:12px;max-width:280px">Answers questions, books sessions, handles after-hours enquiries — while you sleep.</p>
+</div>
+
+<!-- Slide 7: ROI -->
+<div class="slide" id="s7">
+  <span class="badge badge-green">The Numbers</span>
+  <h2 style="margin:12px 0 16px">What you're leaving on the table</h2>
+  <div class="roi-card">
+    <div class="roi-row"><span class="roi-label">Avg booking value</span><span class="roi-value">£45</span></div>
+    <div class="roi-row"><span class="roi-label">"Sauna Derry" searches/month</span><span class="roi-value">210+</span></div>
+    <div class="roi-row"><span class="roi-label">You're capturing from Google</span><span class="roi-value red">0%</span></div>
+    <div class="roi-row"><span class="roi-label">Missed bookings/month (est.)</span><span class="roi-value red">30-50</span></div>
+    <div class="roi-row"><span class="roi-label">Missed revenue/month</span><span class="roi-value red">£1,350 - £2,250</span></div>
+    <div class="roi-highlight">
+      <div class="roi-big">£20k+</div>
+      <div class="roi-big-label">Estimated revenue left on the table per year</div>
+    </div>
+  </div>
+  <p style="margin-top:12px;font-size:12px;max-width:280px">And that's before Google Ads, AI booking, or repeat customer automation.</p>
+</div>
+
+<!-- Slide 8: CTA -->
+<div class="slide" id="s8">
+  <div class="cta-card">
+    <div style="font-size:48px;margin-bottom:12px">☕</div>
+    <h2>Fancy a quick chat?</h2>
+    <p style="margin:8px 0 20px">No hard sell. Just a 15-minute call to walk through what AI could do for Solara — and whether it makes sense.</p>
+    <a href="tel:+447828699027" class="cta-btn cta-primary">📞 Call PJ — 15 min chat</a>
+    <a href="https://wa.me/447828699027?text=Hi%20PJ%2C%20saw%20the%20Solara%20demo%20and%20I'd%20love%20to%20chat%20about%20AI%20for%20the%20wellness%20hub" class="cta-btn cta-whatsapp">💬 WhatsApp</a>
+    <a href="mailto:contact@bluecanvas.ai?subject=Solara%20Wellness%20Hub%20-%20AI%20Chat" class="cta-btn cta-secondary">✉️ Email</a>
+    <div class="cta-divider">—</div>
+    <p style="font-size:13px;color:var(--text-light)">PJ Patterson<br>AI Consultant, Derry</p>
+  </div>
+</div>
+
+<div class="progress" id="progress"></div>
+<div class="tap-hint">tap to continue →</div>
+
+<script>
+const slides=document.querySelectorAll('.slide'),total=slides.length;let current=0;
+const progress=document.getElementById('progress');
+for(let i=0;i<total;i++){const d=document.createElement('span');d.className='dot'+(i===0?' active':'');d.onclick=()=>goTo(i);progress.appendChild(d)}
+function goTo(n){if(n<0||n>=total||n===current)return;const dir=n>current?1:-1;slides[current].className='slide '+(dir>0?'prev':'');slides[n].className='slide active';current=n;document.querySelectorAll('.dot').forEach((d,i)=>d.className='dot'+(i===current?' active':''));triggerSlide(n)}
+function nextSlide(){goTo(current+1)}function prevSlide(){goTo(current-1)}
+document.addEventListener('click',e=>{if(e.target.closest('.cta-btn,.ba-tab,.dot'))return;e.clientX>window.innerWidth*.6?nextSlide():e.clientX<window.innerWidth*.4&&prevSlide()});
+let tx=0;document.addEventListener('touchstart',e=>tx=e.touches[0].clientX);document.addEventListener('touchend',e=>{const d=tx-e.changedTouches[0].clientX;if(Math.abs(d)>50){d>0?nextSlide():prevSlide()}});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' ')nextSlide();if(e.key==='ArrowLeft')prevSlide()});
+
+function triggerSlide(n){
+  if(n===1){
+    setTimeout(()=>{document.getElementById('scanFill').style.width='100%'},300);
+    document.querySelectorAll('.scan-item').forEach((el,i)=>setTimeout(()=>el.classList.add('show'),800+i*400));
+  }
+  if(n===2){
+    const ring=document.getElementById('scoreRing'),num=document.getElementById('scoreNum');
+    let score=18;const offset=314-(score/100*314);
+    setTimeout(()=>{ring.style.strokeDashoffset=offset;let c=0;const iv=setInterval(()=>{c++;num.textContent=c;if(c>=score)clearInterval(iv)},80)},400);
+  }
+  if(n===5){
+    const msgs=document.querySelectorAll('#s6 .chat-msg, #s6 .typing');
+    msgs.forEach(m=>{m.classList.remove('show');m.style.display='none'});
+    const seq=[
+      {el:'.msg-user:first-of-type',delay:300},
+      {el:'#typing1',delay:1000,hide:1800},
+      {el:'#bot1',delay:1800},
+      {el:'#user2',delay:3200},
+      {el:'#typing2',delay:4000,hide:4800},
+      {el:'#bot2',delay:4800}
+    ];
+    seq.forEach(s=>{
+      const el=document.querySelector('#s6 '+s.el)||document.querySelector(s.el);
+      if(!el)return;
+      setTimeout(()=>{el.style.display='';el.classList.add('show')},s.delay);
+      if(s.hide)setTimeout(()=>{el.style.display='none'},s.hide);
+    });
+  }
+}
+
+function showBA(which){
+  document.getElementById('ba-before').style.display=which==='before'?'':'none';
+  document.getElementById('ba-after').style.display=which==='after'?'':'none';
+  document.querySelector('.ba-tab:first-child').className='ba-tab '+(which==='before'?'active':'inactive');
+  document.getElementById('afterTab').className='ba-tab '+(which==='after'?'active':'inactive');
+}
+</script>
+</body>
+</html>

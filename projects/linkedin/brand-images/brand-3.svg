@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <rect width="1080" height="1080" fill="#2B4DAF"/>
+  <!-- Subtle diagonal lines for texture -->
+  <g stroke="#3A5DBF" stroke-width="0.8" opacity="0.25">
+    <line x1="0" y1="0" x2="1080" y2="1080"/>
+    <line x1="200" y1="0" x2="1080" y2="880"/>
+    <line x1="400" y1="0" x2="1080" y2="680"/>
+    <line x1="600" y1="0" x2="1080" y2="480"/>
+    <line x1="0" y1="200" x2="880" y2="1080"/>
+    <line x1="0" y1="400" x2="680" y2="1080"/>
+    <line x1="0" y1="600" x2="480" y2="1080"/>
+  </g>
+  <!-- Small accent dot -->
+  <circle cx="540" cy="320" r="8" fill="#FF4520"/>
+  <!-- Text -->
+  <text x="540" y="440" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="76" fill="white" letter-spacing="-1">Your AI Workforce,</text>
+  <text x="540" y="540" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="76" fill="white" letter-spacing="-1">Built by Experts</text>
+  <!-- Subtitle -->
+  <text x="540" y="620" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="300" font-size="28" fill="white" opacity="0.7">Human expertise. Intelligent automation.</text>
+  <!-- Logo -->
+  <text x="540" y="920" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600" font-size="36" fill="white" opacity="0.9">Blue Canvas</text>
+  <text x="1040" y="1050" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="400" font-size="18" fill="white" opacity="0.5">bluecanvas.ai</text>
+</svg>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Canvas — Tender Tracker</title>
+<style>
+  :root {
+    --blue: #2B4DAF;
+    --blue-dark: #1e3a8a;
+    --red: #FF4520;
+    --green: #16a34a;
+    --amber: #d97706;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-500: #6b7280;
+    --gray-700: #374151;
+    --gray-900: #111827;
+    --radius: 12px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--gray-50);
+    color: var(--gray-900);
+    line-height: 1.5;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--blue);
+  }
+  .header h1 span { color: var(--red); }
+  .header .meta {
+    font-size: 13px;
+    color: var(--gray-500);
+  }
+
+  /* Stats row */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .stat-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 16px;
+    border: 1px solid var(--gray-200);
+  }
+  .stat-card .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--gray-500);
+    margin-bottom: 4px;
+  }
+  .stat-card .value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--blue);
+  }
+  .stat-card .value.red { color: var(--red); }
+  .stat-card .value.green { color: var(--green); }
+  .stat-card .value.amber { color: var(--amber); }
+
+  /* Filters */
+  .filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--gray-300);
+    background: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-weight: 500;
+  }
+  .filter-btn:hover { border-color: var(--blue); color: var(--blue); }
+  .filter-btn.active { background: var(--blue); color: white; border-color: var(--blue); }
+
+  /* Sections */
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gray-700);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--gray-200);
+  }
+  .section-title .badge {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 8px;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+  .badge-submitted { background: #dbeafe; color: var(--blue); }
+  .badge-live { background: #dcfce7; color: var(--green); }
+  .badge-expired { background: var(--gray-100); color: var(--gray-500); }
+
+  /* Tender cards */
+  .tender-card {
+    background: white;
+    border-radius: var(--radius);
+    border: 1px solid var(--gray-200);
+    padding: 16px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.15s;
+  }
+  .tender-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .tender-card.highlight { border-left: 4px solid var(--red); }
+  .tender-card.submitted { border-left: 4px solid var(--blue); }
+  .tender-card.won { border-left: 4px solid var(--green); }
+
+  .tender-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .tender-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--gray-900);
+  }
+  .tender-title a { color: inherit; text-decoration: none; }
+  .tender-title a:hover { color: var(--blue); }
+
+  .relevance {
+    font-size: 11px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .relevance-high { background: #fee2e2; color: #dc2626; }
+  .relevance-medium { background: #fef3c7; color: #92400e; }
+  .relevance-low { background: var(--gray-100); color: var(--gray-500); }
+
+  .tender-meta {
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--gray-500);
+    flex-wrap: wrap;
+  }
+  .tender-meta strong { color: var(--gray-700); }
+  .deadline-urgent { color: var(--red); font-weight: 600; }
+
+  .tender-notes {
+    font-size: 13px;
+    color: var(--gray-500);
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+  .tender-action {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--blue);
+  }
+
+  /* Status tags */
+  .status {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  .status-submitted { background: #dbeafe; color: var(--blue); }
+  .status-watching { background: #fef3c7; color: #92400e; }
+  .status-action { background: #fee2e2; color: #dc2626; }
+  .status-expired { background: var(--gray-100); color: var(--gray-500); text-decoration: line-through; }
+  .status-joined { background: #dcfce7; color: var(--green); }
+
+  /* Region tags */
+  .region {
+    font-size: 11px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: var(--gray-100);
+    color: var(--gray-500);
+  }
+  .region-ni { background: #ede9fe; color: #6d28d9; }
+  .region-uk { background: #dbeafe; color: #1d4ed8; }
+  .region-roi { background: #dcfce7; color: #15803d; }
+  .region-cross { background: #fef3c7; color: #92400e; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--gray-500);
+    padding: 20px 0;
+    border-top: 1px solid var(--gray-200);
+    margin-top: 40px;
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 12px; }
+    .header h1 { font-size: 20px; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .tender-top { flex-direction: column; }
+    .tender-meta { flex-direction: column; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🎯 Tender Tracker <span>NI · UK · Ireland</span></h1>
+  <div class="meta">Last updated: <span id="updated">16 Feb 2026</span> · Blue Canvas</div>
+</div>
+
+<!-- Stats -->
+<div class="stats">
+  <div class="stat-card">
+    <div class="label">Submitted</div>
+    <div class="value">2</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Watching</div>
+    <div class="value amber">8</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Action Needed</div>
+    <div class="value red">2</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Pipeline Value</div>
+    <div class="value green">£76.2k</div>
+  </div>
+</div>
+
+<!-- Filters -->
+<div class="filters">
+  <button class="filter-btn active" onclick="filterCards('all')">All</button>
+  <button class="filter-btn" onclick="filterCards('submitted')">Submitted</button>
+  <button class="filter-btn" onclick="filterCards('action')">Action Needed</button>
+  <button class="filter-btn" onclick="filterCards('watching')">Watching</button>
+  <button class="filter-btn" onclick="filterCards('ni')">NI</button>
+  <button class="filter-btn" onclick="filterCards('uk')">UK</button>
+  <button class="filter-btn" onclick="filterCards('roi')">Ireland</button>
+</div>
+
+<!-- SUBMITTED TENDERS -->
+<div class="section">
+  <div class="section-title">📨 Submitted <span class="badge badge-submitted">2 active</span></div>
+
+  <div class="tender-card submitted" data-status="submitted" data-region="roi cross">
+    <div class="tender-top">
+      <div class="tender-title">Donegal County Council — Tourism AI Training Programme</div>
+      <span class="relevance relevance-high">HIGH</span>
+    </div>
+    <div class="tender-meta">
+      <span><strong>Value:</strong> €4,200</span>
+      <span><strong>Submitted:</strong> 13 Feb 2026</span>
+      <span><strong>Contact:</strong> Eoin McHugh</span>
+      <span class="region region-roi">ROI</span>
+      <span class="status status-submitted">SUBMITTED</span>
+    </div>
+    <div class="tender-notes">AI awareness workshops for tourism businesses in Donegal. Half-day training format. Low value but builds public sector credibility and cross-border track record.</div>
+    <div class="tender-action">⏳ Awaiting response — follow up after 28 Feb if no reply</div>
+  </div>
+
+  <div class="tender-card submitted" data-status="submitted" data-region="cross ni">
+    <div class="tender-top">
+      <div class="tender-title">InterTradeIreland — AI for SMEs Research Programme</div>
+      <span class="relevance relevance-high">HIGH</span>
+    </div>
+    <div class="tender-meta">
+      <span><strong>Value:</strong> £72,000</span>
+      <span><strong>Submitted:</strong> 13 Feb 2026</span>
+      <span><strong>Team:</strong> PJ + Davy Anthony + Priyanka Kasture</span>
+      <span class="region region-cross">Cross-Border</span>
+      <span class="status status-submitted">SUBMITTED</span>
+    </div>
+    <div class="tender-notes">Research programme on AI adoption in SMEs across Ireland and NI. Would establish Blue Canvas as a thought leader in the space. Largest single tender submitted.</div>
+    <div class="tender-action">⏳ Awaiting response — follow up after 28 Feb if no reply</div>
+  </div>
+</div>
+
+<!-- ACTION NEEDED -->
+<div class="section">
+  <div class="section-title">🔴 Action Needed <span class="badge" style="background:#fee2e2;color:#dc2626">2 urgent</span></div>
+
+  <div class="tender-card highlight" data-status="action" data-region="uk">
+    <div class="tender-top">
+      <div class="tender-title"><a href="https://www.contractsfinder.service.gov.uk/Notice/5e1c7334-3f3a-4a34-8328-0d57db69c7df" target="_blank">CCS Artificial Intelligence DPS (Dynamic Purchasing System)</a></div>
+      <span class="relevance relevance-high">HIGH</span>
+    </div>
+    <div class="tender-meta">
+      <span><strong>Framework Value:</strong> £400M</span>
+      <span><strong>Deadline:</strong> 21 Feb 2029 (open)</span>
+      <span class="region region-uk">UK-wide</span>
+      <span class="status status-action">JOIN NOW</span>
+    </div>
+    <div class="tender-notes">Crown Commercial Service DPS for ALL UK public sector AI procurement. Discovery, consultancy, licensing, customisation. Individual call-offs can be under £100k. <strong>This is the #1 priority — being on this framework opens the entire public sector.</strong></div>
+    <div class="tender-action">🚨 Apply to join ASAP — this is the gateway to UK government AI work</div>
+  </div>
+
+  <div class="tender-card highlight" data-status="action" data-region="uk">
+    <div class="tender-top">
+      <div class="tender-title"><a href="https://www.contractsfinder.service.gov.uk/Notice/c637ff81-141c-45e0-bb04-3ef88611ad93" target="_blank">RM6173 — CCS Automation Services Framework</a></div>
+      <span class="relevance relevance-high">HIGH</span>
+    </div>
+    <div class="tender-meta">
+      <span><strong>Framework Value:</strong> £100M</span>
+      <span><strong>Deadline:</strong> 15 Nov 2026</span>
+      <span class="region region-uk">UK-wide</span>
+      <span class="status status-action">APPLY</span>
+    </div>
+    <div class="tender-notes">CCS framework for automation design, build, consulting and software. Directly relevant to Blue Canvas automation implementation services.</div>
+    <div class="tender-action">🚨 Apply to join — complements the AI DPS</div>
+  </div>
+</div>
+
+<!-- WATCHING -->
+<div class="section">
+  <div class="section-title">👀 Watching <span class="badge" style="background:#fef3c7;color:#92400e">6 tracked</span></div>
+
+  <div class="tender-card" data-status="watching" data-region="uk">
+    <div class="tender-top">
+      <div class="tender-title"><a href="https://www.contractsfinder.service.gov.uk/Notice/6089c6ad-8298-48db-b554-62d800b2e0e8" target="_blank">Energy Systems Catapult — Consultancy Services DPS</a></div>
+      <span class="relevance relevance-medium">MEDIUM</span>
+    </div>
+    <div class="tender-meta">
+      <span><strong>Value:</strong> Variable call-offs</span>
+      <span><strong>Deadline:</strong> 31 Jul 2026</span>
+      <span class="region region-uk">UK</span>
+      <span class="status status-watching">WATCHING</span>
+    </div>
+    <div class="tender-notes">Innovation and clean growth consultancy. Could include data analytics and digital transformation projects.</div>
+  </div>
+
+  <div class="tender-card" data-status="watching" data-region="uk">
+    <div class="tender-top">
+      <div class="tender-title"><a href="https://www.contractsfinder.service.gov.uk/Notice/aa9a89f1-e038-4328-8388-f0b6ab336a4a" target="_blank">ONS — Data Sources and Services DPS (DPS Data SaSiE)</a></div>
+      <span class="relevance relevance-medium">MEDIUM</span>
+    </div>
+    <div class="tender-meta">
+      <span><strong>Value:</strong> £19M framework</span>
+      <span><strong>Deadline:</strong> 03 Apr 2028</span>
+      <span class="region region-uk">UK</span>
+      <span class="status status-watching">WATCHING</span>
+    </div>
+    <div class="tender-notes">Office for National Statistics — data analytics expertise. Individual call-offs likely under £100k.</div>
+  </div>
+
+  <div class="tender-card" data-status="watching" data-region="uk">
+    <div class="tender-top">
+      <div class="tender-title"><a href="https://www.contractsfinder.service.gov.uk/Notice/5ac45d63-e146-45ef-b48e-831d14aa601c" target="_blank">Greenwich Council — Professional Services Consultancy DPS</a></div>
+      <span class="relevance relevance-medium">MEDIUM</span>
+    </div>
+    <div class="tender-meta">
+      <span><strong>Value:</strong> £10M framework</span>
+      <span><strong>Deadline:</strong> 31 Jan 2029</span>
+      <span class="region region-uk">UK</span>
+      <span class="status status-watching">WATCHING</span>
+    </div>
+    <div class="tender-notes">Local authority consultancy DPS. Worth joining if IT/digital categories included.</div>
+  </div>
+
+  <div class="tender-card" data-status="watching" data-region="uk">
+    <div class="tender-top">
+      <div class="tender-title"><a href="https://www.contractsfinder.service.gov.uk/Notice/b5812703-2a28-4bf6-be06-0ff2f9877f50" target="_blank">Paradigm Trust — Data Management Services</a></div>
+      <span class="relevance relevance-medium">MEDIUM</span>
+    </div>
+    <div class="tender-meta">
+      <span><strong>Value:</strong> Not specified</span>
+      <span><strong>Deadline:</strong> 27 Feb 2026</span>
+      <span class="region region-uk">UK</span>
+      <span class="status status-watching">WATCHING</span>
+    </div>
+    <div class="tender-notes">Education trust data management. Could involve data analytics/digital transformation. Deadline approaching.</div>
+  </div>
+
+  <div class="tender-card" data-status="watching" data-region="roi">
+    <div class="tender-top">
+      <div class="tender-title">Ireland AI Office — Upcoming Procurement (from Aug 2026)</div>
+      <span class="relevance relevance-medium">MEDIUM</span>
+    </div>
+    <div class="tender-meta">
+      <span><strong>Value:</strong> TBC</span>
+      <span><strong>Deadline:</strong> TBC (office opens Aug 2026)</span>
+      <span class="region region-roi">ROI</span>
+      <span class="status status-watching">WATCHING</span>
+    </div>
+    <div class="tender-notes">Ireland establishing new AI Office under Regulation of AI Bill 2026. Will generate consultancy, training, audit procurement opportunities on both sides of the border.</div>
+  </div>
+
+  <div class="tender-card" data-status="watching" data-region="uk">
+    <div class="tender-top">
+      <div class="tender-title"><a href="https://www.contractsfinder.service.gov.uk/Notice/f1488362-0035-4320-9d7d-ca54b20da281" target="_blank">MOD Nuclear Deterrence Fund — Research</a></div>
+      <span class="relevance relevance-low">LOW</span>
+    </div>
+    <div class="tender-meta">
+      <span><strong>Value:</strong> £3.3M fund</span>
+      <span><strong>Deadline:</strong> 30 Mar 2027</span>
+      <span class="region region-uk">UK</span>
+      <span class="status status-watching">WATCHING</span>
+    </div>
+    <div class="tender-notes">MOD research fund. Mentions AI applications but requires defence clearance. Niche.</div>
+  </div>
+</div>
+
+<!-- EXPIRED -->
+<div class="section">
+  <div class="section-title">⏰ Expired <span class="badge badge-expired">1</span></div>
+
+  <div class="tender-card" data-status="expired" data-region="uk" style="opacity: 0.6;">
+    <div class="tender-top">
+      <div class="tender-title">Digital Learner Profiling System — Pre-Market Engagement</div>
+      <span class="relevance relevance-high">HIGH</span>
+    </div>
+    <div class="tender-meta">
+      <span><strong>Value:</strong> TBC</span>
+      <span><strong>Deadline:</strong> 17 Feb 2026</span>
+      <span class="region region-uk">UK</span>
+      <span class="status status-expired">EXPIRED</span>
+    </div>
+    <div class="tender-notes">Careers and Enterprise Company PME. Missed — watch for the actual tender when it drops.</div>
+  </div>
+</div>
+
+<!-- RECOMMENDED ACTIONS -->
+<div class="section">
+  <div class="section-title">📋 Recommended Actions</div>
+  <div class="tender-card" style="background: #f0f4ff;">
+    <ol style="font-size: 14px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+      <li><strong>Join CCS AI DPS</strong> — This is the golden ticket. Opens access to ALL UK public sector AI call-offs. Start the application this week.</li>
+      <li><strong>Join RM6173 Automation Framework</strong> — Complementary to AI DPS. Covers automation consulting directly.</li>
+      <li><strong>Set up eTenders.gov.ie alerts</strong> — Configure email notifications for: "artificial intelligence", "digital transformation", "AI", "data analytics".</li>
+      <li><strong>Follow up on Donegal + ITI</strong> — If no response by 28 Feb, chase Eoin McHugh and ITI contacts.</li>
+      <li><strong>Watch for Digital Learner Profiling tender</strong> — The PME deadline passed but the real tender should drop soon.</li>
+      <li><strong>Register on InterTradeIreland Go-2-Tender</strong> — Free programme to improve bid success rate.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="footer">
+  Blue Canvas · Tender Tracker v1.0 · Crawled from Contracts Finder, Find a Tender, eTenders.gov.ie<br>
+  Auto-refreshed by Albie 🔧 · Next crawl scheduled weekly
+</div>
+
+<script>
+function filterCards(filter) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+
+  document.querySelectorAll('.tender-card').forEach(card => {
+    const status = card.dataset.status || '';
+    const region = card.dataset.region || '';
+
+    if (filter === 'all') {
+      card.style.display = '';
+    } else if (['submitted', 'action', 'watching', 'expired'].includes(filter)) {
+      card.style.display = status === filter ? '' : 'none';
+    } else if (['ni', 'uk', 'roi'].includes(filter)) {
+      card.style.display = region.includes(filter) ? '' : 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>

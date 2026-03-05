@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>The Wall Group — AI Growth Report | Blue Canvas</title>
+<meta name="description" content="AI-powered audit and growth strategy for The Wall Group by Blue Canvas AI">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#2B4DAF;--accent:#FF4520;--dark:#0a0f1a;--card:#111827;--glass:rgba(17,24,39,.85);--text:#f0f0f0;--muted:#94a3b8}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--dark);color:var(--text);overflow:hidden;height:100vh;height:100dvh;width:100vw;-webkit-tap-highlight-color:transparent;user-select:none}
+.deck{position:relative;width:100%;height:100%;overflow:hidden}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:2rem 1.5rem;opacity:0;transform:translateX(60px);transition:opacity .5s,transform .5s;pointer-events:none;text-align:center}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:auto}
+.slide.exit{opacity:0;transform:translateX(-60px)}
+.progress{position:fixed;top:0;left:0;right:0;display:flex;gap:4px;padding:12px 16px;z-index:100}
+.progress .dot{flex:1;height:3px;background:rgba(255,255,255,.15);border-radius:3px;transition:background .3s}
+.progress .dot.done{background:var(--accent)}
+.progress .dot.now{background:#fff}
+.nav-hint{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);color:var(--muted);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.6;z-index:100;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:.8}}
+.logo-bc{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:2rem}
+.logo-bc span{color:var(--accent)}
+h1{font-size:1.8rem;font-weight:700;line-height:1.2;margin-bottom:1rem}
+h2{font-size:1.4rem;font-weight:700;line-height:1.25;margin-bottom:.75rem}
+h3{font-size:1.1rem;font-weight:600;margin-bottom:.5rem}
+p{color:var(--muted);font-size:.9rem;line-height:1.6}
+.accent{color:var(--accent)}
+.blue{color:var(--blue)}
+.highlight{color:#fff}
+.tag{display:inline-block;background:var(--accent);color:#fff;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:20px;margin-bottom:1rem}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:1.25rem;margin:.5rem 0;width:100%;text-align:left}
+.card-sm{padding:1rem;margin:.3rem 0;border-radius:12px}
+.score-ring{width:120px;height:120px;margin:1rem auto}
+.score-ring svg{width:100%;height:100%}
+.score-num{font-size:2rem;font-weight:800}
+.issue-row{display:flex;align-items:flex-start;gap:.65rem;padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.issue-row:last-child{border:none}
+.issue-icon{width:20px;height:20px;border-radius:50%;flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;font-size:.6rem}
+.issue-icon.red{background:rgba(239,68,68,.15);color:#ef4444}
+.issue-icon.amber{background:rgba(245,158,11,.15);color:#f59e0b}
+.issue-icon.green{background:rgba(34,197,94,.15);color:#22c55e}
+.issue-title{font-size:.8rem;font-weight:600;color:#fff}
+.issue-desc{font-size:.7rem;color:var(--muted);margin-top:2px}
+.google-result{background:#fff;border-radius:12px;padding:1rem 1.15rem;text-align:left;width:100%;margin:.4rem 0}
+.google-result .url{font-size:.7rem;color:#202124;margin-bottom:2px;display:flex;align-items:center;gap:4px}
+.google-result .url .favicon{width:16px;height:16px;background:var(--blue);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:.5rem;font-weight:700}
+.google-result .title-g{font-size:.95rem;color:#1a0dab;font-weight:400;margin-bottom:4px;line-height:1.3}
+.google-result .desc-g{font-size:.75rem;color:#4d5156;line-height:1.5}
+.google-result .stars{color:#f59e0b;font-size:.7rem;margin-top:4px}
+.label-ba{font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem;display:block}
+.ad-card{background:#fff;border-radius:12px;padding:1rem 1.15rem;text-align:left;width:100%;margin:.35rem 0;border-left:3px solid var(--blue)}
+.ad-card .ad-badge{font-size:.55rem;font-weight:700;color:#202124;background:#e8e8e8;padding:2px 6px;border-radius:3px;margin-bottom:6px;display:inline-block}
+.ad-card .ad-title{font-size:.9rem;color:#1a0dab;font-weight:400;margin-bottom:4px}
+.ad-card .ad-desc{font-size:.72rem;color:#4d5156;line-height:1.45}
+.ad-card .ad-ext{font-size:.65rem;color:#1a0dab;margin-top:6px}
+.chat-window{background:var(--card);border-radius:16px;width:100%;overflow:hidden;border:1px solid rgba(255,255,255,.06)}
+.chat-header{background:var(--blue);padding:.75rem 1rem;display:flex;align-items:center;gap:.6rem}
+.chat-avatar{width:32px;height:32px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:var(--blue)}
+.chat-header-text{font-size:.8rem;font-weight:600;color:#fff}
+.chat-header-sub{font-size:.6rem;color:rgba(255,255,255,.7)}
+.chat-body{padding:.75rem;min-height:180px;display:flex;flex-direction:column;gap:.45rem}
+.bubble{max-width:82%;padding:.6rem .85rem;border-radius:14px;font-size:.78rem;line-height:1.5;animation:fadeUp .4s ease both}
+.bubble.bot{background:rgba(43,77,175,.15);color:var(--text);border-bottom-left-radius:4px;align-self:flex-start}
+.bubble.user{background:var(--accent);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.bubble:nth-child(2){animation-delay:.3s}
+.bubble:nth-child(3){animation-delay:.6s}
+.bubble:nth-child(4){animation-delay:.9s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.roi-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;width:100%;margin:.5rem 0}
+.roi-card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:1rem .75rem;text-align:center}
+.roi-num{font-size:1.5rem;font-weight:800;color:var(--accent);margin-bottom:.2rem}
+.roi-label{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.cta-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--accent);color:#fff;font-size:.85rem;font-weight:600;padding:.85rem 1.75rem;border-radius:50px;text-decoration:none;margin:.4rem 0;width:100%;transition:transform .2s}
+.cta-btn:active{transform:scale(.97)}
+.cta-btn.outline{background:transparent;border:1.5px solid rgba(255,255,255,.2)}
+.cta-contact{font-size:.72rem;color:var(--muted);margin-top:.25rem}
+.cta-contact a{color:var(--muted);text-decoration:none}
+.scan-anim{width:100%;max-width:300px;margin:1rem auto}
+.scan-browser{background:#1e293b;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+.scan-bar{display:flex;align-items:center;gap:6px;padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.06)}
+.scan-dots{display:flex;gap:4px}
+.scan-dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.15)}
+.scan-url{font-size:.6rem;color:var(--muted);background:rgba(255,255,255,.05);padding:3px 8px;border-radius:4px;flex:1;text-align:center}
+.scan-body{height:160px;position:relative;overflow:hidden;background:linear-gradient(180deg,#0f172a,#1e293b)}
+.scan-line{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);animation:scanDown 2s ease-in-out infinite}
+@keyframes scanDown{0%{top:-2px}100%{top:100%}}
+.scan-content{padding:12px;opacity:.3}
+.scan-content div{height:8px;background:rgba(255,255,255,.08);border-radius:4px;margin-bottom:6px}
+.scan-content div:nth-child(1){width:40%}
+.scan-content div:nth-child(2){width:70%}
+.scan-content div:nth-child(3){width:55%}
+.scan-content div:nth-child(4){width:85%}
+.scan-content div:nth-child(5){width:45%}
+.scan-content div:nth-child(6){width:65%}
+.scan-status{font-size:.7rem;color:var(--accent);margin-top:.75rem;animation:pulse 1.5s infinite}
+.sparkle{position:absolute;width:4px;height:4px;background:var(--accent);border-radius:50%}
+.full-w{width:100%}
+@media(min-width:500px){.slide{padding:2.5rem 3rem}h1{font-size:2.2rem}h2{font-size:1.6rem}}
+</style>
+</head>
+<body>
+
+<div class="progress" id="prog"></div>
+
+<div class="deck" id="deck">
+
+<!-- SLIDE 1: Hook -->
+<div class="slide active" data-slide="0">
+<div class="logo-bc">Blue <span>Canvas</span> AI</div>
+<div class="tag">AI Growth Report</div>
+<h1>What if AI could transform <span class="accent">The Wall Group</span> overnight?</h1>
+<p>We ran our AI engine across your entire digital presence. Here's what we found — and what we'd fix.</p>
+<p style="margin-top:1.5rem;font-size:.75rem;color:var(--accent)">Prepared for The Wall Group &bull; Feb 2026</p>
+</div>
+
+<!-- SLIDE 2: Scan Animation -->
+<div class="slide" data-slide="1">
+<h2>Scanning <span class="accent">thewallgroup.com</span></h2>
+<div class="scan-anim">
+<div class="scan-browser">
+<div class="scan-bar">
+<div class="scan-dots"><i></i><i></i><i></i></div>
+<div class="scan-url">thewallgroup.com</div>
+</div>
+<div class="scan-body">
+<div class="scan-line"></div>
+<div class="scan-content">
+<div></div><div></div><div></div><div></div><div></div><div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="scan-status">● Analysing SEO, schema, content &amp; performance…</div>
+<div class="card card-sm" style="margin-top:.75rem">
+<div class="issue-row" style="border:none">
+<div class="issue-icon amber">!</div>
+<div><span class="issue-title">WordPress 6.9.1 detected</span>
+<div class="issue-desc">Auditing title tags, meta data, structured data, broken links…</div></div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 3: SEO Issues -->
+<div class="slide" data-slide="2">
+<h2>SEO Audit <span class="accent">Results</span></h2>
+<div class="score-ring">
+<svg viewBox="0 0 120 120">
+<circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="8"/>
+<circle cx="60" cy="60" r="52" fill="none" stroke="var(--accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="327" stroke-dashoffset="196" transform="rotate(-90 60 60)"/>
+<text x="60" y="55" text-anchor="middle" fill="#fff" font-size="28" font-weight="800">38</text>
+<text x="60" y="72" text-anchor="middle" fill="#94a3b8" font-size="10">/100</text>
+</svg>
+</div>
+<div class="card card-sm full-w">
+<div class="issue-row">
+<div class="issue-icon red">✕</div>
+<div><span class="issue-title">No Meta Description</span>
+<div class="issue-desc">Homepage has zero meta description — Google writes its own snippet</div></div>
+</div>
+<div class="issue-row">
+<div class="issue-icon red">✕</div>
+<div><span class="issue-title">Generic Title Tag</span>
+<div class="issue-desc">"The Wall Group" — no keywords, no value proposition</div></div>
+</div>
+<div class="issue-row">
+<div class="issue-icon red">✕</div>
+<div><span class="issue-title">/services Returns 404</span>
+<div class="issue-desc">Key page is broken — losing traffic &amp; damaging crawl budget</div></div>
+</div>
+<div class="issue-row">
+<div class="issue-icon red">✕</div>
+<div><span class="issue-title">No Schema Markup</span>
+<div class="issue-desc">Missing Organization, LocalBusiness &amp; Person structured data</div></div>
+</div>
+<div class="issue-row">
+<div class="issue-icon amber">!</div>
+<div><span class="issue-title">GTM Commented Out</span>
+<div class="issue-desc">Google Tag Manager code is disabled — no analytics tracking</div></div>
+</div>
+<div class="issue-row">
+<div class="issue-icon amber">!</div>
+<div><span class="issue-title">No Open Graph Tags</span>
+<div class="issue-desc">Social sharing produces blank previews on LinkedIn, Twitter, etc.</div></div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 4: Before/After Google -->
+<div class="slide" data-slide="3">
+<h2>Google Listing <span class="accent">Transformation</span></h2>
+<span class="label-ba" style="margin-top:.5rem">❌ Before — Current listing</span>
+<div class="google-result" style="opacity:.7">
+<div class="url"><span class="favicon">W</span> thewallgroup.com</div>
+<div class="title-g">The Wall Group</div>
+<div class="desc-g">No description available for this page.</div>
+</div>
+<span class="label-ba" style="margin-top:.4rem">✅ After — With Blue Canvas AI</span>
+<div class="google-result">
+<div class="url"><span class="favicon">W</span> thewallgroup.com</div>
+<div class="title-g">The Wall Group | Premier Talent Management — Stylists, Hair & Makeup Artists</div>
+<div class="desc-g">Industry-leading representation for fashion stylists, hairstylists, makeup artists & digital creators. Offices in New York, LA, Nashville & London. Book top talent today.</div>
+<div class="stars">★★★★★ 4.9 · Talent Agency · NY, LA, Nashville, London</div>
+</div>
+</div>
+
+<!-- SLIDE 5: Google Ads -->
+<div class="slide" data-slide="4">
+<h2>Google Ads <span class="accent">Preview</span></h2>
+<p style="margin-bottom:.75rem;font-size:.78rem">AI-optimised campaigns targeting your ideal clients</p>
+<div class="ad-card">
+<span class="ad-badge">Sponsored</span>
+<div class="ad-title">Book World-Class Stylists & Artists | The Wall Group</div>
+<div class="ad-desc">Representing 100+ elite fashion stylists, hair & makeup artists. Editorial, commercial & celebrity bookings. Trusted by Vogue, GQ & top brands worldwide.</div>
+<div class="ad-ext">Editorial Bookings · Celebrity Stylists · Brand Consulting · Commercial Work</div>
+</div>
+<div class="ad-card">
+<span class="ad-badge">Sponsored</span>
+<div class="ad-title">Hire Top Makeup Artists — The Wall Group NYC & LA</div>
+<div class="ad-desc">Award-winning makeup artists for fashion campaigns, red carpet & editorial shoots. Grammys, Met Gala & runway ready. Get availability today.</div>
+<div class="ad-ext">Makeup Artists · Hair Stylists · Manicurists · Production Design</div>
+</div>
+</div>
+
+<!-- SLIDE 6: AI Assistant -->
+<div class="slide" data-slide="5">
+<h2>AI Assistant <span class="accent">Demo</span></h2>
+<p style="margin-bottom:.75rem;font-size:.78rem">24/7 intelligent booking &amp; enquiry handling</p>
+<div class="chat-window full-w">
+<div class="chat-header">
+<div class="chat-avatar">W</div>
+<div><div class="chat-header-text">The Wall Group AI</div>
+<div class="chat-header-sub">● Online now</div></div>
+</div>
+<div class="chat-body">
+<div class="bubble bot">Hi! 👋 I'm The Wall Group's AI assistant. Looking to book talent for an upcoming project?</div>
+<div class="bubble user">I need a celebrity hairstylist for a Vogue cover shoot in NYC next month</div>
+<div class="bubble bot">Great! For editorial hair, I'd recommend Chris Appleton or Dimitris Giannetos — both available in NYC. Shall I check their March calendar and send portfolios? 💇‍♀️</div>
+<div class="bubble user">Yes, Chris Appleton please!</div>
+<div class="bubble bot">Perfect! I've flagged Chris's team. You'll receive his portfolio, rate card and March availability within the hour. Anything else I can help with? ✨</div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 7: ROI -->
+<div class="slide" data-slide="6">
+<h2>Projected <span class="accent">Impact</span></h2>
+<p style="margin-bottom:.75rem;font-size:.78rem">Based on talent management industry benchmarks</p>
+<div class="roi-grid">
+<div class="roi-card">
+<div class="roi-num">+340%</div>
+<div class="roi-label">Organic Traffic</div>
+</div>
+<div class="roi-card">
+<div class="roi-num">+85%</div>
+<div class="roi-label">Booking Enquiries</div>
+</div>
+<div class="roi-card">
+<div class="roi-num">24/7</div>
+<div class="roi-label">AI Availability</div>
+</div>
+<div class="roi-card">
+<div class="roi-num">4.2x</div>
+<div class="roi-label">ROI in 90 Days</div>
+</div>
+</div>
+<div class="card card-sm full-w" style="margin-top:.5rem">
+<div class="issue-row" style="border:none">
+<div class="issue-icon green">✓</div>
+<div><span class="issue-title">Revenue opportunity: £150K+/year</span>
+<div class="issue-desc">From recovered traffic, faster booking conversion, and AI-powered client matching across all four offices</div></div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 8: CTA -->
+<div class="slide" data-slide="7">
+<div class="logo-bc">Blue <span>Canvas</span> AI</div>
+<h2>Ready to transform <span class="accent">The Wall Group's</span> digital presence?</h2>
+<p style="margin-bottom:1.25rem">Let's fix these issues and unlock your growth potential. Book a free 15-minute strategy call with PJ.</p>
+<a href="tel:+447828699027" class="cta-btn">📞 Call PJ — +44 7828 699027</a>
+<a href="mailto:contact@bluecanvas.ai?subject=The Wall Group — AI Growth" class="cta-btn outline">✉️ Email contact@bluecanvas.ai</a>
+<a href="https://bluecanvas.ai" class="cta-btn outline" style="border-color:var(--blue);color:var(--blue)">🌐 bluecanvas.ai</a>
+<p class="cta-contact" style="margin-top:1rem">PJ Patterson · Blue Canvas AI · Northern Ireland<br>
+<a href="https://bluecanvas.ai">bluecanvas.ai</a></p>
+</div>
+
+</div>
+
+<div class="nav-hint" id="navHint">Tap to continue →</div>
+
+<script>
+const slides=document.querySelectorAll('.slide'),prog=document.getElementById('prog'),hint=document.getElementById('navHint');
+let cur=0,total=slides.length,busy=false;
+for(let i=0;i<total;i++){const d=document.createElement('div');d.className='dot'+(i===0?' now':'');prog.appendChild(d)}
+const dots=prog.querySelectorAll('.dot');
+function go(n){if(busy||n<0||n>=total)return;busy=true;slides[cur].classList.remove('active');slides[cur].classList.add('exit');
+dots[cur].classList.remove('now');dots[cur].classList.add('done');cur=n;dots[cur].classList.add('now');
+slides[cur].classList.remove('exit');slides[cur].classList.classList;void slides[cur].offsetWidth;slides[cur].classList.add('active');
+if(cur===total-1)hint.style.display='none';
+setTimeout(()=>{busy=false},550)}
+document.addEventListener('click',e=>{if(e.target.closest('a'))return;go(cur+1)});
+let tx=0;document.addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
+document.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>40){dx<0?go(cur+1):go(cur-1)}},{passive:true});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' ')go(cur+1);if(e.key==='ArrowLeft')go(cur-1)});
+</script>
+</body>
+</html>

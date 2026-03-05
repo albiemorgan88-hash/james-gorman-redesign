@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>The Self Storage Centre — AI Growth Report</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#2B4DAF;--red:#FF4520;--bg:#F8F9FC;--text:#1a1a2e;--gray:#6B7280;--light:#E5E7EB;--green:#10B981;--card:#fff}
+html,body{height:100%;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);-webkit-tap-highlight-color:transparent;user-select:none}
+.deck{height:100%;width:100%;position:relative}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem 1.5rem 4rem;opacity:0;pointer-events:none;transform:translateX(60px);transition:opacity .5s,transform .5s;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.slide.active{opacity:1;pointer-events:auto;transform:translateX(0)}
+.slide.prev{transform:translateX(-60px)}
+.progress{position:fixed;bottom:1.2rem;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:100}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--light);transition:all .3s}
+.dot.active{background:var(--blue);width:20px;border-radius:4px}
+.nav-hint{position:fixed;bottom:3rem;right:1.5rem;color:var(--gray);font-size:.75rem;opacity:.6;z-index:100;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:.8}}
+h1{font-size:1.75rem;font-weight:700;line-height:1.2;text-align:center;margin-bottom:.75rem}
+h2{font-size:1.35rem;font-weight:700;line-height:1.3;margin-bottom:.5rem}
+h3{font-size:1.1rem;font-weight:600;margin-bottom:.5rem}
+p{font-size:.9rem;line-height:1.5;color:var(--gray)}
+.tag{display:inline-block;font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;padding:.25rem .6rem;border-radius:2rem;background:var(--blue);color:#fff;margin-bottom:1rem}
+.card{background:var(--card);border-radius:12px;padding:1rem;width:100%;box-shadow:0 1px 3px rgba(0,0,0,.08);margin-bottom:.75rem}
+.score-ring{width:120px;height:120px;position:relative;margin:1rem auto}
+.score-ring svg{transform:rotate(-90deg)}
+.score-ring .val{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800}
+.issue{display:flex;align-items:flex-start;gap:.6rem;padding:.6rem 0;border-bottom:1px solid var(--light);font-size:.85rem;line-height:1.4}
+.issue:last-child{border:none}
+.issue .icon{flex-shrink:0;font-size:1rem}
+.google-result{background:#fff;border-radius:10px;padding:1rem;font-family:Arial,sans-serif;box-shadow:0 1px 4px rgba(0,0,0,.1);width:100%;margin:.5rem 0}
+.google-result .url{font-size:.75rem;color:#202124;display:flex;align-items:center;gap:4px}
+.google-result .url span{color:#4d5156;font-size:.7rem}
+.google-result .title{font-size:1.05rem;color:#1a0dab;font-weight:400;margin:2px 0;line-height:1.3}
+.google-result .desc{font-size:.8rem;color:#4d5156;line-height:1.4}
+.google-result.ad{border-left:3px solid var(--blue)}
+.google-result .ad-tag{display:inline-block;font-size:.65rem;font-weight:700;color:#202124;border:1px solid #dadce0;border-radius:3px;padding:1px 5px;margin-right:4px}
+.stars{color:#fbbc04;font-size:.8rem;margin:2px 0}
+.sitelinks{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:6px}
+.sitelinks a{font-size:.78rem;color:#1a0dab;text-decoration:none}
+.chat-bubble{max-width:80%;padding:.7rem 1rem;border-radius:16px;font-size:.85rem;line-height:1.4;margin-bottom:.5rem;opacity:0;transform:translateY(10px)}
+.chat-bubble.user{background:var(--blue);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.chat-bubble.bot{background:var(--card);color:var(--text);align-self:flex-start;border-bottom-left-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.chat-bubble.visible{opacity:1;transform:translateY(0);transition:all .4s}
+.stat-row{display:flex;justify-content:space-between;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--light)}
+.stat-row:last-child{border:none}
+.stat-label{font-size:.85rem;color:var(--gray)}
+.stat-value{font-size:1rem;font-weight:700}
+.stat-value.highlight{color:var(--red)}
+.stat-value.green{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.5rem;border-radius:10px;font-size:.95rem;font-weight:600;text-decoration:none;width:100%;margin-bottom:.6rem;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-green{background:#25D366;color:#fff}
+.btn-outline{background:transparent;border:2px solid var(--blue);color:var(--blue)}
+.bc-brand{font-size:.7rem;color:var(--gray);text-align:center;margin-top:1.5rem;opacity:.7}
+.bc-brand strong{color:var(--blue)}
+.scan-line{height:2px;background:linear-gradient(90deg,transparent,var(--blue),transparent);width:100%;animation:scanMove 2s infinite;margin:.75rem 0;border-radius:2px}
+@keyframes scanMove{0%{opacity:0;transform:scaleX(.3)}50%{opacity:1;transform:scaleX(1)}100%{opacity:0;transform:scaleX(.3)}}
+.progress-bar{width:100%;height:6px;background:var(--light);border-radius:3px;overflow:hidden;margin:.75rem 0}
+.progress-bar .fill{height:100%;background:var(--blue);border-radius:3px;width:0;transition:width 2.5s ease-out}
+.fade-in{opacity:0;transform:translateY(15px)}
+.fade-in.show{opacity:1;transform:translateY(0);transition:all .5s}
+.competitor{display:flex;align-items:center;gap:.5rem;padding:.4rem 0;font-size:.8rem;color:var(--gray)}
+.competitor .pos{width:20px;height:20px;border-radius:50%;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700}
+.before-after{position:relative;width:100%}
+.ba-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:.3rem .6rem;border-radius:4px;margin-bottom:.4rem;display:inline-block}
+.ba-label.before{background:#FEE2E2;color:#DC2626}
+.ba-label.after{background:#D1FAE5;color:#059669}
+.typing-dots{display:flex;gap:4px;padding:.5rem .8rem}
+.typing-dots span{width:6px;height:6px;background:var(--gray);border-radius:50%;animation:blink 1.4s infinite}
+.typing-dots span:nth-child(2){animation-delay:.2s}
+.typing-dots span:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,100%{opacity:.3}50%{opacity:1}}
+.roi-hero{text-align:center;padding:1rem;background:linear-gradient(135deg,var(--blue),#1a3490);border-radius:14px;color:#fff;margin-bottom:1rem}
+.roi-hero .big{font-size:2.5rem;font-weight:800}
+.roi-hero p{color:rgba(255,255,255,.8)}
+.callout{display:flex;gap:.5rem;padding:.5rem;font-size:.78rem;color:var(--gray);margin-top:.3rem}
+.callout span{color:var(--blue)}
+@media(min-width:500px){.slide{padding:2.5rem 3rem 4rem}h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+<!-- SLIDE 1: Hook -->
+<div class="slide active" id="s0">
+<div style="text-align:center">
+<div style="width:64px;height:64px;background:var(--blue);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+</div>
+<p style="font-size:.8rem;font-weight:600;color:var(--blue);margin-bottom:1.5rem;letter-spacing:.05em">THE SELF STORAGE CENTRE</p>
+<h1 style="font-size:1.8rem;margin-bottom:1rem">What if AI could transform your business<br><span style="color:var(--red)">overnight?</span></h1>
+<p style="max-width:300px;margin:0 auto">We ran your website through our AI audit.<br>Here's what we found.</p>
+<div style="margin-top:2.5rem">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gray)" stroke-width="2" opacity=".5"><path d="M6 9l6 6 6-6"/></svg>
+<p style="font-size:.7rem;color:var(--gray);opacity:.5;margin-top:.25rem">Tap to continue</p>
+</div>
+</div>
+<div class="bc-brand">Prepared by <strong>Blue Canvas AI</strong></div>
+</div>
+
+<!-- SLIDE 2: Scan -->
+<div class="slide" id="s1">
+<div style="text-align:center;width:100%">
+<div class="tag">AI Website Audit</div>
+<h2>We scanned<br>selfstoragecentres.com</h2>
+<p style="margin-bottom:1.5rem">Our AI crawled every page, checked your SEO,<br>and analysed your competition.</p>
+<div class="card" style="text-align:left">
+<div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.75rem">
+<div style="width:8px;height:8px;background:var(--green);border-radius:50%"></div>
+<span style="font-size:.8rem;font-weight:600">Scanning in progress...</span>
+</div>
+<div class="scan-line"></div>
+<div class="progress-bar"><div class="fill" id="scanFill"></div></div>
+<div id="scanItems" style="font-size:.78rem;color:var(--gray);min-height:80px"></div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 3: Issues -->
+<div class="slide" id="s2">
+<div style="width:100%">
+<div class="tag" style="background:var(--red)">Issues Found</div>
+<h2>Your website is losing you customers</h2>
+<p style="margin-bottom:1rem">We found critical issues affecting your visibility on Google.</p>
+
+<div class="score-ring">
+<svg width="120" height="120" viewBox="0 0 120 120">
+<circle cx="60" cy="60" r="52" fill="none" stroke="var(--light)" stroke-width="8"/>
+<circle cx="60" cy="60" r="52" fill="none" stroke="var(--red)" stroke-width="8" stroke-dasharray="327" stroke-dashoffset="327" stroke-linecap="round" id="scoreArc1"/>
+</svg>
+<div class="val" id="scoreVal1" style="color:var(--red)">0</div>
+</div>
+<p style="text-align:center;font-size:.75rem;margin-bottom:1rem">SEO Health Score</p>
+
+<div class="card">
+<div class="google-result" style="margin:0 0 .75rem;box-shadow:none;padding:.75rem;background:var(--bg);border-radius:8px">
+<div class="url">selfstoragecentres.com<span> › Home</span></div>
+<div class="title" style="color:#DC2626">The SelfThe Self Storage Centre</div>
+<div class="desc">Self Storage Belfast. The Self Storage Centre Belfast...</div>
+</div>
+<p style="font-size:.78rem;color:var(--red);font-weight:600;margin-bottom:.5rem">⚠️ This is how you appear on Google right now</p>
+</div>
+
+<div class="card" style="padding:.5rem 1rem">
+<div class="issue"><span class="icon">❌</span><div><strong>Broken title tag</strong> — "The SelfThe Self Storage Centre" shows in search results</div></div>
+<div class="issue"><span class="icon">❌</span><div><strong>5 pages returning 404</strong> — Dead links hurting your Google ranking</div></div>
+<div class="issue"><span class="icon">❌</span><div><strong>No local business schema</strong> — Google can't show your hours, reviews, or location</div></div>
+<div class="issue"><span class="icon">❌</span><div><strong>No Belfast/Lisburn landing pages</strong> — Missing out on local search traffic</div></div>
+<div class="issue"><span class="icon">❌</span><div><strong>Thin content</strong> — Key pages have too little text for Google to rank them</div></div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 4: Fixes -->
+<div class="slide" id="s3">
+<div style="width:100%">
+<div class="tag" style="background:var(--green)">The Fix</div>
+<h2>Here's what your Google listing <em>should</em> look like</h2>
+
+<div class="before-after">
+<div class="card">
+<span class="ba-label before">Before</span>
+<div class="google-result" style="box-shadow:none;padding:.75rem;background:var(--bg);border-radius:8px;margin:0">
+<div class="url">selfstoragecentres.com</div>
+<div class="title" style="color:#DC2626;text-decoration:line-through">The SelfThe Self Storage Centre</div>
+<div class="desc">Self Storage Belfast. The Self Storage Centre Belfast...</div>
+</div>
+</div>
+
+<div style="text-align:center;margin:.25rem 0">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+</div>
+
+<div class="card" style="border:2px solid var(--green)">
+<span class="ba-label after">After</span>
+<div class="google-result" style="box-shadow:none;padding:.75rem;background:var(--bg);border-radius:8px;margin:0">
+<div class="url">selfstoragecentres.com<span> › Belfast</span></div>
+<div class="title">The Self Storage Centre Belfast — Secure Units from £25/week</div>
+<div class="stars">★★★★★ 4.8 · 127 reviews</div>
+<div class="desc">Belfast's trusted self storage. Secure, 24/7 access, CCTV monitored. Personal &amp; business units from 25sq ft. Free van hire. Get a quote today.</div>
+<div class="sitelinks">
+<a>Unit Sizes &amp; Prices</a>
+<a>Belfast Location</a>
+<a>Lisburn Location</a>
+<a>Get a Quote</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="score-ring" style="margin-top:.5rem">
+<svg width="120" height="120" viewBox="0 0 120 120">
+<circle cx="60" cy="60" r="52" fill="none" stroke="var(--light)" stroke-width="8"/>
+<circle cx="60" cy="60" r="52" fill="none" stroke="var(--green)" stroke-width="8" stroke-dasharray="327" stroke-dashoffset="327" stroke-linecap="round" id="scoreArc2"/>
+</svg>
+<div class="val" id="scoreVal2" style="color:var(--green)">42</div>
+</div>
+<p style="text-align:center;font-size:.85rem;font-weight:600;color:var(--green)">42 → 87/100</p>
+</div>
+</div>
+
+<!-- SLIDE 5: Google Ads -->
+<div class="slide" id="s4">
+<div style="width:100%">
+<div class="tag">Google Ads Campaign</div>
+<h2>We built you a Google Ads campaign too</h2>
+<p style="margin-bottom:1rem">Here's what it looks like when someone searches "self storage Belfast":</p>
+
+<div class="card" style="padding:0;overflow:hidden">
+<div style="background:#f1f3f4;padding:.6rem .75rem;font-size:.8rem;color:#5f6368;display:flex;align-items:center;gap:.5rem">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5f6368" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+self storage Belfast
+</div>
+<div style="padding:.75rem">
+<div class="google-result ad" style="box-shadow:none;margin:0;border-radius:0">
+<div class="url"><span class="ad-tag">Sponsored</span> selfstoragecentres.com</div>
+<div class="title">Self Storage Belfast — Secure Units from £25/week</div>
+<div class="desc">24/7 Access · CCTV Monitored · Free Van Hire · Personal &amp; Business. Trusted by 500+ customers in Belfast &amp; Lisburn. Get a free quote in 30 seconds.</div>
+<div class="sitelinks" style="margin-top:8px">
+<a>Unit Sizes</a>
+<a>Free Quote</a>
+<a>Lisburn Centre</a>
+<a>Student Deals</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card" style="margin-top:.75rem">
+<h3 style="font-size:.85rem">Estimated Performance</h3>
+<div class="stat-row"><span class="stat-label">Daily budget</span><span class="stat-value">£10/day</span></div>
+<div class="stat-row"><span class="stat-label">Clicks per day</span><span class="stat-value">15–25</span></div>
+<div class="stat-row"><span class="stat-label">Enquiries per week</span><span class="stat-value highlight">3–5</span></div>
+<div class="stat-row"><span class="stat-label">Cost per enquiry</span><span class="stat-value">~£15</span></div>
+</div>
+
+<div class="card">
+<h3 style="font-size:.85rem">Who's advertising right now</h3>
+<div class="competitor"><div class="pos">1</div><span>storagegiant.co.uk</span></div>
+<div class="competitor"><div class="pos">2</div><span>shurgard.co.uk</span></div>
+<div class="competitor"><div class="pos">3</div><span>safestore.co.uk</span></div>
+<div class="competitor" style="color:var(--red);font-weight:600"><div class="pos" style="background:var(--red);color:#fff">—</div><span>selfstoragecentres.com — not advertising</span></div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 6: AI Chat -->
+<div class="slide" id="s5">
+<div style="width:100%">
+<div class="tag">AI Customer Service</div>
+<h2>Your 24/7 AI assistant</h2>
+<p style="margin-bottom:1rem">Never miss a lead again — even at 11pm on a Sunday.</p>
+
+<div class="card" style="padding:1rem;min-height:300px">
+<div style="display:flex;align-items:center;gap:.5rem;padding-bottom:.75rem;border-bottom:1px solid var(--light);margin-bottom:.75rem">
+<div style="width:32px;height:32px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+</div>
+<div>
+<div style="font-size:.8rem;font-weight:600">Self Storage Assistant</div>
+<div style="font-size:.7rem;color:var(--green)">● Online</div>
+</div>
+</div>
+<div id="chatArea" style="display:flex;flex-direction:column;gap:.5rem">
+<div class="chat-bubble user" id="cb1">How much for a medium unit in Belfast?</div>
+<div class="chat-bubble bot" id="cb2">Great question! 👋 Our medium units (50–75 sq ft) in Belfast start from <strong>£45/week</strong>.<br><br>That's enough space for a 1-bed flat's furniture. 24/7 access, CCTV, and free van hire included.</div>
+<div class="chat-bubble bot" id="cb3">Would you like me to reserve a unit? I just need your name and email to hold it for 48 hours — no payment needed. 😊</div>
+<div class="chat-bubble user" id="cb4">Yes please, I need it from next Monday</div>
+<div class="chat-bubble bot" id="cb5">Brilliant! I've made a note. What's the best name and number for you? We'll confirm everything by text. 📱</div>
+</div>
+</div>
+<div class="callout"><span>💡</span> This AI handles pricing queries, bookings, FAQs, directions — and captures every lead's details automatically.</div>
+</div>
+</div>
+
+<!-- SLIDE 7: ROI -->
+<div class="slide" id="s6">
+<div style="width:100%">
+<div class="tag">The Numbers</div>
+<h2>The ROI speaks for itself</h2>
+<p style="margin-bottom:1rem">Here's what we estimate based on your market and current gaps.</p>
+
+<div class="roi-hero">
+<p style="font-size:.75rem;margin-bottom:.25rem">Estimated missed revenue per year</p>
+<div class="big">£135K</div>
+<p>~25 missed enquiries/month at average lifetime value</p>
+</div>
+
+<div class="card">
+<h3 style="font-size:.85rem;margin-bottom:.25rem">Your AI Investment</h3>
+<div class="stat-row"><span class="stat-label">Setup (one-time)</span><span class="stat-value">£1,750</span></div>
+<div class="stat-row"><span class="stat-label">Monthly</span><span class="stat-value">£250/mo</span></div>
+<div class="stat-row"><span class="stat-label">Pays for itself in</span><span class="stat-value green">7 weeks</span></div>
+<div class="stat-row" style="border:none"><span class="stat-label">Year 1 ROI</span><span class="stat-value green" style="font-size:1.3rem">4.7×</span></div>
+</div>
+
+<div class="card" style="background:linear-gradient(135deg,#EEF2FF,#E0E7FF);border:1px solid #C7D2FE">
+<p style="font-size:.85rem;color:var(--text);text-align:center;font-weight:500">
+"Every week without this is costing you <strong style="color:var(--red)">~£2,600</strong> in missed business."
+</p>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 8: CTA -->
+<div class="slide" id="s7">
+<div style="text-align:center;width:100%">
+<div style="width:80px;height:80px;background:var(--light);border-radius:50%;margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;font-size:2rem">PJ</div>
+<h2>Ready to talk?</h2>
+<p style="margin-bottom:.25rem;font-weight:600;color:var(--text)">PJ Patterson</p>
+<p style="margin-bottom:1.5rem">Blue Canvas AI · Belfast</p>
+<p style="font-size:.85rem;margin-bottom:1.5rem;max-width:280px;margin-left:auto;margin-right:auto">No obligation. 15-minute call.<br>We'll walk you through everything.</p>
+<a href="tel:+447123456789" class="btn btn-blue">📞 Call PJ</a>
+<a href="https://wa.me/447123456789?text=Hi%20PJ%2C%20I%20just%20saw%20the%20AI%20report%20for%20Self%20Storage%20Centre.%20Let%27s%20chat!" class="btn btn-green">💬 WhatsApp PJ</a>
+<a href="mailto:pj@bluecanvas.ai" class="btn btn-outline">✉️ Email</a>
+<div class="bc-brand" style="margin-top:2rem">
+Powered by <strong>Blue Canvas AI</strong><br>
+<span style="font-size:.6rem">bluecanvas.ai</span>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="progress" id="progress"></div>
+<div class="nav-hint" id="navHint">tap →</div>
+
+<script>
+const slides=document.querySelectorAll('.slide'),total=slides.length;
+let cur=0,busy=false;
+const prog=document.getElementById('progress');
+for(let i=0;i<total;i++){const d=document.createElement('div');d.className='dot'+(i===0?' active':'');prog.appendChild(d)}
+const dots=prog.querySelectorAll('.dot');
+
+function go(n){
+if(n<0||n>=total||busy)return;
+busy=true;
+slides[cur].classList.remove('active');
+slides[cur].classList.add(n>cur?'prev':'');
+slides[n].classList.remove('prev');
+slides[n].classList.add('active');
+dots[cur].classList.remove('active');
+dots[n].classList.add('active');
+cur=n;
+setTimeout(()=>{busy=false;onSlide(cur)},500);
+document.getElementById('navHint').style.display=cur===total-1?'none':'block';
+}
+
+// Touch / click nav
+let tx=0;
+document.addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
+document.addEventListener('touchend',e=>{
+const dx=e.changedTouches[0].clientX-tx;
+if(Math.abs(dx)<30)go(cur+1); // tap
+else if(dx<-50)go(cur+1);
+else if(dx>50)go(cur-1);
+},{passive:true});
+document.addEventListener('click',e=>{if(e.target.tagName!=='A')go(cur+1)});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' ')go(cur+1);if(e.key==='ArrowLeft')go(cur-1)});
+
+// Slide-specific animations
+function onSlide(n){
+if(n===1)runScan();
+if(n===2)animScore(1,'scoreArc1','scoreVal1',42,327,'var(--red)');
+if(n===3)animScore(2,'scoreArc2','scoreVal2',87,327,'var(--green)',42);
+if(n===5)runChat();
+}
+
+let scanDone=false;
+function runScan(){
+if(scanDone)return;scanDone=true;
+const fill=document.getElementById('scanFill');
+const items=document.getElementById('scanItems');
+const steps=['Checking page titles & meta tags...','Crawling 23 pages...','Analysing page speed...','Checking mobile usability...','Scanning for schema markup...','Reviewing backlink profile...','Comparing competitors...','Generating report...'];
+let i=0;
+fill.style.width='10%';
+const iv=setInterval(()=>{
+if(i<steps.length){items.innerHTML='<div style="margin-bottom:4px">✓ '+steps.slice(0,i+1).join('</div><div style="margin-bottom:4px">✓ ')+'</div>';fill.style.width=((i+1)/steps.length*100)+'%';i++}
+else{clearInterval(iv);items.innerHTML+='<div style="margin-top:8px;font-weight:600;color:var(--red)">⚠️ 5 critical issues found</div>'}
+},400);
+}
+
+function animScore(idx,arcId,valId,target,total,color,start=0){
+const arc=document.getElementById(arcId),val=document.getElementById(valId);
+const offset=total-(target/100)*total;
+arc.style.transition='stroke-dashoffset 1.5s ease-out';
+arc.style.strokeDashoffset=offset;
+let c=start,step=Math.ceil((target-start)/30);
+const iv=setInterval(()=>{c+=step;if(c>=target){c=target;clearInterval(iv)}val.textContent=c+'/100'},50);
+}
+
+let chatDone=false;
+function runChat(){
+if(chatDone)return;chatDone=true;
+const ids=['cb1','cb2','cb3','cb4','cb5'];
+ids.forEach((id,i)=>{setTimeout(()=>{document.getElementById(id).classList.add('visible')},i*800)});
+}
+
+onSlide(0);
+</script>
+</body>
+</html>

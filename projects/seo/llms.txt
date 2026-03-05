@@ -1,0 +1,28 @@
+# Blue Canvas
+> AI consultancy helping UK and Irish businesses integrate artificial intelligence. Based in Derry, Northern Ireland. Delivering globally.
+
+## Services
+- AI Audits: Comprehensive AI readiness assessment for businesses (£750)
+- AI Strategy and Implementation: Custom AI solutions tailored to your business
+- AI Training Workshops: Hands-on team training for organisations of all sizes
+- Automation Consulting: Zapier, Make, n8n workflow automation
+- AI Academy: Self-paced AI learning programme (£250)
+- AI Mentoring: Ongoing monthly AI support (£50/month)
+
+## Industries
+- Construction, Healthcare, Education, Legal, Accountancy, Dentistry, Retail, Tourism, Enterprise
+
+## About
+Blue Canvas is a Northern Ireland-based AI consultancy founded by Phil Patterson in 2025. We help businesses from SMEs to enterprises adopt AI practically. No jargon, no hype, just measurable results. We are a network of AI consultants delivering across the UK and Ireland.
+
+## Key Content
+- Blog: https://www.bluecanvas.ai/blog
+- Services: https://www.bluecanvas.ai/services
+- Case Studies: https://www.bluecanvas.ai/case-studies
+- About: https://www.bluecanvas.ai/about
+
+## Contact
+- Web: https://www.bluecanvas.ai
+- Email: contact@bluecanvas.ai
+- Location: 20c Balliniska Road, Derry, Northern Ireland, BT48 9QA
+- Free consultation: https://www.bluecanvas.ai/contact

@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Canvas — Command Center</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e14;
+    --surface: #111820;
+    --surface-2: #1a2230;
+    --border: #1e2a3a;
+    --text: #c5cdd8;
+    --text-muted: #5a6a7e;
+    --accent: #00d4aa;
+    --accent-dim: #00d4aa22;
+    --warn: #ff6b4a;
+    --warn-dim: #ff6b4a18;
+    --gold: #f0c040;
+    --gold-dim: #f0c04018;
+    --blue: #4a9eff;
+    --blue-dim: #4a9eff18;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grain overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+  }
+
+  .header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: -0.5px;
+  }
+
+  .header h1 span { color: var(--accent); }
+
+  .header .date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* Metrics strip */
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .metric-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+
+  .metric-card:hover { border-color: var(--accent); }
+
+  .metric-card .label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .metric-card .value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .metric-card .sub {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+  }
+
+  .metric-card .glow {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: 0.3;
+  }
+
+  .glow-green { background: var(--accent); }
+  .glow-red { background: var(--warn); }
+  .glow-gold { background: var(--gold); }
+  .glow-blue { background: var(--blue); }
+
+  /* Two-column layout */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  /* Section */
+  .section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-title .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  /* Pipeline */
+  .pipeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .pipeline-item:last-child { border-bottom: none; }
+  .pipeline-item:hover { padding-left: 8px; }
+
+  .pipeline-item .name {
+    font-weight: 500;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+
+  .pipeline-item .company {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  .pipeline-item .stage {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .stage-lead { background: var(--blue-dim); color: var(--blue); }
+  .stage-proposal { background: var(--gold-dim); color: var(--gold); }
+  .stage-active { background: var(--accent-dim); color: var(--accent); }
+  .stage-churned { background: var(--warn-dim); color: var(--warn); }
+
+  /* Debt tracker */
+  .debt-bar-wrap {
+    margin-bottom: 16px;
+  }
+
+  .debt-bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+  }
+
+  .debt-bar-label span:first-child { color: var(--text); }
+  .debt-bar-label span:last-child {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-muted);
+  }
+
+  .debt-bar {
+    height: 6px;
+    background: var(--surface-2);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .debt-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.6s ease;
+  }
+
+  .fill-red { background: linear-gradient(90deg, var(--warn), #ff9a76); }
+  .fill-gold { background: linear-gradient(90deg, var(--gold), #ffe066); }
+
+  .debt-total {
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.4rem;
+    color: var(--warn);
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+
+  .debt-total .label {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+
+  /* Priorities */
+  .priority-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .priority-item:last-child { border-bottom: none; }
+
+  .priority-check {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .priority-check:hover { border-color: var(--accent); }
+  .priority-check.done {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .priority-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .priority-text.done-text {
+    text-decoration: line-through;
+    color: var(--text-muted);
+  }
+
+  .priority-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+
+  .tag-revenue { background: var(--accent-dim); color: var(--accent); }
+  .tag-growth { background: var(--blue-dim); color: var(--blue); }
+  .tag-health { background: var(--gold-dim); color: var(--gold); }
+
+  /* Quick add */
+  .quick-add {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .quick-add input {
+    flex: 1;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.85rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .quick-add input:focus { border-color: var(--accent); }
+  .quick-add input::placeholder { color: var(--text-muted); }
+
+  .quick-add button {
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+
+  .quick-add button:hover { opacity: 0.85; }
+
+  /* Monthly target bar */
+  .target-section {
+    margin-bottom: 32px;
+  }
+
+  .target-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+  }
+
+  .target-header h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+
+  .target-header .amount {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent);
+    font-size: 0.9rem;
+  }
+
+  .target-bar {
+    height: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .target-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), #00ffd0);
+    border-radius: 6px;
+    transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+  }
+
+  .target-bar-fill::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3));
+  }
+
+  .target-marks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+  }
+
+  /* Animations */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate {
+    animation: fadeUp 0.5s ease both;
+  }
+
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.2s; }
+  .delay-3 { animation-delay: 0.3s; }
+  .delay-4 { animation-delay: 0.4s; }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .metrics { grid-template-columns: repeat(2, 1fr); }
+    .grid-2 { grid-template-columns: 1fr; }
+  }
+
+  /* Edit mode */
+  .editable { cursor: pointer; }
+  .editable:hover { outline: 1px dashed var(--accent); outline-offset: 4px; border-radius: 4px; }
+
+  .edit-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+  }
+
+  .edit-overlay.active { display: flex; }
+
+  .edit-modal {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .edit-modal h3 {
+    font-family: 'DM Serif Display', serif;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .edit-modal label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    margin-top: 14px;
+  }
+
+  .edit-modal input, .edit-modal select {
+    width: 100%;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+  }
+
+  .edit-modal input:focus, .edit-modal select:focus { border-color: var(--accent); }
+
+  .edit-modal .btn-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+    justify-content: flex-end;
+  }
+
+  .edit-modal .btn-row button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  .btn-save { background: var(--accent); color: var(--bg); }
+  .btn-cancel { background: var(--surface-2); color: var(--text); }
+  .btn-delete { background: var(--warn-dim); color: var(--warn); }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Header -->
+  <div class="header animate">
+    <h1>Blue <span>Canvas</span> — Command Center</h1>
+    <div class="date" id="currentDate"></div>
+  </div>
+
+  <!-- Monthly Target -->
+  <div class="target-section animate delay-1">
+    <div class="target-header">
+      <h2>Monthly Revenue Target</h2>
+      <div class="amount"><span id="currentRevenue">£0</span> / <span id="targetRevenue">£6,000</span></div>
+    </div>
+    <div class="target-bar">
+      <div class="target-bar-fill" id="targetFill" style="width: 0%"></div>
+    </div>
+    <div class="target-marks">
+      <span>£0</span>
+      <span>£1.5k</span>
+      <span>£3k (breakeven)</span>
+      <span>£4.5k</span>
+      <span>£6k 🎯</span>
+    </div>
+  </div>
+
+  <!-- Metrics -->
+  <div class="metrics animate delay-2">
+    <div class="metric-card">
+      <div class="glow glow-green"></div>
+      <div class="label">Active Clients</div>
+      <div class="value" id="metricClients">2</div>
+      <div class="sub">HIP Psychology, Belfast Self Storage</div>
+    </div>
+    <div class="metric-card">
+      <div class="glow glow-blue"></div>
+      <div class="label">Pipeline Value</div>
+      <div class="value" id="metricPipeline">£0</div>
+      <div class="sub" id="metricPipelineSub">pending proposals</div>
+    </div>
+    <div class="metric-card">
+      <div class="glow glow-gold"></div>
+      <div class="label">MRR</div>
+      <div class="value" id="metricMRR">£300</div>
+      <div class="sub">recurring monthly</div>
+    </div>
+    <div class="metric-card">
+      <div class="glow glow-red"></div>
+      <div class="label">Total Debt</div>
+      <div class="value" id="metricDebt">£60k</div>
+      <div class="sub">target: eliminate</div>
+    </div>
+  </div>
+
+  <!-- Two columns -->
+  <div class="grid-2 animate delay-3">
+    <!-- Pipeline -->
+    <div class="section">
+      <div class="section-title"><span class="dot" style="background:var(--blue)"></span>Pipeline</div>
+      <div id="pipelineList"></div>
+      <div class="quick-add">
+        <input type="text" id="pipelineInput" placeholder="Add prospect (name — company)">
+        <button onclick="addPipelineItem()">+</button>
+      </div>
+    </div>
+
+    <!-- Debt Breakdown -->
+    <div class="section">
+      <div class="section-title"><span class="dot" style="background:var(--warn)"></span>Debt Breakdown</div>
+      <div id="debtList"></div>
+      <div class="debt-total">
+        <div class="label">Total Outstanding</div>
+        <div id="debtTotalValue">£60,000</div>
+      </div>
+      <div class="quick-add">
+        <input type="text" id="debtInput" placeholder="Add debt (name — £amount)">
+        <button onclick="addDebtItem()">+</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Priorities (full width) -->
+  <div class="section animate delay-4" style="margin-top: 24px;">
+    <div class="section-title"><span class="dot" style="background:var(--gold)"></span>Today's Priorities</div>
+    <div id="priorityList"></div>
+    <div class="quick-add">
+      <input type="text" id="priorityInput" placeholder="Add priority…" onkeypress="if(event.key==='Enter')addPriority()">
+      <button onclick="addPriority()">+</button>
+    </div>
+  </div>
+</div>
+
+<!-- Edit overlay -->
+<div class="edit-overlay" id="editOverlay">
+  <div class="edit-modal" id="editModal"></div>
+</div>
+
+<script>
+// ===== DATA LAYER (localStorage) =====
+const KEYS = {
+  pipeline: 'bc_pipeline',
+  debts: 'bc_debts',
+  priorities: 'bc_priorities',
+  metrics: 'bc_metrics',
+  target: 'bc_target',
+};
+
+function load(key, fallback) {
+  try { return JSON.parse(localStorage.getItem(key)) || fallback; }
+  catch { return fallback; }
+}
+
+function save(key, data) {
+  localStorage.setItem(key, JSON.stringify(data));
+}
+
+// Default data
+const defaultPipeline = [
+  { id: 1, name: 'Thomas Brolly', company: 'TK Brolly Demolition', stage: 'lead', value: 500 },
+  { id: 2, name: 'William McLeery', company: 'Dickson McNulty Solicitors', stage: 'lead', value: 500 },
+  { id: 3, name: 'HIP Psychology', company: 'HIP Psychology', stage: 'active', value: 350 },
+  { id: 4, name: 'Belfast Self Storage', company: 'Belfast Self Storage', stage: 'active', value: 350 },
+];
+
+const defaultDebts = [
+  { id: 1, name: 'Credit Cards (High Interest)', amount: 35000, original: 35000 },
+  { id: 2, name: 'Personal Loans', amount: 20000, original: 20000 },
+  { id: 3, name: 'Other', amount: 5000, original: 5000 },
+];
+
+const defaultPriorities = [
+  { id: 1, text: 'Send Loom pitch to Thomas Brolly', tag: 'revenue', done: false },
+  { id: 2, text: 'Publish next blog: AI for tender writing', tag: 'growth', done: false },
+  { id: 3, text: 'Follow up on government framework application', tag: 'revenue', done: false },
+  { id: 4, text: 'LinkedIn post — AI thought leadership', tag: 'growth', done: false },
+  { id: 5, text: 'No nicotine after 7:30 PM', tag: 'health', done: false },
+];
+
+let pipeline = load(KEYS.pipeline, defaultPipeline);
+let debts = load(KEYS.debts, defaultDebts);
+let priorities = load(KEYS.priorities, defaultPriorities);
+let metrics = load(KEYS.metrics, { mrr: 300, target: 6000, currentRevenue: 700 });
+
+// ===== DATE =====
+const now = new Date();
+document.getElementById('currentDate').textContent = now.toLocaleDateString('en-GB', {
+  weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+});
+
+// ===== RENDER =====
+function renderPipeline() {
+  const el = document.getElementById('pipelineList');
+  el.innerHTML = pipeline.map(p => `
+    <div class="pipeline-item editable" onclick="editPipeline(${p.id})">
+      <div>
+        <div class="name">${p.name}</div>
+        <div class="company">${p.company} · £${p.value.toLocaleString()}</div>
+      </div>
+      <span class="stage stage-${p.stage}">${p.stage}</span>
+    </div>
+  `).join('');
+
+  // Update pipeline metric
+  const pipelineValue = pipeline.filter(p => p.stage !== 'active' && p.stage !== 'churned')
+    .reduce((s, p) => s + p.value, 0);
+  const proposals = pipeline.filter(p => p.stage === 'proposal').length;
+  const leads = pipeline.filter(p => p.stage === 'lead').length;
+  document.getElementById('metricPipeline').textContent = '£' + pipelineValue.toLocaleString();
+  document.getElementById('metricPipelineSub').textContent = `${leads} leads, ${proposals} proposals`;
+  document.getElementById('metricClients').textContent = pipeline.filter(p => p.stage === 'active').length;
+
+  save(KEYS.pipeline, pipeline);
+}
+
+function renderDebts() {
+  const el = document.getElementById('debtList');
+  const maxOriginal = Math.max(...debts.map(d => d.original));
+  el.innerHTML = debts.map(d => `
+    <div class="debt-bar-wrap editable" onclick="editDebt(${d.id})">
+      <div class="debt-bar-label">
+        <span>${d.name}</span>
+        <span>£${d.amount.toLocaleString()}</span>
+      </div>
+      <div class="debt-bar">
+        <div class="debt-bar-fill ${d.amount > 20000 ? 'fill-red' : 'fill-gold'}"
+             style="width: ${(d.amount / maxOriginal * 100)}%"></div>
+      </div>
+    </div>
+  `).join('');
+
+  const total = debts.reduce((s, d) => s + d.amount, 0);
+  document.getElementById('debtTotalValue').textContent = '£' + total.toLocaleString();
+  document.getElementById('metricDebt').textContent = '£' + (total / 1000).toFixed(0) + 'k';
+
+  save(KEYS.debts, debts);
+}
+
+function renderPriorities() {
+  const el = document.getElementById('priorityList');
+  el.innerHTML = priorities.map(p => `
+    <div class="priority-item">
+      <div class="priority-check ${p.done ? 'done' : ''}" onclick="togglePriority(${p.id})"></div>
+      <div class="priority-text ${p.done ? 'done-text' : ''}">
+        ${p.text}
+        <span class="priority-tag tag-${p.tag}">${p.tag}</span>
+      </div>
+    </div>
+  `).join('');
+
+  save(KEYS.priorities, priorities);
+}
+
+function renderTarget() {
+  const pct = Math.min((metrics.currentRevenue / metrics.target) * 100, 100);
+  document.getElementById('targetFill').style.width = pct + '%';
+  document.getElementById('currentRevenue').textContent = '£' + metrics.currentRevenue.toLocaleString();
+  document.getElementById('targetRevenue').textContent = '£' + metrics.target.toLocaleString();
+  document.getElementById('metricMRR').textContent = '£' + metrics.mrr.toLocaleString();
+
+  save(KEYS.metrics, metrics);
+}
+
+// ===== ACTIONS =====
+let nextId = 100;
+
+function addPipelineItem() {
+  const input = document.getElementById('pipelineInput');
+  const val = input.value.trim();
+  if (!val) return;
+  const parts = val.split('—').map(s => s.trim());
+  pipeline.push({
+    id: nextId++,
+    name: parts[0] || val,
+    company: parts[1] || '',
+    stage: 'lead',
+    value: 0
+  });
+  input.value = '';
+  renderPipeline();
+}
+
+function addDebtItem() {
+  const input = document.getElementById('debtInput');
+  const val = input.value.trim();
+  if (!val) return;
+  const match = val.match(/(.+?)—\s*£?([\d,]+)/);
+  const name = match ? match[1].trim() : val;
+  const amount = match ? parseInt(match[2].replace(/,/g, '')) : 0;
+  debts.push({ id: nextId++, name, amount, original: amount });
+  input.value = '';
+  renderDebts();
+}
+
+function addPriority() {
+  const input = document.getElementById('priorityInput');
+  const val = input.value.trim();
+  if (!val) return;
+  priorities.push({ id: nextId++, text: val, tag: 'growth', done: false });
+  input.value = '';
+  renderPriorities();
+}
+
+function togglePriority(id) {
+  const p = priorities.find(p => p.id === id);
+  if (p) p.done = !p.done;
+  renderPriorities();
+}
+
+// ===== EDIT MODALS =====
+function closeModal() {
+  document.getElementById('editOverlay').classList.remove('active');
+}
+
+document.getElementById('editOverlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('editOverlay')) closeModal();
+});
+
+function editPipeline(id) {
+  const p = pipeline.find(x => x.id === id);
+  if (!p) return;
+  const modal = document.getElementById('editModal');
+  modal.innerHTML = `
+    <h3>Edit Pipeline</h3>
+    <label>Name</label>
+    <input id="ep_name" value="${p.name}">
+    <label>Company</label>
+    <input id="ep_company" value="${p.company}">
+    <label>Value (£)</label>
+    <input id="ep_value" type="number" value="${p.value}">
+    <label>Stage</label>
+    <select id="ep_stage">
+      <option value="lead" ${p.stage==='lead'?'selected':''}>Lead</option>
+      <option value="proposal" ${p.stage==='proposal'?'selected':''}>Proposal</option>
+      <option value="active" ${p.stage==='active'?'selected':''}>Active</option>
+      <option value="churned" ${p.stage==='churned'?'selected':''}>Churned</option>
+    </select>
+    <div class="btn-row">
+      <button class="btn-delete" onclick="deletePipeline(${id})">Delete</button>
+      <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+      <button class="btn-save" onclick="savePipeline(${id})">Save</button>
+    </div>
+  `;
+  document.getElementById('editOverlay').classList.add('active');
+}
+
+function savePipeline(id) {
+  const p = pipeline.find(x => x.id === id);
+  p.name = document.getElementById('ep_name').value;
+  p.company = document.getElementById('ep_company').value;
+  p.value = parseInt(document.getElementById('ep_value').value) || 0;
+  p.stage = document.getElementById('ep_stage').value;
+  closeModal();
+  renderPipeline();
+}
+
+function deletePipeline(id) {
+  pipeline = pipeline.filter(x => x.id !== id);
+  closeModal();
+  renderPipeline();
+}
+
+function editDebt(id) {
+  const d = debts.find(x => x.id === id);
+  if (!d) return;
+  const modal = document.getElementById('editModal');
+  modal.innerHTML = `
+    <h3>Edit Debt</h3>
+    <label>Name</label>
+    <input id="ed_name" value="${d.name}">
+    <label>Current Balance (£)</label>
+    <input id="ed_amount" type="number" value="${d.amount}">
+    <div class="btn-row">
+      <button class="btn-delete" onclick="deleteDebt(${id})">Delete</button>
+      <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+      <button class="btn-save" onclick="saveDebt(${id})">Save</button>
+    </div>
+  `;
+  document.getElementById('editOverlay').classList.add('active');
+}
+
+function saveDebt(id) {
+  const d = debts.find(x => x.id === id);
+  d.name = document.getElementById('ed_name').value;
+  d.amount = parseInt(document.getElementById('ed_amount').value) || 0;
+  closeModal();
+  renderDebts();
+}
+
+function deleteDebt(id) {
+  debts = debts.filter(x => x.id !== id);
+  closeModal();
+  renderDebts();
+}
+
+// ===== INIT =====
+renderPipeline();
+renderDebts();
+renderPriorities();
+setTimeout(() => renderTarget(), 300); // slight delay for animation
+
+// Reset priorities daily
+const lastReset = localStorage.getItem('bc_lastReset');
+const today = now.toISOString().slice(0, 10);
+if (lastReset !== today) {
+  priorities.forEach(p => p.done = false);
+  localStorage.setItem('bc_lastReset', today);
+  save(KEYS.priorities, priorities);
+}
+</script>
+</body>
+</html>

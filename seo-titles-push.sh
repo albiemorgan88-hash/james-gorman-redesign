@@ -1,0 +1,141 @@
+#!/bin/bash
+
+# SEO Titles Push Script for bluecanvas.ai blog posts
+# DO NOT PUBLISH - only update seo-title field
+
+API="https://api.webflow.com/v2/collections/67e4825804e6baf1d5246f5b/items"
+SUCCESS=0
+FAIL=0
+
+push() {
+  local id="$1"
+  local slug="$2"
+  local title="$3"
+  
+  response=$(curl -s -w "\n%{http_code}" -X PATCH "$API/$id" \
+    -H "Authorization: Bearer $WEBFLOW_API_TOKEN" \
+    -H "Content-Type: application/json" \
+    -d "{\"fieldData\":{\"seo-title\":\"$title\"}}")
+  
+  http_code=$(echo "$response" | tail -1)
+  
+  if [[ "$http_code" == "200" ]]; then
+    echo "✅ $slug: $title"
+    SUCCESS=$((SUCCESS + 1))
+  else
+    echo "❌ $slug (HTTP $http_code): $title"
+    echo "   $(echo "$response" | head -1)"
+    FAIL=$((FAIL + 1))
+  fi
+  
+  sleep 1
+}
+
+push "698e46d15c63b5d87df715d8" "5-ai-agents-save-20-hours" "5 AI Agents That Save 20 Hours | Blue Canvas"
+push "698e46cf22632f5108dbae2c" "what-is-an-ai-agent" "What Is an AI Agent? Simple Guide | Blue Canvas"
+push "698e46cd5a4296354d2dc999" "10-zapier-automations-small-business" "10 Zapier Automations for Small Business"
+push "698e46cbefc6c6a7016581f8" "zapier-vs-make-2026" "Zapier vs Make 2026 Comparison | Blue Canvas"
+push "698e46c9baf099c2f4f9ed15" "openclaw-vs-chatgpt" "OpenClaw vs ChatGPT Compared | Blue Canvas"
+push "698e46c75c63b5d87df710db" "openclaw-setup-guide-2026" "OpenClaw Setup Guide 2026 | Blue Canvas"
+push "698d006ce363d31e9b12f3e1" "roi-of-ai-consulting-uk-business" "ROI of AI Consulting for UK Business"
+push "698d006ce2ab3f94ee4d643d" "ai-grants-northern-ireland-2026" "AI Grants Northern Ireland 2026 | Blue Canvas"
+push "698d006b4fcd38de9d592355" "ai-strategy-for-startups-2026" "AI Strategy for Startups 2026 | Blue Canvas"
+push "698d006a4b9229b2634d7ffb" "ai-consultancy-vs-diy-when-to-hire" "AI Consultancy vs DIY: When to Hire"
+push "698d006a261b9fe108c7fd1c" "how-much-does-ai-consulting-cost-uk" "AI Consulting Cost UK - Price Guide"
+push "696e5bc7adb662a1ce908992" "how-to-make-your-business-ai-first" "Make Your Business AI-First | Blue Canvas"
+push "696e5b51e0a7643107a8cc56" "ai-support-northern-ireland" "AI Support Northern Ireland | Blue Canvas"
+push "696e31b2e1c4e833c20963a4" "ai-business-development-tools" "AI Business Development Tools | Blue Canvas"
+push "696e2f74c6362c5b99163c7b" "what-is-the-best-llm-right-now" "Best LLM Right Now - 2026 Guide | Blue Canvas"
+push "696e2ee476c61027eaf9efa2" "claude-cowork-whats-it-good-for-and-whats-the-future" "Claude Cowork Review & Future | Blue Canvas"
+push "693acbd908fcf4ac29e8c60c" "will-ai-take-my-job" "Will AI Take My Job? | Blue Canvas"
+push "693acb552484078f6bd84134" "ai-training-frameworks-for-corporates" "AI Training Frameworks for Corporates"
+push "693acae26ca997ad8390d794" "ai-in-northern-ireland" "AI in Northern Ireland | Blue Canvas"
+push "693ac96bb8eecdbb5bc57679" "using-ai-in-healthcare" "Using AI in Healthcare | Blue Canvas"
+push "6939e1edbf004c842b38df72" "using-ai-in-schools" "Using AI in Schools | Blue Canvas"
+push "691e0e4a30123b1b099d0fb3" "is-ai-a-bubble-2" "Is AI a Bubble? Analysis 2026 | Blue Canvas"
+push "691e0d733cae746a30f2513a" "has-ai-hit-a-plateau" "Has AI Hit a Plateau? | Blue Canvas"
+push "691e0d052040cae137d6913d" "the-current-status-of-ai-agents" "Current Status of AI Agents | Blue Canvas"
+push "68fa93190113889da52c82e1" "upskilling-junior-staff-in-ai" "Upskilling Junior Staff in AI | Blue Canvas"
+push "68fa927fd6638673c6b710df" "ai-in-construction" "AI in Construction - Key Uses | Blue Canvas"
+push "68fa91fc1f07d11ee0ddfbd3" "ai-in-dentistry" "AI in Dentistry | Blue Canvas"
+push "68fa919a377e0c706802bd3c" "integrating-ai-into-healthcare" "Integrating AI into Healthcare | Blue Canvas"
+push "68fa9118304f5e0e9c322ed5" "ai-in-education" "AI in Education | Blue Canvas"
+push "68ef7bb5ca8791fb753e8068" "uk-grants-for-embedding-ai" "UK Grants for Embedding AI | Blue Canvas"
+push "68ef7b61ad221b534b25f1ee" "using-ai-for-my-business" "Using AI for My Business | Blue Canvas"
+push "68ef7b060e80ef9756398d7a" "what-is-reinforcement-learning-rl" "What Is Reinforcement Learning? | Blue Canvas"
+push "68ef7aad440a53f22ab1e960" "matrix-report-northern-ireland" "MATRIX Report Northern Ireland | Blue Canvas"
+push "68ef7a1008d77d31eb1f1917" "when-will-agi-happen" "When Will AGI Happen? | Blue Canvas"
+push "68d5455359994e6a84651227" "training-corporates-to-become-ai-first" "Training Corporates to Be AI-First"
+push "68d544dead560080fbf19453" "proven-use-cases-of-ai" "Proven Use Cases of AI | Blue Canvas"
+push "68d544750069dd75ab3d8563" "ai-compute-power" "AI Compute Power Explained | Blue Canvas"
+push "68cc1b4067d844000e9bc2ab" "agent-3-the-autonomous-coding-agent" "Agent 3: Autonomous Coding Agent | Blue Canvas"
+push "68cc1ae0e0eacb3e99503fcf" "what-are-evals" "What Are Evals in AI? | Blue Canvas"
+push "68cc19e55c358361895d690e" "what-are-mcps" "What Are MCPs in AI? | Blue Canvas"
+push "68c2efa07abfb50aef529705" "ai-infrastructure" "AI Infrastructure Explained | Blue Canvas"
+push "68c2eedc23648bdb0ad29446" "agentic-ai" "Agentic AI Explained | Blue Canvas"
+push "68c2ed6bc12a9f76952d4146" "sovereign-ai" "Sovereign AI Explained | Blue Canvas"
+push "68bf4356079f117e7a6f5e69" "chatgpt-claude-perplexity-gemini-grok-which-ai-tool-should-you-use" "Best AI Tool: ChatGPT vs Claude vs Gemini"
+push "68bf42807e6bf8d769d6c161" "learning-ai-for-free" "Learning AI for Free | Blue Canvas"
+push "68bf41882760419df00d0843" "organisational-ai-training" "Organisational AI Training | Blue Canvas"
+push "68b6fdca1b27571308bff434" "how-can-countries-positively-regulate-ai" "How Countries Can Regulate AI | Blue Canvas"
+push "68b6fd0b711654c27218266a" "is-ai-a-bubble" "Is AI a Bubble? Honest Assessment"
+push "68b6f8eaa00b6bc258a09c0d" "agentic-ai-use-cases" "Agentic AI Use Cases | Blue Canvas"
+push "68b1df91f86399839f4e8459" "ai-northern-ireland" "AI Northern Ireland 2025 | Blue Canvas"
+push "68af849319be1716b1adfcbf" "when-will-the-uk-have-super-intelligence" "UK Super Intelligence - When? | Blue Canvas"
+push "68af834c22d1c625c204bbae" "encouraging-your-team-to-embrace-ai" "Encourage Your Team to Embrace AI"
+push "68af8219aaa2732e97a86639" "ai-job-displacement-the-rise-of-ai-agents-and-the-future-of-work" "AI Job Displacement & Future of Work"
+push "68a634abfc2b66aa26aaac77" "training-staff-on-ai" "Training Staff on AI | Blue Canvas"
+push "68a6343869b52b88056c2d48" "ai-data-security" "AI Data Security Guide | Blue Canvas"
+push "68a63394870a79e3d38e3066" "building-ai-automations" "Building AI Automations | Blue Canvas"
+push "689632baec160dc298d3572a" "can-the-uk-become-an-ai-superpower" "Can the UK Become an AI Superpower?"
+push "6896321c18a03c79104239b2" "5-sectors-being-disrupted-by-ai" "5 Sectors Disrupted by AI | Blue Canvas"
+push "6896302346c8f63a50888e93" "ai-corporate-coaching" "AI Corporate Coaching | Blue Canvas"
+push "6890db646313454392264f42" "3-ai-startups-in-london-to-watch" "3 AI Startups in London to Watch"
+push "6890d8a1c178effe0a5a2507" "being-an-early-adopter-of-ai" "Being an Early Adopter of AI | Blue Canvas"
+push "6890d7f225ded153f27a46d3" "15-amazing-ai-tools-for-business" "15 Amazing AI Tools for Business"
+push "688def5a81d1b62072caa6c1" "how-northern-ireland-can-become-a-leader-in-ai" "NI as an AI Leader | Blue Canvas"
+push "688ded68961d84e35873d857" "getting-started-with-ai" "Getting Started with AI | Blue Canvas"
+push "688ded0f196aa50a998d6d7d" "ai-developments-in-2025" "AI Developments in 2025 | Blue Canvas"
+push "68822fac55633f2528414210" "small-business-using-ai" "Small Business Using AI | Blue Canvas"
+push "68822f3a7406797d7f3ecef3" "ai-consultancy-northern-ireland-a2bg3" "AI Consultancy Northern Ireland | Blue Canvas"
+push "68822ecc46a057d5fb68f732" "ai-consultancy-ireland" "AI Consultancy Ireland | Blue Canvas"
+push "6876ac98da6a4e1a0c07636a" "generating-images-and-video-with-ai" "AI Image & Video Generation | Blue Canvas"
+push "6876abf2c20c34b9381a8769" "can-i-replace-my-staff-with-ai-agents" "Replace Staff with AI Agents? | Blue Canvas"
+push "6876ab7c2e39b3b9783db3eb" "generating-marketing-content-with-ai" "AI Marketing Content Generation"
+push "686d9f683a5c5187b946e62d" "ai-early-adoption" "AI Early Adoption Guide | Blue Canvas"
+push "686d9f1878b6286cd9513e4d" "building-autonomous-agents" "Building Autonomous AI Agents | Blue Canvas"
+push "686d9eba7ebc8efdde835661" "using-ai-in-accountancy-practices" "AI in Accountancy Practices | Blue Canvas"
+push "686b6a6eb0cbf7606cc3573b" "using-ai-in-construction" "Using AI in Construction | Blue Canvas"
+push "686b6a1450fc0bc249d7c05f" "using-ai-in-legal-practice" "AI in Legal Practice | Blue Canvas"
+push "686b699e4bd3b3f0cb038371" "the-future-of-ai-in-northern-ireland-government-education-and-industry-outlook" "Future of AI in Northern Ireland"
+push "6867e7ba2c3649f4c2b78a92" "private-ai-for-enterprise-safely-harnessing-ai-with-your-data" "Private AI for Enterprise | Blue Canvas"
+push "6867e7392c2b42de90591d37" "ai-for-b2b-sales-automation-2" "B2B Sales Automation with AI | Blue Canvas"
+push "6867e6c707f4afa177410e63" "using-ai-to-win-tenders" "Using AI to Win Tenders | Blue Canvas"
+push "6863f23c7324cbae67c33bb5" "ai-for-b2b-sales-automation" "AI for B2B Sales Automation | Blue Canvas"
+push "6863f1ca6130157064099782" "best-ai-tools-for-small-business-2025" "Best AI Tools for Small Business 2025"
+push "6863f1682f00a86d45cd1a2a" "how-to-scale-your-business-with-ai" "Scale Your Business with AI | Blue Canvas"
+push "6862e368d2fd254f7daadc1d" "reduce-headcount-with-ai" "Reduce Headcount with AI | Blue Canvas"
+push "6861be7f2910c4c57e74a528" "ai-business-coaching" "AI Business Coaching | Blue Canvas"
+push "68533450c7c1a6948b760df1" "ongoing-ai-business-support-why-you-need-on-demand-expertise" "Ongoing AI Business Support | Blue Canvas"
+push "6853337a6bcbbab2803ee8e8" "ai-tools-for-business-development" "AI Tools for Business Development"
+push "6849c0264435ad5c3ba3af84" "sales-ai-agents" "Sales AI Agents Guide | Blue Canvas"
+push "68475ead550bae76595c6d3f" "5-business-use-cases-of-ai-in-northern-ireland" "5 AI Use Cases in Northern Ireland"
+push "683e07d314540e5fab599258" "using-ai-for-writing-tenders" "AI for Writing Tenders | Blue Canvas"
+push "683740de6b773d07bd979de7" "ai-chat-gpt-consulting" "AI ChatGPT Consulting | Blue Canvas"
+push "6830820772498ec8788f9111" "how-to-use-a-i-in-business-development" "AI in Business Development | Blue Canvas"
+push "68250f75514948d0c9a40a5d" "ai-marketing" "AI Marketing Guide | Blue Canvas"
+push "681d2d428dbb9e0212dc2df1" "ai-sales-coaching" "AI Sales Coaching | Blue Canvas"
+push "681c711a4cf8d19629292d17" "bespoke-ai-training-solutions" "Bespoke AI Training Solutions | Blue Canvas"
+push "681b80e0ebbf8b4e446a9535" "ai-sales-training" "AI Sales Training | Blue Canvas"
+push "680fa52820f4670dc32003dc" "lead-generation-ai" "Lead Generation AI | Blue Canvas"
+push "67fd2244de11945381ade945" "ai-for-business-development-and-ai-marketing-in-the-uk" "AI for Business Development UK"
+push "67e4825804e6baf1d52470a3" "ai-consultancy-uk-the-evolution-of-ai-in-business-development" "AI Consultancy UK | Blue Canvas"
+
+echo ""
+echo "============================="
+echo "Summary: $SUCCESS successful, $FAIL failed out of 97 total"
+echo "============================="
+echo ""
+echo "⚠️  DUPLICATE POSTS (recommend delete/merge):"
+echo "  - is-ai-a-bubble-2 (691e0e4a30123b1b099d0fb3)"
+echo "  - ai-for-b2b-sales-automation-2 (6867e7392c2b42de90591d37)"

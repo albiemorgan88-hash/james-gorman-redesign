@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <rect width="1080" height="1080" fill="#2B4DAF"/>
+  <!-- Flow arrows -->
+  <g opacity="0.9">
+    <!-- Strategy circle -->
+    <circle cx="270" cy="540" r="60" fill="none" stroke="white" stroke-width="2" opacity="0.6"/>
+    <text x="270" y="535" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="400" font-size="20" fill="white" opacity="0.8">Strategy</text>
+    <!-- Arrow 1 -->
+    <line x1="340" y1="540" x2="440" y2="540" stroke="white" stroke-width="2" opacity="0.4"/>
+    <polygon points="440,534 455,540 440,546" fill="#FF4520" opacity="0.8"/>
+    <!-- Design circle -->
+    <circle cx="540" cy="540" r="60" fill="none" stroke="white" stroke-width="2" opacity="0.6"/>
+    <text x="540" y="535" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="400" font-size="20" fill="white" opacity="0.8">Design</text>
+    <!-- Arrow 2 -->
+    <line x1="610" y1="540" x2="710" y2="540" stroke="white" stroke-width="2" opacity="0.4"/>
+    <polygon points="710,534 725,540 710,546" fill="#FF4520" opacity="0.8"/>
+    <!-- Execution circle -->
+    <circle cx="810" cy="540" r="60" fill="none" stroke="white" stroke-width="2" opacity="0.6"/>
+    <text x="810" y="535" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="400" font-size="20" fill="white" opacity="0.8">Execution</text>
+  </g>
+  <!-- Headline -->
+  <text x="540" y="340" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="80" fill="white" letter-spacing="-2">From Strategy</text>
+  <text x="540" y="430" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="80" fill="white" letter-spacing="-2">to Execution</text>
+  <!-- Logo -->
+  <text x="540" y="920" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600" font-size="36" fill="white" opacity="0.9">Blue Canvas</text>
+  <text x="1040" y="1050" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="400" font-size="18" fill="white" opacity="0.5">bluecanvas.ai</text>
+</svg>

@@ -1,0 +1,1 @@
+Hey Sean 👋 Quick one — I've built a demo of what an AI assistant could look like on The Self Storage Centre's website. It handles customer enquiries 24/7 — pricing, unit sizes, locations, box shop — so you never miss a lead, even at 11pm on a Sunday. Have a play: [DEMO LINK]. Setup is £1,750 with £250/month management. Happy to chat if it's of interest!

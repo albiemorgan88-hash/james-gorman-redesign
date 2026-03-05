@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 627" width="1200" height="627">
+  <rect width="1200" height="627" fill="#ffffff"/>
+  <text x="600" y="100" font-family="Helvetica, Arial, sans-serif" font-size="42" font-weight="700" fill="#131313" text-anchor="middle">The AI Adoption Gap</text>
+  <line x1="570" y1="120" x2="630" y2="120" stroke="#2563eb" stroke-width="3"/>
+  <!-- Diverging lines -->
+  <line x1="200" y1="350" x2="1000" y2="350" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4,4"/>
+  <!-- Upper line - businesses using AI strategically -->
+  <path d="M 200 350 Q 400 340, 500 310 Q 600 280, 700 230 Q 800 180, 1000 150" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <!-- Lower line - businesses not adopting -->
+  <path d="M 200 350 Q 400 360, 500 390 Q 600 420, 700 440 Q 800 460, 1000 480" fill="none" stroke="#d1d5db" stroke-width="3" stroke-linecap="round"/>
+  <!-- Labels -->
+  <text x="1010" y="150" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#2563eb">Strategic AI adoption</text>
+  <text x="1010" y="485" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#999999">No AI strategy</text>
+  <!-- Axis labels -->
+  <text x="200" y="560" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#aaaaaa">Today</text>
+  <text x="970" y="560" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#aaaaaa">12 months</text>
+  <text x="600" y="560" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#777777" text-anchor="middle">The gap is widening. Where will your business be?</text>
+  <!-- Branding -->
+  <text x="1060" y="595" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#999999" text-anchor="middle">Blue Canvas AI</text>
+  <text x="1060" y="612" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#bbbbbb" text-anchor="middle">bluecanvas.ai</text>
+</svg>

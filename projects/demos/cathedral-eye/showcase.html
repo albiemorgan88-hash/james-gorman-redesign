@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Cathedral Eye Clinic × Blue Canvas AI</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#2B4DAF;--accent:#FF4520;--dark:#0a1628;--light:#f8f9fc;--gray:#6b7280;--med:#e5e7eb}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--dark);color:#fff;overflow:hidden;height:100dvh;width:100vw;-webkit-tap-highlight-color:transparent;user-select:none}
+.deck{position:relative;width:100%;height:100%}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:2rem 1.5rem;opacity:0;pointer-events:none;transition:opacity .5s,transform .5s;transform:translateX(40px);text-align:center}
+.slide.active{opacity:1;pointer-events:auto;transform:translateX(0)}
+.slide.exit{opacity:0;transform:translateX(-40px)}
+.dots{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:100}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.25);transition:all .3s}
+.dot.on{background:#fff;width:24px;border-radius:4px}
+.nav-hint{position:fixed;bottom:3.5rem;left:50%;transform:translateX(-50%);font-size:.7rem;color:rgba(255,255,255,.35);z-index:100}
+h1{font-size:1.8rem;line-height:1.15;font-weight:700;margin-bottom:1rem}
+h2{font-size:1.35rem;line-height:1.25;font-weight:600;margin-bottom:.75rem}
+h3{font-size:1.05rem;font-weight:600;margin-bottom:.5rem}
+p,.desc{font-size:.9rem;line-height:1.5;color:rgba(255,255,255,.75)}
+.accent{color:var(--accent)}
+.blue{color:var(--blue)}
+.tag{display:inline-block;font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;padding:.3rem .7rem;border-radius:99px;background:rgba(43,77,175,.2);color:var(--blue);margin-bottom:1rem}
+.tag-acc{background:rgba(255,69,32,.15);color:var(--accent)}
+
+/* Slide 1 */
+.s1-icon{font-size:3.5rem;margin-bottom:1.5rem;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+.s1-sub{font-size:1rem;color:rgba(255,255,255,.5);margin-top:.5rem}
+
+/* Slide 2 - scan */
+.scan-box{width:100%;max-width:320px;background:#111827;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.08);margin:1rem 0}
+.scan-bar{height:3px;background:var(--blue);border-radius:2px;width:0;transition:width 2s ease-out}
+.scan-url{padding:.75rem 1rem;font-size:.75rem;color:var(--gray);border-bottom:1px solid rgba(255,255,255,.06);font-family:monospace}
+.scan-body{padding:1rem;text-align:left}
+.scan-line{height:8px;border-radius:4px;background:rgba(255,255,255,.06);margin-bottom:8px}
+.scan-line:nth-child(1){width:70%}.scan-line:nth-child(2){width:90%}.scan-line:nth-child(3){width:55%}.scan-line:nth-child(4){width:80%}.scan-line:nth-child(5){width:40%}
+.scan-status{padding:.75rem 1rem;font-size:.7rem;color:var(--accent);font-family:monospace;border-top:1px solid rgba(255,255,255,.06);min-height:2.5rem}
+
+/* Slide 3 - score */
+.score-ring{position:relative;width:140px;height:140px;margin:1rem auto}
+.score-ring svg{transform:rotate(-90deg)}
+.score-ring circle{fill:none;stroke-width:8}
+.score-bg{stroke:rgba(255,255,255,.08)}
+.score-fg{stroke:var(--accent);stroke-dasharray:377;stroke-dashoffset:377;stroke-linecap:round;transition:stroke-dashoffset 1.5s ease-out}
+.score-val{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.2rem;font-weight:700}
+.score-label{font-size:.7rem;color:var(--gray);margin-top:-.25rem}
+.issues{width:100%;max-width:320px;text-align:left;margin-top:1rem}
+.issue{display:flex;gap:.6rem;align-items:flex-start;padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:.8rem}
+.issue-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700}
+.issue-red{background:rgba(239,68,68,.15);color:#ef4444}
+.issue-amber{background:rgba(245,158,11,.15);color:#f59e0b}
+.issue-text span{display:block;font-size:.65rem;color:var(--gray);margin-top:2px}
+
+/* Slide 4 - before/after */
+.serp{width:100%;max-width:320px;background:#fff;border-radius:10px;padding:1rem;text-align:left;color:#1a1a1a;margin:.5rem 0}
+.serp-label{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.6rem;color:#fff;background:var(--accent);display:inline-block;padding:.2rem .5rem;border-radius:4px}
+.serp-label.after{background:#10b981}
+.serp-title{font-size:.95rem;color:#1a0dab;font-weight:400;margin-bottom:.15rem}
+.serp-url{font-size:.7rem;color:#006621;margin-bottom:.3rem}
+.serp-desc{font-size:.78rem;color:#545454;line-height:1.4}
+
+/* Slide 5 - ads */
+.ad-card{width:100%;max-width:320px;background:#fff;border-radius:10px;padding:1rem;text-align:left;color:#1a1a1a;margin:.4rem 0;border-left:3px solid var(--blue)}
+.ad-sponsor{font-size:.6rem;color:var(--gray);font-weight:600;margin-bottom:.3rem}
+.ad-headline{font-size:.9rem;color:#1a0dab;font-weight:500;margin-bottom:.15rem}
+.ad-url{font-size:.68rem;color:#006621;margin-bottom:.25rem}
+.ad-desc{font-size:.75rem;color:#545454;line-height:1.4}
+.ad-ext{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
+.ad-ext span{font-size:.65rem;color:#1a0dab;border:1px solid #dadce0;padding:.15rem .4rem;border-radius:4px}
+
+/* Slide 6 - chat */
+.chat{width:100%;max-width:320px;margin:.75rem 0}
+.chat-msg{padding:.6rem .85rem;border-radius:14px;font-size:.8rem;line-height:1.45;margin-bottom:.5rem;max-width:85%;animation:msgIn .4s ease-out both}
+.chat-user{background:var(--blue);color:#fff;margin-left:auto;border-bottom-right-radius:4px}
+.chat-bot{background:#1e293b;color:rgba(255,255,255,.9);border-bottom-left-radius:4px}
+@keyframes msgIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.chat-msg:nth-child(2){animation-delay:.3s}.chat-msg:nth-child(3){animation-delay:.6s}.chat-msg:nth-child(4){animation-delay:.9s}.chat-msg:nth-child(5){animation-delay:1.2s}
+
+/* Slide 7 - ROI */
+.roi-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;width:100%;max-width:320px;margin:.75rem 0}
+.roi-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:.85rem .7rem;text-align:center}
+.roi-val{font-size:1.5rem;font-weight:700;color:var(--accent)}
+.roi-label{font-size:.68rem;color:var(--gray);margin-top:.2rem;line-height:1.3}
+.roi-full{grid-column:1/-1}
+
+/* Slide 8 - CTA */
+.cta-btns{display:flex;flex-direction:column;gap:.6rem;width:100%;max-width:300px;margin-top:1.25rem}
+.cta-btn{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.25rem;border-radius:10px;font-size:.85rem;font-weight:600;text-decoration:none;transition:transform .15s,opacity .15s}
+.cta-btn:active{transform:scale(.97);opacity:.9}
+.cta-primary{background:var(--accent);color:#fff}
+.cta-secondary{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.12)}
+.cta-footer{margin-top:1.5rem;font-size:.65rem;color:rgba(255,255,255,.3)}
+.bc-logo{font-size:1rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.3rem}
+.bc-logo span{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+<!-- SLIDE 1: Hook -->
+<div class="slide active" data-slide="0">
+<div class="s1-icon">👁️</div>
+<h1>What if AI could transform <span class="accent">Cathedral Eye Clinic</span> overnight?</h1>
+<p class="s1-sub">Tap to see what we found →</p>
+</div>
+
+<!-- SLIDE 2: Scan -->
+<div class="slide" data-slide="1">
+<span class="tag">Live Audit</span>
+<h2>Scanning cathedraleye.com</h2>
+<div class="scan-box">
+<div class="scan-bar" id="scanBar"></div>
+<div class="scan-url">🔒 cathedraleye.com</div>
+<div class="scan-body">
+<div class="scan-line"></div><div class="scan-line"></div><div class="scan-line"></div><div class="scan-line"></div><div class="scan-line"></div>
+</div>
+<div class="scan-status" id="scanStatus"></div>
+</div>
+<p>Analysing SEO, content, structure & performance…</p>
+</div>
+
+<!-- SLIDE 3: Issues -->
+<div class="slide" data-slide="2">
+<span class="tag tag-acc">Audit Results</span>
+<h2>Issues Found</h2>
+<div class="score-ring">
+<svg width="140" height="140"><circle class="score-bg" cx="70" cy="70" r="60"/><circle class="score-fg" id="scoreFg" cx="70" cy="70" r="60"/></svg>
+<div class="score-val" id="scoreVal">0</div>
+</div>
+<div class="score-label">SEO Health Score</div>
+<div class="issues">
+<div class="issue"><div class="issue-icon issue-red">!</div><div class="issue-text"><strong>Broken pages (404s)</strong><span>/treatments/ and /visumax-800-smile-laser/ return 404 errors</span></div></div>
+<div class="issue"><div class="issue-icon issue-red">!</div><div class="issue-text"><strong>Weak title tags</strong><span>"Home - Cathedral Eye Clinic" — missing keywords like laser eye surgery Belfast</span></div></div>
+<div class="issue"><div class="issue-icon issue-amber">⚠</div><div class="issue-text"><strong>Typos on pricing page</strong><span>"Consulation" appears twice — hurts credibility</span></div></div>
+<div class="issue"><div class="issue-icon issue-amber">⚠</div><div class="issue-text"><strong>Outdated copyright</strong><span>Footer shows © 2025 — signals neglect to Google</span></div></div>
+<div class="issue"><div class="issue-icon issue-amber">⚠</div><div class="issue-text"><strong>No schema markup</strong><span>Missing MedicalClinic, FAQPage & Review structured data</span></div></div>
+</div>
+</div>
+
+<!-- SLIDE 4: Before/After -->
+<div class="slide" data-slide="3">
+<span class="tag">Google Search</span>
+<h2>Before & After</h2>
+<div class="serp">
+<div class="serp-label">Before</div>
+<div class="serp-title">Home - Cathedral Eye Clinic</div>
+<div class="serp-url">cathedraleye.com</div>
+<div class="serp-desc">One of the most advanced eye care facilities in Ireland. Book a consultation. Fast-tracked appointments...</div>
+</div>
+<div class="serp">
+<div class="serp-label after">After</div>
+<div class="serp-title">Cathedral Eye Clinic Belfast | Laser Eye Surgery from £995</div>
+<div class="serp-url">cathedraleye.com ★★★★★ 4.9 · 500+ reviews</div>
+<div class="serp-desc">Belfast's five-star rated eye hospital. SMILE, LASIK & cataract surgery by leading consultant ophthalmologists. Free initial consultation. Finance available.</div>
+</div>
+<p style="margin-top:.5rem;font-size:.75rem;color:var(--gray)">Rich snippets, star ratings & optimised copy = higher click-through rates</p>
+</div>
+
+<!-- SLIDE 5: Google Ads -->
+<div class="slide" data-slide="4">
+<span class="tag">Paid Search</span>
+<h2>Google Ads Preview</h2>
+<div class="ad-card">
+<div class="ad-sponsor">Sponsored</div>
+<div class="ad-headline">Laser Eye Surgery Belfast — From £995/Eye</div>
+<div class="ad-url">cathedraleye.com/laser-eye-surgery</div>
+<div class="ad-desc">Free initial consultation. VisuMax 800 SMILE, LASIK & TransPRK. 5-star rated. Finance available. Book online today.</div>
+<div class="ad-ext"><span>📞 028 9032 2020</span><span>Pricing</span><span>Free Consult</span><span>Reviews</span></div>
+</div>
+<div class="ad-card">
+<div class="ad-sponsor">Sponsored</div>
+<div class="ad-headline">Cataract Surgery Belfast — £2,895/Eye</div>
+<div class="ad-url">cathedraleye.com/cataracts</div>
+<div class="ad-desc">Premium IOL lenses. 200+ years combined surgeon experience. Aftercare included. Northern Ireland's leading eye hospital.</div>
+<div class="ad-ext"><span>Book Online</span><span>Our Surgeons</span><span>Testimonials</span></div>
+</div>
+<p style="margin-top:.5rem;font-size:.75rem;color:var(--gray)">Targeting high-intent keywords: "laser eye surgery Belfast", "cataract surgery NI"</p>
+</div>
+
+<!-- SLIDE 6: AI Assistant -->
+<div class="slide" data-slide="5">
+<span class="tag">AI Assistant</span>
+<h2>24/7 Patient Support</h2>
+<div class="chat" id="chatDemo">
+<div class="chat-msg chat-user">Hi, how much is SMILE laser eye surgery?</div>
+<div class="chat-msg chat-bot">SMILE laser starts from £3,700 per eye, depending on your prescription. This includes a free initial consultation and one year of post-operative aftercare. Would you like to book a suitability assessment?</div>
+<div class="chat-msg chat-user">What's the recovery time?</div>
+<div class="chat-msg chat-bot">Most patients notice improved vision within 24 hours. You can typically return to work within 2–3 days. Our surgeons will provide a personalised aftercare plan at your consultation. Shall I check available appointment times?</div>
+</div>
+<p style="font-size:.75rem;color:var(--gray)">Handles bookings, pricing queries, procedure FAQs & aftercare — instantly, around the clock</p>
+</div>
+
+<!-- SLIDE 7: ROI -->
+<div class="slide" data-slide="6">
+<span class="tag tag-acc">Projected Impact</span>
+<h2>The Numbers</h2>
+<div class="roi-grid">
+<div class="roi-card"><div class="roi-val">+35%</div><div class="roi-label">More organic traffic from SEO fixes</div></div>
+<div class="roi-card"><div class="roi-val">+22%</div><div class="roi-label">Higher click-through from rich snippets</div></div>
+<div class="roi-card"><div class="roi-val">8–12</div><div class="roi-label">Extra procedures booked per month via AI</div></div>
+<div class="roi-card"><div class="roi-val">£30k+</div><div class="roi-label">Additional monthly revenue at avg £2,900/procedure</div></div>
+<div class="roi-card roi-full" style="border-color:var(--accent)"><div class="roi-val" style="font-size:2rem">£360k+</div><div class="roi-label">Potential additional annual revenue</div></div>
+</div>
+<p style="font-size:.7rem;color:var(--gray);margin-top:.25rem">Based on industry benchmarks for private eye clinics in the UK & Ireland</p>
+</div>
+
+<!-- SLIDE 8: CTA -->
+<div class="slide" data-slide="7">
+<div class="bc-logo">blue<span>canvas</span>.ai</div>
+<p style="font-size:.75rem;color:var(--gray);margin-bottom:1.25rem">AI Consultancy · Northern Ireland</p>
+<h2>Ready to transform Cathedral Eye Clinic's digital presence?</h2>
+<p>Let's discuss how AI can drive more consultations, reduce admin workload, and grow your practice.</p>
+<div class="cta-btns">
+<a href="tel:+447828699027" class="cta-btn cta-primary">📞 Call PJ — +44 7828 699027</a>
+<a href="mailto:contact@bluecanvas.ai?subject=Cathedral%20Eye%20Clinic%20%E2%80%94%20AI%20Consultation" class="cta-btn cta-secondary">✉️ contact@bluecanvas.ai</a>
+<a href="https://bluecanvas.ai" class="cta-btn cta-secondary">🌐 bluecanvas.ai</a>
+</div>
+<div class="cta-footer">Built with AI by Blue Canvas · PJ Patterson</div>
+</div>
+
+</div>
+
+<!-- Dots -->
+<div class="dots" id="dots"></div>
+<div class="nav-hint" id="navHint">Tap to continue</div>
+
+<script>
+const slides=document.querySelectorAll('.slide'),total=slides.length;
+let cur=0,busy=false;
+const dotsC=document.getElementById('dots');
+for(let i=0;i<total;i++){const d=document.createElement('div');d.className='dot'+(i===0?' on':'');dotsC.appendChild(d)}
+const dots=dotsC.querySelectorAll('.dot');
+
+function go(n){
+if(busy||n<0||n>=total||n===cur)return;
+busy=true;
+slides[cur].classList.remove('active');slides[cur].classList.add('exit');
+slides[n].classList.add('active');
+dots[cur].classList.remove('on');dots[n].classList.add('on');
+setTimeout(()=>{slides[cur].classList.remove('exit');cur=n;busy=false;onEnter(n)},500);
+if(n===total-1)document.getElementById('navHint').style.display='none';
+}
+
+document.getElementById('deck').addEventListener('click',e=>{
+if(e.target.closest('a'))return;
+const x=e.clientX,w=window.innerWidth;
+if(x<w*.3&&cur>0)go(cur-1);else if(cur<total-1)go(cur+1);
+});
+
+let tx=0;
+document.addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
+document.addEventListener('touchend',e=>{
+if(e.target.closest('a'))return;
+const dx=e.changedTouches[0].clientX-tx;
+if(dx<-40&&cur<total-1)go(cur+1);
+else if(dx>40&&cur>0)go(cur-1);
+},{passive:true});
+
+document.addEventListener('keydown',e=>{
+if(e.key==='ArrowRight'||e.key===' ')go(cur+1);
+if(e.key==='ArrowLeft')go(cur-1);
+});
+
+// Slide-specific animations
+function onEnter(n){
+if(n===1)runScan();
+if(n===2)runScore();
+}
+
+function runScan(){
+const bar=document.getElementById('scanBar'),st=document.getElementById('scanStatus');
+bar.style.width='0';st.textContent='';
+const msgs=['Checking title tags...','Scanning for broken links...','Analysing meta descriptions...','Testing page structure...','Checking schema markup...','Audit complete — issues found ⚠️'];
+let i=0;bar.style.width='100%';
+const iv=setInterval(()=>{if(i<msgs.length){st.textContent=msgs[i];i++}else clearInterval(iv)},400);
+}
+
+function runScore(){
+const fg=document.getElementById('scoreFg'),val=document.getElementById('scoreVal');
+const target=42,circ=2*Math.PI*60;
+fg.style.strokeDashoffset=circ;
+requestAnimationFrame(()=>{fg.style.strokeDashoffset=circ-(target/100)*circ});
+let c=0;const iv=setInterval(()=>{if(c>=target){clearInterval(iv);return}c++;val.textContent=c},30);
+}
+</script>
+</body>
+</html>

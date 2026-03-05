@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "gdrive": {
+      "command": "mcp-server-gdrive"
+    },
+    "google-maps": {
+      "command": "mcp-server-google-maps",
+      "env": {
+        "GOOGLE_MAPS_API_KEY": "AIzaSyCMdzMlGG_-vOwpo01h9c_PCwb6W0xAXMc"
+      }
+    },
+    "brave-search": {
+      "command": "mcp-server-brave-search",
+      "env": {
+        "BRAVE_API_KEY": "BSAEoeWnJlEfGRoIMbR7JLixLe0zI5_"
+      }
+    },
+    "memory": {
+      "command": "mcp-server-memory"
+    },
+    "sequential-thinking": {
+      "command": "mcp-server-sequential-thinking"
+    }
+  },
+  "imports": []
+}

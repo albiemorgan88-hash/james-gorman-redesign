@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lead Scorer — Blue Canvas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0e17;
+  --surface: #111827;
+  --surface-2: #1a2332;
+  --border: #1e2d3d;
+  --text: #e8edf3;
+  --text-muted: #7a8ba0;
+  --accent: #3b82f6;
+  --accent-glow: rgba(59, 130, 246, 0.15);
+  --hot: #ef4444;
+  --warm: #f59e0b;
+  --cool: #6366f1;
+  --cold: #64748b;
+  --green: #10b981;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Noise texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 999;
+}
+
+/* Ambient glow */
+.ambient {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.07;
+  pointer-events: none;
+  z-index: 0;
+}
+.ambient-1 { background: var(--accent); top: -200px; right: -100px; }
+.ambient-2 { background: var(--cool); bottom: -200px; left: -100px; }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.header {
+  margin-bottom: 48px;
+  animation: fadeUp 0.6s ease both;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.brand-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: pulse 2s ease infinite;
+}
+
+h1 {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+h1 em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 15px;
+  max-width: 500px;
+}
+
+/* Main layout */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .layout { grid-template-columns: 1fr; }
+  .score-panel { position: static !important; }
+}
+
+/* Form section */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field-group {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  animation: fadeUp 0.6s ease both;
+}
+
+.field-group:hover {
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.1);
+}
+
+.field-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.field-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.field-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+/* Custom range slider */
+.slider-wrap {
+  position: relative;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--border);
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+  cursor: grab;
+  transition: transform 0.15s;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.2);
+  cursor: grabbing;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.slider-value {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.slider-wrap:hover .slider-value,
+.slider-wrap:focus-within .slider-value {
+  opacity: 1;
+}
+
+/* Prospect name input */
+.text-input {
+  width: 100%;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.text-input:focus {
+  border-color: var(--accent);
+}
+
+.text-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Score panel */
+.score-panel {
+  position: sticky;
+  top: 40px;
+  animation: fadeUp 0.6s 0.3s ease both;
+}
+
+.score-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+}
+
+.score-ring-wrap {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 20px;
+}
+
+.score-ring {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.score-ring-bg {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 6;
+}
+
+.score-ring-fill {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 408;
+  stroke-dashoffset: 408;
+  transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.4s;
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.3));
+}
+
+.score-number {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-value {
+  font-family: 'Instrument Serif', serif;
+  font-size: 48px;
+  line-height: 1;
+  transition: color 0.4s;
+}
+
+.score-max {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.score-grade {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  transition: color 0.4s;
+}
+
+.score-summary {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  min-height: 40px;
+}
+
+/* Breakdown */
+.breakdown {
+  text-align: left;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  margin-top: 4px;
+}
+
+.breakdown-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 13px;
+}
+
+.breakdown-bar-wrap {
+  width: 60px;
+  height: 3px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.breakdown-bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s ease, background 0.4s;
+}
+
+/* Actions */
+.actions {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover { background: #2563eb; transform: translateY(-1px); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.btn-ghost:hover { border-color: var(--text-muted); color: var(--text); }
+
+/* History */
+.history {
+  margin-top: 48px;
+  animation: fadeUp 0.6s 0.5s ease both;
+}
+
+.history h2 {
+  font-family: 'Instrument Serif', serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.history-empty {
+  color: var(--text-muted);
+  font-size: 14px;
+  padding: 24px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.history-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 16px;
+  align-items: center;
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  cursor: pointer;
+}
+
+.history-item:hover {
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.history-name { font-weight: 600; }
+
+.history-score {
+  font-family: 'Instrument Serif', serif;
+  font-size: 20px;
+}
+
+.history-grade {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.history-delete {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  opacity: 0;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.history-item:hover .history-delete { opacity: 1; }
+.history-delete:hover { color: var(--hot); }
+
+.grade-hot { color: var(--hot); }
+.grade-warm { color: var(--warm); }
+.grade-cool { color: var(--cool); }
+.grade-cold { color: var(--cold); }
+
+.bg-hot { background: rgba(239, 68, 68, 0.1); color: var(--hot); }
+.bg-warm { background: rgba(245, 158, 11, 0.1); color: var(--warm); }
+.bg-cool { background: rgba(99, 102, 241, 0.1); color: var(--cool); }
+.bg-cold { background: rgba(100, 116, 139, 0.1); color: var(--cold); }
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: var(--green);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+</style>
+</head>
+<body>
+<div class="ambient ambient-1"></div>
+<div class="ambient ambient-2"></div>
+
+<div class="container">
+  <header class="header">
+    <div class="brand"><span class="brand-dot"></span> Blue Canvas</div>
+    <h1>Lead <em>Scorer</em></h1>
+    <p class="subtitle">Score prospects in seconds. Focus outreach where it matters most.</p>
+  </header>
+
+  <div class="layout">
+    <div class="form-section">
+      <!-- Prospect Name -->
+      <div class="field-group" style="animation-delay: 0.1s">
+        <div class="field-title">Prospect</div>
+        <div class="field-desc">Company or contact name</div>
+        <input type="text" class="text-input" id="prospectName" placeholder="e.g. Dickson McNulty Solicitors">
+      </div>
+
+      <!-- Company Size -->
+      <div class="field-group" style="animation-delay: 0.15s">
+        <div class="field-label">Factor 1</div>
+        <div class="field-title">Company Size</div>
+        <div class="field-desc">Larger companies = bigger contracts, but SMEs close faster</div>
+        <div class="slider-wrap">
+          <div class="slider-value" id="sv-size">3</div>
+          <input type="range" min="1" max="5" value="3" id="size" data-labels="Solo,Micro (2-10),Small (11-50),Medium (51-200),Enterprise (200+)">
+          <div class="slider-labels"><span>Solo</span><span>Enterprise</span></div>
+        </div>
+      </div>
+
+      <!-- Budget Signals -->
+      <div class="field-group" style="animation-delay: 0.2s">
+        <div class="field-label">Factor 2</div>
+        <div class="field-title">Budget Signals</div>
+        <div class="field-desc">Have they mentioned budget, pricing, or investment willingness?</div>
+        <div class="slider-wrap">
+          <div class="slider-value" id="sv-budget">3</div>
+          <input type="range" min="1" max="5" value="3" id="budget" data-labels="None,Hinted,Discussed,Confirmed,Ready to go">
+          <div class="slider-labels"><span>No signal</span><span>Ready to go</span></div>
+        </div>
+      </div>
+
+      <!-- AI Readiness -->
+      <div class="field-group" style="animation-delay: 0.25s">
+        <div class="field-label">Factor 3</div>
+        <div class="field-title">AI Readiness</div>
+        <div class="field-desc">How tech-savvy are they? Do they already use digital tools?</div>
+        <div class="slider-wrap">
+          <div class="slider-value" id="sv-readiness">3</div>
+          <input type="range" min="1" max="5" value="3" id="readiness" data-labels="Luddite,Basic,Moderate,Digital-first,AI-curious">
+          <div class="slider-labels"><span>Luddite</span><span>AI-curious</span></div>
+        </div>
+      </div>
+
+      <!-- Urgency -->
+      <div class="field-group" style="animation-delay: 0.3s">
+        <div class="field-label">Factor 4</div>
+        <div class="field-title">Urgency / Pain</div>
+        <div class="field-desc">Are they losing money, time, or clients without AI?</div>
+        <div class="slider-wrap">
+          <div class="slider-value" id="sv-urgency">3</div>
+          <input type="range" min="1" max="5" value="3" id="urgency" data-labels="None,Low,Moderate,High,Critical">
+          <div class="slider-labels"><span>Chilling</span><span>Hair on fire</span></div>
+        </div>
+      </div>
+
+      <!-- Decision Power -->
+      <div class="field-group" style="animation-delay: 0.35s">
+        <div class="field-label">Factor 5</div>
+        <div class="field-title">Decision-Maker Access</div>
+        <div class="field-desc">Are you talking to the person who signs the cheque?</div>
+        <div class="slider-wrap">
+          <div class="slider-value" id="sv-decision">3</div>
+          <input type="range" min="1" max="5" value="3" id="decision" data-labels="Unknown,Gatekeeper,Influencer,Champion,Decision-maker">
+          <div class="slider-labels"><span>Unknown</span><span>Decision-maker</span></div>
+        </div>
+      </div>
+
+      <!-- Fit -->
+      <div class="field-group" style="animation-delay: 0.4s">
+        <div class="field-label">Factor 6</div>
+        <div class="field-title">Blue Canvas Fit</div>
+        <div class="field-desc">Can you clearly deliver value with your current services?</div>
+        <div class="slider-wrap">
+          <div class="slider-value" id="sv-fit">3</div>
+          <input type="range" min="1" max="5" value="3" id="fit" data-labels="Poor,Weak,Decent,Strong,Perfect">
+          <div class="slider-labels"><span>Poor fit</span><span>Perfect fit</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Score Panel -->
+    <div class="score-panel">
+      <div class="score-card">
+        <div class="score-ring-wrap">
+          <svg class="score-ring" viewBox="0 0 140 140">
+            <circle class="score-ring-bg" cx="70" cy="70" r="65"/>
+            <circle class="score-ring-fill" id="ringFill" cx="70" cy="70" r="65"/>
+          </svg>
+          <div class="score-number">
+            <div class="score-value" id="scoreValue">18</div>
+            <div class="score-max">/ 30</div>
+          </div>
+        </div>
+
+        <div class="score-grade" id="scoreGrade">WARM</div>
+        <div class="score-summary" id="scoreSummary">Worth a follow-up. Dig into budget and urgency.</div>
+
+        <div class="breakdown">
+          <div class="breakdown-title">Breakdown</div>
+          <div id="breakdownRows"></div>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" onclick="saveLead()">💾 Save Lead</button>
+          <button class="btn btn-ghost" onclick="resetForm()">↺ Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- History -->
+  <div class="history">
+    <h2>Saved Leads</h2>
+    <div id="historyContainer">
+      <div class="history-empty">No leads scored yet. Rate your first prospect above.</div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast">Lead saved!</div>
+
+<script>
+const factors = ['size', 'budget', 'readiness', 'urgency', 'decision', 'fit'];
+const factorNames = ['Size', 'Budget', 'AI Ready', 'Urgency', 'Access', 'Fit'];
+const weights = [0.8, 1.2, 0.9, 1.1, 1.0, 1.0]; // Budget & urgency weighted higher
+
+const circumference = 2 * Math.PI * 65; // ~408
+
+function getValues() {
+  return factors.map(f => parseInt(document.getElementById(f).value));
+}
+
+function calcScore(values) {
+  let weighted = 0, maxWeighted = 0;
+  values.forEach((v, i) => {
+    weighted += v * weights[i];
+    maxWeighted += 5 * weights[i];
+  });
+  return Math.round((weighted / maxWeighted) * 30);
+}
+
+function getGrade(score) {
+  if (score >= 25) return { grade: 'HOT', cls: 'hot', summary: '🔥 High-value prospect. Prioritise outreach immediately.' };
+  if (score >= 18) return { grade: 'WARM', cls: 'warm', summary: 'Worth pursuing. Dig into budget and timeline.' };
+  if (score >= 11) return { grade: 'COOL', cls: 'cool', summary: 'Some potential. Needs nurturing before a pitch.' };
+  return { grade: 'COLD', cls: 'cold', summary: 'Low priority. Park and revisit if signals change.' };
+}
+
+function getColor(cls) {
+  const map = { hot: '#ef4444', warm: '#f59e0b', cool: '#6366f1', cold: '#64748b' };
+  return map[cls];
+}
+
+function update() {
+  const values = getValues();
+  const score = calcScore(values);
+  const { grade, cls, summary } = getGrade(score);
+  const color = getColor(cls);
+
+  // Update ring
+  const offset = circumference - (score / 30) * circumference;
+  const ring = document.getElementById('ringFill');
+  ring.style.strokeDashoffset = offset;
+  ring.style.stroke = color;
+
+  // Update text
+  document.getElementById('scoreValue').textContent = score;
+  document.getElementById('scoreValue').style.color = color;
+  document.getElementById('scoreGrade').textContent = grade;
+  document.getElementById('scoreGrade').className = 'score-grade grade-' + cls;
+  document.getElementById('scoreSummary').textContent = summary;
+
+  // Update slider values
+  factors.forEach((f, i) => {
+    const labels = document.getElementById(f).dataset.labels.split(',');
+    document.getElementById('sv-' + f).textContent = labels[values[i] - 1];
+  });
+
+  // Breakdown
+  const rows = document.getElementById('breakdownRows');
+  rows.innerHTML = values.map((v, i) => `
+    <div class="breakdown-row">
+      <span>${factorNames[i]}</span>
+      <div class="breakdown-bar-wrap">
+        <div class="breakdown-bar" style="width:${v * 20}%;background:${color}"></div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function saveLead() {
+  const name = document.getElementById('prospectName').value.trim() || 'Unnamed Prospect';
+  const values = getValues();
+  const score = calcScore(values);
+  const { grade, cls } = getGrade(score);
+
+  const leads = JSON.parse(localStorage.getItem('bc-leads') || '[]');
+  leads.unshift({ name, score, grade, cls, values, date: new Date().toISOString() });
+  localStorage.setItem('bc-leads', JSON.stringify(leads));
+
+  renderHistory();
+  showToast('Lead saved!');
+}
+
+function deleteLead(idx) {
+  const leads = JSON.parse(localStorage.getItem('bc-leads') || '[]');
+  leads.splice(idx, 1);
+  localStorage.setItem('bc-leads', JSON.stringify(leads));
+  renderHistory();
+}
+
+function loadLead(idx) {
+  const leads = JSON.parse(localStorage.getItem('bc-leads') || '[]');
+  const lead = leads[idx];
+  if (!lead) return;
+  document.getElementById('prospectName').value = lead.name;
+  factors.forEach((f, i) => { document.getElementById(f).value = lead.values[i]; });
+  update();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderHistory() {
+  const leads = JSON.parse(localStorage.getItem('bc-leads') || '[]');
+  const container = document.getElementById('historyContainer');
+  if (!leads.length) {
+    container.innerHTML = '<div class="history-empty">No leads scored yet. Rate your first prospect above.</div>';
+    return;
+  }
+  container.innerHTML = '<div class="history-list">' + leads.map((l, i) => `
+    <div class="history-item" onclick="loadLead(${i})">
+      <span class="history-name">${l.name}</span>
+      <span class="history-score grade-${l.cls}">${l.score}</span>
+      <span class="history-grade bg-${l.cls}">${l.grade}</span>
+      <button class="history-delete" onclick="event.stopPropagation();deleteLead(${i})" title="Delete">✕</button>
+    </div>
+  `).join('') + '</div>';
+}
+
+function resetForm() {
+  document.getElementById('prospectName').value = '';
+  factors.forEach(f => { document.getElementById(f).value = 3; });
+  update();
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+// Init
+factors.forEach(f => {
+  document.getElementById(f).addEventListener('input', update);
+});
+
+update();
+renderHistory();
+</script>
+</body>
+</html>
