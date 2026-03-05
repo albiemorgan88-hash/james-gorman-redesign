@@ -4,49 +4,118 @@ import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "OpenClaw Consultant Pricing | £1,500 Flat Rate",
-  description: "Transparent OpenClaw consultant pricing. Full setup, security, integrations, training, and 30 days support for £1,500. No hidden fees. No hourly billing.",
+  title: "AI Agent Pricing | Starter £1,500 | Growth £3,500 | Enterprise Custom",
+  description:
+    "Transparent AI agent pricing. Starter: 1 agent for £1,500. Growth: 3 agents for £3,500. Enterprise: custom multi-agent deployments. No hidden fees.",
   alternates: { canonical: "/openclaw-pricing" },
-  openGraph: { title: "OpenClaw Consultant Pricing | £1,500 Flat Rate", url: "/openclaw-pricing" },
+  openGraph: {
+    title: "AI Agent Pricing | Starter £1,500 | Growth £3,500 | Enterprise Custom",
+    url: "/openclaw-pricing",
+  },
 };
 
-const included = [
-  { icon: "⚙️", title: "Full Installation & Configuration", items: ["Dedicated server setup (Mac Mini or VPS)", "Model selection and optimisation", "Channel configuration (Telegram, WhatsApp, Slack, email)", "Memory and context management", "Performance tuning"] },
-  { icon: "🔒", title: "Security Hardening", items: ["Access control and authentication", "File system permissions", "Network security configuration", "API token management", "Encryption at rest and in transit"] },
-  { icon: "🔗", title: "Integrations", items: ["Up to 5 business tool integrations", "CRM, email, calendar, etc.", "Custom API connections", "Workflow mapping and automation"] },
-  { icon: "🎯", title: "Custom Configuration", items: ["Prompt engineering for your business", "Custom skills for key workflows", "Knowledge base setup", "Tone and personality configuration"] },
-  { icon: "📚", title: "Training & Support", items: ["Hands-on training session", "Written documentation", "30 days post-deployment support", "Performance monitoring"] },
-];
-
-const addons = [
-  { name: "Additional integrations (per integration)", price: "£200" },
-  { name: "Custom skill development (per skill)", price: "£300" },
-  { name: "Monthly managed support", price: "£500/month" },
-  { name: "Multi-agent deployment (per additional agent)", price: "£1,000" },
-  { name: "Enterprise fleet setup (3+ agents)", price: "Custom quote" },
+const tiers = [
+  {
+    name: "Starter",
+    price: "£1,500",
+    desc: "Perfect for businesses ready to deploy their first AI agent and see immediate ROI.",
+    highlight: false,
+    features: [
+      "1 custom AI agent",
+      "Full installation & configuration",
+      "Security hardening",
+      "Up to 3 integrations",
+      "Prompt engineering & personality config",
+      "Team training session",
+      "Written documentation",
+      "30-day post-deployment support",
+    ],
+    cta: "Get Started",
+  },
+  {
+    name: "Growth",
+    price: "£3,500",
+    desc: "For businesses ready to scale — multiple AI agents working together across your operations.",
+    highlight: true,
+    features: [
+      "Up to 3 custom AI agents",
+      "Multi-agent coordination",
+      "Full installation & configuration",
+      "Advanced security hardening",
+      "Up to 8 integrations",
+      "Custom skill development",
+      "Team training & workshops",
+      "Comprehensive documentation",
+      "60-day post-deployment support",
+      "Performance monitoring dashboard",
+    ],
+    cta: "Scale Up",
+  },
+  {
+    name: "Enterprise",
+    price: "Custom",
+    desc: "Fleet deployments, complex workflows, compliance requirements — built to your exact specifications.",
+    highlight: false,
+    features: [
+      "Unlimited AI agents",
+      "Enterprise fleet management",
+      "Inter-agent communication & routing",
+      "Custom compliance & audit trails",
+      "Role-based access control",
+      "Unlimited integrations",
+      "Dedicated account manager",
+      "Priority support SLA",
+      "Quarterly strategy reviews",
+      "Custom training programme",
+    ],
+    cta: "Talk to Us",
+  },
 ];
 
 const compares = [
-  { title: "vs DIY setup", desc: "You'll spend 20–40 hours learning, troubleshooting, and probably getting the security wrong. At any reasonable hourly rate, that's more than £1,500 — and you won't have the same result." },
-  { title: "vs other consultants", desc: "Most AI consultants charge £150–£300/hr or require expensive discovery calls before quoting. A typical implementation runs £3,000–£10,000. We've standardised the process." },
-  { title: "vs hiring a developer", desc: "A freelancer might charge less per hour, but they won't know OpenClaw's architecture, security model, or optimisation patterns. You're paying for expertise, not just time." },
-  { title: "vs doing nothing", desc: "The real cost is the hours your team spends on repetitive work that an AI employee could handle. For most businesses, ROI payback is under 2 months." },
-];
-
-const processSteps = [
-  { bold: "You get in touch", text: "— via our contact form or email" },
-  { bold: "We schedule a kickoff call", text: "— 30 minutes to understand your setup, tools, and goals" },
-  { bold: "We build", text: "— typically 3–5 working days from kickoff to deployment" },
-  { bold: "We train", text: "— a hands-on session so your team is confident" },
-  { bold: "We support", text: "— 30 days of refinement and optimisation included" },
+  {
+    title: "vs Hiring staff",
+    desc: "A single employee costs £25,000–£40,000/year plus NI, pension, holidays, and management overhead. An AI agent costs a one-off fee and works 24/7 without breaks, sick days, or notice periods.",
+  },
+  {
+    title: "vs Other AI consultants",
+    desc: "Most AI consultancies charge £150–£300/hr with open-ended timelines. We deliver fixed-price, fixed-scope deployments. You know exactly what you're getting and what you'll pay.",
+  },
+  {
+    title: "vs DIY setup",
+    desc: "You could spend 40+ hours learning OpenClaw, troubleshooting config issues, and probably getting the security wrong. Or you could have production-ready AI agents in 6 days.",
+  },
+  {
+    title: "vs Doing nothing",
+    desc: "Every month without AI agents is another month of overpaying for manual work. Most clients see full ROI payback within the first month.",
+  },
 ];
 
 const faqs = [
-  { q: "Do I need to buy hardware?", a: "If you don't already have a Mac Mini or VPS, we'll advise on the best option. A Mac Mini M4 costs around £500 and is the ideal platform. VPS hosting starts from £20/month." },
-  { q: "Are there ongoing costs?", a: "OpenClaw is open source — no licensing fees. Your only ongoing costs are hosting (if using VPS), API usage for the AI models (typically £20–£100/month depending on usage), and optional managed support." },
-  { q: "What if I need more than 5 integrations?", a: "Additional integrations are £200 each. Most businesses need 3–5 to start." },
-  { q: "Can I upgrade to managed support later?", a: "Yes. Many clients start with the standard package and add managed support after a few months as they scale their AI usage." },
-  { q: "What's your refund policy?", a: "If we can't deliver what we've agreed, you don't pay. Simple as that." },
+  {
+    q: "What's included in the agent count?",
+    a: "Each agent is a distinct AI employee with its own role, personality, integrations, and workflows. For example, you might have a lead gen agent, a customer service agent, and an admin agent — that's 3 agents.",
+  },
+  {
+    q: "Do I need to buy hardware?",
+    a: "If you don't already have a server, we'll advise on the best option. A Mac Mini M4 costs around £500 and is ideal. VPS hosting starts from £20/month. Hardware is not included in the pricing above.",
+  },
+  {
+    q: "Are there ongoing costs?",
+    a: "OpenClaw is open source — no licensing fees. Your only ongoing costs are AI model API usage (typically £20–£100/month per agent depending on volume) and optional managed support (£500/month).",
+  },
+  {
+    q: "Can I start with Starter and upgrade later?",
+    a: "Absolutely. Many clients start with one agent, see the ROI, and scale to Growth or Enterprise within a few months. We'll credit your Starter investment toward the upgrade.",
+  },
+  {
+    q: "What's your refund policy?",
+    a: "If we can't deliver what we've agreed, you don't pay. Simple as that. We're confident in our work.",
+  },
+  {
+    q: "Can I add extra integrations to the Starter package?",
+    a: "Yes. Additional integrations beyond the included count are £200 each. Additional custom skills are £300 each.",
+  },
 ];
 
 export default function Pricing() {
@@ -55,63 +124,91 @@ export default function Pricing() {
       <Hero>
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-5 max-w-[700px] mx-auto">
-            <span className="text-accent">OpenClaw Consultant</span> Pricing
+            AI Agent <span className="text-accent">Pricing</span>
           </h1>
-          <div className="font-heading text-6xl md:text-8xl font-extrabold text-accent mb-4">£1,500</div>
-          <p className="text-lg text-white/80 max-w-[560px] mx-auto">That&apos;s it. A complete OpenClaw deployment, professionally configured, secured, and optimised for your business. No hourly rates, no scope creep, no surprise invoices.</p>
+          <p className="text-lg text-white/80 max-w-[560px] mx-auto">
+            Transparent pricing for every stage of your AI journey. No hidden
+            fees, no hourly billing, no surprise invoices.
+          </p>
         </div>
       </Hero>
 
+      {/* Pricing Tiers */}
       <section className="bg-white py-20">
         <div className="max-w-[1200px] mx-auto px-6">
-          <p className="text-accent font-heading font-semibold text-sm uppercase tracking-wider mb-3">What You Get</p>
-          <h2 className="text-3xl font-heading font-bold mb-8 text-dark">What&apos;s included</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {included.map((c) => (
-              <div key={c.title} className="bg-light rounded-box p-7 border border-black/[.06]">
-                <h3 className="font-heading font-bold text-dark mb-3">{c.icon} {c.title}</h3>
-                <ul className="list-disc ml-4 text-gray text-sm space-y-1.5">
-                  {c.items.map((item) => <li key={item}>{item}</li>)}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {tiers.map((tier) => (
+              <div
+                key={tier.name}
+                className={`rounded-box p-9 border-2 relative flex flex-col ${
+                  tier.highlight
+                    ? "border-accent bg-light shadow-lg scale-[1.02]"
+                    : "border-black/[.06] bg-light"
+                }`}
+              >
+                {tier.highlight && (
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-white text-xs font-bold px-4 py-1.5 rounded-btn uppercase tracking-wider">
+                    Most Popular
+                  </div>
+                )}
+                <div className="mb-6">
+                  <h3 className="font-heading font-bold text-xl text-dark mb-2">
+                    {tier.name}
+                  </h3>
+                  <div className="font-heading font-extrabold text-4xl text-accent mb-3">
+                    {tier.price}
+                  </div>
+                  <p className="text-gray text-sm leading-relaxed">
+                    {tier.desc}
+                  </p>
+                </div>
+                <ul className="space-y-3 mb-8 flex-1">
+                  {tier.features.map((f) => (
+                    <li
+                      key={f}
+                      className="flex gap-3 items-start text-sm text-gray"
+                    >
+                      <span className="text-accent flex-shrink-0 mt-0.5">
+                        ✓
+                      </span>
+                      {f}
+                    </li>
+                  ))}
                 </ul>
+                <a
+                  href="https://calendly.com/contact-bluecanvas/initial-consultation"
+                  className={`block text-center px-7 py-3.5 rounded-btn font-semibold transition-all hover:-translate-y-0.5 ${
+                    tier.highlight
+                      ? "bg-accent text-white hover:bg-accent-hover"
+                      : "bg-blue text-white hover:bg-blue/90"
+                  }`}
+                >
+                  {tier.cta} →
+                </a>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Comparison */}
       <section className="bg-light py-20">
         <div className="max-w-[1200px] mx-auto px-6">
-          <p className="text-accent font-heading font-semibold text-sm uppercase tracking-wider mb-3">Extras</p>
-          <h2 className="text-3xl font-heading font-bold mb-8 text-dark">Optional Add-Ons</h2>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse text-sm rounded-box overflow-hidden">
-              <thead>
-                <tr className="bg-blue text-white">
-                  <th className="p-4 text-left font-heading font-semibold">Add-On</th>
-                  <th className="p-4 text-left font-heading font-semibold">Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                {addons.map((a, i) => (
-                  <tr key={a.name} className={i % 2 === 1 ? "bg-light" : "bg-white"}>
-                    <td className="p-4 border-b border-black/[.06] text-gray">{a.name}</td>
-                    <td className="p-4 border-b border-black/[.06] font-semibold text-dark">{a.price}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-20">
-        <div className="max-w-[1200px] mx-auto px-6">
-          <p className="text-accent font-heading font-semibold text-sm uppercase tracking-wider mb-3">Comparison</p>
-          <h2 className="text-3xl font-heading font-bold mb-8 text-dark">How does this compare?</h2>
+          <p className="text-accent font-heading font-semibold text-sm uppercase tracking-wider mb-3">
+            Comparison
+          </p>
+          <h2 className="text-3xl font-heading font-bold mb-8 text-dark">
+            How Does This Compare?
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {compares.map((c) => (
-              <div key={c.title} className="bg-light rounded-box p-7 border border-black/[.06]">
-                <h3 className="font-heading font-bold text-blue mb-2">{c.title}</h3>
+              <div
+                key={c.title}
+                className="bg-white rounded-box p-7 border border-black/[.06]"
+              >
+                <h3 className="font-heading font-bold text-blue mb-2">
+                  {c.title}
+                </h3>
                 <p className="text-gray text-sm leading-relaxed">{c.desc}</p>
               </div>
             ))}
@@ -119,37 +216,29 @@ export default function Pricing() {
         </div>
       </section>
 
-      <section className="bg-light py-20">
-        <div className="max-w-[1200px] mx-auto px-6">
-          <p className="text-accent font-heading font-semibold text-sm uppercase tracking-wider mb-3">Process</p>
-          <h2 className="text-3xl font-heading font-bold mb-8 text-dark">What happens after I pay?</h2>
-          <ol className="max-w-[600px] mx-auto space-y-0">
-            {processSteps.map((s, i) => (
-              <li key={i} className="flex gap-4 py-4 border-b border-black/[.06] items-start">
-                <span className="w-9 h-9 bg-accent text-white rounded-full flex items-center justify-center font-heading font-bold flex-shrink-0 text-sm">{i + 1}</span>
-                <span className="text-gray"><strong className="text-dark">{s.bold}</strong> {s.text}</span>
-              </li>
-            ))}
-          </ol>
-          <p className="text-center text-gray mt-6">No lengthy sales process. No proposal stage. You know the price, you know what you get.</p>
-        </div>
-      </section>
-
+      {/* FAQ */}
       <section className="bg-white py-20">
         <div className="max-w-[1200px] mx-auto px-6">
-          <p className="text-accent font-heading font-semibold text-sm uppercase tracking-wider mb-3">FAQ</p>
-          <h2 className="text-3xl font-heading font-bold mb-8 text-dark">Pricing FAQ</h2>
+          <p className="text-accent font-heading font-semibold text-sm uppercase tracking-wider mb-3">
+            FAQ
+          </p>
+          <h2 className="text-3xl font-heading font-bold mb-8 text-dark">
+            Pricing FAQ
+          </h2>
           <FAQ items={faqs} />
         </div>
       </section>
 
       <CTA
-        title="Ready to get started?"
-        subtitle="Drop us a message and we'll arrange everything."
+        title="Ready to Deploy Your First AI Agent?"
+        subtitle="Book a free strategy call. We'll assess your business and recommend the right package."
         buttons={[
-          { label: "Get Started →", href: "https://calendly.com/contact-bluecanvas/initial-consultation", primary: true },
+          {
+            label: "Book a Free Strategy Call →",
+            href: "https://calendly.com/contact-bluecanvas/initial-consultation",
+            primary: true,
+          },
           { label: "View Services", href: "/services" },
-          { label: "Learn About AI Employees", href: "/ai-employee" },
         ]}
       />
     </>

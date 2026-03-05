@@ -8,6 +8,24 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes hero-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+@keyframes hero-glow-reverse {
+  0%, 100% { opacity: 0.6; transform: scale(1.1); }
+  50% { opacity: 0.3; transform: scale(1); }
+}
+
+.animate-hero-glow {
+  animation: hero-glow 8s ease-in-out infinite;
+}
+
+.animate-hero-glow-reverse {
+  animation: hero-glow-reverse 10s ease-in-out infinite;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   color: #090c1b;

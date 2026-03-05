@@ -21,7 +21,7 @@ export default function Footer() {
               Open<span className="text-accent">Claw</span> Consultant
             </div>
             <p className="text-sm leading-relaxed mb-4">
-              Professional OpenClaw setup, security hardening &amp; AI automation. Powered by Blue Canvas AI.
+              We build AI agents that run your business. Custom development, deployment, and consultancy. Powered by Blue Canvas AI.
             </p>
             <a href="tel:07935217762" className="text-white/80 hover:text-white text-sm transition-colors block mb-1">
               📞 07935 217762
