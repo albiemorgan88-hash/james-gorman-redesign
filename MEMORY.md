@@ -23,7 +23,7 @@ Every decision, every opportunity, every workflow runs through this filter.
 
 ## Active Projects
 - **Blue Canvas** (PRIMARY) — £6k/mo target. Pos 4.7 "ai consultancy NI", #1 "ai consultants near me". Target #1 NI by May.
-- **Ardmore Cricket Club** — LIVE at ardmorecricket.com. 50/50 split (50% prizes, 50% club). Stripe LIVE mode active. Admin emails go to contact@bluecanvas.ai + Ardmorecc1879@hotmail.com. Draw simulation: https://albiemorgan88-hash.github.io/ardmore-draw-live/. Source: `/Users/philsagent/Projects/ardmore-cricket/`. Awaiting: lottery registration (Derry City & Strabane council, £35). Committee testing.
+- **Ardmore Cricket Club** — FULLY LIVE at ardmorecricket.com. 50/50 split (50% prizes, 50% club). Stripe LIVE mode active. Admin emails go to contact@bluecanvas.ai + Ardmorecc1879@hotmail.com. Draw simulation: https://albiemorgan88-hash.github.io/ardmore-draw-live/. Source: `/Users/philsagent/Projects/ardmore-cricket/`. Lottery registration COMPLETE ✅. **FIRST DRAW: Friday 6 March 2026 at 7PM.**
 - **ClubDraw** — white-label weekly draw SaaS. Ardmore is client #1. Ready for multi-club expansion. Skill at `skills/clubdraw/SKILL.md`.
   - **Revenue split:** 50% jackpot / 40% club / 10% platform — publicly declared as "50/50" (50% prizes, 50% club)
   - **Rules:** No max numbers. Can buy for others (assign names). No age verification. One-off = 1 week. Subscription = weekly auto-renew (primary mode). Draw: Friday 7PM, 3 winners, provably fair RNG.
