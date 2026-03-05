@@ -1,6 +1,6 @@
 ---
 name: google-ads
-description: Plan, research, and manage Google Ads campaigns for Blue Canvas AI consultancy. Use when PJ asks about Google Ads, keyword research, ad copy, campaign structure, budget planning, or CPC analysis. Integrates with Semrush API for keyword data.
+description: Plan, research, and manage Google Ads campaigns for Blue Canvas AI consultancy. Use when PJ asks about Google Ads, keyword research, ad copy, campaign structure, budget planning, or CPC analysis. Uses Ahrefs and Google Search Console for keyword data.
 ---
 
 # Google Ads Campaign Manager
@@ -10,20 +10,22 @@ description: Plan, research, and manage Google Ads campaigns for Blue Canvas AI 
 - **Campaign plan:** `projects/google-ads/campaign-plan-v2.md`
 - **Nothing goes live without PJ approval**
 
-## Keyword Research via Semrush
+## Keyword Research via Ahrefs & GSC
 
+### Ahrefs (Team Access)
+Use Ahrefs Keywords Explorer for volume, CPC, keyword difficulty, and related keywords.
+Always use the **UK** database. Key metrics: Volume, KD (keyword difficulty), CPC, Traffic Potential.
+
+### Google Search Console API
+For first-party data on actual impressions, clicks, CTR, and average position:
 ```bash
-# Keyword overview (volume, CPC, competition)
-curl -s "https://api.semrush.com/?type=phrase_all&key=${SEMRUSH_API_KEY}&phrase=KEYWORD&database=uk&export_columns=Ph,Nq,Cp,Co"
-
-# Related keywords
-curl -s "https://api.semrush.com/?type=phrase_related&key=${SEMRUSH_API_KEY}&phrase=KEYWORD&database=uk&export_columns=Ph,Nq,Cp,Co&display_limit=20"
-
-# Keyword difficulty
-curl -s "https://api.semrush.com/?type=phrase_kdi&key=${SEMRUSH_API_KEY}&phrase=KEYWORD&database=uk&export_columns=Ph,Kd"
+# Query Search Console for keyword performance
+POST https://www.googleapis.com/webmasters/v3/sites/sc-domain:bluecanvas.ai/searchAnalytics/query
+Authorization: Bearer {TOKEN}
+# Body: {"startDate": "...", "endDate": "...", "dimensions": ["query"], "rowLimit": 100}
 ```
 
-**Always use `database=uk`**. Export columns: Ph=keyword, Nq=volume, Cp=CPC, Co=competition (0-1), Kd=difficulty.
+**Note:** Semrush subscription is cancelled. Use Ahrefs for all keyword research and competitive analysis.
 
 ## Campaign Structure
 
@@ -107,9 +109,54 @@ homework, student, assignment, essay
 
 **960 combined searches/month at £0 CPC. Prioritise these.**
 
+## Performance Tracking
+
+£600/month investment — every pound must show returns. Track ruthlessly, act fast.
+
+### Benchmarks & Targets
+
+| Metric | Target | Red Flag |
+|--------|--------|----------|
+| CTR | >3% | <1.5% |
+| CPC | <£8 | >£15 |
+| Cost per lead | <£50 | >£100 |
+| Conversion rate | >5% | <2% |
+| Daily spend | £20 budget | >£25 (check bid caps) |
+| Quality Score | >7 | <5 |
+
+### Daily Review Checklist (5pm cron)
+
+1. Check spend vs budget — flag if overspending
+2. CTR by keyword — pause anything under 1% after 100 impressions
+3. CPC trend — flag keywords with rising CPC
+4. Conversions — which keywords actually generated leads
+5. Search terms report — add negatives for irrelevant queries
+6. Device performance — adjust bids if mobile/desktop diverge significantly
+
+### Keyword Decision Rules
+
+- **Pause** if: CTR <1% after 100 impressions, or CPC >£15 with no conversions
+- **Boost** if: CTR >5% and CPC <£8 — increase bid by 10-15%
+- **Add negative** if: search term irrelevant or competitor brand name
+- **New keyword** if: search terms report shows relevant queries we're not targeting
+
+### Weekly Performance Summary (include in Friday SEO monitor)
+
+- Total spend vs budget
+- Leads generated and cost per lead
+- Best/worst performing keywords
+- Recommendations for next week
+
+### Monthly Review
+
+- ROAS calculation (leads × £750 avg deal ÷ monthly spend)
+- Campaign-level A/B test results
+- Budget adjustment recommendation
+- Competitor ad landscape changes
+
 ## Workflow
 
-1. **Research:** Use Semrush API to pull keyword data for new verticals
+1. **Research:** Use Ahrefs to pull keyword data for new verticals
 2. **Evaluate:** Score by volume, CPC, competition, and Blue Canvas service fit
 3. **Draft:** Write ad copy following tone rules above
 4. **Review:** Present to PJ with budget impact

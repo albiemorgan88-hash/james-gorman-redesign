@@ -1,3 +1,8 @@
+---
+name: ux-tester
+description: End-to-end UI testing for web applications. Covers visual/layout audits, content/copy verification, user flow testing, technical checks, and edge cases across mobile/tablet/desktop viewports.
+---
+
 # UX Tester — End-to-End UI, Content & Flow Testing
 
 ## Purpose

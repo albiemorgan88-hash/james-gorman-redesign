@@ -1,3 +1,8 @@
+---
+name: ship-ready
+description: Quality gate and pre-ship checklist for production deployments. Covers visual audit, copy review, user flow testing, interaction polish, UX testing, and go/no-go decisions. Use before any site goes live or gets shared with a client.
+---
+
 # Ship Ready — Product Polish & Quality Gate
 
 ## Philosophy
@@ -176,6 +181,45 @@ Close everything. Wait 60 seconds. Open the site again as if you've never seen i
 4. Log P3s for later — don't gold-plate
 5. After EVERY fix, re-check the surrounding area (fixes often create new issues)
 6. Take before/after screenshots as proof of improvement
+
+## Automated UX Testing (merged from ux-tester)
+
+### Phase A: Visual & Layout Audit
+For each page, take full-page screenshots at 3 viewports: mobile (375px), tablet (768px), desktop (1440px).
+Check for: overlapping elements, text truncation/overflow, images not loading or wrong aspect ratios, inconsistent spacing, fonts not loading, colour contrast issues, missing favicon/meta images.
+
+### Phase B: Content & Copy Audit
+Read ALL text content. Check for: spelling/grammar errors, placeholder text ("Lorem ipsum", "TODO"), incorrect/fabricated information (cross-reference with spec), inconsistent tone, missing alt text, broken links (href="#", javascript:void), wrong dates/names/numbers, non-contextual images (e.g. WhatsApp screenshot on a cricket club site).
+
+### Phase C: User Flow Testing
+Test every critical user journey end-to-end:
+- **Navigation:** every nav link works, mobile menu opens/closes, footer links, external links → new tab, back button
+- **Auth flows (if applicable):** sign up, login (email + SSO), logout, password reset, session persistence, protected routes
+- **E-commerce/Payment (if applicable):** item selection, checkout, Stripe test mode, success/failure states, email confirmations
+- **Draw-specific (ClubDraw):** browse numbers, select, assign name, checkout, verify taken, profile view, countdown, results, prizes, email notifications, subscriptions
+
+### Phase D: Technical Checks
+1. Console errors on every page
+2. Network errors (failed API calls, 404s, CORS)
+3. Form validation (empty, invalid, XSS, SQL injection strings)
+4. Responsive breakpoints (resize smoothly)
+5. Performance (large images, render-blocking resources)
+6. SEO basics (title tags, meta descriptions, heading hierarchy, canonicals)
+7. Accessibility (keyboard nav, screen reader basics, focus states)
+
+### Phase E: Edge Cases
+- Empty states (no data)
+- Overflow (lots of data, pagination)
+- Double-click buttons
+- Navigate away mid-flow
+- Slow/down API (loading states, error handling)
+- Unauthenticated access to protected features
+
+### UX Testing Tools
+- Playwright for automated browser testing (`npm install playwright`)
+- Screenshots at 375px, 768px, 1440px viewports
+- Console log capture + network request monitoring
+- Lighthouse for performance/accessibility scores
 
 ## Output
 Save report to: `projects/[site-name]/ship-ready-[date].md`

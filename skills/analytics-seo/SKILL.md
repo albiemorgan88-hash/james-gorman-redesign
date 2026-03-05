@@ -1,6 +1,6 @@
 ---
 name: analytics-seo
-description: Monitor website analytics and search performance. Use when PJ asks about traffic, rankings, SEO performance, search queries, click-through rates, content gaps, quick wins, GA4 data, Search Console data, heatmaps, session recordings, or performance reports for bluecanvas.ai.
+description: Monitor website analytics and search performance. Use when PJ asks about traffic, rankings, SEO performance, search queries, click-through rates, content gaps, quick wins, GA4 data, Search Console data, Ahrefs data, keyword research, backlink analysis, heatmaps, session recordings, or performance reports for bluecanvas.ai.
 ---
 
 # Analytics & SEO Monitoring
@@ -82,45 +82,41 @@ Everything in weekly, plus:
 - Month-over-month trends (sessions, users, conversions)
 - Keyword position tracking for target terms
 - New keywords ranking (didn't rank last month)
-- Backlink profile check (via Ahrefs/web search)
+- Backlink profile check (via Ahrefs)
 - Competitor ranking comparison
 
-## Semrush API
+## Keyword & Backlink Research
 
-**Key:** env var `SEMRUSH_API_KEY`
-**Base URL:** `https://api.semrush.com/`
+### Ahrefs (Team Access — Primary SEO Data Source)
+PJ has Ahrefs team access. No API — access via browser (use agent-browser skill for automation).
+Semrush subscription is cancelled — **Ahrefs is the primary tool for all keyword, backlink, and competitive data**.
 
-### Core Endpoints
-| Action | Type Parameter |
-|--------|---------------|
-| Domain organic keywords | `domain_organic` |
-| Domain overview (all DBs) | `domain_ranks` |
-| Keyword overview | `phrase_all` |
-| Keyword related | `phrase_related` |
-| Backlinks overview | `backlinks_overview` (analytics/v1/) |
-| Backlinks list | `backlinks` (analytics/v1/) |
-| Competitor domains | `domain_organic_organic` |
+**Ahrefs Tools:**
 
-### Common Parameters
-- `database=uk` (or us, ie, etc.)
-- `export_columns=Ph,Po,Nq,Cp,Ur,Tr` (keyword, position, volume, CPC, URL, traffic%)
-- `display_limit=50`
-- `domain=bluecanvas.ai`
+| Tool | Use For | Key Data |
+|------|---------|----------|
+| **Site Explorer** | Organic traffic analysis, backlink profile, referring domains | Organic keywords, traffic value, top pages, competing domains, backlink growth/loss, anchor text distribution |
+| **Keywords Explorer** | Keyword research, difficulty scores, SERP analysis | Search volume (use UK database), keyword difficulty (KD), CPC, clicks data, SERP overview, parent topic, also rank for |
+| **Site Audit** | Technical SEO issues | Crawl errors, broken links, redirect chains, missing meta, slow pages, orphan pages, duplicate content |
+| **Rank Tracker** | Position monitoring over time | Daily position tracking, SERP features, visibility score, traffic share, competitor comparison |
+| **Content Explorer** | Content gap analysis, top-performing content by topic | Find content with most shares/backlinks, identify topics competitors rank for that we don't, content ideas with proven demand |
 
-### Example: Competitor Keywords
-```
-GET https://api.semrush.com/?type=domain_organic&key={KEY}&display_limit=50&export_columns=Ph,Po,Nq,Tr&domain=brainpool.ai&database=uk
-```
+**Access Method:** Browser-based (ahrefs.com) — use the `agent-browser` skill for automated data extraction when needed.
 
-### Example: Keyword Volume + Difficulty
-```
-GET https://api.semrush.com/?type=phrase_all&key={KEY}&export_columns=Ph,Nq,Cp,Co,Nr&phrase=ai%20consultancy%20uk&database=uk
-```
+**Key Workflows with Ahrefs:**
+- **Backlink gap analysis:** Site Explorer → Competing Domains → find sites linking to competitors but not us
+- **Content gaps:** Site Explorer → Content Gap → enter competitor domains → find keywords they rank for, we don't
+- **Link building targets:** Site Explorer → Backlinks → filter by DR, dofollow, one link per domain
+- **Technical audit:** Site Audit → run project crawl → prioritise by impact (errors > warnings > notices)
+- **Rank tracking:** Rank Tracker → add target keywords → monitor weekly position changes
 
-### Example: Backlinks
+### Google Search Console API
+For first-party keyword data (impressions, clicks, CTR, position):
 ```
-GET https://api.semrush.com/analytics/v1/?key={KEY}&type=backlinks&target=bluecanvas.ai&target_type=root_domain&export_columns=source_title,source_url,external_num,internal_num,last_seen&display_limit=50
+POST https://www.googleapis.com/webmasters/v3/sites/{SITE_URL}/searchAnalytics/query
+Authorization: Bearer {TOKEN}
 ```
+See `references/google-apis.md` → Search Console section for query patterns.
 
 ### Competitor Benchmarks (Feb 2026)
 | Domain | Auth Score | Organic KWs | Top Keyword | Position |

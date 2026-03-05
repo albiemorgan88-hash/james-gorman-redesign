@@ -21,6 +21,8 @@ cd projects/site-health-monitor && ./health-check.sh
 | openclawconsultant.co.uk | Satellite |
 | zapierconsultant.co.uk | Satellite |
 | aiagentsetup.co.uk | Satellite |
+| uktradejobs.com | UK Trade Jobs |
+| ardmorecricket.com | Ardmore Cricket Club weekly draw — production, Stripe payments active |
 
 To add sites: edit `SITES` array in `health-check.sh`.
 

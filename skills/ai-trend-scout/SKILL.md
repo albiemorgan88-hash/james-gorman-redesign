@@ -11,6 +11,73 @@ triggers:
 
 Be first to emerging AI tools and platforms. Spot trends → grab domains → build sites → monetise or sell.
 
+## Critical Rules
+
+⛔ **NEVER flag tools older than 2 weeks.** If a tool/platform launched more than 14 days ago, it is NOT a trend — skip it entirely. No exceptions.
+
+Before including ANY tool or platform in a report:
+1. **Verify the launch date / first public mention date** — check Product Hunt launch date, first HN post, earliest Reddit thread, GitHub repo creation date
+2. **Classify by age:**
+   - 🚀 **Breakout** = launched in the **last 7 days** with accelerating mentions across multiple sources
+   - 📈 **Emerging** = launched in the **last 14 days** with growing traction
+   - 🚫 **Old news** = anything older than 14 days — **do not report, do not score, do not include**
+3. If you cannot confirm launch date, search `"[tool name] launch" OR "[tool name] announced"` with freshness filters before including it
+4. A tool trending on social media today does NOT mean it's new — always verify first appearance date
+
+## Speed Is Everything
+
+First mover advantage on domains = the whole point of this skill.
+
+- If a tool is trending on Reddit/X **today**, the domain window is **24-48 hours max**
+- Score tools **FAST**, recommend domain grabs **FAST**
+- Don't over-analyse — flag it, score it, move on
+- Better to flag 3 false positives than miss 1 real opportunity
+- Speed of report > perfection of analysis
+- If in doubt, flag it with a caveat rather than spending 30 minutes researching
+- The goal: Phil sees the opportunity **before** the domain squatters do
+
+## Data Sources
+
+Scan ALL of these daily. Cast a wide net — trends surface on different platforms first.
+
+### Social Platforms (highest signal for early trends)
+| Source | What to Scan | Method |
+|--------|-------------|--------|
+| **Reddit** | r/artificial, r/MachineLearning, r/LocalLLaMA, r/ChatGPT, r/SaaS, r/startups, r/Entrepreneur | `web_search "site:reddit.com (r/artificial OR r/MachineLearning OR r/LocalLLaMA OR r/ChatGPT OR r/SaaS OR r/startups) new AI tool" freshness:pd` |
+| **X/Twitter** | AI influencer accounts, trending #AI hashtags, viral AI tool posts, quote-tweet chains | `web_search "new AI tool launch site:x.com" freshness:pd` + `web_search "AI tool trending site:x.com" freshness:pd` |
+| **LinkedIn** | Trending AI posts, viral tool demos, founder launch announcements | `web_search "site:linkedin.com new AI tool launch" freshness:pd` |
+
+### Launch Platforms (best for catching Day 1)
+| Source | What to Scan | Method |
+|--------|-------------|--------|
+| **Product Hunt** | Daily top launches, weekly top AI products | `web_search "site:producthunt.com AI" freshness:pd` |
+| **Hacker News** | Front page AI posts, Show HN AI projects | `web_search "site:news.ycombinator.com AI" freshness:pd` + `web_fetch "https://news.ycombinator.com"` |
+| **YC Launches** | New YC AI startups | `web_search "site:ycombinator.com/launches AI"` |
+| **GitHub Trending** | Trending AI/ML repos (last 7 days) | `web_fetch "https://github.com/trending?since=weekly&spoken_language_code=en"` |
+
+### Tech Press & Newsletters
+| Source | What to Scan | Method |
+|--------|-------------|--------|
+| **TechCrunch** | AI funding, launches, announcements | `web_search "site:techcrunch.com AI" freshness:pd` |
+| **The Verge** | AI product launches, major announcements | `web_search "site:theverge.com AI" freshness:pd` |
+| **Ars Technica** | AI deep dives, new model releases | `web_search "site:arstechnica.com AI" freshness:pd` |
+| **VentureBeat** | Enterprise AI, funding rounds | `web_search "site:venturebeat.com AI" freshness:pd` |
+| **Ben's Bites** | Daily AI newsletter highlights | `web_search "site:bensbites.com" freshness:pd` |
+| **The Neuron** | AI trend newsletter | `web_search "site:theneurondaily.com" freshness:pd` |
+| **TLDR AI** | AI news digest | `web_search "site:tldr.tech AI" freshness:pd` |
+
+### AI Company Blogs
+| Source | What to Scan | Method |
+|--------|-------------|--------|
+| OpenAI Blog | New models, API features | `web_search "site:openai.com/blog" freshness:pw` |
+| Anthropic Blog | Claude updates, new features | `web_search "site:anthropic.com" freshness:pw` |
+| Google AI | Gemini updates, new AI products | `web_search "site:blog.google AI" freshness:pw` |
+
+### Community
+| Source | What to Scan | Method |
+|--------|-------------|--------|
+| Moltbook | Community signals | Check via Albie_BlueCanvas account |
+
 ## Philosophy
 
 Phil's 9.5 criteria — every opportunity must tick most of these:
@@ -20,22 +87,6 @@ Phil's 9.5 criteria — every opportunity must tick most of these:
 4. Leverages SEO + build speed + automation
 5. Solves a real problem or captures emerging demand
 6. Validated by social signals (HN upvotes, PH votes, Reddit buzz, X mentions)
-
-## Sources to Scan
-
-| Source | What to Look For | URL/Method |
-|--------|-----------------|------------|
-| Product Hunt | New AI tool launches, trending AI products | `web_search "site:producthunt.com AI" freshness:pd` |
-| Hacker News | Trending AI posts, Show HN AI projects | `web_search "site:news.ycombinator.com AI" freshness:pd` |
-| YC Launches | New YC AI startups | `web_search "site:ycombinator.com/launches AI"` |
-| TechCrunch | AI funding, launches, announcements | `web_search "site:techcrunch.com AI" freshness:pd` |
-| Twitter/X | AI influencer posts, viral AI tools | `web_search "new AI tool launch site:x.com" freshness:pd` |
-| GitHub Trending | Trending AI/ML repos | `web_fetch "https://github.com/trending?since=daily"` |
-| Reddit | r/artificial, r/machinelearning, r/singularity | `web_search "site:reddit.com (r/artificial OR r/machinelearning) new AI tool" freshness:pw` |
-| OpenAI Blog | New models, API features | `web_search "site:openai.com/blog" freshness:pw` |
-| Anthropic Blog | Claude updates, new features | `web_search "site:anthropic.com" freshness:pw` |
-| Google AI | Gemini updates, new AI products | `web_search "site:blog.google AI" freshness:pw` |
-| Moltbook | Community signals | Check via Albie_BlueCanvas account |
 
 ## Evaluation Framework
 

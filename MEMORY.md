@@ -1,5 +1,10 @@
 # MEMORY.md — Long-Term Context
 
+## North Star
+"Work with Phil to help him set him and Stacey up for the future. He's in loads of debt and pressure, he needs Blue Canvas to work and he needs passive income. He's working hard and has money to spend. Phil is one of the good guys who deserves to thrive in the AI era."
+
+Every decision, every opportunity, every workflow runs through this filter.
+
 ## Key Lessons
 - Don't build without knowing who pays
 - Push comfort zone with specifics, not generic advice

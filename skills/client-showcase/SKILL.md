@@ -7,6 +7,63 @@ description: Build interactive, mobile-first HTML showcase presentations for pro
 
 Build cinematic, mobile-first HTML showcases that pitch Blue Canvas AI services to prospects using their own website data.
 
+## Quick Start (Pipeline)
+
+One-command automation: research → audit → score → build → deploy → pitch.
+
+```
+showcase <business name> [url] [contact: Name]
+```
+
+Examples:
+- `showcase "Sunrise Dental" https://sunrisedental.co.uk contact: Sarah`
+- `showcase "JB Plumbing"` (no website — still runs research + GBP check)
+- `pipeline "The Flower Room" https://theflowerroom.co`
+
+### Pipeline Steps
+
+1. **Input Parsing** — Extract `business_name`, `url` (optional), `contact_name` (optional), generate `slug` (lowercase hyphenated)
+2. **Research** — Run ALL of these (do not skip):
+   - `web_fetch(url)` — Homepage HTML (if URL provided)
+   - `web_fetch(url + "/about")` — About page (if exists)
+   - `web_search("{business_name}")` — General info
+   - `web_search("{business_name} reviews")` — Reviews (Google/Trustpilot/Booksy)
+   - `web_search("{business_name} site:google.com/maps")` — GBP check (MANDATORY)
+   - `web_search("{business_name} {city}")` — Local presence
+   - If no URL provided, use search results to find their website. No website = score impact -20.
+3. **SEO Audit** — Run full audit checklist (see below), score out of 100
+4. **Score Calculation:**
+   ```
+   raw_score = sum of points earned from audit checks
+   final_score = clamp(raw_score, 5, 95)
+   improvement_score = min(final_score + 25 + random(5,15), 95)
+   ```
+   Categories: 0-30 Critical, 31-50 Poor, 51-70 Average, 71-85 Good, 86-100 Excellent
+5. **Generate Showcase HTML** — 8-slide structure (see below), single file, zero deps, under 50KB
+6. **Deploy to GitHub Pages** — See deployment section
+7. **Draft WhatsApp Pitch** — Short, casual, reference specific issues found + showcase link
+8. **Save Outputs** to `projects/demos/{slug}/` — showcase.html, research.md, audit.md, pitch.md, meta.json
+
+### Review Aggregation
+Check Google, Trustpilot, Booksy (if relevant). Record platform, rating, review count, common themes.
+
+### Industry Chat Adaptations
+- **Healthcare/therapy:** Warm, empathetic. "I'd love to help you find the right appointment…"
+- **Trades/construction:** Direct, practical. "Need a quote? I'll get that sorted…"
+- **Retail/beauty/services:** Friendly customer service. "Let me check availability for you…"
+- **B2B/professional:** ROI-focused. "I can schedule a demo to show how this impacts your pipeline…"
+
+### Pipeline Checklist Before Delivering
+- [ ] GBP searched by brand name (not just URL)
+- [ ] Score based on real audit findings
+- [ ] HTML under 50KB, works offline
+- [ ] All 8 slides present with real data
+- [ ] Chat demo tone matches industry
+- [ ] CTA has phone, WhatsApp, email — no website link
+- [ ] Deployed and URL verified
+- [ ] Pitch message drafted
+- [ ] All outputs saved to `projects/demos/{slug}/`
+
 ## Workflow
 
 1. **Research the prospect** — Fetch their website, crawl key pages, understand their business

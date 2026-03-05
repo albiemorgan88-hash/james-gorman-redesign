@@ -1,6 +1,6 @@
 ---
 name: rank-and-rent
-description: Build, rank, and rent local service websites for recurring revenue. Use when PJ wants to research niches, build rank-and-rent sites, find tenants, or scale the portfolio. Covers keyword research (Semrush), site building, local SEO, tenant acquisition, and scaling across cities. Special focus on ad-restricted niches (aesthetics/Botox, healthcare, gambling, finance) where SEO is the only channel.
+description: Build, rank, and rent local service websites for recurring revenue. Use when PJ wants to research niches, build rank-and-rent sites, find tenants, or scale the portfolio. Covers keyword research (Ahrefs/GSC), site building, local SEO, tenant acquisition, and scaling across cities. Special focus on ad-restricted niches (aesthetics/Botox, healthcare, gambling, finance) where SEO is the only channel.
 ---
 
 # Rank & Rent Skill
@@ -10,14 +10,12 @@ Build a local service website → rank it on Google → rent it to a business th
 
 ## Phase 1: Research
 
-### Keyword Research (Semrush API)
-```bash
-# Primary keyword volume + difficulty
-curl "https://api.semrush.com/?type=phrase_fullsearch&key=$SEMRUSH_API_KEY&phrase=botox+manchester&database=uk"
+### Keyword Research (Ahrefs + GSC)
+Use **Ahrefs Keywords Explorer** (UK database) for volume, keyword difficulty, and related keywords.
+Use **Google Search Console API** for first-party impressions/clicks data on owned sites.
 
-# Related keywords for content ideas
-curl "https://api.semrush.com/?type=phrase_related&key=$SEMRUSH_API_KEY&phrase=botox+manchester&database=uk"
-```
+**Note:** Semrush subscription is cancelled. Use Ahrefs for all keyword research.
+
 Target: 200-2000 monthly searches, KD < 40, commercial intent.
 
 ### Demand Validation Checklist
@@ -267,17 +265,17 @@ See the **Ad-Restricted Industries** table in Phase 1. Additionally check:
 - Hormone replacement therapy (HRT)
 - IV drip therapy / vitamin infusions
 
-## Quick Reference: Semrush Commands
+## Quick Reference: Keyword Research Tools
+
+### Ahrefs (Team Access)
+- **Keywords Explorer** — search volume, KD, CPC, related keywords (use UK database)
+- **Site Explorer** — competitor organic keywords, backlink profiles, traffic estimates
+- **Content Explorer** — top-performing content by topic for content ideas
+
+### Google Search Console API
 ```bash
-# Keyword overview
-curl "https://api.semrush.com/?type=phrase_fullsearch&key=$SEMRUSH_API_KEY&phrase=KEYWORD&database=uk"
-
-# Related keywords
-curl "https://api.semrush.com/?type=phrase_related&key=$SEMRUSH_API_KEY&phrase=KEYWORD&database=uk"
-
-# Domain overview (competitor analysis)
-curl "https://api.semrush.com/?type=domain_ranks&key=$SEMRUSH_API_KEY&domain=DOMAIN&database=uk"
-
-# Domain organic keywords
-curl "https://api.semrush.com/?type=domain_organic&key=$SEMRUSH_API_KEY&domain=DOMAIN&database=uk"
+# Query keyword performance for owned sites
+POST https://www.googleapis.com/webmasters/v3/sites/{SITE_URL}/searchAnalytics/query
+Authorization: Bearer {TOKEN}
+# Body: {"startDate": "...", "endDate": "...", "dimensions": ["query", "page"], "rowLimit": 100}
 ```
