@@ -42,7 +42,10 @@ Every decision, every opportunity, every workflow runs through this filter.
 - "Albie as a Service": £1,750 setup + £250/mo
 - Google Ads LIVE: "Blue Canvas - AI Audit" campaign, £20/day, 8 phrase-match keywords, account 801-851-4760. Albie has Admin access. Tag AW-17928080997 installed.
 - Google Ads plan at `projects/google-ads/campaign-plan-v3.md`
-- Albie has access to: GBP (Manager), Ahrefs (team), Google Ads (Admin), Webflow (API), GSC/GA4 (API)
+- Albie has access to: GBP (Manager), Ahrefs (team), Google Ads (Admin + API), Webflow (API), GSC/GA4 (API)
+- Google Ads API: Developer token (test mode, Basic access pending), OAuth credentials, refresh token — all in ~/.zprofile
+- Manager account: 396-378-6948 | Ad account: 801-851-4760 | API version: v19
+- Albie is the ads manager — full ownership of campaign optimisation, keyword management, bid adjustments, reporting
 - SEO Engine updated to v2.1 — daily cadence (Mon=audit, Tue=fix, Wed=attack, Thu=content, Fri=monitor)
 
 ## Active Tenders

@@ -10,6 +10,63 @@ description: Plan, research, and manage Google Ads campaigns for Blue Canvas AI 
 - **Campaign plan:** `projects/google-ads/campaign-plan-v2.md`
 - **Nothing goes live without PJ approval**
 
+## API Access
+
+> **Automated monitoring:** The **5pm daily cron "Google Ads Daily Report"** handles daily performance checks automatically.
+
+### Credentials (all in ~/.zprofile)
+| Variable | Value |
+|----------|-------|
+| GOOGLE_ADS_ACCOUNT_ID | 801-851-4760 |
+| GOOGLE_ADS_MANAGER_ID | 396-378-6948 |
+| GOOGLE_ADS_DEVELOPER_TOKEN | (in env) |
+| GOOGLE_ADS_CLIENT_ID | (in env) |
+| GOOGLE_ADS_CLIENT_SECRET | (in env) |
+| GOOGLE_ADS_REFRESH_TOKEN | (in env) |
+
+### API Details
+- API version: v19
+- Endpoint: `https://googleads.googleapis.com/v19/customers/8018514760/googleAds:search`
+- Auth: OAuth2 Bearer token (refresh via refresh_token grant)
+- Manager ID required in header: `login-customer-id: 3963786948`
+- Developer token status: **Test mode** — Basic access application pending. Once approved, full production API access.
+
+### Getting a Fresh Access Token
+```bash
+source ~/.zprofile
+curl -s -X POST https://oauth2.googleapis.com/token \
+  -d "client_id=$GOOGLE_ADS_CLIENT_ID" \
+  -d "client_secret=$GOOGLE_ADS_CLIENT_SECRET" \
+  -d "refresh_token=$GOOGLE_ADS_REFRESH_TOKEN" \
+  -d "grant_type=refresh_token" | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])"
+```
+
+### Example Query
+```bash
+ACCESS_TOKEN=$(source ~/.zprofile && curl -s -X POST https://oauth2.googleapis.com/token \
+  -d "client_id=$GOOGLE_ADS_CLIENT_ID" \
+  -d "client_secret=$GOOGLE_ADS_CLIENT_SECRET" \
+  -d "refresh_token=$GOOGLE_ADS_REFRESH_TOKEN" \
+  -d "grant_type=refresh_token" | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+
+curl -s -X POST "https://googleads.googleapis.com/v19/customers/8018514760/googleAds:search" \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -H "developer-token: $GOOGLE_ADS_DEVELOPER_TOKEN" \
+  -H "login-customer-id: 3963786948" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "SELECT campaign.name, campaign.status, metrics.impressions, metrics.clicks, metrics.cost_micros FROM campaign WHERE segments.date DURING LAST_7_DAYS"}'
+```
+
+### Ownership
+Albie is the ads manager. Full ownership of:
+- Daily performance monitoring (5pm cron)
+- Keyword optimisation (pause underperformers, boost winners)
+- Bid adjustments
+- Negative keyword management
+- Ad copy testing
+- Budget recommendations
+- Weekly/monthly reporting to PJ
+
 ## Keyword Research via Ahrefs & GSC
 
 ### Ahrefs (Team Access)
