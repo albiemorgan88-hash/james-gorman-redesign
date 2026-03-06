@@ -1,0 +1,203 @@
+{
+  "cookies": [
+    {
+      "name": "cid",
+      "value": "Cii2Wmmqv36UawAUAzYQAg==",
+      "domain": ".crunchbase.com",
+      "path": "/",
+      "expires": 1807357823.246559,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "featureFlagOverride",
+      "value": "%7B%7D",
+      "domain": "www.crunchbase.com",
+      "path": "/",
+      "expires": 1807357823.699662,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "profile_v3_opt_in",
+      "value": "true",
+      "domain": "www.crunchbase.com",
+      "path": "/",
+      "expires": 1804333823,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cf_clearance",
+      "value": "5iJyyO7l73MDEQ8oHTnbTMQLKnZMdpRRm7.5zhm7PdA-1772797824-1.2.1.1-AEPmZ4fqhCMlSnIdepEhOcuQsdDBJKVW3Xw0RKIcfSjbmW7gMrnLytllHgQG0sm9EdpVapBbcTH3lrK9LQSxrJWoZ.z2FD856fYBkbYx8fv2Faxg_585rHZSRIcS8lyxv9Gy2.V9kbBb9wvmcfcZ4bnIzgIzUhqK9X.p9w__vrnlUFwZpmFZd49HAobRrawW9FqpEBAO0xPGuh5iH3xQWKbfiFaOy1QWKuL.mke5iys",
+      "domain": ".crunchbase.com",
+      "path": "/",
+      "expires": 1804333824.404162,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://crunchbase.com",
+      "_crHasCrossSiteAncestor": false
+    },
+    {
+      "name": "__cf_bm",
+      "value": "a1hda.R8TFX1MhUtcAM.1qG7jKrYjnAGe_w_ZFx3V9E-1772797824.3779953-1.0.1.1-UdZ_x209RCrDJCSJ7xFRKOcv_xecHEZyPuClywcb8RuelwdnC0U4tnubDTzLbyyJGYHKhxuTobeIAsFnZqW2Ky.tLSMlVPS5vHl2QD_4zOxhhzJ8mpQaHwWs4S6v627B",
+      "domain": ".crunchbase.com",
+      "path": "/",
+      "expires": 1772799624.404201,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OptanonAlertBoxClosed",
+      "value": "2026-03-06T11:50:29.612Z",
+      "domain": ".crunchbase.com",
+      "path": "/",
+      "expires": 1804333829,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.959106146.1772797830",
+      "domain": ".crunchbase.com",
+      "path": "/",
+      "expires": 1780573829,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.2.1437118804.1772797825",
+      "domain": ".crunchbase.com",
+      "path": "/",
+      "expires": 1807357838.741219,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.1871892216.1772797830",
+      "domain": ".crunchbase.com",
+      "path": "/",
+      "expires": 1772884238,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gat_UA-60854465-1",
+      "value": "1",
+      "domain": ".crunchbase.com",
+      "path": "/",
+      "expires": 1772797889,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OptanonConsent",
+      "value": "isGpcEnabled=0&datestamp=Fri+Mar+06+2026+11%3A50%3A29+GMT%2B0000+(Greenwich+Mean+Time)&version=202304.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=a4c3c42b-9c58-46e8-b7a8-32d6f343395d&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1",
+      "domain": ".crunchbase.com",
+      "path": "/",
+      "expires": 1804333829,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cb_analytics_consent",
+      "value": "granted",
+      "domain": "www.crunchbase.com",
+      "path": "/",
+      "expires": 1804333829,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "authcookie",
+      "value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI4OGUxYmNiYS00YThlLTQxNDQtYWE4OS0yZWE3ZmZmMzZhZWUiLCJpc3MiOiJ1c2Vyc2VydmljZV82YTI4ZTdlMV8xIiwic3ViIjoiMGExMWNmMWUtMDMyMS00YzU1LWFhOTctM2E3ZWRmNzE3NjRkIiwiZXhwIjoxNzcyNzk4MTM4LCJpYXQiOjE3NzI3OTc4MzgsInByaXZhdGUiOiJYQW1UU3NleXp1bFo1bkROQU55STk0blIzaENNbTdML3M1cGhnUHpKRWQ2ay85TW5DS3JOalU1RjlveG1VRkxyQXdjNUxPSWQxaUtGZ0hyUDE1M1kyc0tIc0p5UWF5NU5hVDdiSWl5cGpJWmZpbFhqU2djcWxmdkZFMWs5UjZNdEI4cUsxQ2Y2MG1mcnQ4SnFPeUpZcis3QXE1aWdPM3p4K0Y1VDhnYkxHVXFUdlFLQlhEZGt2YVJ1c21sTWM3VWNQa1E1N2Z2bys4WUJBc2ZSWlJ4bFJ0VFR3d1E3bVY5R1F1clU0QVNFTWRZcHZtWWl6KzJqMUljc3VQTzVta0RLa3Z1dzloQm5neGpIWFVCeGhlRGlOOEppQVdVM05TQmF2bTVuYmw4dnhNWHBrc0Nob1lIN3hPcUh1Szd6ZjRjWiIsInB1YmxpYyI6eyJzZXNzaW9uX2hhc2giOiItNTU5MzU3ODE3In19.mTXSaqQnTUpm8kN1RoQYUjF6C77DYyfjzad-WPtTWCpiQXOUrjG4RGrc4v6NX3tWokjjSqdrUBd3Vq5dxpcakg",
+      "domain": "www.crunchbase.com",
+      "path": "/",
+      "expires": 1788349838.672565,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "trustcookie",
+      "value": "eyJraWQiOiJjcnVuY2hiYXNlIiwiYWxnIjoiUlMyNTYifQ.eyJqdGkiOiI4OGUxYmNiYS00YThlLTQxNDQtYWE4OS0yZWE3ZmZmMzZhZWUiLCJpc3MiOiJ1c2Vyc2VydmljZV82YTI4ZTdlMV8xIiwic3ViIjoiMGExMWNmMWUtMDMyMS00YzU1LWFhOTctM2E3ZWRmNzE3NjRkIiwiZXhwIjoxNzcyODg0MjM4LCJpYXQiOjE3NzI3OTc4MzgsInNjciI6MH0.O_TwwnmI7ANUoshvbkLsxLPkm1J92cxaQ1FF9Ism9Ehtgu11JwzKhmFW3On1XHEYVFpXtwh-Ezz5mbC2H-axHtpFzGpKPNwCu8CNqYs4KXaq4xze-gzILFliYRwRK2MJt0V73h2RWCm5j7vtiU75UELI2c7kWUNoH5yMOY5V3cjLD2o4aAPI-OtqnI59U8YIWFTw6pZvO1Db40alWB6KcfmT4G6Zikf7QHA3iuBAr9nhpdKs0vbURn4E22CR7_MOGacrvCBzJosjdIrKK_00tyIcsRXrZTSsl3YnYlSRx1a63Mfz2iXB9FlFVFTDkWAn6q4cLTv3XxSzIMt0Jri7Ng",
+      "domain": "www.crunchbase.com",
+      "path": "/",
+      "expires": 1772884238.67268,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__q_state_1sbR5RPVKBJ8nCw6",
+      "value": "eyJ1dWlkIjoiMTEyYzdhY2ItMjYzOC00MWQ5LTg5ZTktY2I0NzJjYmEyNTEzIiwiY29va2llRG9tYWluIjoiY3J1bmNoYmFzZS5jb20ifQ==",
+      "domain": ".crunchbase.com",
+      "path": "/",
+      "expires": 1807357838.835368,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_PGHC4BDGLM",
+      "value": "GS2.1.s1772797824$o1$g1$t1772797839$j50$l0$h0",
+      "domain": ".crunchbase.com",
+      "path": "/",
+      "expires": 1807357839.785901,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_97DKWJJNRK",
+      "value": "GS2.1.s1772797824$o1$g1$t1772797839$j50$l0$h0",
+      "domain": ".crunchbase.com",
+      "path": "/",
+      "expires": 1807357839.793109,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.crunchbase.com",
+      "localStorage": [
+        {
+          "name": "cb-user-0a11cf1e-0321-4c55-aa97-3a7edf71764d",
+          "value": "{\"recently-viewed-items\":\"[]\"}"
+        },
+        {
+          "name": "_gcl_ls",
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"creationTimeMs\":1772797829617},\"expires\":1780573829617}}"
+        },
+        {
+          "name": "__q_local_form_debug",
+          "value": "{\"expiresAt\":1772799638822,\"state\":{\"isDebugging\":false}}"
+        },
+        {
+          "name": "cb-users-with-preferences",
+          "value": "[\"anonymous\",\"0a11cf1e-0321-4c55-aa97-3a7edf71764d\"]"
+        },
+        {
+          "name": "cb-user-anonymous",
+          "value": "{\"recently-viewed-items\":\"[]\"}"
+        }
+      ]
+    }
+  ]
+}

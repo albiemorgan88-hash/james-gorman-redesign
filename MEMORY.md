@@ -42,7 +42,7 @@ Every decision, every opportunity, every workflow runs through this filter.
 - "Albie as a Service": £1,750 setup + £250/mo
 - Google Ads LIVE: "Blue Canvas - AI Audit" campaign, £20/day, 8 phrase-match keywords, account 801-851-4760. Albie has Admin access. Tag AW-17928080997 installed. Billing ACTIVE. Under-delivering early (£0.60/£40 day 1-2) — may need keyword expansion. Conversion tracking pending.
 - Google Ads plan at `projects/google-ads/campaign-plan-v3.md`
-- Albie has access to: GBP (Manager), Ahrefs (team), Google Ads (Admin + API), Webflow (API), GSC/GA4 (API)
+- Albie has access to: GBP (Manager), Ahrefs (browser automation, Lite plan, albiemorgan88@gmail.com), Google Ads (Admin + API), Webflow (API), GSC/GA4 (API — OAuth token with all 3 scopes working as of Mar 6), Chrome browser on Mac mini
 - Google Ads API: Developer token (test mode, Basic access pending), OAuth credentials, refresh token — all in ~/.zprofile
 - Manager account: 396-378-6948 | Ad account: 801-851-4760 | API version: v19
 - Albie is the ads manager — full ownership of campaign optimisation, keyword management, bid adjustments, reporting
@@ -96,6 +96,14 @@ Every decision, every opportunity, every workflow runs through this filter.
 - Create standard user account on Mac (Cyber Essentials)
 - Monitor Moltlaunch inbox for gig requests (Agent #24586)
 - PJ to confirm purchase of aiactcompliance.co.uk + aiaudituk.com
+
+**Completed Mar 6:**
+- ✅ GSC OAuth fixed — new refresh token with adwords + webmasters.readonly + analytics.readonly scopes. All 6 GSC properties accessible. GA4 confirmed.
+- ✅ Ahrefs FULL ACCESS — browser automation via OpenClaw managed Chrome. Logged in under albiemorgan88@gmail.com (PJ's workspace). API key exists but Lite plan = insufficient for API. Browser automation is the path.
+- ✅ Chrome installed on Mac mini — enables all browser automation going forward
+- ✅ Cron delivery diagnosed — root cause was agents using `message` tool with target "PJ" (not a valid chatId). Fixed all 3 failing crons. SEO Friday Monitor timeout increased to 600s.
+- ✅ Semrush dropped — removed from all workflows, Ahrefs + GSC is the stack now
+- ✅ Amazon Healthcare AI opportunity researched — scored 7.2/10, recommended as secondary vertical. Report at `reports/2026-03-06-amazon-healthcare-ai-opportunity.md`
 
 **Completed Mar 5:**
 - ✅ Full system tune-up: cron overhaul (17 crons), skills overhaul, COO mode codified
