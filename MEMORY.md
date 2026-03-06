@@ -40,7 +40,7 @@ Every decision, every opportunity, every workflow runs through this filter.
 ## Revenue
 - Pricing: Free Consult → AI Audit £750 → Implementation → Academy £250 → Mentoring £50/mo
 - "Albie as a Service": £1,750 setup + £250/mo
-- Google Ads LIVE: "Blue Canvas - AI Audit" campaign, £20/day, 8 phrase-match keywords, account 801-851-4760. Albie has Admin access. Tag AW-17928080997 installed.
+- Google Ads LIVE: "Blue Canvas - AI Audit" campaign, £20/day, 8 phrase-match keywords, account 801-851-4760. Albie has Admin access. Tag AW-17928080997 installed. Billing ACTIVE. Under-delivering early (£0.60/£40 day 1-2) — may need keyword expansion. Conversion tracking pending.
 - Google Ads plan at `projects/google-ads/campaign-plan-v3.md`
 - Albie has access to: GBP (Manager), Ahrefs (team), Google Ads (Admin + API), Webflow (API), GSC/GA4 (API)
 - Google Ads API: Developer token (test mode, Basic access pending), OAuth credentials, refresh token — all in ~/.zprofile
@@ -60,62 +60,58 @@ Every decision, every opportunity, every workflow runs through this filter.
 - **AI Workforce** = Blue Canvas done-for-you offering
 - **Blue Canvas**: #2B4DAF, #FF4520, white. **NEVER publish Webflow autonomously.**
 
-## Pending Actions  
-**URGENT (Mar 4):**
-- **PJ DELIVERS:** GBP login for Blue Canvas + 5 phone photos + Ahrefs subscription
+## System Config (Mar 5)
+- **COO/Orchestrator mode**: PERMANENT. Albie delegates everything via subagents. Never executes tasks directly (except <5s replies/reactions). Codified in AGENTS.md + SOUL.md.
+- **17 crons active** (up from 12): all fixed with `--agent main`. Key additions: Morning Dashboard (7am), Moltbook Inbox (12pm), Google Ads Report (5pm), Memory Distillation (10:30pm), Apollo Lead Builder (Wed 10am), Tender Tracker (Mon 9am). Nightly Build fixed to 10pm Europe/London.
+- **Skills overhauled**: Semrush stripped (→Ahrefs/GSC everywhere). Merged: showcase-pipeline→client-showcase, ux-tester→ship-ready, moltlaunch-inbox→moltbook-scout. New: moltlaunch-delivery, hustle-engine, local-lead-scraper. Archived: opportunity-radar.
+
+## Hustle Engine Philosophy (PJ's words)
+- Distinct from operational skills — pure opportunity hunting OUTSIDE current projects
+- See opportunities before anyone else and act with speed + conviction
+- Examples: spot OpenClaw naming Venice AI → buy token, keyword demand spike → act, problem on socials → build
+- Jordan Belfort / Phil Knight / Elon energy — commercial nous, speed, conviction
+
+## Pending Actions
+**URGENT:**
+- **Ardmore FIRST DRAW: Friday 6 March 2026 at 7PM** ← TOMORROW
 - **Ardmore UI polish** — FAQ accordion, success page improvements, nav enhancements (coding agent failed, needs rebuild)
 - **UK Trade Jobs deploy** — production deployment with employer signup notifications to philip@bluecanvas.ai
-- ✅ CV Screener demo SENT to Tim Clarke (£750 opportunity — awaiting response)
-- ✅ AI Readiness Scorecard demo SENT to Joe Abrahams (awaiting response)
 - **3x full E2E Ardmore tests** — document complete user journey from signup to draw completion
+- **Google Ads**: conversion tracking not set up yet. API Centre not visible (may be Smart Mode). Under-delivering: £0.60/£40 in first 2 days — keywords may be too narrow.
 
-**Blue Canvas SEO Domination (once PJ delivers credentials):**
+**Blue Canvas SEO Domination (credentials now granted):**
 - Run Sarvesh's 6-pillar competitive attack framework
 - Generate service+location page gaps analysis (AI consultancy + 24 NI towns)
-- Citation audit & NAP cleanup across 50+ directories  
+- Citation audit & NAP cleanup across 50+ directories
 - Backlink gap analysis vs brainpool.ai, iwantmore.ai, Artellis.ie
 - GBP category audit & photo strategy
 - Review velocity tracking vs competitors
 
+**Awaiting Response:**
+- Tim Clarke — CV Screener demo sent (£750 opportunity)
+- Joe Abrahams — AI Readiness Scorecard demo sent
+
 **Standard:**
-- Continue 1/day blog publishing (8 drafts remaining in CMS after Mar 4 publish)
+- Continue 1/day blog publishing (drafts remaining in CMS)
 - Create standard user account on Mac (Cyber Essentials)
 - Monitor Moltlaunch inbox for gig requests (Agent #24586)
-
-**Completed Mar 3:**
-- ✅ **Ardmore Cricket Club PRODUCTION READY** — live Stripe payments, real money processing, full webhook chain working
-- ✅ **PJ TESTING BREAKTHROUGH** — discovered & fixed critical webhook/email issues during live testing session
-- ✅ **Stripe live webhook created** — `we_1T6yjdASm3u8i3nlzq4ew0bH` pointing to production, signed payload verification working
-- ✅ **Resend domain verified** — `ardmorecricket.com` fully verified, emails from `draws@ardmorecricket.com` working
-- ✅ **Account/user ID issues diagnosed** — multiple email accounts (philpatterson85 vs philjpatterson88) causing manage page confusion
-- ✅ **End-to-end verification complete** — test webhook → DB insert → email delivery → cleanup cycle working flawlessly
-- ✅ **SEO Engine skill upgraded to v2** — Sarvesh's 6-pillar competitive warfare framework integrated (competitor reviews, page gaps, GBP audit, citations, backlinks, photo strategy)
-- ✅ **Google Ads guide completed** — £20/day Blue Canvas campaign structure, high-intent keywords, setup instructions
-- ✅ **UK Trade Jobs Supabase configured** — shared database with Ardmore, env vars set on Vercel, employer notifications ready
-- ✅ **Moltbook heartbeat monitoring** — 20 unread notifications (new followers, post comments), daily checks automated
+- PJ to confirm purchase of aiactcompliance.co.uk + aiaudituk.com
 
 **Completed Mar 5:**
-- ✅ /contact page confirmed working (200, was flagged 404 on Mar 3)
-- ✅ Domain sweep: 56 domains checked. PJ buying aiactcompliance.co.uk + aiaudituk.com on GoDaddy
-- ✅ Morning dashboard + Moltbook monitoring confirmed in HEARTBEAT.md (from overnight session)
-- ✅ Moltbook engagement restarted (3 weeks dormant → replying to 25 notifications + new post)
-- ✅ Cormac/HIP Psychology showcase already completed
+- ✅ Full system tune-up: cron overhaul (17 crons), skills overhaul, COO mode codified
+- ✅ Domain sweep: 56 EU AI Act domains checked. Top picks identified for PJ.
+- ✅ Moltbook engagement restarted (3 weeks dormant → 25 notifications + new post)
+- ✅ /contact page confirmed working (was flagged 404 on Mar 3)
+- ✅ TOOLS.md corrected: Google Ads billing IS active (was incorrectly "pending")
 
 **Completed Mar 4:**
-- ✅ **Google Ads LIVE**: "Blue Canvas - AI Audit" campaign, £20/day, 8 phrase-match keywords, account 801-851-4760
-- ✅ **Ardmore end-to-end operational**: admin emails, demo draw, full payment flow tested with PJ's 5 numbers
-- ✅ **SEO Engine v2.1**: daily cadence (Mon=audit, Tue=fix, Wed=attack, Thu=content, Fri=monitor) + morning dashboard added to heartbeat
-- ✅ **All access granted**: GBP Manager, Ahrefs team, Google Ads Admin, UK Trade Jobs Supabase
-- ✅ **EU AI Act opportunity**: score 8.5/10, domains available, 5 months to Aug enforcement
-- ✅ UK Trade Jobs audit completed — 3 ready, needs Supabase connection + Apply button fix
-- ✅ **Moltbook services posted**: SEO audits, showcases, automation. First 3 gigs at name-your-price for reviews.
-- ✅ **HIP Psychology showcase**: 6-slide WhatsApp demo for Cormac V — https://albiemorgan88-hash.github.io/hip-psychology-showcase/
-- ✅ **Whisper audio transcription**: installed and working for voice messages
-- ✅ **GBP photos**: 5/5 complete (headshot, Teide, workspace, Guildhall, brand card)
+- ✅ Google Ads LIVE: £20/day, 8 phrase-match keywords
+- ✅ Ardmore end-to-end operational: admin emails, demo draw, full payment flow tested
+- ✅ All access granted: GBP Manager, Ahrefs team, Google Ads Admin
+- ✅ HIP Psychology showcase deployed for Cormac V
+- ✅ GBP photos: 5/5 complete
 
-**Completed Mar 2:**
-- ✅ Tim Clarke CV Screener deployed: https://albiemorgan88-hash.github.io/quay-crew-screener/
-- ✅ Joe Abrahams Scorecard deployed: https://albiemorgan88-hash.github.io/ai-readiness-scorecard/  
-- ✅ 10 blog drafts pushed to Webflow CMS, first published
-- ✅ openclawconsultant.co.uk SSL fixed
-- ✅ UK Trade Jobs Supabase integration completed
+**Completed Mar 3:**
+- ✅ Ardmore Cricket Club PRODUCTION READY — live Stripe, webhooks, Resend emails all working
+- ✅ SEO Engine v2 + Google Ads guide completed
+- ✅ UK Trade Jobs Supabase configured
