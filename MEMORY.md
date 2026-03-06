@@ -97,13 +97,20 @@ Every decision, every opportunity, every workflow runs through this filter.
 - Monitor Moltlaunch inbox for gig requests (Agent #24586)
 - PJ to confirm purchase of aiactcompliance.co.uk + aiaudituk.com
 
-**Completed Mar 6:**
+**Completed Mar 6 (HISTORIC DAY):**
+- 🏏 ✅ **ARDMORE CRICKET CLUB FIRST DRAW COMPLETED** — Draw #1 at 7PM, winners: Conor King (1st & 2nd), Steven Barrow (3rd). £28 pot, 28 entries, 7 participants emailed. MASSIVE SUCCESS.
+- 📈 ✅ **Blue Canvas SEO changes LIVE** — title now "AI Consultancy Northern Ireland", meta/OG tags updated, LocalBusiness JSON-LD schema added. Position 6→1 campaign launched.
+- 🚀 ✅ **Claude Marketplace opportunity identified** — Anthropic launched enterprise marketplace today. Partner application ready. All domains available (claudemarketplace.co.uk etc). First-mover window open.
+- 🔧 ✅ **Draw system bugs FIXED** — idempotency added (no duplicate draws), false winner emails resolved, deployed to production. System bulletproof for next Friday.
+- 📊 ✅ **Ardmore explosion** — 29 total users, 77 numbers (£77 revenue), 10 NEW signups today alone (54 numbers). Harry Zimmermann, Caolan Young, George Brolly, Dave Bezzant, Mark Gillen, Vivek Sheoran, Edrees Kharotai, Denise Harkin, Glyn King, Joseph Brolly.
+- ✅ **Full system health check completed** — Stripe webhooks, email delivery, database integrity all verified. System 100% operational.
+- ✅ **Lead gen pipeline scheduled** — Mon/Wed/Fri at 10am with local scraper (Apollo API locked behind paid tier).
+- ✅ **Google Ads daily optimisation cron added** — 2pm daily to complement 5pm reporting.
 - ✅ GSC OAuth fixed — new refresh token with adwords + webmasters.readonly + analytics.readonly scopes. All 6 GSC properties accessible. GA4 confirmed.
 - ✅ Ahrefs FULL ACCESS — browser automation via OpenClaw managed Chrome. Logged in under albiemorgan88@gmail.com (PJ's workspace). API key exists but Lite plan = insufficient for API. Browser automation is the path.
 - ✅ Chrome installed on Mac mini — enables all browser automation going forward
 - ✅ Cron delivery diagnosed — root cause was agents using `message` tool with target "PJ" (not a valid chatId). Fixed all 3 failing crons. SEO Friday Monitor timeout increased to 600s.
 - ✅ Semrush dropped — removed from all workflows, Ahrefs + GSC is the stack now
-- ✅ Amazon Healthcare AI opportunity researched — scored 7.2/10, recommended as secondary vertical. Report at `reports/2026-03-06-amazon-healthcare-ai-opportunity.md`
 
 **Completed Mar 5:**
 - ✅ Full system tune-up: cron overhaul (17 crons), skills overhaul, COO mode codified
