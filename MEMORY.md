@@ -18,8 +18,7 @@ Every decision, every opportunity, every workflow runs through this filter.
 - **Jess Mason** (male) — AI Systems Consultant, OpenClaw expert, YouTube. On team page.
 - **Ian Patterson** — PJ's brother. Precision Education.
 - **Charlie O'Hara** — Solara Wellness Hub. Showcase deployed.
-- **Tim Clarke** — first paid client (£750). Quay Group superyacht recruitment. CV Screener demo ready to send.
-- **Joe Abrahams** — potential client. ~23, Nottingham grad, IBM AI placement. Readiness Scorecard demo ready to send.
+
 
 ## Active Projects
 - **Blue Canvas** (PRIMARY) — £6k/mo target. Pos 6.4 "ai consultancy NI" (slipped from 4.7), #1 "ai consultants near me". Target #1 NI by May. Sessions down 38% WoW, bounce 76.6%, zero conversions. PageSpeed mobile 56/100, LCP 12.6s (CRITICAL).
@@ -91,9 +90,7 @@ Every decision, every opportunity, every workflow runs through this filter.
 - GBP category audit & photo strategy
 - Review velocity tracking vs competitors
 
-**Awaiting Response:**
-- Tim Clarke — CV Screener demo sent (£750 opportunity)
-- Joe Abrahams — AI Readiness Scorecard demo sent
+
 
 **Standard:**
 - Continue 1/day blog publishing (drafts remaining in CMS)
