@@ -1,100 +1,73 @@
-# Morning Dashboard — Saturday 7 March 2026
+# 🔧 Morning Dashboard — Sat 7 Mar 2026, 8:25 PM
 
 ## 1. Site Uptime ✅
-
 | Site | Status | Response |
 |------|--------|----------|
-| bluecanvas.ai | 301 → www (expected) | 0.24s |
-| ardmorecricket.com | 200 ✅ | 0.53s |
-| uktradejobs.com | 200 ✅ | 1.51s ⚠️ |
-| openclawconsultant.co.uk | 200 ✅ | 0.34s |
+| bluecanvas.ai | 301→200 ✅ | 0.34s |
+| ardmorecricket.com | 200 ✅ | 0.10s |
+| uktradejobs.com | 200 ✅ | 0.76s |
+| openclawconsultant.co.uk | 200 ✅ | 0.10s |
 
-**Note:** uktradejobs.com at 1.5s — sluggish, worth investigating.
+All sites healthy. uktradejobs.com slowest at 760ms but acceptable.
 
----
+## 2. Google Ads ⚠️
+**Status: API still broken — developer token in test mode**
+- Campaign: "Blue Canvas - AI Audit", £20/day budget
+- Spend: ~£0.60 total in ~7 days — severely underdelivering
+- Root cause: Ad policy violation (double dots ".." in description) → "Eligible (Limited)"
+- PJ submitted Basic access form Mar 6, still pending
+- Conversion tracking: Still not set up
 
-## 2. Google Ads — Account 801-851-4760
-
-**API Status:** ❌ Blocked (test mode — Basic access application submitted Mar 6, pending Google approval)
-
-**Last Known (cumulative ~7 days as of Mar 6):**
-- Campaign: "Blue Canvas - AI Audit" | Budget: £20/day
-- Spend: £0.60 | Impressions: 15 | Clicks: 1 | CTR: 6.67% | CPC: £0.60
-- Conversions: 0 (tracking not set up)
-
-**Root cause of underdelivery:** Ad policy violation — "Punctuation and symbols" (double dots ".." in description). Status: "Eligible (Limited)". Fix was in progress.
-
-**Action items:**
-- Fix ad copy violation
-- Set up conversion tracking
-- Expand keywords 8 → 30+
-- Chase Basic API access approval
-
----
+**Action needed:** Fix ad copy + check ads.google.com dashboard manually.
 
 ## 3. Lead Pipeline
+| Lead | Status | Action |
+|------|--------|--------|
+| Tim Clarke (Quay Group) | CV Screener demo ready | PJ handling — needs follow-up check |
+| Joe Abrahams | AI Readiness Scorecard demo ready | ⚠️ No follow-up logged — nudge him |
+| Charlie O'Hara (Solara Wellness) | Showcase deployed | No activity logged |
+| Cormac V (HIP Psychology) | Showcase deployed Mar 4 | No follow-up logged |
 
-| Lead | Status | Action Needed |
-|------|--------|---------------|
-| **Tim Clarke** (Quay Group, £750) | CV Screener demo ready | PJ handling follow-up personally |
-| **Joe Abrahams** (IBM AI placement) | Readiness Scorecard demo ready | No recent follow-up logged — needs chase |
-| **ClubDraw / Ardmore** | Client #1, multi-club ready | No active expansion follow-up |
+**Tenders active:** Donegal CC €4,200 · InterTradeIreland £72k · CCS RM6200 + RM6173 (all submitted Feb, no updates)
 
-No new inbound leads logged recently. Apollo running 50 leads/batch Mon/Wed/Fri.
+## 4. SEO / GSC Snapshot
 
----
+### bluecanvas.ai (Feb 28–Mar 6 vs Feb 21–27)
+| Metric | This Week | Last Week | Δ |
+|--------|-----------|-----------|---|
+| Clicks | 5 | 7 | ⬇️ -29% |
+| Impressions | 544 | 372 | ⬆️ +46% |
+| CTR | 0.92% | 1.88% | ⬇️ -51% |
+| Avg Position | 8.3 | 9.1 | ⬆️ improved |
 
-## 4. SEO Snapshot (GSC)
+Impressions surging but CTR crisis — title tags & meta descriptions need optimising.
 
-### bluecanvas.ai — This Week vs Last Week
-| Metric | This Week | Last Week | Change |
-|--------|-----------|-----------|--------|
-| Clicks | 4 | 7 | -43% ⬇️ |
-| Impressions | 459 | 372 | +23% ⬆️ |
-| CTR | 0.87% | 1.88% | -54% ⬇️ |
-| Avg Position | 8.3 | 9.1 | +0.8 ⬆️ |
+### uktradejobs.com (Feb 28–Mar 6 vs Feb 21–27)
+| Metric | This Week | Last Week | Δ |
+|--------|-----------|-----------|---|
+| Clicks | 12 | 3 | ⬆️ +300% |
+| Impressions | 1,210 | 431 | ⬆️ +181% |
+| CTR | 0.99% | 0.70% | ⬆️ +42% |
+| Avg Position | 28.2 | 24.5 | ⬇️ slightly worse |
 
-**🔥 Wins:** #1 for "ai consultants near me" and "ai consulting near me"
-**⚠️ Problem:** Impressions up but clicks down — CTR crisis. Titles/descriptions need rewriting.
-**Quick wins:** "ai consultancy for small business" (pos 7.0, 34 imp) — push to top 3
+**Standout performer** — clicks 4x, impressions nearly 3x. New content getting indexed.
 
-### uktradejobs.com — This Week vs Last Week
-| Metric | This Week | Last Week | Change |
-|--------|-----------|-----------|--------|
-| Clicks | 10 | 3 | +233% ⬆️ |
-| Impressions | 941 | 431 | +118% ⬆️ |
-| CTR | 1.06% | 0.70% | +51% ⬆️ |
-| Avg Position | 28.4 | 24.5 | -3.9 ⬇️ |
-
-**🔥 Win:** "bricklaying jobs" at position 3.7 — first real page-1 keyword
-**Trend:** Big growth week — impressions doubled, clicks tripled. Early traction confirmed.
-
----
-
-## 5. Ahrefs Data
-
-⚠️ Browser session timed out (login wall). DR and keyword position data unavailable this morning. Needs manual browser session or cookie refresh.
-
----
+## 5. Ahrefs
+❌ Browser blocked by Cloudflare challenge — can't pull DR/keyword data automatically. Check manually at app.ahrefs.com or use the Ahrefs API key.
 
 ## 6. Cron Health ✅
+**All 18 cron jobs clean — zero failures in 24h.**
+- 10 completed ok, 1 running (this dashboard), 7 idle (weekly jobs)
+- ⚠️ Minor: Telegram groupPolicy is "allowlist" but groupAllowFrom is empty — group messages silently dropped
 
-All 18 cron jobs healthy. No failures in last 24h.
+## 7. Blocked Items Needing PJ
+1. **Google Ads fix** — double dots in ad description causing policy violation. Fix or greenlight Albie to fix via browser
+2. **Google Ads API** — Basic access form submitted, awaiting approval
+3. **Ads conversion tracking** — not set up yet
+4. **SEO battle plan** — 5-point plan sent Mar 6, awaiting your direction on priority
+5. **bluecanvas.ai PageSpeed** — Mobile 56/100, LCP 12.6s (Webflow optimisation needed, you said never publish autonomously)
+6. **Domain purchases** — aiactcompliance.co.uk + aiaudituk.com still to confirm (Stacey's project)
+7. **UK Trade Jobs deploy** — Production deploy with employer signup notifications pending
 
----
-
-## 7. Blocked Items Needing PJ's Input
-
-1. **Google Ads battle plan** — 5-point plan sent Mar 6, awaiting PJ's direction on which to start
-2. **Blue Canvas CTR crisis** — Meta title/description rewrites identified but no confirmation PJ approved execution
-3. **Joe Abrahams follow-up** — Demo ready, no chase logged
-
----
-
-## Priority Actions for Today
-
-1. 🔴 Decide on Google Ads battle plan (5 options pending)
-2. 🔴 Approve Blue Canvas meta rewrites to fix CTR drop
-3. 🟡 Chase Joe Abrahams — Readiness Scorecard demo sitting idle
-4. 🟡 Investigate uktradejobs.com speed (1.5s response)
-5. 🟢 Fix Ahrefs browser session for automated reporting
+## Ardmore Cricket 🏏
+Draw #1 completed Mar 6: 28 entries, 7 participants, £28 pot, 29 users, 77 numbers (£77 revenue), 10 new signups on draw day. Next draw: Fri Mar 13.
