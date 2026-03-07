@@ -59,7 +59,7 @@ Scan these for trending tools/platforms that need domains:
 - **Product Hunt** — AI launches
 - **Hacker News** — Trending AI projects
 - **Twitter/X** — AI tool announcements
-- **Semrush** — Rising keywords in AI/automation space
+- **Ahrefs** — Rising keywords in AI/automation space
 
 ## Current Portfolio (Blue Canvas)
 

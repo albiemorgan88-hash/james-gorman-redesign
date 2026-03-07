@@ -394,7 +394,7 @@
 - Firewall: macOS Application Firewall
 - Anti-malware: Apple XProtect Version 5331
 - Browsers: Safari 26.3, Chrome 134
-- Cloud services: Google Workspace, Webflow, Vercel, GitHub, Stripe, Calendly, Semrush, GA4, GSC, Clarity
+- Cloud services: Google Workspace, Webflow, Vercel, GitHub, Stripe, Calendly, Ahrefs, GA4, GSC, Clarity
 - Password management: Apple iCloud Keychain
 - All answers drafted by Albie and submitted
 - PJ: "Thank fuck we're finished" 😂

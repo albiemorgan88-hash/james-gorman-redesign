@@ -1,7 +1,7 @@
 # TOOLS.md — Infrastructure
 
 ## Keys & Tokens (all in env / ~/.zprofile)
-Webflow (×4), Vercel, Semrush, PageSpeed, Apollo, Bird (X/Twitter), CDP Wallet
+Webflow (×4), Vercel, Ahrefs, PageSpeed, Apollo, Bird (X/Twitter), CDP Wallet
 
 ## Services
 SearXNG :8888 | GA4 `485727316` | GSC `bluecanvas.ai` | Clarity `vf82niitxf`

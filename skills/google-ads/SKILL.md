@@ -82,7 +82,7 @@ Authorization: Bearer {TOKEN}
 # Body: {"startDate": "...", "endDate": "...", "dimensions": ["query"], "rowLimit": 100}
 ```
 
-**Note:** Semrush subscription is cancelled. Use Ahrefs for all keyword research and competitive analysis.
+**Tool:** Ahrefs for all keyword research and competitive analysis.
 
 ## Campaign Structure
 

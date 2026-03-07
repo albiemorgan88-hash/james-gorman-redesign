@@ -89,7 +89,7 @@ Everything in weekly, plus:
 
 ### Ahrefs (Team Access — Primary SEO Data Source)
 PJ has Ahrefs team access. No API — access via browser (use agent-browser skill for automation).
-Semrush subscription is cancelled — **Ahrefs is the primary tool for all keyword, backlink, and competitive data**.
+**Ahrefs is the primary tool for all keyword, backlink, and competitive data.** Semrush is fully cancelled and removed from the stack.
 
 **Ahrefs Tools:**
 

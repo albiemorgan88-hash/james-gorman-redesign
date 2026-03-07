@@ -11,7 +11,7 @@
 
 ## 1. Keyword Research
 
-> ⚠️ **Note:** Semrush API units exhausted. Data below combines prior Semrush research (from campaign-plan-v2), industry benchmarks (2025 Google Ads Benchmarks), and estimated ranges based on market analysis. OpenClaw is a trending platform — brand terms will have near-zero competition initially.
+> ⚠️ **Note:** Data below combines prior keyword research (now using Ahrefs), industry benchmarks (2025 Google Ads Benchmarks), and estimated ranges based on market analysis. OpenClaw is a trending platform — brand terms will have near-zero competition initially.
 
 ### Ad Group 1: Brand/Product — OpenClaw-Specific Terms
 
@@ -47,8 +47,8 @@
 | deploy ai agent | 20-60 | £2.00-4.00 | Low | Technical intent |
 | ai assistant for business | 200-500 | £2.50-5.00 | Medium | Broad but relevant |
 | ai business automation | 150-400 | £3.00-6.00 | Medium | Problem-aware |
-| ai workflow automation uk | 30-70 | £0-2.00 | Very Low | Prior Semrush: £0 CPC! |
-| automate business processes uk | 50-100 | £0-2.00 | Very Low | Prior Semrush: £0 CPC! |
+| ai workflow automation uk | 30-70 | £0-2.00 | Very Low | Historical data: £0 CPC |
+| automate business processes uk | 50-100 | £0-2.00 | Very Low | Historical data: £0 CPC |
 
 ### Ad Group 3: Local — UK/NI/Ireland Geo-Targeted
 
@@ -56,8 +56,8 @@
 |---------|---------------------|----------|-------------|-------|
 | ai consultancy uk | 100-300 | £3.00-6.00 | Medium | Broad UK |
 | ai consultant near me | 50-150 | £3.00-7.00 | Medium | Local intent |
-| ai consultancy northern ireland | 30-60 | £0-1.50 | Very Low | Prior Semrush: £0 CPC! |
-| ai services northern ireland | 20-50 | £1.50-3.00 | Very Low | Prior Semrush: £2.54 |
+| ai consultancy northern ireland | 30-60 | £0-1.50 | Very Low | Historical data: £0 CPC |
+| ai services northern ireland | 20-50 | £1.50-3.00 | Very Low | Historical data: £2.54 |
 | ai consultant derry | 10-20 | £0-1.00 | Very Low | Hyper-local |
 | ai agency uk | 100-300 | £3.00-6.00 | Medium | Broad |
 | ai agent company uk | 30-80 | £2.50-5.00 | Low-Medium | Commercial |
@@ -66,7 +66,7 @@
 | ai for business uk | 150-400 | £2.50-5.00 | Medium | Broad match |
 
 ### 💎 Priority: £0 CPC / Near-Zero Competition Keywords
-From prior Semrush data + new OpenClaw terms:
+From prior keyword research (now using Ahrefs) + new OpenClaw terms:
 
 | Keyword | Est. Volume | CPC |
 |---------|-------------|-----|

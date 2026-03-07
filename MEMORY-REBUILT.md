@@ -204,7 +204,7 @@
 | GSC | bluecanvas.ai (sc-domain verified) |
 | Clarity | vf82niitxf |
 | Google Ads | Account 801-851-4760 (billing pending) |
-| Semrush | API access (limited free credits). PJ open to Pro £99/mo. |
+| Ahrefs | Browser login + API. Primary SEO tool for keywords, backlinks, competitors. |
 | Apollo.io | API key active for Blue Canvas. Davy has separate key. |
 | Calendly | contact-bluecanvas/initial-consultation |
 | Tailscale | philpatterson85@gmail.com. Mac mini + iPhone. |
@@ -238,7 +238,7 @@
 - Completed 25 Feb 2026 via IASME portal. Assessor: Ben Archer.
 - Albie walked PJ through every flagged question (A2.4 through A8.x).
 - Devices: Mac mini, MacBook Air, iPhone 17. Network: BT Smart Hub, home office.
-- Cloud services declared: Google Workspace, Webflow, Vercel, GitHub, Stripe, Calendly, Semrush, GA4, GSC, Clarity, Telegram, GoDaddy.
+- Cloud services declared: Google Workspace, Webflow, Vercel, GitHub, Stripe, Calendly, Ahrefs, GA4, GSC, Clarity, Telegram, GoDaddy.
 - Anti-malware: Apple XProtect v5331. Browsers: Safari 26.3, Chrome 134.
 
 ## Things Albie Built

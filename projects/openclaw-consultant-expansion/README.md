@@ -10,7 +10,7 @@ OpenClaw-specific keywords have zero search volume (too new). The play is to **o
 | File | What It Is |
 |------|-----------|
 | `audit.md` | Current site state + competitor analysis |
-| `keyword-research.md` | Full Semrush keyword data |
+| `keyword-research.md` | Full keyword research data (Ahrefs) |
 | `content-strategy.md` | Page plan with keyword targets |
 | `pages/ai-employee.md` | 🔴 Highest priority — targets "ai employee" (390+210 vol) |
 | `pages/services.md` | 🔴 Service page — targets "ai automation consultant" |

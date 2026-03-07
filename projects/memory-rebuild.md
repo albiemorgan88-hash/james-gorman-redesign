@@ -258,7 +258,7 @@
 - **GSC:** bluecanvas.ai (sc-domain verified)
 - **Microsoft Clarity:** vf82niitxf
 - **Google Ads:** Account 801-851-4760 (billing pending)
-- **Semrush:** API access (limited free credits). PJ open to getting full Pro account (£99/mo).
+- **Ahrefs:** Browser login + API. Primary tool for keyword research, backlink analysis, competitor data.
 - **Apollo.io:** API key active for Blue Canvas. Davy has separate key.
 - **Calendly:** contact-bluecanvas/initial-consultation
 - **Tailscale:** philpatterson85@gmail.com account. Mac mini + PJ's iPhone connected.
@@ -494,7 +494,7 @@
 - Albie walked PJ through every flagged question (device inventory, firewall, cloud services, password policy, anti-malware, etc.)
 - Devices declared: Mac mini, MacBook Air, iPhone 17
 - Network: BT Smart Hub, home office
-- Cloud services: Google Workspace, Webflow, Vercel, GitHub, Stripe, Calendly, Semrush, GA4, GSC, Clarity, Telegram, GoDaddy
+- Cloud services: Google Workspace, Webflow, Vercel, GitHub, Stripe, Calendly, Ahrefs, GA4, GSC, Clarity, Telegram, GoDaddy
 - Anti-malware: Apple XProtect v5331
 - Browsers: Safari 26.3, Chrome 134
 

@@ -1,6 +1,6 @@
 ---
 name: seo-engine
-description: "Unified SEO engine orchestrating daily audit, fix, monitor, report, and ATTACK phases for Blue Canvas + UK Trade Jobs. Use when PJ asks to run an SEO audit, fix SEO issues, generate meta tags, draft blog content, check rankings, track keyword positions, create weekly/monthly SEO reports, analyse competitors, find quick wins, run the competitor warfare playbook, build location pages, audit citations, analyse backlink gaps, manage GBP, run Google Ads, or execute any end-to-end SEO workflow. Covers technical SEO, content SEO, local SEO (GBP, citations, reviews), Semrush + Ahrefs analysis, Webflow meta updates, GSC/GA4 monitoring, backlink gap analysis, GBP management, Google Ads, and reporting."
+description: "Unified SEO engine orchestrating daily audit, fix, monitor, report, and ATTACK phases for Blue Canvas + UK Trade Jobs. Use when PJ asks to run an SEO audit, fix SEO issues, generate meta tags, draft blog content, check rankings, track keyword positions, create weekly/monthly SEO reports, analyse competitors, find quick wins, run the competitor warfare playbook, build location pages, audit citations, analyse backlink gaps, manage GBP, run Google Ads, or execute any end-to-end SEO workflow. Covers technical SEO, content SEO, local SEO (GBP, citations, reviews), Ahrefs analysis, Webflow meta updates, GSC/GA4 monitoring, backlink gap analysis, GBP management, Google Ads, and reporting."
 ---
 
 # SEO Engine v2.1 — Daily Audit · Fix · Attack · Monitor · Report
@@ -10,7 +10,7 @@ Unified **daily** SEO workflow across five phases: **Audit → Fix → Attack �
 v2.1 adds: **daily cadence**, **Ahrefs integration**, **GBP management**, **Google Ads orchestration**.
 
 Delegates API specifics to sibling skills — do NOT duplicate their content:
-- **analytics-seo** — GA4, GSC, Clarity APIs, Semrush endpoints, keyword data, competitor benchmarks
+- **analytics-seo** — GA4, GSC, Clarity APIs, Ahrefs data, keyword data, competitor benchmarks
 - **webflow-seo** — Webflow API, CMS operations, page meta updates, publishing rules
 - **google-ads** — Campaign structure, keyword research, ad copy, budget management
 
@@ -39,8 +39,7 @@ This skill is the **orchestrator**. It defines *what* to do and *when*; sibling 
 
 | Tool | Access | Use For |
 |------|--------|---------|
-| **Semrush** | ❌ CANCELLED (zero units, Mar 2026) | Use Ahrefs + GSC instead |
-| **Ahrefs** | Browser login (albiemorgan88@gmail.com) + API when available | Backlink gaps, referring domains, content explorer, DR tracking |
+| **Ahrefs** | Browser login (albiemorgan88@gmail.com) + API when available | Keyword research, backlink gaps, referring domains, content explorer, DR tracking, competitor analysis |
 | **GSC** | API — site `https://www.bluecanvas.ai/` | Clicks, impressions, position tracking, quick wins |
 | **GA4** | API — property `485727316` | Sessions, conversions, user behaviour |
 | **Clarity** | Dashboard `vf82niitxf` | Heatmaps, session recordings, rage clicks |
@@ -126,9 +125,9 @@ UK Trade Jobs: Albie deploys autonomously.
 ### 2.2 Blog Content Drafting
 
 For target keywords lacking content:
-1. Check Semrush `phrase_questions` for subtopics
+1. Check Ahrefs Questions report for subtopics
 2. Draft 1,500-2,000 word post following the 13-point on-page checklist
-3. Include FAQ section (3-5 questions from Semrush data) with FAQ schema
+3. Include FAQ section (3-5 questions from Ahrefs/GSC data) with FAQ schema
 4. Internal links to ≥2 existing pages + 1 service page
 5. Save draft to `drafts/blog/` for PJ review
 
@@ -248,7 +247,7 @@ Generate JSON-LD for:
 1. Search for business name + city across major directories
 2. Check NAP consistency: name, address, phone, website URL
 3. Flag mismatches (even "St" vs "Street")
-4. Use Semrush Local for bulk fixes
+4. Use manual directory submissions for bulk fixes
 
 **Directories to check:**
 Yelp, BBB, Yell.com, Thomson Local, Scoot, Cylex, FreeIndex, Hotfrog, 192.com, Apple Maps, Bing Places, Facebook, LinkedIn, Trustpilot, Google Maps, Golden Pages (IE)
@@ -270,12 +269,10 @@ Yelp, BBB, Yell.com, Thomson Local, Scoot, Cylex, FreeIndex, Hotfrog, 192.com, A
 **Goal:** Find sites linking to competitors but not us — warm outreach targets.
 
 **Method:**
-1. Semrush API: `backlinks_refdomains` for each competitor
+1. Ahrefs: `site-explorer/referring-domains` for each competitor
 2. Cross-reference: find domains linking to 2+ competitors but not us
-3. Classify by domain authority and relevance
+3. Classify by domain rating and relevance
 4. Generate outreach hitlist with contact details
-
-**If Ahrefs available:** Use `site-explorer/referring-domains` for deeper data.
 
 **Output:** `reports/attack/backlink-gaps-{date}.md`
 ```markdown
@@ -325,7 +322,7 @@ Flag keywords at position 4-10 with >50 impressions. For each:
 
 ### 4.3 Competitor Monitoring
 
-Monthly via Semrush `domain_organic`:
+Monthly via Ahrefs organic keywords report:
 - New keywords competitors rank for that we don't
 - Position changes for shared keywords
 - Authority score changes
@@ -414,7 +411,7 @@ Save to `reports/quarterly-seo/YYYY-QN.md`
 2. Week 1: Review teardown + service area gaps
 3. Week 2: GBP audit + photo strategy
 4. Week 3: Citation audit + NAP cleanup
-5. Week 4: Backlink gap analysis (Ahrefs + Semrush)
+5. Week 4: Backlink gap analysis (Ahrefs)
 6. Generate attack report → `reports/attack/`
 
 **Thursday — Content Day**
@@ -426,7 +423,7 @@ Save to `reports/quarterly-seo/YYYY-QN.md`
 
 **Friday — Monitor + GBP Day**
 1. Pull keyword position changes (GSC)
-2. Check competitor movements (Semrush/Ahrefs)
+2. Check competitor movements (Ahrefs)
 3. Track review velocity vs competitors
 4. Update GBP: respond to reviews, add photos if available
 5. Log wins and changes to `reports/keyword-tracking.md`
@@ -500,23 +497,24 @@ Save to `reports/quarterly-seo/YYYY-QN.md`
 4. **Link Intersect:** Find sites linking to multiple competitors → highest-value outreach targets
 5. **Broken Link Building:** Find broken outbound links on relevant sites → pitch our content as replacement
 
-### Ahrefs vs Semrush (when to use which)
+### Ahrefs + GSC — Tool Split
 | Task | Tool |
 |------|------|
 | Backlink analysis | **Ahrefs** (superior backlink index) |
-| Keyword research | **Semrush** (better keyword database + SERP features) |
-| Competitor organic keywords | **Semrush** (more granular position tracking) |
-| Domain authority/rating | **Ahrefs** DR (more widely referenced) |
+| Keyword research | **Ahrefs** (Keywords Explorer) |
+| Competitor organic keywords | **Ahrefs** (organic keywords report) |
+| Domain authority/rating | **Ahrefs** DR |
 | Content gap analysis | **Ahrefs** (Content Explorer is best-in-class) |
-| Technical audit | Both (cross-reference for completeness) |
-| Local SEO / citations | **Semrush** (Listing Management tool) |
+| Technical audit | **Ahrefs** Site Audit + PageSpeed API |
+| Position tracking | **GSC** (real data) + **Ahrefs** Rank Tracker |
+| Local SEO / citations | Manual directory management |
 
 ## Google Ads Integration
 
 When PJ activates Google Ads:
 
 ### Keyword Research for Ads
-1. Pull high-intent keywords from Semrush (CPC, volume, competition)
+1. Pull high-intent keywords from Ahrefs (CPC, volume, competition)
 2. Filter for commercial intent: "hire", "cost", "near me", "services", "company"
 3. Group into ad groups by theme
 4. Estimate monthly budget at different impression share targets
@@ -557,13 +555,13 @@ Save to `projects/google-ads/`:
 2. **NEVER publish Webflow CMS items** — stage and notify PJ
 3. **UK Trade Jobs: autonomous deploy OK** — Albie deploys without approval
 4. **Read-only on GSC/GA4** — report and recommend only
-5. **Source env vars** before Semrush/API calls: `source ~/.zprofile`
+5. **Source env vars** before API calls: `source ~/.zprofile`
 6. **All reports** saved to `reports/` with date-stamped filenames
 7. **Log everything** — unwritten = forgotten
 8. **Attack phase** outputs go to `reports/attack/`
 9. **Draft content** goes to `drafts/` — never publish without review (except UKTJ)
 10. **GBP: Albie manages** — photos, posts, reviews, Q&A. Don't change business name/address/phone without PJ approval
 11. **Daily SEO is non-negotiable** — every day has a focus (Mon=audit, Tue=fix, Wed=attack, Thu=content, Fri=monitor)
-12. **Ahrefs for backlinks, Semrush for keywords** — use the right tool for the job
+12. **Ahrefs for all SEO data** (backlinks, keywords, competitors) + **GSC for real position data**
 13. **Cross-reference tools** — never rely on a single data source for strategic decisions
 14. **Report wins to PJ** — flag ranking improvements, traffic spikes, quick win opportunities immediately

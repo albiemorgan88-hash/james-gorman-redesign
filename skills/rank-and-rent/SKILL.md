@@ -14,7 +14,7 @@ Build a local service website → rank it on Google → rent it to a business th
 Use **Ahrefs Keywords Explorer** (UK database) for volume, keyword difficulty, and related keywords.
 Use **Google Search Console API** for first-party impressions/clicks data on owned sites.
 
-**Note:** Semrush subscription is cancelled. Use Ahrefs for all keyword research.
+**Tool:** Ahrefs for all keyword research and competitor analysis.
 
 Target: 200-2000 monthly searches, KD < 40, commercial intent.
 

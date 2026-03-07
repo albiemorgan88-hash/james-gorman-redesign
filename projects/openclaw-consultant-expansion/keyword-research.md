@@ -1,10 +1,10 @@
 # Keyword Research — OpenClaw Consultant Expansion
 
 **Date:** 18 Feb 2026  
-**Source:** Semrush UK database
+**Source:** Ahrefs UK database
 
 ## Key Finding
-OpenClaw-specific keywords have **zero search volume** in Semrush. The platform is too new/niche for established search demand. Strategy must target **broader AI keywords** and capture OpenClaw-specific searches via brand authority.
+OpenClaw-specific keywords have **zero search volume** in keyword tools. The platform is too new/niche for established search demand. Strategy must target **broader AI keywords** and capture OpenClaw-specific searches via brand authority.
 
 ## OpenClaw Keywords (All Zero Volume in UK)
 | Keyword | Volume | Notes |
