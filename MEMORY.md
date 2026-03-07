@@ -22,8 +22,8 @@ Every decision, every opportunity, every workflow runs through this filter.
 - **Joe Abrahams** — potential client. ~23, Nottingham grad, IBM AI placement. Readiness Scorecard demo ready to send.
 
 ## Active Projects
-- **Blue Canvas** (PRIMARY) — £6k/mo target. Pos 4.7 "ai consultancy NI", #1 "ai consultants near me". Target #1 NI by May.
-- **Ardmore Cricket Club** — FULLY LIVE at ardmorecricket.com. 50/50 split (50% prizes, 50% club). Stripe LIVE mode active. Admin emails go to contact@bluecanvas.ai + Ardmorecc1879@hotmail.com. Draw simulation: https://albiemorgan88-hash.github.io/ardmore-draw-live/. Source: `/Users/philsagent/Projects/ardmore-cricket/`. Lottery registration COMPLETE ✅. **FIRST DRAW: Friday 6 March 2026 at 7PM.**
+- **Blue Canvas** (PRIMARY) — £6k/mo target. Pos 6.4 "ai consultancy NI" (slipped from 4.7), #1 "ai consultants near me". Target #1 NI by May. Sessions down 38% WoW, bounce 76.6%, zero conversions. PageSpeed mobile 56/100, LCP 12.6s (CRITICAL).
+- **Ardmore Cricket Club** — FULLY LIVE at ardmorecricket.com. 50/50 split (50% prizes, 50% club). Stripe LIVE mode active. Admin emails go to contact@bluecanvas.ai + Ardmorecc1879@hotmail.com. Draw simulation: https://albiemorgan88-hash.github.io/ardmore-draw-live/. Source: `/Users/philsagent/Projects/ardmore-cricket/`. Lottery registration COMPLETE ✅. **Draw #1 completed Mar 6** — 28 entries, 7 participants, £28 pot. Winners: Conor King (1st & 2nd), Steven Barrow (3rd). 29 total users, 77 numbers (£77 revenue), 10 new signups on draw day. Bugs fixed (idempotency, false winner emails). Next draw: Friday Mar 13.
 - **ClubDraw** — white-label weekly draw SaaS. Ardmore is client #1. Ready for multi-club expansion. Skill at `skills/clubdraw/SKILL.md`.
   - **Revenue split:** 50% jackpot / 40% club / 10% platform — publicly declared as "50/50" (50% prizes, 50% club)
   - **Rules:** No max numbers. Can buy for others (assign names). No age verification. One-off = 1 week. Subscription = weekly auto-renew (primary mode). Draw: Friday 7PM, 3 winners, provably fair RNG.
@@ -36,11 +36,12 @@ Every decision, every opportunity, every workflow runs through this filter.
 - **AI Compliance with Stacey** — scored 9.5. EU AI Act Aug 2026.
 - **AI Tender Writer** — scored 9.2. SME gap.
 - **Claude Cowork implementation** — SEO wide open, add as BC service line.
+- **Amazon Healthcare AI** — scored 7.2/10. Amazon Connect Health (US-only, HIPAA). UK market $11.14B, NHS £10B digital by 2028-29. Secondary vertical, not pivot. Domains available: healthcareaiagents.co.uk, healthcareautomation.co.uk.
 
 ## Revenue
 - Pricing: Free Consult → AI Audit £750 → Implementation → Academy £250 → Mentoring £50/mo
 - "Albie as a Service": £1,750 setup + £250/mo
-- Google Ads LIVE: "Blue Canvas - AI Audit" campaign, £20/day, 8 phrase-match keywords, account 801-851-4760. Albie has Admin access. Tag AW-17928080997 installed. Billing ACTIVE. Under-delivering early (£0.60/£40 day 1-2) — may need keyword expansion. Conversion tracking pending.
+- Google Ads LIVE: "Blue Canvas - AI Audit" campaign, £20/day, account 801-851-4760. Albie has Admin access. Tag AW-17928080997 installed. Billing ACTIVE. Ad policy violation found (double dots ".." in description) → "Eligible (Limited)". Subagent fixing ad copy + expanding keywords 8→30+. Conversion tracking still pending. **⚠️ NEVER touch Storage Centre NI account — PJ's explicit order.**
 - Google Ads plan at `projects/google-ads/campaign-plan-v3.md`
 - Albie has access to: GBP (Manager), Ahrefs (browser automation, Lite plan, albiemorgan88@gmail.com), Google Ads (Admin + API), Webflow (API), GSC/GA4 (API — OAuth token with all 3 scopes working as of Mar 6), Chrome browser on Mac mini
 - Google Ads API: Developer token (test mode, Basic access pending), OAuth credentials, refresh token — all in ~/.zprofile
@@ -53,8 +54,11 @@ Every decision, every opportunity, every workflow runs through this filter.
 
 ## SEO
 - Strategy: `reports/seo-strategy-2026.md`
-- Key opportunity: "ai audit" (320 vol). Competitors: brainpool.ai, iwantmore.ai, Artellis.ie, AICC.
+- Key opportunity: "ai audit" (320 vol). Competitors: brainpool.ai (DR 42, 555 ref domains vs our DR 19, 11 ref domains), iwantmore.ai, Artellis.ie, AICC.
 - 10 blog posts ready at `projects/blog-drafts/batch-2026-03-01.md` — publish 1/day.
+- Weekly report (Mar 6): BC 5 clicks/441 imps, UKTJ 10 clicks/792 imps (900% up!). Reports at `reports/weekly-seo/`.
+- UKTJ quick wins: "become an electrician" (73 imps, pos 80+ — needs content), "plumbing apprenticeship london" (pos 3.0, 0 clicks — title fix).
+- BC quick wins: "ai consultants for small business" (pos 6.7, 31 imps, 0 clicks — meta rewrite).
 
 ## Branding
 - **AI Workforce** = Blue Canvas done-for-you offering
@@ -73,11 +77,11 @@ Every decision, every opportunity, every workflow runs through this filter.
 
 ## Pending Actions
 **URGENT:**
-- **Ardmore FIRST DRAW: Friday 6 March 2026 at 7PM** ← TOMORROW
 - **Ardmore UI polish** — FAQ accordion, success page improvements, nav enhancements (coding agent failed, needs rebuild)
 - **UK Trade Jobs deploy** — production deployment with employer signup notifications to philip@bluecanvas.ai
-- **3x full E2E Ardmore tests** — document complete user journey from signup to draw completion
-- **Google Ads**: conversion tracking not set up yet. API Centre not visible (may be Smart Mode). Under-delivering: £0.60/£40 in first 2 days — keywords may be too narrow.
+- **Google Ads**: fix ad policy violation (in progress), set up conversion tracking, expand keywords. API Basic access pending (PJ submitted form Mar 6).
+- **bluecanvas.ai PageSpeed** — mobile 56/100, LCP 12.6s. Needs urgent fix (Webflow optimisation).
+- **Blue Canvas CTR crisis** — impressions up 24% but clicks down 29%. Meta titles/descriptions need rewrite for click-worthy copy.
 
 **Blue Canvas SEO Domination (credentials now granted):**
 - Run Sarvesh's 6-pillar competitive attack framework
@@ -125,8 +129,3 @@ Every decision, every opportunity, every workflow runs through this filter.
 - ✅ All access granted: GBP Manager, Ahrefs team, Google Ads Admin
 - ✅ HIP Psychology showcase deployed for Cormac V
 - ✅ GBP photos: 5/5 complete
-
-**Completed Mar 3:**
-- ✅ Ardmore Cricket Club PRODUCTION READY — live Stripe, webhooks, Resend emails all working
-- ✅ SEO Engine v2 + Google Ads guide completed
-- ✅ UK Trade Jobs Supabase configured
