@@ -16,7 +16,7 @@ Blue Canvas is an AI consultancy based in Northern Ireland. We are building an i
 - **Authentication:** OAuth 2.0 Desktop App flow with refresh token
 - **Manager Account:** 396-378-6948
 - **Ad Account:** 801-851-4760
-- **API Version:** v19
+- **API Version:** v20
 - **Frequency:** Daily automated queries (1-2 API calls per day)
 
 ### 4. API Usage

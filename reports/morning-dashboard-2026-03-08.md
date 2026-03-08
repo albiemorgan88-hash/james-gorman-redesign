@@ -1,54 +1,52 @@
 # Morning Dashboard — Sunday 8 March 2026
 
-## 1. Site Uptime ✅
-| Site | Status | Response |
-|------|--------|----------|
-| bluecanvas.ai | ✅ 200 | 514ms (301 redirect) |
-| ardmorecricket.com | ✅ 200 | 146ms |
-| uktradejobs.com | ✅ 200 | 830ms ⚠️ slow |
-| openclawconsultant.co.uk | ✅ 200 | 257ms |
+## 1. Site Uptime
+| Site | Status | Response Time |
+|------|--------|---------------|
+| bluecanvas.ai | ✅ 200 | 0.40s |
+| ardmorecricket.com | ✅ 200 | 0.14s |
+| uktradejobs.com | ✅ 200 | 0.20s |
+| openclawconsultant.co.uk | ✅ 200 | 0.13s |
 
-All sites up. uktradejobs.com slightly slow (830ms).
-
-## 2. Google Ads ❌
-API calls failing — test-level developer token can't access production account. Basic access form submitted by PJ Mar 6, still pending Google approval. Manual check needed via ads.google.com.
-
-Known issue: double-dots ".." policy violation still throttling ad delivery. Spend near-zero (~£0.60 over past week).
+## 2. Google Ads (Yesterday — 7 Mar)
+⚠️ **API Permission Error** — Google Ads API returning `USER_PERMISSION_DENIED`. OAuth token may need re-auth or the manager/client account linking needs verification. This has been flagged as a blocked item.
 
 ## 3. Lead Pipeline
-| Prospect | Status | Action Needed |
-|----------|--------|---------------|
-| Tim Clarke (Quay Group) | Demo sent Mar 2, PJ handling | PJ to close — nudge recommended |
-| Joe Abrahams | Demo sent Mar 2, no follow-up | ⚠️ 6 days cold — needs nudge |
-| Charlie O'Hara (Solara) | Showcase deployed | Status unknown |
-| Robbie O'Brien | Partnership outreach | ⚠️ 7 days stale |
+No active prospects or follow-ups found in memory. Pipeline empty — lead gen cron runs Mon/Wed/Fri.
 
-**Tenders:** Donegal CC (€4,200), InterTradeIreland (£72,000), CCS frameworks — no outcome updates. Tender Tracker runs tomorrow 9am.
+## 4. SEO / GSC Snapshot
+⚠️ **GSC API Scope Error** — OAuth token lacks `searchconsole` scope. The refresh token used is from Google Ads OAuth flow and doesn't include GSC permissions. Needs separate OAuth consent with webmasters scope.
 
-## 4. GSC / SEO Snapshot (Feb 27 – Mar 5 vs prior week)
+## 5. Ahrefs Data
 
 ### bluecanvas.ai
-- Clicks: 5 (⬇️ -29%) | Impressions: 441 (⬆️ +24%)
-- CTR: 1.13% (⬇️) | Avg Position: 8.2 (⬆️ improved)
-- Visibility growing but clicks lagging. "Near me" queries at #1. Opportunity: "ai consultants for small business" cluster (55+ impressions, pos 6-8).
+- **DR: 19** (+18 last month — strong growth)
+- Backlinks: 15 (+6), Referring domains: 11 (+2)
+- Organic keywords: 0 (Top 3: 0)
+- Organic traffic: 0
+- AI Citations: ChatGPT 1 (down 3), others 0
+- Crawled pages: 205 (13 × 404s, 1 × 5xx — needs cleanup)
 
 ### uktradejobs.com
-- Clicks: 10 (⬆️ +900%) | Impressions: 792 (⬆️ +118%)
-- CTR: 1.26% (⬆️) | Avg Position: 28.6
-- Massive growth. /careers/switching-to-trades driving 130 impressions. Job listing pages indexing well.
+- **DR: 0** (brand new domain)
+- Backlinks: 2 (+2), Referring domains: 2 (+2)
+- Organic keywords: 2 (+2, all non-branded/informational)
+- Top 3 positions: 0
+- Organic traffic: ~0
+- AI Citations: ChatGPT 1 (+1)
+- Crawled pages: 700 (99.9% 200 OK — clean)
+- Competitors identified: locksmiths-training, tradeskills4u, skillstg
 
-## 5. Ahrefs
-Subagent timed out pulling Ahrefs data (API auth issue). Manual check at app.ahrefs.com recommended.
+## 6. Cron Failures (Last 24h)
+| Cron | Status | Last Run |
+|------|--------|----------|
+| Weekly Money Scout (X) | ❌ ERROR | 4h ago |
 
-## 6. Cron Health
-- **17/18 crons OK**
-- **🔴 1 failure:** Weekly Money Scout — `message failed: Action send requires a target` error. Report generated but couldn't deliver to Telegram.
-- **Systemic:** Anthropic API timeouts recurring (evening + morning). Telegram socket went stale (auto-recovered). Morning Dashboard lane congestion (subagent bottleneck).
+All other crons (Google Ads Opti, Google Ads Report, Memory Distillation, Security Scan, AI Trend Scout, API Key Health, Cron Watchdog, Moltbook Inbox) ran OK.
 
-## 7. Blocked Items Needing PJ
-1. **Google Ads ".." fix** — greenlight Albie's browser fix or do manually
-2. **Google Ads battle plan** — 5-point plan sent Mar 6, which to start?
-3. **Joe Abrahams nudge** — approve outreach?
-4. **AI Act domains** — confirm purchase of aiactcompliance.co.uk + aiaudituk.com
-5. **Google Ads API** — Basic access pending Google (external blocker)
-6. **Ardmore UI polish** — coding agent failed, needs priority decision
+## 7. Blocked Items Needing PJ's Input
+1. **Google Ads API access broken** — `USER_PERMISSION_DENIED`. Need to re-auth OAuth or check manager account linking.
+2. **GSC API needs separate OAuth** — Current token doesn't have Search Console scope. Need to run OAuth consent flow with `https://www.googleapis.com/auth/webmasters.readonly` scope.
+3. **Weekly Money Scout cron failing** — Needs investigation (X/Twitter API issue likely).
+4. **bluecanvas.ai has 13 × 404 pages** — Should clean up or redirect.
+5. **No active lead pipeline** — Next lead gen run is Monday. Consider manual outreach this week.

@@ -25,11 +25,11 @@ description: Plan, research, and manage Google Ads campaigns for Blue Canvas AI 
 | GOOGLE_ADS_REFRESH_TOKEN | (in env) |
 
 ### API Details
-- API version: v19
-- Endpoint: `https://googleads.googleapis.com/v19/customers/8018514760/googleAds:search`
+- API version: v20
+- Endpoint: `https://googleads.googleapis.com/v20/customers/8018514760/googleAds:searchStream`
 - Auth: OAuth2 Bearer token (refresh via refresh_token grant)
-- Manager ID required in header: `login-customer-id: 3963786948`
-- Developer token status: **Test mode** — Basic access application pending. Once approved, full production API access.
+- Do NOT use login-customer-id header (or use 8018514760 — the account itself, NOT the manager)
+- Developer token status: **Active** — mutate operations confirmed working.
 
 ### Getting a Fresh Access Token
 ```bash
@@ -49,10 +49,9 @@ ACCESS_TOKEN=$(source ~/.zprofile && curl -s -X POST https://oauth2.googleapis.c
   -d "refresh_token=$GOOGLE_ADS_REFRESH_TOKEN" \
   -d "grant_type=refresh_token" | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
 
-curl -s -X POST "https://googleads.googleapis.com/v19/customers/8018514760/googleAds:search" \
+curl -s -X POST "https://googleads.googleapis.com/v20/customers/8018514760/googleAds:searchStream" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H "developer-token: $GOOGLE_ADS_DEVELOPER_TOKEN" \
-  -H "login-customer-id: 3963786948" \
   -H "Content-Type: application/json" \
   -d '{"query": "SELECT campaign.name, campaign.status, metrics.impressions, metrics.clicks, metrics.cost_micros FROM campaign WHERE segments.date DURING LAST_7_DAYS"}'
 ```
