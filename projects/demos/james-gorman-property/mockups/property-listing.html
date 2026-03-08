@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Merchants View, Strand Road — James Gorman Property</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#0C1B3A;--navy-mid:#152952;--accent:#3B82F6;--accent-warm:#F59E0B;--white:#FFFFFF;--off-white:#F7F8FC;--text:#1E293B;--text-light:#64748B;--green:#22C55E;--radius:16px}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--off-white);color:var(--text)}
+.nav{background:var(--navy);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo-mark{width:36px;height:36px;background:linear-gradient(135deg,var(--accent),#60A5FA);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:14px}
+.nav-logo-text{color:white;font-size:15px;font-weight:700}
+.nav-logo-sub{color:rgba(255,255,255,0.5);font-size:10px;text-transform:uppercase;letter-spacing:1.5px}
+.nav-back{color:rgba(255,255,255,.7);text-decoration:none;font-size:13px;display:flex;align-items:center;gap:4px}
+.gallery{position:relative}
+.gallery-main{height:300px;background:linear-gradient(135deg,#1a2a4a,#2a3a5a);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:48px;position:relative}
+.gallery-badge{position:absolute;top:16px;left:16px;background:var(--accent-warm);color:white;font-size:11px;font-weight:700;padding:6px 14px;border-radius:8px;text-transform:uppercase;letter-spacing:.5px}
+.gallery-count{position:absolute;bottom:16px;right:16px;background:rgba(0,0,0,.6);backdrop-filter:blur(10px);color:white;font-size:12px;padding:6px 12px;border-radius:8px}
+.gallery-thumbs{display:flex;gap:2px;overflow-x:auto;padding:2px 0}
+.gallery-thumb{width:25%;height:70px;background:linear-gradient(135deg,#243352,#1a2942);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.2);font-size:20px;cursor:pointer}
+.gallery-thumb:hover{opacity:.8}
+.content{max-width:600px;margin:0 auto;padding:20px}
+.prop-header{margin-bottom:20px}
+.prop-price-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+.prop-price{font-size:28px;font-weight:800;color:var(--navy)}
+.prop-status{background:rgba(34,197,94,.1);color:var(--green);font-size:11px;font-weight:700;padding:4px 10px;border-radius:6px;text-transform:uppercase}
+.prop-address{font-size:16px;color:var(--text-light);margin-bottom:8px}
+.prop-type{font-size:13px;color:var(--text-light)}
+.quick-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:24px}
+.stat-box{background:white;border-radius:12px;padding:14px 8px;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.stat-icon{font-size:20px;margin-bottom:4px}
+.stat-val{font-size:16px;font-weight:700;color:var(--navy)}
+.stat-label{font-size:10px;color:var(--text-light);text-transform:uppercase;letter-spacing:.5px}
+.action-bar{display:flex;gap:8px;margin-bottom:24px}
+.action-btn{flex:1;padding:12px;border-radius:12px;border:none;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .2s}
+.action-primary{background:var(--accent);color:white;box-shadow:0 2px 12px rgba(59,130,246,.3)}
+.action-secondary{background:white;color:var(--text);border:1px solid #e2e8f0}
+.action-btn:hover{transform:translateY(-1px)}
+.card{background:white;border-radius:var(--radius);padding:20px;box-shadow:0 1px 6px rgba(0,0,0,.04);margin-bottom:16px}
+.card-title{font-size:16px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.card-title .icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px}
+.desc-text{font-size:14px;color:var(--text-light);line-height:1.7}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.feature{display:flex;align-items:center;gap:8px;font-size:13px;padding:8px 0}
+.feature-check{color:var(--green);font-weight:700}
+.floorplan-placeholder{height:200px;background:linear-gradient(135deg,#f1f5f9,#e2e8f0);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:var(--text-light)}
+.virtual-tour{background:linear-gradient(135deg,var(--navy),var(--navy-mid));border-radius:var(--radius);padding:24px;color:white;text-align:center;margin-bottom:16px;position:relative;overflow:hidden}
+.virtual-tour::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='0.5'/%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='rgba(255,255,255,0.05)' stroke-width='0.5'/%3E%3C/svg%3E") center/cover}
+.vt-icon{font-size:40px;margin-bottom:8px;position:relative}
+.vt-title{font-size:18px;font-weight:700;position:relative}
+.vt-sub{font-size:13px;color:rgba(255,255,255,.6);position:relative}
+.vt-btn{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:white;padding:10px 20px;border-radius:10px;font-size:13px;font-weight:600;margin-top:12px;text-decoration:none;position:relative}
+.mortgage-calc{background:white;border-radius:var(--radius);padding:20px;box-shadow:0 1px 6px rgba(0,0,0,.04);margin-bottom:16px}
+.calc-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #f1f5f9}
+.calc-row:last-child{border:none}
+.calc-label{font-size:13px;color:var(--text-light)}
+.calc-value{font-size:14px;font-weight:600}
+.calc-result{background:linear-gradient(135deg,var(--accent),#2563EB);border-radius:12px;padding:16px;text-align:center;margin-top:12px}
+.calc-monthly{font-size:28px;font-weight:800;color:white}
+.calc-monthly-label{font-size:12px;color:rgba(255,255,255,.7)}
+.agent-card{background:white;border-radius:var(--radius);padding:20px;box-shadow:0 1px 6px rgba(0,0,0,.04);margin-bottom:16px;display:flex;gap:16px;align-items:center}
+.agent-avatar{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-mid));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px;flex-shrink:0}
+.agent-name{font-size:15px;font-weight:700}
+.agent-role{font-size:12px;color:var(--text-light)}
+.agent-contact{display:flex;gap:8px;margin-top:8px}
+.agent-btn{padding:6px 14px;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;border:none;cursor:pointer}
+.agent-call{background:var(--accent);color:white}
+.agent-wa{background:#25D366;color:white}
+.epc-bar{height:24px;border-radius:4px;display:flex;overflow:hidden;margin:8px 0}
+.epc-segment{flex:1;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:white}
+.footer{background:var(--navy);padding:20px;text-align:center}
+.footer p{font-size:11px;color:rgba(255,255,255,.4)}
+.footer a{color:var(--accent)}
+.ai-widget{position:fixed;bottom:20px;right:20px;z-index:200}
+.ai-bubble{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#2563EB);display:flex;align-items:center;justify-content:center;color:white;font-size:22px;box-shadow:0 4px 20px rgba(59,130,246,.4);cursor:pointer;animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.ai-tooltip{position:absolute;bottom:65px;right:0;background:white;padding:10px 14px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.12);font-size:12px;font-weight:500;white-space:nowrap;color:var(--text)}
+.ai-tooltip::after{content:'';position:absolute;bottom:-6px;right:20px;width:12px;height:12px;background:white;transform:rotate(45deg)}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-logo">
+    <div class="nav-logo-mark">JG</div>
+    <div><div class="nav-logo-text">James Gorman</div><div class="nav-logo-sub">Property</div></div>
+  </div>
+  <a href="#" class="nav-back">← Back to listings</a>
+</nav>
+
+<div class="gallery">
+  <div class="gallery-main">
+    🏠
+    <div class="gallery-badge">🔥 New Build Exclusive</div>
+    <div class="gallery-count">📷 1 / 12</div>
+  </div>
+  <div class="gallery-thumbs">
+    <div class="gallery-thumb">🛋</div>
+    <div class="gallery-thumb">🍳</div>
+    <div class="gallery-thumb">🛏</div>
+    <div class="gallery-thumb">🚿</div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="prop-header">
+    <div class="prop-price-row">
+      <div class="prop-price">£189,950</div>
+      <div class="prop-status">● Available</div>
+    </div>
+    <div class="prop-address">Merchants View, Strand Road, Derry, BT48</div>
+    <div class="prop-type">3 Bedroom New Build Apartment · 1,100 sq ft</div>
+  </div>
+
+  <div class="quick-stats">
+    <div class="stat-box"><div class="stat-icon">🛏</div><div class="stat-val">3</div><div class="stat-label">Beds</div></div>
+    <div class="stat-box"><div class="stat-icon">🚿</div><div class="stat-val">2</div><div class="stat-label">Baths</div></div>
+    <div class="stat-box"><div class="stat-icon">📐</div><div class="stat-val">1,100</div><div class="stat-label">Sq Ft</div></div>
+    <div class="stat-box"><div class="stat-icon">⚡</div><div class="stat-val">B</div><div class="stat-label">EPC</div></div>
+  </div>
+
+  <div class="action-bar">
+    <button class="action-btn action-primary">📅 Book Viewing</button>
+    <button class="action-btn action-secondary">❤️ Save</button>
+    <button class="action-btn action-secondary">↗️ Share</button>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon" style="background:rgba(59,130,246,.1);color:var(--accent)">📝</span> Description</div>
+    <p class="desc-text">
+      A stunning new-build apartment at the highly anticipated <strong>Merchants View</strong> development on the iconic Strand Road. Finished to the highest specification with contemporary living spaces, river views, and underground parking.<br><br>
+      This exclusive development offers the best of city-centre living — steps from Derry's vibrant restaurants, shops, and the Peace Bridge. An exceptional opportunity for owner-occupiers and investors alike.<br><br>
+      <strong>James Gorman Property is the exclusive selling agent for Merchants View.</strong>
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon" style="background:rgba(34,197,94,.1);color:var(--green)">✓</span> Key Features</div>
+    <div class="feature-grid">
+      <div class="feature"><span class="feature-check">✓</span> Brand new build</div>
+      <div class="feature"><span class="feature-check">✓</span> River Foyle views</div>
+      <div class="feature"><span class="feature-check">✓</span> Underground parking</div>
+      <div class="feature"><span class="feature-check">✓</span> High-spec kitchen</div>
+      <div class="feature"><span class="feature-check">✓</span> Underfloor heating</div>
+      <div class="feature"><span class="feature-check">✓</span> Private balcony</div>
+      <div class="feature"><span class="feature-check">✓</span> NHBC warranty</div>
+      <div class="feature"><span class="feature-check">✓</span> EPC Rating B</div>
+    </div>
+  </div>
+
+  <div class="virtual-tour">
+    <div class="vt-icon">🎥</div>
+    <div class="vt-title">Virtual Walk-Through Tour</div>
+    <div class="vt-sub">Explore this property from your sofa</div>
+    <a href="#" class="vt-btn">▶ Watch Tour (2:30)</a>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon" style="background:rgba(59,130,246,.1);color:var(--accent)">📐</span> Floorplan</div>
+    <div class="floorplan-placeholder">
+      <div style="font-size:32px">📋</div>
+      <div style="font-size:13px;font-weight:600">Interactive Floorplan</div>
+      <div style="font-size:11px">Tap rooms for dimensions</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon" style="background:rgba(245,158,11,.1);color:var(--accent-warm)">⚡</span> EPC Rating</div>
+    <div class="epc-bar">
+      <div class="epc-segment" style="background:#22C55E">A</div>
+      <div class="epc-segment" style="background:#65A30D;border:2px solid var(--navy);position:relative">B</div>
+      <div class="epc-segment" style="background:#A3E635;color:var(--text)">C</div>
+      <div class="epc-segment" style="background:#FACC15;color:var(--text)">D</div>
+      <div class="epc-segment" style="background:#F59E0B">E</div>
+      <div class="epc-segment" style="background:#EF4444">F</div>
+      <div class="epc-segment" style="background:#DC2626">G</div>
+    </div>
+    <p style="font-size:12px;color:var(--text-light);text-align:center">This property is rated <strong>B</strong> — very energy efficient</p>
+  </div>
+
+  <div class="mortgage-calc">
+    <div class="card-title"><span class="icon" style="background:rgba(59,130,246,.1);color:var(--accent)">🏦</span> Mortgage Calculator</div>
+    <div class="calc-row"><span class="calc-label">Property price</span><span class="calc-value">£189,950</span></div>
+    <div class="calc-row"><span class="calc-label">Deposit (10%)</span><span class="calc-value">£18,995</span></div>
+    <div class="calc-row"><span class="calc-label">Loan amount</span><span class="calc-value">£170,955</span></div>
+    <div class="calc-row"><span class="calc-label">Interest rate</span><span class="calc-value">4.5% (25 yrs)</span></div>
+    <div class="calc-result">
+      <div class="calc-monthly">£950</div>
+      <div class="calc-monthly-label">Estimated monthly payment</div>
+    </div>
+  </div>
+
+  <div class="agent-card">
+    <div class="agent-avatar">JG</div>
+    <div>
+      <div class="agent-name">James Gorman</div>
+      <div class="agent-role">Estate Agent · PSRA Licensed</div>
+      <div class="agent-contact">
+        <button class="agent-btn agent-call">📞 Call</button>
+        <button class="agent-btn agent-wa">💬 WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>© 2025 James Gorman Property · Built by <a href="https://bluecanvas.ai">Blue Canvas AI</a></p>
+</footer>
+
+<div class="ai-widget">
+  <div class="ai-tooltip">Ask me about this property 🏡</div>
+  <div class="ai-bubble">💬</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>James Gorman Property — Homepage Mockup</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#0C1B3A;--navy-mid:#152952;--accent:#3B82F6;--accent-warm:#F59E0B;--white:#FFFFFF;--off-white:#F7F8FC;--text:#1E293B;--text-light:#64748B;--gold:#D4A843;--green:#22C55E;--radius:16px}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--off-white);color:var(--text);line-height:1.6}
+.nav{background:var(--navy);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo-mark{width:36px;height:36px;background:linear-gradient(135deg,var(--accent),#60A5FA);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:14px}
+.nav-logo-text{color:white;font-size:15px;font-weight:700;letter-spacing:-0.3px}
+.nav-logo-sub{color:rgba(255,255,255,0.5);font-size:10px;text-transform:uppercase;letter-spacing:1.5px}
+.nav-links{display:flex;gap:20px;align-items:center}
+.nav-links a{color:rgba(255,255,255,.7);text-decoration:none;font-size:13px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:white}
+.nav-cta{background:var(--accent);color:white!important;padding:8px 18px;border-radius:8px;font-weight:600!important}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 50%,#1a3a6e 100%);padding:60px 20px 40px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;right:-30%;width:500px;height:500px;background:radial-gradient(circle,rgba(59,130,246,.15),transparent 70%);border-radius:50%}
+.hero-content{max-width:600px;margin:0 auto;position:relative;z-index:2}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.15);padding:6px 14px;border-radius:20px;font-size:12px;color:rgba(255,255,255,.8);margin-bottom:20px}
+.hero-badge .dot{width:6px;height:6px;background:var(--green);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.hero h1{font-size:32px;font-weight:800;color:white;line-height:1.15;margin-bottom:12px;letter-spacing:-0.5px}
+.hero h1 span{background:linear-gradient(135deg,var(--accent),#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:16px;color:rgba(255,255,255,.7);margin-bottom:24px;max-width:480px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{background:var(--accent);color:white;padding:14px 28px;border-radius:12px;font-size:15px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s;border:none;cursor:pointer;box-shadow:0 4px 20px rgba(59,130,246,.4)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 30px rgba(59,130,246,.5)}
+.btn-secondary{background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);color:white;padding:14px 28px;border-radius:12px;font-size:15px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
+.hero-stats{display:flex;gap:24px;margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1)}
+.hero-stat{text-align:center}
+.hero-stat-num{font-size:24px;font-weight:800;color:white}
+.hero-stat-label{font-size:11px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px}
+.trust-bar{background:white;padding:16px 20px;border-bottom:1px solid #e2e8f0}
+.trust-inner{max-width:600px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-light);font-weight:500}
+.trust-stars{color:var(--accent-warm)}
+.section{padding:40px 20px;max-width:600px;margin:0 auto}
+.section-header{text-align:center;margin-bottom:28px}
+.section-badge{display:inline-block;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.section-title{font-size:24px;font-weight:800;letter-spacing:-0.3px;margin-bottom:6px}
+.section-sub{font-size:14px;color:var(--text-light)}
+.valuation-box{background:linear-gradient(135deg,var(--navy),var(--navy-mid));border-radius:20px;padding:28px 24px;color:white;position:relative;overflow:hidden}
+.valuation-box::after{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:radial-gradient(circle,rgba(59,130,246,.2),transparent);border-radius:50%}
+.val-title{font-size:20px;font-weight:700;margin-bottom:4px}
+.val-sub{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.val-input{width:100%;padding:14px 16px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);color:white;font-size:15px;margin-bottom:12px;outline:none}
+.val-input::placeholder{color:rgba(255,255,255,.4)}
+.val-btn{width:100%;padding:14px;background:var(--accent);color:white;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}
+.val-note{font-size:11px;color:rgba(255,255,255,.4);text-align:center;margin-top:10px}
+.property-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:480px){.property-grid{grid-template-columns:1fr 1fr}}
+.prop-card{background:white;border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:all .3s}
+.prop-card:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,0,0,.1)}
+.prop-img{height:180px;background:linear-gradient(135deg,#374151,#4B5563);position:relative;display:flex;align-items:center;justify-content:center}
+.prop-img-placeholder{color:rgba(255,255,255,.3);font-size:40px}
+.prop-tag{position:absolute;top:12px;left:12px;background:var(--accent);color:white;font-size:10px;font-weight:700;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:.5px}
+.prop-tag.let{background:var(--green)}
+.prop-tag.new{background:var(--accent-warm)}
+.prop-info{padding:16px}
+.prop-price{font-size:20px;font-weight:800;color:var(--navy);margin-bottom:2px}
+.prop-address{font-size:13px;color:var(--text-light);margin-bottom:8px}
+.prop-details{display:flex;gap:12px;font-size:12px;color:var(--text-light)}
+.prop-detail{display:flex;align-items:center;gap:4px}
+.review-section{background:var(--navy);padding:40px 20px}
+.review-section .section-header{color:white}
+.review-section .section-badge{color:var(--accent)}
+.review-section .section-title{color:white}
+.review-section .section-sub{color:rgba(255,255,255,.6)}
+.review-grid{max-width:600px;margin:0 auto;display:grid;gap:12px}
+.review-card{background:rgba(255,255,255,.06);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:20px}
+.review-stars{color:var(--accent-warm);font-size:14px;margin-bottom:8px}
+.review-text{font-size:14px;color:rgba(255,255,255,.85);line-height:1.5;margin-bottom:12px;font-style:italic}
+.review-author{font-size:12px;color:rgba(255,255,255,.5);font-weight:600}
+.review-cta{text-align:center;margin-top:20px}
+.review-cta a{color:var(--accent);font-size:13px;font-weight:600;text-decoration:none}
+.map-section{background:white;padding:40px 20px}
+.map-placeholder{max-width:600px;margin:0 auto;height:250px;background:linear-gradient(135deg,#E2E8F0,#CBD5E1);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--text-light);font-size:14px;position:relative;overflow:hidden}
+.map-pin{position:absolute;width:30px;height:40px;display:flex;flex-direction:column;align-items:center}
+.map-pin-dot{width:14px;height:14px;background:var(--accent);border-radius:50%;border:3px solid white;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.footer{background:var(--navy);padding:40px 20px;color:rgba(255,255,255,.6)}
+.footer-inner{max-width:600px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
+.footer h4{color:white;font-size:14px;margin-bottom:10px}
+.footer a{color:rgba(255,255,255,.5);text-decoration:none;font-size:13px;display:block;margin-bottom:6px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.footer-bc{font-size:11px;color:rgba(255,255,255,.3)}
+.footer-bc a{color:var(--accent);display:inline}
+.ai-widget{position:fixed;bottom:20px;right:20px;z-index:200}
+.ai-bubble{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#2563EB);display:flex;align-items:center;justify-content:center;color:white;font-size:22px;box-shadow:0 4px 20px rgba(59,130,246,.4);cursor:pointer;animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.ai-tooltip{position:absolute;bottom:65px;right:0;background:white;padding:10px 14px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.12);font-size:12px;font-weight:500;white-space:nowrap;color:var(--text)}
+.ai-tooltip::after{content:'';position:absolute;bottom:-6px;right:20px;width:12px;height:12px;background:white;transform:rotate(45deg);box-shadow:2px 2px 4px rgba(0,0,0,.05)}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-logo">
+    <div class="nav-logo-mark">JG</div>
+    <div>
+      <div class="nav-logo-text">James Gorman</div>
+      <div class="nav-logo-sub">Property</div>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="#">Buy</a>
+    <a href="#">Rent</a>
+    <a href="#">Sell</a>
+    <a href="#">About</a>
+    <a href="#" class="nav-cta">Free Valuation</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge"><span class="dot"></span> Now selling Merchants View — Exclusive</div>
+    <h1>Find Your Perfect Home in <span>Derry</span></h1>
+    <p>Derry's fastest-growing estate agent. Professional marketing, walk-through videos & sold in weeks — not months.</p>
+    <div class="hero-actions">
+      <a href="#" class="btn-primary">🏠 Get Free Valuation</a>
+      <a href="#" class="btn-secondary">📍 Browse Properties</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-num">150+</div><div class="hero-stat-label">Properties Sold</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">4.9★</div><div class="hero-stat-label">Trustpilot</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">14</div><div class="hero-stat-label">Avg Days to Offer</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="trust-stars">★★★★★</span> 4.9 on Trustpilot</div>
+    <div class="trust-item">🏆 PSRA Licensed</div>
+    <div class="trust-item">📸 Pro Photography</div>
+    <div class="trust-item">🎥 Video Tours</div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="section-header">
+    <div class="section-badge">Instant Estimate</div>
+    <div class="section-title">How Much Is Your Property Worth?</div>
+    <div class="section-sub">Get an AI-powered instant estimate, then book a free expert valuation</div>
+  </div>
+  <div class="valuation-box">
+    <div class="val-title">🤖 AI Property Valuation</div>
+    <div class="val-sub">Enter your postcode for an instant estimate in seconds</div>
+    <input class="val-input" type="text" placeholder="Enter your postcode, e.g. BT48 7NN">
+    <input class="val-input" type="text" placeholder="Property type (e.g. 3 bed semi)">
+    <button class="val-btn">⚡ Get Instant Estimate</button>
+    <div class="val-note">Powered by AI — verified by James Gorman personally</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div class="section-badge">Featured Properties</div>
+    <div class="section-title">Latest Listings</div>
+    <div class="section-sub">New to market this week in Derry</div>
+  </div>
+  <div class="property-grid">
+    <div class="prop-card">
+      <div class="prop-img"><span class="prop-img-placeholder">🏠</span><span class="prop-tag new">New Build</span></div>
+      <div class="prop-info">
+        <div class="prop-price">£189,950</div>
+        <div class="prop-address">Merchants View, Strand Road, Derry</div>
+        <div class="prop-details"><span class="prop-detail">🛏 3 Bed</span><span class="prop-detail">🚿 2 Bath</span><span class="prop-detail">📐 1,100 sq ft</span></div>
+      </div>
+    </div>
+    <div class="prop-card">
+      <div class="prop-img"><span class="prop-img-placeholder">🏠</span><span class="prop-tag">For Sale</span></div>
+      <div class="prop-info">
+        <div class="prop-price">£165,000</div>
+        <div class="prop-address">12 Caw Park, Waterside, Derry</div>
+        <div class="prop-details"><span class="prop-detail">🛏 3 Bed</span><span class="prop-detail">🚿 1 Bath</span><span class="prop-detail">📐 950 sq ft</span></div>
+      </div>
+    </div>
+    <div class="prop-card">
+      <div class="prop-img"><span class="prop-img-placeholder">🏠</span><span class="prop-tag let">To Let</span></div>
+      <div class="prop-info">
+        <div class="prop-price">£750 pcm</div>
+        <div class="prop-address">Apt 4, Foyle Embankment, Derry</div>
+        <div class="prop-details"><span class="prop-detail">🛏 2 Bed</span><span class="prop-detail">🚿 1 Bath</span><span class="prop-detail">📐 680 sq ft</span></div>
+      </div>
+    </div>
+    <div class="prop-card">
+      <div class="prop-img"><span class="prop-img-placeholder">🏠</span><span class="prop-tag">For Sale</span></div>
+      <div class="prop-info">
+        <div class="prop-price">£225,000</div>
+        <div class="prop-address">8 Beechwood Ave, Culmore, Derry</div>
+        <div class="prop-details"><span class="prop-detail">🛏 4 Bed</span><span class="prop-detail">🚿 2 Bath</span><span class="prop-detail">📐 1,400 sq ft</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="review-section">
+  <div class="section-header">
+    <div class="section-badge">★★★★★ Trustpilot</div>
+    <div class="section-title">What Clients Say</div>
+    <div class="section-sub">4.9 rating from 30+ verified reviews</div>
+  </div>
+  <div class="review-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">"James made selling our home completely stress-free. Professional photos, video tour, and we had an offer within 10 days. Couldn't recommend more highly."</div>
+      <div class="review-author">— Sarah M., Culmore</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">"Found our dream home through James. He went above and beyond with the whole process — genuinely cares about his clients. Five stars isn't enough!"</div>
+      <div class="review-author">— Mark & Claire D., Waterside</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">"As a landlord, the lettings service is first class. Tenants are vetted properly and James handles everything. Worth every penny."</div>
+      <div class="review-author">— Paul T., Eglinton</div>
+    </div>
+  </div>
+  <div class="review-cta"><a href="#">Read all reviews on Trustpilot →</a></div>
+</section>
+
+<section class="map-section">
+  <div class="section" style="padding:0">
+    <div class="section-header">
+      <div class="section-badge">Visit Us</div>
+      <div class="section-title">Based in the Heart of Derry</div>
+      <div class="section-sub">Serving Derry, Strabane, Limavady & surrounding areas</div>
+    </div>
+  </div>
+  <div class="map-placeholder">
+    <div style="text-align:center">
+      <div style="font-size:32px;margin-bottom:8px">📍</div>
+      <div style="font-weight:600;color:var(--text)">Google Maps Embed</div>
+      <div style="font-size:12px">Derry, Northern Ireland</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#">Properties for Sale</a>
+        <a href="#">Properties to Rent</a>
+        <a href="#">Free Valuation</a>
+        <a href="#">Merchants View</a>
+        <a href="#">Area Guides</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="#">📞 028 7126 XXXX</a>
+        <a href="#">📧 info@jamesgormanproperty.com</a>
+        <a href="#">📍 Derry, BT48</a>
+        <a href="#">📸 @jamesgormanproperty</a>
+        <a href="#">🎵 TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div style="font-size:12px">© 2025 James Gorman Property. All rights reserved.</div>
+      <div class="footer-bc">Built by <a href="https://bluecanvas.ai">Blue Canvas AI</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="ai-widget">
+  <div class="ai-tooltip">👋 Need help finding a property?</div>
+  <div class="ai-bubble">💬</div>
+</div>
+</body>
+</html>

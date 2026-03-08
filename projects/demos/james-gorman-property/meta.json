@@ -1,0 +1,27 @@
+{
+  "business_name": "James Gorman Property",
+  "slug": "james-gorman-property",
+  "url": "https://www.jamesgormanproperty.com/",
+  "contact_name": "James Gorman",
+  "location": "Derry/Londonderry, BT47 6BE",
+  "industry": "Estate & Lettings Agent",
+  "seo_score": 42,
+  "improved_score": 68,
+  "showcase_url": "https://albiemorgan88-hash.github.io/showcase-james-gorman-property/",
+  "github_repo": "albiemorgan88-hash/showcase-james-gorman-property",
+  "created": "2026-03-08",
+  "trustpilot_rating": 4.9,
+  "trustpilot_reviews": "30+",
+  "gbp_found": false,
+  "platform": "Wix",
+  "top_issues": [
+    "URL slugs named /blank, /blank-3 etc.",
+    "Default Wix placeholder text on homepage",
+    "No Google Business Profile",
+    "No schema/structured data",
+    "Email typo in footer",
+    "Default Wix social links present",
+    "No blog or content marketing",
+    "No location-specific landing pages"
+  ]
+}

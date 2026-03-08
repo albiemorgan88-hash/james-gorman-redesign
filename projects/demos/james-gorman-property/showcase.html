@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>James Gorman Property × Blue Canvas AI</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#2B4DAF;--red:#FF4520;--white:#fff;--bg:#f8f9fa;--text:#1a1a2e;--text-light:#666;--green:#22c55e}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);overflow:hidden;height:100vh;color:var(--text);-webkit-tap-highlight-color:transparent}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;opacity:0;transform:translateX(100%);transition:all .5s cubic-bezier(.4,0,.2,1);pointer-events:none;overflow-y:auto}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:auto}
+.slide.prev{opacity:0;transform:translateX(-100%)}
+.progress{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:100}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(0,0,0,.15);transition:all .3s;cursor:pointer}
+.dot.active{background:var(--blue);width:24px;border-radius:4px}
+.badge{display:inline-block;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:16px}
+.badge-blue{background:rgba(43,77,175,.1);color:var(--blue)}
+.badge-red{background:rgba(255,69,32,.1);color:var(--red)}
+.badge-green{background:rgba(34,197,94,.1);color:var(--green)}
+h1{font-size:28px;font-weight:700;line-height:1.2;margin-bottom:12px;text-align:center}
+h2{font-size:22px;font-weight:700;line-height:1.3;margin-bottom:10px}
+h3{font-size:16px;font-weight:600;margin-bottom:8px}
+p{font-size:15px;line-height:1.5;color:var(--text-light)}
+.card{background:var(--white);border-radius:16px;padding:20px;box-shadow:0 2px 12px rgba(0,0,0,.06);width:100%;max-width:360px;margin:8px 0}
+.tap-hint{position:fixed;bottom:48px;left:50%;transform:translateX(-50%);font-size:12px;color:rgba(0,0,0,.3);z-index:100;animation:fadeInUp .8s ease}
+@keyframes fadeInUp{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translate(-50%,0)}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+@keyframes scanLine{0%{top:0}100%{top:100%}}
+@keyframes countUp{from{opacity:0}to{opacity:1}}
+@keyframes chatIn{to{opacity:1;transform:translateY(0)}}
+@keyframes bounce{50%{transform:translateY(-4px)}}
+@keyframes ringFill{to{stroke-dashoffset:var(--target-offset)}}
+.animate-in{opacity:0;transform:translateY(15px);animation:fadeIn .6s ease forwards}
+.delay-1{animation-delay:.2s}
+.delay-2{animation-delay:.4s}
+.delay-3{animation-delay:.6s}
+.delay-4{animation-delay:.8s}
+.delay-5{animation-delay:1s}
+
+/* Slide 1 - Hook */
+.hook-brand{font-size:13px;color:var(--blue);font-weight:600;letter-spacing:.5px;margin-bottom:20px}
+.hook-logo{width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg,#1a3a8a,#2B4DAF);display:flex;align-items:center;justify-content:center;color:white;font-size:24px;font-weight:700;margin-bottom:20px;box-shadow:0 4px 20px rgba(43,77,175,.3)}
+
+/* Slide 2 - Scan */
+.scan-container{background:var(--white);border-radius:16px;padding:20px;width:100%;max-width:340px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.scan-url{background:#f1f3f5;border-radius:8px;padding:10px 14px;font-size:13px;color:var(--text-light);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.scan-url .lock{color:var(--green);font-size:14px}
+.scan-bar{height:4px;background:#e9ecef;border-radius:2px;overflow:hidden;margin-bottom:16px}
+.scan-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--red));border-radius:2px;width:0;transition:width 2s ease}
+.scan-item{display:flex;align-items:center;gap:10px;padding:8px 0;font-size:13px;border-bottom:1px solid #f1f3f5;opacity:0}
+.scan-item:last-child{border:none}
+.scan-icon{width:24px;height:24px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+.scan-icon.pass{background:rgba(34,197,94,.1);color:var(--green)}
+.scan-icon.warn{background:rgba(255,165,0,.1);color:#f59e0b}
+.scan-icon.fail{background:rgba(255,69,32,.1);color:var(--red)}
+
+/* Slide 3 - Score */
+.score-container{display:flex;flex-direction:column;align-items:center;gap:16px}
+.issue-list{width:100%;max-width:340px}
+.issue{background:var(--white);border-radius:12px;padding:12px 16px;margin:6px 0;font-size:13px;display:flex;align-items:center;gap:10px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.issue-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.issue-dot.critical{background:var(--red)}
+.issue-dot.warning{background:#f59e0b}
+.issue-dot.info{background:var(--blue)}
+
+/* Slide 4 - Before/After */
+.ba-container{width:100%;max-width:340px}
+.search-result{background:var(--white);border-radius:12px;padding:16px;text-align:left;box-shadow:0 1px 6px rgba(0,0,0,.05);margin:8px 0}
+.result-url{font-size:12px;color:#202124;margin-bottom:2px}
+.result-title{font-size:17px;color:#1a0dab;margin:4px 0;font-weight:400;line-height:1.3}
+.result-desc{font-size:13px;color:#4d5156;line-height:1.4}
+.result-stars{color:#f59e0b;font-size:13px;margin-top:4px}
+.arrow-down{text-align:center;font-size:24px;color:var(--blue);margin:4px 0}
+
+/* Slide 5 - Google Ads */
+.ad-result{background:var(--white);border-radius:12px;padding:16px;text-align:left;box-shadow:0 1px 6px rgba(0,0,0,.05);margin:8px 0;border-left:3px solid var(--blue)}
+.ad-badge{display:inline-block;font-size:10px;font-weight:700;color:var(--blue);border:1px solid var(--blue);border-radius:3px;padding:1px 5px;margin-right:6px}
+.ad-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.ad-stat{background:#f8f9fa;border-radius:8px;padding:10px;text-align:center}
+.ad-stat-num{font-size:18px;font-weight:700;color:var(--text)}
+.ad-stat-label{font-size:11px;color:var(--text-light);margin-top:2px}
+
+/* Slide 6 - AI Chat */
+.chat-container{width:100%;max-width:340px;background:var(--white);border-radius:16px;padding:16px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.chat-header{display:flex;align-items:center;gap:10px;padding-bottom:12px;border-bottom:1px solid #f1f3f5;margin-bottom:12px}
+.chat-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#1a3a8a,#2B4DAF);display:flex;align-items:center;justify-content:center;color:white;font-size:14px;font-weight:700}
+.chat-name{font-weight:600;font-size:14px}
+.chat-status{font-size:11px;color:var(--green)}
+.chat-msg{opacity:0;transform:translateY(10px);animation:chatIn .4s ease forwards;margin:8px 0}
+.msg-bubble{padding:10px 14px;border-radius:16px;font-size:13px;line-height:1.4;max-width:85%;display:inline-block}
+.msg-user{text-align:right}
+.msg-user .msg-bubble{background:var(--blue);color:white;border-bottom-right-radius:4px}
+.msg-bot .msg-bubble{background:#f1f3f5;color:var(--text);border-bottom-left-radius:4px}
+.typing{display:inline-flex;align-items:center;gap:3px;background:#f1f3f5;padding:10px 16px;border-radius:16px;border-bottom-left-radius:4px}
+.typing span{display:inline-block;width:6px;height:6px;background:#999;border-radius:50%;animation:bounce .6s infinite}
+.typing span:nth-child(2){animation-delay:.15s}
+.typing span:nth-child(3){animation-delay:.3s}
+
+/* Slide 7 - ROI */
+.roi-grid{display:grid;gap:10px;width:100%;max-width:340px}
+.roi-card{background:var(--white);border-radius:12px;padding:16px;box-shadow:0 1px 6px rgba(0,0,0,.05);text-align:center}
+.roi-num{font-size:28px;font-weight:700;margin-bottom:4px}
+.roi-num.red{color:var(--red)}
+.roi-num.green{color:var(--green)}
+.roi-num.blue{color:var(--blue)}
+.roi-label{font-size:12px;color:var(--text-light)}
+.roi-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+/* Slide 8 - CTA */
+.cta-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:320px;padding:16px;border-radius:14px;font-size:15px;font-weight:600;text-decoration:none;margin:6px 0;transition:transform .2s}
+.cta-btn:active{transform:scale(.97)}
+.cta-phone{background:var(--blue);color:white}
+.cta-whatsapp{background:#25D366;color:white}
+.cta-email{background:var(--text);color:white}
+.bc-footer{margin-top:20px;text-align:center}
+.bc-footer img{width:100px}
+.bc-footer p{font-size:11px;color:var(--text-light);margin-top:6px}
+</style>
+</head>
+<body>
+
+<!-- Slide 1: Hook -->
+<div class="slide active" id="s1">
+  <div class="hook-logo animate-in">JG</div>
+  <div class="hook-brand animate-in delay-1">JAMES GORMAN PROPERTY</div>
+  <h1 class="animate-in delay-2" style="font-size:26px">What if AI could bring you<br><span style="color:var(--red)">more buyers & landlords</span><br>while you sleep?</h1>
+  <p class="animate-in delay-3" style="text-align:center;max-width:300px;margin-top:8px">We ran our AI audit on your site.<br>Here's what we found — and what we'd fix.</p>
+  <div class="animate-in delay-4" style="margin-top:24px">
+    <span class="badge badge-blue">2 minute read</span>
+  </div>
+</div>
+
+<!-- Slide 2: Scan -->
+<div class="slide" id="s2">
+  <span class="badge badge-blue animate-in">AI Website Scan</span>
+  <h2 class="animate-in delay-1" style="text-align:center">Scanning your site...</h2>
+  <div class="scan-container animate-in delay-2">
+    <div class="scan-url"><span class="lock">🔒</span> jamesgormanproperty.com</div>
+    <div class="scan-bar"><div class="scan-fill" id="scanFill"></div></div>
+    <div class="scan-item" data-delay="400"><span class="scan-icon pass">✓</span><span>SSL certificate — secure</span></div>
+    <div class="scan-item" data-delay="700"><span class="scan-icon fail">✗</span><span>URL slugs: /blank, /blank-3, /blank-4...</span></div>
+    <div class="scan-item" data-delay="1000"><span class="scan-icon fail">✗</span><span>Default Wix placeholder text found</span></div>
+    <div class="scan-item" data-delay="1300"><span class="scan-icon warn">!</span><span>No structured data (schema.org)</span></div>
+    <div class="scan-item" data-delay="1600"><span class="scan-icon fail">✗</span><span>No Google Business Profile detected</span></div>
+    <div class="scan-item" data-delay="1900"><span class="scan-icon warn">!</span><span>Social links point to Wix defaults</span></div>
+    <div class="scan-item" data-delay="2200"><span class="scan-icon fail">✗</span><span>Email typo in footer: "gormaproperty"</span></div>
+    <div class="scan-item" data-delay="2500"><span class="scan-icon warn">!</span><span>No blog or content marketing</span></div>
+  </div>
+</div>
+
+<!-- Slide 3: Score -->
+<div class="slide" id="s3">
+  <span class="badge badge-red animate-in">Audit Results</span>
+  <h2 class="animate-in delay-1" style="text-align:center">Your Current SEO Score</h2>
+  <div class="score-container animate-in delay-2">
+    <svg width="140" height="140" viewBox="0 0 140 140">
+      <circle cx="70" cy="70" r="58" fill="none" stroke="#eee" stroke-width="8"/>
+      <circle class="score-ring" cx="70" cy="70" r="58" fill="none" stroke="var(--red)" 
+        stroke-width="8" stroke-linecap="round" stroke-dasharray="364" 
+        stroke-dashoffset="364" transform="rotate(-90 70 70)" id="scoreRing"/>
+      <text x="70" y="65" text-anchor="middle" font-size="36" font-weight="700" fill="var(--text)">
+        <tspan id="scoreNum">0</tspan>
+      </text>
+      <text x="70" y="82" text-anchor="middle" font-size="12" fill="var(--text-light)">out of 100</text>
+    </svg>
+  </div>
+  <div class="issue-list animate-in delay-3">
+    <div class="issue"><span class="issue-dot critical"></span>URLs named /blank — Google can't understand your pages</div>
+    <div class="issue"><span class="issue-dot critical"></span>Wix placeholder text still visible on homepage</div>
+    <div class="issue"><span class="issue-dot critical"></span>No Google Business Profile — invisible in Maps</div>
+    <div class="issue"><span class="issue-dot warning"></span>No schema markup — no rich results in Google</div>
+    <div class="issue"><span class="issue-dot warning"></span>Default Wix social links mixed with real ones</div>
+    <div class="issue"><span class="issue-dot info"></span>No area-specific landing pages (BT47, BT48...)</div>
+  </div>
+</div>
+
+<!-- Slide 4: Before/After -->
+<div class="slide" id="s4">
+  <span class="badge badge-green animate-in">The Fix</span>
+  <h2 class="animate-in delay-1" style="text-align:center;font-size:18px">How You Look on Google Now<br>vs. After Blue Canvas</h2>
+  <div class="ba-container">
+    <p style="font-size:11px;font-weight:600;color:var(--red);margin-bottom:4px;text-transform:uppercase" class="animate-in delay-2">❌ Before</p>
+    <div class="search-result animate-in delay-2" style="opacity:.7">
+      <div class="result-url">jamesgormanproperty.com › blank</div>
+      <div class="result-title">Sales | JamesGormanProperty</div>
+      <div class="result-desc">This is the space to introduce visitors to the business or brand. Briefly explain who's behind it...</div>
+    </div>
+    <div class="arrow-down animate-in delay-3">↓</div>
+    <p style="font-size:11px;font-weight:600;color:var(--green);margin-bottom:4px;text-transform:uppercase" class="animate-in delay-3">✅ After</p>
+    <div class="search-result animate-in delay-4" style="border-left:3px solid var(--green)">
+      <div class="result-url">jamesgormanproperty.com › sell-your-home-derry</div>
+      <div class="result-title">Sell Your Home in Derry | James Gorman Property</div>
+      <div class="result-desc">Derry's fastest-growing estate agent. Professional photography, walk-through videos & sold in weeks — not months. Free valuation available today.</div>
+      <div class="result-stars">★★★★★ 4.9 · 30+ reviews on Trustpilot</div>
+    </div>
+    <div class="card animate-in delay-5" style="padding:12px 16px;margin-top:8px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <div style="font-size:24px;font-weight:700;color:var(--green)">68</div>
+          <div style="font-size:11px;color:var(--text-light)">Improved score</div>
+        </div>
+        <div style="font-size:12px;color:var(--green);font-weight:600">+26 points ↑</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 5: Google Ads -->
+<div class="slide" id="s5">
+  <span class="badge badge-blue animate-in">Google Ads Opportunity</span>
+  <h2 class="animate-in delay-1" style="text-align:center;font-size:18px">Capture Buyers Searching<br>Right Now in Derry</h2>
+  <div class="animate-in delay-2" style="width:100%;max-width:340px">
+    <div style="background:#f1f3f5;border-radius:8px;padding:10px 14px;display:flex;align-items:center;gap:8px;margin-bottom:12px">
+      <span style="font-size:16px">🔍</span>
+      <span style="font-size:13px;color:var(--text-light)">estate agents derry</span>
+    </div>
+    <div class="ad-result">
+      <div><span class="ad-badge">Ad</span><span style="font-size:12px;color:#202124">jamesgormanproperty.com</span></div>
+      <div class="result-title" style="font-size:16px;margin:6px 0">Sell Your Home Fast in Derry | James Gorman Property</div>
+      <div class="result-desc">Professional marketing, walk-through videos & your home on every major portal. Sold in weeks. Free valuation — call today.</div>
+    </div>
+    <div class="ad-stats animate-in delay-3">
+      <div class="ad-stat">
+        <div class="ad-stat-num">480</div>
+        <div class="ad-stat-label">Monthly searches</div>
+      </div>
+      <div class="ad-stat">
+        <div class="ad-stat-num">£2.40</div>
+        <div class="ad-stat-label">Avg. cost per click</div>
+      </div>
+      <div class="ad-stat">
+        <div class="ad-stat-num">£300</div>
+        <div class="ad-stat-label">Monthly budget</div>
+      </div>
+      <div class="ad-stat">
+        <div class="ad-stat-num">125</div>
+        <div class="ad-stat-label">Clicks / month</div>
+      </div>
+    </div>
+    <p class="animate-in delay-4" style="text-align:center;font-size:12px;margin-top:12px">Your competitors are running ads for "estate agents Derry" and "sell house Derry". You're not.</p>
+  </div>
+</div>
+
+<!-- Slide 6: AI Chat -->
+<div class="slide" id="s6">
+  <span class="badge badge-blue animate-in">AI Assistant</span>
+  <h2 class="animate-in delay-1" style="text-align:center;font-size:18px">Never Miss an Enquiry Again</h2>
+  <p class="animate-in delay-1" style="text-align:center;font-size:13px;margin-bottom:12px">An AI trained on your listings, answering buyers 24/7</p>
+  <div class="chat-container animate-in delay-2" id="chatContainer">
+    <div class="chat-header">
+      <div class="chat-avatar">JG</div>
+      <div>
+        <div class="chat-name">James Gorman Property</div>
+        <div class="chat-status">● Online 24/7</div>
+      </div>
+    </div>
+    <div class="chat-msg msg-user" style="animation-delay:0.3s"><div class="msg-bubble">Hi, looking for a 3-bed in the Waterside area. What do you have available?</div></div>
+    <div class="chat-msg msg-bot" style="animation-delay:1.2s"><div class="msg-bubble">Hi! Great choice — the Waterside is really popular right now. We have 3 properties matching your criteria:<br><br>🏡 <b>12 Caw Park</b> — 3 bed semi, £165,000<br>🏡 <b>8 Spencer Road</b> — 3 bed terrace, £142,000<br>🏡 <b>22 Bond's Hill</b> — 3 bed detached, £195,000<br><br>Would you like to book a viewing?</div></div>
+    <div class="chat-msg msg-user" style="animation-delay:2.4s"><div class="msg-bubble">The one on Caw Park looks great. Can I view Saturday?</div></div>
+    <div class="chat-msg msg-bot" style="animation-delay:3.4s"><div class="msg-bubble">Absolutely! I've slots available at 10am, 12pm or 2pm this Saturday. Which works best for you? I'll confirm with James straight away. 📱</div></div>
+  </div>
+</div>
+
+<!-- Slide 7: ROI -->
+<div class="slide" id="s7">
+  <span class="badge badge-green animate-in">The Numbers</span>
+  <h2 class="animate-in delay-1" style="text-align:center;font-size:18px">What This Is Worth to You</h2>
+  <div class="roi-grid animate-in delay-2">
+    <div class="roi-card">
+      <div class="roi-num red">23%</div>
+      <div class="roi-label">Of buyers search after 6pm — you're offline</div>
+    </div>
+    <div class="roi-row">
+      <div class="roi-card">
+        <div class="roi-num blue">£4.5k</div>
+        <div class="roi-label">Avg. commission per sale</div>
+      </div>
+      <div class="roi-card">
+        <div class="roi-num green">3-5</div>
+        <div class="roi-label">Extra leads per month from SEO + ads</div>
+      </div>
+    </div>
+    <div class="roi-card" style="background:linear-gradient(135deg,var(--blue),#1a3a8a);color:white">
+      <div class="roi-num" style="color:white;font-size:32px">£13k–£22k</div>
+      <div class="roi-label" style="color:rgba(255,255,255,.8)">Additional annual revenue potential</div>
+    </div>
+    <div class="roi-card">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <div style="font-size:13px;font-weight:600">Monthly investment</div>
+          <div style="font-size:12px;color:var(--text-light)">SEO + AI + Ads management</div>
+        </div>
+        <div style="font-size:22px;font-weight:700;color:var(--blue)">£499</div>
+      </div>
+      <div style="font-size:12px;color:var(--green);font-weight:600;margin-top:8px;text-align:center">Just one extra sale pays for the entire year</div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 8: CTA -->
+<div class="slide" id="s8">
+  <div class="animate-in">
+    <div style="text-align:center;margin-bottom:4px">
+      <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--blue),#1a3a8a);display:inline-flex;align-items:center;justify-content:center;color:white;font-size:18px;font-weight:700">BC</div>
+    </div>
+    <h2 style="text-align:center;margin-bottom:4px">Let's Chat, James</h2>
+    <p style="text-align:center;font-size:13px;margin-bottom:24px">No contracts. No pressure.<br>Just a quick call to see if we're a fit.</p>
+  </div>
+  <a href="tel:+447935217762" class="cta-btn cta-phone animate-in delay-1">📞 Call PJ — 07935 217 762</a>
+  <a href="https://wa.me/447935217762?text=Hi%20PJ%2C%20I%20saw%20the%20showcase%20for%20James%20Gorman%20Property%20%E2%80%94%20interested%20in%20chatting" class="cta-btn cta-whatsapp animate-in delay-2">💬 WhatsApp PJ</a>
+  <a href="mailto:contact@bluecanvas.ai?subject=James%20Gorman%20Property%20-%20Interested" class="cta-btn cta-email animate-in delay-3">✉️ Email contact@bluecanvas.ai</a>
+  <div class="bc-footer animate-in delay-4">
+    <p style="font-size:14px;font-weight:600;color:var(--blue)">Blue Canvas AI</p>
+    <p>AI-Powered Growth for NI Businesses</p>
+    <p style="margin-top:4px">bluecanvas.ai</p>
+  </div>
+</div>
+
+<!-- Progress dots -->
+<div class="progress" id="progress">
+  <span class="dot active" onclick="goTo(0)"></span>
+  <span class="dot" onclick="goTo(1)"></span>
+  <span class="dot" onclick="goTo(2)"></span>
+  <span class="dot" onclick="goTo(3)"></span>
+  <span class="dot" onclick="goTo(4)"></span>
+  <span class="dot" onclick="goTo(5)"></span>
+  <span class="dot" onclick="goTo(6)"></span>
+  <span class="dot" onclick="goTo(7)"></span>
+</div>
+<div class="tap-hint">Tap right to continue →</div>
+
+<script>
+let current=0;const total=8;const slides=document.querySelectorAll('.slide');const dots=document.querySelectorAll('.dot');
+function goTo(n){if(n<0||n>=total||n===current)return;const dir=n>current?1:-1;slides[current].classList.remove('active');slides[current].classList.toggle('prev',dir===1);slides[n].classList.remove('prev');slides[n].classList.add('active');dots[current].classList.remove('active');dots[n].classList.add('active');current=n;triggerSlide(n);document.querySelector('.tap-hint').style.display=n===0?'block':'none'}
+function nextSlide(){goTo(current+1)}function prevSlide(){goTo(current-1)}
+
+// Tap zones
+document.addEventListener('click',e=>{if(e.target.closest('.cta-btn,.dot'))return;if(e.clientX>window.innerWidth*.6)nextSlide();else if(e.clientX<window.innerWidth*.35)prevSlide()});
+
+// Swipe
+let tx=0;document.addEventListener('touchstart',e=>tx=e.touches[0].clientX);
+document.addEventListener('touchend',e=>{const d=tx-e.changedTouches[0].clientX;if(Math.abs(d)>50){d>0?nextSlide():prevSlide()}});
+
+// Keyboard
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' ')nextSlide();if(e.key==='ArrowLeft')prevSlide()});
+
+// Slide-specific animations
+function triggerSlide(n){
+  if(n===1){
+    setTimeout(()=>{document.getElementById('scanFill').style.width='100%'},300);
+    document.querySelectorAll('#s2 .scan-item').forEach(el=>{const d=parseInt(el.dataset.delay);setTimeout(()=>{el.style.opacity='1';el.style.transform='translateY(0)';el.style.transition='all .4s ease'},d)});
+  }
+  if(n===2){animateScore(42,364)}
+  if(n===3){}
+}
+
+function animateScore(target,dashTotal){
+  const ring=document.getElementById('scoreRing');const num=document.getElementById('scoreNum');
+  const offset=dashTotal-(dashTotal*(target/100));
+  ring.style.transition='stroke-dashoffset 1.5s ease';
+  ring.style.strokeDashoffset=offset;
+  let c=0;const step=Math.ceil(target/30);
+  const iv=setInterval(()=>{c+=1;if(c>=target){c=target;clearInterval(iv)}num.textContent=c},50);
+}
+</script>
+</body>
+</html>
