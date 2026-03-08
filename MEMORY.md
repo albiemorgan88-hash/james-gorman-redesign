@@ -21,7 +21,7 @@ Every decision, every opportunity, every workflow runs through this filter.
 
 
 ## Active Projects
-- **Blue Canvas** (PRIMARY) — £6k/mo target. Pos 6.4 "ai consultancy NI" (slipped from 4.7), #1 "ai consultants near me". Target #1 NI by May. Sessions down 38% WoW, bounce 76.6%, zero conversions. PageSpeed mobile 56/100, LCP 12.6s (CRITICAL).
+- **Blue Canvas** (PRIMARY) — £6k/mo target. #1 "ai consultants near me" (but 0 clicks). Impressions +23% WoW but clicks -43%, CTR 0.87% (CRISIS). PageSpeed mobile 56/100, LCP 12.6s (CRITICAL).
 - **Ardmore Cricket Club** — FULLY LIVE at ardmorecricket.com. 50/50 split (50% prizes, 50% club). Stripe LIVE mode active. Admin emails go to contact@bluecanvas.ai + Ardmorecc1879@hotmail.com. Draw simulation: https://albiemorgan88-hash.github.io/ardmore-draw-live/. Source: `/Users/philsagent/Projects/ardmore-cricket/`. Lottery registration COMPLETE ✅. **Draw #1 completed Mar 6** — 28 entries, 7 participants, £28 pot. Winners: Conor King (1st & 2nd), Steven Barrow (3rd). 29 total users, 77 numbers (£77 revenue), 10 new signups on draw day. Bugs fixed (idempotency, false winner emails). Next draw: Friday Mar 13.
 - **ClubDraw** — white-label weekly draw SaaS. Ardmore is client #1. Ready for multi-club expansion. Skill at `skills/clubdraw/SKILL.md`.
   - **Revenue split:** 50% jackpot / 40% club / 10% platform — publicly declared as "50/50" (50% prizes, 50% club)
@@ -55,7 +55,7 @@ Every decision, every opportunity, every workflow runs through this filter.
 - Strategy: `reports/seo-strategy-2026.md`
 - Key opportunity: "ai audit" (320 vol). Competitors: brainpool.ai (DR 42, 555 ref domains vs our DR 19, 11 ref domains), iwantmore.ai, Artellis.ie, AICC.
 - 10 blog posts ready at `projects/blog-drafts/batch-2026-03-01.md` — publish 1/day.
-- Weekly report (Mar 6): BC 5 clicks/441 imps, UKTJ 10 clicks/792 imps (900% up!). Reports at `reports/weekly-seo/`.
+- Weekly report (Mar 7): BC impressions +23%, clicks -43%. UKTJ breakout: clicks +233%, impressions +118%, "bricklaying jobs" pos 3.7. Reports at `reports/weekly-seo/`.
 - UKTJ quick wins: "become an electrician" (73 imps, pos 80+ — needs content), "plumbing apprenticeship london" (pos 3.0, 0 clicks — title fix).
 - BC quick wins: "ai consultants for small business" (pos 6.7, 31 imps, 0 clicks — meta rewrite).
 
@@ -78,7 +78,7 @@ Every decision, every opportunity, every workflow runs through this filter.
 **URGENT:**
 - **Ardmore UI polish** — FAQ accordion, success page improvements, nav enhancements (coding agent failed, needs rebuild)
 - **UK Trade Jobs deploy** — production deployment with employer signup notifications to philip@bluecanvas.ai
-- **Google Ads**: fix ad policy violation (in progress), set up conversion tracking, expand keywords. API Basic access pending (PJ submitted form Mar 6).
+- **Google Ads**: ad policy violation (double dots) throttling delivery — only £0.60 spent in ~7 days. Fix needed ASAP. Conversion tracking still pending. API Basic access pending (PJ submitted form Mar 6).
 - **bluecanvas.ai PageSpeed** — mobile 56/100, LCP 12.6s. Needs urgent fix (Webflow optimisation).
 - **Blue Canvas CTR crisis** — impressions up 24% but clicks down 29%. Meta titles/descriptions need rewrite for click-worthy copy.
 
@@ -98,31 +98,20 @@ Every decision, every opportunity, every workflow runs through this filter.
 - Monitor Moltlaunch inbox for gig requests (Agent #24586)
 - PJ to confirm purchase of aiactcompliance.co.uk + aiaudituk.com
 
+**Completed Mar 7:**
+- ✅ Security scan: all clear (firewall, FileVault, backups, auto-updates, no exposed ports). OpenClaw v2026.3.2 confirmed latest.
+- ✅ Evening health check: all 4 sites up (bluecanvas.ai, ardmorecricket.com, uktradejobs.com, openclawconsultant.co.uk). 18 crons healthy, zero failures.
+- ⚠️ Ahrefs, Google Ads, GSC subagent timeouts (browser auth / API pull) — non-critical, retry Monday.
+
 **Completed Mar 6 (HISTORIC DAY):**
-- 🏏 ✅ **ARDMORE CRICKET CLUB FIRST DRAW COMPLETED** — Draw #1 at 7PM, winners: Conor King (1st & 2nd), Steven Barrow (3rd). £28 pot, 28 entries, 7 participants emailed. MASSIVE SUCCESS.
-- 📈 ✅ **Blue Canvas SEO changes LIVE** — title now "AI Consultancy Northern Ireland", meta/OG tags updated, LocalBusiness JSON-LD schema added. Position 6→1 campaign launched.
-- 🚀 ✅ **Claude Marketplace opportunity identified** — Anthropic launched enterprise marketplace today. Partner application ready. All domains available (claudemarketplace.co.uk etc). First-mover window open.
-- 🔧 ✅ **Draw system bugs FIXED** — idempotency added (no duplicate draws), false winner emails resolved, deployed to production. System bulletproof for next Friday.
-- 📊 ✅ **Ardmore explosion** — 29 total users, 77 numbers (£77 revenue), 10 NEW signups today alone (54 numbers). Harry Zimmermann, Caolan Young, George Brolly, Dave Bezzant, Mark Gillen, Vivek Sheoran, Edrees Kharotai, Denise Harkin, Glyn King, Joseph Brolly.
-- ✅ **Full system health check completed** — Stripe webhooks, email delivery, database integrity all verified. System 100% operational.
-- ✅ **Lead gen pipeline scheduled** — Mon/Wed/Fri at 10am with local scraper (Apollo API locked behind paid tier).
-- ✅ **Google Ads daily optimisation cron added** — 2pm daily to complement 5pm reporting.
-- ✅ GSC OAuth fixed — new refresh token with adwords + webmasters.readonly + analytics.readonly scopes. All 6 GSC properties accessible. GA4 confirmed.
-- ✅ Ahrefs FULL ACCESS — browser automation via OpenClaw managed Chrome. Logged in under albiemorgan88@gmail.com (PJ's workspace). API key exists but Lite plan = insufficient for API. Browser automation is the path.
-- ✅ Chrome installed on Mac mini — enables all browser automation going forward
-- ✅ Cron delivery diagnosed — root cause was agents using `message` tool with target "PJ" (not a valid chatId). Fixed all 3 failing crons. SEO Friday Monitor timeout increased to 600s.
-- ✅ Semrush dropped — removed from all workflows, Ahrefs + GSC is the stack now
+- 🏏 ✅ **ARDMORE FIRST DRAW COMPLETED** — Draw #1 at 7PM. Winners: Conor King (1st & 2nd), Steven Barrow (3rd). £28 pot, 28 entries, 7 participants. 29 total users, 77 numbers (£77 revenue), 10 new signups on draw day.
+- 📈 ✅ **Blue Canvas SEO changes LIVE** — title "AI Consultancy Northern Ireland", meta/OG tags, LocalBusiness JSON-LD schema.
+- 🚀 ✅ **Claude Marketplace opportunity identified** — partner application ready, domains available.
+- 🔧 ✅ Draw system bugs fixed (idempotency, false winner emails). System bulletproof for next draw.
+- ✅ GSC OAuth fixed (all 3 scopes), Ahrefs browser access confirmed, Chrome on Mac mini, cron delivery fixed, Semrush dropped.
+- ✅ Lead gen pipeline + Google Ads daily optimisation crons added.
 
 **Completed Mar 5:**
-- ✅ Full system tune-up: cron overhaul (17 crons), skills overhaul, COO mode codified
-- ✅ Domain sweep: 56 EU AI Act domains checked. Top picks identified for PJ.
-- ✅ Moltbook engagement restarted (3 weeks dormant → 25 notifications + new post)
-- ✅ /contact page confirmed working (was flagged 404 on Mar 3)
-- ✅ TOOLS.md corrected: Google Ads billing IS active (was incorrectly "pending")
-
-**Completed Mar 4:**
-- ✅ Google Ads LIVE: £20/day, 8 phrase-match keywords
-- ✅ Ardmore end-to-end operational: admin emails, demo draw, full payment flow tested
-- ✅ All access granted: GBP Manager, Ahrefs team, Google Ads Admin
-- ✅ HIP Psychology showcase deployed for Cormac V
-- ✅ GBP photos: 5/5 complete
+- ✅ Full system tune-up: 17 crons, skills overhaul, COO mode codified
+- ✅ Domain sweep: 56 EU AI Act domains checked
+- ✅ Moltbook engagement restarted
