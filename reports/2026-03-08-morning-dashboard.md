@@ -1,50 +1,70 @@
 # Morning Dashboard — Sunday 8 March 2026
 
-## 1. Site Uptime ✅
-| Site | Status | Code | Response |
-|------|--------|------|----------|
-| bluecanvas.ai | ✅ UP | 301→www | 0.36s |
-| ardmorecricket.com | ✅ UP | 200 | 0.29s |
-| uktradejobs.com | ✅ UP | 200 | 1.35s ⚠️ |
-| openclawconsultant.co.uk | ✅ UP | 200 | 0.48s |
+## 1. Site Uptime ✅ All Green
+| Site | Status | Response |
+|------|--------|----------|
+| bluecanvas.ai | ✅ 200 | 514ms (301 redirect, normal for Webflow) |
+| ardmorecricket.com | ✅ 200 | 146ms |
+| uktradejobs.com | ✅ 200 | 830ms ⚠️ sluggish |
+| openclawconsultant.co.uk | ✅ 200 | 257ms |
 
-**Note:** uktradejobs.com sluggish at 1.35s — worth watching.
+**Note:** uktradejobs.com running slow at 830ms — worth monitoring.
 
-## 2. Google Ads — ⚠️ API Error
-Google Ads API returning **500 Internal Server Error** on all queries (v18 + v19). Google-side issue. Cannot pull yesterday's data programmatically.
+## 2. Google Ads ❌ API Blocked
+Google Ads API returning 500s on all endpoints. Root cause: **test-level developer token** cannot access production account 801-851-4760. PJ submitted Basic access form Mar 6 — still pending Google approval. No spend/click data available via API until approved.
 
-**Known issue from memory:** Only ~£0.60 spent in ~7 days due to policy violation (double dots ".." in ad copy throttling delivery). This remains **URGENT** — PJ needs to fix the ad copy or greenlight Albie to do it via browser.
+**Action needed:** Wait for Google Ads API Basic access approval (external blocker).
 
-## 3. Lead Pipeline
-| Lead | Status | Action |
-|------|--------|--------|
-| Tim Clarke | CV Screener demo ready | PJ handling personally — needs follow-up |
-| Joe Abrahams | Readiness Scorecard demo built | No recent contact — PJ needs to nudge |
+## 3. Lead Pipeline 🟡
 
-Apollo Lead Builder cron runs Wednesdays (next: Mar 11). No other active prospects.
+| Prospect | Status | Action |
+|----------|--------|--------|
+| **Tim Clarke** (Quay Group) | CV Screener demo sent Mar 2. PJ handling personally since Mar 6. | PJ to close — nudge recommended |
+| **Joe Abrahams** | AI Readiness Scorecard demo sent Mar 2. No follow-up. | ⚠️ 6 days cold — needs nudge TODAY |
+| **Charlie O'Hara** (Solara Wellness) | Showcase deployed. No activity. | Status unknown |
+| **Robbie O'Brien** | AI cybersecurity partnership. PJ said he'd message Mar 1. | ⚠️ 7 days stale |
 
-## 4. GSC / SEO — ⚠️ Auth Scope Issue
-OAuth token missing `webmasters.readonly` scope — 403 on GSC API. Token was authorized for Google Ads only.
+**Tenders:** Donegal CC (€4,200), InterTradeIreland (£72,000), CCS frameworks — no outcome updates. Tender Tracker runs tomorrow (Mon 9am).
 
-**Fix needed:** Re-run OAuth consent with scope `https://www.googleapis.com/auth/webmasters.readonly` to get a combined refresh token.
+## 4. SEO / GSC Snapshot (Feb 27 – Mar 5 vs prior week)
 
-**From memory:** Impressions up 24% but clicks down 29% → CTR crisis. Meta titles/descriptions need rewrite. Mobile PageSpeed 56/100, LCP 12.6s.
+### bluecanvas.ai
+| Metric | This Week | Last Week | Trend |
+|--------|-----------|-----------|-------|
+| Clicks | 5 | 7 | ⬇️ -29% |
+| Impressions | 441 | 357 | ⬆️ +24% |
+| Avg CTR | 1.13% | 1.96% | ⬇️ |
+| Avg Position | 8.2 | 10.0 | ⬆️ improved |
 
-## 5. Ahrefs — ⏱️ Timed Out
-Browser automation timed out navigating Ahrefs. Likely login/session issue with openclaw browser profile. Manual check recommended.
+Visibility growing but clicks dropping. "AI consultants for small business" cluster (55+ impressions, pos 6-8) = biggest opportunity.
 
-## 6. Cron Status ✅
-18 crons registered — **zero failures** in last 24h. All showing `ok` or `idle`.
+### uktradejobs.com 🚀
+| Metric | This Week | Last Week | Trend |
+|--------|-----------|-----------|-------|
+| Clicks | 10 | 1 | ⬆️ +900% |
+| Impressions | 792 | 364 | ⬆️ +118% |
+| Avg CTR | 1.26% | 0.27% | ⬆️ |
+| Avg Position | 28.6 | 24.3 | ⬇️ slightly |
+
+Massive growth — clicks 10x, impressions doubled. "/careers/switching-to-trades" is the star page.
+
+## 5. Ahrefs Data ⏳ Timed Out
+Browser automation timed out trying to access app.ahrefs.com. Will retry on next run.
+
+## 6. Cron Health (Last 24h)
+
+- **17/18 crons OK** ✅
+- **1 failure:** 🔴 Weekly Money Scout (X) — failed 3h ago, `message failed: Action send requires a target`
+- **Systemic issues:**
+  - Anthropic API timeouts (recurring, ~20:21-20:34 yesterday, ~07:01-07:02 today)
+  - Telegram delivery flakiness (socket went stale, restarted at 11:59)
+  - Gateway restart at ~20:23 yesterday caused brief subagent failures
 
 ## 7. Blocked Items Needing PJ
-| Item | Priority |
-|------|----------|
-| Google Ads ".." policy violation | 🔴 URGENT — ads barely spending |
-| Google Ads 5-point battle plan | 🟡 Sent Mar 6, awaiting PJ's direction |
-| Google Ads API Basic access | 🟡 Submitted Mar 6, pending Google |
-| Domain purchases (aiactcompliance.co.uk, aiaudituk.com) | 🟡 Confirm purchase |
-| Joe Abrahams follow-up | 🟡 PJ to reach out |
-| Ardmore FAQ accordion/success page | 🟠 Coding agent failed, needs rebuild |
-| bluecanvas.ai PageSpeed (mobile 56) | 🟠 LCP 12.6s, needs Webflow optimisation |
-| Blue Canvas CTR crisis | 🟠 Meta titles/descriptions need rewrite |
-| GSC OAuth scope | 🟡 Re-auth needed for API access |
+
+1. **Google Ads ".." policy fix** — PJ asked Mar 7 whether to fix himself or greenlight Albie. No response.
+2. **Google Ads battle plan** — 5-point plan sent Mar 6, awaiting direction.
+3. **Joe Abrahams nudge** — recommended Mar 7, no action taken. Getting cold.
+4. **AI Act domains** — confirm purchase of aiactcompliance.co.uk + aiaudituk.com (Stacey's project).
+5. **Google Ads API** — Basic access pending Google (external blocker).
+6. **Ardmore UI polish** — coding agent failed, needs rebuild decision.

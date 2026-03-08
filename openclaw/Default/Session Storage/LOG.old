@@ -1,2 +1,3 @@
-2026/03/07-07:02:00.178 136eac Creating DB /Users/philsagent/.openclaw/workspace/openclaw/Default/Session Storage since it was missing.
-2026/03/07-07:02:00.180 136eac Reusing MANIFEST /Users/philsagent/.openclaw/workspace/openclaw/Default/Session Storage/MANIFEST-000001
+2026/03/08-11:33:11.012 224f31 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/openclaw/Default/Session Storage/MANIFEST-000001
+2026/03/08-11:33:11.012 224f31 Recovering log #3
+2026/03/08-11:33:11.012 224f31 Reusing old log /Users/philsagent/.openclaw/workspace/openclaw/Default/Session Storage/000003.log 

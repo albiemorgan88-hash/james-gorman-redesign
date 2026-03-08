@@ -1,2 +1,3 @@
-2026/03/07-07:03:24.396 1372b1 Creating DB /Users/philsagent/.openclaw/workspace/openclaw/Default/Sync Data/LevelDB since it was missing.
-2026/03/07-07:03:24.418 1372b1 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/openclaw/Default/Sync Data/LevelDB/MANIFEST-000001
+2026/03/08-11:33:53.834 225257 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/openclaw/Default/Sync Data/LevelDB/MANIFEST-000001
+2026/03/08-11:33:53.848 225257 Recovering log #3
+2026/03/08-11:33:53.848 225257 Reusing old log /Users/philsagent/.openclaw/workspace/openclaw/Default/Sync Data/LevelDB/000003.log 

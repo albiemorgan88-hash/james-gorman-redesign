@@ -1,2 +1,3 @@
-2026/03/07-07:03:25.551 1372be Creating DB /Users/philsagent/.openclaw/workspace/openclaw/Default/Extension State since it was missing.
-2026/03/07-07:03:25.553 1372be Reusing MANIFEST /Users/philsagent/.openclaw/workspace/openclaw/Default/Extension State/MANIFEST-000001
+2026/03/08-11:33:54.634 225258 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/openclaw/Default/Extension State/MANIFEST-000001
+2026/03/08-11:33:54.634 225258 Recovering log #3
+2026/03/08-11:33:54.634 225258 Reusing old log /Users/philsagent/.openclaw/workspace/openclaw/Default/Extension State/000003.log 

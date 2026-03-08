@@ -1,2 +1,3 @@
-2026/03/07-07:01:59.870 136eac Creating DB /Users/philsagent/.openclaw/workspace/openclaw/Default/shared_proto_db/metadata since it was missing.
-2026/03/07-07:01:59.872 136eac Reusing MANIFEST /Users/philsagent/.openclaw/workspace/openclaw/Default/shared_proto_db/metadata/MANIFEST-000001
+2026/03/08-11:33:10.867 224f31 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/openclaw/Default/shared_proto_db/metadata/MANIFEST-000001
+2026/03/08-11:33:10.867 224f31 Recovering log #3
+2026/03/08-11:33:10.868 224f31 Reusing old log /Users/philsagent/.openclaw/workspace/openclaw/Default/shared_proto_db/metadata/000003.log 
