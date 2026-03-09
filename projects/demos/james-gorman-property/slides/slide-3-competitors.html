@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 3 — Competitors</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+  }
+  .slide {
+    width: 1080px;
+    height: 1080px;
+    background: #1a2744;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 70px 100px;
+  }
+
+  .slide::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 90%, rgba(201,169,110,0.04) 0%, transparent 50%);
+  }
+
+  .corner-tl, .corner-br {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-color: rgba(201,169,110,0.25);
+    border-style: solid;
+  }
+  .corner-tl { top: 40px; left: 40px; border-width: 2px 0 0 2px; }
+  .corner-br { bottom: 40px; right: 40px; border-width: 0 2px 2px 0; }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .headline {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 42px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 1.2;
+  }
+
+  .headline em {
+    color: #C9A96E;
+    font-style: normal;
+  }
+
+  .competitors-list {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 40px;
+  }
+
+  .comp-row {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    gap: 20px;
+  }
+
+  .comp-num {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 28px;
+    color: #C9A96E;
+    width: 50px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .comp-name {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(255,255,255,0.85);
+  }
+
+  .comp-row.top3 .comp-name {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  /* The gut punch box */
+  .you-box {
+    width: 100%;
+    max-width: 700px;
+    border: 2px dashed rgba(201,169,110,0.5);
+    border-radius: 12px;
+    padding: 24px 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(201,169,110,0.04);
+  }
+
+  .you-marker {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(255,255,255,0.3);
+    width: 50px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .you-name {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .you-tag {
+    margin-left: auto;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #e74c3c;
+    background: rgba(231,76,60,0.12);
+    padding: 6px 16px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="corner-tl"></div>
+  <div class="corner-br"></div>
+  <div class="content">
+    <div class="headline"><em>9 agents</em> rank above you<br>on Google</div>
+
+    <div class="competitors-list">
+      <div class="comp-row top3">
+        <div class="comp-num">1.</div>
+        <div class="comp-name">Pauline Elliott Estate Agents</div>
+      </div>
+      <div class="comp-row top3">
+        <div class="comp-num">2.</div>
+        <div class="comp-name">EO'C Estate Agents</div>
+      </div>
+      <div class="comp-row top3">
+        <div class="comp-num">3.</div>
+        <div class="comp-name">Paul O'Keefe Estate Agents</div>
+      </div>
+      <div class="comp-row">
+        <div class="comp-num">4.</div>
+        <div class="comp-name">Robert Quigley</div>
+      </div>
+      <div class="comp-row">
+        <div class="comp-num">5.</div>
+        <div class="comp-name">John V Arthur</div>
+      </div>
+      <div class="comp-row">
+        <div class="comp-num">6–9</div>
+        <div class="comp-name">Oakland · Daniel Henry · Locate · Montgomery</div>
+      </div>
+    </div>
+
+    <div class="you-box">
+      <div class="you-marker">—</div>
+      <div class="you-name">James Gorman Property</div>
+      <div class="you-tag">Not Ranking</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

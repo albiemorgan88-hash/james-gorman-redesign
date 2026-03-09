@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 4 — Opportunity</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+  }
+  .slide {
+    width: 1080px;
+    height: 1080px;
+    background: #1a2744;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 80px;
+  }
+
+  .slide::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 30%, rgba(201,169,110,0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 70%, rgba(201,169,110,0.04) 0%, transparent 40%);
+  }
+
+  .corner-tl, .corner-br {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-color: rgba(201,169,110,0.25);
+    border-style: solid;
+  }
+  .corner-tl { top: 40px; left: 40px; border-width: 2px 0 0 2px; }
+  .corner-br { bottom: 40px; right: 40px; border-width: 0 2px 2px 0; }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .big-number {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 120px;
+    color: #C9A96E;
+    line-height: 1;
+    letter-spacing: -2px;
+    text-shadow: 0 0 60px rgba(201,169,110,0.25);
+    margin-bottom: 12px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sub-label {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 16px;
+  }
+
+  .roi-line {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 60px;
+  }
+
+  .roi-line em {
+    color: #C9A96E;
+    font-style: normal;
+  }
+
+  .gold-divider {
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #C9A96E, transparent);
+    margin-bottom: 60px;
+  }
+
+  .agent-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 6px;
+  }
+
+  .agent-company {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #C9A96E;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  .cta {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: rgba(255,255,255,0.9);
+    font-style: italic;
+    margin-bottom: 24px;
+  }
+
+  .phone {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #C9A96E;
+    letter-spacing: 2px;
+  }
+
+  .phone-icon {
+    font-size: 22px;
+    line-height: 1;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="corner-tl"></div>
+  <div class="corner-br"></div>
+  <div class="content">
+    <div class="big-number"><span style="font-family:'DM Sans',sans-serif;font-weight:800">£</span>72,000</div>
+    <div class="sub-label">in potential revenue from organic search per year</div>
+    <div class="roi-line"><em>24×</em> return on £250/month</div>
+
+    <div class="gold-divider"></div>
+
+    <div class="agent-name">Phil Patterson</div>
+    <div class="agent-company">Blue Canvas AI</div>
+
+    <div class="cta">"Let's put you on the map."</div>
+
+    <div class="phone">
+      <div class="phone-icon">📞</div>
+      07935 217762
+    </div>
+  </div>
+</div>
+</body>
+</html>

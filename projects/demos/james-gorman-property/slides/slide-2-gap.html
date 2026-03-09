@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 2 — The Gap</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+  }
+  .slide {
+    width: 1080px;
+    height: 1080px;
+    background: #1a2744;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 80px;
+  }
+
+  .slide::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(201,169,110,0.05) 0%, transparent 50%);
+  }
+
+  .corner-tl, .corner-br {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-color: rgba(201,169,110,0.25);
+    border-style: solid;
+  }
+  .corner-tl { top: 40px; left: 40px; border-width: 2px 0 0 2px; }
+  .corner-br { bottom: 40px; right: 40px; border-width: 0 2px 2px 0; }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+
+  .stat-line {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.5;
+    max-width: 750px;
+    margin-bottom: 12px;
+  }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 46px;
+    color: #C9A96E;
+  }
+
+  .headline {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 52px;
+    color: #ffffff;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .keywords {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .keyword-pill {
+    background: rgba(201,169,110,0.1);
+    border: 1.5px solid rgba(201,169,110,0.35);
+    border-radius: 50px;
+    padding: 18px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    min-width: 260px;
+  }
+
+  .keyword-term {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+  }
+
+  .keyword-vol {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #C9A96E;
+  }
+
+  .gold-line {
+    width: 60px;
+    height: 2px;
+    background: #C9A96E;
+    margin-bottom: 28px;
+  }
+
+  .bottom-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #C9A96E;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="corner-tl"></div>
+  <div class="corner-br"></div>
+  <div class="content">
+    <div class="stat-line"><span class="stat-number">1,560+</span> people search for<br>estate agents in Derry every month</div>
+    <div class="headline">You don't appear<br>for any of them.</div>
+    <div class="keywords">
+      <div class="keyword-pill">
+        <div class="keyword-term">"estate agents derry"</div>
+        <div class="keyword-vol">440 searches/mo</div>
+      </div>
+      <div class="keyword-pill">
+        <div class="keyword-term">"houses for sale derry"</div>
+        <div class="keyword-vol">590 searches/mo</div>
+      </div>
+      <div class="keyword-pill">
+        <div class="keyword-term">"property for sale derry"</div>
+        <div class="keyword-vol">320 searches/mo</div>
+      </div>
+    </div>
+    <div class="gold-line"></div>
+    <div class="bottom-text">Your competitors do.</div>
+  </div>
+</div>
+</body>
+</html>

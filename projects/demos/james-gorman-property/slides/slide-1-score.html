@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 1 — Score</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+  }
+  .slide {
+    width: 1080px;
+    height: 1080px;
+    background: #1a2744;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Subtle background texture */
+  .slide::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 20%, rgba(201,169,110,0.06) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 80%, rgba(201,169,110,0.04) 0%, transparent 50%);
+  }
+
+  /* Corner accents */
+  .corner-tl, .corner-br {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-color: rgba(201,169,110,0.25);
+    border-style: solid;
+  }
+  .corner-tl {
+    top: 40px; left: 40px;
+    border-width: 2px 0 0 2px;
+  }
+  .corner-br {
+    bottom: 40px; right: 40px;
+    border-width: 0 2px 2px 0;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .brand-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  /* Score ring */
+  .score-ring-container {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-bottom: 30px;
+  }
+
+  .score-ring-bg {
+    position: absolute;
+    inset: 0;
+  }
+
+  .score-ring-bg circle {
+    fill: none;
+    stroke: rgba(255,255,255,0.08);
+    stroke-width: 10;
+  }
+
+  .score-ring-fg {
+    position: absolute;
+    inset: 0;
+    transform: rotate(-90deg);
+  }
+
+  .score-ring-fg circle {
+    fill: none;
+    stroke: #C9A96E;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 880;
+    stroke-dashoffset: 598; /* 880 - (880 * 0.32) = 598.4 */
+    filter: drop-shadow(0 0 12px rgba(201,169,110,0.4));
+  }
+
+  .score-value {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .score-number {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 96px;
+    color: #C9A96E;
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+
+  .score-total {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: rgba(255,255,255,0.55);
+    margin-top: 4px;
+  }
+
+  .score-label {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .score-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 50px;
+  }
+
+  .swipe-hint {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(201,169,110,0.7);
+    letter-spacing: 1px;
+  }
+
+  /* Gold line divider */
+  .gold-line {
+    width: 60px;
+    height: 2px;
+    background: #C9A96E;
+    margin-bottom: 24px;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="corner-tl"></div>
+  <div class="corner-br"></div>
+  <div class="content">
+    <div class="brand-name">James Gorman Property</div>
+    <div class="score-ring-container">
+      <svg class="score-ring-bg" viewBox="0 0 320 320">
+        <circle cx="160" cy="160" r="140"/>
+      </svg>
+      <svg class="score-ring-fg" viewBox="0 0 320 320">
+        <circle cx="160" cy="160" r="140"/>
+      </svg>
+      <div class="score-value">
+        <div class="score-number">32</div>
+        <div class="score-total">/100</div>
+      </div>
+    </div>
+    <div class="score-label">Online Visibility Score</div>
+    <div class="gold-line"></div>
+    <div class="score-subtitle">Here's what you're missing →</div>
+  </div>
+</div>
+</body>
+</html>
