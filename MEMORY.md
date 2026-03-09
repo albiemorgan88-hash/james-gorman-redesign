@@ -5,6 +5,9 @@
 
 Every decision, every opportunity, every workflow runs through this filter.
 
+## Competitors to Watch
+- **OpenFang** — open-source Agent OS (Rust, 137K lines, claims 30x faster than OpenClaw). Spotted Mar 8.
+
 ## Key Lessons
 - Don't build without knowing who pays
 - Push comfort zone with specifics, not generic advice
@@ -36,6 +39,10 @@ Every decision, every opportunity, every workflow runs through this filter.
 - **AI Tender Writer** — scored 9.2. SME gap.
 - **Claude Cowork implementation** — SEO wide open, add as BC service line.
 - **Amazon Healthcare AI** — scored 7.2/10. Amazon Connect Health (US-only, HIPAA). UK market $11.14B, NHS £10B digital by 2028-29. Secondary vertical, not pivot. Domains available: healthcareaiagents.co.uk, healthcareautomation.co.uk.
+- **"Agentic Web" / Agent-Ready Websites** — emerging category NOW (like "mobile-friendly" in 2014). WebMCP in Chrome 146 Canary (W3C draft), Yoast 27.1 shipped Schema Aggregation for AI agents. Blue Canvas should own UK positioning. Domains to grab: agenticseo.co.uk, webmcpconsultant.co.uk, aivisibility.co.uk, agentreadywebsites.co.uk.
+- **DTFF Grant (NI)** — gov pays 70% of AI/digital project costs (£5k-£20k). Killer sales angle for Blue Canvas clients.
+- **AI Voice Receptionists** — Newo raised $25M, white-label via GoHighLevel, £150-300/mo per client.
+- **Derry Riverfront £45m regeneration + Vertiv jobs** — new local businesses will need digital presence.
 
 ## Revenue
 - Pricing: Free Consult → AI Audit £750 → Implementation → Academy £250 → Mentoring £50/mo
@@ -63,9 +70,12 @@ Every decision, every opportunity, every workflow runs through this filter.
 - **AI Workforce** = Blue Canvas done-for-you offering
 - **Blue Canvas**: #2B4DAF, #FF4520, white. **NEVER publish Webflow autonomously.**
 
-## System Config (Mar 5)
+## System Config (Mar 8)
 - **COO/Orchestrator mode**: PERMANENT. Albie delegates everything via subagents. Never executes tasks directly (except <5s replies/reactions). Codified in AGENTS.md + SOUL.md.
-- **17 crons active** (up from 12): all fixed with `--agent main`. Key additions: Morning Dashboard (7am), Moltbook Inbox (12pm), Google Ads Report (5pm), Memory Distillation (10:30pm), Apollo Lead Builder (Wed 10am), Tender Tracker (Mon 9am). Nightly Build fixed to 10pm Europe/London.
+- **17 crons active** (up from 12): all fixed with `--agent main`. Key additions: Morning Dashboard (7am), Moltbook Inbox (12pm), Google Ads Report (5pm), Memory Distillation (10:30pm), Apollo Lead Builder (Wed 10am), Tender Tracker (Mon 9am).
+- **⚠️ Cron delivery BROKEN on most crons** — Root causes identified Mar 8: (1) `channel: "last"` fails on isolated sessions → fix to `channel: "telegram", to: "5282559643"`, (2) task prompts saying "message PJ" / "send to PJ" cause agent to call `message(action=send)` which fails AND blocks announce delivery, (3) some have `delivery.mode: "none"`. Only Memory Distillation + AI Trend Scout delivering. Fix plan approved by PJ, not yet executed.
+- **Nightly Build cron MISSING** — was in MEMORY.md but not in actual cron list. Needs recreation.
+- **OpenClaw update available**: `npm update 2026.3.7` — may include cron delivery fixes. Not yet approved.
 - **Skills overhauled**: Semrush stripped (→Ahrefs/GSC everywhere). Merged: showcase-pipeline→client-showcase, ux-tester→ship-ready, moltlaunch-inbox→moltbook-scout. New: moltlaunch-delivery, hustle-engine, local-lead-scraper. Archived: opportunity-radar.
 
 ## Hustle Engine Philosophy (PJ's words)
@@ -76,11 +86,13 @@ Every decision, every opportunity, every workflow runs through this filter.
 
 ## Pending Actions
 **URGENT:**
+- **FIX CRON DELIVERY** — Fix all broken crons: update delivery targets (`channel: "telegram", to: "5282559643"`), rewrite task prompts to remove "message PJ"/"send to PJ", fix `mode: "none"` on SEO crons. Recreate missing Nightly Build cron. Consider OpenClaw update to 2026.3.7.
 - **Ardmore UI polish** — FAQ accordion, success page improvements, nav enhancements (coding agent failed, needs rebuild)
 - **UK Trade Jobs deploy** — production deployment with employer signup notifications to philip@bluecanvas.ai
 - **Google Ads**: ad policy violation (double dots) throttling delivery — only £0.60 spent in ~7 days. Fix needed ASAP. Conversion tracking still pending. API Basic access pending (PJ submitted form Mar 6).
 - **bluecanvas.ai PageSpeed** — mobile 56/100, LCP 12.6s. Needs urgent fix (Webflow optimisation).
 - **Blue Canvas CTR crisis** — impressions up 24% but clicks down 29%. Meta titles/descriptions need rewrite for click-worthy copy.
+- **Respond to Moltbook comment** — quality engagement on consultancy post, unanswered since Mar 6.
 
 **Blue Canvas SEO Domination (credentials now granted):**
 - Run Sarvesh's 6-pillar competitive attack framework
@@ -98,20 +110,16 @@ Every decision, every opportunity, every workflow runs through this filter.
 - Monitor Moltlaunch inbox for gig requests (Agent #24586)
 - PJ to confirm purchase of aiactcompliance.co.uk + aiaudituk.com
 
+**Completed Mar 8:**
+- ✅ Cron delivery root cause analysis complete — 3 failure modes identified, fix plan approved by PJ
+- ✅ AI Trend Scout: "Agentic Web" category identified as major opportunity (WebMCP, Chrome 146, Yoast Schema Aggregation)
+- ✅ Weekly Money Scout recovered: DTFF grant, AI voice receptionists, Derry regeneration opportunities flagged
+- ⚠️ Moltbook: 1 unread quality comment (since Mar 6) — needs response. No gig requests.
+
 **Completed Mar 7:**
-- ✅ Security scan: all clear (firewall, FileVault, backups, auto-updates, no exposed ports). OpenClaw v2026.3.2 confirmed latest.
-- ✅ Evening health check: all 4 sites up (bluecanvas.ai, ardmorecricket.com, uktradejobs.com, openclawconsultant.co.uk). 18 crons healthy, zero failures.
-- ⚠️ Ahrefs, Google Ads, GSC subagent timeouts (browser auth / API pull) — non-critical, retry Monday.
+- ✅ Security scan: all clear. Evening health check: all 4 sites up, 18 crons healthy.
+- ⚠️ Ahrefs, Google Ads, GSC subagent timeouts — non-critical, retry Monday.
 
 **Completed Mar 6 (HISTORIC DAY):**
-- 🏏 ✅ **ARDMORE FIRST DRAW COMPLETED** — Draw #1 at 7PM. Winners: Conor King (1st & 2nd), Steven Barrow (3rd). £28 pot, 28 entries, 7 participants. 29 total users, 77 numbers (£77 revenue), 10 new signups on draw day.
-- 📈 ✅ **Blue Canvas SEO changes LIVE** — title "AI Consultancy Northern Ireland", meta/OG tags, LocalBusiness JSON-LD schema.
-- 🚀 ✅ **Claude Marketplace opportunity identified** — partner application ready, domains available.
-- 🔧 ✅ Draw system bugs fixed (idempotency, false winner emails). System bulletproof for next draw.
-- ✅ GSC OAuth fixed (all 3 scopes), Ahrefs browser access confirmed, Chrome on Mac mini, cron delivery fixed, Semrush dropped.
-- ✅ Lead gen pipeline + Google Ads daily optimisation crons added.
-
-**Completed Mar 5:**
-- ✅ Full system tune-up: 17 crons, skills overhaul, COO mode codified
-- ✅ Domain sweep: 56 EU AI Act domains checked
-- ✅ Moltbook engagement restarted
+- 🏏 ✅ **ARDMORE FIRST DRAW COMPLETED** — Draw #1 at 7PM. 28 entries, 7 participants, £28 pot, £77 total revenue, 10 new signups on draw day.
+- 📈 ✅ Blue Canvas SEO changes LIVE, GSC OAuth fixed, Chrome on Mac mini, cron delivery partially fixed, Semrush dropped.
