@@ -7,6 +7,7 @@ Every decision, every opportunity, every workflow runs through this filter.
 
 ## Competitors to Watch
 - **OpenFang** — open-source Agent OS (Rust, 137K lines, claims 30x faster than OpenClaw). Spotted Mar 8.
+- **ChatGPT→Claude exodus** — major user migration story week of Mar 9. Blog post opportunity: "Why UK Businesses Are Switching from ChatGPT to Claude".
 
 ## Key Lessons
 - Don't build without knowing who pays
@@ -30,7 +31,7 @@ Every decision, every opportunity, every workflow runs through this filter.
 - **ClubDraw** — white-label weekly draw SaaS. Ardmore is client #1. Ready for multi-club expansion. Skill at `skills/clubdraw/SKILL.md`.
   - **Revenue split:** 50% jackpot / 40% club / 10% platform — publicly declared as "50/50" (50% prizes, 50% club)
   - **Rules:** No max numbers. Can buy for others (assign names). No age verification. One-off = 1 week. Subscription = weekly auto-renew (primary mode). Draw: Friday 7PM, 3 winners, provably fair RNG.
-- **UK Trade Jobs** — uktradejobs.com on Vercel. Supabase backend wired up (Mar 2). **DEPLOYED TO PRODUCTION Mar 9** — SEO fixes (CV Builder title, Employers title, H1 keyword), www SSL fixed, 3,094 pages. Target £3-5k/mo.
+- **UK Trade Jobs** — uktradejobs.com on Vercel. Supabase backend. **LIVE IN PRODUCTION** (Mar 9) — 3,094 pages, www SSL fixed, SEO fixes deployed (CV Builder title, Employers title, H1 keyword). Target £3-5k/mo.
 - **Satellites** — openclawconsultant.co.uk (Vercel, LIVE ✅), zapierconsultant.co.uk, aiagentsetup.co.uk. Awaiting Google indexing.
 - **EU AI Act Compliance** — STACEY'S PROJECT. Domains: aiactcompliance.co.uk + aiaudituk.com. Do not build/action without Stacey's direction.
 - **Rank & Rent** — On hold.
@@ -73,8 +74,7 @@ Every decision, every opportunity, every workflow runs through this filter.
 
 ## System Config (Mar 8)
 - **COO/Orchestrator mode**: PERMANENT. Albie delegates everything via subagents. Never executes tasks directly (except <5s replies/reactions). Codified in AGENTS.md + SOUL.md.
-- **17 crons active** (up from 12): all fixed with `--agent main`. Key additions: Morning Dashboard (7am), Moltbook Inbox (12pm), Google Ads Report (5pm), Memory Distillation (10:30pm), Apollo Lead Builder (Wed 10am), Tender Tracker (Mon 9am).
-- **✅ All 19 crons FIXED** (Mar 9) — every cron updated with `--announce --channel telegram --to 5282559643`. 19/19 succeeded. Delivery working.
+- **19 crons active, ALL FIXED** (Mar 9) — every cron has `--announce --channel telegram --to 5282559643`. Delivery confirmed working. Key crons: Morning Dashboard (7am), Moltbook Inbox (12pm), Google Ads Report (5pm), Memory Distillation (10:30pm), Apollo Lead Builder (Wed 10am), Tender Tracker (Mon 9am).
 - **OpenClaw 2026.3.8 LIVE** (Mar 9) — updated from 3.7, gateway restarted. Features: ACP provenance, backup command, Telegram dupes killed, 12+ security fixes.
 - **Skills overhauled**: Semrush stripped (→Ahrefs/GSC everywhere). Merged: showcase-pipeline→client-showcase, ux-tester→ship-ready, moltlaunch-inbox→moltbook-scout. New: moltlaunch-delivery, hustle-engine, local-lead-scraper. Archived: opportunity-radar.
 
