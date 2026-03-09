@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>AI Recruitment Automation — Blue Canvas</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#2B4DAF;--red:#FF4520;--white:#ffffff;--light-bg:#f8f9fa;--text:#1a1a2e;--text-light:#666;--green:#22c55e;--orange:#f59e0b}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--light-bg);overflow:hidden;height:100vh;height:100dvh;color:var(--text);-webkit-tap-highlight-color:transparent}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 24px;opacity:0;transform:translateX(100%);transition:all .5s cubic-bezier(.4,0,.2,1);pointer-events:none;overflow-y:auto}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:auto}
+.slide.prev{opacity:0;transform:translateX(-100%)}
+
+/* Progress */
+.progress{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:100}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(0,0,0,.15);transition:all .3s}
+.dot.active{background:var(--blue);width:24px;border-radius:4px}
+
+/* Tap hint */
+.tap-hint{position:fixed;bottom:48px;left:50%;transform:translateX(-50%);font-size:12px;color:var(--text-light);opacity:0;animation:fadeHint 3s ease 1s forwards;z-index:100;white-space:nowrap}
+@keyframes fadeHint{0%{opacity:0}20%{opacity:.6}80%{opacity:.6}100%{opacity:0}}
+
+/* Logo */
+.bc-logo{font-size:13px;font-weight:700;letter-spacing:.5px;color:var(--blue);margin-bottom:8px}
+.bc-logo span{color:var(--red)}
+
+/* SLIDE 1 — Hook */
+.s1-badge{display:inline-block;background:var(--blue);color:#fff;font-size:11px;font-weight:600;padding:6px 14px;border-radius:20px;margin-bottom:24px;letter-spacing:.5px;text-transform:uppercase}
+.s1-headline{font-size:28px;font-weight:800;line-height:1.2;text-align:center;max-width:340px;margin-bottom:16px}
+.s1-headline em{font-style:normal;color:var(--red)}
+.s1-sub{font-size:15px;color:var(--text-light);text-align:center;max-width:300px;line-height:1.5}
+.s1-name{font-size:14px;font-weight:600;color:var(--blue);margin-top:24px;padding:8px 20px;border:2px solid var(--blue);border-radius:8px}
+
+/* SLIDE 2 — Workflow Scan */
+.s2-title{font-size:20px;font-weight:700;margin-bottom:24px;text-align:center}
+.scan-steps{width:100%;max-width:320px}
+.scan-step{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #eee;opacity:0;transform:translateY(8px)}
+.scan-step.visible{opacity:1;transform:translateY(0);transition:all .4s ease}
+.scan-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.scan-icon.red{background:#fee2e2;color:#dc2626}
+.scan-icon.orange{background:#fef3c7;color:#d97706}
+.scan-icon.green{background:#dcfce7;color:#16a34a}
+.scan-label{font-size:14px;font-weight:500;flex:1}
+.scan-status{font-size:12px;font-weight:600;padding:4px 10px;border-radius:12px}
+.scan-status.slow{background:#fee2e2;color:#dc2626}
+.scan-status.warn{background:#fef3c7;color:#d97706}
+.scan-status.ok{background:#dcfce7;color:#16a34a}
+.scan-bar{width:100%;max-width:320px;height:4px;background:#e5e7eb;border-radius:2px;margin-top:20px;overflow:hidden}
+.scan-bar-fill{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--red));border-radius:2px;transition:width 2s ease}
+
+/* SLIDE 3 — Issues / Score */
+.s3-title{font-size:20px;font-weight:700;margin-bottom:8px;text-align:center}
+.s3-sub{font-size:13px;color:var(--text-light);margin-bottom:24px;text-align:center}
+.score-ring-wrap{position:relative;margin-bottom:24px}
+.score-label{font-size:12px;color:var(--text-light);text-align:center;margin-top:8px}
+.issues-list{width:100%;max-width:320px}
+.issue-item{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #f0f0f0}
+.issue-bullet{width:8px;height:8px;border-radius:50%;margin-top:5px;flex-shrink:0}
+.issue-bullet.crit{background:#dc2626}
+.issue-bullet.warn{background:#d97706}
+.issue-text{font-size:13px;line-height:1.4}
+.issue-text strong{color:var(--text)}
+
+/* SLIDE 4 — Before/After */
+.s4-title{font-size:20px;font-weight:700;margin-bottom:20px;text-align:center}
+.ba-container{width:100%;max-width:340px}
+.ba-card{background:#fff;border-radius:12px;padding:16px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.ba-header{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.ba-badge{font-size:11px;font-weight:700;padding:4px 10px;border-radius:10px;text-transform:uppercase}
+.ba-badge.before{background:#fee2e2;color:#dc2626}
+.ba-badge.after{background:#dcfce7;color:#16a34a}
+.ba-label{font-size:13px;font-weight:600}
+.ba-content{font-size:12px;color:var(--text-light);line-height:1.6}
+.ba-content .highlight{color:var(--blue);font-weight:600}
+.ba-arrow{text-align:center;font-size:24px;color:var(--blue);margin:4px 0}
+
+/* SLIDE 5 — The Pipeline */
+.s5-title{font-size:20px;font-weight:700;margin-bottom:8px;text-align:center}
+.s5-sub{font-size:13px;color:var(--text-light);margin-bottom:24px;text-align:center;max-width:300px}
+.pipeline{width:100%;max-width:320px}
+.pipe-step{display:flex;align-items:center;gap:12px;padding:12px 16px;background:#fff;border-radius:12px;margin-bottom:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);opacity:0;transform:translateX(-20px)}
+.pipe-step.visible{opacity:1;transform:translateX(0);transition:all .4s ease}
+.pipe-num{width:32px;height:32px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0}
+.pipe-text{font-size:13px;font-weight:500;line-height:1.4}
+.pipe-text span{color:var(--text-light);font-weight:400}
+.pipe-connector{width:2px;height:12px;background:var(--blue);margin-left:28px;opacity:.3}
+
+/* SLIDE 6 — Chat Demo */
+.s6-title{font-size:18px;font-weight:700;margin-bottom:4px;text-align:center}
+.s6-sub{font-size:12px;color:var(--text-light);margin-bottom:20px;text-align:center}
+.chat-window{width:100%;max-width:340px;background:#fff;border-radius:16px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.08);max-height:55vh;overflow-y:auto}
+.chat-msg{margin-bottom:12px;opacity:0;transform:translateY(10px);animation:chatIn .4s ease forwards}
+@keyframes chatIn{to{opacity:1;transform:translateY(0)}}
+.chat-bubble{padding:10px 14px;border-radius:16px;font-size:13px;line-height:1.5;max-width:85%}
+.chat-user{display:flex;justify-content:flex-end}
+.chat-user .chat-bubble{background:var(--blue);color:#fff;border-bottom-right-radius:4px}
+.chat-bot .chat-bubble{background:#f0f2f5;color:var(--text);border-bottom-left-radius:4px}
+.chat-bot-label{font-size:10px;font-weight:600;color:var(--blue);margin-bottom:4px;display:flex;align-items:center;gap:4px}
+.typing{padding:10px 14px;display:inline-flex;gap:4px;background:#f0f2f5;border-radius:16px}
+.typing span{display:inline-block;width:6px;height:6px;background:#999;border-radius:50%;animation:bounce .6s infinite}
+.typing span:nth-child(2){animation-delay:.15s}
+.typing span:nth-child(3){animation-delay:.3s}
+@keyframes bounce{50%{transform:translateY(-4px)}}
+
+/* SLIDE 7 — ROI */
+.s7-title{font-size:20px;font-weight:700;margin-bottom:8px;text-align:center}
+.s7-sub{font-size:13px;color:var(--text-light);margin-bottom:24px;text-align:center}
+.roi-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:100%;max-width:320px;margin-bottom:20px}
+.roi-card{background:#fff;border-radius:12px;padding:16px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.roi-num{font-size:28px;font-weight:800;color:var(--blue);line-height:1}
+.roi-num.accent{color:var(--red)}
+.roi-label{font-size:11px;color:var(--text-light);margin-top:6px;line-height:1.3}
+.roi-bottom{background:#fff;border-radius:12px;padding:16px;width:100%;max-width:320px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.roi-bottom .roi-num{font-size:32px;color:var(--green)}
+
+/* SLIDE 8 — CTA */
+.s8-title{font-size:22px;font-weight:800;margin-bottom:8px;text-align:center}
+.s8-sub{font-size:14px;color:var(--text-light);text-align:center;max-width:300px;margin-bottom:28px;line-height:1.5}
+.cta-name{font-size:16px;font-weight:700;margin-bottom:4px}
+.cta-role{font-size:13px;color:var(--text-light);margin-bottom:20px}
+.cta-buttons{display:flex;flex-direction:column;gap:10px;width:100%;max-width:300px}
+.cta-btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;border-radius:12px;font-size:15px;font-weight:600;text-decoration:none;transition:transform .2s}
+.cta-btn:active{transform:scale(.97)}
+.cta-btn.phone{background:var(--blue);color:#fff}
+.cta-btn.whatsapp{background:#25D366;color:#fff}
+.cta-btn.email{background:var(--text);color:#fff}
+.cta-footer{margin-top:24px;font-size:11px;color:var(--text-light)}
+
+/* Utility */
+.fade-up{opacity:0;transform:translateY(20px);transition:all .6s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: Hook -->
+<div class="slide active" id="s1">
+  <div class="bc-logo">BLUE <span>CANVAS</span></div>
+  <div class="s1-badge">AI for Recruitment</div>
+  <h1 class="s1-headline">What if your interview notes <em>wrote the cover letter</em> for you?</h1>
+  <p class="s1-sub">We analysed how AI can transform your recruitment workflow — from interview to professional cover letter in minutes, not hours.</p>
+  <div class="s1-name">Built for Tim Clark</div>
+</div>
+
+<!-- SLIDE 2: Workflow Scan -->
+<div class="slide" id="s2">
+  <div class="bc-logo">BLUE <span>CANVAS</span></div>
+  <h2 class="s2-title">⚡ Scanning Your Workflow</h2>
+  <div class="scan-steps">
+    <div class="scan-step" data-delay="400">
+      <div class="scan-icon red">📝</div>
+      <div class="scan-label">Manual interview notes</div>
+      <div class="scan-status slow">Slow</div>
+    </div>
+    <div class="scan-step" data-delay="800">
+      <div class="scan-icon red">📄</div>
+      <div class="scan-label">Word doc cover letters</div>
+      <div class="scan-status slow">Manual</div>
+    </div>
+    <div class="scan-step" data-delay="1200">
+      <div class="scan-icon orange">🔄</div>
+      <div class="scan-label">Notes → letter conversion</div>
+      <div class="scan-status warn">30-45 min</div>
+    </div>
+    <div class="scan-step" data-delay="1600">
+      <div class="scan-icon orange">🎨</div>
+      <div class="scan-label">Document formatting</div>
+      <div class="scan-status warn">Basic</div>
+    </div>
+    <div class="scan-step" data-delay="2000">
+      <div class="scan-icon green">🎙️</div>
+      <div class="scan-label">CoRecruit transcription</div>
+      <div class="scan-status ok">Trialing</div>
+    </div>
+    <div class="scan-step" data-delay="2400">
+      <div class="scan-icon red">📖</div>
+      <div class="scan-label">Flipbook presentation</div>
+      <div class="scan-status slow">Not linked</div>
+    </div>
+  </div>
+  <div class="scan-bar"><div class="scan-bar-fill" id="scanFill"></div></div>
+</div>
+
+<!-- SLIDE 3: Issues / Score -->
+<div class="slide" id="s3">
+  <div class="bc-logo">BLUE <span>CANVAS</span></div>
+  <h2 class="s3-title">Workflow Efficiency Score</h2>
+  <p class="s3-sub">Based on your current recruitment process</p>
+  <div class="score-ring-wrap">
+    <svg width="130" height="130" viewBox="0 0 130 130">
+      <circle cx="65" cy="65" r="55" fill="none" stroke="#eee" stroke-width="8"/>
+      <circle id="scoreRing" cx="65" cy="65" r="55" fill="none" stroke="var(--red)" stroke-width="8" stroke-linecap="round" stroke-dasharray="345.6" stroke-dashoffset="345.6" transform="rotate(-90 65 65)"/>
+      <text x="65" y="60" text-anchor="middle" font-size="32" font-weight="800" fill="var(--text)"><tspan id="scoreNum">0</tspan></text>
+      <text x="65" y="78" text-anchor="middle" font-size="11" fill="var(--text-light)">out of 100</text>
+    </svg>
+    <div class="score-label">⚠️ Significant time being lost</div>
+  </div>
+  <div class="issues-list">
+    <div class="issue-item">
+      <div class="issue-bullet crit"></div>
+      <div class="issue-text"><strong>30-45 min per cover letter</strong> — manual writing from notes is your biggest bottleneck</div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-bullet crit"></div>
+      <div class="issue-text"><strong>Word docs lack professional impact</strong> — clients judge quality on presentation</div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-bullet warn"></div>
+      <div class="issue-text"><strong>CoRecruit data isn't flowing downstream</strong> — transcriptions sit unused for cover letters</div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-bullet warn"></div>
+      <div class="issue-text"><strong>No automation between steps</strong> — interview → notes → letter → format all separate</div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 4: Before / After -->
+<div class="slide" id="s4">
+  <div class="bc-logo">BLUE <span>CANVAS</span></div>
+  <h2 class="s4-title">The Transformation</h2>
+  <div class="ba-container">
+    <div class="ba-card">
+      <div class="ba-header">
+        <div class="ba-badge before">Before</div>
+        <div class="ba-label">Current Workflow</div>
+      </div>
+      <div class="ba-content">
+        📞 Interview candidate (30 min)<br>
+        📝 Type up notes manually (15 min)<br>
+        📄 Write cover letter in Word (30-45 min)<br>
+        🎨 Try to format it nicely (15 min)<br>
+        📧 Send plain Word doc to client<br><br>
+        <strong style="color:#dc2626">⏱️ Total: 90-105 min per candidate</strong>
+      </div>
+    </div>
+    <div class="ba-arrow">⬇️</div>
+    <div class="ba-card">
+      <div class="ba-header">
+        <div class="ba-badge after">After</div>
+        <div class="ba-label">AI-Powered Workflow</div>
+      </div>
+      <div class="ba-content">
+        📞 Interview candidate (30 min)<br>
+        🤖 CoRecruit auto-transcribes notes<br>
+        ⚡ AI generates professional cover letter<br>
+        ✨ Branded PDF auto-created<br>
+        📖 One-click Flipbook link sent to client<br><br>
+        <strong style="color:#16a34a">⏱️ Total: 32 min per candidate (2 min admin)</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 5: The Pipeline -->
+<div class="slide" id="s5">
+  <div class="bc-logo">BLUE <span>CANVAS</span></div>
+  <h2 class="s5-title">Your AI Pipeline</h2>
+  <p class="s5-sub">How we connect your existing tools into one seamless flow</p>
+  <div class="pipeline">
+    <div class="pipe-step" data-delay="300">
+      <div class="pipe-num">1</div>
+      <div class="pipe-text">Interview via any channel<br><span>Phone, Zoom, Teams, in-person</span></div>
+    </div>
+    <div class="pipe-connector"></div>
+    <div class="pipe-step" data-delay="600">
+      <div class="pipe-num">2</div>
+      <div class="pipe-text">CoRecruit captures & transcribes<br><span>Automatic notes, no typing needed</span></div>
+    </div>
+    <div class="pipe-connector"></div>
+    <div class="pipe-step" data-delay="900">
+      <div class="pipe-num">3</div>
+      <div class="pipe-text">AI writes the cover letter<br><span>Tailored to role, company & candidate</span></div>
+    </div>
+    <div class="pipe-connector"></div>
+    <div class="pipe-step" data-delay="1200">
+      <div class="pipe-num">4</div>
+      <div class="pipe-text">Branded PDF generated<br><span>Professional design, your logo & colours</span></div>
+    </div>
+    <div class="pipe-connector"></div>
+    <div class="pipe-step" data-delay="1500">
+      <div class="pipe-num">5</div>
+      <div class="pipe-text">Flipbook link shared with client<br><span>Interactive, trackable, impressive</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 6: Chat Demo -->
+<div class="slide" id="s6">
+  <div class="bc-logo">BLUE <span>CANVAS</span></div>
+  <h2 class="s6-title">See It In Action</h2>
+  <p class="s6-sub">Your AI cover letter assistant</p>
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-msg chat-user" style="animation-delay:0s">
+      <div class="chat-bubble">Just finished interviewing Sarah Thompson for the Senior Accountant role at Deloitte. Notes are in CoRecruit.</div>
+    </div>
+    <div class="chat-msg chat-bot" style="animation-delay:1s">
+      <div class="chat-bot-label">🤖 AI Assistant</div>
+      <div class="chat-bubble">Found Sarah's interview notes from CoRecruit. She has 8 years audit experience, ACA qualified, led a team of 6 at PwC. Generating cover letter now...</div>
+    </div>
+    <div class="chat-msg chat-bot" style="animation-delay:2.2s">
+      <div class="chat-bot-label">🤖 AI Assistant</div>
+      <div class="chat-bubble">✅ Cover letter generated! Highlighted her audit methodology expertise and team leadership — matched against Deloitte's job spec.<br><br>📄 <strong>PDF ready</strong> — branded with your agency's design<br>📖 <strong>Flipbook link:</strong> share.flip.book/sarah-t-deloitte<br><br>Want me to adjust the tone or add anything?</div>
+    </div>
+    <div class="chat-msg chat-user" style="animation-delay:3.5s">
+      <div class="chat-bubble">Perfect. Send the flipbook link to the client contact at Deloitte.</div>
+    </div>
+    <div class="chat-msg chat-bot" style="animation-delay:4.5s">
+      <div class="chat-bot-label">🤖 AI Assistant</div>
+      <div class="chat-bubble">Done ✅ Flipbook link sent to hiring manager. You'll get a notification when they open it. Total time from interview end: 3 minutes.</div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 7: ROI -->
+<div class="slide" id="s7">
+  <div class="bc-logo">BLUE <span>CANVAS</span></div>
+  <h2 class="s7-title">The Numbers</h2>
+  <p class="s7-sub">What this means for your agency</p>
+  <div class="roi-grid">
+    <div class="roi-card">
+      <div class="roi-num accent">45 min</div>
+      <div class="roi-label">Saved per cover letter</div>
+    </div>
+    <div class="roi-card">
+      <div class="roi-num">15 hrs</div>
+      <div class="roi-label">Saved per week<br>(20 candidates)</div>
+    </div>
+    <div class="roi-card">
+      <div class="roi-num accent">3x</div>
+      <div class="roi-label">More candidates processed daily</div>
+    </div>
+    <div class="roi-card">
+      <div class="roi-num">📖</div>
+      <div class="roi-label">Professional flipbook output clients love</div>
+    </div>
+  </div>
+  <div class="roi-bottom">
+    <div class="roi-label" style="margin-bottom:8px">More placements, same team size</div>
+    <div class="roi-num" style="font-size:22px;color:var(--blue)">Cover letters that win clients</div>
+  </div>
+</div>
+
+<!-- SLIDE 8: CTA -->
+<div class="slide" id="s8">
+  <div class="bc-logo">BLUE <span>CANVAS</span></div>
+  <h2 class="s8-title">Ready to automate?</h2>
+  <p class="s8-sub">Let's build your AI cover letter pipeline. We can have a working prototype in days, not months.</p>
+  <div class="cta-name">PJ Patterson</div>
+  <div class="cta-role">Blue Canvas AI • Derry</div>
+  <div class="cta-buttons">
+    <a href="tel:+447935217762" class="cta-btn phone">📞 Call PJ</a>
+    <a href="https://wa.me/447935217762" class="cta-btn whatsapp">💬 WhatsApp</a>
+    <a href="mailto:contact@bluecanvas.ai" class="cta-btn email">✉️ Email</a>
+  </div>
+  <div class="cta-footer">Blue Canvas AI © 2026 — bluecanvas.ai</div>
+</div>
+
+<div class="progress" id="progress">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<div class="tap-hint">Tap right side to continue →</div>
+
+<script>
+let current = 0;
+const total = 8;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+
+function goTo(n) {
+  if (n < 0 || n >= total) return;
+  const goingForward = n > current;
+  slides[current].classList.remove('active', 'prev');
+  if (goingForward) slides[current].classList.add('prev');
+  current = n;
+  slides[current].classList.remove('prev');
+  slides[current].classList.add('active');
+  dots.forEach((d,i) => d.classList.toggle('active', i === current));
+  onSlideEnter(current);
+}
+function nextSlide() { goTo(current + 1); }
+function prevSlide() { goTo(current - 1); }
+
+// Navigation
+document.addEventListener('click', e => {
+  if (e.target.closest('a')) return;
+  if (e.clientX > window.innerWidth * 0.6) nextSlide();
+  else if (e.clientX < window.innerWidth * 0.4) prevSlide();
+});
+let tx = 0;
+document.addEventListener('touchstart', e => tx = e.touches[0].clientX);
+document.addEventListener('touchend', e => {
+  const d = tx - e.changedTouches[0].clientX;
+  if (Math.abs(d) > 50) d > 0 ? nextSlide() : prevSlide();
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+  if (e.key === 'ArrowLeft') prevSlide();
+});
+
+// Slide-specific animations
+function onSlideEnter(idx) {
+  if (idx === 1) animateScan();
+  if (idx === 2) animateScore();
+  if (idx === 4) animatePipeline();
+}
+
+function animateScan() {
+  const steps = document.querySelectorAll('#s2 .scan-step');
+  steps.forEach(s => {
+    const delay = parseInt(s.dataset.delay);
+    setTimeout(() => s.classList.add('visible'), delay);
+  });
+  setTimeout(() => {
+    document.getElementById('scanFill').style.width = '100%';
+  }, 300);
+}
+
+function animateScore() {
+  const target = 32;
+  const ring = document.getElementById('scoreRing');
+  const num = document.getElementById('scoreNum');
+  const circumference = 345.6;
+  let count = 0;
+  const interval = setInterval(() => {
+    count++;
+    num.textContent = count;
+    ring.setAttribute('stroke-dashoffset', circumference - (circumference * count / 100));
+    if (count >= target) clearInterval(interval);
+  }, 30);
+}
+
+function animatePipeline() {
+  const steps = document.querySelectorAll('#s5 .pipe-step');
+  steps.forEach(s => {
+    const delay = parseInt(s.dataset.delay);
+    setTimeout(() => s.classList.add('visible'), delay);
+  });
+}
+
+// Init first slide
+onSlideEnter(0);
+</script>
+</body>
+</html>
