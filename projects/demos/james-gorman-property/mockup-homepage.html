@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>James Gorman Property | Derry's Trusted Estate Agent</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+  :root {
+    --navy: #1a2744;
+    --navy-light: #253557;
+    --gold: #c9a96e;
+    --gold-light: #d4bb8a;
+    --gold-pale: #f5eedf;
+    --warm-white: #faf8f5;
+    --cream: #f5f1eb;
+    --light-grey: #e8e4dd;
+    --medium-grey: #9ca3af;
+    --text-dark: #1a2744;
+    --text-body: #4a5568;
+    --text-light: #7a8599;
+    --white: #ffffff;
+    --shadow-sm: 0 1px 3px rgba(26,39,68,0.06);
+    --shadow-md: 0 4px 16px rgba(26,39,68,0.08);
+    --shadow-lg: 0 8px 32px rgba(26,39,68,0.12);
+    --shadow-xl: 0 16px 48px rgba(26,39,68,0.16);
+    --radius: 8px;
+    --radius-lg: 12px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-body);
+    background: var(--warm-white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ─── Top Bar ─── */
+  .top-bar {
+    background: var(--navy);
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+    padding: 8px 0;
+    letter-spacing: 0.3px;
+  }
+  .top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-bar a { color: var(--gold-light); text-decoration: none; }
+  .top-bar a:hover { color: var(--gold); }
+  .top-bar-left { display: flex; gap: 24px; align-items: center; }
+  .top-bar-right { display: flex; gap: 20px; align-items: center; }
+
+  /* ─── Container ─── */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ─── Header ─── */
+  header {
+    background: var(--white);
+    border-bottom: 1px solid rgba(26,39,68,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+    background: rgba(255,255,255,0.95);
+  }
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+  }
+  .logo-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--navy);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .logo-icon::after {
+    content: 'JG';
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+  .logo-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--navy);
+    letter-spacing: 0.5px;
+  }
+  .logo-sub {
+    font-size: 11px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+  nav { display: flex; align-items: center; gap: 32px; }
+  nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: color 0.2s;
+    position: relative;
+  }
+  nav a:hover { color: var(--gold); }
+  nav a.active { color: var(--navy); }
+  nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gold);
+    border-radius: 1px;
+  }
+  .nav-cta {
+    background: var(--navy) !important;
+    color: var(--white) !important;
+    padding: 10px 22px;
+    border-radius: var(--radius);
+    font-weight: 600 !important;
+    transition: all 0.2s !important;
+    letter-spacing: 0.3px;
+  }
+  .nav-cta:hover {
+    background: var(--navy-light) !important;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
+
+  /* ─── Hero ─── */
+  .hero {
+    position: relative;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a2744 0%, #253557 40%, #2d4a6f 70%, #1a2744 100%);
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse at 20% 80%, rgba(201,169,110,0.15) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, rgba(201,169,110,0.08) 0%, transparent 40%),
+      linear-gradient(180deg, rgba(0,0,0,0.1) 0%, transparent 30%);
+    z-index: 1;
+  }
+  /* Decorative pattern overlay */
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.03;
+    background-image: 
+      linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
+      linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
+      linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
+      linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px;
+    z-index: 1;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 80px 0 100px;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(201,169,110,0.15);
+    border: 1px solid rgba(201,169,110,0.3);
+    color: var(--gold-light);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 28px;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(10px);
+  }
+  .hero-badge svg { width: 14px; height: 14px; fill: var(--gold); }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.15;
+    max-width: 680px;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+  .hero p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.65);
+    max-width: 520px;
+    margin-bottom: 40px;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ─── Search Box ─── */
+  .search-box {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    max-width: 720px;
+    box-shadow: var(--shadow-xl);
+  }
+  .search-tabs {
+    display: flex;
+    gap: 2px;
+    padding: 0 8px;
+  }
+  .search-tab {
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    background: none;
+  }
+  .search-tab.active {
+    background: var(--navy);
+    color: var(--white);
+  }
+  .search-fields {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 0;
+  }
+  .search-field {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--text-dark);
+    background: transparent;
+    border-left: 1px solid var(--light-grey);
+  }
+  .search-field::placeholder { color: var(--medium-grey); }
+  .search-select {
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--text-dark);
+    background: transparent;
+    border-left: 1px solid var(--light-grey);
+    cursor: pointer;
+    -webkit-appearance: none;
+    min-width: 130px;
+  }
+  .search-btn {
+    background: var(--gold);
+    color: var(--white);
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+  }
+  .search-btn:hover {
+    background: var(--gold-light);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(201,169,110,0.4);
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 48px;
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    max-width: 520px;
+  }
+  .hero-stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--gold-light);
+  }
+  .hero-stat-label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 2px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ─── Section Styling ─── */
+  section {
+    padding: 96px 0;
+  }
+  .section-header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .section-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .section-subtitle {
+    font-size: 17px;
+    color: var(--text-light);
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* ─── Featured Properties ─── */
+  .properties-section { background: var(--warm-white); }
+  .properties-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .property-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+  .property-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+  }
+  .property-image {
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+  }
+  .property-image-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .prop-img-1 {
+    background: linear-gradient(135deg, #b8c6d4 0%, #8fa4b8 30%, #a3b5c4 60%, #c2cfd9 100%);
+  }
+  .prop-img-2 {
+    background: linear-gradient(135deg, #c4b8a0 0%, #a69882 30%, #b8ad98 60%, #d1c9b8 100%);
+  }
+  .prop-img-3 {
+    background: linear-gradient(135deg, #a8b8a0 0%, #8ca084 30%, #9aac92 60%, #bcc8b6 100%);
+  }
+  /* House silhouette overlay */
+  .property-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 55%;
+    background: rgba(26,39,68,0.08);
+    clip-path: polygon(50% 10%, 0% 45%, 0% 100%, 100% 100%, 100% 45%);
+  }
+  .property-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: var(--navy);
+    color: var(--white);
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 2;
+  }
+  .property-badge.sold {
+    background: #c0392b;
+  }
+  .property-badge.new {
+    background: var(--gold);
+  }
+  .property-images-count {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(0,0,0,0.55);
+    color: var(--white);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    backdrop-filter: blur(4px);
+    z-index: 2;
+  }
+  .property-info {
+    padding: 22px 24px 24px;
+  }
+  .property-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .property-address {
+    font-size: 15px;
+    color: var(--text-body);
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+  .property-area {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 16px;
+  }
+  .property-features {
+    display: flex;
+    gap: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--cream);
+  }
+  .property-feature {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--text-light);
+  }
+  .property-feature svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--gold);
+  }
+
+  .view-all-link {
+    text-align: center;
+    margin-top: 44px;
+  }
+  .view-all-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 28px;
+    border: 2px solid var(--navy);
+    border-radius: var(--radius);
+    transition: all 0.2s;
+  }
+  .view-all-link a:hover {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  /* ─── Why Section ─── */
+  .why-section {
+    background: var(--white);
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  .why-card {
+    text-align: center;
+    padding: 36px 24px;
+    border-radius: var(--radius-lg);
+    transition: all 0.3s;
+    border: 1px solid transparent;
+  }
+  .why-card:hover {
+    background: var(--cream);
+    border-color: var(--light-grey);
+  }
+  .why-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--gold-pale);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
+  .why-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--gold);
+  }
+  .why-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .why-card p {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+
+  /* ─── Testimonials ─── */
+  .testimonials-section {
+    background: var(--navy);
+    position: relative;
+    overflow: hidden;
+  }
+  .testimonials-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 120%, rgba(201,169,110,0.08) 0%, transparent 60%);
+  }
+  .testimonials-section .section-label { color: var(--gold-light); }
+  .testimonials-section .section-title { color: var(--white); }
+  .testimonials-section .section-subtitle { color: rgba(255,255,255,0.5); }
+
+  .trustpilot-header {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .trustpilot-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255,255,255,0.06);
+    padding: 10px 24px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.08);
+    margin-bottom: 40px;
+  }
+  .trustpilot-stars {
+    display: flex;
+    gap: 3px;
+  }
+  .star {
+    width: 22px;
+    height: 22px;
+    background: #00b67a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+  }
+  .star svg { width: 14px; height: 14px; fill: white; }
+  .trustpilot-score {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .trustpilot-label {
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+  }
+  .testimonial-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s;
+  }
+  .testimonial-card:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(201,169,110,0.2);
+    transform: translateY(-2px);
+  }
+  .testimonial-stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 16px;
+  }
+  .testimonial-stars .star {
+    width: 18px;
+    height: 18px;
+  }
+  .testimonial-stars .star svg { width: 12px; height: 12px; }
+  .testimonial-text {
+    color: rgba(255,255,255,0.8);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+  }
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .testimonial-name {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .testimonial-date {
+    color: rgba(255,255,255,0.4);
+    font-size: 12px;
+  }
+
+  /* ─── CTA Section ─── */
+  .cta-section {
+    background: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,169,110,0.1) 0%, transparent 70%);
+  }
+  .cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    position: relative;
+    z-index: 1;
+  }
+  .cta-content {
+    max-width: 520px;
+  }
+  .cta-content .section-label { text-align: left; }
+  .cta-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .cta-content p {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 32px;
+    line-height: 1.7;
+  }
+  .cta-form {
+    display: flex;
+    gap: 12px;
+  }
+  .cta-input {
+    flex: 1;
+    padding: 14px 20px;
+    border: 2px solid var(--light-grey);
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+    background: var(--white);
+  }
+  .cta-input:focus { border-color: var(--gold); }
+  .cta-button {
+    background: var(--gold);
+    color: var(--white);
+    border: none;
+    padding: 14px 32px;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+  .cta-button:hover {
+    background: var(--gold-light);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(201,169,110,0.35);
+  }
+  .cta-image {
+    width: 400px;
+    height: 320px;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, #c4b8a0, #a69882, #8fa092);
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-lg);
+  }
+  .cta-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(26,39,68,0.3));
+  }
+  .cta-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 60%;
+    background: rgba(26,39,68,0.1);
+    clip-path: polygon(50% 8%, 0% 40%, 0% 100%, 100% 100%, 100% 40%);
+  }
+  .cta-overlay-text {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    z-index: 2;
+    color: var(--white);
+  }
+  .cta-overlay-text span {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .cta-overlay-text small {
+    font-size: 13px;
+    opacity: 0.8;
+  }
+
+  /* ─── Areas Section ─── */
+  .areas-section { background: var(--white); }
+  .areas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .area-card {
+    position: relative;
+    height: 200px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.35s;
+  }
+  .area-card:hover { transform: translateY(-4px); }
+  .area-card:hover .area-overlay { opacity: 0.7; }
+  .area-bg {
+    width: 100%;
+    height: 100%;
+  }
+  .area-1 { background: linear-gradient(135deg, #7fa0b8 0%, #5c8099 100%); }
+  .area-2 { background: linear-gradient(135deg, #8fa07f 0%, #6b8e5c 100%); }
+  .area-3 { background: linear-gradient(135deg, #b8a07f 0%, #99805c 100%); }
+  .area-4 { background: linear-gradient(135deg, #a08fb8 0%, #806b99 100%); }
+  .area-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 30%, rgba(26,39,68,0.85));
+    transition: opacity 0.3s;
+    opacity: 0.9;
+  }
+  .area-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+  }
+  .area-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .area-count {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+  }
+
+  /* ─── Footer ─── */
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.6);
+    padding: 72px 0 0;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer-brand .logo-name { color: var(--white); }
+  .footer-brand .logo-sub { color: rgba(255,255,255,0.4); }
+  .footer-brand p {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.5);
+  }
+  .footer-col h4 {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 10px; }
+  .footer-col ul a {
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+  }
+  .footer-col ul a:hover { color: var(--gold-light); }
+  .footer-bottom {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+  }
+  .footer-bottom a {
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+  }
+  .footer-socials {
+    display: flex;
+    gap: 16px;
+  }
+  .footer-socials a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  .footer-socials a:hover {
+    background: var(--gold);
+  }
+  .footer-socials svg {
+    width: 16px;
+    height: 16px;
+    fill: rgba(255,255,255,0.6);
+  }
+
+  /* ─── AI Chat Widget ─── */
+  .chat-widget {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 1000;
+  }
+  .chat-bubble {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(201,169,110,0.4);
+    transition: all 0.3s;
+    position: relative;
+  }
+  .chat-bubble:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 28px rgba(201,169,110,0.5);
+  }
+  .chat-bubble svg {
+    width: 26px;
+    height: 26px;
+    fill: var(--white);
+  }
+  .chat-badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 18px;
+    height: 18px;
+    background: #e74c3c;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: var(--white);
+    font-weight: 700;
+  }
+  .chat-tooltip {
+    position: absolute;
+    bottom: 72px;
+    right: 0;
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    box-shadow: var(--shadow-lg);
+    white-space: nowrap;
+    font-size: 14px;
+    color: var(--text-dark);
+    font-weight: 500;
+    animation: chatBounce 3s ease-in-out infinite;
+  }
+  .chat-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    right: 24px;
+    width: 12px;
+    height: 12px;
+    background: var(--white);
+    transform: rotate(45deg);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+  }
+  .chat-tooltip .ai-sparkle {
+    color: var(--gold);
+    margin-right: 4px;
+  }
+
+  @keyframes chatBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+
+  /* ─── Responsive ─── */
+  @media (max-width: 1024px) {
+    .hero h1 { font-size: 42px; }
+    .properties-grid { grid-template-columns: repeat(2, 1fr); }
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+    .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+    .areas-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    .cta-image { display: none; }
+  }
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 32px; }
+    .search-box { flex-direction: column; }
+    .search-tabs { width: 100%; justify-content: center; }
+    .search-fields { flex-direction: column; width: 100%; }
+    .search-field, .search-select { border-left: none; border-top: 1px solid var(--light-grey); width: 100%; }
+    .search-btn { width: 100%; }
+    .properties-grid { grid-template-columns: 1fr; }
+    .why-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .cta-form { flex-direction: column; }
+    .hero-stats { gap: 24px; }
+    .section-title { font-size: 30px; }
+    nav { display: none; }
+    .top-bar { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <span>📞 <a href="tel:02871234567">028 7123 4567</a></span>
+      <span>✉️ <a href="mailto:info@jamesgormanproperty.com">info@jamesgormanproperty.com</a></span>
+    </div>
+    <div class="top-bar-right">
+      <span>Mon–Fri 9am–5:30pm | Sat 10am–2pm</span>
+      <span>⭐ 4.9 on Trustpilot</span>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon"></div>
+        <div class="logo-text">
+          <span class="logo-name">James Gorman</span>
+          <span class="logo-sub">Property</span>
+        </div>
+      </a>
+      <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">Buy</a>
+        <a href="#">Rent</a>
+        <a href="#">Sell</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#" class="nav-cta">Free Valuation</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-badge">
+      <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+      Rated 4.9★ on Trustpilot — Derry's Most Trusted Agent
+    </div>
+    <h1>Find Your <em>Perfect Home</em> in the Heart of Derry</h1>
+    <p>With decades of local expertise and a personal touch, James Gorman Property helps families across the North West find, sell, and love their homes.</p>
+
+    <div class="search-box">
+      <div class="search-tabs">
+        <button class="search-tab active">Buy</button>
+        <button class="search-tab">Rent</button>
+      </div>
+      <div class="search-fields">
+        <input type="text" class="search-field" placeholder="e.g. Culmore, Waterside, BT48...">
+        <select class="search-select">
+          <option>Any Price</option>
+          <option>Up to £100k</option>
+          <option>Up to £150k</option>
+          <option>Up to £200k</option>
+          <option>Up to £300k</option>
+          <option>£300k+</option>
+        </select>
+        <select class="search-select">
+          <option>Any Type</option>
+          <option>Detached</option>
+          <option>Semi-Detached</option>
+          <option>Terrace</option>
+          <option>Apartment</option>
+          <option>Bungalow</option>
+        </select>
+      </div>
+      <button class="search-btn">Search Properties</button>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-number">250+</div>
+        <div class="hero-stat-label">Properties Sold</div>
+      </div>
+      <div>
+        <div class="hero-stat-number">4.9★</div>
+        <div class="hero-stat-label">Trustpilot Rating</div>
+      </div>
+      <div>
+        <div class="hero-stat-number">15+</div>
+        <div class="hero-stat-label">Years Experience</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Properties -->
+<section class="properties-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Featured Listings</div>
+      <h2 class="section-title">Properties You'll Love</h2>
+      <p class="section-subtitle">Hand-picked properties across Derry and the North West, from starter homes to family forever homes.</p>
+    </div>
+
+    <div class="properties-grid">
+      <!-- Property 1 -->
+      <div class="property-card">
+        <div class="property-image">
+          <div class="property-image-bg prop-img-1"></div>
+          <span class="property-badge new">Just Listed</span>
+          <span class="property-images-count">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+            12 photos
+          </span>
+        </div>
+        <div class="property-info">
+          <div class="property-price">£185,000</div>
+          <div class="property-address">42 Beechwood Avenue, Culmore</div>
+          <div class="property-area">BT48 8NX · Semi-Detached</div>
+          <div class="property-features">
+            <span class="property-feature">
+              <svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+              3 Bed
+            </span>
+            <span class="property-feature">
+              <svg viewBox="0 0 24 24"><path d="M7 7c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm11.17 1H20v2h-4v6h-2v-2h-2v2H8v-2H6v2H4v-6h2V8h2.17C8.06 7.69 8 7.36 8 7c0-1.66 1.34-3 3-3s3 1.34 3 3c0 .36-.06.69-.17 1z"/></svg>
+              1 Bath
+            </span>
+            <span class="property-feature">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Garden
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 2 -->
+      <div class="property-card">
+        <div class="property-image">
+          <div class="property-image-bg prop-img-2"></div>
+          <span class="property-badge">Featured</span>
+          <span class="property-images-count">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+            8 photos
+          </span>
+        </div>
+        <div class="property-info">
+          <div class="property-price">£245,000</div>
+          <div class="property-address">17 Ardmore Gardens, Waterside</div>
+          <div class="property-area">BT47 5PL · Detached</div>
+          <div class="property-features">
+            <span class="property-feature">
+              <svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+              4 Bed
+            </span>
+            <span class="property-feature">
+              <svg viewBox="0 0 24 24"><path d="M7 7c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm11.17 1H20v2h-4v6h-2v-2h-2v2H8v-2H6v2H4v-6h2V8h2.17C8.06 7.69 8 7.36 8 7c0-1.66 1.34-3 3-3s3 1.34 3 3c0 .36-.06.69-.17 1z"/></svg>
+              2 Bath
+            </span>
+            <span class="property-feature">
+              <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16z"/></svg>
+              Driveway
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 3 -->
+      <div class="property-card">
+        <div class="property-image">
+          <div class="property-image-bg prop-img-3"></div>
+          <span class="property-badge sold">Sale Agreed</span>
+          <span class="property-images-count">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+            15 photos
+          </span>
+        </div>
+        <div class="property-info">
+          <div class="property-price">£159,950</div>
+          <div class="property-address">8 Rosemount Crescent, Rosemount</div>
+          <div class="property-area">BT48 0JE · Terrace</div>
+          <div class="property-features">
+            <span class="property-feature">
+              <svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+              2 Bed
+            </span>
+            <span class="property-feature">
+              <svg viewBox="0 0 24 24"><path d="M7 7c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm11.17 1H20v2h-4v6h-2v-2h-2v2H8v-2H6v2H4v-6h2V8h2.17C8.06 7.69 8 7.36 8 7c0-1.66 1.34-3 3-3s3 1.34 3 3c0 .36-.06.69-.17 1z"/></svg>
+              1 Bath
+            </span>
+            <span class="property-feature">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Renovated
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="view-all-link">
+      <a href="#">View All Properties →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Why James Gorman -->
+<section class="why-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Why Choose Us</div>
+      <h2 class="section-title">The James Gorman Difference</h2>
+      <p class="section-subtitle">We're not a faceless corporate agency. We're your neighbours, and we care about getting you the best result.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <h3>Local Expertise</h3>
+        <p>Born and raised in Derry. We know every street, every school catchment, every hidden gem in the North West.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <h3>Personal Service</h3>
+        <p>You'll deal with James directly — no call centres, no being passed around. Your sale, your dedicated agent.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+        </div>
+        <h3>Best Price Guaranteed</h3>
+        <p>Our marketing strategy and negotiation skills consistently achieve above-asking prices for our sellers.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <h3>Trusted & Transparent</h3>
+        <p>4.9★ on Trustpilot with 20+ five-star reviews. No hidden fees, no surprises — just honest, upfront service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">What Our Clients Say</div>
+      <h2 class="section-title">Trusted by Derry Homeowners</h2>
+      <p class="section-subtitle">Don't just take our word for it — hear from the families we've helped.</p>
+    </div>
+
+    <div class="trustpilot-header">
+      <div class="trustpilot-rating">
+        <div class="trustpilot-stars">
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+        </div>
+        <span class="trustpilot-score">4.9 / 5.0</span>
+        <span class="trustpilot-label">Based on 23 reviews</span>
+      </div>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+        </div>
+        <p class="testimonial-text">"James made the whole process so easy. From valuation to sale agreed in just three weeks. He kept us informed every step of the way and got us above asking price. Couldn't recommend highly enough!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SM</div>
+          <div>
+            <div class="testimonial-name">Sinéad McCallion</div>
+            <div class="testimonial-date">Sold in Culmore · 2 months ago</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+        </div>
+        <p class="testimonial-text">"As first-time buyers we were so nervous, but James guided us through everything. He found us the perfect wee house in the Waterside and negotiated a brilliant price. A gentleman and a professional."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">CO</div>
+          <div>
+            <div class="testimonial-name">Ciaran O'Doherty</div>
+            <div class="testimonial-date">Bought in Waterside · 1 month ago</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+          <div class="star"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></div>
+        </div>
+        <p class="testimonial-text">"Third time using James now — for buying and selling. He's head and shoulders above every other agent in the city. Honest, hardworking, and genuinely cares about his clients. The only estate agent I'd trust."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MD</div>
+          <div>
+            <div class="testimonial-name">Marie Doherty</div>
+            <div class="testimonial-date">Sold in Rosemount · 3 weeks ago</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Areas We Cover -->
+<section class="areas-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Areas We Cover</div>
+      <h2 class="section-title">Across Derry & the North West</h2>
+      <p class="section-subtitle">From the city centre to the countryside, we've got the North West covered.</p>
+    </div>
+    <div class="areas-grid">
+      <div class="area-card">
+        <div class="area-bg area-1"></div>
+        <div class="area-overlay"></div>
+        <div class="area-info">
+          <div class="area-name">Culmore & Northland</div>
+          <div class="area-count">12 properties</div>
+        </div>
+      </div>
+      <div class="area-card">
+        <div class="area-bg area-2"></div>
+        <div class="area-overlay"></div>
+        <div class="area-info">
+          <div class="area-name">Waterside</div>
+          <div class="area-count">8 properties</div>
+        </div>
+      </div>
+      <div class="area-card">
+        <div class="area-bg area-3"></div>
+        <div class="area-overlay"></div>
+        <div class="area-info">
+          <div class="area-name">Rosemount & Bogside</div>
+          <div class="area-count">6 properties</div>
+        </div>
+      </div>
+      <div class="area-card">
+        <div class="area-bg area-4"></div>
+        <div class="area-overlay"></div>
+        <div class="area-info">
+          <div class="area-name">Eglinton & Limavady</div>
+          <div class="area-count">5 properties</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-content">
+        <div class="section-label">Free Valuation</div>
+        <h2>Thinking of Selling?<br>Get Your Free Valuation Today</h2>
+        <p>Find out what your home is worth with a no-obligation valuation from James Gorman Property. We'll visit your home, assess the market, and give you an honest, accurate figure.</p>
+        <div class="cta-form">
+          <input type="text" class="cta-input" placeholder="Your postcode (e.g. BT48 7NN)">
+          <button class="cta-button">Book Valuation</button>
+        </div>
+      </div>
+      <div class="cta-image">
+        <div class="cta-overlay-text">
+          <span>Your Home, Our Priority</span>
+          <small>Free, no-obligation valuation</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">
+          <span class="logo-name">James Gorman</span>
+          <span class="logo-sub">Property</span>
+        </div>
+        <p>Derry's trusted estate agent. Helping families buy, sell, and let homes across the North West with honesty, expertise, and a personal touch.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Properties for Sale</a></li>
+          <li><a href="#">Properties to Rent</a></li>
+          <li><a href="#">Free Valuation</a></li>
+          <li><a href="#">About James</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Popular Areas</h4>
+        <ul>
+          <li><a href="#">Culmore</a></li>
+          <li><a href="#">Waterside</a></li>
+          <li><a href="#">Rosemount</a></li>
+          <li><a href="#">Eglinton</a></li>
+          <li><a href="#">Limavady</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="#">📞 028 7123 4567</a></li>
+          <li><a href="#">✉️ info@jamesgormanproperty.com</a></li>
+          <li><a href="#">📍 Strand Road, Derry BT48</a></li>
+          <li style="margin-top: 16px;"><a href="#">Mon–Fri: 9am–5:30pm</a></li>
+          <li><a href="#">Sat: 10am–2pm</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 James Gorman Property. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- AI Chat Widget -->
+<div class="chat-widget">
+  <div class="chat-tooltip">
+    <span class="ai-sparkle">✨</span> Ask me anything about properties
+  </div>
+  <div class="chat-bubble">
+    <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+    <div class="chat-badge">1</div>
+  </div>
+</div>
+
+</body>
+</html>

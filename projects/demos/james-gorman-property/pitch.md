@@ -1,15 +1,27 @@
 # WhatsApp Pitch — James Gorman Property
 
-## Message
+## Message for PJ to send James:
 
-Hey James 👋 PJ here from Blue Canvas. Hope you're well mate.
+---
 
-Had our AI run a full audit on your website — found 10 issues hurting your Google rankings, including your page URLs all being named "/blank" and some Wix default text still showing on the homepage.
+Hey James 👋 Phil here from Blue Canvas AI — we're based in Derry too.
 
-Put together a quick interactive walkthrough showing what we'd fix and what it's worth:
+I put together a quick AI audit of your website and wanted to share it. Noticed a few things that could be costing you leads:
 
-👉 https://albiemorgan88-hash.github.io/showcase-james-gorman-property/
+🔴 No Google Business Profile — means you're invisible on Google Maps when people search "estate agent Derry"
+🔴 Your page URLs are still the Wix defaults (/blank-10 etc) — Google can't read them properly
+🔴 Placeholder text still showing on the homepage
 
-Takes 2 minutes to tap through. Your Trustpilot reviews are class by the way — 4.9 stars. We'd make sure Google actually shows those in search results with the right schema markup.
+Your Trustpilot reviews are class though — 4.9★ is brilliant. Problem is your website doesn't reflect how good you actually are.
 
-No pressure at all — just thought it was worth a look 👍
+Had a look at what AI could do for you — built a quick demo:
+
+🔗 https://albiemorgan88-hash.github.io/showcase-james-gorman-property/
+
+Takes 60 seconds to tap through. Think you'll find it interesting, especially the AI chat that books viewings 24/7 👀
+
+No pressure at all — just thought it was worth sharing. Happy to grab a coffee and chat if you're curious.
+
+Phil
+Blue Canvas AI
+📞 07935 217762

@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>42 Beechwood Avenue, Culmore, BT48 | James Gorman Property</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+  :root {
+    --navy: #1a2744;
+    --navy-light: #253557;
+    --gold: #c9a96e;
+    --gold-light: #d4bb8a;
+    --gold-pale: #f5eedf;
+    --warm-white: #faf8f5;
+    --cream: #f5f1eb;
+    --light-grey: #e8e4dd;
+    --medium-grey: #9ca3af;
+    --text-dark: #1a2744;
+    --text-body: #4a5568;
+    --text-light: #7a8599;
+    --white: #ffffff;
+    --shadow-sm: 0 1px 3px rgba(26,39,68,0.06);
+    --shadow-md: 0 4px 16px rgba(26,39,68,0.08);
+    --shadow-lg: 0 8px 32px rgba(26,39,68,0.12);
+    --shadow-xl: 0 16px 48px rgba(26,39,68,0.16);
+    --radius: 8px;
+    --radius-lg: 12px;
+    --green: #27ae60;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-body);
+    background: var(--warm-white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+  /* ─── Top Bar ─── */
+  .top-bar {
+    background: var(--navy);
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+    padding: 8px 0;
+  }
+  .top-bar .container { display: flex; justify-content: space-between; align-items: center; }
+  .top-bar a { color: var(--gold-light); text-decoration: none; }
+  .top-bar-left { display: flex; gap: 24px; }
+  .top-bar-right { display: flex; gap: 20px; }
+
+  /* ─── Header ─── */
+  header {
+    background: rgba(255,255,255,0.95);
+    border-bottom: 1px solid rgba(26,39,68,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+  }
+  .header-inner { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; }
+  .logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+  .logo-icon {
+    width: 44px; height: 44px; background: var(--navy); border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .logo-icon::after {
+    content: 'JG'; color: var(--gold); font-family: 'Playfair Display', serif;
+    font-weight: 700; font-size: 16px; letter-spacing: 1px;
+  }
+  .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+  .logo-name { font-family: 'Playfair Display', serif; font-weight: 600; font-size: 20px; color: var(--navy); }
+  .logo-sub { font-size: 11px; color: var(--text-light); text-transform: uppercase; letter-spacing: 2px; font-weight: 500; }
+  nav { display: flex; align-items: center; gap: 32px; }
+  nav a { text-decoration: none; color: var(--text-dark); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: var(--gold); }
+  .nav-cta {
+    background: var(--navy) !important; color: var(--white) !important;
+    padding: 10px 22px; border-radius: var(--radius); font-weight: 600 !important;
+    transition: all 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--navy-light) !important; transform: translateY(-1px); }
+
+  /* ─── Breadcrumb ─── */
+  .breadcrumb {
+    padding: 16px 0;
+    font-size: 13px;
+    color: var(--text-light);
+    border-bottom: 1px solid var(--light-grey);
+    background: var(--white);
+  }
+  .breadcrumb a { color: var(--text-light); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--gold); }
+  .breadcrumb span { margin: 0 8px; color: var(--light-grey); }
+
+  /* ─── Gallery ─── */
+  .gallery {
+    padding: 24px 0;
+    background: var(--white);
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 240px 240px;
+    gap: 8px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  .gallery-main {
+    grid-row: 1 / 3;
+    position: relative;
+    cursor: pointer;
+  }
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .gallery-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    transition: background 0.3s;
+  }
+  .gallery-item:hover::after {
+    background: rgba(0,0,0,0.08);
+  }
+  .gallery-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Gradient placeholders simulating house photos */
+  .gal-1 {
+    background: linear-gradient(160deg, #b8c6d4 0%, #8fa4b8 25%, #a3b5c4 50%, #ddd8d0 75%, #c2cfd9 100%);
+  }
+  .gal-2 {
+    background: linear-gradient(135deg, #d4cdc0 0%, #c4b8a0 40%, #b8a890 100%);
+  }
+  .gal-3 {
+    background: linear-gradient(135deg, #c8d4c0 0%, #aec0a6 50%, #98b090 100%);
+  }
+  .gal-4 {
+    background: linear-gradient(135deg, #e8e0d4 0%, #d4cec2 40%, #c8c0b4 100%);
+  }
+  .gal-5 {
+    background: linear-gradient(135deg, #ccd4e0 0%, #b0bcd0 50%, #98a8c0 100%);
+    position: relative;
+  }
+  /* House silhouettes */
+  .gallery-main::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 50%; transform: translateX(-50%);
+    width: 50%; height: 50%;
+    background: rgba(26,39,68,0.06);
+    clip-path: polygon(50% 5%, 0% 40%, 0% 100%, 100% 100%, 100% 40%);
+    z-index: 1;
+  }
+  .gallery-more {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background: rgba(0,0,0,0.6);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    backdrop-filter: blur(4px);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .gallery-more svg { width: 14px; height: 14px; fill: white; }
+
+  /* ─── Property Header ─── */
+  .property-header {
+    padding: 32px 0 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--light-grey);
+  }
+  .property-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 28px;
+  }
+  .property-title-area h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .property-location {
+    font-size: 16px;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .property-location svg { width: 16px; height: 16px; fill: var(--gold); }
+  .property-tags {
+    display: flex;
+    gap: 8px;
+  }
+  .property-tag {
+    padding: 5px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .tag-type { background: var(--gold-pale); color: var(--gold); }
+  .tag-status { background: #e8f5e9; color: var(--green); }
+  .tag-epc { background: #fff3e0; color: #e67e22; }
+
+  .property-price-area {
+    text-align: right;
+  }
+  .property-price-label {
+    font-size: 13px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .property-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+  .property-price-note {
+    font-size: 13px;
+    color: var(--text-light);
+  }
+  .property-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .action-btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid var(--light-grey);
+    background: var(--white);
+    color: var(--text-body);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s;
+    font-family: inherit;
+  }
+  .action-btn:hover { border-color: var(--gold); color: var(--gold); }
+  .action-btn svg { width: 14px; height: 14px; fill: currentColor; }
+
+  /* ─── Key Features Bar ─── */
+  .key-features-bar {
+    background: var(--white);
+    padding: 24px 0;
+  }
+  .features-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 700px;
+  }
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    background: var(--cream);
+    border-radius: var(--radius);
+    min-width: 0;
+  }
+  .feature-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--gold-pale);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .feature-icon svg { width: 20px; height: 20px; fill: var(--gold); }
+  .feature-text-label { font-size: 12px; color: var(--text-light); }
+  .feature-text-value { font-size: 16px; font-weight: 600; color: var(--navy); }
+
+  /* ─── Main Content Layout ─── */
+  .listing-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 40px;
+    padding: 40px 0 80px;
+  }
+
+  /* ─── Description ─── */
+  .section-block {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--light-grey);
+  }
+  .section-block:last-child { border-bottom: none; }
+  .section-block h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-block h2 .icon-circle {
+    width: 32px;
+    height: 32px;
+    background: var(--gold-pale);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-block h2 svg { width: 16px; height: 16px; fill: var(--gold); }
+  .description-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-body);
+  }
+  .description-text p { margin-bottom: 16px; }
+
+  /* ─── Features List ─── */
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .feature-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: var(--cream);
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--text-dark);
+  }
+  .feature-check {
+    width: 20px;
+    height: 20px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .feature-check svg { width: 12px; height: 12px; fill: var(--white); }
+
+  /* ─── Floorplan ─── */
+  .floorplan-placeholder {
+    width: 100%;
+    height: 300px;
+    background: var(--cream);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--light-grey);
+    color: var(--text-light);
+    gap: 12px;
+  }
+  .floorplan-placeholder svg { width: 48px; height: 48px; fill: var(--light-grey); }
+  .floorplan-placeholder span { font-size: 14px; font-weight: 500; }
+  .floorplan-placeholder small { font-size: 12px; }
+
+  /* ─── Map ─── */
+  .map-placeholder {
+    width: 100%;
+    height: 280px;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, #e8e4dd 0%, #d4d0c8 30%, #e0dcd4 60%, #d8d4cc 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .map-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* Road grid pattern */
+    background:
+      linear-gradient(0deg, transparent 49%, rgba(255,255,255,0.5) 49%, rgba(255,255,255,0.5) 51%, transparent 51%),
+      linear-gradient(90deg, transparent 49%, rgba(255,255,255,0.5) 49%, rgba(255,255,255,0.5) 51%, transparent 51%);
+    background-size: 60px 60px;
+    opacity: 0.4;
+  }
+  .map-placeholder::after {
+    content: '';
+    position: absolute;
+    /* Blue river line */
+    top: 30%;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: rgba(100, 149, 237, 0.25);
+    transform: rotate(-8deg) scaleX(1.2);
+    border-radius: 10px;
+  }
+  .map-pin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 2;
+  }
+  .map-pin-icon {
+    width: 36px;
+    height: 48px;
+    background: var(--navy);
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(26,39,68,0.3);
+  }
+  .map-pin-icon::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: var(--gold);
+    border-radius: 50%;
+    transform: rotate(45deg);
+  }
+  .map-pin-shadow {
+    width: 24px;
+    height: 8px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    margin: 4px auto 0;
+  }
+  .map-label {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: var(--white);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-dark);
+    box-shadow: var(--shadow-sm);
+    z-index: 2;
+  }
+  .map-label strong { color: var(--navy); }
+
+  /* ─── Sidebar ─── */
+  .sidebar-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(0,0,0,0.04);
+    position: sticky;
+    top: 100px;
+    margin-bottom: 24px;
+  }
+  .sidebar-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 20px;
+  }
+  .sidebar-agent {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--cream);
+  }
+  .agent-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--navy), var(--navy-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 18px;
+    flex-shrink: 0;
+    border: 2px solid var(--gold-pale);
+  }
+  .agent-info { flex: 1; }
+  .agent-name { font-weight: 600; color: var(--navy); font-size: 15px; }
+  .agent-role { font-size: 13px; color: var(--text-light); }
+  .agent-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4px;
+  }
+  .agent-rating .mini-star { width: 12px; height: 12px; fill: #f59e0b; }
+  .agent-rating span { font-size: 12px; color: var(--text-light); margin-left: 2px; }
+
+  .sidebar-form { display: flex; flex-direction: column; gap: 12px; }
+  .sidebar-input {
+    padding: 12px 16px;
+    border: 1px solid var(--light-grey);
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+    background: var(--warm-white);
+  }
+  .sidebar-input:focus { border-color: var(--gold); background: var(--white); }
+  .sidebar-textarea {
+    padding: 12px 16px;
+    border: 1px solid var(--light-grey);
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    resize: vertical;
+    min-height: 80px;
+    transition: border-color 0.2s;
+    background: var(--warm-white);
+  }
+  .sidebar-textarea:focus { border-color: var(--gold); background: var(--white); }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--white);
+    border: none;
+    padding: 14px 24px;
+    border-radius: var(--radius);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(201,169,110,0.4);
+  }
+  .btn-secondary {
+    background: var(--white);
+    color: var(--navy);
+    border: 2px solid var(--navy);
+    padding: 12px 24px;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .btn-secondary:hover { background: var(--navy); color: var(--white); }
+  .btn-secondary svg { width: 16px; height: 16px; fill: currentColor; }
+
+  .sidebar-note {
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: var(--gold-pale);
+    border-radius: var(--radius);
+    font-size: 13px;
+    color: var(--text-dark);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
+  }
+
+  /* ─── Mortgage Calculator Widget ─── */
+  .mortgage-widget {
+    background: var(--cream);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  .mortgage-widget h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .mortgage-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--light-grey);
+    font-size: 14px;
+  }
+  .mortgage-row:last-child { border-bottom: none; }
+  .mortgage-label { color: var(--text-light); }
+  .mortgage-value { color: var(--navy); font-weight: 600; }
+  .mortgage-monthly {
+    text-align: center;
+    padding: 16px 0 8px;
+  }
+  .mortgage-monthly-label {
+    font-size: 12px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .mortgage-monthly-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .mortgage-monthly-note {
+    font-size: 11px;
+    color: var(--text-light);
+    margin-top: 4px;
+  }
+
+  /* ─── Similar Properties ─── */
+  .similar-section {
+    background: var(--cream);
+    padding: 72px 0 80px;
+  }
+  .similar-section .section-header { text-align: left; margin-bottom: 36px; }
+  .similar-section .section-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+  .similar-section .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .similar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .similar-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+  .similar-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+  }
+  .similar-image {
+    height: 200px;
+    position: relative;
+  }
+  .similar-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 50%; transform: translateX(-50%);
+    width: 55%; height: 50%;
+    background: rgba(26,39,68,0.06);
+    clip-path: polygon(50% 10%, 0% 45%, 0% 100%, 100% 100%, 100% 45%);
+  }
+  .sim-img-1 { background: linear-gradient(135deg, #c4b8a0, #a69882, #b8a890); }
+  .sim-img-2 { background: linear-gradient(135deg, #a8b8a0, #8ca084, #9aac92); }
+  .sim-img-3 { background: linear-gradient(135deg, #b0b8c8, #8a98b0, #9aa8c0); }
+  .similar-info { padding: 20px; }
+  .similar-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .similar-address { font-size: 14px; color: var(--text-body); font-weight: 500; margin-bottom: 2px; }
+  .similar-area { font-size: 12px; color: var(--text-light); margin-bottom: 12px; }
+  .similar-features {
+    display: flex;
+    gap: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--cream);
+  }
+  .similar-feature {
+    font-size: 12px;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .similar-feature svg { width: 14px; height: 14px; fill: var(--gold); }
+
+  /* ─── EPC Section ─── */
+  .epc-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px;
+  }
+  .epc-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .epc-label {
+    width: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+  }
+  .epc-segment {
+    height: 22px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    font-size: 10px;
+    color: white;
+    font-weight: 600;
+    position: relative;
+  }
+  .epc-a { background: #1a8a3f; width: 30%; }
+  .epc-b { background: #3da643; width: 40%; }
+  .epc-c { background: #8cc63f; width: 50%; }
+  .epc-d { background: #ffd500; width: 60%; color: #333; }
+  .epc-e { background: #f7a600; width: 70%; }
+  .epc-f { background: #ef6c00; width: 80%; }
+  .epc-g { background: #e62e00; width: 90%; }
+  .epc-current {
+    position: relative;
+  }
+  .epc-current::after {
+    content: '◄ Current';
+    position: absolute;
+    right: -70px;
+    font-size: 11px;
+    color: var(--navy);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* ─── Footer ─── */
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.6);
+    padding: 48px 0 24px;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+  }
+  .footer-inner a { color: var(--gold-light); text-decoration: none; }
+
+  /* ─── Chat Widget ─── */
+  .chat-widget { position: fixed; bottom: 28px; right: 28px; z-index: 1000; }
+  .chat-bubble {
+    width: 60px; height: 60px; border-radius: 50%; background: var(--gold);
+    display: flex; align-items: center; justify-content: center; cursor: pointer;
+    box-shadow: 0 4px 20px rgba(201,169,110,0.4); transition: all 0.3s; position: relative;
+  }
+  .chat-bubble:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(201,169,110,0.5); }
+  .chat-bubble svg { width: 26px; height: 26px; fill: var(--white); }
+  .chat-badge {
+    position: absolute; top: -2px; right: -2px;
+    width: 18px; height: 18px; background: #e74c3c; border-radius: 50%;
+    border: 2px solid var(--white); display: flex; align-items: center; justify-content: center;
+    font-size: 10px; color: var(--white); font-weight: 700;
+  }
+  .chat-tooltip {
+    position: absolute; bottom: 72px; right: 0;
+    background: var(--white); border-radius: var(--radius); padding: 14px 18px;
+    box-shadow: var(--shadow-lg); white-space: nowrap; font-size: 14px;
+    color: var(--text-dark); font-weight: 500;
+    animation: chatBounce 3s ease-in-out infinite;
+  }
+  .chat-tooltip::after {
+    content: ''; position: absolute; bottom: -6px; right: 24px;
+    width: 12px; height: 12px; background: var(--white);
+    transform: rotate(45deg); box-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+  }
+  @keyframes chatBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+
+  /* ─── Responsive ─── */
+  @media (max-width: 1024px) {
+    .listing-layout { grid-template-columns: 1fr; }
+    .sidebar-card { position: static; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 300px 200px; }
+    .gallery-main { grid-column: 1 / 3; }
+    .similar-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+    .gallery-main { grid-column: 1; }
+    .gallery-item:nth-child(n+4) { display: none; }
+    .property-header-inner { flex-direction: column; gap: 20px; }
+    .property-price-area { text-align: left; }
+    .features-row { flex-wrap: wrap; }
+    .similar-grid { grid-template-columns: 1fr; }
+    nav { display: none; }
+    .top-bar { display: none; }
+    .features-grid { grid-template-columns: 1fr; }
+    .property-title-area h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <span>📞 <a href="tel:02871234567">028 7123 4567</a></span>
+      <span>✉️ <a href="mailto:info@jamesgormanproperty.com">info@jamesgormanproperty.com</a></span>
+    </div>
+    <div class="top-bar-right">
+      <span>Mon–Fri 9am–5:30pm | Sat 10am–2pm</span>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon"></div>
+        <div class="logo-text">
+          <span class="logo-name">James Gorman</span>
+          <span class="logo-sub">Property</span>
+        </div>
+      </a>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Buy</a>
+        <a href="#">Rent</a>
+        <a href="#">Sell</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#" class="nav-cta">Free Valuation</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <div class="container">
+    <a href="#">Home</a> <span>›</span>
+    <a href="#">Buy</a> <span>›</span>
+    <a href="#">Derry / Londonderry</a> <span>›</span>
+    <a href="#">BT48</a> <span>›</span>
+    <span style="color: var(--text-dark);">42 Beechwood Avenue</span>
+  </div>
+</div>
+
+<!-- Gallery -->
+<section class="gallery">
+  <div class="container">
+    <div class="gallery-grid">
+      <div class="gallery-main gallery-item">
+        <div class="gallery-bg gal-1"></div>
+        <div class="gallery-more">
+          <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+          View all 12 photos
+        </div>
+      </div>
+      <div class="gallery-item"><div class="gallery-bg gal-2"></div></div>
+      <div class="gallery-item"><div class="gallery-bg gal-3"></div></div>
+      <div class="gallery-item"><div class="gallery-bg gal-4"></div></div>
+      <div class="gallery-item"><div class="gallery-bg gal-5"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Property Header -->
+<section class="property-header">
+  <div class="container">
+    <div class="property-header-inner">
+      <div class="property-title-area">
+        <h1>42 Beechwood Avenue, Culmore</h1>
+        <div class="property-location">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Derry / Londonderry, BT48 8NX
+        </div>
+        <div class="property-tags">
+          <span class="property-tag tag-type">Semi-Detached</span>
+          <span class="property-tag tag-status">Available</span>
+          <span class="property-tag tag-epc">EPC: C (72)</span>
+        </div>
+      </div>
+      <div class="property-price-area">
+        <div class="property-price-label">Offers Around</div>
+        <div class="property-price">£185,000</div>
+        <div class="property-price-note">Stamp Duty: £0 (first-time buyers)</div>
+        <div class="property-actions">
+          <button class="action-btn">
+            <svg viewBox="0 0 24 24"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z"/></svg>
+            Save
+          </button>
+          <button class="action-btn">
+            <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>
+            Share
+          </button>
+          <button class="action-btn">
+            <svg viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+            Print
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Features Bar -->
+<div class="key-features-bar">
+  <div class="container">
+    <div class="features-row">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+        </div>
+        <div>
+          <div class="feature-text-label">Bedrooms</div>
+          <div class="feature-text-value">3</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M7 7c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm11.17 1H20v2h-4v6h-2v-2h-2v2H8v-2H6v2H4v-6h2V8h2.17C8.06 7.69 8 7.36 8 7c0-1.66 1.34-3 3-3s3 1.34 3 3c0 .36-.06.69-.17 1z"/></svg>
+        </div>
+        <div>
+          <div class="feature-text-label">Bathrooms</div>
+          <div class="feature-text-value">1</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21v-2z"/></svg>
+        </div>
+        <div>
+          <div class="feature-text-label">Reception</div>
+          <div class="feature-text-value">2 Rooms</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg>
+        </div>
+        <div>
+          <div class="feature-text-label">Size</div>
+          <div class="feature-text-value">980 sq ft</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="listing-layout">
+    <!-- Left Column -->
+    <div>
+      <!-- Description -->
+      <div class="section-block">
+        <h2>
+          <span class="icon-circle"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zM13 9V3.5L18.5 9H13z"/></svg></span>
+          Property Description
+        </h2>
+        <div class="description-text">
+          <p>A beautifully presented three-bedroom semi-detached family home situated in the highly sought-after Culmore area of Derry. This property has been lovingly maintained by its current owners and offers bright, spacious accommodation throughout.</p>
+          <p>The ground floor comprises a welcoming entrance hall, generous living room with feature fireplace, a separate dining room perfect for family meals, and a modern fitted kitchen with integrated appliances and access to the rear garden.</p>
+          <p>Upstairs, three well-proportioned bedrooms are served by a contemporary family bathroom with white suite and tiled walls. The master bedroom enjoys pleasant views over the surrounding area.</p>
+          <p>Externally, the property benefits from a low-maintenance front garden, driveway providing off-street parking, and an enclosed rear garden with patio area — ideal for summer entertaining. The property is conveniently located within walking distance of local schools, shops, and public transport links, with easy access to the Culmore Road and city centre.</p>
+        </div>
+      </div>
+
+      <!-- Key Features -->
+      <div class="section-block">
+        <h2>
+          <span class="icon-circle"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></span>
+          Key Features
+        </h2>
+        <div class="features-grid">
+          <div class="feature-list-item">
+            <span class="feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+            3 spacious bedrooms
+          </div>
+          <div class="feature-list-item">
+            <span class="feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+            Modern fitted kitchen
+          </div>
+          <div class="feature-list-item">
+            <span class="feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+            Gas central heating
+          </div>
+          <div class="feature-list-item">
+            <span class="feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+            Double glazed throughout
+          </div>
+          <div class="feature-list-item">
+            <span class="feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+            Driveway parking
+          </div>
+          <div class="feature-list-item">
+            <span class="feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+            Enclosed rear garden
+          </div>
+          <div class="feature-list-item">
+            <span class="feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+            Feature fireplace
+          </div>
+          <div class="feature-list-item">
+            <span class="feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+            Close to schools & shops
+          </div>
+        </div>
+      </div>
+
+      <!-- EPC -->
+      <div class="section-block">
+        <h2>
+          <span class="icon-circle"><svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></span>
+          Energy Performance
+        </h2>
+        <div class="epc-bar">
+          <div class="epc-row"><div class="epc-segment epc-a">A (92+)</div></div>
+          <div class="epc-row"><div class="epc-segment epc-b">B (81-91)</div></div>
+          <div class="epc-row"><div class="epc-segment epc-c epc-current">C (69-80)</div></div>
+          <div class="epc-row"><div class="epc-segment epc-d">D (55-68)</div></div>
+          <div class="epc-row"><div class="epc-segment epc-e">E (39-54)</div></div>
+          <div class="epc-row"><div class="epc-segment epc-f">F (21-38)</div></div>
+          <div class="epc-row"><div class="epc-segment epc-g">G (1-20)</div></div>
+        </div>
+      </div>
+
+      <!-- Floorplan -->
+      <div class="section-block">
+        <h2>
+          <span class="icon-circle"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg></span>
+          Floorplan
+        </h2>
+        <div class="floorplan-placeholder">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 12h2v5H7zm4-3h2v8h-2zm4-3h2v11h-2z"/></svg>
+          <span>Floorplan Available</span>
+          <small>Click to view full-size floorplan</small>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="section-block">
+        <h2>
+          <span class="icon-circle"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+          Location
+        </h2>
+        <div class="map-placeholder">
+          <div class="map-pin">
+            <div class="map-pin-icon"></div>
+            <div class="map-pin-shadow"></div>
+          </div>
+          <div class="map-label"><strong>Culmore, BT48</strong> · Derry / Londonderry</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div>
+      <div class="sidebar-card">
+        <h3>Book a Viewing</h3>
+        <div class="sidebar-agent">
+          <div class="agent-avatar">JG</div>
+          <div class="agent-info">
+            <div class="agent-name">James Gorman</div>
+            <div class="agent-role">Property Consultant</div>
+            <div class="agent-rating">
+              <svg class="mini-star" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+              <svg class="mini-star" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+              <svg class="mini-star" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+              <svg class="mini-star" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+              <svg class="mini-star" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+              <span>4.9 · Trustpilot</span>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-form">
+          <input type="text" class="sidebar-input" placeholder="Your full name" value=""/>
+          <input type="email" class="sidebar-input" placeholder="Email address" value=""/>
+          <input type="tel" class="sidebar-input" placeholder="Phone number" value=""/>
+          <textarea class="sidebar-textarea" placeholder="I'd like to arrange a viewing of 42 Beechwood Avenue, Culmore..."></textarea>
+          <button class="btn-primary">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+            Request a Viewing
+          </button>
+          <button class="btn-secondary">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Call 028 7123 4567
+          </button>
+        </div>
+        <div class="sidebar-note">
+          💬 <span>Usually responds within 2 hours during business hours. Weekend viewings available by arrangement.</span>
+        </div>
+      </div>
+
+      <!-- Mortgage Calculator -->
+      <div class="mortgage-widget">
+        <h4>💰 Monthly Mortgage Estimate</h4>
+        <div class="mortgage-monthly">
+          <div class="mortgage-monthly-label">Estimated Monthly Payment</div>
+          <div class="mortgage-monthly-value">£782</div>
+          <div class="mortgage-monthly-note">Based on 90% LTV, 4.5% rate, 25yr term</div>
+        </div>
+        <div class="mortgage-row">
+          <span class="mortgage-label">Property Price</span>
+          <span class="mortgage-value">£185,000</span>
+        </div>
+        <div class="mortgage-row">
+          <span class="mortgage-label">Deposit (10%)</span>
+          <span class="mortgage-value">£18,500</span>
+        </div>
+        <div class="mortgage-row">
+          <span class="mortgage-label">Loan Amount</span>
+          <span class="mortgage-value">£166,500</span>
+        </div>
+        <div class="mortgage-row">
+          <span class="mortgage-label">Stamp Duty</span>
+          <span class="mortgage-value" style="color: var(--green);">£0*</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Similar Properties -->
+<section class="similar-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">You Might Also Like</div>
+      <h2 class="section-title">Similar Properties Nearby</h2>
+    </div>
+    <div class="similar-grid">
+      <div class="similar-card">
+        <div class="similar-image sim-img-1"></div>
+        <div class="similar-info">
+          <div class="similar-price">£195,000</div>
+          <div class="similar-address">28 Thornhill Park, Culmore</div>
+          <div class="similar-area">BT48 8JR · Semi-Detached</div>
+          <div class="similar-features">
+            <span class="similar-feature">
+              <svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+              3 Bed
+            </span>
+            <span class="similar-feature">
+              <svg viewBox="0 0 24 24"><path d="M7 7c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"/></svg>
+              2 Bath
+            </span>
+            <span class="similar-feature">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+              1,050 sq ft
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="similar-card">
+        <div class="similar-image sim-img-2"></div>
+        <div class="similar-info">
+          <div class="similar-price">£172,500</div>
+          <div class="similar-address">15 Sycamore Drive, Steelstown</div>
+          <div class="similar-area">BT48 0LT · Semi-Detached</div>
+          <div class="similar-features">
+            <span class="similar-feature">
+              <svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+              3 Bed
+            </span>
+            <span class="similar-feature">
+              <svg viewBox="0 0 24 24"><path d="M7 7c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"/></svg>
+              1 Bath
+            </span>
+            <span class="similar-feature">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+              920 sq ft
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="similar-card">
+        <div class="similar-image sim-img-3"></div>
+        <div class="similar-info">
+          <div class="similar-price">£199,950</div>
+          <div class="similar-address">6 Hawthorn Close, Northland</div>
+          <div class="similar-area">BT48 0QG · Semi-Detached</div>
+          <div class="similar-features">
+            <span class="similar-feature">
+              <svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+              3 Bed
+            </span>
+            <span class="similar-feature">
+              <svg viewBox="0 0 24 24"><path d="M7 7c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"/></svg>
+              2 Bath
+            </span>
+            <span class="similar-feature">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+              1,100 sq ft
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <span style="font-family: 'Playfair Display', serif; color: white; font-size: 16px;">James Gorman Property</span>
+        <br>
+        <span>© 2025 James Gorman Property. All rights reserved.</span>
+      </div>
+      <div>
+        <a href="#">Privacy Policy</a> · <a href="#">Terms</a> · <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- AI Chat Widget -->
+<div class="chat-widget">
+  <div class="chat-tooltip">
+    ✨ Got questions about this property?
+  </div>
+  <div class="chat-bubble">
+    <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+    <div class="chat-badge">1</div>
+  </div>
+</div>
+
+</body>
+</html>

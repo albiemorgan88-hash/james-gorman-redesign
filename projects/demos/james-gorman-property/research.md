@@ -4,41 +4,40 @@
 - **Name:** James Gorman Property
 - **Type:** Estate & Lettings Agent
 - **Location:** 12 Clearwater, Derry/Londonderry, BT47 6BE
-- **Phone:** 028 7161 0402 / 07786 910 768
+- **Phone:** 028 7161 0402 / Mob: 07786 910 768
 - **Email:** james@jamesgormanproperty.com
-- **Website:** jamesgormanproperty.com (Wix)
-- **Owner:** James Gorman — originally from Essex, 20+ years property experience
+- **Website:** https://www.jamesgormanproperty.com (Built on Wix)
+- **Services:** Residential Sales, Lettings, Property Management, Marketing
+- **Coverage Areas:** BT47, BT48, BT49, BT51, BT55, BT56, BT82
+- **Notable:** Currently promoting "Merchants View" — Derry City new build development
 
-## Services
-1. Residential Sales (upfront fee, photos, video, portal listings)
-2. Lettings (tenant finding, references, tenancy agreements)
-3. Property Management (premium — inspections, rent processing, deposit registration)
-4. Marketing (pro photos, walk-through videos, social media)
-
-## Coverage Areas
-BT47, BT48, BT49, BT51, BT55, BT56, BT82
-
-## Featured Project
-Merchants View — new build development in Derry City
+## About James
+- Originally from Essex, 20+ years experience in property sector
+- Worked across East London, Belfast, settled in Derry ~9 years ago
+- Background in traditional high street agencies, online hybrid, and new build sector
+- Active social media presence — uses video content, TikTok, Instagram Reels
 
 ## Social Media
-- Facebook: 1,256 likes, 78 talking about this
-- Instagram: @james_gorman_property
-- TikTok: @james.gorman.property
-- LinkedIn: james-gorman-8b293084
+- Facebook: 1,256 likes, 78 talking about (active)
+- Instagram: @james_gorman_property (active)
+- TikTok: @james.gorman.property (active)
+- LinkedIn: Personal profile linked
+- NOTE: Footer social icons link to Wix defaults (instagram.com/wix etc.)
 
 ## Reviews
-- **Trustpilot:** 4.9 stars, 30+ reviews
-- Consistent themes: professional, responsive, friendly, fast results
-- Notable: "house sold in less than a few weeks" after being on market for a year with another agent
-
-## Competitors
-- PropertyPal listings visible
-- Competing with established Derry agents
-- Differentiator: social media marketing, modern approach
+- **Trustpilot:** 4.9/5 — 20+ reviews (all 5-star)
+- **Google Business Profile:** NOT FOUND
+- Common themes: Professional, responsive, proactive, friendly, great communication
+- Multiple reviews mention selling homes quickly, excellent for first-time buyers/landlords
 
 ## Key Quotes from Reviews
-- "1st Class service and experience"
+- "Had the house sold in less than a few weeks" 
+- "Best agent in Derry, hands down"
 - "Making dreams come true"
-- "A professional agent who gets the task done"
-- "Had the house sold in less than a few weeks"
+- "1st Class service and experience"
+- "His knowledge and experience in the Property Business are exceptional"
+
+## Listed On
+- PropertyPal (active listings)
+- Trustpilot (claimed profile)
+- Facebook Business Page
