@@ -21,6 +21,7 @@ Every decision, every opportunity, every workflow runs through this filter.
 - **Jess Mason** (male) — AI Systems Consultant, OpenClaw expert, YouTube. On team page.
 - **Ian Patterson** — PJ's brother. Precision Education.
 - **Charlie O'Hara** — Solara Wellness Hub. Showcase deployed.
+- **James Gorman** — Derry estate agent (jamesgormanproperty.com). Prospect. Terrible Wix site, Trustpilot 4.9★. Showcase + website mockups built Mar 9. Pitch drafted.
 
 
 ## Active Projects
@@ -29,7 +30,7 @@ Every decision, every opportunity, every workflow runs through this filter.
 - **ClubDraw** — white-label weekly draw SaaS. Ardmore is client #1. Ready for multi-club expansion. Skill at `skills/clubdraw/SKILL.md`.
   - **Revenue split:** 50% jackpot / 40% club / 10% platform — publicly declared as "50/50" (50% prizes, 50% club)
   - **Rules:** No max numbers. Can buy for others (assign names). No age verification. One-off = 1 week. Subscription = weekly auto-renew (primary mode). Draw: Friday 7PM, 3 winners, provably fair RNG.
-- **UK Trade Jobs** — uktradejobs.com on Vercel. Supabase backend wired up (Mar 2). Needs Vercel env vars + deploy. Target £3-5k/mo.
+- **UK Trade Jobs** — uktradejobs.com on Vercel. Supabase backend wired up (Mar 2). **DEPLOYED TO PRODUCTION Mar 9** — SEO fixes (CV Builder title, Employers title, H1 keyword), www SSL fixed, 3,094 pages. Target £3-5k/mo.
 - **Satellites** — openclawconsultant.co.uk (Vercel, LIVE ✅), zapierconsultant.co.uk, aiagentsetup.co.uk. Awaiting Google indexing.
 - **EU AI Act Compliance** — STACEY'S PROJECT. Domains: aiactcompliance.co.uk + aiaudituk.com. Do not build/action without Stacey's direction.
 - **Rank & Rent** — On hold.
@@ -73,9 +74,8 @@ Every decision, every opportunity, every workflow runs through this filter.
 ## System Config (Mar 8)
 - **COO/Orchestrator mode**: PERMANENT. Albie delegates everything via subagents. Never executes tasks directly (except <5s replies/reactions). Codified in AGENTS.md + SOUL.md.
 - **17 crons active** (up from 12): all fixed with `--agent main`. Key additions: Morning Dashboard (7am), Moltbook Inbox (12pm), Google Ads Report (5pm), Memory Distillation (10:30pm), Apollo Lead Builder (Wed 10am), Tender Tracker (Mon 9am).
-- **⚠️ Cron delivery BROKEN on most crons** — Root causes identified Mar 8: (1) `channel: "last"` fails on isolated sessions → fix to `channel: "telegram", to: "5282559643"`, (2) task prompts saying "message PJ" / "send to PJ" cause agent to call `message(action=send)` which fails AND blocks announce delivery, (3) some have `delivery.mode: "none"`. Only Memory Distillation + AI Trend Scout delivering. Fix plan approved by PJ, not yet executed.
-- **Nightly Build cron MISSING** — was in MEMORY.md but not in actual cron list. Needs recreation.
-- **OpenClaw update available**: `npm update 2026.3.7` — may include cron delivery fixes. Not yet approved.
+- **✅ All 19 crons FIXED** (Mar 9) — every cron updated with `--announce --channel telegram --to 5282559643`. 19/19 succeeded. Delivery working.
+- **OpenClaw 2026.3.8 LIVE** (Mar 9) — updated from 3.7, gateway restarted. Features: ACP provenance, backup command, Telegram dupes killed, 12+ security fixes.
 - **Skills overhauled**: Semrush stripped (→Ahrefs/GSC everywhere). Merged: showcase-pipeline→client-showcase, ux-tester→ship-ready, moltlaunch-inbox→moltbook-scout. New: moltlaunch-delivery, hustle-engine, local-lead-scraper. Archived: opportunity-radar.
 
 ## Hustle Engine Philosophy (PJ's words)
@@ -86,10 +86,11 @@ Every decision, every opportunity, every workflow runs through this filter.
 
 ## Pending Actions
 **URGENT:**
-- **FIX CRON DELIVERY** — Fix all broken crons: update delivery targets (`channel: "telegram", to: "5282559643"`), rewrite task prompts to remove "message PJ"/"send to PJ", fix `mode: "none"` on SEO crons. Recreate missing Nightly Build cron. Consider OpenClaw update to 2026.3.7.
 - **Ardmore UI polish** — FAQ accordion, success page improvements, nav enhancements (coding agent failed, needs rebuild)
-- **UK Trade Jobs deploy** — production deployment with employer signup notifications to philip@bluecanvas.ai
-- **Google Ads**: ad policy violation (double dots) throttling delivery — only £0.60 spent in ~7 days. Fix needed ASAP. Conversion tracking still pending. API Basic access pending (PJ submitted form Mar 6).
+- **Google Ads manual fix** — PJ needs to fix double dots in Ads UI (2-min edit unlocks £20/day). Keywords + conversion tracking guide prepared.
+- **Ireland OGP AI PMC** — Pre-market consultation open NOW on eTenders. Must respond to position for actual procurement. #1 tender priority.
+- **DSIT/Capgemini £4.5M AI subcontracting** — seeking "niche or emergent" AI SMEs. Perfect Blue Canvas fit.
+- **Google Ads**: ad policy violation (double dots) throttling delivery — only £0.60 spent in ~10 days. Manual fix guide prepared (keywords, ad copy, conversion tracking). PJ needs to edit in Ads UI. API Basic access pending (PJ submitted form Mar 6).
 - **bluecanvas.ai PageSpeed** — mobile 56/100, LCP 12.6s. Needs urgent fix (Webflow optimisation).
 - **Blue Canvas CTR crisis** — impressions up 24% but clicks down 29%. Meta titles/descriptions need rewrite for click-worthy copy.
 - **Respond to Moltbook comment** — quality engagement on consultancy post, unanswered since Mar 6.
@@ -110,11 +111,21 @@ Every decision, every opportunity, every workflow runs through this filter.
 - Monitor Moltlaunch inbox for gig requests (Agent #24586)
 - PJ to confirm purchase of aiactcompliance.co.uk + aiaudituk.com
 
+**Completed Mar 9 (BIG DAY):**
+- ✅ OpenClaw updated to 2026.3.8
+- ✅ ALL 19 crons fixed with proper Telegram delivery
+- ✅ UKTJ SEO fixes deployed to production (3,094 pages, zero errors)
+- ✅ bluecanvas.ai meta title/description staged via API (needs Webflow publish)
+- ✅ James Gorman showcase + website mockups + WhatsApp pitch
+- ✅ Ardmore name-prompt bug fixed + Maureen O'Kane data fix for number 276
+- ✅ Google Ads manual fix guide prepared (keywords, ad copy, conversion tracking)
+- ✅ www.uktradejobs.com SSL fixed
+- ✅ Tender tracker: 3 HIGH opportunities identified (OGP, DSIT/Capgemini, RM6200)
+
 **Completed Mar 8:**
 - ✅ Cron delivery root cause analysis complete — 3 failure modes identified, fix plan approved by PJ
 - ✅ AI Trend Scout: "Agentic Web" category identified as major opportunity (WebMCP, Chrome 146, Yoast Schema Aggregation)
 - ✅ Weekly Money Scout recovered: DTFF grant, AI voice receptionists, Derry regeneration opportunities flagged
-- ⚠️ Moltbook: 1 unread quality comment (since Mar 6) — needs response. No gig requests.
 
 **Completed Mar 7:**
 - ✅ Security scan: all clear. Evening health check: all 4 sites up, 18 crons healthy.
