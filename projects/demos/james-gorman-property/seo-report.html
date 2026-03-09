@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>James Gorman Property — SEO Opportunity Report</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  :root {
+    --navy: #0B1D3A;
+    --navy-light: #132B52;
+    --gold: #C8A456;
+    --gold-light: #E8CB7A;
+    --white: #FFFFFF;
+    --off-white: #F7F5F0;
+    --grey: #8896A7;
+    --red: #E74C3C;
+    --green: #27AE60;
+    --orange: #F39C12;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--off-white);
+    color: var(--navy);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: var(--white);
+    padding: 60px 40px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(200,164,86,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(200,164,86,0.15);
+    border: 1px solid rgba(200,164,86,0.3);
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .hero h1 span { color: var(--gold); }
+  .hero .subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 24px;
+  }
+  .hero-date {
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+  }
+
+  /* SCORE SECTION */
+  .score-section {
+    background: var(--white);
+    padding: 50px 40px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+  .score-ring {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 24px;
+  }
+  .score-ring svg {
+    transform: rotate(-90deg);
+    width: 160px;
+    height: 160px;
+  }
+  .score-ring .bg {
+    fill: none;
+    stroke: #E8E8E8;
+    stroke-width: 10;
+  }
+  .score-ring .progress {
+    fill: none;
+    stroke: var(--orange);
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 408;
+    stroke-dashoffset: 245;
+    transition: stroke-dashoffset 1s ease;
+  }
+  .score-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--navy);
+  }
+  .score-number span {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grey);
+  }
+  .score-label {
+    font-size: 14px;
+    color: var(--grey);
+    margin-bottom: 30px;
+  }
+  .score-breakdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .score-item {
+    text-align: center;
+    padding: 16px 8px;
+    background: var(--off-white);
+    border-radius: 12px;
+  }
+  .score-item .mini-score {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .score-item .mini-label {
+    font-size: 11px;
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+  }
+  .score-red { color: var(--red); }
+  .score-orange { color: var(--orange); }
+  .score-green { color: var(--green); }
+
+  /* SECTIONS */
+  .section {
+    background: var(--white);
+    padding: 50px 40px;
+    border-bottom: 1px solid #eee;
+  }
+  .section-header {
+    margin-bottom: 30px;
+  }
+  .section-number {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 12px;
+  }
+  .section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .section .section-sub {
+    font-size: 14px;
+    color: var(--grey);
+  }
+
+  /* TABLES */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  .data-table th {
+    background: var(--navy);
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    text-align: left;
+  }
+  .data-table th:first-child { border-radius: 8px 0 0 0; }
+  .data-table th:last-child { border-radius: 0 8px 0 0; }
+  .data-table td {
+    padding: 14px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:nth-child(even) td { background: #FAFAFA; }
+
+  .rank-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .rank-top3 { background: #E8F5E9; color: #2E7D32; }
+  .rank-top10 { background: #FFF3E0; color: #E65100; }
+  .rank-bad { background: #FFEBEE; color: #C62828; }
+  .rank-none { background: #F5F5F5; color: #9E9E9E; }
+
+  /* ISSUES */
+  .issue-list {
+    list-style: none;
+  }
+  .issue-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .issue-item:last-child { border-bottom: none; }
+  .issue-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  .issue-icon.critical { background: #FFEBEE; }
+  .issue-icon.warning { background: #FFF3E0; }
+  .issue-icon.good { background: #E8F5E9; }
+  .issue-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .issue-desc {
+    font-size: 13px;
+    color: var(--grey);
+    line-height: 1.5;
+  }
+
+  /* ROADMAP */
+  .roadmap {
+    position: relative;
+  }
+  .roadmap-item {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 32px;
+    position: relative;
+  }
+  .roadmap-item:last-child { padding-bottom: 0; }
+  .roadmap-marker {
+    flex-shrink: 0;
+    width: 44px;
+    text-align: center;
+  }
+  .roadmap-dot {
+    width: 14px;
+    height: 14px;
+    background: var(--gold);
+    border-radius: 50%;
+    margin: 4px auto 0;
+    position: relative;
+    z-index: 1;
+  }
+  .roadmap-line {
+    width: 2px;
+    background: #E0D5C0;
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+  .roadmap-item:last-child .roadmap-line { display: none; }
+  .roadmap-month {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .roadmap-content {
+    flex: 1;
+    background: var(--off-white);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .roadmap-content h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .roadmap-content p {
+    font-size: 13px;
+    color: var(--grey);
+    line-height: 1.5;
+  }
+
+  /* REVENUE */
+  .revenue-box {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    border-radius: 16px;
+    padding: 40px;
+    color: var(--white);
+    text-align: center;
+    margin: 24px 0;
+  }
+  .revenue-box .big-number {
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--gold);
+    margin: 16px 0 8px;
+  }
+  .revenue-box .big-label {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+  }
+  .revenue-calc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 30px;
+  }
+  .calc-item {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 20px 12px;
+  }
+  .calc-item .calc-num {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gold-light);
+  }
+  .calc-item .calc-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 4px;
+  }
+
+  /* ROI */
+  .roi-grid {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr 60px 1fr;
+    align-items: center;
+    gap: 0;
+    margin: 24px 0;
+  }
+  .roi-card {
+    background: var(--off-white);
+    border-radius: 12px;
+    padding: 24px 16px;
+    text-align: center;
+  }
+  .roi-arrow {
+    text-align: center;
+    font-size: 24px;
+    color: var(--gold);
+  }
+  .roi-card .roi-num {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .roi-card .roi-label {
+    font-size: 12px;
+    color: var(--grey);
+    margin-top: 4px;
+  }
+
+  /* COMPETITORS */
+  .competitor-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .competitor-row:last-child { border-bottom: none; }
+  .competitor-rank {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background: var(--off-white);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .competitor-rank.gold { background: #FFF8E7; color: var(--gold); }
+  .competitor-name { flex: 1; font-size: 14px; font-weight: 500; }
+  .competitor-url { font-size: 12px; color: var(--grey); }
+
+  /* CTA */
+  .cta-section {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    padding: 60px 40px;
+    text-align: center;
+    color: var(--white);
+  }
+  .cta-section h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: var(--white);
+  }
+  .cta-section p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.6);
+    max-width: 500px;
+    margin: 0 auto 30px;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+  .cta-btn:hover { transform: translateY(-2px); }
+  .cta-price {
+    margin-top: 16px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.4);
+  }
+
+  /* FOOTER */
+  .footer {
+    background: var(--navy);
+    padding: 30px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .footer-logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+  .footer-logo span { color: var(--gold); }
+  .footer p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+  }
+
+  /* HIGHLIGHT BOX */
+  .highlight-box {
+    background: #FFF8E7;
+    border-left: 4px solid var(--gold);
+    border-radius: 0 12px 12px 0;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  .highlight-box strong { color: var(--navy); }
+  .highlight-box p {
+    font-size: 14px;
+    color: #5A5A5A;
+    margin: 0;
+  }
+
+  /* TRUSTPILOT */
+  .trustpilot-bar {
+    background: var(--off-white);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-bottom: 1px solid #eee;
+  }
+  .tp-stars { color: var(--green); font-size: 18px; }
+  .tp-text { font-size: 14px; font-weight: 500; color: var(--navy); }
+  .tp-sub { font-size: 13px; color: var(--grey); }
+
+  /* URL ISSUES */
+  .url-compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 16px 0;
+  }
+  .url-box {
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 13px;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+  }
+  .url-bad {
+    background: #FFEBEE;
+    color: #C62828;
+    border: 1px solid #FFCDD2;
+  }
+  .url-good {
+    background: #E8F5E9;
+    color: #2E7D32;
+    border: 1px solid #C8E6C9;
+  }
+  .url-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  @media (max-width: 640px) {
+    .hero { padding: 40px 24px; }
+    .hero h1 { font-size: 24px; }
+    .section { padding: 36px 24px; }
+    .score-breakdown { grid-template-columns: repeat(2, 1fr); }
+    .revenue-calc { grid-template-columns: 1fr; }
+    .roi-grid { grid-template-columns: 1fr; }
+    .roi-arrow { transform: rotate(90deg); }
+    .url-compare { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-badge">Confidential Report</div>
+    <h1>James Gorman Property<br><span>SEO Opportunity Report</span></h1>
+    <p class="subtitle">What you're missing — and how to fix it</p>
+    <p class="hero-date">Prepared 9 March 2026 by Blue Canvas</p>
+  </div>
+
+  <!-- TRUSTPILOT BAR -->
+  <div class="trustpilot-bar">
+    <span class="tp-stars">★★★★★</span>
+    <span class="tp-text">75 Five-Star Reviews on Trustpilot</span>
+    <span class="tp-sub">— but Google doesn't know about them</span>
+  </div>
+
+  <!-- OVERALL SCORE -->
+  <div class="score-section">
+    <div class="score-ring">
+      <svg viewBox="0 0 140 140">
+        <circle class="bg" cx="70" cy="70" r="65"/>
+        <circle class="progress" cx="70" cy="70" r="65"/>
+      </svg>
+      <div class="score-number">32<span>/100</span></div>
+    </div>
+    <p class="score-label">Your current SEO visibility score</p>
+    <div class="score-breakdown">
+      <div class="score-item">
+        <div class="mini-score score-red">55</div>
+        <div class="mini-label">Mobile Speed</div>
+      </div>
+      <div class="score-item">
+        <div class="mini-score score-orange">84</div>
+        <div class="mini-label">Desktop Speed</div>
+      </div>
+      <div class="score-item">
+        <div class="mini-score score-red">15</div>
+        <div class="mini-label">On-Page SEO</div>
+      </div>
+      <div class="score-item">
+        <div class="mini-score score-red">20</div>
+        <div class="mini-label">Local SEO</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHERE YOU RANK -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">1</div>
+      <h2>Where You Rank Today</h2>
+      <p class="section-sub">For the search terms your ideal customers are typing right now</p>
+    </div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Search Term</th>
+          <th>Monthly Searches</th>
+          <th>Your Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>"estate agents derry"</strong></td>
+          <td>440</td>
+          <td><span class="rank-badge rank-none">Not found</span></td>
+        </tr>
+        <tr>
+          <td><strong>"houses for sale derry"</strong></td>
+          <td>590</td>
+          <td><span class="rank-badge rank-none">Not found</span></td>
+        </tr>
+        <tr>
+          <td><strong>"property for sale derry"</strong></td>
+          <td>320</td>
+          <td><span class="rank-badge rank-none">Not found</span></td>
+        </tr>
+        <tr>
+          <td><strong>"estate agents londonderry"</strong></td>
+          <td>210</td>
+          <td><span class="rank-badge rank-none">Not found</span></td>
+        </tr>
+        <tr>
+          <td><strong>"letting agents derry"</strong></td>
+          <td>170</td>
+          <td><span class="rank-badge rank-top10">~4th</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-box">
+      <p><strong>1,730+ people search for these terms every month.</strong> Right now, nearly all of them are going to your competitors. You appeared in the top 10 for just 1 out of 5 key terms.</p>
+    </div>
+  </div>
+
+  <!-- COMPETITORS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">2</div>
+      <h2>Who's Beating You — and Why</h2>
+      <p class="section-sub">Top results for "estate agents derry" — your money keyword</p>
+    </div>
+
+    <div class="competitor-row">
+      <div class="competitor-rank gold">1</div>
+      <div>
+        <div class="competitor-name">Pauline Elliott Estate Agents</div>
+        <div class="competitor-url">paulineelliottestateagents.com — dedicated landing pages, optimised titles, 50+ pages indexed</div>
+      </div>
+    </div>
+    <div class="competitor-row">
+      <div class="competitor-rank gold">2</div>
+      <div>
+        <div class="competitor-name">EO'C Estate Agents</div>
+        <div class="competitor-url">eocestateagents.com — proper URL structure, local area pages, property feeds</div>
+      </div>
+    </div>
+    <div class="competitor-row">
+      <div class="competitor-rank gold">3</div>
+      <div>
+        <div class="competitor-name">Paul O'Keefe Estate Agents</div>
+        <div class="competitor-url">okeefeestateagents.com — strong domain authority, years of content</div>
+      </div>
+    </div>
+    <div class="competitor-row">
+      <div class="competitor-rank">4</div>
+      <div>
+        <div class="competitor-name">Robert Quigley</div>
+        <div class="competitor-url">robertquigley.co.uk — keyword-rich titles, area-specific pages</div>
+      </div>
+    </div>
+    <div class="competitor-row">
+      <div class="competitor-rank">5</div>
+      <div>
+        <div class="competitor-name">John V Arthur</div>
+        <div class="competitor-url">johnvarthur.com — established brand, clean SEO structure</div>
+      </div>
+    </div>
+    <div class="competitor-row">
+      <div class="competitor-rank">6–10</div>
+      <div>
+        <div class="competitor-name">Oakland · Daniel Henry · Locate · Montgomery & McCleery · City Property</div>
+        <div class="competitor-url">All ranking ahead of jamesgormanproperty.com for key terms</div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <p><strong>You have 75 five-star reviews — more than most of these competitors.</strong> You're winning on trust but invisible on Google. That's fixable.</p>
+    </div>
+  </div>
+
+  <!-- CRITICAL ISSUES -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">3</div>
+      <h2>What We Found</h2>
+      <p class="section-sub">Critical issues holding your site back</p>
+    </div>
+
+    <ul class="issue-list">
+      <li class="issue-item">
+        <div class="issue-icon critical">🚨</div>
+        <div>
+          <div class="issue-title">Terrible URL Structure (Wix Default)</div>
+          <div class="issue-desc">Your pages are named /blank, /blank-3, /blank-5, /blank-10. Google uses URLs to understand content. These tell Google absolutely nothing about what's on each page.</div>
+        </div>
+      </li>
+      <li class="issue-item">
+        <div class="issue-icon critical">🚨</div>
+        <div>
+          <div class="issue-title">6 H1 Tags on Homepage</div>
+          <div class="issue-desc">Your homepage has 6 H1 headings including "MENU", "CONTACT US" and "SOCIAL MEDIA". Google expects ONE clear H1 per page. This confuses search engines about your main topic.</div>
+        </div>
+      </li>
+      <li class="issue-item">
+        <div class="issue-icon critical">🚨</div>
+        <div>
+          <div class="issue-title">Weak Page Title</div>
+          <div class="issue-desc">Current title: "James Gorman Property | property | Derry, Londonderry, UK" — doesn't include "estate agent" or "letting agent". This is the single most important ranking signal.</div>
+        </div>
+      </li>
+      <li class="issue-item">
+        <div class="issue-icon critical">🚨</div>
+        <div>
+          <div class="issue-title">Default Wix Social Links</div>
+          <div class="issue-desc">Your header links point to instagram.com/wix and facebook.com/WixStudio instead of your actual social profiles. Looks unprofessional and wastes link equity.</div>
+        </div>
+      </li>
+      <li class="issue-item">
+        <div class="issue-icon warning">⚠️</div>
+        <div>
+          <div class="issue-title">Mobile Speed Score: 55/100</div>
+          <div class="issue-desc">Over 60% of property searches happen on mobile. Google penalises slow mobile sites. Your competitors load faster.</div>
+        </div>
+      </li>
+      <li class="issue-item">
+        <div class="issue-icon warning">⚠️</div>
+        <div>
+          <div class="issue-title">No Blog or Content</div>
+          <div class="issue-desc">Zero blog posts = zero chances to rank for long-tail keywords like "best areas to live in derry" or "derry property market 2026". Your competitors publish regularly.</div>
+        </div>
+      </li>
+      <li class="issue-item">
+        <div class="issue-icon warning">⚠️</div>
+        <div>
+          <div class="issue-title">No Google Business Profile Optimisation</div>
+          <div class="issue-desc">Your GBP may exist but isn't working hard enough. With 75 Trustpilot reviews, you should be dominating the local map pack — you're not appearing.</div>
+        </div>
+      </li>
+      <li class="issue-item">
+        <div class="issue-icon warning">⚠️</div>
+        <div>
+          <div class="issue-title">No Area-Specific Pages</div>
+          <div class="issue-desc">Your competitors have pages for "property for sale in [area]" for every BT postcode. You serve BT47, BT48, BT49, BT51, BT55, BT56, BT82 — but have zero location pages.</div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- URL COMPARISON -->
+    <h3 style="font-size: 16px; font-weight: 600; margin: 30px 0 16px;">Your URLs vs. What Google Wants</h3>
+    <div class="url-compare">
+      <div class="url-box url-bad">
+        <span class="url-label">❌ Current</span>
+        /blank<br>/blank-3<br>/blank-5<br>/blank-7<br>/blank-10
+      </div>
+      <div class="url-box url-good">
+        <span class="url-label">✅ Optimised</span>
+        /sales<br>/lettings<br>/services<br>/contact<br>/properties
+      </div>
+    </div>
+  </div>
+
+  <!-- MONTH 1 QUICK WINS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">4</div>
+      <h2>What We'd Fix in Month 1</h2>
+      <p class="section-sub">Quick wins that move the needle immediately</p>
+    </div>
+
+    <ul class="issue-list">
+      <li class="issue-item">
+        <div class="issue-icon good">✅</div>
+        <div>
+          <div class="issue-title">Rewrite All Page Titles & Meta Descriptions</div>
+          <div class="issue-desc">Target keywords like "Estate Agent Derry", "Letting Agent Derry", "Houses for Sale Derry" in every page title. This alone can shift rankings 10+ positions.</div>
+        </div>
+      </li>
+      <li class="issue-item">
+        <div class="issue-icon good">✅</div>
+        <div>
+          <div class="issue-title">Fix URL Structure</div>
+          <div class="issue-desc">Rename /blank → /sales, /blank-3 → /lettings, etc. Set up proper 301 redirects to preserve any existing authority.</div>
+        </div>
+      </li>
+      <li class="issue-item">
+        <div class="issue-icon good">✅</div>
+        <div>
+          <div class="issue-title">Fix Heading Hierarchy</div>
+          <div class="issue-desc">One clear H1 per page. Remove H1 tags from navigation elements. Structure H2s and H3s logically.</div>
+        </div>
+      </li>
+      <li class="issue-item">
+        <div class="issue-icon good">✅</div>
+        <div>
+          <div class="issue-title">Google Business Profile Overhaul</div>
+          <div class="issue-desc">Optimise categories, add services, publish weekly GBP posts, add photos, respond to all reviews, ensure NAP consistency across all directories.</div>
+        </div>
+      </li>
+      <li class="issue-item">
+        <div class="issue-icon good">✅</div>
+        <div>
+          <div class="issue-title">Fix Default Wix Social Links</div>
+          <div class="issue-desc">Point header social icons to your actual Instagram, Facebook, TikTok and LinkedIn profiles. Remove Wix defaults.</div>
+        </div>
+      </li>
+      <li class="issue-item">
+        <div class="issue-icon good">✅</div>
+        <div>
+          <div class="issue-title">Add Schema Markup</div>
+          <div class="issue-desc">LocalBusiness, RealEstateAgent, and Review schema — tell Google exactly who you are, where you are, and how good you are.</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 6-MONTH ROADMAP -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">5</div>
+      <h2>Your 6-Month SEO Roadmap</h2>
+      <p class="section-sub">What £250/month gets you — month by month</p>
+    </div>
+
+    <div class="roadmap">
+      <div class="roadmap-item">
+        <div class="roadmap-marker">
+          <div class="roadmap-month">M1</div>
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-line"></div>
+        </div>
+        <div class="roadmap-content">
+          <h4>🔧 Foundation Fixes</h4>
+          <p>Rewrite all titles & meta descriptions. Fix URL structure. Fix heading hierarchy. GBP overhaul. Schema markup. Fix social links. Submit updated sitemap to Google.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-marker">
+          <div class="roadmap-month">M2</div>
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-line"></div>
+        </div>
+        <div class="roadmap-content">
+          <h4>📍 Local Area Pages</h4>
+          <p>Create optimised pages for each postcode: "Estate Agent BT47", "Property for Sale Waterside", "Houses for Sale Culmore". Target long-tail local keywords. Directory listings & citations.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-marker">
+          <div class="roadmap-month">M3</div>
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-line"></div>
+        </div>
+        <div class="roadmap-content">
+          <h4>📝 Content Engine Starts</h4>
+          <p>Launch blog. Publish 4 SEO-optimised articles: "Derry Property Market 2026", "Best Areas to Live in Derry", "How to Sell Your House Fast in NI", "First-Time Buyer Guide Derry".</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-marker">
+          <div class="roadmap-month">M4</div>
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-line"></div>
+        </div>
+        <div class="roadmap-content">
+          <h4>🔗 Authority Building</h4>
+          <p>Local backlink outreach. Property portal profile optimisation. Trustpilot review widget on site. Guest posts on local Derry blogs/news sites.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-marker">
+          <div class="roadmap-month">M5</div>
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-line"></div>
+        </div>
+        <div class="roadmap-content">
+          <h4>📊 Refine & Scale</h4>
+          <p>Analyse what's ranking, double down on winners. 4 more blog posts targeting new keywords. Competitor gap analysis. Internal linking optimisation.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-marker">
+          <div class="roadmap-month">M6</div>
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-line"></div>
+        </div>
+        <div class="roadmap-content">
+          <h4>🎯 Results & Review</h4>
+          <p>Full ranking report vs. baseline. Expect page 1 for 3–5 target keywords. Performance review meeting. Plan Phase 2 strategy for continued growth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REVENUE IMPACT -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">6</div>
+      <h2>The Money You're Leaving on the Table</h2>
+      <p class="section-sub">Conservative estimates based on industry benchmarks</p>
+    </div>
+
+    <div class="revenue-box">
+      <p style="font-size: 14px; color: rgba(255,255,255,0.6);">Estimated annual revenue from organic search</p>
+      <div class="big-number">£72,000+</div>
+      <div class="big-label">in additional commission per year</div>
+      <div class="revenue-calc">
+        <div class="calc-item">
+          <div class="calc-num">1,730</div>
+          <div class="calc-label">Monthly searches for your key terms</div>
+        </div>
+        <div class="calc-item">
+          <div class="calc-num">~175</div>
+          <div class="calc-label">Estimated monthly clicks if page 1</div>
+        </div>
+        <div class="calc-item">
+          <div class="calc-num">10–15</div>
+          <div class="calc-label">Qualified enquiries per month</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="roi-grid">
+      <div class="roi-card">
+        <div class="roi-num">10</div>
+        <div class="roi-label">Inbound leads<br>per month</div>
+      </div>
+      <div class="roi-arrow">→</div>
+      <div class="roi-card">
+        <div class="roi-num">2–3</div>
+        <div class="roi-label">New listings<br>won per month</div>
+      </div>
+      <div class="roi-arrow">→</div>
+      <div class="roi-card">
+        <div class="roi-num">£6,000+</div>
+        <div class="roi-label">Monthly commission<br>(avg £2,500 per sale)</div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <p><strong>Your investment: £250/month. Your potential return: £6,000+/month.</strong> That's a 24x ROI. Even half of this makes SEO the highest-returning marketing channel you can invest in.</p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <h2>Ready to Own Page 1 in Derry?</h2>
+    <p>You've built the reputation. You've got the reviews. Let's make sure Google knows it too.</p>
+    <a href="https://bluecanvas.ai" class="cta-btn">Let's Talk →</a>
+    <p class="cta-price">Starting at £250/month · No lock-in contracts · Results within 90 days</p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-logo">Blue <span>Canvas</span></div>
+    <p>AI-Powered Digital Growth · bluecanvas.ai · Derry, NI</p>
+  </div>
+
+</div>
+</body>
+</html>

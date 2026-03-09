@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>James Gorman Property — Digital Opportunity</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --navy: #1a2744;
+    --navy-deep: #0f1a2e;
+    --gold: #C9A96E;
+    --gold-light: #dfc28e;
+    --gold-pale: #f5ecd8;
+    --white: #ffffff;
+    --off-white: #f8f7f4;
+    --grey: #8a8f98;
+    --grey-light: #e8e6e1;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', -apple-system, sans-serif;
+    background: var(--off-white);
+    color: var(--navy);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  .page {
+    max-width: 1080px;
+    margin: 0 auto;
+    background: var(--white);
+    min-height: 100vh;
+  }
+
+  /* ═══════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════ */
+  .hero {
+    background: var(--navy);
+    padding: 80px 48px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(201,169,110,0.06) 0%, transparent 65%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    left: -150px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(201,169,110,0.04) 0%, transparent 65%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .hero-prepared {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 40px;
+  }
+
+  .hero-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.5px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+
+  .hero-tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.5px;
+    margin-bottom: 56px;
+  }
+
+  /* Score Ring */
+  .score-wrap {
+    position: relative;
+    display: inline-block;
+  }
+
+  .score-ring-outer {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+
+  .score-ring-outer svg {
+    width: 200px;
+    height: 200px;
+    transform: rotate(-90deg);
+  }
+
+  .ring-bg {
+    fill: none;
+    stroke: rgba(255,255,255,0.06);
+    stroke-width: 6;
+  }
+
+  .ring-progress {
+    fill: none;
+    stroke: url(#goldGrad);
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-dasharray: 534;
+    stroke-dashoffset: 363;
+  }
+
+  @keyframes ringFill {
+    to { stroke-dashoffset: 363; }
+  }
+
+  .score-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .score-num {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .score-of {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.3);
+    margin-top: 2px;
+  }
+
+  .score-label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ═══════════════════════════════════════
+     SECTION: THE GAP
+     ═══════════════════════════════════════ */
+  .section {
+    padding: 72px 48px;
+    position: relative;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: -0.3px;
+    line-height: 1.2;
+    margin-bottom: 48px;
+  }
+
+  /* Stat Cards */
+  .stat-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stat-card {
+    background: var(--off-white);
+    border-radius: 20px;
+    padding: 40px 36px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--gold), var(--gold-light));
+    border-radius: 4px 0 0 4px;
+  }
+
+  .stat-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 56px;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .stat-text {
+    font-size: 17px;
+    font-weight: 400;
+    color: #4a5568;
+    line-height: 1.5;
+  }
+
+  .stat-text strong {
+    color: var(--navy);
+    font-weight: 600;
+  }
+
+  .stat-highlight {
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  /* ═══════════════════════════════════════
+     SECTION: COMPETITORS
+     ═══════════════════════════════════════ */
+  .competitors-section {
+    background: var(--navy);
+    padding: 72px 48px;
+    color: var(--white);
+  }
+
+  .competitors-section .section-title {
+    color: var(--white);
+  }
+
+  .leaderboard {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .lb-row {
+    display: flex;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .lb-row:last-child {
+    border-bottom: none;
+  }
+
+  .lb-pos {
+    width: 48px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .lb-bar-wrap {
+    flex: 1;
+    position: relative;
+  }
+
+  .lb-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 6px;
+  }
+
+  .lb-bar {
+    height: 4px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.06);
+    overflow: hidden;
+  }
+
+  .lb-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    transition: width 1s ease;
+  }
+
+  .lb-divider {
+    padding: 32px 0 16px;
+    border-bottom: none;
+  }
+
+  .lb-divider-line {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .lb-divider-line::before,
+  .lb-divider-line::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(201,169,110,0.2);
+  }
+
+  .lb-divider-text {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    white-space: nowrap;
+    opacity: 0.7;
+  }
+
+  .lb-you {
+    background: rgba(201,169,110,0.06);
+    border: 1px dashed rgba(201,169,110,0.25);
+    border-radius: 12px;
+    padding: 20px 18px;
+    margin-top: 16px;
+  }
+
+  .lb-you .lb-pos {
+    color: rgba(255,255,255,0.25);
+    font-size: 16px;
+  }
+
+  .lb-you .lb-name {
+    color: rgba(255,255,255,0.3);
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  /* ═══════════════════════════════════════
+     SECTION: THE POTENTIAL
+     ═══════════════════════════════════════ */
+  .potential-section {
+    padding: 80px 48px;
+    text-align: center;
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .potential-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(201,169,110,0.06) 0%, transparent 60%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .potential-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 32px;
+  }
+
+  .potential-amount {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 8px;
+    letter-spacing: -2px;
+  }
+
+  .potential-per {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grey);
+    margin-bottom: 48px;
+  }
+
+  .roi-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--off-white);
+    border: 1px solid var(--grey-light);
+    border-radius: 100px;
+    padding: 16px 36px;
+  }
+
+  .roi-multiplier {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .roi-text {
+    text-align: left;
+    font-size: 14px;
+    color: var(--grey);
+    line-height: 1.4;
+  }
+
+  .roi-text strong {
+    color: var(--navy);
+    font-weight: 600;
+    display: block;
+  }
+
+  /* ═══════════════════════════════════════
+     SECTION: CTA
+     ═══════════════════════════════════════ */
+  .cta-section {
+    background: var(--navy);
+    padding: 72px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(201,169,110,0.08) 0%, transparent 60%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .cta-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+  }
+
+  .cta-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 48px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 18px 48px;
+    border-radius: 60px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 24px rgba(201,169,110,0.3);
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(201,169,110,0.4);
+  }
+
+  .cta-contact {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cta-contact-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+  }
+
+  .cta-contact-detail {
+    font-size: 14px;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.6;
+  }
+
+  .cta-contact-detail a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+
+  /* Footer */
+  .footer {
+    background: var(--navy-deep);
+    padding: 28px 48px;
+    text-align: center;
+  }
+
+  .footer-brand {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 1px;
+  }
+
+  .footer-brand span {
+    color: var(--gold);
+  }
+
+  /* ═══════════════════════════════════════
+     ANIMATIONS
+     ═══════════════════════════════════════ */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ═══════════════════════════════════════
+     RESPONSIVE
+     ═══════════════════════════════════════ */
+  @media (max-width: 640px) {
+    .hero { padding: 60px 28px 48px; }
+    .hero-name { font-size: 32px; }
+    .hero-tagline { font-size: 16px; margin-bottom: 44px; }
+    .score-ring-outer { width: 170px; height: 170px; }
+    .score-ring-outer svg { width: 170px; height: 170px; }
+    .score-num { font-size: 54px; }
+
+    .section { padding: 56px 28px; }
+    .section-title { font-size: 26px; margin-bottom: 36px; }
+
+    .stat-card { padding: 32px 28px; }
+    .stat-number { font-size: 44px; }
+    .stat-text { font-size: 15px; }
+
+    .competitors-section { padding: 56px 28px; }
+
+    .potential-section { padding: 64px 28px; }
+    .potential-amount { font-size: 56px; }
+    .potential-per { font-size: 17px; }
+    .roi-pill { padding: 14px 24px; flex-direction: column; text-align: center; }
+    .roi-text { text-align: center; }
+
+    .cta-section { padding: 56px 28px; }
+    .cta-title { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <svg width="0" height="0">
+      <defs>
+        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#C9A96E;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#dfc28e;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="hero-prepared">Prepared for James Gorman</div>
+
+    <h1 class="hero-name">James Gorman<br>Property</h1>
+    <p class="hero-tagline">Your Digital Opportunity</p>
+
+    <div class="score-wrap">
+      <div class="score-ring-outer">
+        <svg viewBox="0 0 200 200">
+          <circle class="ring-bg" cx="100" cy="100" r="85"/>
+          <circle class="ring-progress" cx="100" cy="100" r="85"/>
+        </svg>
+        <div class="score-value">
+          <div class="score-num">32</div>
+          <div class="score-of">out of 100</div>
+        </div>
+      </div>
+      <p class="score-label">Current online visibility score</p>
+    </div>
+  </section>
+
+  <!-- ═══ THE GAP ═══ -->
+  <section class="section">
+    <div class="section-label">The Gap</div>
+    <h2 class="section-title">People are searching.<br>They're just not finding you.</h2>
+
+    <div class="stat-cards">
+      <div class="stat-card">
+        <div class="stat-number">440</div>
+        <div class="stat-text">people search <strong>'estate agents derry'</strong> every month.<br><span class="stat-highlight">You're not there.</span></div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-number">590</div>
+        <div class="stat-text">searches for <strong>'houses for sale derry'</strong> every month.<br><span class="stat-highlight">Your competitors are.</span></div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-number">1,560<span style="font-size:32px;font-weight:400;">+</span></div>
+        <div class="stat-text">total monthly searches where you should be showing up.<br><span class="stat-highlight">Right now, you're invisible.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ COMPETITORS ═══ -->
+  <section class="competitors-section">
+    <div class="section-label">The Leaderboard</div>
+    <h2 class="section-title">Who's taking your leads<br>on Google right now</h2>
+
+    <div class="leaderboard">
+      <div class="lb-row">
+        <div class="lb-pos">1</div>
+        <div class="lb-bar-wrap">
+          <div class="lb-name">Pauline Elliott Estate Agents</div>
+          <div class="lb-bar"><div class="lb-bar-fill" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">2</div>
+        <div class="lb-bar-wrap">
+          <div class="lb-name">EO'C Estate Agents</div>
+          <div class="lb-bar"><div class="lb-bar-fill" style="width:92%"></div></div>
+        </div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">3</div>
+        <div class="lb-bar-wrap">
+          <div class="lb-name">Paul O'Keefe Estate Agents</div>
+          <div class="lb-bar"><div class="lb-bar-fill" style="width:85%"></div></div>
+        </div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">4</div>
+        <div class="lb-bar-wrap">
+          <div class="lb-name">Robert Quigley</div>
+          <div class="lb-bar"><div class="lb-bar-fill" style="width:77%"></div></div>
+        </div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">5</div>
+        <div class="lb-bar-wrap">
+          <div class="lb-name">John V Arthur</div>
+          <div class="lb-bar"><div class="lb-bar-fill" style="width:70%"></div></div>
+        </div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">6</div>
+        <div class="lb-bar-wrap">
+          <div class="lb-name">Oakland Estate Agents</div>
+          <div class="lb-bar"><div class="lb-bar-fill" style="width:62%"></div></div>
+        </div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">7</div>
+        <div class="lb-bar-wrap">
+          <div class="lb-name">Daniel Henry Estate Agents</div>
+          <div class="lb-bar"><div class="lb-bar-fill" style="width:55%"></div></div>
+        </div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">8</div>
+        <div class="lb-bar-wrap">
+          <div class="lb-name">Locate Estate Agents</div>
+          <div class="lb-bar"><div class="lb-bar-fill" style="width:47%"></div></div>
+        </div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">9</div>
+        <div class="lb-bar-wrap">
+          <div class="lb-name">Montgomery &amp; McCleery</div>
+          <div class="lb-bar"><div class="lb-bar-fill" style="width:40%"></div></div>
+        </div>
+      </div>
+
+      <div class="lb-divider">
+        <div class="lb-divider-line">
+          <span class="lb-divider-text">You're not on this list</span>
+        </div>
+      </div>
+
+      <div class="lb-you">
+        <div style="display:flex;align-items:center;">
+          <div class="lb-pos">?</div>
+          <div class="lb-name">James Gorman Property</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ THE POTENTIAL ═══ -->
+  <section class="potential-section">
+    <div class="potential-eyebrow">The Potential</div>
+    <div class="potential-amount">£72,000</div>
+    <div class="potential-per">in potential revenue per year from organic search</div>
+
+    <div class="roi-pill">
+      <div class="roi-multiplier">24×</div>
+      <div class="roi-text">
+        <strong>Return on investment</strong>
+        £250/month investment → £6,000+/month return
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="cta-section">
+    <h2 class="cta-title">Let's put you<br>on the map.</h2>
+    <p class="cta-subtitle">You've built the reputation. 75 five-star reviews prove it. Now let's make sure Google knows too.</p>
+
+    <a href="https://bluecanvas.ai" class="cta-btn">Book a Free Strategy Call</a>
+
+    <div class="cta-contact">
+      <div class="cta-contact-name">Phil Patterson</div>
+      <div class="cta-contact-detail">
+        <a href="https://bluecanvas.ai">bluecanvas.ai</a> · Derry, NI<br>
+        No lock-in · Results within 90 days
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <div class="footer">
+    <div class="footer-brand">Blue <span>Canvas</span></div>
+  </div>
+
+</div>
+</body>
+</html>
