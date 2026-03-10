@@ -1,54 +1,71 @@
 "use client";
-import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/ai-agents-for-business", label: "AI Agents" },
-  { href: "/ai-employee", label: "AI Employee" },
-  { href: "/openclaw-pricing", label: "Pricing" },
-  { href: "/faq", label: "FAQ" },
+  { href: "#services", label: "Services" },
+  { href: "#why-phil", label: "Why Phil" },
+  { href: "#use-cases", label: "Use Cases" },
+  { href: "#pricing", label: "Pricing" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-black/[.06] py-3.5">
-      <div className="max-w-[1200px] mx-auto px-6 flex justify-between items-center">
-        <Link href="/" className="font-heading font-bold text-lg text-dark">
-          Open<span className="text-blue">Claw</span> <span className="text-gray font-medium text-base">Consultant</span>
-        </Link>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-navy/95 backdrop-blur-md shadow-lg py-3"
+          : "bg-transparent py-5"
+      }`}
+    >
+      <div className="max-w-[1140px] mx-auto px-6 flex justify-between items-center">
+        <a href="#" className="font-heading font-bold text-xl text-white flex items-center gap-2">
+          <span className="w-8 h-8 bg-orange rounded-lg flex items-center justify-center text-sm font-black">
+            OC
+          </span>
+          OpenClaw<span className="text-orange">.</span>
+        </a>
+
         <button
-          className="md:hidden flex flex-col gap-[5px] cursor-pointer"
+          className="md:hidden flex flex-col gap-[5px] cursor-pointer relative z-50"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
-          <span className={`w-6 h-0.5 bg-dark transition-all ${open ? "rotate-45 translate-y-[7px]" : ""}`} />
-          <span className={`w-6 h-0.5 bg-dark transition-all ${open ? "opacity-0" : ""}`} />
-          <span className={`w-6 h-0.5 bg-dark transition-all ${open ? "-rotate-45 -translate-y-[7px]" : ""}`} />
+          <span className={`w-6 h-0.5 bg-white transition-all duration-300 ${open ? "rotate-45 translate-y-[7px]" : ""}`} />
+          <span className={`w-6 h-0.5 bg-white transition-all duration-300 ${open ? "opacity-0" : ""}`} />
+          <span className={`w-6 h-0.5 bg-white transition-all duration-300 ${open ? "-rotate-45 -translate-y-[7px]" : ""}`} />
         </button>
+
         <div
           className={`${
             open ? "flex" : "hidden"
-          } md:flex flex-col md:flex-row absolute md:static top-full left-0 right-0 bg-white md:bg-transparent p-5 md:p-0 gap-4 md:gap-5 items-start md:items-center shadow-lg md:shadow-none border-b md:border-0 border-black/[.06]`}
+          } md:flex flex-col md:flex-row absolute md:static top-full left-0 right-0 bg-navy md:bg-transparent p-6 md:p-0 gap-5 md:gap-7 items-start md:items-center border-b border-white/10 md:border-0`}
         >
           {links.map((l) => (
-            <Link
+            <a
               key={l.href}
               href={l.href}
-              className="text-dark/70 text-[0.85rem] font-medium hover:text-dark transition-colors"
+              className="text-white/70 text-sm font-medium hover:text-white transition-colors"
               onClick={() => setOpen(false)}
             >
               {l.label}
-            </Link>
+            </a>
           ))}
           <a
-            href="https://calendly.com/contact-bluecanvas/initial-consultation"
-            className="bg-accent text-white px-6 py-2.5 rounded-btn text-sm font-semibold hover:bg-accent-hover transition-colors"
+            href="#contact"
+            onClick={() => setOpen(false)}
+            className="bg-orange text-white px-5 py-2.5 rounded-btn text-sm font-semibold hover:bg-orange-hover transition-all hover:-translate-y-0.5"
           >
-            Book a Call
+            Free Consultation
           </a>
         </div>
       </div>

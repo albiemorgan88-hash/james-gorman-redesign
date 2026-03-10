@@ -21,14 +21,17 @@
 - **Charlie O'Hara** — Solara Wellness Hub, showcase deployed
 - **James Gorman** — Derry estate agent, prospect. Showcase + mockups built Mar 9
 - **Tim Clark** — Recruitment agency owner, showcase built Mar 10
+- **Conor King** — Ardmore draw winner (Draw #1, 1st+2nd)
+- **P Brolly** — Ardmore member, requested number resets
 
 ## Active Projects
 - **Blue Canvas** (PRIMARY) — £6k/mo target. Google Ads LIVE £20/day, account 801-851-4760. Basic API access approved. Landing page needs fixes: LCP 12.6s, 7 font families, QS 1/10. Fix plan at reports/google-ads/landing-page-fix-plan.md. 5 blog drafts staged in Webflow CMS.
-- **Ardmore Cricket Club** — LIVE at ardmorecricket.com. Stripe LIVE. Ardmore = lottery operator (not BC). Revenue: 50% jackpot, 40% club, 7.5% platform (BC), 2.5% Stripe. Draw #2 pot: £165, next draw Fri Mar 13. Admin payout page built but NOT deployed.
+- **Ardmore Cricket Club** — LIVE at ardmorecricket.com. Stripe LIVE. Ardmore = lottery operator (not BC). Revenue: 50% jackpot, 40% club, 7.5% platform (BC), 2.5% Stripe. Draw #2 pot: £165 (up from £28), next draw Fri Mar 13. Archive page LIVE. Admin payout page built but ON HOLD per PJ. Stripe payouts go to Ardmore's Danske Bank; PJ invoices 7.5% monthly.
 - **ClubDraw** — white-label weekly draw SaaS. Ardmore is client #1. Multi-club expansion ready. Skill at `skills/clubdraw/SKILL.md`.
 - **UK Trade Jobs** — uktradejobs.com on Vercel. 33 career guides, 7 location pages, CV builder, email capture, admin dashboard. 5,000+ pages. Target £3-5k/mo.
 - **Satellites** — openclawconsultant.co.uk (LIVE), zapierconsultant.co.uk, aiagentsetup.co.uk. Awaiting indexing.
 - **EU AI Act Compliance** — STACEY'S PROJECT. Domains: aiactcompliance.co.uk + aiaudituk.com. Do not action without Stacey.
+- **CDP Wallet** — `albie-bluecanvas` at `0x3894...0803`. Credentials at `~/.config/cdp/credentials.json`. Python SDK broken (async bug on 3.14). TODO: try Node.js SDK (`@coinbase/cdp-sdk` in `projects/wallet/node_modules/`).
 
 ## Competitors
 - **OpenFang** — open-source Agent OS (Rust, 137K lines, claims 30x faster). Spotted Mar 8.
@@ -54,14 +57,16 @@
 - DSIT/Capgemini £4.5M AI subcontracting — seeking niche AI SMEs.
 - Tim Clark showcase — WhatsApp message ready to send.
 - 5 blog drafts in Webflow CMS — PJ needs to add images and publish.
+- CDP wallet: try Node.js SDK to send 10 USDC to MoltLaunch wallet.
 
 ## Pending Actions (Standard)
 - SEO: Sarvesh's 6-pillar attack, service+location page gaps, citation audit, backlink gap analysis
 - Continue 1/day blog publishing
 - Create standard user account on Mac (Cyber Essentials)
-- Monitor Moltlaunch inbox (Agent #24586) — registered, 3 gigs listed
-- Register on AI Agent Store + AI Agents Directory (web form, PJ needed)
+- Monitor Moltlaunch inbox (Agent #24586) — registered, 3 gigs listed, 0 takers
+- Register on AI Agent Store (aiagentstore.ai) + AI Agents Directory (aiagentsdirectory.com)
 - ChatGPT→Claude migration blog post (SEO opportunity)
+- ⚠️ CashClaw: DO NOT engage with repos/npm packages. Wait for verified MoltLaunch official release only.
 
 ## Hustle Engine Philosophy
 Distinct from ops — pure opportunity hunting. See opportunities before anyone, act with speed + conviction. Jordan Belfort / Phil Knight / Elon energy.
