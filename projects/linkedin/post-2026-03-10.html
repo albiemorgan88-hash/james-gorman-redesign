@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedIn Post Image — Blue Canvas</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1200px;
+    height: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2B4DAF;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Subtle abstract vertical lines — abstracted cricket stumps */
+  .stumps {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.06;
+  }
+  .stumps .line {
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: white;
+    border-radius: 3px;
+  }
+  .stumps .line:nth-child(1) { left: 15%; }
+  .stumps .line:nth-child(2) { left: 18%; }
+  .stumps .line:nth-child(3) { left: 21%; }
+  .stumps .line:nth-child(4) { left: 78%; }
+  .stumps .line:nth-child(5) { left: 81%; }
+  .stumps .line:nth-child(6) { left: 84%; }
+  /* Bails */
+  .stumps .bail {
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: white;
+    border-radius: 3px;
+    top: 12%;
+  }
+  .stumps .bail:nth-child(7) { left: calc(15% - 5px); }
+  .stumps .bail:nth-child(8) { left: calc(78% - 5px); }
+
+  /* Geometric accent shapes */
+  .accent-circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 69, 32, 0.15);
+  }
+  .accent-circle.c1 {
+    width: 300px; height: 300px;
+    top: -80px; right: -60px;
+  }
+  .accent-circle.c2 {
+    width: 180px; height: 180px;
+    bottom: 60px; left: -40px;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 80px 100px;
+    max-width: 1000px;
+  }
+
+  /* Orange accent bar */
+  .accent-bar {
+    width: 80px;
+    height: 5px;
+    background: #FF4520;
+    margin: 0 auto 50px;
+    border-radius: 3px;
+  }
+
+  .quote {
+    color: white;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+  }
+
+  .quote em {
+    font-style: normal;
+    color: #FF4520;
+  }
+
+  .subtext {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+  }
+
+  /* Bottom bar */
+  .bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: #FF4520;
+  }
+
+  /* Brand mark */
+  .brand {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 3;
+  }
+  .brand-dot {
+    width: 14px;
+    height: 14px;
+    background: #FF4520;
+    border-radius: 50%;
+  }
+  .brand-text {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Background texture: abstracted cricket stumps -->
+  <div class="stumps">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="bail"></div>
+    <div class="bail"></div>
+  </div>
+
+  <!-- Accent circles -->
+  <div class="accent-circle c1"></div>
+  <div class="accent-circle c2"></div>
+
+  <div class="content">
+    <div class="accent-bar"></div>
+    <div class="quote">
+      AI doesn't have<br>to be <em>complicated.</em>
+    </div>
+    <div class="subtext">PRACTICAL AI FOR REAL BUSINESSES</div>
+  </div>
+
+  <div class="brand">
+    <div class="brand-dot"></div>
+    <span class="brand-text">Blue Canvas</span>
+  </div>
+
+  <div class="bottom-bar"></div>
+
+</body>
+</html>
