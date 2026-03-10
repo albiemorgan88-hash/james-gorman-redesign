@@ -1,0 +1,21 @@
+{
+  "business_name": "Tim Clark Recruitment",
+  "slug": "tim-clark-recruitment",
+  "contact_name": "Tim Clark",
+  "url": null,
+  "type": "recruitment-agency",
+  "showcase_type": "workflow-automation",
+  "score": 32,
+  "improvement_score": 78,
+  "created": "2026-03-09",
+  "deployed_url": "https://albiemorgan88-hash.github.io/showcase-tim-clark-recruitment/",
+  "pain_points": [
+    "Manual cover letter writing (30-45 min each)",
+    "Unprofessional Word doc formatting",
+    "CoRecruit transcription not connected to cover letter workflow",
+    "No automation between interview and output",
+    "Want flipbook presentation but no pipeline"
+  ],
+  "proposed_solution": "AI pipeline: CoRecruit transcription → AI cover letter generation → branded PDF → Flippingbook integration",
+  "tools_mentioned": ["CoRecruit", "Flippingbook", "Microsoft Word"]
+}
