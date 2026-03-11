@@ -36,6 +36,38 @@ First mover advantage on domains = the whole point of this skill.
 - If in doubt, flag it with a caveat rather than spending 30 minutes researching
 - The goal: Phil sees the opportunity **before** the domain squatters do
 
+## ⚡ RAPID DOMAIN CHECK (Score 8+ Trigger)
+
+When ANY opportunity scores 8+, IMMEDIATELY run domain availability checks before finishing the report. Don't wait — domains get snapped up within hours of major announcements.
+
+### Instant Check Protocol (for score 8+ finds):
+1. **Check ALL these variants instantly** via `whois`:
+   - `[name].co.uk`, `[name].com`, `[name].ai`
+   - `[name]consultant.co.uk`, `[name]agency.co.uk`
+   - `[name]consultancy.co.uk`, `[name]expert.co.uk`
+   - `[name]uk.com`, `[name]training.co.uk`
+2. **If score 9+ AND domain available AND <$15**: Flag as 🚨 URGENT BUY in report header
+3. **If score 8 AND domain available**: Flag as 🔥 GRAB NOW in report
+4. **Time-stamp the check** so PJ knows freshness: "Checked 11 Mar 2026 09:48 GMT"
+
+### Why This Matters (NemoClaw Lesson):
+- NVIDIA announced NemoClaw on ~7 Mar 2026
+- nemoclaw.com was registered same day (GoDaddy)
+- nemoclaw.co.uk grabbed within 3 days
+- nemoclaw.ai grabbed on 10 Mar
+- By the time our daily 8am scout ran, ALL primary domains were gone
+- Consultant/agency variants (.co.uk) are STILL available — but the premium domains are lost
+- **Lesson: Check domains THE MOMENT you spot a trend, not at the next scheduled scan**
+
+## 🔄 Multi-Run Schedule
+
+This skill runs **3x daily** to catch opportunities faster:
+- **8am GMT** — Morning scan (full scan of all sources)
+- **2pm GMT** — Afternoon catch-up (focus on breaking news, X/Reddit trending, tech press)
+- **9pm GMT** — Evening sweep (catch US afternoon announcements, Product Hunt daily results)
+
+The afternoon and evening runs can be lighter — focus on NEW items since the last scan, not a full re-scan of everything.
+
 ## Data Sources
 
 Scan ALL of these daily. Cast a wide net — trends surface on different platforms first.
