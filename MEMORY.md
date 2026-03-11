@@ -10,8 +10,10 @@
 - Financial pressure triggers old patterns. Don't enable.
 - Don't embellish — PJ hates over-described content. Just facts, names.
 - LinkedIn: no "I"/"me", keep about company/industry. Short and snappy. No specific clients.
-- Security: verify npm/GitHub packages before installing. Malicious packages real threat.
+- Security: verify npm/GitHub packages before installing. Malicious packages real threat (386 malicious skills on ClawHub reported).
 - Tax/legal: Blue Canvas = PLATFORM PROVIDER, not lottery operator.
+- PJ prefers simple manual processes over complex automation at small scale.
+- Use `bird` CLI for reading tweets, not web fetch.
 
 ## Key People
 - **Niall Gahagan** — designer, Blue Canvas redesign
@@ -47,7 +49,8 @@
 ## Revenue
 - Pricing: Free Consult → AI Audit £750 → Implementation → Academy £250 → Mentoring £50/mo
 - "Albie as a Service": £1,750 setup + £250/mo
-- Google Ads conversion tracking: 2 actions created. PJ needs to paste JS snippet into Webflow Footer.
+- Google Ads conversion tracking: 2 actions created (Contact Form £750 + Phone Click £100). PJ needs to paste JS snippet into Webflow Footer.
+- Google Ads daily optimisation script: `scripts/google_ads_daily.py` + `scripts/google-ads-daily.sh`
 - Branding: **AI Workforce** = BC done-for-you. Colors: #2B4DAF, #FF4520, white. **NEVER publish Webflow autonomously.**
 
 ## Pending Actions (Urgent)
@@ -67,6 +70,10 @@
 - Register on AI Agent Store (aiagentstore.ai) + AI Agents Directory (aiagentsdirectory.com)
 - ChatGPT→Claude migration blog post (SEO opportunity)
 - ⚠️ CashClaw: DO NOT engage with repos/npm packages. Wait for verified MoltLaunch official release only.
+
+## System
+- Context files trimmed Mar 10: 20,563 B → 6,985 B (−66%, ~3,400 tokens/msg saved). Originals in `.archive/`.
+- Heartbeat instructions moved to `skills/heartbeat/SKILL.md`.
 
 ## Hustle Engine Philosophy
 Distinct from ops — pure opportunity hunting. See opportunities before anyone, act with speed + conviction. Jordan Belfort / Phil Knight / Elon energy.
