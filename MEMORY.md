@@ -27,7 +27,7 @@
 - **P Brolly** — Ardmore member, requested number resets
 
 ## Active Projects
-- **Blue Canvas** (PRIMARY) — £6k/mo target. Google Ads LIVE £20/day, account 801-851-4760. Basic API access approved. Landing page needs fixes: LCP 12.6s, 7 font families, QS 1/10. Fix plan at reports/google-ads/landing-page-fix-plan.md. 5 blog drafts staged in Webflow CMS.
+- **Blue Canvas** (PRIMARY) — £6k/mo target. Google Ads LIVE £20/day, account 801-851-4760. Basic API access approved. ⚠️ Ads overspending: £34.96 on Mar 10 (75% over budget), AI Audit campaign hit £23.33 on £8 cap. Zero conversions — tracking unverified. 36 negative keywords added (should save ~£8/day). High-intent terms to add: "ai for cfos" (50% CTR), "ai vendor selection" (66.7% CTR). Pause "ai for small business" (QS=1). Landing page needs fixes: LCP 12.6s, 7 font families, QS 1/10. Fix plan at reports/google-ads/landing-page-fix-plan.md. 5 blog drafts staged in Webflow CMS.
 - **Ardmore Cricket Club** — LIVE at ardmorecricket.com. Stripe LIVE. Ardmore = lottery operator (not BC). Revenue: 50% jackpot, 40% club, 7.5% platform (BC), 2.5% Stripe. Draw #2 pot: £165 (up from £28), next draw Fri Mar 13. Archive page LIVE. Admin payout page built but ON HOLD per PJ. Stripe payouts go to Ardmore's Danske Bank; PJ invoices 7.5% monthly.
 - **ClubDraw** — white-label weekly draw SaaS. Ardmore is client #1. Multi-club expansion ready. Skill at `skills/clubdraw/SKILL.md`.
 - **UK Trade Jobs** — uktradejobs.com on Vercel. 33 career guides, 7 location pages, CV builder, email capture, admin dashboard. 5,000+ pages. Target £3-5k/mo.
