@@ -27,8 +27,8 @@
 - **P Brolly** — Ardmore member, requested number resets
 
 ## Active Projects
-- **Blue Canvas** (PRIMARY) — £6k/mo target. Google Ads LIVE £20/day, account 801-851-4760. Basic API access approved. ⚠️ Ads overspending: £34.96 on Mar 10 (75% over budget), AI Audit campaign hit £23.33 on £8 cap. Zero conversions — tracking unverified. 36 negative keywords added (should save ~£8/day). High-intent terms to add: "ai for cfos" (50% CTR), "ai vendor selection" (66.7% CTR). Pause "ai for small business" (QS=1). Landing page needs fixes: LCP 12.6s, 7 font families, QS 1/10. Fix plan at reports/google-ads/landing-page-fix-plan.md. 5 blog drafts staged in Webflow CMS.
-- **Ardmore Cricket Club** — LIVE at ardmorecricket.com. Stripe LIVE. Ardmore = lottery operator (not BC). Revenue: 50% jackpot, 40% club, 7.5% platform (BC), 2.5% Stripe. Draw #2 pot: £165 (up from £28), next draw Fri Mar 13. Archive page LIVE. Admin payout page built but ON HOLD per PJ. Stripe payouts go to Ardmore's Danske Bank; PJ invoices 7.5% monthly.
+- **Blue Canvas** (PRIMARY) — £6k/mo target. Google Ads LIVE £20/day, account 801-851-4760. Basic API access approved. ⚠️ Performance issue now clear: £191.46 spent over 7 days for 150 clicks and 0 conversions. CTR strong (17.5%), so likely tracking or landing-page failure, not traffic quality alone. 14 more negative keywords added Mar 12 after irrelevant brand-search leakage (~31% of AI Audit spend yesterday). QS=1 terms flagged for pause: "ai for small business", "ai marketing for small business". "ai consultant" at £2.98 CPC with 0 conversions is on watch. Landing page still needs fixes: LCP 12.6s, 7 font families, QS 1/10. Fix plan at reports/google-ads/landing-page-fix-plan.md. 5 blog drafts staged in Webflow CMS.
+- **Ardmore Cricket Club** — LIVE at ardmorecricket.com. Stripe LIVE. Ardmore = lottery operator (not BC). Revenue: 50% jackpot, 40% club, 7.5% platform (BC), 2.5% Stripe. Draw #2 pot: £165 (up from £28), next draw Fri Mar 13. Admin payout page built but ON HOLD per PJ. Stripe payouts go to Ardmore's Danske Bank; PJ invoices 7.5% monthly.
 - **ClubDraw** — white-label weekly draw SaaS. Ardmore is client #1. Multi-club expansion ready. Skill at `skills/clubdraw/SKILL.md`.
 - **UK Trade Jobs** — uktradejobs.com on Vercel. 33 career guides, 7 location pages, CV builder, email capture, admin dashboard. 5,000+ pages. Target £3-5k/mo.
 - **Satellites** — openclawconsultant.co.uk (LIVE), zapierconsultant.co.uk, aiagentsetup.co.uk. Awaiting indexing.
@@ -49,16 +49,17 @@
 ## Revenue
 - Pricing: Free Consult → AI Audit £750 → Implementation → Academy £250 → Mentoring £50/mo
 - "Albie as a Service": £1,750 setup + £250/mo
-- Google Ads conversion tracking: 2 actions created (Contact Form £750 + Phone Click £100). PJ needs to paste JS snippet into Webflow Footer.
+- Google Ads conversion tracking: 2 actions created (Contact Form £750 + Phone Click £100). Status Mar 12: still unverified in live flow; treat as critical blocker.
 - Google Ads daily optimisation script: `scripts/google_ads_daily.py` + `scripts/google-ads-daily.sh`
 - Branding: **AI Workforce** = BC done-for-you. Colors: #2B4DAF, #FF4520, white. **NEVER publish Webflow autonomously.**
 
 ## Pending Actions (Urgent)
+- PJ: verify Google Ads conversion tracking is actually firing before spending more
 - PJ: paste conversion tracking snippet into Webflow Footer Code + publish
 - PJ: fix landing page (cut fonts 7→2, remove visibility:hidden, add inline form)
+- PJ: consider pausing QS=1 keywords immediately ("ai for small business", "ai marketing for small business")
 - Ireland OGP AI PMC — pre-market consultation on eTenders. #1 tender priority.
 - DSIT/Capgemini £4.5M AI subcontracting — seeking niche AI SMEs.
-- Tim Clark showcase — WhatsApp message ready to send.
 - 5 blog drafts in Webflow CMS — PJ needs to add images and publish.
 - CDP wallet: try Node.js SDK to send 10 USDC to MoltLaunch wallet.
 
@@ -72,6 +73,10 @@
 - ⚠️ CashClaw: DO NOT engage with repos/npm packages. Wait for verified MoltLaunch official release only.
 
 ## System
+- OpenClaw security audit Mar 12: 0 critical, 1 warn, 1 info. `trustedProxies` warning is benign because gateway is loopback-only.
+- `openclaw security audit --fix` corrected file permissions on 16 session files.
+- Host posture confirmed Mar 12: Firewall ON, FileVault ON, loopback-only listeners except normal Apple `rapportd`, macOS fully up to date, SearXNG healthy on 127.0.0.1:8888.
+- OpenClaw update available: npm 2026.3.11 (installed via pnpm). Hold for PJ approval.
 - Context files trimmed Mar 10: 20,563 B → 6,985 B (−66%, ~3,400 tokens/msg saved). Originals in `.archive/`.
 - Heartbeat instructions moved to `skills/heartbeat/SKILL.md`.
 
