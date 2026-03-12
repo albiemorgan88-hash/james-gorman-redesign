@@ -37,6 +37,9 @@ Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 - [DONE] Preliminary baseline report delivered.
 - [DONE] Wix access obtained.
 - [IN PROGRESS] First full SEO pass completed and documented.
+- [BLOCKED] Validate authenticated Wix automation session for James site dashboard; current `agent-browser` route reaches Wix login only.
+- [TODO] Run one-time authenticated draft-only Wix validation pass: verify site ID `4b8170fd-99cc-45e8-a4fb-e28bb7156d52`, page list/slugs, SEO settings, footer edit area, blog controls.
+- [BLOCKED] Validate Wix API with a real working credential in runtime: account lookup, site lookup, blog draft endpoints, and one safe SEO/site-properties read.
 
 ## Suggested next actions
 1. Phil publishes the slug, metadata, email, and social fixes from `draft-meta-and-slugs-2026-03-12.md`.

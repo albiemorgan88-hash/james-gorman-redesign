@@ -50,3 +50,19 @@ Record **every** completed draft, recommendation, finding, and decision here.
 - Drafted a second supporting blog post in `blog-02-draft-2026-03-12.md`: **Thinking of Selling in Limavady? Start With a Proper Valuation**.
 - Live site/blog check suggests the Wix blog is **not currently surfaced or meaningfully live**; no visible blog link or indexed blog section was found during this pass.
 - No live/public changes were made.
+
+### Wix automation validation
+- Verified local browser automation tool availability: `agent-browser` is installed and usable on this machine.
+- Tested direct navigation to `https://manage.wix.com/dashboard/home` in an automation session.
+- Result: automation landed on the Wix **login page**, not an authenticated James site dashboard.
+- This means the current automation browser does **not** yet inherit Phil's existing Wix login state.
+- Performed a lightweight local Chromium-profile check for reusable Wix cookie hosts; none were found in the inspected Chrome / Brave / Arc / Edge profiles.
+- Reviewed public Wix developer documentation/search results indicating API-key and Blog/SEO-related API capability exists, but no working James-site API credentials/site scope were available to validate against.
+- Updated `wix-access.md` with the confirmed state, recommended automation route, blockers, and a safe next-step checklist.
+- Conclusion for now: autonomous Wix management is **partly** ready in theory, but **not yet proven end-to-end** until we complete a one-time authenticated browser/session handoff and re-run a draft-only dashboard validation pass.
+- Validated from the public site HTML that James Gorman Property's live Wix `siteId` is `4b8170fd-99cc-45e8-a4fb-e28bb7156d52`.
+- Reviewed current Wix developer docs and confirmed API key auth format: `Authorization` header plus either `wix-account-id` (account-level) or `wix-site-id` (site-level).
+- Confirmed Wix documents account-level site discovery (`Query Sites`), Blog draft endpoints, and site/SEO-related API surfaces in principle.
+- Attempted credential discovery in the current runtime context (`env`, common shell profiles, approved workspace files) and found **no usable Wix API key actually available to the shell**.
+- Because no working credential was available to runtime, authenticated live API calls against James' site/account could **not** be honestly validated in this pass.
+- Updated `wix-access.md` with the real API state: public site ID confirmed, auth format confirmed, API route still blocked by missing working credential, browser automation still the recommended primary operating model.
