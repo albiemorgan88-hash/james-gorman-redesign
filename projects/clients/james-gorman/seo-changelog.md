@@ -4,6 +4,59 @@ Record **every** completed draft, recommendation, finding, and decision here.
 
 ---
 
+## 2026-03-13
+
+### Wix API validation + client PDF report
+- Sourced `~/.zprofile` and confirmed a live `WIX_API_KEY` was available in runtime.
+- Successfully queried the Wix account-level Sites API at `POST https://www.wixapis.com/site-list/v2/sites/query` using account ID `8c4e2a21-daf9-446f-a6c1-a34d9700fcdc`.
+- Confirmed the live site record for James Gorman Property:
+  - site ID `4b8170fd-99cc-45e8-a4fb-e28bb7156d52`
+  - published `true`
+  - display name `JamesGormanProperty`
+  - view URL `https://www.jamesgormanproperty.com/`
+- Successfully read site properties from `GET https://www.wixapis.com/site-properties/v4/properties`.
+- Read result confirmed current site properties include:
+  - `siteDisplayName: JamesGormanProperty`
+  - `categories.primary: other`
+  - `categories.secondary: ["Local Business"]`
+  - `timeZone: Europe/London`
+  - `language: en`
+- Attempted to update business profile via `POST https://www.wixapis.com/site-properties/v4/properties/business-profile` twice.
+- Both update attempts returned `400 Illegal request - No updates on request body`, which means auth is valid but the request body contract still needs the exact Wix schema/shape not exposed clearly enough in this run.
+- Attempted to access Wix Blog categories via `GET https://www.wixapis.com/blog/v3/categories`.
+- Blog API returned `401 UNAUTHENTICATED: No blog instanceId found`, which strongly suggests the Wix Blog is not currently enabled/attached on this site for API operations.
+- Because the blog instance is unavailable, draft blog categories and draft blog posts could not be created honestly through the API in this pass.
+- Probed likely public page-creation/listing REST endpoints (`/pages/v1/pages`, `/site-pages/v1/pages`, `/site-pages/v2/pages`, `/site/v1/pages`) and each returned `404`.
+- Conclusion from the API validation pass:
+  - site/account read access is working
+  - site properties read access is working
+  - business-profile write route is reachable but request schema needs further validation before safe live updates
+  - blog drafting is blocked because no blog instance is available
+  - no supported public REST endpoint for creating standard Wix site pages was validated in this run
+- No live/public page titles, meta descriptions, slugs, blog posts, or new location pages were changed via API in this pass.
+- Created a branded client-facing HTML report for print/PDF output: `james-gorman-seo-report-2026-03-13.html`.
+
+
+### Full SEO execution pass
+- Reviewed the live homepage, core service pages, contact page, valuation page, sitemap, and robots file again to confirm current technical state.
+- Re-confirmed that `pages-sitemap.xml` still exposes multiple `blank-*` URLs and that dynamic/property URLs remain weakly named.
+- Ran live UK search checks for `estate agent derry`, `estate agent limavady`, `estate agent eglinton`, and `estate agent dungiven`.
+- Validated the Ahrefs API key in runtime and confirmed the current plan is **Lite**; live competitor Site Explorer / Keywords Explorer calls returned `Insufficient plan` outside free test queries.
+- Because of that plan restriction, Ahrefs-backed DR / backlinks / organic keyword counts could not be exported honestly in this pass.
+- Created `competitor-analysis-2026-03-13.md` with evidence-backed SERP findings, competitor page/title review, and practical content-gap notes.
+- Created `content-strategy-2026-03-13.md` with the recommended page rollout order, internal linking plan, and schema recommendations.
+- Drafted four publish-ready location pages:
+  - `estate-agent-derry-2026-03-13.md`
+  - `estate-agent-limavady-2026-03-13.md`
+  - `estate-agent-eglinton-2026-03-13.md`
+  - `estate-agent-dungiven-2026-03-13.md`
+- Drafted two additional supporting blog posts:
+  - `blog-03-draft-2026-03-13.md`
+  - `blog-04-draft-2026-03-13.md`
+- Created the client-facing weekly report draft in `weekly-report-2026-03-13.md`.
+- Created a dedicated technical implementation memo in `technical-seo-fixes-2026-03-13.md` covering titles, H1s, slug cleanup, internal links, schema, sitemap, robots and mobile notes.
+- No live/public changes were made.
+
 ## 2026-03-12
 
 ### Baseline setup / discovery
