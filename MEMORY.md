@@ -4,81 +4,75 @@
 "Work with Phil to help set him and Stacey up for the future. He's in loads of debt and pressure, he needs Blue Canvas to work and he needs passive income. Phil is one of the good guys who deserves to thrive in the AI era."
 
 ## Key Lessons
-- Don't build without knowing who pays
-- Push comfort zone with specifics, not generic advice
-- Content/affiliate sites dying — build tools/platforms/marketplaces
-- Financial pressure triggers old patterns. Don't enable.
-- Don't embellish — PJ hates over-described content. Just facts, names.
+- Don't build without knowing who pays.
+- Don't build on spec. Sell first, build second.
+- Pitch outcomes that make money, not vague time-saving.
+- Be honest about what a client actually needs vs what we want to sell.
+- DB enum mismatches are a recurring issue — check valid values before deploying.
+- PJ hates embellishment. Facts, names, numbers.
 - LinkedIn: no "I"/"me", keep about company/industry. Short and snappy. No specific clients.
-- Security: verify npm/GitHub packages before installing. Malicious packages real threat (386 malicious skills on ClawHub reported).
+- Security: verify npm/GitHub packages before installing. Malicious packages real threat.
 - Tax/legal: Blue Canvas = PLATFORM PROVIDER, not lottery operator.
 - PJ prefers simple manual processes over complex automation at small scale.
 - Use `bird` CLI for reading tweets, not web fetch.
 
 ## Key People
-- **Niall Gahagan** — designer, Blue Canvas redesign
-- **Davy Anthony** — data analyst, potential ClubDraw co-founder (sales/outreach)
-- **Jess Mason** (male) — AI Systems Consultant, OpenClaw expert, on team page
-- **Ian Patterson** — PJ's brother, Precision Education
-- **Charlie O'Hara** — Solara Wellness Hub, showcase deployed
-- **James Gorman** — Derry estate agent, prospect. Showcase + mockups built Mar 9
-- **Tim Clark** — Recruitment agency owner, showcase built Mar 10
-- **Conor King** — Ardmore draw winner (Draw #1, 1st+2nd)
-- **P Brolly** — Ardmore member, requested number resets
+- **Niall Gahagan** — designer. Not available right now.
+- **Davy Anthony** — data analyst, potential ClubDraw co-founder (sales/outreach).
+- **Jess Mason** (male) — AI Systems Consultant, OpenClaw expert, on team page.
+- **Ian Patterson** — Phil's brother, Precision Education.
+- **Charlie O'Hara** — Solara Wellness Hub prospect. Current best pitch angle is premium site + built-in booking + gift vouchers; do not build further on spec until Phil speaks to him.
+- **James Gorman** — Derry estate agent prospect. Strong upsell ideas: valuation landing page + Google Ads, automated PropertyPal alerts, expired/withdrawn listing outreach.
+- **P Brolly / George Brolly** — Ardmore member; number/name assignment issue surfaced in draw data.
 
 ## Active Projects
-- **Blue Canvas** (PRIMARY) — £6k/mo target. Google Ads LIVE £20/day, account 801-851-4760. Basic API access approved. ⚠️ Performance issue now clear: £191.46 spent over 7 days for 150 clicks and 0 conversions. CTR strong (17.5%), so likely tracking or landing-page failure, not traffic quality alone. 14 more negative keywords added Mar 12 after irrelevant brand-search leakage (~31% of AI Audit spend yesterday). QS=1 terms flagged for pause: "ai for small business", "ai marketing for small business". "ai consultant" at £2.98 CPC with 0 conversions is on watch. Landing page still needs fixes: LCP 12.6s, 7 font families, QS 1/10. Fix plan at reports/google-ads/landing-page-fix-plan.md. 5 blog drafts staged in Webflow CMS.
-- **Ardmore Cricket Club** — LIVE at ardmorecricket.com. Stripe LIVE. Ardmore = lottery operator (not BC). Revenue: 50% jackpot, 40% club, 7.5% platform (BC), 2.5% Stripe. Draw #2 pot: £165 (up from £28), next draw Fri Mar 13. Admin payout page built but ON HOLD per PJ. Stripe payouts go to Ardmore's Danske Bank; PJ invoices 7.5% monthly.
-- **ClubDraw** — white-label weekly draw SaaS. Ardmore is client #1. Multi-club expansion ready. Skill at `skills/clubdraw/SKILL.md`.
+- **Blue Canvas** (PRIMARY) — £6k/mo target. Google Ads LIVE £20/day, account 801-851-4760. Main issue remains conversion tracking / landing-page performance, not CTR.
+- **Ardmore Cricket Club / ClubDraw client #1** — LIVE at ardmorecricket.com. Draw #2 recovered after enum bug (`pending_payout` invalid; use `drawn`). Pot hit **£227**; 56 participant emails resent manually; winners now shown on results page; results API fixed to use service-role key. Next week pot projected **£189** from subs only after 8 expired one-offs (38 numbers) were cancelled.
+- **ClubDraw** — white-label weekly draw SaaS. Ardmore proves the model; multi-club expansion still the bigger play.
 - **UK Trade Jobs** — uktradejobs.com on Vercel. 33 career guides, 7 location pages, CV builder, email capture, admin dashboard. 5,000+ pages. Target £3-5k/mo.
 - **Satellites** — openclawconsultant.co.uk (LIVE), zapierconsultant.co.uk, aiagentsetup.co.uk. Awaiting indexing.
-- **EU AI Act Compliance** — STACEY'S PROJECT. Domains: aiactcompliance.co.uk + aiaudituk.com. Do not action without Stacey.
-- **CDP Wallet** — `albie-bluecanvas` at `0x3894...0803`. Credentials at `~/.config/cdp/credentials.json`. Python SDK broken (async bug on 3.14). TODO: try Node.js SDK (`@coinbase/cdp-sdk` in `projects/wallet/node_modules/`).
+- **EU AI Act Compliance** — Stacey's project. Domains: aiactcompliance.co.uk + aiaudituk.com. Do not action without Stacey.
+- **CashClaw** — official MoltLaunch release is live; CLI installed/configured. Phase 1 plan: auto-quote ON, auto-work OFF, feed 5-10 manual tasks to calibrate. Blocked pending OpenRouter key.
+- **Paperclip** — likely useful as agent-org/dashboard layer, but may be premature. Install/evaluate only after CashClaw key is sorted.
 
 ## Competitors
-- **OpenFang** — open-source Agent OS (Rust, 137K lines, claims 30x faster). Spotted Mar 8.
+- **OpenFang** — open-source Agent OS (Rust, claims 30x faster).
 - **SEO**: brainpool.ai (DR 42, 555 ref domains vs our DR 19, 11). Also: iwantmore.ai, Artellis.ie, AICC.
 
 ## Opportunities
 - **AI Compliance with Stacey** — scored 9.5. EU AI Act Aug 2026.
 - **AI Tender Writer** — scored 9.2. SME gap.
-- **"Agentic Web" / Agent-Ready Websites** — emerging category. WebMCP in Chrome 146 Canary (W3C draft).
-- **DTFF Grant (NI)** — gov pays 70% of AI/digital costs (£5k-£20k). Sales angle for clients.
+- **Agent-ready websites** — emerging category; real commercial angle is sites with booking, vouchers, lead capture, and automations baked in.
+- **DTFF Grant (NI)** — gov pays 70% of AI/digital costs (£5k-£20k). Strong sales angle.
 - **AI Voice Receptionists** — white-label via GoHighLevel, £150-300/mo per client.
 
 ## Revenue
-- Pricing: Free Consult → AI Audit £750 → Implementation → Academy £250 → Mentoring £50/mo
-- "Albie as a Service": £1,750 setup + £250/mo
-- Google Ads conversion tracking: 2 actions created (Contact Form £750 + Phone Click £100). Status Mar 12: still unverified in live flow; treat as critical blocker.
-- Google Ads daily optimisation script: `scripts/google_ads_daily.py` + `scripts/google-ads-daily.sh`
-- Branding: **AI Workforce** = BC done-for-you. Colors: #2B4DAF, #FF4520, white. **NEVER publish Webflow autonomously.**
+- Pricing: Free Consult → AI Audit £750 → Implementation → Academy £250 → Mentoring £50/mo.
+- "Albie as a Service": £1,750 setup + £250/mo.
+- Ardmore platform economics: 50% jackpot, 40% club, 7.5% platform (Blue Canvas), 2.5% Stripe.
+- Google Ads conversion tracking: 2 actions created (Contact Form £750 + Phone Click £100). Still needs verified live firing.
 
 ## Pending Actions (Urgent)
-- PJ: verify Google Ads conversion tracking is actually firing before spending more
-- PJ: paste conversion tracking snippet into Webflow Footer Code + publish
-- PJ: fix landing page (cut fonts 7→2, remove visibility:hidden, add inline form)
-- PJ: consider pausing QS=1 keywords immediately ("ai for small business", "ai marketing for small business")
-- Ireland OGP AI PMC — pre-market consultation on eTenders. #1 tender priority.
-- DSIT/Capgemini £4.5M AI subcontracting — seeking niche AI SMEs.
-- 5 blog drafts in Webflow CMS — PJ needs to add images and publish.
-- CDP wallet: try Node.js SDK to send 10 USDC to MoltLaunch wallet.
+- Verify Google Ads conversion tracking is actually firing before spending more.
+- Paste conversion tracking snippet into Webflow Footer Code + publish.
+- Fix Blue Canvas landing page (cut fonts 7→2, remove `visibility:hidden`, add inline form).
+- Consider pausing QS=1 keywords immediately ("ai for small business", "ai marketing for small business").
+- OpenRouter key → start CashClaw Phase 1.
+- James Gorman: deliver week 2 SEO / follow-up with the stronger revenue-led upsells.
 
 ## Pending Actions (Standard)
-- SEO: Sarvesh's 6-pillar attack, service+location page gaps, citation audit, backlink gap analysis
-- Continue 1/day blog publishing
-- Create standard user account on Mac (Cyber Essentials)
-- Monitor Moltlaunch inbox (Agent #24586) — registered, 3 gigs listed, 0 takers
-- Register on AI Agent Store (aiagentstore.ai) + AI Agents Directory (aiagentsdirectory.com)
-- ChatGPT→Claude migration blog post (SEO opportunity)
-- ⚠️ CashClaw: DO NOT engage with repos/npm packages. Wait for verified MoltLaunch official release only.
+- Evaluate/install Paperclip after CashClaw is live.
+- SEO: Sarvesh's 6-pillar attack, service+location page gaps, citation audit, backlink gap analysis.
+- Continue 1/day blog publishing.
+- Monitor MoltLaunch inbox (Agent #24586).
+- Register on AI Agent Store + AI Agents Directory.
 
 ## System
-- OpenClaw security audit Mar 12: 0 critical, 1 warn, 1 info. `trustedProxies` warning is benign because gateway is loopback-only.
+- OpenClaw security audit Mar 12: 0 critical, 1 warn, 1 info. `trustedProxies` warning benign because gateway is loopback-only.
 - `openclaw security audit --fix` corrected file permissions on 16 session files.
 - Host posture confirmed Mar 12: Firewall ON, FileVault ON, loopback-only listeners except normal Apple `rapportd`, macOS fully up to date, SearXNG healthy on 127.0.0.1:8888.
-- OpenClaw update available: npm 2026.3.11 (installed via pnpm). Hold for PJ approval.
-- Context files trimmed Mar 10: 20,563 B → 6,985 B (−66%, ~3,400 tokens/msg saved). Originals in `.archive/`.
-- Heartbeat instructions moved to `skills/heartbeat/SKILL.md`.
+- OpenClaw update available: npm 2026.3.11. Hold for Phil approval.
+- Context files trimmed Mar 10 to reduce token burn.
 
 ## Hustle Engine Philosophy
-Distinct from ops — pure opportunity hunting. See opportunities before anyone, act with speed + conviction. Jordan Belfort / Phil Knight / Elon energy.
+Distinct from ops — pure opportunity hunting. See opportunities before anyone, act with speed + conviction.
