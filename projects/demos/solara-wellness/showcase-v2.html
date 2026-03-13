@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Solara Wellness Hub × Blue Canvas</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#2B4DAF;--orange:#FF4520;--white:#fff;--bg:#f6f8fc;--text:#182033;--muted:#667085;--line:#e8edf5;--green:#18b67a;--gold:#f5a623}
+html,body{height:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);overflow:hidden;-webkit-user-select:none;user-select:none}
+.slide{position:absolute;inset:0;padding:30px 22px 92px;display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;transform:translateX(100%);transition:all .45s cubic-bezier(.4,0,.2,1);pointer-events:none}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:auto}.slide.prev{transform:translateX(-100%)}
+.badge{display:inline-block;padding:6px 12px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.blue{background:rgba(43,77,175,.1);color:var(--blue)}.orange{background:rgba(255,69,32,.1);color:var(--orange)}.green{background:rgba(24,182,122,.1);color:var(--green)}
+h1{font-size:30px;line-height:1.08;text-align:center;margin:14px 0 10px;letter-spacing:-.04em}h2{font-size:25px;line-height:1.12;text-align:center;margin:14px 0 10px;letter-spacing:-.03em}p{font-size:15px;line-height:1.55;color:var(--muted);text-align:center}.strong{color:var(--text);font-weight:700}
+.card{width:100%;max-width:348px;background:var(--white);border:1px solid rgba(43,77,175,.06);border-radius:24px;box-shadow:0 12px 32px rgba(25,39,75,.08)}
+.progress{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);display:flex;gap:8px;z-index:20}.dot{width:8px;height:8px;border-radius:999px;background:rgba(24,32,51,.14);transition:all .25s}.dot.active{width:24px;background:var(--blue)}
+.tap{position:fixed;left:50%;bottom:46px;transform:translateX(-50%);font-size:12px;color:rgba(24,32,51,.35);animation:fade 3s ease forwards;z-index:20}@keyframes fade{0%,70%{opacity:1}100%{opacity:0}}
+.hero-mark{width:82px;height:82px;border-radius:24px;background:linear-gradient(135deg,var(--blue),#5f7fe0);display:flex;align-items:center;justify-content:center;color:#fff;font-size:38px;box-shadow:0 14px 28px rgba(43,77,175,.22);margin-bottom:14px}.metric-pill{margin-top:18px;padding:10px 14px;border-radius:16px;background:#fff;border:1px solid var(--line);font-size:13px;color:var(--text)}
+.calendar{padding:18px}.days,.slots{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.days div{font-size:11px;text-align:center;color:var(--muted);font-weight:700}.slot{aspect-ratio:1/.9;border-radius:10px;background:#eef2fb;position:relative;overflow:hidden}.slot.full{background:rgba(24,182,122,.13)}.slot.gap{background:rgba(255,69,32,.14);border:1px dashed rgba(255,69,32,.45)}.slot.mid{background:rgba(245,166,35,.16)}.calendar-note{padding:0 18px 18px;font-size:13px;line-height:1.5;color:var(--muted)}
+.price-wrap{padding:18px}.price-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line)}.price-row:last-child{border-bottom:none}.price-left{display:flex;flex-direction:column;align-items:flex-start}.price-left span:first-child{font-size:15px;font-weight:700;color:var(--text)}.price-left span:last-child{font-size:12px;color:var(--muted)}.price{font-size:28px;font-weight:800;letter-spacing:-.04em}.price.peak{color:var(--blue)}.price.off{color:var(--green)}.price.flash{color:var(--orange)}
+.phone{padding:14px;background:linear-gradient(180deg,#fdfefe,#f5f8ff);border-radius:28px;border:1px solid var(--line);width:100%;max-width:310px;box-shadow:0 10px 25px rgba(20,31,61,.08)}.phone-top{height:24px;width:120px;background:#111;border-radius:0 0 18px 18px;margin:0 auto 14px}.ig-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px;margin-bottom:10px;text-align:left}.ig-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}.ig-avatar{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--orange),#ff8e74)}.ig-name{font-size:13px;font-weight:700;color:var(--text)}.ig-type{font-size:11px;color:var(--muted)}.ig-visual{height:88px;border-radius:14px;background:linear-gradient(135deg,rgba(43,77,175,.95),rgba(255,69,32,.78));display:flex;align-items:end;padding:12px;color:#fff;font-size:18px;font-weight:800;letter-spacing:-.03em}.story-row{display:flex;gap:8px;margin-top:10px}.story{flex:1;height:56px;border-radius:14px;background:#eef3ff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--blue);text-align:center;padding:6px}
+.flow{padding:18px}.flow-step{display:flex;align-items:flex-start;gap:12px;padding:12px 0}.num{width:28px;height:28px;border-radius:50%;background:var(--blue);color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:0 0 auto}.flow-step:nth-child(2) .num{background:var(--orange)}.flow-step:nth-child(3) .num{background:var(--green)}.flow-copy{text-align:left}.flow-copy strong{display:block;font-size:15px;color:var(--text);margin-bottom:3px}.flow-copy span{font-size:13px;color:var(--muted);line-height:1.45}
+.message-box{padding:18px}.bubble{padding:12px 14px;border-radius:18px;font-size:13px;line-height:1.5;max-width:88%;margin-bottom:10px}.bubble.bot{background:#f1f4f9;color:var(--text);border-bottom-left-radius:6px}.bubble.user{background:var(--blue);color:#fff;margin-left:auto;border-bottom-right-radius:6px}.stack{display:grid;gap:10px;margin-top:10px}.mini{padding:12px 14px;border-radius:16px;background:#fff7f4;border:1px solid rgba(255,69,32,.12);font-size:13px;color:var(--text);text-align:left}.mini b{color:var(--orange)}
+.stats{padding:18px}.stat{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:none}.label{font-size:13px;color:var(--muted)}.value{font-size:18px;font-weight:800;color:var(--text)}.value.blue{color:var(--blue)}.value.orange{color:var(--orange)}.highlight{margin-top:14px;padding:18px;border-radius:18px;background:linear-gradient(135deg,rgba(43,77,175,.07),rgba(255,69,32,.07));text-align:center}.highlight .big{font-size:34px;font-weight:900;color:var(--blue);letter-spacing:-.05em}.highlight .small{font-size:13px;color:var(--muted);margin-top:4px}
+.cta{padding:22px;text-align:center}.cta h2{margin-top:8px}.btn{display:block;text-decoration:none;width:100%;padding:15px 16px;border-radius:16px;font-weight:700;font-size:15px;margin-top:10px}.btn.primary{background:var(--blue);color:#fff}.btn.secondary{background:#fff3ef;color:var(--orange)}.btn.light{background:#f4f7fc;color:var(--text)}.foot{margin-top:14px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="slide active" id="s1">
+  <div class="hero-mark">🧖</div>
+  <span class="badge blue">Solara Wellness Hub × Blue Canvas</span>
+  <h1>What if your saunas were <span style="color:var(--blue)">90%+ booked</span> every week?</h1>
+  <p>Charlie — you've already built a brilliant experience. Now the goal is simple: <span class="strong">fill more of the quiet hours</span> without adding stress to your week.</p>
+  <div class="metric-pill">Built for Instagram, Booksy, WhatsApp — and real local demand in Derry</div>
+</div>
+
+<div class="slide" id="s2">
+  <span class="badge orange">The Problem</span>
+  <h2>Empty slots = lost money</h2>
+  <p>Every empty hour is <span class="strong">£25-£45 you'll never get back</span>. Most sauna businesses sit around 50-60% occupancy. The win is filling the gaps.</p>
+  <div class="card" style="margin-top:18px">
+    <div class="calendar">
+      <div class="days"><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div><div>S</div></div>
+      <div class="slots" style="margin-top:10px">
+        <div class="slot full"></div><div class="slot gap"></div><div class="slot mid"></div><div class="slot gap"></div><div class="slot full"></div><div class="slot full"></div><div class="slot full"></div>
+        <div class="slot gap"></div><div class="slot gap"></div><div class="slot full"></div><div class="slot gap"></div><div class="slot mid"></div><div class="slot full"></div><div class="slot full"></div>
+        <div class="slot full"></div><div class="slot mid"></div><div class="slot gap"></div><div class="slot gap"></div><div class="slot full"></div><div class="slot full"></div><div class="slot mid"></div>
+      </div>
+    </div>
+    <div class="calendar-note">Red gaps = unsold sessions. Fill even <span class="strong">1 extra slot a day</span> and the month starts looking very different.</div>
+  </div>
+</div>
+
+<div class="slide" id="s3">
+  <span class="badge blue">Smarter Pricing</span>
+  <h2>Charge more when everyone wants in. Charge less to fill the quiet times.</h2>
+  <div class="card" style="margin-top:16px">
+    <div class="price-wrap">
+      <div class="price-row"><div class="price-left"><span>Peak</span><span>Fri-Sun evenings</span></div><div class="price peak">£45</div></div>
+      <div class="price-row"><div class="price-left"><span>Off-peak</span><span>Mon-Wed daytime</span></div><div class="price off">£25</div></div>
+      <div class="price-row"><div class="price-left"><span>Last-minute</span><span>Empty slot within 4hrs</span></div><div class="price flash">£20</div></div>
+    </div>
+  </div>
+  <p style="margin-top:14px">Restaurants do this. Airlines do this. <span class="strong">Your saunas should too.</span><br>Target: <span class="strong">+15-25% more revenue</span> from the same number of slots.</p>
+</div>
+
+<div class="slide" id="s4">
+  <span class="badge orange">Social Content</span>
+  <h2>Your Instagram, but it actually sells</h2>
+  <p>You stay in control. The smart system plans the week, you approve it, and it goes out. <span class="strong">About 10 minutes a week from you.</span></p>
+  <div class="phone" style="margin-top:16px">
+    <div class="phone-top"></div>
+    <div class="ig-card">
+      <div class="ig-head"><div class="ig-avatar"></div><div><div class="ig-name">solara.wellness</div><div class="ig-type">Monday motivation</div></div></div>
+      <div class="ig-visual">Start the week feeling human again</div>
+    </div>
+    <div class="ig-card">
+      <div class="ig-head"><div class="ig-avatar"></div><div><div class="ig-name">solara.wellness</div><div class="ig-type">Wednesday wellness tip</div></div></div>
+      <div style="font-size:13px;color:var(--muted);line-height:1.45">3 easy recovery tips after a hard training session — plus a soft nudge to book a midweek slot.</div>
+      <div class="story-row"><div class="story">Weekend slots going fast</div><div class="story">Story countdown</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="s5">
+  <span class="badge green">Fill Empty Slots Fast</span>
+  <h2>Quiet Tuesday? Not anymore.</h2>
+  <p>When a slot is still empty within 24 hours, the system jumps on it automatically.</p>
+  <div class="card" style="margin-top:16px">
+    <div class="flow">
+      <div class="flow-step"><div class="num">1</div><div class="flow-copy"><strong>Instagram Story goes live</strong><span>"Flash deal today at 3pm — private sauna session £20"</span></div></div>
+      <div class="flow-step"><div class="num">2</div><div class="flow-copy"><strong>WhatsApp regulars get a nudge</strong><span>Only the right people, only when there is a gap to fill.</span></div></div>
+      <div class="flow-step"><div class="num">3</div><div class="flow-copy"><strong>Booksy price updates</strong><span>The quiet slot gets cheaper automatically until someone grabs it.</span></div></div>
+    </div>
+  </div>
+  <p style="margin-top:14px"><span class="strong">No manual work.</span> The system spots the gap and helps fill it.</p>
+</div>
+
+<div class="slide" id="s6">
+  <span class="badge blue">Repeat Customers</span>
+  <h2>Turn one visit into twelve</h2>
+  <p>Your regulars are your revenue. The job is making sure Solara stays top of mind after they leave.</p>
+  <div class="card" style="margin-top:16px">
+    <div class="message-box">
+      <div class="bubble bot">Loved your session? Book your next one now — <b>10% off</b> if you book within 48 hours.</div>
+      <div class="bubble user">Nice one. Send me the link.</div>
+      <div class="stack">
+        <div class="mini"><b>Birthday offers</b><br>Easy reason to come back in.</div>
+        <div class="mini"><b>Loyalty rewards</b><br>Give regulars a reason to make it a habit.</div>
+        <div class="mini"><b>Review requests</b><br>Catch happy customers while the buzz is still fresh.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="s7">
+  <span class="badge orange">The Numbers</span>
+  <h2>What this could look like for Solara</h2>
+  <div class="card" style="margin-top:16px">
+    <div class="stats">
+      <div class="stat"><span class="label">Current occupancy</span><span class="value">~55%</span></div>
+      <div class="stat"><span class="label">Target occupancy</span><span class="value blue">80%+</span></div>
+      <div class="stat"><span class="label">Revenue uplift</span><span class="value orange">+£800-1,200/mo</span></div>
+      <div class="stat"><span class="label">Extra bookings</span><span class="value">30-40 / month</span></div>
+      <div class="highlight"><div class="big">Same saunas.<br>More filled hours.</div><div class="small">Just from smarter pricing, better content, and fast follow-up.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="s8">
+  <div class="card">
+    <div class="cta">
+      <span class="badge blue">Free Consultation</span>
+      <h2>Ready to fill your saunas?</h2>
+      <p>No jargon. No pressure. Just a simple plan for getting more bookings into the quiet parts of the week.</p>
+      <a class="btn primary" href="https://calendly.com/contact-bluecanvas/initial-consultation">Book a quick call</a>
+      <a class="btn secondary" href="tel:07935217762">Call 07935 217762</a>
+      <a class="btn light" href="https://bluecanvas.ai">Blue Canvas</a>
+      <div class="foot">Built for Solara Wellness Hub · Charlie O'Hara · Derry</div>
+    </div>
+  </div>
+</div>
+
+<div class="progress" id="progress"></div>
+<div class="tap">tap to continue →</div>
+<script>
+const slides=document.querySelectorAll('.slide');let current=0;const progress=document.getElementById('progress');
+slides.forEach((_,i)=>{const d=document.createElement('div');d.className='dot'+(i===0?' active':'');d.onclick=()=>go(i);progress.appendChild(d)});
+function go(n){if(n<0||n>=slides.length||n===current)return;const dir=n>current?1:-1;slides[current].className='slide '+(dir>0?'prev':'');slides[n].className='slide active';current=n;document.querySelectorAll('.dot').forEach((d,i)=>d.className='dot'+(i===current?' active':''));}
+function next(){go(current+1)} function prev(){go(current-1)}
+document.addEventListener('click',e=>{if(e.target.closest('a,.dot'))return; if(e.clientX>window.innerWidth*.6)next(); else if(e.clientX<window.innerWidth*.4)prev(); else next();});
+let startX=0;document.addEventListener('touchstart',e=>startX=e.touches[0].clientX,{passive:true});document.addEventListener('touchend',e=>{const d=startX-e.changedTouches[0].clientX;if(Math.abs(d)>45){d>0?next():prev()}else next()},{passive:true});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' ')next(); if(e.key==='ArrowLeft')prev();});
+</script>
+</body>
+</html>
