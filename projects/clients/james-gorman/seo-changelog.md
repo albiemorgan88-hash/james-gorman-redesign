@@ -35,7 +35,9 @@ Record **every** completed draft, recommendation, finding, and decision here.
   - no supported public REST endpoint for creating standard Wix site pages was validated in this run
 - No live/public page titles, meta descriptions, slugs, blog posts, or new location pages were changed via API in this pass.
 - Created a branded client-facing HTML report for print/PDF output: `james-gorman-seo-report-2026-03-13.html`.
-
+- Built the report as a polished print-friendly HTML document with Blue Canvas branding, cover page, section page breaks, tables, action lists, measurable targets, and `@media print` styling for clean browser-to-PDF export.
+- Used source data from `competitor-analysis-2026-03-13.md`, `wix-changes-2026-03-13.md`, `technical-seo-fixes-2026-03-13.md`, and `content-strategy-2026-03-13.md` to keep the report evidence-based.
+- Added a reporting note inside the document where source files conflict on some slug mappings/publication state, so the client-facing narrative stays accurate and does not over-claim live changes.
 
 ### Full SEO execution pass
 - Reviewed the live homepage, core service pages, contact page, valuation page, sitemap, and robots file again to confirm current technical state.

@@ -32,6 +32,7 @@ Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 - [BLOCKED] Pull first Ahrefs-backed weekly metrics snapshot — API key validated, but current Ahrefs Lite plan blocks live Site Explorer / Keywords Explorer exports outside free test queries.
 - [TODO] Confirm GSC / GA4 access status for ongoing reporting.
 - [IN PROGRESS] Friday 14:00 Europe/London report prep workflow documented.
+- [DONE] Branded HTML client report created for 2026-03-13 with print-to-PDF layout: `james-gorman-seo-report-2026-03-13.html`.
 
 ## Admin / access / process
 - [TODO] Rotate/regenerate exposed Wix/API token before long-term use.

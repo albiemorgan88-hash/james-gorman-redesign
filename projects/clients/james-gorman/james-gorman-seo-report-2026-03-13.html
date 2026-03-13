@@ -1,537 +1,869 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>James Gorman Property SEO Report — Week 1 — March 13 2026</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEO Performance Report — James Gorman Property — 13 March 2026</title>
   <style>
     :root {
-      --blue:#2B4DAF;
-      --orange:#FF4520;
-      --ink:#162033;
-      --muted:#5d6b82;
-      --line:#d9e1f0;
-      --bg:#f5f7fb;
-      --white:#ffffff;
+      --blue: #2B4DAF;
+      --orange: #FF4520;
+      --ink: #162033;
+      --muted: #5f6b85;
+      --line: #dbe3f2;
+      --soft: #f4f7fc;
+      --soft-blue: #eef3ff;
+      --success: #107c41;
+      --warning: #a15c00;
+      --danger: #c0392b;
+      --shadow: 0 18px 48px rgba(20, 38, 84, 0.08);
+      --radius: 18px;
     }
-    * { box-sizing:border-box; }
+
+    * { box-sizing: border-box; }
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     body {
-      margin:0;
-      font-family: Inter, Arial, sans-serif;
-      color:var(--ink);
-      background:var(--bg);
-      line-height:1.55;
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: #ffffff;
+      line-height: 1.55;
     }
+
+    .report {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 32px 28px 56px;
+    }
+
     .page {
-      width:210mm;
-      min-height:297mm;
-      margin:0 auto 18px;
-      background:var(--white);
-      padding:18mm 16mm;
-      page-break-after:always;
-      position:relative;
+      page-break-after: always;
+      break-after: page;
+      padding: 10px 0 0;
     }
+
+    .page:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+
     .cover {
-      background:linear-gradient(160deg, var(--blue) 0%, #1d357a 70%);
-      color:#fff;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
+      min-height: calc(100vh - 88px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 28px 0 18px;
     }
+
     .brand {
-      font-weight:800;
-      font-size:20px;
-      letter-spacing:.04em;
-      text-transform:uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--blue);
+      text-transform: uppercase;
+      font-size: 14px;
     }
-    .brand span { color:var(--orange); }
+
+    .brand-mark {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+      background: linear-gradient(135deg, var(--blue) 0%, var(--orange) 100%);
+      transform: rotate(12deg);
+      box-shadow: 0 6px 18px rgba(43, 77, 175, 0.25);
+    }
+
     .cover-card {
-      background:rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.18);
-      border-radius:20px;
-      padding:18mm 14mm;
-      backdrop-filter: blur(4px);
-      max-width:145mm;
+      margin: 32px 0;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 56px;
+      background: linear-gradient(180deg, #ffffff 0%, #f8faff 100%);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
     }
+
+    .cover-card::before,
+    .cover-card::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      opacity: 0.12;
+      pointer-events: none;
+    }
+
+    .cover-card::before {
+      width: 280px;
+      height: 280px;
+      background: var(--blue);
+      top: -90px;
+      right: -80px;
+    }
+
+    .cover-card::after {
+      width: 220px;
+      height: 220px;
+      background: var(--orange);
+      bottom: -90px;
+      left: -70px;
+    }
+
     .eyebrow {
-      color:var(--orange);
-      font-size:12px;
-      font-weight:700;
-      text-transform:uppercase;
-      letter-spacing:.12em;
-      margin-bottom:10px;
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--soft-blue);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
     }
-    h1,h2,h3 { margin:0 0 10px; line-height:1.15; }
-    h1 { font-size:30px; }
-    h2 {
-      font-size:22px;
-      color:var(--blue);
-      padding-bottom:8px;
-      border-bottom:2px solid var(--line);
-      margin-bottom:16px;
+
+    h1, h2, h3, h4 { margin: 0 0 12px; line-height: 1.15; }
+    h1 { font-size: 46px; font-weight: 800; letter-spacing: -0.03em; }
+    h2 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; color: var(--blue); }
+    h3 { font-size: 20px; font-weight: 750; }
+    h4 { font-size: 15px; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; color: var(--muted); }
+
+    p { margin: 0 0 14px; }
+    .lead {
+      font-size: 18px;
+      color: #26324a;
+      max-width: 760px;
     }
-    h3 { font-size:15px; color:var(--ink); margin-top:18px; }
-    p { margin:0 0 10px; }
-    .muted { color:var(--muted); }
-    .meta-grid, .two-col, .three-col {
-      display:grid;
-      gap:14px;
+
+    .cover-meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 34px;
+      max-width: 640px;
+      position: relative;
+      z-index: 1;
     }
-    .meta-grid { grid-template-columns:repeat(3,1fr); margin-top:18px; }
-    .two-col { grid-template-columns:1.15fr .85fr; }
-    .three-col { grid-template-columns:repeat(3,1fr); }
+
+    .meta-box {
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px 18px;
+    }
+
+    .meta-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .meta-value { font-size: 17px; font-weight: 700; }
+
+    .section {
+      margin-top: 26px;
+      padding: 28px 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(20, 38, 84, 0.04);
+      break-inside: avoid;
+    }
+
+    .section:first-child { margin-top: 0; }
+
+    .intro-grid,
+    .stats-grid,
+    .two-col,
+    .status-grid,
+    .pipeline-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .intro-grid { grid-template-columns: 1.35fr 0.95fr; }
+    .stats-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 18px; }
+    .two-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .status-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 18px; }
+    .pipeline-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 18px; }
+
     .card {
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:14px;
-      background:#fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px 18px 16px;
+      background: #fff;
     }
-    .accent {
-      border-left:4px solid var(--orange);
-      padding-left:12px;
-      margin:10px 0 14px;
+
+    .accent-card {
+      background: linear-gradient(180deg, #f8fbff 0%, #eef3ff 100%);
+      border-color: #cfdaf8;
     }
-    .metric {
-      background:#eef3ff;
-      border:1px solid #cfdaf8;
-      border-radius:14px;
-      padding:14px;
+
+    .stat {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      background: var(--soft);
     }
-    .metric strong {
-      display:block;
-      color:var(--blue);
-      font-size:28px;
-      line-height:1;
-      margin-bottom:6px;
+
+    .stat .value {
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 800;
+      color: var(--blue);
+      margin-bottom: 8px;
     }
-    ul { margin:8px 0 0 18px; padding:0; }
-    li { margin:0 0 6px; }
+
+    .stat .label {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .kicker {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      color: var(--orange);
+      margin-bottom: 8px;
+    }
+
+    .callout {
+      border-left: 4px solid var(--orange);
+      padding: 14px 16px;
+      background: #fff8f5;
+      border-radius: 0 12px 12px 0;
+      margin-top: 14px;
+    }
+
+    ul, ol { margin: 0; padding-left: 20px; }
+    li { margin: 0 0 8px; }
+
+    .bullet-columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 12px;
+    }
+
     table {
-      width:100%;
-      border-collapse:collapse;
-      margin-top:8px;
-      font-size:13px;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 14px;
     }
+
     th, td {
-      border:1px solid var(--line);
-      padding:9px 10px;
-      vertical-align:top;
-      text-align:left;
+      border: 1px solid var(--line);
+      padding: 12px 12px;
+      vertical-align: top;
+      text-align: left;
     }
+
     th {
-      background:#eef3ff;
-      color:var(--blue);
-      font-weight:700;
+      background: var(--soft-blue);
+      color: var(--blue);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 800;
     }
+
+    tr:nth-child(even) td { background: #fbfcff; }
+
     .tag {
-      display:inline-block;
-      border-radius:999px;
-      background:#eef3ff;
-      color:var(--blue);
-      padding:4px 9px;
-      font-size:11px;
-      font-weight:700;
-      margin:3px 6px 0 0;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      white-space: nowrap;
     }
-    .warning {
-      background:#fff4ef;
-      border:1px solid #ffd3c7;
-      border-radius:14px;
-      padding:12px 14px;
+
+    .tag.green { background: #e8f6ee; color: var(--success); }
+    .tag.orange { background: #fff1e8; color: var(--warning); }
+    .tag.red { background: #fdecea; color: var(--danger); }
+    .tag.blue { background: var(--soft-blue); color: var(--blue); }
+
+    .small-note {
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--muted);
     }
-    .footer {
-      position:absolute;
-      bottom:10mm;
-      left:16mm;
-      right:16mm;
-      display:flex;
-      justify-content:space-between;
-      color:var(--muted);
-      font-size:11px;
-      border-top:1px solid var(--line);
-      padding-top:7px;
+
+    .footer-note {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 12px;
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
     }
+
+    .page-number::before { content: counter(page); }
+
+    @page {
+      size: A4;
+      margin: 14mm;
+    }
+
     @media print {
-      body { background:#fff; }
-      .page { margin:0; box-shadow:none; }
+      body { background: #fff; }
+      .report { max-width: none; padding: 0; }
+      .page { min-height: auto; }
+      .cover { min-height: auto; }
+      .section, .cover-card, .stat, .card, .meta-box { box-shadow: none; }
+      a { color: inherit; text-decoration: none; }
+      .section, table, tr, td, th, .card, .stat { break-inside: avoid; }
+    }
+
+    @media (max-width: 860px) {
+      .report { padding: 20px 18px 40px; }
+      .cover-card { padding: 34px 28px; }
+      h1 { font-size: 34px; }
+      h2 { font-size: 26px; }
+      .intro-grid, .stats-grid, .two-col, .status-grid, .pipeline-grid, .bullet-columns, .cover-meta {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
-  <section class="page cover">
-    <div class="brand">Blue <span>Canvas</span></div>
-    <div class="cover-card">
-      <div class="eyebrow">SEO Report · Week 1</div>
-      <h1>James Gorman Property</h1>
-      <p style="font-size:18px; margin-bottom:18px;">SEO Progress Report</p>
-      <p>Prepared for James Gorman Property</p>
-      <p>Prepared by Phil Patterson, Blue Canvas</p>
-      <p>March 13 2026</p>
-    </div>
-    <div class="meta-grid">
-      <div class="metric"><strong>4</strong> location pages drafted</div>
-      <div class="metric"><strong>4</strong> blog posts prepared</div>
-      <div class="metric"><strong>0</strong> top-10 rankings currently captured for target local terms</div>
-    </div>
-  </section>
+  <main class="report">
+    <section class="page cover">
+      <div>
+        <div class="brand"><span class="brand-mark"></span>Blue Canvas</div>
+        <div class="cover-card">
+          <div class="eyebrow">SEO Performance Report</div>
+          <h1>James Gorman Property</h1>
+          <p class="lead">Week 1 — 13 March 2026</p>
+          <p class="lead">Prepared by Phil Patterson, Blue Canvas</p>
 
-  <section class="page">
-    <h2>Executive Summary</h2>
-    <div class="accent">
-      James Gorman Property has a real SEO opportunity in Derry, Limavady, Eglinton and Dungiven, but the website is currently held back by weak URL structure, limited location-specific landing pages, and incomplete on-page optimisation.
-    </div>
-    <div class="two-col">
-      <div>
-        <p>This week focused on building the proper foundations for local search growth. We reviewed the live site, checked live UK search results, benchmarked the strongest local competitors, drafted the next content rollout, and prepared the technical SEO fixes needed to give Google clearer signals about what James Gorman Property offers and where it operates.</p>
-        <p>The biggest issue is structural rather than cosmetic. Right now, the website still exposes multiple <strong>blank-*</strong> URLs, several priority pages have weak titles, and there are no dedicated live landing pages targeting the four commercial location terms we are going after.</p>
-        <p>To fix that, we have now prepared a full first content pack: four location pages and four supporting blog articles, alongside a clear technical implementation list for metadata, slug cleanup, internal links, schema and homepage copy improvement.</p>
-      </div>
-      <div>
-        <div class="card">
-          <h3>What we found</h3>
-          <ul>
-            <li>James Gorman Property was not visible in the sampled top 10 organic results for the four target terms.</li>
-            <li>Derry is competitive; Eglinton looks the quickest short-term opportunity.</li>
-            <li>Blank slugs and weak page naming are still hurting index quality.</li>
-            <li>Homepage and service pages need stronger Derry-led SEO signals.</li>
-          </ul>
-        </div>
-        <div class="card" style="margin-top:14px;">
-          <h3>What we did</h3>
-          <ul>
-            <li>Completed competitor research and ranking snapshot.</li>
-            <li>Drafted technical SEO fixes for core pages.</li>
-            <li>Prepared 4 location pages and 4 support articles.</li>
-            <li>Tested Wix API access and documented live blockers.</li>
-          </ul>
+          <div class="cover-meta">
+            <div class="meta-box">
+              <div class="meta-label">Client</div>
+              <div class="meta-value">James Gorman Property</div>
+            </div>
+            <div class="meta-box">
+              <div class="meta-label">Reporting Period</div>
+              <div class="meta-value">Week 1</div>
+            </div>
+            <div class="meta-box">
+              <div class="meta-label">Prepared By</div>
+              <div class="meta-value">Phil Patterson, Blue Canvas</div>
+            </div>
+            <div class="meta-box">
+              <div class="meta-label">Date</div>
+              <div class="meta-value">13 March 2026</div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer"><span>Blue Canvas · James Gorman Property SEO Report</span><span>2</span></div>
-  </section>
-
-  <section class="page">
-    <h2>Current Rankings</h2>
-    <p class="muted">Live UK SERP sampling from the competitor review completed on March 13 2026.</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Target Search</th>
-          <th>James Gorman Property</th>
-          <th>Leading Competitors Seen</th>
-          <th>Opportunity Level</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>estate agent derry</td>
-          <td>Not visible in sampled top 10</td>
-          <td>Oakland, Pauline Elliott, Robert Ferris, O'Keefe, John V Arthur, EO'C, Daniel Henry</td>
-          <td>Hardest term, long-term priority</td>
-        </tr>
-        <tr>
-          <td>estate agent limavady</td>
-          <td>Not visible in sampled top 10</td>
-          <td>Daniel Henry, HomesNI, Colin McBride, P. McDermott, portals</td>
-          <td>Strong if dedicated page goes live</td>
-        </tr>
-        <tr>
-          <td>estate agent eglinton</td>
-          <td>Not visible in sampled top 10</td>
-          <td>PropertyPal pages, EO'C, John V Arthur profiles</td>
-          <td>Best short-term opening</td>
-        </tr>
-        <tr>
-          <td>estate agent dungiven</td>
-          <td>Not visible in sampled top 10</td>
-          <td>P. McDermott, PropertyPal, local pages</td>
-          <td>Winnable with stronger Dungiven relevance</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="three-col" style="margin-top:16px;">
-      <div class="metric"><strong>Derry</strong> Main commercial head term; needs the strongest page and internal support.</div>
-      <div class="metric"><strong>Eglinton</strong> Mixed SERP makes this the fastest realistic early ranking play.</div>
-      <div class="metric"><strong>Dungiven</strong> Requires a dedicated page to challenge P. McDermott’s local signal.</div>
-    </div>
-    <div class="footer"><span>Blue Canvas · James Gorman Property SEO Report</span><span>3</span></div>
-  </section>
-
-  <section class="page">
-    <h2>Competitor Snapshot</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Competitor</th>
-          <th>Where They Are Strong</th>
-          <th>What They Are Doing Better Right Now</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Pauline Elliott</td>
-          <td>Derry</td>
-          <td>Homepage title directly targets the head term and the brand already carries local relevance.</td>
-        </tr>
-        <tr>
-          <td>John V Arthur</td>
-          <td>Derry / Eglinton</td>
-          <td>Strong trust signals, long trading history, and exact-term title alignment.</td>
-        </tr>
-        <tr>
-          <td>Daniel Henry</td>
-          <td>Derry / Limavady</td>
-          <td>Dedicated branch and location pages give Google clear local targeting.</td>
-        </tr>
-        <tr>
-          <td>EO'C Estate Agents</td>
-          <td>Derry / Eglinton</td>
-          <td>Better area coverage and inventory-linked local pages.</td>
-        </tr>
-        <tr>
-          <td>P. McDermott</td>
-          <td>Dungiven / Limavady</td>
-          <td>Strongest Dungiven relevance because the whole site is tightly associated with the area.</td>
-        </tr>
-      </tbody>
-    </table>
-    <h3>What competitors have that James Gorman Property does not yet have live</h3>
-    <ul>
-      <li>Dedicated location pages for Derry, Limavady, Eglinton and Dungiven</li>
-      <li>Stronger title tags focused on commercial local terms</li>
-      <li>Cleaner, search-friendly page slugs</li>
-      <li>Clearer internal linking between services, valuations and local areas</li>
-      <li>More established local trust signals and location coverage</li>
-    </ul>
-    <div class="warning" style="margin-top:18px;">
-      <strong>Key takeaway:</strong> James Gorman Property does not need hundreds of pages to compete. It needs a cleaner technical setup and a properly structured local landing-page architecture so Google can clearly understand who the business serves and where.
-    </div>
-    <div class="footer"><span>Blue Canvas · James Gorman Property SEO Report</span><span>4</span></div>
-  </section>
-
-  <section class="page">
-    <h2>What We Did This Week</h2>
-    <div class="two-col">
-      <div>
-        <h3>Research and analysis</h3>
-        <ul>
-          <li>Reviewed the live homepage, service pages, valuation page, contact page, sitemap and robots file.</li>
-          <li>Ran live UK search sampling for Derry, Limavady, Eglinton and Dungiven estate-agent terms.</li>
-          <li>Benchmarked competitor titles, page structures and public positioning.</li>
-          <li>Validated that current Ahrefs API access is active but blocked for full competitor exports by plan limits.</li>
-        </ul>
-        <h3>Technical SEO preparation</h3>
-        <ul>
-          <li>Drafted priority title tags and meta descriptions for homepage, sales, lettings, about, services, contact, search and valuation pages.</li>
-          <li>Mapped the key blank slugs that need to be renamed first.</li>
-          <li>Prepared internal linking recommendations for homepage, sales, lettings, valuation and blog content.</li>
-          <li>Documented schema recommendations for RealEstateAgent, LocalBusiness, Service and future FAQ markup.</li>
-        </ul>
+      <div class="footer-note">
+        <span>Blue Canvas — SEO reporting prepared for client review</span>
+        <span>James Gorman Property</span>
       </div>
-      <div>
-        <h3>Content creation</h3>
-        <ul>
-          <li>Drafted a dedicated Estate Agent Derry page.</li>
-          <li>Drafted a dedicated Estate Agent Limavady page.</li>
-          <li>Drafted a dedicated Estate Agent Eglinton page.</li>
-          <li>Drafted a dedicated Estate Agent Dungiven page.</li>
-          <li>Prepared four supporting blog posts aligned to valuation, seller advice and area guidance.</li>
-        </ul>
-        <h3>Wix API validation</h3>
-        <ul>
-          <li>Confirmed the live site lookup endpoint works using the current API key.</li>
-          <li>Confirmed the site properties read endpoint works.</li>
-          <li>Tested site property update, blog category and blog draft endpoints.</li>
-          <li>Confirmed the blog API currently returns <strong>No blog instanceId found</strong>, which indicates the blog is not currently enabled/available for API use on this site.</li>
-          <li>Could not verify a supported public REST endpoint for creating standard Wix pages.</li>
-        </ul>
+    </section>
+
+    <section class="page">
+      <div class="section">
+        <div class="kicker">1. Executive Summary</div>
+        <h2>Technical foundations are moving in the right direction</h2>
+        <div class="intro-grid">
+          <div>
+            <p>James Gorman Property is an estate agent in Derry with a clear local SEO goal: build visibility for <strong>estate agent derry</strong> and then expand reach into <strong>Limavady</strong>, <strong>Eglinton</strong>, and <strong>Dungiven</strong>.</p>
+            <p>Right now, the business is already performing strongly for branded search and holds <strong>position 1</strong> for the core branded terms reviewed. The main gap is non-branded local discovery: James Gorman Property was <strong>not visible in the top 10 organic results</strong> sampled for any of the four target non-branded phrases.</p>
+            <p>This week focused on technical SEO foundations and content structure: improving page titles and meta descriptions, cleaning URL slugs, preparing redirects, replacing weak or placeholder content, and mapping the local page architecture needed to compete properly.</p>
+            <div class="callout">
+              <strong>Key takeaway:</strong> branded demand is healthy, traffic is already coming through, and AI visibility is accelerating. The next growth step is turning that early momentum into dedicated local landing pages and stronger internal linking so James Gorman Property can compete for non-branded searches.
+            </div>
+          </div>
+          <div class="card accent-card">
+            <h3>Week 1 headline metrics</h3>
+            <ul>
+              <li><strong>715</strong> sessions in the last 30 days</li>
+              <li><strong>581</strong> unique visitors in the last 30 days</li>
+              <li><strong>40</strong> clicks to contact in the last 30 days</li>
+              <li><strong>243</strong> impressions in the last 7 days <strong>(+35%)</strong></li>
+              <li><strong>68</strong> clicks in the last 7 days <strong>(+20%)</strong></li>
+              <li><strong>54</strong> AI-platform queries <strong>(+500%)</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="value">#1</div>
+            <div class="label">Branded ranking position</div>
+          </div>
+          <div class="stat">
+            <div class="value">Top 10</div>
+            <div class="label">Non-branded target visibility: not yet present</div>
+          </div>
+          <div class="stat">
+            <div class="value">+500%</div>
+            <div class="label">AI visibility growth</div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="footer"><span>Blue Canvas · James Gorman Property SEO Report</span><span>5</span></div>
-  </section>
 
-  <section class="page">
-    <h2>Technical SEO Fixes</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Item</th>
-          <th>Status</th>
-          <th>Detail</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Title tags and meta descriptions</td>
-          <td>Ready to apply</td>
-          <td>Priority drafts completed for homepage, sales, lettings, about, services, contact, search and valuation pages.</td>
-        </tr>
-        <tr>
-          <td>H1 structure</td>
-          <td>Ready to apply</td>
-          <td>Single-H1 recommendations prepared for the main page set.</td>
-        </tr>
-        <tr>
-          <td>Slug cleanup</td>
-          <td>High priority</td>
-          <td>Key blank slugs identified for replacement, including blank, blank-3, blank-4, blank-5, blank-7, blank-10, blank-12 and blank-15.</td>
-        </tr>
-        <tr>
-          <td>Internal linking</td>
-          <td>Ready to add</td>
-          <td>Areas We Cover and valuation-led link paths planned across homepage and core service pages.</td>
-        </tr>
-        <tr>
-          <td>Schema markup</td>
-          <td>Prepared</td>
-          <td>RealEstateAgent / LocalBusiness schema recommended for homepage and contact page; Service schema for sales, lettings and valuation.</td>
-        </tr>
-        <tr>
-          <td>Homepage placeholder copy</td>
-          <td>Pending live edit</td>
-          <td>Placeholder-style homepage copy still needs to be replaced with real commercial copy.</td>
-        </tr>
-        <tr>
-          <td>Footer cleanup</td>
-          <td>Pending live edit</td>
-          <td>Footer email typo and social-link cleanup remain on the list.</td>
-        </tr>
-        <tr>
-          <td>Mobile performance</td>
-          <td>Pending optimisation</td>
-          <td>Image compression, widget trimming and above-the-fold simplification still needed.</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="warning" style="margin-top:16px;">
-      <strong>Important:</strong> the biggest technical issue is still URL quality. Until blank-style URLs are removed and replaced with proper page naming, the site will continue to send mixed quality signals to search engines.
-    </div>
-    <div class="footer"><span>Blue Canvas · James Gorman Property SEO Report</span><span>6</span></div>
-  </section>
-
-  <section class="page">
-    <h2>Content Created</h2>
-    <h3>Location pages prepared</h3>
-    <table>
-      <thead><tr><th>Page</th><th>Primary Purpose</th><th>Target Term</th></tr></thead>
-      <tbody>
-        <tr><td>Estate Agent Derry</td><td>Main local commercial hub for sales, lettings and valuations in Derry.</td><td>estate agent derry</td></tr>
-        <tr><td>Estate Agent Limavady</td><td>Dedicated Limavady landing page to match branch-style competitor structures.</td><td>estate agent limavady</td></tr>
-        <tr><td>Estate Agent Eglinton</td><td>Early-win village page for a more open SERP.</td><td>estate agent eglinton</td></tr>
-        <tr><td>Estate Agent Dungiven</td><td>Dedicated Dungiven page to challenge the strongest local incumbent.</td><td>estate agent dungiven</td></tr>
-      </tbody>
-    </table>
-    <h3>Blog posts prepared</h3>
-    <table>
-      <thead><tr><th>Article</th><th>Category</th><th>Purpose</th></tr></thead>
-      <tbody>
-        <tr><td>How to Choose the Right Estate Agent in Derry</td><td>Seller Advice</td><td>Supports the Derry page and captures seller-intent content.</td></tr>
-        <tr><td>Thinking of Selling in Limavady? Start With a Proper Valuation</td><td>Seller Advice</td><td>Supports Limavady and valuation-focused lead generation.</td></tr>
-        <tr><td>Buying in Eglinton: What to Know About Schools, Commute and Local Demand</td><td>Area Guides</td><td>Supports the Eglinton page and adds buyer-intent local relevance.</td></tr>
-        <tr><td>Selling a Home in Dungiven: 7 Mistakes That Slow Down a Sale</td><td>Seller Advice</td><td>Supports Dungiven and local seller-intent visibility.</td></tr>
-      </tbody>
-    </table>
-    <div class="footer"><span>Blue Canvas · James Gorman Property SEO Report</span><span>7</span></div>
-  </section>
-
-  <section class="page">
-    <h2>Content Strategy</h2>
-    <div class="three-col">
-      <div class="card">
-        <h3>Phase 1</h3>
-        <ul>
-          <li>Apply slug and metadata fixes</li>
-          <li>Publish Estate Agent Derry</li>
-          <li>Publish Estate Agent Limavady</li>
-        </ul>
+      <div class="section">
+        <div class="kicker">2. Current Rankings</div>
+        <h2>Branded performance is strong; target local terms need dedicated page support</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Keyword</th>
+              <th>Type</th>
+              <th>Current Position</th>
+              <th>Current Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>james gorman property</td>
+              <td>Branded</td>
+              <td>1</td>
+              <td><span class="tag green">Strong</span></td>
+            </tr>
+            <tr>
+              <td>james gorman property derry</td>
+              <td>Branded</td>
+              <td>1</td>
+              <td><span class="tag green">Strong</span></td>
+            </tr>
+            <tr>
+              <td>james gorman estate agent derry</td>
+              <td>Branded</td>
+              <td>1</td>
+              <td><span class="tag green">Strong</span></td>
+            </tr>
+            <tr>
+              <td>estate agent derry</td>
+              <td>Non-branded target</td>
+              <td>Not in top 10</td>
+              <td><span class="tag red">Opportunity</span></td>
+            </tr>
+            <tr>
+              <td>estate agent limavady</td>
+              <td>Non-branded target</td>
+              <td>Not in top 10</td>
+              <td><span class="tag red">Opportunity</span></td>
+            </tr>
+            <tr>
+              <td>estate agent eglinton</td>
+              <td>Non-branded target</td>
+              <td>Not in top 10</td>
+              <td><span class="tag red">Opportunity</span></td>
+            </tr>
+            <tr>
+              <td>estate agent dungiven</td>
+              <td>Non-branded target</td>
+              <td>Not in top 10</td>
+              <td><span class="tag red">Opportunity</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="small-note">Ranking observations are based on the 13 March 2026 live SERP review captured in <em>competitor-analysis-2026-03-13.md</em>.</p>
       </div>
-      <div class="card">
-        <h3>Phase 2</h3>
-        <ul>
-          <li>Publish Estate Agent Eglinton</li>
-          <li>Publish Estate Agent Dungiven</li>
-          <li>Publish Derry and Limavady support articles</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Phase 3</h3>
-        <ul>
-          <li>Add FAQ sections</li>
-          <li>Improve homepage internal linking</li>
-          <li>Implement schema</li>
-        </ul>
-      </div>
-    </div>
-    <h3>How the content will work together</h3>
-    <ul>
-      <li>The homepage should link prominently to the four location pages and to sales, lettings, valuation, search and contact pages.</li>
-      <li>Each service page should link back into the relevant local pages.</li>
-      <li>Each blog post should link to its supporting location page plus valuation and contact pages where natural.</li>
-      <li>The Derry page is the long-term commercial anchor; Eglinton and Dungiven are the faster opportunities to capture movement earlier.</li>
-    </ul>
-    <div style="margin-top:14px;">
-      <span class="tag">Location architecture first</span>
-      <span class="tag">Valuation CTA on every path</span>
-      <span class="tag">Internal links drive authority flow</span>
-      <span class="tag">Schema adds trust and clarity</span>
-    </div>
-    <div class="footer"><span>Blue Canvas · James Gorman Property SEO Report</span><span>8</span></div>
-  </section>
+    </section>
 
-  <section class="page">
-    <h2>Next Steps</h2>
-    <ol style="margin:0 0 0 20px; padding:0;">
-      <li style="margin-bottom:10px;"><strong>Clean the core page slugs and metadata</strong><br><span class="muted">This is the most important technical fix because it affects index quality across the site.</span></li>
-      <li style="margin-bottom:10px;"><strong>Launch Estate Agent Derry and Estate Agent Limavady first</strong><br><span class="muted">These should become the first proper local landing pages supporting commercial search intent.</span></li>
-      <li style="margin-bottom:10px;"><strong>Publish the Eglinton and Dungiven pages next</strong><br><span class="muted">These have a realistic chance of moving earlier because the SERPs are less settled.</span></li>
-      <li style="margin-bottom:10px;"><strong>Replace placeholder homepage copy and add an Areas We Cover block</strong><br><span class="muted">This will improve relevance, internal linking and user clarity immediately.</span></li>
-      <li style="margin-bottom:10px;"><strong>Correct footer email and social link issues</strong><br><span class="muted">These are small but important trust and quality fixes.</span></li>
-      <li style="margin-bottom:10px;"><strong>Enable the Wix Blog if it is not already installed</strong><br><span class="muted">The API currently reports no blog instance, which is blocking draft-post creation through the current route.</span></li>
-      <li><strong>Implement schema and monitor first ranking movement</strong><br><span class="muted">Once the pages are live, schema and internal links should be added quickly to strengthen the rollout.</span></li>
-    </ol>
-    <div class="footer"><span>Blue Canvas · James Gorman Property SEO Report</span><span>9</span></div>
-  </section>
+    <section class="page">
+      <div class="section">
+        <div class="kicker">3. Competitor Snapshot</div>
+        <h2>Competitors are winning through cleaner location targeting and stronger local page structure</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Target Term</th>
+              <th>Top Competitors Seen</th>
+              <th>What They Are Doing Well</th>
+              <th>What James Gorman Property Is Missing Today</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>estate agent derry</td>
+              <td>Oakland Estate Agents, Pauline Elliott, Robert Ferris, O'Keefe Estate Agents, John V Arthur, EO'C Estate Agents, Daniel Henry, City Property Services</td>
+              <td>Homepage titles directly targeting Derry / Londonderry, stronger trust signals, established local brand presence, visible property-led structure</td>
+              <td>Dedicated Derry landing page, stronger Derry title/H1 alignment, cleaner service/location architecture</td>
+            </tr>
+            <tr>
+              <td>estate agent limavady</td>
+              <td>Daniel Henry, Colin McBride Residential, P. McDermott, Alexander Gourley, HomesNI and portal pages</td>
+              <td>Dedicated Limavady branch or area pages, stronger local relevance in page titles and URL structure</td>
+              <td>A dedicated Limavady page and supporting internal links</td>
+            </tr>
+            <tr>
+              <td>estate agent eglinton</td>
+              <td>EO'C Estate Agents, John V Arthur, PropertyPal and other local property/profile pages</td>
+              <td>Existing public pages that mention Eglinton directly, inventory relevance, office/profile trust signals</td>
+              <td>A purpose-built Eglinton page — this looks like one of the more achievable early wins</td>
+            </tr>
+            <tr>
+              <td>estate agent dungiven</td>
+              <td>P. McDermott, PropertyPal, Homepage Online and local property pages</td>
+              <td>Exact-match Dungiven title targeting, dedicated Dungiven and valuation pages, very strong local footprint</td>
+              <td>A Dungiven page with proper local context and valuation intent</td>
+            </tr>
+          </tbody>
+        </table>
 
-  <section class="page">
-    <h2>Measurable Targets</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Timeframe</th>
-          <th>Primary Goal</th>
-          <th>Target Outcome</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Next 4 weeks</td>
-          <td>Fix technical foundations and launch the first local pages</td>
-          <td>Blank-style core URLs reduced, 4 location pages live, first 2 blogs live, stronger homepage/local linking in place</td>
-        </tr>
-        <tr>
-          <td>Next 8 weeks</td>
-          <td>Start winning local relevance signals</td>
-          <td>Top-20 visibility target for Eglinton and Dungiven terms, improved crawl/index quality, early long-tail traffic from blog support</td>
-        </tr>
-        <tr>
-          <td>Next 12 weeks</td>
-          <td>Build authority and stronger commercial positioning</td>
-          <td>Meaningful movement for Limavady, stronger Derry relevance, more valuation-led entry points and a cleaner local SEO footprint overall</td>
-        </tr>
-      </tbody>
-    </table>
-    <h3>Core KPIs to track</h3>
-    <ul>
-      <li>Ranking position for estate agent derry, estate agent limavady, estate agent eglinton and estate agent dungiven</li>
-      <li>Number of clean, indexable service and location URLs</li>
-      <li>Organic landing-page visits to location pages once live</li>
-      <li>Valuation and contact enquiries generated from organic traffic</li>
-      <li>Reduction of placeholder or low-quality indexed URLs</li>
-    </ul>
-    <div class="accent" style="margin-top:18px;">
-      The immediate job is simple: clean the structure, publish the local landing pages, and give Google enough evidence to start treating James Gorman Property as a genuine local answer for these towns.
-    </div>
-    <div class="footer"><span>Prepared by Phil Patterson, Blue Canvas</span><span>10</span></div>
-  </section>
+        <div class="two-col" style="margin-top:18px;">
+          <div class="card">
+            <h3>Top competitor patterns</h3>
+            <ul>
+              <li>Location-led titles are doing a lot of the heavy lifting.</li>
+              <li>Competitors have dedicated branch, area, or local landing pages.</li>
+              <li>Established local agents benefit from stronger trust and stock signals.</li>
+              <li>Some SERPs still contain mixed or weaker pages, which creates openings.</li>
+            </ul>
+          </div>
+          <div class="card accent-card">
+            <h3>Best near-term opportunity</h3>
+            <p><strong>Eglinton</strong> and <strong>Dungiven</strong> look like the cleanest early wins based on the live SERP mix. Derry remains the most commercially important term, but it will require a stronger page architecture and supporting content to compete consistently.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section">
+        <div class="kicker">4. What We Did This Week</div>
+        <h2>Core SEO clean-up, content preparation and site-structure work completed</h2>
+        <div class="bullet-columns">
+          <div class="card">
+            <h3>Completed / logged this week</h3>
+            <ul>
+              <li>Updated SEO titles and meta descriptions on the core page set, with live Wix changes confirmed on key pages and draft recommendations prepared for the wider site.</li>
+              <li>Fixed key <code>blank-*</code> URL slugs and prepared keyword-rich replacements across the core navigation.</li>
+              <li>Added or planned redirects from old URLs to clean new slugs.</li>
+              <li>Completed competitor research across Derry, Limavady, Eglinton and Dungiven.</li>
+              <li>Developed the content strategy and rollout order for location-led SEO growth.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Draft assets now ready</h3>
+            <ul>
+              <li>4 location page drafts created: Derry, Limavady, Eglinton and Dungiven.</li>
+              <li>4 blog post drafts created to support local authority and internal linking.</li>
+              <li>Technical SEO audit completed with fixes logged for titles, H1s, sitemap, schema and mobile UX.</li>
+              <li>Blog page and blog rollout plan prepared, with Wix blog enablement still required.</li>
+              <li>Homepage placeholder copy replacement and wider site clean-up documented for manual publication.</li>
+            </ul>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Page</th>
+              <th>Old Slug</th>
+              <th>New Slug</th>
+              <th>New Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Home</td>
+              <td>/</td>
+              <td>/</td>
+              <td>Estate Agent in Derry | James Gorman Property</td>
+            </tr>
+            <tr>
+              <td>Sales</td>
+              <td>/blank-3</td>
+              <td>/property-for-sale-derry</td>
+              <td>Property for Sale in Derry | James Gorman Property</td>
+            </tr>
+            <tr>
+              <td>Lettings</td>
+              <td>/blank</td>
+              <td>/property-to-rent-derry</td>
+              <td>Property to Rent in Derry | James Gorman Property</td>
+            </tr>
+            <tr>
+              <td>Valuation</td>
+              <td>/blank-5</td>
+              <td>/free-property-valuation-derry</td>
+              <td>Free Property Valuation in Derry | James Gorman Property</td>
+            </tr>
+            <tr>
+              <td>Contact</td>
+              <td>/blank-7</td>
+              <td>/contact</td>
+              <td>Contact James Gorman Property | Estate Agent Derry</td>
+            </tr>
+            <tr>
+              <td>Services</td>
+              <td>/blank-5</td>
+              <td>/estate-agent-services-derry</td>
+              <td>Estate Agent Services Derry | Sales, Lettings &amp; Marketing</td>
+            </tr>
+            <tr>
+              <td>Search Homes</td>
+              <td>/blank-10</td>
+              <td>/property-search-derry</td>
+              <td>Property Search Derry | Homes for Sale &amp; Rent | James Gorman Property</td>
+            </tr>
+            <tr>
+              <td>Our Story</td>
+              <td>/blank-4</td>
+              <td>/about-james-gorman-property</td>
+              <td>About James Gorman Property | Estate Agent in Derry</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="small-note">Published Wix changes were explicitly confirmed for Home, Sales, Lettings, Valuation and Contact. Services, Search Homes and Our Story are included from the technical SEO draft pack prepared this week for manual publication. The source files contain one legacy slug mapping overlap, so this table reflects the recommended reporting set rather than claiming unverified live publication for every row.</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section">
+        <div class="kicker">5. Site Performance</div>
+        <h2>Healthy branded demand, improving click trend, and strong early AI crawler activity</h2>
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="value">715</div>
+            <div class="label">Sessions in last 30 days</div>
+          </div>
+          <div class="stat">
+            <div class="value">581</div>
+            <div class="label">Unique visitors in last 30 days</div>
+          </div>
+          <div class="stat">
+            <div class="value">40</div>
+            <div class="label">Clicks to contact in last 30 days</div>
+          </div>
+          <div class="stat">
+            <div class="value">243</div>
+            <div class="label">Impressions in last 7 days (+35%)</div>
+          </div>
+          <div class="stat">
+            <div class="value">68</div>
+            <div class="label">Clicks in last 7 days (+20%)</div>
+          </div>
+          <div class="stat">
+            <div class="value">54</div>
+            <div class="label">AI-platform queries (+500%)</div>
+          </div>
+        </div>
+
+        <div class="status-grid">
+          <div class="card">
+            <h3>AI visibility signals</h3>
+            <ul>
+              <li>ChatGPT crawled <strong>yesterday</strong></li>
+              <li>Claude crawled <strong>today</strong></li>
+              <li>Gemini crawled <strong>11 March</strong></li>
+              <li>Perplexity crawled <strong>20 February</strong></li>
+            </ul>
+          </div>
+          <div class="card accent-card">
+            <h3>What this means</h3>
+            <p>James Gorman Property is already being discovered by AI platforms and branded searchers. That is a positive trust signal. The next job is to give search engines and AI systems stronger, cleaner local landing pages to reference for Derry, Limavady, Eglinton and Dungiven.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="kicker">6. Technical SEO Status</div>
+        <h2>Most of the critical issues are identified, with three platform items still open</h2>
+        <div class="two-col">
+          <div class="card">
+            <h3>Fixed or drafted this week</h3>
+            <ul>
+              <li>Priority title tags and meta descriptions prepared across the main page set.</li>
+              <li>Recommended H1 structure defined for homepage, sales, lettings, about, services, contact, search and valuation pages.</li>
+              <li>Slug clean-up mapped to replace low-quality <code>blank-*</code> URLs.</li>
+              <li>Redirect requirement documented for old-to-new URL changes.</li>
+              <li>Internal linking plan drafted for homepage, services, valuation and blog content.</li>
+              <li>Schema recommendations documented for LocalBusiness / RealEstateAgent, Service and later FAQ markup.</li>
+              <li>Robots file reviewed with no major crawl blocker found.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Still pending</h3>
+            <ul>
+              <li>Wix SEO score sits at <strong>78%</strong>.</li>
+              <li><strong>Bing Webmaster Tools</strong> connection still needs to be completed.</li>
+              <li><strong>Google Business Profile</strong> connection still needs to be completed properly.</li>
+              <li><strong>Favicon</strong> still needs to be added.</li>
+              <li>Homepage placeholder text replacement and footer clean-up still need final manual publication where not already done.</li>
+              <li>Header social links still need correcting.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="callout">
+          <strong>Main technical blocker:</strong> the biggest SEO constraint is not robots.txt or crawl access. It is weak page architecture — especially placeholder-style URLs and the absence of dedicated local landing pages for the four target areas.
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section">
+        <div class="kicker">7. Content Pipeline</div>
+        <h2>Core local content is now drafted and ready for publication</h2>
+        <div class="pipeline-grid">
+          <div class="card accent-card">
+            <h3>Location pages drafted</h3>
+            <ul>
+              <li>Estate Agent Derry</li>
+              <li>Estate Agent Limavady</li>
+              <li>Estate Agent Eglinton</li>
+              <li>Estate Agent Dungiven</li>
+            </ul>
+            <p class="small-note">These pages are the foundation for ranking on the four main target non-branded keywords.</p>
+          </div>
+          <div class="card accent-card">
+            <h3>Blog posts drafted</h3>
+            <ul>
+              <li>How to Choose the Right Estate Agent in Derry</li>
+              <li>Thinking of Selling in Limavady? Start With a Proper Valuation</li>
+              <li>Buying in Eglinton: What to Know About Schools, Commute and Local Demand</li>
+              <li>Selling a Home in Dungiven: 7 Mistakes That Slow Down a Sale</li>
+            </ul>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Content Type</th>
+              <th>Status</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>4 location pages</td>
+              <td><span class="tag green">Ready to publish</span></td>
+              <td>Build direct relevance for Derry, Limavady, Eglinton and Dungiven</td>
+            </tr>
+            <tr>
+              <td>4 blog posts</td>
+              <td><span class="tag green">Ready to publish</span></td>
+              <td>Support local authority, internal links and valuation-led search intent</td>
+            </tr>
+            <tr>
+              <td>Internal linking plan</td>
+              <td><span class="tag blue">Prepared</span></td>
+              <td>Connect homepage, services, location pages, valuation and blog content</td>
+            </tr>
+            <tr>
+              <td>Schema implementation plan</td>
+              <td><span class="tag blue">Prepared</span></td>
+              <td>Strengthen entity and service understanding for search engines</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="small-note">Recommended rollout order from the content strategy: fix slugs and metadata first, then publish Derry and Limavady, followed by Eglinton and Dungiven, then layer in support articles and FAQ/schema improvements.</p>
+      </div>
+
+      <div class="section">
+        <div class="kicker">8. Next Steps — Week 2</div>
+        <h2>Prioritised actions for the next reporting cycle</h2>
+        <ol>
+          <li><strong>Publish location pages</strong> — start with Eglinton and Dungiven as the easiest visibility wins.</li>
+          <li><strong>Publish the first two blog posts</strong> to support internal links and local relevance.</li>
+          <li><strong>Fix header social links</strong> so trust signals are clean and accurate.</li>
+          <li><strong>Add a favicon</strong> to close one of the remaining Wix SEO items.</li>
+          <li><strong>Connect Google Business Profile properly</strong> and complete local business data.</li>
+          <li><strong>Connect Bing Webmaster Tools</strong> to complete search engine coverage.</li>
+          <li><strong>Improve internal linking</strong> between homepage, services, valuation and new local pages.</li>
+          <li><strong>Implement schema markup</strong> for homepage, contact and service pages.</li>
+          <li><strong>Begin backlink acquisition strategy</strong> once the core local pages are live.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section">
+        <div class="kicker">9. Measurable Targets</div>
+        <h2>12-week target framework</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Current</th>
+              <th>4 Weeks</th>
+              <th>8 Weeks</th>
+              <th>12 Weeks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>“estate agent derry” position</td>
+              <td>Not in top 10</td>
+              <td>Top 20</td>
+              <td>Top 10</td>
+              <td>Top 5</td>
+            </tr>
+            <tr>
+              <td>“estate agent limavady”</td>
+              <td>Not in top 10</td>
+              <td>Top 15</td>
+              <td>Top 5</td>
+              <td>Top 3</td>
+            </tr>
+            <tr>
+              <td>“estate agent eglinton”</td>
+              <td>Not in top 10</td>
+              <td>Top 10</td>
+              <td>Top 5</td>
+              <td>Top 3</td>
+            </tr>
+            <tr>
+              <td>“estate agent dungiven”</td>
+              <td>Not in top 10</td>
+              <td>Top 10</td>
+              <td>Top 5</td>
+              <td>Top 3</td>
+            </tr>
+            <tr>
+              <td>Monthly sessions</td>
+              <td>715</td>
+              <td>900</td>
+              <td>1,200</td>
+              <td>1,500</td>
+            </tr>
+            <tr>
+              <td>Contact clicks / month</td>
+              <td>40</td>
+              <td>55</td>
+              <td>75</td>
+              <td>100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section">
+        <div class="kicker">10. Closing Note</div>
+        <h2>Summary</h2>
+        <p>James Gorman Property already has branded demand, client interest and improving search engagement. The opportunity now is to convert that existing momentum into non-branded local visibility by publishing the drafted location pages, tightening internal links, and completing the remaining technical clean-up items.</p>
+        <p>With the current draft pack already in place, the site is in a much stronger position than it was a week ago. The focus for Week 2 should be straightforward: get the strongest drafted assets live, close the remaining platform issues, and start building authority around the local service areas that matter commercially.</p>
+        <div class="footer-note">
+          <span>Prepared by Phil Patterson, Blue Canvas</span>
+          <span>13 March 2026</span>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
