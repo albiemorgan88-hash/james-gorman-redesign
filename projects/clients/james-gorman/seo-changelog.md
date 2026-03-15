@@ -121,3 +121,14 @@ Record **every** completed draft, recommendation, finding, and decision here.
 - Attempted credential discovery in the current runtime context (`env`, common shell profiles, approved workspace files) and found **no usable Wix API key actually available to the shell**.
 - Because no working credential was available to runtime, authenticated live API calls against James' site/account could **not** be honestly validated in this pass.
 - Updated `wix-access.md` with the real API state: public site ID confirmed, auth format confirmed, API route still blocked by missing working credential, browser automation still the recommended primary operating model.
+
+## 2026-03-15 — Week 2 Content Blitz
+
+| Change | Detail |
+|--------|--------|
+| Blog: How to Choose Estate Agent Derry | Published live, ~900 words, targets "estate agent derry" |
+| Blog: Selling in Limavady Valuation | Published live, ~850 words, targets Limavady sellers |
+| Blog: First-Time Buyer Guide Derry | Published live, ~900 words, targets first-time buyers |
+| Blog: Property Value BT47 BT48 | Published live, ~850 words, hyperlocal content |
+
+**Running total: 12 published posts (4 location + 8 blog)**

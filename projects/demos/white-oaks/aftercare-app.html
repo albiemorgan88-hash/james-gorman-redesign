@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Oaks Aftercare | Your recovery, your community</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f7f9f8;
+            min-height: 100vh;
+            color: #2c3e2d;
+            overflow-x: hidden;
+        }
+
+        /* Login Screen */
+        .login-screen {
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(74,103,65,0.75) 0%, rgba(44,62,45,0.8) 50%, rgba(74,103,65,0.75) 100%),
+                        url('https://upload.wikimedia.org/wikipedia/commons/0/04/A_stunning_sunset_above_the_fort.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .login-screen::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: none;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 60px;
+            z-index: 1;
+        }
+
+        .logo-text {
+            font-size: 42px;
+            font-weight: 300;
+            color: white;
+            margin-bottom: 8px;
+            letter-spacing: -1px;
+        }
+
+        .logo-subtitle {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            font-style: italic;
+        }
+
+        .login-options {
+            width: 100%;
+            max-width: 360px;
+            z-index: 1;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 18px 24px;
+            margin-bottom: 16px;
+            background: rgba(255, 255, 255, 0.95);
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e2d;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .login-btn:hover {
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .login-btn.counsellor {
+            background: rgba(76, 103, 65, 0.9);
+            color: white;
+        }
+
+        .login-btn.counsellor:hover {
+            background: #4c6741;
+        }
+
+        /* App Container */
+        .app-container {
+            display: none;
+            min-height: 100vh;
+            padding-bottom: 80px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #4a6741 0%, #6b8e5a 100%);
+            color: white;
+            padding: 20px 20px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 300;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .welcome-msg {
+            font-size: 16px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .logout-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        /* Navigation */
+        .nav {
+            display: flex;
+            background: white;
+            padding: 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-item {
+            padding: 16px 20px;
+            border: none;
+            background: none;
+            color: #666;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+            border-bottom: 3px solid transparent;
+            min-width: auto;
+        }
+
+        .nav-item.active {
+            color: #4a6741;
+            border-bottom-color: #4a6741;
+            background: rgba(74, 103, 65, 0.05);
+        }
+
+        /* Content Sections */
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e8efe8;
+        }
+
+        .card-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #2c3e2d;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        /* Dashboard Cards */
+        .dashboard-grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .quick-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e8efe8;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .quick-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(74, 103, 65, 0.15);
+        }
+
+        .quick-card h3 {
+            font-size: 18px;
+            color: #2c3e2d;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .quick-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .milestone-card {
+            background: linear-gradient(135deg, #4a6741 0%, #6b8e5a 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .milestone-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="20" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></svg>');
+        }
+
+        .milestone-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .milestone-number {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .milestone-text {
+            font-size: 18px;
+            margin-bottom: 12px;
+            opacity: 0.95;
+        }
+
+        .milestone-message {
+            font-size: 14px;
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        /* Check-in */
+        .mood-scale {
+            display: flex;
+            justify-content: space-between;
+            margin: 24px 0;
+            gap: 8px;
+        }
+
+        .mood-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            padding: 16px 8px;
+            border-radius: 12px;
+            transition: all 0.3s;
+            flex: 1;
+            border: 2px solid transparent;
+        }
+
+        .mood-option:hover {
+            background: rgba(74, 103, 65, 0.05);
+            transform: scale(1.05);
+        }
+
+        .mood-option.selected {
+            background: #4a6741;
+            color: white;
+            border-color: #6b8e5a;
+            transform: scale(1.1);
+        }
+
+        .mood-emoji {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        .mood-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .notes-input {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid #e8efe8;
+            border-radius: 12px;
+            font-size: 16px;
+            margin-top: 16px;
+            min-height: 100px;
+            resize: vertical;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .notes-input:focus {
+            outline: none;
+            border-color: #4a6741;
+        }
+
+        /* Forum */
+        .forum-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .category-btn {
+            padding: 12px 16px;
+            background: #f7f9f8;
+            border: 2px solid #e8efe8;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #2c3e2d;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .category-btn.active {
+            background: #4a6741;
+            color: white;
+            border-color: #4a6741;
+        }
+
+        .forum-post {
+            background: #f7f9f8;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            border-left: 4px solid #4a6741;
+        }
+
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .post-author {
+            font-weight: 600;
+            color: #2c3e2d;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .counsellor-badge {
+            background: #4a6741;
+            color: white;
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .post-time {
+            color: #666;
+            font-size: 12px;
+        }
+
+        .post-content {
+            color: #2c3e2d;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .post-actions {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .heart-btn {
+            background: none;
+            border: none;
+            color: #666;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: color 0.3s;
+        }
+
+        .heart-btn.hearted {
+            color: #e74c3c;
+        }
+
+        .reply-btn {
+            background: none;
+            border: none;
+            color: #4a6741;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .post-replies {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #e8efe8;
+        }
+
+        .reply {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .reply-author {
+            font-weight: 600;
+            color: #2c3e2d;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .reply-content {
+            color: #2c3e2d;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        /* Buttons */
+        .btn {
+            width: 100%;
+            padding: 16px;
+            background: #4a6741;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 16px;
+        }
+
+        .btn:hover {
+            background: #3d5536;
+            transform: translateY(-1px);
+        }
+
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-secondary {
+            background: #f7f9f8;
+            color: #2c3e2d;
+            border: 2px solid #e8efe8;
+        }
+
+        .btn-secondary:hover {
+            background: #e8efe8;
+        }
+
+        /* Emergency contacts */
+        .contact-grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            background: #f7f9f8;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e8efe8;
+            transition: all 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(74, 103, 65, 0.1);
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background: #4a6741;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-info h3 {
+            color: #2c3e2d;
+            font-size: 16px;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .contact-info p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .call-btn {
+            background: #4a6741;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .call-btn:hover {
+            background: #3d5536;
+        }
+
+        /* Gratitude journal */
+        .gratitude-input {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid #e8efe8;
+            border-radius: 12px;
+            font-size: 16px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .gratitude-input:focus {
+            outline: none;
+            border-color: #4a6741;
+        }
+
+        /* Success message */
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            padding: 16px;
+            border-radius: 12px;
+            margin-top: 16px;
+            text-align: center;
+            display: none;
+            font-weight: 500;
+        }
+
+        /* Responsive design */
+        @media (max-width: 480px) {
+            .mood-scale {
+                gap: 4px;
+            }
+            
+            .mood-option {
+                padding: 12px 4px;
+            }
+            
+            .mood-emoji {
+                font-size: 28px;
+            }
+            
+            .mood-label {
+                font-size: 11px;
+            }
+            
+            .forum-categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .nav {
+                padding: 0;
+            }
+            
+            .nav-item {
+                padding: 12px 16px;
+                font-size: 13px;
+            }
+        }
+
+        /* Counsellor specific styles */
+        .alert-item {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+
+        .alert-item.urgent {
+            background: #f8d7da;
+            border-color: #f1b5bb;
+        }
+
+        .resident-list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .resident-item {
+            background: #f7f9f8;
+            padding: 16px;
+            border-radius: 8px;
+            border-left: 4px solid #4a6741;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .resident-item.struggling {
+            border-left-color: #e74c3c;
+            background: #fdf2f2;
+        }
+
+        .mood-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #27ae60;
+        }
+
+        .mood-indicator.struggling {
+            background: #e74c3c;
+        }
+
+        .mood-indicator.okay {
+            background: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Screen -->
+    <div class="login-screen" id="loginScreen">
+        <div class="logo-container">
+            <div class="logo-text">White Oaks</div>
+            <div class="logo-subtitle">Addiction Treatment Centre</div>
+            <div class="tagline">Your recovery, your community</div>
+        </div>
+        
+        <div class="login-options">
+            <button class="login-btn" onclick="login('resident')">
+                🌱 Resident Login
+            </button>
+            <button class="login-btn counsellor" onclick="login('counsellor')">
+                👨‍⚕️ Counsellor Login
+            </button>
+        </div>
+    </div>
+
+    <!-- App Container -->
+    <div class="app-container" id="appContainer">
+        <div class="header">
+            <div class="header-content">
+                <h1 id="headerTitle">Welcome back</h1>
+                <div class="welcome-msg" id="welcomeMsg">How are you feeling today?</div>
+            </div>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+
+        <div class="nav" id="mainNav">
+            <button class="nav-item active" onclick="showSection('dashboard')">Dashboard</button>
+            <button class="nav-item" onclick="showSection('checkin')">Check-In</button>
+            <button class="nav-item" onclick="showSection('forum')">Forum</button>
+            <button class="nav-item" onclick="showSection('journal')">Journal</button>
+            <button class="nav-item" onclick="showSection('meetings')">Meetings</button>
+            <button class="nav-item" onclick="showSection('support')">Support</button>
+        </div>
+
+        <div class="content">
+            <!-- Resident Dashboard -->
+            <div id="dashboard" class="section active">
+                <div class="dashboard-grid">
+                    <div class="card milestone-card">
+                        <div class="milestone-content">
+                            <div class="milestone-number" id="daysCount">--</div>
+                            <div class="milestone-text">Days since completion</div>
+                            <div class="milestone-message" id="milestoneMessage">Every day is a victory</div>
+                        </div>
+                    </div>
+
+                    <div class="quick-card" onclick="showSection('checkin')">
+                        <h3>🌈 Daily Check-In</h3>
+                        <p>Share how you're feeling today</p>
+                    </div>
+
+                    <div class="quick-card" onclick="showSection('forum')">
+                        <h3>💬 Community Forum</h3>
+                        <p>Connect with others in recovery</p>
+                    </div>
+
+                    <div class="quick-card" onclick="showSection('journal')">
+                        <h3>🙏 Gratitude Journal</h3>
+                        <p>Reflect on today's blessings</p>
+                    </div>
+
+                    <div class="quick-card" onclick="showSection('support')">
+                        <h3>📞 Support Network</h3>
+                        <p>Your safety net is here</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Counsellor Dashboard -->
+            <div id="counsellorDashboard" class="section">
+                <div class="card">
+                    <h2 class="card-title">Today's Overview</h2>
+                    <div class="dashboard-grid">
+                        <div style="background: #e8f5e8; padding: 20px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 32px; font-weight: 700; color: #4a6741;">8</div>
+                            <div style="color: #666; font-size: 14px;">Residents checked in</div>
+                        </div>
+                        <div style="background: #fff3cd; padding: 20px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 32px; font-weight: 700; color: #856404;">2</div>
+                            <div style="color: #666; font-size: 14px;">Need attention</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Residents Needing Attention</h3>
+                    <div class="alert-item urgent">
+                        <strong>Sarah M.</strong> - Mood level 1/5 for 2 days. Last check-in: Yesterday 2:30 PM
+                    </div>
+                    <div class="alert-item">
+                        <strong>Michael K.</strong> - No check-in for 3 days. Last seen: Monday
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>All Residents</h3>
+                    <div class="resident-list">
+                        <div class="resident-item">
+                            <div>
+                                <strong>Emma L.</strong><br>
+                                <small>Last check-in: Today 9:15 AM</small>
+                            </div>
+                            <div class="mood-indicator"></div>
+                        </div>
+                        <div class="resident-item">
+                            <div>
+                                <strong>James R.</strong><br>
+                                <small>Last check-in: Today 11:20 AM</small>
+                            </div>
+                            <div class="mood-indicator"></div>
+                        </div>
+                        <div class="resident-item struggling">
+                            <div>
+                                <strong>Sarah M.</strong><br>
+                                <small>Last check-in: Yesterday 2:30 PM</small>
+                            </div>
+                            <div class="mood-indicator struggling"></div>
+                        </div>
+                        <div class="resident-item">
+                            <div>
+                                <strong>Tom W.</strong><br>
+                                <small>Last check-in: Today 8:45 AM</small>
+                            </div>
+                            <div class="mood-indicator okay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Check-In Section -->
+            <div id="checkin" class="section">
+                <div class="card">
+                    <h2 class="card-title">How are you feeling today?</h2>
+                    <div class="mood-scale">
+                        <div class="mood-option" data-mood="1">
+                            <div class="mood-emoji">😰</div>
+                            <div class="mood-label">Really struggling</div>
+                        </div>
+                        <div class="mood-option" data-mood="2">
+                            <div class="mood-emoji">😔</div>
+                            <div class="mood-label">Having a hard time</div>
+                        </div>
+                        <div class="mood-option" data-mood="3">
+                            <div class="mood-emoji">😐</div>
+                            <div class="mood-label">Getting through</div>
+                        </div>
+                        <div class="mood-option" data-mood="4">
+                            <div class="mood-emoji">😊</div>
+                            <div class="mood-label">Feeling good</div>
+                        </div>
+                        <div class="mood-option" data-mood="5">
+                            <div class="mood-emoji">😄</div>
+                            <div class="mood-label">Thriving today</div>
+                        </div>
+                    </div>
+                    <textarea class="notes-input" placeholder="Anything you'd like to share about today? Your thoughts, challenges, or victories - big or small..."></textarea>
+                    <button class="btn" onclick="submitCheckIn()" disabled id="checkinBtn">Complete Check-In</button>
+                    <div class="success-message" id="successMsg">
+                        Thank you for checking in. You're doing great. 💚
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forum Section -->
+            <div id="forum" class="section">
+                <div class="card">
+                    <h2 class="card-title">Community Forum</h2>
+                    
+                    <div class="forum-categories">
+                        <button class="category-btn active" onclick="showCategory('sharing')">Sharing</button>
+                        <button class="category-btn" onclick="showCategory('help')">Asking for Help</button>
+                        <button class="category-btn" onclick="showCategory('celebrating')">Celebrating</button>
+                        <button class="category-btn" onclick="showCategory('advice')">Advice</button>
+                    </div>
+
+                    <div id="forumPosts">
+                        <!-- Posts will be loaded here -->
+                    </div>
+
+                    <button class="btn btn-secondary" onclick="showNewPostForm()">Share Something</button>
+                </div>
+            </div>
+
+            <!-- Journal Section -->
+            <div id="journal" class="section">
+                <div class="card">
+                    <h2 class="card-title">Today's Gratitude</h2>
+                    <p style="text-align: center; color: #666; margin-bottom: 24px;">
+                        Take a moment to reflect on what you're grateful for today
+                    </p>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: 600; color: #2c3e2d; display: block; margin-bottom: 8px;">I'm grateful for...</label>
+                        <input type="text" class="gratitude-input" placeholder="Something that brought you peace today">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: 600; color: #2c3e2d; display: block; margin-bottom: 8px;">I'm thankful for...</label>
+                        <input type="text" class="gratitude-input" placeholder="A person who supports you">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: 600; color: #2c3e2d; display: block; margin-bottom: 8px;">I appreciate...</label>
+                        <input type="text" class="gratitude-input" placeholder="A moment or opportunity from today">
+                    </div>
+
+                    <button class="btn" onclick="saveGratitude()">Save Today's Gratitude</button>
+                </div>
+            </div>
+
+            <!-- Meetings Section -->
+            <div id="meetings" class="section">
+                <div class="card">
+                    <h2 class="card-title">Find a Meeting</h2>
+                    <div style="display: grid; gap: 16px;">
+                        <a href="https://www.alcoholicsanonymous.ie/find-a-meeting/" target="_blank" style="display: block; padding: 20px; background: #f7f9f8; border-radius: 12px; text-decoration: none; color: #2c3e2d; border: 1px solid #e8efe8;">
+                            <h3 style="color: #4a6741; margin-bottom: 8px;">🇮🇪 AA Ireland</h3>
+                            <p style="color: #666;">Alcoholics Anonymous meetings across Ireland</p>
+                        </a>
+
+                        <a href="https://www.aanorthernireland.org/meetings" target="_blank" style="display: block; padding: 20px; background: #f7f9f8; border-radius: 12px; text-decoration: none; color: #2c3e2d; border: 1px solid #e8efe8;">
+                            <h3 style="color: #4a6741; margin-bottom: 8px;">🇬🇧 AA Northern Ireland</h3>
+                            <p style="color: #666;">Find AA meetings in Northern Ireland</p>
+                        </a>
+
+                        <a href="https://ukna.org/meetings/" target="_blank" style="display: block; padding: 20px; background: #f7f9f8; border-radius: 12px; text-decoration: none; color: #2c3e2d; border: 1px solid #e8efe8;">
+                            <h3 style="color: #4a6741; margin-bottom: 8px;">💊 NA UK & Ireland</h3>
+                            <p style="color: #666;">Narcotics Anonymous meetings</p>
+                        </a>
+
+                        <a href="https://www.gamblersanonymous.ie/" target="_blank" style="display: block; padding: 20px; background: #f7f9f8; border-radius: 12px; text-decoration: none; color: #2c3e2d; border: 1px solid #e8efe8;">
+                            <h3 style="color: #4a6741; margin-bottom: 8px;">🎲 GA Ireland</h3>
+                            <p style="color: #666;">Gamblers Anonymous meetings</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Section -->
+            <div id="support" class="section">
+                <div class="card">
+                    <h2 class="card-title">Your Support Network</h2>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">🆘</div>
+                            <div class="contact-info">
+                                <h3>Crisis Support</h3>
+                                <p>Samaritans - 24/7 free support</p>
+                            </div>
+                            <a href="tel:116123" class="call-btn">Call 116 123</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🤝</div>
+                            <div class="contact-info">
+                                <h3>My Sponsor</h3>
+                                <p>Your recovery sponsor</p>
+                            </div>
+                            <button class="call-btn" onclick="setSponsor()">Add Contact</button>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🏠</div>
+                            <div class="contact-info">
+                                <h3>White Oaks Centre</h3>
+                                <p>Your treatment team</p>
+                            </div>
+                            <a href="tel:+353749139010" class="call-btn">Call Centre</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">👨‍⚕️</div>
+                            <div class="contact-info">
+                                <h3>GP / Doctor</h3>
+                                <p>Your healthcare provider</p>
+                            </div>
+                            <button class="call-btn" onclick="setGP()">Add Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let selectedMood = null;
+        let userType = 'resident';
+        let currentCategory = 'sharing';
+        const completionDate = '2025-02-15'; // Default completion date
+
+        // Forum posts data
+        const forumPosts = {
+            sharing: [
+                {
+                    author: 'Emma L.',
+                    time: '2 hours ago',
+                    content: 'Had my first job interview since leaving treatment today. Was nervous but reminded myself that I\'m not the same person I was 6 months ago. Didn\'t get it, but proud I showed up. That\'s progress, right?',
+                    hearts: 12,
+                    replies: [
+                        {author: 'Dr. Sarah (Counsellor)', content: 'Absolutely, Emma! Showing up IS the victory. Every interview is practice for the right opportunity.'},
+                        {author: 'Michael K.', content: 'Yes! The courage to try again is everything. You\'ve got this 💪'}
+                    ]
+                },
+                {
+                    author: 'Tom W.',
+                    time: '5 hours ago',
+                    content: 'Month 3 clean today. Went for a walk by the lake this morning instead of reaching for my phone when anxiety hit. Small wins adding up to something bigger.',
+                    hearts: 18,
+                    replies: [
+                        {author: 'Lisa R.', content: 'Those small wins are actually huge! Nature walks saved me in early recovery too'}
+                    ]
+                }
+            ],
+            help: [
+                {
+                    author: 'James R.',
+                    time: '1 hour ago',
+                    content: 'Struggling with sleep again. Racing thoughts at 2am about mistakes I made. Anyone else deal with this? What helps you wind down?',
+                    hearts: 6,
+                    replies: [
+                        {author: 'Dr. Sarah (Counsellor)', content: 'James, this is very common. Try the 4-7-8 breathing technique. Breathe in for 4, hold for 7, out for 8. Also consider writing those thoughts down to "park" them for tomorrow.'},
+                        {author: 'Emma L.', content: 'Meditation apps helped me. Even 5 minutes of guided meditation before bed makes a difference'}
+                    ]
+                }
+            ],
+            celebrating: [
+                {
+                    author: 'Sarah M.',
+                    time: '3 hours ago',
+                    content: '6 months clean today! 🎉 Feels surreal. This time last year I didn\'t think I\'d see Christmas. Thank you all for believing in me when I couldn\'t believe in myself.',
+                    hearts: 24,
+                    replies: [
+                        {author: 'Dr. Sarah (Counsellor)', content: 'So proud of you, Sarah! Your journey inspires others every day.'},
+                        {author: 'Tom W.', content: 'Incredible milestone! You\'re proof that recovery works 🌟'}
+                    ]
+                }
+            ],
+            advice: [
+                {
+                    author: 'Dr. Sarah (Counsellor)',
+                    time: '4 hours ago',
+                    isCounsellor: true,
+                    content: 'Remember: Recovery isn\'t linear. Having a difficult day doesn\'t erase your progress. It\'s part of the journey. Be gentle with yourselves and reach out when you need support.',
+                    hearts: 15,
+                    replies: [
+                        {author: 'Michael K.', content: 'Needed to hear this today. Thank you Dr. Sarah'},
+                        {author: 'Lisa R.', content: 'This should be pinned at the top! So important to remember'}
+                    ]
+                }
+            ]
+        };
+
+        // Initialize app
+        document.addEventListener('DOMContentLoaded', function() {
+            setupMoodSelection();
+            loadForumPosts();
+        });
+
+        function login(type) {
+            userType = type;
+            document.getElementById('loginScreen').style.display = 'none';
+            document.getElementById('appContainer').style.display = 'block';
+            
+            if (type === 'counsellor') {
+                document.getElementById('headerTitle').textContent = 'Counsellor Dashboard';
+                document.getElementById('welcomeMsg').textContent = 'Supporting recovery, one day at a time';
+                setupCounsellorNav();
+                showSection('counsellorDashboard');
+            } else {
+                document.getElementById('headerTitle').textContent = 'Welcome back, Emma';
+                document.getElementById('welcomeMsg').textContent = 'How are you feeling today?';
+                calculateMilestone();
+                showSection('dashboard');
+            }
+        }
+
+        function logout() {
+            document.getElementById('loginScreen').style.display = 'flex';
+            document.getElementById('appContainer').style.display = 'none';
+            userType = 'resident';
+            setupResidentNav();
+        }
+
+        function setupCounsellorNav() {
+            document.getElementById('mainNav').innerHTML = `
+                <button class="nav-item active" onclick="showSection('counsellorDashboard')">Overview</button>
+                <button class="nav-item" onclick="showSection('forum')">Forum</button>
+                <button class="nav-item" onclick="showSection('support')">Resources</button>
+            `;
+        }
+
+        function setupResidentNav() {
+            document.getElementById('mainNav').innerHTML = `
+                <button class="nav-item active" onclick="showSection('dashboard')">Dashboard</button>
+                <button class="nav-item" onclick="showSection('checkin')">Check-In</button>
+                <button class="nav-item" onclick="showSection('forum')">Forum</button>
+                <button class="nav-item" onclick="showSection('journal')">Journal</button>
+                <button class="nav-item" onclick="showSection('meetings')">Meetings</button>
+                <button class="nav-item" onclick="showSection('support')">Support</button>
+            `;
+        }
+
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            
+            document.getElementById(sectionId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function setupMoodSelection() {
+            document.querySelectorAll('.mood-option').forEach(option => {
+                option.addEventListener('click', function() {
+                    document.querySelectorAll('.mood-option').forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                    selectedMood = this.dataset.mood;
+                    document.getElementById('checkinBtn').disabled = false;
+                });
+            });
+        }
+
+        function calculateMilestone() {
+            const completion = new Date(completionDate);
+            const today = new Date();
+            const diffTime = Math.abs(today - completion);
+            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+            
+            document.getElementById('daysCount').textContent = diffDays;
+            
+            let message = "Every day is a victory";
+            if (diffDays >= 365) {
+                message = "Over a year strong! You're an inspiration! 🎊";
+            } else if (diffDays >= 180) {
+                message = "Six months of freedom! You're thriving! 🌟";
+            } else if (diffDays >= 90) {
+                message = "Three months of growth! You're amazing! 🌱";
+            } else if (diffDays >= 60) {
+                message = "Two months strong! Keep going! 💪";
+            } else if (diffDays >= 30) {
+                message = "First month complete! Incredible! 🎉";
+            } else if (diffDays >= 7) {
+                message = "One week at a time. You're building something beautiful! 💚";
+            }
+            
+            document.getElementById('milestoneMessage').textContent = message;
+        }
+
+        function submitCheckIn() {
+            if (!selectedMood) return;
+            
+            const notes = document.querySelector('.notes-input').value;
+            
+            // Save check-in
+            const checkin = {
+                date: new Date().toISOString().split('T')[0],
+                mood: selectedMood,
+                notes: notes,
+                timestamp: new Date().toISOString()
+            };
+            
+            let checkins = JSON.parse(localStorage.getItem('white-oaks-checkins') || '[]');
+            checkins.unshift(checkin);
+            checkins = checkins.slice(0, 30);
+            localStorage.setItem('white-oaks-checkins', JSON.stringify(checkins));
+            
+            // Show success
+            document.getElementById('successMsg').style.display = 'block';
+            document.getElementById('checkinBtn').textContent = 'Check-in Saved ✓';
+            document.getElementById('checkinBtn').disabled = true;
+            
+            setTimeout(() => {
+                document.getElementById('successMsg').style.display = 'none';
+                document.getElementById('checkinBtn').textContent = 'Complete Check-In';
+                document.querySelector('.notes-input').value = '';
+                document.querySelectorAll('.mood-option').forEach(opt => opt.classList.remove('selected'));
+                selectedMood = null;
+            }, 3000);
+        }
+
+        function showCategory(category) {
+            currentCategory = category;
+            document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            loadForumPosts();
+        }
+
+        function loadForumPosts() {
+            const postsContainer = document.getElementById('forumPosts');
+            const posts = forumPosts[currentCategory] || [];
+            
+            postsContainer.innerHTML = posts.map(post => `
+                <div class="forum-post">
+                    <div class="post-header">
+                        <div class="post-author">
+                            ${post.author}
+                            ${post.isCounsellor ? '<span class="counsellor-badge">Counsellor</span>' : ''}
+                        </div>
+                        <div class="post-time">${post.time}</div>
+                    </div>
+                    <div class="post-content">${post.content}</div>
+                    <div class="post-actions">
+                        <button class="heart-btn" onclick="toggleHeart(this)">
+                            ❤️ ${post.hearts}
+                        </button>
+                        <button class="reply-btn" onclick="showReplyForm(this)">Reply</button>
+                    </div>
+                    ${post.replies ? `
+                        <div class="post-replies">
+                            ${post.replies.map(reply => `
+                                <div class="reply">
+                                    <div class="reply-author">${reply.author}</div>
+                                    <div class="reply-content">${reply.content}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+        }
+
+        function toggleHeart(btn) {
+            btn.classList.toggle('hearted');
+            const count = parseInt(btn.textContent.match(/\d+/)[0]);
+            btn.innerHTML = btn.classList.contains('hearted') 
+                ? `❤️ ${count + 1}` 
+                : `❤️ ${count - 1}`;
+        }
+
+        function saveGratitude() {
+            const inputs = document.querySelectorAll('.gratitude-input');
+            const entries = Array.from(inputs).map(input => input.value.trim()).filter(val => val);
+            
+            if (entries.length === 0) {
+                alert('Please fill in at least one gratitude entry.');
+                return;
+            }
+            
+            const gratitude = {
+                date: new Date().toISOString().split('T')[0],
+                entries: entries,
+                timestamp: new Date().toISOString()
+            };
+            
+            let gratitudes = JSON.parse(localStorage.getItem('white-oaks-gratitude') || '[]');
+            gratitudes.unshift(gratitude);
+            gratitudes = gratitudes.slice(0, 10);
+            localStorage.setItem('white-oaks-gratitude', JSON.stringify(gratitudes));
+            
+            inputs.forEach(input => input.value = '');
+            alert('Thank you for taking time to reflect. Your gratitude has been saved. 🙏');
+        }
+
+        function setSponsor() {
+            const name = prompt('Enter your sponsor\'s name:');
+            const phone = prompt('Enter their phone number:');
+            if (name && phone) {
+                localStorage.setItem('white-oaks-sponsor', JSON.stringify({name, phone}));
+                alert('Sponsor contact saved!');
+                location.reload();
+            }
+        }
+
+        function setGP() {
+            const name = prompt('Enter your GP/Doctor name:');
+            const phone = prompt('Enter their phone number:');
+            if (name && phone) {
+                localStorage.setItem('white-oaks-gp', JSON.stringify({name, phone}));
+                alert('GP contact saved!');
+                location.reload();
+            }
+        }
+    </script>
+</body>
+</html>
