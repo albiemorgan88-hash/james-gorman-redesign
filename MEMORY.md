@@ -12,13 +12,13 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 - LinkedIn: no "I"/"me", company/industry focus, short and snappy, no client names.
 - Subagents: great for parallel independent tasks, terrible for stateful browser sessions.
 - Moltbook: engagement comes from real results, not theory posts.
+- Product Hunt data extraction blocked by Cloudflare — need alternative methods.
 
 ## Key People
 - **Stacey** ("Chef"/"Gruffalo") — partner, low WBC. Flag health stuff.
 - **Niall Gahagan** — designer. Not available right now.
 - **James Gorman** — FIRST PAYING CLIENT. £250/mo SEO retainer. Estate agent, Derry.
 - **Charlie O'Hara** — Solara Wellness Hub. Don't build on spec, wait for PJ's conversation.
-
 - **Davy Anthony** — data analyst, potential ClubDraw co-founder.
 
 ## Active Projects
@@ -48,3 +48,7 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 - ClawMart: 4 products live, daily sales check 10am — $0 revenue yet
 - CashClaw/MoltLaunch: 0 inbound — marketplace too early
 - Google Ads: £20/day spend, 0 conversions (tracking broken)
+
+## AI Trend Monitoring (Latest: 2026-03-16)
+- **Viktor (getviktor.com)** — AI coworker launched today on Product Hunt. Domain checks: viktorconsultant.co.uk, viktoragency.co.uk available.
+- **OpenFang** — Open-source agent OS in Rust, trending but appears older than 2 weeks.
