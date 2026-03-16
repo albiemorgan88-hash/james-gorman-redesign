@@ -18,8 +18,7 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 - **Niall Gahagan** — designer. Not available right now.
 - **James Gorman** — FIRST PAYING CLIENT. £250/mo SEO retainer. Estate agent, Derry.
 - **Charlie O'Hara** — Solara Wellness Hub. Don't build on spec, wait for PJ's conversation.
-- **Conor** — City Hotel Derry. Exploring AI use cases.
-- **Emma** — Airbnb host, multiple properties Derry. Wait for her to describe the problem.
+
 - **Davy Anthony** — data analyst, potential ClubDraw co-founder.
 
 ## Active Projects
