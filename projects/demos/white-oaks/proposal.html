@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Oaks Connect — Aftercare App | Technical Overview & Cost Estimate</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #ffffff;
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 1px solid #4a6741;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .title {
+            color: #4a6741;
+            font-size: 24px;
+            font-weight: normal;
+            margin: 10px 0;
+        }
+        
+        .section {
+            margin: 30px 0;
+        }
+        
+        .section-title {
+            color: #4a6741;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .section p {
+            margin: 10px 0;
+        }
+        
+        .feature-list {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        .feature-list li {
+            margin: 5px 0;
+        }
+        
+        .technical-list {
+            margin: 15px 0;
+            padding-left: 0;
+        }
+        
+        .technical-list li {
+            margin: 10px 0;
+            list-style: none;
+        }
+        
+        .technical-list li strong {
+            color: #4a6741;
+            display: inline-block;
+            width: 120px;
+        }
+        
+        .cost-section {
+            background: #f9faf8;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            margin: 20px 0;
+        }
+        
+        .cost-title {
+            color: #4a6741;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-list {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        .timeline-list li {
+            margin: 8px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #4a6741;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        @media print {
+            body {
+                margin: 20px;
+                padding: 20px;
+            }
+            
+            .cost-section {
+                background: #ffffff;
+                border: 1px solid #333;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">White Oaks Connect — Aftercare App<br>Technical Overview & Cost Estimate</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">1. Overview</div>
+        <p>A mobile application to support residents after their 30-day programme. Available on iPhone and Android platforms. The app provides a private space for check-ins, peer support, and connection with counsellors. Data remains confidential and is stored securely within European Union jurisdiction.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">2. What the App Does</div>
+        <ul class="feature-list">
+            <li>Daily mood check-in</li>
+            <li>Peer support forum (moderated)</li>
+            <li>Gratitude journaling</li>
+            <li>Local meeting finder (AA/NA/GA)</li>
+            <li>Emergency contact buttons</li>
+            <li>Milestone tracking</li>
+            <li>Coping resources</li>
+            <li>Counsellor dashboard with alerts</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">3. Technical Matters</div>
+        <ul class="technical-list">
+            <li><strong>Data storage:</strong> All data stored in the EU (Supabase, EU region). GDPR compliant.</li>
+            <li><strong>Privacy:</strong> Resident data is encrypted at rest and in transit. No data shared with third parties. No advertising. No tracking.</li>
+            <li><strong>Access control:</strong> Residents only see their own data plus shared forum. Counsellors see anonymised trends and can view individual check-ins for residents in their care.</li>
+            <li><strong>Authentication:</strong> Secure login with email/password. Optional two-factor authentication.</li>
+            <li><strong>Hosting:</strong> Cloud-hosted on European servers. 99.9% uptime target.</li>
+            <li><strong>App stores:</strong> Submitted to Apple App Store and Google Play Store. Updates managed centrally.</li>
+            <li><strong>Data retention:</strong> Configurable. Suggest 12 months after last activity, then anonymised for aggregate reporting.</li>
+            <li><strong>Backup:</strong> Daily automated backups with 30-day retention.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">4. Costs</div>
+        
+        <div class="cost-section">
+            <div class="cost-title">Setup — £1,000 (one-off):</div>
+            <ul class="feature-list">
+                <li>App development (iOS + Android)</li>
+                <li>Counsellor web dashboard</li>
+                <li>Backend infrastructure</li>
+                <li>App store developer accounts</li>
+                <li>App store submission and approval</li>
+                <li>Staff training session (1 hour)</li>
+            </ul>
+        </div>
+        
+        <div class="cost-section">
+            <div class="cost-title">Monthly — £100:</div>
+            <ul class="feature-list">
+                <li>Hosting and infrastructure</li>
+                <li>Push notifications</li>
+                <li>Bug fixes and maintenance</li>
+                <li>App store compliance updates</li>
+                <li>Monthly usage summary</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">5. Timeline</div>
+        <ul class="timeline-list">
+            <li>Weeks 1-2: Development</li>
+            <li>Week 3: Staff testing</li>
+            <li>Week 4: App store submission</li>
+            <li>Estimated go-live: 4-6 weeks from approval</li>
+        </ul>
+    </div>
+
+
+
+
+    </div>
+</body>
+</html>
