@@ -1,0 +1,3 @@
+address,price,property_type,bedrooms,bathrooms,agent,date_listed,status,url
+"123 Main Street, Derry City","£250,000",Semi-detached,3,2,Sample Estate Agents,2026-03-15,For Sale,https://www.propertypal.com/property/123456/detail
+"45 River View, Waterside",POA,Detached,4,3,Another Estate Agent,2026-03-10,For Sale,https://www.propertypal.com/property/789012/detail
