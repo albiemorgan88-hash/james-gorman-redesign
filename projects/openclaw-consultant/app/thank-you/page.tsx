@@ -4,6 +4,28 @@ export const metadata: Metadata = {
   title: "Thank You — OpenClaw Consultant UK",
   description: "Thanks for getting in touch. Phil will be in contact within 24 hours.",
   robots: { index: false, follow: false },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    siteName: "OpenClaw Consultant UK",
+    title: "Thank You — OpenClaw Consultant UK",
+    description: "Thanks for getting in touch. Phil will be in contact within 24 hours.",
+    url: "https://openclawconsultant.co.uk/thank-you",
+    images: [
+      {
+        url: "https://openclawconsultant.co.uk/api/og",
+        width: 1200,
+        height: 630,
+        alt: "OpenClaw Consultant UK - Thank You",
+      },
+    ],
+  },
+  twitter: { 
+    card: "summary_large_image",
+    title: "Thank You — OpenClaw Consultant UK",
+    description: "Thanks for getting in touch. Phil will be in contact within 24 hours.",
+    images: ["https://openclawconsultant.co.uk/api/og"],
+  },
 };
 
 export default function ThankYou() {
@@ -41,19 +63,20 @@ export default function ThankYou() {
         </div>
       </div>
 
-      {/* Google Ads Conversion Tracking - replace with actual IDs */}
+      {/* Google Ads Conversion Tracking */}
       <script
         dangerouslySetInnerHTML={{
           __html: `
-            // Google Ads conversion tracking
-            // Replace AW-XXXXXXXXX/XXXXXXXXXXXXXXX with your actual conversion ID and label
-            if (typeof gtag !== 'undefined') {
-              gtag('event', 'conversion', {
-                'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
-                'value': 1.0,
-                'currency': 'GBP'
-              });
-            }
+            (function() {
+              // Google Ads conversion tracking
+              if (typeof gtag !== 'undefined') {
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-801851476/Cg9ACOW4m8sZEP-6pO4C',
+                  'value': 1.0,
+                  'currency': 'GBP'
+                });
+              }
+            })();
           `,
         }}
       />

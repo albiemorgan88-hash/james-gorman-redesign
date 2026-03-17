@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Oaks Connect — Aftercare App | Technical Overview & Cost Estimate</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #ffffff;
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 1px solid #4a6741;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .title {
+            color: #4a6741;
+            font-size: 24px;
+            font-weight: normal;
+            margin: 10px 0;
+        }
+        
+        .section {
+            margin: 30px 0;
+        }
+        
+        .section-title {
+            color: #4a6741;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .section p {
+            margin: 10px 0;
+        }
+        
+        .feature-list {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        .feature-list li {
+            margin: 5px 0;
+        }
+        
+        .technical-list {
+            margin: 15px 0;
+            padding-left: 0;
+        }
+        
+        .technical-list li {
+            margin: 10px 0;
+            list-style: none;
+        }
+        
+        .technical-list li strong {
+            color: #4a6741;
+            display: inline-block;
+            width: 120px;
+        }
+        
+        .cost-section {
+            background: #f9faf8;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            margin: 20px 0;
+        }
+        
+        .cost-title {
+            color: #4a6741;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-list {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        .timeline-list li {
+            margin: 8px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #4a6741;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .demo-section {
+            background: #f5f8f5;
+            padding: 20px;
+            border: 1px solid #d0e0d0;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .demo-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 15px auto;
+            display: block;
+        }
+
+        .demo-caption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .explainer-section {
+            background: #f0f6f0;
+            padding: 25px;
+            border-left: 4px solid #4a6741;
+            margin: 25px 0;
+        }
+
+        .explainer-section h3 {
+            color: #4a6741;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .explainer-section p {
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .cost-breakdown {
+            margin-left: 20px;
+            border-left: 3px solid #4a6741;
+            padding-left: 15px;
+        }
+        
+        @media print {
+            body {
+                margin: 20px;
+                padding: 20px;
+            }
+            
+            .cost-section, .demo-section, .explainer-section {
+                background: #ffffff;
+                border: 1px solid #333;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">White Oaks Connect — Aftercare App<br>Technical Overview & Cost Estimate</div>
+    </div>
+
+    <div class="explainer-section">
+        <h3>What is White Oaks Connect?</h3>
+        <p><strong>White Oaks Connect is a dedicated mobile app for your residents to stay connected and supported after completing their treatment programme.</strong></p>
+        
+        <p>Think of it as a digital support network that fits in their pocket. After leaving White Oaks, residents often feel isolated and vulnerable — this app gives them a lifeline back to their recovery community and tools to maintain their progress.</p>
+        
+        <p><strong>What you and your team would see:</strong> A simple web dashboard showing who's checking in regularly, who might be struggling (without invading privacy), and trends across your aftercare community. It's like having a gentle pulse on how your graduates are doing without being intrusive.</p>
+        
+        <p><strong>Why it matters:</strong> Recovery doesn't end at discharge. This app extends your care and support beyond the 30-day programme, helping prevent relapse and keeping people connected to their recovery journey — which ultimately reflects well on White Oaks' long-term success rates.</p>
+    </div>
+
+    <div class="demo-section">
+        <div class="section-title">See the App in Action</div>
+        
+        <div style="text-align: center; margin-bottom: 25px;">
+            <p><strong>Live Demo:</strong> <a href="https://albiemorgan88-hash.github.io/white-oaks-demo/" target="_blank" style="color: #4a6741;">https://albiemorgan88-hash.github.io/white-oaks-demo/</a></p>
+            <p style="font-size: 14px; color: #666;">Try both resident and counsellor views to see the full experience</p>
+        </div>
+        
+        <img class="demo-image" src="demo-screenshot-2-small.png" alt="Resident Dashboard View">
+        <div class="demo-caption">Resident Dashboard — Clean, supportive interface for daily check-ins</div>
+        
+        <img class="demo-image" src="demo-screenshot-3-small.png" alt="Daily Check-in Interface">
+        <div class="demo-caption">Daily Check-in — Simple mood and wellness tracking</div>
+        
+        <img class="demo-image" src="demo-screenshot-4-small.png" alt="Community Forum">
+        <div class="demo-caption">Community Support — Peer-to-peer encouragement and shared experiences</div>
+        
+        <img class="demo-image" src="demo-screenshot-7-small.png" alt="Counsellor Dashboard">
+        <div class="demo-caption">Staff Dashboard — Overview of residents' wellbeing without compromising privacy</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Core Features</div>
+        
+        <ul class="feature-list">
+            <li><strong>Daily Check-ins</strong> — Simple wellness tracking with mood, sleep, and stress levels</li>
+            <li><strong>Community Support</strong> — Peer-to-peer encouragement and shared experiences</li>
+            <li><strong>Progress Tracking</strong> — Visual charts showing recovery milestones and achievements</li>
+            <li><strong>Emergency Support</strong> — Direct link to crisis helplines and White Oaks support</li>
+            <li><strong>Appointment Reminders</strong> — Follow-up session scheduling and notifications</li>
+            <li><strong>Educational Content</strong> — Recovery resources and coping strategies</li>
+            <li><strong>Staff Dashboard</strong> — Overview of residents' wellbeing without compromising privacy</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Specification</div>
+        
+        <ul class="technical-list">
+            <li><strong>Platform:</strong> Progressive Web App (works on iOS, Android, and desktop)</li>
+            <li><strong>Backend:</strong> Node.js with secure cloud database</li>
+            <li><strong>Security:</strong> End-to-end encryption, GDPR compliant</li>
+            <li><strong>Integration:</strong> Compatible with existing White Oaks systems</li>
+            <li><strong>Analytics:</strong> Anonymised reporting and trend analysis</li>
+            <li><strong>Hosting:</strong> Secure cloud infrastructure with 99.9% uptime</li>
+        </ul>
+    </div>
+
+    <div class="cost-section">
+        <div class="cost-title">Investment Breakdown</div>
+        
+        <div style="margin-bottom: 20px;">
+            <p style="font-size: 16px; font-weight: bold; color: #4a6741;">Setup — £1,000 (one-off)</p>
+            <div class="cost-breakdown">
+                <p><strong>App Development:</strong> £750<br>
+                <em style="font-size: 14px; color: #666;">iOS + Android app, counsellor dashboard, backend infrastructure, app store accounts & submission</em></p>
+                <p><strong>Consultancy:</strong> £250<br>
+                <em style="font-size: 14px; color: #666;">Requirements gathering, configuration, ongoing liaison</em></p>
+            </div>
+        </div>
+        
+        <div>
+            <p style="font-size: 16px; font-weight: bold; color: #4a6741;">Monthly — £100</p>
+            <div class="cost-breakdown">
+                <p>• Hosting and infrastructure</p>
+                <p>• Push notifications</p>
+                <p>• Bug fixes and maintenance</p>
+                <p>• App store compliance updates</p>
+                <p>• Monthly usage summary</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Implementation Timeline</div>
+        
+        <ul class="timeline-list">
+            <li><strong>Week 1-2:</strong> Requirements gathering and design finalisation</li>
+            <li><strong>Week 3-4:</strong> Core app development and testing</li>
+            <li><strong>Week 5:</strong> Staff dashboard and admin panel completion</li>
+            <li><strong>Week 6:</strong> Integration testing and deployment preparation</li>
+            <li><strong>Week 7:</strong> Beta testing with selected residents and staff</li>
+            <li><strong>Week 8:</strong> Final adjustments and full launch</li>
+        </ul>
+    </div>
+
+    
+
+    
+</body>
+</html>

@@ -29,8 +29,21 @@ export const metadata: Metadata = {
     description:
       "Phil Patterson is the UK's leading OpenClaw consultant. 25+ custom skills, production experience, expert setup and training. Free consultation available.",
     url: "https://openclawconsultant.co.uk",
+    images: [
+      {
+        url: "https://openclawconsultant.co.uk/api/og",
+        width: 1200,
+        height: 630,
+        alt: "OpenClaw Consultant UK - Expert Setup & Training",
+      },
+    ],
   },
-  twitter: { card: "summary_large_image" },
+  twitter: { 
+    card: "summary_large_image",
+    title: "OpenClaw Consultant UK — Expert Setup & Training",
+    description: "Phil Patterson is the UK's leading OpenClaw consultant. 25+ custom skills, production experience, expert setup and training. Free consultation available.",
+    images: ["https://openclawconsultant.co.uk/api/og"],
+  },
   robots: { index: true, follow: true },
   alternates: { canonical: "https://openclawconsultant.co.uk" },
 };
