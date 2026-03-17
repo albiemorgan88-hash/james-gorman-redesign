@@ -1,5 +1,5 @@
 # Derry Property Market Intelligence Report
-**Generated:** 2026-03-17 20:30
+**Generated:** 2026-03-17 20:32
 **Data Source:** PropertyPal.com Market Intelligence
 **Total Properties Analyzed:** 85
 
@@ -7,73 +7,71 @@
 - **Active Listings:** 85 properties across Derry area
 - **Market Areas Covered:** 8 locations
 - **Estate Agents Active:** 17 agencies
-- **Recent Activity:** 4 new listings (last 7 days)
+- **Recent Activity:** 3 new listings (last 7 days)
 
 ## Market Breakdown by Area
-- **Derry City:** 13 properties (15.3%)
-- **Drumahoe:** 13 properties (15.3%)
-- **Eglinton:** 12 properties (14.1%)
-- **Waterside:** 11 properties (12.9%)
-- **Culmore:** 10 properties (11.8%)
-- **Strathfoyle:** 10 properties (11.8%)
-- **Newbuildings:** 9 properties (10.6%)
-- **Cityside:** 7 properties (8.2%)
+- **Newbuildings:** 14 properties (16.5%)
+- **Derry City:** 14 properties (16.5%)
+- **Cityside:** 13 properties (15.3%)
+- **Waterside:** 13 properties (15.3%)
+- **Culmore:** 9 properties (10.6%)
+- **Eglinton:** 9 properties (10.6%)
+- **Strathfoyle:** 7 properties (8.2%)
+- **Drumahoe:** 6 properties (7.1%)
 
 ## Competitor Analysis - Estate Agent Market Share
-1. **Anderson Properties:** 10 properties (11.8%)
-2. **Pinewood Properties:** 9 properties (10.6%)
-3. **Reid & Associates:** 7 properties (8.2%)
-4. **Homes Independent:** 7 properties (8.2%)
-5. **Martin & Co Derry:** 7 properties (8.2%)
-6. **Donnelly & Associates:** 6 properties (7.1%)
-7. **Quinn Estates:** 6 properties (7.1%)
-8. **Propertylink:** 5 properties (5.9%)
-9. **O'Sullivan Estate Agents:** 4 properties (4.7%)
-10. **Caldwell Properties:** 4 properties (4.7%)
+1. **McDermott Property:** 10 properties (11.8%)
+2. **Neill Estate Agents:** 9 properties (10.6%)
+3. **Anderson Properties:** 8 properties (9.4%)
+4. **Pinewood Properties:** 7 properties (8.2%)
+5. **Propertylink:** 7 properties (8.2%)
+6. **O'Sullivan Estate Agents:** 6 properties (7.1%)
+7. **Homes Independent:** 5 properties (5.9%)
+8. **Smyth Properties:** 5 properties (5.9%)
+9. **McGilloway Properties:** 5 properties (5.9%)
+10. **Hunter Campbell:** 4 properties (4.7%)
 
 ## 🎯 Competitive Intelligence for James Gorman Property
 
 ### Major Competitors (Top 5 Agents)
-- **Anderson Properties:** 10 active listings
-- **Pinewood Properties:** 9 active listings
-- **Reid & Associates:** 7 active listings
-- **Homes Independent:** 7 active listings
-- **Martin & Co Derry:** 7 active listings
+- **McDermott Property:** 10 active listings
+- **Neill Estate Agents:** 9 active listings
+- **Anderson Properties:** 8 active listings
+- **Pinewood Properties:** 7 active listings
+- **Propertylink:** 7 active listings
 
 ### 💡 Opportunity Targets (Small/Independent Agents)
 *These agents have limited current inventory - potential targets when properties come back to market:*
-- **Braidwood Properties:** 1 listing
-- **Bamford Properties:** 2 listings
+- **Martin & Co Derry:** 1 listing
 
 ## Property Type Distribution
-- **Apartment:** 22 properties (25.9%)
-- **Townhouse:** 18 properties (21.2%)
-- **Detached:** 18 properties (21.2%)
-- **Terraced:** 16 properties (18.8%)
-- **Semi-detached:** 11 properties (12.9%)
+- **Semi-detached:** 23 properties (27.1%)
+- **Detached:** 20 properties (23.5%)
+- **Terraced:** 17 properties (20.0%)
+- **Apartment:** 14 properties (16.5%)
+- **Townhouse:** 11 properties (12.9%)
 
 ## Price Analysis
-- **Average Price:** £273,333
-- **Median Price:** £300,000
-- **Price Range:** £83,000 - £448,000
-- **Properties with Pricing:** 78 of 85 (91.8%)
+- **Average Price:** £259,779
+- **Median Price:** £258,000
+- **Price Range:** £81,000 - £435,000
+- **Properties with Pricing:** 77 of 85 (90.6%)
 
 ### Average Prices by Area
-- **Cityside:** £305,286 average (7 properties)
-- **Culmore:** £247,100 average (10 properties)
-- **Derry City:** £256,167 average (12 properties)
-- **Drumahoe:** £224,364 average (11 properties)
-- **Eglinton:** £315,300 average (10 properties)
-- **Newbuildings:** £308,000 average (8 properties)
-- **Strathfoyle:** £359,778 average (9 properties)
-- **Waterside:** £210,455 average (11 properties)
+- **Cityside:** £219,000 average (12 properties)
+- **Culmore:** £220,889 average (9 properties)
+- **Derry City:** £264,167 average (12 properties)
+- **Drumahoe:** £338,667 average (6 properties)
+- **Eglinton:** £243,000 average (7 properties)
+- **Newbuildings:** £305,500 average (12 properties)
+- **Strathfoyle:** £204,333 average (6 properties)
+- **Waterside:** £276,308 average (13 properties)
 
 ## Recent Market Activity (Last 7 Days)
-**4 new listings:**
-- **75 Castle Gardens, Eglinton** - £135000 - *Neill Estate Agents*
-- **41 Elmwood Avenue, Strathfoyle** - £392000 - *Anderson Properties*
-- **116 Mill Road, Cityside** - £377000 - *Quinn Estates*
-- **15 Castle Gardens, Cityside** - £311000 - *Propertylink*
+**3 new listings:**
+- **76 Mill Road, Waterside** - £285000 - *Neill Estate Agents*
+- **38 Meadow Park, Waterside** - £210000 - *Smyth Properties*
+- **48 Bridge Street, Drumahoe** - £390000 - *McDermott Property*
 
 ## 📈 Strategic Recommendations for James Gorman Property
 
@@ -84,7 +82,7 @@
 
 ### Market Positioning
 - Current market has 17 active agents
-- Top 5 agents control 40/85 listings (47.1%)
+- Top 5 agents control 41/85 listings (48.2%)
 - Opportunity exists in the mid-tier market segment
 
 ### Next Steps

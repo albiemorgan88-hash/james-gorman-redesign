@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Gorman Property - Stale Listing Lead Generation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #2B4DAF 0%, #1a3078 100%);
+            color: white;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .showcase-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .slide {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            height: 100vh;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes scan {
+            0% { transform: translateX(-100%); }
+            50% { transform: translateX(100vw); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .scan-line {
+            position: absolute;
+            height: 3px;
+            background: #FF4520;
+            box-shadow: 0 0 20px #FF4520;
+            animation: scan 3s infinite ease-in-out;
+            z-index: 10;
+        }
+
+        .slide h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .slide h2 {
+            font-size: 1.8rem;
+            color: #FF4520;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .slide p, .slide li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            max-width: 600px;
+        }
+
+        .highlight {
+            color: #FF4520;
+            font-weight: 700;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 69, 32, 0.3);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            color: #FF4520;
+            font-weight: 700;
+            display: block;
+        }
+
+        .listing-table {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            border-radius: 12px;
+            padding: 1rem;
+            margin: 1rem 0;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .listing-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+
+        .listing-row:last-child {
+            border-bottom: none;
+        }
+
+        .listing-header {
+            font-weight: 700;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .days-stale {
+            font-weight: 700;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            color: white;
+        }
+
+        .days-hot { background: #dc3545; }
+        .days-warm { background: #fd7e14; }
+        .days-monitor { background: #ffc107; color: #333; }
+
+        .lead-score {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.5rem 0;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .fire-emoji {
+            font-size: 1.2rem;
+        }
+
+        .letter-preview {
+            background: white;
+            color: #333;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1rem 0;
+            max-width: 500px;
+            text-align: left;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border-left: 4px solid #2B4DAF;
+        }
+
+        .letter-preview h3 {
+            color: #2B4DAF;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .letter-preview p {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .report-card {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1rem 0;
+            max-width: 400px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .report-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5rem 0;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .report-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-info {
+            background: rgba(255, 69, 32, 0.1);
+            border: 2px solid #FF4520;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+
+        .contact-info h3 {
+            color: #FF4520;
+            margin-bottom: 1rem;
+        }
+
+        .progress-dots {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 100;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .dot.active {
+            background: #FF4520;
+        }
+
+        .nav-hint {
+            position: fixed;
+            bottom: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            z-index: 100;
+        }
+
+        .developer-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        @media (max-width: 768px) {
+            .slide h1 { font-size: 1.8rem; }
+            .slide h2 { font-size: 1.4rem; }
+            .slide p, .slide li { font-size: 1rem; }
+            .stat-grid { grid-template-columns: 1fr; }
+            .developer-stats { grid-template-columns: 1fr; }
+            .listing-row { flex-direction: column; gap: 0.5rem; }
+        }
+
+        @media (max-width: 480px) {
+            .slide { padding: 15px; }
+            .slide h1 { font-size: 1.6rem; }
+            .slide h2 { font-size: 1.2rem; }
+            .slide p, .slide li { font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="showcase-container">
+        <!-- Slide 1: Hook -->
+        <div class="slide active">
+            <h1>Every day, sellers in Derry are losing faith in their estate agent.</h1>
+            <p class="highlight" style="font-size: 1.3rem; margin-top: 2rem;">We find them before anyone else.</p>
+            <p style="margin-top: 2rem; font-size: 1rem; color: rgba(255, 255, 255, 0.8);">Tap to continue →</p>
+        </div>
+
+        <!-- Slide 2: The Insight -->
+        <div class="slide">
+            <h2>The Insight</h2>
+            <div class="stat-grid">
+                <div class="stat-box">
+                    <span class="stat-number">47</span>
+                    <span>Average days to sell in Derry</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">83</span>
+                    <span>Properties listed 90+ days</span>
+                </div>
+            </div>
+            <p><strong>Those sellers are frustrated. Their agent isn't delivering.</strong></p>
+            <p class="highlight" style="margin-top: 1.5rem;">What if YOU could reach them first?</p>
+        </div>
+
+        <!-- Slide 3: How It Works — The Scan -->
+        <div class="slide">
+            <h2>How It Works — The Scan</h2>
+            <div class="scan-line"></div>
+            <p style="margin-bottom: 1.5rem;">Scanning PropertyPal for stale listings...</p>
+            <div class="listing-table">
+                <div class="listing-row listing-header">
+                    <span>Property</span>
+                    <span>Days Listed</span>
+                    <span>Agent</span>
+                </div>
+                <div class="listing-row">
+                    <span>4-bed detached, Culmore, £285k</span>
+                    <span class="days-stale days-hot">127 days</span>
+                    <span>Small Agent Ltd</span>
+                </div>
+                <div class="listing-row">
+                    <span>3-bed semi, Waterside, £175k</span>
+                    <span class="days-stale days-warm">94 days</span>
+                    <span>CityRealty</span>
+                </div>
+                <div class="listing-row">
+                    <span>2-bed terrace, Cityside, £125k</span>
+                    <span class="days-stale days-hot">108 days</span>
+                    <span>Local Estates</span>
+                </div>
+                <div class="listing-row">
+                    <span>3-bed semi, Eglinton, £210k</span>
+                    <span class="days-stale days-hot">156 days</span>
+                    <span>BTWShivers</span>
+                </div>
+            </div>
+            <p class="highlight">Found 83 stale listings in Derry right now</p>
+        </div>
+
+        <!-- Slide 4: The Lead Score -->
+        <div class="slide">
+            <h2>The Lead Score</h2>
+            <p>We score every listing so you focus on the most likely to switch:</p>
+            
+            <div class="lead-score">
+                <span class="fire-emoji">🔥🔥🔥</span>
+                <span><strong>HOT</strong> - 120+ days, small agent, price reduced twice</span>
+            </div>
+            
+            <div class="lead-score">
+                <span class="fire-emoji">🔥🔥</span>
+                <span><strong>WARM</strong> - 90-120 days, price reduced once</span>
+            </div>
+            
+            <div class="lead-score">
+                <span class="fire-emoji">🔥</span>
+                <span><strong>MONITOR</strong> - 60-90 days, no price change yet</span>
+            </div>
+            
+            <p style="margin-top: 2rem;">Focus your time where it counts most.</p>
+        </div>
+
+        <!-- Slide 5: The Approach -->
+        <div class="slide">
+            <h2>The Approach — What James Does</h2>
+            <div class="letter-preview">
+                <h3>Personal Letter Example</h3>
+                <p><strong>Dear Homeowner at 14 Beechwood Park...</strong></p>
+                <p>Your property has been on the market for over 3 months. I'd love to offer a fresh perspective and a free no-obligation market appraisal.</p>
+                <p><strong>James Gorman, Local Estate Agent</strong><br>028 7161 0402</p>
+            </div>
+            <p>Personalised outreach to each seller. Professional, not pushy.</p>
+            <p class="highlight">We provide the leads. You close the deals.</p>
+        </div>
+
+        <!-- Slide 6: Developer Intel -->
+        <div class="slide">
+            <h2>Bonus — Developer Intel</h2>
+            <p>It's not just sellers. We track the market for developers too.</p>
+            
+            <div class="developer-stats">
+                <div class="stat-box">
+                    <span class="stat-number">12</span>
+                    <span>New planning applications this month</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">3</span>
+                    <span>Gap sites identified</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">+15%</span>
+                    <span>Waterside YoY growth</span>
+                </div>
+            </div>
+            
+            <p style="margin-top: 1.5rem;">Connect James Gorman with Derry's biggest builders.</p>
+        </div>
+
+        <!-- Slide 7: Weekly Report Card -->
+        <div class="slide">
+            <h2>Weekly Report Card</h2>
+            <div class="report-card">
+                <h3 style="color: #2B4DAF; margin-bottom: 1rem;">This Week's Intelligence</h3>
+                <div class="report-item">
+                    <span>New stale listings</span>
+                    <span class="highlight">8</span>
+                </div>
+                <div class="report-item">
+                    <span>🔥🔥🔥 Hot leads</span>
+                    <span class="highlight">3</span>
+                </div>
+                <div class="report-item">
+                    <span>Price reductions spotted</span>
+                    <span class="highlight">5</span>
+                </div>
+                <div class="report-item">
+                    <span>Back on market</span>
+                    <span class="highlight">2</span>
+                </div>
+                <div class="report-item">
+                    <span>New planning applications</span>
+                    <span class="highlight">1</span>
+                </div>
+            </div>
+            <p class="highlight">Delivered to your inbox every Monday at 8am</p>
+        </div>
+
+        <!-- Slide 8: CTA -->
+        <div class="slide">
+            <h1>While other agents wait for the phone to ring...</h1>
+            <p class="highlight" style="font-size: 1.4rem; margin: 2rem 0;">You'll be the one making the call.</p>
+            
+            <div class="contact-info">
+                <h3>Ready to get started?</h3>
+                <p><strong>Phil Patterson</strong><br>Blue Canvas AI</p>
+                <p>📞 +44 7935 217762<br>✉️ contact@bluecanvas.ai</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress-dots">
+        <div class="dot active" onclick="goToSlide(0)"></div>
+        <div class="dot" onclick="goToSlide(1)"></div>
+        <div class="dot" onclick="goToSlide(2)"></div>
+        <div class="dot" onclick="goToSlide(3)"></div>
+        <div class="dot" onclick="goToSlide(4)"></div>
+        <div class="dot" onclick="goToSlide(5)"></div>
+        <div class="dot" onclick="goToSlide(6)"></div>
+        <div class="dot" onclick="goToSlide(7)"></div>
+    </div>
+
+    <div class="nav-hint">Tap anywhere or swipe to navigate</div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            
+            currentSlide = (n + slides.length) % slides.length;
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+        
+        function goToSlide(n) {
+            showSlide(n);
+        }
+        
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+        
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+        
+        // Touch/click navigation
+        let startX = 0;
+        let endX = 0;
+        
+        document.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+        });
+        
+        document.addEventListener('touchend', function(e) {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+        
+        document.addEventListener('click', function(e) {
+            // Don't navigate on dot clicks
+            if (e.target.classList.contains('dot')) return;
+            
+            const rect = document.body.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const screenWidth = rect.width;
+            
+            if (clickX < screenWidth * 0.3) {
+                prevSlide();
+            } else if (clickX > screenWidth * 0.7) {
+                nextSlide();
+            } else {
+                nextSlide(); // Default to next on center tap
+            }
+        });
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = startX - endX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    nextSlide(); // Swipe left = next slide
+                } else {
+                    prevSlide(); // Swipe right = prev slide
+                }
+            }
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+                e.preventDefault();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+                e.preventDefault();
+            }
+        });
+
+        // Auto-advance on first load
+        setTimeout(() => {
+            const hint = document.querySelector('.nav-hint');
+            if (hint) hint.style.opacity = '0.5';
+        }, 3000);
+    </script>
+</body>
+</html>

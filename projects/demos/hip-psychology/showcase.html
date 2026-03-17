@@ -14,17 +14,23 @@
         :root {
             --primary-blue: #2B4DAF;
             --accent-orange: #FF4520;
+            --zoho-blue: #1e3a8a;
+            --zoho-green: #10b981;
             --white: #ffffff;
             --light-gray: #f8f9fa;
             --text-dark: #333;
             --text-light: #666;
+            --success-green: #28a745;
+            --warning-orange: #ffc107;
+            --danger-red: #dc3545;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: var(--white);
-            overflow-x: hidden;
+            overflow: hidden;
             touch-action: manipulation;
+            user-select: none;
         }
 
         .showcase-container {
@@ -60,6 +66,124 @@
             transform: translateX(-100%);
         }
 
+        /* Navigation */
+        .nav-progress {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .progress-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .progress-dot.active {
+            background: var(--accent-orange);
+        }
+
+        .nav-arrows {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+            user-select: none;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-arrows:hover {
+            color: var(--accent-orange);
+        }
+
+        .nav-prev {
+            left: 20px;
+        }
+
+        .nav-next {
+            right: 20px;
+        }
+
+        /* Zoho Branding Elements */
+        .zoho-badge {
+            background: var(--zoho-blue);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .zoho-logo {
+            width: 20px;
+            height: 20px;
+            background: var(--white);
+            border-radius: 3px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--zoho-blue);
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .zoho-ui-frame {
+            border: 2px solid var(--zoho-blue);
+            border-radius: 8px;
+            background: linear-gradient(to bottom, #f8fafc, var(--white));
+        }
+
+        .zoho-contact-card {
+            background: var(--white);
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--zoho-blue);
+        }
+
+        .zoho-workflow {
+            background: var(--zoho-blue);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin: 0.25rem;
+            display: inline-block;
+        }
+
+        .zoho-status {
+            background: var(--zoho-green);
+            color: var(--white);
+            padding: 0.2rem 0.6rem;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .zoho-dashboard-header {
+            background: var(--zoho-blue);
+            color: var(--white);
+            padding: 1rem;
+            border-radius: 8px 8px 0 0;
+            font-weight: bold;
+            text-align: center;
+        }
+
         /* Slide 1 - Hook */
         .slide-1 {
             background: linear-gradient(135deg, var(--primary-blue) 0%, #1a3380 100%);
@@ -71,12 +195,14 @@
             font-weight: bold;
             margin-bottom: 2rem;
             line-height: 1.1;
+            animation: fadeInUp 1s ease 0.5s both;
         }
 
         .slide-1 .subtitle {
             font-size: clamp(1.1rem, 4vw, 1.4rem);
             opacity: 0.9;
             margin-bottom: 3rem;
+            animation: fadeInUp 1s ease 1s both;
         }
 
         .hip-logo {
@@ -87,74 +213,230 @@
             font-size: 1.8rem;
             font-weight: bold;
             margin-top: 2rem;
+            animation: fadeInUp 1s ease 1.5s both;
         }
 
-        /* Slide 2 - Problem */
+        /* Slide 2 - Lead Discovery */
         .slide-2 {
-            background: var(--light-gray);
+            background: var(--white);
             color: var(--text-dark);
+            padding: 10px;
         }
 
         .slide-2 h2 {
-            color: var(--accent-orange);
-            font-size: clamp(1.8rem, 6vw, 2.8rem);
-            margin-bottom: 2rem;
+            color: var(--primary-blue);
+            font-size: clamp(1.6rem, 5vw, 2.4rem);
+            margin-bottom: 1rem;
         }
 
-        .problem-list {
-            list-style: none;
-            max-width: 600px;
-        }
-
-        .problem-list li {
+        .database-container {
+            width: 100%;
+            max-width: 800px;
             background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
             margin: 1rem 0;
-            padding: 1.2rem;
+        }
+
+        .database-header {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .source-label {
+            background: var(--accent-orange);
+            padding: 0.3rem 0.8rem;
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            font-size: 1.1rem;
-            position: relative;
+            font-size: 0.8rem;
+            font-weight: bold;
         }
 
-        .problem-list li::before {
-            content: "⚠️";
-            margin-right: 10px;
+        .schools-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: clamp(0.7rem, 2vw, 0.9rem);
         }
 
-        /* Slide 3 - Lead Discovery */
+        .schools-table th {
+            background: var(--light-gray);
+            padding: 0.8rem 0.5rem;
+            text-align: left;
+            font-weight: bold;
+            color: var(--primary-blue);
+            border-bottom: 2px solid var(--primary-blue);
+        }
+
+        .schools-table td {
+            padding: 0.8rem 0.5rem;
+            border-bottom: 1px solid #eee;
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+
+        .school-row {
+            transition: background-color 0.3s ease;
+        }
+
+        .school-row:hover {
+            background: #f0f7ff;
+        }
+
+        .animate-row {
+            animation: populateRow 0.8s ease forwards;
+        }
+
+        @keyframes populateRow {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Slide 3 - Champion Mapping */
         .slide-3 {
-            background: linear-gradient(135deg, var(--white) 0%, #f0f4ff 100%);
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
             color: var(--text-dark);
         }
 
         .slide-3 h2 {
             color: var(--primary-blue);
-            font-size: clamp(1.8rem, 6vw, 2.8rem);
+            font-size: clamp(1.6rem, 5vw, 2.4rem);
+            margin-bottom: 1rem;
+        }
+
+        .school-focus {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border-radius: 25px;
             margin-bottom: 2rem;
+            font-weight: bold;
+            font-size: 1.2rem;
         }
 
-        .data-flow {
+        .champions-grid {
             display: grid;
-            grid-template-columns: 1fr auto 1fr;
             gap: 1rem;
-            align-items: center;
-            max-width: 800px;
-            margin: 2rem 0;
+            max-width: 600px;
+            width: 100%;
         }
 
-        .data-box {
+        .champion-card {
             background: var(--white);
             padding: 1.5rem;
-            border-radius: 15px;
-            box-shadow: 0 6px 20px rgba(43,77,175,0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: championAppear 0.6s ease forwards;
+            border-left: 4px solid var(--zoho-blue);
         }
 
-        .data-arrow {
+        .champion-card:nth-child(1) { animation-delay: 0.5s; }
+        .champion-card:nth-child(2) { animation-delay: 1s; }
+        .champion-card:nth-child(3) { animation-delay: 1.5s; }
+        .champion-card:nth-child(4) { animation-delay: 2s; }
+
+        .champion-status {
             font-size: 2rem;
-            color: var(--accent-orange);
+            min-width: 40px;
         }
 
-        /* Slide 4 - Champion Mapping */
+        .champion-info {
+            flex: 1;
+            text-align: left;
+        }
+
+        .champion-name {
+            font-weight: bold;
+            color: var(--primary-blue);
+            margin-bottom: 0.3rem;
+        }
+
+        .champion-role {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .champion-value {
+            font-size: 0.8rem;
+            color: var(--success-green);
+            font-weight: bold;
+        }
+
+        .champion-reject {
+            color: var(--danger-red);
+        }
+
+        .champion-contact {
+            font-size: 0.7rem;
+            color: var(--text-light);
+            margin-top: 0.3rem;
+        }
+
+        .champion-tags {
+            display: flex;
+            gap: 0.3rem;
+            margin-top: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .champion-tag {
+            background: var(--zoho-blue);
+            color: var(--white);
+            padding: 0.2rem 0.5rem;
+            border-radius: 10px;
+            font-size: 0.6rem;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            color: var(--white);
+        }
+
+        .linkedin { background: #0077b5; }
+        .email { background: var(--accent-orange); }
+
+        .timing-badge {
+            background: var(--success-green);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        .zoho-sync-note {
+            background: var(--zoho-blue);
+            color: var(--white);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Slide 4 - Smart Outreach */
         .slide-4 {
             background: var(--white);
             color: var(--text-dark);
@@ -162,296 +444,284 @@
 
         .slide-4 h2 {
             color: var(--primary-blue);
-            font-size: clamp(1.8rem, 6vw, 2.8rem);
-            margin-bottom: 2rem;
+            font-size: clamp(1.6rem, 5vw, 2.4rem);
+            margin-bottom: 1rem;
         }
 
-        .champion-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            max-width: 800px;
+        .email-container {
+            max-width: 600px;
+            width: 100%;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 1rem 0;
         }
 
-        .champion-card {
-            background: linear-gradient(135deg, var(--primary-blue), #3a5bc7);
+        .email-header {
+            background: var(--primary-blue);
             color: var(--white);
-            padding: 1.5rem;
-            border-radius: 20px;
-            text-align: center;
-            transform: scale(1);
-            transition: transform 0.3s ease;
+            padding: 1rem;
         }
 
-        .champion-card:hover {
-            transform: scale(1.05);
+        .email-meta {
+            background: var(--light-gray);
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
         }
 
-        .champion-role {
-            font-weight: bold;
-            font-size: 1.1rem;
+        .email-field {
             margin-bottom: 0.5rem;
+            display: flex;
+            gap: 0.5rem;
         }
 
-        .champion-power {
+        .email-label {
+            font-weight: bold;
+            min-width: 60px;
+            color: var(--primary-blue);
+        }
+
+        .email-body {
+            padding: 1.5rem;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .personalisation-tag {
+            background: var(--accent-orange);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
             font-size: 0.9rem;
-            opacity: 0.9;
+            font-weight: bold;
+            margin: 1rem 0;
         }
 
-        /* Slide 5 - Smart Outreach */
+        .zoho-campaign-badge {
+            background: var(--zoho-blue);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .zoho-tracking {
+            background: #f0f9ff;
+            border: 1px solid var(--zoho-blue);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            text-align: left;
+        }
+
+        .sequence-timeline {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .sequence-step {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            opacity: 0;
+            animation: sequenceStep 0.5s ease forwards;
+        }
+
+        .sequence-step:nth-child(1) { animation-delay: 1s; }
+        .sequence-step:nth-child(2) { animation-delay: 1.5s; }
+        .sequence-step:nth-child(3) { animation-delay: 2s; }
+
+        /* Slide 5 - Feedback Engine */
         .slide-5 {
-            background: linear-gradient(135deg, #f8f9fa 0%, var(--light-gray) 100%);
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
             color: var(--text-dark);
         }
 
         .slide-5 h2 {
-            color: var(--accent-orange);
-            font-size: clamp(1.8rem, 6vw, 2.8rem);
-            margin-bottom: 2rem;
+            color: var(--primary-blue);
+            font-size: clamp(1.6rem, 5vw, 2.4rem);
+            margin-bottom: 1rem;
         }
 
-        .outreach-sequence {
-            max-width: 700px;
+        .feedback-container {
+            max-width: 600px;
+            width: 100%;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .feedback-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: feedbackAppear 0.8s ease forwards;
+        }
+
+        .feedback-card:nth-child(1) { animation-delay: 0.5s; }
+        .feedback-card:nth-child(2) { animation-delay: 1s; }
+        .feedback-card:nth-child(3) { animation-delay: 1.5s; }
+
+        .rating-display {
+            font-size: 2rem;
+            color: var(--accent-orange);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stars {
+            color: #ffd700;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .zoho-survey-flow {
+            background: #f0f9ff;
+            border: 1px solid var(--zoho-blue);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
             text-align: left;
         }
 
-        .sequence-step {
-            background: var(--white);
-            margin: 1rem 0;
-            padding: 1.2rem;
-            border-radius: 15px;
-            border-left: 4px solid var(--primary-blue);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 1rem;
         }
 
-        .sequence-step strong {
+        .before, .after {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .before {
+            background: #ffe6e6;
+            color: var(--danger-red);
+        }
+
+        .after {
+            background: #e6ffe6;
+            color: var(--success-green);
+        }
+
+        .arrow {
+            font-size: 1.5rem;
             color: var(--primary-blue);
         }
 
-        /* Slide 6 - Feedback Engine */
+        /* Slide 6 - Pipeline */
         .slide-6 {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, #1a3380 100%);
-            color: var(--white);
-        }
-
-        .slide-6 h2 {
-            font-size: clamp(1.8rem, 6vw, 2.8rem);
-            margin-bottom: 2rem;
-        }
-
-        .feedback-flow {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            max-width: 600px;
-        }
-
-        .feedback-step {
-            background: rgba(255,255,255,0.1);
-            padding: 1.2rem;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-        }
-
-        .time-save {
-            background: var(--accent-orange);
-            color: var(--white);
-            padding: 1rem;
-            border-radius: 20px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-top: 2rem;
-        }
-
-        /* Slide 7 - Pipeline Dashboard */
-        .slide-7 {
             background: var(--white);
             color: var(--text-dark);
         }
 
-        .slide-7 h2 {
+        .slide-6 h2 {
             color: var(--primary-blue);
-            font-size: clamp(1.8rem, 6vw, 2.8rem);
-            margin-bottom: 2rem;
-        }
-
-        .pipeline {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            max-width: 800px;
-            margin: 2rem 0;
-        }
-
-        .pipeline-stage {
-            display: flex;
-            align-items: center;
-            background: var(--light-gray);
-            padding: 1rem;
-            border-radius: 15px;
-            position: relative;
-        }
-
-        .stage-name {
-            font-weight: bold;
-            color: var(--primary-blue);
-            min-width: 120px;
-        }
-
-        .stage-bar {
-            flex: 1;
-            height: 10px;
-            background: #e0e0e0;
-            border-radius: 5px;
-            margin: 0 1rem;
-            overflow: hidden;
-        }
-
-        .stage-progress {
-            height: 100%;
-            background: linear-gradient(90deg, var(--primary-blue), var(--accent-orange));
-            border-radius: 5px;
-        }
-
-        .crunch-window {
-            background: var(--accent-orange);
-            color: var(--white);
-            padding: 1rem;
-            border-radius: 15px;
-            margin-top: 2rem;
-            font-weight: bold;
-        }
-
-        /* Slide 8 - CTA */
-        .slide-8 {
-            background: linear-gradient(135deg, var(--accent-orange) 0%, #e63a00 100%);
-            color: var(--white);
-        }
-
-        .slide-8 h2 {
-            font-size: clamp(2rem, 7vw, 3rem);
-            margin-bottom: 2rem;
-        }
-
-        .cta-content {
-            max-width: 600px;
-        }
-
-        .contact-info {
-            background: rgba(255,255,255,0.1);
-            padding: 2rem;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            margin: 2rem 0;
-        }
-
-        .contact-info h3 {
+            font-size: clamp(1.6rem, 5vw, 2.4rem);
             margin-bottom: 1rem;
-            font-size: 1.4rem;
         }
 
-        .contact-detail {
-            margin: 0.8rem 0;
-            font-size: 1.1rem;
+        .pipeline-container {
+            max-width: 800px;
+            width: 100%;
         }
 
-        /* Navigation */
-        .nav-dots {
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-            z-index: 1000;
+        .kanban-board {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            border: 2px solid var(--zoho-blue);
+            border-radius: 8px;
+            padding: 1rem;
+            background: linear-gradient(to bottom, #f8fafc, var(--white));
         }
 
-        .nav-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.3);
-            cursor: pointer;
-            transition: all 0.3s ease;
+        .kanban-column {
+            background: var(--light-gray);
+            border-radius: 8px;
+            padding: 1rem 0.5rem;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: kanbanAppear 0.6s ease forwards;
+            border: 1px solid #e2e8f0;
         }
 
-        .nav-dot.active {
-            background: var(--accent-orange);
-            transform: scale(1.2);
+        .kanban-column:nth-child(1) { animation-delay: 0.2s; }
+        .kanban-column:nth-child(2) { animation-delay: 0.4s; }
+        .kanban-column:nth-child(3) { animation-delay: 0.6s; }
+        .kanban-column:nth-child(4) { animation-delay: 0.8s; }
+        .kanban-column:nth-child(5) { animation-delay: 1s; }
+        .kanban-column:nth-child(6) { animation-delay: 1.2s; }
+        .kanban-column:nth-child(7) { animation-delay: 1.4s; }
+
+        .kanban-title {
+            font-weight: bold;
+            color: var(--primary-blue);
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
         }
 
-        .nav-arrows {
-            position: fixed;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 1000;
-        }
-
-        .nav-arrow {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
+        .kanban-count {
             font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-orange);
+        }
+
+        .kanban-value {
+            font-size: 0.7rem;
+            color: var(--success-green);
+            font-weight: bold;
+            margin-top: 0.3rem;
+        }
+
+        .revenue-display {
+            background: var(--success-green);
             color: var(--white);
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 12px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
         }
 
-        .nav-arrow:hover {
-            background: rgba(255,255,255,0.3);
-            transform: scale(1.1);
+        .booking-window {
+            background: var(--warning-orange);
+            color: var(--white);
+            padding: 1rem;
+            border-radius: 8px;
+            font-weight: bold;
+            animation: urgentPulse 1.5s infinite;
         }
 
-        .nav-arrow.prev {
-            left: 20px;
-        }
-
-        .nav-arrow.next {
-            right: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .slide {
-                padding: 15px;
-            }
-            
-            .data-flow {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-            
-            .data-arrow {
-                transform: rotate(90deg);
-            }
-            
-            .champion-grid {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-            
-            .nav-arrow {
-                width: 40px;
-                height: 40px;
-                font-size: 1.2rem;
-            }
-            
-            .nav-arrow.prev {
-                left: 10px;
-            }
-            
-            .nav-arrow.next {
-                right: 10px;
-            }
+        .zoho-integration-note {
+            background: var(--zoho-blue);
+            color: var(--white);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            text-align: left;
         }
 
         /* Animations */
-        @keyframes slideIn {
+        @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
@@ -462,249 +732,480 @@
             }
         }
 
-        .slide.active * {
-            animation: slideIn 0.8s ease forwards;
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes championAppear {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes sequenceStep {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes feedbackAppear {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes kanbanAppear {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes urgentPulse {
+            0%, 100% { background: var(--warning-orange); }
+            50% { background: var(--accent-orange); }
+        }
+
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .slide {
+                padding: 15px;
+            }
+            
+            .kanban-board {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.3rem;
+            }
+            
+            .kanban-column {
+                padding: 0.8rem 0.3rem;
+            }
+            
+            .kanban-title {
+                font-size: 0.7rem;
+            }
+            
+            .schools-table th,
+            .schools-table td {
+                padding: 0.5rem 0.3rem;
+                font-size: 0.7rem;
+            }
+            
+            .champion-card {
+                padding: 1rem;
+            }
+            
+            .before-after {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+            
+            .arrow {
+                transform: rotate(90deg);
+            }
         }
     </style>
 </head>
 <body>
     <div class="showcase-container">
-        <!-- Slide 1: Hook -->
+        <!-- Slide 1: Hook (Softened) -->
         <div class="slide slide-1 active">
-            <h1>What if AI could fill your school calendar before June?</h1>
-            <p class="subtitle">Transform manual outreach into an automated lead generation machine</p>
+            <h1>Imagine filling your school calendar in just 3 weeks</h1>
+            <p class="subtitle">A smart system that plugs into your existing Zoho CRM and automates the heavy lifting of school outreach</p>
             <div class="hip-logo">HIP Psychology</div>
         </div>
 
-        <!-- Slide 2: The Problem -->
+        <!-- Slide 2: Lead Discovery -->
         <div class="slide slide-2">
-            <h2>The Current Reality</h2>
-            <ul class="problem-list">
-                <li><strong>Manual outreach</strong> - Hours spent researching schools and contacts</li>
-                <li><strong>2 days collecting feedback</strong> - Post-workshop admin eating your time</li>
-                <li><strong>Zoho segmentation chaos</strong> - Key Stage tagging done by hand</li>
-                <li><strong>Email overwhelm</strong> - Generic campaigns with poor response rates</li>
-                <li><strong>Missed rebooking opportunities</strong> - No systematic follow-up process</li>
-            </ul>
-        </div>
-
-        <!-- Slide 3: Lead Discovery -->
-        <div class="slide slide-3">
+            <div class="zoho-badge">
+                <div class="zoho-logo">Z</div>
+                Synced to Zoho CRM
+            </div>
             <h2>AI Lead Discovery</h2>
-            <p>Automated UK school data mining</p>
-            <div class="data-flow">
-                <div class="data-box">
-                    <strong>gov.uk GIAS Database</strong><br>
-                    43,000+ schools<br>
-                    Real-time data
+            <p style="margin-bottom: 1rem; color: var(--text-light);">Watch real-time school data discovery</p>
+            
+            <div class="database-container zoho-ui-frame">
+                <div class="database-header">
+                    <span>🎯 Northern Ireland Schools Database</span>
+                    <div class="source-label">gov.uk GIAS Database → Zoho CRM</div>
                 </div>
-                <div class="data-arrow">→</div>
-                <div class="data-box">
-                    <strong>Contact Extraction</strong><br>
-                    Headteachers<br>
-                    Vice Principals<br>
-                    SENCOs
-                </div>
+                
+                <table class="schools-table">
+                    <thead>
+                        <tr>
+                            <th>School Name</th>
+                            <th>Type</th>
+                            <th>Key Stage</th>
+                            <th>Students</th>
+                            <th>VP Name</th>
+                            <th>Email</th>
+                            <th>CRM Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="schoolsTableBody">
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
             </div>
-            <div class="data-flow">
-                <div class="data-box">
-                    <strong>Smart Tagging</strong><br>
-                    Key Stage classification<br>
-                    School type & size<br>
-                    Location mapping
-                </div>
-                <div class="data-arrow">→</div>
-                <div class="data-box">
-                    <strong>Zoho Integration</strong><br>
-                    Auto-tagged leads<br>
-                    Instant segmentation<br>
-                    Priority scoring
-                </div>
+            
+            <div style="margin-top: 1rem; font-weight: bold; color: var(--zoho-blue);">
+                247 schools imported → Zoho CRM in 3 minutes
             </div>
         </div>
 
-        <!-- Slide 4: Champion Mapping -->
+        <!-- Slide 3: Champion Mapping -->
+        <div class="slide slide-3">
+            <h2>Champion Mapping</h2>
+            <p style="margin-bottom: 1rem; color: var(--text-light);">Finding the right person in seconds</p>
+            
+            <div class="school-focus">🎯 St Columb's College</div>
+            
+            <div class="champions-grid">
+                <div class="champion-card zoho-contact-card">
+                    <div class="champion-status">❌</div>
+                    <div class="champion-info">
+                        <div class="champion-name">Mr. Fintan Murphy</div>
+                        <div class="champion-role">Principal</div>
+                        <div class="champion-contact">f.murphy@stcolumbs.derry.sch.uk | 028 7126 4540</div>
+                        <div class="champion-value champion-reject">Too busy - delegator</div>
+                    </div>
+                </div>
+                
+                <div class="champion-card zoho-contact-card">
+                    <div class="champion-status">✅</div>
+                    <div class="champion-info">
+                        <div class="champion-name">Mrs. Sarah McCallion</div>
+                        <div class="champion-role">Vice Principal</div>
+                        <div class="champion-contact">s.mccallion@stcolumbs.derry.sch.uk | 028 7126 4540</div>
+                        <div class="champion-value">Budget holder, decision maker</div>
+                        <div class="champion-tags">
+                            <span class="champion-tag">Key Stage 4</span>
+                            <span class="champion-tag">Budget Holder</span>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <div class="social-icon linkedin">in</div>
+                        <div class="social-icon email">@</div>
+                    </div>
+                </div>
+                
+                <div class="champion-card zoho-contact-card">
+                    <div class="champion-status">✅</div>
+                    <div class="champion-info">
+                        <div class="champion-name">Mr. Declan O'Hara</div>
+                        <div class="champion-role">Head of Year 10</div>
+                        <div class="champion-contact">d.ohara@stcolumbs.derry.sch.uk | 028 7126 4540</div>
+                        <div class="champion-value">Influencer, wellbeing champion</div>
+                        <div class="champion-tags">
+                            <span class="champion-tag">Key Stage 4</span>
+                            <span class="champion-tag">Influencer</span>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <div class="social-icon linkedin">in</div>
+                        <div class="social-icon email">@</div>
+                    </div>
+                </div>
+                
+                <div class="champion-card zoho-contact-card">
+                    <div class="champion-status">✅</div>
+                    <div class="champion-info">
+                        <div class="champion-name">Ms. Claire Doherty</div>
+                        <div class="champion-role">SENCO</div>
+                        <div class="champion-contact">c.doherty@stcolumbs.derry.sch.uk | 028 7126 4540</div>
+                        <div class="champion-value">Books external workshops</div>
+                        <div class="champion-tags">
+                            <span class="champion-tag">Key Stage 4</span>
+                            <span class="champion-tag">Budget Holder</span>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <div class="social-icon linkedin">in</div>
+                        <div class="social-icon email">@</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="zoho-sync-note">
+                All contacts auto-synced to Zoho CRM with tags and deal stage
+            </div>
+        </div>
+
+        <!-- Slide 4: Smart Outreach -->
         <div class="slide slide-4">
-            <h2>Decision Maker Mapping</h2>
-            <p>Target the right person with the right message</p>
-            <div class="champion-grid">
-                <div class="champion-card">
-                    <div class="champion-role">Vice Principal</div>
-                    <div class="champion-power">Budget Authority<br>📊 Final Decision Maker</div>
+            <h2>Smart Outreach</h2>
+            <p style="margin-bottom: 1rem; color: var(--text-light);">Personalised emails that get responses</p>
+            
+            <div class="zoho-campaign-badge">
+                📧 Sent via Zoho Campaigns
+            </div>
+            
+            <div class="email-container">
+                <div class="email-header">
+                    <span>📧 Automated Email Composition</span>
                 </div>
-                <div class="champion-card">
-                    <div class="champion-role">Head of Year</div>
-                    <div class="champion-power">Programme Influencer<br>🎯 Internal Champion</div>
+                
+                <div class="email-meta">
+                    <div class="email-field">
+                        <span class="email-label">To:</span>
+                        <span>s.mccallion@stcolumbs.derry.sch.uk</span>
+                    </div>
+                    <div class="email-field">
+                        <span class="email-label">Subject:</span>
+                        <span>Wellbeing Workshops for Key Stage 4 — St Columb's College</span>
+                    </div>
                 </div>
-                <div class="champion-card">
-                    <div class="champion-role">SENCO</div>
-                    <div class="champion-power">Wellbeing Specialist<br>🧠 Workshop Booker</div>
+                
+                <div class="email-body">
+                    <p><strong>Hi Sarah,</strong></p>
+                    <p>Following our successful workshops with Oakgrove Integrated College, I wanted to reach out about our Key Stage 4 programme specifically designed for schools like St Columb's College.</p>
+                    <p>With 847 students in your care, we understand the unique pressures your Year 10-11 cohort faces during this crucial academic period...</p>
+                    <p><strong>Best regards,<br>Cormac</strong></p>
                 </div>
+            </div>
+            
+            <div class="zoho-tracking">
+                <strong>Zoho CRM Email Workflow:</strong><br>
+                📈 Open rate tracked in Zoho<br>
+                🎯 Auto-moves to 'Interested' when opened 3x<br>
+                🔄 Trigger → Wait 5 days → Follow-up → Wait 7 days → Final email
+            </div>
+            
+            <div class="personalisation-tag">
+                Personalised for: St Columb's College | Key Stage 4 | 847 students
             </div>
         </div>
 
-        <!-- Slide 5: Smart Outreach -->
+        <!-- Slide 5: Feedback Engine -->
         <div class="slide slide-5">
-            <h2>Intelligent Email Campaigns</h2>
-            <div class="outreach-sequence">
-                <div class="sequence-step">
-                    <strong>Key Stage 3 Campaign:</strong> "Building emotional resilience as pupils transition to secondary school at [School Name] - supporting your [Student Count] students"
+            <h2>Feedback Engine</h2>
+            <p style="margin-bottom: 1rem; color: var(--text-light);">Automated feedback collection & rebooking</p>
+            
+            <div class="feedback-container">
+                <div class="feedback-card">
+                    <div class="rating-display">4.8/5</div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div><strong>127 students</strong> completed feedback</div>
+                    <div style="color: var(--text-light); margin-top: 0.5rem;">"Really helpful for managing exam stress!"</div>
                 </div>
-                <div class="sequence-step">
-                    <strong>Key Stage 4 Campaign:</strong> "GCSE stress management workshops for [School Name] - proven techniques for your Year 10-11 students"
+                
+                <div class="feedback-card">
+                    <div class="zoho-survey-flow">
+                        <strong>Zoho Survey → Auto-update deal stage:</strong><br>
+                        ✅ Workshop delivered<br>
+                        ✅ Feedback collected<br>
+                        ✅ Deal moved to 'Rebooking'<br>
+                        📧 Auto-rebooking email sent
+                    </div>
+                    <div style="background: var(--light-gray); padding: 1rem; border-radius: 8px; font-style: italic; text-align: left; margin-top: 1rem;">
+                        "Hi Sarah, students loved the workshop! 94% said it helped with their wellbeing. Ready to book for next term? I have April-June slots available..."
+                    </div>
                 </div>
-                <div class="sequence-step">
-                    <strong>Key Stage 5 Campaign:</strong> "University preparation & anxiety management for [School Name] sixth form students"
-                </div>
-                <div class="sequence-step">
-                    <strong>Follow-up Sequence:</strong> Automated 3-touch campaigns with personalised timing based on school calendar
+                
+                <div class="feedback-card">
+                    <div class="before-after">
+                        <div class="before">
+                            <strong>BEFORE</strong><br>
+                            2 days chasing feedback
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="after">
+                            <strong>AFTER</strong><br>
+                            Automated in 2 hours
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 6: Feedback Engine -->
+        <!-- Slide 6: Pipeline Dashboard -->
         <div class="slide slide-6">
-            <h2>Automated Rebooking Engine</h2>
-            <div class="feedback-flow">
-                <div class="feedback-step">
-                    <strong>Workshop Delivery</strong><br>
-                    QR codes distributed for instant feedback collection
-                </div>
-                <div class="feedback-step">
-                    <strong>Student Feedback Analysis</strong><br>
-                    AI processes responses and generates impact reports
-                </div>
-                <div class="feedback-step">
-                    <strong>Automatic Rebooking Offer</strong><br>
-                    Personalised email sent within 24 hours with next year's availability
-                </div>
+            <div class="zoho-dashboard-header">
+                Your Zoho CRM Dashboard
             </div>
-            <div class="time-save">
-                Turn 2 days of admin into 2 hours
-            </div>
-        </div>
-
-        <!-- Slide 7: Pipeline Dashboard -->
-        <div class="slide slide-7">
             <h2>Visual Booking Pipeline</h2>
-            <div class="pipeline">
-                <div class="pipeline-stage">
-                    <div class="stage-name">Prospect</div>
-                    <div class="stage-bar"><div class="stage-progress" style="width: 95%"></div></div>
-                    <div>234 schools</div>
-                </div>
-                <div class="pipeline-stage">
-                    <div class="stage-name">Contacted</div>
-                    <div class="stage-bar"><div class="stage-progress" style="width: 75%"></div></div>
-                    <div>178 schools</div>
-                </div>
-                <div class="pipeline-stage">
-                    <div class="stage-name">Interested</div>
-                    <div class="stage-bar"><div class="stage-progress" style="width: 45%"></div></div>
-                    <div>89 schools</div>
-                </div>
-                <div class="pipeline-stage">
-                    <div class="stage-name">Booked</div>
-                    <div class="stage-bar"><div class="stage-progress" style="width: 25%"></div></div>
-                    <div>32 schools</div>
-                </div>
-                <div class="pipeline-stage">
-                    <div class="stage-name">Delivered</div>
-                    <div class="stage-bar"><div class="stage-progress" style="width: 20%"></div></div>
-                    <div>24 schools</div>
-                </div>
-                <div class="pipeline-stage">
-                    <div class="stage-name">Rebooked</div>
-                    <div class="stage-bar"><div class="stage-progress" style="width: 15%"></div></div>
-                    <div>18 schools</div>
-                </div>
+            <p style="margin-bottom: 1rem; color: var(--text-light);">Real-time pipeline tracking with revenue visibility</p>
+            
+            <div class="zoho-integration-note">
+                🔗 <strong>Everything in ONE place — your existing Zoho, supercharged</strong><br>
+                This isn't a new tool to learn. It plugs INTO your existing Zoho CRM. You keep working the way you work — just with AI doing the heavy lifting.
             </div>
-            <div class="crunch-window">
-                Track the April-June booking crunch window in real-time
+            
+            <div class="pipeline-container">
+                <div class="kanban-board">
+                    <div class="kanban-column">
+                        <div class="kanban-title">Prospect</div>
+                        <div class="kanban-count">23</div>
+                        <div class="kanban-value">£0</div>
+                    </div>
+                    <div class="kanban-column">
+                        <div class="kanban-title">Contacted</div>
+                        <div class="kanban-count">15</div>
+                        <div class="kanban-value">£0</div>
+                    </div>
+                    <div class="kanban-column">
+                        <div class="kanban-title">Interested</div>
+                        <div class="kanban-count">8</div>
+                        <div class="kanban-value">£12k</div>
+                    </div>
+                    <div class="kanban-column">
+                        <div class="kanban-title">Booked</div>
+                        <div class="kanban-count">5</div>
+                        <div class="kanban-value">£7.5k</div>
+                    </div>
+                    <div class="kanban-column">
+                        <div class="kanban-title">Delivered</div>
+                        <div class="kanban-count">3</div>
+                        <div class="kanban-value">£4.5k</div>
+                    </div>
+                    <div class="kanban-column">
+                        <div class="kanban-title">Feedback Sent</div>
+                        <div class="kanban-count">2</div>
+                        <div class="kanban-value">£3k</div>
+                    </div>
+                    <div class="kanban-column">
+                        <div class="kanban-title">Rebooked</div>
+                        <div class="kanban-count">1</div>
+                        <div class="kanban-value">£1.5k</div>
+                    </div>
+                </div>
+                
+                <div class="revenue-display">
+                    £47,500 pipeline value
+                </div>
+                
+                <div class="booking-window">
+                    April-June booking window: 67 days remaining
+                </div>
             </div>
         </div>
 
-        <!-- Slide 8: CTA -->
-        <div class="slide slide-8">
-            <h2>Let's Build This for Hip Psychology</h2>
-            <div class="cta-content">
-                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Transform your school outreach from manual chaos to automated success</p>
-                <div class="contact-info">
-                    <h3>Phil Patterson</h3>
-                    <p>Blue Canvas AI</p>
-                    <div class="contact-detail">📞 +44 7935 217762</div>
-                    <div class="contact-detail">✉️ contact@bluecanvas.ai</div>
-                </div>
-                <p style="font-size: 1rem; opacity: 0.9;">Ready to fill your calendar with qualified school bookings?</p>
-            </div>
+        <!-- Navigation -->
+        <div class="nav-arrows nav-prev" onclick="previousSlide()">‹</div>
+        <div class="nav-arrows nav-next" onclick="nextSlide()">›</div>
+        
+        <div class="nav-progress">
+            <div class="progress-dot active" onclick="goToSlide(0)"></div>
+            <div class="progress-dot" onclick="goToSlide(1)"></div>
+            <div class="progress-dot" onclick="goToSlide(2)"></div>
+            <div class="progress-dot" onclick="goToSlide(3)"></div>
+            <div class="progress-dot" onclick="goToSlide(4)"></div>
+            <div class="progress-dot" onclick="goToSlide(5)"></div>
         </div>
-    </div>
-
-    <!-- Navigation -->
-    <div class="nav-dots">
-        <div class="nav-dot active" data-slide="0"></div>
-        <div class="nav-dot" data-slide="1"></div>
-        <div class="nav-dot" data-slide="2"></div>
-        <div class="nav-dot" data-slide="3"></div>
-        <div class="nav-dot" data-slide="4"></div>
-        <div class="nav-dot" data-slide="5"></div>
-        <div class="nav-dot" data-slide="6"></div>
-        <div class="nav-dot" data-slide="7"></div>
-    </div>
-
-    <div class="nav-arrows">
-        <div class="nav-arrow prev">‹</div>
-        <div class="nav-arrow next">›</div>
     </div>
 
     <script>
         let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.nav-dot');
-        const totalSlides = slides.length;
+        const totalSlides = 6;
 
-        function showSlide(n) {
+        // School data for slide 2 with CRM status
+        const schoolData = [
+            ['St Columb\'s College', 'Catholic', 'KS3-5', '847', 'Mrs. Sarah McCallion', 's.mccallion@stcolumbs.derry.sch.uk', '✅ New Lead'],
+            ['Oakgrove Integrated', 'Integrated', 'KS3-5', '1,234', 'Mr. David Stewart', 'd.stewart@oakgrove.derry.sch.uk', '✅ New Lead'],
+            ['Lisneal College', 'Protestant', 'KS3-5', '952', 'Mrs. Jennifer Clarke', 'j.clarke@lisneal.derry.sch.uk', '✅ New Lead'],
+            ['Foyle College', 'Protestant', 'KS3-5', '1,186', 'Dr. Michael Thompson', 'm.thompson@foyle.derry.sch.uk', '✅ New Lead'],
+            ['St Cecilia\'s College', 'Catholic', 'KS3-5', '743', 'Mrs. Mary O\'Donnell', 'm.odonnell@stcecilias.derry.sch.uk', '✅ New Lead'],
+            ['Lumen Christi College', 'Catholic', 'KS3-5', '689', 'Mr. Patrick Doherty', 'p.doherty@lumen.derry.sch.uk', '✅ New Lead'],
+            ['Thornhill College', 'Catholic', 'KS3-5', '567', 'Sister Margaret Kelly', 's.kelly@thornhill.derry.sch.uk', '✅ New Lead'],
+            ['St Mary\'s College', 'Catholic', 'KS3-5', '812', 'Mrs. Catherine McBride', 'c.mcbride@stmarys.derry.sch.uk', '✅ New Lead']
+        ];
+
+        function updateSlide() {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.progress-dot');
+
             slides.forEach((slide, index) => {
                 slide.classList.remove('active', 'prev');
-                if (index === n) {
+                if (index === currentSlide) {
                     slide.classList.add('active');
-                } else if (index < n) {
+                } else if (index < currentSlide) {
                     slide.classList.add('prev');
                 }
             });
 
             dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === n);
+                dot.classList.toggle('active', index === currentSlide);
             });
 
-            currentSlide = n;
+            // Trigger slide-specific animations
+            if (currentSlide === 1) {
+                setTimeout(populateSchoolsTable, 500);
+            }
+        }
+
+        function populateSchoolsTable() {
+            const tbody = document.getElementById('schoolsTableBody');
+            tbody.innerHTML = '';
+
+            schoolData.forEach((school, index) => {
+                setTimeout(() => {
+                    const row = document.createElement('tr');
+                    row.className = 'school-row';
+                    
+                    school.forEach((cellData, cellIndex) => {
+                        const cell = document.createElement('td');
+                        if (cellIndex === school.length - 1) {
+                            // Last column is CRM status
+                            cell.innerHTML = `<span class="zoho-status">${cellData}</span>`;
+                        } else {
+                            cell.textContent = cellData;
+                        }
+                        cell.classList.add('animate-row');
+                        row.appendChild(cell);
+                    });
+                    
+                    tbody.appendChild(row);
+                }, index * 200);
+            });
         }
 
         function nextSlide() {
-            showSlide((currentSlide + 1) % totalSlides);
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateSlide();
+            }
         }
 
-        function prevSlide() {
-            showSlide((currentSlide - 1 + totalSlides) % totalSlides);
+        function previousSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
         }
 
-        // Event listeners
-        document.querySelector('.nav-arrow.next').addEventListener('click', nextSlide);
-        document.querySelector('.nav-arrow.prev').addEventListener('click', prevSlide);
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlide();
+        }
 
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => showSlide(index));
-        });
-
-        // Touch/swipe support
+        // Touch/swipe navigation
         let touchStartX = 0;
         let touchEndX = 0;
 
-        document.addEventListener('touchstart', e => {
+        document.addEventListener('touchstart', (e) => {
             touchStartX = e.changedTouches[0].screenX;
         });
 
-        document.addEventListener('touchend', e => {
+        document.addEventListener('touchend', (e) => {
             touchEndX = e.changedTouches[0].screenX;
             handleSwipe();
         });
@@ -717,7 +1218,7 @@
                 if (diff > 0) {
                     nextSlide();
                 } else {
-                    prevSlide();
+                    previousSlide();
                 }
             }
         }
@@ -725,14 +1226,16 @@
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault();
                 nextSlide();
             } else if (e.key === 'ArrowLeft') {
-                prevSlide();
+                e.preventDefault();
+                previousSlide();
             }
         });
 
-        // Auto-advance (optional - commented out)
-        // setInterval(nextSlide, 10000);
+        // Initialize
+        updateSlide();
     </script>
 </body>
 </html>

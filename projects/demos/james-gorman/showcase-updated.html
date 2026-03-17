@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Gorman Property - Stale Listing Lead Generation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #2B4DAF 0%, #1a3078 100%);
+            color: white;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .showcase-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .slide {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            height: 100vh;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes scan {
+            0% { transform: translateX(-100%); }
+            50% { transform: translateX(100vw); }
+            100% { transform: translateX(-100%); }
+        }
+
+        @keyframes pulseRed {
+            0%, 100% { 
+                color: #dc3545; 
+                text-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+            }
+            50% { 
+                color: #ff1e2d; 
+                text-shadow: 0 0 10px rgba(220, 53, 69, 0.8);
+            }
+        }
+
+        @keyframes slideInCard {
+            from { 
+                opacity: 0; 
+                transform: translateY(20px) scale(0.95);
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .slide h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .slide h2 {
+            font-size: 1.8rem;
+            color: #FF4520;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .slide p, .slide li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            max-width: 600px;
+        }
+
+        .highlight {
+            color: #FF4520;
+            font-weight: 700;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 69, 32, 0.3);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            color: #FF4520;
+            font-weight: 700;
+            display: block;
+        }
+
+        /* PropertyPal-style components */
+        .propertypal-header {
+            background: #00A651;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 12px 12px 0 0;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .propertypal-search {
+            background: white;
+            color: #333;
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+            font-size: 1rem;
+        }
+
+        .propertypal-container {
+            background: white;
+            color: #333;
+            border-radius: 12px;
+            margin: 1rem 0;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .property-card {
+            background: white;
+            border: 1px solid #eee;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-align: left;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            animation: slideInCard 0.6s ease-out;
+            position: relative;
+        }
+
+        .property-card.with-delay-1 { animation-delay: 0.2s; opacity: 0; animation-fill-mode: both; }
+        .property-card.with-delay-2 { animation-delay: 0.4s; opacity: 0; animation-fill-mode: both; }
+        .property-card.with-delay-3 { animation-delay: 0.6s; opacity: 0; animation-fill-mode: both; }
+
+        .property-address {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .property-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #00A651;
+            margin-bottom: 8px;
+        }
+
+        .property-details {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .property-agent {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .property-days {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .days-stale-90plus {
+            animation: pulseRed 2s infinite;
+        }
+
+        .scanning-counter {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 15px 20px;
+            border-radius: 0 0 12px 12px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* Lead scoring badges */
+        .lead-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .lead-badge.hot {
+            background: linear-gradient(135deg, #dc3545, #c82333);
+        }
+
+        .lead-badge.warm {
+            background: linear-gradient(135deg, #fd7e14, #e55a00);
+        }
+
+        .lead-badge.monitor {
+            background: linear-gradient(135deg, #ffc107, #e0a800);
+            color: #333;
+        }
+
+        /* Original components for other slides */
+        .listing-table {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            border-radius: 12px;
+            padding: 1rem;
+            margin: 1rem 0;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .listing-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+
+        .listing-row:last-child {
+            border-bottom: none;
+        }
+
+        .listing-header {
+            font-weight: 700;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .days-stale {
+            font-weight: 700;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            color: white;
+        }
+
+        .days-hot { background: #dc3545; }
+        .days-warm { background: #fd7e14; }
+        .days-monitor { background: #ffc107; color: #333; }
+
+        .lead-score {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.5rem 0;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .fire-emoji {
+            font-size: 1.2rem;
+        }
+
+        .letter-preview {
+            background: white;
+            color: #333;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1rem 0;
+            max-width: 500px;
+            text-align: left;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border-left: 4px solid #2B4DAF;
+        }
+
+        .letter-preview h3 {
+            color: #2B4DAF;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .letter-preview p {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .report-card {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1rem 0;
+            max-width: 400px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .report-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5rem 0;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .report-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .blue-canvas-subtle {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 1rem;
+        }
+
+        .blue-canvas-subtle a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        .blue-canvas-subtle a:hover {
+            color: white;
+        }
+
+        .progress-dots {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 100;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .dot.active {
+            background: #FF4520;
+        }
+
+        .nav-hint {
+            position: fixed;
+            bottom: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            z-index: 100;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .slide h1 { font-size: 1.8rem; }
+            .slide h2 { font-size: 1.4rem; }
+            .slide p, .slide li { font-size: 1rem; }
+            .stat-grid { grid-template-columns: 1fr; }
+
+            .listing-row { flex-direction: column; gap: 0.5rem; }
+        }
+
+        @media (max-width: 480px) {
+            .slide { padding: 15px; }
+            .slide h1 { font-size: 1.6rem; }
+            .slide h2 { font-size: 1.2rem; }
+            .slide p, .slide li { font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="showcase-container">
+        <!-- Slide 1: Hook -->
+        <div class="slide active">
+            <h1>Every day, sellers in Derry are losing faith in their estate agent.</h1>
+            <p class="highlight" style="font-size: 1.3rem; margin-top: 2rem;">We find them before anyone else.</p>
+            <p style="margin-top: 2rem; font-size: 1rem; color: rgba(255, 255, 255, 0.8);">Tap to continue →</p>
+        </div>
+
+        <!-- Slide 2: The Insight -->
+        <div class="slide">
+            <h2>The Insight</h2>
+            <div class="stat-grid">
+                <div class="stat-box">
+                    <span class="stat-number">47</span>
+                    <span>Average days to sell in Derry</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">83</span>
+                    <span>Properties listed 90+ days</span>
+                </div>
+            </div>
+            <p><strong>Those sellers are frustrated. Their agent isn't delivering.</strong></p>
+            <p class="highlight" style="margin-top: 1.5rem;">What if YOU could reach them first?</p>
+        </div>
+
+        <!-- Slide 3: How It Works — The Scan (PropertyPal Style) -->
+        <div class="slide">
+            <h2>How It Works — The Scan</h2>
+            <div class="propertypal-container">
+                <div class="propertypal-header">
+                    🏠 PropertyPal - Property Search
+                </div>
+                <div class="propertypal-search">
+                    🔍 Search: "Derry, BT47, BT48" - For Sale
+                </div>
+                <div style="padding: 15px;">
+                    <div class="property-card">
+                        <div class="property-address">📍 14 Beechwood Park, Waterside</div>
+                        <div class="property-price">£175,000</div>
+                        <div class="property-details">3 bed | Semi-detached</div>
+                        <div class="property-agent">🏢 Listed by: Small Agent Ltd</div>
+                        <div class="property-days days-stale-90plus">⏰ 94 days on market</div>
+                    </div>
+                    <div class="property-card with-delay-1">
+                        <div class="property-address">📍 22 Culmore Heights, Culmore</div>
+                        <div class="property-price">£285,000</div>
+                        <div class="property-details">4 bed | Detached</div>
+                        <div class="property-agent">🏢 Listed by: CityRealty</div>
+                        <div class="property-days days-stale-90plus">⏰ 127 days on market</div>
+                    </div>
+                    <div class="property-card with-delay-2">
+                        <div class="property-address">📍 8 Northland Road, Cityside</div>
+                        <div class="property-price">£125,000</div>
+                        <div class="property-details">2 bed | Terrace</div>
+                        <div class="property-agent">🏢 Listed by: Local Estates</div>
+                        <div class="property-days days-stale-90plus">⏰ 108 days on market</div>
+                    </div>
+                </div>
+                <div class="scanning-counter">
+                    Scanning... 247 properties found
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: The Lead Score (PropertyPal Style with Badges) -->
+        <div class="slide">
+            <h2>The Lead Score</h2>
+            <p style="margin-bottom: 1.5rem;">We score every listing so you focus on the most likely to switch:</p>
+            <div class="propertypal-container">
+                <div class="propertypal-header">
+                    🔥 Hot Leads - Scored Properties
+                </div>
+                <div style="padding: 15px;">
+                    <div class="property-card">
+                        <div class="lead-badge hot">🔥🔥🔥 HOT LEAD</div>
+                        <div class="property-address">📍 22 Culmore Heights, Culmore</div>
+                        <div class="property-price">£285,000</div>
+                        <div class="property-details">4 bed | Detached</div>
+                        <div class="property-agent">🏢 Listed by: CityRealty</div>
+                        <div class="property-days" style="color: #dc3545;">⏰ 127 days — price reduced twice</div>
+                    </div>
+                    <div class="property-card">
+                        <div class="lead-badge warm">🔥🔥 WARM</div>
+                        <div class="property-address">📍 14 Beechwood Park, Waterside</div>
+                        <div class="property-price">£175,000</div>
+                        <div class="property-details">3 bed | Semi-detached</div>
+                        <div class="property-agent">🏢 Listed by: Small Agent Ltd</div>
+                        <div class="property-days" style="color: #fd7e14;">⏰ 94 days — price reduced</div>
+                    </div>
+                    <div class="property-card">
+                        <div class="lead-badge monitor">🔥 MONITOR</div>
+                        <div class="property-address">📍 5 Spencer Road, Eglinton</div>
+                        <div class="property-price">£210,000</div>
+                        <div class="property-details">3 bed | Semi-detached</div>
+                        <div class="property-agent">🏢 Listed by: BTWShivers</div>
+                        <div class="property-days" style="color: #e0a800;">⏰ 67 days — no price change</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: The Approach -->
+        <div class="slide">
+            <h2>The Approach — What James Does</h2>
+            <div class="letter-preview">
+                <h3>Personal Letter Example</h3>
+                <p><strong>Dear Homeowner at 14 Beechwood Park...</strong></p>
+                <p>Your property has been on the market for over 3 months. I'd love to offer a fresh perspective and a free no-obligation market appraisal.</p>
+                <p><strong>James Gorman, Local Estate Agent</strong><br>028 7161 0402</p>
+            </div>
+            <p>Personalised outreach to each seller. Professional, not pushy.</p>
+            <p class="highlight">We provide the leads. You close the deals.</p>
+        </div>
+
+        <!-- Slide 6: Developer Intel -->
+        <div class="slide">
+            <h2>Developer Intel</h2>
+            <p style="margin-bottom: 1.5rem; color: rgba(255, 255, 255, 0.9);">Every week, we scan for development opportunities you might miss:</p>
+            
+            <div class="listing-table">
+                <div class="listing-row listing-header">
+                    <span>Intelligence Type</span>
+                    <span>This Week</span>
+                </div>
+                <div class="listing-row">
+                    <span>📋 Planning applications submitted</span>
+                    <span class="highlight">12</span>
+                </div>
+                <div class="listing-row">
+                    <span>🏗️ Gap sites identified</span>
+                    <span class="highlight">4</span>
+                </div>
+                <div class="listing-row">
+                    <span>💰 Sold data hotspots</span>
+                    <span class="highlight">7</span>
+                </div>
+                <div class="listing-row">
+                    <span>🏘️ New developments launched</span>
+                    <span class="highlight">2</span>
+                </div>
+                <div class="listing-row">
+                    <span>🔍 Land registry activity</span>
+                    <span class="highlight">23</span>
+                </div>
+            </div>
+            
+            <p class="highlight" style="margin-top: 1.5rem;">Stay ahead of development trends and investment opportunities</p>
+        </div>
+
+        <!-- Slide 7: Weekly Report Card -->
+        <div class="slide">
+            <h2>Weekly Report Card</h2>
+            <div class="report-card">
+                <h3 style="color: #2B4DAF; margin-bottom: 1rem;">This Week's Intelligence</h3>
+                <div class="report-item">
+                    <span>New stale listings</span>
+                    <span class="highlight">8</span>
+                </div>
+                <div class="report-item">
+                    <span>🔥🔥🔥 Hot leads</span>
+                    <span class="highlight">3</span>
+                </div>
+                <div class="report-item">
+                    <span>Price reductions spotted</span>
+                    <span class="highlight">5</span>
+                </div>
+                <div class="report-item">
+                    <span>Back on market</span>
+                    <span class="highlight">2</span>
+                </div>
+            </div>
+            <p class="highlight">Delivered to your inbox every Monday at 8am</p>
+        </div>
+
+        <!-- Slide 8: Simple End -->
+        <div class="slide">
+            <h1>This runs every week. Automatically.</h1>
+            <p style="font-size: 1.2rem; margin: 2rem 0; color: rgba(255, 255, 255, 0.9);">Fresh leads and market intelligence delivered every Monday morning.</p>
+            <p style="font-size: 1rem; margin-top: 2rem; color: rgba(255, 255, 255, 0.7);">Built for James Gorman Property</p>
+        </div>
+    </div>
+
+    <div class="progress-dots">
+        <div class="dot active" onclick="goToSlide(0)"></div>
+        <div class="dot" onclick="goToSlide(1)"></div>
+        <div class="dot" onclick="goToSlide(2)"></div>
+        <div class="dot" onclick="goToSlide(3)"></div>
+        <div class="dot" onclick="goToSlide(4)"></div>
+        <div class="dot" onclick="goToSlide(5)"></div>
+        <div class="dot" onclick="goToSlide(6)"></div>
+        <div class="dot" onclick="goToSlide(7)"></div>
+    </div>
+
+    <div class="nav-hint">Tap anywhere or swipe to navigate</div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            
+            currentSlide = (n + slides.length) % slides.length;
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+        
+        function goToSlide(n) {
+            showSlide(n);
+        }
+        
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+        
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+        
+        // Touch/click navigation
+        let startX = 0;
+        let endX = 0;
+        
+        document.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+        });
+        
+        document.addEventListener('touchend', function(e) {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+        
+        document.addEventListener('click', function(e) {
+            // Don't navigate on dot clicks
+            if (e.target.classList.contains('dot')) return;
+            
+            const rect = document.body.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const screenWidth = rect.width;
+            
+            if (clickX < screenWidth * 0.3) {
+                prevSlide();
+            } else if (clickX > screenWidth * 0.7) {
+                nextSlide();
+            } else {
+                nextSlide(); // Default to next on center tap
+            }
+        });
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = startX - endX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    nextSlide(); // Swipe left = next slide
+                } else {
+                    prevSlide(); // Swipe right = prev slide
+                }
+            }
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+                e.preventDefault();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+                e.preventDefault();
+            }
+        });
+
+        // Auto-advance on first load
+        setTimeout(() => {
+            const hint = document.querySelector('.nav-hint');
+            if (hint) hint.style.opacity = '0.5';
+        }, 3000);
+    </script>
+</body>
+</html>

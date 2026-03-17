@@ -1,86 +1,86 @@
 address,price,property_type,bedrooms,bathrooms,agent,date_listed,status,url,area,scraped_at
-"52 Bridge Street, Eglinton",£370000,Townhouse,4,1,Pinewood Properties,2026-01-13,For Sale,https://www.propertypal.com/property/348801/detail,Eglinton,2026-03-17T20:30:10.220668
-"43 Sycamore Close, Derry City",£109000,Townhouse,5,1,Anderson Properties,2026-03-09,For Sale,https://www.propertypal.com/property/282295/detail,Derry City,2026-03-17T20:30:10.220687
-"8 Abbey Court, Culmore",£204000,Apartment,3,2,Pinewood Properties,2026-01-02,For Sale,https://www.propertypal.com/property/130638/detail,Culmore,2026-03-17T20:30:10.220697
-"75 Castle Gardens, Eglinton",£135000,Townhouse,3,1,Neill Estate Agents,2026-03-14,Sale Agreed,https://www.propertypal.com/property/577289/detail,Eglinton,2026-03-17T20:30:10.220705
-"17 King Street, Waterside",£212000,Townhouse,5,2,Reid & Associates,2026-02-12,For Sale,https://www.propertypal.com/property/336947/detail,Waterside,2026-03-17T20:30:10.220713
-"60 King Street, Derry City",£448000,Terraced,3,3,McGilloway Properties,2026-01-08,For Sale,https://www.propertypal.com/property/402647/detail,Derry City,2026-03-17T20:30:10.220720
-"23 Castle Gardens, Derry City",£217000,Semi-detached,1,1,Homes Independent,2026-02-04,For Sale,https://www.propertypal.com/property/905410/detail,Derry City,2026-03-17T20:30:10.220728
-"9 High Street, Eglinton",£335000,Detached,2,2,Pinewood Properties,2026-01-08,For Sale,https://www.propertypal.com/property/216784/detail,Eglinton,2026-03-17T20:30:10.220735
-"67 Castle Gardens, Eglinton",POA,Detached,5,3,Homes Independent,2025-12-23,For Sale,https://www.propertypal.com/property/394834/detail,Eglinton,2026-03-17T20:30:10.220742
-"26 River View, Newbuildings",£332000,Terraced,3,1,Donnelly & Associates,2026-02-01,For Sale,https://www.propertypal.com/property/457777/detail,Newbuildings,2026-03-17T20:30:10.220749
-"7 Bridge Street, Waterside",£83000,Townhouse,2,1,Propertylink,2025-12-26,For Sale,https://www.propertypal.com/property/368654/detail,Waterside,2026-03-17T20:30:10.220755
-"1 Castle Gardens, Strathfoyle",£417000,Detached,4,1,McGilloway Properties,2026-01-29,For Sale,https://www.propertypal.com/property/277915/detail,Strathfoyle,2026-03-17T20:30:10.220762
-"18 Park Avenue, Drumahoe",£110000,Townhouse,5,3,Reid & Associates,2026-01-16,Sale Agreed,https://www.propertypal.com/property/258607/detail,Drumahoe,2026-03-17T20:30:10.220769
-"25 Station Road, Drumahoe",£357000,Apartment,1,2,O'Sullivan Estate Agents,2026-02-10,For Sale,https://www.propertypal.com/property/789208/detail,Drumahoe,2026-03-17T20:30:10.220775
-"55 High Street, Strathfoyle",£375000,Semi-detached,2,2,Pinewood Properties,2026-01-04,For Sale,https://www.propertypal.com/property/935194/detail,Strathfoyle,2026-03-17T20:30:10.220782
-"86 Abbey Court, Derry City",£301000,Semi-detached,3,3,Martin & Co Derry,2025-12-18,Sale Agreed,https://www.propertypal.com/property/781800/detail,Derry City,2026-03-17T20:30:10.220788
-"57 Mill Road, Strathfoyle",£323000,Semi-detached,3,1,Homes Independent,2026-02-03,For Sale,https://www.propertypal.com/property/392130/detail,Strathfoyle,2026-03-17T20:30:10.220795
-"31 Meadow Park, Newbuildings",£189000,Terraced,2,2,Donnelly & Associates,2026-03-07,Sale Agreed,https://www.propertypal.com/property/125047/detail,Newbuildings,2026-03-17T20:30:10.220801
-"96 Queen Street, Derry City",£96000,Terraced,3,1,Quinn Estates,2026-02-12,For Sale,https://www.propertypal.com/property/266552/detail,Derry City,2026-03-17T20:30:10.220807
-"74 Meadow Park, Strathfoyle",£376000,Townhouse,2,2,Anderson Properties,2026-01-26,For Sale,https://www.propertypal.com/property/619839/detail,Strathfoyle,2026-03-17T20:30:10.220814
-"91 High Street, Eglinton",£403000,Detached,5,1,Caldwell Properties,2026-03-07,For Sale,https://www.propertypal.com/property/324339/detail,Eglinton,2026-03-17T20:30:10.220820
-"47 Sycamore Close, Waterside",£366000,Apartment,3,3,Martin & Co Derry,2026-01-23,For Sale,https://www.propertypal.com/property/983546/detail,Waterside,2026-03-17T20:30:10.220827
-"66 Sycamore Close, Cityside",£433000,Apartment,4,3,Propertylink,2026-02-23,Under Offer,https://www.propertypal.com/property/728366/detail,Cityside,2026-03-17T20:30:10.220834
-"41 Elmwood Avenue, Strathfoyle",£392000,Semi-detached,1,1,Anderson Properties,2026-03-15,For Sale,https://www.propertypal.com/property/924485/detail,Strathfoyle,2026-03-17T20:30:10.220840
-"86 River View, Culmore",£176000,Detached,5,3,McDermott Property,2025-12-18,For Sale,https://www.propertypal.com/property/322122/detail,Culmore,2026-03-17T20:30:10.220847
-"89 Queen Street, Drumahoe",£91000,Apartment,1,2,Anderson Properties,2026-03-10,For Sale,https://www.propertypal.com/property/833023/detail,Drumahoe,2026-03-17T20:30:10.220853
-"53 Mill Road, Drumahoe",£182000,Apartment,1,2,O'Sullivan Estate Agents,2026-01-02,Under Offer,https://www.propertypal.com/property/369827/detail,Drumahoe,2026-03-17T20:30:10.220860
-"5 Victoria Street, Culmore",£150000,Apartment,2,1,Martin & Co Derry,2026-02-01,For Sale,https://www.propertypal.com/property/282837/detail,Culmore,2026-03-17T20:30:10.220866
-"102 King Street, Drumahoe",POA,Townhouse,4,2,Donnelly & Associates,2026-01-14,For Sale,https://www.propertypal.com/property/964585/detail,Drumahoe,2026-03-17T20:30:10.220872
-"101 Castle Gardens, Eglinton",£442000,Semi-detached,1,1,Donnelly & Associates,2025-12-27,For Sale,https://www.propertypal.com/property/941270/detail,Eglinton,2026-03-17T20:30:10.220879
-"113 High Street, Derry City",£112000,Terraced,2,3,Hunter Campbell,2025-12-27,For Sale,https://www.propertypal.com/property/791495/detail,Derry City,2026-03-17T20:30:10.220885
-"30 Mill Road, Strathfoyle",£198000,Semi-detached,1,1,Anderson Properties,2026-01-13,For Sale,https://www.propertypal.com/property/406342/detail,Strathfoyle,2026-03-17T20:30:10.220891
-"24 Mill Road, Newbuildings",£231000,Terraced,1,3,Homes Independent,2025-12-28,For Sale,https://www.propertypal.com/property/256099/detail,Newbuildings,2026-03-17T20:30:10.220900
-"74 River View, Culmore",£297000,Townhouse,3,3,Anderson Properties,2026-02-01,For Sale,https://www.propertypal.com/property/734362/detail,Culmore,2026-03-17T20:30:10.220907
-"37 Park Avenue, Waterside",£204000,Apartment,4,1,Anderson Properties,2026-02-23,Sale Agreed,https://www.propertypal.com/property/635401/detail,Waterside,2026-03-17T20:30:10.220913
-"38 Queen Street, Waterside",£171000,Townhouse,1,3,Braidwood Properties,2026-01-01,For Sale,https://www.propertypal.com/property/909549/detail,Waterside,2026-03-17T20:30:10.220920
-"74 School Lane, Culmore",£109000,Townhouse,4,3,Anderson Properties,2026-01-18,For Sale,https://www.propertypal.com/property/634636/detail,Culmore,2026-03-17T20:30:10.220926
-"94 Meadow Park, Waterside",£441000,Apartment,2,2,Neill Estate Agents,2026-02-08,For Sale,https://www.propertypal.com/property/860783/detail,Waterside,2026-03-17T20:30:10.220932
-"104 Station Road, Derry City",£194000,Terraced,3,3,Smyth Properties,2026-01-03,For Sale,https://www.propertypal.com/property/370559/detail,Derry City,2026-03-17T20:30:10.220938
-"77 Oakwood Drive, Derry City",POA,Apartment,5,3,Smyth Properties,2026-02-09,For Sale,https://www.propertypal.com/property/971645/detail,Derry City,2026-03-17T20:30:10.220946
-"75 Castle Gardens, Waterside",£89000,Detached,3,2,Caldwell Properties,2026-02-28,For Sale,https://www.propertypal.com/property/463177/detail,Waterside,2026-03-17T20:30:10.220954
-"7 Church Road, Eglinton",£208000,Detached,4,2,Martin & Co Derry,2026-03-05,For Sale,https://www.propertypal.com/property/482312/detail,Eglinton,2026-03-17T20:30:10.220961
-"75 King Street, Newbuildings",£353000,Townhouse,5,3,Anderson Properties,2026-01-31,For Sale,https://www.propertypal.com/property/683373/detail,Newbuildings,2026-03-17T20:30:10.220967
-"116 Mill Road, Cityside",£377000,Detached,4,3,Quinn Estates,2026-03-12,For Sale,https://www.propertypal.com/property/993653/detail,Cityside,2026-03-17T20:30:10.220974
-"43 River View, Cityside",£304000,Terraced,5,3,Martin & Co Derry,2026-02-14,For Sale,https://www.propertypal.com/property/814872/detail,Cityside,2026-03-17T20:30:10.220980
-"18 Elmwood Avenue, Eglinton",£437000,Apartment,4,2,Pinewood Properties,2026-02-28,For Sale,https://www.propertypal.com/property/843845/detail,Eglinton,2026-03-17T20:30:10.220986
-"118 Elmwood Avenue, Cityside",£259000,Detached,1,2,Smyth Properties,2026-03-01,For Sale,https://www.propertypal.com/property/152050/detail,Cityside,2026-03-17T20:30:10.220993
-"57 Bridge Street, Eglinton",£234000,Townhouse,4,3,McGilloway Properties,2026-01-20,For Sale,https://www.propertypal.com/property/397539/detail,Eglinton,2026-03-17T20:30:10.220999
-"103 Mill Road, Derry City",£201000,Semi-detached,2,3,Reid & Associates,2025-12-30,Sale Agreed,https://www.propertypal.com/property/165135/detail,Derry City,2026-03-17T20:30:10.221006
-"61 Hill Street, Waterside",£215000,Detached,3,2,Homes Independent,2025-12-29,For Sale,https://www.propertypal.com/property/259026/detail,Waterside,2026-03-17T20:30:10.221012
-"89 Meadow Park, Culmore",£115000,Apartment,5,2,Quinn Estates,2026-02-09,For Sale,https://www.propertypal.com/property/749835/detail,Culmore,2026-03-17T20:30:10.221018
-"72 High Street, Eglinton",£328000,Terraced,5,3,Hunter Campbell,2026-02-06,For Sale,https://www.propertypal.com/property/331656/detail,Eglinton,2026-03-17T20:30:10.221025
-"69 Station Road, Drumahoe",£419000,Apartment,5,2,Donnelly & Associates,2026-02-15,Sale Agreed,https://www.propertypal.com/property/551263/detail,Drumahoe,2026-03-17T20:30:10.221031
-"46 Queen Street, Strathfoyle",£439000,Apartment,1,1,Pinewood Properties,2026-01-09,For Sale,https://www.propertypal.com/property/220925/detail,Strathfoyle,2026-03-17T20:30:10.221037
-"15 Castle Gardens, Cityside",£311000,Semi-detached,1,3,Propertylink,2026-03-11,For Sale,https://www.propertypal.com/property/871713/detail,Cityside,2026-03-17T20:30:10.221043
-"19 Main Street, Strathfoyle",£418000,Detached,2,3,Pinewood Properties,2026-02-13,Sale Agreed,https://www.propertypal.com/property/528144/detail,Strathfoyle,2026-03-17T20:30:10.221050
-"68 School Lane, Drumahoe",POA,Apartment,1,2,Hunter Campbell,2026-02-26,For Sale,https://www.propertypal.com/property/818268/detail,Drumahoe,2026-03-17T20:30:10.221055
-"99 School Lane, Waterside",£311000,Townhouse,5,2,Quinn Estates,2025-12-18,For Sale,https://www.propertypal.com/property/364087/detail,Waterside,2026-03-17T20:30:10.221062
-"34 King Street, Drumahoe",£180000,Terraced,4,3,Smyth Properties,2026-02-15,For Sale,https://www.propertypal.com/property/258432/detail,Drumahoe,2026-03-17T20:30:10.221068
-"77 Bridge Street, Newbuildings",£349000,Detached,1,1,Caldwell Properties,2026-03-09,Under Offer,https://www.propertypal.com/property/184098/detail,Newbuildings,2026-03-17T20:30:10.221074
-"87 Hill Street, Waterside",£95000,Semi-detached,3,2,Reid & Associates,2025-12-27,Sale Agreed,https://www.propertypal.com/property/837917/detail,Waterside,2026-03-17T20:30:10.221081
-"59 Queen Street, Newbuildings",POA,Terraced,4,2,Caldwell Properties,2026-01-12,Sale Agreed,https://www.propertypal.com/property/179494/detail,Newbuildings,2026-03-17T20:30:10.221087
-"7 Main Street, Newbuildings",£434000,Terraced,2,2,Propertylink,2026-03-08,For Sale,https://www.propertypal.com/property/954066/detail,Newbuildings,2026-03-17T20:30:10.221093
-"112 River View, Strathfoyle",POA,Detached,4,1,McDermott Property,2026-02-21,Sale Agreed,https://www.propertypal.com/property/277983/detail,Strathfoyle,2026-03-17T20:30:10.221099
-"97 Mill Road, Drumahoe",£117000,Terraced,4,2,Bamford Properties,2026-03-06,For Sale,https://www.propertypal.com/property/156053/detail,Drumahoe,2026-03-17T20:30:10.221106
-"89 Park Avenue, Culmore",£147000,Detached,1,3,Donnelly & Associates,2026-02-27,For Sale,https://www.propertypal.com/property/547068/detail,Culmore,2026-03-17T20:30:10.221112
-"62 Garden Close, Strathfoyle",£300000,Terraced,1,1,Martin & Co Derry,2025-12-21,For Sale,https://www.propertypal.com/property/317427/detail,Strathfoyle,2026-03-17T20:30:10.221118
-"1 Castle Gardens, Drumahoe",£243000,Detached,4,3,Pinewood Properties,2026-02-08,For Sale,https://www.propertypal.com/property/632016/detail,Drumahoe,2026-03-17T20:30:10.221124
-"71 Bridge Street, Drumahoe",£336000,Apartment,3,3,Homes Independent,2026-02-06,For Sale,https://www.propertypal.com/property/970078/detail,Drumahoe,2026-03-17T20:30:10.221131
-"44 Queen Street, Cityside",£253000,Apartment,4,1,Anderson Properties,2026-01-27,Sale Agreed,https://www.propertypal.com/property/434322/detail,Cityside,2026-03-17T20:30:10.221137
-"31 Church Road, Drumahoe",£331000,Semi-detached,1,3,Pinewood Properties,2026-01-13,For Sale,https://www.propertypal.com/property/342975/detail,Drumahoe,2026-03-17T20:30:10.221143
-"101 Abbey Court, Eglinton",£261000,Townhouse,2,3,Reid & Associates,2025-12-21,For Sale,https://www.propertypal.com/property/861807/detail,Eglinton,2026-03-17T20:30:10.221149
-"4 Victoria Street, Newbuildings",£135000,Apartment,3,2,Quinn Estates,2026-01-31,For Sale,https://www.propertypal.com/property/249460/detail,Newbuildings,2026-03-17T20:30:10.221157
-"63 Church Road, Culmore",£404000,Detached,3,3,Hunter Campbell,2025-12-21,For Sale,https://www.propertypal.com/property/349237/detail,Culmore,2026-03-17T20:30:10.221163
-"28 King Street, Derry City",£311000,Terraced,5,3,O'Sullivan Estate Agents,2026-03-02,For Sale,https://www.propertypal.com/property/489631/detail,Derry City,2026-03-17T20:30:10.221169
-"37 Victoria Street, Derry City",£376000,Apartment,2,2,McDermott Property,2026-02-13,Under Offer,https://www.propertypal.com/property/821742/detail,Derry City,2026-03-17T20:30:10.221176
-"54 Park Avenue, Drumahoe",£102000,Townhouse,5,2,O'Sullivan Estate Agents,2026-01-16,For Sale,https://www.propertypal.com/property/777329/detail,Drumahoe,2026-03-17T20:30:10.221182
-"101 Main Street, Culmore",£437000,Apartment,4,2,Propertylink,2026-01-26,For Sale,https://www.propertypal.com/property/803817/detail,Culmore,2026-03-17T20:30:10.221191
-"45 Church Road, Newbuildings",£441000,Townhouse,3,3,Homes Independent,2025-12-28,For Sale,https://www.propertypal.com/property/789044/detail,Newbuildings,2026-03-17T20:30:10.221198
-"47 Station Road, Eglinton",POA,Apartment,5,2,Reid & Associates,2025-12-25,For Sale,https://www.propertypal.com/property/494243/detail,Eglinton,2026-03-17T20:30:10.221204
-"68 Mill Road, Derry City",£319000,Detached,5,1,Neill Estate Agents,2026-03-09,For Sale,https://www.propertypal.com/property/280160/detail,Derry City,2026-03-17T20:30:10.221210
-"16 Park Avenue, Waterside",£128000,Detached,3,3,Reid & Associates,2026-01-15,For Sale,https://www.propertypal.com/property/934953/detail,Waterside,2026-03-17T20:30:10.221216
-"99 Main Street, Culmore",£432000,Townhouse,3,3,Bamford Properties,2026-03-07,Sale Agreed,https://www.propertypal.com/property/112087/detail,Culmore,2026-03-17T20:30:10.221223
-"12 Station Road, Derry City",£390000,Terraced,2,1,Martin & Co Derry,2026-02-07,For Sale,https://www.propertypal.com/property/423724/detail,Derry City,2026-03-17T20:30:10.221229
-"105 Bridge Street, Cityside",£200000,Apartment,5,2,Quinn Estates,2026-02-08,For Sale,https://www.propertypal.com/property/444106/detail,Cityside,2026-03-17T20:30:10.221235
+"61 Oakwood Drive, Newbuildings",£140000,Detached,3,3,Pinewood Properties,2025-12-20,For Sale,https://www.propertypal.com/property/360668/detail,Newbuildings,2026-03-17T20:32:32.373866
+"59 Abbey Court, Culmore",£90000,Terraced,2,3,Propertylink,2026-01-22,Sale Agreed,https://www.propertypal.com/property/462334/detail,Culmore,2026-03-17T20:32:32.373889
+"82 Elmwood Avenue, Newbuildings",POA,Semi-detached,3,2,O'Sullivan Estate Agents,2025-12-23,For Sale,https://www.propertypal.com/property/227441/detail,Newbuildings,2026-03-17T20:32:32.373902
+"37 Victoria Street, Culmore",£295000,Semi-detached,2,3,McDermott Property,2026-02-27,For Sale,https://www.propertypal.com/property/960328/detail,Culmore,2026-03-17T20:32:32.373912
+"25 Abbey Court, Newbuildings",£399000,Apartment,1,3,Reid & Associates,2026-01-01,For Sale,https://www.propertypal.com/property/718448/detail,Newbuildings,2026-03-17T20:32:32.373922
+"1 River View, Newbuildings",£318000,Semi-detached,4,3,Propertylink,2026-01-12,Under Offer,https://www.propertypal.com/property/191039/detail,Newbuildings,2026-03-17T20:32:32.373932
+"30 River View, Eglinton",£202000,Semi-detached,3,3,Homes Independent,2026-02-25,For Sale,https://www.propertypal.com/property/899867/detail,Eglinton,2026-03-17T20:32:32.373941
+"76 River View, Eglinton",£231000,Terraced,3,3,Smyth Properties,2025-12-23,Under Offer,https://www.propertypal.com/property/923878/detail,Eglinton,2026-03-17T20:32:32.373952
+"100 Oakwood Drive, Culmore",£147000,Detached,3,2,Homes Independent,2026-02-23,For Sale,https://www.propertypal.com/property/743675/detail,Culmore,2026-03-17T20:32:32.373961
+"63 King Street, Cityside",£150000,Semi-detached,2,1,Bamford Properties,2026-01-14,Sale Agreed,https://www.propertypal.com/property/676635/detail,Cityside,2026-03-17T20:32:32.373970
+"64 Hill Street, Eglinton",£338000,Detached,2,2,Neill Estate Agents,2026-03-03,For Sale,https://www.propertypal.com/property/534214/detail,Eglinton,2026-03-17T20:32:32.373978
+"110 Meadow Park, Cityside",£352000,Semi-detached,5,1,McDermott Property,2026-02-14,For Sale,https://www.propertypal.com/property/957794/detail,Cityside,2026-03-17T20:32:32.373986
+"81 Garden Close, Strathfoyle",£301000,Terraced,3,3,Donnelly & Associates,2025-12-27,For Sale,https://www.propertypal.com/property/810927/detail,Strathfoyle,2026-03-17T20:32:32.373994
+"58 Queen Street, Waterside",£81000,Semi-detached,4,2,Neill Estate Agents,2026-01-06,For Sale,https://www.propertypal.com/property/744477/detail,Waterside,2026-03-17T20:32:32.374002
+"101 Mill Road, Eglinton",£214000,Detached,2,3,Braidwood Properties,2025-12-24,For Sale,https://www.propertypal.com/property/142593/detail,Eglinton,2026-03-17T20:32:32.374010
+"3 Garden Close, Newbuildings",£363000,Townhouse,5,3,Caldwell Properties,2026-03-02,For Sale,https://www.propertypal.com/property/624845/detail,Newbuildings,2026-03-17T20:32:32.374018
+"13 King Street, Newbuildings",£207000,Terraced,2,1,Anderson Properties,2026-02-27,For Sale,https://www.propertypal.com/property/856779/detail,Newbuildings,2026-03-17T20:32:32.374026
+"42 Church Road, Culmore",£100000,Terraced,4,3,Neill Estate Agents,2025-12-25,Sale Agreed,https://www.propertypal.com/property/268400/detail,Culmore,2026-03-17T20:32:32.374033
+"74 Meadow Park, Drumahoe",£424000,Detached,4,3,McGilloway Properties,2026-01-16,For Sale,https://www.propertypal.com/property/795190/detail,Drumahoe,2026-03-17T20:32:32.374041
+"28 Sycamore Close, Cityside",£202000,Apartment,1,3,Braidwood Properties,2025-12-19,For Sale,https://www.propertypal.com/property/522869/detail,Cityside,2026-03-17T20:32:32.374049
+"12 Station Road, Cityside",£375000,Apartment,1,3,Bamford Properties,2025-12-18,For Sale,https://www.propertypal.com/property/641066/detail,Cityside,2026-03-17T20:32:32.374057
+"73 Bridge Street, Drumahoe",£377000,Terraced,5,1,Pinewood Properties,2026-01-28,For Sale,https://www.propertypal.com/property/108047/detail,Drumahoe,2026-03-17T20:32:32.374064
+"2 King Street, Drumahoe",£209000,Detached,2,3,Anderson Properties,2026-02-07,Sale Agreed,https://www.propertypal.com/property/220796/detail,Drumahoe,2026-03-17T20:32:32.374072
+"102 Mill Road, Strathfoyle",POA,Apartment,5,2,Anderson Properties,2026-01-21,For Sale,https://www.propertypal.com/property/115019/detail,Strathfoyle,2026-03-17T20:32:32.374080
+"120 Queen Street, Cityside",£180000,Detached,1,1,McGilloway Properties,2026-03-09,Sale Agreed,https://www.propertypal.com/property/341711/detail,Cityside,2026-03-17T20:32:32.374088
+"12 Oakwood Drive, Eglinton",POA,Semi-detached,4,2,O'Sullivan Estate Agents,2025-12-28,For Sale,https://www.propertypal.com/property/830272/detail,Eglinton,2026-03-17T20:32:32.374096
+"12 Park Avenue, Newbuildings",POA,Terraced,1,1,McDermott Property,2026-03-06,For Sale,https://www.propertypal.com/property/395859/detail,Newbuildings,2026-03-17T20:32:32.374104
+"91 Queen Street, Derry City",£290000,Semi-detached,1,3,Quinn Estates,2026-01-06,Under Offer,https://www.propertypal.com/property/471420/detail,Derry City,2026-03-17T20:32:32.374111
+"70 Church Road, Waterside",£271000,Apartment,4,1,O'Sullivan Estate Agents,2026-01-07,For Sale,https://www.propertypal.com/property/487771/detail,Waterside,2026-03-17T20:32:32.374119
+"108 School Lane, Strathfoyle",£160000,Apartment,3,3,McDermott Property,2026-02-13,For Sale,https://www.propertypal.com/property/902221/detail,Strathfoyle,2026-03-17T20:32:32.374127
+"4 Hill Street, Waterside",£420000,Terraced,2,3,Smyth Properties,2026-03-05,For Sale,https://www.propertypal.com/property/442235/detail,Waterside,2026-03-17T20:32:32.374135
+"42 King Street, Newbuildings",£311000,Apartment,1,3,Reid & Associates,2026-02-01,For Sale,https://www.propertypal.com/property/623027/detail,Newbuildings,2026-03-17T20:32:32.374143
+"47 Hill Street, Drumahoe",£287000,Apartment,4,2,Neill Estate Agents,2026-01-01,For Sale,https://www.propertypal.com/property/933190/detail,Drumahoe,2026-03-17T20:32:32.374153
+"78 Church Road, Eglinton",£140000,Semi-detached,2,3,Anderson Properties,2026-03-01,For Sale,https://www.propertypal.com/property/452228/detail,Eglinton,2026-03-17T20:32:32.374161
+"72 Park Avenue, Waterside",£424000,Terraced,4,3,Anderson Properties,2026-01-09,For Sale,https://www.propertypal.com/property/819996/detail,Waterside,2026-03-17T20:32:32.374169
+"42 Meadow Park, Strathfoyle",£185000,Detached,1,1,McGilloway Properties,2025-12-25,For Sale,https://www.propertypal.com/property/996402/detail,Strathfoyle,2026-03-17T20:32:32.374177
+"116 Victoria Street, Derry City",POA,Detached,2,3,McDermott Property,2026-02-08,For Sale,https://www.propertypal.com/property/973012/detail,Derry City,2026-03-17T20:32:32.374184
+"42 Bridge Street, Waterside",£409000,Semi-detached,3,3,Hunter Campbell,2026-02-19,Sale Agreed,https://www.propertypal.com/property/312873/detail,Waterside,2026-03-17T20:32:32.374191
+"96 High Street, Cityside",£341000,Townhouse,4,3,Propertylink,2026-01-27,For Sale,https://www.propertypal.com/property/294065/detail,Cityside,2026-03-17T20:32:32.374199
+"41 River View, Derry City",£278000,Townhouse,2,2,Hunter Campbell,2026-01-25,Sale Agreed,https://www.propertypal.com/property/898597/detail,Derry City,2026-03-17T20:32:32.374209
+"94 Queen Street, Eglinton",£192000,Semi-detached,2,1,Anderson Properties,2026-02-11,Under Offer,https://www.propertypal.com/property/383646/detail,Eglinton,2026-03-17T20:32:32.374217
+"47 River View, Cityside",£95000,Terraced,2,3,Anderson Properties,2026-03-07,For Sale,https://www.propertypal.com/property/446800/detail,Cityside,2026-03-17T20:32:32.374227
+"91 Sycamore Close, Derry City",£136000,Semi-detached,4,1,Propertylink,2026-03-04,For Sale,https://www.propertypal.com/property/120470/detail,Derry City,2026-03-17T20:32:32.374235
+"102 Park Avenue, Derry City",£101000,Townhouse,5,3,Neill Estate Agents,2026-03-08,For Sale,https://www.propertypal.com/property/359248/detail,Derry City,2026-03-17T20:32:32.374243
+"35 King Street, Derry City",£122000,Townhouse,4,3,O'Sullivan Estate Agents,2026-03-02,For Sale,https://www.propertypal.com/property/630694/detail,Derry City,2026-03-17T20:32:32.374251
+"62 Church Road, Derry City",£254000,Apartment,3,1,McDermott Property,2026-02-28,For Sale,https://www.propertypal.com/property/687748/detail,Derry City,2026-03-17T20:32:32.374259
+"85 Abbey Court, Culmore",£193000,Detached,4,1,Donnelly & Associates,2025-12-18,Under Offer,https://www.propertypal.com/property/173136/detail,Culmore,2026-03-17T20:32:32.374267
+"119 Elmwood Avenue, Culmore",£174000,Detached,4,3,Propertylink,2026-01-10,Sale Agreed,https://www.propertypal.com/property/655360/detail,Culmore,2026-03-17T20:32:32.374275
+"6 High Street, Drumahoe",£345000,Detached,4,1,McGilloway Properties,2026-01-18,For Sale,https://www.propertypal.com/property/796650/detail,Drumahoe,2026-03-17T20:32:32.374283
+"28 Church Road, Newbuildings",£290000,Townhouse,1,2,O'Sullivan Estate Agents,2026-01-30,For Sale,https://www.propertypal.com/property/128699/detail,Newbuildings,2026-03-17T20:32:32.374291
+"4 Queen Street, Culmore",£312000,Detached,2,2,Smyth Properties,2026-01-17,Sale Agreed,https://www.propertypal.com/property/415203/detail,Culmore,2026-03-17T20:32:32.374299
+"24 Castle Gardens, Waterside",£403000,Townhouse,3,1,O'Sullivan Estate Agents,2026-01-24,Sale Agreed,https://www.propertypal.com/property/469721/detail,Waterside,2026-03-17T20:32:32.374306
+"93 Main Street, Strathfoyle",£166000,Terraced,2,1,Braidwood Properties,2025-12-26,For Sale,https://www.propertypal.com/property/896656/detail,Strathfoyle,2026-03-17T20:32:32.374315
+"60 Oakwood Drive, Derry City",£323000,Townhouse,3,1,Caldwell Properties,2026-01-14,Sale Agreed,https://www.propertypal.com/property/762125/detail,Derry City,2026-03-17T20:32:32.374323
+"16 Mill Road, Derry City",£426000,Terraced,4,1,Quinn Estates,2026-01-25,For Sale,https://www.propertypal.com/property/611765/detail,Derry City,2026-03-17T20:32:32.374330
+"38 Main Street, Derry City",£435000,Apartment,4,3,Donnelly & Associates,2026-01-07,Sale Agreed,https://www.propertypal.com/property/977495/detail,Derry City,2026-03-17T20:32:32.374338
+"78 Garden Close, Cityside",£109000,Terraced,5,2,Anderson Properties,2026-02-19,For Sale,https://www.propertypal.com/property/220963/detail,Cityside,2026-03-17T20:32:32.374346
+"95 Queen Street, Cityside",£232000,Semi-detached,1,3,Hunter Campbell,2026-02-12,For Sale,https://www.propertypal.com/property/390233/detail,Cityside,2026-03-17T20:32:32.374354
+"118 Queen Street, Newbuildings",£286000,Terraced,3,3,Bamford Properties,2026-01-30,For Sale,https://www.propertypal.com/property/587565/detail,Newbuildings,2026-03-17T20:32:32.374362
+"113 King Street, Derry City",£258000,Detached,5,3,Hunter Campbell,2025-12-26,For Sale,https://www.propertypal.com/property/637926/detail,Derry City,2026-03-17T20:32:32.374369
+"46 Bridge Street, Waterside",£330000,Townhouse,3,3,Neill Estate Agents,2026-02-06,For Sale,https://www.propertypal.com/property/490274/detail,Waterside,2026-03-17T20:32:32.374377
+"107 Meadow Park, Newbuildings",£422000,Semi-detached,2,2,Pinewood Properties,2025-12-22,For Sale,https://www.propertypal.com/property/497715/detail,Newbuildings,2026-03-17T20:32:32.374384
+"10 Station Road, Waterside",£153000,Apartment,5,1,McGilloway Properties,2026-01-19,For Sale,https://www.propertypal.com/property/145979/detail,Waterside,2026-03-17T20:32:32.374392
+"76 Mill Road, Waterside",£285000,Semi-detached,5,1,Neill Estate Agents,2026-03-15,For Sale,https://www.propertypal.com/property/254532/detail,Waterside,2026-03-17T20:32:32.374399
+"82 Meadow Park, Derry City",POA,Detached,5,1,Martin & Co Derry,2026-01-01,For Sale,https://www.propertypal.com/property/891871/detail,Derry City,2026-03-17T20:32:32.374407
+"77 School Lane, Eglinton",£384000,Terraced,5,1,Neill Estate Agents,2025-12-19,For Sale,https://www.propertypal.com/property/611522/detail,Eglinton,2026-03-17T20:32:32.374415
+"2 River View, Derry City",£328000,Detached,1,2,Quinn Estates,2025-12-20,For Sale,https://www.propertypal.com/property/572160/detail,Derry City,2026-03-17T20:32:32.374422
+"38 Meadow Park, Waterside",£210000,Detached,5,1,Smyth Properties,2026-03-12,Sale Agreed,https://www.propertypal.com/property/567906/detail,Waterside,2026-03-17T20:32:32.374431
+"17 Sycamore Close, Strathfoyle",£296000,Detached,4,3,Caldwell Properties,2026-02-02,For Sale,https://www.propertypal.com/property/905347/detail,Strathfoyle,2026-03-17T20:32:32.374439
+"88 Elmwood Avenue, Strathfoyle",£118000,Apartment,5,1,Propertylink,2026-01-23,Under Offer,https://www.propertypal.com/property/895075/detail,Strathfoyle,2026-03-17T20:32:32.374447
+"13 Castle Gardens, Eglinton",POA,Townhouse,4,1,Reid & Associates,2026-01-19,For Sale,https://www.propertypal.com/property/538812/detail,Eglinton,2026-03-17T20:32:32.374454
+"104 Main Street, Newbuildings",£342000,Townhouse,3,2,Homes Independent,2026-01-06,Sale Agreed,https://www.propertypal.com/property/601214/detail,Newbuildings,2026-03-17T20:32:32.374462
+"52 High Street, Waterside",£221000,Detached,2,3,Pinewood Properties,2026-01-15,Sale Agreed,https://www.propertypal.com/property/481047/detail,Waterside,2026-03-17T20:32:32.374472
+"47 Elmwood Avenue, Newbuildings",£196000,Terraced,2,1,McDermott Property,2025-12-30,For Sale,https://www.propertypal.com/property/916927/detail,Newbuildings,2026-03-17T20:32:32.374480
+"65 Park Avenue, Cityside",£94000,Semi-detached,4,2,Pinewood Properties,2026-01-14,For Sale,https://www.propertypal.com/property/697051/detail,Cityside,2026-03-17T20:32:32.374490
+"55 School Lane, Culmore",£255000,Apartment,5,1,Homes Independent,2026-03-08,For Sale,https://www.propertypal.com/property/903352/detail,Culmore,2026-03-17T20:32:32.374498
+"48 Bridge Street, Drumahoe",£390000,Semi-detached,4,1,McDermott Property,2026-03-12,For Sale,https://www.propertypal.com/property/853208/detail,Drumahoe,2026-03-17T20:32:32.374506
+"53 Main Street, Cityside",£336000,Semi-detached,5,2,Pinewood Properties,2025-12-17,For Sale,https://www.propertypal.com/property/840951/detail,Cityside,2026-03-17T20:32:32.374514
+"55 Oakwood Drive, Derry City",£219000,Semi-detached,5,3,McDermott Property,2026-01-25,Sale Agreed,https://www.propertypal.com/property/540536/detail,Derry City,2026-03-17T20:32:32.374522
+"90 Main Street, Waterside",£226000,Apartment,4,2,Propertylink,2026-01-12,For Sale,https://www.propertypal.com/property/984498/detail,Waterside,2026-03-17T20:32:32.374530
+"16 Station Road, Waterside",£159000,Terraced,4,3,Homes Independent,2025-12-24,Sale Agreed,https://www.propertypal.com/property/787363/detail,Waterside,2026-03-17T20:32:32.374537
+"45 River View, Newbuildings",£392000,Semi-detached,4,3,Pinewood Properties,2026-01-29,Sale Agreed,https://www.propertypal.com/property/382184/detail,Newbuildings,2026-03-17T20:32:32.374546
+"1 Main Street, Culmore",£422000,Semi-detached,5,1,Smyth Properties,2026-01-30,For Sale,https://www.propertypal.com/property/211378/detail,Culmore,2026-03-17T20:32:32.374553
+"48 Main Street, Cityside",£162000,Detached,2,3,McDermott Property,2026-02-20,For Sale,https://www.propertypal.com/property/736585/detail,Cityside,2026-03-17T20:32:32.374560
+"76 Victoria Street, Cityside",POA,Semi-detached,5,3,Neill Estate Agents,2026-01-30,For Sale,https://www.propertypal.com/property/313515/detail,Cityside,2026-03-17T20:32:32.374568

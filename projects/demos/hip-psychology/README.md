@@ -1,58 +1,40 @@
-# Hip Psychology AI Showcase
+# Hip Psychology Showcase - V3: Zoho CRM Integration
 
-## Project Overview
+**Live Demo:** https://albiemorgan88-hash.github.io/showcase-hip-psychology/
 
-A product demo showcase for Hip Psychology (Cormac Venney's business) demonstrating the **School Lead Gen + Outreach System** that Blue Canvas AI will build for them.
+## V3 Updates (Zoho CRM Integration)
 
-## About Hip Psychology
+### Slide 3 (Lead Discovery):
+- ✅ Added Zoho CRM logo/badge at the top: "Synced to Zoho CRM"
+- ✅ Styled table with Zoho-style UI frame
+- ✅ Added "CRM Status: New Lead ✅" column for each school
+- ✅ Bottom text: "247 schools imported → Zoho CRM in 3 minutes"
 
-- **Founder:** Cormac Venney (Director & Founder)
-- **Business:** Mental health and wellbeing workshops for schools across UK & Ireland
-- **Website:** hippsychology.com
-- **Mission:** "We Build Emotionally Strong Schools"
-- **Services:** Age-specific workshops for pupils, parents, and staff covering:
-  - Emotional resilience and wellbeing
-  - Social skills and behaviour management
-  - Performance and learning enhancement
-  - Staff development and work-life balance
+### Slide 4 (Champion Mapping):
+- ✅ Styled as Zoho contact cards for each champion
+- ✅ Each card includes: Name, Role, Email, Phone, Tags: [Key Stage 4] [Budget Holder]
+- ✅ Added "All contacts auto-synced to Zoho CRM with tags and deal stage"
 
-## The Proposed AI System
+### Slide 5 (Smart Outreach):
+- ✅ Added "Sent via Zoho Campaigns" badge
+- ✅ Shows "Open rate tracked in Zoho" and "Auto-moves to 'Interested' when opened 3x"
+- ✅ Added Zoho workflow visual: Trigger → Wait 5 days → Follow-up → Wait 7 days → Final email
 
-### 8-Slide Product Demo:
+### Slide 6 (Feedback Engine):
+- ✅ Shows "Zoho Survey → Auto-update deal stage"
+- ✅ "Workshop delivered ✅ → Feedback collected ✅ → Deal moved to 'Rebooking' ✅"
+- ✅ All within Zoho-style UI
 
-1. **Hook:** "What if AI could fill your school calendar before June?"
-2. **The Problem:** Manual outreach, 2-day feedback collection, Zoho chaos
-3. **Lead Discovery:** Automated UK school data mining from gov.uk GIAS
-4. **Champion Mapping:** Target Vice Principals (budget), Heads of Year (influence), SENCOs (booking)
-5. **Smart Outreach:** Segmented email campaigns by Key Stage with personalisation
-6. **Feedback Engine:** Automated post-workshop feedback → instant rebooking offers
-7. **Pipeline Dashboard:** Visual booking funnel tracking April-June crunch window
-8. **CTA:** Contact Phil Patterson to build this system
+### Slide 7 (Pipeline):
+- ✅ Styled Kanban board to look like Zoho CRM pipeline/deals view
+- ✅ Added Zoho branding: "Your Zoho CRM Dashboard"
+- ✅ Shows deal values in each stage
+- ✅ Key message: "Everything in ONE place — your existing Zoho, supercharged"
 
-## Technical Implementation
-
-- **Single HTML file:** Zero dependencies, under 50KB
-- **Mobile-first design:** Touch/swipe navigation with progress dots
-- **Blue Canvas branding:** #2B4DAF primary, #FF4520 accent
-- **Smooth animations:** CSS transitions with cubic-bezier easing
-- **Responsive:** Works on all devices with adaptive layouts
+## Key Integration Message
+**"This isn't a new tool to learn. It plugs INTO your existing Zoho CRM. You keep working the way you work — just with AI doing the heavy lifting."**
 
 ## Deployment
-
-- **GitHub Repository:** https://github.com/albiemorgan88-hash/showcase-hip-psychology
-- **Live Demo:** https://albiemorgan88-hash.github.io/showcase-hip-psychology/
-- **Local File:** showcase.html (ready for WhatsApp sharing)
-
-## Contact Details (CTA)
-
-- **Phil Patterson, Blue Canvas AI**
-- **Phone:** +44 7935 217762
-- **Email:** contact@bluecanvas.ai
-
-## Key Differentiator
-
-This is NOT an SEO audit showcase - it's a **product demo** showing Cormac exactly how the AI system will work to fill his school calendar automatically, integrated with his existing Zoho CRM.
-
-## Target Outcome
-
-Transform Hip Psychology from manual school outreach to an automated lead generation machine that can handle the April-June booking crunch window systematically.
+- GitHub repo: albiemorgan88-hash/showcase-hip-psychology
+- Auto-deploys to GitHub Pages
+- Mobile-optimized tap-through experience
