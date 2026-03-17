@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  // Removed output: 'export' for Vercel deployment
+};
 
 export default nextConfig;

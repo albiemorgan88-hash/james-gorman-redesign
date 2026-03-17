@@ -451,7 +451,7 @@ export default function Home() {
               },
               {
                 q: "How long does setup take?",
-                a: "A standard setup with 2-3 custom skills takes about a week. More complex multi-agent systems with extensive integrations may take 2-3 weeks. Either way, you'll have a working system fast.",
+                a: "A standard setup with 2-3 custom skills takes about a week. More complex multi-agent systems with extensive integrations may take 2-3 weeks. Either way, you&apos;ll have a working system fast.",
               },
               {
                 q: "Is my data safe?",

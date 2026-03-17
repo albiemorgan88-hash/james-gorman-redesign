@@ -1,0 +1,30 @@
+[{
+  "results": [
+    {
+      "campaign": {
+        "resourceName": "customers/8018514760/campaigns/23617890417",
+        "name": "Blue Canvas - AI Audit"
+      },
+      "metrics": {
+        "clicks": "85",
+        "conversions": 0,
+        "costMicros": "93494412"
+      }
+    },
+    {
+      "campaign": {
+        "resourceName": "customers/8018514760/campaigns/23637122613",
+        "name": "OpenClaw Consultant"
+      },
+      "metrics": {
+        "clicks": "38",
+        "conversions": 0,
+        "costMicros": "73569188"
+      }
+    }
+  ],
+  "fieldMask": "campaign.name,metrics.clicks,metrics.conversions,metrics.costMicros",
+  "requestId": "1_LjSExfVUwK991JloMLqA",
+  "queryResourceConsumption": "699"
+}
+]

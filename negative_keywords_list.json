@@ -1,0 +1,182 @@
+[
+  {
+    "keyword": "openclaw",
+    "match_type": "BROAD",
+    "reason": "OpenClaw is PJ's separate product, not Blue Canvas service"
+  },
+  {
+    "keyword": "iia detector",
+    "match_type": "BROAD",
+    "reason": "Irrelevant search mentioned in task"
+  },
+  {
+    "keyword": "onpassive ecosystem",
+    "match_type": "BROAD", 
+    "reason": "Irrelevant search mentioned in task"
+  },
+  {
+    "keyword": "studley ai dashboard",
+    "match_type": "BROAD",
+    "reason": "Irrelevant search mentioned in task - already saw 1 click"
+  },
+  {
+    "keyword": "monhai com",
+    "match_type": "BROAD",
+    "reason": "Irrelevant search mentioned in task"
+  },
+  {
+    "keyword": "alli ai",
+    "match_type": "BROAD",
+    "reason": "Competitor brand - 13 clicks costing £9.47"
+  },
+  {
+    "keyword": "amelia ai",
+    "match_type": "BROAD",
+    "reason": "Competitor brand - 2 clicks costing £2.00"
+  },
+  {
+    "keyword": "anara ai",
+    "match_type": "BROAD",
+    "reason": "Competitor brand name"
+  },
+  {
+    "keyword": "emergent ai",
+    "match_type": "BROAD",
+    "reason": "Competitor brand name"
+  },
+  {
+    "keyword": "iweaver ai",
+    "match_type": "BROAD",
+    "reason": "Competitor brand name"
+  },
+  {
+    "keyword": "zudu ai",
+    "match_type": "BROAD",
+    "reason": "Competitor brand name"
+  },
+  {
+    "keyword": "skywork ai",
+    "match_type": "BROAD",
+    "reason": "Competitor brand - 1 click costing £1.64"
+  },
+  {
+    "keyword": "morningside ai",
+    "match_type": "BROAD",
+    "reason": "Competitor brand name"
+  },
+  {
+    "keyword": "ram ai uk",
+    "match_type": "BROAD",
+    "reason": "Competitor brand name"
+  },
+  {
+    "keyword": "ai art",
+    "match_type": "BROAD",
+    "reason": "Not business consultancy - creative AI"
+  },
+  {
+    "keyword": "ai image",
+    "match_type": "BROAD",
+    "reason": "Not business consultancy - creative AI"
+  },
+  {
+    "keyword": "ai generator",
+    "match_type": "BROAD", 
+    "reason": "Generic creative AI tools"
+  },
+  {
+    "keyword": "midjourney",
+    "match_type": "BROAD",
+    "reason": "Creative AI platform not consultancy"
+  },
+  {
+    "keyword": "dall-e",
+    "match_type": "BROAD",
+    "reason": "Creative AI platform not consultancy"
+  },
+  {
+    "keyword": "chatgpt",
+    "match_type": "BROAD",
+    "reason": "Generic AI tool, not consultancy"
+  },
+  {
+    "keyword": "openai",
+    "match_type": "BROAD",
+    "reason": "AI platform provider, not consultancy service"
+  },
+  {
+    "keyword": "anthropic",
+    "match_type": "BROAD",
+    "reason": "AI platform provider, not consultancy service"
+  },
+  {
+    "keyword": "google gemini",
+    "match_type": "BROAD",
+    "reason": "AI platform provider, not consultancy service"
+  },
+  {
+    "keyword": "ai jobs",
+    "match_type": "BROAD",
+    "reason": "Job searches not consultancy services"
+  },
+  {
+    "keyword": "ai salary",
+    "match_type": "BROAD",
+    "reason": "Job searches not consultancy services"
+  },
+  {
+    "keyword": "ai career",
+    "match_type": "BROAD", 
+    "reason": "Job searches not consultancy services"
+  },
+  {
+    "keyword": "ai hiring",
+    "match_type": "BROAD",
+    "reason": "Job searches not consultancy services"
+  },
+  {
+    "keyword": "free course",
+    "match_type": "BROAD",
+    "reason": "Educational content, not paid consultancy"
+  },
+  {
+    "keyword": "free training",
+    "match_type": "BROAD",
+    "reason": "Educational content, not paid consultancy"
+  },
+  {
+    "keyword": "tutorial",
+    "match_type": "BROAD",
+    "reason": "Educational content, not paid consultancy"
+  },
+  {
+    "keyword": "certification",
+    "match_type": "BROAD",
+    "reason": "Educational content, not paid consultancy"
+  },
+  {
+    "keyword": "mckinsey",
+    "match_type": "BROAD",
+    "reason": "Large competitor consultancy"
+  },
+  {
+    "keyword": "deloitte",
+    "match_type": "BROAD",
+    "reason": "Large competitor consultancy"
+  },
+  {
+    "keyword": "accenture",
+    "match_type": "BROAD",
+    "reason": "Large competitor consultancy"
+  },
+  {
+    "keyword": "pwc",
+    "match_type": "BROAD",
+    "reason": "Large competitor consultancy"
+  },
+  {
+    "keyword": "kpmg",
+    "match_type": "BROAD",
+    "reason": "Large competitor consultancy"
+  }
+]
