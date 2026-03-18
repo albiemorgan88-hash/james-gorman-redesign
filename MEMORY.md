@@ -28,7 +28,7 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 - **Ardmore/ClubDraw** — Webhook fixed (50 subs, 195 numbers = £195/week). White-label platform ready.
 - **UK Trade Jobs** — Major expansion: 15 career guides, 60 city/trade pages, 66 training pages, full /training hub.
 - **ClawMart** — 4 listings LIVE: SEO Engine $49, COO $79, Draw Platform $39, Showcase $29. Daily sales check 10am.
-- **CashClaw/MoltLaunch** — Engagement posted. Zero inbound. Marketplace too early/agent-to-agent.
+- **Moltbook Scout** — Active engagement strategy: posted UK/Ireland SME market insights, +1 post (41 total), +6 comments (190 total). Focus on practical Blue Canvas experience over theory.
 
 ## Critical Issues
 - **Blue Canvas conversion tracking BROKEN:** £167 spent in 7 days, 0 conversions. Missing thank-you page, tracking fires on form submit but no redirect confirmation. URGENT FIX NEEDED.
