@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quay Group AI Showcase | Blue Canvas</title>
+    <style>
+        :root {
+            --blue: #2B4DAF;
+            --red: #FF4520;
+            --white: #ffffff;
+            --light-bg: #f8f9fa;
+            --text: #1a1a2e;
+            --text-light: #666;
+            --green: #28a745;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            background: var(--light-bg); 
+            overflow: hidden; 
+            height: 100vh; 
+            color: var(--text);
+        }
+        
+        .slide { 
+            position: absolute; 
+            inset: 0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 40px 24px; 
+            opacity: 0; 
+            transform: translateX(100%); 
+            transition: all 0.5s ease; 
+            pointer-events: none; 
+        }
+        
+        .slide.active { 
+            opacity: 1; 
+            transform: translateX(0); 
+            pointer-events: auto; 
+        }
+        
+        .slide.prev { 
+            opacity: 0; 
+            transform: translateX(-100%); 
+        }
+        
+        .progress { 
+            position: fixed; 
+            bottom: 20px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            display: flex; 
+            gap: 8px; 
+            z-index: 100; 
+        }
+        
+        .dot { 
+            width: 8px; 
+            height: 8px; 
+            border-radius: 50%; 
+            background: rgba(0,0,0,.2); 
+            transition: all 0.3s; 
+        }
+        
+        .dot.active { 
+            background: var(--blue); 
+            width: 24px; 
+        }
+        
+        .slide h1 { 
+            font-size: 2.5rem; 
+            font-weight: 700; 
+            margin-bottom: 1rem; 
+            text-align: center; 
+            line-height: 1.2; 
+        }
+        
+        .slide h2 { 
+            font-size: 2rem; 
+            font-weight: 600; 
+            margin-bottom: 1rem; 
+            text-align: center; 
+        }
+        
+        .slide p { 
+            font-size: 1.1rem; 
+            line-height: 1.6; 
+            text-align: center; 
+            margin-bottom: 1.5rem; 
+            color: var(--text-light); 
+        }
+        
+        .brand-highlight { 
+            color: var(--blue); 
+            font-weight: 600; 
+        }
+        
+        .score-container { 
+            position: relative; 
+            margin: 2rem 0; 
+        }
+        
+        .score-ring { 
+            stroke-dasharray: 314; 
+            stroke-dashoffset: 314; 
+            transition: stroke-dashoffset 2s ease; 
+        }
+        
+        .score-num { 
+            font-size: 28px; 
+            font-weight: 700; 
+            fill: var(--text); 
+        }
+        
+        .search-result { 
+            background: var(--white); 
+            border-radius: 12px; 
+            padding: 16px; 
+            text-align: left; 
+            margin: 1rem 0; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            width: 100%; 
+            max-width: 400px; 
+        }
+        
+        .result-url { 
+            font-size: 12px; 
+            color: #202124; 
+            margin-bottom: 4px; 
+        }
+        
+        .result-title { 
+            font-size: 18px; 
+            color: #1a0dab; 
+            margin: 4px 0; 
+            font-weight: 500; 
+        }
+        
+        .result-desc { 
+            font-size: 13px; 
+            color: #4d5156; 
+            line-height: 1.4; 
+        }
+
+        .keywords-table {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 16px;
+            margin: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .keyword-row {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 13px;
+        }
+
+        .keyword-row:last-child {
+            border-bottom: none;
+        }
+
+        .keyword-term {
+            flex: 2;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .keyword-volume {
+            flex: 1;
+            text-align: center;
+            color: var(--blue);
+            font-weight: 500;
+        }
+
+        .keyword-current {
+            flex: 1;
+            text-align: center;
+            color: var(--red);
+        }
+
+        .keyword-potential {
+            flex: 1;
+            text-align: center;
+            color: var(--green);
+            font-weight: 500;
+        }
+
+        .keyword-header {
+            background: #f8f9fa;
+            padding: 8px 0;
+            font-weight: 600;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--text-light);
+        }
+
+        .traffic-value {
+            background: linear-gradient(135deg, var(--blue), #4361ee);
+            color: var(--white);
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        .total-opportunity {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        
+        .chat-container { 
+            background: var(--white); 
+            border-radius: 16px; 
+            padding: 20px; 
+            max-width: 350px; 
+            width: 100%; 
+            height: 300px; 
+            overflow-y: auto; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+        }
+        
+        .chat-msg { 
+            margin-bottom: 12px; 
+            opacity: 0; 
+            transform: translateY(10px); 
+            animation: chatIn 0.4s ease forwards; 
+        }
+        
+        .chat-msg.user { 
+            text-align: right; 
+        }
+        
+        .chat-msg.bot { 
+            text-align: left; 
+        }
+        
+        .chat-msg div { 
+            display: inline-block; 
+            padding: 8px 12px; 
+            border-radius: 16px; 
+            max-width: 80%; 
+        }
+        
+        .chat-msg.user div { 
+            background: var(--blue); 
+            color: var(--white); 
+        }
+        
+        .chat-msg.bot div { 
+            background: #f1f3f5; 
+            color: var(--text); 
+        }
+        
+        @keyframes chatIn { 
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            } 
+        }
+        
+        .cta-container { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 16px; 
+            margin-top: 2rem; 
+        }
+        
+        .cta-button { 
+            background: var(--blue); 
+            color: var(--white); 
+            padding: 16px 24px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            text-align: center; 
+            transition: transform 0.2s ease; 
+        }
+        
+        .cta-button:hover { 
+            transform: translateY(-2px); 
+        }
+        
+        .cta-button.secondary { 
+            background: var(--white); 
+            color: var(--blue); 
+            border: 2px solid var(--blue); 
+        }
+        
+        .progress-bar { 
+            width: 100%; 
+            height: 8px; 
+            background: #eee; 
+            border-radius: 4px; 
+            overflow: hidden; 
+            margin: 1rem 0; 
+        }
+        
+        .progress-fill { 
+            height: 100%; 
+            background: var(--blue); 
+            width: 0; 
+            transition: width 3s ease; 
+        }
+        
+        .issue-list { 
+            text-align: left; 
+            max-width: 350px; 
+        }
+        
+        .issue-item { 
+            display: flex; 
+            align-items: center; 
+            margin: 8px 0; 
+            font-size: 14px; 
+        }
+        
+        .issue-icon { 
+            color: var(--red); 
+            margin-right: 8px; 
+            font-weight: bold; 
+        }
+        
+        .revenue-highlight { 
+            background: linear-gradient(135deg, var(--blue), #4361ee); 
+            color: var(--white); 
+            padding: 20px; 
+            border-radius: 16px; 
+            margin: 1rem 0; 
+            text-align: center; 
+        }
+        
+        .revenue-number { 
+            font-size: 2rem; 
+            font-weight: 700; 
+            margin-bottom: 8px; 
+        }
+        
+        .tap-hint { 
+            position: fixed; 
+            bottom: 60px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            font-size: 12px; 
+            color: var(--text-light); 
+            opacity: 0.7; 
+        }
+        
+        @media (max-width: 375px) { 
+            .slide { padding: 20px 16px; }
+            .slide h1 { font-size: 2rem; }
+            .slide h2 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Hook -->
+    <div class="slide active">
+        <h1>What if AI could transform <span class="brand-highlight">Quay Group's</span> business overnight?</h1>
+        <p>We analyzed your superyacht recruitment website and found some incredible opportunities...</p>
+        <div class="revenue-highlight">
+            <div class="revenue-number">£20-40k</div>
+            <div>Monthly revenue potential waiting to be unlocked</div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Scan -->
+    <div class="slide">
+        <h2>Scanning quaygroup.com...</h2>
+        <p>Our AI is crawling your website to identify SEO opportunities</p>
+        <div class="progress-bar">
+            <div class="progress-fill" id="scanProgress"></div>
+        </div>
+        <p id="scanText">Analyzing 250+ SEO factors...</p>
+    </div>
+
+    <!-- Slide 3: Issues -->
+    <div class="slide">
+        <h2>Current SEO Score</h2>
+        <div class="score-container">
+            <svg width="120" height="120" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="#eee" stroke-width="8"/>
+                <circle class="score-ring" cx="60" cy="60" r="50" fill="none" stroke="var(--red)" 
+                    stroke-width="8" stroke-linecap="round" stroke-dasharray="314" 
+                    stroke-dashoffset="314" transform="rotate(-90 60 60)" id="currentScore"/>
+                <text x="60" y="65" text-anchor="middle">
+                    <tspan class="score-num" id="currentScoreText">0</tspan>
+                </text>
+            </svg>
+        </div>
+        <div class="issue-list">
+            <div class="issue-item"><span class="issue-icon">⚠️</span>Missing "superyacht recruitment" in title tags</div>
+            <div class="issue-item"><span class="issue-icon">⚠️</span>No Google Business Profile found</div>
+            <div class="issue-item"><span class="issue-icon">⚠️</span>Limited structured data for local search</div>
+            <div class="issue-item"><span class="issue-icon">⚠️</span>Minimal keyword optimization</div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Fixes -->
+    <div class="slide">
+        <h2>After AI Optimization</h2>
+        <div class="score-container">
+            <svg width="120" height="120" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="#eee" stroke-width="8"/>
+                <circle class="score-ring" cx="60" cy="60" r="50" fill="none" stroke="#28a745" 
+                    stroke-width="8" stroke-linecap="round" stroke-dasharray="314" 
+                    stroke-dashoffset="87" transform="rotate(-90 60 60)" id="improvedScore"/>
+                <text x="60" y="65" text-anchor="middle">
+                    <tspan class="score-num" style="fill:#28a745">85</tspan>
+                </text>
+            </svg>
+        </div>
+        <div class="search-result">
+            <div class="result-url">quaygroup.com › superyacht-recruitment</div>
+            <div class="result-title">Superyacht Recruitment Agency | Quay Group | UK Yacht Crew</div>
+            <div class="result-desc">Leading UHNW recruitment specialists. 2000+ crew placed, 350+ superyacht clients. Expert yacht recruitment across all positions from Captain to Stewardess.</div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Keyword Rankings (REPLACES Google Ads) -->
+    <div class="slide">
+        <h2>Keyword Opportunity Analysis</h2>
+        <p>High-value keywords your competitors are dominating</p>
+        <div class="keywords-table">
+            <div class="keyword-row keyword-header">
+                <div class="keyword-term">Keyword</div>
+                <div class="keyword-volume">Volume/mo</div>
+                <div class="keyword-current">Current</div>
+                <div class="keyword-potential">Potential</div>
+            </div>
+            <div class="keyword-row">
+                <div class="keyword-term">yacht crew</div>
+                <div class="keyword-volume">1,200</div>
+                <div class="keyword-current">Page 5+</div>
+                <div class="keyword-potential">Page 1-2</div>
+            </div>
+            <div class="keyword-row">
+                <div class="keyword-term">maritime recruitment</div>
+                <div class="keyword-volume">720</div>
+                <div class="keyword-current">Page 3+</div>
+                <div class="keyword-potential">Page 1</div>
+            </div>
+            <div class="keyword-row">
+                <div class="keyword-term">superyacht recruitment</div>
+                <div class="keyword-volume">480</div>
+                <div class="keyword-current">Not ranking</div>
+                <div class="keyword-potential">Page 1</div>
+            </div>
+            <div class="keyword-row">
+                <div class="keyword-term">captain recruitment</div>
+                <div class="keyword-volume">390</div>
+                <div class="keyword-current">Not found</div>
+                <div class="keyword-potential">Page 1</div>
+            </div>
+            <div class="keyword-row">
+                <div class="keyword-term">yacht crew agency</div>
+                <div class="keyword-volume">260</div>
+                <div class="keyword-current">Not ranking</div>
+                <div class="keyword-potential">Page 1</div>
+            </div>
+            <div class="traffic-value">
+                <div class="total-opportunity">3,050 searches/month</div>
+                <div>£25,000+ monthly traffic value at Page 1</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: AI Assistant -->
+    <div class="slide">
+        <h2>AI-Powered Lead Capture</h2>
+        <p>Professional chat assistant for your B2B clients</p>
+        <div class="chat-container">
+            <div class="chat-msg bot" style="animation-delay: 0s;">
+                <div>Hello! I can help you find the perfect yacht crew. What position are you looking to fill?</div>
+            </div>
+            <div class="chat-msg user" style="animation-delay: 0.8s;">
+                <div>We need a Captain for our 45m motor yacht</div>
+            </div>
+            <div class="chat-msg bot" style="animation-delay: 1.6s;">
+                <div>Excellent! I can schedule a consultation with our superyacht specialists. What's your timeline for this role?</div>
+            </div>
+            <div class="chat-msg user" style="animation-delay: 2.4s;">
+                <div>ASAP - current captain leaving end of month</div>
+            </div>
+            <div class="chat-msg bot" style="animation-delay: 3.2s;">
+                <div>I'll connect you with Tim immediately. He specializes in urgent captain placements and has 3 qualified candidates ready. Expect his call within 15 minutes.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: ROI (Updated for organic focus) -->
+    <div class="slide">
+        <h2>Organic Traffic Revenue Impact</h2>
+        <div class="revenue-highlight">
+            <div class="revenue-number">£35,000</div>
+            <div>Monthly organic traffic value being lost to competitors</div>
+        </div>
+        <div style="text-align: left; max-width: 350px;">
+            <p><strong>Current situation:</strong><br>
+            • Invisible for high-value recruitment searches<br>
+            • 3,050+ monthly searches going to competitors<br>
+            • £25,000+ traffic value untapped</p>
+            
+            <p><strong>With AI SEO optimization:</strong><br>
+            • Page 1 rankings for key recruitment terms<br>
+            • 40% more qualified organic enquiries<br>
+            • 24/7 professional lead capture system<br>
+            • <strong>ROI: 8x in first 6 months</strong></p>
+        </div>
+    </div>
+
+    <!-- Slide 8: CTA -->
+    <div class="slide">
+        <h2>Ready to dominate superyacht recruitment?</h2>
+        <p>Let's implement these changes for <span class="brand-highlight">Quay Group</span> this week</p>
+        
+        <div class="cta-container">
+            <a href="tel:+447935217762" class="cta-button">📞 Call Phil Patterson</a>
+            <a href="https://wa.me/447935217762" class="cta-button secondary">💬 WhatsApp Chat</a>
+            <a href="mailto:contact@bluecanvas.ai" class="cta-button secondary">✉️ Email Us</a>
+        </div>
+        
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+            <strong>Blue Canvas AI</strong><br>
+            Helping recruitment agencies scale with AI
+        </p>
+    </div>
+
+    <!-- Progress dots (updated to 7 slides) -->
+    <div class="progress">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <div class="tap-hint">Tap to advance • Swipe left/right</div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(n) {
+            slides.forEach(slide => {
+                slide.classList.remove('active', 'prev');
+            });
+            dots.forEach(dot => {
+                dot.classList.remove('active');
+            });
+
+            if (n >= slides.length) currentSlide = 0;
+            if (n < 0) currentSlide = slides.length - 1;
+
+            slides[currentSlide].classList.add('active');
+            if (currentSlide > 0) {
+                slides[currentSlide - 1].classList.add('prev');
+            }
+            dots[currentSlide].classList.add('active');
+
+            // Slide-specific animations
+            if (currentSlide === 1) {
+                setTimeout(() => {
+                    document.getElementById('scanProgress').style.width = '100%';
+                    setTimeout(() => {
+                        document.getElementById('scanText').textContent = 'Analysis complete!';
+                    }, 2000);
+                }, 500);
+            }
+
+            if (currentSlide === 2) {
+                setTimeout(() => {
+                    const ring = document.getElementById('currentScore');
+                    const text = document.getElementById('currentScoreText');
+                    const score = 50;
+                    const offset = 314 - (314 * score / 100);
+                    ring.style.strokeDashoffset = offset;
+                    
+                    let counter = 0;
+                    const interval = setInterval(() => {
+                        text.textContent = counter;
+                        counter++;
+                        if (counter > score) clearInterval(interval);
+                    }, 30);
+                }, 500);
+            }
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+
+        // Touch/click navigation
+        document.addEventListener('click', e => {
+            if (e.clientX > window.innerWidth * 0.65) nextSlide();
+            else if (e.clientX < window.innerWidth * 0.35) prevSlide();
+        });
+
+        // Swipe navigation
+        let touchStartX = 0;
+        document.addEventListener('touchstart', e => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        document.addEventListener('touchend', e => {
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) {
+                diff > 0 ? nextSlide() : prevSlide();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        // Initialize
+        showSlide(0);
+    </script>
+</body>
+</html>

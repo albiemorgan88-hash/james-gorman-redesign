@@ -1,0 +1,50 @@
+{
+  "business_name": "Quay Group",
+  "contact_name": "Tim",
+  "url": "https://quaygroup.com",
+  "slug": "quay-group",
+  "industry": "B2B/Professional Recruitment",
+  "created": "2026-03-18",
+  "showcase_url": "https://albiemorgan88-hash.github.io/showcase-quay-group/",
+  "github_repo": "https://github.com/albiemorgan88-hash/showcase-quay-group",
+  "seo_score": {
+    "current": 50,
+    "projected": 85,
+    "category": "Poor - Significant issues hurting rankings"
+  },
+  "key_opportunities": [
+    "Superyacht recruitment keyword optimization",
+    "Google Business Profile setup", 
+    "Structured data implementation",
+    "Title tag optimization",
+    "Local SEO targeting"
+  ],
+  "revenue_potential": "£20-40k monthly",
+  "target_keywords": [
+    "superyacht recruitment",
+    "yacht crew agency UK", 
+    "UHNW recruitment",
+    "superyacht jobs"
+  ],
+  "business_stats": {
+    "established": "2013",
+    "candidates_placed": "2000+",
+    "uhnw_clients": "350+",
+    "facebook_likes": "24,576"
+  },
+  "divisions": [
+    "Quay Crew (Superyacht recruitment)",
+    "Quay Maritime (Land-based maritime)",
+    "Quay Estates (Private residence staff)", 
+    "Quay Family Office (UHNW family office recruitment)"
+  ],
+  "industry_adaptation": "B2B professional focus - ROI-heavy, efficiency metrics, competitor gaps, quality over quantity messaging",
+  "deployment_status": "Deployed to GitHub Pages - may take 5-10 minutes to go live",
+  "files_created": [
+    "showcase.html",
+    "research.md", 
+    "audit.md",
+    "pitch.md",
+    "meta.json"
+  ]
+}
