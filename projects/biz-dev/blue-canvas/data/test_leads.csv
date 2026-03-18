@@ -1,0 +1,11 @@
+company_name,industry,location,website,email,phone,decision_maker,decision_maker_linkedin,digital_maturity_score,pain_points,employee_count,revenue_estimate,source,created_at
+Murphy & Associates Solicitors,legal services,"Derry, Northern Ireland",,j.murphy@example.com,028 7134 5678,John Murphy,,9,No website; No online booking system,,,test,2026-03-18T20:21:22.165858
+Elite Beauty Salon,beauty salon,"Belfast, Northern Ireland",elitebeautybelfast.com,sarah@elitebeauty.com,028 9024 5678,Sarah Connor,,7,Not mobile-optimized; No online booking system,,,test,2026-03-18T20:21:22.165862
+O'Brien Accounting,accounting,"Omagh, Northern Ireland",obrienaccounting.co.uk,michael@obrienaccounting.co.uk,,Michael O'Brien,,6,Poor SEO setup; No website analytics,,,test,2026-03-18T20:21:22.165864
+The Merchant's Table,restaurant,"Cork, Ireland",merchantstable.ie,emma@merchantstable.ie,,Emma Walsh,,8,No online booking system; No SSL certificate,,,test,2026-03-18T20:21:22.165866
+Quinn Property Services,real estate,"Enniskillen, Northern Ireland",quinnproperty.com,patrick@quinnproperty.com,,Patrick Quinn,,5,Poor SEO setup,,,test,2026-03-18T20:21:22.165867
+Shamrock Dental Practice,dental,"Dublin, Ireland",shamrockdental.ie,mary@shamrockdental.ie,,Dr. Mary Kelly,,7,No online booking system; Not mobile-optimized,,,test,2026-03-18T20:21:22.165869
+Celtic Construction Ltd,construction,"Galway, Ireland",celticconstruction.ie,sean@celticconstruction.ie,,Sean O'Sullivan,,6,Poor SEO setup; No contact forms,,,test,2026-03-18T20:21:22.165870
+North Coast Veterinary,veterinary,"Coleraine, Northern Ireland",northcoastvet.com,lisa@northcoastvet.com,,Dr. Lisa Thompson,,8,No online booking system; No website analytics,,,test,2026-03-18T20:21:22.165871
+Foyle Retail Group,retail,"Derry, Northern Ireland",foyleretail.com,david@foyleretail.com,,David McCloskey,,4,Poor SEO setup,,,test,2026-03-18T20:21:22.165872
+McGrath & Partners,accounting,"Belfast, Northern Ireland",,claire@mcgrathpartners.com,,Claire McGrath,,10,No website; No online presence,,,test,2026-03-18T20:21:22.165873

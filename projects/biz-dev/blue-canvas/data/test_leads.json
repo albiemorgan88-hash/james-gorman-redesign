@@ -1,0 +1,190 @@
+[
+  {
+    "company_name": "Murphy & Associates Solicitors",
+    "industry": "legal services",
+    "location": "Derry, Northern Ireland",
+    "website": "",
+    "email": "j.murphy@example.com",
+    "phone": "028 7134 5678",
+    "decision_maker": "John Murphy",
+    "decision_maker_linkedin": "",
+    "digital_maturity_score": 9,
+    "pain_points": [
+      "No website",
+      "No online booking system"
+    ],
+    "employee_count": "",
+    "revenue_estimate": "",
+    "source": "test",
+    "created_at": "2026-03-18T20:21:22.165858"
+  },
+  {
+    "company_name": "Elite Beauty Salon",
+    "industry": "beauty salon",
+    "location": "Belfast, Northern Ireland",
+    "website": "elitebeautybelfast.com",
+    "email": "sarah@elitebeauty.com",
+    "phone": "028 9024 5678",
+    "decision_maker": "Sarah Connor",
+    "decision_maker_linkedin": "",
+    "digital_maturity_score": 7,
+    "pain_points": [
+      "Not mobile-optimized",
+      "No online booking system"
+    ],
+    "employee_count": "",
+    "revenue_estimate": "",
+    "source": "test",
+    "created_at": "2026-03-18T20:21:22.165862"
+  },
+  {
+    "company_name": "O'Brien Accounting",
+    "industry": "accounting",
+    "location": "Omagh, Northern Ireland",
+    "website": "obrienaccounting.co.uk",
+    "email": "michael@obrienaccounting.co.uk",
+    "phone": "",
+    "decision_maker": "Michael O'Brien",
+    "decision_maker_linkedin": "",
+    "digital_maturity_score": 6,
+    "pain_points": [
+      "Poor SEO setup",
+      "No website analytics"
+    ],
+    "employee_count": "",
+    "revenue_estimate": "",
+    "source": "test",
+    "created_at": "2026-03-18T20:21:22.165864"
+  },
+  {
+    "company_name": "The Merchant's Table",
+    "industry": "restaurant",
+    "location": "Cork, Ireland",
+    "website": "merchantstable.ie",
+    "email": "emma@merchantstable.ie",
+    "phone": "",
+    "decision_maker": "Emma Walsh",
+    "decision_maker_linkedin": "",
+    "digital_maturity_score": 8,
+    "pain_points": [
+      "No online booking system",
+      "No SSL certificate"
+    ],
+    "employee_count": "",
+    "revenue_estimate": "",
+    "source": "test",
+    "created_at": "2026-03-18T20:21:22.165866"
+  },
+  {
+    "company_name": "Quinn Property Services",
+    "industry": "real estate",
+    "location": "Enniskillen, Northern Ireland",
+    "website": "quinnproperty.com",
+    "email": "patrick@quinnproperty.com",
+    "phone": "",
+    "decision_maker": "Patrick Quinn",
+    "decision_maker_linkedin": "",
+    "digital_maturity_score": 5,
+    "pain_points": [
+      "Poor SEO setup"
+    ],
+    "employee_count": "",
+    "revenue_estimate": "",
+    "source": "test",
+    "created_at": "2026-03-18T20:21:22.165867"
+  },
+  {
+    "company_name": "Shamrock Dental Practice",
+    "industry": "dental",
+    "location": "Dublin, Ireland",
+    "website": "shamrockdental.ie",
+    "email": "mary@shamrockdental.ie",
+    "phone": "",
+    "decision_maker": "Dr. Mary Kelly",
+    "decision_maker_linkedin": "",
+    "digital_maturity_score": 7,
+    "pain_points": [
+      "No online booking system",
+      "Not mobile-optimized"
+    ],
+    "employee_count": "",
+    "revenue_estimate": "",
+    "source": "test",
+    "created_at": "2026-03-18T20:21:22.165869"
+  },
+  {
+    "company_name": "Celtic Construction Ltd",
+    "industry": "construction",
+    "location": "Galway, Ireland",
+    "website": "celticconstruction.ie",
+    "email": "sean@celticconstruction.ie",
+    "phone": "",
+    "decision_maker": "Sean O'Sullivan",
+    "decision_maker_linkedin": "",
+    "digital_maturity_score": 6,
+    "pain_points": [
+      "Poor SEO setup",
+      "No contact forms"
+    ],
+    "employee_count": "",
+    "revenue_estimate": "",
+    "source": "test",
+    "created_at": "2026-03-18T20:21:22.165870"
+  },
+  {
+    "company_name": "North Coast Veterinary",
+    "industry": "veterinary",
+    "location": "Coleraine, Northern Ireland",
+    "website": "northcoastvet.com",
+    "email": "lisa@northcoastvet.com",
+    "phone": "",
+    "decision_maker": "Dr. Lisa Thompson",
+    "decision_maker_linkedin": "",
+    "digital_maturity_score": 8,
+    "pain_points": [
+      "No online booking system",
+      "No website analytics"
+    ],
+    "employee_count": "",
+    "revenue_estimate": "",
+    "source": "test",
+    "created_at": "2026-03-18T20:21:22.165871"
+  },
+  {
+    "company_name": "Foyle Retail Group",
+    "industry": "retail",
+    "location": "Derry, Northern Ireland",
+    "website": "foyleretail.com",
+    "email": "david@foyleretail.com",
+    "phone": "",
+    "decision_maker": "David McCloskey",
+    "decision_maker_linkedin": "",
+    "digital_maturity_score": 4,
+    "pain_points": [
+      "Poor SEO setup"
+    ],
+    "employee_count": "",
+    "revenue_estimate": "",
+    "source": "test",
+    "created_at": "2026-03-18T20:21:22.165872"
+  },
+  {
+    "company_name": "McGrath & Partners",
+    "industry": "accounting",
+    "location": "Belfast, Northern Ireland",
+    "website": "",
+    "email": "claire@mcgrathpartners.com",
+    "phone": "",
+    "decision_maker": "Claire McGrath",
+    "decision_maker_linkedin": "",
+    "digital_maturity_score": 10,
+    "pain_points": [
+      "No website",
+      "No online presence"
+    ],
+    "employee_count": "",
+    "revenue_estimate": "",
+    "source": "test",
+    "created_at": "2026-03-18T20:21:22.165873"
+  }
+]

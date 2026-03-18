@@ -1,0 +1,57 @@
+[
+  {
+    "lead_company": "Murphy & Associates Solicitors",
+    "lead_email": "j.murphy@example.com",
+    "outreach_type": "email",
+    "sequence_step": 1,
+    "sent_at": "2026-03-18T20:21:22.236162",
+    "subject": "Helping Murphy & Associates Solicitors win more cases through better client management",
+    "status": "sent",
+    "response_received": "",
+    "next_follow_up": "2026-03-22T20:21:22.236149"
+  },
+  {
+    "lead_company": "Elite Beauty Salon",
+    "lead_email": "sarah@elitebeauty.com",
+    "outreach_type": "email",
+    "sequence_step": 1,
+    "sent_at": "2026-03-18T20:21:24.247752",
+    "subject": "Is Elite Beauty Salon losing bookings to online competitors?",
+    "status": "sent",
+    "response_received": "",
+    "next_follow_up": "2026-03-22T20:21:24.247733"
+  },
+  {
+    "lead_company": "O'Brien Accounting",
+    "lead_email": "michael@obrienaccounting.co.uk",
+    "outreach_type": "email",
+    "sequence_step": 1,
+    "sent_at": "2026-03-18T20:21:26.316300",
+    "subject": "Quick question about O'Brien Accounting's digital efficiency",
+    "status": "sent",
+    "response_received": "",
+    "next_follow_up": "2026-03-22T20:21:26.316263"
+  },
+  {
+    "lead_company": "The Merchant's Table",
+    "lead_email": "emma@merchantstable.ie",
+    "outreach_type": "email",
+    "sequence_step": 1,
+    "sent_at": "2026-03-18T20:21:28.372308",
+    "subject": "Quick win for The Merchant's Table - reduce no-shows by 60%",
+    "status": "sent",
+    "response_received": "",
+    "next_follow_up": "2026-03-22T20:21:28.372287"
+  },
+  {
+    "lead_company": "Quinn Property Services",
+    "lead_email": "patrick@quinnproperty.com",
+    "outreach_type": "email",
+    "sequence_step": 1,
+    "sent_at": "2026-03-18T20:21:30.430725",
+    "subject": "Quick automation win for Quinn Property Services?",
+    "status": "sent",
+    "response_received": "",
+    "next_follow_up": "2026-03-22T20:21:30.430707"
+  }
+]
