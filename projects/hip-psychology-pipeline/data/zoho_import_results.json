@@ -1,0 +1,176 @@
+{
+  "import_summary": {
+    "total_contacts": 15,
+    "successful_imports": 15,
+    "failed_imports": 0,
+    "success_rate": 1.0,
+    "import_date": "2026-03-18T09:33:29.207739"
+  },
+  "contacts": [
+    {
+      "contact_name": "Mrs Ciara",
+      "school_name": "All Saints College",
+      "email": "mrs.ciara@allsaintscollege.co.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_1",
+      "tags": "Head of Year, KS3, KS4",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:20.362433",
+      "error_message": ""
+    },
+    {
+      "contact_name": "Ms Maria",
+      "school_name": "All Saints College",
+      "email": "ms.maria@allsaintscollege.co.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_2",
+      "tags": "Head of Year, KS3, KS4",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:21.013309",
+      "error_message": ""
+    },
+    {
+      "contact_name": "Science Technician",
+      "school_name": "All Saints College",
+      "email": "science.technician@allsaintscollege.co.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_3",
+      "tags": "Head of Year, KS3, KS4",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:21.515040",
+      "error_message": ""
+    },
+    {
+      "contact_name": "Mrs Ciar",
+      "school_name": "All Saints College",
+      "email": "mrs.ciar@allsaintscollege.co.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_4",
+      "tags": "Head of Year, KS3, KS4",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:22.106908",
+      "error_message": ""
+    },
+    {
+      "contact_name": "Ms Claire",
+      "school_name": "All Saints College",
+      "email": "ms.claire@allsaintscollege.co.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_5",
+      "tags": "Head of Year, KS3, KS4",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:22.757681",
+      "error_message": ""
+    },
+    {
+      "contact_name": "Chemistry Technician",
+      "school_name": "Bloomfield Collegiate",
+      "email": "chemistry.technician@bloomfieldcollegiate.org.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_6",
+      "tags": "SENCO, Special Educational Needs, Budget Holder",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:23.365441",
+      "error_message": ""
+    },
+    {
+      "contact_name": "Mrs Upritchard",
+      "school_name": "Bloomfield Collegiate",
+      "email": "mrs.upritchard@bloomfieldcollegiate.org.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_7",
+      "tags": "SENCO, Special Educational Needs, Budget Holder",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:23.880859",
+      "error_message": ""
+    },
+    {
+      "contact_name": "Curriculum Lead",
+      "school_name": "Bloomfield Collegiate",
+      "email": "curriculum.lead@bloomfieldcollegiate.org.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_8",
+      "tags": "SENCO, Special Educational Needs, Budget Holder",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:24.398684",
+      "error_message": ""
+    },
+    {
+      "contact_name": "Modern Languages",
+      "school_name": "Bloomfield Collegiate",
+      "email": "modern.languages@bloomfieldcollegiate.org.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_9",
+      "tags": "SENCO, Special Educational Needs, Budget Holder",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:25.035349",
+      "error_message": ""
+    },
+    {
+      "contact_name": "Teaching Staff",
+      "school_name": "Bloomfield Collegiate",
+      "email": "teaching.staff@bloomfieldcollegiate.org.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_10",
+      "tags": "SENCO, Special Educational Needs, Budget Holder",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:25.682587",
+      "error_message": ""
+    },
+    {
+      "contact_name": "Learning Support",
+      "school_name": "Bloomfield Collegiate",
+      "email": "learning.support@bloomfieldcollegiate.org.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_11",
+      "tags": "Education, Secondary School",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:26.330878",
+      "error_message": ""
+    },
+    {
+      "contact_name": "Bloomfield Collegiate",
+      "school_name": "Bloomfield Collegiate",
+      "email": "bloomfield.collegiate@bloomfieldcollegiate.org.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_12",
+      "tags": "Education, Secondary School",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:26.932876",
+      "error_message": ""
+    },
+    {
+      "contact_name": "At Bloomfield",
+      "school_name": "Bloomfield Collegiate",
+      "email": "at.bloomfield@bloomfieldcollegiate.org.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_13",
+      "tags": "Education, Secondary School",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:27.464557",
+      "error_message": ""
+    },
+    {
+      "contact_name": "Pastoral Care",
+      "school_name": "Bloomfield Collegiate",
+      "email": "pastoral.care@bloomfieldcollegiate.org.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_14",
+      "tags": "Education, Secondary School",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:28.031808",
+      "error_message": ""
+    },
+    {
+      "contact_name": "Privacy Notices",
+      "school_name": "Bloomfield Collegiate",
+      "email": "privacy.notices@bloomfieldcollegiate.org.uk",
+      "phone": NaN,
+      "zoho_id": "simulated_id_15",
+      "tags": "Education, Secondary School",
+      "import_success": true,
+      "import_date": "2026-03-18T09:33:28.665623",
+      "error_message": ""
+    }
+  ]
+}

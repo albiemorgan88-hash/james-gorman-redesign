@@ -1,0 +1,11 @@
+URN,EstablishmentName,Street,Locality,Address3,Town,County,Postcode,PhaseOfEducation,StatutoryLowAge,StatutoryHighAge,NumberOfPupils,HeadTitle,HeadFirstName,HeadLastName,SchoolWebsite,TelephoneNum,EstablishmentStatus,TypeOfEstablishment,Sector
+542-0059,Abbey Christian Brothers Grammar School,,Newry,,Newry,County Down,,Secondary,11,18,,,,,,,Open,Grammar,Voluntary
+123-0234,All Saints College,,Belfast,,Belfast,County Antrim,BT11 8BW,Secondary,11,18,,,,,https://www.allsaintscollege.co.uk,,Open,Secondary,Voluntary
+142-0277,Aquinas Diocesan Grammar School,,Belfast,,Belfast,County Antrim,,Secondary,11,18,,,,,,,Open,Grammar,Voluntary
+121-0015,Ashfield Boys' High School,,Belfast,,Belfast,County Antrim,,Secondary,11,18,,,,,,,Open,Secondary,Controlled
+121-0014,Ashfield Girls' High School,,Belfast,,Belfast,County Antrim,,Secondary,11,18,,,,,,,Open,Secondary,Controlled
+121-0022,Belfast Boys' Model School,,Belfast,,Belfast,County Antrim,,Secondary,11,18,,,,,,,Open,Secondary,Controlled
+121-0021,Belfast Model School For Girls,,Belfast,,Belfast,County Antrim,,Secondary,11,18,,,,,,,Open,Secondary,Controlled
+142-0028,Belfast Royal Academy,,Belfast,,Belfast,County Antrim,,Secondary,11,18,,,,,,,Open,Grammar,Voluntary
+123-0321,Blessed Trinity College,,Belfast,,Belfast,County Antrim,,Secondary,11,18,,,,,,,Open,Secondary,Roman Catholic Maintained
+141-0315,Bloomfield Collegiate,,Belfast,,Belfast,County Antrim,,Secondary,11,18,,,,,https://bloomfieldcollegiate.org.uk,,Open,Grammar,Controlled

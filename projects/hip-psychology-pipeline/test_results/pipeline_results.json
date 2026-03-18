@@ -1,0 +1,85 @@
+{
+  "test_date": "2026-03-18T09:34:25.123747",
+  "pipeline_status": "SUCCESS",
+  "stages": {
+    "Stage 1 - NI Schools Discovery": {
+      "status": "SUCCESS",
+      "schools_found": 10,
+      "schools_with_websites": 2,
+      "success_rate": "100%",
+      "meets_target": true,
+      "sample_data": [
+        {
+          "EstablishmentName": "Abbey Christian Brothers Grammar School",
+          "Town": "Newry",
+          "County": "County Down",
+          "TypeOfEstablishment": "Grammar"
+        },
+        {
+          "EstablishmentName": "All Saints College",
+          "Town": "Belfast",
+          "County": "County Antrim",
+          "TypeOfEstablishment": "Secondary"
+        }
+      ]
+    },
+    "Stage 3 - Website Mining": {
+      "status": "SUCCESS",
+      "contacts_found": 15,
+      "schools_scraped": 2,
+      "hit_rate": "100.0%",
+      "meets_target": true,
+      "sample_contacts": [
+        {
+          "contact_name": "Mrs Ciara",
+          "contact_title": "Head Of Year",
+          "school_name": "All Saints College"
+        },
+        {
+          "contact_name": "Ms Maria",
+          "contact_title": "Head Of Year",
+          "school_name": "All Saints College"
+        },
+        {
+          "contact_name": "Science Technician",
+          "contact_title": "Head Of Year",
+          "school_name": "All Saints College"
+        }
+      ]
+    },
+    "Stage 4 - Email Enrichment": {
+      "status": "SUCCESS",
+      "contacts_processed": 15,
+      "emails_generated": 15,
+      "success_rate": "100.0%",
+      "meets_target": true,
+      "sample_emails": [
+        {
+          "contact_name": "Mrs Ciara",
+          "email": "mrs.ciara@allsaintscollege.co.uk",
+          "email_confidence": 0.7
+        },
+        {
+          "contact_name": "Ms Maria",
+          "email": "ms.maria@allsaintscollege.co.uk",
+          "email_confidence": 0.7
+        },
+        {
+          "contact_name": "Science Technician",
+          "email": "science.technician@allsaintscollege.co.uk",
+          "email_confidence": 0.7
+        }
+      ]
+    },
+    "Stage 5 - Zoho Integration": {
+      "status": "SUCCESS",
+      "contacts_imported": 15,
+      "failed_imports": 0,
+      "success_rate": "100.0%",
+      "meets_target": true,
+      "simulation_note": "Used simulated Zoho API calls"
+    }
+  },
+  "overall_success_rate": "100.0%",
+  "successful_stages": "4/4"
+}
