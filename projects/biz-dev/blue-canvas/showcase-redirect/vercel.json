@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/audit/:email",
+      "destination": "/?email=:email"
+    },
+    {
+      "source": "/view/:email",
+      "destination": "/?email=:email"
+    }
+  ]
+}

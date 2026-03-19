@@ -1,0 +1,336 @@
+{
+  "total_mappings": 55,
+  "date_generated": "2026-03-19T14:52:00Z",
+  "mappings": {
+    "oonagh.arg@mcaleerjackson.co.uk": {
+      "contact_name": "Oonagh Ar***g",
+      "company": "McAleer Jackson Chartered Accountants",
+      "title": "Practice Manager",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-001"
+    },
+    "tanya.gin@pgm.co.uk": {
+      "contact_name": "Tanya Gi***n",
+      "company": "PGM Chartered Accountants",
+      "title": "Practice Manager",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-002"
+    },
+    "patrick.gar@mci.co.uk": {
+      "contact_name": "Patrick Ga***r",
+      "company": "MCI Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-003"
+    },
+    "mike.nae@dnt.co.uk": {
+      "contact_name": "Mike Na***e",
+      "company": "DNT Chartered Accountants",
+      "title": "Owner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-004"
+    },
+    "kyran.smh@kps.co.uk": {
+      "contact_name": "Kyran Sm***h",
+      "company": "KPS Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-005"
+    },
+    "shaun.mcy@claremount.co.uk": {
+      "contact_name": "Shaun Mc***y",
+      "company": "Claremount Chartered Accountants",
+      "title": "Partner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-006"
+    },
+    "ian.fin@asm.co.uk": {
+      "contact_name": "Ian Fi***n",
+      "company": "ASM Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-007"
+    },
+    "michael.gin@gmcg.co.uk": {
+      "contact_name": "Michael Gi***n",
+      "company": "GMcG Chartered Accountants",
+      "title": "Partner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-008"
+    },
+    "alistair.coe@asm.co.uk": {
+      "contact_name": "Alistair Co***e",
+      "company": "ASM Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-009"
+    },
+    "grainne.qun@asm.co.uk": {
+      "contact_name": "Grainne Qu***n",
+      "company": "ASM Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-010"
+    },
+    "paul.mcy@pgm.co.uk": {
+      "contact_name": "Paul Mc***y",
+      "company": "PGM Chartered Accountants",
+      "title": "Owner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-011"
+    },
+    "mark.mcl@asm.co.uk": {
+      "contact_name": "Mark Mc***l",
+      "company": "ASM Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-012"
+    },
+    "anna.has@dnt.co.uk": {
+      "contact_name": "Anna Ha***s",
+      "company": "DNT Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-013"
+    },
+    "angela.mcl@asm.co.uk": {
+      "contact_name": "Angela Mc***l",
+      "company": "ASM Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-014"
+    },
+    "grainne.mce@mts.co.uk": {
+      "contact_name": "Grainne Mc***e",
+      "company": "MTS Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-015"
+    },
+    "paula.arg@mts.co.uk": {
+      "contact_name": "Paula Ar***g",
+      "company": "MTS Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-016"
+    },
+    "michael.win@asm.co.uk": {
+      "contact_name": "Michael Wi***n",
+      "company": "ASM Chartered Accountants",
+      "title": "Former Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-017"
+    },
+    "peter.key@mts.co.uk": {
+      "contact_name": "Peter Ke***y",
+      "company": "MTS Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-018"
+    },
+    "richard.whn@asm.co.uk": {
+      "contact_name": "Richard Wh***n",
+      "company": "ASM Chartered Accountants",
+      "title": "Managing Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-019"
+    },
+    "james.swl@johnstonkennedydfktaxadvisors.co.uk": {
+      "contact_name": "James Sw***l",
+      "company": "Johnston Kennedy DFK Chartered Accountants & Tax Advisors",
+      "title": "Senior Manager",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-020"
+    },
+    "tony.nil@gmcg.co.uk": {
+      "contact_name": "Tony Ni***l",
+      "company": "GMcG Chartered Accountants",
+      "title": "Managing Partner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-021"
+    },
+    "alison.bue@mcaleerjackson.co.uk": {
+      "contact_name": "Alison Bu***e",
+      "company": "McAleer Jackson Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-022"
+    },
+    "annette.muy@scc-.co.uk": {
+      "contact_name": "Annette Mu***y",
+      "company": "SCC - Chartered Accountants",
+      "title": "Practice Manager",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-023"
+    },
+    "richard.mcy@mts.co.uk": {
+      "contact_name": "Richard Mc***y",
+      "company": "MTS Chartered Accountants",
+      "title": "Director FCA",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-024"
+    },
+    "johnny.abt@dalypark.co.uk": {
+      "contact_name": "Johnny Ab***t",
+      "company": "Daly Park Chartered Accountants",
+      "title": "Senior Manager",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-025"
+    },
+    "clare.moh@claremount.co.uk": {
+      "contact_name": "Clare Mo***h",
+      "company": "Claremount Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-026"
+    },
+    "stephen.hon@gmcg.co.uk": {
+      "contact_name": "Stephen Ho***n",
+      "company": "GMcG Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-027"
+    },
+    "james.gae@johnstonkennedydfktaxadvisors.co.uk": {
+      "contact_name": "James Ga***e",
+      "company": "Johnston Kennedy DFK Chartered Accountants & Tax Advisors",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-028"
+    },
+    "graeme.das@gmcg.co.uk": {
+      "contact_name": "Graeme Da***s",
+      "company": "GMcG Chartered Accountants",
+      "title": "Associate Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-029"
+    },
+    "susan.dup@gmcg.co.uk": {
+      "contact_name": "Susan Du***p",
+      "company": "GMcG Chartered Accountants",
+      "title": "Managing Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-030"
+    },
+    "paul.blk@gmcg.co.uk": {
+      "contact_name": "Paul Bl***k",
+      "company": "GMcG Chartered Accountants",
+      "title": "Director, Forensic Accounting and Investigation",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-031"
+    },
+    "david.jon@johnstonkennedydfktaxadvisors.co.uk": {
+      "contact_name": "David Jo***n",
+      "company": "Johnston Kennedy DFK Chartered Accountants & Tax Advisors",
+      "title": "Financial Services Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-032"
+    },
+    "jayme.fal@farrellfarrell.co.uk": {
+      "contact_name": "Jayme Fa***l",
+      "company": "Farrell & Farrell Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-033"
+    },
+    "gillian.jon@gmcg.co.uk": {
+      "contact_name": "Gillian Jo***n",
+      "company": "GMcG Chartered Accountants",
+      "title": "Director of Audit & Business Services",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-034"
+    },
+    "jennifer.chs@gmcg.co.uk": {
+      "contact_name": "Jennifer Ch***s",
+      "company": "GMcG Chartered Accountants",
+      "title": "Senior Tax Manager",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-035"
+    },
+    "donna-marie.crg@marshall|registeredauditors|estateplanning.co.uk": {
+      "contact_name": "Donna-Marie Cr***g",
+      "company": "Marshall & Co Chartered Accountants | Registered Auditors | Estate Planning",
+      "title": "Senior Manager",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-036"
+    },
+    "lisa.coy@gmcg.co.uk": {
+      "contact_name": "Lisa Co***y",
+      "company": "GMcG Chartered Accountants",
+      "title": "Senior Audit Manager",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-037"
+    },
+    "john.mae@aubreycampbellmpany.co.uk": {
+      "contact_name": "John Ma***e",
+      "company": "Aubrey Campbell & Company",
+      "title": "Partner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-038"
+    },
+    "brian.mce@pgm.co.uk": {
+      "contact_name": "Brian Mc***e",
+      "company": "PGM Chartered Accountants",
+      "title": "Senior Audit & Accounts Manager",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-039"
+    },
+    "james.mae@aubreycampbellmpany.co.uk": {
+      "contact_name": "James Ma***e",
+      "company": "Aubrey Campbell & Company",
+      "title": "Partner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-040"
+    },
+    "maria.evs@dalypark.co.uk": {
+      "contact_name": "Maria Ev***s",
+      "company": "Daly Park Chartered Accountants",
+      "title": "Director at Daly Park & Company Ltd",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-041"
+    },
+    "niamh.cor@rrrr.co.uk": {
+      "contact_name": "Niamh Co***r",
+      "company": "Corr & Corr",
+      "title": "Senior Audit Manager - Practice Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-042"
+    },
+    "robbie.bar@muldoon.co.uk": {
+      "contact_name": "Robbie Ba***r",
+      "company": "Muldoon",
+      "title": "Partner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-043"
+    },
+    "elaine.fal@farrellfarrell.co.uk": {
+      "contact_name": "Elaine Fa***l",
+      "company": "Farrell & Farrell Chartered Accountants",
+      "title": "Tax Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-044"
+    },
+    "raymond.tiy@muldoon.co.uk": {
+      "contact_name": "Raymond Ti***y",
+      "company": "Muldoon",
+      "title": "Partner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-045"
+    },
+    "brian.det@fitzpatrickkearneyltd.co.uk": {
+      "contact_name": "Brian De***t",
+      "company": "Fitzpatrick & Kearney Ltd",
+      "title": "Owner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-046"
+    },
+    "brendan.cor@rrrr.co.uk": {
+      "contact_name": "Brendan Co***r",
+      "company": "Corr & Corr",
+      "title": "Partner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-047"
+    },
+    "paul.cor@rrrr.co.uk": {
+      "contact_name": "Paul Co***r",
+      "company": "Corr & Corr",
+      "title": "Partner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-048"
+    },
+    "clare.mcn@hm.co.uk": {
+      "contact_name": "Clare Mc***n",
+      "company": "HM Chartered Accountants",
+      "title": "Partner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-049"
+    },
+    "paul.don@finegangibsonltd.co.uk": {
+      "contact_name": "Paul Do***n",
+      "company": "Finegan Gibson Ltd",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-050"
+    },
+    "peter.greene@pgraccountants.com": {
+      "contact_name": "Peter Greene",
+      "company": "PGR Chartered Accountants",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-051"
+    },
+    "nathan.kane@mjkane.co.uk": {
+      "contact_name": "Nathan Kane",
+      "company": "MJ Kane & Co",
+      "title": "Director",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-052"
+    },
+    "paul.foley@efmccambridge.com": {
+      "contact_name": "Paul Foley",
+      "company": "EF McCambridge",
+      "title": "Partner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-053"
+    },
+    "christine.whiteman@efmccambridge.com": {
+      "contact_name": "Christine Whiteman",
+      "company": "EF McCambridge",
+      "title": "Partner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-054"
+    },
+    "aubrey.campbell@aubreycampbellaccountants.co.uk": {
+      "contact_name": "Aubrey Campbell",
+      "company": "Aubrey Campbell & Co",
+      "title": "Partner",
+      "showcase_url": "https://bluecanvas.ai/showcase/accountant-055"
+    }
+  }
+}
