@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Showcase - Emma's Property Portfolio</title>
+    <style>
+        :root {
+            --blue: #2B4DAF;
+            --red: #FF4520;
+            --white: #ffffff;
+            --light-bg: #f8f9fa;
+            --text: #1a1a2e;
+            --text-light: #666;
+            --green: #22c55e;
+        }
+        
+        * { margin:0; padding:0; box-sizing:border-box }
+        
+        body {
+            font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+            background: linear-gradient(135deg, var(--light-bg) 0%, #e3f2fd 100%);
+            overflow: hidden;
+            height: 100vh;
+            color: var(--text);
+        }
+        
+        .slide {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 24px;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+            background: var(--white);
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        .slide.active {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+        
+        .slide.prev {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        
+        .slide h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-align: center;
+            line-height: 1.2;
+        }
+        
+        .slide h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+            color: var(--blue);
+        }
+        
+        .slide p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+            text-align: center;
+            color: var(--text-light);
+        }
+        
+        .progress {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 100;
+        }
+        
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        
+        .dot.active {
+            background: var(--blue);
+            width: 24px;
+        }
+        
+        .scan-visual {
+            width: 280px;
+            height: 160px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            position: relative;
+            margin: 20px 0;
+            border: 2px solid #e3f2fd;
+            overflow: hidden;
+        }
+        
+        .scan-line {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(43,77,175,0.3), transparent);
+            animation: scan 3s ease-in-out infinite;
+        }
+        
+        @keyframes scan {
+            0% { left: -100%; }
+            50% { left: 100%; }
+            100% { left: 100%; }
+        }
+        
+        .progress-bar {
+            width: 200px;
+            height: 8px;
+            background: #e3f2fd;
+            border-radius: 4px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: var(--blue);
+            width: 0%;
+            animation: fillProgress 3s ease-out;
+            border-radius: 4px;
+        }
+        
+        @keyframes fillProgress {
+            to { width: 100%; }
+        }
+        
+        .score-container {
+            position: relative;
+            margin: 30px 0;
+        }
+        
+        .score-ring {
+            stroke-dasharray: 314;
+            stroke-dashoffset: 314;
+            transition: stroke-dashoffset 2s ease;
+        }
+        
+        .score-ring.animate {
+            stroke-dashoffset: 235; /* 25% of 314 for 25/100 */
+        }
+        
+        .improvement-ring {
+            stroke-dasharray: 314;
+            stroke-dashoffset: 314;
+            transition: stroke-dashoffset 2s ease 1s;
+        }
+        
+        .improvement-ring.animate {
+            stroke-dashoffset: 69; /* 78% of 314 for 78/100 */
+        }
+        
+        .before-after {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .search-result {
+            background: #fff;
+            border-radius: 12px;
+            padding: 16px;
+            text-align: left;
+            border: 1px solid #e3f2fd;
+        }
+        
+        .result-url {
+            font-size: 12px;
+            color: #202124;
+            margin-bottom: 4px;
+        }
+        
+        .result-title {
+            font-size: 18px;
+            color: #1a0dab;
+            margin-bottom: 4px;
+            text-decoration: none;
+        }
+        
+        .result-desc {
+            font-size: 13px;
+            color: #4d5156;
+            line-height: 1.4;
+        }
+        
+        .chat-container {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 20px;
+            margin: 20px 0;
+            max-width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .chat-msg {
+            margin-bottom: 12px;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        
+        .chat-msg.animate {
+            animation: chatIn 0.4s ease forwards;
+        }
+        
+        .chat-msg.user {
+            text-align: right;
+            animation-delay: 0s;
+        }
+        
+        .chat-msg.bot {
+            text-align: left;
+            animation-delay: 0.8s;
+        }
+        
+        .chat-msg.bot:nth-child(4) {
+            animation-delay: 1.6s;
+        }
+        
+        @keyframes chatIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .chat-bubble {
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 18px;
+            font-size: 14px;
+            max-width: 80%;
+        }
+        
+        .user .chat-bubble {
+            background: var(--blue);
+            color: white;
+        }
+        
+        .bot .chat-bubble {
+            background: #e3f2fd;
+            color: var(--text);
+        }
+        
+        .roi-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 20px 0;
+            max-width: 300px;
+        }
+        
+        .stat {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e3f2fd;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--blue);
+            margin-bottom: 4px;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-light);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 30px;
+            max-width: 280px;
+        }
+        
+        .cta-btn {
+            padding: 16px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+        
+        .cta-primary {
+            background: var(--blue);
+            color: white;
+        }
+        
+        .cta-secondary {
+            background: #f8f9fa;
+            color: var(--blue);
+            border: 2px solid var(--blue);
+        }
+        
+        .cta-whatsapp {
+            background: #25d366;
+            color: white;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8e6cf 0%, #dcedc1 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .issues-list {
+            text-align: left;
+            max-width: 280px;
+            margin: 20px 0;
+        }
+        
+        .issue-item {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .issue-icon {
+            width: 8px;
+            height: 8px;
+            background: var(--red);
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+        
+        .navigation-hint {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            color: var(--text-light);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Hook -->
+    <div class="slide active">
+        <h1>What if AI could transform your <span class="highlight">property portfolio</span> overnight?</h1>
+        <p>From manual guest management to fully automated Airbnb empire</p>
+        
+        <div style="margin: 30px 0; text-align: center;">
+            <div style="font-size: 48px; margin-bottom: 16px;">🏡</div>
+            <h2 style="color: var(--blue); margin-bottom: 8px;">Emma's Serviced Accommodation</h2>
+            <p style="color: var(--text-light);">Derry/Londonderry Property Portfolio</p>
+        </div>
+        
+        <p style="font-size: 14px; color: var(--text-light);">5 properties → AI-powered scaling to 15+ units</p>
+    </div>
+
+    <!-- Slide 2: Scan -->
+    <div class="slide">
+        <h2>Analysing Your Business Model</h2>
+        <p>Our AI is scanning your current operation...</p>
+        
+        <div class="scan-visual">
+            <div style="padding: 20px; font-size: 12px; color: var(--text-light);">
+                <div>✓ Guaranteed rent contracts</div>
+                <div>✓ Multiple 1/2 bed properties</div>
+                <div>✓ Manual guest communication</div>
+                <div>✓ Static pricing strategy</div>
+            </div>
+            <div class="scan-line"></div>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        
+        <p style="font-size: 14px;">Analysing 47 data points...</p>
+    </div>
+
+    <!-- Slide 3: Issues -->
+    <div class="slide">
+        <h2>AI Efficiency Score</h2>
+        <p>Current automation level for your portfolio</p>
+        
+        <div class="score-container">
+            <svg width="120" height="120" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="#eee" stroke-width="8"/>
+                <circle class="score-ring" cx="60" cy="60" r="50" fill="none" stroke="var(--red)" 
+                    stroke-width="8" stroke-linecap="round" stroke-dasharray="314" 
+                    stroke-dashoffset="314" transform="rotate(-90 60 60)"/>
+                <text x="60" y="65" text-anchor="middle" font-size="28" font-weight="700" fill="var(--text)">25</text>
+            </svg>
+        </div>
+        
+        <div class="issues-list">
+            <div class="issue-item">
+                <div class="issue-icon"></div>
+                <span>Manual guest communication</span>
+            </div>
+            <div class="issue-item">
+                <div class="issue-icon"></div>
+                <span>Missing seasonal pricing peaks</span>
+            </div>
+            <div class="issue-item">
+                <div class="issue-icon"></div>
+                <span>No portfolio dashboard</span>
+            </div>
+            <div class="issue-item">
+                <div class="issue-icon"></div>
+                <span>Manual property acquisition</span>
+            </div>
+        </div>
+        
+        <p style="color: var(--red);">Critical: Missing £105k annual revenue</p>
+    </div>
+
+    <!-- Slide 4: Fixes -->
+    <div class="slide">
+        <h2>After AI Implementation</h2>
+        
+        <div class="score-container">
+            <svg width="120" height="120" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="#eee" stroke-width="8"/>
+                <circle class="improvement-ring" cx="60" cy="60" r="50" fill="none" stroke="var(--green)" 
+                    stroke-width="8" stroke-linecap="round" stroke-dasharray="314" 
+                    stroke-dashoffset="314" transform="rotate(-90 60 60)"/>
+                <text x="60" y="65" text-anchor="middle" font-size="28" font-weight="700" fill="var(--text)">78</text>
+            </svg>
+        </div>
+        
+        <div class="before-after">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <h3 style="color: var(--blue); margin-bottom: 12px;">Automated Systems</h3>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 14px;">
+                <div style="background: #f0f9ff; padding: 12px; border-radius: 8px;">
+                    <div style="color: var(--green); font-weight: 600;">✓ 24/7 Guest Chat</div>
+                    <div style="color: var(--text-light);">Instant responses</div>
+                </div>
+                <div style="background: #f0f9ff; padding: 12px; border-radius: 8px;">
+                    <div style="color: var(--green); font-weight: 600;">✓ Smart Pricing</div>
+                    <div style="color: var(--text-light);">Event-based rates</div>
+                </div>
+                <div style="background: #f0f9ff; padding: 12px; border-radius: 8px;">
+                    <div style="color: var(--green); font-weight: 600;">✓ Portfolio Hub</div>
+                    <div style="color: var(--text-light);">All properties</div>
+                </div>
+                <div style="background: #f0f9ff; padding: 12px; border-radius: 8px;">
+                    <div style="color: var(--green); font-weight: 600;">✓ Auto Lead Gen</div>
+                    <div style="color: var(--text-light);">New acquisitions</div>
+                </div>
+            </div>
+        </div>
+        
+        <p style="color: var(--green); font-weight: 600; margin-top: 20px;">+£105k annual revenue unlocked</p>
+    </div>
+
+    <!-- Slide 5: Dynamic Pricing -->
+    <div class="slide">
+        <h2>AI Pricing Engine</h2>
+        <p>Automatic rate adjustments for Derry events</p>
+        
+        <div style="margin: 20px 0; text-align: left; max-width: 300px;">
+            <h3 style="font-size: 16px; margin-bottom: 16px; color: var(--blue);">Seasonal Rate Optimization</h3>
+            
+            <div style="background: #f8f9fa; padding: 16px; border-radius: 12px; margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-weight: 600;">Foyle Maritime Festival</span>
+                    <span style="color: var(--green); font-weight: 700;">£85/night</span>
+                </div>
+                <div style="font-size: 12px; color: var(--text-light);">June 25-28 (vs £45 base)</div>
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 16px; border-radius: 12px; margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-weight: 600;">Derry Halloween</span>
+                    <span style="color: var(--green); font-weight: 700;">£95/night</span>
+                </div>
+                <div style="font-size: 12px; color: var(--text-light);">Oct 28-31 (vs £45 base)</div>
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 16px; border-radius: 12px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-weight: 600;">Standard Weekends</span>
+                    <span style="color: var(--blue); font-weight: 700;">£55/night</span>
+                </div>
+                <div style="font-size: 12px; color: var(--text-light);">Friday-Sunday premium</div>
+            </div>
+        </div>
+        
+        <p style="font-size: 14px; color: var(--text-light);">AI monitors 15+ Derry competitors hourly</p>
+    </div>
+
+    <!-- Slide 6: AI Assistant -->
+    <div class="slide">
+        <h2>24/7 Guest Assistant</h2>
+        <p>AI handles everything while you sleep</p>
+        
+        <div class="chat-container">
+            <div class="chat-msg user">
+                <div class="chat-bubble">Hi, just arrived at the apartment. How do I get the keys?</div>
+            </div>
+            <div class="chat-msg bot">
+                <div class="chat-bubble">Welcome to Derry! Check your email for the door code. It's the 4-digit code sent this morning. The keys are on the kitchen counter.</div>
+            </div>
+            <div class="chat-msg bot">
+                <div class="chat-bubble">For dinner tonight, I recommend The Walled City Brewery (5 min walk) or Primrose Café for breakfast tomorrow. Need directions to the Peace Bridge?</div>
+            </div>
+        </div>
+        
+        <div style="background: #f0f9ff; padding: 16px; border-radius: 12px; margin-top: 20px; max-width: 280px;">
+            <div style="font-size: 14px; font-weight: 600; margin-bottom: 8px; color: var(--blue);">Handles Automatically:</div>
+            <div style="font-size: 12px; color: var(--text-light); line-height: 1.4;">
+                Check-in instructions • Local recommendations • WiFi issues • Maintenance requests • Check-out procedures
+            </div>
+        </div>
+        
+        <p style="font-size: 14px; color: var(--text-light); margin-top: 16px;">87% of guest inquiries resolved without your involvement</p>
+    </div>
+
+    <!-- Slide 7: ROI -->
+    <div class="slide">
+        <h2>Portfolio Revenue Impact</h2>
+        <p>Annual improvement across 5 properties</p>
+        
+        <div class="roi-stats">
+            <div class="stat">
+                <div class="stat-value">£180k</div>
+                <div class="stat-label">Current Revenue</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">£285k</div>
+                <div class="stat-label">AI-Optimized</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">+£105k</div>
+                <div class="stat-label">Annual Uplift</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">91%</div>
+                <div class="stat-label">Avg Occupancy</div>
+            </div>
+        </div>
+        
+        <div style="background: var(--light-bg); padding: 20px; border-radius: 12px; margin: 20px 0; max-width: 300px;">
+            <h3 style="font-size: 16px; margin-bottom: 12px; color: var(--blue);">Implementation Timeline</h3>
+            <div style="font-size: 14px; line-height: 1.6;">
+                <div><strong>Week 1-2:</strong> AI chat setup & training</div>
+                <div><strong>Week 3:</strong> Dynamic pricing deployment</div>
+                <div><strong>Week 4:</strong> Portfolio dashboard live</div>
+                <div style="color: var(--green); margin-top: 8px;"><strong>ROI visible from Month 1</strong></div>
+            </div>
+        </div>
+        
+        <p style="font-size: 14px; color: var(--text-light);">Payback period: 6-8 weeks</p>
+    </div>
+
+    <!-- Slide 8: CTA -->
+    <div class="slide">
+        <h1>Ready to Scale Your Portfolio?</h1>
+        <p>Let's discuss your specific property expansion goals</p>
+        
+        <div style="margin: 30px 0;">
+            <div style="background: var(--light-bg); padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 20px;">
+                <div style="font-size: 18px; font-weight: 600; color: var(--blue); margin-bottom: 8px;">Phil Patterson</div>
+                <div style="font-size: 14px; color: var(--text-light);">Blue Canvas AI • Property Tech Specialist</div>
+            </div>
+        </div>
+        
+        <div class="cta-buttons">
+            <a href="https://wa.me/447935217762?text=Hi Phil, saw the AI showcase for Emma's business - interested in discussing property automation" class="cta-btn cta-whatsapp">
+                💬 WhatsApp Chat
+            </a>
+            <a href="tel:+447935217762" class="cta-btn cta-primary">
+                📞 Call: +44 7935 217762
+            </a>
+            <a href="mailto:contact@bluecanvas.ai?subject=Property Portfolio AI - Emma Showcase" class="cta-btn cta-secondary">
+                ✉️ contact@bluecanvas.ai
+            </a>
+        </div>
+        
+        <p style="font-size: 12px; color: var(--text-light); margin-top: 20px;">
+            Free 30-minute consultation • No obligation
+        </p>
+    </div>
+
+    <!-- Progress indicators -->
+    <div class="progress">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    
+    <div class="navigation-hint">Tap right to continue • Tap left to go back</div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        
+        function showSlide(n) {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active', 'prev');
+                if (index === n) {
+                    slide.classList.add('active');
+                } else if (index < n) {
+                    slide.classList.add('prev');
+                }
+            });
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === n);
+            });
+            
+            // Trigger animations on specific slides
+            if (n === 2) { // Issues slide
+                setTimeout(() => {
+                    document.querySelector('.score-ring').classList.add('animate');
+                }, 500);
+            }
+            
+            if (n === 3) { // Fixes slide
+                setTimeout(() => {
+                    document.querySelector('.improvement-ring').classList.add('animate');
+                }, 500);
+            }
+            
+            if (n === 5) { // Chat slide
+                setTimeout(() => {
+                    document.querySelectorAll('.chat-msg').forEach(msg => {
+                        msg.classList.add('animate');
+                    });
+                }, 500);
+            }
+        }
+        
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+        
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+        
+        // Touch/click navigation
+        document.addEventListener('click', e => {
+            const rect = document.documentElement.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const width = rect.width;
+            
+            if (x > width * 0.65) {
+                nextSlide();
+            } else if (x < width * 0.35) {
+                prevSlide();
+            }
+        });
+        
+        // Swipe navigation
+        let touchStartX = 0;
+        document.addEventListener('touchstart', e => {
+            touchStartX = e.touches[0].clientX;
+        });
+        
+        document.addEventListener('touchend', e => {
+            const touchEndX = e.changedTouches[0].clientX;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+            }
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            }
+            if (e.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+        
+        // Auto-advance slide 2 after animation
+        setTimeout(() => {
+            if (currentSlide === 1) {
+                nextSlide();
+            }
+        }, 4000);
+    </script>
+</body>
+</html>

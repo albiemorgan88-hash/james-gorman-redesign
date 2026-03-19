@@ -1,0 +1,52 @@
+{
+  "client": "Emma",
+  "business_name": "Emma's Serviced Accommodation Portfolio",
+  "business_type": "Airbnb/Serviced Accommodation Property Investment",
+  "location": "Derry/Londonderry, Northern Ireland",
+  "business_model": "Guaranteed rent to property owners (1-3 year contracts)",
+  "current_scale": "Multiple 1/2 bed properties, 5+ units",
+  "target_scale": "15+ properties",
+  "showcase_url": "https://albiemorgan88-hash.github.io/showcase-emma-airbnb/",
+  "created_date": "2026-03-19",
+  "ai_score": {
+    "current": 25,
+    "potential": 78,
+    "improvement": 53
+  },
+  "revenue_impact": {
+    "current_annual": "£180k",
+    "optimized_annual": "£285k",
+    "annual_uplift": "£105k"
+  },
+  "key_ai_opportunities": [
+    "24/7 Guest Communication Automation",
+    "Dynamic Pricing for Derry Events",
+    "Multi-Property Portfolio Dashboard", 
+    "Property Acquisition Pipeline Automation",
+    "Maintenance & Operations Streamlining"
+  ],
+  "seasonal_events": [
+    {
+      "event": "Foyle Maritime Festival",
+      "dates": "June 25-28, 2026",
+      "pricing_opportunity": "£85/night (vs £45 base)"
+    },
+    {
+      "event": "Derry Halloween",
+      "dates": "October 28-31, 2026", 
+      "pricing_opportunity": "£95/night (vs £45 base)"
+    }
+  ],
+  "target_metrics": {
+    "occupancy_rate": "91%",
+    "response_automation": "87%",
+    "roi_timeline": "6-8 weeks payback"
+  },
+  "contact": {
+    "name": "Phil Patterson",
+    "company": "Blue Canvas AI",
+    "phone": "+447935217762",
+    "email": "contact@bluecanvas.ai",
+    "whatsapp": "https://wa.me/447935217762"
+  }
+}

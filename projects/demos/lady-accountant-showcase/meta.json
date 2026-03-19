@@ -1,0 +1,78 @@
+{
+  "client": {
+    "name": "Lisa McCloskey",
+    "business": "LMC Chartered Accountants",
+    "brand": "The Lady Accountant",
+    "location": "Magherafelt, Northern Ireland",
+    "founded": "2021",
+    "website_primary": "https://www.lmcaccountancy.com",
+    "website_brand": "https://www.theladyaccountant.com",
+    "instagram": "@theladyaccountant (14K followers)",
+    "reviews": "70+ 5-star Google reviews"
+  },
+  "showcase": {
+    "title": "AI Transformation for The Lady Accountant",
+    "url": "https://albiemorgan88-hash.github.io/showcase-lady-accountant/",
+    "slides": 8,
+    "focus": "Chartered accountancy AI automation",
+    "file_size": "32.8KB",
+    "mobile_optimized": true,
+    "features": [
+      "Touch/swipe navigation",
+      "Keyboard controls",
+      "Progress animations",
+      "Interactive chat demo",
+      "ROI calculator",
+      "Contact CTAs"
+    ]
+  },
+  "seo_audit": {
+    "current_score": 72,
+    "projected_score": 89,
+    "improvement": 17,
+    "key_issues": [
+      "Missing meta descriptions",
+      "No schema markup",
+      "Limited local SEO",
+      "Basic technical optimization"
+    ],
+    "strengths": [
+      "Strong review base",
+      "Mobile responsive", 
+      "SSL enabled",
+      "Good content depth"
+    ]
+  },
+  "ai_opportunities": {
+    "primary_focus": [
+      "24/7 client communication",
+      "Document processing automation",
+      "Tax deadline management",
+      "Client onboarding streamlining",
+      "Personal brand amplification"
+    ],
+    "roi_metrics": {
+      "time_saved_weekly": "15 hours",
+      "capacity_increase": "30%",
+      "annual_value": "£22,400",
+      "roi_percentage": "380%",
+      "payback_period": "3-4 months"
+    }
+  },
+  "industry_context": {
+    "ai_adoption": "High willingness, skills gap exists",
+    "peak_season": "Tax deadline pressure, query overwhelm",
+    "competitive_advantage": "Already digital-first, strong personal brand",
+    "target_market": "UK sole traders, limited companies"
+  },
+  "next_steps": {
+    "contact_method": "WhatsApp preferred",
+    "phone": "+44 7935 217762",
+    "email": "contact@bluecanvas.ai",
+    "consultation": "Free 15-min assessment",
+    "implementation": "Phased approach, no disruption"
+  },
+  "created": "2026-03-19",
+  "created_by": "Blue Canvas AI - Albie",
+  "project_status": "Complete - Ready for delivery"
+}

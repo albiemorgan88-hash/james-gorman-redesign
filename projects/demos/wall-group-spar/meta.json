@@ -1,0 +1,174 @@
+{
+  "project": {
+    "name": "Wall Group Social Media Automation Showcase",
+    "client": "Wall Group",
+    "contact": "Gavan Wall",
+    "industry": "Convenience Stores",
+    "created": "2026-03-19T20:25:00Z",
+    "updated": "2026-03-19T20:25:00Z",
+    "url": "https://albiemorgan88-hash.github.io/showcase-wall-group-spar/"
+  },
+  "business_profile": {
+    "company": "Wall Group",
+    "website": "https://wallgroup.co.uk",
+    "locations": 8,
+    "store_types": ["SPAR", "EUROSPAR"],
+    "employees": "250+",
+    "customers_annual": "5+ million",
+    "flagship": "Flax EUROSPAR, 60 Ardoyne Avenue, Belfast BT14 7DA",
+    "established": "November 2008",
+    "recent_investment": "£4M into Flax EUROSPAR (November 2024)"
+  },
+  "real_problems_from_whatsapp": {
+    "social_media_burden": "Manual Facebook & TikTok posting across 8 stores consuming hours weekly",
+    "failed_marketing_hire": "Marketing manager hire didn't work out - back to doing it himself",
+    "crap_website": "Gavan's own words - BaseKit website from 2015 needs complete transformation",
+    "time_drain": "Gavan spending time on marketing instead of business operations",
+    "multi_store_coordination": "Difficult to maintain consistent messaging across 8 locations"
+  },
+  "ai_solution_focus": {
+    "social_media_automation": [
+      "AI creates Facebook posts about daily specials",
+      "TikTok content scripts and posting schedules",
+      "Community event promotion automation",
+      "Multi-store coordination without manual work"
+    ],
+    "marketing_manager_replacement": [
+      "AI handles promotional campaigns",
+      "Community engagement automation", 
+      "Content creation for all platforms",
+      "No sick days, holidays, or turnover"
+    ],
+    "website_transformation": [
+      "Modern mobile-first design",
+      "Store locator and opening hours",
+      "FeedMe deli integration",
+      "Professional appearance vs current 'crap' site"
+    ],
+    "industry_specific_content": [
+      "Daily SPAR specials automation",
+      "FeedMe deli post creation",
+      "Flax EUROSPAR brand content",
+      "Local Belfast community engagement"
+    ]
+  },
+  "time_and_cost_savings": {
+    "weekly_time_saved": "15 hours on social media management",
+    "marketing_manager_salary_avoided": "£25,000/year + recruitment costs",
+    "stores_managed_automatically": 8,
+    "ai_availability": "24/7 with no breaks",
+    "family_time_recovered": "Focus on business growth instead of posting"
+  },
+  "showcase_rebuild": {
+    "old_focus_removed": [
+      "SEO audit score emphasis (18/100)",
+      "Technical optimization details", 
+      "Search ranking focus",
+      "Google search results comparisons"
+    ],
+    "new_focus_added": [
+      "Social media posting burden visualization",
+      "Failed marketing hire cost illustration",
+      "Facebook post creation demo",
+      "TikTok content planning system",
+      "Website before/after comparison",
+      "Marketing campaign automation",
+      "Time savings and lifestyle benefits"
+    ],
+    "slide_structure_new": [
+      "Hook: Never worry about social media again",
+      "Current problems: Time drain + failed hire + crap website",
+      "Social Media Demo: AI creating Facebook posts automatically", 
+      "TikTok Automation: Content ideas, scripts, posting schedule",
+      "Website Before/After: Current disaster vs modern mobile design",
+      "Marketing Campaigns: AI running promotions without hiring anyone",
+      "Time Savings: What Gavan gets back (family time, business growth)",
+      "CTA: Replace your marketing headaches with AI"
+    ]
+  },
+  "roi_projections_updated": {
+    "marketing_manager_replacement": "£25,000/year saved",
+    "weekly_time_savings": "15 hours per week",
+    "monthly_value_of_time": "£1,500 (at £25/hour owner time)",
+    "annual_time_value": "£18,000",
+    "total_annual_savings": "£43,000 (salary + time)",
+    "ai_implementation_cost": "£3,000-5,000",
+    "payback_period": "1-2 months",
+    "stores_scaled_automatically": 8
+  },
+  "content_focus_belfast": {
+    "local_content": [
+      "Belfast community events promotion",
+      "Ardoyne area specific content",
+      "North Belfast customer engagement",
+      "Local football/GAA tie-ins"
+    ],
+    "spar_brand_integration": [
+      "Daily SPAR specials highlighting",
+      "EUROSPAR premium positioning",
+      "FeedMe deli promotional content",
+      "Post Office services promotion"
+    ],
+    "customer_journey": [
+      "Morning breakfast bap posts",
+      "Lunch time FeedMe deli content",
+      "Evening convenience shopping",
+      "Weekend family shopping"
+    ]
+  },
+  "competitive_advantage": {
+    "vs_manual_posting": "Consistent, professional content vs sporadic amateur posts",
+    "vs_marketing_hires": "No turnover, sick days, or performance issues", 
+    "vs_competitors": "First convenience chain with full social automation",
+    "scaling_factor": "8 stores managed with effort of 1"
+  },
+  "implementation": {
+    "pilot_approach": "Start with Flax EUROSPAR flagship location",
+    "rollout_timeline": "1 store per week deployment",
+    "content_customization": "Each store gets location-specific content",
+    "monitoring_system": "AI performance tracking and optimization"
+  },
+  "showcase_details": {
+    "slides": 8,
+    "key_messages": [
+      "Hook: Never worry about social media again",
+      "Problem identification: Time drain + failed hire",
+      "Facebook automation demo with live preview", 
+      "TikTok content planning and scheduling",
+      "Website transformation before/after",
+      "AI marketing campaign management",
+      "Time and cost savings visualization",
+      "CTA: Replace marketing headaches with AI"
+    ],
+    "animations": [
+      "Facebook post generation with AI badge",
+      "Website comparison slider",
+      "Time savings counter animations"
+    ],
+    "industry_adaptations": [
+      "Convenience store daily operations focus",
+      "Belfast community terminology",
+      "SPAR/EUROSPAR brand colors and messaging",
+      "Multi-location management emphasis"
+    ]
+  },
+  "files_updated": [
+    "showcase.html - completely rebuilt with social media focus",
+    "pitch.md - rewritten for social media automation angle",
+    "meta.json - updated to reflect new strategy"
+  ],
+  "github_deployment": {
+    "repo": "https://github.com/albiemorgan88-hash/showcase-wall-group-spar",
+    "live_url": "https://albiemorgan88-hash.github.io/showcase-wall-group-spar/",
+    "mobile_optimized": true,
+    "file_size": "18.8KB",
+    "load_time": "<2 seconds"
+  },
+  "next_actions": [
+    "Deploy updated showcase to GitHub Pages",
+    "Send new WhatsApp pitch focused on social media pain",
+    "Follow up with failed marketing hire angle", 
+    "Position as replacement for manual posting burden",
+    "Emphasize time savings and family life benefits"
+  ]
+}
