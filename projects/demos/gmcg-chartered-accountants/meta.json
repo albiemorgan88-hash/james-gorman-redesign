@@ -1,0 +1,33 @@
+{
+  "business_name": "GMcG Chartered Accountants",
+  "slug": "gmcg-chartered-accountants",
+  "url": "https://gmcgca.com",
+  "contact_name": "Tony Neill",
+  "contact_title": "Managing Partner",
+  "showcase_url": "https://albiemorgan88-hash.github.io/showcase-gmcg-chartered-accountants/",
+  "created_date": "2026-03-19T22:11:00Z",
+  "seo_score": {
+    "current": 42,
+    "projected": 77,
+    "category": "Significant Issues"
+  },
+  "key_issues": [
+    "No Google Business Profiles for 3 locations",
+    "Basic title tags missing location targeting", 
+    "No structured data for LocalBusiness",
+    "Meta descriptions too long, not compelling",
+    "Limited local SEO strategy"
+  ],
+  "business_details": {
+    "staff": "100+",
+    "locations": ["Belfast", "Lisburn", "Portadown"],
+    "founded": "1991",
+    "specialties": ["Corporate Finance", "Audit", "Tax", "Business Advisory"]
+  },
+  "roi_estimates": {
+    "lead_increase": "+40%",
+    "avg_client_value": "£12,000",
+    "monthly_investment": "£2,500",
+    "payback_weeks": "6-8"
+  }
+}

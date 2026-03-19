@@ -46,51 +46,166 @@
     </div>
 
     <script>
-        // Get email parameter from URL (support both 'email' and 'ref')
-        const urlParams = new URLSearchParams(window.location.search);
-        const email = urlParams.get('email') || urlParams.get('ref');
-
-        // Email to showcase mapping
-        const showcaseMap = {
-            'paul.foley@efmccambridge.co.uk': 'https://albiemorgan88-hash.github.io/efmccambridge-audit/',
-            'christine.whiteman@efmccambridge.co.uk': 'https://albiemorgan88-hash.github.io/efmccambridge-audit/',
-            'nathan@mjkane.co.uk': 'https://albiemorgan88-hash.github.io/mjkane-opportunities/',
-            'info@mclaughlinandco.net': 'https://albiemorgan88-hash.github.io/mclaughlin-seo-analysis/',
-            'derry@mooreni.co.uk': 'https://albiemorgan88-hash.github.io/mooreni-growth-analysis/',
-            'info@claremount.net': 'https://albiemorgan88-hash.github.io/claremount-digital-audit/'
+        // Company slug to showcase mapping
+        const companyToShowcase = {
+            'mcaleerjackson': 'https://albiemorgan88-hash.github.io/mcaleerjackson-audit/',
+            'pgm': 'https://albiemorgan88-hash.github.io/pgm-opportunities/',
+            'mci': 'https://albiemorgan88-hash.github.io/mci-audit/',
+            'dnt': 'https://albiemorgan88-hash.github.io/dnt-growth-analysis/',
+            'kps': 'https://albiemorgan88-hash.github.io/kps-seo-analysis/',
+            'claremount': 'https://albiemorgan88-hash.github.io/claremount-digital-audit/',
+            'asmchartered': 'https://albiemorgan88-hash.github.io/asm-opportunities/',
+            'gmcg': 'https://albiemorgan88-hash.github.io/gmcg-audit/',
+            'mts': 'https://albiemorgan88-hash.github.io/mts-growth-analysis/',
+            'johnstonkennedy': 'https://albiemorgan88-hash.github.io/johnstonkennedy-audit/',
+            'scc': 'https://albiemorgan88-hash.github.io/scc-seo-analysis/',
+            'dalypark': 'https://albiemorgan88-hash.github.io/dalypark-opportunities/',
+            'farrellfarrell': 'https://albiemorgan88-hash.github.io/farrellfarrell-audit/',
+            'marshallco': 'https://albiemorgan88-hash.github.io/marshallco-digital-audit/',
+            'aubreycampbell': 'https://albiemorgan88-hash.github.io/aubreycampbell-audit/',
+            'corrrcorr': 'https://albiemorgan88-hash.github.io/corr-opportunities/',
+            'muldoon': 'https://albiemorgan88-hash.github.io/muldoon-seo-analysis/',
+            'fitzpatrickkearney': 'https://albiemorgan88-hash.github.io/fitzpatrickkearney-audit/',
+            'hm': 'https://albiemorgan88-hash.github.io/hm-growth-analysis/',
+            'finegangibson': 'https://albiemorgan88-hash.github.io/finegangibson-audit/',
+            // Existing mappings for backward compatibility
+            'efmccambridge': 'https://albiemorgan88-hash.github.io/efmccambridge-audit/',
+            'mjkane': 'https://albiemorgan88-hash.github.io/mjkane-opportunities/',
+            'mclaughlinco': 'https://albiemorgan88-hash.github.io/mclaughlin-seo-analysis/',
+            'mooreni': 'https://albiemorgan88-hash.github.io/mooreni-growth-analysis/'
         };
 
-        // Default showcase for unknown emails
+        // Email to company slug mapping (for backward compatibility)
+        const emailToCompany = {
+            // Existing mappings
+            'paul.foley@efmccambridge.co.uk': 'efmccambridge',
+            'christine.whiteman@efmccambridge.co.uk': 'efmccambridge',
+            'nathan@mjkane.co.uk': 'mjkane',
+            'info@mclaughlinandco.net': 'mclaughlinco',
+            'derry@mooreni.co.uk': 'mooreni',
+            'info@claremount.net': 'claremount',
+            // New Apollo contacts
+            'oonagh.arg@mcaleerjackson.co.uk': 'mcaleerjackson',
+            'tanya.gin@pgm.co.uk': 'pgm',
+            'patrick.gar@mci.co.uk': 'mci',
+            'mike.nae@dnt.co.uk': 'dnt',
+            'kyran.smh@kps.co.uk': 'kps',
+            'shaun.mcy@claremount.co.uk': 'claremount',
+            'ian.fin@asm.co.uk': 'asmchartered',
+            'michael.gin@gmcg.co.uk': 'gmcg',
+            'alistair.coe@asm.co.uk': 'asmchartered',
+            'grainne.qun@asm.co.uk': 'asmchartered',
+            'paul.mcy@pgm.co.uk': 'pgm',
+            'mark.mcl@asm.co.uk': 'asmchartered',
+            'anna.has@dnt.co.uk': 'dnt',
+            'angela.mcl@asm.co.uk': 'asmchartered',
+            'grainne.mce@mts.co.uk': 'mts',
+            'paula.arg@mts.co.uk': 'mts',
+            'michael.win@asm.co.uk': 'asmchartered',
+            'peter.key@mts.co.uk': 'mts',
+            'richard.whn@asm.co.uk': 'asmchartered',
+            'james.swl@johnstonkennedydfktaxadvisors.co.uk': 'johnstonkennedy',
+            'tony.nil@gmcg.co.uk': 'gmcg',
+            'alison.bue@mcaleerjackson.co.uk': 'mcaleerjackson',
+            'annette.muy@scc-.co.uk': 'scc',
+            'richard.mcy@mts.co.uk': 'mts',
+            'johnny.abt@dalypark.co.uk': 'dalypark',
+            'clare.moh@claremount.co.uk': 'claremount',
+            'stephen.hon@gmcg.co.uk': 'gmcg',
+            'james.gae@johnstonkennedydfktaxadvisors.co.uk': 'johnstonkennedy',
+            'graeme.das@gmcg.co.uk': 'gmcg',
+            'susan.dup@gmcg.co.uk': 'gmcg',
+            'paul.blk@gmcg.co.uk': 'gmcg',
+            'david.jon@johnstonkennedydfktaxadvisors.co.uk': 'johnstonkennedy',
+            'jayme.fal@farrellfarrell.co.uk': 'farrellfarrell',
+            'gillian.jon@gmcg.co.uk': 'gmcg',
+            'jennifer.chs@gmcg.co.uk': 'gmcg',
+            'lisa.coy@gmcg.co.uk': 'gmcg',
+            'john.mae@aubreycampbellmpany.co.uk': 'aubreycampbell',
+            'brian.mce@pgm.co.uk': 'pgm',
+            'james.mae@aubreycampbellmpany.co.uk': 'aubreycampbell',
+            'maria.evs@dalypark.co.uk': 'dalypark',
+            'niamh.cor@rrrr.co.uk': 'corrrcorr',
+            'robbie.bar@muldoon.co.uk': 'muldoon',
+            'elaine.fal@farrellfarrell.co.uk': 'farrellfarrell',
+            'raymond.tiy@muldoon.co.uk': 'muldoon',
+            'brian.det@fitzpatrickkearneyltd.co.uk': 'fitzpatrickkearney',
+            'brendan.cor@rrrr.co.uk': 'corrrcorr',
+            'paul.cor@rrrr.co.uk': 'corrrcorr',
+            'clare.mcn@hm.co.uk': 'hm',
+            'paul.don@finegangibsonltd.co.uk': 'finegangibson'
+        };
+
+        // Get parameters from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const pathname = window.location.pathname;
+        
+        // Check if we have a company slug in the path (e.g., /mcaleerjackson)
+        const pathSlug = pathname.substring(1); // Remove leading slash
+        
+        // Get email parameter (support both 'email' and 'ref')
+        const email = urlParams.get('email') || urlParams.get('ref');
+        
+        // Default showcase for unknown entries
         const defaultShowcase = 'https://albiemorgan88-hash.github.io/efmccambridge-audit/';
+
+        function getShowcaseUrl() {
+            // Priority 1: Company slug in path
+            if (pathSlug && companyToShowcase[pathSlug.toLowerCase()]) {
+                return companyToShowcase[pathSlug.toLowerCase()];
+            }
+            
+            // Priority 2: Email parameter mapping
+            if (email && emailToCompany[email.toLowerCase()]) {
+                const companySlug = emailToCompany[email.toLowerCase()];
+                return companyToShowcase[companySlug];
+            }
+            
+            // Priority 3: Default showcase
+            return defaultShowcase;
+        }
+
+        // Analytics tracking
+        function trackAccess(method, identifier) {
+            try {
+                const data = {
+                    method: method, // 'slug' or 'email'
+                    identifier: identifier,
+                    timestamp: new Date().toISOString(),
+                    userAgent: navigator.userAgent,
+                    referrer: document.referrer
+                };
+                
+                // Send to analytics endpoint (silent fail)
+                fetch('https://api.github.com/repos/albiemorgan88-hash/showcase-analytics/issues', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        title: `Showcase Access: ${method}`,
+                        body: JSON.stringify(data, null, 2)
+                    })
+                }).catch(() => {}); // Silent fail
+            } catch (e) {
+                // Silent fail for analytics
+            }
+        }
 
         // Redirect logic
         setTimeout(() => {
-            if (email && showcaseMap[email.toLowerCase()]) {
-                window.location.href = showcaseMap[email.toLowerCase()];
-            } else if (email) {
-                // Log unknown email for analysis
-                console.log('Unknown email:', email);
-                window.location.href = defaultShowcase;
+            const showcaseUrl = getShowcaseUrl();
+            
+            // Track the access method
+            if (pathSlug && companyToShowcase[pathSlug.toLowerCase()]) {
+                trackAccess('slug', pathSlug);
+            } else if (email && emailToCompany[email.toLowerCase()]) {
+                trackAccess('email', email);
             } else {
-                // No email parameter, redirect to default
-                window.location.href = defaultShowcase;
+                trackAccess('default', email || pathSlug || 'unknown');
             }
+            
+            // Redirect to the showcase
+            window.location.href = showcaseUrl;
         }, 1500); // 1.5 second delay for branding
-
-        // Analytics tracking (optional)
-        if (email) {
-            // Track which emails are accessing showcases
-            fetch('https://api.github.com/repos/albiemorgan88-hash/showcase-analytics/issues', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    title: `Showcase Access: ${email}`,
-                    body: `Email: ${email}\nTimestamp: ${new Date().toISOString()}\nShowcase: ${showcaseMap[email.toLowerCase()] || 'default'}`
-                })
-            }).catch(() => {}); // Silent fail for analytics
-        }
     </script>
 </body>
 </html>

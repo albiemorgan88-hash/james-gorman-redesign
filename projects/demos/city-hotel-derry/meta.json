@@ -1,0 +1,32 @@
+{
+  "business_name": "City Hotel Derry",
+  "contact_name": "Conor Friel", 
+  "contact_role": "General Manager",
+  "website": "https://www.cityhotelderry.com/",
+  "industry": "Hospitality - 4 Star Hotel",
+  "location": "Derry/Londonderry, Northern Ireland",
+  "showcase_url": "https://albiemorgan88-hash.github.io/showcase-city-hotel-derry/",
+  "github_repo": "https://github.com/albiemorgan88-hash/showcase-city-hotel-derry",
+  "created_date": "2026-03-19",
+  "seo_score": {
+    "before": 40,
+    "after": 85,
+    "improvement": 45
+  },
+  "key_issues": [
+    "45% booking abandonment rate",
+    "Mobile experience problems",
+    "Search visibility gaps",
+    "No booking recovery system",
+    "Slow loading speeds"
+  ],
+  "value_proposition": "AI-powered direct booking optimization and revenue maximization for 158-room hotel",
+  "estimated_annual_value": "£180,000",
+  "monthly_cost": "£3,200", 
+  "roi_percentage": 468,
+  "room_inventory": 158,
+  "target_improvement": "25% more direct bookings",
+  "file_size_bytes": 15693,
+  "mobile_optimized": true,
+  "blue_canvas_branding": true
+}
