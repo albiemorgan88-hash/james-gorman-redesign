@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moore NI - Growth Analysis</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box }
+        body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:#f8f9fa; overflow:hidden; height:100vh; color:#1a1a2e }
+        
+        .slide { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:40px 24px; opacity:0; transform:translateX(100%); transition:all .5s ease; pointer-events:none }
+        .slide.active { opacity:1; transform:translateX(0); pointer-events:auto }
+        .slide.prev { opacity:0; transform:translateX(-100%) }
+        
+        .progress { position:fixed; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:8px; z-index:100 }
+        .dot { width:8px; height:8px; border-radius:50%; background:rgba(0,0,0,.2); transition:all .3s; cursor:pointer }
+        .dot.active { background:#2B4DAF; width:24px }
+        
+        h1 { font-size:2.2rem; font-weight:700; margin-bottom:16px; text-align:center; color:#2B4DAF }
+        h2 { font-size:1.5rem; font-weight:600; margin-bottom:12px; text-align:center }
+        h3 { font-size:1.2rem; font-weight:600; margin-bottom:8px }
+        p { font-size:1.1rem; line-height:1.6; margin-bottom:16px; text-align:center; max-width:400px }
+        
+        .score-ring { stroke:#ff8c00; stroke-dashoffset:120; transition:stroke-dashoffset 2s ease-in-out }
+        .score-num { font-size:28px; font-weight:700; fill:#1a1a2e }
+        
+        .search-result { background:#fff; border-radius:12px; padding:16px; text-align:left; margin:16px 0; box-shadow:0 2px 8px rgba(0,0,0,0.1) }
+        .result-url { font-size:12px; color:#202124 }
+        .result-title { font-size:18px; color:#1a0dab; margin:4px 0; font-weight:500 }
+        .result-desc { font-size:13px; color:#4d5156; line-height:1.4 }
+        
+        .chat-container { width:100%; max-width:350px; background:#fff; border-radius:16px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1) }
+        .chat-msg { margin:8px 0; opacity:0; transform:translateY(10px); animation:chatIn .4s ease forwards }
+        .user-msg { background:#2B4DAF; color:white; padding:8px 12px; border-radius:12px; margin-left:40px; text-align:left }
+        .bot-msg { background:#f1f1f1; padding:8px 12px; border-radius:12px; margin-right:40px; text-align:left }
+        
+        @keyframes chatIn { to { opacity:1; transform:translateY(0) } }
+        
+        .btn-primary { background:#2B4DAF; color:white; padding:12px 24px; border:none; border-radius:8px; font-size:1.1rem; margin:8px; cursor:pointer; text-decoration:none; display:inline-block }
+        .btn-secondary { background:transparent; color:#2B4DAF; border:2px solid #2B4DAF; padding:10px 22px; border-radius:8px; font-size:1.1rem; margin:8px; cursor:pointer; text-decoration:none; display:inline-block }
+        
+        .stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:20px 0 }
+        .stat-card { background:white; padding:16px; border-radius:12px; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.05) }
+        .stat-number { font-size:2rem; font-weight:700; color:#FF4520 }
+        .stat-label { font-size:0.9rem; color:#666; margin-top:4px }
+        
+        .scanning { width:300px; height:6px; background:#e0e0e0; border-radius:3px; overflow:hidden; margin:20px 0 }
+        .scan-bar { width:0; height:100%; background:linear-gradient(90deg,#2B4DAF,#FF4520); border-radius:3px; animation:scan 3s ease-in-out }
+        @keyframes scan { to { width:100% } }
+        
+        .logo { font-size:1.5rem; font-weight:700; color:#2B4DAF; margin-bottom:8px }
+        
+        .improvement-badge { background:#28a745; color:white; padding:4px 8px; border-radius:16px; font-size:0.8rem; display:inline-block; margin-left:8px }
+        
+        .credentials { background:#fff; padding:16px; border-radius:12px; margin:16px 0; border-left:4px solid #2B4DAF; text-align:left; max-width:350px }
+        .credential-stat { font-size:1.5rem; font-weight:700; color:#2B4DAF; margin-right:8px }
+        
+        .premium-badge { background:linear-gradient(45deg,#2B4DAF,#FF4520); color:white; padding:6px 12px; border-radius:20px; font-size:0.8rem; font-weight:600; display:inline-block; margin:8px 0 }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Hook -->
+    <div class="slide active">
+        <div class="logo">🔧 Blue Canvas AI</div>
+        <h1>You're the biggest—time to show it</h1>
+        <p><strong>Moore NI</strong> has the scale to dominate Derry's accountancy market, but your digital presence isn't leveraging your size advantage.</p>
+        <div style="margin-top:40px; font-size:0.9rem; color:#666">Tap to see the untapped potential →</div>
+    </div>
+
+    <!-- Slide 2: Scan -->
+    <div class="slide">
+        <h2>Analysing Market Position</h2>
+        <div style="margin:40px 0">
+            <div class="scanning">
+                <div class="scan-bar"></div>
+            </div>
+        </div>
+        <p>Evaluating digital presence vs. actual market position, competitive positioning, and scale advantages...</p>
+    </div>
+
+    <!-- Slide 3: Issues -->
+    <div class="slide">
+        <h2>Digital Performance vs Scale</h2>
+        <div class="credentials">
+            <div><span class="credential-stat">7</span>Partners</div>
+            <div><span class="credential-stat">100</span>Staff Members</div>
+            <div><span class="credential-stat">#1</span>Largest Independent Firm in NI</div>
+        </div>
+        <svg width="120" height="120" viewBox="0 0 120 120" style="margin:20px">
+            <circle cx="60" cy="60" r="40" fill="none" stroke="#eee" stroke-width="8"/>
+            <circle class="score-ring" cx="60" cy="60" r="40" fill="none" stroke="#ff8c00" 
+                stroke-width="8" stroke-linecap="round" stroke-dasharray="251" 
+                stroke-dashoffset="120" transform="rotate(-90 60 60)"/>
+            <text x="60" y="65" text-anchor="middle" class="score-num">52</text>
+        </svg>
+        <h3 style="color:#ff8c00">Scale Not Reflected Online</h3>
+        <p>Your Derry presence feels like a small local firm, not NI's largest independent accountancy practice.</p>
+    </div>
+
+    <!-- Slide 4: After -->
+    <div class="slide">
+        <h2>Premium Positioning Strategy</h2>
+        <div class="premium-badge">LARGEST IN NORTHERN IRELAND</div>
+        <div class="search-result">
+            <div class="result-url">moore.co.uk › derry › chartered-accountants</div>
+            <div class="result-title">Moore NI Derry | Largest Independent Accountants in NI | 7 Partners</div>
+            <div class="result-desc">100+ staff. Global Moore network. Premium accountancy for serious businesses in Derry. Enterprise-grade solutions. Call today. ⭐⭐⭐⭐⭐</div>
+        </div>
+        <div style="margin-top:20px">
+            <div style="font-size:1.2rem; color:#2B4DAF; font-weight:600">Premium Score: 85/100 <span class="improvement-badge">+33 points</span></div>
+            <div style="font-size:0.9rem; color:#666">Position as the premium choice in Derry</div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Google Ads -->
+    <div class="slide">
+        <h2>Premium Market Capture</h2>
+        <div class="search-result" style="border-left:4px solid #2B4DAF">
+            <div style="font-size:11px; color:#2B4DAF; font-weight:600">Ad</div>
+            <div class="result-title">Enterprise Accounting Derry | Moore NI | 100+ Staff</div>
+            <div class="result-desc">NI's largest independent firm. Global network. 7 partners serving serious businesses. Premium service.</div>
+            <div style="font-size:12px; color:#202124; margin-top:4px">moore.co.uk/derry-enterprise-accounting</div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">£6.50</div>
+                <div class="stat-label">Premium CPC</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">750</div>
+                <div class="stat-label">High-value searches</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: AI Assistant -->
+    <div class="slide">
+        <h2>Enterprise-Grade Client Experience</h2>
+        <div class="chat-container">
+            <div class="chat-msg user-msg" style="animation-delay:0.5s">I need accountants for a complex group restructure</div>
+            <div class="chat-msg bot-msg" style="animation-delay:1.3s">Perfect fit for Moore NI! We're Northern Ireland's largest independent firm with 7 partners specializing in complex corporate work. Part of the global Moore network.</div>
+            <div class="chat-msg user-msg" style="animation-delay:2.1s">Do you have the resources for large projects?</div>
+            <div class="chat-msg bot-msg" style="animation-delay:2.9s">Absolutely. 100+ staff across Belfast, Coleraine, and Derry. I'll connect you with our senior partner who handles enterprise clients. When can you meet?</div>
+        </div>
+    </div>
+
+    <!-- Slide 7: ROI -->
+    <div class="slide">
+        <h2>Premium Market Revenue</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">£3,500</div>
+                <div class="stat-label">Monthly investment</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2.8x</div>
+                <div class="stat-label">Premium ROI</div>
+            </div>
+        </div>
+        <div class="stats-grid" style="margin-top:20px">
+            <div class="stat-card">
+                <div class="stat-number">12</div>
+                <div class="stat-label">Premium leads/month</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">£8,200</div>
+                <div class="stat-label">Avg client value</div>
+            </div>
+        </div>
+        <p style="font-size:1rem">Focus on high-value clients who need your scale</p>
+    </div>
+
+    <!-- Slide 8: CTA -->
+    <div class="slide">
+        <div class="logo" style="margin-bottom:20px">🔧 Blue Canvas AI</div>
+        <h2>Claim Your Market Position</h2>
+        <p>Let's position Moore NI Derry as the premium choice it should be.</p>
+        <div style="margin-top:30px">
+            <a href="tel:+447935217762" class="btn-primary">Call: 07935 217762</a>
+            <a href="https://wa.me/447935217762" class="btn-secondary">WhatsApp</a>
+        </div>
+        <div style="margin-top:20px; font-size:0.9rem; color:#666">
+            PJ Patterson<br>
+            Blue Canvas AI<br>
+            contact@bluecanvas.ai
+        </div>
+    </div>
+
+    <div class="progress">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+        <span class="dot" onclick="goToSlide(4)"></span>
+        <span class="dot" onclick="goToSlide(5)"></span>
+        <span class="dot" onclick="goToSlide(6)"></span>
+        <span class="dot" onclick="goToSlide(7)"></span>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const scoreRing = document.querySelector('.score-ring');
+        
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            slides[currentSlide].classList.add('prev');
+            dots[currentSlide].classList.remove('active');
+            
+            currentSlide = (n + slides.length) % slides.length;
+            
+            slides.forEach(slide => {
+                slide.classList.remove('active', 'prev');
+            });
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+            
+            // Animate score ring on slide 3 (52% = 120 offset)
+            if (currentSlide === 2) {
+                setTimeout(() => {
+                    scoreRing.style.strokeDashoffset = '120'; // 52% of 251
+                }, 300);
+            }
+            
+            // Trigger chat animations on slide 6
+            if (currentSlide === 5) {
+                const chatMsgs = slides[5].querySelectorAll('.chat-msg');
+                chatMsgs.forEach(msg => {
+                    msg.style.animation = 'none';
+                    msg.offsetHeight; // Trigger reflow
+                    msg.style.animation = null;
+                });
+            }
+        }
+        
+        function nextSlide() { showSlide(currentSlide + 1) }
+        function prevSlide() { showSlide(currentSlide - 1) }
+        function goToSlide(n) { showSlide(n) }
+        
+        // Touch/click navigation
+        document.addEventListener('click', e => {
+            if (e.target.closest('.btn-primary, .btn-secondary, .dot')) return;
+            if (e.clientX > window.innerWidth * 0.65) nextSlide();
+            else if (e.clientX < window.innerWidth * 0.35) prevSlide();
+        });
+        
+        // Swipe navigation
+        let touchStartX = 0;
+        document.addEventListener('touchstart', e => touchStartX = e.touches[0].clientX);
+        document.addEventListener('touchend', e => {
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) diff > 0 ? nextSlide() : prevSlide();
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+        
+        // Auto-advance from slide 2
+        setTimeout(() => {
+            if (currentSlide === 1) nextSlide();
+        }, 3500);
+    </script>
+</body>
+</html>

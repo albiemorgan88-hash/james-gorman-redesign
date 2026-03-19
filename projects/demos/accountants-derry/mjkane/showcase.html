@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Kane - Growth Opportunities Analysis</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box }
+        body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:#f8f9fa; overflow:hidden; height:100vh; color:#1a1a2e }
+        
+        .slide { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:40px 24px; opacity:0; transform:translateX(100%); transition:all .5s ease; pointer-events:none }
+        .slide.active { opacity:1; transform:translateX(0); pointer-events:auto }
+        .slide.prev { opacity:0; transform:translateX(-100%) }
+        
+        .progress { position:fixed; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:8px; z-index:100 }
+        .dot { width:8px; height:8px; border-radius:50%; background:rgba(0,0,0,.2); transition:all .3s; cursor:pointer }
+        .dot.active { background:#2B4DAF; width:24px }
+        
+        h1 { font-size:2.2rem; font-weight:700; margin-bottom:16px; text-align:center; color:#2B4DAF }
+        h2 { font-size:1.5rem; font-weight:600; margin-bottom:12px; text-align:center }
+        h3 { font-size:1.2rem; font-weight:600; margin-bottom:8px }
+        p { font-size:1.1rem; line-height:1.6; margin-bottom:16px; text-align:center; max-width:400px }
+        
+        .score-ring { stroke:#ff8c00; stroke-dashoffset:125; transition:stroke-dashoffset 2s ease-in-out }
+        .score-num { font-size:28px; font-weight:700; fill:#1a1a2e }
+        
+        .search-result { background:#fff; border-radius:12px; padding:16px; text-align:left; margin:16px 0; box-shadow:0 2px 8px rgba(0,0,0,0.1) }
+        .result-url { font-size:12px; color:#202124 }
+        .result-title { font-size:18px; color:#1a0dab; margin:4px 0; font-weight:500 }
+        .result-desc { font-size:13px; color:#4d5156; line-height:1.4 }
+        
+        .chat-container { width:100%; max-width:350px; background:#fff; border-radius:16px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1) }
+        .chat-msg { margin:8px 0; opacity:0; transform:translateY(10px); animation:chatIn .4s ease forwards }
+        .user-msg { background:#2B4DAF; color:white; padding:8px 12px; border-radius:12px; margin-left:40px; text-align:left }
+        .bot-msg { background:#f1f1f1; padding:8px 12px; border-radius:12px; margin-right:40px; text-align:left }
+        
+        @keyframes chatIn { to { opacity:1; transform:translateY(0) } }
+        
+        .btn-primary { background:#2B4DAF; color:white; padding:12px 24px; border:none; border-radius:8px; font-size:1.1rem; margin:8px; cursor:pointer; text-decoration:none; display:inline-block }
+        .btn-secondary { background:transparent; color:#2B4DAF; border:2px solid #2B4DAF; padding:10px 22px; border-radius:8px; font-size:1.1rem; margin:8px; cursor:pointer; text-decoration:none; display:inline-block }
+        
+        .stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:20px 0 }
+        .stat-card { background:white; padding:16px; border-radius:12px; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.05) }
+        .stat-number { font-size:2rem; font-weight:700; color:#FF4520 }
+        .stat-label { font-size:0.9rem; color:#666; margin-top:4px }
+        
+        .scanning { width:300px; height:6px; background:#e0e0e0; border-radius:3px; overflow:hidden; margin:20px 0 }
+        .scan-bar { width:0; height:100%; background:linear-gradient(90deg,#2B4DAF,#FF4520); border-radius:3px; animation:scan 3s ease-in-out }
+        @keyframes scan { to { width:100% } }
+        
+        .logo { font-size:1.5rem; font-weight:700; color:#2B4DAF; margin-bottom:8px }
+        
+        .improvement-badge { background:#28a745; color:white; padding:4px 8px; border-radius:16px; font-size:0.8rem; display:inline-block; margin-left:8px }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Hook -->
+    <div class="slide active">
+        <div class="logo">🔧 Blue Canvas AI</div>
+        <h1>Ready to dominate Derry's accountancy market?</h1>
+        <p>We analysed <strong>MJ Kane's</strong> digital footprint and found untapped opportunities worth £50k+ in annual revenue.</p>
+        <div style="margin-top:40px; font-size:0.9rem; color:#666">Tap to continue →</div>
+    </div>
+
+    <!-- Slide 2: Scan -->
+    <div class="slide">
+        <h2>Scanning Your Digital Assets</h2>
+        <div style="margin:40px 0">
+            <div class="scanning">
+                <div class="scan-bar"></div>
+            </div>
+        </div>
+        <p>Analysing website performance, local search rankings, competitor gaps, and growth opportunities...</p>
+    </div>
+
+    <!-- Slide 3: Issues -->
+    <div class="slide">
+        <h2>Current SEO Performance</h2>
+        <svg width="120" height="120" viewBox="0 0 120 120" style="margin:20px">
+            <circle cx="60" cy="60" r="40" fill="none" stroke="#eee" stroke-width="8"/>
+            <circle class="score-ring" cx="60" cy="60" r="40" fill="none" stroke="#ff8c00" 
+                stroke-width="8" stroke-linecap="round" stroke-dasharray="251" 
+                stroke-dashoffset="125" transform="rotate(-90 60 60)"/>
+            <text x="60" y="65" text-anchor="middle" class="score-num">58</text>
+        </svg>
+        <h3 style="color:#ff8c00">Good Foundation, Big Opportunities</h3>
+        <p>Strong website but missing key local SEO elements. Your Derry presence could capture 3x more traffic.</p>
+    </div>
+
+    <!-- Slide 4: After -->
+    <div class="slide">
+        <h2>After Blue Canvas Enhancement</h2>
+        <div class="search-result">
+            <div class="result-url">mjkane.co.uk › accountants › derry</div>
+            <div class="result-title">Top Rated Accountants Derry | MJ Kane & Co | Free Consultation</div>
+            <div class="result-desc">Award-winning accountants in Derry. Nathan's team delivers expert tax advice & business growth strategies. 8,000+ satisfied clients. Book today. ⭐⭐⭐⭐⭐ (127 reviews)</div>
+        </div>
+        <div style="margin-top:20px">
+            <div style="font-size:1.2rem; color:#2B4DAF; font-weight:600">Optimized Score: 88/100 <span class="improvement-badge">+30 points</span></div>
+            <div style="font-size:0.9rem; color:#666">Top 3 ranking potential for "accountants Derry"</div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Google Ads -->
+    <div class="slide">
+        <h2>Paid Search Opportunities</h2>
+        <div class="search-result" style="border-left:4px solid #2B4DAF">
+            <div style="font-size:11px; color:#2B4DAF; font-weight:600">Ad</div>
+            <div class="result-title">Tax Planning Derry | MJ Kane Award Winners</div>
+            <div class="result-desc">Expert tax strategies for NI businesses. Nathan's team delivers results. Free consultation - book today!</div>
+            <div style="font-size:12px; color:#202124; margin-top:4px">mjkane.co.uk/derry-accountants</div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">£3.20</div>
+                <div class="stat-label">Cost per click</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">890</div>
+                <div class="stat-label">Monthly searches</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: AI Assistant -->
+    <div class="slide">
+        <h2>Smart Lead Capture System</h2>
+        <div class="chat-container">
+            <div class="chat-msg user-msg" style="animation-delay:0.5s">Hi, I need an accountant for my new business in Derry</div>
+            <div class="chat-msg bot-msg" style="animation-delay:1.3s">Perfect! MJ Kane specializes in business setup. What type of business are you starting? Nathan's team has helped 8,000+ clients like you.</div>
+            <div class="chat-msg user-msg" style="animation-delay:2.1s">Small construction company</div>
+            <div class="chat-msg bot-msg" style="animation-delay:2.9s">Excellent! We have extensive experience with construction accounting and CIS schemes. I'll book you a free consultation with Nathan for tomorrow. What time suits?</div>
+        </div>
+    </div>
+
+    <!-- Slide 7: ROI -->
+    <div class="slide">
+        <h2>Revenue Impact Projection</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">£1,800</div>
+                <div class="stat-label">Monthly investment</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3.2x</div>
+                <div class="stat-label">ROI multiple</div>
+            </div>
+        </div>
+        <div class="stats-grid" style="margin-top:20px">
+            <div class="stat-card">
+                <div class="stat-number">18</div>
+                <div class="stat-label">New leads/month</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">£3,200</div>
+                <div class="stat-label">Avg client value</div>
+            </div>
+        </div>
+        <p style="font-size:1rem">Based on your current conversion rates + market data</p>
+    </div>
+
+    <!-- Slide 8: CTA -->
+    <div class="slide">
+        <div class="logo" style="margin-bottom:20px">🔧 Blue Canvas AI</div>
+        <h2>Let's Maximize Your Derry Market Share</h2>
+        <p>Free strategy session to map out your growth plan.</p>
+        <div style="margin-top:30px">
+            <a href="tel:+447935217762" class="btn-primary">Call: 07935 217762</a>
+            <a href="https://wa.me/447935217762" class="btn-secondary">WhatsApp</a>
+        </div>
+        <div style="margin-top:20px; font-size:0.9rem; color:#666">
+            PJ Patterson<br>
+            Blue Canvas AI<br>
+            contact@bluecanvas.ai
+        </div>
+    </div>
+
+    <div class="progress">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+        <span class="dot" onclick="goToSlide(4)"></span>
+        <span class="dot" onclick="goToSlide(5)"></span>
+        <span class="dot" onclick="goToSlide(6)"></span>
+        <span class="dot" onclick="goToSlide(7)"></span>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const scoreRing = document.querySelector('.score-ring');
+        
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            slides[currentSlide].classList.add('prev');
+            dots[currentSlide].classList.remove('active');
+            
+            currentSlide = (n + slides.length) % slides.length;
+            
+            slides.forEach(slide => {
+                slide.classList.remove('active', 'prev');
+            });
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+            
+            // Animate score ring on slide 3 (58% = 145 offset)
+            if (currentSlide === 2) {
+                setTimeout(() => {
+                    scoreRing.style.strokeDashoffset = '106'; // 58% of 251
+                }, 300);
+            }
+            
+            // Trigger chat animations on slide 6
+            if (currentSlide === 5) {
+                const chatMsgs = slides[5].querySelectorAll('.chat-msg');
+                chatMsgs.forEach(msg => {
+                    msg.style.animation = 'none';
+                    msg.offsetHeight; // Trigger reflow
+                    msg.style.animation = null;
+                });
+            }
+        }
+        
+        function nextSlide() { showSlide(currentSlide + 1) }
+        function prevSlide() { showSlide(currentSlide - 1) }
+        function goToSlide(n) { showSlide(n) }
+        
+        // Touch/click navigation
+        document.addEventListener('click', e => {
+            if (e.target.closest('.btn-primary, .btn-secondary, .dot')) return;
+            if (e.clientX > window.innerWidth * 0.65) nextSlide();
+            else if (e.clientX < window.innerWidth * 0.35) prevSlide();
+        });
+        
+        // Swipe navigation
+        let touchStartX = 0;
+        document.addEventListener('touchstart', e => touchStartX = e.touches[0].clientX);
+        document.addEventListener('touchend', e => {
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) diff > 0 ? nextSlide() : prevSlide();
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+        
+        // Auto-advance from slide 2
+        setTimeout(() => {
+            if (currentSlide === 1) nextSlide();
+        }, 3500);
+    </script>
+</body>
+</html>

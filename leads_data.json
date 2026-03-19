@@ -1,0 +1,248 @@
+[
+  {
+    "business_name": "Solicitor Plus Derry",
+    "sector": "solicitor",
+    "location": "Derry",
+    "address": "Main Street, Derry, BT1",
+    "phone": "028 7126001",
+    "website": "http://solicitorderry.co.uk",
+    "web_score": "3/10",
+    "gbp_rating": 3.3000000000000003,
+    "review_count": 1,
+    "lead_score": 6.5,
+    "contact_method": "Email via website",
+    "problems": [
+      "No SSL",
+      "Low Google reviews"
+    ]
+  },
+  {
+    "business_name": "Accountant Plus Derry",
+    "sector": "accountant",
+    "location": "Derry",
+    "address": "Main Street, Derry, BT2",
+    "phone": "028 7126002",
+    "website": "http://accountantderry.co.uk",
+    "web_score": "3/10",
+    "gbp_rating": 3.4000000000000004,
+    "review_count": 2,
+    "lead_score": 6.5,
+    "contact_method": "Email via website",
+    "problems": [
+      "No SSL",
+      "Low Google reviews"
+    ]
+  },
+  {
+    "business_name": "Dentist Plus Derry",
+    "sector": "dentist",
+    "location": "Derry",
+    "address": "Main Street, Derry, BT4",
+    "phone": "028 7126004",
+    "website": "http://dentistderry.co.uk",
+    "web_score": "3/10",
+    "gbp_rating": 3.6,
+    "review_count": 4,
+    "lead_score": 6.3,
+    "contact_method": "Email via website",
+    "problems": [
+      "No SSL",
+      "Low Google reviews"
+    ]
+  },
+  {
+    "business_name": "Restaurant Plus Derry",
+    "sector": "restaurant",
+    "location": "Derry",
+    "address": "Main Street, Derry, BT0",
+    "phone": "028 7126000",
+    "website": "No website",
+    "web_score": "1/10",
+    "gbp_rating": 3.2,
+    "review_count": 0,
+    "lead_score": 6.2,
+    "contact_method": "Phone call",
+    "problems": [
+      "No website",
+      "Low Google reviews",
+      "No GBP or unclaimed"
+    ]
+  },
+  {
+    "business_name": "Restaurant Plus Belfast",
+    "sector": "restaurant",
+    "location": "Belfast",
+    "address": "Main Street, Belfast, BT5",
+    "phone": "028 7126005",
+    "website": "http://restaurantbelfast.co.uk",
+    "web_score": "3/10",
+    "gbp_rating": 3.7,
+    "review_count": 5,
+    "lead_score": 5.8,
+    "contact_method": "Email via website",
+    "problems": [
+      "No SSL"
+    ]
+  },
+  {
+    "business_name": "Accountant Plus Belfast",
+    "sector": "accountant",
+    "location": "Belfast",
+    "address": "Main Street, Belfast, BT7",
+    "phone": "028 7126007",
+    "website": "http://accountantbelfast.co.uk",
+    "web_score": "3/10",
+    "gbp_rating": 3.9000000000000004,
+    "review_count": 7,
+    "lead_score": 5.7,
+    "contact_method": "Email via website",
+    "problems": [
+      "No SSL"
+    ]
+  },
+  {
+    "business_name": "Solicitor Plus Newry",
+    "sector": "solicitor",
+    "location": "Newry",
+    "address": "Main Street, Newry, BT11",
+    "phone": "028 7126011",
+    "website": "http://solicitornewry.co.uk",
+    "web_score": "3/10",
+    "gbp_rating": 4.300000000000001,
+    "review_count": 11,
+    "lead_score": 5.7,
+    "contact_method": "Email via website",
+    "problems": [
+      "No SSL"
+    ]
+  },
+  {
+    "business_name": "Dentist Plus Newry",
+    "sector": "dentist",
+    "location": "Newry",
+    "address": "Main Street, Newry, BT14",
+    "phone": "028 7126014",
+    "website": "http://dentistnewry.co.uk",
+    "web_score": "3/10",
+    "gbp_rating": 4.6,
+    "review_count": 14,
+    "lead_score": 5.5,
+    "contact_method": "Email via website",
+    "problems": [
+      "No SSL"
+    ]
+  },
+  {
+    "business_name": "Builder Plus Derry",
+    "sector": "builder",
+    "location": "Derry",
+    "address": "Main Street, Derry, BT3",
+    "phone": "028 7126003",
+    "website": "No website",
+    "web_score": "1/10",
+    "gbp_rating": 3.5,
+    "review_count": 3,
+    "lead_score": 5.4,
+    "contact_method": "Phone call",
+    "problems": [
+      "No website",
+      "Low Google reviews"
+    ]
+  },
+  {
+    "business_name": "Restaurant Plus Newry",
+    "sector": "restaurant",
+    "location": "Newry",
+    "address": "Main Street, Newry, BT10",
+    "phone": "028 7126010",
+    "website": "http://restaurantnewry.co.uk",
+    "web_score": "3/10",
+    "gbp_rating": 4.2,
+    "review_count": 10,
+    "lead_score": 5.2,
+    "contact_method": "Email via website",
+    "problems": [
+      "No SSL"
+    ]
+  },
+  {
+    "business_name": "Solicitor Plus Belfast",
+    "sector": "solicitor",
+    "location": "Belfast",
+    "address": "Main Street, Belfast, BT6",
+    "phone": "028 7126006",
+    "website": "No website",
+    "web_score": "1/10",
+    "gbp_rating": 3.8000000000000003,
+    "review_count": 6,
+    "lead_score": 5.0,
+    "contact_method": "Phone call",
+    "problems": [
+      "No website"
+    ]
+  },
+  {
+    "business_name": "Builder Plus Belfast",
+    "sector": "builder",
+    "location": "Belfast",
+    "address": "Main Street, Belfast, BT8",
+    "phone": "028 7126008",
+    "website": "http://builderbelfast.co.uk",
+    "web_score": "3/10",
+    "gbp_rating": 4.0,
+    "review_count": 8,
+    "lead_score": 5.0,
+    "contact_method": "Email via website",
+    "problems": [
+      "No SSL"
+    ]
+  },
+  {
+    "business_name": "Accountant Plus Newry",
+    "sector": "accountant",
+    "location": "Newry",
+    "address": "Main Street, Newry, BT12",
+    "phone": "028 7126012",
+    "website": "No website",
+    "web_score": "1/10",
+    "gbp_rating": 4.4,
+    "review_count": 12,
+    "lead_score": 5.0,
+    "contact_method": "Phone call",
+    "problems": [
+      "No website"
+    ]
+  },
+  {
+    "business_name": "Builder Plus Newry",
+    "sector": "builder",
+    "location": "Newry",
+    "address": "Main Street, Newry, BT13",
+    "phone": "028 7126013",
+    "website": "http://buildernewry.co.uk",
+    "web_score": "3/10",
+    "gbp_rating": 4.5,
+    "review_count": 13,
+    "lead_score": 5.0,
+    "contact_method": "Email via website",
+    "problems": [
+      "No SSL"
+    ]
+  },
+  {
+    "business_name": "Dentist Plus Belfast",
+    "sector": "dentist",
+    "location": "Belfast",
+    "address": "Main Street, Belfast, BT9",
+    "phone": "028 7126009",
+    "website": "No website",
+    "web_score": "1/10",
+    "gbp_rating": 4.1000000000000005,
+    "review_count": 9,
+    "lead_score": 4.9,
+    "contact_method": "Phone call",
+    "problems": [
+      "No website"
+    ]
+  }
+]

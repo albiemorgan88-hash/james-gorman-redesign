@@ -1,0 +1,19 @@
+{
+  "name": "Derry Accountants - Custom Showcase",
+  "description": "Personalized SEO showcases for Derry accounting firms",
+  "steps": [
+    {
+      "type": "email",
+      "wait_time": 0,
+      "subject": "Quick digital audit for {{company_name}} — found some gaps",
+      "body": "Hi {{first_name}},\n\nRan a quick analysis on {{company_name}} and spotted a few opportunities your competitors might be missing.\n\nBuilt you a 2-minute showcase showing:\n• Where you rank vs local competitors\n• Quick wins for more visibility\n• What firms like yours are doing differently\n\nWorth a look: {{showcase_url}}\n\nNo obligation — just thought you might find it useful.\n\nCheers,\nPhil Patterson\nBlue Canvas\n\nPS: Focused on Northern Ireland businesses, so the insights are properly local."
+    },
+    {
+      "type": "email", 
+      "wait_time": 3,
+      "subject": "Re: Digital gaps at {{company_name}}",
+      "body": "Hi {{first_name}},\n\nJust following up on the showcase I built for {{company_name}}.\n\nSaw a few competitors gaining ground in local search — thought you might want to see where they're getting ahead.\n\nThe analysis: {{showcase_url}}\n\n2-minute read, Northern Ireland context.\n\nCheers,\nPhil"
+    }
+  ],
+  "active": true
+}

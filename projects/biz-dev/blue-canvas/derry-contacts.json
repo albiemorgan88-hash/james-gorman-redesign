@@ -1,0 +1,42 @@
+[
+  {
+    "first_name": "Paul",
+    "last_name": "Foley", 
+    "email": "paul.foley@efmccambridge.co.uk",
+    "organization_name": "EF McCambridge & Co",
+    "title": "Partner",
+    "website": "https://efmccambridge.co.uk"
+  },
+  {
+    "first_name": "Christine",
+    "last_name": "Whiteman",
+    "email": "christine.whiteman@efmccambridge.co.uk", 
+    "organization_name": "EF McCambridge & Co",
+    "title": "Partner",
+    "website": "https://efmccambridge.co.uk"
+  },
+  {
+    "first_name": "Nathan",
+    "last_name": "Kane",
+    "email": "nathan@mjkane.co.uk",
+    "organization_name": "MJ Kane Accountants", 
+    "title": "Senior Accountant",
+    "website": "https://mjkane.co.uk"
+  },
+  {
+    "first_name": "Manager",
+    "last_name": "McLaughlin",
+    "email": "info@mclaughlinandco.net",
+    "organization_name": "McLaughlin & Co",
+    "title": "Partner", 
+    "website": "https://mclaughlinandco.net"
+  },
+  {
+    "first_name": "Director",
+    "last_name": "Moore",
+    "email": "derry@mooreni.co.uk",
+    "organization_name": "Moore NI",
+    "title": "Director",
+    "website": "https://mooreni.co.uk"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "type": "email",
+  "wait_mode": "days",
+  "wait_time": 0,
+  "subject": "AI showcase for {{company}} - 300+ missed leads/month",
+  "body": "Hi {{first_name}},\n\nTo introduce myself, I founded Blue Canvas in Derry to support and accelerate local business onboarding AI.\n\nWe're all in a bit of a race right now with AI. Every day and hour counts in gaining an advantage over competitors.\n\nI built you this showcase for a sample use case for what it could do for {{company}}: {{showcase_url}}\n\nRight now, there were 300+ google searches for \"Accountants Derry\" or \"Accountants near me\" - and because you rank quite poorly, you're not catching those leads.\n\nThat's only, of course, a single use case - for you specifically, I can imagine preparing customised financial reports and account management would also be very useful.\n\nFeel free to book some time here (calendly link) or reply to this email.\n\nCheers,\n\nPhil",
+  "track_opens": true,
+  "track_clicks": true
+}
