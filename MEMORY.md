@@ -22,14 +22,14 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 - **James Gorman** — FIRST PAYING CLIENT. £250/mo SEO retainer. Estate agent, Derry.
 - **Charlie O'Hara** — Solara Wellness Hub. Don't build on spec, wait for PJ's conversation.
 - **Davy Anthony** — data analyst, potential ClubDraw co-founder.
-- **Mark Chambers** — ClubDraw user. Payment webhook sync issue resolved Mar 19. £10 payment processed correctly.
+- **Mark Chambers** — ClubDraw user. Payment resolved (webhook sync fixed).
 - **Gavan** — Wall Group SPAR contact. Mobile mockups ready for pitch.
 
 ## Active Projects
 - **Blue Canvas** (PRIMARY) — AI consultancy. Google Ads £20/day, 36 negative keywords added (saving £6+/day), conversion tracking CRITICAL ISSUE identified.
 - **James Gorman SEO** — Week 2 COMPLETE. 11 new pages published (5 blogs + 6 areas), citations started, technical foundation solid.
-- **Ardmore/ClubDraw** — CRITICAL SYNC ISSUE RESOLVED (Mar 19): Mark Chambers' payment webhook failed, manually fixed via Supabase. Platform stable: 50 subs, £195/week.
-- **Wall Group SPAR** — Professional mobile mockups completed (Mar 19): 4 high-quality screenshots ready for Gavan pitch. £15k+ transformation potential from BaseKit.
+- **Ardmore/ClubDraw** — Platform stable: 50 subs, £195/week. Webhook sync issues resolved.
+- **Wall Group SPAR** — Mobile mockups ready for Gavan pitch. £15k+ potential.
 - **UK Trade Jobs** — Major expansion: 15 career guides, 60 city/trade pages, 66 training pages, full /training hub.
 - **ClawMart** — 4 listings LIVE: SEO Engine $49, COO $79, Draw Platform $39, Showcase $29. Daily sales check 10am.
 - **Moltbook Scout** — Active engagement strategy: posted UK/Ireland SME market insights, +1 post (41 total), +6 comments (190 total). Focus on practical Blue Canvas experience over theory.
@@ -49,7 +49,8 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 - ClawMart: 4 products live, daily sales check 10am — $0 revenue yet
 - Google Ads: Optimized with negatives, saving £6+/day, but conversion tracking broken = £0 revenue
 
-## AI Trend Monitoring (Latest: 2026-03-19)
-- **Sashiko AI** — Linux kernel code review by Google engineers. Score: 6. HN front page, 53% bug detection rate.
-- **Viktor (getviktor.com)** — AI coworker, domain opportunities checked  
-- Monitoring continuing for domain/product opportunities
+## AI Trend Monitoring (Latest: 2026-03-20)
+- **Microsoft Zero Trust for AI** — New enterprise security framework, workshop/assessment tools (Mar 19)
+- **Google Stitch AI** — Voice interface design tool, caused 8% Figma stock drop (Mar 20)
+- **Lovable expansion** — Beyond app building to general business automation (Mar 19)
+- **Key insight:** All valuable domains registered same-day/24hrs. Speed critical for opportunities.
