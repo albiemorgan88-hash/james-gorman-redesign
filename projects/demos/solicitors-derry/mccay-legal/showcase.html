@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McCay Legal - AI Analysis</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box }
+        body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:#f8f9fa; overflow:hidden; height:100vh }
+        
+        :root {
+            --blue: #2B4DAF;
+            --red: #FF4520;
+            --white: #ffffff;
+            --light-bg: #f8f9fa;
+            --text: #1a1a2e;
+            --text-light: #666;
+        }
+        
+        .slide { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:40px 24px; opacity:0; transform:translateX(100%); transition:all .5s ease; pointer-events:none; text-align:center }
+        .slide.active { opacity:1; transform:translateX(0); pointer-events:auto }
+        .slide.prev { opacity:0; transform:translateX(-100%) }
+        
+        h1 { font-size:28px; color:var(--text); margin-bottom:16px; line-height:1.2 }
+        h2 { font-size:24px; color:var(--blue); margin-bottom:20px }
+        p { font-size:16px; color:var(--text-light); margin-bottom:20px; max-width:320px; line-height:1.5 }
+        
+        .logo { font-size:32px; font-weight:bold; color:var(--blue); margin-bottom:40px }
+        
+        .score-ring { position:relative; width:120px; height:120px; margin:20px auto }
+        .score-bg { stroke:#e5e5e5; stroke-width:8; fill:none }
+        .score-fill { stroke:var(--red); stroke-width:8; fill:none; stroke-linecap:round; transition:stroke-dasharray 2s ease-in-out }
+        .score-text { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:bold; color:var(--text) }
+        
+        .progress-bar { width:100%; height:6px; background:#e5e5e5; border-radius:3px; overflow:hidden; margin:20px 0 }
+        .progress-fill { height:100%; background:var(--blue); width:0; transition:width 2s ease; border-radius:3px }
+        
+        .before-after { background:white; padding:20px; border-radius:12px; margin:20px 0; box-shadow:0 2px 8px rgba(0,0,0,.1); max-width:320px }
+        
+        .search-result { text-align:left; padding:12px; background:white; border-radius:8px; margin:8px 0; box-shadow:0 1px 4px rgba(0,0,0,.1) }
+        .search-title { color:var(--blue); font-size:14px; font-weight:500 }
+        .search-url { color:var(--text-light); font-size:12px }
+        .search-desc { color:var(--text); font-size:13px; margin-top:4px }
+        
+        .chat-container { background:white; border-radius:16px; padding:20px; max-width:320px; box-shadow:0 2px 12px rgba(0,0,0,.1) }
+        .chat-message { margin:8px 0; padding:12px 16px; border-radius:16px; max-width:240px }
+        .chat-user { background:#007AFF; color:white; margin-left:auto; text-align:right }
+        .chat-ai { background:#f1f1f1; color:var(--text); margin-right:auto }
+        
+        .roi-card { background:white; padding:20px; border-radius:12px; margin:10px; box-shadow:0 2px 8px rgba(0,0,0,.1); min-width:140px }
+        .roi-number { font-size:24px; font-weight:bold; color:var(--red); margin-bottom:4px }
+        .roi-label { font-size:12px; color:var(--text-light); text-transform:uppercase; letter-spacing:0.5px }
+        
+        .cta-container { background:white; padding:30px; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,.15); margin-top:20px }
+        .cta-button { background:var(--blue); color:white; padding:12px 24px; border-radius:24px; text-decoration:none; font-weight:600; margin:8px; display:inline-block; transition:background .3s }
+        .cta-button:hover { background:#1e3a8a }
+        .cta-whatsapp { background:#25D366; }
+        .cta-whatsapp:hover { background:#1ea952 }
+        
+        .progress { position:fixed; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:8px; z-index:100 }
+        .dot { width:8px; height:8px; border-radius:50%; background:rgba(0,0,0,.2); transition:all .3s; cursor:pointer }
+        .dot.active { background:var(--blue); width:24px }
+        
+        .typing { display:inline-block; margin-left:5px }
+        .typing span { display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--text-light); margin:0 1px; animation:typing 1.4s infinite }
+        .typing span:nth-child(2) { animation-delay:0.2s }
+        .typing span:nth-child(3) { animation-delay:0.4s }
+        
+        @keyframes typing { 0%,60%,100% { opacity:0.3 } 30% { opacity:1 } }
+        
+        @media (max-width: 480px) {
+            .slide { padding:20px 16px }
+            h1 { font-size:24px }
+            h2 { font-size:20px }
+            p { font-size:14px }
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Hook -->
+    <div class="slide active">
+        <div class="logo">🔧 Blue Canvas AI</div>
+        <h1>What if AI could transform McCay Legal overnight?</h1>
+        <p>We ran our AI scanner on your digital presence. The results might surprise you...</p>
+        <p style="font-size:14px; opacity:0.7; margin-top:40px">Tap right to continue</p>
+    </div>
+
+    <!-- Slide 2: Scan -->
+    <div class="slide">
+        <h2>Scanning McCay Legal...</h2>
+        <div class="progress-bar">
+            <div class="progress-fill" id="scanProgress"></div>
+        </div>
+        <p id="scanText">Analyzing website performance...</p>
+    </div>
+
+    <!-- Slide 3: Issues -->
+    <div class="slide">
+        <h2>Current SEO Score</h2>
+        <div class="score-ring">
+            <svg width="120" height="120">
+                <circle cx="60" cy="60" r="50" class="score-bg"></circle>
+                <circle cx="60" cy="60" r="50" class="score-fill" id="scoreCircle" stroke-dasharray="0 314"></circle>
+            </svg>
+            <div class="score-text" id="scoreText">0</div>
+        </div>
+        <p><strong>Issues Found:</strong></p>
+        <p style="font-size:14px;">❌ Missing local SEO optimization<br>❌ No structured data for 3 offices<br>❌ Google Business Profile gaps</p>
+    </div>
+
+    <!-- Slide 4: Fixes -->
+    <div class="slide">
+        <h2>After AI Optimization</h2>
+        <div class="before-after">
+            <div class="search-result">
+                <div class="search-title">McCay Legal | Employment & Commercial Law | Derry</div>
+                <div class="search-url">mccay.legal</div>
+                <div class="search-desc">Leading solicitors in Derry, Strabane & Omagh. Expert employment law, commercial litigation, property law. 20+ experienced team. Free consultation ⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="score-ring">
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" class="score-bg" stroke-width="6"></circle>
+                <circle cx="50" cy="50" r="40" class="score-fill" stroke-dasharray="213 314" stroke-width="6"></circle>
+            </svg>
+            <div class="score-text" style="font-size:20px;">85/100</div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Google Ads -->
+    <div class="slide">
+        <h2>Dominate Legal Searches</h2>
+        <div class="before-after">
+            <div class="search-result" style="border-left:4px solid var(--red)">
+                <div style="font-size:12px; color:var(--red); font-weight:500;">Ad</div>
+                <div class="search-title">Employment Law Experts | McCay Legal</div>
+                <div class="search-url">mccay.legal/employment-law-derry</div>
+                <div class="search-desc">Unfair dismissal? Discrimination claims? Get expert legal advice from Derry's leading employment lawyers. Free consultation.</div>
+            </div>
+        </div>
+        <p><strong>Target Budget:</strong> £800-1200/month<br>
+        <strong>Expected Leads:</strong> 15-25 qualified enquiries</p>
+    </div>
+
+    <!-- Slide 6: AI Assistant -->
+    <div class="slide">
+        <h2>24/7 AI Legal Assistant</h2>
+        <div class="chat-container">
+            <div class="chat-message chat-user">Need help with an employment issue</div>
+            <div class="chat-message chat-ai">I understand you're dealing with an employment matter. Our specialist employment law team at McCay Legal can provide expert guidance. Would you like me to book a free consultation with Gareth McCay or one of our partners?</div>
+            <div class="chat-message chat-user">Yes please, it's urgent</div>
+            <div class="chat-message chat-ai">I've booked you for an urgent consultation tomorrow at 10am at our Derry office. You'll receive a confirmation email with Gareth's direct contact details. Is there anything specific you'd like me to brief the team about beforehand?</div>
+        </div>
+    </div>
+
+    <!-- Slide 7: ROI -->
+    <div class="slide">
+        <h2>Return on Investment</h2>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px">
+            <div class="roi-card">
+                <div class="roi-number">£45k</div>
+                <div class="roi-label">Monthly Missed Revenue</div>
+            </div>
+            <div class="roi-card">
+                <div class="roi-number">3-6</div>
+                <div class="roi-label">Month Payback</div>
+            </div>
+            <div class="roi-card">
+                <div class="roi-number">8x</div>
+                <div class="roi-label">ROI Multiple</div>
+            </div>
+        </div>
+        <p style="font-size:14px; margin-top:20px;">Based on 20-30 additional qualified leads per month at £1,500 average case value</p>
+    </div>
+
+    <!-- Slide 8: CTA -->
+    <div class="slide">
+        <div class="logo" style="margin-bottom:20px;">🔧 Blue Canvas AI</div>
+        <h2>Ready to Transform McCay Legal?</h2>
+        <p>Get your full AI transformation strategy</p>
+        
+        <div class="cta-container">
+            <a href="tel:+447935217762" class="cta-button">📞 Call PJ</a>
+            <a href="https://wa.me/447935217762" class="cta-button cta-whatsapp">💬 WhatsApp</a>
+            <a href="mailto:contact@bluecanvas.ai" class="cta-button">✉️ Email</a>
+        </div>
+        
+        <p style="font-size:12px; margin-top:20px; opacity:0.7;">PJ Patterson • Blue Canvas AI • +44 7935 217762</p>
+    </div>
+
+    <div class="progress">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+        <span class="dot" onclick="goToSlide(4)"></span>
+        <span class="dot" onclick="goToSlide(5)"></span>
+        <span class="dot" onclick="goToSlide(6)"></span>
+        <span class="dot" onclick="goToSlide(7)"></span>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        
+        function updateSlide() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active', 'prev');
+                if (index === currentSlide) slide.classList.add('active');
+                else if (index < currentSlide) slide.classList.add('prev');
+            });
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+            
+            // Trigger animations for specific slides
+            if (currentSlide === 1) startScanAnimation();
+            if (currentSlide === 2) startScoreAnimation();
+        }
+        
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+        
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+        
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlide();
+        }
+        
+        function startScanAnimation() {
+            const progressFill = document.getElementById('scanProgress');
+            const scanText = document.getElementById('scanText');
+            const steps = [
+                'Analyzing website performance...',
+                'Checking SEO optimization...',
+                'Reviewing local search presence...',
+                'Scanning competitor analysis...',
+                'Generating recommendations...'
+            ];
+            
+            let step = 0;
+            const interval = setInterval(() => {
+                progressFill.style.width = ((step + 1) * 20) + '%';
+                scanText.textContent = steps[step];
+                step++;
+                
+                if (step >= steps.length) {
+                    clearInterval(interval);
+                    setTimeout(nextSlide, 800);
+                }
+            }, 600);
+        }
+        
+        function startScoreAnimation() {
+            const scoreCircle = document.getElementById('scoreCircle');
+            const scoreText = document.getElementById('scoreText');
+            
+            let score = 0;
+            const targetScore = 52;
+            const circumference = 314;
+            
+            const interval = setInterval(() => {
+                score += 2;
+                const dashArray = (score / 100) * circumference;
+                scoreCircle.style.strokeDasharray = dashArray + ' ' + circumference;
+                scoreText.textContent = score;
+                
+                if (score >= targetScore) {
+                    clearInterval(interval);
+                    scoreText.textContent = targetScore + '/100';
+                }
+            }, 50);
+        }
+        
+        // Navigation
+        document.addEventListener('click', (e) => {
+            if (e.clientX > window.innerWidth * 0.65) nextSlide();
+            else if (e.clientX < window.innerWidth * 0.35) prevSlide();
+        });
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+            else if (e.key === 'ArrowLeft') prevSlide();
+        });
+        
+        // Touch/swipe support
+        let startX = 0;
+        document.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+        
+        document.addEventListener('touchend', (e) => {
+            const endX = e.changedTouches[0].clientX;
+            const diff = startX - endX;
+            
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) nextSlide();
+                else prevSlide();
+            }
+        });
+    </script>
+</body>
+</html>

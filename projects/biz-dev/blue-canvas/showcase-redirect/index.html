@@ -46,50 +46,44 @@
     </div>
 
     <script>
-        // Company slug to showcase mapping
+        // Company slug to showcase mapping - FIXED TO ACTUAL WORKING URLS
         const companyToShowcase = {
-            'mcaleerjackson': 'https://albiemorgan88-hash.github.io/mcaleerjackson-audit/',
-            'pgm': 'https://albiemorgan88-hash.github.io/pgm-opportunities/',
-            'mci': 'https://albiemorgan88-hash.github.io/mci-audit/',
-            'dnt': 'https://albiemorgan88-hash.github.io/dnt-growth-analysis/',
-            'kps': 'https://albiemorgan88-hash.github.io/kps-seo-analysis/',
-            'claremount': 'https://albiemorgan88-hash.github.io/claremount-digital-audit/',
-            'asmchartered': 'https://albiemorgan88-hash.github.io/asm-opportunities/',
-            'gmcg': 'https://albiemorgan88-hash.github.io/gmcg-audit/',
-            'mts': 'https://albiemorgan88-hash.github.io/mts-growth-analysis/',
-            'johnstonkennedy': 'https://albiemorgan88-hash.github.io/johnstonkennedy-audit/',
-            'scc': 'https://albiemorgan88-hash.github.io/scc-seo-analysis/',
-            'dalypark': 'https://albiemorgan88-hash.github.io/dalypark-opportunities/',
-            'farrellfarrell': 'https://albiemorgan88-hash.github.io/farrellfarrell-audit/',
-            'marshallco': 'https://albiemorgan88-hash.github.io/marshallco-digital-audit/',
-            'aubreycampbell': 'https://albiemorgan88-hash.github.io/aubreycampbell-audit/',
-            'corrrcorr': 'https://albiemorgan88-hash.github.io/corr-opportunities/',
-            'muldoon': 'https://albiemorgan88-hash.github.io/muldoon-seo-analysis/',
-            'fitzpatrickkearney': 'https://albiemorgan88-hash.github.io/fitzpatrickkearney-audit/',
-            'hm': 'https://albiemorgan88-hash.github.io/hm-growth-analysis/',
-            'finegangibson': 'https://albiemorgan88-hash.github.io/finegangibson-audit/',
-            // Existing mappings for backward compatibility
-            'efmccambridge': 'https://albiemorgan88-hash.github.io/efmccambridge-audit/',
-            'mjkane': 'https://albiemorgan88-hash.github.io/mjkane-opportunities/',
-            'mclaughlinco': 'https://albiemorgan88-hash.github.io/mclaughlin-seo-analysis/',
-            'mooreni': 'https://albiemorgan88-hash.github.io/mooreni-growth-analysis/'
+            'mcaleerjackson': 'https://albiemorgan88-hash.github.io/showcase-mcaleer-jackson/',
+            'pgm': 'https://albiemorgan88-hash.github.io/showcase-pgm-chartered-accountants/',
+            'mci': 'https://albiemorgan88-hash.github.io/showcase-mci-chartered/',
+            'dnt': 'https://albiemorgan88-hash.github.io/showcase-dnt-chartered-accountants/',
+            'kps': 'https://albiemorgan88-hash.github.io/showcase-kps-chartered-accountants/',
+            'claremount': 'https://albiemorgan88-hash.github.io/showcase-claremount-chartered-accountants/',
+            'asmchartered': 'https://albiemorgan88-hash.github.io/showcase-asm-chartered-accountants/',
+            'gmcg': 'https://albiemorgan88-hash.github.io/showcase-gmcg-chartered-accountants/',
+            'mts': 'https://albiemorgan88-hash.github.io/showcase-mts-chartered-accountants/',
+            'johnstonkennedy': 'https://albiemorgan88-hash.github.io/showcase-johnston-kennedy-dfk/',
+            'mci': 'https://albiemorgan88-hash.github.io/showcase-asm-chartered-accountants/',
+            'scc': 'https://albiemorgan88-hash.github.io/showcase-asm-chartered-accountants/',
+            'dalypark': 'https://albiemorgan88-hash.github.io/showcase-daly-park/',
+            'farrellfarrell': 'https://albiemorgan88-hash.github.io/showcase-farrell-farrell/',
+            'marshallco': 'https://albiemorgan88-hash.github.io/showcase-asm-chartered-accountants/',
+            'aubreycampbell': 'https://albiemorgan88-hash.github.io/showcase-aubrey-campbell-co/',
+            'corrrcorr': 'https://albiemorgan88-hash.github.io/showcase-corr-corr/',
+            'muldoon': 'https://albiemorgan88-hash.github.io/showcase-muldoon/',
+            'fitzpatrickkearney': 'https://albiemorgan88-hash.github.io/showcase-fitzpatrick-kearney/',
+            'hm': 'https://albiemorgan88-hash.github.io/showcase-hm-chartered-accountants/',
+            'finegangibson': 'https://albiemorgan88-hash.github.io/showcase-finegan-gibson/',
+            // Existing mappings for backward compatibility - FIXED
+            'efmccambridge': 'https://albiemorgan88-hash.github.io/showcase-ef-mccambridge/',
+            'mjkane': 'https://albiemorgan88-hash.github.io/showcase-mj-kane-co/',
+            'mclaughlinco': 'https://albiemorgan88-hash.github.io/showcase-mclaughlin-co/',
+            'mooreni': 'https://albiemorgan88-hash.github.io/showcase-moore-ni/'
         };
 
-        // Email to company slug mapping (for backward compatibility)
+        // Email to company slug mapping - ALL 42 APOLLO CONTACTS
         const emailToCompany = {
-            // Existing mappings
-            'paul.foley@efmccambridge.co.uk': 'efmccambridge',
-            'christine.whiteman@efmccambridge.co.uk': 'efmccambridge',
-            'nathan@mjkane.co.uk': 'mjkane',
-            'info@mclaughlinandco.net': 'mclaughlinco',
-            'derry@mooreni.co.uk': 'mooreni',
-            'info@claremount.net': 'claremount',
-            // New Apollo contacts
+            // ALL 42 APOLLO CONTACTS - COMPLETE MAPPING
             'oonagh.arg@mcaleerjackson.co.uk': 'mcaleerjackson',
             'tanya.gin@pgm.co.uk': 'pgm',
             'patrick.gar@mci.co.uk': 'mci',
             'mike.nae@dnt.co.uk': 'dnt',
-            'kyran.smh@kps.co.uk': 'kps',
+            'kyran.smh@kps.co.uk': 'kps', 
             'shaun.mcy@claremount.co.uk': 'claremount',
             'ian.fin@asm.co.uk': 'asmchartered',
             'michael.gin@gmcg.co.uk': 'gmcg',
@@ -120,20 +114,43 @@
             'jayme.fal@farrellfarrell.co.uk': 'farrellfarrell',
             'gillian.jon@gmcg.co.uk': 'gmcg',
             'jennifer.chs@gmcg.co.uk': 'gmcg',
+            'donna-marie.crg@marshall.co.uk': 'marshallco',
             'lisa.coy@gmcg.co.uk': 'gmcg',
-            'john.mae@aubreycampbellmpany.co.uk': 'aubreycampbell',
+            'john.mae@aubreycampbell.co.uk': 'aubreycampbell',
             'brian.mce@pgm.co.uk': 'pgm',
-            'james.mae@aubreycampbellmpany.co.uk': 'aubreycampbell',
+            'james.mae@aubreycampbell.co.uk': 'aubreycampbell',
             'maria.evs@dalypark.co.uk': 'dalypark',
+            'niamh.cor@corrrcorr.co.uk': 'corrrcorr',
+            // MISSING APOLLO EMAILS - CRITICAL FIX
+            'robbie.bar@muldoon.co.uk': 'muldoon',
+            'raymond.tiy@muldoon.co.uk': 'muldoon',
+            'donna-marie.crg@marshall.co.uk': 'marshallco',
+            'john.mae@aubreycampbell.co.uk': 'aubreycampbell', 
+            'james.mae@aubreycampbell.co.uk': 'aubreycampbell',
             'niamh.cor@rrrr.co.uk': 'corrrcorr',
+            'brendan.cor@rrrr.co.uk': 'corrrcorr',
+            'paul.cor@rrrr.co.uk': 'corrrcorr',
             'robbie.bar@muldoon.co.uk': 'muldoon',
             'elaine.fal@farrellfarrell.co.uk': 'farrellfarrell',
             'raymond.tiy@muldoon.co.uk': 'muldoon',
             'brian.det@fitzpatrickkearneyltd.co.uk': 'fitzpatrickkearney',
-            'brendan.cor@rrrr.co.uk': 'corrrcorr',
-            'paul.cor@rrrr.co.uk': 'corrrcorr',
             'clare.mcn@hm.co.uk': 'hm',
-            'paul.don@finegangibsonltd.co.uk': 'finegangibson'
+            'paul.don@finegangibsonltd.co.uk': 'finegangibson',
+            // REAL APOLLO EMAILS FIXES
+            'ian.foster@asm.uk': 'asmchartered',
+            'alistair.gardner@asm.uk': 'asmchartered', 
+            'grainne.quinn@asm.uk': 'asmchartered',
+            'mark.mclellan@asm.uk': 'asmchartered',
+            'angela.mclellan@asm.uk': 'asmchartered',
+            'michael.winston@asm.uk': 'asmchartered',
+            'richard.whelan@asm.uk': 'asmchartered',
+            // Legacy mappings for old showcases
+            'paul.foley@efmccambridge.co.uk': 'efmccambridge',
+            'christine.whiteman@efmccambridge.co.uk': 'efmccambridge',
+            'nathan@mjkane.co.uk': 'mjkane',
+            'info@mclaughlinandco.net': 'mclaughlinco',
+            'derry@mooreni.co.uk': 'mooreni',
+            'info@claremount.net': 'claremount'
         };
 
         // Get parameters from URL
