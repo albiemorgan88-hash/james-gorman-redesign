@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-03-20T19:16:12.487Z",
+  "drawNumber": 3,
+  "emailsSent": 2,
+  "totalSubscribers": 2,
+  "productionNote": "This was test sending - production would send to all 228 subscribers",
+  "drawResults": {
+    "drawNumber": 3,
+    "date": "Friday 20th March 2026",
+    "winningNumbers": [
+      227,
+      414,
+      105
+    ],
+    "winners": [
+      {
+        "name": "Alfie McAllister",
+        "number": 227,
+        "position": "1st",
+        "prize": "£57.00"
+      },
+      {
+        "name": "Dessie Brolly",
+        "number": 414,
+        "position": "2nd",
+        "prize": "£34.20"
+      },
+      {
+        "name": "Paul Brolly",
+        "number": 105,
+        "position": "3rd",
+        "prize": "£22.80"
+      }
+    ],
+    "totalParticipants": 228,
+    "totalPot": "£218.00",
+    "nextDraw": "Friday 27th March at 7PM"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-03-20T19:17:26.000Z",
+  "drawNumber": 3,
+  "totalSubscribers": 85,
+  "successfulSends": 85,
+  "failures": 0,
+  "failedEmails": [],
+  "emailSubject": "🏏 Ardmore Cricket Club Weekly Draw #3 Results - Friday 20th March",
+  "method": "Supabase + Resend API"
+}
