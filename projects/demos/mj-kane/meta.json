@@ -1,0 +1,32 @@
+{
+  "business_name": "MJ Kane Accountants",
+  "slug": "mj-kane",
+  "website_url": "https://www.mjkane.co.uk/",
+  "contact_name": "Nathan Kane",
+  "location": "Carrickfergus, Northern Ireland",
+  "industry": "Chartered Accountants & Tax Advisory",
+  "showcase_url": "https://albiemorgan88-hash.github.io/showcase-mj-kane/",
+  "github_repo": "https://github.com/albiemorgan88-hash/showcase-mj-kane",
+  "seo_score_current": 40,
+  "seo_score_projected": 85,
+  "created_date": "2026-03-20",
+  "key_issues": [
+    "Missing meta descriptions on key pages",
+    "No structured data for local business",
+    "Page speed issues affecting rankings",
+    "Limited local SEO optimization"
+  ],
+  "roi_projection": {
+    "additional_annual_revenue": 45000,
+    "average_client_value": 1500,
+    "monthly_client_increase": "2-3",
+    "roi_multiple": "8x"
+  },
+  "business_highlights": [
+    "Award-winning accountants",
+    "20+ years experience",
+    "8000+ clients worldwide",
+    "Complex tax case specialists",
+    "Strong client testimonials"
+  ]
+}

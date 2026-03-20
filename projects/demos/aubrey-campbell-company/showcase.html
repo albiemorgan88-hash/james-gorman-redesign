@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aubrey Campbell & Company - AI Transformation</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            overflow: hidden;
+            height: 100vh;
+        }
+        :root {
+            --blue: #2B4DAF;
+            --red: #FF4520;
+            --white: #ffffff;
+            --light-bg: #f8f9fa;
+            --text: #1a1a2e;
+            --text-light: #666;
+        }
+        .slide {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 24px;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.5s ease;
+            pointer-events: none;
+        }
+        .slide.active {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+        .slide.prev {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 16px; color: var(--text); text-align: center; }
+        h2 { font-size: 24px; font-weight: 600; margin-bottom: 12px; color: var(--blue); text-align: center; }
+        p { font-size: 16px; line-height: 1.5; color: var(--text-light); text-align: center; margin-bottom: 20px; }
+        .brand { color: var(--blue); font-weight: 600; }
+        .progress {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 100;
+        }
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        .dot.active {
+            background: var(--blue);
+            width: 24px;
+        }
+        .scan-animation {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            background: var(--white);
+            border-radius: 12px;
+            margin: 20px 0;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #eee;
+        }
+        .scan-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--blue), transparent);
+            animation: scan 2s linear infinite;
+        }
+        @keyframes scan {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(200px); }
+        }
+        .score-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .score-ring {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 16px;
+        }
+        .score-ring svg {
+            transform: rotate(-90deg);
+        }
+        .score-ring circle {
+            fill: none;
+            stroke-width: 8;
+        }
+        .score-ring .bg-circle {
+            stroke: #eee;
+        }
+        .score-ring .score-circle {
+            stroke: var(--red);
+            stroke-linecap: round;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 314;
+            transition: stroke-dashoffset 2s ease-in-out;
+        }
+        .score-text {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .issues-list {
+            text-align: left;
+            max-width: 320px;
+            margin: 20px 0;
+        }
+        .issue-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            opacity: 0;
+            animation: fadeInUp 0.5s ease forwards;
+        }
+        .issue-item:nth-child(1) { animation-delay: 0.2s; }
+        .issue-item:nth-child(2) { animation-delay: 0.4s; }
+        .issue-item:nth-child(3) { animation-delay: 0.6s; }
+        .issue-item:nth-child(4) { animation-delay: 0.8s; }
+        .issue-icon {
+            width: 20px;
+            height: 20px;
+            background: var(--red);
+            border-radius: 50%;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+        }
+        .search-result {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: left;
+            max-width: 320px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .result-url {
+            font-size: 12px;
+            color: #202124;
+            margin-bottom: 4px;
+        }
+        .result-title {
+            font-size: 18px;
+            color: #1a0dab;
+            margin-bottom: 4px;
+        }
+        .result-desc {
+            font-size: 13px;
+            color: #4d5156;
+            line-height: 1.4;
+        }
+        .chat-container {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 20px;
+            max-width: 320px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .chat-msg {
+            margin-bottom: 16px;
+            opacity: 0;
+            transform: translateY(10px);
+            animation: chatIn 0.4s ease forwards;
+        }
+        .chat-msg:nth-child(1) { animation-delay: 0.5s; }
+        .chat-msg:nth-child(2) { animation-delay: 1.3s; }
+        .chat-msg:nth-child(3) { animation-delay: 2.1s; }
+        .chat-msg.user {
+            text-align: right;
+        }
+        .chat-bubble {
+            display: inline-block;
+            padding: 12px 16px;
+            border-radius: 18px;
+            max-width: 80%;
+        }
+        .chat-msg.user .chat-bubble {
+            background: var(--blue);
+            color: white;
+        }
+        .chat-msg.ai .chat-bubble {
+            background: #f1f3f4;
+            color: var(--text);
+        }
+        @keyframes chatIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .roi-metrics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            max-width: 320px;
+            margin: 20px 0;
+        }
+        .metric {
+            background: var(--white);
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .metric-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--blue);
+        }
+        .metric-label {
+            font-size: 12px;
+            color: var(--text-light);
+            margin-top: 4px;
+        }
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 280px;
+            margin: 20px 0;
+        }
+        .cta-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        .cta-button.primary {
+            background: var(--blue);
+            color: white;
+        }
+        .cta-button.secondary {
+            background: var(--white);
+            color: var(--blue);
+            border: 2px solid var(--blue);
+        }
+        .cta-icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Hook -->
+    <div class="slide active">
+        <h1>What if AI could transform your accountancy practice overnight?</h1>
+        <p>We've analyzed <span class="brand">Aubrey Campbell & Company's</span> digital presence and found significant opportunities to attract more clients and streamline operations.</p>
+        <p>Let's show you exactly what's possible...</p>
+    </div>
+
+    <!-- Slide 2: Scan -->
+    <div class="slide">
+        <h2>Scanning Your Digital Footprint</h2>
+        <div class="scan-animation">
+            <div class="scan-line"></div>
+        </div>
+        <p>Analyzing website performance, SEO health, and digital presence across Belfast's accountancy market...</p>
+    </div>
+
+    <!-- Slide 3: Issues -->
+    <div class="slide">
+        <h2>Current SEO Score</h2>
+        <div class="score-container">
+            <div class="score-ring">
+                <svg width="120" height="120">
+                    <circle class="bg-circle" cx="60" cy="60" r="50"></circle>
+                    <circle class="score-circle" cx="60" cy="60" r="50"></circle>
+                </svg>
+                <div class="score-text">35/100</div>
+            </div>
+        </div>
+        <div class="issues-list">
+            <div class="issue-item">
+                <div class="issue-icon">!</div>
+                <span>404 errors on key pages</span>
+            </div>
+            <div class="issue-item">
+                <div class="issue-icon">!</div>
+                <span>Missing Google Business Profile</span>
+            </div>
+            <div class="issue-item">
+                <div class="issue-icon">!</div>
+                <span>Limited content depth</span>
+            </div>
+            <div class="issue-item">
+                <div class="issue-icon">!</div>
+                <span>No online reviews visible</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Fixes -->
+    <div class="slide">
+        <h2>After AI Optimization</h2>
+        <div class="score-container">
+            <div class="score-ring">
+                <svg width="120" height="120">
+                    <circle class="bg-circle" cx="60" cy="60" r="50"></circle>
+                    <circle class="score-circle improved" cx="60" cy="60" r="50"></circle>
+                </svg>
+                <div class="score-text">82/100</div>
+            </div>
+        </div>
+        <div class="search-result">
+            <div class="result-url">aubreycampbellaccountants.co.uk</div>
+            <div class="result-title">Belfast Chartered Accountants | Aubrey Campbell & Co</div>
+            <div class="result-desc">Expert accountancy services in Belfast. Specializing in business taxation, auditing and financial planning. 35+ years experience. Call today for a consultation.</div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Google Ads -->
+    <div class="slide">
+        <h2>Targeted Google Ads</h2>
+        <p>Capture high-intent searches in Belfast's accountancy market</p>
+        <div class="search-result">
+            <div class="result-url">Ad · aubreycampbellaccountants.co.uk</div>
+            <div class="result-title">Chartered Accountants Belfast - Book Consultation</div>
+            <div class="result-desc">Expert tax advice and business accounting. 35 years serving Belfast businesses. Free initial consultation available.</div>
+        </div>
+        <div class="roi-metrics">
+            <div class="metric">
+                <div class="metric-value">£2.40</div>
+                <div class="metric-label">Cost per click</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">320%</div>
+                <div class="metric-label">ROI potential</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: AI Assistant -->
+    <div class="slide">
+        <h2>AI-Powered Client Support</h2>
+        <p>Handle enquiries professionally, even after hours</p>
+        <div class="chat-container">
+            <div class="chat-msg user">
+                <div class="chat-bubble">Hi, I need help with my company's tax return filing</div>
+            </div>
+            <div class="chat-msg ai">
+                <div class="chat-bubble">I'd be happy to help with your company tax return. Can you tell me about your business type and annual turnover? This will help me connect you with the right specialist.</div>
+            </div>
+            <div class="chat-msg ai">
+                <div class="chat-bubble">I can also schedule a consultation with one of our Chartered Accountants at a time that suits you.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: ROI -->
+    <div class="slide">
+        <h2>Expected Impact</h2>
+        <div class="roi-metrics">
+            <div class="metric">
+                <div class="metric-value">£2,400</div>
+                <div class="metric-label">Monthly revenue increase</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">6</div>
+                <div class="metric-label">New clients per month</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">85%</div>
+                <div class="metric-label">Enquiry response rate</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">3 months</div>
+                <div class="metric-label">Payback period</div>
+            </div>
+        </div>
+        <p>Based on similar Belfast accountancy practices we've helped</p>
+    </div>
+
+    <!-- Slide 8: CTA -->
+    <div class="slide">
+        <h2>Ready to Transform Your Practice?</h2>
+        <p>Let's discuss how AI can grow <span class="brand">Aubrey Campbell & Company</span></p>
+        <div class="cta-buttons">
+            <a href="tel:+447935217762" class="cta-button primary">
+                <span class="cta-icon">📞</span>
+                Call Phil: +44 7935 217762
+            </a>
+            <a href="https://wa.me/447935217762" class="cta-button secondary">
+                <span class="cta-icon">💬</span>
+                WhatsApp Message
+            </a>
+            <a href="mailto:contact@bluecanvas.ai" class="cta-button secondary">
+                <span class="cta-icon">✉️</span>
+                Email: contact@bluecanvas.ai
+            </a>
+        </div>
+    </div>
+
+    <!-- Progress dots -->
+    <div class="progress">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active', 'prev');
+                if (index === n) {
+                    slide.classList.add('active');
+                } else if (index < n) {
+                    slide.classList.add('prev');
+                }
+            });
+
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === n);
+            });
+
+            // Animate score on slide 3
+            if (n === 2) {
+                setTimeout(() => {
+                    const circle = document.querySelector('.score-circle');
+                    const text = document.querySelector('.score-text');
+                    const score = 35;
+                    const circumference = 314;
+                    const offset = circumference - (score / 100) * circumference;
+                    circle.style.strokeDashoffset = offset;
+                    
+                    let counter = 0;
+                    const timer = setInterval(() => {
+                        counter++;
+                        text.textContent = counter + '/100';
+                        if (counter >= score) clearInterval(timer);
+                    }, 30);
+                }, 500);
+            }
+
+            // Animate improved score on slide 4
+            if (n === 3) {
+                setTimeout(() => {
+                    const circle = document.querySelector('.score-circle.improved');
+                    const text = document.querySelector('.slide:nth-child(4) .score-text');
+                    const score = 82;
+                    const circumference = 314;
+                    const offset = circumference - (score / 100) * circumference;
+                    circle.style.strokeDashoffset = offset;
+                    circle.style.stroke = '#28a745';
+                    
+                    let counter = 35;
+                    const timer = setInterval(() => {
+                        counter++;
+                        text.textContent = counter + '/100';
+                        if (counter >= score) clearInterval(timer);
+                    }, 20);
+                }, 500);
+            }
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // Touch and click navigation
+        document.addEventListener('click', (e) => {
+            if (e.clientX > window.innerWidth * 0.65) {
+                nextSlide();
+            } else if (e.clientX < window.innerWidth * 0.35) {
+                prevSlide();
+            }
+        });
+
+        // Swipe navigation
+        let touchStartX = 0;
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        document.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].clientX;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault();
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                prevSlide();
+            }
+        });
+
+        // Initialize
+        showSlide(0);
+    </script>
+</body>
+</html>

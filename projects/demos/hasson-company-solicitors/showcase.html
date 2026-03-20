@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Showcase for Hasson & Company Solicitors | Blue Canvas</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+        .slide { min-height: 100vh; display: none; padding: 20px; text-align: center; }
+        .slide.active { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        .score-ring { font-size: 3em; color: #2B4DAF; font-weight: bold; }
+        .cta-button { background: #FF4520; color: white; padding: 15px 30px; border: none; border-radius: 5px; font-size: 1.2em; margin: 10px; }
+        .progress-dots { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); }
+        .dot { width: 10px; height: 10px; border-radius: 50%; background: #ccc; display: inline-block; margin: 0 5px; cursor: pointer; }
+        .dot.active { background: #2B4DAF; }
+        h1 { color: #2B4DAF; }
+        h2 { color: #333; }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Hook -->
+    <div class="slide active">
+        <h1>What if AI could transform Hasson & Company Solicitors overnight?</h1>
+        <p>We analyzed your digital presence and found some interesting opportunities...</p>
+        <button onclick="nextSlide()" class="cta-button">See the results →</button>
+    </div>
+    
+    <!-- Slide 2: Scan -->
+    <div class="slide">
+        <h1>Scanning Hasson & Company Solicitors...</h1>
+        <div id="progress-bar" style="width: 100%; background: #ddd; height: 20px; border-radius: 10px;">
+            <div style="width: 100%; height: 100%; background: #2B4DAF; border-radius: 10px; animation: scan 2s ease-out;"></div>
+        </div>
+        <p>Analyzing website, SEO, Google presence...</p>
+    </div>
+    
+    <!-- Slide 3: Issues -->
+    <div class="slide">
+        <h1>Current Score</h1>
+        <div class="score-ring">8/100</div>
+        <h2>Critical</h2>
+        <p>Issues found: No website found, Missing meta descriptions, No structured data, Slow page speed</p>
+    </div>
+    
+    <!-- Slide 4: Fixes -->
+    <div class="slide">
+        <h1>With AI Improvements</h1>
+        <div class="score-ring">39/100</div>
+        <h2>Significant Improvement</h2>
+        <p>Better Google visibility, faster responses, more leads</p>
+    </div>
+    
+    <!-- Slide 5: Google Ads -->
+    <div class="slide">
+        <h1>Missed Opportunities</h1>
+        <p>Your competitors are capturing searches for:</p>
+        <ul style="text-align: left; display: inline-block;">
+            <li>"solicitors near me"</li>
+            <li>"legal advice derry"</li>
+            <li>"hasson solicitors"</li>
+        </ul>
+        <p>Estimated monthly searches: 500-800</p>
+    </div>
+    
+    <!-- Slide 6: AI Assistant -->
+    <div class="slide">
+        <h1>24/7 AI Assistant</h1>
+        <div style="background: white; border-radius: 10px; padding: 20px; max-width: 400px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            <p><strong>Visitor:</strong> "I need help with a property transaction"</p>
+            <p><strong>AI:</strong> "I'd be happy to help you with your property matter. Can you tell me if you're buying or selling, and I'll connect you with the right specialist?"</p>
+        </div>
+        <p>Never miss another enquiry</p>
+    </div>
+    
+    <!-- Slide 7: ROI -->
+    <div class="slide">
+        <h1>Return on Investment</h1>
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 600px;">
+            <div>
+                <h3>Time Saved</h3>
+                <div class="score-ring">10+</div>
+                <p>Hours per week</p>
+            </div>
+            <div>
+                <h3>New Leads</h3>
+                <div class="score-ring">25%</div>
+                <p>Increase expected</p>
+            </div>
+            <div>
+                <h3>ROI</h3>
+                <div class="score-ring">400%</div>
+                <p>Within 6 months</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 8: CTA -->
+    <div class="slide">
+        <h1>Ready to transform Hasson & Company Solicitors?</h1>
+        <p>Let's discuss your specific needs</p>
+        <a href="tel:+447935217762" class="cta-button">Call: +44 7935 217762</a>
+        <a href="https://wa.me/447935217762" class="cta-button">WhatsApp</a>
+        <a href="mailto:contact@bluecanvas.ai" class="cta-button">Email</a>
+        <p><strong>PJ Patterson</strong><br>Blue Canvas AI</p>
+    </div>
+    
+    <div class="progress-dots">
+        <span class="dot active" onclick="goToSlide(0)"></span><span class="dot" onclick="goToSlide(1)"></span><span class="dot" onclick="goToSlide(2)"></span><span class="dot" onclick="goToSlide(3)"></span><span class="dot" onclick="goToSlide(4)"></span><span class="dot" onclick="goToSlide(5)"></span><span class="dot" onclick="goToSlide(6)"></span><span class="dot" onclick="goToSlide(7)"></span>
+    </div>
+    
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            currentSlide = n;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+        
+        function nextSlide() {
+            showSlide((currentSlide + 1) % slides.length);
+        }
+        
+        function goToSlide(n) {
+            showSlide(n);
+        }
+        
+        // Auto-advance slide 2 (scanning)
+        setTimeout(() => {
+            if (currentSlide === 1) nextSlide();
+        }, 3000);
+        
+        // Touch/swipe support
+        let touchStartX = 0;
+        document.addEventListener('touchstart', e => touchStartX = e.touches[0].clientX);
+        document.addEventListener('touchend', e => {
+            const touchEndX = e.changedTouches[0].clientX;
+            if (touchStartX - touchEndX > 50) nextSlide();
+            if (touchEndX - touchStartX > 50) showSlide(Math.max(0, currentSlide - 1));
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') showSlide(Math.max(0, currentSlide - 1));
+        });
+    </script>
+    
+    <style>
+        @keyframes scan {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+    </style>
+</body>
+</html>

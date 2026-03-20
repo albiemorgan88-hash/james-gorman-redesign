@@ -1,0 +1,53 @@
+{
+  "business_name": "PGR Chartered Accountants",
+  "contact_name": "Peter Greene",
+  "website": "https://www.pgraccountants.com/",
+  "location": "Belfast, Northern Ireland",
+  "industry": "Accounting & Professional Services",
+  "slug": "pgr-chartered-accountants",
+  "created_date": "2026-03-20",
+  "showcase_url": "https://albiemorgan88-hash.github.io/showcase-pgr-chartered-accountants/",
+  "github_repo": "https://github.com/albiemorgan88-hash/showcase-pgr-chartered-accountants",
+  "seo_score": {
+    "current": 68,
+    "projected": 89,
+    "category": "Average - Good foundation with key optimization opportunities"
+  },
+  "key_findings": {
+    "main_issue": "Missing Google Business Profile",
+    "biggest_opportunity": "Local SEO optimization",
+    "unique_advantage": "Only QuickBooks Strategic Partner in Northern Ireland",
+    "revenue_potential": "£85k annually",
+    "implementation_timeline": "6 weeks"
+  },
+  "business_details": {
+    "founded": "2002 (20+ years)",
+    "employees": "13+ team members",
+    "specialties": ["Cloud Accounting", "QuickBooks", "Making Tax Digital", "SME Services"],
+    "professional_memberships": ["ICAI", "Chartered Institute of Taxation", "ATT", "STEP"],
+    "phone": "02890788880",
+    "email": "office@pgraccountants.com",
+    "address": "Unit 2, 21 Old Channel Road, Belfast, BT3 9DE"
+  },
+  "reviews": {
+    "trustpilot": {
+      "rating": "3.8/5",
+      "count": "2 reviews",
+      "highlights": ["Excellent QuickBooks setup", "Clear communication", "Stress-free process"]
+    },
+    "google_business": "Not found - major opportunity"
+  },
+  "competitive_advantages": [
+    "Only QuickBooks Strategic Partner in Northern Ireland",
+    "20+ years established presence",
+    "Comprehensive team with specialized expertise",
+    "Strong technical website foundation",
+    "Digital-first approach with Cloud accounting focus"
+  ],
+  "file_sizes": {
+    "showcase_html": "20.9KB",
+    "research_md": "3.2KB",
+    "audit_md": "6.0KB",
+    "pitch_md": "1.3KB"
+  }
+}

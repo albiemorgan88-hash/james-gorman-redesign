@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGR Chartered Accountants - AI Analysis Results</title>
+    <style>
+        :root {
+            --blue: #2B4DAF;
+            --red: #FF4520;
+            --white: #ffffff;
+            --light-bg: #f8f9fa;
+            --text: #1a1a2e;
+            --text-light: #666;
+            --green: #22c55e;
+            --orange: #f59e0b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--light-bg);
+            overflow: hidden;
+            height: 100vh;
+            touch-action: manipulation;
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 24px;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.5s ease;
+            pointer-events: none;
+        }
+
+        .slide.active {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+
+        .slide.prev {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        .slide h1 {
+            font-size: 2.2rem;
+            color: var(--text);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .slide h2 {
+            font-size: 1.8rem;
+            color: var(--blue);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .slide p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            max-width: 90%;
+        }
+
+        .brand-logo {
+            font-size: 1.4rem;
+            color: var(--blue);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .progress-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background: var(--blue);
+            width: 24px;
+        }
+
+        .scan-animation {
+            width: 300px;
+            height: 200px;
+            background: var(--white);
+            border: 2px solid var(--blue);
+            border-radius: 12px;
+            position: relative;
+            margin: 2rem 0;
+            overflow: hidden;
+        }
+
+        .scan-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--red), transparent);
+            animation: scan 2s linear infinite;
+        }
+
+        @keyframes scan {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(197px); }
+        }
+
+        .scan-text {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .score-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .score-ring-container {
+            position: relative;
+        }
+
+        .score-ring {
+            transition: stroke-dashoffset 2s ease-out;
+        }
+
+        .score-number {
+            font-size: 2rem;
+            font-weight: 700;
+            fill: var(--text);
+        }
+
+        .search-result {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: left;
+            margin: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 350px;
+        }
+
+        .result-url {
+            font-size: 12px;
+            color: #202124;
+            margin-bottom: 4px;
+        }
+
+        .result-title {
+            font-size: 18px;
+            color: #1a0dab;
+            margin-bottom: 4px;
+            text-decoration: underline;
+        }
+
+        .result-desc {
+            font-size: 13px;
+            color: #4d5156;
+            line-height: 1.4;
+        }
+
+        .before-after {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            margin: 1.5rem 0;
+        }
+
+        .before, .after {
+            flex: 1;
+            text-align: center;
+        }
+
+        .before h3 {
+            color: var(--red);
+            margin-bottom: 0.5rem;
+        }
+
+        .after h3 {
+            color: var(--green);
+            margin-bottom: 0.5rem;
+        }
+
+        .chat-container {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 20px;
+            max-width: 350px;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .chat-message {
+            margin-bottom: 16px;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        .chat-message.show {
+            animation: chatIn 0.4s ease forwards;
+        }
+
+        @keyframes chatIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .user-msg {
+            background: #e5e7eb;
+            padding: 12px 16px;
+            border-radius: 20px 20px 4px 20px;
+            margin-left: 20px;
+        }
+
+        .ai-msg {
+            background: var(--blue);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 20px 20px 20px 4px;
+            margin-right: 20px;
+        }
+
+        .typing {
+            display: flex;
+            gap: 4px;
+            padding: 12px 16px;
+        }
+
+        .typing span {
+            width: 6px;
+            height: 6px;
+            background: #999;
+            border-radius: 50%;
+            animation: bounce 0.6s infinite;
+        }
+
+        .typing span:nth-child(2) { animation-delay: 0.15s; }
+        .typing span:nth-child(3) { animation-delay: 0.3s; }
+
+        @keyframes bounce {
+            50% { transform: translateY(-4px); }
+        }
+
+        .roi-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 1.5rem 0;
+            max-width: 350px;
+        }
+
+        .roi-item {
+            background: var(--white);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .roi-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--blue);
+        }
+
+        .roi-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .cta-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 16px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--blue);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: var(--green);
+            color: white;
+        }
+
+        .btn-tertiary {
+            background: var(--white);
+            color: var(--blue);
+            border: 2px solid var(--blue);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, transparent 0%, var(--red) 0%, var(--red) 100%, transparent 100%);
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            animation: highlight 1.5s ease-out 0.5s forwards;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        @keyframes highlight {
+            to {
+                background-size: 100% 100%;
+                color: white;
+            }
+        }
+
+        .tap-hint {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.9rem;
+            color: var(--text-light);
+            opacity: 0.7;
+        }
+
+        @media (max-width: 480px) {
+            .slide {
+                padding: 30px 20px;
+            }
+            
+            .slide h1 {
+                font-size: 1.8rem;
+            }
+            
+            .slide h2 {
+                font-size: 1.5rem;
+            }
+            
+            .before-after {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .roi-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Hook -->
+    <div class="slide active">
+        <h1>What if AI could transform your accountancy practice overnight?</h1>
+        <div class="brand-logo">PGR Chartered Accountants</div>
+        <p>We analyzed your website and found some <span class="highlight">game-changing opportunities</span> for growth...</p>
+        <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">Tap anywhere to continue →</p>
+    </div>
+
+    <!-- Slide 2: Scanning Animation -->
+    <div class="slide">
+        <h2>Scanning your digital presence...</h2>
+        <div class="scan-animation">
+            <div class="scan-line"></div>
+            <div class="scan-text">Analyzing SEO, local presence & competition</div>
+        </div>
+        <p>Our AI is examining over 50 ranking factors that impact your visibility on Google...</p>
+    </div>
+
+    <!-- Slide 3: Issues Found -->
+    <div class="slide">
+        <h2>Analysis Complete</h2>
+        <div class="score-container">
+            <div class="score-ring-container">
+                <svg width="120" height="120" viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="#eee" stroke-width="8"/>
+                    <circle class="score-ring" cx="60" cy="60" r="50" fill="none" stroke="#f59e0b" 
+                        stroke-width="8" stroke-linecap="round" stroke-dasharray="314" 
+                        stroke-dashoffset="314" transform="rotate(-90 60 60)"/>
+                    <text x="60" y="65" text-anchor="middle" font-size="28" font-weight="700" fill="var(--text)">
+                        <tspan class="score-number">68</tspan>
+                    </text>
+                    <text x="60" y="85" text-anchor="middle" font-size="12" fill="var(--text-light)">
+                        <tspan>/100</tspan>
+                    </text>
+                </svg>
+            </div>
+            <p><strong>Major Issue Found:</strong> <span style="color: var(--red);">Missing Google Business Profile</span></p>
+            <p>As Belfast's only QuickBooks Strategic Partner, you're invisible in local searches</p>
+        </div>
+    </div>
+
+    <!-- Slide 4: Before/After -->
+    <div class="slide">
+        <h2>Here's what we'd fix</h2>
+        <div class="before-after">
+            <div class="before">
+                <h3>BEFORE (68/100)</h3>
+                <div class="search-result">
+                    <div class="result-url">pgraccountants.com</div>
+                    <div class="result-title">PGR Chartered Accountants Belfast</div>
+                    <div class="result-desc">PGR is an independent firm of Chartered Accountants based in Belfast...</div>
+                </div>
+                <p style="color: var(--red); font-size: 0.9rem;">No local presence, limited visibility</p>
+            </div>
+            <div class="after">
+                <h3>AFTER (89/100)</h3>
+                <div class="search-result">
+                    <div class="result-url">pgraccountants.com</div>
+                    <div class="result-title">PGR Chartered Accountants ★★★★★ (4.8) Belfast</div>
+                    <div class="result-desc">Belfast's only QuickBooks Strategic Partner. 20+ years experience. Cloud accounting specialists for SMEs...</div>
+                </div>
+                <p style="color: var(--green); font-size: 0.9rem;">Local SEO optimized, review-rich</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Google Ads Preview -->
+    <div class="slide">
+        <h2>Your Google Ads potential</h2>
+        <p style="margin-bottom: 1rem;">We found 847 people searched for accounting services in Belfast last month</p>
+        <div style="background: var(--white); padding: 1rem; border-radius: 8px; margin: 1rem 0; max-width: 350px;">
+            <div style="background: #fff3cd; padding: 8px; border-radius: 4px; margin-bottom: 8px; font-size: 0.8rem;">Ad</div>
+            <div style="color: var(--blue); font-weight: 600;">QuickBooks Strategic Partner | Cloud Accounting</div>
+            <div style="color: var(--green); font-size: 0.9rem;">www.pgraccountants.com</div>
+            <div style="font-size: 0.9rem; color: var(--text);">Belfast's only QuickBooks Strategic Partner. Free consultation for SMEs. Making Tax Digital experts.</div>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--text-light);">Estimated cost: £2-4 per click | Potential leads: 15-25/month</p>
+    </div>
+
+    <!-- Slide 6: AI Assistant Demo -->
+    <div class="slide">
+        <h2>AI Assistant for your clients</h2>
+        <div class="chat-container">
+            <div class="chat-message">
+                <div class="user-msg">I need help with my VAT return deadlines</div>
+            </div>
+            <div class="chat-message">
+                <div class="ai-msg">I can help with that! Your next VAT return is due on 7th May. Would you like me to schedule a reminder and book a consultation with one of our tax specialists?</div>
+            </div>
+            <div class="chat-message">
+                <div class="user-msg">Yes, and can you check if we're ready for Making Tax Digital?</div>
+            </div>
+            <div class="chat-message">
+                <div class="ai-msg">I've checked your account. You're 80% MTD compliant. I'll arrange a call with Anna Bennett to review the remaining requirements. What time works best this week?</div>
+            </div>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--text-light);">24/7 client support that actually understands accounting</p>
+    </div>
+
+    <!-- Slide 7: ROI Numbers -->
+    <div class="slide">
+        <h2>The numbers don't lie</h2>
+        <div class="roi-grid">
+            <div class="roi-item">
+                <div class="roi-number">147%</div>
+                <div class="roi-label">More local visibility</div>
+            </div>
+            <div class="roi-item">
+                <div class="roi-number">£85k</div>
+                <div class="roi-label">Annual revenue potential</div>
+            </div>
+            <div class="roi-item">
+                <div class="roi-number">3-5</div>
+                <div class="roi-label">New leads monthly</div>
+            </div>
+            <div class="roi-item">
+                <div class="roi-number">6 weeks</div>
+                <div class="roi-label">To full implementation</div>
+            </div>
+        </div>
+        <p>Based on Belfast market analysis for accounting services</p>
+        <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 1rem;">Investment: £2,500/month • ROI: 385% in year 1</p>
+    </div>
+
+    <!-- Slide 8: CTA -->
+    <div class="slide">
+        <h2>Ready to dominate Belfast's accounting market?</h2>
+        <p>Phil Patterson, Blue Canvas AI</p>
+        <div class="cta-buttons">
+            <a href="tel:+447935217762" class="cta-button btn-primary">
+                📞 Call: +44 7935 217762
+            </a>
+            <a href="https://wa.me/447935217762" class="cta-button btn-secondary">
+                💬 WhatsApp: Get Started
+            </a>
+            <a href="mailto:contact@bluecanvas.ai" class="cta-button btn-tertiary">
+                ✉️ Email: contact@bluecanvas.ai
+            </a>
+        </div>
+        <p style="font-size: 0.9rem; margin-top: 1rem;">No obligation chat • 15-minute consultation • Belfast-based</p>
+    </div>
+
+    <!-- Progress dots -->
+    <div class="progress-container">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+        <span class="dot" onclick="goToSlide(4)"></span>
+        <span class="dot" onclick="goToSlide(5)"></span>
+        <span class="dot" onclick="goToSlide(6)"></span>
+        <span class="dot" onclick="goToSlide(7)"></span>
+    </div>
+
+    <div class="tap-hint">Tap left/right or use arrow keys</div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function goToSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            
+            if (index < currentSlide) {
+                slides[currentSlide].classList.add('prev');
+                setTimeout(() => slides[currentSlide].classList.remove('prev'), 500);
+            }
+            
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+            
+            // Trigger slide-specific animations
+            if (index === 2) {
+                setTimeout(() => animateScore(), 300);
+            } else if (index === 5) {
+                setTimeout(() => animateChat(), 300);
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                goToSlide(currentSlide + 1);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                goToSlide(currentSlide - 1);
+            }
+        }
+
+        function animateScore() {
+            const ring = document.querySelector('.score-ring');
+            const number = document.querySelector('.score-number');
+            
+            // Animate ring
+            const circumference = 314;
+            const scorePercent = 68;
+            const offset = circumference - (scorePercent / 100) * circumference;
+            
+            setTimeout(() => {
+                ring.style.strokeDashoffset = offset;
+            }, 200);
+            
+            // Animate number count
+            let count = 0;
+            const countInterval = setInterval(() => {
+                count++;
+                number.textContent = count;
+                if (count >= scorePercent) {
+                    clearInterval(countInterval);
+                }
+            }, 30);
+        }
+
+        function animateChat() {
+            const messages = document.querySelectorAll('.chat-message');
+            messages.forEach((msg, i) => {
+                setTimeout(() => {
+                    msg.classList.add('show');
+                }, i * 800);
+            });
+        }
+
+        // Touch/mouse controls
+        let touchStartX = 0;
+        
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+        
+        document.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].clientX;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+            }
+        });
+        
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.progress-container') && !e.target.closest('.cta-button')) {
+                const rect = window.innerWidth;
+                if (e.clientX > rect * 0.6) {
+                    nextSlide();
+                } else if (e.clientX < rect * 0.4) {
+                    prevSlide();
+                }
+            }
+        });
+        
+        // Keyboard controls
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+    </script>
+</body>
+</html>

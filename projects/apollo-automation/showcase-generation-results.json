@@ -1,0 +1,128 @@
+[
+  {
+    "firm_name": "Brendan Kearney & Co Solicitors",
+    "status": "success",
+    "url": "https://albiemorgan88-hash.github.io/showcase-brendan-kearney-co-solicitors/",
+    "slug": "brendan-kearney-co-solicitors",
+    "website_found": false,
+    "primary_contact": {
+      "first_name": "Cody",
+      "last_name": "",
+      "title": "Solicitor",
+      "linkedin": "",
+      "phone": ""
+    }
+  },
+  {
+    "firm_name": "Quigley Grant & Kyle",
+    "status": "success",
+    "url": "https://albiemorgan88-hash.github.io/showcase-quigley-grant-kyle/",
+    "slug": "quigley-grant-kyle",
+    "website_found": false,
+    "primary_contact": {
+      "first_name": "Hollie",
+      "last_name": "",
+      "title": "Solicitor",
+      "linkedin": "",
+      "phone": ""
+    }
+  },
+  {
+    "firm_name": "Hasson & Company Solicitors",
+    "status": "success",
+    "url": "https://albiemorgan88-hash.github.io/showcase-hasson-company-solicitors/",
+    "slug": "hasson-company-solicitors",
+    "website_found": false,
+    "primary_contact": {
+      "first_name": "Luke",
+      "last_name": "",
+      "title": "Solicitor",
+      "linkedin": "",
+      "phone": ""
+    }
+  },
+  {
+    "firm_name": "Dickson & McNulty",
+    "status": "success",
+    "url": "https://albiemorgan88-hash.github.io/showcase-dickson-mcnulty/",
+    "slug": "dickson-mcnulty",
+    "website_found": false,
+    "primary_contact": {
+      "first_name": "Chloe",
+      "last_name": "",
+      "title": "Solicitor",
+      "linkedin": "",
+      "phone": ""
+    }
+  },
+  {
+    "firm_name": "Caldwell & Robinson Solicitors",
+    "status": "success",
+    "url": "https://albiemorgan88-hash.github.io/showcase-caldwell-robinson-solicitors/",
+    "slug": "caldwell-robinson-solicitors",
+    "website_found": false,
+    "primary_contact": {
+      "first_name": "Jade",
+      "last_name": "",
+      "title": "Solicitor",
+      "linkedin": "",
+      "phone": ""
+    }
+  },
+  {
+    "firm_name": "John Fahy & Co",
+    "status": "success",
+    "url": "https://albiemorgan88-hash.github.io/showcase-john-fahy-co/",
+    "slug": "john-fahy-co",
+    "website_found": false,
+    "primary_contact": {
+      "first_name": "Shannon",
+      "last_name": "",
+      "title": "Solicitor",
+      "linkedin": "",
+      "phone": ""
+    }
+  },
+  {
+    "firm_name": "Labrums Solicitors LLP",
+    "status": "success",
+    "url": "https://albiemorgan88-hash.github.io/showcase-labrums-solicitors-llp/",
+    "slug": "labrums-solicitors-llp",
+    "website_found": false,
+    "primary_contact": {
+      "first_name": "Isaac",
+      "last_name": "",
+      "title": "Solicitor",
+      "linkedin": "",
+      "phone": ""
+    }
+  },
+  {
+    "firm_name": "Kearney Law Group",
+    "status": "success",
+    "url": "https://albiemorgan88-hash.github.io/showcase-kearney-law-group/",
+    "slug": "kearney-law-group",
+    "website_found": false,
+    "primary_contact": {
+      "first_name": "Louise",
+      "last_name": "",
+      "title": "Solicitor",
+      "linkedin": "",
+      "phone": ""
+    }
+  },
+  {
+    "firm_name": "Juno",
+    "status": "success",
+    "url": "https://albiemorgan88-hash.github.io/showcase-juno/",
+    "slug": "juno",
+    "website_found": false,
+    "primary_contact": {
+      "first_name": "Kevin",
+      "last_name": "",
+      "title": "Senior Solicitor",
+      "linkedin": "",
+      "phone": ""
+    }
+  }
+]

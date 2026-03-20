@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Kane Accountants - AI Showcase</title>
+    <style>
+        :root {
+            --blue: #2B4DAF;
+            --red: #FF4520;
+            --white: #ffffff;
+            --light-bg: #f8f9fa;
+            --text: #1a1a2e;
+            --text-light: #666;
+        }
+        
+        * { margin:0; padding:0; box-sizing:border-box }
+        
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            background: var(--light-bg); 
+            overflow: hidden; 
+            height: 100vh;
+            color: var(--text);
+        }
+        
+        .slide { 
+            position: absolute; 
+            inset: 0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 40px 24px; 
+            opacity: 0; 
+            transform: translateX(100%); 
+            transition: all .5s ease; 
+            pointer-events: none;
+            text-align: center;
+        }
+        
+        .slide.active { 
+            opacity: 1; 
+            transform: translateX(0); 
+            pointer-events: auto 
+        }
+        
+        .slide.prev { 
+            opacity: 0; 
+            transform: translateX(-100%) 
+        }
+        
+        .progress { 
+            position: fixed; 
+            bottom: 20px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            display: flex; 
+            gap: 8px; 
+            z-index: 100 
+        }
+        
+        .dot { 
+            width: 8px; 
+            height: 8px; 
+            border-radius: 50%; 
+            background: rgba(0,0,0,.2); 
+            transition: all .3s 
+        }
+        
+        .dot.active { 
+            background: var(--blue); 
+            width: 24px 
+        }
+        
+        h1 { 
+            font-size: 32px; 
+            font-weight: 700; 
+            margin-bottom: 16px; 
+            color: var(--text) 
+        }
+        
+        h2 { 
+            font-size: 28px; 
+            font-weight: 700; 
+            margin-bottom: 16px; 
+            color: var(--blue) 
+        }
+        
+        p { 
+            font-size: 18px; 
+            line-height: 1.5; 
+            color: var(--text-light); 
+            margin-bottom: 20px;
+            max-width: 600px 
+        }
+        
+        .brand { 
+            color: var(--blue); 
+            font-weight: 700 
+        }
+        
+        .scan-animation { 
+            width: 300px; 
+            height: 200px; 
+            background: var(--white); 
+            border-radius: 12px; 
+            margin: 20px 0; 
+            position: relative; 
+            overflow: hidden;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .scan-line { 
+            height: 2px; 
+            background: linear-gradient(90deg, transparent, var(--blue), transparent); 
+            position: absolute; 
+            width: 100%; 
+            animation: scan 2s linear infinite 
+        }
+        
+        @keyframes scan { 
+            0% { top: 0 } 
+            100% { top: 100% } 
+        }
+        
+        .score-container { 
+            margin: 30px 0 
+        }
+        
+        .score-ring { 
+            stroke-dasharray: 314; 
+            stroke-dashoffset: 314; 
+            transition: stroke-dashoffset 2s ease-in-out 
+        }
+        
+        .search-result { 
+            background: var(--white); 
+            border-radius: 12px; 
+            padding: 16px; 
+            text-align: left; 
+            margin: 20px 0; 
+            max-width: 500px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.1);
+        }
+        
+        .result-url { 
+            font-size: 12px; 
+            color: #202124; 
+            margin-bottom: 4px 
+        }
+        
+        .result-title { 
+            font-size: 18px; 
+            color: #1a0dab; 
+            margin-bottom: 4px;
+            text-decoration: underline;
+        }
+        
+        .result-desc { 
+            font-size: 13px; 
+            color: #4d5156; 
+            line-height: 1.4 
+        }
+        
+        .chat-container { 
+            background: var(--white); 
+            border-radius: 12px; 
+            padding: 20px; 
+            max-width: 400px; 
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,.1);
+        }
+        
+        .chat-msg { 
+            margin-bottom: 12px; 
+            opacity: 0; 
+            transform: translateY(10px); 
+            animation: chatIn .4s ease forwards 
+        }
+        
+        @keyframes chatIn { 
+            to { opacity: 1; transform: translateY(0) } 
+        }
+        
+        .user-msg { 
+            background: #007AFF; 
+            color: white; 
+            padding: 8px 12px; 
+            border-radius: 18px; 
+            display: inline-block; 
+            margin-left: auto; 
+            text-align: right;
+            animation-delay: 0s;
+        }
+        
+        .ai-msg { 
+            background: #f1f1f1; 
+            color: var(--text); 
+            padding: 8px 12px; 
+            border-radius: 18px; 
+            display: inline-block;
+            animation-delay: 0.8s;
+        }
+        
+        .typing { 
+            padding: 8px 12px; 
+            background: #f1f1f1; 
+            border-radius: 18px; 
+            display: inline-block;
+            animation-delay: 1.6s;
+        }
+        
+        .typing span { 
+            display: inline-block; 
+            width: 6px; 
+            height: 6px; 
+            background: #999; 
+            border-radius: 50%; 
+            margin: 0 2px; 
+            animation: bounce .6s infinite 
+        }
+        
+        .typing span:nth-child(2) { animation-delay: .15s }
+        .typing span:nth-child(3) { animation-delay: .3s }
+        
+        @keyframes bounce { 
+            50% { transform: translateY(-4px) } 
+        }
+        
+        .cta-buttons { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 12px; 
+            margin-top: 30px;
+            max-width: 300px;
+        }
+        
+        .btn { 
+            padding: 14px 24px; 
+            border-radius: 25px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            text-align: center; 
+            transition: all .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .btn-primary { 
+            background: var(--blue); 
+            color: var(--white) 
+        }
+        
+        .btn-secondary { 
+            background: var(--white); 
+            color: var(--blue); 
+            border: 2px solid var(--blue) 
+        }
+        
+        .btn-whatsapp { 
+            background: #25D366; 
+            color: var(--white) 
+        }
+        
+        .btn:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 4px 12px rgba(0,0,0,.2) 
+        }
+        
+        .improvement-score { 
+            color: var(--blue); 
+            font-weight: 700; 
+            font-size: 24px 
+        }
+        
+        .roi-metric { 
+            background: var(--white); 
+            padding: 20px; 
+            border-radius: 12px; 
+            margin: 10px 0; 
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,.1);
+        }
+        
+        .metric-value { 
+            font-size: 32px; 
+            font-weight: 700; 
+            color: var(--blue); 
+            margin-bottom: 8px 
+        }
+        
+        .metric-label { 
+            font-size: 14px; 
+            color: var(--text-light) 
+        }
+        
+        .issue-list { 
+            text-align: left; 
+            max-width: 400px; 
+            margin: 20px 0 
+        }
+        
+        .issue { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+            margin-bottom: 12px; 
+            padding: 12px; 
+            background: var(--white); 
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,.1);
+        }
+        
+        .issue-icon { 
+            width: 20px; 
+            height: 20px; 
+            background: var(--red); 
+            border-radius: 50%; 
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .ads-preview { 
+            background: var(--white); 
+            border-radius: 12px; 
+            padding: 16px; 
+            margin: 20px 0; 
+            max-width: 500px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.1);
+        }
+        
+        .ad-tag { 
+            background: #34A853; 
+            color: white; 
+            padding: 2px 6px; 
+            border-radius: 3px; 
+            font-size: 10px; 
+            display: inline-block; 
+            margin-bottom: 6px 
+        }
+        
+        .ad-title { 
+            color: #1a0dab; 
+            font-size: 18px; 
+            text-decoration: underline; 
+            margin-bottom: 4px 
+        }
+        
+        .ad-url { 
+            color: #34A853; 
+            font-size: 12px; 
+            margin-bottom: 8px 
+        }
+        
+        .ad-desc { 
+            color: var(--text); 
+            font-size: 13px; 
+            line-height: 1.4 
+        }
+
+        .tap-hint {
+            position: fixed;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            color: var(--text-light);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Hook -->
+    <div class="slide active">
+        <h1>What if AI could transform your accounting practice overnight?</h1>
+        <p>We scanned <span class="brand">MJ Kane Accountants</span> and discovered exactly how...</p>
+        <div style="margin-top: 40px; font-size: 48px;">🚀</div>
+    </div>
+
+    <!-- Slide 2: Scan Animation -->
+    <div class="slide">
+        <h2>Scanning Your Digital Presence</h2>
+        <div class="scan-animation">
+            <div class="scan-line"></div>
+        </div>
+        <p>Analyzing website performance, SEO health, and missed opportunities...</p>
+    </div>
+
+    <!-- Slide 3: Issues Found -->
+    <div class="slide">
+        <h2>Here's What We Found</h2>
+        <div class="score-container">
+            <svg width="120" height="120" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="#eee" stroke-width="8"/>
+                <circle class="score-ring" cx="60" cy="60" r="50" fill="none" stroke="var(--red)" 
+                    stroke-width="8" stroke-linecap="round" stroke-dasharray="314" 
+                    stroke-dashoffset="251" transform="rotate(-90 60 60)"/>
+                <text x="60" y="65" text-anchor="middle" font-size="28" font-weight="700" fill="var(--text)">
+                    <tspan class="score-num">40</tspan>
+                </text>
+            </svg>
+        </div>
+        <div class="issue-list">
+            <div class="issue">
+                <div class="issue-icon">!</div>
+                <div>Missing meta descriptions on key pages</div>
+            </div>
+            <div class="issue">
+                <div class="issue-icon">!</div>
+                <div>No structured data for local business</div>
+            </div>
+            <div class="issue">
+                <div class="issue-icon">!</div>
+                <div>Page speed issues affecting rankings</div>
+            </div>
+            <div class="issue">
+                <div class="issue-icon">!</div>
+                <div>Limited local SEO optimization</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: After Fixes -->
+    <div class="slide">
+        <h2>After AI Optimization</h2>
+        <div class="search-result">
+            <div class="result-url">mjkane.co.uk › carrickfergus-accountants</div>
+            <div class="result-title">Expert Accountants Carrickfergus | Award-Winning Tax Advice | MJ Kane</div>
+            <div class="result-desc">Trusted by 8000+ clients worldwide. Get professional accounting, tax planning & business advice from Carrickfergus's award-winning chartered accountants. Free consultation available.</div>
+        </div>
+        <p>Your SEO score improves to <span class="improvement-score">85/100</span></p>
+        <p>Better rankings = more local clients finding you first</p>
+    </div>
+
+    <!-- Slide 5: Google Ads -->
+    <div class="slide">
+        <h2>Dominate Local Searches</h2>
+        <div class="ads-preview">
+            <div class="ad-tag">Ad</div>
+            <div class="ad-title">MJ Kane Accountants | Free Consultation</div>
+            <div class="ad-url">mjkane.co.uk/</div>
+            <div class="ad-desc">Award-winning chartered accountants in Carrickfergus. 20+ years experience. Tax planning, business advice & more. Book your free consultation today.</div>
+        </div>
+        <p>Appear above competitors for "accountants near me" and "tax advice Carrickfergus"</p>
+        <p><strong>Estimated cost:</strong> £3-5 per click | <strong>Potential:</strong> 15-25 new clients monthly</p>
+    </div>
+
+    <!-- Slide 6: AI Assistant -->
+    <div class="slide">
+        <h2>24/7 Client Capture System</h2>
+        <div class="chat-container">
+            <div class="chat-msg user-msg">I need help with my corporation tax return</div>
+            <div class="chat-msg ai-msg">I'd be happy to help! Our chartered accountants specialize in corporation tax for Northern Ireland businesses. Can I get your company details to check filing deadlines?</div>
+            <div class="chat-msg typing"><span></span><span></span><span></span></div>
+        </div>
+        <p>Never miss an enquiry again. Our AI handles initial consultations and books appointments automatically.</p>
+    </div>
+
+    <!-- Slide 7: ROI -->
+    <div class="slide">
+        <h2>The Numbers Don't Lie</h2>
+        <div class="roi-metric">
+            <div class="metric-value">£45,000</div>
+            <div class="metric-label">Additional revenue per year</div>
+        </div>
+        <div class="roi-metric">
+            <div class="metric-value">£1,500</div>
+            <div class="metric-label">Average client value</div>
+        </div>
+        <div class="roi-metric">
+            <div class="metric-value">8x</div>
+            <div class="metric-label">Return on investment</div>
+        </div>
+        <p>Based on capturing just 2-3 additional clients per month through improved digital presence</p>
+    </div>
+
+    <!-- Slide 8: CTA -->
+    <div class="slide">
+        <h2>Ready to Transform Your Practice?</h2>
+        <p>Let's discuss how AI can grow <span class="brand">MJ Kane Accountants</span> in the next 90 days</p>
+        
+        <div class="cta-buttons">
+            <a href="tel:+447935217762" class="btn btn-primary">📞 Call Now: +44 7935 217762</a>
+            <a href="https://wa.me/447935217762?text=Hi, I saw the MJ Kane showcase and I'm interested in discussing AI solutions" class="btn btn-whatsapp">💬 WhatsApp</a>
+            <a href="mailto:contact@bluecanvas.ai?subject=MJ Kane Showcase - Let's Talk" class="btn btn-secondary">✉️ Email Us</a>
+        </div>
+        
+        <div style="margin-top: 30px; font-size: 14px; color: var(--text-light);">
+            <strong>PJ Patterson</strong><br>
+            Blue Canvas AI<br>
+            contact@bluecanvas.ai
+        </div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="progress">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <div class="tap-hint">Tap right side to continue →</div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            // Remove active classes
+            slides.forEach(slide => slide.classList.remove('active', 'prev'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Set current slide
+            if (n >= totalSlides) currentSlide = totalSlides - 1;
+            if (n < 0) currentSlide = 0;
+            
+            // Add active classes
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+            
+            // Add prev class to previous slides
+            for (let i = 0; i < currentSlide; i++) {
+                slides[i].classList.add('prev');
+            }
+            
+            // Hide tap hint after first slide
+            if (currentSlide > 0) {
+                document.querySelector('.tap-hint').style.display = 'none';
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+
+        // Touch/click navigation
+        document.addEventListener('click', e => {
+            if (e.target.closest('.btn') || e.target.closest('a')) return;
+            if (e.clientX > window.innerWidth * 0.65) {
+                nextSlide();
+            } else if (e.clientX < window.innerWidth * 0.35) {
+                prevSlide();
+            }
+        });
+
+        // Swipe navigation
+        let touchStartX = 0;
+        document.addEventListener('touchstart', e => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        document.addEventListener('touchend', e => {
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) nextSlide();
+                else prevSlide();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault();
+                nextSlide();
+            }
+            if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                prevSlide();
+            }
+        });
+
+        // Initialize
+        showSlide(0);
+    </script>
+</body>
+</html>

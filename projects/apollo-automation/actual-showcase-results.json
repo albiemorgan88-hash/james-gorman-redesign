@@ -1,0 +1,32 @@
+[
+  {
+    "business_name": "Brendan Kearney & Co Solicitors",
+    "status": "success",
+    "github_url": "https://albiemorgan88-hash.github.io/showcase-brendan-kearney-co-solicitors/",
+    "seo_score": 8,
+    "category": "Critical",
+    "website_found": false,
+    "showcase_dir": "/Users/philsagent/.openclaw/workspace/projects/demos/brendan-kearney-co-solicitors",
+    "slug": "brendan-kearney-co-solicitors"
+  },
+  {
+    "business_name": "Quigley Grant & Kyle",
+    "status": "success",
+    "github_url": "https://albiemorgan88-hash.github.io/showcase-quigley-grant-kyle/",
+    "seo_score": 8,
+    "category": "Critical",
+    "website_found": false,
+    "showcase_dir": "/Users/philsagent/.openclaw/workspace/projects/demos/quigley-grant-kyle",
+    "slug": "quigley-grant-kyle"
+  },
+  {
+    "business_name": "Hasson & Company Solicitors",
+    "status": "success",
+    "github_url": "https://albiemorgan88-hash.github.io/showcase-hasson-company-solicitors/",
+    "seo_score": 8,
+    "category": "Critical",
+    "website_found": false,
+    "showcase_dir": "/Users/philsagent/.openclaw/workspace/projects/demos/hasson-company-solicitors",
+    "slug": "hasson-company-solicitors"
+  }
+]
