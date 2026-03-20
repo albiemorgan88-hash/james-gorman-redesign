@@ -1,0 +1,50 @@
+{
+  "business_name": "McAleer Jackson Ltd",
+  "slug": "mcaleer-jackson",
+  "website_url": "https://www.mmjca.com/",
+  "contact_email": "info@mmjca.com",
+  "contact_phone": "+44 (0)28 82250253",
+  "locations": ["Belfast", "Omagh", "Northern Ireland"],
+  "apollo_contacts": [
+    {
+      "name": "Oonagh Armstrong",
+      "title": "Practice Manager",
+      "specialization": "Operations & CIPD"
+    },
+    {
+      "name": "Alison Burnside", 
+      "title": "Director",
+      "specialization": "BA(Hons), Dip M, FCA, FABRP"
+    }
+  ],
+  "seo_score": {
+    "current": 34,
+    "category": "Poor",
+    "improvement_potential": 84
+  },
+  "key_issues": [
+    "No Google Business Profile found",
+    "Missing LocalBusiness schema markup", 
+    "Generic title tags with no location targeting",
+    "Missing meta descriptions on key pages",
+    "No location-specific landing pages"
+  ],
+  "created_date": "2026-03-20T11:17:00Z",
+  "status": "audit_complete",
+  "industry": "Professional Services - Accounting",
+  "tier": "Tier 2 - Dual Location Opportunity",
+  "unique_selling_points": [
+    "30+ years established (since 1986)",
+    "Dual location: Belfast CBD + Omagh",
+    "R&D tax claims specialization",
+    "Strong acquisition/disposal expertise",
+    "Owner-managed business focus"
+  ],
+  "revenue_opportunity": {
+    "current_monthly_searches": 920,
+    "estimated_monthly_leads": 15,
+    "average_client_value": 2400,
+    "potential_monthly_revenue": "£3,000-6,000",
+    "roi_multiple": "6-12x"
+  }
+}

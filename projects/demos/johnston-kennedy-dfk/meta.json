@@ -1,0 +1,40 @@
+{
+  "business_name": "Johnston Kennedy DFK Chartered Accountants & Tax Advisors",
+  "slug": "johnston-kennedy-dfk",
+  "website_url": "https://www.johnston-kennedy.com/",
+  "contact_email": "info@johnston-kennedy.com",
+  "contact_phone": "+44 (0)28 9045 6333",
+  "locations": ["Belfast", "Lisburn", "Newtownabbey"],
+  "apollo_contacts": [
+    {
+      "name": "James Swell",
+      "title": "Senior Manager",
+      "apollo_id": "54a1a62274686942d377af04"
+    },
+    {
+      "name": "James Gage", 
+      "title": "Director",
+      "apollo_id": "60ddc02061a7850001d85b5a"
+    },
+    {
+      "name": "David Johnson",
+      "title": "Financial Services Director", 
+      "apollo_id": "61679df2adace200016d1779"
+    }
+  ],
+  "seo_score": {
+    "current": 42,
+    "category": "Poor",
+    "improvement_potential": 78
+  },
+  "key_issues": [
+    "Missing Google Business Profile",
+    "No location-specific service pages", 
+    "Generic H1 tags",
+    "Limited local SEO optimization"
+  ],
+  "created_date": "2026-03-20T11:05:00Z",
+  "status": "ready_for_deployment",
+  "industry": "Professional Services - Accounting",
+  "tier": "Tier 1 - Multiple Contacts"
+}

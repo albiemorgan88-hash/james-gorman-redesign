@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNT Chartered Accountants - AI Business Transformation</title>
+  <style>
+    :root {
+      --blue: #2B4DAF;
+      --red: #FF4520;
+      --white: #ffffff;
+      --light-bg: #f8f9fa;
+      --text: #1a1a2e;
+      --text-light: #666;
+    }
+    
+    * { margin:0; padding:0; box-sizing:border-box }
+    body { 
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; 
+      background:var(--light-bg); 
+      overflow:hidden; 
+      height:100vh;
+      color:var(--text);
+    }
+    
+    .slide { 
+      position:absolute; 
+      inset:0; 
+      display:flex; 
+      flex-direction:column; 
+      align-items:center; 
+      justify-content:center; 
+      padding:40px 24px; 
+      opacity:0; 
+      transform:translateX(100%); 
+      transition:all .5s ease; 
+      pointer-events:none;
+    }
+    
+    .slide.active { opacity:1; transform:translateX(0); pointer-events:auto }
+    .slide.prev { opacity:0; transform:translateX(-100%) }
+    
+    .progress { 
+      position:fixed; 
+      bottom:20px; 
+      left:50%; 
+      transform:translateX(-50%); 
+      display:flex; 
+      gap:8px; 
+      z-index:100;
+    }
+    
+    .dot { 
+      width:8px; 
+      height:8px; 
+      border-radius:50%; 
+      background:rgba(0,0,0,.2); 
+      transition:all .3s;
+      cursor:pointer;
+    }
+    .dot.active { background:var(--blue); width:24px }
+    
+    .logo { font-size:24px; font-weight:700; color:var(--blue); margin-bottom:40px }
+    
+    h1 { font-size:32px; font-weight:700; margin-bottom:16px; text-align:center; line-height:1.2 }
+    h2 { font-size:28px; font-weight:600; margin-bottom:20px; text-align:center }
+    p { font-size:18px; line-height:1.6; text-align:center; color:var(--text-light); max-width:600px }
+    
+    .progress-bar {
+      width: 100%;
+      max-width: 400px;
+      height: 8px;
+      background: #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 20px 0;
+    }
+    
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--blue) 0%, var(--red) 100%);
+      width: 0;
+      transition: width 2s ease;
+      border-radius: 4px;
+    }
+    
+    .scan-item {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.5s ease;
+      font-size: 16px;
+      color: var(--text);
+      margin: 8px 0;
+    }
+    
+    .scan-item.active { opacity: 1; transform: translateY(0) }
+    .scan-item.complete::after { content: " ✓"; color: #22c55e }
+    
+    .score-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 0;
+    }
+    
+    .score-ring {
+      position: relative;
+      width: 120px;
+      height: 120px;
+    }
+    
+    .score-circle {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: conic-gradient(var(--red) 0deg 158deg, #e0e0e0 158deg 360deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text);
+      animation: scoreReveal 1.5s ease-out;
+    }
+    
+    @keyframes scoreReveal {
+      from { background: conic-gradient(#e0e0e0 0deg 360deg) }
+    }
+    
+    .score-label {
+      margin-top: 10px;
+      font-size: 16px;
+      color: var(--text-light);
+      text-align: center;
+    }
+    
+    .issues-list {
+      text-align: left;
+      margin: 20px 0;
+      max-width: 500px;
+    }
+    
+    .issue {
+      display: flex;
+      align-items: center;
+      margin: 12px 0;
+      padding: 12px;
+      background: #fff3f3;
+      border-radius: 8px;
+      border-left: 3px solid var(--red);
+    }
+    
+    .issue-icon { margin-right: 12px; font-size: 18px; color: var(--red) }
+    .issue-text { font-size: 14px; color: var(--text) }
+    
+    .search-result {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 16px 0;
+      text-align: left;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+    
+    .result-url { color: #1a73e8; font-size: 14px; margin-bottom: 4px }
+    .result-title { color: #1a73e8; font-size: 18px; font-weight: 500; margin-bottom: 8px; text-decoration: none }
+    .result-description { color: var(--text-light); font-size: 14px; line-height: 1.4 }
+    
+    .before-after {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 500px;
+      width: 100%;
+    }
+    
+    .improvement { 
+      background: #f0fdf4; 
+      border-left: 3px solid #22c55e;
+    }
+    .improvement .result-title { color: #059669 }
+    .improvement .result-url { color: #059669 }
+    
+    .chat-container {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      height: 300px;
+      overflow-y: auto;
+    }
+    
+    .message {
+      margin: 12px 0;
+      padding: 12px 16px;
+      border-radius: 18px;
+      max-width: 85%;
+      animation: messageSlide 0.3s ease;
+    }
+    
+    @keyframes messageSlide {
+      from { opacity: 0; transform: translateY(10px) }
+      to { opacity: 1; transform: translateY(0) }
+    }
+    
+    .user-message {
+      background: var(--blue);
+      color: white;
+      margin-left: auto;
+      text-align: right;
+    }
+    
+    .ai-message {
+      background: #f1f5f9;
+      color: var(--text);
+    }
+    
+    .roi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 500px;
+      width: 100%;
+      margin: 20px 0;
+    }
+    
+    .roi-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .roi-number {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+    
+    .roi-label {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+    
+    .cta-container {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    
+    .contact-button {
+      display: inline-block;
+      padding: 16px 24px;
+      margin: 8px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      min-width: 140px;
+    }
+    
+    .btn-primary {
+      background: var(--blue);
+      color: white;
+    }
+    
+    .btn-secondary {
+      background: #25D366;
+      color: white;
+    }
+    
+    .btn-tertiary {
+      background: #f1f5f9;
+      color: var(--text);
+    }
+    
+    .contact-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    
+    .contact-info {
+      margin-top: 20px;
+      font-size: 14px;
+      color: var(--text-light);
+    }
+    
+    /* Navigation */
+    .nav-button {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.9);
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--blue);
+      transition: all 0.3s;
+    }
+    
+    .nav-button:hover { background: white }
+    
+    .nav-prev { left: 20px }
+    .nav-next { right: 20px }
+    
+    @media (max-width: 768px) {
+      .nav-button { display: none }
+      .progress { bottom: 10px }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Slide 1: Hook -->
+  <div class="slide active">
+    <div class="logo">🔧 Blue Canvas</div>
+    <h1>What if AI could transform <strong>DNT Chartered Accountants</strong> overnight?</h1>
+    <p>We analysed your digital presence and found significant opportunities for growth. Here's what we discovered...</p>
+  </div>
+
+  <!-- Slide 2: Scanning -->
+  <div class="slide">
+    <div class="logo">🔍 Scanning</div>
+    <h2>Analysing Your Digital Footprint</h2>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <div id="scanItems">
+      <div class="scan-item">Checking dntca.com performance...</div>
+      <div class="scan-item">Analysing local SEO presence...</div>
+      <div class="scan-item">Reviewing Google Maps visibility...</div>
+      <div class="scan-item">Scanning competitor positioning...</div>
+      <div class="scan-item">Evaluating content strategy...</div>
+    </div>
+  </div>
+
+  <!-- Slide 3: Issues Found -->
+  <div class="slide">
+    <div class="logo">📊 Report</div>
+    <h2>Issues Identified</h2>
+    <div class="score-container">
+      <div class="score-ring">
+        <div class="score-circle">44/100</div>
+      </div>
+      <div class="score-label">Current SEO Score</div>
+    </div>
+    <div class="issues-list">
+      <div class="issue">
+        <div class="issue-icon">🗺️</div>
+        <div class="issue-text">Limited Google Maps optimization across multiple offices</div>
+      </div>
+      <div class="issue">
+        <div class="issue-icon">📱</div>
+        <div class="issue-text">Outdated website design impacting mobile user experience</div>
+      </div>
+      <div class="issue">
+        <div class="issue-icon">🎯</div>
+        <div class="issue-text">Missing location-specific landing pages for 4 offices</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 4: Before & After -->
+  <div class="slide">
+    <div class="logo">🚀 Solutions</div>
+    <h2>Your Enhanced Online Presence</h2>
+    <div class="before-after">
+      <div class="search-result">
+        <div class="result-url">www.dntca.com</div>
+        <div class="result-title">Accountants in Belfast : DNT Chartered Accountants</div>
+        <div class="result-description">DNT Chartered Accountants based in Belfast have an unrivalled reputation for proactive tax, business planning and advisory services.</div>
+      </div>
+      <div style="text-align: center; color: var(--red); font-weight: 600; margin: 10px 0;">↓ AFTER AI OPTIMIZATION ↓</div>
+      <div class="search-result improvement">
+        <div class="result-url">www.dntca.com</div>
+        <div class="result-title">Belfast Chartered Accountants | 4 Offices | DNT</div>
+        <div class="result-description">Expert tax & business advisory across Belfast, Antrim, Lisburn & Rathfriland. ⭐⭐⭐⭐⭐ 38 reviews • QuickBooks ProAdvisor • Free consultation</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 5: Google Ads Preview -->
+  <div class="slide">
+    <div class="logo">💰 Advertising</div>
+    <h2>Google Ads Opportunity</h2>
+    <div class="before-after">
+      <div class="search-result" style="position: relative;">
+        <div style="position: absolute; top: -5px; left: -5px; background: var(--blue); color: white; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">AD</div>
+        <div class="result-url">www.dntca.com</div>
+        <div class="result-title">Belfast Business Accountants | DNT</div>
+        <div class="result-description">Leading chartered accountants with 4 NI offices. Business planning & tax advisory. Call 028 9032 0039</div>
+      </div>
+    </div>
+    <div class="roi-grid">
+      <div class="roi-card">
+        <div class="roi-number">£2.80</div>
+        <div class="roi-label">Cost per click</div>
+      </div>
+      <div class="roi-card">
+        <div class="roi-number">680</div>
+        <div class="roi-label">Monthly searches</div>
+      </div>
+    </div>
+    <p>Potential for 45-70 qualified leads monthly across all locations</p>
+  </div>
+
+  <!-- Slide 6: AI Assistant Demo -->
+  <div class="slide">
+    <div class="logo">🤖 AI Assistant</div>
+    <h2>Automated Client Enquiries</h2>
+    <div class="chat-container" id="chatContainer">
+      <!-- Messages will be added by JavaScript -->
+    </div>
+    <p style="margin-top: 16px;">Captures leads after-hours, qualifies enquiries, schedules appointments across all offices</p>
+  </div>
+
+  <!-- Slide 7: ROI Breakdown -->
+  <div class="slide">
+    <div class="logo">📈 ROI Analysis</div>
+    <h2>Financial Impact</h2>
+    <div class="roi-grid">
+      <div class="roi-card">
+        <div class="roi-number">£28K</div>
+        <div class="roi-label">Potential annual revenue</div>
+      </div>
+      <div class="roi-card">
+        <div class="roi-number">£1,200</div>
+        <div class="roi-label">Implementation cost</div>
+      </div>
+      <div class="roi-card">
+        <div class="roi-number">4 weeks</div>
+        <div class="roi-label">Payback period</div>
+      </div>
+      <div class="roi-card">
+        <div class="roi-number">23x ROI</div>
+        <div class="roi-label">First year return</div>
+      </div>
+    </div>
+    <p>Based on 20 new clients annually @ £1,400 average across multi-location practice</p>
+  </div>
+
+  <!-- Slide 8: CTA -->
+  <div class="slide">
+    <div class="logo">🔧 Blue Canvas</div>
+    <h2>Ready to Transform DNT's Digital Presence?</h2>
+    <div class="cta-container">
+      <p style="margin-bottom: 24px;">Let's discuss optimizing across all your locations.</p>
+      <a href="tel:+447935217762" class="contact-button btn-primary">📞 Call Now</a>
+      <a href="https://wa.me/447935217762" class="contact-button btn-secondary">💬 WhatsApp</a>
+      <a href="mailto:contact@bluecanvas.ai" class="contact-button btn-tertiary">✉️ Email</a>
+      <div class="contact-info">
+        <strong>PJ Patterson</strong><br>
+        Blue Canvas AI<br>
+        +44 7935 217762<br>
+        contact@bluecanvas.ai
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation & Progress -->
+  <button class="nav-button nav-prev" onclick="prevSlide()">‹</button>
+  <button class="nav-button nav-next" onclick="nextSlide()">›</button>
+  
+  <div class="progress">
+    <div class="dot active" onclick="goToSlide(0)"></div>
+    <div class="dot" onclick="goToSlide(1)"></div>
+    <div class="dot" onclick="goToSlide(2)"></div>
+    <div class="dot" onclick="goToSlide(3)"></div>
+    <div class="dot" onclick="goToSlide(4)"></div>
+    <div class="dot" onclick="goToSlide(5)"></div>
+    <div class="dot" onclick="goToSlide(6)"></div>
+    <div class="dot" onclick="goToSlide(7)"></div>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    function showSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      slides[currentSlide].classList.add('prev');
+      dots[currentSlide].classList.remove('active');
+      
+      currentSlide = n;
+      
+      slides[currentSlide].classList.remove('prev');
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+      
+      if (currentSlide === 1) {
+        startScanning();
+      } else if (currentSlide === 5) {
+        startChat();
+      }
+    }
+    
+    function nextSlide() {
+      const next = (currentSlide + 1) % slides.length;
+      showSlide(next);
+    }
+    
+    function prevSlide() {
+      const prev = currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
+      showSlide(prev);
+    }
+    
+    function goToSlide(n) {
+      showSlide(n);
+    }
+    
+    let autoAdvanceTimer;
+    function resetAutoAdvance() {
+      clearTimeout(autoAdvanceTimer);
+      autoAdvanceTimer = setTimeout(() => {
+        if (currentSlide < slides.length - 1) {
+          nextSlide();
+        }
+      }, 8000);
+    }
+    
+    function startScanning() {
+      const progressFill = document.getElementById('progressFill');
+      const scanItems = document.querySelectorAll('.scan-item');
+      
+      progressFill.style.width = '100%';
+      
+      scanItems.forEach((item, index) => {
+        setTimeout(() => {
+          item.classList.add('active');
+          setTimeout(() => {
+            item.classList.add('complete');
+          }, 300);
+        }, index * 600);
+      });
+    }
+    
+    function startChat() {
+      const chatContainer = document.getElementById('chatContainer');
+      chatContainer.innerHTML = '';
+      
+      const messages = [
+        { type: 'user', text: 'Hi, I need help with VAT returns' },
+        { type: 'ai', text: 'Hello! I can help you with VAT compliance. Are you Making Tax Digital ready?' },
+        { type: 'user', text: 'Not sure, what does that involve?' },
+        { type: 'ai', text: 'DNT are QuickBooks ProAdvisors and can ensure full MTD compliance. Which of our 4 offices is most convenient - Belfast, Antrim, Lisburn or Rathfriland?' },
+        { type: 'user', text: 'Belfast would work best' },
+        { type: 'ai', text: 'Perfect! I can book you a free consultation at our Belfast office. Would Tuesday at 11 AM or Thursday at 3 PM suit better?' }
+      ];
+      
+      messages.forEach((message, index) => {
+        setTimeout(() => {
+          const messageDiv = document.createElement('div');
+          messageDiv.className = `message ${message.type}-message`;
+          messageDiv.textContent = message.text;
+          chatContainer.appendChild(messageDiv);
+          chatContainer.scrollTop = chatContainer.scrollHeight;
+        }, index * 1200);
+      });
+    }
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        nextSlide();
+        resetAutoAdvance();
+      } else if (e.key === 'ArrowLeft') {
+        prevSlide();
+        resetAutoAdvance();
+      }
+    });
+    
+    let touchStartX = null;
+    document.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+    });
+    
+    document.addEventListener('touchend', (e) => {
+      if (!touchStartX) return;
+      const touchEndX = e.changedTouches[0].clientX;
+      const diff = touchStartX - touchEndX;
+      
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          nextSlide();
+        } else {
+          prevSlide();
+        }
+        resetAutoAdvance();
+      }
+      touchStartX = null;
+    });
+    
+    resetAutoAdvance();
+  </script>
+</body>
+</html>

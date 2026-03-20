@@ -1,0 +1,33 @@
+{
+  "business_name": "MTS Chartered Accountants",
+  "slug": "mts-chartered-accountants",
+  "website": "https://mtsaccountants.com/",
+  "location": "Belfast, Northern Ireland",
+  "industry": "Accounting",
+  "seo_score": 43,
+  "improvement_score": 75,
+  "major_issues": [
+    "No meta descriptions",
+    "No Google Business Profile",
+    "Broken sitemap.xml",
+    "Poor local SEO",
+    "No structured data",
+    "Missing Open Graph tags"
+  ],
+  "contacts": [
+    {
+      "name": "Grainne",
+      "role": "Contact",
+      "count": 4
+    }
+  ],
+  "showcase_url": "https://albiemorgan88-hash.github.io/showcase-mts-chartered-accountants/",
+  "created_date": "2026-03-20T10:05:00Z",
+  "roi_projection": {
+    "monthly_cost": 2400,
+    "new_revenue": 18000,
+    "roi_percentage": 650,
+    "payback_weeks": 6
+  },
+  "completed": true
+}

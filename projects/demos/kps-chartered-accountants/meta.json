@@ -1,0 +1,45 @@
+{
+  "business_name": "KPS Chartered Accountants",
+  "slug": "kps-chartered-accountants",
+  "website_url": "https://www.kpsca.co.uk/",
+  "contact_email": "info@kpsca.co.uk",
+  "contact_phone": "+44 (0)28 44616258",
+  "locations": ["Downpatrick", "Newcastle", "Co Down"],
+  "apollo_contacts": [
+    {
+      "name": "Kyran Smyth",
+      "title": "Founding Director",
+      "specialization": "Tax Advisory & Digital Solutions"
+    }
+  ],
+  "seo_score": {
+    "current": 38,
+    "category": "Poor",
+    "improvement_potential": 82
+  },
+  "key_issues": [
+    "No Google Business Profile found",
+    "Missing schema markup for dual locations", 
+    "No location-specific landing pages",
+    "Limited local SEO optimization",
+    "Facebook page but no Google reviews"
+  ],
+  "created_date": "2026-03-20T11:22:00Z",
+  "status": "ready_for_deployment",
+  "industry": "Professional Services - Accounting",
+  "tier": "Tier 2 - Growth Stage Firm",
+  "unique_selling_points": [
+    "Established 2014, rapid growth phase",
+    "Dual location: Downpatrick & Newcastle",
+    "Recent acquisition: Tanya Mack & Co",
+    "Strong R&D and digital focus",
+    "Youth & experience blend"
+  ],
+  "revenue_opportunity": {
+    "current_monthly_searches": 680,
+    "estimated_monthly_leads": 12,
+    "average_client_value": 2200,
+    "potential_monthly_revenue": "£2,500-4,500",
+    "roi_multiple": "5-9x"
+  }
+}
