@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Gorman Property - Week 2 Baseline Update</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background: #ffffff;
+            font-size: 14px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.8px;
+        }
+        
+        .header p {
+            font-size: 18px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .metric-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            border-left: 4px solid #0066cc;
+        }
+        
+        .metric-card h3 {
+            font-size: 12px;
+            font-weight: 600;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        
+        .metric-card .value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0066cc;
+            margin-bottom: 4px;
+        }
+        
+        .metric-card .label {
+            font-size: 13px;
+            color: #6c757d;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            color: #6c757d;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .growth-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .growth-table th {
+            background: #0066cc;
+            color: white;
+            padding: 16px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .growth-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid #f1f3f4;
+            font-size: 14px;
+        }
+        
+        .growth-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .growth-table .metric-name {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        .growth-table .target {
+            color: #0066cc;
+            font-weight: 600;
+        }
+        
+        .arrow {
+            color: #0066cc;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        .status-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .status-table th {
+            background: #f8f9fa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        
+        .status-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f1f3f4;
+            font-size: 13px;
+        }
+        
+        .status-green {
+            background: #d4edda;
+            color: #155724;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 11px;
+        }
+        
+        .status-pending {
+            background: #fff3cd;
+            color: #856404;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 11px;
+        }
+        
+        .checkmark {
+            color: #28a745;
+            font-weight: 600;
+        }
+        
+        .timeline-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        
+        .timeline-section h3 {
+            color: #0066cc;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .timeline-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+        }
+        
+        .timeline-card h4 {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+        
+        .timeline-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .timeline-card li {
+            padding: 4px 0;
+            font-size: 13px;
+            color: #495057;
+        }
+        
+        .timeline-card li:before {
+            content: "✓";
+            color: #28a745;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #0066cc;
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .footer strong {
+            color: #0066cc;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .highlight-box h3 {
+            font-weight: 700;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+        
+        .new-badge {
+            background: #28a745;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        @media print {
+            body { font-size: 12px; }
+            .container { padding: 20px 0; }
+            .section { margin-bottom: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>STARTING POINT</h1>
+            <p>Where We Are Today</p>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <h3>Domain Rating</h3>
+                <div class="value">2.4</div>
+                <div class="label">Maintained</div>
+            </div>
+            <div class="metric-card">
+                <h3>Organic Keywords</h3>
+                <div class="value">8+</div>
+                <div class="label"><span class="new-badge">NEW</span> Pages Indexing</div>
+            </div>
+            <div class="metric-card">
+                <h3>Monthly Traffic</h3>
+                <div class="value">16</div>
+                <div class="label">Baseline Hold</div>
+            </div>
+            <div class="metric-card">
+                <h3>Referring Domains</h3>
+                <div class="value">25</div>
+                <div class="label">Stable</div>
+            </div>
+            <div class="metric-card">
+                <h3>Top 3 Positions</h3>
+                <div class="value">1</div>
+                <div class="label">Brand Terms</div>
+            </div>
+            <div class="metric-card">
+                <h3>AI Citations</h3>
+                <div class="value">0</div>
+                <div class="label">Building Authority</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">GROWTH TARGETS</div>
+            <div class="section-subtitle">Where We're Going (90 Days)</div>
+            
+            <table class="growth-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Today (Week 2)</th>
+                        <th></th>
+                        <th>90-Day Target</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="metric-name">Domain Rating</td>
+                        <td>2.4</td>
+                        <td class="arrow">→</td>
+                        <td class="target">10+</td>
+                    </tr>
+                    <tr>
+                        <td class="metric-name">Organic Keywords</td>
+                        <td>8+ <span class="new-badge">NEW</span></td>
+                        <td class="arrow">→</td>
+                        <td class="target">35+</td>
+                    </tr>
+                    <tr>
+                        <td class="metric-name">Monthly Organic Traffic</td>
+                        <td>16</td>
+                        <td class="arrow">→</td>
+                        <td class="target">300+</td>
+                    </tr>
+                    <tr>
+                        <td class="metric-name">Referring Domains</td>
+                        <td>25</td>
+                        <td class="arrow">→</td>
+                        <td class="target">45+</td>
+                    </tr>
+                    <tr>
+                        <td class="metric-name">Top 3 Positions</td>
+                        <td>1</td>
+                        <td class="arrow">→</td>
+                        <td class="target">8+</td>
+                    </tr>
+                    <tr>
+                        <td class="metric-name">AI Citations</td>
+                        <td>0</td>
+                        <td class="arrow">→</td>
+                        <td class="target">First citations live</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-title">CURRENT RANKINGS</div>
+            <div class="section-subtitle">Keywords Ranking Today</div>
+            
+            <table class="status-table">
+                <thead>
+                    <tr>
+                        <th>KEYWORD</th>
+                        <th>SEARCH VOLUME</th>
+                        <th>POSITION</th>
+                        <th>TRAFFIC</th>
+                        <th>STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>merchants view derry</strong></td>
+                        <td>100/mo</td>
+                        <td>Top 3</td>
+                        <td>16</td>
+                        <td><span class="status-green">Maintained ✅</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>property for sale derry</strong></td>
+                        <td>1,200/mo</td>
+                        <td>Not ranked</td>
+                        <td>0</td>
+                        <td><span class="status-pending">Critical target</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>estate agent derry</strong></td>
+                        <td>590/mo</td>
+                        <td>Not ranked</td>
+                        <td>0</td>
+                        <td><span class="status-pending">Primary focus</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>properties waterside derry</strong></td>
+                        <td>25/mo</td>
+                        <td>Indexing</td>
+                        <td>0</td>
+                        <td><span class="new-badge">NEW Week 2</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>properties cityside derry</strong></td>
+                        <td>20/mo</td>
+                        <td>Indexing</td>
+                        <td>0</td>
+                        <td><span class="new-badge">NEW Week 2</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-title">AI SEARCH VISIBILITY</div>
+            
+            <table class="status-table">
+                <thead>
+                    <tr>
+                        <th>AI PLATFORM</th>
+                        <th>CRAWL STATUS</th>
+                        <th>CITATIONS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ChatGPT</strong></td>
+                        <td><span class="status-green">✅ Crawled</span></td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gemini</strong></td>
+                        <td><span class="status-green">✅ Crawled</span></td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Perplexity</strong></td>
+                        <td><span class="status-green">✅ Crawled</span></td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Claude</strong></td>
+                        <td><span class="status-green">✅ Crawled</span></td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p style="color: #6c757d; font-size: 13px; margin-top: 15px;">
+                All four major AI platforms continue to crawl jamesgormanproperty.com. New area content provides fresh signals for AI citation opportunities.
+            </p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>COMPLETED — Week 2 Delivery</h3>
+            <p><strong>6 area pages published</strong> • <strong>Blog functionality enabled</strong> • <strong>3,600+ words of location-specific content</strong></p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">COMPLETED</div>
+            <div class="section-subtitle">Week 2 Delivery</div>
+            
+            <div style="columns: 2; column-gap: 30px; font-size: 13px;">
+                <p><span class="checkmark">✓</span> <strong>6 area pages published</strong> (Waterside, Cityside, Culmore, Eglinton, Drumahoe, Strathfoyle)</p>
+                <p><span class="checkmark">✓</span> <strong>Blog functionality enabled</strong> on Wix platform</p>
+                <p><span class="checkmark">✓</span> <strong>3,600+ words of location-specific content</strong> targeting long-tail searches</p>
+                <p><span class="checkmark">✓</span> <strong>Internal linking network</strong> between all area pages</p>
+                <p><span class="checkmark">✓</span> <strong>Local pricing data</strong> included for each area (£60k-£300k+ ranges)</p>
+                <p><span class="checkmark">✓</span> <strong>Strategic keyword targeting</strong> for "properties in [area] derry"</p>
+                <p><span class="checkmark">✓</span> <strong>Content calendar developed</strong> for 8-week blog strategy</p>
+                <p><span class="checkmark">✓</span> <strong>Technical audit completed</strong> with fix priority matrix</p>
+                <p><span class="checkmark">✓</span> <strong>Schema markup plan</strong> drafted for RealEstateAgent structured data</p>
+            </div>
+        </div>
+
+        <div class="timeline-section">
+            <h3>WHAT'S NEXT — 90-Day Growth Roadmap</h3>
+            
+            <div class="timeline-grid">
+                <div class="timeline-card">
+                    <h4>Weeks 3-4: Foundation Completion</h4>
+                    <ul>
+                        <li>Technical fixes — Email, URLs, meta optimization</li>
+                        <li>Property Valuation page — 70 searches, zero competition</li>
+                        <li>Mobile optimization — Page speed improvements</li>
+                        <li>Google Business Profile — Setup and verification</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-card">
+                    <h4>Weeks 5-8: Content Authority</h4>
+                    <ul>
+                        <li>Strategic blog content — Market reports, guides</li>
+                        <li>Internal linking optimization — Authority flow</li>
+                        <li>Local citations — Directory submissions</li>
+                        <li>Review generation — Social proof building</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-card">
+                    <h4>Weeks 9-12: Market Dominance</h4>
+                    <ul>
+                        <li>Competitor gap targeting — Outrank Oakland, Elliott</li>
+                        <li>Advanced content — Investment guides</li>
+                        <li>Conversion optimization — Lead capture</li>
+                        <li>First page positions — Top 3 for primary terms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Prepared by Blue Canvas — AI-Powered SEO</strong></p>
+            <p><strong>bluecanvas.ai · contact@bluecanvas.ai</strong></p>
+        </div>
+    </div>
+</body>
+</html>
