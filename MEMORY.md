@@ -49,8 +49,16 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 - ClawMart: 4 products live, daily sales check 10am — $0 revenue yet
 - Google Ads: Optimized with negatives, saving £6+/day, but conversion tracking broken = £0 revenue
 
-## AI Trend Monitoring (Latest: 2026-03-20)
-- **Microsoft Zero Trust for AI** — New enterprise security framework, workshop/assessment tools (Mar 19)
-- **Google Stitch AI** — Voice interface design tool, caused 8% Figma stock drop (Mar 20)
-- **Lovable expansion** — Beyond app building to general business automation (Mar 19)
+## AI Trend Monitoring (Latest: 2026-03-21)
+- **AutoSend MCP** — Email platform for AI agents (Mar 20)
+- **Visdiff** — Design-to-code gap solution (Mar 20)
+- **WordPress.com AI agents** — AI agents can now write/publish posts (announced Mar 20)
+- **Available domains identified:** ugcadcreation.co.uk, ugcvideocreation.co.uk
 - **Key insight:** All valuable domains registered same-day/24hrs. Speed critical for opportunities.
+
+## Google Ads Performance (Latest: 2026-03-21)
+### Weekend Performance Issues (Mar 20)
+- **Total spend:** £33.76 (both campaigns exceeded daily budgets)
+- **Zero conversions** despite strong CTR performance — CONVERSION TRACKING STILL BROKEN
+- **Strong performing keywords:** "ai consulting services" (11.76% CTR), "ai consultancy uk" (14.29% CTR)
+- **Action needed:** Conversion tracking fix remains PRIORITY 1, keyword pruning for 0% CTR terms
