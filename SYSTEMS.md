@@ -18,6 +18,7 @@
 - **GA4:** 485727316
 - **GSC:** Verified
 - **Known Issues:** Health score 69, 5 broken pages (301 redirects added), conversion tracking needs proper /thank-you page
+- **Rollback:** Webflow has automatic backups in dashboard → Settings → Backups
 - **Owner:** SCOUT monitors, WRITER drafts blogs, PJ publishes
 
 ## OpenClaw Consultant (openclawconsultant.co.uk)
@@ -30,6 +31,7 @@
 - **Ahrefs Project ID:** 9541039
 - **Google Ads:** Paused (was up to £20/day)
 - **Known Issues:** Health score 85 (-15), DR 0, 1 referring domain
+- **Rollback:** `vercel rollback` or promote previous deployment from `vercel ls`
 - **Owner:** WRITER deploys autonomously
 
 ## UK Trade Jobs (uktradejobs.com)
@@ -43,6 +45,7 @@
 - **Data file:** src/data/guides.ts (career guides array)
 - **Ahrefs Project ID:** 9541040
 - **Known Issues:** 33 broken links (+31 from content blast), health score 98
+- **Rollback:** `vercel rollback` or promote previous deployment from `vercel ls`
 - **Owner:** WRITER deploys autonomously
 
 ## Ardmore Cricket (ardmorecricket.com)
@@ -61,13 +64,19 @@
 - **Cron - Reconciliation:** Fridays 7:15PM (ID: 7d289f89-94b0-42c6-94a3-5a83b853c77d)
 - **Pot API:** /api/pot (Stripe = source of truth, excludes past_due)
 - **Known Issues:** One-off vs recurring pot calculation needs more work with PJ
+- **Rollback:** `vercel rollback` or promote previous deployment. CRITICAL: verify domain mapping after any rollback (ardmorecricket.com must point to ardmore-cricket project, not any other)
 - **Owner:** DREW manages operations, Albie deploys
 
 ## James Gorman Property (jamesgormanproperty.com)
 - **What:** Client SEO — £250/month retainer
-- **Platform:** Wix
-- **Access:** Browser + Wix API
-- **Ahrefs:** Tracked (browser access)
+- **Platform:** Wix Studio
+- **Wix Site ID:** 4b8170fd-99cc-45e8-a4fb-e28bb7156d52
+- **Wix Account ID:** 8c4e2a21-daf9-446f-a6c1-a34d9700fcdc
+- **Wix API Token:** $WIX_API_KEY in ~/.zprofile
+- **Blog API:** POST https://www.wixapis.com/blog/v3/posts (with wix-site-id header)
+- **Published posts:** 23 (as of 2026-03-22)
+- **Access:** Wix API (subagents can use via exec) + Browser
+- **Ahrefs:** 5 organic keywords tracked, "merchants view derry" at #4
 - **Skill file:** ~/.openclaw/workspace/skills/james-gorman-seo/SKILL.md
 - **Changelog:** ~/.openclaw/workspace/skills/james-gorman-seo/changelog.md
 - **Known Issues:** Week 3 pending

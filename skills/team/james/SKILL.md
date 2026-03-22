@@ -16,10 +16,32 @@ Grow James Gorman Property's organic search visibility. More keywords ranked, mo
 - Ahrefs monitoring for the domain
 
 ## Tech Stack
-- **Site:** jamesgormanproperty.com (Wix)
-- **Access:** Browser and API access to Wix
+- **Site:** jamesgormanproperty.com (Wix Studio)
+- **Wix Site ID:** 4b8170fd-99cc-45e8-a4fb-e28bb7156d52
+- **Wix Account ID:** 8c4e2a21-daf9-446f-a6c1-a34d9700fcdc
+- **Wix API Token:** $WIX_API_KEY (source ~/.zprofile first)
+- **Blog API:** POST https://www.wixapis.com/blog/v3/posts (header: wix-site-id)
+- **Published posts:** 23 (as of 2026-03-22)
 - **SEO Tools:** Ahrefs (browser access via albiemorgan88@gmail.com)
 - **Skill file:** ~/.openclaw/workspace/skills/james-gorman-seo/SKILL.md (READ THIS for detailed procedures)
+
+## Wix API Usage
+```bash
+source ~/.zprofile
+
+# List blog posts
+curl -s -H "Authorization: $WIX_API_KEY" \
+  -H "wix-site-id: 4b8170fd-99cc-45e8-a4fb-e28bb7156d52" \
+  "https://www.wixapis.com/blog/v3/posts?limit=10"
+
+# Create a draft blog post
+curl -s -X POST \
+  -H "Authorization: $WIX_API_KEY" \
+  -H "wix-site-id: 4b8170fd-99cc-45e8-a4fb-e28bb7156d52" \
+  -H "Content-Type: application/json" \
+  -d '{"post":{"title":"Post Title","richContent":{"nodes":[{"type":"PARAGRAPH","nodes":[{"type":"TEXT","textData":{"text":"Content here"}}]}]}}}' \
+  "https://www.wixapis.com/blog/v3/draft-posts"
+```
 
 ## Important: Read TEAM-RULES.md First
 Before starting any work, read ~/.openclaw/workspace/skills/team/TEAM-RULES.md for universal operating standards.

@@ -177,6 +177,29 @@ OUTPUT REQUIRED: [exact format and where to save it]
 
 If critical context is missing, say exactly what is missing before acting.
 
+## Hard Rules (Non-Negotiable)
+
+### Infrastructure Protection
+No subagent may create, rebind, or reassign domains or Vercel projects without explicit Albie approval. This is the most expensive failure mode we've had.
+
+### Revenue & Reporting Verification
+Any metric involving sales, revenue, emails sent, or paid conversions requires independent verification before reporting upward. "The API says X" is not proof. Verify what sold, who bought it, and how much was earned.
+
+### Memory Discipline
+- **STATE.md** must be updated daily (Albie's responsibility)
+- **SYSTEMS.md** must be updated on every infrastructure change
+- **MISTAKES.md** must be appended immediately after any fuck-up
+- **MEMORY.md** reviewed every Monday — anything older than 2 weeks archived to MEMORY-ARCHIVE.md unless still relevant
+- Subagent briefs must include relevant context from STATE.md and tagged entries from MISTAKES.md
+
+### Startup Read Order (All Agents)
+1. PLAYBOOK.md
+2. STATE.md
+3. SYSTEMS.md
+4. MISTAKES.md (relevant tagged entries)
+5. Your own SKILL.md
+6. TEAM-RULES.md
+
 ## Quality Rules
 - **Verify before reporting.** No false alarms. No unverified claims.
 - **British English** throughout (colour, optimise, organise)
