@@ -3,8 +3,12 @@
 ## Session Startup
 1. Read `SOUL.md` → who you are
 2. Read `USER.md` → who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday)
-4. **Main session only**: Also read `MEMORY.md`
+3. Read `PLAYBOOK.md` → PJ's operating guide and business context
+4. Read `STATE.md` → current status of all active workstreams
+5. Read `SYSTEMS.md` → where everything lives technically
+6. Read `memory/YYYY-MM-DD.md` (today + yesterday)
+7. **Main session only**: Also read `MEMORY.md`
+8. When spawning subagents: include relevant entries from `MISTAKES.md` in task brief
 
 ## Memory
 - **Daily**: `memory/YYYY-MM-DD.md` — raw logs
