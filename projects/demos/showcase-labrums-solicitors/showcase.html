@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replacement Firm - AI Marketing Audit | Blue Canvas</title>
+    <style>
+        :root { --blue: #2B4DAF; --red: #FF4520; --text: #1a1a2e; --text-light: #666; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; overflow: hidden; height: 100vh; touch-action: manipulation; }
+        .slide { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 24px; opacity: 0; transform: translateX(100%); transition: all 0.5s ease; pointer-events: none; }
+        .slide.active { opacity: 1; transform: translateX(0); pointer-events: auto; }
+        h1 { font-size: 28px; font-weight: 700; color: var(--text); text-align: center; margin-bottom: 16px; }
+        p { font-size: 16px; color: var(--text-light); text-align: center; line-height: 1.5; margin-bottom: 24px; }
+        .brand { color: var(--blue); font-weight: 700; }
+        .cta-buttons { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+        .cta-button { display: block; padding: 15px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+        .cta-primary { background: var(--blue); color: white; }
+        .cta-whatsapp { background: #25D366; color: white; }
+        .progress { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; }
+        .dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(0,0,0,0.2); cursor: pointer; }
+        .dot.active { background: var(--blue); width: 24px; }
+    </style>
+</head>
+<body>
+    <div class="slide active">
+        <h1><span class="brand">Note:</span> Labrums Solicitors Located in St. Albans</h1>
+        <p>Labrums Solicitors is based in St. Albans, not Derry. This showcase slot needs a replacement with an actual Derry-based firm.</p>
+        <div style="margin: 30px 0; font-size: 48px;">⚠️</div>
+        <p style="font-size: 14px; opacity: 0.7;">Replacement firm needed for accurate Derry market analysis</p>
+        
+        <div class="cta-buttons">
+            <a href="tel:+447935217762" class="cta-button cta-primary">📞 Call: 07935 217762</a>
+            <a href="https://wa.me/447935217762?text=Hi Phil, need to discuss replacement for Labrums in Derry campaign" class="cta-button cta-whatsapp">💬 WhatsApp</a>
+        </div>
+        
+        <div style="margin-top: 20px; font-size: 14px; color: var(--text-light);">
+            <p><strong>Phil Patterson</strong> • Blue Canvas AI • Derry</p>
+        </div>
+    </div>
+
+    <div class="progress"><div class="dot active" data-slide="0"></div></div>
+</body>
+</html>

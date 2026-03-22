@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brendan Kearney & Co - AI Marketing Audit | Blue Canvas</title>
+    <style>
+        :root {
+            --blue: #2B4DAF;
+            --red: #FF4520;
+            --white: #ffffff;
+            --light-bg: #f8f9fa;
+            --text: #1a1a2e;
+            --text-light: #666;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--light-bg);
+            overflow: hidden;
+            height: 100vh;
+            touch-action: manipulation;
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 24px;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+        }
+
+        .slide.active {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+
+        .slide.prev {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        .progress {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background: var(--blue);
+            width: 24px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text);
+            text-align: center;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 16px;
+            color: var(--text-light);
+            text-align: center;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .brand {
+            color: var(--blue);
+            font-weight: 700;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: var(--blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: white;
+            margin-bottom: 24px;
+        }
+
+        .scan-container {
+            width: 100%;
+            max-width: 320px;
+            margin: 24px 0;
+        }
+
+        .browser-mockup {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 16px;
+        }
+
+        .browser-bar {
+            background: #f5f5f5;
+            height: 32px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #eee;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--blue);
+            width: 0%;
+            border-radius: 3px;
+            transition: width 3s ease-out;
+        }
+
+        .scan-text {
+            font-size: 14px;
+            color: var(--text-light);
+            text-align: center;
+        }
+
+        .score-container {
+            position: relative;
+            margin: 24px 0;
+        }
+
+        .score-ring {
+            stroke: var(--red);
+            stroke-dasharray: 314;
+            stroke-dashoffset: 314;
+            transition: stroke-dashoffset 2s ease-out;
+        }
+
+        .score-num {
+            font-size: 28px;
+            font-weight: 700;
+            fill: var(--text);
+        }
+
+        .search-result {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            text-align: left;
+            margin: 16px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .result-url {
+            font-size: 12px;
+            color: #202124;
+            margin-bottom: 4px;
+        }
+
+        .result-title {
+            font-size: 18px;
+            color: #1a0dab;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+        .result-desc {
+            font-size: 13px;
+            color: #4d5156;
+            line-height: 1.4;
+        }
+
+        .chat-container {
+            width: 100%;
+            max-width: 320px;
+            background: white;
+            border-radius: 16px;
+            padding: 16px;
+            margin: 16px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .chat-msg {
+            margin: 12px 0;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        .msg-user {
+            background: var(--blue);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 18px 18px 4px 18px;
+            margin-left: auto;
+            max-width: 80%;
+        }
+
+        .msg-ai {
+            background: #f1f1f1;
+            color: var(--text);
+            padding: 12px 16px;
+            border-radius: 18px 18px 18px 4px;
+            max-width: 80%;
+        }
+
+        .typing {
+            display: flex;
+            gap: 4px;
+            padding: 12px 16px;
+            background: #f1f1f1;
+            border-radius: 18px 18px 18px 4px;
+            max-width: 60px;
+        }
+
+        .typing span {
+            width: 6px;
+            height: 6px;
+            background: #999;
+            border-radius: 50%;
+            animation: bounce 0.6s infinite;
+        }
+
+        .typing span:nth-child(2) { animation-delay: 0.15s; }
+        .typing span:nth-child(3) { animation-delay: 0.3s; }
+
+        @keyframes bounce {
+            50% { transform: translateY(-4px); }
+        }
+
+        @keyframes chatIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .roi-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 24px 0;
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .roi-card {
+            background: white;
+            padding: 16px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .roi-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--blue);
+            margin-bottom: 4px;
+        }
+
+        .roi-label {
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        .cta-container {
+            text-align: center;
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .cta-btn {
+            background: var(--blue);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 8px;
+            transition: transform 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .cta-btn.secondary {
+            background: var(--red);
+        }
+
+        .issue-list {
+            text-align: left;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .issue-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            font-size: 14px;
+            color: var(--text);
+        }
+
+        .issue-icon {
+            width: 16px;
+            height: 16px;
+            background: var(--red);
+            border-radius: 50%;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .fix-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .comparison-side h4 {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .ads-preview {
+            background: white;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+            width: 100%;
+            max-width: 320px;
+            text-align: left;
+        }
+
+        .ad-tag {
+            font-size: 11px;
+            color: #5f6368;
+            margin-bottom: 4px;
+        }
+
+        .ad-title {
+            font-size: 18px;
+            color: #1a0dab;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+        .ad-url {
+            font-size: 12px;
+            color: #202124;
+            margin-bottom: 8px;
+        }
+
+        .ad-desc {
+            font-size: 13px;
+            color: #4d5156;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 375px) {
+            .slide { padding: 32px 20px; }
+            h1 { font-size: 24px; }
+            h2 { font-size: 20px; }
+        }
+
+        .tap-instruction {
+            position: fixed;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            color: var(--text-light);
+            text-align: center;
+            z-index: 99;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Hook -->
+    <div class="slide active">
+        <div class="logo">⚡</div>
+        <h1>What if AI could transform<br><span class="brand">Brendan Kearney & Co</span><br>overnight?</h1>
+        <p>We scanned your digital presence and found some incredible opportunities...</p>
+    </div>
+
+    <!-- Slide 2: Scan -->
+    <div class="slide">
+        <h2>Scanning Your Website</h2>
+        <div class="scan-container">
+            <div class="browser-mockup">
+                <div class="browser-bar">brendankearney.com</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="scanProgress"></div>
+                </div>
+                <div class="scan-text" id="scanText">Checking title tags...</div>
+            </div>
+        </div>
+        <p>Our AI is analyzing your SEO, content, and Google presence...</p>
+    </div>
+
+    <!-- Slide 3: Issues -->
+    <div class="slide">
+        <h2>Here's What We Found</h2>
+        <div class="score-container">
+            <svg width="120" height="120" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="#eee" stroke-width="8"/>
+                <circle class="score-ring" cx="60" cy="60" r="50" fill="none" stroke="var(--red)" 
+                    stroke-width="8" stroke-linecap="round" stroke-dasharray="314" 
+                    stroke-dashoffset="314" transform="rotate(-90 60 60)"/>
+                <text x="60" y="65" text-anchor="middle" font-size="28" font-weight="700" fill="var(--text)">
+                    <tspan class="score-num">42</tspan>
+                </text>
+            </svg>
+        </div>
+        <div class="issue-list">
+            <div class="issue-item">
+                <div class="issue-icon"></div>
+                <span>Homepage title doesn't match main services</span>
+            </div>
+            <div class="issue-item">
+                <div class="issue-icon"></div>
+                <span>Missing meta descriptions on key pages</span>
+            </div>
+            <div class="issue-item">
+                <div class="issue-icon"></div>
+                <span>No local SEO optimization for Derry searches</span>
+            </div>
+            <div class="issue-item">
+                <div class="issue-icon"></div>
+                <span>Limited Google Business Profile presence</span>
+            </div>
+        </div>
+        <p>Score: <strong style="color: var(--red)">Poor</strong> - Significant issues hurting rankings</p>
+    </div>
+
+    <!-- Slide 4: Fixes -->
+    <div class="slide">
+        <h2>Here's the Fix</h2>
+        <div class="fix-comparison">
+            <div class="comparison-side">
+                <h4>BEFORE</h4>
+                <div class="search-result">
+                    <div class="result-url">brendankearney.com</div>
+                    <div class="result-title">Southern Trust Smear Test Recall</div>
+                    <div class="result-desc">No description available</div>
+                </div>
+            </div>
+            <div class="comparison-side">
+                <h4>AFTER</h4>
+                <div class="search-result">
+                    <div class="result-url">brendankearney.com</div>
+                    <div class="result-title">Personal Injury Solicitors Derry | Brendan Kearney & Co</div>
+                    <div class="result-desc">Expert personal injury & medical negligence solicitors in Derry. Established 1978. Free consultation. Call 028 7136 6612.</div>
+                </div>
+            </div>
+        </div>
+        <div class="score-container">
+            <svg width="80" height="80" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="#eee" stroke-width="8"/>
+                <circle class="score-ring" cx="60" cy="60" r="50" fill="none" stroke="var(--blue)" 
+                    stroke-width="8" stroke-linecap="round" stroke-dasharray="314" 
+                    stroke-dashoffset="94" transform="rotate(-90 60 60)"/>
+                <text x="60" y="65" text-anchor="middle" font-size="20" font-weight="700" fill="var(--text)">
+                    <tspan>78</tspan>
+                </text>
+            </svg>
+        </div>
+        <p>New score: <strong style="color: var(--blue)">Good</strong> - Strong foundation for growth</p>
+    </div>
+
+    <!-- Slide 5: Google Ads -->
+    <div class="slide">
+        <h2>Dominate Google Search</h2>
+        <div class="ads-preview">
+            <div class="ad-tag">Ad</div>
+            <div class="ad-title">Personal Injury Lawyers Derry - Free Consultation</div>
+            <div class="ad-url">brendankearney.com/personal-injury</div>
+            <div class="ad-desc">Established 1978. Medical negligence & road traffic accident specialists. Contact us today for expert legal advice.</div>
+        </div>
+        <div class="roi-grid">
+            <div class="roi-card">
+                <div class="roi-number">£850</div>
+                <div class="roi-label">Monthly ad budget</div>
+            </div>
+            <div class="roi-card">
+                <div class="roi-number">35</div>
+                <div class="roi-label">Monthly leads</div>
+            </div>
+        </div>
+        <p>Capture clients searching for "personal injury solicitors Derry"</p>
+    </div>
+
+    <!-- Slide 6: AI Assistant -->
+    <div class="slide">
+        <h2>24/7 AI Assistant</h2>
+        <div class="chat-container">
+            <div class="chat-msg msg-user" style="animation: chatIn 0.4s ease forwards;">
+                I was in a car accident last week. Do you handle these cases?
+            </div>
+            <div class="typing" id="typing1">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="chat-msg msg-ai" id="ai-response1">
+                I'm sorry to hear about your accident. Yes, we specialize in road traffic accident claims. We've been helping Derry residents with personal injury cases since 1978. Would you like to book a free consultation with one of our solicitors?
+            </div>
+            <div class="chat-msg msg-user" id="user2">
+                Yes please, when are you available?
+            </div>
+            <div class="chat-msg msg-ai" id="ai-response2">
+                I've checked our calendar. We have appointments available this week. I'll connect you with our personal injury specialist now. You can also call us directly on 028 7136 6612.
+            </div>
+        </div>
+        <p>Capture leads even when your office is closed</p>
+    </div>
+
+    <!-- Slide 7: ROI -->
+    <div class="slide">
+        <h2>The Numbers</h2>
+        <div class="roi-grid">
+            <div class="roi-card">
+                <div class="roi-number">£8,400</div>
+                <div class="roi-label">Monthly missed revenue</div>
+            </div>
+            <div class="roi-card">
+                <div class="roi-number">3.2x</div>
+                <div class="roi-label">Return on investment</div>
+            </div>
+            <div class="roi-card">
+                <div class="roi-number">2 weeks</div>
+                <div class="roi-label">Payback period</div>
+            </div>
+            <div class="roi-card">
+                <div class="roi-number">+140%</div>
+                <div class="roi-label">Lead increase</div>
+            </div>
+        </div>
+        <p>Based on industry averages for personal injury practices</p>
+    </div>
+
+    <!-- Slide 8: CTA -->
+    <div class="slide">
+        <div class="logo">💙</div>
+        <h2>Ready to Transform Your Practice?</h2>
+        <p>Let's discuss how AI can grow <strong>Brendan Kearney & Co</strong></p>
+        <div class="cta-container">
+            <a href="tel:+447935217762" class="cta-btn">📞 Call Phil</a>
+            <a href="https://wa.me/447935217762" class="cta-btn secondary">💬 WhatsApp</a>
+            <a href="mailto:contact@bluecanvas.ai" class="cta-btn">✉️ Email</a>
+        </div>
+        <p style="margin-top: 20px; font-size: 14px;"><strong>Phil Patterson</strong><br>Blue Canvas AI, Derry<br>contact@bluecanvas.ai</p>
+    </div>
+
+    <!-- Progress dots -->
+    <div class="progress">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+        <span class="dot" onclick="goToSlide(4)"></span>
+        <span class="dot" onclick="goToSlide(5)"></span>
+        <span class="dot" onclick="goToSlide(6)"></span>
+        <span class="dot" onclick="goToSlide(7)"></span>
+    </div>
+
+    <!-- Tap instruction -->
+    <div class="tap-instruction">Tap sides or swipe to navigate</div>
+
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 8;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function updateSlides() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active', 'prev');
+                if (index === currentSlide) {
+                    slide.classList.add('active');
+                } else if (index < currentSlide) {
+                    slide.classList.add('prev');
+                }
+            });
+
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+
+            // Slide-specific animations
+            if (currentSlide === 1) {
+                setTimeout(() => {
+                    document.getElementById('scanProgress').style.width = '100%';
+                    const messages = [
+                        'Checking title tags...',
+                        'Analyzing meta descriptions...',
+                        'Reviewing content structure...',
+                        'Scanning for local SEO...',
+                        'Audit complete!'
+                    ];
+                    let msgIndex = 0;
+                    const interval = setInterval(() => {
+                        document.getElementById('scanText').textContent = messages[msgIndex];
+                        msgIndex++;
+                        if (msgIndex >= messages.length) clearInterval(interval);
+                    }, 600);
+                }, 500);
+            } else if (currentSlide === 2) {
+                setTimeout(() => {
+                    const ring = document.querySelector('.score-ring');
+                    ring.style.strokeDashoffset = '188'; // 42% of 314
+                }, 500);
+            } else if (currentSlide === 5) {
+                setTimeout(() => {
+                    const typing = document.getElementById('typing1');
+                    const responses = ['ai-response1', 'user2', 'ai-response2'];
+                    
+                    setTimeout(() => {
+                        typing.style.display = 'none';
+                        document.getElementById('ai-response1').style.animation = 'chatIn 0.4s ease forwards';
+                    }, 2000);
+
+                    setTimeout(() => {
+                        document.getElementById('user2').style.animation = 'chatIn 0.4s ease forwards';
+                    }, 3500);
+
+                    setTimeout(() => {
+                        document.getElementById('ai-response2').style.animation = 'chatIn 0.4s ease forwards';
+                    }, 5000);
+                }, 500);
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateSlides();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlides();
+            }
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlides();
+        }
+
+        // Touch events
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+        });
+
+        document.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].clientX;
+            const touchEndY = e.changedTouches[0].clientY;
+            const deltaX = touchStartX - touchEndX;
+            const deltaY = touchStartY - touchEndY;
+
+            // Only handle horizontal swipes
+            if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+                if (deltaX > 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+            }
+        });
+
+        // Click events for tap navigation
+        document.addEventListener('click', (e) => {
+            const clickX = e.clientX;
+            const windowWidth = window.innerWidth;
+
+            if (clickX > windowWidth * 0.65) {
+                nextSlide();
+            } else if (clickX < windowWidth * 0.35) {
+                prevSlide();
+            }
+        });
+
+        // Keyboard events
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault();
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                prevSlide();
+            }
+        });
+
+        // Initialize
+        updateSlides();
+    </script>
+</body>
+</html>
