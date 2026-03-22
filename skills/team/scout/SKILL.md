@@ -37,10 +37,50 @@ SCOUT is "report only" for websites but CAN make changes to Google Ads accounts:
 ## Tools & Access
 
 ### Ahrefs
-- **Browser access:** Login as albiemorgan88@gmail.com (SSO)
+- **Browser access:** Login as albiemorgan88@gmail.com (SSO) — used by Albie, not subagents
 - **API:** Token in env $AHREFS_API_TOKEN (source ~/.zprofile first)
 - **Dashboard:** https://app.ahrefs.com/dashboard
-- **IMPORTANT:** API returns empty for some endpoints. Use browser when API fails.
+
+#### Ahrefs API — What Works vs What Doesn't
+**WORKING ENDPOINTS (use these):**
+```bash
+source ~/.zprofile
+
+# Domain rating
+curl -s "https://api.ahrefs.com/v3/site-explorer/domain-rating?target=DOMAIN&date=YYYY-MM-DD&output=json" \
+  -H "Authorization: Bearer $AHREFS_API_TOKEN"
+
+# Referring domains / backlinks
+curl -s "https://api.ahrefs.com/v3/site-explorer/refdomains?target=DOMAIN&mode=subdomains&select=domain,domain_rating&limit=10&output=json" \
+  -H "Authorization: Bearer $AHREFS_API_TOKEN"
+
+# Site metrics (organic keywords count, traffic estimates)
+curl -s "https://api.ahrefs.com/v3/site-explorer/metrics?target=DOMAIN&date=YYYY-MM-DD&mode=subdomains&output=json" \
+  -H "Authorization: Bearer $AHREFS_API_TOKEN"
+
+# Organic keywords (works for sites Ahrefs has indexed)
+curl -s "https://api.ahrefs.com/v3/site-explorer/organic-keywords?target=DOMAIN&country=gb&date=YYYY-MM-DD&mode=subdomains&select=keyword,best_position,volume&limit=20&order_by=best_position&output=json" \
+  -H "Authorization: Bearer $AHREFS_API_TOKEN"
+```
+
+**NOT WORKING (plan limitation or not indexed):**
+- Keywords Explorer endpoints return 404 — not available on our plan
+- bluecanvas.ai organic keywords return empty — Ahrefs hasn't indexed it yet
+- openclawconsultant.co.uk and uktradejobs.com may also return empty
+- jamesgormanproperty.com DOES return keyword data (5 keywords tracked)
+
+**CRITICAL RULES:**
+1. Always TRY the API first. Report exactly what it returns.
+2. If empty, say "Ahrefs API returned 0 keywords for [domain] — this is an Ahrefs indexing gap, not necessarily zero rankings."
+3. Then use web_search as supplementary intelligence. Never skip Ahrefs silently.
+4. **PARSING:** Domain rating is in `response.domain_rating.domain_rating`. Do NOT confuse with metrics endpoint which returns `org_keywords: 0`. These are DIFFERENT endpoints returning DIFFERENT data.
+5. **VERIFY:** After parsing, sanity check your numbers. bluecanvas.ai has DR 25 — if you get DR 0, you've parsed wrong or hit the wrong endpoint. Re-check.
+
+**Expected domain ratings (for sanity checking):**
+- bluecanvas.ai: ~25
+- jamesgormanproperty.com: ~2
+- openclawconsultant.co.uk: ~0.4
+- uktradejobs.com: ~0
 
 ### Google Ads
 - **Account:** 801-851-4760 (Blue Canvas)

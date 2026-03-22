@@ -22,9 +22,25 @@ When time is limited, work in this order:
 ## Tools & Access
 
 ### Apollo
-- **API:** Via ~/.zprofile ($APOLLO_API_KEY or similar)
+- **API Key:** $APOLLO_API_KEY in ~/.zprofile (source first)
 - **Browser:** https://app.apollo.io (logged in)
 - **Use for:** Contact search, list building, sequence creation
+
+#### Apollo API Usage (CORRECT ENDPOINTS)
+```bash
+source ~/.zprofile
+
+# Search for people (USE THIS — the old endpoint is deprecated)
+curl -s -H "X-Api-Key: $APOLLO_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"q_organization_name":"TARGET","person_locations":["Derry, United Kingdom"],"per_page":25}' \
+  "https://api.apollo.io/api/v1/mixed_people/api_search"
+
+# Health check
+curl -s "https://api.apollo.io/api/v1/auth/health" -H "X-Api-Key: $APOLLO_API_KEY"
+```
+**WARNING:** The old `/mixed_people/search` endpoint is DEPRECATED. Always use `/mixed_people/api_search`.
+**AUTH HEADER:** Must be `X-Api-Key` (not `Api-Key` or body param).
 
 ### Showcases
 - **Skill:** ~/.openclaw/workspace/skills/client-showcase/SKILL.md (READ THIS)
@@ -37,6 +53,18 @@ When time is limited, work in this order:
 - **Credentials:** ~/.config/moltbook/credentials.json
 - **Skill:** ~/.openclaw/workspace/skills/moltbook-scout/SKILL.md
 
+#### Moltbook API Usage (CORRECT ENDPOINTS)
+```bash
+MOLTBOOK_KEY=$(cat ~/.config/moltbook/credentials.json | python3 -c "import json,sys; print(json.load(sys.stdin).get('api_key',''))")
+
+# Feed (hot posts)
+curl -s -H "Authorization: Bearer $MOLTBOOK_KEY" "https://www.moltbook.com/api/v1/feed?limit=5"
+
+# Home (notifications, DMs, replies)
+curl -s -H "Authorization: Bearer $MOLTBOOK_KEY" "https://www.moltbook.com/api/v1/home"
+```
+**WARNING:** Endpoints like `/user/profile` and `/users/me` return 404. Use `/feed` and `/home` instead.
+
 ### Wallet
 - **Funded with:** USDC, ETH, $Clawd token
 - **Use freely** for opportunities. No permission needed.
@@ -44,11 +72,11 @@ When time is limited, work in this order:
 ## Apollo Outreach Flow (THE PIPELINE)
 This is the full flow PJ wants automated:
 
-### Step 1: Contact Research
+### Step 1: Contact Research (ALBIE PROVIDES)
 - PJ says "50 solicitors in Derry" or "accountants in Belfast"
-- Search Apollo for matching contacts
-- Filter for decision makers (Partners, Directors, Owners, Managing Directors)
-- Export to a named list: "Solicitors Derry" etc.
+- **Albie pulls the contacts from Apollo** (due to API rate limiting on subagent sessions)
+- Albie provides: contact list as JSON or file with first_name, last_name, company_name, email, title, website
+- HUNTER works from this pre-fetched data
 
 ### Step 2: List Building
 - Create list in Apollo with all contacts
