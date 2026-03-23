@@ -50,3 +50,9 @@
 **What happened:** Subagent build errors caused openclawconsultant.co.uk to go down for 1 hour while Google Ads were actively running, wasting ad spend.
 **Fix:** Used Vercel Pro rollback to restore.
 **Rule:** Never let subagents deploy to production sites running paid ads without testing the build locally first. Always run `npm run build` and verify zero errors before deploying.
+
+## 2026-03-23: Tobira.ai connection unverifiable [reporting] [verification]
+**What happened:** Nightly build cron reported a "high-value connection with Vlad (claw_vlad) from Tobira.ai" and recommended following up. PJ asked me to pursue it. I couldn't find any trace of Vlad or Tobira on Moltbook.
+**Root cause:** Cron subagent likely fabricated or hallucinated the connection.
+**Fix:** Treat as unverified. Don't pursue phantom leads.
+**Rule:** NEVER report partnership opportunities, connections, or leads without a verifiable source (URL, post ID, DM screenshot). "The cron said so" is not proof.

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brendan Kearney & Co - AI Business Transformation</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
+            background: #f8f9fa; 
+            overflow: hidden;
+            height: 100vh;
+        }
+        .slideshow { 
+            width: 100%; 
+            height: 100vh; 
+            position: relative; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+        }
+        .slide { 
+            display: none; 
+            width: 100%; 
+            max-width: 400px; 
+            height: 100vh; 
+            background: white; 
+            padding: 40px 30px; 
+            text-align: center; 
+            position: relative;
+            box-shadow: 0 0 50px rgba(0,0,0,0.1);
+        }
+        .slide.active { display: flex; flex-direction: column; justify-content: center; }
+        .slide h1 { color: #2B4DAF; font-size: 28px; margin-bottom: 20px; font-weight: 700; }
+        .slide h2 { color: #2B4DAF; font-size: 24px; margin-bottom: 20px; font-weight: 600; }
+        .slide h3 { color: #333; font-size: 20px; margin-bottom: 15px; font-weight: 600; }
+        .slide p { color: #666; font-size: 16px; line-height: 1.5; margin-bottom: 20px; }
+        .brand { color: #2B4DAF; font-size: 14px; font-weight: 600; margin-bottom: 30px; }
+        .cta-button { 
+            background: #FF4520; 
+            color: white; 
+            padding: 15px 30px; 
+            border: none; 
+            border-radius: 8px; 
+            font-size: 16px; 
+            cursor: pointer; 
+            margin: 10px 0;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .score-circle { 
+            width: 120px; 
+            height: 120px; 
+            border: 8px solid #e9ecef; 
+            border-radius: 50%; 
+            position: relative; 
+            margin: 20px auto; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+        }
+        .score-fill { 
+            position: absolute; 
+            top: -8px; 
+            left: -8px; 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; 
+            border: 8px solid transparent;
+        }
+        .score-text { font-size: 24px; font-weight: 700; color: #333; }
+        .issues-list { text-align: left; margin: 20px 0; }
+        .issues-list div { padding: 8px 0; border-bottom: 1px solid #eee; color: #666; }
+        .search-result { 
+            background: #f8f9fa; 
+            padding: 15px; 
+            border-radius: 8px; 
+            text-align: left; 
+            margin: 10px 0; 
+            border-left: 4px solid #2B4DAF;
+        }
+        .search-title { color: #1a73e8; font-size: 16px; font-weight: 600; }
+        .search-url { color: #006621; font-size: 14px; }
+        .search-desc { color: #4d5156; font-size: 14px; margin-top: 5px; }
+        .ad-box { 
+            background: #fff8e1; 
+            border: 1px solid #ffc107; 
+            border-radius: 8px; 
+            padding: 15px; 
+            margin: 15px 0; 
+            text-align: left;
+        }
+        .chat-demo { 
+            background: #f8f9fa; 
+            border-radius: 12px; 
+            padding: 20px; 
+            text-align: left; 
+            margin: 20px 0;
+        }
+        .chat-message { 
+            background: #e3f2fd; 
+            padding: 12px; 
+            border-radius: 12px; 
+            margin: 10px 0; 
+            font-size: 14px;
+        }
+        .chat-reply { 
+            background: #2B4DAF; 
+            color: white; 
+            padding: 12px; 
+            border-radius: 12px; 
+            margin: 10px 0; 
+            font-size: 14px;
+        }
+        .stat-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 15px; 
+            margin: 20px 0;
+        }
+        .stat-box { 
+            background: #f8f9fa; 
+            padding: 15px; 
+            border-radius: 8px; 
+            text-align: center;
+        }
+        .stat-number { font-size: 24px; font-weight: 700; color: #2B4DAF; }
+        .stat-label { font-size: 12px; color: #666; margin-top: 5px; }
+        .progress-dots { 
+            position: fixed; 
+            bottom: 30px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            display: flex; 
+            gap: 8px;
+        }
+        .dot { 
+            width: 8px; 
+            height: 8px; 
+            border-radius: 50%; 
+            background: #ddd; 
+            cursor: pointer;
+        }
+        .dot.active { background: #2B4DAF; }
+        .contact-grid { 
+            display: grid; 
+            gap: 12px; 
+            margin: 30px 0;
+        }
+        .contact-btn { 
+            background: #2B4DAF; 
+            color: white; 
+            padding: 12px; 
+            border: none; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-size: 14px;
+        }
+        .scanning-item { 
+            display: flex; 
+            align-items: center; 
+            padding: 10px 0; 
+            font-size: 14px; 
+            color: #666;
+        }
+        .scanning-emoji { margin-right: 15px; font-size: 18px; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .slide.active { animation: fadeIn 0.5s ease-out; }
+    </style>
+</head>
+<body>
+    <div class="slideshow">
+        <!-- Slide 1: Hook -->
+        <div class="slide active">
+            <div class="brand">Blue Canvas AI</div>
+            <h1>What if AI could transform Brendan Kearney & Co overnight?</h1>
+            <p>We analyzed your digital presence and found opportunities worth £3-6k per month in additional revenue.</p>
+            <button class="cta-button" onclick="nextSlide()">Tap to see how →</button>
+        </div>
+
+        <!-- Slide 2: Scanning -->
+        <div class="slide">
+            <div class="brand">Blue Canvas AI</div>
+            <h2>Scanning Brendan Kearney & Co's Digital Presence</h2>
+            <div class="scanning-item"><span class="scanning-emoji">🌐</span> Website analysis (brendankearney.com)</div>
+            <div class="scanning-item"><span class="scanning-emoji">📱</span> Mobile optimization check</div>
+            <div class="scanning-item"><span class="scanning-emoji">🔍</span> Google Business Profile search</div>
+            <div class="scanning-item"><span class="scanning-emoji">📊</span> Local SEO audit (Northern Ireland)</div>
+            <div class="scanning-item"><span class="scanning-emoji">⚡</span> Page speed analysis</div>
+            <div class="scanning-item"><span class="scanning-emoji">🎯</span> Competition benchmark</div>
+            <div class="scanning-item"><span class="scanning-emoji">💡</span> AI opportunity assessment</div>
+        </div>
+
+        <!-- Slide 3: Issues Found -->
+        <div class="slide">
+            <div class="brand">Blue Canvas AI</div>
+            <h2>Issues Found</h2>
+            <div class="score-circle">
+                <div class="score-fill" style="border-top-color: #dc3545; transform: rotate(126.0deg);"></div>
+                <div class="score-text">35/100</div>
+            </div>
+            <p><strong>Poor Category</strong></p>
+            <div class="issues-list">
+                
+        <div>❌ No Google Business Profile found</div>
+        <div>📍 Missing location-specific pages</div>
+        <div>📝 Generic titles, no meta descriptions</div>
+        <div>🏗️ No LocalBusiness schema markup</div>
+        <div>📱 Poor mobile optimization</div>
+        
+            </div>
+        </div>
+
+        <!-- Slide 4: After Optimization -->
+        <div class="slide">
+            <div class="brand">Blue Canvas AI</div>
+            <h2>After Blue Canvas Optimization</h2>
+            <div class="score-circle">
+                <div class="score-fill" style="border-top-color: #28a745; transform: rotate(300deg);"></div>
+                <div class="score-text">84/100</div>
+            </div>
+            <p><strong>Excellent Category</strong></p>
+            <div class="search-result">
+                <div class="search-title">Brendan Kearney & Co - Solicitors</div>
+                <div class="search-url">brendankearney.com</div>
+                <div class="search-desc">Brendan Kearney & Co - Solicitors in Northern Ireland</div>
+            </div>
+            <div class="search-result">
+                <div class="search-title">Brendan Kearney & Co | Solicitors Northern Ireland | Family Law & Property</div>
+                <div class="search-url">brendankearney.com ★★★★★</div>
+                <div class="search-desc">Experienced solicitors • Family law • Property • Personal injury • Estate planning • brendankearney.com • Book consultation</div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Google Ads -->
+        <div class="slide">
+            <div class="brand">Blue Canvas AI</div>
+            <h2>Google Ads Opportunity</h2>
+            <p>Your competitors are missing key searches. Here's your advantage:</p>
+            <div class="ad-box">
+                <div style="color: #1a73e8; font-size: 12px; margin-bottom: 5px;">Ad</div>
+                <div class="search-title">Family Law Solicitors NI | Brendan Kearney & Co</div>
+                <div class="search-url">brendankearney.com/family-law</div>
+                <div class="search-desc">Expert family law solicitors. 30+ years experience. Free consultation. Northern Ireland offices. Book today.</div>
+            </div>
+            <div class="stat-grid">
+                <div class="stat-box">
+                    <div class="stat-number">£3.20</div>
+                    <div class="stat-label">Average CPC</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">1,240</div>
+                    <div class="stat-label">Monthly Searches</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">18%</div>
+                    <div class="stat-label">Expected CTR</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">12%</div>
+                    <div class="stat-label">Conversion Rate</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: AI Assistant -->
+        <div class="slide">
+            <div class="brand">Blue Canvas AI</div>
+            <h2>AI Assistant for Brendan Kearney & Co</h2>
+            <p>Handle enquiries professionally, even outside office hours:</p>
+            <div class="chat-demo">
+                <div class="chat-message">Hi, I need help with a family law matter - divorce proceedings.</div>
+                <div class="chat-reply">I understand this is a difficult time. Brendan Kearney & Co has extensive experience in family law matters. Our solicitors can guide you through divorce proceedings with sensitivity and expertise. Would you like to schedule a confidential consultation?</div>
+                <div class="chat-message">Yes please, how soon can I meet with someone?</div>
+                <div class="chat-reply">I can arrange an appointment this week with one of our family law specialists. We offer initial consultations at our Brendan Kearney & Co offices. Shall I book you in for Tuesday at 2PM or Wednesday at 10AM?</div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Revenue Impact -->
+        <div class="slide">
+            <div class="brand">Blue Canvas AI</div>
+            <h2>Revenue Impact for Brendan Kearney & Co</h2>
+            <div class="stat-grid">
+                <div class="stat-box">
+                    <div class="stat-number">1,240</div>
+                    <div class="stat-label">Monthly Local Searches</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">25%</div>
+                    <div class="stat-label">Capture Rate (vs 3% now)</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">£1,800</div>
+                    <div class="stat-label">Average Client Value</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">£5,580</div>
+                    <div class="stat-label">Additional Monthly Revenue</div>
+                </div>
+            </div>
+            <p style="margin: 20px 0;"><strong>Current Challenge:</strong> Invisible to "family law solicitors near me" searches</p>
+            <p><strong>Solution Impact:</strong> Front page for Northern Ireland legal services searches</p>
+            <p><strong>ROI:</strong> 400-800% in first year</p>
+        </div>
+
+        <!-- Slide 8: CTA -->
+        <div class="slide">
+            <div class="brand">Blue Canvas AI</div>
+            <h2>Ready to Transform Brendan Kearney & Co?</h2>
+            <p>Let's discuss how AI can deliver £3-6k additional monthly revenue for your practice.</p>
+            <div style="margin: 30px 0;">
+                <div style="font-size: 18px; font-weight: 600; color: #2B4DAF; margin-bottom: 5px;">Blue Canvas AI</div>
+                <div style="font-size: 14px; color: #666;">contact@bluecanvas.ai</div>
+            </div>
+            <div class="contact-grid">
+                <a href="tel:+447935217762" class="contact-btn">📞 Call Now</a>
+                <a href="https://wa.me/447935217762" class="contact-btn">💬 WhatsApp</a>
+                <a href="mailto:contact@bluecanvas.ai" class="contact-btn">✉️ Email</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress-dots">
+        <div class="dot active" onclick="goToSlide(0)"></div>
+        <div class="dot" onclick="goToSlide(1)"></div>
+        <div class="dot" onclick="goToSlide(2)"></div>
+        <div class="dot" onclick="goToSlide(3)"></div>
+        <div class="dot" onclick="goToSlide(4)"></div>
+        <div class="dot" onclick="goToSlide(5)"></div>
+        <div class="dot" onclick="goToSlide(6)"></div>
+        <div class="dot" onclick="goToSlide(7)"></div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function goToSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            currentSlide = n;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            const next = (currentSlide + 1) % slides.length;
+            goToSlide(next);
+        }
+
+        function prevSlide() {
+            const prev = (currentSlide - 1 + slides.length) % slides.length;
+            goToSlide(prev);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        // Touch/swipe navigation
+        let startX = 0;
+        document.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+        document.addEventListener('touchend', function(e) {
+            const endX = e.changedTouches[0].clientX;
+            const diff = startX - endX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) nextSlide(); else prevSlide();
+            }
+        });
+
+        // Auto-advance scanning slide
+        if (currentSlide === 1) {
+            setTimeout(nextSlide, 3000);
+        }
+    </script>
+</body>
+</html>
