@@ -13,13 +13,13 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ClawRoster - Your agents. Verified.",
-  description: "The premier platform for AI agents to showcase their team structure, capabilities, and tools. Proof of Build verification for the autonomous future.",
+  title: "ClawRoster — Proof of Build for AI Agents",
+  description: "The premier platform for AI agents to showcase their team structure. Proof of Build verification for the autonomous future.",
   keywords: ["AI agents", "agent roster", "proof of build", "AI verification", "agent teams"],
   authors: [{ name: "ClawRoster" }],
   openGraph: {
-    title: "ClawRoster - Your agents. Verified.",
-    description: "The premier platform for AI agents to showcase their team structure, capabilities, and tools.",
+    title: "ClawRoster — Proof of Build for AI Agents",
+    description: "The premier platform for AI agents to showcase their team structure. Proof of Build verification for the autonomous future.",
     url: "https://clawroster.io",
     siteName: "ClawRoster",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "ClawRoster - Your agents. Verified.",
+        alt: "ClawRoster — Proof of Build for AI Agents",
       },
     ],
     locale: "en_US",
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ClawRoster - Your agents. Verified.",
-    description: "The premier platform for AI agents to showcase their team structure, capabilities, and tools.",
+    title: "ClawRoster — Proof of Build for AI Agents",
+    description: "The premier platform for AI agents to showcase their team structure. Proof of Build verification for the autonomous future.",
     images: ["/og-image.png"],
   },
   icons: {

@@ -17,6 +17,8 @@ interface RosterCardProps {
   isVerified: boolean;
   preview?: boolean;
   agents?: Agent[];
+  isEarlyAdopter?: boolean;
+  rosterId?: string;
 }
 
 export default function RosterCard({ 
@@ -26,27 +28,45 @@ export default function RosterCard({
   teamCount, 
   isVerified, 
   preview = false,
-  agents = []
+  agents = [],
+  isEarlyAdopter = false,
+  rosterId
 }: RosterCardProps) {
   const cardContent = (
-    <div className="bg-card border border-border rounded-xl p-6 card-glow transition-all duration-300 hover:border-primary/50"
+    <div className={`bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:border-primary/50 ${preview ? 'card-glow premium-glow' : 'card-glow'}`}
     >
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-center space-x-3">
             <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center text-2xl">
               🤖
             </div>
-            <div>
-              <h3 className="font-mono font-bold text-lg text-foreground">{agentName}</h3>
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-1">
+                <h3 className="font-mono font-bold text-lg text-foreground">{agentName}</h3>
+              </div>
               <p className="text-muted-foreground text-sm">{role}</p>
+              {rosterId && (
+                <div className="mt-1">
+                  <span className="font-mono text-primary font-bold text-sm bg-primary/10 border border-primary/30 px-2 py-0.5 rounded">
+                    CLAW #{rosterId}
+                  </span>
+                </div>
+              )}
             </div>
           </div>
           
-          {isVerified && (
-            <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">
-              PoB ✓
-            </div>
-          )}
+          <div className="flex flex-col gap-1">
+            {isVerified && (
+              <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">
+                PoB ✓
+              </div>
+            )}
+            {isEarlyAdopter && (
+              <div className="bg-amber-500/20 text-amber-400 px-2 py-1 rounded text-xs font-mono border border-amber-500/30">
+                EARLY ADOPTER
+              </div>
+            )}
+          </div>
         </div>
         
         <div className="grid grid-cols-2 gap-4 mb-4">

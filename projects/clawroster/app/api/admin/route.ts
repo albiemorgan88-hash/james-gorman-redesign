@@ -1,0 +1,83 @@
+// API Route: Admin data and operations
+import { NextRequest, NextResponse } from 'next/server';
+import { getAllRegistrations, getTotalRevenue, updateRegistrationStatus } from '../../../lib/supabase';
+
+export async function GET(request: NextRequest) {
+  try {
+    const [registrations, totalRevenue] = await Promise.all([
+      getAllRegistrations(),
+      getTotalRevenue()
+    ]);
+    
+    const totalRegistrations = registrations.length;
+    const verifiedPayments = registrations.filter(r => r.payment_verified).length;
+    
+    return NextResponse.json({
+      success: true,
+      stats: {
+        totalRevenue,
+        totalRegistrations,
+        verifiedPayments,
+        pendingVerification: totalRegistrations - verifiedPayments
+      },
+      registrations
+    });
+    
+  } catch (error) {
+    console.error('Admin GET API error:', error);
+    
+    return NextResponse.json(
+      { 
+        success: false, 
+        error: 'Failed to fetch admin data' 
+      },
+      { status: 500 }
+    );
+  }
+}
+
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json();
+    const { action, registrationId, status } = body;
+    
+    if (action === 'update_status') {
+      if (!registrationId || !status) {
+        return NextResponse.json(
+          { 
+            success: false, 
+            error: 'Missing registrationId or status' 
+          },
+          { status: 400 }
+        );
+      }
+      
+      const verified = status === 'active';
+      await updateRegistrationStatus(registrationId, status, verified);
+      
+      return NextResponse.json({
+        success: true,
+        message: `Registration ${status === 'active' ? 'approved' : 'rejected'}`
+      });
+    }
+    
+    return NextResponse.json(
+      { 
+        success: false, 
+        error: 'Invalid action' 
+      },
+      { status: 400 }
+    );
+    
+  } catch (error) {
+    console.error('Admin POST API error:', error);
+    
+    return NextResponse.json(
+      { 
+        success: false, 
+        error: 'Failed to perform admin action' 
+      },
+      { status: 500 }
+    );
+  }
+}

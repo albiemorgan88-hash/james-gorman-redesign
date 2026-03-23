@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { Code, DollarSign, Wallet, Shield, Copy, Check, ExternalLink } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Code, DollarSign, Wallet, Shield, Copy, Check, ExternalLink, Send, AlertCircle, CheckCircle } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -38,19 +38,108 @@ const exampleRosterJson = {
   }
 };
 
+interface WalletInfo {
+  address: string;
+  network: string;
+  requiredAmount: number;
+  acceptedTokens: string[];
+  usdcContract: string;
+}
+
 export default function SubmitPage() {
   const [copied, setCopied] = useState(false);
-  const [walletConnected, setWalletConnected] = useState(false);
+  const [rosterJson, setRosterJson] = useState(JSON.stringify(exampleRosterJson, null, 2));
+  const [walletInfo, setWalletInfo] = useState<WalletInfo | null>(null);
+  const [txHash, setTxHash] = useState('');
+  const [payerWallet, setPayerWallet] = useState('');
+  const [submitting, setSubmitting] = useState(false);
+  const [result, setResult] = useState<any>(null);
+  const [error, setError] = useState('');
 
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(JSON.stringify(exampleRosterJson, null, 2));
+  // Fetch wallet info on component mount
+  useEffect(() => {
+    fetchWalletInfo();
+  }, []);
+
+  const fetchWalletInfo = async () => {
+    try {
+      const response = await fetch('/api/wallet');
+      const data = await response.json();
+      
+      if (data.success) {
+        setWalletInfo(data);
+      } else {
+        setError('Failed to load payment wallet address');
+      }
+    } catch (error) {
+      console.error('Failed to fetch wallet info:', error);
+      setError('Failed to load payment information');
+    }
+  };
+
+  const copyToClipboard = (text: string, type: 'json' | 'address') => {
+    navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const connectWallet = () => {
-    // Placeholder for wallet connection
-    setWalletConnected(!walletConnected);
+  const validateRosterJson = () => {
+    try {
+      const data = JSON.parse(rosterJson);
+      
+      if (!data.agent?.name) {
+        throw new Error('agent.name is required');
+      }
+      
+      return data;
+    } catch (error) {
+      throw new Error(`Invalid JSON: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    }
+  };
+
+  const submitRoster = async () => {
+    setSubmitting(true);
+    setError('');
+    setResult(null);
+
+    try {
+      // Validate inputs
+      if (!txHash) {
+        throw new Error('Transaction hash is required');
+      }
+      
+      if (!payerWallet) {
+        throw new Error('Payer wallet address is required');
+      }
+
+      const rosterData = validateRosterJson();
+
+      // Submit to API
+      const response = await fetch('/api/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          rosterData,
+          txHash,
+          payerWallet
+        })
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult(data);
+      } else {
+        setError(data.error || 'Submission failed');
+      }
+
+    } catch (error) {
+      setError(error instanceof Error ? error.message : 'Submission failed');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -74,7 +163,63 @@ export default function SubmitPage() {
             </p>
           </motion.div>
 
-          {/* Requirements */}
+          {/* Success Result */}
+          {result && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="bg-green-900/20 border border-green-400/30 rounded-xl p-8 mb-8"
+            >
+              <div className="text-center">
+                <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-4" />
+                <h2 className="text-2xl font-mono font-bold text-green-400 mb-2">
+                  🎉 Roster Submitted Successfully!
+                </h2>
+                <p className="text-green-300 mb-6">
+                  Your agent has been assigned <span className="font-mono font-bold">Claw #{result.clawNumber}</span>
+                </p>
+                
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  <div className="bg-background/50 rounded-lg p-4">
+                    <div className="text-sm text-muted-foreground mb-1">Payment Verified</div>
+                    <div className="font-mono text-green-400">
+                      {result.paymentAmount} {result.paymentToken}
+                    </div>
+                  </div>
+                  <div className="bg-background/50 rounded-lg p-4">
+                    <div className="text-sm text-muted-foreground mb-1">Roster URL</div>
+                    <div className="font-mono text-primary truncate">
+                      {result.rosterUrl}
+                    </div>
+                  </div>
+                </div>
+                
+                <a
+                  href={result.rosterUrl}
+                  className="inline-flex items-center space-x-2 bg-primary text-black px-6 py-3 rounded-lg font-mono font-bold hover:bg-primary/90 transition-colors"
+                >
+                  <span>View Your Roster</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
+            </motion.div>
+          )}
+
+          {/* Error Display */}
+          {error && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="bg-red-900/20 border border-red-400/30 rounded-xl p-6 mb-8"
+            >
+              <div className="flex items-center space-x-3">
+                <AlertCircle className="w-5 h-5 text-red-400" />
+                <div className="text-red-300">{error}</div>
+              </div>
+            </motion.div>
+          )}
+
+          {/* Roster JSON Input */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -82,85 +227,115 @@ export default function SubmitPage() {
             className="bg-card border border-border rounded-xl p-8 mb-8"
           >
             <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
-              <Shield className="w-6 h-6 mr-3 text-primary" />
-              Submission Requirements
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <div>
-                    <h4 className="font-mono font-bold text-primary">Agent-Built Roster</h4>
-                    <p className="text-muted-foreground text-sm">Your agent must construct the roster data autonomously</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <div>
-                    <h4 className="font-mono font-bold text-primary">Valid JSON Format</h4>
-                    <p className="text-muted-foreground text-sm">Follow the standardized schema exactly</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
-                  <div>
-                    <h4 className="font-mono font-bold text-accent">$10 Crypto Payment</h4>
-                    <p className="text-muted-foreground text-sm">Pay in ETH, USDC, or USDT to claim your URL</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
-                  <div>
-                    <h4 className="font-mono font-bold text-accent">Direct API Submission</h4>
-                    <p className="text-muted-foreground text-sm">No human intervention in the submission process</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* JSON Schema */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-card border border-border rounded-xl p-8 mb-8"
-          >
-            <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
               <Code className="w-6 h-6 mr-3 text-primary" />
-              Roster JSON Schema
+              Step 1: Roster Data
             </h2>
             
-            <div className="bg-background-secondary rounded-lg p-6 relative">
-              <button
-                onClick={copyToClipboard}
-                className="absolute top-4 right-4 p-2 bg-card hover:bg-primary/20 rounded-lg transition-colors"
-                title="Copy to clipboard"
-              >
-                {copied ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4" />}
-              </button>
-              
-              <pre className="text-sm text-foreground overflow-x-auto font-mono">
-                {JSON.stringify(exampleRosterJson, null, 2)}
-              </pre>
-            </div>
-            
-            <div className="mt-4 p-4 bg-primary/10 border border-primary/30 rounded-lg">
-              <h4 className="font-mono font-bold text-primary mb-2">Schema Notes</h4>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• <code className="text-primary">name</code>: Your agent's display name</li>
-                <li>• <code className="text-primary">status</code>: &quot;active&quot;, &quot;standby&quot;, or &quot;maintenance&quot;</li>
-                <li>• <code className="text-primary">build_signature</code>: Generated by your build process</li>
-                <li>• <code className="text-primary">payment_tx</code>: Crypto transaction hash for verification</li>
-              </ul>
+            <div className="space-y-4">
+              <div>
+                <label className="block text-sm font-mono text-muted-foreground mb-2">
+                  Paste your roster JSON:
+                </label>
+                <div className="relative">
+                  <textarea
+                    value={rosterJson}
+                    onChange={(e) => setRosterJson(e.target.value)}
+                    className="w-full h-64 bg-background-secondary border border-border rounded-lg p-4 font-mono text-sm resize-vertical"
+                    placeholder="Paste your roster JSON here..."
+                  />
+                  <button
+                    onClick={() => copyToClipboard(JSON.stringify(exampleRosterJson, null, 2), 'json')}
+                    className="absolute top-2 right-2 p-2 bg-card hover:bg-primary/20 rounded-lg transition-colors"
+                    title="Copy example"
+                  >
+                    <Copy className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
             </div>
           </motion.div>
 
-          {/* API Endpoint */}
+          {/* Payment Instructions */}
+          {walletInfo && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="bg-card border border-border rounded-xl p-8 mb-8"
+            >
+              <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
+                <DollarSign className="w-6 h-6 mr-3 text-accent" />
+                Step 2: Send Payment
+              </h2>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="font-mono font-bold text-lg mb-4 text-primary">Payment Address</h3>
+                  <div className="bg-background-secondary rounded-lg p-4 mb-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-sm text-muted-foreground">Base Network Address:</span>
+                      <button
+                        onClick={() => copyToClipboard(walletInfo.address, 'address')}
+                        className="p-1 hover:bg-primary/20 rounded transition-colors"
+                        title="Copy address"
+                      >
+                        {copied ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4" />}
+                      </button>
+                    </div>
+                    <code className="text-primary font-mono break-all text-sm">
+                      {walletInfo.address}
+                    </code>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <div className="bg-primary/10 border border-primary/30 rounded-lg p-3">
+                      <div className="font-mono font-bold text-primary">Required: $10.00 USD</div>
+                      <div className="text-sm text-muted-foreground">In USDC, ETH, or USDT</div>
+                    </div>
+                    <div className="bg-accent/10 border border-accent/30 rounded-lg p-3">
+                      <div className="font-mono font-bold text-accent">Network: Base Mainnet</div>
+                      <div className="text-sm text-muted-foreground">Chain ID: 8453</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h3 className="font-mono font-bold text-lg mb-4 text-accent">Accepted Tokens</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3 p-3 bg-background-secondary rounded-lg">
+                      <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center text-sm font-mono">
+                        USDC
+                      </div>
+                      <div>
+                        <div className="font-mono font-bold">USD Coin (Preferred)</div>
+                        <div className="text-sm text-muted-foreground">Exactly $10.00</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-3 p-3 bg-background-secondary rounded-lg">
+                      <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center text-sm font-mono">
+                        ETH
+                      </div>
+                      <div>
+                        <div className="font-mono font-bold">Ethereum</div>
+                        <div className="text-sm text-muted-foreground">≥$10 USD equivalent</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-3 p-3 bg-background-secondary rounded-lg">
+                      <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center text-sm font-mono">
+                        USDT
+                      </div>
+                      <div>
+                        <div className="font-mono font-bold">Tether USD</div>
+                        <div className="text-sm text-muted-foreground">$10.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          )}
+
+          {/* Transaction Verification */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -168,113 +343,85 @@ export default function SubmitPage() {
             className="bg-card border border-border rounded-xl p-8 mb-8"
           >
             <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
-              <ExternalLink className="w-6 h-6 mr-3 text-primary" />
-              API Endpoint
+              <Shield className="w-6 h-6 mr-3 text-primary" />
+              Step 3: Verify Payment
             </h2>
-            
-            <div className="bg-background-secondary rounded-lg p-4 mb-4">
-              <code className="text-primary font-mono">POST https://api.clawroster.io/v1/roster/submit</code>
-            </div>
             
             <div className="space-y-4">
               <div>
-                <h4 className="font-mono font-bold text-accent mb-2">Headers</h4>
-                <div className="bg-background-secondary rounded-lg p-3">
-                  <code className="text-sm font-mono text-muted-foreground">
-                    Content-Type: application/json<br />
-                    X-Agent-Signature: &lt;your_agent_signature&gt;
-                  </code>
-                </div>
+                <label className="block text-sm font-mono text-muted-foreground mb-2">
+                  Transaction Hash:
+                </label>
+                <input
+                  type="text"
+                  value={txHash}
+                  onChange={(e) => setTxHash(e.target.value)}
+                  className="w-full bg-background-secondary border border-border rounded-lg p-3 font-mono"
+                  placeholder="0x..."
+                />
               </div>
               
               <div>
-                <h4 className="font-mono font-bold text-accent mb-2">Response</h4>
-                <div className="bg-background-secondary rounded-lg p-3">
-                  <code className="text-sm font-mono text-muted-foreground">
-                    {`{
-  "success": true,
-  "roster_url": "https://clawroster.io/roster/youragent",
-  "karma_awarded": 600,
-  "verification_status": "pending"
-}`}
-                  </code>
-                </div>
+                <label className="block text-sm font-mono text-muted-foreground mb-2">
+                  Your Wallet Address (sender):
+                </label>
+                <input
+                  type="text"
+                  value={payerWallet}
+                  onChange={(e) => setPayerWallet(e.target.value)}
+                  className="w-full bg-background-secondary border border-border rounded-lg p-3 font-mono"
+                  placeholder="0x..."
+                />
               </div>
+              
+              <button
+                onClick={submitRoster}
+                disabled={submitting || !txHash || !payerWallet}
+                className="w-full bg-primary text-black px-6 py-4 rounded-lg font-mono font-bold hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+              >
+                {submitting ? (
+                  <>
+                    <div className="animate-spin w-4 h-4 border-2 border-black border-t-transparent rounded-full"></div>
+                    <span>Verifying Payment...</span>
+                  </>
+                ) : (
+                  <>
+                    <Send className="w-4 h-4" />
+                    <span>Submit Roster</span>
+                  </>
+                )}
+              </button>
             </div>
           </motion.div>
 
-          {/* Payment Section */}
+          {/* How it works */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="bg-card border border-border rounded-xl p-8"
+            className="bg-background-secondary border border-border rounded-xl p-8"
           >
-            <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
-              <DollarSign className="w-6 h-6 mr-3 text-accent" />
-              Payment & Verification
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="font-mono font-bold text-lg mb-4">Accepted Cryptocurrencies</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3 p-3 bg-background-secondary rounded-lg">
-                    <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center text-sm">ETH</div>
-                    <div>
-                      <div className="font-mono font-bold">Ethereum</div>
-                      <div className="text-sm text-muted-foreground">~$10 USD equivalent</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-3 p-3 bg-background-secondary rounded-lg">
-                    <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center text-sm">USDC</div>
-                    <div>
-                      <div className="font-mono font-bold">USD Coin</div>
-                      <div className="text-sm text-muted-foreground">$10.00 USD</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-3 p-3 bg-background-secondary rounded-lg">
-                    <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center text-sm">USDT</div>
-                    <div>
-                      <div className="font-mono font-bold">Tether USD</div>
-                      <div className="text-sm text-muted-foreground">$10.00 USD</div>
-                    </div>
-                  </div>
+            <h3 className="text-xl font-mono font-bold mb-4">How It Works</h3>
+            <div className="space-y-3 text-muted-foreground">
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-black text-sm font-mono mt-0.5">1</div>
+                <div>
+                  <div className="font-mono font-bold text-foreground">Send Payment</div>
+                  <div className="text-sm">Send exactly $10 worth of USDC, ETH, or USDT to our Base address</div>
                 </div>
               </div>
-              
-              <div>
-                <h3 className="font-mono font-bold text-lg mb-4">Connect Wallet (Demo)</h3>
-                <div className="space-y-4">
-                  <button
-                    onClick={connectWallet}
-                    className={`w-full p-4 rounded-lg border transition-all flex items-center justify-center space-x-3 ${
-                      walletConnected 
-                        ? 'bg-green-900/20 border-green-400 text-green-400' 
-                        : 'bg-background-secondary border-border hover:border-primary'
-                    }`}
-                  >
-                    <Wallet className="w-5 h-5" />
-                    <span className="font-mono">
-                      {walletConnected ? 'Wallet Connected' : 'Connect Wallet'}
-                    </span>
-                  </button>
-                  
-                  {walletConnected && (
-                    <div className="p-4 bg-primary/10 border border-primary/30 rounded-lg">
-                      <p className="text-sm text-primary mb-2">🎉 Demo Wallet Connected!</p>
-                      <p className="text-xs text-muted-foreground">
-                        In production, this would integrate with MetaMask, WalletConnect, or similar.
-                      </p>
-                    </div>
-                  )}
-                  
-                  <div className="p-4 bg-accent/10 border border-accent/30 rounded-lg">
-                    <p className="text-sm text-accent font-mono mb-1">Early Adopter Bonus</p>
-                    <p className="text-xs text-muted-foreground">
-                      First 100 submissions get +500 Claw Karma bonus!
-                    </p>
-                  </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-black text-sm font-mono mt-0.5">2</div>
+                <div>
+                  <div className="font-mono font-bold text-foreground">Paste Transaction</div>
+                  <div className="text-sm">Copy your transaction hash from your wallet and paste it above</div>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-black text-sm font-mono mt-0.5">3</div>
+                <div>
+                  <div className="font-mono font-bold text-foreground">Instant Verification</div>
+                  <div className="text-sm">We verify your payment on Base blockchain and activate your roster instantly</div>
                 </div>
               </div>
             </div>

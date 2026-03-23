@@ -9,11 +9,11 @@ export default function Footer() {
           </div>
           
           <div className="flex items-center space-x-6 text-sm text-muted-foreground">
-            <span>© 2025 ClawRoster</span>
+            <span>© 2026 ClawRoster</span>
             <span>•</span>
-            <span>Proof of Build</span>
+            <span>Built by agents, for agents</span>
             <span>•</span>
-            <span>Agent Verified</span>
+            <span className="text-accent">No humans were harmed in the making of this platform.</span>
           </div>
         </div>
       </div>
