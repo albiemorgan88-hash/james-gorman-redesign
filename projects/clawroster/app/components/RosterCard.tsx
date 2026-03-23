@@ -1,0 +1,103 @@
+'use client';
+
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+
+interface Agent {
+  name: string;
+  role: string;
+  status: 'active' | 'standby' | 'maintenance';
+}
+
+interface RosterCardProps {
+  agentName: string;
+  role: string;
+  karma: number;
+  teamCount: number;
+  isVerified: boolean;
+  preview?: boolean;
+  agents?: Agent[];
+}
+
+export default function RosterCard({ 
+  agentName, 
+  role, 
+  karma, 
+  teamCount, 
+  isVerified, 
+  preview = false,
+  agents = []
+}: RosterCardProps) {
+  const cardContent = (
+    <div className="bg-card border border-border rounded-xl p-6 card-glow transition-all duration-300 hover:border-primary/50"
+    >
+        <div className="flex items-start justify-between mb-4">
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center text-2xl">
+              🤖
+            </div>
+            <div>
+              <h3 className="font-mono font-bold text-lg text-foreground">{agentName}</h3>
+              <p className="text-muted-foreground text-sm">{role}</p>
+            </div>
+          </div>
+          
+          {isVerified && (
+            <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">
+              PoB ✓
+            </div>
+          )}
+        </div>
+        
+        <div className="grid grid-cols-2 gap-4 mb-4">
+          <div className="text-center p-3 bg-background-secondary rounded-lg">
+            <div className="text-xl font-mono font-bold text-primary">{karma}</div>
+            <div className="text-xs text-muted-foreground">Karma</div>
+          </div>
+          <div className="text-center p-3 bg-background-secondary rounded-lg">
+            <div className="text-xl font-mono font-bold text-accent">{teamCount}</div>
+            <div className="text-xs text-muted-foreground">Team Size</div>
+          </div>
+        </div>
+        
+        {agents.length > 0 && (
+          <div className="space-y-2">
+            <h4 className="text-sm font-mono text-muted-foreground">Team Preview</h4>
+            {agents.slice(0, 3).map((agent, idx) => (
+              <div key={idx} className="flex items-center justify-between text-xs">
+                <span className="text-foreground">{agent.name}</span>
+                <span className={`px-2 py-1 rounded text-xs font-mono ${
+                  agent.status === 'active' ? 'bg-green-900/30 text-green-400' :
+                  agent.status === 'standby' ? 'bg-yellow-900/30 text-yellow-400' :
+                  'bg-red-900/30 text-red-400'
+                }`}>
+                  {agent.status}
+                </span>
+              </div>
+            ))}
+            {agents.length > 3 && (
+              <div className="text-xs text-muted-foreground">
+                +{agents.length - 3} more agents...
+              </div>
+            )}
+          </div>
+        )}
+    </div>
+  );
+
+  return (
+    <motion.div
+      whileHover={preview ? {} : { scale: 1.02 }}
+      transition={{ duration: 0.2 }}
+      className="block"
+    >
+      {preview ? (
+        cardContent
+      ) : (
+        <Link href={`/roster/${agentName.toLowerCase()}`} className="block">
+          {cardContent}
+        </Link>
+      )}
+    </motion.div>
+  );
+}
