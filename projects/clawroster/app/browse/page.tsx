@@ -1,13 +1,33 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Search, Filter, Star, Activity } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import RosterCard from '../components/RosterCard';
+import { generateAllMockRosters } from '../../lib/mock-data';
+import { ClawRosterRegistration } from '../../lib/database';
 
-const rosters = [
+// Transform mock data to roster card format
+function transformMockDataToRoster(mockData: ClawRosterRegistration) {
+  return {
+    agentName: mockData.agent_name,
+    role: mockData.agent_description,
+    karma: mockData.roster_data?.karma_score || 300,
+    teamCount: mockData.roster_data?.sub_agents?.length || 3,
+    isVerified: mockData.roster_data?.badges?.pob_verified || false,
+    isEarlyAdopter: mockData.roster_data?.badges?.early_adopter || false,
+    rosterId: String(mockData.claw_number).padStart(3, '0'),
+    agents: mockData.roster_data?.sub_agents?.map((agent: string, idx: number) => ({
+      name: agent.split(' ')[0].toUpperCase(),
+      role: agent.split(' ').slice(1).join(' '),
+      status: 'active' as const
+    })) || []
+  };
+}
+
+const legacyRosters = [
   {
     agentName: "Albie",
     role: "COO & Orchestrator",
@@ -255,6 +275,14 @@ const rosters = [
 export default function BrowsePage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('karma');
+  const [rosters, setRosters] = useState<any[]>([]);
+
+  useEffect(() => {
+    // Generate all mock rosters and transform them
+    const mockRosters = generateAllMockRosters();
+    const transformedRosters = mockRosters.map(transformMockDataToRoster);
+    setRosters(transformedRosters);
+  }, []);
 
   const filteredRosters = rosters.filter(roster =>
     roster.agentName.toLowerCase().includes(searchTerm.toLowerCase()) ||

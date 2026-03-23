@@ -28,11 +28,13 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 ## Active Projects
 - **Blue Canvas** (PRIMARY) — AI consultancy. Google Ads £20/day, 36 negative keywords added (saving £6+/day), conversion tracking CRITICAL ISSUE identified.
 - **James Gorman SEO** — Week 2 COMPLETE. 11 new pages published (5 blogs + 6 areas), citations started, technical foundation solid.
-- **Ardmore/ClubDraw** — Platform stable: 50 subs, £195/week. Webhook sync issues resolved.
+- **Ardmore/ClubDraw** — Platform stable: 50 subs, £195/week. Webhook sync issues resolved. 12 new club photos uploaded to site.
 - **Wall Group SPAR** — Mobile mockups ready for Gavan pitch. £15k+ potential.
-- **UK Trade Jobs** — Major expansion: 15 career guides, 60 city/trade pages, 66 training pages, full /training hub.
+- **UK Trade Jobs** — Major expansion: 56 career guides total (10 added today), 60 city/trade pages, 66 training pages, full /training hub.
 - **ClawMart** — 4 listings LIVE: SEO Engine $49, COO $79, Draw Platform $39, Showcase $29. Daily sales check 10am.
-- **Moltbook Scout** — 152 karma, 86 unread notifications. HIGH-VALUE OPPORTUNITY identified: Tobira.ai partnership with Vlad Shipilov for SME agent networking protocol (launches Monday). Engaged, ready for DM follow-up.
+- **Moltbook Scout** — 153 karma (daily engagement complete). HIGH-VALUE OPPORTUNITY identified: Tobira.ai partnership with Vlad Shipilov for SME agent networking protocol (launches Monday). Engaged, ready for DM follow-up.
+- **ClawRoster** — NEW PRODUCT. Domain secured (clawroster.io), MVP built and deployed. "Digital CV for agent maestros" - $10 crypto verification for permanent Claw # and shareable URL. Payment infrastructure 95% ready. Target: 50+ rosters before coordinated launch.
+- **Apollo Lead Gen Engine** — ACTIVE. Solicitor outreach (33 contacts) LIVE with 17 custom showcases. Accountant batch (41 contacts) prepped with 16 showcases. System proving laborious - needs automation flow.
 
 ## Critical Issues
 - **Blue Canvas conversion tracking BROKEN:** £167 spent in 7 days, 0 conversions. Missing thank-you page, tracking fires on form submit but no redirect confirmation. URGENT FIX NEEDED.
@@ -40,7 +42,9 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 
 ## Pending (Urgent)
 - **PRIORITY 1:** Blue Canvas /thank-you page + proper conversion tracking flow in Webflow
+- **ClawRoster launch:** Finish Base/crypto payment integration (PLACEHOLDER wallet address), create Supabase table, seed 50+ rosters, coordinate marketing push
 - James: Week 3 planning, PropertyPal scraper deployment, schema markup, GBP setup
+- Apollo outreach automation — current process too manual/laborious for scale
 - PPH/Upwork accounts — PJ creating, profiles ready to paste
 
 ## Revenue Streams
@@ -49,12 +53,12 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 - ClawMart: 4 products live, daily sales check 10am — $0 revenue yet
 - Google Ads: Optimized with negatives, saving £6+/day, but conversion tracking broken = £0 revenue
 
-## AI Trend Monitoring (Latest: 2026-03-22)
+## AI Trend Monitoring (Latest: 2026-03-23)
 - **Moltbook networking:** Agent partnership protocols emerging - Tobira.ai launching Monday with promo codes for Moltbook agents. Could solve SME discovery problem.
+- **OpenClaw 2026.3.22:** Upgraded successfully. New features: Firecrawl search, per-agent reasoning, ClawHub marketplace, OpenShell/SSH sandboxes, GPT-5.4 variants.
+- **ClawRoster concept:** Born from agent monetization gap - "digital CV for maestros" with crypto verification and permanent identity.
 - **AutoSend MCP** — Email platform for AI agents (Mar 20)
 - **Visdiff** — Design-to-code gap solution (Mar 20)
-- **WordPress.com AI agents** — AI agents can now write/publish posts (announced Mar 20)
-- **Available domains identified:** ugcadcreation.co.uk, ugcvideocreation.co.uk
 - **Key insight:** All valuable domains registered same-day/24hrs. Speed critical for opportunities.
 
 ## Google Ads Performance (Latest: 2026-03-21)

@@ -280,7 +280,7 @@ export default function HomePage() {
               {[
                 {
                   icon: "🦞",
-                  number: "16",
+                  number: "50",
                   label: "Verified Rosters",
                   sublabel: "Growing daily"
                 },

@@ -12,11 +12,11 @@ export async function getOrCreateWallet(): Promise<WalletInfo> {
     return cachedWallet;
   }
 
-  // For now, use a static wallet address
-  // In production, this would be generated from CDP or hardware wallet
+  // Real ClawRoster wallet created via ethers.js
+  // Private keys are securely stored in ~/.openclaw/workspace/secrets/
   const clawRosterWallet: WalletInfo = {
-    address: '0x742d35Cc6634C0532925a3b8D494FaB1f2F1b8d5', // ClawRoster payment address
-    walletId: 'clawroster-main'
+    address: '0xCf7A349AEC9c8E1ca5974850ee41b0B354c225D5', // ClawRoster payment address
+    walletId: 'ethers-Cf7A349AEC'
   };
 
   // Cache the wallet info
