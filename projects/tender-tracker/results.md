@@ -1,5 +1,5 @@
 # Blue Canvas Tender Tracker — Results
-**Date:** 16 Mar 2026 | **Generated:** 2026-03-16T09:01:03
+**Date:** 23 Mar 2026 | **Generated:** 2026-03-23T09:01:24
 
 **Search scope:** UK, Northern Ireland, Ireland
 **Focus:** AI, digital transformation, technology tenders under £100k
@@ -26,14 +26,6 @@
 - **Notes:** Crown Commercial Service (the Authority) has put in place a Dynamic Purchasing System (DPS) for the provision of data access to the Health and Social Care Network compliant with the HSCN Compliance Do
 
 
-## Open Banking (Data, Digital Payments &amp; Confirmation of Payee Services) DPS
-- **Value:** £800000000
-- **Deadline:** 07 Jan 2032
-- **Source:** [Contracts Finder](https://www.contractsfinder.service.gov.uk/Notice/d7d25e48-faf9-4d7f-b4df-e6e1660559bd)
-- **Relevance:** Medium
-- **Notes:** Due to the ongoing growth and development of the Open Banking market, Crown Commercial Service (CCS), as the Authority, intends to put in place an agreement for Open Banking Services for use by Centra
-
-
 ## BLC0109 - Digital Forensic Services DPS
 - **Value:** £60000000
 - **Deadline:** 28 Feb 2027
@@ -56,6 +48,22 @@
 - **Source:** [Contracts Finder](https://www.contractsfinder.service.gov.uk/Notice/d0e31bdb-ae03-49cf-86b2-4af9e0b296ff)
 - **Relevance:** Low
 - **Notes:** Worcestershire County Council (WCC), in collaboration with Partners, is putting in place a new Digital Connectivity: Services to Understand Mobile Coverage &amp; Performance Dynamic Purchasing System 
+
+
+## Open Banking (Data, Digital Payments &amp; Confirmation of Payee Services) DPS
+- **Value:** £800000000
+- **Deadline:** 07 Jan 2032
+- **Source:** [Contracts Finder](https://www.contractsfinder.service.gov.uk/Notice/d7d25e48-faf9-4d7f-b4df-e6e1660559bd)
+- **Relevance:** Medium
+- **Notes:** Due to the ongoing growth and development of the Open Banking market, Crown Commercial Service (CCS), as the Authority, intends to put in place an agreement for Open Banking Services for use by Centra
+
+
+## Registrar Customer Management Solution
+- **Value:** £75000
+- **Deadline:** 20 Apr 2026
+- **Source:** [Contracts Finder](https://www.contractsfinder.service.gov.uk/Notice/bd4d64f9-e5eb-47d9-9697-7e89f75ad0db)
+- **Relevance:** Low
+- **Notes:** East Riding of Yorkshire Council are seeking interest from potential suppliers capable of delivering a comprehensive, end-to-end digital solution for registration services, including appointments and 
 
 
 ## CA17288 - Media Buying Services (3 Year Contract)
@@ -106,14 +114,6 @@
 - **Notes:** YPO are looking for Suppliers to be appointed onto a Dynamic Purchasing System (DPS) for the provision of Metering and Meter Data Services. The DPS is designed to meet the needs of all public sector o
 
 
-## RCoA NCAPC
-- **Value:** Not specified
-- **Deadline:** 16 Mar 2026
-- **Source:** [Contracts Finder](https://www.contractsfinder.service.gov.uk/Notice/b327db20-773b-4e7e-b83e-3812a0f28e84)
-- **Relevance:** Low
-- **Notes:** Clinical Data Collection services for a new national clinical audit, the National Clinical Audit of Perioperative Care (NCAPC). This is a new project that officially started on 1st October 2025 and wi
-
-
 ## ITT 2544 - DESNZ - Energy Technology List
 - **Value:** £7766667
 - **Deadline:** 10 Apr 2026
@@ -130,12 +130,20 @@
 - **Notes:** Crown Commercial Service (CCS) set up a dynamic purchasing system for a period of 48 months and invited bidders to request to participate for the Spark - The Technology Innovation Marketplace DPS.\r\n
 
 
-## BBV HS2 MWCC NORTH - Video conferencing Replacement plan
-- **Value:** £1000000
-- **Deadline:** 20 Mar 2026
-- **Source:** [Contracts Finder](https://www.contractsfinder.service.gov.uk/Notice/0463a4f3-36f4-4c57-860e-16f173798a4c)
+## CA17432 - Supply of food and beverages
+- **Value:** Not specified
+- **Deadline:** 23 Apr 2026
+- **Source:** [Contracts Finder](https://www.contractsfinder.service.gov.uk/Notice/0b8be361-cf95-43c3-87f4-cfb8f92d3f9b)
 - **Relevance:** Low
-- **Notes:** A review of video conferencing (VC) equipment currently deployed across BBV office locations has identified that several units are approaching the end of their manufacturer support lifecycle. \r\n    
+- **Notes:** Supply of food beverages to Dudley College of Technology\r\n\r\nTo access this competition: \r\n\r\nRegistered:\r\nLogin to https://suppliers.multiquote.com and view the opportunity CA17432.\r\n\r\nNo
+
+
+## Specialist Consultancy - Review and Impact Assessment of Railway Survey Standard
+- **Value:** £15000
+- **Deadline:** 01 Apr 2026
+- **Source:** [Contracts Finder](https://www.contractsfinder.service.gov.uk/Notice/fee6362f-9a3c-4efa-a697-165b2eb47270)
+- **Relevance:** Low
+- **Notes:** FBRS JV is seeking a specialist consultancy to undertake a structured technical review and impact assessment of the updated Railway Survey Standard Revision P02. The purpose of this commission is to s
 
 
 ## Residential and Nursing Care DPS (Dynamic Purchasing System)
@@ -149,7 +157,13 @@
 
 # Find a Tender (UK)
 
-*No matching tenders found in this search.*
+
+## NEPRO Innovation
+- **Value:** Not specified
+- **Deadline:** Not specified
+- **Source:** [Find a Tender](https://www.find-tender.service.gov.uk/Search/Results?query=artificial+intelligence)
+- **Relevance:** Medium
+- **Notes:** Found via keyword "artificial intelligence" — check listing for full details
 
 ---
 
@@ -207,5 +221,5 @@
 
 
 ---
-*Total results: 23 | Crawled: 2026-03-16T09:01:03*
+*Total results: 25 | Crawled: 2026-03-23T09:01:24*
 *Next run: Schedule with `crontab -e` → `0 8 * * 1 /Users/philsagent/.openclaw/workspace/projects/tender-tracker/tender-crawler.sh`*
