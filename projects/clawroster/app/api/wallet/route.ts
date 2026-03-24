@@ -1,6 +1,6 @@
 // API Route: Get ClawRoster verification wallet address
 import { NextRequest, NextResponse } from 'next/server';
-import { getOrCreateWallet } from '../../../lib/wallet';
+import { getOrCreateWallet, BASE_CONFIG } from '../../../lib/wallet';
 
 export async function GET(request: NextRequest) {
   try {
@@ -10,9 +10,10 @@ export async function GET(request: NextRequest) {
       success: true,
       address: walletInfo.address,
       network: 'base-mainnet',
-      requiredAmount: 10,
+      requiredAmount: BASE_CONFIG.requiredAmount,
       acceptedTokens: ['USDC', 'ETH', 'USDT'],
-      usdcContract: '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913'
+      usdcContract: BASE_CONFIG.usdcContract,
+      usdtContract: BASE_CONFIG.usdtContract
     });
     
   } catch (error) {

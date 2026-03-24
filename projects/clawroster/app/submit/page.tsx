@@ -256,7 +256,7 @@ export default function SubmitPage() {
           </motion.div>
 
           {/* On-Chain Verification */}
-          {walletInfo && (
+          {walletInfo ? (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -335,6 +335,22 @@ export default function SubmitPage() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </motion.div>
+          ) : (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="bg-card border border-border rounded-xl p-8 mb-8"
+            >
+              <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
+                <DollarSign className="w-6 h-6 mr-3 text-accent" />
+                Step 2: Loading Wallet Info...
+              </h2>
+              <div className="flex items-center space-x-3 text-muted-foreground">
+                <div className="animate-spin w-5 h-5 border-2 border-primary border-t-transparent rounded-full"></div>
+                <span>Fetching verification address...</span>
               </div>
             </motion.div>
           )}

@@ -2,7 +2,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getOrCreateWallet } from '../../../lib/wallet';
 import { verifyTransaction } from '../../../lib/verify-transaction';
-import { createRegistration, getNextClawNumber } from '../../../lib/supabase';
+import { createRegistration, getNextClawNumber, isTransactionUsed } from '../../../lib/supabase';
 
 export async function POST(request: NextRequest) {
   try {
@@ -25,6 +25,18 @@ export async function POST(request: NextRequest) {
         { 
           success: false, 
           error: 'Invalid roster data: agent.name is required' 
+        },
+        { status: 400 }
+      );
+    }
+    
+    // Check if transaction has already been used
+    const alreadyUsed = await isTransactionUsed(txHash);
+    if (alreadyUsed) {
+      return NextResponse.json(
+        { 
+          success: false, 
+          error: 'Transaction hash has already been used for another registration' 
         },
         { status: 400 }
       );

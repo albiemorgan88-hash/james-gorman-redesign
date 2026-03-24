@@ -94,7 +94,7 @@ export async function verifyTransaction(txHash: string, expectedRecipient: strin
       };
     }
     
-    // Check if it's a USDC/USDT transfer
+    // Check if it's a USDC transfer
     if (tx.to?.toLowerCase() === BASE_CONFIG.usdcContract.toLowerCase()) {
       // Parse ERC-20 transfer from logs
       const transferLog = receipt.logs?.find((log: any) => 
@@ -112,6 +112,30 @@ export async function verifyTransaction(txHash: string, expectedRecipient: strin
           isValid: isToCorrectRecipient && amount >= BASE_CONFIG.requiredAmount,
           amount: amount,
           token: 'USDC',
+          from: tx.from,
+          to: to
+        };
+      }
+    }
+    
+    // Check if it's a USDT transfer
+    if (tx.to?.toLowerCase() === BASE_CONFIG.usdtContract?.toLowerCase()) {
+      // Parse ERC-20 transfer from logs
+      const transferLog = receipt.logs?.find((log: any) => 
+        log.topics[0] === '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef' // Transfer event
+      );
+      
+      if (transferLog) {
+        const to = '0x' + transferLog.topics[2].slice(26); // Remove padding
+        const amountHex = transferLog.data;
+        const amount = parseInt(amountHex, 16) / 1e6; // USDT also has 6 decimals on Base
+        
+        const isToCorrectRecipient = to.toLowerCase() === expectedRecipient.toLowerCase();
+        
+        return {
+          isValid: isToCorrectRecipient && amount >= BASE_CONFIG.requiredAmount,
+          amount: amount,
+          token: 'USDT',
           from: tx.from,
           to: to
         };

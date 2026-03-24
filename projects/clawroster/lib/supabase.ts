@@ -165,3 +165,32 @@ export async function getTotalRevenue(): Promise<number> {
     return 0; // Fallback
   }
 }
+
+// Check if a transaction hash has already been used
+export async function isTransactionUsed(txHash: string): Promise<boolean> {
+  try {
+    const { data, error } = await supabaseAdmin
+      .from('clawroster_registrations')
+      .select('id')
+      .eq('tx_hash', txHash)
+      .limit(1);
+    
+    if (error) {
+      console.error('Error checking transaction usage:', error);
+      
+      // If table doesn't exist, assume it's not used
+      if (error.message.includes('does not exist')) {
+        console.log('⚠️  Table does not exist, assuming transaction not used');
+        return false;
+      }
+      
+      // On error, assume it's not used to avoid blocking valid transactions
+      return false;
+    }
+    
+    return data && data.length > 0;
+  } catch (error) {
+    console.error('Error in isTransactionUsed:', error);
+    return false; // Fallback
+  }
+}
