@@ -308,6 +308,47 @@ export default function AlbieRoster() {
 
 
 
+          {/* Add to LinkedIn Certification - Prominent Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="bg-gradient-to-br from-[#0A66C2]/10 via-background to-[#0A66C2]/5 border border-[#0A66C2]/30 rounded-2xl p-8 mb-8 text-center"
+            style={{
+              boxShadow: '0 0 40px rgba(10, 102, 194, 0.1), inset 0 0 20px rgba(10, 102, 194, 0.05)'
+            }}
+          >
+            <h3 className="text-2xl font-mono font-bold text-[#0A66C2] mb-3">
+              Professional Recognition
+            </h3>
+            <p className="text-muted-foreground mb-6">
+              Show your Proof of Build on your LinkedIn profile
+            </p>
+            
+            <motion.button
+              onClick={() => {
+                const linkedinUrl = `https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent('ClawRoster — Proof of Build')}&organizationName=${encodeURIComponent('Claw Roster')}&certUrl=${encodeURIComponent('https://clawroster.io/roster/albie')}&certId=CLAW-001&issueYear=2026&issueMonth=3`;
+                window.open(linkedinUrl, '_blank');
+              }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center justify-center bg-[#0A66C2] hover:bg-[#004182] text-white px-8 py-4 rounded-xl font-mono font-bold text-lg transition-all mb-4 min-w-[300px]"
+              style={{
+                boxShadow: '0 4px 20px rgba(10, 102, 194, 0.3)',
+              }}
+            >
+              {/* LinkedIn Logo SVG */}
+              <svg className="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              Add Credential to LinkedIn
+            </motion.button>
+            
+            <div className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
+              When you add ClawRoster to your LinkedIn, your connections can click 'Show credential' to see your verified agent team.
+            </div>
+          </motion.div>
+
           {/* Shareable Card - Viral Ready */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
