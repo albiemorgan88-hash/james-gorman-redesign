@@ -99,8 +99,8 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(26, 35, 50, 0.6), rgba(26, 35, 50, 0.6)),
-                        url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80') center/cover;
+            background: linear-gradient(rgba(26, 35, 50, 0.4), rgba(26, 35, 50, 0.7)),
+                        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80') center/cover;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -217,14 +217,14 @@
             background: var(--white);
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1), 0 0 0 1px rgba(212, 175, 55, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
         }
 
         .property-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.18), 0 0 30px rgba(212, 175, 55, 0.2);
         }
 
         .property-image {
@@ -240,10 +240,12 @@
             left: 1rem;
             background: var(--gold);
             color: var(--navy);
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            font-weight: 700;
-            font-size: 1.1rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 800;
+            font-size: 1.3rem;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.8);
         }
 
         .property-details {
@@ -280,10 +282,24 @@
 
         /* Valuation CTA */
         .valuation-cta {
-            background: var(--navy);
+            background: linear-gradient(135deg, var(--navy) 0%, var(--deep-navy) 100%),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23d4af37" opacity="0.1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23dots)"/></svg>');
             color: var(--white);
             padding: 6rem 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .valuation-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(212, 175, 55, 0.05), transparent);
+            pointer-events: none;
         }
 
         .valuation-content {
@@ -318,10 +334,35 @@
 
         .about-image {
             width: 100%;
-            height: 400px;
+            height: 480px;
             background: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80') center/cover;
-            border-radius: 15px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            position: relative;
+            border: 4px solid var(--gold);
+            padding: 8px;
+            background-clip: content-box;
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            background: linear-gradient(45deg, var(--gold), var(--light-gold), var(--gold));
+            border-radius: 24px;
+            z-index: -1;
+        }
+
+        .about-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, transparent 0%, rgba(26, 35, 50, 0.1) 100%);
+            border-radius: 16px;
+            pointer-events: none;
         }
 
         .about-text {
@@ -422,6 +463,29 @@
 
         .social-link:hover {
             transform: scale(1.2);
+        }
+
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-up {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .slide-up.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         /* Mobile Responsive */
@@ -528,12 +592,12 @@
     <!-- Featured Properties -->
     <section class="featured-properties" id="properties">
         <div class="container">
-            <h2 class="section-title serif">Featured Properties</h2>
+            <h2 class="section-title serif fade-in">Featured Properties</h2>
             <div class="luxury-divider"></div>
             <p class="section-subtitle">Discover exceptional homes in Derry and the North West</p>
             
             <div class="properties-grid">
-                <div class="property-card">
+                <div class="property-card slide-up">
                     <div class="property-image" style="background-image: url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
                         <div class="property-price">£425,000</div>
                     </div>
@@ -551,7 +615,7 @@
                     </div>
                 </div>
 
-                <div class="property-card">
+                <div class="property-card slide-up">
                     <div class="property-image" style="background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
                         <div class="property-price">£285,000</div>
                     </div>
@@ -569,7 +633,7 @@
                     </div>
                 </div>
 
-                <div class="property-card">
+                <div class="property-card slide-up">
                     <div class="property-image" style="background-image: url('https://images.unsplash.com/photo-1601760562234-9814eea6663a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
                         <div class="property-price">£750,000</div>
                     </div>
@@ -605,10 +669,10 @@
     <section class="about" id="about">
         <div class="container">
             <div class="about-content">
-                <div class="about-image"></div>
+                <div class="about-image fade-in"></div>
                 <div>
-                    <h2 class="section-title serif">Meet James Gorman</h2>
-                    <div class="luxury-divider" style="margin-left: 0;"></div>
+                    <h2 class="section-title serif fade-in">Meet James Gorman</h2>
+                    <div class="luxury-divider fade-in" style="margin-left: 0;"></div>
                     <p class="about-text">
                         With over a decade of experience in the North West property market, James Gorman has built a reputation as Derry's most trusted estate agent. His deep local knowledge, combined with cutting-edge marketing techniques, ensures every client receives the highest level of service.
                     </p>
@@ -734,6 +798,40 @@
             } else {
                 header.style.background = 'var(--navy)';
             }
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with animation classes
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.fade-in, .slide-up');
+            animatedElements.forEach(el => observer.observe(el));
+
+            // Stagger property card animations
+            const propertyCards = document.querySelectorAll('.property-card');
+            propertyCards.forEach((card, index) => {
+                card.style.transitionDelay = `${index * 0.2}s`;
+            });
+        });
+
+        // Add subtle parallax effect to hero
+        window.addEventListener('scroll', function() {
+            const hero = document.querySelector('.hero');
+            const scrolled = window.pageYOffset;
+            const parallax = scrolled * 0.3;
+            hero.style.transform = `translateY(${parallax}px)`;
         });
     </script>
 </body>
