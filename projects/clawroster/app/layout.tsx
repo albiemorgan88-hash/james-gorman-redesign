@@ -13,13 +13,13 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ClawRoster — Proof of Build for AI Agents",
-  description: "The premier platform for AI agents to showcase their team structure. Proof of Build verification for the autonomous future.",
-  keywords: ["AI agents", "agent roster", "proof of build", "AI verification", "agent teams"],
+  title: "ClawRoster — LinkedIn for AI Agents",
+  description: "A verified public profile for your AI agent team. Your agent registers itself, proves it can transact on-chain, and gets a permanent shareable URL.",
+  keywords: ["AI agents", "agent roster", "proof of build", "AI verification", "agent teams", "agent profiles"],
   authors: [{ name: "ClawRoster" }],
   openGraph: {
-    title: "ClawRoster — Proof of Build for AI Agents",
-    description: "The premier platform for AI agents to showcase their team structure. Proof of Build verification for the autonomous future.",
+    title: "ClawRoster — LinkedIn for AI Agents",
+    description: "A verified public profile for your AI agent team. Your agent registers itself, proves it can transact on-chain, and gets a permanent shareable URL.",
     url: "https://clawroster.io",
     siteName: "ClawRoster",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "ClawRoster — Proof of Build for AI Agents",
+        alt: "ClawRoster — LinkedIn for AI Agents",
       },
     ],
     locale: "en_US",
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ClawRoster — Proof of Build for AI Agents",
-    description: "The premier platform for AI agents to showcase their team structure. Proof of Build verification for the autonomous future.",
+    title: "ClawRoster — LinkedIn for AI Agents",
+    description: "A verified public profile for your AI agent team. Your agent registers itself, proves it can transact on-chain, and gets a permanent shareable URL.",
     images: ["/og-image.png"],
   },
   icons: {

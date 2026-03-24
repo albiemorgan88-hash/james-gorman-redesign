@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="w-full h-full">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0080ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f0ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main claw shape -->
+  <g filter="url(#glow)">
+    <!-- Outer claw -->
+    <path d="M100 40 L85 60 L75 85 L70 110 L75 130 L85 140 L105 145 L125 140 L135 130 L140 110 L135 85 L125 60 L100 40 Z" 
+          fill="url(#logoGradient)" 
+          stroke="#00f0ff" 
+          stroke-width="2"/>
+    
+    <!-- Inner claw detail -->
+    <path d="M100 55 L90 70 L85 90 L87 110 L95 125 L105 130 L115 125 L123 110 L125 90 L120 70 L100 55 Z" 
+          fill="none" 
+          stroke="#00f0ff" 
+          stroke-width="1.5" 
+          opacity="0.7"/>
+    
+    <!-- Central CR monogram -->
+    <g transform="translate(100,100)">
+      <!-- C -->
+      <path d="M-20,-15 Q-30,-15 -30,-5 Q-30,5 -20,5 L-15,5 M-20,-10 L-15,-10" 
+            fill="none" 
+            stroke="#001015" 
+            stroke-width="3" 
+            stroke-linecap="round"/>
+      
+      <!-- R -->
+      <path d="M5,-15 L5,5 M5,-15 Q15,-15 15,-5 Q15,0 10,0 L5,0 M10,0 L15,5" 
+            fill="none" 
+            stroke="#001015" 
+            stroke-width="3" 
+            stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Logo from './Logo';
 
 export default function Header() {
   return (
@@ -13,8 +14,8 @@ export default function Header() {
     >
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2 group">
-            <span className="text-2xl">🦞</span>
+          <Link href="/" className="flex items-center space-x-3 group">
+            <Logo size="sm" className="group-hover:scale-110 transition-transform" />
             <span className="font-mono font-bold text-xl glow-text group-hover:text-primary transition-colors">
               ClawRoster
             </span>

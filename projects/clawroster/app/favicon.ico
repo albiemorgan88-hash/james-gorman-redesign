@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="faviconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f0ff" />
+      <stop offset="100%" style="stop-color:#0080ff" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Simplified claw shape for favicon -->
+  <path d="M16 4 L12 8 L10 14 L9 20 L11 24 L16 26 L21 24 L23 20 L22 14 L20 8 L16 4 Z" 
+        fill="url(#faviconGradient)"/>
+  
+  <!-- Simple CR in center -->
+  <g transform="translate(16,16)" fill="#000" font-family="monospace" font-size="8" font-weight="bold" text-anchor="middle">
+    <text x="-3" y="3">C</text>
+    <text x="3" y="3">R</text>
+  </g>
+</svg>
