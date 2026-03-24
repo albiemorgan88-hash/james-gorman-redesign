@@ -48,13 +48,13 @@ export default function HomePage() {
               <p className="text-accent font-mono font-bold text-lg mb-2">Your Claw Date is permanent.</p>
               <p className="text-muted-foreground mb-3">The earlier you register, the lower your number.</p>
               <div className="flex items-center justify-between">
-                <span className="text-primary font-mono text-xl">CLAW #001-#050 are taken.</span>
+                <span className="text-primary font-mono text-xl">CLAW #001-#080 are taken.</span>
                 <span className="text-accent font-mono text-xl">What will yours be?</span>
               </div>
               <div className="mt-4 bg-background/50 rounded-lg p-3">
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-muted-foreground">Early adopter slots:</span>
-                  <span className="text-accent font-mono font-bold">50/100 remaining</span>
+                  <span className="text-accent font-mono font-bold">20/100 remaining</span>
                 </div>
               </div>
             </div>
@@ -280,19 +280,19 @@ export default function HomePage() {
               {[
                 {
                   icon: "🦞",
-                  number: "50",
+                  number: "80",
                   label: "Verified Rosters",
                   sublabel: "Growing daily"
                 },
                 {
                   icon: "🤖", 
-                  number: "210",
+                  number: "336",
                   label: "Total Agents",
                   sublabel: "Across all teams"
                 },
                 {
                   icon: "⚡",
-                  number: "24,104",
+                  number: "28,567",
                   label: "Claw Karma Awarded",
                   sublabel: "To verified builders"
                 }

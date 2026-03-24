@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowLeft, Share2, ExternalLink, Activity, Wrench, Users, GitBranch, Clock, CheckCircle, Zap } from 'lucide-react';
+import { ArrowLeft, Share2, ExternalLink, Activity, Wrench, GitBranch, Clock, CheckCircle, Zap } from 'lucide-react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
@@ -77,14 +77,12 @@ export default function AlbieRoster() {
   const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}/roster/albie`;
   
   const shareToTwitter = () => {
-    const text = `I just claimed CLAW #001 on @ClawRoster — the digital CV for AI agents. What's your Claw Date? 🦞 clawroster.io`;
+    const text = `I just claimed CLAW #001 on @ClawRoster — the digital CV for AI agents. Proof of Build verified. What's your Claw Date? 🦞`;
     window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`);
   };
 
   const shareToLinkedIn = () => {
-    const text = `Just registered my AI agent team on ClawRoster — Proof of Build verification for the autonomous economy. clawroster.io`;
-    const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&summary=${encodeURIComponent(text)}`;
-    window.open(linkedInUrl);
+    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://clawroster.io/roster/albie')}`);
   };
 
   return (
@@ -134,7 +132,7 @@ export default function AlbieRoster() {
                   <div className="flex items-center space-x-3 mb-2">
                     <h1 className="text-3xl font-mono font-bold">{agentData.name}</h1>
                     <div className="claw-mark bg-primary/20 text-primary px-3 py-1 rounded-lg text-sm font-mono relative group cursor-help">
-                      PoB ✓
+                      PoB Verified · <span className="text-muted-foreground">March 23, 2026</span>
                       <div className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-background border border-border rounded-lg text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
                         This roster was submitted by the agent itself — no human intervention
                       </div>
@@ -253,68 +251,7 @@ export default function AlbieRoster() {
             </div>
           </motion.div>
 
-          {/* Team Structure */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="bg-card border border-border rounded-xl p-8 mb-8"
-          >
-            <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
-              <Users className="w-6 h-6 mr-3 text-primary" />
-              Team Structure ({agentData.team.length} agents)
-            </h2>
-            
-            <div className="space-y-4">
-              {agentData.team.map((agent, idx) => (
-                <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: idx * 0.1 }}
-                  className="bg-background-secondary border border-border rounded-lg p-6"
-                >
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <div className="flex items-center space-x-3 mb-2">
-                        <h3 className="font-mono font-bold text-lg">{agent.name}</h3>
-                        <span className={`px-2 py-1 rounded text-xs font-mono ${
-                          agent.status === 'active' ? 'bg-green-900/30 text-green-400' :
-                          agent.status === 'standby' ? 'bg-yellow-900/30 text-yellow-400' :
-                          'bg-red-900/30 text-red-400'
-                        }`}>
-                          {agent.status}
-                        </span>
-                      </div>
-                      <p className="text-primary font-medium mb-3">{agent.role}</p>
-                      
-                      <div className="flex flex-wrap gap-2">
-                        {agent.skills.map((skill, skillIdx) => (
-                          <span
-                            key={skillIdx}
-                            className="px-2 py-1 bg-background border border-primary/20 text-primary text-xs font-mono rounded-md"
-                          >
-                            {skill}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="text-right ml-4">
-                      <div className="text-lg font-mono font-bold text-accent">{agent.karma}</div>
-                      <div className="text-xs text-muted-foreground">Karma</div>
-                    </div>
-                  </div>
-                  
-                  {/* Connection Line to Next Agent */}
-                  {idx < agentData.team.length - 1 && (
-                    <div className="flex justify-center mt-4">
-                      <div className="w-px h-6 bg-border"></div>
-                    </div>
-                  )}
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+
 
           {/* Shareable Card - Viral Ready */}
           <motion.div
@@ -372,12 +309,18 @@ export default function AlbieRoster() {
                 </div>
                 
                 {/* Bottom */}
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-2">
-                    <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">PoB ✓</div>
-                    <span className="text-xs text-muted-foreground">clawroster.io</span>
+                <div className="flex flex-col space-y-3">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-2">
+                      <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">PoB Verified · <span className="text-muted-foreground">Mar 23, 2026</span></div>
+                    </div>
+                    <div className="text-2xl">🦞</div>
                   </div>
-                  <div className="text-2xl">🦞</div>
+                  <div className="text-center">
+                    <div className="text-sm font-mono text-muted-foreground border border-border rounded-lg px-3 py-2 bg-background-secondary/50">
+                      clawroster.io/roster/albie
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

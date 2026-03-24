@@ -214,7 +214,7 @@ export const mockRosterData: ClawRosterRegistration[] = [
   // For now, let's create a shorter sample and generate the rest dynamically
 ];
 
-// Function to generate all 50 mock rosters dynamically
+// Function to generate all 80 mock rosters dynamically (50 original + 30 new)
 export function generateAllMockRosters(): ClawRosterRegistration[] {
   const allRosters: ClawRosterRegistration[] = [];
   
@@ -247,8 +247,8 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     }
   });
 
-  // Generate 49 more rosters (#002 through #050)
-  const agentNames = [
+  // Generate original 49 rosters (#002 through #050)
+  const originalAgentNames = [
     // DevOps/Infrastructure
     'CloudOps Central', 'Pipeline Masters', 'Infrastructure Guild', 'DevOps Dynamics', 'CloudScale Solutions', 'SysOps Collective',
     'Platform Engineers', 'Infrastructure Code', 'CloudNative Squad', 'Ops Automation Hub', 'DeployMaster Pro', 'ScaleOps Central',
@@ -278,7 +278,7 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     'FinTech Automation', 'Accounting Accelerators', 'Budget Planning Pro', 'Audit Compliance Co'
   ];
 
-  const categories = [
+  const originalCategories = [
     'DevOps', 'DevOps', 'DevOps', 'DevOps', 'DevOps', 'DevOps', 'DevOps', 'DevOps', 'DevOps', 'DevOps', 'DevOps', 'DevOps',
     'Marketing', 'Marketing', 'Marketing', 'Marketing', 'Marketing', 'Marketing', 'Marketing', 'Marketing', 'Marketing', 'Marketing',
     'Sales', 'Sales', 'Sales', 'Sales', 'Sales', 'Sales', 'Sales', 'Sales', 'Sales',
@@ -289,11 +289,11 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     'Finance', 'Finance', 'Finance', 'Finance'
   ];
 
-  // Generate rosters #002 through #050
+  // Generate original rosters #002 through #050
   for (let i = 1; i < 50; i++) {
     const clawNumber = i + 1;
-    const agentName = agentNames[i - 1] || `Agent Team ${String(clawNumber).padStart(2, '0')}`;
-    const category = categories[i - 1] || 'General';
+    const agentName = originalAgentNames[i - 1] || `Agent Team ${String(clawNumber).padStart(2, '0')}`;
+    const category = originalCategories[i - 1] || 'General';
     
     allRosters.push({
       id: generateMockTxHash(),
@@ -318,6 +318,90 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
         contact: {
           website: `https://${agentName.toLowerCase().replace(/[^a-z0-9]/g, '')}.ai`,
           email: `hello@${agentName.toLowerCase().replace(/[^a-z0-9]/g, '')}.ai`
+        }
+      }
+    });
+  }
+
+  // NEW: Add 30 more rosters (#051 through #080) with specific industry focus
+  const newAgentData = [
+    // AI Coding Assistants (5)
+    { name: 'CodeCraft AI', category: 'AI Coding', description: 'Full-stack code generation and refactoring specialist' },
+    { name: 'DevAssist Pro', category: 'AI Coding', description: 'Intelligent code review and optimization agent' },
+    { name: 'GitBot Elite', category: 'AI Coding', description: 'Autonomous git workflow and merge conflict resolver' },
+    { name: 'StackBuilder AI', category: 'AI Coding', description: 'Multi-language development framework architect' },
+    { name: 'DebugMaster Pro', category: 'AI Coding', description: 'Advanced error detection and code fixing specialist' },
+
+    // Content/Media Agents (5)
+    { name: 'ContentForge AI', category: 'Content/Media', description: 'Multi-platform content creation and distribution' },
+    { name: 'VideoEdit Supreme', category: 'Content/Media', description: 'Automated video editing and post-production' },
+    { name: 'PodcastPro AI', category: 'Content/Media', description: 'Audio content generation and podcast automation' },
+    { name: 'SocialBuzz Engine', category: 'Content/Media', description: 'Viral social media content and engagement optimizer' },
+    { name: 'DesignGenius AI', category: 'Content/Media', description: 'Graphic design and visual content automation' },
+
+    // Trading/Finance Bots (5)
+    { name: 'AlphaTrader AI', category: 'Trading/Finance', description: 'Quantitative trading and market analysis specialist' },
+    { name: 'CryptoArb Master', category: 'Trading/Finance', description: 'Cross-exchange arbitrage and DeFi optimizer' },
+    { name: 'RiskGuard Pro', category: 'Trading/Finance', description: 'Portfolio risk management and hedging strategist' },
+    { name: 'YieldFarm Elite', category: 'Trading/Finance', description: 'Automated yield farming and liquidity optimization' },
+    { name: 'MarketSentinel', category: 'Trading/Finance', description: 'Real-time market sentiment and news analysis' },
+
+    // Healthcare/Biotech Agents (3)
+    { name: 'MedResearch AI', category: 'Healthcare/Biotech', description: 'Medical literature analysis and research synthesis' },
+    { name: 'DrugDiscovery Pro', category: 'Healthcare/Biotech', description: 'Pharmaceutical compound analysis and prediction' },
+    { name: 'HealthMonitor AI', category: 'Healthcare/Biotech', description: 'Patient data analysis and health trend detection' },
+
+    // Legal/Compliance Agents (3)
+    { name: 'LegalEagle AI', category: 'Legal/Compliance', description: 'Contract analysis and legal document automation' },
+    { name: 'ComplianceGuard', category: 'Legal/Compliance', description: 'Regulatory compliance monitoring and reporting' },
+    { name: 'JurisBot Elite', category: 'Legal/Compliance', description: 'Legal research and case law analysis specialist' },
+
+    // Education/Tutoring Agents (3)
+    { name: 'StudyBuddy AI', category: 'Education/Tutoring', description: 'Personalized learning and adaptive tutoring system' },
+    { name: 'KnowledgeForge', category: 'Education/Tutoring', description: 'Curriculum development and educational content creator' },
+    { name: 'SkillBuilder Pro', category: 'Education/Tutoring', description: 'Professional skill assessment and training optimizer' },
+
+    // Gaming/Entertainment Agents (3)
+    { name: 'GameMaster AI', category: 'Gaming/Entertainment', description: 'Procedural game content generation and NPC behavior' },
+    { name: 'StreamBot Elite', category: 'Gaming/Entertainment', description: 'Live streaming automation and audience engagement' },
+    { name: 'EsportsCoach AI', category: 'Gaming/Entertainment', description: 'Competitive gaming analysis and strategy optimization' },
+
+    // Supply Chain/Logistics Agents (3)
+    { name: 'LogiFlow AI', category: 'Supply Chain/Logistics', description: 'End-to-end supply chain optimization and tracking' },
+    { name: 'WarehousePro AI', category: 'Supply Chain/Logistics', description: 'Inventory management and warehouse automation' },
+    { name: 'ShipRoute Master', category: 'Supply Chain/Logistics', description: 'Transportation route optimization and fleet management' }
+  ];
+
+  // Generate the 30 new rosters (#051 through #080)
+  for (let i = 0; i < 30; i++) {
+    const clawNumber = i + 51;
+    const agentData = newAgentData[i];
+    const hoursAgo = Math.floor(Math.random() * 72); // Random time in last 72 hours
+    const karmaScore = Math.floor(Math.random() * 401) + 150; // 150-550 karma range
+    
+    allRosters.push({
+      id: generateMockTxHash(),
+      claw_number: clawNumber,
+      agent_name: agentData.name,
+      agent_description: agentData.description,
+      wallet_address: generateMockAddress(),
+      tx_hash: generateMockTxHash(),
+      payment_amount: 10.0,
+      payment_token: 'USDC',
+      payment_verified: true,
+      status: 'active',
+      created_at: new Date(Date.now() - (hoursAgo * 60 * 60 * 1000)).toISOString(),
+      roster_data: {
+        category: agentData.category,
+        sub_agents: generateSubAgents(Math.floor(Math.random() * 5) + 2), // 2-6 sub-agents
+        karma_score: karmaScore,
+        badges: { 
+          pob_verified: true, 
+          early_adopter: true // All early adopters since we're in the first 100
+        },
+        contact: {
+          website: `https://${agentData.name.toLowerCase().replace(/[^a-z0-9]/g, '')}.ai`,
+          email: `hello@${agentData.name.toLowerCase().replace(/[^a-z0-9]/g, '')}.ai`
         }
       }
     });
