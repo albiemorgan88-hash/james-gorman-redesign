@@ -15,12 +15,12 @@ export default function Logo({ size = 'md', className = '' }: LogoProps) {
       <svg viewBox="0 0 200 200" className="w-full h-full">
         <defs>
           <linearGradient id={`logoGradient-${size}`} x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style={{stopColor:'#00f0ff', stopOpacity:1}} />
-            <stop offset="50%" style={{stopColor:'#0080ff', stopOpacity:1}} />
-            <stop offset="100%" style={{stopColor:'#00f0ff', stopOpacity:1}} />
+            <stop offset="0%" style={{stopColor:'#FF8C35', stopOpacity:1}} />
+            <stop offset="50%" style={{stopColor:'#FF6B35', stopOpacity:1}} />
+            <stop offset="100%" style={{stopColor:'#FF4500', stopOpacity:1}} />
           </linearGradient>
           <filter id={`glow-${size}`}>
-            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
             <feMerge> 
               <feMergeNode in="coloredBlur"/>
               <feMergeNode in="SourceGraphic"/>
@@ -28,37 +28,53 @@ export default function Logo({ size = 'md', className = '' }: LogoProps) {
           </filter>
         </defs>
         
-        {/* Main claw shape */}
+        {/* Org Chart / Roster Structure */}
         <g filter={`url(#glow-${size})`}>
-          {/* Outer claw */}
-          <path d="M100 40 L85 60 L75 85 L70 110 L75 130 L85 140 L105 145 L125 140 L135 130 L140 110 L135 85 L125 60 L100 40 Z" 
-                fill={`url(#logoGradient-${size})`}
-                stroke="#00f0ff" 
-                strokeWidth="2"/>
+          {/* Top Node - Team Leader */}
+          <circle cx="100" cy="60" r="16" 
+                  fill={`url(#logoGradient-${size})`}
+                  stroke="#FF6B35" 
+                  strokeWidth="2"/>
           
-          {/* Inner claw detail */}
-          <path d="M100 55 L90 70 L85 90 L87 110 L95 125 L105 130 L115 125 L123 110 L125 90 L120 70 L100 55 Z" 
-                fill="none" 
-                stroke="#00f0ff" 
-                strokeWidth="1.5" 
-                opacity="0.7"/>
-          
-          {/* Central CR monogram */}
-          <g transform="translate(100,100)">
-            {/* C */}
-            <path d="M-20,-15 Q-30,-15 -30,-5 Q-30,5 -20,5 L-15,5 M-20,-10 L-15,-10" 
-                  fill="none" 
-                  stroke="#001015" 
-                  strokeWidth="3" 
-                  strokeLinecap="round"/>
-            
-            {/* R */}
-            <path d="M5,-15 L5,5 M5,-15 Q15,-15 15,-5 Q15,0 10,0 L5,0 M10,0 L15,5" 
-                  fill="none" 
-                  stroke="#001015" 
-                  strokeWidth="3" 
-                  strokeLinecap="round"/>
+          {/* Connection lines from top to bottom nodes */}
+          <g stroke="#FF6B35" strokeWidth="3" fill="none">
+            {/* Center vertical line */}
+            <line x1="100" y1="76" x2="100" y2="110" />
+            {/* Horizontal connector */}
+            <line x1="50" y1="110" x2="150" y2="110" />
+            {/* Branch lines to bottom nodes */}
+            <line x1="60" y1="110" x2="60" y2="124" />
+            <line x1="100" y1="110" x2="100" y2="124" />
+            <line x1="140" y1="110" x2="140" y2="124" />
           </g>
+          
+          {/* Bottom Row - Team Members */}
+          <circle cx="60" cy="140" r="14" 
+                  fill={`url(#logoGradient-${size})`}
+                  stroke="#FF6B35" 
+                  strokeWidth="2"/>
+          
+          <circle cx="100" cy="140" r="14" 
+                  fill={`url(#logoGradient-${size})`}
+                  stroke="#FF6B35" 
+                  strokeWidth="2"/>
+          
+          <circle cx="140" cy="140" r="14" 
+                  fill={`url(#logoGradient-${size})`}
+                  stroke="#FF6B35" 
+                  strokeWidth="2"/>
+          
+          {/* Agent indicators - small dots inside nodes */}
+          <circle cx="100" cy="60" r="4" fill="#FF4500" opacity="0.8"/>
+          <circle cx="60" cy="140" r="3" fill="#FF4500" opacity="0.8"/>
+          <circle cx="100" cy="140" r="3" fill="#FF4500" opacity="0.8"/>
+          <circle cx="140" cy="140" r="3" fill="#FF4500" opacity="0.8"/>
+          
+          {/* Subtle connecting nodes for polish */}
+          <circle cx="100" cy="110" r="3" fill="#FF6B35" opacity="0.6"/>
+          <circle cx="60" cy="124" r="2" fill="#FF6B35" opacity="0.6"/>
+          <circle cx="100" cy="124" r="2" fill="#FF6B35" opacity="0.6"/>
+          <circle cx="140" cy="124" r="2" fill="#FF6B35" opacity="0.6"/>
         </g>
       </svg>
     </div>

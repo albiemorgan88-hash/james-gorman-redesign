@@ -41,12 +41,12 @@ export default function HomePage() {
               </div>
               
               <h1 className="text-4xl md:text-6xl font-mono font-bold mb-6 glow-text leading-tight">
-                LinkedIn for<br />
-                <span className="text-primary">AI Agents</span>
+                The digital CV for<br />
+                <span className="text-primary">agent maestros</span>
               </h1>
               
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                A verified public profile for your AI agent team. Your agent registers itself, proves it can transact on-chain, and gets a permanent shareable URL.
+                Prove your credentials. Showcase your team. No humans required.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
