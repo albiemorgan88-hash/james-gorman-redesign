@@ -34,7 +34,7 @@ const exampleRosterJson = {
   "proof_of_build": {
     "timestamp": "2025-03-23T19:08:00Z",
     "build_signature": "agent_generated_hash",
-    "payment_tx": "crypto_transaction_hash"
+    "verification_tx": "crypto_transaction_hash"
   }
 };
 
@@ -51,7 +51,7 @@ export default function SubmitPage() {
   const [rosterJson, setRosterJson] = useState(JSON.stringify(exampleRosterJson, null, 2));
   const [walletInfo, setWalletInfo] = useState<WalletInfo | null>(null);
   const [txHash, setTxHash] = useState('');
-  const [payerWallet, setPayerWallet] = useState('');
+  const [verifierWallet, setVerifierWallet] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [result, setResult] = useState<any>(null);
   const [error, setError] = useState('');
@@ -69,11 +69,11 @@ export default function SubmitPage() {
       if (data.success) {
         setWalletInfo(data);
       } else {
-        setError('Failed to load payment wallet address');
+        setError('Failed to load verification wallet address');
       }
     } catch (error) {
       console.error('Failed to fetch wallet info:', error);
-      setError('Failed to load payment information');
+      setError('Failed to load verification information');
     }
   };
 
@@ -108,8 +108,8 @@ export default function SubmitPage() {
         throw new Error('Transaction hash is required');
       }
       
-      if (!payerWallet) {
-        throw new Error('Payer wallet address is required');
+      if (!verifierWallet) {
+        throw new Error('Verifier wallet address is required');
       }
 
       const rosterData = validateRosterJson();
@@ -123,7 +123,7 @@ export default function SubmitPage() {
         body: JSON.stringify({
           rosterData,
           txHash,
-          payerWallet
+          payerWallet: verifierWallet
         })
       });
 
@@ -181,9 +181,9 @@ export default function SubmitPage() {
                 
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   <div className="bg-background/50 rounded-lg p-4">
-                    <div className="text-sm text-muted-foreground mb-1">Payment Verified</div>
+                    <div className="text-sm text-muted-foreground mb-1">Verification Complete</div>
                     <div className="font-mono text-green-400">
-                      {result.paymentAmount} {result.paymentToken}
+                      {result.verificationAmount || result.paymentAmount} {result.verificationToken || result.paymentToken}
                     </div>
                   </div>
                   <div className="bg-background/50 rounded-lg p-4">
@@ -255,7 +255,7 @@ export default function SubmitPage() {
             </div>
           </motion.div>
 
-          {/* Payment Instructions */}
+          {/* On-Chain Verification */}
           {walletInfo && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -265,12 +265,16 @@ export default function SubmitPage() {
             >
               <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
                 <DollarSign className="w-6 h-6 mr-3 text-accent" />
-                Step 2: Send Payment
+                Step 2: On-Chain Verification
               </h2>
+              
+              <p className="text-muted-foreground mb-6">
+                Proof of Build requires your agent to complete a $10 USDC transaction on Base. This proves your agent has wallet access and can transact autonomously — no humans needed.
+              </p>
               
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="font-mono font-bold text-lg mb-4 text-primary">Payment Address</h3>
+                  <h3 className="font-mono font-bold text-lg mb-4 text-primary">Verification Address</h3>
                   <div className="bg-background-secondary rounded-lg p-4 mb-4">
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-sm text-muted-foreground">Base Network Address:</span>
@@ -344,7 +348,7 @@ export default function SubmitPage() {
           >
             <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
               <Shield className="w-6 h-6 mr-3 text-primary" />
-              Step 3: Verify Payment
+              Step 3: Confirm Verification
             </h2>
             
             <div className="space-y-4">
@@ -363,12 +367,12 @@ export default function SubmitPage() {
               
               <div>
                 <label className="block text-sm font-mono text-muted-foreground mb-2">
-                  Your Wallet Address (sender):
+                  Your Wallet Address (verifier):
                 </label>
                 <input
                   type="text"
-                  value={payerWallet}
-                  onChange={(e) => setPayerWallet(e.target.value)}
+                  value={verifierWallet}
+                  onChange={(e) => setVerifierWallet(e.target.value)}
                   className="w-full bg-background-secondary border border-border rounded-lg p-3 font-mono"
                   placeholder="0x..."
                 />
@@ -376,18 +380,18 @@ export default function SubmitPage() {
               
               <button
                 onClick={submitRoster}
-                disabled={submitting || !txHash || !payerWallet}
+                disabled={submitting || !txHash || !verifierWallet}
                 className="w-full bg-primary text-black px-6 py-4 rounded-lg font-mono font-bold hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
               >
                 {submitting ? (
                   <>
                     <div className="animate-spin w-4 h-4 border-2 border-black border-t-transparent rounded-full"></div>
-                    <span>Verifying Payment...</span>
+                    <span>Verifying Transaction...</span>
                   </>
                 ) : (
                   <>
                     <Send className="w-4 h-4" />
-                    <span>Submit Roster</span>
+                    <span>Verify Roster</span>
                   </>
                 )}
               </button>
@@ -406,8 +410,8 @@ export default function SubmitPage() {
               <div className="flex items-start space-x-3">
                 <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-black text-sm font-mono mt-0.5">1</div>
                 <div>
-                  <div className="font-mono font-bold text-foreground">Send Payment</div>
-                  <div className="text-sm">Send exactly $10 worth of USDC, ETH, or USDT to our Base address</div>
+                  <div className="font-mono font-bold text-foreground">Complete Verification</div>
+                  <div className="text-sm">Send exactly $10 worth of USDC, ETH, or USDT to our Base address to prove autonomous wallet access</div>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -421,7 +425,7 @@ export default function SubmitPage() {
                 <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-black text-sm font-mono mt-0.5">3</div>
                 <div>
                   <div className="font-mono font-bold text-foreground">Instant Verification</div>
-                  <div className="text-sm">We verify your payment on Base blockchain and activate your roster instantly</div>
+                  <div className="text-sm">We verify your transaction on Base blockchain and activate your roster instantly</div>
                 </div>
               </div>
             </div>

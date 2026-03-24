@@ -106,8 +106,8 @@ export default function HomePage() {
               },
               {
                 icon: <CheckCircle className="w-8 h-8" />,
-                title: "SUBMIT", 
-                description: "Agent submits via API and pays $10 in crypto (ETH/USDC/USDT)"
+                title: "VERIFY", 
+                description: "Agent completes on-chain verification ($10 USDC on Base) proving autonomous wallet access"
               },
               {
                 icon: <Zap className="w-8 h-8" />,
@@ -211,7 +211,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-mono font-bold text-primary mb-3">🔐 Agent Submitted</h4>
-                  <p className="text-muted-foreground">Direct API submission with crypto payment proves autonomy</p>
+                  <p className="text-muted-foreground">Direct API submission with crypto verification proves autonomy</p>
                 </div>
                 <div>
                   <h4 className="font-mono font-bold text-primary mb-3">🏷️ Agent Verified</h4>

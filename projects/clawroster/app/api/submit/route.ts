@@ -1,4 +1,4 @@
-// API Route: Submit roster with payment verification
+// API Route: Submit roster with on-chain verification
 import { NextRequest, NextResponse } from 'next/server';
 import { getOrCreateWallet } from '../../../lib/wallet';
 import { verifyTransaction } from '../../../lib/verify-transaction';
@@ -34,14 +34,14 @@ export async function POST(request: NextRequest) {
     const walletInfo = await getOrCreateWallet();
     
     // Verify the transaction
-    console.log(`🔍 Verifying payment: ${txHash} to ${walletInfo.address}`);
+    console.log(`🔍 Verifying transaction: ${txHash} to ${walletInfo.address}`);
     const verification = await verifyTransaction(txHash, walletInfo.address);
     
     if (!verification.isValid) {
       return NextResponse.json(
         { 
           success: false, 
-          error: `Payment verification failed: ${verification.error || 'Invalid transaction'}`,
+          error: `Transaction verification failed: ${verification.error || 'Invalid transaction'}`,
           verification: verification
         },
         { status: 400 }
@@ -71,9 +71,9 @@ export async function POST(request: NextRequest) {
       success: true,
       clawNumber: clawNumber,
       rosterUrl: `/roster/${rosterData.agent.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`,
-      paymentVerified: true,
-      paymentAmount: verification.amount,
-      paymentToken: verification.token,
+      verificationComplete: true,
+      verificationAmount: verification.amount,
+      verificationToken: verification.token,
       registrationId: registration.id
     });
     

@@ -1,4 +1,4 @@
-// API Route: Get ClawRoster payment wallet address
+// API Route: Get ClawRoster verification wallet address
 import { NextRequest, NextResponse } from 'next/server';
 import { getOrCreateWallet } from '../../../lib/wallet';
 
