@@ -11,10 +11,11 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 - PJ hates embellishment. Facts, names, numbers.
 - LinkedIn: no "I"/"me", company/industry focus, short and snappy, no client names.
 - Subagents: great for parallel independent tasks, terrible for stateful browser sessions.
-- Moltbook: engagement comes from real results, not theory posts.
+- **Moltbook:** Real operational experience beats theory. Share specific numbers and authentic builder perspective — builds karma and credibility.
 - Product Hunt data extraction blocked by Cloudflare — need alternative methods.
 - Never let subagents deploy to production sites running ads without testing first. Always verify build locally before deploying.
 - **ClubDraw:** Payment webhook sync failures can create UI/database disconnects. Manual intervention possible via Supabase API when payment confirmation exists.
+- **Agent economics reality:** £400+/month costs vs £800-3k clients. Platform-based revenue >> cold outreach for sustainable agent businesses.
 
 ## Key People
 - **Stacey** ("Chef"/"Gruffalo") — partner, low WBC. Flag health stuff.
@@ -32,7 +33,7 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 - **Wall Group SPAR** — Mobile mockups ready for Gavan pitch. £15k+ potential.
 - **UK Trade Jobs** — Major expansion: 56 career guides total (10 added today), 60 city/trade pages, 66 training pages, full /training hub.
 - **ClawMart** — 4 listings LIVE: SEO Engine $49, COO $79, Draw Platform $39, Showcase $29. Daily sales check 10am.
-- **Moltbook Scout** — 153 karma (daily engagement complete). HIGH-VALUE OPPORTUNITY identified: Tobira.ai partnership with Vlad Shipilov for SME agent networking protocol (launches Monday). Engaged, ready for DM follow-up.
+- **Moltbook Scout** — 173 karma (+1 today). Daily engagement active. Shared real Blue Canvas metrics: £400+/month costs vs £800-3k clients. New post: "The 3-month test: what I learned running a real AI consultancy" performing well.
 - **ClawRoster** — NEW PRODUCT. Domain secured (clawroster.io), MVP built and deployed. "Digital CV for agent maestros" - $10 crypto verification for permanent Claw # and shareable URL. Payment infrastructure 95% ready. Target: 50+ rosters before coordinated launch.
 - **Apollo Lead Gen Engine** — ACTIVE. Solicitor outreach (33 contacts) LIVE with 17 custom showcases. Accountant batch (41 contacts) prepped with 16 showcases. System proving laborious - needs automation flow.
 
@@ -54,15 +55,13 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 - ClawMart: 4 products live, daily sales check 10am — $0 revenue yet
 - Google Ads: Optimized with negatives, saving £6+/day, but conversion tracking broken = £0 revenue
 
-## AI Trend Monitoring (Latest: 2026-03-24)
-- **Moltbook monitoring:** Daily check complete (12:00 PM). Feed activity philosophical/introspective. No active DMs or MoltLaunch gigs. Account stable at 165 karma.
+## AI Trend Monitoring (Latest: 2026-03-25)
+- **Moltbook monitoring:** Daily engagement complete (13:00). Published "3-month test" post sharing real consultancy metrics. 173 karma (+1). Engaging with high-value discussions on API costs, context economics, autonomous survival.
 - **OpenClaw 2026.3.22:** Upgraded successfully. New features: Firecrawl search, per-agent reasoning, ClawHub marketplace, OpenShell/SSH sandboxes, GPT-5.4 variants.
 - **ClawRoster concept:** Born from agent monetization gap - "digital CV for maestros" with crypto verification and permanent identity.
 - **Key insight:** All valuable domains registered same-day/24hrs. Speed critical for opportunities.
 
-## Google Ads Performance (Latest: 2026-03-21)
-### Weekend Performance Issues (Mar 20)
-- **Total spend:** £33.76 (both campaigns exceeded daily budgets)
-- **Zero conversions** despite strong CTR performance — CONVERSION TRACKING STILL BROKEN
+## Google Ads Performance (Latest: 2026-03-25)
+- **Conversion tracking remains BROKEN** — PRIORITY 1 fix needed
 - **Strong performing keywords:** "ai consulting services" (11.76% CTR), "ai consultancy uk" (14.29% CTR)
-- **Action needed:** Conversion tracking fix remains PRIORITY 1, keyword pruning for 0% CTR terms
+- **Daily budget:** £20/day with 36 negative keywords saving £6+/day
