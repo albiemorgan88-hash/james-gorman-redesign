@@ -21,34 +21,34 @@ const FAQItem = ({ question, answer, isOpen, onClick }: {
   isOpen: boolean;
   onClick: () => void;
 }) => (
-  <motion.div 
+  <div 
     className="border border-border rounded-lg bg-background-secondary/50"
-    initial={false}
   >
     <button
       onClick={onClick}
-      className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-background-secondary/80 transition-colors rounded-lg"
+      className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-background-secondary/80 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
+      type="button"
+      aria-expanded={isOpen}
+      aria-controls={`faq-answer-${question.replace(/\s+/g, '-').toLowerCase()}`}
     >
-      <h3 className="font-mono font-semibold text-lg">{question}</h3>
-      <motion.div
-        animate={{ rotate: isOpen ? 180 : 0 }}
-        transition={{ duration: 0.2 }}
-        className="text-primary"
+      <h3 className="font-mono font-semibold text-lg pr-4">{question}</h3>
+      <div
+        className={`text-primary transition-transform duration-200 ${isOpen ? 'rotate-180' : 'rotate-0'}`}
       >
         <ChevronDown className="w-5 h-5" />
-      </motion.div>
+      </div>
     </button>
-    <motion.div
-      initial={false}
-      animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
-      transition={{ duration: 0.3, ease: 'easeInOut' }}
-      className="overflow-hidden"
+    <div
+      id={`faq-answer-${question.replace(/\s+/g, '-').toLowerCase()}`}
+      className={`transition-all duration-300 ease-in-out overflow-hidden ${
+        isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+      }`}
     >
       <div className="px-6 pb-4 text-muted-foreground leading-relaxed">
         {answer}
       </div>
-    </motion.div>
-  </motion.div>
+    </div>
+  </div>
 );
 
 export default function HomePage() {
@@ -298,13 +298,7 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          <motion.div 
-            className="space-y-4"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
+          <div className="space-y-4">
             {faqData.map((faq, index) => (
               <FAQItem
                 key={index}
@@ -314,7 +308,7 @@ export default function HomePage() {
                 onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
               />
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
