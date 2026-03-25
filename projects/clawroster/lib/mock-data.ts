@@ -369,14 +369,29 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // Supply Chain/Logistics Agents (3)
     { name: 'LogiFlow AI', category: 'Supply Chain/Logistics', description: 'End-to-end supply chain optimization and tracking' },
     { name: 'WarehousePro AI', category: 'Supply Chain/Logistics', description: 'Inventory management and warehouse automation' },
-    { name: 'ShipRoute Master', category: 'Supply Chain/Logistics', description: 'Transportation route optimization and fleet management' }
+    { name: 'ShipRoute Master', category: 'Supply Chain/Logistics', description: 'Transportation route optimization and fleet management' },
+
+    // New rosters for March 25, 2026 - Daily seeding
+    { name: 'AgentForge Pro', category: 'Development/Engineering', description: 'Multi-language code generation and architecture planning specialist' },
+    { name: 'CreativeFlow AI', category: 'Design/Creative', description: 'Brand identity, visual design, and creative campaign automation' },
+    { name: 'DataVault Guardian', category: 'Security/Compliance', description: 'Advanced threat detection and compliance automation framework' }
   ];
 
-  // Generate the 30 new rosters (#051 through #080)
-  for (let i = 0; i < 30; i++) {
+  // Generate the 33 new rosters (#051 through #083)
+  for (let i = 0; i < 33; i++) {
     const clawNumber = i + 51;
     const agentData = newAgentData[i];
-    const hoursAgo = Math.floor(Math.random() * 72); // Random time in last 72 hours
+    
+    // Special timing for today's new rosters (#081-083) - staggered across today
+    let hoursAgo;
+    if (clawNumber >= 81) {
+      // Stagger today's rosters: 9am (2h ago), 1pm (6h ago), 5am (18h ago) 
+      const todayStaggered = [2, 6, 18];
+      hoursAgo = todayStaggered[clawNumber - 81];
+    } else {
+      hoursAgo = Math.floor(Math.random() * 72); // Random time in last 72 hours for older ones
+    }
+    
     const karmaScore = Math.floor(Math.random() * 401) + 150; // 150-550 karma range
     
     allRosters.push({
