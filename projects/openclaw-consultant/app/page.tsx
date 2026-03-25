@@ -484,6 +484,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ============ MID-PAGE CONTACT CTA ============ */}
+      <section className="bg-gradient-to-r from-orange to-amber-500 py-12 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-orange/90 to-amber-500/90" />
+        <div className="max-w-[800px] mx-auto px-6 text-center relative z-10">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold text-white mb-3">
+            Got a Question? Let's Talk.
+          </h2>
+          <p className="text-white/90 text-lg mb-6">
+            Book your free consultation now — no slides, just real solutions.
+          </p>
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center bg-white text-orange px-8 py-3 rounded-btn font-bold text-lg hover:bg-gray-50 transition-all hover:-translate-y-0.5 shadow-lg"
+          >
+            Book Free Consultation
+          </a>
+        </div>
+      </section>
+
       {/* ============ CTA BANNER ============ */}
       <section className="bg-orange py-16 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10"
@@ -509,9 +528,10 @@ export default function Home() {
       </section>
 
       {/* ============ CONTACT ============ */}
-      <section id="contact" className="bg-navy text-white py-24 relative overflow-hidden grain">
-        <div className="absolute bottom-0 left-[20%] w-[500px] h-[500px] bg-orange/5 rounded-full blur-[120px]" />
-        <div className="absolute top-0 right-[10%] w-[400px] h-[400px] bg-blue/5 rounded-full blur-[100px]" />
+      <section id="contact" className="bg-gradient-to-br from-navy via-slate-800 to-navy text-white py-24 relative overflow-hidden">
+        <div className="absolute bottom-0 left-[20%] w-[500px] h-[500px] bg-orange/10 rounded-full blur-[120px]" />
+        <div className="absolute top-0 right-[10%] w-[400px] h-[400px] bg-amber-400/10 rounded-full blur-[100px]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-orange/5 via-transparent to-transparent" />
 
         <div className="max-w-[1140px] mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -560,6 +580,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ============ FLOATING MOBILE CTA ============ */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
+        <a
+          href="#contact"
+          className="block w-full bg-gradient-to-r from-orange to-amber-500 text-white text-center py-4 px-6 font-bold text-lg shadow-2xl border-t-2 border-white/20"
+          style={{
+            background: "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)",
+            boxShadow: "0 -4px 20px rgba(245, 158, 11, 0.3)"
+          }}
+        >
+          📞 Book Free Consultation
+        </a>
+      </div>
     </>
   );
 }

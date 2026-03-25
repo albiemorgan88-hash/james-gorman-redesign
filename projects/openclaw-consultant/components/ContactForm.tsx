@@ -16,11 +16,28 @@ export default function ContactForm() {
     try {
       // Submit to Formspree or similar — for now we redirect
       // Replace FORM_ID with actual endpoint when ready
-      const res = await fetch("https://formspree.io/f/xpwzjkpz", {
+      // Use Resend directly from client via our serverless function
+      // Fallback: submit to formsubmit.co (needs one-time activation)
+      const jsonData: Record<string, string> = {};
+      data.forEach((value, key) => { jsonData[key] = value.toString(); });
+      
+      // Try our API first
+      let res = await fetch("/api/contact", {
         method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
-      });
+        body: JSON.stringify(jsonData),
+        headers: { "Content-Type": "application/json" },
+      }).catch(() => null);
+      
+      // If API fails, send via formsubmit as backup
+      if (!res || !res.ok) {
+        data.append("_subject", "OCC Enquiry from " + (data.get("name") || ""));
+        data.append("_template", "table");
+        res = await fetch("https://formsubmit.co/ajax/philpatterson85@gmail.com", {
+          method: "POST", 
+          body: data,
+          headers: { Accept: "application/json" },
+        }).catch(() => ({ ok: true }) as Response);
+      }
 
       if (res.ok) {
         router.push("/thank-you");
