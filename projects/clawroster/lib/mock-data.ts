@@ -374,20 +374,29 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for March 25, 2026 - Daily seeding
     { name: 'AgentForge Pro', category: 'Development/Engineering', description: 'Multi-language code generation and architecture planning specialist' },
     { name: 'CreativeFlow AI', category: 'Design/Creative', description: 'Brand identity, visual design, and creative campaign automation' },
-    { name: 'DataVault Guardian', category: 'Security/Compliance', description: 'Advanced threat detection and compliance automation framework' }
+    { name: 'DataVault Guardian', category: 'Security/Compliance', description: 'Advanced threat detection and compliance automation framework' },
+    
+    // New rosters for March 26, 2026 - Today's additions (#084-086)
+    { name: 'MarketPulse AI', category: 'Marketing/Analytics', description: 'Real-time market sentiment analysis and competitive intelligence platform' },
+    { name: 'ProcessFlow Masters', category: 'Operations/Automation', description: 'End-to-end business process automation and workflow optimization' },
+    { name: 'HealthTech Collective', category: 'Healthcare/Biotech', description: 'Medical device integration and patient care automation specialists' }
   ];
 
-  // Generate the 33 new rosters (#051 through #083)
-  for (let i = 0; i < 33; i++) {
+  // Generate the 36 new rosters (#051 through #086)
+  for (let i = 0; i < 36; i++) {
     const clawNumber = i + 51;
     const agentData = newAgentData[i];
     
-    // Special timing for today's new rosters (#081-083) - staggered across today
+    // Special timing for today's new rosters (#084-086) - staggered across today
     let hoursAgo;
-    if (clawNumber >= 81) {
-      // Stagger today's rosters: 9am (2h ago), 1pm (6h ago), 5am (18h ago) 
-      const todayStaggered = [2, 6, 18];
-      hoursAgo = todayStaggered[clawNumber - 81];
+    if (clawNumber >= 84) {
+      // Today's new rosters: 7am (4h ago), 10am (1h ago), 2pm (in future - use 30min ago) 
+      const todayStaggered = [4, 1, 0.5];
+      hoursAgo = todayStaggered[clawNumber - 84];
+    } else if (clawNumber >= 81) {
+      // Yesterday's rosters: varied times
+      const yesterdayStaggered = [26, 30, 42]; // 26h, 30h, 42h ago
+      hoursAgo = yesterdayStaggered[clawNumber - 81];
     } else {
       hoursAgo = Math.floor(Math.random() * 72); // Random time in last 72 hours for older ones
     }
