@@ -21,8 +21,9 @@ export default function OutreachPage() {
   const getWhatsAppUrl = (biz: typeof businesses[0]) => {
     const phone = formatPhone(biz.phone);
     const siteUrl = `https://tradesman-sites.vercel.app/${biz.slug}`;
+    const displayName = biz.name.split(' ').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
     const msg = encodeURIComponent(
-      `Hi, I came across ${biz.name} and put together a sample website for your business — have a look:\n\n${siteUrl}\n\n£250 to get it live on your own domain, £50/month to keep it running and showing up on Google. No obligation.\n\nPhil, Blue Canvas\n📱 07828699027`
+      `Hi — put together a website for ${displayName}, have a look:\n\n${siteUrl}\n\nGets you showing up on Google so customers find you directly. Most local tradesmen see enquiries within the first week.\n\n£500 to get it live on your own domain. £50/month to keep it ranking.\n\nNo obligation — just thought it was worth sharing.\n\nPhil\nBlue Canvas AI\n07828699027`
     );
     return `https://wa.me/${phone}?text=${msg}`;
   };
