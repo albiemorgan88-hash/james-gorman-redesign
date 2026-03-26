@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIP Psychology × Microsoft Copilot - Transforming School Operations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --hip-purple: #2D1B69;
+            --hip-navy: #1a1f3a;
+            --microsoft-blue: #0078d4;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --background-white: #ffffff;
+            --background-light: #f8fafc;
+            --success-green: #059669;
+            --warning-amber: #d97706;
+            --error-red: #dc2626;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--background-white);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .showcase-container {
+            max-width: 428px;
+            margin: 0 auto;
+            min-height: 100vh;
+            position: relative;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .slide {
+            padding: 32px 24px;
+            min-height: 100vh;
+            display: none;
+            flex-direction: column;
+            justify-content: flex-start;
+            background: var(--background-white);
+            position: relative;
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .slide.active {
+            display: flex;
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Slide-specific positioning */
+        .slide.cover,
+        .slide.cta {
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Typography */
+        .slide h1 {
+            color: var(--hip-purple);
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.2;
+            letter-spacing: -0.025em;
+        }
+
+        .slide h2 {
+            color: var(--text-primary);
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            line-height: 1.3;
+        }
+
+        .slide h3 {
+            color: var(--hip-purple);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .slide p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        /* Header branding */
+        .header-brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .hip-logo {
+            background: linear-gradient(135deg, var(--hip-purple) 0%, #4c1d95 100%);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: -0.025em;
+        }
+
+        .brand-connector {
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--text-secondary);
+        }
+
+        .microsoft-badge {
+            background: var(--microsoft-blue);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .microsoft-logo {
+            width: 20px;
+            height: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+        }
+
+        .ms-square {
+            width: 9px;
+            height: 9px;
+        }
+
+        .ms-red { background: #f25022; }
+        .ms-green { background: #7fba00; }
+        .ms-blue { background: #00a4ef; }
+        .ms-yellow { background: #ffb900; }
+
+        /* Problem visualization */
+        .time-display {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--error-red);
+            background: #fef2f2;
+            padding: 24px;
+            border-radius: 16px;
+            border: 2px solid #fecaca;
+            text-align: center;
+            margin: 24px 0;
+            letter-spacing: -0.05em;
+        }
+
+        .problem-steps {
+            background: #fef2f2;
+            border-radius: 16px;
+            padding: 24px;
+            margin: 24px 0;
+            border-left: 4px solid var(--error-red);
+        }
+
+        .problem-step {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .problem-step:not(:last-child) {
+            border-bottom: 1px solid #fecaca;
+        }
+
+        .problem-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--error-red);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        /* Solution flow */
+        .solution-flow {
+            background: #f0fdf4;
+            border-radius: 16px;
+            padding: 24px;
+            margin: 24px 0;
+            border-left: 4px solid var(--success-green);
+        }
+
+        .solution-step {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 0;
+            color: var(--text-primary);
+            font-weight: 500;
+            position: relative;
+        }
+
+        .solution-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 20px;
+            bottom: -8px;
+            width: 2px;
+            height: 16px;
+            background: var(--success-green);
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--success-green);
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+            font-size: 18px;
+        }
+
+        /* Microsoft-style demo mockups */
+        .power-automate-demo {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .pa-header {
+            background: var(--microsoft-blue);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 8px 8px 0 0;
+            margin: -20px -20px 16px -20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .flow-step {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 12px 0;
+            position: relative;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .flow-step.active {
+            border-color: var(--microsoft-blue);
+            box-shadow: 0 4px 12px rgba(0, 120, 212, 0.15);
+        }
+
+        .flow-step::after {
+            content: '';
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 12px solid var(--microsoft-blue);
+        }
+
+        .flow-step:last-child::after {
+            display: none;
+        }
+
+        /* iPhone-style SMS mockup */
+        .sms-mockup {
+            background: #007aff;
+            color: white;
+            padding: 16px 20px;
+            border-radius: 18px 18px 4px 18px;
+            margin: 16px 0 16px auto;
+            max-width: 85%;
+            font-size: 16px;
+            line-height: 1.4;
+            position: relative;
+        }
+
+        .sms-mockup::before {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            right: 16px;
+            width: 0;
+            height: 0;
+            border-left: 12px solid #007aff;
+            border-bottom: 8px solid transparent;
+        }
+
+        .sms-header {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-bottom: 8px;
+        }
+
+        /* Outlook-style email mockup */
+        .email-mockup {
+            background: white;
+            border: 1px solid #e1e5e9;
+            border-radius: 8px;
+            margin: 16px 0;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .email-header {
+            background: #f8f9fa;
+            padding: 16px;
+            border-bottom: 1px solid #e1e5e9;
+        }
+
+        .email-field {
+            display: flex;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .email-label {
+            width: 60px;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .email-content {
+            padding: 16px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Dashboard notification */
+        .dashboard-notification {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 16px 0;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* Stats grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, var(--hip-purple), #4c1d95);
+            color: white;
+            padding: 24px;
+            border-radius: 16px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        }
+
+        .stat-before {
+            font-size: 20px;
+            font-weight: 500;
+            opacity: 0.7;
+            text-decoration: line-through;
+            margin-bottom: 4px;
+        }
+
+        .stat-after {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.025em;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        /* Use cases grid */
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .use-case {
+            background: var(--background-light);
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .use-case:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .use-case-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 16px;
+            background: var(--hip-purple);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .use-case h4 {
+            color: var(--text-primary);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .use-case p {
+            color: var(--text-secondary);
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        /* Microsoft Education section */
+        .microsoft-section {
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            border: 2px solid var(--microsoft-blue);
+            border-radius: 16px;
+            padding: 24px;
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        .microsoft-features {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 0;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .checkmark {
+            width: 24px;
+            height: 24px;
+            background: var(--success-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .pricing-highlight {
+            background: white;
+            border: 1px solid var(--microsoft-blue);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        /* CTA section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--hip-purple) 0%, #4c1d95 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 40px 24px;
+            margin: 0 -24px;
+            text-align: center;
+        }
+
+        .cta-button {
+            background: white;
+            color: var(--hip-purple);
+            padding: 16px 32px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 24px 0;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-details {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        /* Navigation */
+        .slide-progress {
+            position: fixed;
+            top: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .navigation-dots {
+            position: fixed;
+            bottom: 32px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-dot.active {
+            background: var(--hip-purple);
+            transform: scale(1.2);
+        }
+
+        .next-button {
+            position: absolute;
+            bottom: 100px;
+            right: 24px;
+            background: var(--hip-purple);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 14px rgba(45, 27, 105, 0.3);
+        }
+
+        .next-button:hover {
+            background: #1e1348;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(45, 27, 105, 0.4);
+        }
+
+        /* Content animations */
+        .animate-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        .animate-delay-1 { animation-delay: 0.1s; }
+        .animate-delay-2 { animation-delay: 0.2s; }
+        .animate-delay-3 { animation-delay: 0.3s; }
+        .animate-delay-4 { animation-delay: 0.4s; }
+
+        @keyframes slideInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .showcase-container {
+                max-width: 100%;
+            }
+            
+            .slide {
+                padding: 24px 20px;
+            }
+            
+            .slide h1 {
+                font-size: 24px;
+            }
+            
+            .time-display {
+                font-size: 40px;
+            }
+        }
+
+        /* SVG Icons */
+        .icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body>
+    <div class="showcase-container">
+        <!-- Slide Progress Indicator -->
+        <div class="slide-progress">
+            <span id="current-slide">1</span> / <span id="total-slides">8</span>
+        </div>
+
+        <!-- Slide 1: Cover -->
+        <div class="slide active cover" data-slide="1">
+            <div class="header-brand animate-in">
+                <div class="hip-logo">HIP Psychology</div>
+                <div class="brand-connector">×</div>
+                <div class="microsoft-badge">
+                    <div class="microsoft-logo">
+                        <div class="ms-square ms-red"></div>
+                        <div class="ms-square ms-green"></div>
+                        <div class="ms-square ms-blue"></div>
+                        <div class="ms-square ms-yellow"></div>
+                    </div>
+                    Copilot
+                </div>
+            </div>
+            
+            <div class="animate-in animate-delay-1">
+                <h1>Transforming School Operations</h1>
+                <p style="font-size: 18px; color: var(--text-primary); margin-bottom: 40px;">
+                    Automated solutions that eliminate stress, save time, and transform how your school operates
+                </p>
+            </div>
+            
+            <div class="animate-in animate-delay-2" style="background: linear-gradient(135deg, var(--background-light), white); border-radius: 16px; padding: 32px; margin: 40px 0; border: 1px solid #e5e7eb;">
+                <h3 style="color: var(--hip-purple); margin-bottom: 16px;">Live Case Study</h3>
+                <p style="color: var(--text-primary); font-size: 16px; font-weight: 600; margin-bottom: 8px;">Automated Teacher Cover Finding</p>
+                <p style="color: var(--text-secondary); font-size: 14px; margin: 0;">
+                    See how Microsoft Copilot transforms the most stressful part of school administration into a 3-minute automated process
+                </p>
+            </div>
+            
+            <button class="next-button animate-in animate-delay-3" onclick="nextSlide()">
+                Start Demo 
+                <svg class="icon" style="margin-left: 8px;" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Slide 2: The Problem -->
+        <div class="slide" data-slide="2">
+            <div class="time-display animate-in">7:15 AM</div>
+            
+            <div class="animate-in animate-delay-1">
+                <h1>The Problem</h1>
+                <h2>"Your RE teacher just called in sick"</h2>
+                <p style="color: var(--text-primary); font-size: 18px; margin-bottom: 32px;">
+                    Every headteacher knows this scenario. Here's what happens next:
+                </p>
+            </div>
+            
+            <div class="problem-steps animate-in animate-delay-2">
+                <div class="problem-step">
+                    <div class="problem-icon">
+                        <svg class="icon" style="color: white;" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                    </div>
+                    <span>Admin receives frantic 7:15am phone call</span>
+                </div>
+                <div class="problem-step">
+                    <div class="problem-icon">
+                        <svg class="icon" style="color: white;" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <span>Manually scroll through staff availability lists</span>
+                </div>
+                <div class="problem-step">
+                    <div class="problem-icon">
+                        <svg class="icon" style="color: white;" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
+                        </svg>
+                    </div>
+                    <span>Ring multiple supply teachers one by one</span>
+                </div>
+                <div class="problem-step">
+                    <div class="problem-icon">
+                        <svg class="icon" style="color: white;" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" />
+                        </svg>
+                    </div>
+                    <span>47 minutes of back-and-forth calls and texts</span>
+                </div>
+                <div class="problem-step">
+                    <div class="problem-icon">
+                        <svg class="icon" style="color: white;" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" />
+                        </svg>
+                    </div>
+                    <span>Panic as first period approaches with no cover</span>
+                </div>
+                <div class="problem-step">
+                    <div class="problem-icon">
+                        <svg class="icon" style="color: white;" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" />
+                        </svg>
+                    </div>
+                    <span>Accept expensive last-minute rates (£180/day)</span>
+                </div>
+            </div>
+            
+            <div class="animate-in animate-delay-3" style="background: #fef2f2; padding: 24px; border-radius: 16px; border-left: 4px solid var(--error-red); text-align: center;">
+                <p style="color: var(--error-red); font-weight: 700; font-size: 24px; margin-bottom: 8px;">47 minutes average</p>
+                <p style="color: var(--text-secondary); font-size: 16px; margin: 0;">
+                    of stress, disruption, and wasted admin time every single absence
+                </p>
+            </div>
+            
+            <button class="next-button animate-in animate-delay-4" onclick="nextSlide()">See Solution →</button>
+        </div>
+
+        <!-- Slide 3: The Solution -->
+        <div class="slide" data-slide="3">
+            <div class="animate-in">
+                <h1>The Automated Solution</h1>
+                <h2>Microsoft Copilot + Power Automate</h2>
+                <p style="color: var(--text-primary); font-size: 18px; margin-bottom: 32px;">
+                    Complete automation. Zero stress. Three minutes from absence to confirmation.
+                </p>
+            </div>
+            
+            <div class="solution-flow animate-in animate-delay-1">
+                <div class="solution-step">
+                    <div class="step-number">1</div>
+                    <span>Absence logged in school system</span>
+                </div>
+                <div class="solution-step">
+                    <div class="step-number">2</div>
+                    <span>Microsoft Copilot triggers automatically</span>
+                </div>
+                <div class="solution-step">
+                    <div class="step-number">3</div>
+                    <span>Database searches qualified RE teachers (30-mile radius)</span>
+                </div>
+                <div class="solution-step">
+                    <div class="step-number">4</div>
+                    <span>Simultaneous SMS & email to all candidates</span>
+                </div>
+                <div class="solution-step">
+                    <div class="step-number">5</div>
+                    <span>First to confirm gets the booking automatically</span>
+                </div>
+                <div class="solution-step">
+                    <div class="step-number">6</div>
+                    <span>Admin receives instant confirmation</span>
+                </div>
+                <div class="solution-step">
+                    <div class="step-number">7</div>
+                    <span>Lesson plans sent to cover teacher</span>
+                </div>
+            </div>
+            
+            <div class="animate-in animate-delay-2" style="background: #f0fdf4; padding: 24px; border-radius: 16px; border-left: 4px solid var(--success-green); text-align: center;">
+                <p style="color: var(--success-green); font-weight: 700; font-size: 24px; margin-bottom: 8px;">3 minutes average</p>
+                <p style="color: var(--text-secondary); font-size: 16px; margin: 0;">
+                    Completely automated, reliable, stress-free cover finding
+                </p>
+            </div>
+            
+            <button class="next-button animate-in animate-delay-3" onclick="nextSlide()">See Live Demo →</button>
+        </div>
+
+        <!-- Slide 4: Live Demo -->
+        <div class="slide" data-slide="4">
+            <div class="animate-in">
+                <h1>Live Demo</h1>
+                <h2>The Automation in Action</h2>
+            </div>
+            
+            <!-- Power Automate mockup -->
+            <div class="power-automate-demo animate-in animate-delay-1">
+                <div class="pa-header">
+                    <div class="microsoft-logo" style="width: 16px; height: 16px;">
+                        <div class="ms-square ms-red" style="width: 7px; height: 7px;"></div>
+                        <div class="ms-square ms-green" style="width: 7px; height: 7px;"></div>
+                        <div class="ms-square ms-blue" style="width: 7px; height: 7px;"></div>
+                        <div class="ms-square ms-yellow" style="width: 7px; height: 7px;"></div>
+                    </div>
+                    Power Automate Flow - RE Teacher Cover
+                </div>
+                <div class="flow-step active">
+                    <strong>Trigger:</strong> New absence record (Sarah Wilson, RE Department)
+                </div>
+                <div class="flow-step active">
+                    <strong>Search:</strong> RE-qualified teachers within 30 miles
+                </div>
+                <div class="flow-step active">
+                    <strong>Found:</strong> 12 available candidates in database
+                </div>
+                <div class="flow-step active">
+                    <strong>Action:</strong> Send SMS + Email to all candidates
+                </div>
+            </div>
+            
+            <!-- SMS mockup -->
+            <div class="animate-in animate-delay-2">
+                <div style="font-size: 12px; color: var(--text-secondary); margin-bottom: 8px;">SMS sent to Sarah Thompson:</div>
+                <div class="sms-mockup">
+                    <div class="sms-header">St Columb's College</div>
+                    Hi Sarah, St Columb's College needs RE cover today (Periods 1-4, Year 10). £150 for the day. Reply YES to accept.
+                </div>
+            </div>
+            
+            <!-- Email mockup -->
+            <div class="email-mockup animate-in animate-delay-3">
+                <div class="email-header">
+                    <div class="email-field">
+                        <span class="email-label">To:</span>
+                        <span>sarah.thompson@supplyteachers.co.uk</span>
+                    </div>
+                    <div class="email-field">
+                        <span class="email-label">Subject:</span>
+                        <span>Cover Request - RE Teacher - St Columb's College</span>
+                    </div>
+                </div>
+                <div class="email-content">
+                    <strong>Cover Request Details:</strong><br><br>
+                    <strong>School:</strong> St Columb's College<br>
+                    <strong>Subject:</strong> Religious Education<br>
+                    <strong>Date:</strong> Today, 26th March<br>
+                    <strong>Periods:</strong> 1-4 (Year 10)<br>
+                    <strong>Rate:</strong> £150/day<br><br>
+                    Lesson plans attached. <a href="#" style="color: var(--microsoft-blue);">[ACCEPT BOOKING]</a>
+                </div>
+            </div>
+            
+            <!-- Success notification -->
+            <div class="dashboard-notification animate-in animate-delay-4">
+                <svg class="icon" style="margin-right: 8px;" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <strong>Cover confirmed:</strong> Sarah Thompson accepted • Arriving 8:30am
+            </div>
+            
+            <button class="next-button animate-in animate-delay-4" onclick="nextSlide()">See Results →</button>
+        </div>
+
+        <!-- Slide 5: The Numbers -->
+        <div class="slide" data-slide="5">
+            <div class="animate-in">
+                <h1>The Impact</h1>
+                <h2>Measurable Results for Your School</h2>
+            </div>
+            
+            <div class="stats-grid animate-in animate-delay-1">
+                <div class="stat-card">
+                    <div class="stat-before">47 min</div>
+                    <div class="stat-after">3 min</div>
+                    <div class="stat-label">Time to find cover</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-before">£180</div>
+                    <div class="stat-after">£95</div>
+                    <div class="stat-label">Cost per absence</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-before">8+ hrs</div>
+                    <div class="stat-after">1 hr</div>
+                    <div class="stat-label">Admin time saved/week</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-before">73%</div>
+                    <div class="stat-after">94%</div>
+                    <div class="stat-label">Teacher satisfaction</div>
+                </div>
+            </div>
+            
+            <div class="animate-in animate-delay-2" style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); border: 2px solid var(--microsoft-blue); border-radius: 16px; padding: 32px; text-align: center;">
+                <h3 style="color: var(--microsoft-blue); margin-bottom: 16px; font-size: 20px;">Annual Savings</h3>
+                <p style="color: var(--text-primary); font-size: 36px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.025em;">£8,400+</p>
+                <p style="color: var(--text-secondary); font-size: 16px; margin: 0;">
+                    Based on 60 absence days per year at your school
+                </p>
+            </div>
+            
+            <button class="next-button animate-in animate-delay-3" onclick="nextSlide()">More Use Cases →</button>
+        </div>
+
+        <!-- Slide 6: Beyond Cover -->
+        <div class="slide" data-slide="6">
+            <div class="animate-in">
+                <h1>Beyond Cover Finding</h1>
+                <h2>Transform Every Area of School Operations</h2>
+            </div>
+            
+            <div class="use-cases-grid animate-in animate-delay-1">
+                <div class="use-case">
+                    <div class="use-case-icon">
+                        <svg class="icon" style="color: white;" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-6a1 1 0 00-1-1H9a1 1 0 00-1 1v6a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h4>Lesson Planning</h4>
+                    <p>AI-generated lesson plans from curriculum specifications</p>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-icon">
+                        <svg class="icon" style="color: white;" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                        </svg>
+                    </div>
+                    <h4>Parent Communication</h4>
+                    <p>Automated progress updates and personalised reports</p>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-icon">
+                        <svg class="icon" style="color: white;" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-3 3a1 1 0 100 2h.01a1 1 0 100-2H10zm-4 1a1 1 0 011-1h.01a1 1 0 110 2H7a1 1 0 01-1-1zm1-4a1 1 0 100 2h.01a1 1 0 100-2H7zm2 0a1 1 0 100 2h.01a1 1 0 100-2H9zm2 0a1 1 0 100 2h.01a1 1 0 100-2H11zm0-2a1 1 0 100 2h.01a1 1 0 100-2H11zm-2 0a1 1 0 100 2h.01a1 1 0 100-2H9zm-2 0a1 1 0 100 2h.01a1 1 0 100-2H7z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h4>Report Writing</h4>
+                    <p>Generate student reports from assessment data instantly</p>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-icon">
+                        <svg class="icon" style="color: white;" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h4>Timetabling</h4>
+                    <p>Smart scheduling that prevents conflicts automatically</p>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-icon">
+                        <svg class="icon" style="color: white;" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h4>ETI Preparation</h4>
+                    <p>Automated inspection readiness and documentation</p>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-icon">
+                        <svg class="icon" style="color: white;" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h4>Progress Tracking</h4>
+                    <p>Real-time student progress monitoring and alerts</p>
+                </div>
+            </div>
+            
+            <div class="animate-in animate-delay-2" style="background: #fffbeb; padding: 20px; border-radius: 12px; border-left: 4px solid var(--warning-amber); text-align: center; margin-top: 24px;">
+                <p style="color: var(--warning-amber); font-weight: 600; font-size: 18px;">
+                    All powered by Microsoft tools you already use
+                </p>
+            </div>
+            
+            <button class="next-button animate-in animate-delay-3" onclick="nextSlide()">Microsoft Official →</button>
+        </div>
+
+        <!-- Slide 7: Microsoft Education -->
+        <div class="slide" data-slide="7">
+            <div class="animate-in">
+                <h1>Microsoft Copilot for Education</h1>
+            </div>
+            
+            <div class="microsoft-section animate-in animate-delay-1">
+                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 24px; gap: 12px;">
+                    <div class="microsoft-logo">
+                        <div class="ms-square ms-red"></div>
+                        <div class="ms-square ms-green"></div>
+                        <div class="ms-square ms-blue"></div>
+                        <div class="ms-square ms-yellow"></div>
+                    </div>
+                    <span style="font-weight: 700; color: var(--text-primary); font-size: 24px;">Microsoft</span>
+                </div>
+                
+                <h3 style="color: var(--text-primary); margin-bottom: 24px; font-size: 20px;">Official Microsoft Tools — Not Custom Software</h3>
+                
+                <div class="microsoft-features">
+                    <div class="feature-item">
+                        <div class="checkmark">
+                            <svg class="icon" style="color: white; width: 16px; height: 16px;" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <span>Built on your existing Microsoft 365 platform</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="checkmark">
+                            <svg class="icon" style="color: white; width: 16px; height: 16px;" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <span>Enterprise-grade security & GDPR compliance</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="checkmark">
+                            <svg class="icon" style="color: white; width: 16px; height: 16px;" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <span>Seamless integration with Teams, Outlook, SharePoint</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="checkmark">
+                            <svg class="icon" style="color: white; width: 16px; height: 16px;" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <span>Ongoing Microsoft support & automatic updates</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="checkmark">
+                            <svg class="icon" style="color: white; width: 16px; height: 16px;" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <span>Already in most schools via Office 365</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-highlight animate-in animate-delay-2">
+                <h3 style="color: var(--microsoft-blue); margin-bottom: 16px; font-size: 20px;">Education Pricing</h3>
+                <p style="color: var(--text-primary); font-size: 28px; font-weight: 700; margin-bottom: 8px;">From £4/user/month</p>
+                <p style="color: var(--text-secondary); font-size: 16px; margin-bottom: 16px;">Special education discounts available</p>
+                <p style="color: var(--success-green); font-size: 16px; font-weight: 600; margin: 0;">
+                    ROI typically achieved within 3 months
+                </p>
+            </div>
+            
+            <div class="animate-in animate-delay-3" style="text-align: center; margin-top: 32px;">
+                <p style="color: var(--text-secondary); font-size: 16px; font-style: italic;">
+                    "Not just another EdTech solution — it's Microsoft innovation tailored for education"
+                </p>
+            </div>
+            
+            <button class="next-button animate-in animate-delay-4" onclick="nextSlide()">Get Demo →</button>
+        </div>
+
+        <!-- Slide 8: CTA -->
+        <div class="slide cta" data-slide="8">
+            <div class="cta-section animate-in">
+                <h1 style="color: white; margin-bottom: 16px; font-size: 32px;">Ready to Transform Your School?</h1>
+                <h2 style="color: rgba(255,255,255,0.9); margin-bottom: 24px; font-size: 22px;">Book Your Free Demo Today</h2>
+                
+                <p style="color: rgba(255,255,255,0.85); font-size: 18px; margin-bottom: 32px; line-height: 1.6;">
+                    See Microsoft Copilot in action with your school's real scenarios.<br>
+                    Customised demo. Zero obligation.
+                </p>
+                
+                <button class="cta-button" onclick="bookDemo()">
+                    Book Free Demo
+                    <svg class="icon" style="margin-left: 8px;" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                </button>
+                
+                <div class="contact-details">
+                    <div style="font-size: 20px; font-weight: 700; color: white; margin-bottom: 16px;">HIP Psychology</div>
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        hello@hippsychology.com
+                    </div>
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        028 7126 4567
+                    </div>
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.559-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.559.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd" />
+                        </svg>
+                        hippsychology.com
+                    </div>
+                </div>
+                
+                <div style="margin-top: 40px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.2);">
+                    <p style="font-size: 16px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+                        <strong>⚡ 30-minute demo</strong> tailored to your school's needs<br>
+                        <strong>💰 ROI analysis</strong> with real savings projections<br>
+                        <strong>🔒 No obligation</strong> — just see what's possible
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="navigation-dots">
+            <div class="nav-dot active" onclick="goToSlide(1)"></div>
+            <div class="nav-dot" onclick="goToSlide(2)"></div>
+            <div class="nav-dot" onclick="goToSlide(3)"></div>
+            <div class="nav-dot" onclick="goToSlide(4)"></div>
+            <div class="nav-dot" onclick="goToSlide(5)"></div>
+            <div class="nav-dot" onclick="goToSlide(6)"></div>
+            <div class="nav-dot" onclick="goToSlide(7)"></div>
+            <div class="nav-dot" onclick="goToSlide(8)"></div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 8;
+
+        // Update slide counter
+        document.getElementById('total-slides').textContent = totalSlides;
+
+        function updateSlideProgress() {
+            document.getElementById('current-slide').textContent = currentSlide;
+        }
+
+        function showSlide(slideNumber) {
+            // Hide all slides
+            document.querySelectorAll('.slide').forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            // Show target slide with animation delay for content
+            const targetSlide = document.querySelector(`[data-slide="${slideNumber}"]`);
+            targetSlide.classList.add('active');
+            
+            // Add animation classes to content elements
+            setTimeout(() => {
+                targetSlide.querySelectorAll('.animate-in').forEach((element, index) => {
+                    element.style.animationDelay = `${index * 0.1 + 0.2}s`;
+                });
+            }, 100);
+            
+            // Update navigation dots
+            document.querySelectorAll('.nav-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index + 1 === slideNumber);
+            });
+            
+            currentSlide = slideNumber;
+            updateSlideProgress();
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                showSlide(currentSlide + 1);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                showSlide(currentSlide - 1);
+            }
+        }
+
+        function goToSlide(slideNumber) {
+            showSlide(slideNumber);
+        }
+
+        function bookDemo() {
+            const subject = encodeURIComponent("Demo Request: Microsoft Copilot for Schools");
+            const body = encodeURIComponent(`Hi HIP Psychology team,
+
+I've just reviewed your Microsoft Copilot showcase and I'm very interested in booking a personalised demo for our school.
+
+SCHOOL DETAILS:
+• School Name: 
+• Contact Person: 
+• Email: 
+• Phone: 
+• Number of staff: 
+• Current biggest operational challenges: 
+
+INTERESTS:
+✓ Automated teacher cover finding
+✓ Lesson plan generation
+✓ Parent communication automation
+✓ Report writing assistance
+✓ Other use cases discussed
+
+DEMO PREFERENCES:
+• Best time for demo: 
+• Would you prefer in-person or virtual demo: 
+• Key stakeholders to include: 
+
+I'm particularly interested in seeing how this could save us the 8+ hours per week our admin team currently spends on cover finding, and the potential ROI for our school.
+
+Looking forward to seeing how Microsoft Copilot can transform our school operations.
+
+Best regards`);
+            
+            const mailtoLink = `mailto:hello@hippsychology.com?subject=${subject}&body=${body}`;
+            
+            // For WhatsApp sharing, also provide a shorter link option
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Microsoft Copilot for Schools - Demo Request',
+                    text: 'I\'d like to book a demo of Microsoft Copilot for my school',
+                    url: window.location.href
+                }).catch(() => {
+                    // Fallback to mailto if share fails
+                    window.location.href = mailtoLink;
+                });
+            } else {
+                window.location.href = mailtoLink;
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault();
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                prevSlide();
+            } else if (e.key >= '1' && e.key <= '8') {
+                e.preventDefault();
+                goToSlide(parseInt(e.key));
+            }
+        });
+
+        // Enhanced touch/swipe support
+        let startX = 0;
+        let startY = 0;
+        let endX = 0;
+        let endY = 0;
+
+        document.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+        }, { passive: true });
+
+        document.addEventListener('touchend', function(e) {
+            endX = e.changedTouches[0].clientX;
+            endY = e.changedTouches[0].clientY;
+            handleSwipe();
+        }, { passive: true });
+
+        function handleSwipe() {
+            const diffX = startX - endX;
+            const diffY = Math.abs(startY - endY);
+            const threshold = 50;
+
+            // Only process horizontal swipes (ignore vertical scrolling)
+            if (Math.abs(diffX) > threshold && diffY < threshold * 2) {
+                if (diffX > 0) {
+                    // Swiped left - next slide
+                    nextSlide();
+                } else {
+                    // Swiped right - previous slide
+                    prevSlide();
+                }
+            }
+        }
+
+        // Initialize
+        updateSlideProgress();
+
+        // Performance: Preload next slide content
+        function preloadNextSlide() {
+            if (currentSlide < totalSlides) {
+                const nextSlideElement = document.querySelector(`[data-slide="${currentSlide + 1}"]`);
+                if (nextSlideElement) {
+                    // Preload any images or heavy content
+                    nextSlideElement.style.display = 'none';
+                    setTimeout(() => {
+                        nextSlideElement.style.display = '';
+                    }, 0);
+                }
+            }
+        }
+
+        // Auto-advance for demo mode (commented out for user control)
+        // setInterval(() => {
+        //     nextSlide();
+        //     if (currentSlide === totalSlides) {
+        //         setTimeout(() => showSlide(1), 5000);
+        //     }
+        // }, 8000);
+
+        // Analytics helper (if needed)
+        function trackSlideView(slideNumber) {
+            // Add your analytics tracking here
+            console.log(`Viewing slide ${slideNumber}`);
+        }
+
+        // Track initial slide view
+        trackSlideView(1);
+    </script>
+</body>
+</html>
