@@ -176,7 +176,7 @@ const powershellSteps = [
   }
 ];
 
-const manualSteps = [
+/* const manualSteps = [
   {
     step: 1,
     title: "Download Node.js",
@@ -210,7 +210,7 @@ const manualSteps = [
       "Verify with: openclaw --version"
     ]
   }
-];
+]; */
 
 const windowsSpecificConfig = [
   {

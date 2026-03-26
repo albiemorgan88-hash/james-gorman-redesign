@@ -275,6 +275,7 @@ const troubleshooting = [
   }
 ];
 
+/*
 const bestPractices = [
   {
     category: "Message Strategy",
@@ -304,6 +305,7 @@ const bestPractices = [
     ]
   }
 ];
+*/
 
 export default function OpenClawWhatsAppSetupPage() {
   return (

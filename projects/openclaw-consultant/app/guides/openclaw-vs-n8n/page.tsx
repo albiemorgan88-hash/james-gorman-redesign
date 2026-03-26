@@ -280,7 +280,7 @@ const pricingComparison = [
   }
 ];
 
-const migrationConsiderations = [
+/* const migrationConsiderations = [
   {
     from: "n8n to OpenClaw",
     scenarios: [
@@ -323,7 +323,7 @@ const migrationConsiderations = [
       "Consider hybrid approach"
     ]
   }
-];
+]; */
 
 const recommendations = [
   {

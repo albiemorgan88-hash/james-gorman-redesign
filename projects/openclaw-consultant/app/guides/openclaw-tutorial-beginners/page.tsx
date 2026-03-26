@@ -544,7 +544,7 @@ export default function OpenClawTutorialBeginnersPage() {
                             <div key={idx} className="bg-white rounded-lg p-4 border-l-4 border-blue-500">
                               <h5 className="font-medium text-dark mb-2">Exercise {idx + 1}: {exercise.task}</h5>
                               <div className="bg-slate-900 text-green-400 p-3 rounded-md font-mono text-sm mb-2 overflow-x-auto">
-                                <pre className="whitespace-pre-wrap">{exercise.commands.join('\n')}</pre>
+                                <pre className="whitespace-pre-wrap">{exercise.commands?.join('\n') || ''}</pre>
                               </div>
                               <p className="text-green-600 text-sm">✓ Expected Result: {exercise.expected}</p>
                             </div>

@@ -406,7 +406,7 @@ const decisionFramework = [
   }
 ];
 
-const migrationConsiderations = [
+/* const migrationConsiderations = [
   {
     from: "Claude Code to OpenClaw",
     reasons: [
@@ -449,7 +449,7 @@ const migrationConsiderations = [
       "Evaluate business impact"
     ]
   }
-];
+]; */
 
 export default function OpenClawVsClaudeCodePage() {
   return (
