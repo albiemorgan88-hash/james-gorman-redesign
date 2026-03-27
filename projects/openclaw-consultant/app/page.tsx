@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import QuickContactForm from "@/components/QuickContactForm";
 
 export const metadata: Metadata = {
   title: "OpenClaw Consultant UK — Expert Setup, Custom Skills & AI Automation",
@@ -159,6 +160,66 @@ export default function Home() {
 
         {/* Bottom fade */}
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#fafbfc] to-transparent" />
+      </section>
+
+      {/* ============ PROMINENT CONTACT FORM ============ */}
+      <section className="bg-gradient-to-br from-orange/5 via-white to-blue/5 py-20 border-b border-border relative overflow-hidden">
+        {/* Decorative background elements */}
+        <div className="absolute top-0 left-[10%] w-[300px] h-[300px] bg-orange/10 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 right-[15%] w-[250px] h-[250px] bg-blue/10 rounded-full blur-[80px]" />
+        
+        <div className="max-w-[1100px] mx-auto px-6 relative z-10">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 bg-orange text-white rounded-full px-4 py-2 mb-4 shadow-lg">
+              <span className="w-2 h-2 bg-white rounded-full animate-pulse" />
+              <span className="text-sm font-semibold">Usually Respond Within Hours</span>
+            </div>
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-dark mb-4">
+              Skip the Research Phase.
+              <br />
+              <span className="text-orange">Let&apos;s Talk OpenClaw.</span>
+            </h2>
+            <p className="text-muted-dark text-lg max-w-[600px] mx-auto leading-relaxed">
+              Get straight answers from someone who runs OpenClaw in production daily. No sales pressure — just honest advice about whether it&apos;s right for your business.
+            </p>
+          </div>
+
+          <div className="max-w-[700px] mx-auto">
+            <div className="bg-white rounded-2xl p-8 md:p-10 border-2 border-orange/20 shadow-2xl shadow-orange/10 relative hover:shadow-3xl hover:border-orange/30 transition-all duration-300">
+              {/* Accent decoration */}
+              <div className="absolute -top-3 left-8 bg-orange text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg animate-pulse">
+                ✨ Free Consultation
+              </div>
+              
+              <div className="text-center mb-8">
+                <h3 className="font-heading font-bold text-xl text-dark mb-2">Get In Touch</h3>
+                <p className="text-muted text-sm">Tell us about your business and we&apos;ll show you exactly how OpenClaw can help</p>
+              </div>
+              
+              <QuickContactForm />
+              
+              {/* Trust indicators */}
+              <div className="flex flex-wrap justify-center gap-6 mt-8 pt-6 border-t border-border text-xs text-muted">
+                <div className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span>Free consultation</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span>No sales pressure</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span>Production expertise</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span>UK-based team</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* ============ WHAT IS OPENCLAW ============ */}

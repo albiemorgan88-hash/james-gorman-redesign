@@ -882,11 +882,11 @@ export default function OpenClawBrowserAutomationPage() {
                         </div>
                       </div>
 
-                      {example.selectors && (
+                      {'selectors' in example && example.selectors && (
                         <div className="mb-6">
                           <h5 className="font-semibold text-dark mb-3">Common Selectors:</h5>
                           <div className="bg-slate-50 rounded-lg p-4">
-                            {Object.entries(example.selectors).map(([key, selector]) => (
+                            {'selectors' in example && Object.entries(example.selectors).map(([key, selector]) => (
                               <div key={key} className="mb-2">
                                 <span className="font-medium text-dark capitalize">{key.replace('_', ' ')}:</span>
                                 <code className="ml-2 text-sm bg-slate-200 px-2 py-1 rounded">{selector}</code>
@@ -896,11 +896,11 @@ export default function OpenClawBrowserAutomationPage() {
                         </div>
                       )}
 
-                      {example.formHandling && (
+                      {'formHandling' in example && example.formHandling && (
                         <div className="mb-6">
                           <h5 className="font-semibold text-dark mb-3">Form Element Selectors:</h5>
                           <div className="bg-slate-50 rounded-lg p-4">
-                            {Object.entries(example.formHandling).map(([type, selector]) => (
+                            {'formHandling' in example && Object.entries(example.formHandling).map(([type, selector]) => (
                               <div key={type} className="mb-2">
                                 <span className="font-medium text-dark capitalize">{type.replace('-', ' ')}:</span>
                                 <code className="ml-2 text-sm bg-slate-200 px-2 py-1 rounded">{selector}</code>
@@ -910,7 +910,7 @@ export default function OpenClawBrowserAutomationPage() {
                         </div>
                       )}
 
-                      {example.pagination && (
+                      {'pagination' in example && example.pagination && (
                         <div className="mb-6">
                           <h5 className="font-semibold text-dark mb-3">Pagination Handling:</h5>
                           <div className="bg-slate-900 text-green-400 p-3 rounded-md font-mono text-xs overflow-x-auto">
@@ -919,11 +919,11 @@ export default function OpenClawBrowserAutomationPage() {
                         </div>
                       )}
 
-                      {example.ethics && (
+                      {'ethics' in example && example.ethics && (
                         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
                           <h5 className="font-semibold text-yellow-800 mb-2">Ethical Considerations:</h5>
                           <ul className="space-y-1">
-                            {example.ethics.map((consideration, considIdx) => (
+                            {'ethics' in example && example.ethics.map((consideration, considIdx) => (
                               <li key={considIdx} className="text-yellow-700 text-sm">• {consideration}</li>
                             ))}
                           </ul>
