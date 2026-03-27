@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hutchinson Engineering - Digital Transformation Opportunity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        .slide {
+            min-height: 100vh;
+            min-height: 100svh; /* Better mobile support */
+            display: none;
+            padding: 20px;
+            position: relative;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slide-content {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        .slide-header {
+            background: linear-gradient(135deg, #2B4DAF 0%, #1e40af 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .slide-body {
+            padding: 40px 30px;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #2B4DAF;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: #374151;
+        }
+
+        .logo-placeholder {
+            width: 200px;
+            height: 80px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .stat-card {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2B4DAF;
+            margin-bottom: 10px;
+        }
+
+        .progress-container {
+            background: #e2e8f0;
+            height: 12px;
+            border-radius: 6px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #2B4DAF, #FF4520);
+            border-radius: 6px;
+            animation: progressFill 3s ease-in-out;
+        }
+
+        @keyframes progressFill {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(#FF4520 0deg 137deg, #e2e8f0 137deg 360deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+
+        .score-circle::before {
+            content: '';
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .score-text {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #2B4DAF;
+            z-index: 1;
+        }
+
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .comparison-card {
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .before-card {
+            background: #fef2f2;
+            border: 2px solid #fca5a5;
+        }
+
+        .after-card {
+            background: #f0fdf4;
+            border: 2px solid #86efac;
+        }
+
+        .search-mockup {
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .search-result {
+            margin-bottom: 20px;
+        }
+
+        .search-title {
+            color: #1e40af;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .search-url {
+            color: #059669;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .search-description {
+            color: #374151;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .chat-container {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .chat-message {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border-left: 4px solid #2B4DAF;
+        }
+
+        .chat-response {
+            background: #2B4DAF;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            margin-left: 40px;
+        }
+
+        .roi-highlight {
+            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+            border: 2px solid #22c55e;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .roi-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #15803d;
+            margin-bottom: 10px;
+        }
+
+        .disclaimer {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            color: #6b7280;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #2B4DAF, #1e40af);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            background: #FF4520;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            min-height: 48px; /* Accessibility: proper touch target */
+        }
+
+        .cta-button:hover {
+            background: #dc2626;
+            transform: translateY(-1px);
+        }
+
+        .cta-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+
+        .cta-secondary:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            width: 48px; /* Accessibility: proper touch target */
+            height: 48px;
+            border: none;
+            border-radius: 24px;
+            background: rgba(43, 77, 175, 0.9);
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-button:hover {
+            background: #2B4DAF;
+            transform: scale(1.1);
+        }
+
+        .progress-dots {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .progress-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(43, 77, 175, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        .progress-dot.active {
+            background: #2B4DAF;
+            transform: scale(1.3);
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .slide {
+                padding: 10px;
+            }
+            
+            .slide-header {
+                padding: 30px 20px;
+            }
+            
+            .slide-body {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
+            
+            .before-after {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-button {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .roi-number {
+                font-size: 2.5rem;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slide-content {
+                border-radius: 12px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .score-circle {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .score-circle::before {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .score-text {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Hook -->
+    <div class="slide active">
+        <div class="slide-content">
+            <div class="slide-header">
+                <h1>What if 53 years of engineering excellence could generate £450k+ in qualified leads?</h1>
+                <div class="logo-placeholder">Hutchinson Engineering</div>
+                <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 0;">
+                    Discover how Northern Ireland's premier fabrication specialist could dominate the digital landscape
+                </p>
+            </div>
+            <div class="slide-body">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">1971</div>
+                        <p><strong>Founded</strong><br>53+ years of proven excellence</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">£4M</div>
+                        <p><strong>Recent Investment</strong><br>Europe's most advanced laser cutting</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5</div>
+                        <p><strong>Key Sectors</strong><br>Coachbuilding to hydrogen vehicles</p>
+                    </div>
+                </div>
+                <p style="text-align: center; font-style: italic; color: #6b7280; margin-top: 20px;">
+                    🔧 Precision Engineering | 🚗 Coachbuilding | ⚡ Hydrogen Vehicles | 🏭 Manufacturing Excellence
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Website Analysis -->
+    <div class="slide">
+        <div class="slide-content">
+            <div class="slide-header">
+                <h1>Analyzing hutchinson-engineering.co.uk</h1>
+                <p>Comprehensive digital presence audit in progress...</p>
+            </div>
+            <div class="slide-body">
+                <h3>🔍 Website Performance Scan</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 100%;"></div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card" style="background: #f0fdf4; border-color: #22c55e;">
+                        <h4 style="color: #15803d;">✅ Strong Foundation</h4>
+                        <ul style="text-align: left; margin-top: 15px;">
+                            <li>53+ year heritage & credibility</li>
+                            <li>Professional design & branding</li>
+                            <li>Advanced equipment showcase</li>
+                            <li>Multi-sector expertise</li>
+                        </ul>
+                    </div>
+                    <div class="stat-card" style="background: #fffbeb; border-color: #f59e0b;">
+                        <h4 style="color: #d97706;">⚠️ Hidden Potential</h4>
+                        <ul style="text-align: left; margin-top: 15px;">
+                            <li>Limited online visibility</li>
+                            <li>Missing keyword optimization</li>
+                            <li>Untapped local SEO opportunities</li>
+                            <li>No authority content strategy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p style="text-align: center; font-weight: 600; color: #2B4DAF; margin-top: 30px;">
+                    Analysis complete. Significant optimization opportunities identified.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Current Issues -->
+    <div class="slide">
+        <div class="slide-content">
+            <div class="slide-header">
+                <h1>Current SEO Performance</h1>
+                <div class="score-circle">
+                    <div class="score-text">38/100</div>
+                </div>
+                <p>Critical optimization gaps limiting online visibility</p>
+            </div>
+            <div class="slide-body">
+                <h3>🔍 Key Issues Identified</h3>
+                
+                <div style="background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 25px; margin: 20px 0;">
+                    <h4 style="color: #dc2626; margin-bottom: 15px;">Technical SEO Gaps</h4>
+                    <ul style="margin-left: 20px; line-height: 1.8;">
+                        <li><strong>No schema markup</strong> - Search engines can't understand your services</li>
+                        <li><strong>Generic page titles</strong> - Missing keyword optimization</li>
+                        <li><strong>No meta descriptions</strong> - Poor search result appearance</li>
+                        <li><strong>Limited mobile optimization</strong> - Affecting user experience</li>
+                    </ul>
+                </div>
+
+                <div style="background: #fef2f2; border: 2px solid #fca5a5; border-radius: 12px; padding: 25px; margin: 20px 0;">
+                    <h4 style="color: #dc2626; margin-bottom: 15px;">Content & Authority</h4>
+                    <ul style="margin-left: 20px; line-height: 1.8;">
+                        <li><strong>No authority content</strong> - Missing industry expertise showcase</li>
+                        <li><strong>Limited service targeting</strong> - Generic descriptions</li>
+                        <li><strong>No local SEO strategy</strong> - Missing Northern Ireland dominance</li>
+                        <li><strong>Unoptimized Google Business Profile</strong> - Limited local visibility</li>
+                    </ul>
+                </div>
+                
+                <p style="text-align: center; font-size: 1.1rem; color: #6b7280; font-weight: 500;">
+                    <strong>Result:</strong> An estimated 90%+ of potential customers never discover Hutchinson Engineering online
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: After Optimization -->
+    <div class="slide">
+        <div class="slide-content">
+            <div class="slide-header">
+                <h1>After Professional SEO Optimization</h1>
+                <div class="score-circle" style="background: conic-gradient(#22c55e 0deg 281deg, #e2e8f0 281deg 360deg);">
+                    <div class="score-text" style="color: #15803d;">78/100</div>
+                </div>
+                <p>Strong competitive position achieved</p>
+            </div>
+            <div class="slide-body">
+                <h3>🚀 Search Visibility Transformation</h3>
+                
+                <div class="before-after">
+                    <div class="comparison-card before-card">
+                        <h4 style="color: #dc2626;">Current Search Result</h4>
+                        <div class="search-mockup">
+                            <div class="search-result">
+                                <div class="search-title">Welcome | Hutchinson Engineering</div>
+                                <div class="search-url">hutchinson-engineering.co.uk/</div>
+                                <div class="search-description">Generic homepage content with limited relevance...</div>
+                            </div>
+                        </div>
+                        <p style="color: #dc2626; font-weight: 600;">Ranks poorly for key searches</p>
+                    </div>
+                    
+                    <div class="comparison-card after-card">
+                        <h4 style="color: #059669;">Optimized Search Result</h4>
+                        <div class="search-mockup">
+                            <div class="search-result">
+                                <div class="search-title">Precision Engineering & Fabrication | 53+ Years Excellence | Hutchinson</div>
+                                <div class="search-url">hutchinson-engineering.co.uk/</div>
+                                <div class="search-description">Northern Ireland's leading sub-contract laser cutting and fabrication specialist. From coachbuilding to hydrogen vehicles...</div>
+                            </div>
+                        </div>
+                        <p style="color: #059669; font-weight: 600;">Dominates relevant searches</p>
+                    </div>
+                </div>
+
+                <div class="roi-highlight">
+                    <h3 style="margin-bottom: 20px; color: #15803d;">Expected Performance Improvement</h3>
+                    <div class="stats-grid">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: bold; color: #15803d;">+800%</div>
+                            <div>Website Traffic Growth</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: bold; color: #15803d;">15-20</div>
+                            <div>First-Page Rankings</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: bold; color: #15803d;">10-15x</div>
+                            <div>Monthly Lead Generation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Google Ads Opportunity -->
+    <div class="slide">
+        <div class="slide-content">
+            <div class="slide-header">
+                <h1>Paid Search Opportunity Analysis</h1>
+                <p>Strategic Google Ads positioning for immediate impact</p>
+            </div>
+            <div class="slide-body">
+                <h3>🎯 High-Value Keyword Opportunities</h3>
+                
+                <div style="background: #f8fafc; border-radius: 12px; padding: 25px; margin: 20px 0;">
+                    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; margin-bottom: 15px; font-weight: bold; color: #374151;">
+                        <div>Keyword</div>
+                        <div>Monthly Searches</div>
+                        <div>Est. CPC</div>
+                    </div>
+                    <hr style="margin-bottom: 15px; border-color: #e2e8f0;">
+                    
+                    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; margin-bottom: 12px;">
+                        <div>engineering fabrication</div>
+                        <div>800-1,000</div>
+                        <div>£3.50-4.20</div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; margin-bottom: 12px;">
+                        <div>steel fabrication northern ireland</div>
+                        <div>200-300</div>
+                        <div>£2.80-3.40</div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; margin-bottom: 12px;">
+                        <div>coachbuilding fabrication</div>
+                        <div>50-80</div>
+                        <div>£4.50-5.80</div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px;">
+                        <div>laser cutting northern ireland</div>
+                        <div>150-250</div>
+                        <div>£3.20-4.00</div>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card" style="background: #eff6ff; border-color: #60a5fa;">
+                        <div class="stat-number">£2.5k</div>
+                        <p><strong>Monthly Ad Spend</strong><br>Strategic budget allocation</p>
+                    </div>
+                    <div class="stat-card" style="background: #f0fdf4; border-color: #4ade80;">
+                        <div class="stat-number">15-25</div>
+                        <p><strong>Qualified Leads</strong><br>High-intent prospects</p>
+                    </div>
+                    <div class="stat-card" style="background: #fefce8; border-color: #facc15;">
+                        <div class="stat-number">8:1</div>
+                        <p><strong>Immediate ROI</strong><br>Fast payback period</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: AI Assistant Demo -->
+    <div class="slide">
+        <div class="slide-content">
+            <div class="slide-header">
+                <h1>AI-Powered Customer Engagement</h1>
+                <p>24/7 intelligent assistant for engineering inquiries</p>
+            </div>
+            <div class="slide-body">
+                <h3>💬 Professional Engineering Assistant</h3>
+                
+                <div class="chat-container">
+                    <div class="chat-message">
+                        <strong>Visitor:</strong> "We need precision laser cutting for hydrogen vehicle fuel tank brackets. Can you handle complex geometries?"
+                    </div>
+                    
+                    <div class="chat-response">
+                        <strong>Hutchinson AI:</strong> "Absolutely! With our £4M investment in Europe's most advanced laser cutting technology, we specialize in complex hydrogen vehicle components. Our precision capabilities include:<br><br>
+                        • ±0.1mm tolerance on intricate geometries<br>
+                        • Certified for hydrogen vehicle safety standards<br>
+                        • 53+ years of fabrication expertise<br><br>
+                        I can arrange a technical consultation with our engineering team. Would you like me to schedule a call this week?"
+                    </div>
+                    
+                    <div class="chat-message">
+                        <strong>Visitor:</strong> "Yes, please. We need quotes for 500 units with potential for ongoing production."
+                    </div>
+                    
+                    <div class="chat-response">
+                        <strong>Hutchinson AI:</strong> "Perfect! I've scheduled a technical consultation for this Thursday at 2 PM with our Senior Project Engineer. You'll receive a detailed quote within 48 hours covering:<br><br>
+                        • Prototyping and testing phase<br>
+                        • Volume production pricing<br>
+                        • Quality assurance protocols<br>
+                        • Delivery timeline options<br><br>
+                        Confirmation details sent to your email. Looking forward to supporting your hydrogen vehicle project!"
+                    </div>
+                </div>
+
+                <div style="background: #eff6ff; padding: 20px; border-radius: 12px; text-align: center;">
+                    <h4 style="color: #1d4ed8; margin-bottom: 15px;">Intelligent Lead Qualification</h4>
+                    <p>Automatically captures project details, qualifies prospects, and schedules consultations while you focus on engineering excellence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: Realistic ROI -->
+    <div class="slide">
+        <div class="slide-content">
+            <div class="slide-header">
+                <h1>Investment & Return Analysis</h1>
+                <p>Conservative projections based on industry benchmarks</p>
+            </div>
+            <div class="slide-body">
+                <div class="before-after">
+                    <div class="comparison-card before-card">
+                        <h3 style="color: #dc2626;">Current Digital Performance</h3>
+                        <div style="margin: 20px 0;">
+                            <div><strong>Monthly Website Visitors:</strong> ~50</div>
+                            <div><strong>Qualified Leads:</strong> 1-2</div>
+                            <div><strong>Lead Value:</strong> £30k-60k</div>
+                            <div><strong>Conversion Rate:</strong> ~2%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-card after-card">
+                        <h3 style="color: #059669;">6-Month Projection</h3>
+                        <div style="margin: 20px 0;">
+                            <div><strong>Monthly Website Visitors:</strong> 400-600</div>
+                            <div><strong>Qualified Leads:</strong> 10-15</div>
+                            <div><strong>Lead Value:</strong> £300k-450k</div>
+                            <div><strong>Conversion Rate:</strong> ~5%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roi-highlight">
+                    <h3 style="margin-bottom: 20px; color: #15803d;">Conservative ROI Calculation</h3>
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: bold; color: #059669;">£15k</div>
+                            <div style="color: #6b7280;">6-Month Investment</div>
+                        </div>
+                        <div style="font-size: 2rem; color: #2B4DAF;">→</div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: bold; color: #059669;">£500k+</div>
+                            <div style="color: #6b7280;">Additional Opportunities</div>
+                        </div>
+                        <div style="font-size: 2rem; color: #2B4DAF;">=</div>
+                        <div style="text-align: center;">
+                            <div class="roi-number">33:1</div>
+                            <div style="color: #6b7280;">Return Ratio</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disclaimer">
+                    <h4 style="color: #374151; margin-bottom: 10px;">Methodology & Disclaimers</h4>
+                    <ul style="margin-left: 20px; line-height: 1.6;">
+                        <li><strong>Conversion assumptions:</strong> 12-15% of leads convert to projects (industry standard)</li>
+                        <li><strong>Average project value:</strong> £20k-30k (based on fabrication sector data)</li>
+                        <li><strong>Timeline:</strong> Results typically achieved over 6-month optimization period</li>
+                        <li><strong>Variables:</strong> Actual results depend on market conditions, competition, and implementation quality</li>
+                        <li><strong>Disclaimer:</strong> Past performance does not guarantee future results. Individual results may vary.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 8: Call to Action -->
+    <div class="slide">
+        <div class="slide-content">
+            <div class="slide-header">
+                <h1>Transform Hutchinson Engineering's Digital Future</h1>
+                <p>Partner with Northern Ireland's premium digital transformation specialists</p>
+            </div>
+            <div class="slide-body">
+                <div class="stats-grid" style="margin-bottom: 30px;">
+                    <div class="stat-card" style="background: #eff6ff; border-color: #3b82f6;">
+                        <h4 style="color: #1d4ed8; margin-bottom: 15px;">🎯 Strategic Approach</h4>
+                        <ul style="text-align: left; margin-left: 20px; line-height: 1.8;">
+                            <li>Industry-specific SEO strategy</li>
+                            <li>Technical precision focus</li>
+                            <li>Heritage-driven positioning</li>
+                            <li>Multi-sector optimization</li>
+                        </ul>
+                    </div>
+                    <div class="stat-card" style="background: #f0fdf4; border-color: #22c55e;">
+                        <h4 style="color: #15803d; margin-bottom: 15px;">📊 Proven Methodology</h4>
+                        <ul style="text-align: left; margin-left: 20px; line-height: 1.8;">
+                            <li>Conservative ROI projections</li>
+                            <li>Transparent reporting</li>
+                            <li>Industry benchmark analysis</li>
+                            <li>Risk-managed implementation</li>
+                        </ul>
+                    </div>
+                    <div class="stat-card" style="background: #fef2f2; border-color: #ef4444;">
+                        <h4 style="color: #dc2626; margin-bottom: 15px;">⚡ Competitive Urgency</h4>
+                        <ul style="text-align: left; margin-left: 20px; line-height: 1.8;">
+                            <li>Limited-time market window</li>
+                            <li>First-mover advantages available</li>
+                            <li>Competitors awakening to digital</li>
+                            <li>Heritage advantage diminishing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h2 style="color: white; margin-bottom: 20px;">Start Your Digital Transformation Today</h2>
+                    <p style="font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9;">
+                        Join the engineering companies already dominating their markets with Blue Canvas AI
+                    </p>
+                    
+                    <div class="cta-buttons">
+                        <a href="tel:+447935217762" class="cta-button">
+                            📞 Call Phil: +44 7935 217762
+                        </a>
+                        <a href="https://wa.me/447935217762" class="cta-button cta-secondary">
+                            💬 WhatsApp Discussion
+                        </a>
+                        <a href="mailto:contact@bluecanvas.ai" class="cta-button cta-secondary">
+                            ✉️ contact@bluecanvas.ai
+                        </a>
+                    </div>
+                    
+                    <div style="margin-top: 30px; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                        <h3 style="color: white; margin-bottom: 15px;">Phil Patterson - Blue Canvas AI</h3>
+                        <p style="opacity: 0.9; line-height: 1.6;">
+                            Strategic digital consultant specializing in engineering & manufacturing sector transformation. 
+                            Delivering measurable ROI through data-driven SEO and intelligent automation for Northern Ireland's finest businesses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <button class="nav-button" onclick="previousSlide()" aria-label="Previous slide">‹</button>
+        <button class="nav-button" onclick="nextSlide()" aria-label="Next slide">›</button>
+    </div>
+
+    <!-- Progress Dots -->
+    <div class="progress-dots">
+        <div class="progress-dot active"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 8;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.progress-dot');
+            
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            
+            currentSlide = n;
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            const next = (currentSlide + 1) % totalSlides;
+            showSlide(next);
+        }
+
+        function previousSlide() {
+            const prev = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(prev);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault();
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                previousSlide();
+            }
+        });
+
+        // Touch/swipe navigation with improved responsiveness
+        let startX = null;
+        let startY = null;
+        
+        document.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+        }, { passive: true });
+
+        document.addEventListener('touchend', (e) => {
+            if (!startX || !startY) return;
+            
+            const endX = e.changedTouches[0].clientX;
+            const endY = e.changedTouches[0].clientY;
+            const diffX = startX - endX;
+            const diffY = startY - endY;
+            
+            // Only trigger if horizontal swipe is greater than vertical
+            if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+                if (diffX > 0) {
+                    nextSlide();
+                } else {
+                    previousSlide();
+                }
+            }
+            
+            startX = null;
+            startY = null;
+        }, { passive: true });
+
+        // Progress dot click navigation
+        document.querySelectorAll('.progress-dot').forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+            });
+            
+            // Add proper cursor for better UX
+            dot.style.cursor = 'pointer';
+        });
+
+        // Prevent zoom on double-tap for better mobile experience
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', (e) => {
+            const now = new Date().getTime();
+            if (now - lastTouchEnd <= 300) {
+                e.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
+    </script>
+</body>
+</html>
