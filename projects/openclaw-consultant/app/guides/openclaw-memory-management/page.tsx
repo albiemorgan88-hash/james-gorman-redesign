@@ -624,22 +624,22 @@ export default function OpenClawMemoryManagementPage() {
                   </div>
                 </div>
 
-                {structure.maintenance && (
+                {'maintenance' in structure && structure.maintenance && (
                   <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
                     <h4 className="font-semibold text-blue-800 mb-2">Maintenance Tips:</h4>
                     <ul className="space-y-1">
-                      {structure.maintenance.map((tip, idx) => (
+                      {'maintenance' in structure && structure.maintenance.map((tip, idx) => (
                         <li key={idx} className="text-blue-700 text-sm">• {tip}</li>
                       ))}
                     </ul>
                   </div>
                 )}
 
-                {structure.automation && (
+                {'automation' in structure && structure.automation && (
                   <div className="bg-green-50 border-l-4 border-green-400 p-4">
                     <h4 className="font-semibold text-green-800 mb-2">Automation Features:</h4>
                     <ul className="space-y-1">
-                      {structure.automation.map((feature, idx) => (
+                      {'automation' in structure && structure.automation.map((feature, idx) => (
                         <li key={idx} className="text-green-700 text-sm">• {feature}</li>
                       ))}
                     </ul>

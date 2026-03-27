@@ -861,7 +861,7 @@ export default function OpenClawCronJobsPage() {
                     {feature.examples.map((example, idx) => (
                       <div key={idx} className="bg-white rounded-lg p-6 border border-gray-200">
                         <h4 className="font-semibold text-dark mb-4">
-                          {example.condition || example.scenario}
+                          {('condition' in example ? example.condition : example.scenario)}
                         </h4>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                           <div>
