@@ -29,11 +29,21 @@ export default function OutreachPage() {
 
   const getWhatsAppUrl = (biz: typeof businesses[0]) => {
     const phone = formatPhone(biz.phone);
-    const siteUrl = `https://tradesman-sites.vercel.app/${biz.slug}`;
     const displayName = biz.name.split(' ').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
-    const msg = encodeURIComponent(
-      `Hi — put together a website for ${displayName}, have a look:\n\n${siteUrl}\n\nThis is just a low effort placeholder — we can fully customise it to your preferences.\n\nGets you showing up on Google so customers find you directly. You'll get more enquiries within the first week.\n\n£500 to get it live on your own domain. £50/month to keep it ranking.\n\nNo obligation — just thought it was worth sharing.\n\nPhil\nBlue Canvas AI\n07828699027`
-    );
+    
+    let msg;
+    if (biz.category === 'Premium Trades') {
+      // Premium positioning for high-value trades
+      msg = encodeURIComponent(
+        `Hi ${displayName}, Phil from Blue Canvas AI here. I noticed ${biz.name} has great reviews but no website showing up on Google. Your competitors are pulling 10+ leads/week from search. Quick question — would you be open to seeing how much business you're leaving on the table? Takes 2 mins to show you.`
+      );
+    } else {
+      // Standard message for regular businesses
+      const siteUrl = `https://tradesman-sites.vercel.app/${biz.slug}`;
+      msg = encodeURIComponent(
+        `Hi — put together a website for ${displayName}, have a look:\n\n${siteUrl}\n\nThis is just a low effort placeholder — we can fully customise it to your preferences.\n\nGets you showing up on Google so customers find you directly. You'll get more enquiries within the first week.\n\n£500 to get it live on your own domain. £50/month to keep it ranking.\n\nNo obligation — just thought it was worth sharing.\n\nPhil\nBlue Canvas AI\n07828699027`
+      );
+    }
     return `https://wa.me/${phone}?text=${msg}`;
   };
 
@@ -92,50 +102,69 @@ export default function OutreachPage() {
       <div style={{padding:'1rem'}}>
         {filtered.map(biz => {
           const isSent = sent.has(biz.slug);
+          const isPremium = biz.category === 'Premium Trades';
           return (
             <div key={biz.slug} style={{
-              background: isSent ? '#1a2e1a' : '#1e293b',
-              border: `1px solid ${isSent ? '#22c55e33' : '#334155'}`,
+              background: isSent ? '#1a2e1a' : isPremium ? '#2d1b69' : '#1e293b',
+              border: `2px solid ${isSent ? '#22c55e33' : isPremium ? '#8b5cf6' : '#334155'}`,
               borderRadius: 12,
               padding: '1rem',
               marginBottom: '0.75rem',
               opacity: isSent ? 0.6 : 1,
+              position: 'relative',
             }}>
+              {isPremium && (
+                <div style={{
+                  position: 'absolute',
+                  top: '-8px',
+                  right: '12px',
+                  background: '#8b5cf6',
+                  color: 'white',
+                  padding: '2px 8px',
+                  borderRadius: '12px',
+                  fontSize: '0.7rem',
+                  fontWeight: '700',
+                }}>
+                  ⭐ PREMIUM
+                </div>
+              )}
               <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',marginBottom:'0.5rem'}}>
                 <div>
                   <div style={{fontWeight:600,fontSize:'1rem'}}>{biz.name}</div>
-                  <div style={{fontSize:'0.8rem',color:'#f59e0b'}}>{biz.category} • {biz.phone}</div>
+                  <div style={{fontSize:'0.8rem',color: isPremium ? '#a78bfa' : '#f59e0b'}}>{isPremium ? biz.category : biz.category} • {biz.phone}</div>
                   <div style={{fontSize:'0.7rem',color:'#64748b',marginTop:'0.2rem'}}>{biz.address}</div>
                 </div>
                 {isSent && <span style={{color:'#22c55e',fontSize:'0.8rem',fontWeight:600}}>✅ SENT</span>}
               </div>
               
               <div style={{display:'flex',gap:'0.5rem',marginTop:'0.5rem'}}>
-                <a 
-                  href={`/${biz.slug}`}
-                  target="_blank"
-                  style={{
-                    flex:1,
-                    background:'#334155',
-                    color:'#94a3b8',
-                    padding:'0.7rem',
-                    borderRadius:8,
-                    textDecoration:'none',
-                    textAlign:'center',
-                    fontSize:'0.85rem',
-                    fontWeight:500,
-                  }}
-                >
-                  👁️ Preview
-                </a>
+                {!isPremium && (
+                  <a 
+                    href={`/${biz.slug}`}
+                    target="_blank"
+                    style={{
+                      flex:1,
+                      background:'#334155',
+                      color:'#94a3b8',
+                      padding:'0.7rem',
+                      borderRadius:8,
+                      textDecoration:'none',
+                      textAlign:'center',
+                      fontSize:'0.85rem',
+                      fontWeight:500,
+                    }}
+                  >
+                    👁️ Preview
+                  </a>
+                )}
                 
                 <a
                   href={getWhatsAppUrl(biz)}
                   target="_blank"
                   onClick={() => markSent(biz.slug)}
                   style={{
-                    flex:2,
-                    background: isSent ? '#1a3a1a' : '#25D366',
+                    flex: isPremium ? 1 : 2,
+                    background: isSent ? '#1a3a1a' : isPremium ? 'linear-gradient(135deg, #8b5cf6, #a855f7)' : '#25D366',
                     color: 'white',
                     padding:'0.7rem',
                     borderRadius:8,
@@ -143,9 +172,10 @@ export default function OutreachPage() {
                     textAlign:'center',
                     fontSize:'0.85rem',
                     fontWeight:700,
+                    boxShadow: isPremium ? '0 4px 15px rgba(139, 92, 246, 0.4)' : 'none',
                   }}
                 >
-                  {isSent ? '↩️ Send Again' : '📱 WhatsApp'}
+                  {isSent ? '↩️ Send Again' : isPremium ? '⭐ Premium WhatsApp' : '📱 WhatsApp'}
                 </a>
               </div>
             </div>

@@ -39,7 +39,7 @@ def apollo_search(search_params: Dict[str, Any], max_pages: int = 10) -> List[Di
         print(f"  → Page {page}... ", end="", flush=True)
         
         try:
-            response = requests.post(f"{BASE_URL}/people/search", json=params, headers=headers)
+            response = requests.post(f"{BASE_URL}/mixed_people/api_search", json=params, headers=headers)
             response.raise_for_status()
             data = response.json()
             
@@ -294,7 +294,12 @@ def main():
     print(f"\n📊 Results Summary:")
     print(f"   Total contacts found: {len(all_contacts)}")
     print(f"   Unique contacts: {len(unique_contacts)}")
-    print(f"   Average premium score: {sum(c.get('premium_score', 0) for c in unique_contacts) / len(unique_contacts):.1f}")
+    
+    if unique_contacts:
+        avg_score = sum(c.get('premium_score', 0) for c in unique_contacts) / len(unique_contacts)
+        print(f"   Average premium score: {avg_score:.1f}")
+    else:
+        print("   No contacts found - check search parameters")
     
     # Export deliverables
     timestamp = datetime.now().strftime("%Y%m%d_%H%M")

@@ -13,18 +13,22 @@ print(f"API Key: {APOLLO_API_KEY[:10]}..." if APOLLO_API_KEY else "No API key")
 
 # Test simple search
 def test_simple_search():
-    url = "https://api.apollo.io/api/v1/people/search"
+    url = "https://api.apollo.io/api/v1/mixed_people/api_search"
     
     # Very simple search first
     simple_params = {
-        "api_key": APOLLO_API_KEY,
         "person_locations": ["Northern Ireland, United Kingdom"],
         "page": 1,
         "per_page": 5
     }
     
+    headers = {
+        "X-Api-Key": APOLLO_API_KEY,
+        "Content-Type": "application/json"
+    }
+    
     print("Testing simple search...")
-    response = requests.post(url, json=simple_params)
+    response = requests.post(url, json=simple_params, headers=headers)
     print(f"Status: {response.status_code}")
     
     try:
@@ -45,18 +49,22 @@ def test_simple_search():
 
 # Test with industry keywords
 def test_trades_search():
-    url = "https://api.apollo.io/api/v1/people/search"
+    url = "https://api.apollo.io/api/v1/mixed_people/api_search"
     
     trades_params = {
-        "api_key": APOLLO_API_KEY,
         "q_keywords": "electrical contractor",
         "person_locations": ["United Kingdom"],
         "page": 1,
         "per_page": 5
     }
     
+    headers = {
+        "X-Api-Key": APOLLO_API_KEY,
+        "Content-Type": "application/json"
+    }
+    
     print("\nTesting trades search...")
-    response = requests.post(url, json=trades_params)
+    response = requests.post(url, json=trades_params, headers=headers)
     print(f"Status: {response.status_code}")
     
     try:

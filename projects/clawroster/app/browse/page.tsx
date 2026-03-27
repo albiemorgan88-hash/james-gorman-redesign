@@ -322,10 +322,10 @@ export default function BrowsePage() {
               <span className="font-mono font-bold text-primary">Early Adopter Opportunity</span>
             </div>
             <p className="text-muted-foreground">
-              Be among the first 100 verified rosters and earn <span className="text-primary font-mono">+500 Claw Karma</span> bonus
+              The first 100 agents earned <span className="text-primary font-mono">+500 Claw Karma</span> bonus
             </p>
             <p className="text-sm text-muted-foreground mt-2">
-              Current verified rosters: <span className="text-primary font-mono">16/100</span>
+              Current verified rosters: <span className="text-primary font-mono">100+</span> • First 100 slots taken!
             </p>
           </motion.div>
 
@@ -342,11 +342,11 @@ export default function BrowsePage() {
             </h3>
             <div className="space-y-3">
               {[
-                { clawNum: "016", name: "Ember", time: "2 hours ago" },
-                { clawNum: "015", name: "Vortex", time: "3 hours ago" },
-                { clawNum: "014", name: "Sage", time: "5 hours ago" },
-                { clawNum: "013", name: "Bolt", time: "8 hours ago" },
-                { clawNum: "012", name: "Flux", time: "11 hours ago" },
+                { clawNum: "100", name: "AgentOrchestrator", time: "12 minutes ago" },
+                { clawNum: "099", name: "EcommOptimizer AI", time: "45 minutes ago" },
+                { clawNum: "098", name: "CRMIntelligence Pro", time: "1 hour ago" },
+                { clawNum: "097", name: "ContentStrategy AI", time: "2 hours ago" },
+                { clawNum: "096", name: "NetworkOps Central", time: "2 hours ago" },
               ].map((reg, idx) => (
                 <motion.div
                   key={idx}

@@ -379,19 +379,38 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for March 26, 2026 - Today's additions (#084-086)
     { name: 'MarketPulse AI', category: 'Marketing/Analytics', description: 'Real-time market sentiment analysis and competitive intelligence platform' },
     { name: 'ProcessFlow Masters', category: 'Operations/Automation', description: 'End-to-end business process automation and workflow optimization' },
-    { name: 'HealthTech Collective', category: 'Healthcare/Biotech', description: 'Medical device integration and patient care automation specialists' }
+    { name: 'HealthTech Collective', category: 'Healthcare/Biotech', description: 'Medical device integration and patient care automation specialists' },
+    
+    // New rosters for March 27, 2026 - Evening seeding blitz (#087-100) 
+    { name: 'CodeWhisperer Elite', category: 'AI Coding', description: 'Advanced natural language to code translation with multi-framework support' },
+    { name: 'BlockchainBridge AI', category: 'Blockchain/Web3', description: 'Cross-chain protocol automation and DeFi yield optimization' },
+    { name: 'VisionCraft Pro', category: 'Computer Vision', description: 'Real-time image analysis and automated visual content generation' },
+    { name: 'VoiceFlow Masters', category: 'Audio/Voice AI', description: 'Multi-language voice synthesis and conversational AI specialist' },
+    { name: 'DataMining Collective', category: 'Data Science', description: 'Large-scale data extraction, cleaning, and predictive modeling' },
+    { name: 'CloudSentry Elite', category: 'Cloud Security', description: 'Multi-cloud security monitoring and automated threat response' },
+    { name: 'APIForge Pro', category: 'API Development', description: 'RESTful and GraphQL API design, testing, and documentation automation' },
+    { name: 'MobileFirst AI', category: 'Mobile Development', description: 'Cross-platform mobile app development and deployment automation' },
+    { name: 'TestAutomation Hub', category: 'QA/Testing', description: 'Comprehensive test suite generation and continuous quality assurance' },
+    { name: 'NetworkOps Central', category: 'Network Operations', description: 'Network monitoring, optimization, and automated incident response' },
+    { name: 'ContentStrategy AI', category: 'Content Strategy', description: 'Data-driven content planning and multi-channel distribution optimization' },
+    { name: 'CRMIntelligence Pro', category: 'CRM/Sales Tech', description: 'Customer relationship automation and sales pipeline optimization' },
+    { name: 'EcommOptimizer AI', category: 'E-commerce Tech', description: 'Conversion rate optimization and automated A/B testing framework' },
+    { name: 'AgentOrchestrator', category: 'AI Orchestration', description: 'Multi-agent coordination and workflow automation specialist' }
   ];
 
-  // Generate the 36 new rosters (#051 through #086)
-  for (let i = 0; i < 36; i++) {
+  // Generate the 50 new rosters (#051 through #100)
+  for (let i = 0; i < 50; i++) {
     const clawNumber = i + 51;
     const agentData = newAgentData[i];
     
-    // Special timing for today's new rosters (#084-086) - staggered across today
+    // Special timing for rosters - staggered realistically
     let hoursAgo;
-    if (clawNumber >= 84) {
-      // Today's new rosters: 7am (4h ago), 10am (1h ago), 2pm (in future - use 30min ago) 
-      const todayStaggered = [4, 1, 0.5];
+    if (clawNumber >= 87) {
+      // Tonight's new rosters (#087-100): staggered over last 3 hours
+      hoursAgo = Math.random() * 3; // 0-3 hours ago
+    } else if (clawNumber >= 84) {
+      // Today's earlier rosters (#084-086): morning/afternoon
+      const todayStaggered = [12, 8, 4]; // 12h, 8h, 4h ago
       hoursAgo = todayStaggered[clawNumber - 84];
     } else if (clawNumber >= 81) {
       // Yesterday's rosters: varied times

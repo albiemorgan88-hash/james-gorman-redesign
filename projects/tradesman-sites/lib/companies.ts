@@ -540,4 +540,28 @@ export const businesses: Business[] = [
   { slug: 'stephen-mcburney-painting-and-decorating', name: 'Stephen McBurney Painting and Decorating', category: 'painter decorator', phone: '07545 349490', address: '3 Dermott Rd, Comber, Newtownards BT23 5LG, UK' },
   { slug: 'ng-shaw-paint-spraying-services', name: 'NG Shaw Paint Spraying Services', category: 'painter decorator', phone: '07789 755888', address: '19 Court St, Newtownards BT23 7NX, UK' },
   { slug: 'newtownards-bangor-child-contact-centres', name: 'Newtownards & Bangor Child Contact Centres', category: 'babysitting service', phone: '07540 143700', address: 'Strean Presbyterian Church, Newtownards BT23 4EN, UK' },
+
+  // Premium trades with mobile numbers
+  { slug: 'gc-electrical', name: 'GC Electrical', category: 'electrician', phone: '07887 401135', address: '139 Oakhurst Ave, Blacks Rd, Belfast BT10 0PD, UK' },
+  { slug: 'david-scott-and-son', name: 'David Scott and Son', category: 'plumber', phone: '07787 561436', address: '4 Downhill Walk, Belfast BT8 7ED, UK' },
+  { slug: 'cph-joinery-interior', name: 'Cph joinery & interior', category: 'joiner', phone: '07701 355845', address: 'Dundonald, Belfast BT16, UK' },
+  { slug: 'the-shower-doctor', name: 'The Shower Doctor', category: 'plumber', phone: '07845 587908', address: '21 Ardlough Rd, Londonderry BT47 5SW, UK' },
+  { slug: 'md-pro-contracts', name: 'MD Pro Contracts', category: 'roofer', phone: '07858 872527', address: '3rd Floor, LINCOLN BUILDING, 27/45 Great Victoria St, Belfast BT2 7SL, UK' },
+  { slug: 'heating-solutions-ni', name: 'Heating Solutions NI', category: 'plumber', phone: '07704 435095', address: 'Titanic, Suites, 55, 59 Adelaide St, Belfast BT2 8FE, UK' },
+  { slug: 'belfast-kitchen-company', name: 'Belfast Kitchen Company', category: 'joiner', phone: '07711 665015', address: 'Church Rd, Newtownabbey BT36 7LS, UK' },
+  { slug: 'mccaffrey-kitchens', name: 'McCaffrey Kitchens', category: 'joiner', phone: '07594 989849', address: '39, Campsie Industrial Estate, Campsie, Londonderry BT47 3XX, UK' },
+  { slug: 'emd-plumbing-heating-gas-oil', name: 'EMD Plumbing & Heating | Gas & Oil', category: 'plumber', phone: '07706 205959', address: '16 Cliftonville Ave, Londonderry BT47 3LT, UK' },
+  { slug: 'the-roof-doctor', name: 'The Roof Doctor', category: 'roofer', phone: '07542 389977', address: '4 Pennyburn Pass, Londonderry BT48 0AE, UK' },
+
+  // Premium Trades - High-value WhatsApp leads
+  { slug: 'gc-electrical-premium', name: 'GC Electrical', category: 'Premium Trades', phone: '07887 401135', address: 'Belfast - 5 stars, 73 reviews' },
+  { slug: 'david-scott-and-son-premium', name: 'David Scott and Son', category: 'Premium Trades', phone: '07787 561436', address: 'Belfast - 5 stars, 18 reviews' },
+  { slug: 'cph-joinery-interior-premium', name: 'CPH Joinery & Interior', category: 'Premium Trades', phone: '07701 355845', address: 'Belfast - 5 stars, 15 reviews' },
+  { slug: 'the-shower-doctor-premium', name: 'The Shower Doctor', category: 'Premium Trades', phone: '07845 587908', address: 'Derry - 5 stars, 8 reviews' },
+  { slug: 'md-pro-contracts-premium', name: 'MD Pro Contracts', category: 'Premium Trades', phone: '07858 872527', address: 'Belfast - 4.9 stars, 330 reviews' },
+  { slug: 'heating-solutions-ni-premium', name: 'Heating Solutions NI', category: 'Premium Trades', phone: '07704 435095', address: 'Belfast - 4.8 stars, 200 reviews' },
+  { slug: 'belfast-kitchen-company-premium', name: 'Belfast Kitchen Company', category: 'Premium Trades', phone: '07711 665015', address: 'Belfast - 4.7 stars, 18 reviews' },
+  { slug: 'mccaffrey-kitchens-premium', name: 'McCaffrey Kitchens', category: 'Premium Trades', phone: '07594 989849', address: 'Derry - 4.6 stars, 18 reviews' },
+  { slug: 'emd-plumbing-heating-premium', name: 'EMD Plumbing & Heating', category: 'Premium Trades', phone: '07706 205959', address: 'Derry - 4.2 stars, 33 reviews' },
+  { slug: 'the-roof-doctor-premium', name: 'The Roof Doctor', category: 'Premium Trades', phone: '07542 389977', address: 'Derry - 4.2 stars, 10 reviews' },
 ];

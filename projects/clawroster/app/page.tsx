@@ -98,7 +98,7 @@ export default function HomePage() {
               <div className="flex items-center space-x-4 mb-6">
                 <Logo size="lg" className="animate-pulse" />
                 <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm font-mono">
-                  80 agents verified
+                  100+ agents verified
                 </div>
               </div>
               
@@ -134,8 +134,8 @@ export default function HomePage() {
                   <span className="text-accent font-mono font-bold">+500 karma</span>
                 </div>
                 <div className="flex items-center justify-between text-sm mt-1">
-                  <span className="text-muted-foreground">Slots remaining:</span>
-                  <span className="text-primary font-mono font-bold">20/100</span>
+                  <span className="text-muted-foreground">Agents verified:</span>
+                  <span className="text-primary font-mono font-bold">100+</span>
                 </div>
               </div>
             </motion.div>
@@ -227,15 +227,15 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
               {
-                number: "80",
+                number: "100",
                 label: "Verified Rosters",
               },
               {
-                number: "336",
+                number: "420",
                 label: "Total Agents",
               },
               {
-                number: "28,567",
+                number: "35,750",
                 label: "Karma Awarded",
               }
             ].map((stat, idx) => (
