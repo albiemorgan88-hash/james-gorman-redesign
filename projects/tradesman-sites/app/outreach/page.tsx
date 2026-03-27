@@ -2,13 +2,29 @@
 import { businesses } from "@/lib/companies";
 import { useState } from "react";
 
-type Region = "all" | "derry" | "belfast";
+type Region = "all" | "derry" | "belfast" | "premium";
 
 const DERRY_KEYWORDS = ['londonderry','derry','limavady','strabane','eglinton','drumahoe','campsie','culmore','pennyburn','springtown','prehen','creggan','carnhill','waterside','letterkenny','donegal','moville','buncrana','muff','bridgend'];
 
 function getRegion(address: string): "derry" | "belfast" {
   const lower = address.toLowerCase();
   return DERRY_KEYWORDS.some(k => lower.includes(k)) ? "derry" : "belfast";
+}
+
+function getTradeType(name: string): string {
+  const tradeMap: Record<string, string> = {
+    'GC Electrical': 'electrical contractor',
+    'David Scott and Son': 'bathroom specialist', 
+    'CPH Joinery & Interior': 'bespoke joinery',
+    'The Shower Doctor': 'bathroom specialist',
+    'MD Pro Contracts': 'roofing contractor',
+    'Heating Solutions NI': 'heating engineer',
+    'Belfast Kitchen Company': 'kitchen fitter',
+    'McCaffrey Kitchens': 'kitchen fitter',
+    'EMD Plumbing & Heating': 'heating engineer',
+    'The Roof Doctor': 'roofing contractor'
+  };
+  return tradeMap[name] || 'trade services';
 }
 
 export default function OutreachPage() {
@@ -32,10 +48,11 @@ export default function OutreachPage() {
     const displayName = biz.name.split(' ').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
     
     let msg;
-    if (biz.category === 'Premium Trades') {
-      // Premium positioning for high-value trades
+    if (premiumSlugs.includes(biz.slug)) {
+      // Premium message for high-value trades
+      const siteUrl = `https://tradesman-sites.vercel.app/${biz.slug.replace('-premium', '')}`;
       msg = encodeURIComponent(
-        `Hi ${displayName}, Phil from Blue Canvas AI here. I noticed ${biz.name} has great reviews but no website showing up on Google. Your competitors are pulling 10+ leads/week from search. Quick question — would you be open to seeing how much business you're leaving on the table? Takes 2 mins to show you.`
+        `Hi — put together a website for ${displayName}, have a look:\n\n${siteUrl}\n\nThis is just a low effort placeholder — we can fully customise it to your preferences.\n\nGets you showing up on Google so customers find you directly. You'll get more enquiries within the first week.\n\n£500 to get it live on your own domain. £50/month to keep it ranking.\n\nNo obligation — just thought it was worth sharing.\n\nPhil\nBlue Canvas AI\n07828699027`
       );
     } else {
       // Standard message for regular businesses
@@ -47,14 +64,24 @@ export default function OutreachPage() {
     return `https://wa.me/${phone}?text=${msg}`;
   };
 
+  // Premium businesses with PJ's specific messaging
+  const premiumSlugs = [
+    'gc-electrical-premium', 'david-scott-and-son-premium', 'cph-joinery-interior-premium',
+    'the-shower-doctor-premium', 'md-pro-contracts-premium', 'heating-solutions-ni-premium',
+    'belfast-kitchen-company-premium', 'mccaffrey-kitchens-premium', 'emd-plumbing-heating-premium',
+    'the-roof-doctor-premium'
+  ];
+
   const filtered = businesses.filter(b => b.phone).filter(b => {
     if (region === "all") return true;
+    if (region === "premium") return premiumSlugs.includes(b.slug);
     return getRegion(b.address) === region;
   });
 
   const allWithPhone = businesses.filter(b => b.phone);
   const derryCount = allWithPhone.filter(b => getRegion(b.address) === "derry").length;
   const belfastCount = allWithPhone.filter(b => getRegion(b.address) === "belfast").length;
+  const premiumCount = allWithPhone.filter(b => premiumSlugs.includes(b.slug)).length;
   const done = sent.size;
 
   return (
@@ -76,6 +103,7 @@ export default function OutreachPage() {
             { key: "all" as Region, label: `All (${allWithPhone.length})` },
             { key: "derry" as Region, label: `Derry (${derryCount})` },
             { key: "belfast" as Region, label: `Belfast & NI (${belfastCount})` },
+            { key: "premium" as Region, label: `⭐ Premium (${premiumCount})` },
           ]).map(tab => (
             <button
               key={tab.key}
@@ -84,12 +112,19 @@ export default function OutreachPage() {
                 flex: 1,
                 padding: '0.5rem',
                 borderRadius: 8,
-                border: region === tab.key ? '2px solid #f59e0b' : '1px solid #334155',
-                background: region === tab.key ? '#f59e0b22' : '#1e293b',
-                color: region === tab.key ? '#f59e0b' : '#94a3b8',
+                border: region === tab.key 
+                  ? (tab.key === 'premium' ? '2px solid #f59e0b' : '2px solid #f59e0b') 
+                  : '1px solid #334155',
+                background: region === tab.key 
+                  ? (tab.key === 'premium' ? 'linear-gradient(135deg, #f59e0b22, #fbbf2422)' : '#f59e0b22') 
+                  : '#1e293b',
+                color: region === tab.key 
+                  ? (tab.key === 'premium' ? '#f59e0b' : '#f59e0b') 
+                  : '#94a3b8',
                 fontSize: '0.8rem',
                 fontWeight: 600,
                 cursor: 'pointer',
+                boxShadow: tab.key === 'premium' && region === tab.key ? '0 4px 15px rgba(245,158,11,0.3)' : 'none',
               }}
             >
               {tab.label}
@@ -102,7 +137,7 @@ export default function OutreachPage() {
       <div style={{padding:'1rem'}}>
         {filtered.map(biz => {
           const isSent = sent.has(biz.slug);
-          const isPremium = biz.category === 'Premium Trades';
+          const isPremium = premiumSlugs.includes(biz.slug);
           return (
             <div key={biz.slug} style={{
               background: isSent ? '#1a2e1a' : isPremium ? '#2d1b69' : '#1e293b',
@@ -130,41 +165,45 @@ export default function OutreachPage() {
               )}
               <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',marginBottom:'0.5rem'}}>
                 <div>
-                  <div style={{fontWeight:600,fontSize:'1rem'}}>{biz.name}</div>
-                  <div style={{fontSize:'0.8rem',color: isPremium ? '#a78bfa' : '#f59e0b'}}>{isPremium ? biz.category : biz.category} • {biz.phone}</div>
-                  <div style={{fontSize:'0.7rem',color:'#64748b',marginTop:'0.2rem'}}>{biz.address}</div>
+                  <div style={{fontWeight:600,fontSize:'1rem'}}>{biz.name.replace(' premium', '')}</div>
+                  <div style={{fontSize:'0.8rem',color: isPremium ? '#f59e0b' : '#f59e0b'}}>
+                    {isPremium ? getTradeType(biz.name) : biz.category} • {biz.phone}
+                  </div>
+                  <div style={{fontSize:'0.7rem',color:'#64748b',marginTop:'0.2rem'}}>
+                    {isPremium ? biz.address : biz.address}
+                  </div>
                 </div>
                 {isSent && <span style={{color:'#22c55e',fontSize:'0.8rem',fontWeight:600}}>✅ SENT</span>}
               </div>
               
               <div style={{display:'flex',gap:'0.5rem',marginTop:'0.5rem'}}>
-                {!isPremium && (
-                  <a 
-                    href={`/${biz.slug}`}
-                    target="_blank"
-                    style={{
-                      flex:1,
-                      background:'#334155',
-                      color:'#94a3b8',
-                      padding:'0.7rem',
-                      borderRadius:8,
-                      textDecoration:'none',
-                      textAlign:'center',
-                      fontSize:'0.85rem',
-                      fontWeight:500,
-                    }}
-                  >
-                    👁️ Preview
-                  </a>
-                )}
+                <a 
+                  href={`/${isPremium ? biz.slug.replace('-premium', '') : biz.slug}`}
+                  target="_blank"
+                  style={{
+                    flex: isPremium ? 2 : 1,
+                    background: isPremium ? 'linear-gradient(135deg, #0f172a, #1e293b)' : '#334155',
+                    color: isPremium ? '#f59e0b' : '#94a3b8',
+                    padding:'0.7rem',
+                    borderRadius:8,
+                    textDecoration:'none',
+                    textAlign:'center',
+                    fontSize:'0.85rem',
+                    fontWeight: isPremium ? 700 : 500,
+                    border: isPremium ? '1px solid #f59e0b40' : 'none',
+                    boxShadow: isPremium ? '0 4px 15px rgba(245,158,11,0.2)' : 'none',
+                  }}
+                >
+                  {isPremium ? '⭐ Premium Preview' : '👁️ Preview'}
+                </a>
                 
                 <a
                   href={getWhatsAppUrl(biz)}
                   target="_blank"
                   onClick={() => markSent(biz.slug)}
                   style={{
-                    flex: isPremium ? 1 : 2,
-                    background: isSent ? '#1a3a1a' : isPremium ? 'linear-gradient(135deg, #8b5cf6, #a855f7)' : '#25D366',
+                    flex: 2,
+                    background: isSent ? '#1a3a1a' : isPremium ? 'linear-gradient(135deg, #f59e0b, #fbbf24)' : '#25D366',
                     color: 'white',
                     padding:'0.7rem',
                     borderRadius:8,
@@ -172,7 +211,7 @@ export default function OutreachPage() {
                     textAlign:'center',
                     fontSize:'0.85rem',
                     fontWeight:700,
-                    boxShadow: isPremium ? '0 4px 15px rgba(139, 92, 246, 0.4)' : 'none',
+                    boxShadow: isPremium ? '0 4px 15px rgba(245,158,11,0.4)' : 'none',
                   }}
                 >
                   {isSent ? '↩️ Send Again' : isPremium ? '⭐ Premium WhatsApp' : '📱 WhatsApp'}

@@ -9,6 +9,62 @@ function titleCase(str: string): string {
   ).replace(/\s+/g, ' ').trim();
 }
 
+// Trade-specific icons
+function getTradeIcon(category: string): string {
+  const icons: Record<string, string> = {
+    plumber: '🔧',
+    electrician: '⚡',
+    builder: '🏗️',
+    hairdresser: '✂️',
+    barber: '💈',
+    'beauty salon': '💅',
+    mechanic: '🔧',
+    roofer: '🏠',
+    painter: '🎨',
+    tiler: '🧱',
+    joiner: '🪚',
+    landscaper: '🌿',
+    takeaway: '🍕',
+    'personal trainer': '💪',
+    cleaner: '🧽',
+    'dog groomer': '🐕',
+    handyman: '🔨',
+    plasterer: '🏗️',
+    locksmith: '🗝️',
+    fencer: '🚧',
+    'Premium Trades': '⭐',
+    'mobile hairdresser': '✂️',
+    'mobile beauty therapist': '💅',
+    'mobile barber': '💈',
+    'mobile mechanic': '🔧',
+    'mobile car wash': '🚗',
+    'car detailing': '🚗',
+    'mobile valeting': '🚗',
+    'tree surgeon': '🌳',
+    'gardening service': '🌱',
+    'landscaping': '🌿',
+    'tiling contractor': '🧱',
+    'painter decorator': '🎨',
+    'pet sitting': '🐾',
+    'mobile catering': '🍽️',
+    'catering service': '🍽️',
+    'baker': '🥖',
+    'wedding cake maker': '🎂',
+    'taxi service': '🚕',
+    'babysitting service': '👶',
+    'chilminder': '👶',
+    'driving instructor': '🚗',
+    'music teacher': '🎵',
+    'event photographer': '📸',
+    'freelance photographer': '📸',
+    'wedding photographer': '📸',
+    'cleaning service': '🧽',
+    'domestic cleaning': '🧽',
+    'MOT testing': '🔍',
+  };
+  return icons[category] || '🏢';
+}
+
 // Trade-specific accent colors
 function getAccentColor(category: string): string {
   const colors: Record<string, string> = {
@@ -150,19 +206,12 @@ export default function BusinessPage() {
     plasterer: 'Expert Plastering Services',
     locksmith: 'Emergency Locksmith Services',
     fencer: 'Quality Fencing & Gates',
+    'Premium Trades': 'Premium Trade Services',
   };
 
-  const heroImages: Record<string, string> = {
-    plumber: 'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200',
-    electrician: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200',
-    builder: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200',
-    hairdresser: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200',
-    mechanic: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200',
-  };
 
-  const heroImage = heroImages[biz.category] || 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200';
   const label = categoryLabels[biz.category] || `Professional ${biz.category.charAt(0).toUpperCase() + biz.category.slice(1)} Services`;
-  const city = biz.address.includes('Londonderry') ? 'Derry' : biz.address.split(',').slice(-3, -2)[0]?.trim() || 'Derry';
+  const city = biz.address.includes('Londonderry') || biz.address.includes('Derry') ? 'Derry' : biz.address.split(',').slice(-3, -2)[0]?.trim() || 'Northern Ireland';
 
   return (
     <div style={{
@@ -173,419 +222,1301 @@ export default function BusinessPage() {
       scrollBehavior:'smooth'
     }}>
       
-      {/* Hero Section */}
+      {/* Hero Section - Professional & Modern */}
       <section style={{
-        background: '#ffffff',
-        padding: '3rem 1.5rem',
-        minHeight: '60vh',
+        background: `linear-gradient(135deg, ${accentColor}15, ${accentColor}08, #ffffff)`,
+        padding: '6rem 2rem 4rem',
+        minHeight: '80vh',
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
+        position: 'relative',
+        overflow: 'hidden'
       }}>
+        {/* Trade-specific icon pattern */}
         <div style={{
-          maxWidth: '1200px', 
-          margin: '0 auto',
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '4rem',
-          alignItems: 'center'
+          position: 'absolute',
+          top: '20%',
+          right: '5%',
+          fontSize: '12rem',
+          opacity: 0.03,
+          color: accentColor,
+          transform: 'rotate(15deg)',
+          pointerEvents: 'none'
         }}>
-          <div>
-            <div style={{
-              fontSize:'0.9rem',
-              color: accentColor,
-              fontWeight:600,
-              letterSpacing:1.5,
-              textTransform:'uppercase',
-              marginBottom:'1.5rem'
-            }}>{label}</div>
-            <h1 style={{
-              fontSize:'3.5rem',
-              fontWeight:800,
-              marginBottom:'1rem',
-              lineHeight:1.1,
-              color:'#1a202c'
-            }}>{titleCase(biz.name)}</h1>
-            <div style={{
-              display:'flex',
-              alignItems:'center',
-              gap:'0.5rem',
-              marginBottom:'1.5rem'
-            }}>
-              <div style={{color:accentColor,fontSize:'1.2rem'}}>★★★★★</div>
-              <span style={{color:'#4a5568',fontSize:'1rem',fontWeight:500}}>4.9/5 Based on 47 reviews</span>
-            </div>
-            {biz.phone && (
-              <a href={`tel:${biz.phone.replace(/\s/g,'')}`} style={{
-                display:'inline-block',
-                background:'#16a34a',
-                color:'white',
-                padding:'1.2rem 3rem',
-                borderRadius:'50px',
-                fontWeight:700,
-                fontSize:'1.2rem',
-                textDecoration:'none',
-                boxShadow:'0 8px 25px rgba(22,163,74,0.3)',
-                transition:'all 0.3s ease',
-                marginBottom:'1rem'
-              }}>
-                Get a Free Quote
-              </a>
-            )}
-            {biz.phone && (
-              <p style={{
-                color:'#4a5568',
-                fontSize:'1.1rem',
-                fontWeight:500
-              }}>
-                📞 Call: <strong style={{color:'#1a202c'}}>{biz.phone}</strong>
-              </p>
-            )}
-          </div>
-          <div style={{
-            backgroundImage: `url('${heroImage}')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            height: '400px',
-            borderRadius: '16px',
-            boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
-          }}></div>
+          {getTradeIcon(biz.category)}
         </div>
+        
+        <div 
+          className="hero-grid"
+          style={{
+            maxWidth: '1400px', 
+            margin: '0 auto',
+            width: '100%',
+            display: 'grid',
+            gridTemplateColumns: '1.2fr 0.8fr',
+            gap: '5rem',
+            alignItems: 'center',
+            zIndex: 2,
+            position: 'relative'
+          }}>
+          <div>
+            {/* Badge */}
+            <div style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              background: accentColor,
+              color: 'white',
+              padding: '8px 20px',
+              borderRadius: '50px',
+              fontSize: '0.85rem',
+              fontWeight: 600,
+              letterSpacing: '0.5px',
+              textTransform: 'uppercase',
+              marginBottom: '2rem',
+              boxShadow: `0 4px 15px ${accentColor}40`
+            }}>
+              <span style={{fontSize: '1.1rem'}}>⭐</span>
+              {label}
+            </div>
+
+            {/* Main Heading */}
+            <h1 style={{
+              fontSize: 'clamp(2.5rem, 5vw, 4.5rem)',
+              fontWeight: 900,
+              marginBottom: '1.5rem',
+              lineHeight: 1.1,
+              color: '#0f172a',
+              letterSpacing: '-0.02em'
+            }}>
+              {titleCase(biz.name)}
+            </h1>
+
+            {/* Subheading */}
+            <p style={{
+              fontSize: '1.3rem',
+              color: '#475569',
+              marginBottom: '2rem',
+              lineHeight: 1.6,
+              fontWeight: 400
+            }}>
+              Professional {biz.category === 'Premium Trades' ? 'trade services' : biz.category} in {city}. 
+              Trusted by hundreds of satisfied customers.
+            </p>
+
+            {/* Trust Signals */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '2rem',
+              marginBottom: '3rem',
+              flexWrap: 'wrap'
+            }}>
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px'
+              }}>
+                <div style={{color: '#fbbf24', fontSize: '1.3rem'}}>★★★★★</div>
+                <span style={{color: '#64748b', fontSize: '1rem', fontWeight: 500}}>
+                  4.9/5 (200+ reviews)
+                </span>
+              </div>
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                color: '#16a34a',
+                fontWeight: 600
+              }}>
+                <span style={{fontSize: '1.2rem'}}>✓</span>
+                Fully Licensed & Insured
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div style={{
+              display: 'flex',
+              gap: '1rem',
+              flexWrap: 'wrap'
+            }}>
+              {biz.phone && (
+                <a href={`tel:${biz.phone.replace(/\s/g,'')}`} style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  background: accentColor,
+                  color: 'white',
+                  padding: '1.2rem 2.5rem',
+                  borderRadius: '12px',
+                  fontWeight: 700,
+                  fontSize: '1.1rem',
+                  textDecoration: 'none',
+                  boxShadow: `0 8px 25px ${accentColor}40`,
+                  transition: 'all 0.3s ease',
+                  border: 'none'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = `0 12px 30px ${accentColor}50`;
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = `0 8px 25px ${accentColor}40`;
+                }}>
+                  <span style={{fontSize: '1.2rem'}}>📞</span>
+                  Call Now: {biz.phone}
+                </a>
+              )}
+              {biz.phone && (
+                <a href={`https://wa.me/${biz.phone.replace(/[\s+()-]/g,'')}`} style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  background: '#25d366',
+                  color: 'white',
+                  padding: '1.2rem 2.5rem',
+                  borderRadius: '12px',
+                  fontWeight: 700,
+                  fontSize: '1.1rem',
+                  textDecoration: 'none',
+                  boxShadow: '0 8px 25px rgba(37,211,102,0.4)',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 12px 30px rgba(37,211,102,0.5)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 8px 25px rgba(37,211,102,0.4)';
+                }}>
+                  <span style={{fontSize: '1.2rem'}}>💬</span>
+                  WhatsApp
+                </a>
+              )}
+            </div>
+          </div>
+
+          {/* Hero Visual */}
+          <div style={{
+            position: 'relative'
+          }}>
+            {/* Gradient Hero with Trade Icon */}
+            <div 
+              className="hero-visual"
+              style={{
+                background: `linear-gradient(135deg, ${accentColor}, ${accentColor}dd)`,
+                height: '500px',
+                borderRadius: '20px',
+                boxShadow: '0 25px 50px rgba(0,0,0,0.15)',
+                border: '8px solid white',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                position: 'relative',
+                overflow: 'hidden'
+              }}>
+              {/* Background pattern */}
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                background: `radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1) 0%, transparent 50%)`,
+              }}></div>
+              
+              {/* Large trade icon */}
+              <div style={{
+                fontSize: '8rem',
+                color: 'rgba(255,255,255,0.9)',
+                textAlign: 'center',
+                filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.1))'
+              }}>
+                {getTradeIcon(biz.category)}
+              </div>
+            </div>
+            
+            {/* Floating Badge */}
+            <div style={{
+              position: 'absolute',
+              bottom: '-15px',
+              right: '-15px',
+              background: 'white',
+              padding: '1.5rem',
+              borderRadius: '16px',
+              boxShadow: '0 15px 35px rgba(0,0,0,0.1)',
+              textAlign: 'center',
+              minWidth: '120px'
+            }}>
+              <div style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>🏆</div>
+              <div style={{fontSize: '0.9rem', fontWeight: 700, color: '#0f172a'}}>
+                Top Rated
+              </div>
+              <div style={{fontSize: '0.8rem', color: '#64748b'}}>
+                Professional
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile responsive adjustments */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            @media (max-width: 768px) {
+              .hero-grid {
+                grid-template-columns: 1fr !important;
+                gap: 3rem !important;
+                text-align: center;
+              }
+              .hero-grid > div:last-child {
+                order: -1;
+              }
+              .hero-image {
+                height: 300px !important;
+              }
+            }
+          `
+        }} />
       </section>
 
-      {/* Trust Bar */}
+      {/* Trust & Credentials Bar */}
       <section style={{
-        background: '#f8f9fa',
-        padding: '1.5rem 1.5rem',
-        borderTop: '1px solid #e2e8f0',
-        borderBottom: '1px solid #e2e8f0'
+        background: 'linear-gradient(90deg, #f8fafc 0%, #ffffff 50%, #f8fafc 100%)',
+        padding: '3rem 2rem',
+        borderTop: '1px solid #e2e8f0'
       }}>
         <div style={{
           maxWidth: '1200px',
-          margin: '0 auto',
-          display: 'flex',
-          justifyContent: 'space-around',
-          flexWrap: 'wrap',
-          gap: '2rem',
-          textAlign: 'center'
+          margin: '0 auto'
         }}>
-          {[
-            '✓ Fully Insured',
-            '✓ Free Quotes', 
-            '✓ Local & Trusted',
-            '✓ 5-Star Rated'
-          ].map(item => (
-            <div key={item} style={{
-              color: '#16a34a',
-              fontWeight: 600,
-              fontSize: '1rem'
-            }}>
-              {item}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section style={{
-        padding:'4rem 1.5rem',
-        maxWidth:'1200px',
-        margin:'0 auto'
-      }}>
-        <h2 style={{
-          fontSize:'2.5rem',
-          fontWeight:700,
-          marginBottom:'3rem',
-          textAlign:'center',
-          color:'#1a202c'
-        }}>Our Services</h2>
-        <div style={{
-          display:'grid',
-          gridTemplateColumns:'repeat(auto-fit, minmax(300px, 1fr))',
-          gap:'2rem'
-        }}>
-          {getServices(biz.category).map((service, index) => (
-            <div key={service} style={{
-              background:'#ffffff',
-              padding:'2.5rem',
-              borderRadius:'16px',
-              textAlign:'center',
-              border:'1px solid #e2e8f0',
-              boxShadow:'0 4px 6px rgba(0,0,0,0.05)',
-              transition:'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-              cursor:'pointer',
-              transform: 'translateY(0)'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-4px)';
-              e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = '0 4px 6px rgba(0,0,0,0.05)';
-            }}
-            >
-              <div style={{display: 'flex', justifyContent: 'center'}}>
-                <ServiceIcon category={biz.category} index={index} accentColor={accentColor} />
-              </div>
-              <div style={{
-                fontSize:'1.2rem',
-                fontWeight:600,
-                color:'#1a202c',
-                lineHeight:1.4
-              }}>{service}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section style={{
-        padding:'4rem 1.5rem',
-        background:'#f8f9fa'
-      }}>
-        <div style={{maxWidth:'1200px',margin:'0 auto'}}>
-          <h2 style={{
-            fontSize:'2.5rem',
-            fontWeight:700,
-            marginBottom:'3rem',
-            textAlign:'center',
-            color:'#1a202c'
-          }}>What Our Customers Say</h2>
           <div style={{
-            display:'grid',
-            gridTemplateColumns:'repeat(auto-fit, minmax(300px, 1fr))',
-            gap:'2rem'
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '2rem',
+            alignItems: 'center'
+          }}>
+            {[
+              { icon: '🛡️', title: 'Fully Licensed', desc: 'Certified & Insured' },
+              { icon: '💰', title: 'Free Quotes', desc: 'No obligation estimates' },
+              { icon: '🏆', title: 'Award Winning', desc: '5-star rated service' },
+              { icon: '⚡', title: 'Fast Response', desc: 'Same day service available' }
+            ].map((item, index) => (
+              <div key={index} style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '1rem',
+                padding: '1rem',
+                background: 'rgba(255,255,255,0.8)',
+                borderRadius: '12px',
+                border: '1px solid rgba(0,0,0,0.05)',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.1)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+              }}>
+                <div style={{
+                  fontSize: '2rem',
+                  width: '60px',
+                  height: '60px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  background: `${accentColor}15`,
+                  borderRadius: '12px'
+                }}>
+                  {item.icon}
+                </div>
+                <div>
+                  <div style={{
+                    fontSize: '1.1rem',
+                    fontWeight: 700,
+                    color: '#0f172a',
+                    marginBottom: '0.25rem'
+                  }}>
+                    {item.title}
+                  </div>
+                  <div style={{
+                    fontSize: '0.9rem',
+                    color: '#64748b'
+                  }}>
+                    {item.desc}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section - Enhanced */}
+      <section style={{
+        padding: '6rem 2rem',
+        background: 'linear-gradient(180deg, #ffffff 0%, #f8fafc 100%)'
+      }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto'
+        }}>
+          {/* Section Header */}
+          <div style={{
+            textAlign: 'center',
+            marginBottom: '4rem'
+          }}>
+            <div style={{
+              display: 'inline-block',
+              background: accentColor,
+              color: 'white',
+              padding: '8px 20px',
+              borderRadius: '50px',
+              fontSize: '0.85rem',
+              fontWeight: 600,
+              letterSpacing: '0.5px',
+              textTransform: 'uppercase',
+              marginBottom: '1.5rem'
+            }}>
+              Our Expertise
+            </div>
+            <h2 style={{
+              fontSize: 'clamp(2rem, 4vw, 3rem)',
+              fontWeight: 800,
+              marginBottom: '1rem',
+              color: '#0f172a',
+              letterSpacing: '-0.02em'
+            }}>
+              Professional Services
+            </h2>
+            <p style={{
+              fontSize: '1.2rem',
+              color: '#64748b',
+              maxWidth: '600px',
+              margin: '0 auto',
+              lineHeight: 1.6
+            }}>
+              We provide comprehensive {biz.category === 'Premium Trades' ? 'trade services' : biz.category} solutions 
+              with guaranteed quality and customer satisfaction.
+            </p>
+          </div>
+
+          {/* Services Grid */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+            gap: '2rem'
+          }}>
+            {getServices(biz.category).map((service, index) => (
+              <div key={service} style={{
+                background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
+                padding: '2.5rem',
+                borderRadius: '20px',
+                border: '1px solid #e2e8f0',
+                boxShadow: '0 8px 25px rgba(0,0,0,0.08)',
+                transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+                cursor: 'pointer',
+                transform: 'translateY(0)',
+                position: 'relative',
+                overflow: 'hidden'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.12)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.08)';
+              }}>
+                {/* Background Pattern */}
+                <div style={{
+                  position: 'absolute',
+                  top: '-50%',
+                  right: '-50%',
+                  width: '100px',
+                  height: '100px',
+                  background: `${accentColor}08`,
+                  borderRadius: '50%',
+                  transform: 'rotate(45deg)'
+                }}></div>
+                
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'flex-start',
+                  gap: '1.5rem',
+                  position: 'relative'
+                }}>
+                  <ServiceIcon category={biz.category} index={index} accentColor={accentColor} />
+                  <div style={{ flex: 1 }}>
+                    <h3 style={{
+                      fontSize: '1.3rem',
+                      fontWeight: 700,
+                      color: '#0f172a',
+                      marginBottom: '0.75rem',
+                      lineHeight: 1.3
+                    }}>
+                      {service}
+                    </h3>
+                    <p style={{
+                      fontSize: '0.95rem',
+                      color: '#64748b',
+                      lineHeight: 1.5,
+                      marginBottom: '1rem'
+                    }}>
+                      Professional {service.toLowerCase()} with guaranteed quality and competitive pricing.
+                    </p>
+                    <div style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      color: accentColor,
+                      fontSize: '0.9rem',
+                      fontWeight: 600
+                    }}>
+                      Free Quote
+                      <span style={{ fontSize: '0.8rem' }}>→</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Call to Action */}
+          <div style={{
+            textAlign: 'center',
+            marginTop: '4rem',
+            padding: '3rem',
+            background: `linear-gradient(135deg, ${accentColor}05, ${accentColor}10)`,
+            borderRadius: '20px',
+            border: `1px solid ${accentColor}20`
+          }}>
+            <h3 style={{
+              fontSize: '1.8rem',
+              fontWeight: 700,
+              color: '#0f172a',
+              marginBottom: '1rem'
+            }}>
+              Need a Custom Solution?
+            </h3>
+            <p style={{
+              fontSize: '1.1rem',
+              color: '#64748b',
+              marginBottom: '2rem',
+              maxWidth: '500px',
+              margin: '0 auto 2rem'
+            }}>
+              Contact us today for a personalized quote tailored to your specific requirements.
+            </p>
+            {biz.phone && (
+              <a href={`tel:${biz.phone.replace(/\s/g,'')}`} style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                background: accentColor,
+                color: 'white',
+                padding: '1rem 2rem',
+                borderRadius: '12px',
+                fontWeight: 600,
+                fontSize: '1rem',
+                textDecoration: 'none',
+                boxShadow: `0 8px 25px ${accentColor}40`,
+                transition: 'all 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = `0 12px 30px ${accentColor}50`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = `0 8px 25px ${accentColor}40`;
+              }}>
+                Get Your Free Quote
+                <span style={{ fontSize: '0.9rem' }}>→</span>
+              </a>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials - Enhanced */}
+      <section style={{
+        padding: '6rem 2rem',
+        background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+        color: 'white'
+      }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto'
+        }}>
+          {/* Section Header */}
+          <div style={{
+            textAlign: 'center',
+            marginBottom: '4rem'
+          }}>
+            <div style={{
+              display: 'inline-block',
+              background: `${accentColor}20`,
+              color: accentColor,
+              padding: '8px 20px',
+              borderRadius: '50px',
+              fontSize: '0.85rem',
+              fontWeight: 600,
+              letterSpacing: '0.5px',
+              textTransform: 'uppercase',
+              marginBottom: '1.5rem'
+            }}>
+              Customer Reviews
+            </div>
+            <h2 style={{
+              fontSize: 'clamp(2rem, 4vw, 3rem)',
+              fontWeight: 800,
+              marginBottom: '1rem',
+              color: 'white',
+              letterSpacing: '-0.02em'
+            }}>
+              Trusted by Our Community
+            </h2>
+            <p style={{
+              fontSize: '1.2rem',
+              color: '#94a3b8',
+              maxWidth: '600px',
+              margin: '0 auto',
+              lineHeight: 1.6
+            }}>
+              Don't just take our word for it. Here's what our satisfied customers have to say.
+            </p>
+          </div>
+
+          {/* Testimonials Grid */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+            gap: '2rem',
+            marginBottom: '4rem'
           }}>
             {getTestimonials(biz.category).map((testimonial, index) => (
               <div key={testimonial.name} style={{
-                background:'#ffffff',
-                padding:'2.5rem',
-                borderRadius:'16px',
-                border:'1px solid #e2e8f0',
-                boxShadow:'0 4px 6px rgba(0,0,0,0.05)',
-                transition:'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
+                padding: '2.5rem',
+                borderRadius: '20px',
+                border: '1px solid rgba(255,255,255,0.1)',
+                backdropFilter: 'blur(10px)',
+                transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                 transform: 'translateY(0)',
                 position: 'relative' as const
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-4px)';
-                e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.background = 'linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.08) 100%)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 4px 6px rgba(0,0,0,0.05)';
-              }}
-              >
+                e.currentTarget.style.background = 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)';
+              }}>
+                {/* Quote Icon */}
                 <div style={{
-                  color: accentColor,
-                  fontSize:'1.2rem',
-                  marginBottom:'1rem',
-                  display:'flex',
-                  gap:'2px'
+                  position: 'absolute',
+                  top: '1rem',
+                  right: '1rem',
+                  fontSize: '3rem',
+                  color: `${accentColor}40`,
+                  lineHeight: 1
+                }}>
+                  "
+                </div>
+                
+                {/* Stars */}
+                <div style={{
+                  color: '#fbbf24',
+                  fontSize: '1.2rem',
+                  marginBottom: '1.5rem',
+                  display: 'flex',
+                  gap: '2px'
                 }}>
                   {[...Array(5)].map((_, i) => (
                     <span key={i}>★</span>
                   ))}
                 </div>
+
+                {/* Review Text */}
                 <p style={{
-                  color:'#4a5568',
-                  fontSize:'1.1rem',
-                  lineHeight:1.6,
-                  marginBottom:'1.5rem',
-                  fontStyle:'italic'
+                  color: '#e2e8f0',
+                  fontSize: '1.1rem',
+                  lineHeight: 1.7,
+                  marginBottom: '2rem',
+                  fontStyle: 'italic'
                 }}>
                   "{testimonial.quote}"
                 </p>
+
+                {/* Customer Info */}
                 <div style={{
-                  fontSize:'1rem',
-                  color:'#1a202c',
-                  fontWeight:600,
-                  paddingTop:'1rem',
-                  borderTop:'1px solid #e2e8f0'
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '1rem',
+                  paddingTop: '1.5rem',
+                  borderTop: '1px solid rgba(255,255,255,0.1)'
                 }}>
-                  — {testimonial.name}
+                  <div style={{
+                    width: '50px',
+                    height: '50px',
+                    borderRadius: '50%',
+                    background: accentColor,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: 'white',
+                    fontSize: '1.2rem',
+                    fontWeight: 700
+                  }}>
+                    {testimonial.name.charAt(0)}
+                  </div>
+                  <div>
+                    <div style={{
+                      fontSize: '1rem',
+                      color: 'white',
+                      fontWeight: 600,
+                      marginBottom: '0.25rem'
+                    }}>
+                      {testimonial.name}
+                    </div>
+                    <div style={{
+                      fontSize: '0.9rem',
+                      color: '#94a3b8'
+                    }}>
+                      Verified Customer
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Areas We Cover */}
-      <section style={{
-        padding:'4rem 1.5rem',
-        background:'#ffffff'
-      }}>
-        <div style={{maxWidth:'1200px',margin:'0 auto',textAlign:'center'}}>
-          <h2 style={{
-            fontSize:'2.5rem',
-            fontWeight:700,
-            marginBottom:'2rem',
-            color:'#1a202c'
-          }}>Areas We Cover</h2>
-          <p style={{
-            color:'#4a5568',
-            fontSize:'1.2rem',
-            marginBottom:'2.5rem'
-          }}>Proudly serving the greater Derry area</p>
+          {/* Review Stats */}
           <div style={{
-            display:'flex',
-            flexWrap:'wrap',
-            justifyContent:'center',
-            gap:'1rem'
+            textAlign: 'center',
+            padding: '2rem',
+            background: 'rgba(255,255,255,0.05)',
+            borderRadius: '16px',
+            border: '1px solid rgba(255,255,255,0.1)'
           }}>
-            {[
-              'Derry', 'Waterside', 'Cityside', 'Eglinton', 'Drumahoe', 
-              'Culmore', 'Strathfoyle', 'Limavady', 'Coleraine'
-            ].map(area => (
-              <span key={area} style={{
-                background:'#f8f9fa',
-                color:'#1a202c',
-                padding:'0.8rem 1.5rem',
-                borderRadius:'25px',
-                fontSize:'1rem',
-                fontWeight:500,
-                border:'1px solid #e2e8f0'
-              }}>{area}</span>
-            ))}
+            <div style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: '3rem',
+              flexWrap: 'wrap'
+            }}>
+              <div>
+                <div style={{ fontSize: '2.5rem', fontWeight: 800, color: accentColor }}>4.9</div>
+                <div style={{ fontSize: '0.9rem', color: '#94a3b8' }}>Average Rating</div>
+              </div>
+              <div style={{ width: '1px', height: '40px', background: 'rgba(255,255,255,0.2)' }}></div>
+              <div>
+                <div style={{ fontSize: '2.5rem', fontWeight: 800, color: accentColor }}>200+</div>
+                <div style={{ fontSize: '0.9rem', color: '#94a3b8' }}>Happy Customers</div>
+              </div>
+              <div style={{ width: '1px', height: '40px', background: 'rgba(255,255,255,0.2)' }}></div>
+              <div>
+                <div style={{ fontSize: '2.5rem', fontWeight: 800, color: accentColor }}>99%</div>
+                <div style={{ fontSize: '0.9rem', color: '#94a3b8' }}>Satisfaction Rate</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Areas We Cover - Enhanced */}
       <section style={{
-        padding:'4rem 1.5rem',
-        background: accentColor,
+        padding: '6rem 2rem',
+        background: 'linear-gradient(180deg, #ffffff 0%, #f8fafc 100%)'
+      }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto'
+        }}>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: '4rem',
+            alignItems: 'center'
+          }}
+          className="areas-grid">
+            
+            {/* Content Side */}
+            <div>
+              <div style={{
+                display: 'inline-block',
+                background: accentColor,
+                color: 'white',
+                padding: '8px 20px',
+                borderRadius: '50px',
+                fontSize: '0.85rem',
+                fontWeight: 600,
+                letterSpacing: '0.5px',
+                textTransform: 'uppercase',
+                marginBottom: '1.5rem'
+              }}>
+                Service Area
+              </div>
+              
+              <h2 style={{
+                fontSize: 'clamp(2rem, 4vw, 3rem)',
+                fontWeight: 800,
+                marginBottom: '1.5rem',
+                color: '#0f172a',
+                letterSpacing: '-0.02em'
+              }}>
+                Serving {city} & Surrounding Areas
+              </h2>
+              
+              <p style={{
+                fontSize: '1.2rem',
+                color: '#64748b',
+                lineHeight: 1.6,
+                marginBottom: '2rem'
+              }}>
+                We're proud to serve customers across Northern Ireland with reliable, 
+                professional {biz.category === 'Premium Trades' ? 'trade services' : biz.category} services. 
+                No matter where you are, we're here to help.
+              </p>
+
+              {/* Service Promise */}
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '1rem'
+              }}>
+                {[
+                  '⚡ Same-day response available',
+                  '📍 Local team, trusted service',
+                  '🚗 Free travel within 20 miles'
+                ].map(item => (
+                  <div key={item} style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.75rem',
+                    fontSize: '1rem',
+                    color: '#334155',
+                    fontWeight: 500
+                  }}>
+                    <span style={{ fontSize: '1.2rem' }}>{item.split(' ')[0]}</span>
+                    <span>{item.substring(item.indexOf(' ') + 1)}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Areas Side */}
+            <div>
+              <h3 style={{
+                fontSize: '1.5rem',
+                fontWeight: 700,
+                marginBottom: '1.5rem',
+                color: '#0f172a'
+              }}>
+                Primary Service Areas
+              </h3>
+              
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+                gap: '1rem'
+              }}>
+                {getServiceAreas(city).map(area => (
+                  <div key={area} style={{
+                    background: 'white',
+                    padding: '1.25rem 1rem',
+                    borderRadius: '12px',
+                    textAlign: 'center',
+                    border: '1px solid #e2e8f0',
+                    boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
+                    fontSize: '0.95rem',
+                    fontWeight: 600,
+                    color: '#334155',
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-4px)';
+                    e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.1)';
+                    e.currentTarget.style.borderColor = accentColor;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 4px 6px rgba(0,0,0,0.05)';
+                    e.currentTarget.style.borderColor = '#e2e8f0';
+                  }}>
+                    {area}
+                  </div>
+                ))}
+              </div>
+
+              {/* Coverage Note */}
+              <div style={{
+                marginTop: '2rem',
+                padding: '1.5rem',
+                background: `${accentColor}08`,
+                borderRadius: '12px',
+                border: `1px solid ${accentColor}20`
+              }}>
+                <p style={{
+                  fontSize: '0.95rem',
+                  color: '#64748b',
+                  marginBottom: '0.5rem'
+                }}>
+                  <strong style={{ color: '#0f172a' }}>Don't see your area?</strong>
+                </p>
+                <p style={{
+                  fontSize: '0.9rem',
+                  color: '#64748b'
+                }}>
+                  We also service surrounding areas. Contact us to confirm coverage.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile responsive styles */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            @media (max-width: 768px) {
+              .areas-grid {
+                grid-template-columns: 1fr !important;
+                gap: 3rem !important;
+                text-align: center;
+              }
+            }
+          `
+        }} />
+      </section>
+
+      {/* Contact Section - Premium */}
+      <section style={{
+        padding: '6rem 2rem',
+        background: `linear-gradient(135deg, ${accentColor} 0%, ${accentColor}dd 100%)`,
+        color: 'white',
+        position: 'relative',
+        overflow: 'hidden'
+      }}>
+        {/* Background Elements */}
+        <div style={{
+          position: 'absolute',
+          top: '-50%',
+          right: '-25%',
+          width: '600px',
+          height: '600px',
+          background: 'rgba(255,255,255,0.1)',
+          borderRadius: '50%',
+          transform: 'rotate(45deg)'
+        }}></div>
+        <div style={{
+          position: 'absolute',
+          bottom: '-30%',
+          left: '-15%',
+          width: '400px',
+          height: '400px',
+          background: 'rgba(255,255,255,0.05)',
+          borderRadius: '50%'
+        }}></div>
+        
+        <div style={{
+          maxWidth: '1000px',
+          margin: '0 auto',
+          position: 'relative',
+          zIndex: 2
+        }}>
+          {/* Header */}
+          <div style={{
+            textAlign: 'center',
+            marginBottom: '4rem'
+          }}>
+            <div style={{
+              display: 'inline-block',
+              background: 'rgba(255,255,255,0.2)',
+              color: 'white',
+              padding: '8px 20px',
+              borderRadius: '50px',
+              fontSize: '0.85rem',
+              fontWeight: 600,
+              letterSpacing: '0.5px',
+              textTransform: 'uppercase',
+              marginBottom: '1.5rem'
+            }}>
+              Get Started Today
+            </div>
+            
+            <h2 style={{
+              fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+              fontWeight: 900,
+              marginBottom: '1.5rem',
+              color: 'white',
+              letterSpacing: '-0.02em'
+            }}>
+              Ready to Get Started?
+            </h2>
+            
+            <p style={{
+              fontSize: '1.3rem',
+              marginBottom: '3rem',
+              opacity: 0.95,
+              maxWidth: '600px',
+              margin: '0 auto 3rem',
+              lineHeight: 1.6
+            }}>
+              Contact us today for your free, no-obligation quote. 
+              Professional service guaranteed.
+            </p>
+          </div>
+
+          {/* Contact Options */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '2rem',
+            marginBottom: '4rem'
+          }}>
+            {/* Phone */}
+            {biz.phone && (
+              <div style={{
+                background: 'rgba(255,255,255,0.1)',
+                backdropFilter: 'blur(10px)',
+                padding: '2.5rem',
+                borderRadius: '20px',
+                textAlign: 'center',
+                border: '1px solid rgba(255,255,255,0.2)',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'rgba(255,255,255,0.15)';
+                e.currentTarget.style.transform = 'translateY(-4px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'rgba(255,255,255,0.1)';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}>
+                <div style={{
+                  fontSize: '3rem',
+                  marginBottom: '1rem'
+                }}>📞</div>
+                <h3 style={{
+                  fontSize: '1.3rem',
+                  fontWeight: 700,
+                  marginBottom: '1rem'
+                }}>
+                  Call Now
+                </h3>
+                <p style={{
+                  fontSize: '1rem',
+                  marginBottom: '1.5rem',
+                  opacity: 0.9
+                }}>
+                  Speak directly with our team
+                </p>
+                <a href={`tel:${biz.phone.replace(/\s/g,'')}`} style={{
+                  display: 'inline-block',
+                  background: 'white',
+                  color: accentColor,
+                  padding: '1rem 2rem',
+                  borderRadius: '12px',
+                  fontWeight: 700,
+                  fontSize: '1.1rem',
+                  textDecoration: 'none',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.05)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}>
+                  {biz.phone}
+                </a>
+              </div>
+            )}
+
+            {/* WhatsApp */}
+            {biz.phone && (
+              <div style={{
+                background: 'rgba(255,255,255,0.1)',
+                backdropFilter: 'blur(10px)',
+                padding: '2.5rem',
+                borderRadius: '20px',
+                textAlign: 'center',
+                border: '1px solid rgba(255,255,255,0.2)',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'rgba(255,255,255,0.15)';
+                e.currentTarget.style.transform = 'translateY(-4px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'rgba(255,255,255,0.1)';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}>
+                <div style={{
+                  fontSize: '3rem',
+                  marginBottom: '1rem'
+                }}>💬</div>
+                <h3 style={{
+                  fontSize: '1.3rem',
+                  fontWeight: 700,
+                  marginBottom: '1rem'
+                }}>
+                  WhatsApp
+                </h3>
+                <p style={{
+                  fontSize: '1rem',
+                  marginBottom: '1.5rem',
+                  opacity: 0.9
+                }}>
+                  Quick message, fast response
+                </p>
+                <a href={`https://wa.me/${biz.phone.replace(/[\s+()-]/g,'')}`} style={{
+                  display: 'inline-block',
+                  background: '#25d366',
+                  color: 'white',
+                  padding: '1rem 2rem',
+                  borderRadius: '12px',
+                  fontWeight: 700,
+                  fontSize: '1.1rem',
+                  textDecoration: 'none',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.05)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}>
+                  Start Chat
+                </a>
+              </div>
+            )}
+          </div>
+
+          {/* Business Info */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '2rem',
+            marginTop: '3rem'
+          }}>
+            {/* Hours */}
+            <div style={{
+              background: 'rgba(255,255,255,0.1)',
+              padding: '2rem',
+              borderRadius: '16px',
+              textAlign: 'center'
+            }}>
+              <h4 style={{
+                fontSize: '1.2rem',
+                fontWeight: 700,
+                marginBottom: '1rem'
+              }}>
+                📅 Business Hours
+              </h4>
+              <div style={{ fontSize: '1rem', opacity: 0.9 }}>
+                <p style={{ marginBottom: '0.5rem' }}>Mon-Fri: 8:00am - 6:00pm</p>
+                <p style={{ marginBottom: '0.5rem' }}>Saturday: 9:00am - 4:00pm</p>
+                <p style={{ fontSize: '0.9rem', fontStyle: 'italic' }}>Emergency callouts available</p>
+              </div>
+            </div>
+
+            {/* Location */}
+            {biz.address && (
+              <div style={{
+                background: 'rgba(255,255,255,0.1)',
+                padding: '2rem',
+                borderRadius: '16px',
+                textAlign: 'center'
+              }}>
+                <h4 style={{
+                  fontSize: '1.2rem',
+                  fontWeight: 700,
+                  marginBottom: '1rem'
+                }}>
+                  📍 Service Area
+                </h4>
+                <p style={{
+                  fontSize: '1rem',
+                  opacity: 0.9
+                }}>
+                  Serving {city} & surrounding areas
+                </p>
+              </div>
+            )}
+          </div>
+
+          {/* Final CTA */}
+          <div style={{
+            textAlign: 'center',
+            marginTop: '4rem',
+            padding: '2rem',
+            background: 'rgba(0,0,0,0.2)',
+            borderRadius: '16px'
+          }}>
+            <p style={{
+              fontSize: '1.1rem',
+              margin: 0,
+              opacity: 0.95
+            }}>
+              💡 <strong>Free quotes</strong> • <strong>No obligation</strong> • <strong>Professional service guaranteed</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer - Professional */}
+      <footer style={{
+        padding: '3rem 2rem 2rem',
+        background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
         color: 'white'
       }}>
-        <div style={{maxWidth:'800px',margin:'0 auto',textAlign:'center'}}>
-          <h2 style={{
-            fontSize:'2.5rem',
-            fontWeight:700,
-            marginBottom:'1rem',
-            color:'white'
-          }}>Get Your Free Quote Today</h2>
-          <p style={{
-            fontSize:'1.2rem',
-            marginBottom:'3rem',
-            opacity:0.9
-          }}>Ready to get started? Contact us now for a free, no-obligation quote</p>
-          
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          textAlign: 'center'
+        }}>
+          {/* Logo/Brand */}
           <div style={{
-            display:'flex',
-            flexDirection:'column',
-            gap:'1rem',
-            alignItems:'center',
-            marginBottom:'3rem'
-          }}>
-            {biz.phone && (
-              <a href={`tel:${biz.phone.replace(/\s/g,'')}`} style={{
-                display:'inline-block',
-                background:'#ffffff',
-                color: accentColor,
-                padding:'1.2rem 3rem',
-                borderRadius:'50px',
-                fontWeight:700,
-                fontSize:'1.2rem',
-                textDecoration:'none',
-                boxShadow:'0 6px 20px rgba(0,0,0,0.1)',
-                minWidth:'250px'
-              }}>
-                📞 Call: {biz.phone}
-              </a>
-            )}
-            {biz.phone && (
-              <a href={`https://wa.me/${biz.phone.replace(/[\s+()-]/g,'')}`} style={{
-                display:'inline-block',
-                background:'#25d366',
-                color:'white',
-                padding:'1.2rem 3rem',
-                borderRadius:'50px',
-                fontWeight:700,
-                fontSize:'1.2rem',
-                textDecoration:'none',
-                boxShadow:'0 6px 20px rgba(37,211,102,0.3)',
-                minWidth:'250px'
-              }}>
-                💬 WhatsApp
-              </a>
-            )}
-          </div>
-          
-          <div style={{
-            background:'rgba(255,255,255,0.1)',
-            padding:'2rem',
-            borderRadius:'12px',
-            marginBottom:'2rem'
+            marginBottom: '2rem'
           }}>
             <h3 style={{
-              fontSize:'1.3rem',
-              fontWeight:600,
-              marginBottom:'1rem',
-              color:'white'
-            }}>Business Hours</h3>
-            <p style={{fontSize:'1.1rem',marginBottom:'0.5rem'}}>Mon-Sat: 8am-6pm</p>
-            <p style={{fontSize:'0.95rem',opacity:0.8}}>Emergency callouts available</p>
-          </div>
-          
-          {biz.address && (
-            <p style={{
-              fontSize:'1rem',
-              display:'flex',
-              alignItems:'center',
-              justifyContent:'center',
-              gap:'0.5rem',
-              opacity:0.9
+              fontSize: '1.5rem',
+              fontWeight: 800,
+              color: 'white',
+              marginBottom: '0.5rem'
             }}>
-              <span>📍</span> {biz.address}
+              {titleCase(biz.name)}
+            </h3>
+            <p style={{
+              color: '#94a3b8',
+              fontSize: '1rem'
+            }}>
+              Professional {biz.category === 'Premium Trades' ? 'Trade Services' : titleCase(biz.category)} in {city}
             </p>
-          )}
-        </div>
-      </section>
+          </div>
 
-      {/* Footer */}
-      <footer style={{
-        padding:'3rem 1.5rem',
-        borderTop:'1px solid #e2e8f0',
-        textAlign:'center',
-        background:'#f8f9fa'
-      }}>
-        <p style={{
-          color:'#6b7280',
-          fontSize:'1rem',
-          marginBottom:'0.5rem'
-        }}>Sample website by <strong style={{color:'#1a202c'}}>Blue Canvas AI</strong></p>
-        <p style={{
-          color:'#9ca3af',
-          fontSize:'0.9rem'
-        }}>Want this live? <strong style={{color: accentColor}}>£250 setup + £50/month</strong></p>
+          {/* Divider */}
+          <div style={{
+            height: '1px',
+            background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent)',
+            margin: '2rem 0'
+          }}></div>
+
+          {/* Attribution */}
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '2rem',
+            flexWrap: 'wrap',
+            fontSize: '0.9rem',
+            color: '#94a3b8'
+          }}>
+            <div>
+              Professional website by{' '}
+              <strong style={{
+                color: accentColor,
+                fontWeight: 600
+              }}>
+                Blue Canvas AI
+              </strong>
+            </div>
+            <div style={{
+              padding: '8px 16px',
+              background: 'rgba(255,255,255,0.1)',
+              borderRadius: '20px',
+              fontSize: '0.85rem'
+            }}>
+              Want your business online?{' '}
+              <strong style={{ color: 'white' }}>
+                £500 setup • £50/month
+              </strong>
+            </div>
+          </div>
+
+          {/* Copyright */}
+          <div style={{
+            marginTop: '1.5rem',
+            fontSize: '0.8rem',
+            color: '#64748b'
+          }}>
+            © 2024 {titleCase(biz.name)}. All rights reserved.
+          </div>
+        </div>
       </footer>
 
-      {/* Floating Mobile CTA */}
+      {/* Floating Mobile CTA - Enhanced */}
       {biz.phone && (
         <div style={{
           position: 'fixed',
           bottom: '20px',
           left: '20px',
           right: '20px',
-          zIndex: 1000
+          zIndex: 1000,
+          display: 'flex',
+          gap: '10px'
         }}>
           <a href={`tel:${biz.phone.replace(/\s/g,'')}`} style={{
-            display: 'block',
-            background: '#16a34a',
+            flex: 1,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '8px',
+            background: accentColor,
             color: 'white',
-            padding: '1rem 2rem',
-            borderRadius: '50px',
+            padding: '1rem 1.5rem',
+            borderRadius: '16px',
             fontWeight: 700,
-            fontSize: '1.1rem',
+            fontSize: '1rem',
             textDecoration: 'none',
-            textAlign: 'center',
-            boxShadow: '0 4px 20px rgba(22,163,74,0.3)'
+            boxShadow: `0 8px 25px ${accentColor}40`,
+            backdropFilter: 'blur(10px)',
+            transition: 'all 0.3s ease'
           }}>
-            📞 Call Now
+            <span style={{ fontSize: '1.2rem' }}>📞</span>
+            Call Now
+          </a>
+          <a href={`https://wa.me/${biz.phone.replace(/[\s+()-]/g,'')}`} style={{
+            flex: 1,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '8px',
+            background: '#25d366',
+            color: 'white',
+            padding: '1rem 1.5rem',
+            borderRadius: '16px',
+            fontWeight: 700,
+            fontSize: '1rem',
+            textDecoration: 'none',
+            boxShadow: '0 8px 25px rgba(37,211,102,0.4)',
+            backdropFilter: 'blur(10px)',
+            transition: 'all 0.3s ease'
+          }}>
+            <span style={{ fontSize: '1.2rem' }}>💬</span>
+            WhatsApp
           </a>
         </div>
       )}
+
+      {/* Hide mobile CTA on desktop */}
+      <style dangerouslySetInnerHTML={{
+        __html: `
+          @media (min-width: 769px) {
+            [style*="position: fixed"][style*="bottom: 20px"] {
+              display: none !important;
+            }
+          }
+        `
+      }} />
     </div>
   );
 }
@@ -761,6 +1692,28 @@ function getServices(category: string): string[] {
     'Professional Service 5', 
     'Professional Service 6'
   ];
+}
+
+function getServiceAreas(primaryCity: string): string[] {
+  const areas: Record<string, string[]> = {
+    Derry: [
+      'Derry City', 'Waterside', 'Cityside', 'Eglinton', 'Drumahoe',
+      'Culmore', 'Strathfoyle', 'Limavady', 'Coleraine', 'Maghera',
+      'Ballykelly', 'Greysteel', 'Dungiven', 'Castlerock', 'Portstewart'
+    ],
+    Belfast: [
+      'Belfast City', 'East Belfast', 'West Belfast', 'South Belfast', 'North Belfast',
+      'Lisburn', 'Bangor', 'Newtownards', 'Carrickfergus', 'Antrim',
+      'Holywood', 'Comber', 'Dundonald', 'Castlereagh', 'Carryduff'
+    ],
+    'Northern Ireland': [
+      'Belfast', 'Derry', 'Lisburn', 'Bangor', 'Newtownards',
+      'Carrickfergus', 'Coleraine', 'Ballymena', 'Antrim', 'Larne',
+      'Portadown', 'Craigavon', 'Omagh', 'Dungannon', 'Enniskillen'
+    ]
+  };
+  
+  return areas[primaryCity] || areas['Northern Ireland'];
 }
 
 function getTestimonials(category: string): Array<{name: string, quote: string}> {
