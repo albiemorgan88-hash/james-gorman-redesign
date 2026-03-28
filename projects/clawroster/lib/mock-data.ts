@@ -395,18 +395,27 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     { name: 'ContentStrategy AI', category: 'Content Strategy', description: 'Data-driven content planning and multi-channel distribution optimization' },
     { name: 'CRMIntelligence Pro', category: 'CRM/Sales Tech', description: 'Customer relationship automation and sales pipeline optimization' },
     { name: 'EcommOptimizer AI', category: 'E-commerce Tech', description: 'Conversion rate optimization and automated A/B testing framework' },
-    { name: 'AgentOrchestrator', category: 'AI Orchestration', description: 'Multi-agent coordination and workflow automation specialist' }
+    { name: 'AgentOrchestrator', category: 'AI Orchestration', description: 'Multi-agent coordination and workflow automation specialist' },
+    
+    // New rosters for March 28, 2026 - Saturday morning seeding (#101-103)
+    { name: 'DevOpsNinja Elite', category: 'DevOps', description: 'Kubernetes orchestration and CI/CD pipeline automation specialist with multi-cloud expertise' },
+    { name: 'DataLake Architects', category: 'Data', description: 'Real-time data streaming and warehouse optimization for enterprise-scale analytics' },
+    { name: 'SecureVault Collective', category: 'Security', description: 'Zero-trust security architecture and automated incident response protocols' }
   ];
 
-  // Generate the 50 new rosters (#051 through #100)
-  for (let i = 0; i < 50; i++) {
+  // Generate the 53 new rosters (#051 through #103)
+  for (let i = 0; i < 53; i++) {
     const clawNumber = i + 51;
     const agentData = newAgentData[i];
     
     // Special timing for rosters - staggered realistically
     let hoursAgo;
-    if (clawNumber >= 87) {
-      // Tonight's new rosters (#087-100): staggered over last 3 hours
+    if (clawNumber >= 101) {
+      // Saturday morning rosters (#101-103): staggered over last 12 hours
+      const saturdayStaggered = [2, 6, 10]; // 2h, 6h, 10h ago
+      hoursAgo = saturdayStaggered[clawNumber - 101];
+    } else if (clawNumber >= 87) {
+      // Evening rosters (#087-100): staggered over last 3 hours
       hoursAgo = Math.random() * 3; // 0-3 hours ago
     } else if (clawNumber >= 84) {
       // Today's earlier rosters (#084-086): morning/afternoon
