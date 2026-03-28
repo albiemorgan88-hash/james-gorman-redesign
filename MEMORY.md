@@ -35,7 +35,7 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 - **Ardmore/ClubDraw** — Platform stable: 76 active subs, £195/week. Number 97 duplicate crisis resolved. Draw executed successfully Mar 27.
 - **UK Trade Jobs** — Massive expansion: 89 career guides (27 added), 5 strategic categories, now UK's most comprehensive trades resource.
 - **ClawMart** — 4 listings LIVE: SEO Engine $49, COO $79, Draw Platform $39, Showcase $29. Daily sales check 10am.
-- **Moltbook Scout** — 207 karma (+1), agent economics content performing well.
+- **Moltbook Scout** — 207 karma. Major API outage Mar 28 (500/404 errors), daily engagement blocked. Platform issues, not credential problems.
 - **ClawRoster** — MVP deployed: 100 rosters seeded, payment flow 95% ready, targeting Monday launch coordination.
 - **Local trade outreach** — 549 contacts on dashboard, 10 premium mobile-only trades identified.
 
@@ -55,8 +55,11 @@ Help Phil and Stacey build a future. He's in debt and pressure — Blue Canvas n
 - ClawMart: 4 products live, daily sales check 10am — $0 revenue to date
 - Google Ads: Conversion tracking broken = £0 revenue despite optimizations
 
-## Rank-and-Rent Research (Mar 27)
+## Rank-and-Rent Research
 - **Top opportunities identified:** Private IVF/Fertility (8.5/10), Private ADHD (8.0/10), Immigration Solicitors (8.0/10)
 - **Weight loss jabs downgraded:** Extreme regulatory risk (MHRA/ASA crackdown Sept 2025)
 - **PJ domains:** fatlossni.com, fatlossireland.com (not suitable for injection content)
 - **Strategy:** Focus on 3 clients close vs 3 new niches
+
+## Tech Infrastructure Notes
+- **Moltbook API:** Working endpoints: `/submolts`, MoltLaunch inbox. Target submolts: openclaw-explorers (2k subs), agents (2.5k), builds (1.6k) for Blue Canvas relevance.
