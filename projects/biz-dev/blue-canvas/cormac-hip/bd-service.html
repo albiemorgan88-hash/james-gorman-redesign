@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Development & Outreach Package - Blue Canvas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #ffffff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f5f7fa;
+        }
+        
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #1a1a2e;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: -0.02em;
+        }
+        
+        .subhead {
+            font-size: 1.3em;
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        
+        .pricing-card {
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d2d54 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(26, 26, 46, 0.2);
+            position: relative;
+        }
+        
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4fc3f7, #29b6f6);
+            border-radius: 12px 12px 0 0;
+        }
+        
+        .pricing-card h3 {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+        
+        .price-main {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .price-setup {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .contract-terms {
+            font-size: 0.95em;
+            opacity: 0.8;
+            margin-top: 15px;
+        }
+        
+        .section {
+            margin: 50px 0;
+        }
+        
+        .section-header {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 4px solid #4fc3f7;
+        }
+        
+        .section-header h2 {
+            color: #1a1a2e;
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .section-content {
+            padding: 0 20px;
+        }
+        
+        .checklist {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .checklist li {
+            padding: 12px 0;
+            font-size: 1.05em;
+            border-bottom: 1px solid #f1f3f5;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .checklist li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4fc3f7;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .checklist li:last-child {
+            border-bottom: none;
+        }
+        
+        .requirements-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .requirements-list li {
+            padding: 10px 0;
+            font-size: 1.05em;
+            position: relative;
+            padding-left: 30px;
+            color: #555;
+        }
+        
+        .requirements-list li:before {
+            content: '◆';
+            position: absolute;
+            left: 0;
+            color: #1a1a2e;
+            font-size: 1.1em;
+        }
+        
+        .why-matters {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            border-left: 4px solid #4fc3f7;
+        }
+        
+        .why-matters p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: #444;
+            margin: 0;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #f5f7fa;
+            text-align: center;
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .footer-brand {
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+        
+        @media print {
+            body {
+                max-width: none;
+                padding: 20px;
+                font-size: 12pt;
+            }
+            
+            .pricing-card {
+                background: #1a1a2e !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            
+            .section-header {
+                background: #f8f9fa !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            
+            .why-matters {
+                background: #f8f9fa !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .subhead {
+                font-size: 1.1em;
+            }
+            
+            .pricing-card {
+                padding: 25px 20px;
+            }
+            
+            .price-main {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Blue Canvas" class="logo">
+        <h1>Business Development & Outreach Package</h1>
+        <p class="subhead">Build your pipeline while you focus on delivery</p>
+    </div>
+    
+    <div class="pricing-card">
+        <h3>Investment</h3>
+        <div class="price-setup">£100 one-time onboarding fee</div>
+        <div class="price-main">£650<span style="font-size: 0.6em; font-weight: 400;">/month</span></div>
+        <div class="contract-terms">6 month minimum contract, 1 month break clause</div>
+    </div>
+    
+    <div class="section">
+        <div class="section-header">
+            <h2>What's Included</h2>
+        </div>
+        <div class="section-content">
+            <ul class="checklist">
+                <li>CRM baseline snapshot (list size, open rates, click rates)</li>
+                <li>Weekly CRM performance tracking & reporting</li>
+                <li>Lead research, scraping & qualified list building</li>
+                <li>Outreach sequence creation & optimisation</li>
+                <li>A/B testing across subject lines, copy & CTAs</li>
+                <li>Automated follow-up sequences</li>
+                <li>Pipeline & conversion reporting</li>
+                <li>Weekly progress report delivered every Friday</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="section-header">
+            <h2>What We Need From You</h2>
+        </div>
+        <div class="section-content">
+            <ul class="requirements-list">
+                <li>Zoho CRM admin access</li>
+                <li>Clear definition of what you're selling (courses, webinars, workshops)</li>
+                <li>Ideal buyer profile (school types, decision makers, regions)</li>
+                <li>Permission to send outreach from your email domain</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="why-matters">
+        <h2 style="color: #1a1a2e; margin-bottom: 15px; font-size: 1.3em;">Why It Matters</h2>
+        <p>You shouldn't be spending your time hunting for leads when you could be delivering impact. We handle the entire outreach engine — from finding the right contacts to getting them into your pipeline — so your calendar fills itself.</p>
+    </div>
+    
+    <div class="footer">
+        <span class="footer-brand">Phil Patterson</span> | phil@bluecanvas.ai | bluecanvas.ai | <span class="footer-brand">Blue Canvas</span>
+    </div>
+</body>
+</html>
