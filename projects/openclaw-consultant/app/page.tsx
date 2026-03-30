@@ -283,6 +283,118 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ============ LATEST GUIDES ============ */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <div className="text-center mb-16">
+            <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
+              Latest Guides
+            </p>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-6">
+              Expert OpenClaw Knowledge
+            </h2>
+            <p className="text-slate-600 text-lg max-w-[600px] mx-auto">
+              In-depth guides covering everything from cost analysis to enterprise security. Written by someone who runs OpenClaw in production daily.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <a
+              href="/guides/openclaw-vs-virtual-assistant-cost"
+              className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="inline-block bg-orange/10 text-orange px-3 py-1 rounded-full text-xs font-medium">
+                  Cost Analysis
+                </span>
+                <span className="text-slate-400 text-xs">8 min read</span>
+              </div>
+              <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
+                OpenClaw vs Virtual Assistant Cost Comparison 2026
+              </h3>
+              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+                Complete cost breakdown comparing OpenClaw AI agents vs traditional virtual assistants. Calculate ROI and savings.
+              </p>
+              <div className="flex items-center text-orange font-semibold text-sm">
+                Read Guide →
+              </div>
+            </a>
+
+            <a
+              href="/guides/openclaw-enterprise-security-compliance"
+              className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="inline-block bg-blue/10 text-blue px-3 py-1 rounded-full text-xs font-medium">
+                  Security
+                </span>
+                <span className="text-slate-400 text-xs">12 min read</span>
+              </div>
+              <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
+                Enterprise Security & UK Compliance Guide 2026
+              </h3>
+              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+                Complete guide to OpenClaw enterprise security features, UK GDPR compliance, and data protection requirements.
+              </p>
+              <div className="flex items-center text-orange font-semibold text-sm">
+                Read Guide →
+              </div>
+            </a>
+
+            <a
+              href="/guides/openclaw-performance-optimization-guide"
+              className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="inline-block bg-green-500/10 text-green-600 px-3 py-1 rounded-full text-xs font-medium">
+                  Performance
+                </span>
+                <span className="text-slate-400 text-xs">10 min read</span>
+              </div>
+              <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
+                Performance Optimization Guide 2026
+              </h3>
+              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+                Complete guide to optimizing OpenClaw AI agent performance, reducing response times, and maximizing efficiency.
+              </p>
+              <div className="flex items-center text-orange font-semibold text-sm">
+                Read Guide →
+              </div>
+            </a>
+
+            <a
+              href="/guides/openclaw-business-systems-integration"
+              className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="inline-block bg-purple-500/10 text-purple-600 px-3 py-1 rounded-full text-xs font-medium">
+                  Integration
+                </span>
+                <span className="text-slate-400 text-xs">15 min read</span>
+              </div>
+              <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
+                Business Systems Integration Guide 2026
+              </h3>
+              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+                Complete guide to integrating OpenClaw AI agents with CRM, ERP, accounting software, and custom APIs.
+              </p>
+              <div className="flex items-center text-orange font-semibold text-sm">
+                Read Guide →
+              </div>
+            </a>
+          </div>
+
+          <div className="text-center">
+            <a
+              href="/guides"
+              className="inline-flex items-center justify-center bg-navy text-white px-6 py-3 rounded-btn font-semibold text-sm hover:bg-navy/90 transition-all"
+            >
+              View All Guides
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ============ WHY BLUE CANVAS ============ */}
       <section id="why-blue-canvas" className="bg-navy text-white py-24 relative overflow-hidden grain">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue/5 rounded-full blur-[150px]" />
