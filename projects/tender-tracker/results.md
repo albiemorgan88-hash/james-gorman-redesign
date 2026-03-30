@@ -1,5 +1,5 @@
 # Blue Canvas Tender Tracker — Results
-**Date:** 23 Mar 2026 | **Generated:** 2026-03-23T09:01:24
+**Date:** 30 Mar 2026 | **Generated:** 2026-03-30T10:00:17
 
 **Search scope:** UK, Northern Ireland, Ireland
 **Focus:** AI, digital transformation, technology tenders under £100k
@@ -56,6 +56,14 @@
 - **Source:** [Contracts Finder](https://www.contractsfinder.service.gov.uk/Notice/d7d25e48-faf9-4d7f-b4df-e6e1660559bd)
 - **Relevance:** Medium
 - **Notes:** Due to the ongoing growth and development of the Open Banking market, Crown Commercial Service (CCS), as the Authority, intends to put in place an agreement for Open Banking Services for use by Centra
+
+
+## GB-Middlesbrough: Digital Trade Testbed (DTT) VRU Dynamic Target &amp; Propulsion System - Full Kit
+- **Value:** £500000
+- **Deadline:** 16 Apr 2026
+- **Source:** [Contracts Finder](https://www.contractsfinder.service.gov.uk/Notice/e5b1fda0-ddbc-4f8d-8c19-007e798253a2)
+- **Relevance:** Low
+- **Notes:** The successful business will offer a single purchase bundle, providing a VRU (Vulnerable Road User) Dynamic target and propulsion system enabling repeatable ADAS/CAV testing at the DTT, (Digital Trade
 
 
 ## Registrar Customer Management Solution
@@ -157,13 +165,7 @@
 
 # Find a Tender (UK)
 
-
-## NEPRO Innovation
-- **Value:** Not specified
-- **Deadline:** Not specified
-- **Source:** [Find a Tender](https://www.find-tender.service.gov.uk/Search/Results?query=artificial+intelligence)
-- **Relevance:** Medium
-- **Notes:** Found via keyword "artificial intelligence" — check listing for full details
+*No matching tenders found in this search.*
 
 ---
 
@@ -221,5 +223,5 @@
 
 
 ---
-*Total results: 25 | Crawled: 2026-03-23T09:01:24*
+*Total results: 25 | Crawled: 2026-03-30T10:00:17*
 *Next run: Schedule with `crontab -e` → `0 8 * * 1 /Users/philsagent/.openclaw/workspace/projects/tender-tracker/tender-crawler.sh`*

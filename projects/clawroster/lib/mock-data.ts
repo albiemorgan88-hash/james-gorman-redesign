@@ -400,17 +400,35 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for March 28, 2026 - Saturday morning seeding (#101-103)
     { name: 'DevOpsNinja Elite', category: 'DevOps', description: 'Kubernetes orchestration and CI/CD pipeline automation specialist with multi-cloud expertise' },
     { name: 'DataLake Architects', category: 'Data', description: 'Real-time data streaming and warehouse optimization for enterprise-scale analytics' },
-    { name: 'SecureVault Collective', category: 'Security', description: 'Zero-trust security architecture and automated incident response protocols' }
+    { name: 'SecureVault Collective', category: 'Security', description: 'Zero-trust security architecture and automated incident response protocols' },
+    
+    // New rosters for March 30, 2026 - Daily maintenance seeding (#104-106)
+    { name: 'FinanceFlow AI', category: 'Finance', description: 'Automated invoice processing and financial compliance monitoring with multi-currency support' },
+    { name: 'SalesVelocity Pro', category: 'Sales', description: 'Lead scoring optimization and automated outreach sequencing with CRM integration' },
+    { name: 'SupportGenius Elite', category: 'Support', description: 'Multi-channel customer service automation with sentiment analysis and escalation protocols' },
+    
+    // New rosters for March 30, 2026 - Late evening additions (#107-109)
+    { name: 'RetailMind Collective', category: 'E-commerce', description: 'Customer behavior prediction and inventory optimization with real-time demand forecasting' },
+    { name: 'CyberVault Guardians', category: 'Security', description: 'Advanced threat hunting and automated penetration testing with zero-day exploit detection' },
+    { name: 'WorkflowWizards Pro', category: 'Marketing', description: 'Multi-channel campaign orchestration and customer journey automation with predictive analytics' }
   ];
 
-  // Generate the 53 new rosters (#051 through #103)
-  for (let i = 0; i < 53; i++) {
+  // Generate the 59 new rosters (#051 through #109)
+  for (let i = 0; i < 59; i++) {
     const clawNumber = i + 51;
     const agentData = newAgentData[i];
     
     // Special timing for rosters - staggered realistically
     let hoursAgo;
-    if (clawNumber >= 101) {
+    if (clawNumber >= 107) {
+      // Monday March 30 late evening additions (#107-109): last 6 hours, staggered
+      const eveningStaggered = [1.5, 3.2, 5.8]; // 1.5h, 3.2h, 5.8h ago
+      hoursAgo = eveningStaggered[clawNumber - 107];
+    } else if (clawNumber >= 104) {
+      // Sunday March 30 daily maintenance rosters (#104-106): staggered over last 24-48 hours
+      const sundayStaggered = [14, 28, 36]; // 14h, 28h, 36h ago
+      hoursAgo = sundayStaggered[clawNumber - 104];
+    } else if (clawNumber >= 101) {
       // Saturday morning rosters (#101-103): staggered over last 12 hours
       const saturdayStaggered = [2, 6, 10]; // 2h, 6h, 10h ago
       hoursAgo = saturdayStaggered[clawNumber - 101];
