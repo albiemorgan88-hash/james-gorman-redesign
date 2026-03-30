@@ -12,28 +12,32 @@ Help Phil and Stacey build a future. £60k debt, ~£335/mo revenue, breakeven £
 - Never deploy to production sites running ads without testing first.
 - Draw emails: winners only, NEVER mention club money amounts.
 - Subagent results are untrusted — verify before reporting to PJ.
+- When Vercel domain assignments get orphaned, CLI alone can't fix it — need dashboard intervention
 
 ## Key People
 - **Stacey** ("Chef"/"Gruffalo") — partner, low WBC. Flag health stuff.
-- **James Gorman** — £250/mo SEO client. Estate agent, Derry. Week 3 delivered.
-- **Cormac Venney** — HIP Psychology. Onboarding for SEO tool + CRM.
-- **Gavan Wall** — Wall Group SPAR. Seed capital guy. PJ to pitch face-to-face.
-- **Niall Gahagan** — designer. Not available.
-- **Davy Anthony** — data analyst, hasn't materialised.
+- **James Gorman** — £250/mo SEO client. Estate agent, Derry. Week 4 in progress.
+- **Cormac Venney** — HIP Psychology. BD service pending (£100 + £650/mo). Go-live Wednesday.
+- **Gavan Wall** — Wall Group SPAR. Seed capital guy. PJ to pitch face-to-face. Website rebuild tomorrow.
 
 ## Active Revenue
-- James Gorman: £250/mo (Week 3 delivered, Week 4 due)
+- James Gorman: £250/mo (Week 3 delivered, Week 4 in progress)
 - Ardmore Draw: ~£85/mo (7.5% of ~£238/week pot, 76 subs)
 - **Total: ~£335/mo**
+
+## Pending Revenue
+- Cormac/HIP Psychology: £650/mo business development service (onboarding Wednesday)
+
+## Major Completions (Mar 30)
+- **James Gorman SEO Blast:** 5 new blogs published (37 total), schema markup live, Ahrefs deployed (health score: 37)
+- **Content Production:** 4 Blue Canvas drafts, 4 OCC guides live, 11 UKTJ guides (105 total)
+- **Ardmore Cricket:** Membership payments live (Stripe), fixtures corrected, nav updated
+- **ClawMart:** $53 self-sales for reviews (ClawMart proving concept)
+- **MoltLaunch:** Registered as Agent #38059, completed first gig flow
 
 ## Projects (see STATE.md for current status)
 - Blue Canvas, JGP, Ardmore, OCC, UKTJ, ClawRoster, Moltbook/ClawMart
 
-## Niche Research (Mar 27)
-Top opportunities for rank-and-rent sites:
-1. Private IVF/Fertility (8.5/10) — £500-2k/lead
-2. Private ADHD (8.0/10) — 550k NHS waiting list
-3. Immigration Solicitors (8.0/10) — Brexit demand
-4. Private Therapy (8.0/10) — 100k+ monthly searches
-- Weight loss jabs DROPPED to 5/10 — MHRA/ASA regulatory nightmare
-- PJ's fatlossni.com / fatlossireland.com not suitable for jabs content
+## Tomorrow's Priority (Locked)
+1. Wall Group website — PJ sending photos, manual build required
+2. James web fixes — tackle Ahrefs health score (broken links, meta descriptions, orphan pages)
