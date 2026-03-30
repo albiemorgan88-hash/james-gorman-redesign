@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story — The Wall Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #FAFAF8;
+            --text: #1a1a1a;
+            --accent: #00703c;
+            --secondary: #2d2d2d;
+            --divider: #e0e0e0;
+            --gold: #b8860b;
+            --serif: 'Instrument Serif', serif;
+            --sans: 'DM Sans', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--sans);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* NAVIGATION */
+        .nav {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--divider);
+        }
+
+        .nav a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+
+        .nav a:hover {
+            color: var(--accent);
+        }
+
+        /* HEADER */
+        .header {
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: var(--serif);
+            font-size: clamp(3.5rem, 10vw, 6rem);
+            font-weight: 400;
+            letter-spacing: -0.05em;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeInUp 1s ease-out 0.2s forwards;
+        }
+
+        .header .subtitle {
+            font-size: 1.375rem;
+            font-weight: 300;
+            color: var(--secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 0.4s forwards;
+        }
+
+        /* TIMELINE SECTION */
+        .timeline-section {
+            padding: 8rem 0;
+        }
+
+        .section-heading {
+            font-family: var(--serif);
+            font-size: 2.5rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--divider);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .timeline-item:nth-child(odd) {
+            padding-right: 50%;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            padding-left: 50%;
+            text-align: left;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background: var(--gold);
+            border-radius: 50%;
+            border: 3px solid var(--bg);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-date {
+            font-family: var(--serif);
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .timeline-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+
+        .timeline-description {
+            font-size: 1rem;
+            color: var(--secondary);
+            line-height: 1.6;
+        }
+
+        /* COMMUNITY SECTION */
+        .community-section {
+            padding: 8rem 0;
+            border-top: 1px solid var(--divider);
+            border-bottom: 1px solid var(--divider);
+        }
+
+        .community-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .community-content h2 {
+            font-family: var(--serif);
+            font-size: 2.75rem;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .community-content p {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .partnership-box {
+            background: white;
+            padding: 3rem;
+            border: 1px solid var(--divider);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .partnership-box h3 {
+            font-family: var(--serif);
+            font-size: 1.75rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+
+        .partnership-box p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .partnership-box .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        /* PHILOSOPHY SECTION */
+        .philosophy-section {
+            padding: 8rem 0;
+            text-align: center;
+        }
+
+        .philosophy-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .quote-large {
+            font-family: var(--serif);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-style: italic;
+            line-height: 1.3;
+            margin-bottom: 2rem;
+            color: var(--text);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .quote-attribution {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--secondary);
+            letter-spacing: 0.05em;
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .philosophy-text {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: var(--secondary);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        /* FOOTER */
+        .footer {
+            background: white;
+            border-top: 1px solid var(--divider);
+            padding: 4rem 0 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h4 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .footer-column a {
+            display: block;
+            font-size: 0.875rem;
+            color: var(--secondary);
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .footer-column a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--divider);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            font-size: 0.75rem;
+            color: var(--secondary);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-icon {
+            width: 32px;
+            height: 32px;
+            border: 1px solid var(--divider);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: var(--secondary);
+            font-size: 0.75rem;
+        }
+
+        .social-icon:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .timeline::before {
+                left: 1rem;
+            }
+
+            .timeline-item {
+                padding-left: 3rem !important;
+                padding-right: 0 !important;
+                text-align: left !important;
+            }
+
+            .timeline-item::before {
+                left: 1rem;
+                transform: translateX(-50%);
+            }
+
+            .community-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* INTERSECTION OBSERVER FADE-IN */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="container">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="header">
+        <div class="container">
+            <h1>Our Story</h1>
+            <div class="subtitle">From a single phone call to a barrister, to Northern Ireland's most trusted community retail network.</div>
+        </div>
+    </section>
+
+    <!-- TIMELINE SECTION -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2 class="section-heading fade-in">Journey of Growth</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">2008</div>
+                    <div class="timeline-title">The Beginning</div>
+                    <div class="timeline-description">First store — Landscape Filling Station opens on Crumlin Road with just 468 sq ft of space. A leap of faith that would change everything.</div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">2010</div>
+                    <div class="timeline-title">Community Expansion</div>
+                    <div class="timeline-description">SPAR Ardoyne opens, bringing essential services and employment to the heart of North Belfast.</div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">2016</div>
+                    <div class="timeline-title">Innovation in Food</div>
+                    <div class="timeline-description">YoggieBerrie launches on Antrim Road, showcasing our commitment to fresh, innovative food concepts.</div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-title">Building Momentum</div>
+                    <div class="timeline-description">8 stores operational with 140+ team members, establishing ourselves as a cornerstone of Belfast's retail landscape.</div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-title">Major Investment</div>
+                    <div class="timeline-description">Flax EUROSPAR Ardoyne opens — our largest project yet with £4M investment and 7,800 sq ft of community-focused retail space.</div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">2026</div>
+                    <div class="timeline-title">Today & Tomorrow</div>
+                    <div class="timeline-description">12+ stores, 300+ team members, serving 5M+ customers annually across Belfast and Northern Ireland.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY SECTION -->
+    <section class="community-section">
+        <div class="container">
+            <div class="community-grid">
+                <div class="community-content">
+                    <h2 class="fade-in">Building Bridges, Creating Opportunities</h2>
+                    <p class="fade-in" style="transition-delay: 0.1s;">At The Wall Group, we believe business has the power to unite communities. Our cross-community employment approach has created hundreds of opportunities across traditional divides, proving that shared purpose transcends all boundaries.</p>
+                    <p class="fade-in" style="transition-delay: 0.2s;">Every store we open becomes a gathering place where neighbors meet, families shop, and communities thrive. We're not just retailers — we're community builders, creating spaces where everyone belongs.</p>
+                </div>
+                <div class="partnership-box fade-in" style="transition-delay: 0.3s;">
+                    <h3>Partnership with Henderson Group</h3>
+                    <p>Our strategic partnership with <span class="highlight">Henderson Group</span> and <span class="highlight">SPAR Northern Ireland</span> combines our local community focus with world-class retail expertise.</p>
+                    <p>This collaboration enables us to offer premium products, competitive prices, and exceptional service while maintaining our commitment to community-centered retail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHY SECTION -->
+    <section class="philosophy-section">
+        <div class="container">
+            <div class="philosophy-content">
+                <div class="quote-large fade-in">"We're not afraid of failure. We will achieve it."</div>
+                <div class="quote-attribution fade-in" style="transition-delay: 0.1s;">— Gavan Wall, Founder</div>
+                <p class="philosophy-text fade-in" style="transition-delay: 0.2s;">This philosophy drives everything we do. We embrace challenges, learn from setbacks, and never stop pushing forward. Our success isn't measured only in profits, but in the jobs we create, the communities we serve, and the connections we foster across Northern Ireland.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="stores.html">Our Stores</a>
+                    <a href="about.html">Our Story</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Our Brands</h4>
+                    <a href="#">SPAR</a>
+                    <a href="#">EUROSPAR</a>
+                    <a href="#">Subway</a>
+                    <a href="#">Post Office</a>
+                    <a href="#">Wall's Foodhall</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <a href="mailto:marketing@wallgroup.co.uk">marketing@wallgroup.co.uk</a>
+                    <a href="mailto:hello@wallgroup.co.uk">hello@wallgroup.co.uk</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 The Wall Group. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">t</a>
+                    <a href="#" class="social-icon">i</a>
+                    <a href="#" class="social-icon">l</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach((el, index) => {
+            if (!el.style.transitionDelay) {
+                el.style.transitionDelay = `${index * 0.1}s`;
+            }
+            observer.observe(el);
+        });
+
+        // Timeline items get staggered delays
+        document.querySelectorAll('.timeline-item').forEach((el, index) => {
+            el.style.transitionDelay = `${index * 0.2}s`;
+            observer.observe(el);
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

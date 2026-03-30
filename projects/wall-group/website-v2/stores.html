@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Stores — The Wall Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #FAFAF8;
+            --text: #1a1a1a;
+            --accent: #00703c;
+            --secondary: #2d2d2d;
+            --divider: #e0e0e0;
+            --gold: #b8860b;
+            --serif: 'Instrument Serif', serif;
+            --sans: 'DM Sans', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--sans);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* NAVIGATION */
+        .nav {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--divider);
+        }
+
+        .nav a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+
+        .nav a:hover {
+            color: var(--accent);
+        }
+
+        /* HEADER */
+        .header {
+            padding: 6rem 0 4rem;
+            text-align: left;
+        }
+
+        .header h1 {
+            font-family: var(--serif);
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 400;
+            letter-spacing: -0.04em;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeInUp 1s ease-out 0.2s forwards;
+        }
+
+        .header .subtitle {
+            font-size: 1.25rem;
+            font-weight: 300;
+            color: var(--secondary);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 0.4s forwards;
+        }
+
+        /* STORES DIRECTORY */
+        .stores-directory {
+            padding: 2rem 0 6rem;
+        }
+
+        .store-entry {
+            border-bottom: 1px solid var(--divider);
+            padding: 3rem 0;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .store-entry:last-child {
+            border-bottom: none;
+        }
+
+        .store-name {
+            font-family: var(--serif);
+            font-size: 2.25rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.75rem;
+            color: var(--gold);
+        }
+
+        .store-address {
+            font-size: 1rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .store-services {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+
+        .store-hours {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--secondary);
+            letter-spacing: 0.02em;
+        }
+
+        .store-hours strong {
+            color: var(--accent);
+        }
+
+        /* BACK TO TOP */
+        .back-to-top {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .back-to-top a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+        }
+
+        .back-to-top a:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: white;
+            border-top: 1px solid var(--divider);
+            padding: 4rem 0 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h4 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .footer-column a {
+            display: block;
+            font-size: 0.875rem;
+            color: var(--secondary);
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .footer-column a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--divider);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            font-size: 0.75rem;
+            color: var(--secondary);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-icon {
+            width: 32px;
+            height: 32px;
+            border: 1px solid var(--divider);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: var(--secondary);
+            font-size: 0.75rem;
+        }
+
+        .social-icon:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .store-name {
+                font-size: 1.75rem;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* INTERSECTION OBSERVER FADE-IN */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="container">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="header">
+        <div class="container">
+            <h1>Our Stores</h1>
+            <div class="subtitle">12+ locations across Belfast and Northern Ireland</div>
+        </div>
+    </section>
+
+    <!-- STORES DIRECTORY -->
+    <section class="stores-directory">
+        <div class="container">
+            <div class="store-entry fade-in">
+                <div class="store-name">Landscape Filling Station</div>
+                <div class="store-address">135 Crumlin Road, Belfast</div>
+                <div class="store-services">SPAR Store · GO Fuel Station · dailyDeli · Nugelato · Subway · ATM</div>
+                <div class="store-hours"><strong>Open 24 hours, 7 days</strong></div>
+            </div>
+
+            <div class="store-entry fade-in">
+                <div class="store-name">Flax EUROSPAR Ardoyne</div>
+                <div class="store-address">The Flax Centre, Ardoyne Avenue, Belfast</div>
+                <div class="store-services">7,800 sq ft Community Supermarket · Wall's Foodhall & Butchery · FeedMe Deli · Post Office · Off Sales · ATM</div>
+                <div class="store-hours">Mon-Sun: 7:00 AM – 10:00 PM</div>
+            </div>
+
+            <div class="store-entry fade-in">
+                <div class="store-name">SPAR Ardoyne</div>
+                <div class="store-address">27-31 Ardoyne Road, Belfast</div>
+                <div class="store-services">SPAR Store · Subway Restaurant · Post Office · ATM</div>
+                <div class="store-hours">Mon-Sun: 7:00 AM – 10:00 PM</div>
+            </div>
+
+            <div class="store-entry fade-in">
+                <div class="store-name">Rathcoole Filling Station</div>
+                <div class="store-address">42 Doagh Road, Newtownabbey</div>
+                <div class="store-services">SPAR · Daily Deli · Texaco Fuel · Vacuum & Air Machine · ATM</div>
+                <div class="store-hours">Mon-Sun: 6:00 AM – 11:00 PM</div>
+            </div>
+
+            <div class="store-entry fade-in">
+                <div class="store-name">SPAR Whitewell Road</div>
+                <div class="store-address">95 Whitewell Road, Newtownabbey</div>
+                <div class="store-services">Full SPAR Range · Fresh Food Daily · ATM</div>
+                <div class="store-hours">Mon-Sun: 7:00 AM – 10:00 PM</div>
+            </div>
+
+            <div class="store-entry fade-in">
+                <div class="store-name">Subway Fortwilliam</div>
+                <div class="store-address">551 Antrim Road, Belfast</div>
+                <div class="store-services">Subway Restaurant · 20 Seats · Dine In</div>
+                <div class="store-hours">Mon-Sun: 9:00 AM – 6:00 PM</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BACK TO TOP -->
+    <section class="back-to-top">
+        <div class="container">
+            <a href="#top">Back to Top</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="stores.html">Our Stores</a>
+                    <a href="about.html">Our Story</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Our Brands</h4>
+                    <a href="#">SPAR</a>
+                    <a href="#">EUROSPAR</a>
+                    <a href="#">Subway</a>
+                    <a href="#">Post Office</a>
+                    <a href="#">Wall's Foodhall</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <a href="mailto:marketing@wallgroup.co.uk">marketing@wallgroup.co.uk</a>
+                    <a href="mailto:hello@wallgroup.co.uk">hello@wallgroup.co.uk</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 The Wall Group. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">t</a>
+                    <a href="#" class="social-icon">i</a>
+                    <a href="#" class="social-icon">l</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach((el, index) => {
+            el.style.transitionDelay = `${index * 0.1}s`;
+            observer.observe(el);
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

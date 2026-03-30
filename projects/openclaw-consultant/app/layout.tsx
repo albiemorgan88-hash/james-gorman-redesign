@@ -81,6 +81,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* Ahrefs Web Analytics */}
+        <Script src="https://analytics.ahrefs.com/analytics.js" data-key="miZ+v/vaRrt1Cck3Osy4KQ" strategy="afterInteractive" />
       </head>
       <body className="antialiased">
         <Navbar />
