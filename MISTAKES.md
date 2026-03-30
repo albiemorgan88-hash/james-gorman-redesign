@@ -26,3 +26,13 @@
 ## Content
 - No false claims about live content — only report actual deployed changes.
 - PJ expects immediate visible changes, not planning documents.
+
+## Subagent Discipline
+- NEVER spawn unnamed/anonymous subagents. Always use named team: WRITER, SCOUT, HUNTER, DREW, JAMES.
+- See ORG-CHART.md for roles. Every spawn labelled with team member name.
+- Random subagents broke OCC (404) and wasted tokens. This is a fireable offence.
+
+## Vercel Deployment
+- After ANY deploy, verify the live URL returns 200. `curl -s -o /dev/null -w "%{http_code}" [url]`
+- Check Deployment Protection is OFF on all public sites before deploying.
+- If a site goes 404 after deploy: check Deployment Protection FIRST (Settings → General → Deployment Protection).
