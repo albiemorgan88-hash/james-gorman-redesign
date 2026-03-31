@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Canvas AI — AI Consultancy Grows Your Business</title>
+    <meta name="description" content="Blue Canvas helps UK businesses and professionals harness artificial intelligence to increase revenue, streamline operations, and scale smarter. £4M+ client expansion enabled.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blue Canvas AI — AI Consultancy Grows Your Business">
+    <meta property="og:description" content="Blue Canvas helps UK businesses and professionals harness artificial intelligence to increase revenue, streamline operations, and scale smarter. £4M+ client expansion enabled.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bluecanvas.ai">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔧</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Color Palette - Matching Existing Site */
+            --primary-navy: #1b1464;
+            --secondary-navy: #1a237e;
+            --orange-accent: #ff6b35;
+            --coral-accent: #e8734a;
+            --white: #ffffff;
+            --light-grey: #f5f5f7;
+            --text-dark: #1a1a2e;
+            --text-light: rgba(255, 255, 255, 0.9);
+            --text-muted: rgba(255, 255, 255, 0.7);
+            
+            /* Gradient Colors for Soft Blobs */
+            --gradient-peach: #ffb088;
+            --gradient-coral: #ff8a65;
+            --gradient-blue: #5c6bc0;
+            
+            /* Typography */
+            --font-family: 'Plus Jakarta Sans', sans-serif;
+            
+            /* Spacing & Borders */
+            --border-radius: 12px;
+            --border-radius-lg: 16px;
+            --border-radius-sm: 8px;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+        
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 16px 24px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-navy);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--orange-accent);
+        }
+        
+        .cta-button {
+            background: var(--orange-accent);
+            color: white;
+            padding: 12px 24px;
+            border-radius: var(--border-radius-sm);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            background: var(--coral-accent);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .cta-button.secondary {
+            background: transparent;
+            color: var(--orange-accent);
+            border: 2px solid var(--orange-accent);
+        }
+        
+        .cta-button.secondary:hover {
+            background: var(--orange-accent);
+            color: white;
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--text-dark);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: var(--primary-navy);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Soft Gradient Blobs */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 80%;
+            height: 80%;
+            background: radial-gradient(circle at center, 
+                var(--gradient-peach) 0%, 
+                var(--gradient-coral) 40%, 
+                transparent 70%);
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            animation: float1 8s ease-in-out infinite;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -10%;
+            left: -10%;
+            width: 60%;
+            height: 60%;
+            background: radial-gradient(circle at center, 
+                var(--gradient-blue) 0%, 
+                var(--gradient-coral) 50%, 
+                transparent 80%);
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.2;
+            animation: float2 10s ease-in-out infinite reverse;
+        }
+        
+        @keyframes float1 {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -30px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+        
+        @keyframes float2 {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(20px, -40px) scale(1.2); }
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+            z-index: 2;
+            position: relative;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+            color: var(--text-light);
+            margin-bottom: 32px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-cta {
+            margin-bottom: 48px;
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-bottom: 24px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--orange-accent);
+            display: block;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }
+        
+        .trusted-text {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 80px 24px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 64px;
+            color: var(--text-dark);
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #666;
+            max-width: 800px;
+            margin: -32px auto 64px;
+            line-height: 1.6;
+        }
+        
+        /* What We Do Section */
+        .services {
+            background: var(--white);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            padding: 32px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--orange-accent);
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary-navy);
+        }
+        
+        .service-card p {
+            color: #666;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+        
+        .service-price {
+            font-weight: 600;
+            color: var(--orange-accent);
+            font-size: 1.1rem;
+        }
+        
+        /* Results Section */
+        .results {
+            background: var(--light-grey);
+        }
+        
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            text-align: center;
+        }
+        
+        .results .stat-number {
+            font-size: 3rem;
+            color: var(--primary-navy);
+        }
+        
+        .results .stat-label {
+            color: var(--text-dark);
+            font-size: 1rem;
+        }
+        
+        /* How It Works */
+        .how-it-works {
+            background: var(--white);
+        }
+        
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+        
+        .step {
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--orange-accent);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 24px;
+        }
+        
+        .step h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary-navy);
+        }
+        
+        .step p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(135deg, 
+                rgba(255, 177, 136, 0.1) 0%, 
+                rgba(255, 138, 101, 0.1) 50%, 
+                rgba(92, 107, 192, 0.1) 100%);
+            position: relative;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+        
+        .testimonial {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            padding: 32px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 24px;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-navy);
+        }
+        
+        .testimonial-title {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Pricing */
+        .pricing {
+            background: var(--white);
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+        
+        .pricing-card {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            padding: 32px 24px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--orange-accent);
+        }
+        
+        .pricing-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary-navy);
+        }
+        
+        .pricing-card .price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--orange-accent);
+            margin-bottom: 24px;
+        }
+        
+        /* FAQ */
+        .faq {
+            background: var(--light-grey);
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: var(--border-radius);
+            margin-bottom: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .faq-question {
+            padding: 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--primary-navy);
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: #f9f9f9;
+        }
+        
+        .faq-icon {
+            font-size: 1.2rem;
+            font-weight: 300;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .faq-answer-content {
+            padding: 0 24px 24px;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        /* CTA Section */
+        .final-cta {
+            background: var(--primary-navy);
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, 
+                var(--gradient-coral) 0%, 
+                transparent 60%);
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.2;
+        }
+        
+        .final-cta .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .final-cta h2 {
+            color: white;
+            margin-bottom: 16px;
+        }
+        
+        .final-cta p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 32px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #f8f9fa;
+            padding: 48px 24px 32px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary-navy);
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: #666;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+        
+        .footer-section a:hover {
+            color: var(--orange-accent);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 24px;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .services-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .section {
+                padding: 60px 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-cta .cta-button {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .section {
+                padding: 48px 16px;
+            }
+        }
+        
+        /* Smooth reveal animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        /* Intersection Observer styles */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#home" class="logo">Blue Canvas</a>
+            <ul class="nav-links">
+                <li><a href="#services">Team</a></li>
+                <li><a href="#services">Managed Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Case Studies</a></li>
+                <li><a href="#faq">Blog</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Get Started</a>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="animate-on-scroll">AI Consultancy Grows Your Business</h1>
+            <p class="hero-subtitle animate-on-scroll">Blue Canvas helps UK businesses and professionals harness artificial intelligence to increase revenue, streamline operations, and scale smarter. From AI audit to full implementation, we make AI work for you.</p>
+            
+            <div class="hero-cta animate-on-scroll">
+                <a href="#contact" class="cta-button">Book a free consultation</a>
+                <a href="#results" class="cta-button secondary">See Our Results</a>
+            </div>
+            
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat">
+                    <span class="stat-number">£4M+</span>
+                    <div class="stat-label">Client expansion enabled</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4-8 weeks</span>
+                    <div class="stat-label">Typical time to measurable ROI</div>
+                </div>
+            </div>
+            
+            <p class="trusted-text animate-on-scroll">Trusted by businesses across the UK</p>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">AI Solutions for Every Stage of Growth</h2>
+            <p class="section-subtitle animate-on-scroll">Blue Canvas is a UK-based AI consultancy that bridges the gap between artificial intelligence and real business results. Whether you're an SME looking to automate your sales pipeline, a retailer planning expansion, or a professional wanting to future-proof your career, we deliver AI strategies with measurable ROI.</p>
+            
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <h3>AI Strategy & Audits</h3>
+                    <p>We assess where AI can create the most value in your business and deliver a clear, actionable roadmap.</p>
+                    <div class="service-price">Starting at £750</div>
+                </div>
+                
+                <div class="service-card animate-on-scroll">
+                    <h3>Implementation & Automation</h3>
+                    <p>From sales pipeline automation to custom AI tool deployment, we build and integrate the systems that drive growth.</p>
+                    <div class="service-price">Custom quoted</div>
+                </div>
+                
+                <div class="service-card animate-on-scroll">
+                    <h3>Training & Academy</h3>
+                    <p>We upskill your team so AI capability stays in-house long after we leave.</p>
+                    <div class="service-price">From £250</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="section results" id="results">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Real Results, Backed by Data</h2>
+            
+            <div class="results-grid">
+                <div class="stat animate-on-scroll">
+                    <span class="stat-number">£4M+</span>
+                    <div class="stat-label">Client expansion enabled</div>
+                </div>
+                
+                <div class="stat animate-on-scroll">
+                    <span class="stat-number">50</span>
+                    <div class="stat-label">New jobs created</div>
+                </div>
+                
+                <div class="stat animate-on-scroll">
+                    <span class="stat-number">4-8 weeks</span>
+                    <div class="stat-label">typical time to measurable ROI</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">How It Works</h2>
+            
+            <div class="steps-grid">
+                <div class="step animate-on-scroll">
+                    <div class="step-number">1</div>
+                    <h3>Discovery Call</h3>
+                    <p>We learn about your business, challenges, and goals in a free consultation.</p>
+                </div>
+                
+                <div class="step animate-on-scroll">
+                    <div class="step-number">2</div>
+                    <h3>AI Audit & Strategy</h3>
+                    <p>We conduct a thorough analysis and identify the highest-impact AI opportunities.</p>
+                </div>
+                
+                <div class="step animate-on-scroll">
+                    <div class="step-number">3</div>
+                    <h3>Build & Implement</h3>
+                    <p>Our team deploys the AI tools and automations your business needs.</p>
+                </div>
+                
+                <div class="step animate-on-scroll">
+                    <div class="step-number">4</div>
+                    <h3>Train & Support</h3>
+                    <p>We train your team to use and maintain everything we build.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Trusted by Businesses Across the UK</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial animate-on-scroll">
+                    <p class="testimonial-text">"A game changer for our agency! Blue Canvas AI helped us integrate AI tools that streamlined our workflows, improved campaign performance, and saved us hours every week."</p>
+                    <div class="testimonial-author">— Stuart Waters</div>
+                </div>
+                
+                <div class="testimonial animate-on-scroll">
+                    <p class="testimonial-text">"Phil Patterson and his team were great to deal with. Their knowledge of process optimisation and ability to identify opportunities for automation was first class."</p>
+                    <div class="testimonial-author">— Kyle Martin</div>
+                </div>
+                
+                <div class="testimonial animate-on-scroll">
+                    <p class="testimonial-text">"Blue Canvas's AI expertise gave us the confidence and insight to expand our business successfully."</p>
+                    <div class="testimonial-author">— Gavan Wall</div>
+                    <div class="testimonial-title">CEO, The Wall Group</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Simple, Transparent Pricing</h2>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card animate-on-scroll">
+                    <h3>AI Consultation</h3>
+                    <div class="price">Free</div>
+                    <a href="#contact" class="cta-button">Book Now</a>
+                </div>
+                
+                <div class="pricing-card animate-on-scroll">
+                    <h3>AI Audit</h3>
+                    <div class="price">£750</div>
+                    <a href="#contact" class="cta-button">Get Started</a>
+                </div>
+                
+                <div class="pricing-card animate-on-scroll">
+                    <h3>Academy</h3>
+                    <div class="price">£250</div>
+                    <a href="#contact" class="cta-button">Learn More</a>
+                </div>
+                
+                <div class="pricing-card animate-on-scroll">
+                    <h3>Mentoring</h3>
+                    <div class="price">£50/mo</div>
+                    <a href="#contact" class="cta-button">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        What is an AI audit and do I need one?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            An AI audit is a deep-dive assessment of your business operations, identifying where artificial intelligence can save you time, reduce costs, or increase revenue. If you're curious about AI but unsure where to start, an audit gives you a clear, jargon-free roadmap. It's the smartest first step before committing to any AI investment.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        How long does it take to see results from AI implementation?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            It depends on scope, but most clients see measurable improvements within 4-8 weeks. Quick wins like automated lead generation can deliver ROI in days. Larger projects like predictive analytics take longer but produce compounding returns.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        Do I need technical knowledge to work with Blue Canvas?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Not at all. We handle the technical side and translate everything into plain language. Our Academy programmes build your confidence with AI tools regardless of your starting point.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        What industries do you work with?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We work across retail, professional services, healthcare, hospitality, construction, legal, and more. AI is industry-agnostic. If your business has data, processes, or customer interactions, there are AI opportunities we can unlock.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        What is the Blue Canvas Academy?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            The Academy is our training arm. For individuals: a structured programme teaching you to use AI tools effectively, priced at £250. For businesses: team upskilling at the same price. Graduates continue learning through our mentoring membership at £50/month.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        How is Blue Canvas different from other AI consultancies?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We're practitioner-led, not theory-led. Our founder Phil Patterson has hands-on experience in venture capital, blockchain, and AI implementation. We don't just hand you a strategy deck and leave — we build, implement, and train your team so AI capability stays with your business.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section final-cta" id="contact">
+        <div class="container">
+            <h2 class="animate-on-scroll">Start With a Free Consultation</h2>
+            <p class="animate-on-scroll">Not sure if an AI audit is right for you? Book a 30-minute call.</p>
+            <a href="#contact" class="cta-button animate-on-scroll" style="font-size: 1.1rem; padding: 16px 32px;">Book Your Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Blue Canvas AI</h3>
+                <p>AI consultancy helping UK businesses harness artificial intelligence for measurable growth.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#services">Home</a></p>
+                <p><a href="#services">About</a></p>
+                <p><a href="#services">Services</a></p>
+                <p><a href="#testimonials">Case Studies</a></p>
+                <p><a href="#faq">Blog</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>22c Spacehub, Balliniska Road<br>Derry BT48 0NA</p>
+                <p><a href="mailto:hello@bluecanvas.ai">hello@bluecanvas.ai</a></p>
+                <p><a href="tel:07849071946">07849 071946</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Company</h3>
+                <p>Company No. NI737502</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Blue Canvas AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll for all anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const navHeight = document.querySelector('.nav').offsetHeight;
+                        const targetPosition = target.offsetTop - navHeight;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Navigation background on scroll
+            const nav = document.getElementById('nav');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+            
+            // FAQ accordion functionality
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', function() {
+                    const faqItem = this.parentNode;
+                    const isActive = faqItem.classList.contains('active');
+                    
+                    // Close all FAQ items
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    
+                    // Open clicked item if it wasn't active
+                    if (!isActive) {
+                        faqItem.classList.add('active');
+                    }
+                });
+            });
+            
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all elements with animate-on-scroll class
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Mobile menu toggle (basic functionality)
+            const mobileToggle = document.getElementById('mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            mobileToggle.addEventListener('click', function() {
+                if (navLinks.style.display === 'flex') {
+                    navLinks.style.display = 'none';
+                } else {
+                    navLinks.style.display = 'flex';
+                    navLinks.style.flexDirection = 'column';
+                    navLinks.style.position = 'absolute';
+                    navLinks.style.top = '100%';
+                    navLinks.style.left = '0';
+                    navLinks.style.right = '0';
+                    navLinks.style.background = 'white';
+                    navLinks.style.padding = '20px';
+                    navLinks.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+                }
+            });
+            
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.style.display = 'none';
+                });
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!nav.contains(event.target)) {
+                    navLinks.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

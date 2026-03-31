@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Gorman Property - Local Homes, Modern Marketing | Derry's Premier Estate Agent</title>
+    <meta name="description" content="Derry's premier estate agent with 4.9-star reviews. Sales, lettings, and property management across Derry, Limavady, Eglinton & Dungiven. 20+ years expertise.">
+    <meta name="keywords" content="estate agent Derry, property sales Derry, lettings Derry, property management, James Gorman Property, Northern Ireland estate agent">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="James Gorman Property - Local Homes, Modern Marketing">
+    <meta property="og:description" content="Derry's premier estate agent with 4.9-star reviews. 20+ years expertise in sales, lettings, and property management.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jamesgormanproperty.com">
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-dark: #0d1117;
+            --navy-accent: #1a2744;
+            --coral-accent: #d4775c;
+            --gold-accent: #c9a96e;
+            --white: #ffffff;
+            --grey-100: #f8f9fa;
+            --grey-200: #e9ecef;
+            --grey-400: #6c757d;
+            --grey-600: #495057;
+            --grey-800: #343a40;
+            
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'DM Sans', sans-serif;
+            
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.15);
+            --shadow-hard: 0 8px 40px rgba(0, 0, 0, 0.25);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            background: var(--primary-dark);
+            color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Grain texture overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 1px 1px, rgba(255,255,255,0.03) 1px, transparent 0);
+            background-size: 20px 20px;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem 2rem;
+            background: rgba(13, 17, 23, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 100;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .navbar.scrolled {
+            background: rgba(13, 17, 23, 0.98);
+            padding: 0.75rem 2rem;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .logo:hover {
+            color: var(--coral-accent);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-menu a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--coral-accent);
+            transition: var(--transition);
+        }
+        
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+        
+        /* Mobile menu */
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+        
+        .mobile-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--white);
+            transition: var(--transition);
+        }
+        
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            background: var(--primary-dark);
+            padding: 2rem;
+            transition: var(--transition);
+            z-index: 99;
+        }
+        
+        .mobile-menu.active {
+            right: 0;
+        }
+        
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+        
+        .mobile-close {
+            font-size: 2rem;
+            color: var(--white);
+            cursor: pointer;
+        }
+        
+        .mobile-menu-list {
+            list-style: none;
+        }
+        
+        .mobile-menu-list li {
+            margin-bottom: 2rem;
+        }
+        
+        .mobile-menu-list a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--navy-accent) 100%);
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(45deg, transparent 30%, rgba(212, 119, 92, 0.1) 50%, transparent 70%),
+                radial-gradient(ellipse at 30% 70%, rgba(201, 169, 110, 0.15) 0%, transparent 50%);
+            z-index: 1;
+        }
+        
+        /* Architectural shapes */
+        .hero-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 2;
+        }
+        
+        .shape {
+            position: absolute;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        .shape-1 {
+            width: 200px;
+            height: 300px;
+            top: 20%;
+            left: 10%;
+            transform: rotate(15deg);
+            animation-delay: 0s;
+        }
+        
+        .shape-2 {
+            width: 150px;
+            height: 250px;
+            top: 60%;
+            right: 15%;
+            transform: rotate(-20deg);
+            animation-delay: 5s;
+        }
+        
+        .shape-3 {
+            width: 100px;
+            height: 180px;
+            bottom: 30%;
+            left: 70%;
+            transform: rotate(10deg);
+            animation-delay: 10s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(var(--rotate)); }
+            50% { transform: translateY(-20px) rotate(var(--rotate)); }
+        }
+        
+        .hero-content {
+            text-align: center;
+            z-index: 10;
+            position: relative;
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .hero-badge .stars {
+            color: var(--gold-accent);
+        }
+        
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--white) 0%, var(--coral-accent) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: slideInUp 1s ease-out;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            color: var(--grey-200);
+            margin-bottom: 3rem;
+            animation: slideInUp 1s ease-out 0.2s both;
+        }
+        
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: slideInUp 1s ease-out 0.4s both;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--coral-accent) 0%, #e8806a 100%);
+            color: var(--white);
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hard);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        /* Sections */
+        .section {
+            padding: 6rem 2rem;
+            position: relative;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--white) 0%, var(--coral-accent) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--grey-200);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* About Section */
+        .about {
+            background: linear-gradient(135deg, var(--navy-accent) 0%, var(--primary-dark) 100%);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-highlight {
+            background: rgba(212, 119, 92, 0.1);
+            border-left: 3px solid var(--coral-accent);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--coral-accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--grey-200);
+        }
+        
+        /* Services Section */
+        .services {
+            background: var(--primary-dark);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, rgba(26, 39, 68, 0.8) 0%, rgba(13, 17, 23, 0.8) 100%);
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(212, 119, 92, 0.05) 0%, transparent 50%);
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hard);
+        }
+        
+        .service-card:hover::before {
+            opacity: 1;
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--coral-accent) 0%, var(--gold-accent) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .service-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .service-description {
+            color: var(--grey-200);
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            background: linear-gradient(135deg, var(--navy-accent) 0%, var(--primary-dark) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonials-container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            position: relative;
+        }
+        
+        .testimonial-quote {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--coral-accent) 0%, var(--gold-accent) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .author-name {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .author-role {
+            font-size: 0.9rem;
+            color: var(--grey-400);
+        }
+        
+        .testimonial-stars {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            color: var(--gold-accent);
+            font-size: 1.2rem;
+        }
+        
+        /* Areas Section */
+        .areas {
+            background: var(--primary-dark);
+        }
+        
+        .areas-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .areas-map {
+            position: relative;
+            height: 400px;
+            background: linear-gradient(135deg, var(--navy-accent) 0%, rgba(26, 39, 68, 0.5) 100%);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .map-placeholder {
+            text-align: center;
+            color: var(--grey-200);
+        }
+        
+        .areas-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        .area-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .area-item:hover {
+            background: rgba(212, 119, 92, 0.1);
+            border-color: var(--coral-accent);
+        }
+        
+        .area-code {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--coral-accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        .area-name {
+            color: var(--grey-200);
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, var(--navy-accent) 0%, var(--primary-dark) 100%);
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--coral-accent) 0%, var(--gold-accent) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        
+        .contact-details h4 {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact-details p {
+            color: var(--grey-200);
+            font-size: 0.9rem;
+        }
+        
+        .contact-cta {
+            text-align: center;
+        }
+        
+        .valuation-form {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+        }
+        
+        .valuation-form h3 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .valuation-form p {
+            text-align: center;
+            color: var(--grey-200);
+            margin-bottom: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            color: var(--white);
+            font-family: var(--font-body);
+        }
+        
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--grey-400);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--coral-accent);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--primary-dark);
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+        
+        .footer-section h4 {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--coral-accent);
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: var(--grey-200);
+            text-decoration: none;
+            line-height: 1.8;
+        }
+        
+        .footer-section a:hover {
+            color: var(--white);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background: var(--coral-accent);
+            transform: translateY(-2px);
+        }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 3rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: var(--grey-400);
+        }
+        
+        /* Back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--coral-accent) 0%, var(--gold-accent) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.2rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 50;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hard);
+        }
+        
+        /* Animation classes */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: var(--transition);
+        }
+        
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .stagger-1 { transition-delay: 0.1s; }
+        .stagger-2 { transition-delay: 0.2s; }
+        .stagger-3 { transition-delay: 0.3s; }
+        .stagger-4 { transition-delay: 0.4s; }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 1rem;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-toggle {
+                display: flex;
+            }
+            
+            .hero-ctas {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .about-content,
+            .contact-content,
+            .areas-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .areas-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .section {
+                padding: 4rem 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .service-card,
+            .testimonial-card,
+            .contact-info,
+            .valuation-form {
+                padding: 1.5rem;
+            }
+            
+            .btn {
+                padding: 0.75rem 1.5rem;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">James Gorman Property</a>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#areas">Areas</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="#" class="logo">James Gorman Property</a>
+            <div class="mobile-close" id="mobile-close">&times;</div>
+        </div>
+        <ul class="mobile-menu-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#areas">Areas</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-shapes">
+            <div class="shape shape-1" style="--rotate: 15deg;"></div>
+            <div class="shape shape-2" style="--rotate: -20deg;"></div>
+            <div class="shape shape-3" style="--rotate: 10deg;"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="stars">★★★★★</span>
+                <span>4.9 Stars on Trustpilot</span>
+            </div>
+            
+            <h1 class="hero-title">Local Homes, Modern Marketing</h1>
+            
+            <p class="hero-subtitle">
+                Derry's estate agent who does things differently. 20+ years of expertise meets cutting-edge marketing for results that speak for themselves.
+            </p>
+            
+            <div class="hero-ctas">
+                <a href="#contact" class="btn btn-primary">Sell My Home</a>
+                <a href="#contact" class="btn btn-secondary">What's My Home Worth?</a>
+                <a href="#services" class="btn btn-secondary">Search Homes</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title fade-in-up">Meet James Gorman</h2>
+                    
+                    <p class="fade-in-up stagger-1">Originally from Essex with 20+ years in property across East London and surrounding areas, James brings a wealth of experience from traditional high street agencies to online hybrid leaders and the new build sector.</p>
+                    
+                    <p class="fade-in-up stagger-2">After working in Belfast, James settled in Derry 9 years ago, bringing his diverse background and unique blend of knowledge and dedication to Northern Ireland's property market.</p>
+                    
+                    <div class="about-highlight fade-in-up stagger-3">
+                        <p><strong>Exclusive Access:</strong> James currently has exclusive access to Merchant's View — Derry City's most anticipated new build development.</p>
+                    </div>
+                    
+                    <p class="fade-in-up stagger-4">This isn't just another estate agency. It's modern property marketing with the personal touch that comes from decades of experience and genuine local knowledge.</p>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card fade-in-up stagger-1">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card fade-in-up stagger-2">
+                        <div class="stat-number">4.9</div>
+                        <div class="stat-label">Trustpilot Rating</div>
+                    </div>
+                    <div class="stat-card fade-in-up stagger-3">
+                        <div class="stat-number">9</div>
+                        <div class="stat-label">Years in Derry</div>
+                    </div>
+                    <div class="stat-card fade-in-up stagger-4">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">No Sale, No Fee</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title fade-in-up">Premium Services</h2>
+                <p class="section-subtitle fade-in-up">Four pillars of exceptional property service, tailored to your needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in-up stagger-1">
+                    <div class="service-icon">📷</div>
+                    <h3 class="service-title">Marketing Package</h3>
+                    <p class="service-description">Upfront fee service including walk-through video, professional photography, room measurements, JGP board, and comprehensive listing across PropertyPal, our website, and all social media channels (Facebook, Instagram, TikTok).</p>
+                </div>
+                
+                <div class="service-card fade-in-up stagger-2">
+                    <div class="service-icon">🏠</div>
+                    <h3 class="service-title">Lettings</h3>
+                    <p class="service-description">Complete tenant management including meeting prospective tenants, obtaining references and photo ID, preparing tenancy agreements, and collecting first month's rent and deposit credited directly to the landlord.</p>
+                </div>
+                
+                <div class="service-card fade-in-up stagger-3">
+                    <div class="service-icon">💼</div>
+                    <h3 class="service-title">Residential Sales</h3>
+                    <p class="service-description">Full-service sales including handling all enquiries, accompanied viewings (evenings and weekends), direct communication beyond 9-5, instant feedback after viewings, offer negotiations, and solicitor updates until completion. <strong>No fees if property doesn't sell.</strong></p>
+                </div>
+                
+                <div class="service-card fade-in-up stagger-4">
+                    <div class="service-icon">🔑</div>
+                    <h3 class="service-title">Property Management</h3>
+                    <p class="service-description">Premium service combining all marketing and lettings services, plus periodic inspection reports, rental payment handling, TDS deposit registration, meter readings, and key handover on moving day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container testimonials-container">
+            <div class="section-header">
+                <h2 class="section-title fade-in-up">What Clients Say</h2>
+                <p class="section-subtitle fade-in-up">4.9-star reviews from real clients who experienced the difference</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in-up stagger-1">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"1st Class service and experience. As a first time landlady looking to rent out my family home, James came highly recommended. From the first meeting to the high class marketing experience, to securing perfect tenants within one week, the process was seamless."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">FL</div>
+                        <div>
+                            <div class="author-name">First-time Landlord</div>
+                            <div class="author-role">Verified Trustpilot Review</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in-up stagger-2">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"Making dreams come true! James worked with us in selling our beloved home and in buying our dream home. He has a wealth of experience and knowledge, is a skilled and subtle negotiator and most importantly - a kind, engaging and friendly human being."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">HB</div>
+                        <div>
+                            <div class="author-name">Home Buyer & Seller</div>
+                            <div class="author-role">Verified Trustpilot Review</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in-up stagger-3">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"My house was on the market for over a year with a reputable estate agent in the city. I decided to freshen things up and give James a try. He had the house sold in less than a few weeks. A professional agent and a pleasure to work with."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">HS</div>
+                        <div>
+                            <div class="author-name">Home Seller</div>
+                            <div class="author-role">Verified Trustpilot Review</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in-up stagger-4">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"James was professional, responsive, and always willing to help. As a first-time buyer in Northern Ireland, the process could have been stressful, but James made everything clear and kept communication smooth."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">FB</div>
+                        <div>
+                            <div class="author-name">First-time Buyer</div>
+                            <div class="author-role">Verified Trustpilot Review</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in-up stagger-1">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"Best agent in Derry, hands down! We were really struggling with finding a rental property and jumping through all sorts of hoops with other agencies."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div>
+                            <div class="author-name">Renter</div>
+                            <div class="author-role">Verified Trustpilot Review</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Areas Section -->
+    <section class="areas section" id="areas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title fade-in-up">Areas We Cover</h2>
+                <p class="section-subtitle fade-in-up">Comprehensive property services across Northern Ireland</p>
+            </div>
+            
+            <div class="areas-content">
+                <div class="areas-map fade-in-up">
+                    <div class="map-placeholder">
+                        <h3>Northern Ireland Coverage Map</h3>
+                        <p>Serving BT47, BT48, BT49, BT51, BT55, BT56, BT82</p>
+                    </div>
+                </div>
+                
+                <div class="areas-list">
+                    <div class="area-item fade-in-up stagger-1">
+                        <div class="area-code">BT47</div>
+                        <div class="area-name">Derry City</div>
+                    </div>
+                    <div class="area-item fade-in-up stagger-2">
+                        <div class="area-code">BT48</div>
+                        <div class="area-name">Derry Rural</div>
+                    </div>
+                    <div class="area-item fade-in-up stagger-3">
+                        <div class="area-code">BT49</div>
+                        <div class="area-name">Limavady</div>
+                    </div>
+                    <div class="area-item fade-in-up stagger-4">
+                        <div class="area-code">BT51</div>
+                        <div class="area-name">Eglinton</div>
+                    </div>
+                    <div class="area-item fade-in-up stagger-1">
+                        <div class="area-code">BT55</div>
+                        <div class="area-name">Dungiven</div>
+                    </div>
+                    <div class="area-item fade-in-up stagger-2">
+                        <div class="area-code">BT56</div>
+                        <div class="area-name">Extended Areas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title fade-in-up">Get In Touch</h2>
+                <p class="section-subtitle fade-in-up">Ready to experience the difference? Let's talk about your property needs</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info fade-in-up">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Call James Direct</h4>
+                            <p>07786 910 768</p>
+                            <p>028 7161 0402</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>james@jamesgormanproperty.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>12 Clearwater</p>
+                            <p>Derry/Londonderry, BT47 6BE</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🎵</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                    
+                    <div class="contact-cta">
+                        <a href="tel:07786910768" class="btn btn-primary">Call Now</a>
+                    </div>
+                </div>
+                
+                <div class="valuation-form fade-in-up">
+                    <h3>Free Property Valuation</h3>
+                    <p>Get an accurate, no-obligation valuation of your property today</p>
+                    
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="07XXX XXX XXX" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Property Address</label>
+                            <input type="text" id="address" name="address" placeholder="Full property address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your property or any specific requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Get Free Valuation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>James Gorman Property</h4>
+                <p>Local Homes, Modern Marketing</p>
+                <p>12 Clearwater<br>Derry/Londonderry, BT47 6BE</p>
+                <p>Phone: 07786 910 768 / 028 7161 0402</p>
+                <p>Email: james@jamesgormanproperty.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <p><a href="#services">Marketing Package</a></p>
+                <p><a href="#services">Lettings</a></p>
+                <p><a href="#services">Residential Sales</a></p>
+                <p><a href="#services">Property Management</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Coverage Areas</h4>
+                <p>Serving Derry, Limavady, Eglinton & Dungiven</p>
+                <p>BT47, BT48, BT49, BT51, BT55, BT56, BT82</p>
+                <p>Listed on PropertyPal & Propertynews</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🎵</a>
+                    <a href="#" class="social-link">💼</a>
+                </div>
+                <p style="margin-top: 1rem;">★★★★★ 4.9 Stars on Trustpilot</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 James Gorman Property. All rights reserved. | No Sale, No Fee Guarantee</p>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="back-to-top">↑</a>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            const backToTop = document.getElementById('back-to-top');
+            
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                backToTop.classList.add('visible');
+            } else {
+                navbar.classList.remove('scrolled');
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileClose = document.getElementById('mobile-close');
+        
+        mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        mobileClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close mobile menu on link click
+        document.querySelectorAll('.mobile-menu-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simple validation
+            if (!data.name || !data.email || !data.phone || !data.address) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Here you would typically send the data to your backend
+            // For now, we'll just show a success message
+            alert('Thank you for your enquiry! James will be in touch within 24 hours to arrange your free property valuation.');
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Add some dynamic effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add loading animation to service cards
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+            });
+            
+            // Add parallax effect to hero shapes
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const shapes = document.querySelectorAll('.shape');
+                
+                shapes.forEach((shape, index) => {
+                    const speed = (index + 1) * 0.2;
+                    shape.style.transform = `translateY(${scrolled * speed}px) rotate(${shape.style.getPropertyValue('--rotate')})`;
+                });
+            });
+        });
+        
+        // Add typing effect to hero subtitle (subtle enhancement)
+        const subtitle = document.querySelector('.hero-subtitle');
+        const originalText = subtitle.textContent;
+        
+        function typeText() {
+            subtitle.textContent = '';
+            let i = 0;
+            
+            const typing = setInterval(() => {
+                if (i < originalText.length) {
+                    subtitle.textContent += originalText.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(typing);
+                }
+            }, 30);
+        }
+        
+        // Start typing effect after page loads
+        setTimeout(typeText, 1500);
+    </script>
+</body>
+</html>
