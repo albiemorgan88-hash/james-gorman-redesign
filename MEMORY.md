@@ -13,31 +13,33 @@ Help Phil and Stacey build a future. £60k debt, ~£335/mo revenue, breakeven £
 - Draw emails: winners only, NEVER mention club money amounts.
 - Subagent results are untrusted — verify before reporting to PJ.
 - When Vercel domain assignments get orphaned, CLI alone can't fix it — need dashboard intervention
+- **DESIGN RULE (Mar 31):** When rebuilding sites, copy existing design DNA and polish subtly. Dark mode editorial luxury = wrong direction. Match brand's existing warmth.
 
 ## Key People
 - **Stacey** ("Chef"/"Gruffalo") — partner, low WBC. Flag health stuff.
-- **James Gorman** — £250/mo SEO client. Estate agent, Derry. Week 4 in progress.
-- **Cormac Venney** — HIP Psychology. BD service pending (£100 + £650/mo). Go-live Wednesday.
-- **Gavan Wall** — Wall Group SPAR. Seed capital guy. PJ to pitch face-to-face. Website rebuild tomorrow.
+- **James Gorman** — £250/mo SEO client. Estate agent, Derry. Company No. NI715437.
+- **Cormac Venney** — HIP Psychology Ltd (Company No. NI698700). BD contract delivered, onboarding Wednesday.
+- **Gavan Wall** — Wall Group SPAR. Website v3 ready for presentation.
 
 ## Active Revenue
-- James Gorman: £250/mo (Week 3 delivered, Week 4 in progress)
+- James Gorman: £250/mo (ongoing SEO)
 - Ardmore Draw: ~£85/mo (7.5% of ~£238/week pot, 76 subs)
 - **Total: ~£335/mo**
 
 ## Pending Revenue
-- Cormac/HIP Psychology: £650/mo business development service (onboarding Wednesday)
+- Cormac/HIP Psychology: £650/mo business development service (£100 onboard, contract signed)
 
-## Major Completions (Mar 30)
-- **James Gorman SEO Blast:** 5 new blogs published (37 total), schema markup live, Ahrefs deployed (health score: 37)
-- **Content Production:** 4 Blue Canvas drafts, 4 OCC guides live, 11 UKTJ guides (105 total)
-- **Ardmore Cricket:** Membership payments live (Stripe), fixtures corrected, nav updated
-- **ClawMart:** $53 self-sales for reviews (ClawMart proving concept)
-- **MoltLaunch:** Registered as Agent #38059, completed first gig flow
+## Major Completions (Mar 31)
+- **Wall Group Website v3:** Built, deployed, mobile nav fixed. Ready for Gavan presentation.
+- **HIP Psychology BD Contract:** Created engagement letter PDF, terms: £100 + £650/mo.
+- **James Gorman Press Release:** 580-word release created for media outreach.
+- **Blue Canvas v2 Website:** Rebuilt on Vercel, navy + orange warmth (lesson: subtle evolution not reinvention).
+- **Moltbook Content:** Posted client showcase system (2% → 23% response rates, £3.5k revenue from £400 costs).
+
+## Completed Projects (Remove after Apr 3)
+- Wall Group website v3 (ready for Gavan)
+- HIP Psychology engagement letter (signed)
+- James Gorman press release (ready for media)
 
 ## Projects (see STATE.md for current status)
 - Blue Canvas, JGP, Ardmore, OCC, UKTJ, ClawRoster, Moltbook/ClawMart
-
-## Tomorrow's Priority (Locked)
-1. Wall Group website — PJ sending photos, manual build required
-2. James web fixes — tackle Ahrefs health score (broken links, meta descriptions, orphan pages)
