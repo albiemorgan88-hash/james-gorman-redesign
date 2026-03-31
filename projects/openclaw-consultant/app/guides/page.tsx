@@ -26,6 +26,34 @@ export const metadata: Metadata = {
 
 const guides = [
   {
+    title: "AI Automation ROI Calculator: How to Measure Your Investment",
+    description: "Complete guide to calculating AI automation ROI with formulas, examples, and frameworks. Measure cost savings, productivity gains, and business impact of OpenClaw deployments.",
+    href: "/guides/ai-automation-roi-calculator",
+    category: "ROI & Business Case",
+    readTime: "12 min read"
+  },
+  {
+    title: "OpenClaw vs Zapier vs Make: Which Automation Platform is Right for Your Business?",
+    description: "Complete comparison of OpenClaw, Zapier, and Make.com automation platforms. Features, pricing, capabilities, and use cases to help UK businesses choose the right solution.",
+    href: "/guides/openclaw-vs-zapier-vs-make",
+    category: "Platform Comparison",
+    readTime: "15 min read"
+  },
+  {
+    title: "AI Customer Service Automation: Complete UK Business Guide",
+    description: "Complete guide to automating customer service with AI for UK businesses. WhatsApp, email, chat automation, GDPR compliance, and proven implementation strategies.",
+    href: "/guides/ai-customer-service-automation-uk",
+    category: "Customer Service",
+    readTime: "18 min read"
+  },
+  {
+    title: "How to Automate Your Accounts & Bookkeeping with AI",
+    description: "Complete guide to automating accounts and bookkeeping with AI for UK businesses. Invoice processing, expense management, VAT compliance, and Making Tax Digital integration.",
+    href: "/guides/automate-accounts-bookkeeping-ai",
+    category: "Finance & Accounting",
+    readTime: "20 min read"
+  },
+  {
     title: "OpenClaw vs Virtual Assistant Cost Comparison 2026",
     description: "Complete cost breakdown comparing OpenClaw AI agents vs traditional virtual assistants. Calculate ROI, setup costs, and monthly savings for UK businesses.",
     href: "/guides/openclaw-vs-virtual-assistant-cost",
