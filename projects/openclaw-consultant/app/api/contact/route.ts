@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: "OpenClaw Consultant <draws@ardmorecricket.com>",
+          from: "OpenClaw Consultant <contact@bluecanvas.ai>",
           to: ["contact@bluecanvas.ai", "philpatterson85@gmail.com"],
           subject: `New OCC Enquiry: ${name}${company ? ` (${company})` : ""}`,
           html: `
