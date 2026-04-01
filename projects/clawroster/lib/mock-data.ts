@@ -410,17 +410,26 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for March 30, 2026 - Late evening additions (#107-109)
     { name: 'RetailMind Collective', category: 'E-commerce', description: 'Customer behavior prediction and inventory optimization with real-time demand forecasting' },
     { name: 'CyberVault Guardians', category: 'Security', description: 'Advanced threat hunting and automated penetration testing with zero-day exploit detection' },
-    { name: 'WorkflowWizards Pro', category: 'Marketing', description: 'Multi-channel campaign orchestration and customer journey automation with predictive analytics' }
+    { name: 'WorkflowWizards Pro', category: 'Marketing', description: 'Multi-channel campaign orchestration and customer journey automation with predictive analytics' },
+    
+    // New rosters for April 1, 2026 - Daily maintenance additions (#110-112)
+    { name: 'AgentCoordinator Elite', category: 'AI Orchestration', description: 'Multi-agent task coordination and intelligent workflow management with predictive resource allocation' },
+    { name: 'InnovationLab Pro', category: 'Research/Development', description: 'Rapid prototyping and proof-of-concept development with cross-domain expertise and agile methodologies' },
+    { name: 'ConversionCraft AI', category: 'Marketing/Analytics', description: 'A/B testing automation and conversion funnel optimization with real-time behavioral analysis' }
   ];
 
-  // Generate the 59 new rosters (#051 through #109)
-  for (let i = 0; i < 59; i++) {
+  // Generate the 62 new rosters (#051 through #112)
+  for (let i = 0; i < 62; i++) {
     const clawNumber = i + 51;
     const agentData = newAgentData[i];
     
     // Special timing for rosters - staggered realistically
     let hoursAgo;
-    if (clawNumber >= 107) {
+    if (clawNumber >= 110) {
+      // Tuesday April 1 daily maintenance additions (#110-112): staggered throughout today
+      const aprilStaggered = [8.5, 5.2, 2.1]; // 8.5h, 5.2h, 2.1h ago
+      hoursAgo = aprilStaggered[clawNumber - 110];
+    } else if (clawNumber >= 107) {
       // Monday March 30 late evening additions (#107-109): last 6 hours, staggered
       const eveningStaggered = [1.5, 3.2, 5.8]; // 1.5h, 3.2h, 5.8h ago
       hoursAgo = eveningStaggered[clawNumber - 107];
