@@ -1,0 +1,168 @@
+// New Career Guides - March 2026 Content Blast
+// Following exact format from guides.ts
+
+const newGuides = [
+  {
+    slug: 'how-to-become-a-joiner',
+    title: 'How to Become a Joiner in the UK (2026 Guide)',
+    trade: 'Joiner',
+    metaDescription: 'Complete guide to becoming a joiner in the UK. Training routes, qualifications, salary expectations, and workshop-based carpentry careers for 2026.',
+    heroImage: '🪵',
+    avgSalary: '£26,000 - £40,000',
+    trainingTime: '2-3 years',
+    demandLevel: 'High',
+    overview: 'Joiners are skilled craftspeople who work with wood in workshops, creating doors, windows, staircases, and bespoke furniture before installation on site. Unlike carpenters who work mainly on-site, joiners focus on precise bench work and traditional woodworking techniques. With demand for quality joinery and bespoke woodwork growing, skilled joiners enjoy excellent career prospects and the satisfaction of creating beautiful, functional pieces.',
+    steps: [
+      { title: 'Learn the Fundamentals', description: 'GCSEs in Maths, English, and Design & Technology are helpful. Many joiners start with basic woodworking skills through college courses or hobby workshops.' },
+      { title: 'Choose Your Training Route', description: 'Level 2 Apprenticeship in Wood Machining or Furniture Making (2-3 years) is ideal. Alternatively, attend college full-time for City & Guilds qualifications in bench joinery.' },
+      { title: 'Complete NVQ Level 2 in Wood Occupations', description: 'Covers bench joinery, wood machining, furniture making, and traditional joinery techniques. You\'ll learn to use hand tools, machinery, and modern joinery methods.' },
+      { title: 'Develop Machine Skills', description: 'Learn to operate spindle moulders, table saws, planers, and CNC machines. Modern joinery requires both hand skills and machinery competence.' },
+      { title: 'Gain Workshop Experience', description: 'Work in established joinery workshops to learn production methods, quality standards, and customer requirements. Experience with both traditional and contemporary joinery is valuable.' },
+      { title: 'Progress to NVQ Level 3', description: 'Advanced joinery skills including complex joints, curved work, and specialist techniques. Level 3 opens doors to supervisory roles and higher-end commissions.' },
+      { title: 'Specialise Your Skills', description: 'Focus on areas like heritage restoration, bespoke furniture, shopfitting, or architectural joinery. Specialisation commands premium rates and attracts high-value clients.' },
+    ],
+    qualifications: ['NVQ Level 2/3 in Wood Occupations', 'City & Guilds Bench Joinery', 'CSCS Blue Card', 'Health & Safety qualifications', 'First Aid certificate (recommended)'],
+    prosAndCons: {
+      pros: ['Working with natural materials in controlled workshop environment', 'Creative and skillful work with visible results', 'Good progression from apprentice to master craftsperson', 'Indoor work — no weather dependency', 'Potential for self-employment with relatively low setup costs', 'Growing demand for quality joinery and bespoke work'],
+      cons: ['Exposure to dust and wood preservatives', 'Risk of cuts from sharp tools and machinery', 'Physically demanding — lifting timber and finished products', 'Competition from mass-produced and imported joinery', 'Need to stay current with new materials and techniques', 'Workshop rent and machinery costs if self-employed'],
+    },
+    faqs: [
+      { question: 'What\'s the difference between a joiner and a carpenter?', answer: 'Joiners work mainly in workshops creating doors, windows, and furniture before installation. Carpenters work on-site doing structural work, roofing, and fitting. Both work with wood but have different focuses — joiners emphasize precision and finish quality.' },
+      { question: 'How much do joiners earn in the UK?', answer: 'Employed joiners earn £24,000-£35,000. Experienced joiners in specialist workshops earn £35,000-£45,000. Self-employed joiners creating bespoke work can earn £40,000-£60,000+ depending on their reputation and client base.' },
+      { question: 'Can I become a joiner without formal qualifications?', answer: 'While possible, formal qualifications significantly improve your prospects. Many joiners are self-taught hobbyists who turned professional, but NVQ qualifications demonstrate competence to employers and customers.' },
+      { question: 'What tools do joiners need?', answer: 'Hand tools include chisels, planes, saws, and measuring equipment (£500-£1,500). Workshop machinery like table saws and planers are expensive (£10,000-£50,000+ for a full setup), which is why most joiners start working for established workshops.' },
+      { question: 'Is joinery a dying trade?', answer: 'No. While mass production has affected some areas, demand for quality bespoke joinery, heritage restoration, and architectural woodwork remains strong. Skilled joiners who can combine traditional techniques with modern methods are always in demand.' },
+    ],
+  },
+
+  {
+    slug: 'how-to-become-a-groundworker',
+    title: 'How to Become a Groundworker in the UK (2026 Guide)',
+    trade: 'Groundworker',
+    metaDescription: 'Complete guide to becoming a groundworker in the UK. Training routes, qualifications, salary expectations, and foundation construction careers for 2026.',
+    heroImage: '🏗️',
+    avgSalary: '£28,000 - £42,000',
+    trainingTime: '1-3 years',
+    demandLevel: 'Very High',
+    overview: 'Groundworkers are the foundation specialists of the construction industry, preparing sites and creating the base for all building projects. From excavating foundations to laying drainage systems, groundwork is the critical first stage of any construction project. With the UK\'s massive housing and infrastructure programme, skilled groundworkers are in enormous demand and command excellent rates.',
+    steps: [
+      { title: 'Start with Basic Construction', description: 'No formal qualifications required to start as a labourer, but GCSEs in Maths help with setting out and calculations. Physical fitness is essential.' },
+      { title: 'Get Your CSCS Card', description: 'Complete the CITB Health & Safety test and get your Green Labourer Card to work on construction sites. Essential for all site work.' },
+      { title: 'Learn Plant Operation', description: 'Get CPCS cards for operating machinery like excavators (A59), dumpers (A09), and rollers (A51). Machine operators earn significantly more than hand-dig workers.' },
+      { title: 'Complete NVQ Level 2 in Civil Engineering', description: 'Covers excavation, concrete work, drainage installation, and setting out. Can be done through apprenticeship while working.' },
+      { title: 'Develop Specialist Skills', description: 'Learn specific areas like drainage (land drainage, soakaways), concrete work (pouring, finishing), or piling and foundations for higher rates.' },
+      { title: 'Progress to Supervisor Level', description: 'Experienced groundworkers can become ganger/foreman roles, managing teams and taking responsibility for setting out and quality control.' },
+    ],
+    qualifications: ['CSCS Green/Blue Card', 'CPCS Plant Operation Cards', 'NVQ Level 2 in Civil Engineering', 'First Aid at Work', 'Slinger/Signaller certification (recommended)'],
+    prosAndCons: {
+      pros: ['Excellent earning potential — experienced machine operators earn £35K+', 'Always first on site — consistent work availability', 'Variety of projects from housing to major infrastructure', 'Clear progression path from labourer to supervisor', 'High demand — essential for all construction projects', 'Outdoor work with different locations'],
+      cons: ['Weather-dependent — rain and frost affect excavation work', 'Physically demanding work in all conditions', 'Early starts — often 6-7am on site', 'Dirty work — mud and dust are constant companions', 'Seasonal fluctuations in some types of work', 'Responsibility for expensive machinery and site safety'],
+    },
+    faqs: [
+      { question: 'How much do groundworkers earn in the UK?', answer: 'Groundwork labourers earn £22,000-£28,000. Machine operators earn £30,000-£40,000. Experienced groundwork gangers and subcontractors can earn £40,000-£55,000+. London and major infrastructure projects pay premium rates.' },
+      { question: 'Do I need qualifications to be a groundworker?', answer: 'You can start as a labourer with just a CSCS card, but CPCS plant operation qualifications are essential for progression. Machine operators earn significantly more than hand-dig workers.' },
+      { question: 'What machinery do groundworkers use?', answer: 'Main equipment includes excavators (various sizes), dumper trucks, compactors, concrete pumps, and laser levels for setting out. Each machine type requires separate CPCS certification.' },
+      { question: 'Is groundwork a good career?', answer: 'Absolutely. Groundwork is the foundation of all construction — you\'ll never be out of work. The combination of housing targets, infrastructure projects, and renovation work ensures consistent demand for skilled groundworkers.' },
+      { question: 'Can I start my own groundwork business?', answer: 'Yes, many groundworkers become subcontractors. You\'ll need your own machinery (expensive), insurance, and established relationships with builders and developers. It\'s a viable path after gaining experience and skills.' },
+    ],
+  },
+
+  {
+    slug: 'how-to-become-a-steel-fixer',
+    title: 'How to Become a Steel Fixer in the UK (2026 Guide)',
+    trade: 'Steel Fixer',
+    metaDescription: 'Complete guide to becoming a steel fixer in the UK. Rebar installation, training routes, qualifications, and reinforced concrete careers for 2026.',
+    heroImage: '🔩',
+    avgSalary: '£30,000 - £48,000',
+    trainingTime: '2-3 years',
+    demandLevel: 'Very High',
+    overview: 'Steel fixers install reinforcement bars (rebar) in concrete structures, creating the skeleton that gives concrete its strength. From house foundations to skyscrapers and bridges, steel fixers are essential to modern construction. With massive infrastructure projects and the concrete construction boom, skilled steel fixers are in huge demand and earn excellent rates.',
+    steps: [
+      { title: 'Get Basic Site Access', description: 'Complete CSCS Health & Safety test and get your Green Card. No formal qualifications needed to start as a steel fixer labourer.' },
+      { title: 'Learn Steel Fixing Basics', description: 'Start as a trainee with an established steel fixing gang. Learn to read drawings, cut and bend rebar, and understand reinforcement patterns.' },
+      { title: 'Complete Formal Training', description: 'Take a steel fixing course (2-4 weeks) through CITB or approved training providers. Learn advanced techniques, calculation methods, and safety procedures.' },
+      { title: 'Get Your NVQ Level 2', description: 'Complete NVQ Level 2 in Steel Fixing through workplace assessment. This qualifies you for your CSCS Blue Skilled Worker card.' },
+      { title: 'Develop Advanced Skills', description: 'Learn complex reinforcement patterns, prestressed concrete work, and quality control procedures. Specialise in areas like foundations, high-rise, or bridge work.' },
+      { title: 'Progress to Leading Hand', description: 'Experienced steel fixers can become leading hands or gangers, managing teams and taking responsibility for setting out and quality.' },
+    ],
+    qualifications: ['CSCS Blue Card', 'NVQ Level 2 in Steel Fixing', 'CITB Steel Fixing Course', 'First Aid at Work', 'Slinger/Signaller (for crane work)'],
+    prosAndCons: {
+      pros: ['Excellent earning potential — experienced fixers earn £40K+', 'Essential trade — all concrete structures need reinforcement', 'Variety of projects from housing to major infrastructure', 'Strong team working environment', 'Clear progression to leading hand and supervisor roles', 'High demand across all construction sectors'],
+      cons: ['Heavy physical work — rebar is heavy and awkward to handle', 'Working at height and in confined spaces', 'Weather exposure — concrete pours can\'t wait for perfect conditions', 'Tight deadlines — concrete programme drives everything else', 'Risk of cuts from sharp steel bars', 'Early starts and long hours on major projects'],
+    },
+    faqs: [
+      { question: 'How much do steel fixers earn in the UK?', answer: 'Steel fixers earn £28,000-£38,000 employed. Experienced self-employed steel fixers earn £180-£280+ per day depending on project type and location. London and major infrastructure projects pay premium rates.' },
+      { question: 'Is steel fixing dangerous work?', answer: 'Steel fixing involves working with heavy materials, power tools, and often at height. However, modern safety practices, proper training, and PPE significantly reduce risks. The industry safety record has improved dramatically.' },
+      { question: 'Do I need to be very strong to be a steel fixer?', answer: 'Steel fixing is physically demanding — you\'ll be lifting, cutting, and positioning heavy rebar all day. Good physical fitness is essential, though technique and teamwork reduce individual strain.' },
+      { question: 'What tools do steel fixers use?', answer: 'Main tools include rebar cutters, bending machines, tying wire tools, measuring equipment, and angle grinders. Most tools are provided by employers, though experienced fixers often have their own hand tools.' },
+      { question: 'Can I progress from steel fixing to other roles?', answer: 'Yes. Steel fixing provides excellent knowledge of concrete construction, leading to opportunities in concrete finishing, setting out, quality control, or site management. Many site managers started as steel fixers.' },
+    ],
+  },
+
+  {
+    slug: 'how-to-become-a-plant-operator',
+    title: 'How to Become a Plant Operator in the UK (2026 Guide)',
+    trade: 'Plant Operator',
+    metaDescription: 'Complete guide to becoming a plant operator in the UK. CPCS training, machinery operation, salary expectations, and construction equipment careers for 2026.',
+    heroImage: '🚜',
+    avgSalary: '£28,000 - £45,000',
+    trainingTime: '1-2 years',
+    demandLevel: 'Very High',
+    overview: 'Plant operators control the heavy machinery that powers construction projects — from excavators and dumper trucks to cranes and bulldozers. Skilled plant operators are essential to every construction site and infrastructure project. With the UK\'s building boom and major infrastructure programmes, qualified plant operators are in huge demand and command premium rates.',
+    steps: [
+      { title: 'Get Site Access', description: 'Complete CSCS Health & Safety test and get your Green Card. Physical fitness and good spatial awareness are important for machine operation.' },
+      { title: 'Choose Your Machine Type', description: 'Decide which plant to specialise in — excavators, dumpers, cranes, bulldozers, or rollers. Each requires separate CPCS certification.' },
+      { title: 'Complete CPCS Training', description: 'Take CPCS course for your chosen machine (3-10 days depending on complexity). Training covers safe operation, maintenance checks, and hazard awareness.' },
+      { title: 'Pass CPCS Tests', description: 'Complete theory and practical tests to get your CPCS Red Trained Operator card. This allows you to operate under supervision while gaining experience.' },
+      { title: 'Gain Operating Experience', description: 'Work on construction sites building experience and competence. Different sites and projects teach various operating techniques and challenges.' },
+      { title: 'Convert to Blue Card', description: 'After gaining experience, convert your Red Card to Blue Competent Operator card through NVQ assessment. This allows independent operation and higher rates.' },
+    ],
+    qualifications: ['CSCS Card', 'CPCS Red/Blue Card for specific machinery', 'NVQ Level 2 in Plant Operations', 'Appointed Person certification (for crane work)', 'First Aid certificate (recommended)'],
+    prosAndCons: {
+      pros: ['Excellent earning potential — experienced operators earn £35K+', 'Essential for all construction and infrastructure projects', 'Variety of machinery and project types', 'Less physically demanding than manual trades', 'Clear progression path with additional machine categories', 'High demand across multiple industries'],
+      cons: ['High responsibility — expensive machinery and site safety', 'Weather-dependent work', 'Potential for serious accidents if safety procedures not followed', 'Training costs for multiple machine types', 'Shift work and early starts common', 'Isolation — working alone in cab for long periods'],
+    },
+    faqs: [
+      { question: 'How much do plant operators earn in the UK?', answer: 'Plant operators earn £25,000-£35,000 employed. Experienced self-employed operators earn £150-£300+ per day depending on machine type and project. Crane operators and specialist equipment operators earn the highest rates.' },
+      { question: 'Which plant machine should I train on first?', answer: 'Excavators (360-degree and forward-tipping) are most in demand and versatile. Dumper trucks are easier to learn but lower-paid. Cranes offer highest rates but require more training and responsibility.' },
+      { question: 'How long does CPCS training take?', answer: 'Basic machines (dumpers, rollers): 3-5 days. Excavators: 5-10 days. Cranes: 10-20 days depending on capacity. You can start working immediately after getting your Red Card.' },
+      { question: 'Do I need good eyesight to be a plant operator?', answer: 'Yes, good vision is essential for safe operation. You\'ll need to pass medical requirements including eyesight tests. Prescription glasses/contacts are acceptable if they correct vision to required standards.' },
+      { question: 'Can I operate multiple types of plant?', answer: 'Yes, many operators hold multiple CPCS cards for different machines. This increases your employability and earning potential. However, each machine type requires separate training and certification.' },
+    ],
+  },
+
+  {
+    slug: 'how-to-become-a-fiber-optic-installer',
+    title: 'How to Become a Fiber Optic Installer in the UK (2026 Guide)',
+    trade: 'Fiber Optic Installer',
+    metaDescription: 'Complete guide to becoming a fiber optic installer in the UK. Broadband installation training, qualifications, salary expectations, and telecommunications careers for 2026.',
+    heroImage: '🌐',
+    avgSalary: '£26,000 - £42,000',
+    trainingTime: '6 months - 2 years',
+    demandLevel: 'Very High',
+    overview: 'Fiber optic installers are at the forefront of the UK\'s digital infrastructure revolution, installing the high-speed internet connections that power modern life. With the government\'s target of gigabit-capable broadband to 85% of premises by 2025 and full fiber rollouts accelerating, fiber optic installers are in massive demand across the country.',
+    steps: [
+      { title: 'Understand the Role', description: 'Fiber installers run cables from street cabinets to homes and businesses, splice fiber connections, and install customer premises equipment. Work involves both outdoor cable installation and indoor customer-facing work.' },
+      { title: 'Get Basic Qualifications', description: 'GCSEs in Maths and English are helpful. Basic electrical knowledge is valuable but not essential. Physical fitness required for cable pulling and outdoor work.' },
+      { title: 'Complete Fiber Training Course', description: 'Take a fiber optic installation course (2-12 weeks) covering safety, fiber types, splicing techniques, testing equipment, and customer service. Many telecoms companies provide training.' },
+      { title: 'Get Industry Certifications', description: 'Obtain certifications in fiber splicing, testing, and safety. NICEIC, ECA, or company-specific certifications demonstrate competence to employers.' },
+      { title: 'Gain Practical Experience', description: 'Work with experienced installation teams for major providers like Openreach, CityFibre, or regional companies. Learn different installation environments and customer interaction skills.' },
+      { title: 'Develop Specialist Skills', description: 'Specialise in areas like underground installations, aerial work, or business installations. Advanced skills in network testing and troubleshooting command premium rates.' },
+    ],
+    qualifications: ['Fiber Optic Installation Certificate', 'Working at Height certification', 'Confined Spaces training', 'First Aid certificate', 'Full driving licence (essential)', 'Customer service training'],
+    prosAndCons: {
+      pros: ['Booming industry with massive government and private investment', 'Good earning potential with overtime and bonus opportunities', 'Variety of work environments from rural to urban', 'Contributing to critical national infrastructure', 'Future-proof career in growing digital economy', 'Training often provided by employers'],
+      cons: ['Working in all weather conditions including underground chambers', 'Customer-facing role requiring good communication skills', 'Physical demands of cable pulling and equipment lifting', 'Pressure to meet installation targets and deadlines', 'On-call work for emergency repairs', 'Rapid technology changes requiring ongoing training'],
+    },
+    faqs: [
+      { question: 'How much do fiber optic installers earn in the UK?', answer: 'Trainee fiber installers start at £20,000-£25,000. Experienced installers earn £28,000-£38,000. Self-employed fiber contractors can earn £35,000-£50,000+ with good client relationships and efficient working.' },
+      { question: 'Do I need electrical qualifications for fiber installation?', answer: 'Not necessarily. Fiber optic work involves light signals rather than electrical power. However, basic electrical understanding helps, especially for powering equipment and working around electrical installations.' },
+      { question: 'Is fiber installation a growing industry?', answer: 'Massively. The UK government has committed billions to fiber rollout, and private companies are racing to upgrade networks. It\'s one of the fastest-growing trades with excellent long-term prospects.' },
+      { question: 'What companies hire fiber installers?', answer: 'Major employers include Openreach (BT), Virgin Media, CityFibre, regional fiber companies, and specialist installation contractors. Many companies are actively recruiting and training new installers.' },
+      { question: 'Can I work self-employed as a fiber installer?', answer: 'Yes, many fiber installers work as contractors for telecoms companies or installation specialists. You\'ll need your own tools, van, and insurance, but can earn higher rates than employed positions.' },
+    ],
+  },
+];
+
+// Continue with more guides...
+console.log('Generated', newGuides.length, 'new career guides');
