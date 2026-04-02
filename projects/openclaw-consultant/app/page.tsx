@@ -754,19 +754,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============ FLOATING MOBILE CTA ============ */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
-        <a
-          href="#contact"
-          className="block w-full bg-gradient-to-r from-orange to-amber-500 text-white text-center py-4 px-6 font-bold text-lg shadow-2xl border-t-2 border-white/20"
-          style={{
-            background: "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)",
-            boxShadow: "0 -4px 20px rgba(245, 158, 11, 0.3)"
-          }}
-        >
-          📞 Book Free Consultation
-        </a>
-      </div>
+      {/* Mobile CTA bar removed — was covering content on mobile */}
     </>
   );
 }
