@@ -734,8 +734,8 @@ export default function Home() {
                 </div>
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">📞</span>
-                  <a href="tel:07935217762" className="hover:text-white transition-colors">
-                    07935 217762
+                  <a href="tel:07849071946" className="hover:text-white transition-colors">
+                    07849 071946
                   </a>
                 </div>
                 <div className="flex gap-3 items-center">

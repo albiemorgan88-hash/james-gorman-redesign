@@ -10,15 +10,18 @@ export async function POST(request: NextRequest) {
     const { rosterData, txHash, payerWallet } = body;
     
     // Validation
-    if (!rosterData || !txHash || !payerWallet) {
+    if (!rosterData) {
       return NextResponse.json(
         { 
           success: false, 
-          error: 'Missing required fields: rosterData, txHash, payerWallet' 
+          error: 'Missing required field: rosterData' 
         },
         { status: 400 }
       );
     }
+    
+    // Free beta mode — skip payment verification if no txHash
+    const isFreeSubmission = !txHash || !payerWallet;
     
     if (!rosterData.agent?.name) {
       return NextResponse.json(
@@ -30,34 +33,38 @@ export async function POST(request: NextRequest) {
       );
     }
     
-    // Check if transaction has already been used
-    const alreadyUsed = await isTransactionUsed(txHash);
-    if (alreadyUsed) {
-      return NextResponse.json(
-        { 
-          success: false, 
-          error: 'Transaction hash has already been used for another registration' 
-        },
-        { status: 400 }
-      );
-    }
+    let verification: { isValid: boolean; from?: string; amount?: number; token?: string; error?: string } = { isValid: false };
     
-    // Get our wallet address
-    const walletInfo = await getOrCreateWallet();
-    
-    // Verify the transaction
-    console.log(`🔍 Verifying transaction: ${txHash} to ${walletInfo.address}`);
-    const verification = await verifyTransaction(txHash, walletInfo.address);
-    
-    if (!verification.isValid) {
-      return NextResponse.json(
-        { 
-          success: false, 
-          error: `Transaction verification failed: ${verification.error || 'Invalid transaction'}`,
-          verification: verification
-        },
-        { status: 400 }
-      );
+    if (!isFreeSubmission) {
+      // Check if transaction has already been used
+      const alreadyUsed = await isTransactionUsed(txHash);
+      if (alreadyUsed) {
+        return NextResponse.json(
+          { 
+            success: false, 
+            error: 'Transaction hash has already been used for another registration' 
+          },
+          { status: 400 }
+        );
+      }
+      
+      // Get our wallet address
+      const walletInfo = await getOrCreateWallet();
+      
+      // Verify the transaction
+      console.log(`🔍 Verifying transaction: ${txHash} to ${walletInfo.address}`);
+      verification = await verifyTransaction(txHash, walletInfo.address);
+      
+      if (!verification.isValid) {
+        return NextResponse.json(
+          { 
+            success: false, 
+            error: `Transaction verification failed: ${verification.error || 'Invalid transaction'}`,
+            verification: verification
+          },
+          { status: 400 }
+        );
+      }
     }
     
     // Get next Claw number
@@ -68,11 +75,11 @@ export async function POST(request: NextRequest) {
       claw_number: clawNumber,
       agent_name: rosterData.agent.name,
       agent_description: rosterData.agent.bio || rosterData.agent.role || 'No description provided',
-      wallet_address: verification.from,
-      tx_hash: txHash,
-      payment_amount: verification.amount,
-      payment_token: verification.token,
-      payment_verified: true, // We just verified it
+      wallet_address: isFreeSubmission ? 'free-beta' : (verification.from || ''),
+      tx_hash: isFreeSubmission ? `free-beta-${Date.now()}` : txHash,
+      payment_amount: isFreeSubmission ? 0 : (verification.amount || 0),
+      payment_token: isFreeSubmission ? 'FREE' : (verification.token || ''),
+      payment_verified: !isFreeSubmission,
       roster_data: rosterData,
       status: 'active'
     });

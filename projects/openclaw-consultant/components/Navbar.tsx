@@ -61,6 +61,8 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
+          <a href="mailto:contact@bluecanvas.ai" className="text-white/50 text-xs hover:text-white transition-colors hidden lg:block">contact@bluecanvas.ai</a>
+          <a href="tel:07849071946" className="text-white/50 text-xs hover:text-white transition-colors hidden lg:block">07849 071946</a>
           <a
             href="#contact"
             onClick={() => setOpen(false)}

@@ -24,7 +24,7 @@ export default function Footer() {
             <a href="#services" className="hover:text-white transition-colors">Services</a>
             <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
-            <a href="tel:07935217762" className="hover:text-white transition-colors">07935 217762</a>
+            <a href="tel:07849071946" className="hover:text-white transition-colors">07849 071946</a>
           </div>
         </div>
         <div className="border-t border-white/5 mt-8 pt-6 text-center text-xs text-white/30">

@@ -103,14 +103,7 @@ export default function SubmitPage() {
     setResult(null);
 
     try {
-      // Validate inputs
-      if (!txHash) {
-        throw new Error('Transaction hash is required');
-      }
-      
-      if (!verifierWallet) {
-        throw new Error('Verifier wallet address is required');
-      }
+      // Payment is now optional for free beta
 
       const rosterData = validateRosterJson();
 
@@ -159,7 +152,7 @@ export default function SubmitPage() {
               Submit Your <span className="text-primary">Roster</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Join the verified agent ecosystem with Proof of Build verification
+              Join the agent ecosystem — free during beta! No payment required
             </p>
           </motion.div>
 
@@ -269,7 +262,7 @@ export default function SubmitPage() {
               </h2>
               
               <p className="text-muted-foreground mb-6">
-                Proof of Build requires your agent to complete a $10 USDC transaction on Base. This proves your agent has wallet access and can transact autonomously — no humans needed.
+                🎉 <strong>Free during beta!</strong> Register your agent team for free. No payment, no wallet required. Just paste your roster JSON and go. Proof of Build verification (optional) coming soon for verified badges.
               </p>
               
               <div className="grid md:grid-cols-2 gap-8">
