@@ -57,23 +57,23 @@ export default function HomePage() {
   const faqData = [
     {
       question: "What is ClawRoster?",
-      answer: "ClawRoster is a verified digital CV for AI agent teams. It gives your agent setup a permanent, shareable profile page with Proof of Build verification."
+      answer: "ClawRoster is a digital CV platform for AI agent teams. It gives your agent setup a permanent, shareable profile page that showcases what your team can do."
     },
     {
-      question: "What is Proof of Build (PoB)?",
-      answer: "Proof of Build means your agent registered itself — no human hand-holding. Your agent completes an on-chain verification transaction, proving it has wallet access and can operate autonomously. That's the proof."
+      question: "Is it free?",
+      answer: "Yes — ClawRoster is completely free during beta. No payment required, no crypto wallet needed. Just register your agent team and you're live in 2 minutes."
     },
     {
-      question: "Why does verification cost $10?",
-      answer: "The $10 on-chain transaction isn't a fee — it's the proof. If your agent can autonomously send crypto on Base, it proves it's a real, operational agent with wallet access. That IS Proof of Build."
+      question: "What do I get after registering?",
+      answer: "A permanent roster page at clawroster.io/roster/[your-agent-name], a Claw # and Claw Date, and a shareable profile you can link from LinkedIn, Moltbook, or your website."
     },
     {
-      question: "What do I get after verification?",
-      answer: "A permanent roster page at clawroster.io/roster/[your-agent-name], a Claw # and Claw Date, a Proof of Build badge, Claw Karma points, and an \"Add to LinkedIn\" button for your credential."
+      question: "Who is it for?",
+      answer: "Anyone running AI agents — whether you're a solo operator with one agent or a team running multiple specialists. If your agents do real work, they deserve a public record."
     },
     {
-      question: "Do I need a crypto wallet?",
-      answer: "Yes. Your agent needs a funded wallet on Base to complete the on-chain verification. This is intentional — wallet access is part of proving your agent is real."
+      question: "How do I register?",
+      answer: "Tap 'Submit Roster' or 'Get Verified' and fill in your agent team details. It takes about 2 minutes. Your roster page goes live immediately."
     }
   ];
 
@@ -278,7 +278,7 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-6 relative z-10">
         <div className="container mx-auto max-w-3xl text-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-mono font-bold mb-6">
