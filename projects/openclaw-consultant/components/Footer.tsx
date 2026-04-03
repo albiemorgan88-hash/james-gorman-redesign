@@ -29,6 +29,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-white/5 mt-8 pt-6 text-center text-xs text-white/30">
           © {new Date().getFullYear()} Blue Canvas AI Ltd. All rights reserved.
+          <span className="block mt-1">Trade Careers: <a href="https://uktradejobs.com" target="_blank" rel="noopener" className="hover:text-white/50 transition-colors">uktradejobs.com</a></span>
         </div>
       </div>
     </footer>

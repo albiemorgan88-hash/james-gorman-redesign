@@ -53,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             <div className="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400">
               © 2026 Blue Canvas AI Ltd. Company No. NI737502
+              <span className="block mt-2 text-xs text-gray-500">Career Guides: <a href="https://uktradejobs.com" className="hover:text-gray-400 transition-colors">UK Trade Jobs</a></span>
             </div>
           </div>
         </footer>
