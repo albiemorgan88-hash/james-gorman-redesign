@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const RESEND_API_KEY = process.env.RESEND_API_KEY || "re_YEcZZHHr_L38mqpD7wBoBaXFmX9RcF2GQ";
+const RESEND_API_KEY = process.env.RESEND_API_KEY || "re_LW8p2X8X_EqWb7tmRRJYGL9BsSV5UsStj";
 const SUPABASE_URL = "https://smhzgkvatlwbaxlyhnbm.supabase.co";
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
 
@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: "OpenClaw Consultant <draws@ardmorecricket.com>",
+          from: "OpenClaw Consultant <hello@bluecanvas.ai>",
           reply_to: email,
           to: ["contact@bluecanvas.ai", "philpatterson85@gmail.com"],
           subject: `New OCC Enquiry: ${name}${company ? ` (${company})` : ""}`,
