@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "OpenClaw vs Virtual Assistant Cost Comparison 2026 | AI Agent ROI",
+  title: "OpenClaw vs VA: Cost Comparison 2026",
   description: "Complete cost breakdown comparing OpenClaw AI agents vs traditional virtual assistants. Calculate ROI, setup costs, and monthly savings for UK businesses.",
   keywords: [
     "openclaw cost comparison",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/guides/openclaw-vs-virtual-assistant-cost" },
   openGraph: {
-    title: "OpenClaw vs Virtual Assistant Cost Comparison 2026 | AI Agent ROI",
+    title: "OpenClaw vs VA: Cost Comparison 2026",
     description: "Complete cost breakdown: OpenClaw AI agents vs traditional virtual assistants. Calculate your potential savings.",
     url: "https://openclawconsultant.co.uk/guides/openclaw-vs-virtual-assistant-cost",
     type: "article",

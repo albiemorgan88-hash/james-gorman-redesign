@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Enterprise OpenClaw Setup & Consulting | Multi-Agent Architecture | Phil Patterson",
+  title: "Enterprise OpenClaw Setup",
   description: "Enterprise OpenClaw deployment with multi-agent architectures, advanced security, compliance frameworks, and team access management. Scalable AI automation for large organisations.",
   keywords: [
     "enterprise openclaw",

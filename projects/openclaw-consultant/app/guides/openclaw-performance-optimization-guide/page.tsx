@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "OpenClaw Performance Optimization Guide 2026 | Speed & Efficiency",
+  title: "OpenClaw Performance Optimisation",
   description: "Complete guide to optimizing OpenClaw AI agent performance, reducing response times, improving throughput, and maximizing efficiency for business applications.",
   keywords: [
     "openclaw performance optimization",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/guides/openclaw-performance-optimization-guide" },
   openGraph: {
-    title: "OpenClaw Performance Optimization Guide 2026 | Speed & Efficiency",
+    title: "OpenClaw Performance Optimisation",
     description: "Master OpenClaw performance optimization. Reduce response times, improve throughput, and maximize AI agent efficiency.",
     url: "https://openclawconsultant.co.uk/guides/openclaw-performance-optimization-guide",
     type: "article",

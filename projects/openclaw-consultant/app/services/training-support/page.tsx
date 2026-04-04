@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "OpenClaw Training & Support UK | Ongoing Support Packages & Skill Development",
+  title: "OpenClaw Training & Support UK",
   description: "Professional OpenClaw training and ongoing support services for UK businesses. Monthly retainers, skill development, troubleshooting, and system optimization.",
   keywords: [
     "openclaw training uk",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/services/training-support" },
   openGraph: {
-    title: "OpenClaw Training & Support UK | Ongoing Support Packages & Skill Development",
+    title: "OpenClaw Training & Support UK",
     description: "Professional OpenClaw training and ongoing support services for UK businesses. Monthly retainers, skill development, and troubleshooting.",
     url: "https://openclawconsultant.co.uk/services/training-support",
     type: "website",

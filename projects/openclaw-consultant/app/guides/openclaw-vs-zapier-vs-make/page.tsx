@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "OpenClaw vs Zapier vs Make: Which Automation Platform is Right for Your Business?",
+  title: "OpenClaw vs Zapier vs Make",
   description: "Complete comparison of OpenClaw, Zapier, and Make.com automation platforms. Features, pricing, capabilities, and use cases to help UK businesses choose the right solution.",
   keywords: [
     "openclaw vs zapier",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/guides/openclaw-vs-zapier-vs-make" },
   openGraph: {
-    title: "OpenClaw vs Zapier vs Make: Which Automation Platform is Right for Your Business?",
+    title: "OpenClaw vs Zapier vs Make",
     description: "Detailed comparison of OpenClaw, Zapier, and Make.com. Find the perfect automation platform for your UK business needs.",
     url: "https://openclawconsultant.co.uk/guides/openclaw-vs-zapier-vs-make",
     type: "article",
@@ -763,6 +763,32 @@ export default function OpenClawVsZapierVsMakePage() {
       </section>
 
       {/* Contact Form */}
+      
+      {/* Related Guides */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
+          <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
+            <a href="/guides/openclaw-vs-chatgpt" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs ChatGPT: Key Differences</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/openclaw-vs-n8n" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs n8n: Which to Choose?</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="py-20 bg-slate-50">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">

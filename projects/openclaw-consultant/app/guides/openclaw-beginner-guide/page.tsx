@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Getting Started with OpenClaw: A Beginner's Guide | Complete Tutorial 2026",
+  title: "OpenClaw Beginner Guide 2026's Guide | Complete Tutorial 2026",
   description: "Complete beginner's guide to OpenClaw. Learn what OpenClaw is, how it works, installation basics, and your first automation project step-by-step.",
   keywords: [
     "openclaw beginner guide",
@@ -245,6 +245,32 @@ export default function OpenClawBeginnerGuidePage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      
+      {/* Related Guides */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
+          <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/openclaw-tutorial-beginners" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Tutorial for Beginners</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Skills: Complete Guide</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
           </div>
         </div>
       </section>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Top 10 OpenClaw Skills Every Business Should Use | Essential Agent Capabilities 2026",
+  title: "Top 10 OpenClaw Skills for Business",
   description: "Discover the 10 most valuable OpenClaw skills for business automation. From SEO and lead generation to customer support and analytics - transform your operations today.",
   keywords: [
     "openclaw skills",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/guides/top-10-openclaw-skills" },
   openGraph: {
-    title: "Top 10 OpenClaw Skills Every Business Should Use | Essential Agent Capabilities 2026",
+    title: "Top 10 OpenClaw Skills for Business",
     description: "Discover the 10 most valuable OpenClaw skills for business automation. From SEO to customer support.",
     url: "https://openclawconsultant.co.uk/guides/top-10-openclaw-skills",
     type: "article",
@@ -769,6 +769,32 @@ export default function Top10OpenClawSkillsPage() {
       </section>
 
       {/* Contact Section */}
+      
+      {/* Related Guides */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
+          <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
+            <a href="/guides/ai-customer-service-automation-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Customer Service Automation UK</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/ai-appointment-booking" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Appointment Booking for Business</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="bg-navy text-white py-24 relative overflow-hidden grain">
         <div className="absolute bottom-0 left-[20%] w-[500px] h-[500px] bg-orange/5 rounded-full blur-[120px]" />
         <div className="absolute top-0 right-[10%] w-[400px] h-[400px] bg-blue/5 rounded-full blur-[100px]" />

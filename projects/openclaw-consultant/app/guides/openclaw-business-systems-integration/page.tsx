@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "OpenClaw Business Systems Integration Guide 2026 | CRM, ERP, Tools",
+  title: "OpenClaw Business Integration Guide",
   description: "Complete guide to integrating OpenClaw AI agents with business systems: CRM, ERP, accounting software, marketing tools, and custom APIs. Step-by-step tutorials.",
   keywords: [
     "openclaw integration guide",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/guides/openclaw-business-systems-integration" },
   openGraph: {
-    title: "OpenClaw Business Systems Integration Guide 2026 | CRM, ERP, Tools",
+    title: "OpenClaw Business Integration Guide",
     description: "Master OpenClaw integrations with business systems. CRM, ERP, accounting, marketing tools, and custom APIs covered.",
     url: "https://openclawconsultant.co.uk/guides/openclaw-business-systems-integration",
     type: "article",

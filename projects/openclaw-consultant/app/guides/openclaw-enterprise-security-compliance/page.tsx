@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "OpenClaw Enterprise Security & UK Compliance Guide 2026 | GDPR Ready",
+  title: "OpenClaw Enterprise Security & GDPR",
   description: "Complete guide to OpenClaw enterprise security features, UK GDPR compliance, data protection, and regulatory requirements for business AI agent deployments.",
   keywords: [
     "openclaw enterprise security",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/guides/openclaw-enterprise-security-compliance" },
   openGraph: {
-    title: "OpenClaw Enterprise Security & UK Compliance Guide 2026 | GDPR Ready",
+    title: "OpenClaw Enterprise Security & GDPR",
     description: "Comprehensive security and compliance guide for enterprise OpenClaw deployments in the UK. GDPR, data protection, and regulatory requirements covered.",
     url: "https://openclawconsultant.co.uk/guides/openclaw-enterprise-security-compliance",
     type: "article",

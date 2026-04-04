@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Enterprise OpenClaw Deployment: From Pilot to Production | OpenClaw",
+  title: "Enterprise OpenClaw Deployment Guide",
   description: "Complete guide to deploying OpenClaw at enterprise scale. Architecture, security, integration, team management, and scaling strategies for production AI agent deployments.",
   keywords: [
     "enterprise openclaw deployment",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/guides/enterprise-openclaw-deployment" },
   openGraph: {
-    title: "Enterprise OpenClaw Deployment: From Pilot to Production | OpenClaw",
+    title: "Enterprise OpenClaw Deployment Guide",
     description: "Master enterprise OpenClaw deployment with proven architectures, security frameworks, and scaling strategies for production AI agent systems.",
     url: "https://openclawconsultant.co.uk/guides/enterprise-openclaw-deployment",
     type: "article",
@@ -538,6 +538,32 @@ gateway:
       </section>
 
       {/* Contact Form */}
+      
+      {/* Related Guides */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
+          <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
+            <a href="/guides/openclaw-agent-team" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">Build an OpenClaw Agent Team</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/openclaw-agent-team-setup" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Agent Team Setup Guide</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="py-20 bg-slate-50">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">

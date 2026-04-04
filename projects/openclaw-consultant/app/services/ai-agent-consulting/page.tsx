@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "AI Agent Consulting UK | Strategy, Implementation & Automation Solutions",
+  title: "AI Agent Consulting UK",
   description: "Expert AI agent consulting for UK businesses. Strategic planning, implementation roadmaps, workflow automation, and AI integration. Transform your business with intelligent agents.",
   keywords: [
     "ai agent consulting uk",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/services/ai-agent-consulting" },
   openGraph: {
-    title: "AI Agent Consulting UK | Strategy, Implementation & Automation Solutions", 
+    title: "AI Agent Consulting UK", 
     description: "Expert AI agent consulting for UK businesses. Strategic planning, implementation roadmaps, workflow automation, and AI integration.",
     url: "https://openclawconsultant.co.uk/services/ai-agent-consulting",
     type: "website",

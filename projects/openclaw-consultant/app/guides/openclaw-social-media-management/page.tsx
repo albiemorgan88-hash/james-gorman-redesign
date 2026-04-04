@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "How to Use OpenClaw for Social Media Management | Automation Guide 2026",
+  title: "OpenClaw Social Media Automation",
   description: "Complete guide to automating social media management with OpenClaw. Learn content creation, scheduling, engagement monitoring, and performance tracking.",
   keywords: [
     "openclaw social media automation",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/guides/openclaw-social-media-management" },
   openGraph: {
-    title: "How to Use OpenClaw for Social Media Management | Automation Guide 2026",
+    title: "OpenClaw Social Media Automation",
     description: "Complete guide to automating social media management with OpenClaw. Learn content creation, scheduling, and engagement monitoring.",
     url: "https://openclawconsultant.co.uk/guides/openclaw-social-media-management",
     type: "article",
@@ -117,6 +117,32 @@ export default function OpenClawSocialMediaManagementPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      
+      {/* Related Guides */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
+          <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
+            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Skills: Complete Guide</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/openclaw-cron-jobs" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Cron Jobs: Automation Guide</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
           </div>
         </div>
       </section>

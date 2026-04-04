@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "AI Workforce Planning: Preparing Your Team for 2026 | OpenClaw",
+  title: "AI Workforce Planning 2026",
   description: "Complete guide to AI workforce planning for UK businesses. Skills development, role evolution, training strategies, and team preparation for AI-augmented work.",
   keywords: [
     "ai workforce planning uk",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/guides/ai-workforce-planning-2026" },
   openGraph: {
-    title: "AI Workforce Planning: Preparing Your Team for 2026 | OpenClaw",
+    title: "AI Workforce Planning 2026",
     description: "Prepare your workforce for the AI future. Skills development, training strategies, and team transformation for AI-augmented work by 2026.",
     url: "https://openclawconsultant.co.uk/guides/ai-workforce-planning-2026",
     type: "article",
@@ -479,6 +479,32 @@ export default function AIWorkforcePlanning2026Page() {
       </section>
 
       {/* Contact Form */}
+      
+      {/* Related Guides */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
+          <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
+            <a href="/guides/ai-transformation-strategy-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Transformation Strategy 2026</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/ai-governance-compliance-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Governance & Compliance UK</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="py-20 bg-slate-50">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">

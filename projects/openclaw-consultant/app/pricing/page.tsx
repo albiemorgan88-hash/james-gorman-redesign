@@ -2,8 +2,9 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'OpenClaw Consulting Pricing — AI Agent Setup & Business Automation',
+  title: 'OpenClaw Consulting Pricing',
   description: 'Professional OpenClaw setup and business automation services. From £497 one-time setup to £997/month managed automation. Transform your business with AI.',
+  alternates: { canonical: 'https://openclawconsultant.co.uk/pricing' },
 };
 
 export default function PricingPage() {

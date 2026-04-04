@@ -2,8 +2,9 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Case Study: £250/Month SEO Agency with One OpenClaw Agent',
+  title: 'Case Study: £250/Month SEO Agency with OpenClaw',
   description: 'How Phil Patterson built a £250/month SEO agency using just one OpenClaw agent. Complete breakdown of setup, workflows, and revenue generation.',
+  alternates: { canonical: 'https://openclawconsultant.co.uk/case-studies/seo-agency-250-month' },
 };
 
 export default function SEOAgencyCaseStudy() {

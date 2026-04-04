@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Small Business UK | OpenClaw Setup for SMEs",
+  title: "AI Automation for Small Business",
   description: "AI automation solutions designed specifically for UK small businesses. Affordable OpenClaw setup, workflow automation, and business process optimization for SMEs.",
   keywords: [
     "ai automation small business uk",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/services/small-business-automation" },
   openGraph: {
-    title: "AI Automation for Small Business UK | OpenClaw Setup for SMEs",
+    title: "AI Automation for Small Business",
     description: "AI automation solutions designed specifically for UK small businesses. Affordable OpenClaw setup, workflow automation, and business process optimization.",
     url: "https://openclawconsultant.co.uk/services/small-business-automation",
     type: "website",

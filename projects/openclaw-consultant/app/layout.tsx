@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://openclawconsultant.co.uk"),
   title: {
     default: "OpenClaw Consultant UK — Expert Setup, Skills & Automation | Phil Patterson",
-    template: "%s | OpenClaw Consultant UK",
+    template: "%s | OpenClaw",
   },
   description:
     "UK's leading OpenClaw consultant. Phil Patterson runs OpenClaw in production daily with 25+ custom skills. Expert setup, custom skill development, and AI agent orchestration for UK businesses. Free consultation.",

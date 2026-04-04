@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "OpenClaw Installation Service — Professional Setup & Configuration UK",
+  title: "OpenClaw Installation Service",
   description: "Professional OpenClaw installation service. 24hr turnaround, complete configuration, WhatsApp/Telegram/Discord/Slack integration. Expert setup from Phil Patterson.",
   keywords: [
     "openclaw install",

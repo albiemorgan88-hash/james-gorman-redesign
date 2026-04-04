@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "skills": {
+    "superdesign": {
+      "version": "1.0.0",
+      "installedAt": 1775312653199
+    },
+    "moltguard": {
+      "version": "6.8.16",
+      "installedAt": 1775312817917
+    },
+    "powerpoint-pptx": {
+      "version": "1.0.1",
+      "installedAt": 1775312825702
+    },
+    "self-improving": {
+      "version": "1.2.16",
+      "installedAt": 1775312834396
+    }
+  }
+}
