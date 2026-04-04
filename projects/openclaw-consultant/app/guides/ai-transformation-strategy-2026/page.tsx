@@ -385,15 +385,15 @@ export default function AITransformationStrategy2026Page() {
           
           {/* Introduction */}
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               2026 marks a pivotal year for AI transformation in UK businesses. With AI investment reaching £4.2 billion and adoption accelerating across all sectors, companies face a critical choice: lead the transformation or risk competitive irrelevance.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This strategic guide provides UK business leaders with the framework, insights, and roadmaps needed to build winning AI transformation strategies. Based on analysis of successful implementations across 200+ UK enterprises, you'll learn how to position your business for AI-driven growth while avoiding common pitfalls.
             </p>
 
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               From market analysis and competitive positioning to implementation roadmaps and measurement frameworks, this guide equips you with everything needed to make 2026 your breakthrough year for AI transformation.
             </p>
           </div>
@@ -410,7 +410,7 @@ export default function AITransformationStrategy2026Page() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">£4.2B</div>
-                <div className="text-slate-600 text-sm">UK AI investment 2026</div>
+                <div className="text-muted-dark text-sm">UK AI investment 2026</div>
               </div>
               
               <div className="text-center">
@@ -420,7 +420,7 @@ export default function AITransformationStrategy2026Page() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">67%</div>
-                <div className="text-slate-600 text-sm">UK businesses adopting AI</div>
+                <div className="text-muted-dark text-sm">UK businesses adopting AI</div>
               </div>
               
               <div className="text-center">
@@ -430,7 +430,7 @@ export default function AITransformationStrategy2026Page() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">42%</div>
-                <div className="text-slate-600 text-sm">Average productivity gain</div>
+                <div className="text-muted-dark text-sm">Average productivity gain</div>
               </div>
               
               <div className="text-center">
@@ -440,7 +440,7 @@ export default function AITransformationStrategy2026Page() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">18 months</div>
-                <div className="text-slate-600 text-sm">Average ROI timeline</div>
+                <div className="text-muted-dark text-sm">Average ROI timeline</div>
               </div>
             </div>
           </section>
@@ -466,7 +466,7 @@ export default function AITransformationStrategy2026Page() {
                         }`}>
                           {pillar.priority} Priority
                         </span>
-                        <span className="bg-white border border-slate-200 px-3 py-1 rounded-full text-sm font-medium text-slate-600">
+                        <span className="bg-white border border-border px-3 py-1 rounded-full text-sm font-medium text-muted-dark">
                           {pillar.timeframe}
                         </span>
                         <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -474,14 +474,14 @@ export default function AITransformationStrategy2026Page() {
                         </span>
                       </div>
                       
-                      <p className="text-slate-600 mb-6">{pillar.description}</p>
+                      <p className="text-muted-dark mb-6">{pillar.description}</p>
 
                       <div className="grid md:grid-cols-2 gap-6">
                         <div>
-                          <h4 className="font-semibold text-slate-800 mb-3">Key Initiatives:</h4>
+                          <h4 className="font-semibold text-dark mb-3">Key Initiatives:</h4>
                           <ul className="space-y-2">
                             {pillar.keyInitiatives.map((initiative, j) => (
-                              <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                              <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                                 <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                                 {initiative}
                               </li>
@@ -490,10 +490,10 @@ export default function AITransformationStrategy2026Page() {
                         </div>
                         
                         <div>
-                          <h4 className="font-semibold text-slate-800 mb-3">Success Metrics:</h4>
+                          <h4 className="font-semibold text-dark mb-3">Success Metrics:</h4>
                           <ul className="space-y-2">
                             {pillar.success_metrics.map((metric, j) => (
-                              <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                              <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                                 <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                                 {metric}
                               </li>
@@ -514,13 +514,13 @@ export default function AITransformationStrategy2026Page() {
             
             <div className="space-y-6">
               {ukMarketAnalysis.map((sector, i) => (
-                <div key={i} className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+                <div key={i} className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                   <div className="flex flex-wrap items-center justify-between mb-6">
                     <div>
                       <h3 className="font-heading text-lg font-bold text-navy">{sector.sector}</h3>
                       <div className="flex items-center gap-4 mt-2">
-                        <span className="text-slate-600 text-sm">Adoption: <strong>{sector.ai_adoption}</strong></span>
-                        <span className="text-slate-600 text-sm">Growth: <strong>{sector.growth_rate}</strong></span>
+                        <span className="text-muted-dark text-sm">Adoption: <strong>{sector.ai_adoption}</strong></span>
+                        <span className="text-muted-dark text-sm">Growth: <strong>{sector.growth_rate}</strong></span>
                       </div>
                     </div>
                     <div className={`px-4 py-2 rounded-full font-medium ${
@@ -534,10 +534,10 @@ export default function AITransformationStrategy2026Page() {
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Current Trends:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Current Trends:</h4>
                       <ul className="space-y-2">
                         {sector.key_trends.map((trend, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                             {trend}
                           </li>
@@ -546,10 +546,10 @@ export default function AITransformationStrategy2026Page() {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Emerging Opportunities:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Emerging Opportunities:</h4>
                       <ul className="space-y-2">
                         {sector.opportunities.map((opportunity, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                             {opportunity}
                           </li>
@@ -568,7 +568,7 @@ export default function AITransformationStrategy2026Page() {
             
             <div className="space-y-6">
               {competitiveFramework.map((strategy, i) => (
-                <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                <div key={i} className="bg-surface rounded-xl p-6 border border-border-light">
                   <div className="flex flex-wrap items-center gap-3 mb-4">
                     <h3 className="font-heading text-xl font-bold text-navy">{strategy.strategy}</h3>
                     <span className={`px-3 py-1 rounded-full text-sm font-medium ${
@@ -583,14 +583,14 @@ export default function AITransformationStrategy2026Page() {
                     </span>
                   </div>
                   
-                  <p className="text-slate-600 mb-6">{strategy.description}</p>
+                  <p className="text-muted-dark mb-6">{strategy.description}</p>
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Strategic Tactics:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Strategic Tactics:</h4>
                       <ul className="space-y-2">
                         {strategy.tactics.map((tactic, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                             {tactic}
                           </li>
@@ -599,10 +599,10 @@ export default function AITransformationStrategy2026Page() {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Success Indicators:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Success Indicators:</h4>
                       <ul className="space-y-2">
                         {strategy.success_indicators.map((indicator, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                             {indicator}
                           </li>
@@ -628,16 +628,16 @@ export default function AITransformationStrategy2026Page() {
                     </div>
                     <div>
                       <h3 className="font-heading text-xl font-bold text-navy">{quarter.quarter}</h3>
-                      <p className="text-slate-600">{quarter.focus}</p>
+                      <p className="text-muted-dark">{quarter.focus}</p>
                     </div>
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Key Milestones:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Key Milestones:</h4>
                       <ul className="space-y-2">
                         {quarter.milestones.map((milestone, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                             {milestone}
                           </li>
@@ -646,10 +646,10 @@ export default function AITransformationStrategy2026Page() {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Success Metrics:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Success Metrics:</h4>
                       <ul className="space-y-2">
                         {quarter.key_metrics.map((metric, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                             {metric}
                           </li>
@@ -686,8 +686,8 @@ export default function AITransformationStrategy2026Page() {
                   </div>
 
                   <div className="mt-6">
-                    <h4 className="font-semibold text-slate-800 mb-3">Partner Ecosystem:</h4>
-                    <div className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Partner Ecosystem:</h4>
+                    <div className="space-y-2 text-muted-dark text-sm">
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas AI consultancy</a> for strategic transformation support</span>
@@ -706,7 +706,7 @@ export default function AITransformationStrategy2026Page() {
                 
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Strategic Assessment</h3>
-                  <div className="space-y-3 text-slate-600 text-sm">
+                  <div className="space-y-3 text-muted-dark text-sm">
                     <div className="flex items-start gap-3">
                       <input type="checkbox" className="mt-1" />
                       <span>Current AI maturity and capability assessment</span>
@@ -750,51 +750,51 @@ export default function AITransformationStrategy2026Page() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Strategic Planning FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How do UK businesses determine the right AI transformation strategy?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Choose your AI transformation strategy based on market position, competitive dynamics, and organisational capabilities. Market leaders should consider AI-first innovation strategies, while followers may benefit from AI-enhanced differentiation. Assess your current AI maturity, available resources, risk tolerance, and strategic objectives to determine the optimal approach.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What's the typical timeline for AI transformation in UK enterprises?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   AI transformation typically occurs over 18-36 months with visible results within 6-12 months. Phase 1 (Foundation, 3-6 months) establishes strategy and quick wins. Phase 2 (Core Development, 6-12 months) implements major capabilities. Phase 3 (Market Leadership, 12-18 months) launches market-facing innovations. Phase 4 (Scale & Optimisation, 18+ months) achieves competitive leadership.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How should UK businesses budget for AI transformation initiatives?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   AI transformation budgets vary by company size and scope. SMEs (50-500 employees) typically invest £200K-£1M annually, mid-market (500-2,000 employees) invest £1M-£3M, and large enterprises invest £3M-£15M+. Allocate 60% to technology and implementation, 25% to talent and training, 10% to change management, and 5% to external expertise and partnerships.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Which sectors in the UK show the highest AI transformation ROI?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Financial services (78% adoption, 340% average ROI), retail & e-commerce (71% adoption, 420% average ROI), and manufacturing (65% adoption, 280% average ROI) show the highest AI transformation returns. Healthcare shows the fastest growth (52% annually) despite lower current adoption (58%). Professional services lag but show strong potential for operational AI applications.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What are the biggest risks in AI transformation strategy?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Major risks include technology focus without business strategy, underestimating organisational change requirements, inadequate data foundation, regulatory non-compliance, talent gaps, and competitive pressure during transformation. Mitigate through comprehensive strategic planning, strong change management, data governance, compliance frameworks, talent development, and phased implementation approaches.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How important is external expertise in AI transformation strategy?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   External expertise is crucial for strategy development and implementation guidance. 89% of successful AI transformations involve external partners for strategic planning, technology implementation, or change management. Consider consultancies like Blue Canvas AI for strategic guidance, technology partners like Pinchy for implementation, and platforms like ClawRoster for ongoing AI team management.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How do successful UK businesses measure AI transformation success?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Measure success through financial metrics (revenue growth, cost reduction, ROI), operational metrics (efficiency gains, quality improvements, speed increases), strategic metrics (market share, competitive position, innovation capacity), and organisational metrics (employee adoption, capability development, cultural change). Establish baseline measurements and track progress quarterly with comprehensive dashboards.
                 </p>
               </div>
@@ -815,7 +815,7 @@ export default function AITransformationStrategy2026Page() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Strategy Assessment
           </a>
@@ -825,23 +825,23 @@ export default function AITransformationStrategy2026Page() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-workforce-planning-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-workforce-planning-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Workforce Planning 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-governance-compliance-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-governance-compliance-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Governance & Compliance UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -849,13 +849,13 @@ export default function AITransformationStrategy2026Page() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Plan Your AI Transformation Strategy
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a strategic consultation to develop your 2026 AI transformation roadmap and competitive positioning strategy.
             </p>
           </div>

@@ -375,15 +375,15 @@ export default function EnterpriseAIDeploymentUKPage() {
           
           {/* Introduction */}
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               Enterprise AI deployment in the UK requires more than just technology implementation—it demands strategic planning, regulatory compliance, and organisational transformation. With 73% of UK enterprises now investing in AI, those who deploy strategically are seeing 300%+ ROI within 18 months.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This comprehensive guide covers the entire enterprise AI deployment lifecycle, from initial assessment through full-scale implementation. You'll learn proven frameworks used by successful UK enterprises, regulatory compliance strategies, and practical steps to ensure your AI deployment delivers measurable business value.
             </p>
 
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               Whether you're a FTSE 100 company or a growing enterprise, this guide provides the strategic framework and practical tools needed for successful AI deployment across your organisation.
             </p>
           </div>
@@ -400,7 +400,7 @@ export default function EnterpriseAIDeploymentUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">73%</div>
-                <div className="text-slate-600 text-sm">UK enterprises investing in AI</div>
+                <div className="text-muted-dark text-sm">UK enterprises investing in AI</div>
               </div>
               
               <div className="text-center">
@@ -410,7 +410,7 @@ export default function EnterpriseAIDeploymentUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">18 months</div>
-                <div className="text-slate-600 text-sm">Average deployment timeline</div>
+                <div className="text-muted-dark text-sm">Average deployment timeline</div>
               </div>
               
               <div className="text-center">
@@ -420,7 +420,7 @@ export default function EnterpriseAIDeploymentUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">£2.1B</div>
-                <div className="text-slate-600 text-sm">UK enterprise AI investment 2025</div>
+                <div className="text-muted-dark text-sm">UK enterprise AI investment 2025</div>
               </div>
               
               <div className="text-center">
@@ -430,7 +430,7 @@ export default function EnterpriseAIDeploymentUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">340%</div>
-                <div className="text-slate-600 text-sm">Average ROI within 2 years</div>
+                <div className="text-muted-dark text-sm">Average ROI within 2 years</div>
               </div>
             </div>
           </section>
@@ -449,7 +449,7 @@ export default function EnterpriseAIDeploymentUKPage() {
                     <div className="flex-grow">
                       <div className="flex flex-wrap items-center gap-3 mb-4">
                         <h3 className="font-heading text-xl font-bold text-navy">{phase.phase}</h3>
-                        <span className="bg-white border border-slate-200 px-3 py-1 rounded-full text-sm font-medium text-slate-600">
+                        <span className="bg-white border border-border px-3 py-1 rounded-full text-sm font-medium text-muted-dark">
                           {phase.duration}
                         </span>
                         <span className={`px-3 py-1 rounded-full text-sm font-medium ${
@@ -463,10 +463,10 @@ export default function EnterpriseAIDeploymentUKPage() {
                       
                       <div className="grid md:grid-cols-2 gap-6 mb-6">
                         <div>
-                          <h4 className="font-semibold text-slate-800 mb-3">Key Activities:</h4>
+                          <h4 className="font-semibold text-dark mb-3">Key Activities:</h4>
                           <ul className="space-y-2">
                             {phase.activities.map((activity, j) => (
-                              <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                              <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                                 <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                                 {activity}
                               </li>
@@ -475,10 +475,10 @@ export default function EnterpriseAIDeploymentUKPage() {
                         </div>
                         
                         <div>
-                          <h4 className="font-semibold text-slate-800 mb-3">Deliverables:</h4>
+                          <h4 className="font-semibold text-dark mb-3">Deliverables:</h4>
                           <ul className="space-y-2">
                             {phase.deliverables.map((deliverable, j) => (
-                              <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                              <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                                 <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                                 {deliverable}
                               </li>
@@ -488,10 +488,10 @@ export default function EnterpriseAIDeploymentUKPage() {
                       </div>
 
                       <div>
-                        <h4 className="font-semibold text-slate-800 mb-2">Key Stakeholders:</h4>
+                        <h4 className="font-semibold text-dark mb-2">Key Stakeholders:</h4>
                         <div className="flex flex-wrap gap-2">
                           {phase.keyStakeholders.map((stakeholder, j) => (
-                            <span key={j} className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm">
+                            <span key={j} className="bg-slate-100 text-dark px-3 py-1 rounded-full text-sm">
                               {stakeholder}
                             </span>
                           ))}
@@ -529,7 +529,7 @@ export default function EnterpriseAIDeploymentUKPage() {
                       <h4 className="font-semibold text-blue mb-3">Key Requirements:</h4>
                       <ul className="space-y-2">
                         {compliance.requirements.map((req, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                             {req}
                           </li>
@@ -541,7 +541,7 @@ export default function EnterpriseAIDeploymentUKPage() {
                       <h4 className="font-semibold text-blue mb-3">Implementation Approach:</h4>
                       <ul className="space-y-2">
                         {compliance.implementation.map((impl, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                             {impl}
                           </li>
@@ -560,47 +560,47 @@ export default function EnterpriseAIDeploymentUKPage() {
             
             <div className="space-y-8">
               {industryUseCases.map((useCase, i) => (
-                <div key={i} className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+                <div key={i} className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                   <div className="flex flex-wrap items-center justify-between mb-6">
                     <div>
                       <h3 className="font-heading text-lg font-bold text-navy">{useCase.industry}</h3>
-                      <p className="text-slate-600 text-sm">{useCase.company}</p>
+                      <p className="text-muted-dark text-sm">{useCase.company}</p>
                     </div>
                     <div className="text-right">
-                      <div className="text-sm text-slate-500 mb-1">Investment</div>
+                      <div className="text-sm text-muted mb-1">Investment</div>
                       <div className="text-navy font-bold">{useCase.implementation.investment}</div>
                     </div>
                   </div>
                   
                   <div className="mb-6">
-                    <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                    <p className="text-slate-600 text-sm mb-4">{useCase.challenge}</p>
+                    <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                    <p className="text-muted-dark text-sm mb-4">{useCase.challenge}</p>
                     
-                    <h4 className="font-semibold text-slate-800 mb-2">Solution:</h4>
-                    <p className="text-slate-600 text-sm mb-4">{useCase.solution}</p>
+                    <h4 className="font-semibold text-dark mb-2">Solution:</h4>
+                    <p className="text-muted-dark text-sm mb-4">{useCase.solution}</p>
 
                     <div className="grid md:grid-cols-3 gap-4 mb-4">
-                      <div className="bg-slate-50 rounded-lg p-3">
-                        <div className="text-sm font-medium text-slate-500 mb-1">Timeline</div>
+                      <div className="bg-surface rounded-lg p-3">
+                        <div className="text-sm font-medium text-muted mb-1">Timeline</div>
                         <div className="text-navy font-semibold">{useCase.implementation.timeline}</div>
                       </div>
-                      <div className="bg-slate-50 rounded-lg p-3">
-                        <div className="text-sm font-medium text-slate-500 mb-1">Investment</div>
+                      <div className="bg-surface rounded-lg p-3">
+                        <div className="text-sm font-medium text-muted mb-1">Investment</div>
                         <div className="text-navy font-semibold">{useCase.implementation.investment}</div>
                       </div>
-                      <div className="bg-slate-50 rounded-lg p-3">
-                        <div className="text-sm font-medium text-slate-500 mb-1">Scope</div>
+                      <div className="bg-surface rounded-lg p-3">
+                        <div className="text-sm font-medium text-muted mb-1">Scope</div>
                         <div className="text-navy font-semibold text-sm">{useCase.implementation.scope}</div>
                       </div>
                     </div>
                   </div>
                   
                   <div className="mb-6">
-                    <h4 className="font-semibold text-slate-800 mb-3">Results:</h4>
+                    <h4 className="font-semibold text-dark mb-3">Results:</h4>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
                       {Object.entries(useCase.results).map(([metric, value], j) => (
                         <div key={j} className="bg-green-50 rounded-lg p-3 text-center">
-                          <div className="text-sm font-medium text-slate-500 mb-1">{metric}</div>
+                          <div className="text-sm font-medium text-muted mb-1">{metric}</div>
                           <div className="text-green-700 font-semibold text-sm">{value}</div>
                         </div>
                       ))}
@@ -608,10 +608,10 @@ export default function EnterpriseAIDeploymentUKPage() {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Key Lessons:</h4>
+                    <h4 className="font-semibold text-dark mb-3">Key Lessons:</h4>
                     <ul className="space-y-2">
                       {useCase.lessons.map((lesson, j) => (
-                        <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                        <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                           <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                           {lesson}
                         </li>
@@ -629,7 +629,7 @@ export default function EnterpriseAIDeploymentUKPage() {
             
             <div className="space-y-6">
               {riskMitigationStrategies.map((risk, i) => (
-                <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                <div key={i} className="bg-surface rounded-xl p-6 border border-border-light">
                   <div className="flex flex-wrap items-center justify-between mb-4">
                     <h3 className="font-heading text-lg font-bold text-navy">{risk.risk}</h3>
                     <div className="flex gap-2">
@@ -651,16 +651,16 @@ export default function EnterpriseAIDeploymentUKPage() {
                   </div>
 
                   <div className="mb-6">
-                    <h4 className="font-semibold text-slate-800 mb-2">Potential Impact:</h4>
-                    <p className="text-slate-600 text-sm mb-4">{risk.impact}</p>
+                    <h4 className="font-semibold text-dark mb-2">Potential Impact:</h4>
+                    <p className="text-muted-dark text-sm mb-4">{risk.impact}</p>
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Mitigation Strategies:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Mitigation Strategies:</h4>
                       <ul className="space-y-2">
                         {risk.mitigation.map((strategy, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                             {strategy}
                           </li>
@@ -669,10 +669,10 @@ export default function EnterpriseAIDeploymentUKPage() {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Monitoring & Control:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Monitoring & Control:</h4>
                       <ul className="space-y-2">
                         {risk.monitoring.map((monitor, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                             {monitor}
                           </li>
@@ -709,8 +709,8 @@ export default function EnterpriseAIDeploymentUKPage() {
                   </div>
 
                   <div className="mt-6">
-                    <h4 className="font-semibold text-slate-800 mb-3">Partner Resources:</h4>
-                    <div className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Partner Resources:</h4>
+                    <div className="space-y-2 text-muted-dark text-sm">
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas AI consultancy</a> for strategic implementation support</span>
@@ -729,7 +729,7 @@ export default function EnterpriseAIDeploymentUKPage() {
                 
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Next Steps Checklist</h3>
-                  <div className="space-y-3 text-slate-600 text-sm">
+                  <div className="space-y-3 text-muted-dark text-sm">
                     <div className="flex items-start gap-3">
                       <input type="checkbox" className="mt-1" />
                       <span>Complete enterprise AI readiness assessment</span>
@@ -773,51 +773,51 @@ export default function EnterpriseAIDeploymentUKPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Frequently Asked Questions</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How long does enterprise AI deployment typically take?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Enterprise AI deployment typically takes 12-24 months for full implementation. This includes 2-4 weeks for strategic planning, 4-8 weeks for infrastructure setup, 6-12 weeks for pilot implementation, and 12-24 weeks for full-scale deployment. The timeline depends on organisational complexity, scope of deployment, and change management requirements.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What are the typical costs for enterprise AI deployment in the UK?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Enterprise AI deployment costs vary significantly based on scope and complexity. Small enterprises (100-500 employees) typically invest £200K-£800K, mid-size enterprises (500-2,000 employees) invest £800K-£2.5M, and large enterprises (2,000+ employees) invest £2.5M-£10M+. This includes technology, implementation, training, and ongoing support costs.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What UK regulations must be considered for enterprise AI deployment?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   UK enterprises must consider multiple regulations including UK GDPR and Data Protection Act 2018 for data processing, sector-specific regulations (FCA for financial services, MHRA for healthcare), Employment Rights Act for HR applications, Equality Act 2010 for non-discrimination, and Privacy and Electronic Communications Regulations for marketing applications. Each sector may have additional compliance requirements.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How can enterprises measure the ROI of AI deployment?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Measure AI ROI through multiple metrics: cost savings (labour cost reduction, operational efficiency gains, error reduction), revenue impact (new revenue streams, customer retention improvement, pricing optimisation), productivity gains (process automation, decision-making speed), and strategic benefits (competitive advantage, innovation capacity, market responsiveness). Track both quantitative metrics and qualitative business outcomes.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What are the biggest risks in enterprise AI deployment?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Major risks include data security and privacy breaches, algorithmic bias and discrimination, regulatory non-compliance, employee resistance and adoption failure, vendor lock-in and integration challenges, and inadequate governance and oversight. Successful enterprises address these through comprehensive risk management frameworks, employee engagement programmes, and robust governance structures.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Should enterprises build AI capabilities in-house or partner with specialists?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Most successful enterprises adopt a hybrid approach: partnering with specialists like Blue Canvas AI consultancy for strategic planning and implementation guidance, while building internal capabilities for ongoing management. This combines external expertise with internal ownership, reducing risk and ensuring long-term success. Consider factors like available budget, timeline, internal capabilities, and strategic importance when deciding.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How important is change management in enterprise AI deployment?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Change management is critical for AI deployment success. Research shows that 70% of AI projects fail due to poor adoption, not technical issues. Successful deployments invest 30-40% of project resources in change management, including executive sponsorship, employee training, communication programmes, and incentive alignment. Early and continuous employee engagement significantly improves adoption rates and ROI.
                 </p>
               </div>
@@ -838,7 +838,7 @@ export default function EnterpriseAIDeploymentUKPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Enterprise Assessment
           </a>
@@ -848,23 +848,23 @@ export default function EnterpriseAIDeploymentUKPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-transformation-strategy-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-transformation-strategy-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Transformation Strategy 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-workforce-planning-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-workforce-planning-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Workforce Planning 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -872,13 +872,13 @@ export default function EnterpriseAIDeploymentUKPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Plan Your Enterprise AI Strategy
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a strategic consultation to discuss your enterprise AI deployment requirements and develop a comprehensive implementation roadmap.
             </p>
           </div>

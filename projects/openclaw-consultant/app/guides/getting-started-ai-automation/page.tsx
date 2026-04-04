@@ -224,13 +224,13 @@ export default function GettingStartedAIAutomationPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#guide"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 Start Learning
               </a>
               <a
                 href="/"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 ← Back to Home
               </a>
@@ -254,7 +254,7 @@ export default function GettingStartedAIAutomationPage() {
 
           <div className="space-y-8">
             {automationLevels.map((level, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 items-start">
                   <div>
                     <div className="bg-orange text-white font-bold text-lg w-8 h-8 rounded-full flex items-center justify-center text-sm mb-3">
@@ -303,7 +303,7 @@ export default function GettingStartedAIAutomationPage() {
                     </div>
                   </div>
                   
-                  <div className="bg-navy text-white rounded-box p-4">
+                  <div className="bg-navy text-white rounded-2xl p-4">
                     <h4 className="text-white/80 font-semibold text-sm mb-2">ROI Timeline:</h4>
                     <div className="text-orange font-bold">{level.roi}</div>
                   </div>
@@ -315,7 +315,7 @@ export default function GettingStartedAIAutomationPage() {
       </section>
 
       {/* Getting Started Steps */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -328,7 +328,7 @@ export default function GettingStartedAIAutomationPage() {
 
           <div className="space-y-8">
             {gettingStartedSteps.map((step) => (
-              <div key={step.step} className="bg-surface rounded-box p-8 shadow-card">
+              <div key={step.step} className="bg-surface rounded-2xl p-8 shadow-card">
                 <div className="flex gap-6 items-start">
                   <div className="bg-orange text-white font-bold text-lg w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                     {step.step}
@@ -376,7 +376,7 @@ export default function GettingStartedAIAutomationPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {industryStarterPacks.map((pack, index) => (
-              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl text-white mb-6">{pack.industry}</h3>
                 
                 <div className="space-y-6">
@@ -429,7 +429,7 @@ export default function GettingStartedAIAutomationPage() {
 
           <div className="space-y-6">
             {commonMistakes.map((mistake, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
                   <div>
                     <div className="flex items-center gap-3 mb-3">
@@ -456,7 +456,7 @@ export default function GettingStartedAIAutomationPage() {
       </section>
 
       {/* Readiness Assessment */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -467,12 +467,12 @@ export default function GettingStartedAIAutomationPage() {
             </p>
           </div>
 
-          <div className="bg-surface rounded-box p-8">
+          <div className="bg-surface rounded-2xl p-8">
             <h3 className="font-heading font-bold text-xl text-dark mb-8">Automation Readiness Checklist</h3>
             
             <div className="space-y-6">
               {readinessAssessment.map((item, index) => (
-                <div key={index} className="bg-white rounded-box p-6">
+                <div key={index} className="bg-white rounded-2xl p-6">
                   <div className="flex gap-4 items-start">
                     <div className="flex-shrink-0">
                       <div className="w-6 h-6 border-2 border-orange rounded-sm flex items-center justify-center">
@@ -488,7 +488,7 @@ export default function GettingStartedAIAutomationPage() {
               ))}
             </div>
             
-            <div className="mt-8 p-6 bg-navy text-white rounded-box">
+            <div className="mt-8 p-6 bg-navy text-white rounded-2xl">
               <h4 className="font-semibold text-orange mb-3">Scoring:</h4>
               <ul className="space-y-2 text-sm">
                 <li><strong>4-5 Yes:</strong> You're ready to start with Level 1-2 automation</li>
@@ -561,7 +561,7 @@ export default function GettingStartedAIAutomationPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Get Your Automation Roadmap →
           </a>
@@ -571,23 +571,23 @@ export default function GettingStartedAIAutomationPage() {
       {/* Contact Section */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-beginner-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-beginner-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Beginner Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Skills: Complete Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -609,7 +609,7 @@ export default function GettingStartedAIAutomationPage() {
               </p>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Automation Readiness Consultation</h3>
               <p className="text-white/40 text-sm mb-6">Tell us about your business and automation goals</p>
               <ContactForm />

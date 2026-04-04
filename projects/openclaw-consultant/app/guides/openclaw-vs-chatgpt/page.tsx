@@ -189,13 +189,13 @@ export default function OpenClawVsChatGPTPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#comparison"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 See Full Comparison
               </a>
               <a
                 href="/"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 ← Back to Home
               </a>
@@ -215,7 +215,7 @@ export default function OpenClawVsChatGPTPage() {
                 The Quick Answer
               </h2>
               <div className="space-y-6">
-                <div className="bg-white rounded-box p-6 shadow-card">
+                <div className="bg-white rounded-2xl p-6 shadow-card">
                   <h3 className="font-heading font-bold text-lg text-dark mb-3">Choose ChatGPT When:</h3>
                   <ul className="space-y-2 text-sm text-muted-dark">
                     <li className="flex gap-2 items-start">
@@ -237,7 +237,7 @@ export default function OpenClawVsChatGPTPage() {
                   </ul>
                 </div>
                 
-                <div className="bg-navy text-white rounded-box p-6">
+                <div className="bg-navy text-white rounded-2xl p-6">
                   <h3 className="font-heading font-bold text-lg mb-3">Choose OpenClaw When:</h3>
                   <ul className="space-y-2 text-sm text-white/80">
                     <li className="flex gap-2 items-start">
@@ -261,7 +261,7 @@ export default function OpenClawVsChatGPTPage() {
               </div>
             </div>
             
-            <div className="bg-surface rounded-box p-8">
+            <div className="bg-surface rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-dark mb-6">Why Not Both?</h3>
               <p className="text-muted leading-relaxed mb-6">
                 Many businesses use both platforms for different purposes. ChatGPT for creative work and brainstorming, OpenClaw for business automation and workflows.
@@ -291,7 +291,7 @@ export default function OpenClawVsChatGPTPage() {
       </section>
 
       {/* Detailed Comparison Table */}
-      <section id="comparison" className="bg-white py-24">
+      <section id="comparison" className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -303,7 +303,7 @@ export default function OpenClawVsChatGPTPage() {
           </div>
 
           <div className="overflow-x-auto">
-            <table className="w-full bg-surface rounded-box">
+            <table className="w-full bg-surface rounded-2xl">
               <thead>
                 <tr className="border-b border-border">
                   <th className="text-left p-6 text-dark font-heading font-bold">Feature</th>
@@ -345,7 +345,7 @@ export default function OpenClawVsChatGPTPage() {
 
           <div className="space-y-12">
             {usesCaseScenarios.map((scenario, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="mb-8">
                   <h3 className="font-heading font-bold text-2xl text-dark mb-3">{scenario.scenario}</h3>
                   <p className="text-muted text-lg">{scenario.task}</p>
@@ -353,7 +353,7 @@ export default function OpenClawVsChatGPTPage() {
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                   {/* ChatGPT Approach */}
-                  <div className="border border-blue/20 rounded-box p-6">
+                  <div className="border border-blue/20 rounded-2xl p-6">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="bg-blue text-white font-bold text-sm px-3 py-1 rounded">ChatGPT</div>
                     </div>
@@ -384,7 +384,7 @@ export default function OpenClawVsChatGPTPage() {
                   </div>
 
                   {/* OpenClaw Approach */}
-                  <div className="border border-orange/20 rounded-box p-6">
+                  <div className="border border-orange/20 rounded-2xl p-6">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="bg-orange text-white font-bold text-sm px-3 py-1 rounded">OpenClaw</div>
                     </div>
@@ -415,7 +415,7 @@ export default function OpenClawVsChatGPTPage() {
                   </div>
                 </div>
                 
-                <div className="bg-navy text-white rounded-box p-6">
+                <div className="bg-navy text-white rounded-2xl p-6">
                   <h4 className="font-semibold text-orange mb-3">Recommendation:</h4>
                   <p className="text-white/80 text-sm">{scenario.recommendation}</p>
                 </div>
@@ -441,7 +441,7 @@ export default function OpenClawVsChatGPTPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {migrationConsiderations.map((path, index) => (
-              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
                 <div className="mb-6">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-white/60 text-sm">{path.from}</span>
@@ -522,7 +522,7 @@ export default function OpenClawVsChatGPTPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Get Platform Recommendation →
           </a>
@@ -532,23 +532,23 @@ export default function OpenClawVsChatGPTPage() {
       {/* Contact Section */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-vs-zapier-vs-make" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-vs-zapier-vs-make" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs Zapier vs Make</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-vs-n8n" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-vs-n8n" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs n8n: Which to Choose?</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -591,7 +591,7 @@ export default function OpenClawVsChatGPTPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Platform Recommendation</h3>
               <p className="text-white/40 text-sm mb-6">Tell us about your AI needs and current situation</p>
               <ContactForm />

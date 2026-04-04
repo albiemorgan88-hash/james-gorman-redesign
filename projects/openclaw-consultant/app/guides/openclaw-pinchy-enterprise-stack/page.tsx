@@ -63,11 +63,11 @@ export default function OpenClawPinchyEnterpriseStackPage() {
       <article className="py-16 bg-white">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               UK enterprises deploying the OpenClaw + Pinchy stack report 400% productivity improvements and 67% reduction in operational overhead. This powerful combination creates the first true enterprise AI operating system, enabling seamless coordination between AI agents and human teams.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This comprehensive guide demonstrates how the OpenClaw + Pinchy stack transforms enterprise operations through intelligent multi-agent orchestration. Learn from pioneering UK implementations and discover how to deploy this cutting-edge AI infrastructure in your organisation.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">400%</div>
-                <div className="text-slate-600 text-sm">Productivity improvement</div>
+                <div className="text-muted-dark text-sm">Productivity improvement</div>
               </div>
               
               <div className="text-center">
@@ -93,7 +93,7 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">12</div>
-                <div className="text-slate-600 text-sm">Coordinated AI agents</div>
+                <div className="text-muted-dark text-sm">Coordinated AI agents</div>
               </div>
               
               <div className="text-center">
@@ -103,7 +103,7 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">73%</div>
-                <div className="text-slate-600 text-sm">Operational overhead reduction</div>
+                <div className="text-muted-dark text-sm">Operational overhead reduction</div>
               </div>
               
               <div className="text-center">
@@ -113,7 +113,7 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">24/7</div>
-                <div className="text-slate-600 text-sm">Autonomous operations</div>
+                <div className="text-muted-dark text-sm">Autonomous operations</div>
               </div>
             </div>
 
@@ -122,8 +122,8 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">OpenClaw: Multi-Agent Orchestration Layer</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Core Capabilities:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Core Capabilities:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Intelligent agent spawning and lifecycle management</li>
                       <li>• Cross-platform skill execution and coordination</li>
                       <li>• Real-time session monitoring and control</li>
@@ -132,8 +132,8 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Enterprise Benefits:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Enterprise Benefits:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 300-500% improvement in task completion speed</li>
                       <li>• 90% reduction in manual coordination overhead</li>
                       <li>• 24/7 autonomous operation capability</li>
@@ -148,8 +148,8 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Pinchy: Intelligent Workflow Engine</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Platform Features:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Platform Features:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Visual workflow design and automation</li>
                       <li>• Smart context awareness and adaptation</li>
                       <li>• Team collaboration and communication hub</li>
@@ -158,8 +158,8 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Business Impact:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Business Impact:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 60-80% reduction in workflow complexity</li>
                       <li>• 40-60% improvement in team productivity</li>
                       <li>• 95% automation of routine processes</li>
@@ -170,7 +170,7 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                 </div>
                 
                 <div className="mt-4 p-4 bg-blue-50 rounded-lg">
-                  <p className="text-slate-700 text-sm">
+                  <p className="text-dark text-sm">
                     <strong>Learn more:</strong> Explore Pinchy's advanced capabilities at <a href="https://heypinchy.com" className="text-blue-600 hover:text-blue-800 underline">heypinchy.com</a>, developed by Clemens Helm and the innovative team behind next-generation workflow intelligence.
                   </p>
                 </div>
@@ -180,8 +180,8 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Integrated Stack Advantages</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Synergistic Capabilities:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Synergistic Capabilities:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Unified agent and workflow orchestration</li>
                       <li>• Intelligent task routing and load balancing</li>
                       <li>• Cross-system data flow and synchronisation</li>
@@ -190,8 +190,8 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Competitive Advantages:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Competitive Advantages:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• First-mover advantage in multi-agent coordination</li>
                       <li>• Unmatched scalability and flexibility</li>
                       <li>• Reduced vendor lock-in through open architecture</li>
@@ -208,11 +208,11 @@ export default function OpenClawPinchyEnterpriseStackPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Enterprise Implementation Success Stories</h2>
             
             <div className="space-y-8">
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">UK Financial Services Firm</h3>
-                    <p className="text-slate-600 text-sm">Major investment bank deploying OpenClaw + Pinchy for trading operations</p>
+                    <p className="text-muted-dark text-sm">Major investment bank deploying OpenClaw + Pinchy for trading operations</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     850% ROI
@@ -220,38 +220,38 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Complex multi-system trading workflows requiring real-time coordination between risk management, compliance, and execution teams</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Complex multi-system trading workflows requiring real-time coordination between risk management, compliance, and execution teams</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">Solution:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Deployed 8 specialised AI agents via OpenClaw orchestrating risk assessment, compliance checking, market analysis, and trade execution through Pinchy workflows</p>
+                  <h4 className="font-semibold text-dark mb-2">Solution:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Deployed 8 specialised AI agents via OpenClaw orchestrating risk assessment, compliance checking, market analysis, and trade execution through Pinchy workflows</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Trade Processing Speed</div>
+                    <div className="text-sm font-medium text-muted mb-1">Trade Processing Speed</div>
                     <div className="text-green-700 font-semibold text-sm">94% faster</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Compliance Accuracy</div>
+                    <div className="text-sm font-medium text-muted mb-1">Compliance Accuracy</div>
                     <div className="text-green-700 font-semibold text-sm">99.8%</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Operational Costs</div>
+                    <div className="text-sm font-medium text-muted mb-1">Operational Costs</div>
                     <div className="text-green-700 font-semibold text-sm">68% reduction</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Error Rate</div>
+                    <div className="text-sm font-medium text-muted mb-1">Error Rate</div>
                     <div className="text-green-700 font-semibold text-sm">87% improvement</div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">UK Manufacturing Group</h3>
-                    <p className="text-slate-600 text-sm">Multi-site manufacturer optimising supply chain and production coordination</p>
+                    <p className="text-muted-dark text-sm">Multi-site manufacturer optimising supply chain and production coordination</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     620% ROI
@@ -259,38 +259,38 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Coordinating production scheduling, inventory management, and quality control across 12 UK facilities</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Coordinating production scheduling, inventory management, and quality control across 12 UK facilities</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">Solution:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Implemented 12 site-specific agents coordinated through OpenClaw with Pinchy managing cross-facility workflows and optimization</p>
+                  <h4 className="font-semibold text-dark mb-2">Solution:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Implemented 12 site-specific agents coordinated through OpenClaw with Pinchy managing cross-facility workflows and optimization</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Production Efficiency</div>
+                    <div className="text-sm font-medium text-muted mb-1">Production Efficiency</div>
                     <div className="text-green-700 font-semibold text-sm">47% improvement</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Inventory Optimization</div>
+                    <div className="text-sm font-medium text-muted mb-1">Inventory Optimization</div>
                     <div className="text-green-700 font-semibold text-sm">38% cost reduction</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Quality Consistency</div>
+                    <div className="text-sm font-medium text-muted mb-1">Quality Consistency</div>
                     <div className="text-green-700 font-semibold text-sm">91% improvement</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Decision Speed</div>
+                    <div className="text-sm font-medium text-muted mb-1">Decision Speed</div>
                     <div className="text-green-700 font-semibold text-sm">78% faster</div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">UK Healthcare Trust</h3>
-                    <p className="text-slate-600 text-sm">NHS trust implementing coordinated patient care and resource management</p>
+                    <p className="text-muted-dark text-sm">NHS trust implementing coordinated patient care and resource management</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     £4.2M Savings
@@ -298,28 +298,28 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Managing patient flow, resource allocation, and clinical coordination across multiple departments and specialties</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Managing patient flow, resource allocation, and clinical coordination across multiple departments and specialties</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">Solution:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Deployed department-specific agents through OpenClaw with Pinchy orchestrating patient pathways and resource optimization</p>
+                  <h4 className="font-semibold text-dark mb-2">Solution:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Deployed department-specific agents through OpenClaw with Pinchy orchestrating patient pathways and resource optimization</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Patient Throughput</div>
+                    <div className="text-sm font-medium text-muted mb-1">Patient Throughput</div>
                     <div className="text-green-700 font-semibold text-sm">34% increase</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Wait Times</div>
+                    <div className="text-sm font-medium text-muted mb-1">Wait Times</div>
                     <div className="text-green-700 font-semibold text-sm">52% reduction</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Resource Utilisation</div>
+                    <div className="text-sm font-medium text-muted mb-1">Resource Utilisation</div>
                     <div className="text-green-700 font-semibold text-sm">41% improvement</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Patient Satisfaction</div>
+                    <div className="text-sm font-medium text-muted mb-1">Patient Satisfaction</div>
                     <div className="text-green-700 font-semibold text-sm">67% improvement</div>
                   </div>
                 </div>
@@ -334,7 +334,7 @@ export default function OpenClawPinchyEnterpriseStackPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Phase 1: Foundation (Months 1-3)</h3>
-                  <div className="space-y-3 text-slate-600 text-sm">
+                  <div className="space-y-3 text-muted-dark text-sm">
                     <div className="flex items-start gap-3">
                       <input type="checkbox" className="mt-1" />
                       <span>Enterprise architecture assessment and integration planning</span>
@@ -358,8 +358,8 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                   </div>
 
                   <div className="mt-6">
-                    <h4 className="font-semibold text-slate-800 mb-3">Expert Support:</h4>
-                    <div className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Expert Support:</h4>
+                    <div className="space-y-2 text-muted-dark text-sm">
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas AI consultancy</a> for enterprise AI strategy</span>
@@ -384,20 +384,20 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Phase 2: Scale & Optimize (Months 4-12)</h3>
                   <div className="space-y-4">
                     <div className="border-l-4 border-orange pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Agent Ecosystem Development</h4>
-                      <p className="text-slate-600 text-sm">Deploy specialized agents across business functions with intelligent coordination</p>
+                      <h4 className="font-medium text-dark mb-1">Agent Ecosystem Development</h4>
+                      <p className="text-muted-dark text-sm">Deploy specialized agents across business functions with intelligent coordination</p>
                     </div>
                     <div className="border-l-4 border-blue pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Workflow Optimization</h4>
-                      <p className="text-slate-600 text-sm">Implement advanced Pinchy workflows with predictive analytics and auto-optimization</p>
+                      <h4 className="font-medium text-dark mb-1">Workflow Optimization</h4>
+                      <p className="text-muted-dark text-sm">Implement advanced Pinchy workflows with predictive analytics and auto-optimization</p>
                     </div>
                     <div className="border-l-4 border-green-500 pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Enterprise Integration</h4>
-                      <p className="text-slate-600 text-sm">Connect all business systems with unified data flows and real-time synchronization</p>
+                      <h4 className="font-medium text-dark mb-1">Enterprise Integration</h4>
+                      <p className="text-muted-dark text-sm">Connect all business systems with unified data flows and real-time synchronization</p>
                     </div>
                     <div className="border-l-4 border-purple pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Performance Excellence</h4>
-                      <p className="text-slate-600 text-sm">Continuous monitoring, optimization, and expansion of AI-powered operations</p>
+                      <h4 className="font-medium text-dark mb-1">Performance Excellence</h4>
+                      <p className="text-muted-dark text-sm">Continuous monitoring, optimization, and expansion of AI-powered operations</p>
                     </div>
                   </div>
                 </div>
@@ -410,51 +410,51 @@ export default function OpenClawPinchyEnterpriseStackPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">OpenClaw + Pinchy Stack FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What makes the OpenClaw + Pinchy combination unique for enterprises?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   This is the first true enterprise AI operating system combining multi-agent orchestration with intelligent workflow automation. OpenClaw manages AI agent coordination whilst Pinchy handles human-AI workflow integration, creating unprecedented operational efficiency and 24/7 autonomous capabilities.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What are typical implementation timelines and costs for the enterprise stack?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Implementation ranges from 3-12 months depending on complexity. Costs vary: mid-size enterprises (£150K-£500K), large enterprises (£500K-£2M+). ROI typically achieved within 8-16 months with 300-800% returns over 3 years through productivity gains and operational cost reductions.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How does the stack integrate with existing enterprise systems?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   The stack provides extensive integration capabilities through APIs, webhooks, and connectors for 200+ enterprise systems. OpenClaw handles system coordination whilst Pinchy manages data flows and process orchestration. Most integrations complete within 2-8 weeks depending on system complexity.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What security and compliance features are included?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Enterprise-grade security includes end-to-end encryption, role-based access controls, comprehensive audit trails, GDPR compliance, and SOC 2 certification readiness. OpenClaw provides agent security isolation whilst Pinchy ensures workflow data protection and regulatory compliance monitoring.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How many AI agents can the stack coordinate simultaneously?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   The stack scales from dozens to hundreds of coordinated agents depending on infrastructure. Typical enterprise deployments run 10-50 specialized agents with burst capacity to 200+. OpenClaw's intelligent load balancing and Pinchy's workflow optimization ensure optimal performance at any scale.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What training and support is provided for enterprise teams?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Comprehensive training includes technical setup, workflow design, agent management, and optimization strategies. Blue Canvas AI provides strategic consulting, implementation support, and ongoing optimization. Training programmes cover all skill levels from end-users to technical administrators.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How does the stack prepare organizations for future AI developments?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   The open architecture and modular design future-proof investments by supporting emerging AI technologies, new agent capabilities, and evolving workflow requirements. Regular updates ensure compatibility with cutting-edge AI models whilst maintaining operational stability and enterprise reliability.
                 </p>
               </div>
@@ -475,7 +475,7 @@ export default function OpenClawPinchyEnterpriseStackPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Enterprise AI Strategy
           </a>
@@ -485,23 +485,23 @@ export default function OpenClawPinchyEnterpriseStackPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-agent-team" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-agent-team" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">Build an OpenClaw Agent Team</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-agent-team-setup" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-agent-team-setup" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Agent Team Setup Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -509,13 +509,13 @@ export default function OpenClawPinchyEnterpriseStackPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Deploy the Future of Enterprise AI
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a consultation to discuss how the OpenClaw + Pinchy stack can transform your enterprise operations and create unprecedented competitive advantages.
             </p>
           </div>

@@ -225,13 +225,13 @@ export default function SmallBusinessAutomationPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 Get SME Quote
               </a>
               <a
                 href="/"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 ← Back to Home
               </a>
@@ -256,7 +256,7 @@ export default function SmallBusinessAutomationPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {smallBusinessChallenges.map((challenge) => (
-              <div key={challenge.title} className="bg-white rounded-box p-8 shadow-card">
+              <div key={challenge.title} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="flex gap-4 items-start mb-4">
                   <div className="text-3xl">{challenge.icon}</div>
                   <div>
@@ -274,7 +274,7 @@ export default function SmallBusinessAutomationPage() {
       </section>
 
       {/* Automation Areas */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -290,7 +290,7 @@ export default function SmallBusinessAutomationPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {automationAreas.map((area) => (
-              <div key={area.area} className="bg-surface rounded-box p-8 card-lift">
+              <div key={area.area} className="bg-surface rounded-2xl p-8 card-lift">
                 <div className="flex justify-between items-start mb-6">
                   <h3 className="font-heading font-bold text-xl text-dark">{area.area}</h3>
                   <div className="text-right">
@@ -332,10 +332,10 @@ export default function SmallBusinessAutomationPage() {
             {smePackages.map((pkg) => (
               <div
                 key={pkg.name}
-                className={`rounded-box p-8 card-lift relative ${
+                className={`rounded-2xl p-8 card-lift relative ${
                   pkg.popular
                     ? "bg-navy text-white border-2 border-orange/30"
-                    : "bg-white border border-border"
+                    : "bg-white border border-border-light"
                 }`}
               >
                 {pkg.popular && (
@@ -402,7 +402,7 @@ export default function SmallBusinessAutomationPage() {
                 
                 <a
                   href="#contact"
-                  className={`block text-center px-6 py-3 rounded-btn font-semibold text-sm transition-all ${
+                  className={`block text-center px-6 py-3 rounded-xl font-semibold text-sm transition-all ${
                     pkg.popular
                       ? "bg-orange text-white hover:bg-orange-hover"
                       : "bg-dark text-white hover:bg-dark/90"
@@ -435,7 +435,7 @@ export default function SmallBusinessAutomationPage() {
 
           <div className="space-y-8">
             {smeResults.map((result, index) => (
-              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                   <div>
                     <h3 className="font-heading font-bold text-xl text-white mb-2">{result.business}</h3>
@@ -457,7 +457,7 @@ export default function SmallBusinessAutomationPage() {
                     <h4 className="text-white/80 font-semibold text-sm mb-4">Results:</h4>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       {result.results.map((achievement) => (
-                        <div key={achievement} className="bg-white/[0.05] rounded-btn p-4 text-center">
+                        <div key={achievement} className="bg-white/[0.05] rounded-xl p-4 text-center">
                           <p className="text-orange font-bold text-lg mb-1">
                             {achievement.split(' ')[0]} {achievement.split(' ')[1]}
                           </p>
@@ -476,7 +476,7 @@ export default function SmallBusinessAutomationPage() {
       </section>
 
       {/* Implementation Process */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -497,7 +497,7 @@ export default function SmallBusinessAutomationPage() {
                   {index + 1}
                 </div>
                 <div className="flex-1">
-                  <div className="bg-surface rounded-box p-8 shadow-card">
+                  <div className="bg-surface rounded-2xl p-8 shadow-card">
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                       <h3 className="font-heading font-bold text-xl text-dark">{step.step}</h3>
                       <span className="text-orange font-medium text-sm">{step.duration}</span>
@@ -519,7 +519,7 @@ export default function SmallBusinessAutomationPage() {
       {/* ROI Calculator Preview */}
       <section className="bg-light py-24">
         <div className="max-w-[1140px] mx-auto px-6">
-          <div className="bg-white rounded-box p-8 lg:p-12 shadow-card">
+          <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-card">
             <div className="text-center mb-12">
               <h2 className="font-heading text-3xl font-bold text-dark mb-4">
                 Calculate Your Automation ROI
@@ -558,7 +558,7 @@ export default function SmallBusinessAutomationPage() {
                 </div>
               </div>
               
-              <div className="bg-navy text-white rounded-box p-8">
+              <div className="bg-navy text-white rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl mb-6">Your Monthly ROI</h3>
                 <div className="space-y-4 mb-6">
                   <div className="flex justify-between items-center">
@@ -653,7 +653,7 @@ export default function SmallBusinessAutomationPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Get Your SME Quote →
           </a>
@@ -696,7 +696,7 @@ export default function SmallBusinessAutomationPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">SME Automation Assessment</h3>
               <p className="text-white/40 text-sm mb-6">Tell us about your business and time challenges</p>
               <ContactForm />

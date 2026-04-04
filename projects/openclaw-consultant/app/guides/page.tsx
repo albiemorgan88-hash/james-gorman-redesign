@@ -169,21 +169,21 @@ export default function GuidesPage() {
             </h1>
             
             <p className="text-white/60 text-lg md:text-xl max-w-[600px] mx-auto leading-relaxed">
-              Comprehensive guides and tutorials from Phil Patterson, the UK&apos;s leading OpenClaw consultant. Everything you need to get AI agents working for your business.
+              Comprehensive guides and tutorials from Blue Canvas, the UK&apos;s leading OpenClaw consultant. Everything you need to get AI agents working for your business.
             </p>
           </div>
         </div>
       </section>
 
       {/* Quick Nav */}
-      <section className="py-8 bg-white border-b border-slate-100 sticky top-0 z-20">
+      <section className="py-8 bg-white border-b border-border-light sticky top-0 z-20">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="flex flex-wrap gap-2 justify-center">
             {Object.keys(guidesData).map((cat) => (
               <a
                 key={cat}
                 href={`#${cat.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-                className="text-sm px-3 py-1.5 rounded-full bg-slate-100 text-slate-600 hover:bg-orange/10 hover:text-orange transition-colors font-medium"
+                className="text-sm px-3 py-1.5 rounded-full bg-slate-100 text-muted-dark hover:bg-orange/10 hover:text-orange transition-colors font-medium"
               >
                 {cat}
               </a>
@@ -193,22 +193,22 @@ export default function GuidesPage() {
       </section>
 
       {/* Guide Categories */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           {Object.entries(guidesData).map(([category, guides]) => (
             <div key={category} id={category.toLowerCase().replace(/[^a-z0-9]+/g, '-')} className="mb-16 last:mb-0 scroll-mt-24">
               <div className="flex items-center gap-3 mb-6">
                 <h2 className="font-heading text-2xl font-bold text-navy">{category}</h2>
-                <span className="text-sm text-slate-400">{guides.length} guides</span>
+                <span className="text-sm text-muted">{guides.length} guides</span>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {guides.map((guide) => (
                   <a
                     key={guide.href}
                     href={guide.href}
-                    className="group bg-white rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 border border-slate-100"
+                    className="group bg-white rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 border border-border-light"
                   >
-                    <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-medium mb-3 ${categoryColors[category] || 'bg-slate-100 text-slate-600'}`}>
+                    <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-medium mb-3 ${categoryColors[category] || 'bg-slate-100 text-muted-dark'}`}>
                       {guide.category}
                     </span>
                     <h3 className="font-heading text-base font-bold text-navy group-hover:text-orange transition-colors leading-snug mb-2">
@@ -234,7 +234,7 @@ export default function GuidesPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Expert Help
           </a>
@@ -242,13 +242,13 @@ export default function GuidesPage() {
       </section>
 
       {/* Contact Form */}
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Ready to Get Started?
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a free consultation to discuss your OpenClaw requirements.
             </p>
           </div>

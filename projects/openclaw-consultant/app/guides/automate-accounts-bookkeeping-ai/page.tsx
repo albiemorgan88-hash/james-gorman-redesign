@@ -382,11 +382,11 @@ export default function AutomateAccountsBookkeepingAIPage() {
           
           {/* Introduction */}
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               UK businesses waste thousands of hours annually on manual accounting tasks that could be automated. With AI-powered accounting automation, you can eliminate 85% of routine bookkeeping work while improving accuracy and ensuring perfect compliance with Making Tax Digital requirements.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This comprehensive guide shows you exactly how to automate your accounts and bookkeeping processes, from initial setup to full integration with your existing accounting software. Learn from real UK business implementations and avoid the common pitfalls that delay ROI.
             </p>
           </div>
@@ -397,7 +397,7 @@ export default function AutomateAccountsBookkeepingAIPage() {
             
             <div className="grid gap-6 mb-8">
               {automationAreas.map((area, i) => (
-                <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                <div key={i} className="bg-surface rounded-xl p-6 border border-border-light">
                   <div className="flex flex-wrap items-center justify-between mb-4">
                     <h3 className="font-heading text-xl font-bold text-navy">{area.area}</h3>
                     <div className="flex gap-3">
@@ -415,10 +415,10 @@ export default function AutomateAccountsBookkeepingAIPage() {
                   
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Automated Processes:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Automated Processes:</h4>
                       <ul className="space-y-2">
                         {area.processes.map((process, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                             {process}
                           </li>
@@ -427,10 +427,10 @@ export default function AutomateAccountsBookkeepingAIPage() {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Key Benefits:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Key Benefits:</h4>
                       <ul className="space-y-2">
                         {area.benefits.map((benefit, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                             {benefit}
                           </li>
@@ -439,9 +439,9 @@ export default function AutomateAccountsBookkeepingAIPage() {
                     </div>
                   </div>
                   
-                  <div className="mt-4 pt-4 border-t border-slate-200">
+                  <div className="mt-4 pt-4 border-t border-border">
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-slate-500">Implementation Complexity:</span>
+                      <span className="text-muted">Implementation Complexity:</span>
                       <span className={`font-medium ${
                         area.complexity === 'Low' || area.complexity === 'Low-Medium' ? 'text-green-600' :
                         area.complexity === 'Medium' || area.complexity === 'Medium-High' ? 'text-yellow-600' : 'text-red-600'
@@ -461,11 +461,11 @@ export default function AutomateAccountsBookkeepingAIPage() {
             
             <div className="space-y-8">
               {integrationOptions.map((software, i) => (
-                <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+                <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-border-light">
                   <div className="flex flex-wrap items-center justify-between mb-6">
                     <div>
                       <h3 className="font-heading text-xl font-bold text-navy">{software.software}</h3>
-                      <p className="text-slate-500 text-sm">{software.popularity} of UK SMEs use this platform</p>
+                      <p className="text-muted text-sm">{software.popularity} of UK SMEs use this platform</p>
                     </div>
                     <div className="bg-orange/10 text-orange px-3 py-1 rounded-full text-sm font-medium">
                       {software.setup} setup
@@ -474,10 +474,10 @@ export default function AutomateAccountsBookkeepingAIPage() {
                   
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Integration Features:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Integration Features:</h4>
                       <ul className="space-y-2">
                         {software.features.map((feature, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                             {feature}
                           </li>
@@ -486,10 +486,10 @@ export default function AutomateAccountsBookkeepingAIPage() {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Automation Capabilities:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Automation Capabilities:</h4>
                       <ul className="space-y-2">
                         {software.automation.map((capability, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                             {capability}
                           </li>
@@ -517,7 +517,7 @@ export default function AutomateAccountsBookkeepingAIPage() {
                       <div className="flex flex-wrap items-center justify-between mb-4">
                         <h3 className="font-heading text-xl font-bold text-navy">{phase.phase}</h3>
                         <div className="flex gap-3">
-                          <span className="bg-white border border-slate-200 px-3 py-1 rounded-full text-sm font-medium text-slate-600">
+                          <span className="bg-white border border-border px-3 py-1 rounded-full text-sm font-medium text-muted-dark">
                             {phase.duration}
                           </span>
                           <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -528,10 +528,10 @@ export default function AutomateAccountsBookkeepingAIPage() {
                       
                       <div className="grid md:grid-cols-2 gap-6">
                         <div>
-                          <h4 className="font-semibold text-slate-800 mb-3">Key Activities:</h4>
+                          <h4 className="font-semibold text-dark mb-3">Key Activities:</h4>
                           <ul className="space-y-2">
                             {phase.activities.map((activity, j) => (
-                              <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                              <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                                 <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                                 {activity}
                               </li>
@@ -540,10 +540,10 @@ export default function AutomateAccountsBookkeepingAIPage() {
                         </div>
                         
                         <div>
-                          <h4 className="font-semibold text-slate-800 mb-3">Deliverables:</h4>
+                          <h4 className="font-semibold text-dark mb-3">Deliverables:</h4>
                           <ul className="space-y-2">
                             {phase.deliverables.map((deliverable, j) => (
-                              <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                              <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                                 <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                                 {deliverable}
                               </li>
@@ -562,15 +562,15 @@ export default function AutomateAccountsBookkeepingAIPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-navy mb-1">£5,500-£9,500</div>
-                  <div className="text-slate-600 text-sm">Setup Investment</div>
+                  <div className="text-muted-dark text-sm">Setup Investment</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-navy mb-1">6-8 weeks</div>
-                  <div className="text-slate-600 text-sm">Implementation Time</div>
+                  <div className="text-muted-dark text-sm">Implementation Time</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-green-600 mb-1">18-24 months</div>
-                  <div className="text-slate-600 text-sm">Payback Period</div>
+                  <div className="text-muted-dark text-sm">Payback Period</div>
                 </div>
               </div>
             </div>
@@ -584,14 +584,14 @@ export default function AutomateAccountsBookkeepingAIPage() {
               {complianceRequirements.map((req, i) => (
                 <div key={i} className="bg-blue/5 border border-blue/20 rounded-xl p-6">
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">{req.requirement}</h3>
-                  <p className="text-slate-700 mb-6">{req.description}</p>
+                  <p className="text-dark mb-6">{req.description}</p>
                   
                   <div className="grid md:grid-cols-2 gap-6 mb-6">
                     <div>
                       <h4 className="font-semibold text-blue mb-3">Automation Benefits:</h4>
                       <ul className="space-y-2">
                         {req.automation.map((benefit, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                             {benefit}
                           </li>
@@ -600,12 +600,12 @@ export default function AutomateAccountsBookkeepingAIPage() {
                     </div>
                     
                     <div>
-                      <div className="bg-white rounded-lg p-4 border border-slate-200">
+                      <div className="bg-white rounded-lg p-4 border border-border-light">
                         <h4 className="font-semibold text-red-600 mb-2">Non-Compliance Risk:</h4>
-                        <p className="text-slate-600 text-sm mb-3">{req.penalties}</p>
+                        <p className="text-muted-dark text-sm mb-3">{req.penalties}</p>
                         <div className="text-sm">
-                          <span className="font-medium text-slate-700">Deadline: </span>
-                          <span className="text-slate-600">{req.deadline}</span>
+                          <span className="font-medium text-dark">Deadline: </span>
+                          <span className="text-muted-dark">{req.deadline}</span>
                         </div>
                       </div>
                     </div>
@@ -619,12 +619,12 @@ export default function AutomateAccountsBookkeepingAIPage() {
           <section className="mb-16">
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Technical Implementation with OpenClaw</h2>
             
-            <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
+            <div className="bg-surface rounded-xl p-8 border border-border-light">
               <h3 className="font-heading text-xl font-bold text-navy mb-6">Core System Architecture</h3>
               
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-4">AI Agent Configuration</h4>
+                  <h4 className="font-semibold text-dark mb-4">AI Agent Configuration</h4>
                   <div className="bg-navy/5 rounded-lg p-4 mb-4">
                     <pre className="text-sm text-navy font-mono overflow-x-auto">
 {`// Accounting Automation Agent
@@ -645,7 +645,7 @@ const accountingAgent = {
 };`}
                     </pre>
                   </div>
-                  <ul className="space-y-2 text-slate-600 text-sm">
+                  <ul className="space-y-2 text-muted-dark text-sm">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                       Multi-process automation capability
@@ -662,30 +662,30 @@ const accountingAgent = {
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-4">Process Workflows</h4>
+                  <h4 className="font-semibold text-dark mb-4">Process Workflows</h4>
                   <div className="space-y-4">
                     <div className="border-l-4 border-orange pl-4">
-                      <h5 className="font-medium text-slate-800 mb-1">Invoice Processing</h5>
-                      <p className="text-slate-600 text-sm">Email monitoring → OCR extraction → Data validation → Coding assignment → Approval workflow</p>
+                      <h5 className="font-medium text-dark mb-1">Invoice Processing</h5>
+                      <p className="text-muted-dark text-sm">Email monitoring → OCR extraction → Data validation → Coding assignment → Approval workflow</p>
                     </div>
                     <div className="border-l-4 border-blue pl-4">
-                      <h5 className="font-medium text-slate-800 mb-1">Expense Management</h5>
-                      <p className="text-slate-600 text-sm">Receipt capture → Category recognition → VAT extraction → Policy checking → Reimbursement processing</p>
+                      <h5 className="font-medium text-dark mb-1">Expense Management</h5>
+                      <p className="text-muted-dark text-sm">Receipt capture → Category recognition → VAT extraction → Policy checking → Reimbursement processing</p>
                     </div>
                     <div className="border-l-4 border-green-500 pl-4">
-                      <h5 className="font-medium text-slate-800 mb-1">Bank Reconciliation</h5>
-                      <p className="text-slate-600 text-sm">Transaction import → Smart matching → Exception handling → Reconciliation reporting → Month-end closing</p>
+                      <h5 className="font-medium text-dark mb-1">Bank Reconciliation</h5>
+                      <p className="text-muted-dark text-sm">Transaction import → Smart matching → Exception handling → Reconciliation reporting → Month-end closing</p>
                     </div>
                   </div>
                 </div>
               </div>
               
-              <div className="bg-white rounded-lg p-6 border border-slate-200">
-                <h4 className="font-semibold text-slate-800 mb-4">Security & Compliance Features:</h4>
+              <div className="bg-white rounded-lg p-6 border border-border-light">
+                <h4 className="font-semibold text-dark mb-4">Security & Compliance Features:</h4>
                 <div className="grid md:grid-cols-3 gap-6">
                   <div>
-                    <h5 className="font-medium text-slate-700 mb-2">Data Security:</h5>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h5 className="font-medium text-dark mb-2">Data Security:</h5>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• End-to-end encryption</li>
                       <li>• UK-based data storage</li>
                       <li>• Role-based access control</li>
@@ -693,8 +693,8 @@ const accountingAgent = {
                     </ul>
                   </div>
                   <div>
-                    <h5 className="font-medium text-slate-700 mb-2">Compliance:</h5>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h5 className="font-medium text-dark mb-2">Compliance:</h5>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• MTD compliance built-in</li>
                       <li>• GDPR data handling</li>
                       <li>• Automated backup retention</li>
@@ -702,8 +702,8 @@ const accountingAgent = {
                     </ul>
                   </div>
                   <div>
-                    <h5 className="font-medium text-slate-700 mb-2">Quality Control:</h5>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h5 className="font-medium text-dark mb-2">Quality Control:</h5>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• Accuracy validation</li>
                       <li>• Exception handling</li>
                       <li>• Human review queues</li>
@@ -721,11 +721,11 @@ const accountingAgent = {
             
             <div className="space-y-8">
               {ukIndustryExamples.map((example, i) => (
-                <div key={i} className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+                <div key={i} className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                   <div className="flex flex-wrap items-center justify-between mb-4">
                     <div>
                       <h3 className="font-heading text-lg font-bold text-navy">{example.industry}</h3>
-                      <p className="text-slate-600 text-sm">{example.company}</p>
+                      <p className="text-muted-dark text-sm">{example.company}</p>
                     </div>
                     <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                       {example.roi} ROI
@@ -733,20 +733,20 @@ const accountingAgent = {
                   </div>
                   
                   <div className="mb-6">
-                    <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                    <p className="text-slate-600 text-sm mb-4">{example.challenge}</p>
+                    <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                    <p className="text-muted-dark text-sm mb-4">{example.challenge}</p>
                     
-                    <h4 className="font-semibold text-slate-800 mb-2">Solution:</h4>
-                    <p className="text-slate-600 text-sm mb-4">{example.solution}</p>
+                    <h4 className="font-semibold text-dark mb-2">Solution:</h4>
+                    <p className="text-muted-dark text-sm mb-4">{example.solution}</p>
                   </div>
                   
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Implementation:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Implementation:</h4>
                       <div className="space-y-2">
                         {Object.entries(example.implementation).map(([key, value], j) => (
-                          <div key={j} className="flex justify-between items-center p-2 bg-slate-50 rounded text-sm">
-                            <span className="text-slate-600">{key}:</span>
+                          <div key={j} className="flex justify-between items-center p-2 bg-surface rounded text-sm">
+                            <span className="text-muted-dark">{key}:</span>
                             <span className="font-medium">{value}</span>
                           </div>
                         ))}
@@ -754,11 +754,11 @@ const accountingAgent = {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Results:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Results:</h4>
                       <div className="space-y-2">
                         {Object.entries(example.results).map(([key, value], j) => (
                           <div key={j} className="flex justify-between items-center p-2 bg-green-50 rounded text-sm">
-                            <span className="text-slate-600">{key}:</span>
+                            <span className="text-muted-dark">{key}:</span>
                             <span className="font-medium text-green-700">{value}</span>
                           </div>
                         ))}
@@ -774,27 +774,27 @@ const accountingAgent = {
           <section className="mb-16">
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">ROI Calculator Template</h2>
             
-            <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
+            <div className="bg-surface rounded-xl p-8 border border-border-light">
               <h3 className="font-heading text-xl font-bold text-navy mb-6">Calculate Your Potential Savings</h3>
               
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-4">Current Costs (Annual):</h4>
+                  <h4 className="font-semibold text-dark mb-4">Current Costs (Annual):</h4>
                   <div className="space-y-3">
-                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                      <span className="text-slate-600">Bookkeeper/Accountant salary:</span>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                      <span className="text-muted-dark">Bookkeeper/Accountant salary:</span>
                       <span className="font-mono">£______</span>
                     </div>
-                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                      <span className="text-slate-600">External accounting fees:</span>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                      <span className="text-muted-dark">External accounting fees:</span>
                       <span className="font-mono">£______</span>
                     </div>
-                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                      <span className="text-slate-600">Software subscriptions:</span>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                      <span className="text-muted-dark">Software subscriptions:</span>
                       <span className="font-mono">£______</span>
                     </div>
-                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                      <span className="text-slate-600">Compliance/penalty costs:</span>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                      <span className="text-muted-dark">Compliance/penalty costs:</span>
                       <span className="font-mono">£______</span>
                     </div>
                     <div className="flex justify-between items-center p-3 bg-red-50 rounded-lg border border-red-200">
@@ -805,22 +805,22 @@ const accountingAgent = {
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-4">Automation Investment:</h4>
+                  <h4 className="font-semibold text-dark mb-4">Automation Investment:</h4>
                   <div className="space-y-3">
-                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                      <span className="text-slate-600">Setup & implementation:</span>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                      <span className="text-muted-dark">Setup & implementation:</span>
                       <span className="font-mono">£5,500-£9,500</span>
                     </div>
-                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                      <span className="text-slate-600">Annual operating costs:</span>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                      <span className="text-muted-dark">Annual operating costs:</span>
                       <span className="font-mono">£2,400-£3,600</span>
                     </div>
-                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                      <span className="text-slate-600">Reduced staff costs:</span>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                      <span className="text-muted-dark">Reduced staff costs:</span>
                       <span className="font-mono">75% saving</span>
                     </div>
-                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                      <span className="text-slate-600">Efficiency gains:</span>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                      <span className="text-muted-dark">Efficiency gains:</span>
                       <span className="font-mono">85% time saving</span>
                     </div>
                     <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg border border-green-200">
@@ -833,10 +833,10 @@ const accountingAgent = {
               
               <div className="mt-8 p-4 bg-orange/10 rounded-lg border border-orange/20">
                 <h4 className="font-semibold text-orange mb-2">Quick ROI Estimate:</h4>
-                <p className="text-slate-700 text-sm mb-2">
+                <p className="text-dark text-sm mb-2">
                   If you currently spend £30,000 annually on bookkeeping and accounting:
                 </p>
-                <ul className="space-y-1 text-slate-600 text-sm">
+                <ul className="space-y-1 text-muted-dark text-sm">
                   <li>• Annual savings after automation: £22,500 (75% reduction)</li>
                   <li>• Setup investment: £7,500</li>
                   <li>• Annual operating cost: £3,000</li>
@@ -858,23 +858,23 @@ const accountingAgent = {
                   <div className="space-y-3">
                     <label className="flex items-center gap-3">
                       <input type="checkbox" className="rounded border-slate-300" />
-                      <span className="text-slate-700 text-sm">Audit current accounting processes and time spent</span>
+                      <span className="text-dark text-sm">Audit current accounting processes and time spent</span>
                     </label>
                     <label className="flex items-center gap-3">
                       <input type="checkbox" className="rounded border-slate-300" />
-                      <span className="text-slate-700 text-sm">Review existing accounting software capabilities</span>
+                      <span className="text-dark text-sm">Review existing accounting software capabilities</span>
                     </label>
                     <label className="flex items-center gap-3">
                       <input type="checkbox" className="rounded border-slate-300" />
-                      <span className="text-slate-700 text-sm">Assess Making Tax Digital compliance requirements</span>
+                      <span className="text-dark text-sm">Assess Making Tax Digital compliance requirements</span>
                     </label>
                     <label className="flex items-center gap-3">
                       <input type="checkbox" className="rounded border-slate-300" />
-                      <span className="text-slate-700 text-sm">Document current error rates and compliance issues</span>
+                      <span className="text-dark text-sm">Document current error rates and compliance issues</span>
                     </label>
                     <label className="flex items-center gap-3">
                       <input type="checkbox" className="rounded border-slate-300" />
-                      <span className="text-slate-700 text-sm">Calculate potential ROI using the template above</span>
+                      <span className="text-dark text-sm">Calculate potential ROI using the template above</span>
                     </label>
                   </div>
                 </div>
@@ -882,21 +882,21 @@ const accountingAgent = {
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Implementation Priorities:</h3>
                   <div className="space-y-2">
-                    <div className="flex items-center gap-3 p-3 bg-white rounded-lg border border-slate-200">
+                    <div className="flex items-center gap-3 p-3 bg-white rounded-lg border border-border-light">
                       <span className="w-6 h-6 bg-orange text-white rounded-full flex items-center justify-center text-xs font-bold">1</span>
-                      <span className="text-slate-700 text-sm">Start with invoice processing (highest ROI)</span>
+                      <span className="text-dark text-sm">Start with invoice processing (highest ROI)</span>
                     </div>
-                    <div className="flex items-center gap-3 p-3 bg-white rounded-lg border border-slate-200">
+                    <div className="flex items-center gap-3 p-3 bg-white rounded-lg border border-border-light">
                       <span className="w-6 h-6 bg-orange text-white rounded-full flex items-center justify-center text-xs font-bold">2</span>
-                      <span className="text-slate-700 text-sm">Add expense management automation</span>
+                      <span className="text-dark text-sm">Add expense management automation</span>
                     </div>
-                    <div className="flex items-center gap-3 p-3 bg-white rounded-lg border border-slate-200">
+                    <div className="flex items-center gap-3 p-3 bg-white rounded-lg border border-border-light">
                       <span className="w-6 h-6 bg-orange text-white rounded-full flex items-center justify-center text-xs font-bold">3</span>
-                      <span className="text-slate-700 text-sm">Implement bank reconciliation automation</span>
+                      <span className="text-dark text-sm">Implement bank reconciliation automation</span>
                     </div>
-                    <div className="flex items-center gap-3 p-3 bg-white rounded-lg border border-slate-200">
+                    <div className="flex items-center gap-3 p-3 bg-white rounded-lg border border-border-light">
                       <span className="w-6 h-6 bg-orange text-white rounded-full flex items-center justify-center text-xs font-bold">4</span>
-                      <span className="text-slate-700 text-sm">Deploy VAT and compliance automation</span>
+                      <span className="text-dark text-sm">Deploy VAT and compliance automation</span>
                     </div>
                   </div>
                 </div>
@@ -929,10 +929,10 @@ const accountingAgent = {
               
               <div>
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Get Expert Help</h3>
-                <p className="text-slate-600 mb-4">
+                <p className="text-muted-dark mb-4">
                   Accounting automation requires careful planning to ensure compliance and maximise ROI. I can help you:
                 </p>
-                <ul className="space-y-2 text-slate-600 text-sm">
+                <ul className="space-y-2 text-muted-dark text-sm">
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                     Audit your current processes and identify automation opportunities
@@ -968,7 +968,7 @@ const accountingAgent = {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Free Assessment
           </a>
@@ -978,23 +978,23 @@ const accountingAgent = {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-customer-service-automation-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-customer-service-automation-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Customer Service Automation UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-appointment-booking" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-appointment-booking" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Appointment Booking for Business</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -1002,13 +1002,13 @@ const accountingAgent = {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Transform Your Accounting Process
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a free consultation to discuss your accounting automation requirements and get a detailed implementation plan.
             </p>
           </div>

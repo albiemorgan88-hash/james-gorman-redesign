@@ -63,11 +63,11 @@ export default function AIAgentTeamManagementPage() {
       <article className="py-16 bg-white">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               As AI agents become integral to business operations, effective team management becomes critical for success. Well-managed AI agent teams deliver 340% better performance and 67% lower operational costs compared to ad-hoc implementations.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This practical guide provides frameworks, tools, and strategies for managing AI agent teams at scale. Learn how leading organisations structure their AI operations, monitor performance, and coordinate complex multi-agent workflows.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function AIAgentTeamManagementPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">340%</div>
-                <div className="text-slate-600 text-sm">Better team performance</div>
+                <div className="text-muted-dark text-sm">Better team performance</div>
               </div>
               
               <div className="text-center">
@@ -93,7 +93,7 @@ export default function AIAgentTeamManagementPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">67%</div>
-                <div className="text-slate-600 text-sm">Lower operational costs</div>
+                <div className="text-muted-dark text-sm">Lower operational costs</div>
               </div>
               
               <div className="text-center">
@@ -103,7 +103,7 @@ export default function AIAgentTeamManagementPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">24/7</div>
-                <div className="text-slate-600 text-sm">Continuous operations</div>
+                <div className="text-muted-dark text-sm">Continuous operations</div>
               </div>
               
               <div className="text-center">
@@ -113,7 +113,7 @@ export default function AIAgentTeamManagementPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">95%</div>
-                <div className="text-slate-600 text-sm">Task success rate</div>
+                <div className="text-muted-dark text-sm">Task success rate</div>
               </div>
             </div>
 
@@ -122,8 +122,8 @@ export default function AIAgentTeamManagementPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Hierarchical Team Structure</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Team Roles:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Team Roles:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• <strong>Team Lead Agent:</strong> Coordinates team activities and decisions</li>
                       <li>• <strong>Specialist Agents:</strong> Handle specific domain expertise</li>
                       <li>• <strong>Support Agents:</strong> Provide data and resource assistance</li>
@@ -132,8 +132,8 @@ export default function AIAgentTeamManagementPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Benefits:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Benefits:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Clear decision-making chains</li>
                       <li>• Reduced coordination overhead</li>
                       <li>• Specialised skill development</li>
@@ -148,8 +148,8 @@ export default function AIAgentTeamManagementPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Cross-Functional Teams</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Team Composition:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Team Composition:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• <strong>Process Expert:</strong> Understands business workflows</li>
                       <li>• <strong>Data Analyst:</strong> Processes and interprets information</li>
                       <li>• <strong>Customer Interface:</strong> Handles user interactions</li>
@@ -158,8 +158,8 @@ export default function AIAgentTeamManagementPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Use Cases:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Use Cases:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Complex business process automation</li>
                       <li>• Customer service operations</li>
                       <li>• Compliance and regulatory tasks</li>
@@ -174,8 +174,8 @@ export default function AIAgentTeamManagementPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Swarm Intelligence Model</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Characteristics:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Characteristics:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• <strong>Autonomous Agents:</strong> Independent decision-making</li>
                       <li>• <strong>Collective Intelligence:</strong> Shared learning and knowledge</li>
                       <li>• <strong>Adaptive Coordination:</strong> Dynamic task allocation</li>
@@ -184,8 +184,8 @@ export default function AIAgentTeamManagementPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Applications:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Applications:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Large-scale data processing</li>
                       <li>• Distributed problem-solving</li>
                       <li>• Real-time optimisation tasks</li>
@@ -201,60 +201,60 @@ export default function AIAgentTeamManagementPage() {
           <section className="mb-16">
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Performance Monitoring & KPIs</h2>
             
-            <div className="bg-slate-50 rounded-xl p-8 border border-slate-200 mb-8">
+            <div className="bg-surface rounded-xl p-8 border border-border mb-8">
               <h3 className="font-heading text-xl font-bold text-navy mb-6">Key Performance Metrics</h3>
               
               <div className="grid md:grid-cols-3 gap-6">
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-3">Efficiency Metrics</h4>
+                  <h4 className="font-semibold text-dark mb-3">Efficiency Metrics</h4>
                   <div className="space-y-3">
-                    <div className="bg-white rounded-lg p-3 border border-slate-200">
-                      <h5 className="font-medium text-slate-800 text-sm mb-1">Task Completion Rate</h5>
-                      <p className="text-slate-600 text-xs">Percentage of tasks completed successfully</p>
+                    <div className="bg-white rounded-lg p-3 border border-border-light">
+                      <h5 className="font-medium text-dark text-sm mb-1">Task Completion Rate</h5>
+                      <p className="text-muted-dark text-xs">Percentage of tasks completed successfully</p>
                     </div>
-                    <div className="bg-white rounded-lg p-3 border border-slate-200">
-                      <h5 className="font-medium text-slate-800 text-sm mb-1">Processing Speed</h5>
-                      <p className="text-slate-600 text-xs">Average time per task completion</p>
+                    <div className="bg-white rounded-lg p-3 border border-border-light">
+                      <h5 className="font-medium text-dark text-sm mb-1">Processing Speed</h5>
+                      <p className="text-muted-dark text-xs">Average time per task completion</p>
                     </div>
-                    <div className="bg-white rounded-lg p-3 border border-slate-200">
-                      <h5 className="font-medium text-slate-800 text-sm mb-1">Resource Utilisation</h5>
-                      <p className="text-slate-600 text-xs">Compute and memory usage efficiency</p>
+                    <div className="bg-white rounded-lg p-3 border border-border-light">
+                      <h5 className="font-medium text-dark text-sm mb-1">Resource Utilisation</h5>
+                      <p className="text-muted-dark text-xs">Compute and memory usage efficiency</p>
                     </div>
                   </div>
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-3">Quality Metrics</h4>
+                  <h4 className="font-semibold text-dark mb-3">Quality Metrics</h4>
                   <div className="space-y-3">
-                    <div className="bg-white rounded-lg p-3 border border-slate-200">
-                      <h5 className="font-medium text-slate-800 text-sm mb-1">Accuracy Score</h5>
-                      <p className="text-slate-600 text-xs">Correctness of agent outputs</p>
+                    <div className="bg-white rounded-lg p-3 border border-border-light">
+                      <h5 className="font-medium text-dark text-sm mb-1">Accuracy Score</h5>
+                      <p className="text-muted-dark text-xs">Correctness of agent outputs</p>
                     </div>
-                    <div className="bg-white rounded-lg p-3 border border-slate-200">
-                      <h5 className="font-medium text-slate-800 text-sm mb-1">Error Rate</h5>
-                      <p className="text-slate-600 text-xs">Frequency of mistakes or failures</p>
+                    <div className="bg-white rounded-lg p-3 border border-border-light">
+                      <h5 className="font-medium text-dark text-sm mb-1">Error Rate</h5>
+                      <p className="text-muted-dark text-xs">Frequency of mistakes or failures</p>
                     </div>
-                    <div className="bg-white rounded-lg p-3 border border-slate-200">
-                      <h5 className="font-medium text-slate-800 text-sm mb-1">Consistency Index</h5>
-                      <p className="text-slate-600 text-xs">Reliability across similar tasks</p>
+                    <div className="bg-white rounded-lg p-3 border border-border-light">
+                      <h5 className="font-medium text-dark text-sm mb-1">Consistency Index</h5>
+                      <p className="text-muted-dark text-xs">Reliability across similar tasks</p>
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-3">Collaboration Metrics</h4>
+                  <h4 className="font-semibold text-dark mb-3">Collaboration Metrics</h4>
                   <div className="space-y-3">
-                    <div className="bg-white rounded-lg p-3 border border-slate-200">
-                      <h5 className="font-medium text-slate-800 text-sm mb-1">Team Coordination</h5>
-                      <p className="text-slate-600 text-xs">Effectiveness of multi-agent workflows</p>
+                    <div className="bg-white rounded-lg p-3 border border-border-light">
+                      <h5 className="font-medium text-dark text-sm mb-1">Team Coordination</h5>
+                      <p className="text-muted-dark text-xs">Effectiveness of multi-agent workflows</p>
                     </div>
-                    <div className="bg-white rounded-lg p-3 border border-slate-200">
-                      <h5 className="font-medium text-slate-800 text-sm mb-1">Communication Quality</h5>
-                      <p className="text-slate-600 text-xs">Clarity and relevance of inter-agent messages</p>
+                    <div className="bg-white rounded-lg p-3 border border-border-light">
+                      <h5 className="font-medium text-dark text-sm mb-1">Communication Quality</h5>
+                      <p className="text-muted-dark text-xs">Clarity and relevance of inter-agent messages</p>
                     </div>
-                    <div className="bg-white rounded-lg p-3 border border-slate-200">
-                      <h5 className="font-medium text-slate-800 text-sm mb-1">Conflict Resolution</h5>
-                      <p className="text-slate-600 text-xs">Time to resolve disagreements</p>
+                    <div className="bg-white rounded-lg p-3 border border-border-light">
+                      <h5 className="font-medium text-dark text-sm mb-1">Conflict Resolution</h5>
+                      <p className="text-muted-dark text-xs">Time to resolve disagreements</p>
                     </div>
                   </div>
                 </div>
@@ -263,14 +263,14 @@ export default function AIAgentTeamManagementPage() {
 
             <div className="bg-blue/5 border border-blue/20 rounded-xl p-6">
               <h3 className="font-heading text-xl font-bold text-navy mb-4">ClawRoster Integration</h3>
-              <p className="text-slate-600 mb-4">
+              <p className="text-muted-dark mb-4">
                 <a href="https://clawroster.io" className="text-orange hover:text-orange-hover">ClawRoster, the digital CV platform for AI agent teams</a>, 
                 provides comprehensive performance tracking and team management capabilities for complex AI operations.
               </p>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-3">Team Management Features:</h4>
-                  <ul className="space-y-2 text-slate-600 text-sm">
+                  <h4 className="font-semibold text-dark mb-3">Team Management Features:</h4>
+                  <ul className="space-y-2 text-muted-dark text-sm">
                     <li>• Real-time performance dashboards</li>
                     <li>• Agent skill and capability tracking</li>
                     <li>• Team collaboration analytics</li>
@@ -279,8 +279,8 @@ export default function AIAgentTeamManagementPage() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-3">Benefits for Teams:</h4>
-                  <ul className="space-y-2 text-slate-600 text-sm">
+                  <h4 className="font-semibold text-dark mb-3">Benefits for Teams:</h4>
+                  <ul className="space-y-2 text-muted-dark text-sm">
                     <li>• Improved visibility into team performance</li>
                     <li>• Data-driven decision making</li>
                     <li>• Proactive issue identification</li>
@@ -296,12 +296,12 @@ export default function AIAgentTeamManagementPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Team Coordination Strategies</h2>
             
             <div className="space-y-6">
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <h3 className="font-heading text-lg font-bold text-navy mb-4">Communication Protocols</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Message Standards:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Message Standards:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Structured message formats for consistency</li>
                       <li>• Priority levels for urgent communications</li>
                       <li>• Context sharing for informed decision-making</li>
@@ -310,8 +310,8 @@ export default function AIAgentTeamManagementPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Coordination Mechanisms:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Coordination Mechanisms:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Task assignment and delegation protocols</li>
                       <li>• Resource sharing and allocation rules</li>
                       <li>• Conflict resolution procedures</li>
@@ -322,12 +322,12 @@ export default function AIAgentTeamManagementPage() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <h3 className="font-heading text-lg font-bold text-navy mb-4">Workflow Management</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Process Design:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Process Design:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Clear role definitions and responsibilities</li>
                       <li>• Sequential and parallel task orchestration</li>
                       <li>• Checkpoint and milestone tracking</li>
@@ -336,8 +336,8 @@ export default function AIAgentTeamManagementPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Optimisation Techniques:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Optimisation Techniques:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Load balancing across team members</li>
                       <li>• Dynamic task reassignment</li>
                       <li>• Performance-based task allocation</li>
@@ -357,7 +357,7 @@ export default function AIAgentTeamManagementPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Team Setup</h3>
-                  <div className="space-y-3 text-slate-600 text-sm">
+                  <div className="space-y-3 text-muted-dark text-sm">
                     <div className="flex items-start gap-3">
                       <input type="checkbox" className="mt-1" />
                       <span>Define clear team objectives and success criteria</span>
@@ -381,8 +381,8 @@ export default function AIAgentTeamManagementPage() {
                   </div>
 
                   <div className="mt-6">
-                    <h4 className="font-semibold text-slate-800 mb-3">Expert Support:</h4>
-                    <div className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Expert Support:</h4>
+                    <div className="space-y-2 text-muted-dark text-sm">
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas AI consultancy</a> for team management strategy</span>
@@ -395,20 +395,20 @@ export default function AIAgentTeamManagementPage() {
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Success Factors</h3>
                   <div className="space-y-4">
                     <div className="border-l-4 border-orange pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Clear Objectives</h4>
-                      <p className="text-slate-600 text-sm">Well-defined goals and measurable outcomes</p>
+                      <h4 className="font-medium text-dark mb-1">Clear Objectives</h4>
+                      <p className="text-muted-dark text-sm">Well-defined goals and measurable outcomes</p>
                     </div>
                     <div className="border-l-4 border-blue pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Regular Monitoring</h4>
-                      <p className="text-slate-600 text-sm">Continuous performance tracking and optimisation</p>
+                      <h4 className="font-medium text-dark mb-1">Regular Monitoring</h4>
+                      <p className="text-muted-dark text-sm">Continuous performance tracking and optimisation</p>
                     </div>
                     <div className="border-l-4 border-green-500 pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Effective Communication</h4>
-                      <p className="text-slate-600 text-sm">Robust coordination and information sharing</p>
+                      <h4 className="font-medium text-dark mb-1">Effective Communication</h4>
+                      <p className="text-muted-dark text-sm">Robust coordination and information sharing</p>
                     </div>
                     <div className="border-l-4 border-purple pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Continuous Improvement</h4>
-                      <p className="text-slate-600 text-sm">Regular review and refinement of processes</p>
+                      <h4 className="font-medium text-dark mb-1">Continuous Improvement</h4>
+                      <p className="text-muted-dark text-sm">Regular review and refinement of processes</p>
                     </div>
                   </div>
                 </div>
@@ -421,51 +421,51 @@ export default function AIAgentTeamManagementPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">AI Team Management FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What are the key challenges in managing AI agent teams?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Key challenges include coordinating multiple autonomous agents, ensuring consistent performance, managing resource allocation, handling conflicts and errors, maintaining visibility into agent activities, and scaling team operations. Effective governance, monitoring, and communication protocols address these challenges.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How many agents should be included in a typical AI team?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Optimal team size depends on task complexity and coordination requirements. Simple tasks: 3-5 agents. Complex workflows: 5-12 agents. Large-scale operations: 12-50+ agents with hierarchical structure. Start small and scale based on performance and coordination effectiveness.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What tools are essential for AI agent team management?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Essential tools include performance monitoring dashboards, communication platforms, workflow orchestration systems, resource management tools, and governance frameworks. ClawRoster provides comprehensive AI agent team management capabilities, while platforms like OpenClaw enable team deployment and coordination.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How do you measure the success of AI agent teams?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Measure success through efficiency metrics (task completion rates, processing speed), quality indicators (accuracy, consistency), collaboration effectiveness (coordination, communication), business impact (cost savings, productivity gains), and stakeholder satisfaction. Regular assessment drives continuous improvement.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What governance structures work best for AI agent teams?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Effective governance includes clear roles and responsibilities, decision-making hierarchies, performance standards, risk management protocols, compliance frameworks, and regular review processes. Balance autonomy with oversight to maintain performance while enabling innovation.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How do AI agent teams handle conflicts and disagreements?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Implement structured conflict resolution including escalation hierarchies, voting mechanisms, expert arbitration, performance-based decisions, and human oversight for complex disputes. Clear protocols and decision criteria reduce conflicts and ensure quick resolution when they occur.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Should businesses hire specialists to manage AI agent teams?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Consider specialists for complex or large-scale deployments. Internal capabilities work for simple teams, but expert guidance from consultancies like Blue Canvas AI helps with team structure design, performance optimisation, and governance frameworks. Balance internal development with external expertise.
                 </p>
               </div>
@@ -486,7 +486,7 @@ export default function AIAgentTeamManagementPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Team Assessment
           </a>
@@ -496,23 +496,23 @@ export default function AIAgentTeamManagementPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-customer-service-automation-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-customer-service-automation-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Customer Service Automation UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-appointment-booking" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-appointment-booking" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Appointment Booking for Business</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -520,13 +520,13 @@ export default function AIAgentTeamManagementPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Build High-Performing AI Teams
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a consultation to discuss your AI agent team management requirements and develop optimal team structures.
             </p>
           </div>

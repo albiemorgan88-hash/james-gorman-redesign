@@ -503,7 +503,7 @@ export default function OpenClawTutorialBeginnersPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#tutorial" className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange">
+              <a href="#tutorial" className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange">
                 Start Tutorial
               </a>
             </div>
@@ -511,7 +511,7 @@ export default function OpenClawTutorialBeginnersPage() {
         </div>
       </section>
 
-      <section id="tutorial" className="bg-white py-24">
+      <section id="tutorial" className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -524,7 +524,7 @@ export default function OpenClawTutorialBeginnersPage() {
 
           <div className="space-y-12">
             {tutorialSteps.map((step, index) => (
-              <div key={index} className="bg-surface rounded-box p-8 shadow-card">
+              <div key={index} className="bg-surface rounded-2xl p-8 shadow-card">
                 <div className="flex items-start gap-6">
                   <div className="bg-orange text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                     {step.step}
@@ -605,7 +605,7 @@ export default function OpenClawTutorialBeginnersPage() {
 
           <div className="space-y-8">
             {practicalExercises.map((project, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="font-heading font-bold text-lg text-dark">{project.project}</h3>
                   <div className="flex gap-2">
@@ -649,7 +649,7 @@ export default function OpenClawTutorialBeginnersPage() {
                   </div>
                 </div>
 
-                <div className="bg-slate-50 rounded-lg p-4">
+                <div className="bg-surface rounded-lg p-4">
                   <h4 className="font-semibold text-dark mb-2">Code Examples:</h4>
                   <div className="space-y-3">
                     {Object.entries(project.code).map(([key, value]) => (
@@ -678,7 +678,7 @@ export default function OpenClawTutorialBeginnersPage() {
 
           <div className="space-y-6">
             {commonChallenges.map((item, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-lg text-dark mb-3">{item.challenge}</h3>
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -711,7 +711,7 @@ export default function OpenClawTutorialBeginnersPage() {
         </div>
       </section>
 
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -724,7 +724,7 @@ export default function OpenClawTutorialBeginnersPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
             {nextSteps.map((step, index) => (
-              <div key={index} className="bg-surface rounded-box p-8 shadow-card">
+              <div key={index} className="bg-surface rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-lg text-dark mb-3">{step.area}</h3>
                 <p className="text-muted mb-6">{step.description}</p>
                 
@@ -760,23 +760,23 @@ export default function OpenClawTutorialBeginnersPage() {
 
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-beginner-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-beginner-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Beginner Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Skills: Complete Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -813,7 +813,7 @@ export default function OpenClawTutorialBeginnersPage() {
               </ul>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Beginner Support</h3>
               <p className="text-white/40 text-sm mb-6">Get hands-on help with your OpenClaw learning</p>
               <ContactForm />

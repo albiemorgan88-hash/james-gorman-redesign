@@ -63,11 +63,11 @@ export default function EnterpriseOpenClawDeploymentPage() {
       <article className="py-16 bg-white">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               Enterprise OpenClaw deployment transforms how organisations leverage AI agents for business automation, decision-making, and customer engagement. With proper architecture and governance, enterprises achieve 300%+ ROI while maintaining security, compliance, and scalability.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This comprehensive guide provides enterprise architects and business leaders with proven deployment strategies, from initial pilots through full production scaling. Learn how leading UK enterprises successfully implement OpenClaw across complex organisational structures while maintaining security and compliance standards.
             </p>
           </div>
@@ -75,12 +75,12 @@ export default function EnterpriseOpenClawDeploymentPage() {
           <section className="mb-16">
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Enterprise Architecture Overview</h2>
             
-            <div className="bg-slate-50 rounded-xl p-8 border border-slate-200 mb-8">
+            <div className="bg-surface rounded-xl p-8 border border-border mb-8">
               <h3 className="font-heading text-xl font-bold text-navy mb-6">Core Components</h3>
               
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-4">OpenClaw Gateway</h4>
+                  <h4 className="font-semibold text-dark mb-4">OpenClaw Gateway</h4>
                   <div className="bg-navy/5 rounded-lg p-4 mb-4">
                     <pre className="text-sm text-navy font-mono overflow-x-auto">
 {`# Enterprise Gateway Configuration
@@ -97,7 +97,7 @@ gateway:
     logging: "centralized"`}
                     </pre>
                   </div>
-                  <ul className="space-y-2 text-slate-600 text-sm">
+                  <ul className="space-y-2 text-muted-dark text-sm">
                     <li>• Centralized agent orchestration</li>
                     <li>• Load balancing and auto-scaling</li>
                     <li>• SSO and RBAC integration</li>
@@ -106,19 +106,19 @@ gateway:
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-4">Agent Management</h4>
+                  <h4 className="font-semibold text-dark mb-4">Agent Management</h4>
                   <div className="space-y-4">
                     <div className="border-l-4 border-orange pl-4">
-                      <h5 className="font-medium text-slate-800 mb-1">Agent Deployment</h5>
-                      <p className="text-slate-600 text-sm">Containerized agents with Kubernetes orchestration</p>
+                      <h5 className="font-medium text-dark mb-1">Agent Deployment</h5>
+                      <p className="text-muted-dark text-sm">Containerized agents with Kubernetes orchestration</p>
                     </div>
                     <div className="border-l-4 border-blue pl-4">
-                      <h5 className="font-medium text-slate-800 mb-1">Resource Management</h5>
-                      <p className="text-slate-600 text-sm">Dynamic resource allocation and cost optimisation</p>
+                      <h5 className="font-medium text-dark mb-1">Resource Management</h5>
+                      <p className="text-muted-dark text-sm">Dynamic resource allocation and cost optimisation</p>
                     </div>
                     <div className="border-l-4 border-green-500 pl-4">
-                      <h5 className="font-medium text-slate-800 mb-1">Version Control</h5>
-                      <p className="text-slate-600 text-sm">GitOps workflows for agent lifecycle management</p>
+                      <h5 className="font-medium text-dark mb-1">Version Control</h5>
+                      <p className="text-muted-dark text-sm">GitOps workflows for agent lifecycle management</p>
                     </div>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ gateway:
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">99.9%</div>
-                <div className="text-slate-600 text-sm">Enterprise uptime SLA</div>
+                <div className="text-muted-dark text-sm">Enterprise uptime SLA</div>
               </div>
               
               <div className="text-center">
@@ -143,7 +143,7 @@ gateway:
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">1000+</div>
-                <div className="text-slate-600 text-sm">Concurrent agents supported</div>
+                <div className="text-muted-dark text-sm">Concurrent agents supported</div>
               </div>
               
               <div className="text-center">
@@ -153,7 +153,7 @@ gateway:
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">&lt;50ms</div>
-                <div className="text-slate-600 text-sm">Average response latency</div>
+                <div className="text-muted-dark text-sm">Average response latency</div>
               </div>
               
               <div className="text-center">
@@ -163,7 +163,7 @@ gateway:
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">24/7</div>
-                <div className="text-slate-600 text-sm">Enterprise support</div>
+                <div className="text-muted-dark text-sm">Enterprise support</div>
               </div>
             </div>
           </section>
@@ -177,13 +177,13 @@ gateway:
                   <div className="w-10 h-10 bg-orange text-white rounded-full flex items-center justify-center font-bold">1</div>
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">Pilot Phase (Weeks 1-8)</h3>
-                    <p className="text-slate-600">Proof of concept with limited scope and controlled environment</p>
+                    <p className="text-muted-dark">Proof of concept with limited scope and controlled environment</p>
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2">Key Activities:</h4>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-2">Key Activities:</h4>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• Single-use case implementation</li>
                       <li>• Basic OpenClaw gateway setup</li>
                       <li>• Initial team training</li>
@@ -192,8 +192,8 @@ gateway:
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2">Success Criteria:</h4>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-2">Success Criteria:</h4>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• Functional agent deployment</li>
                       <li>• User acceptance achievement</li>
                       <li>• Security requirements met</li>
@@ -209,13 +209,13 @@ gateway:
                   <div className="w-10 h-10 bg-blue text-white rounded-full flex items-center justify-center font-bold">2</div>
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">Production Phase (Weeks 9-24)</h3>
-                    <p className="text-slate-600">Full-scale deployment with enterprise features and governance</p>
+                    <p className="text-muted-dark">Full-scale deployment with enterprise features and governance</p>
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2">Infrastructure:</h4>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-2">Infrastructure:</h4>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• High-availability deployment</li>
                       <li>• Load balancing and auto-scaling</li>
                       <li>• Disaster recovery setup</li>
@@ -224,8 +224,8 @@ gateway:
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2">Governance:</h4>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-2">Governance:</h4>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• RBAC and access controls</li>
                       <li>• Audit logging and compliance</li>
                       <li>• Change management processes</li>
@@ -241,13 +241,13 @@ gateway:
                   <div className="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">Scale Phase (Weeks 25+)</h3>
-                    <p className="text-slate-600">Organisation-wide expansion and optimisation</p>
+                    <p className="text-muted-dark">Organisation-wide expansion and optimisation</p>
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2">Expansion:</h4>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-2">Expansion:</h4>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• Multi-department rollout</li>
                       <li>• Advanced use case development</li>
                       <li>• Cross-functional agent workflows</li>
@@ -256,8 +256,8 @@ gateway:
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2">Optimisation:</h4>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-2">Optimisation:</h4>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• Performance tuning and cost optimisation</li>
                       <li>• Advanced analytics and insights</li>
                       <li>• Continuous improvement processes</li>
@@ -278,11 +278,11 @@ gateway:
               
               <div className="space-y-6">
                 <div className="bg-white rounded-lg p-4 border border-blue/20">
-                  <h4 className="font-medium text-slate-800 mb-3">Identity & Access Management</h4>
+                  <h4 className="font-medium text-dark mb-3">Identity & Access Management</h4>
                   <div className="grid md:grid-cols-3 gap-4 text-sm">
                     <div>
-                      <h5 className="font-semibold text-slate-700 mb-2">Authentication:</h5>
-                      <ul className="space-y-1 text-slate-600">
+                      <h5 className="font-semibold text-dark mb-2">Authentication:</h5>
+                      <ul className="space-y-1 text-muted-dark">
                         <li>• Enterprise SSO integration</li>
                         <li>• Multi-factor authentication</li>
                         <li>• API key management</li>
@@ -290,8 +290,8 @@ gateway:
                       </ul>
                     </div>
                     <div>
-                      <h5 className="font-semibold text-slate-700 mb-2">Authorisation:</h5>
-                      <ul className="space-y-1 text-slate-600">
+                      <h5 className="font-semibold text-dark mb-2">Authorisation:</h5>
+                      <ul className="space-y-1 text-muted-dark">
                         <li>• Role-based access control</li>
                         <li>• Fine-grained permissions</li>
                         <li>• Resource-level security</li>
@@ -299,8 +299,8 @@ gateway:
                       </ul>
                     </div>
                     <div>
-                      <h5 className="font-semibold text-slate-700 mb-2">Auditing:</h5>
-                      <ul className="space-y-1 text-slate-600">
+                      <h5 className="font-semibold text-dark mb-2">Auditing:</h5>
+                      <ul className="space-y-1 text-muted-dark">
                         <li>• Comprehensive audit logs</li>
                         <li>• Access pattern monitoring</li>
                         <li>• Compliance reporting</li>
@@ -311,11 +311,11 @@ gateway:
                 </div>
 
                 <div className="bg-white rounded-lg p-4 border border-blue/20">
-                  <h4 className="font-medium text-slate-800 mb-3">Data Protection</h4>
+                  <h4 className="font-medium text-dark mb-3">Data Protection</h4>
                   <div className="grid md:grid-cols-3 gap-4 text-sm">
                     <div>
-                      <h5 className="font-semibold text-slate-700 mb-2">Encryption:</h5>
-                      <ul className="space-y-1 text-slate-600">
+                      <h5 className="font-semibold text-dark mb-2">Encryption:</h5>
+                      <ul className="space-y-1 text-muted-dark">
                         <li>• End-to-end encryption</li>
                         <li>• Data at rest protection</li>
                         <li>• Transport layer security</li>
@@ -323,8 +323,8 @@ gateway:
                       </ul>
                     </div>
                     <div>
-                      <h5 className="font-semibold text-slate-700 mb-2">Privacy:</h5>
-                      <ul className="space-y-1 text-slate-600">
+                      <h5 className="font-semibold text-dark mb-2">Privacy:</h5>
+                      <ul className="space-y-1 text-muted-dark">
                         <li>• Data minimisation</li>
                         <li>• Pseudonymisation</li>
                         <li>• Retention policies</li>
@@ -332,8 +332,8 @@ gateway:
                       </ul>
                     </div>
                     <div>
-                      <h5 className="font-semibold text-slate-700 mb-2">Compliance:</h5>
-                      <ul className="space-y-1 text-slate-600">
+                      <h5 className="font-semibold text-dark mb-2">Compliance:</h5>
+                      <ul className="space-y-1 text-muted-dark">
                         <li>• GDPR compliance</li>
                         <li>• Industry standards</li>
                         <li>• Regulatory requirements</li>
@@ -350,46 +350,46 @@ gateway:
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Enterprise Integration Patterns</h2>
             
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+              <div className="bg-surface rounded-xl p-6 border border-border-light">
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">System Integrations</h3>
                 <div className="space-y-4">
                   <div className="border-l-4 border-orange pl-4">
-                    <h4 className="font-medium text-slate-800 mb-1">CRM Systems</h4>
-                    <p className="text-slate-600 text-sm">Salesforce, Microsoft Dynamics, HubSpot integration for customer data</p>
+                    <h4 className="font-medium text-dark mb-1">CRM Systems</h4>
+                    <p className="text-muted-dark text-sm">Salesforce, Microsoft Dynamics, HubSpot integration for customer data</p>
                   </div>
                   <div className="border-l-4 border-blue pl-4">
-                    <h4 className="font-medium text-slate-800 mb-1">ERP Platforms</h4>
-                    <p className="text-slate-600 text-sm">SAP, Oracle, NetSuite connectivity for business process automation</p>
+                    <h4 className="font-medium text-dark mb-1">ERP Platforms</h4>
+                    <p className="text-muted-dark text-sm">SAP, Oracle, NetSuite connectivity for business process automation</p>
                   </div>
                   <div className="border-l-4 border-green-500 pl-4">
-                    <h4 className="font-medium text-slate-800 mb-1">Communication</h4>
-                    <p className="text-slate-600 text-sm">Teams, Slack, email systems for seamless collaboration</p>
+                    <h4 className="font-medium text-dark mb-1">Communication</h4>
+                    <p className="text-muted-dark text-sm">Teams, Slack, email systems for seamless collaboration</p>
                   </div>
                   <div className="border-l-4 border-purple pl-4">
-                    <h4 className="font-medium text-slate-800 mb-1">Data Platforms</h4>
-                    <p className="text-slate-600 text-sm">Data lakes, warehouses, analytics platforms for insights</p>
+                    <h4 className="font-medium text-dark mb-1">Data Platforms</h4>
+                    <p className="text-muted-dark text-sm">Data lakes, warehouses, analytics platforms for insights</p>
                   </div>
                 </div>
               </div>
               
-              <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+              <div className="bg-surface rounded-xl p-6 border border-border-light">
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Deployment Models</h3>
                 <div className="space-y-4">
-                  <div className="bg-white rounded-lg p-4 border border-slate-200">
-                    <h4 className="font-medium text-slate-800 mb-2">Cloud-Native</h4>
-                    <p className="text-slate-600 text-sm">AWS, Azure, GCP deployment with managed services</p>
+                  <div className="bg-white rounded-lg p-4 border border-border-light">
+                    <h4 className="font-medium text-dark mb-2">Cloud-Native</h4>
+                    <p className="text-muted-dark text-sm">AWS, Azure, GCP deployment with managed services</p>
                   </div>
-                  <div className="bg-white rounded-lg p-4 border border-slate-200">
-                    <h4 className="font-medium text-slate-800 mb-2">Hybrid Cloud</h4>
-                    <p className="text-slate-600 text-sm">Mix of cloud and on-premises for compliance needs</p>
+                  <div className="bg-white rounded-lg p-4 border border-border-light">
+                    <h4 className="font-medium text-dark mb-2">Hybrid Cloud</h4>
+                    <p className="text-muted-dark text-sm">Mix of cloud and on-premises for compliance needs</p>
                   </div>
-                  <div className="bg-white rounded-lg p-4 border border-slate-200">
-                    <h4 className="font-medium text-slate-800 mb-2">On-Premises</h4>
-                    <p className="text-slate-600 text-sm">Fully on-premises deployment for maximum control</p>
+                  <div className="bg-white rounded-lg p-4 border border-border-light">
+                    <h4 className="font-medium text-dark mb-2">On-Premises</h4>
+                    <p className="text-muted-dark text-sm">Fully on-premises deployment for maximum control</p>
                   </div>
-                  <div className="bg-white rounded-lg p-4 border border-slate-200">
-                    <h4 className="font-medium text-slate-800 mb-2">Edge Deployment</h4>
-                    <p className="text-slate-600 text-sm">Local processing for latency-sensitive applications</p>
+                  <div className="bg-white rounded-lg p-4 border border-border-light">
+                    <h4 className="font-medium text-dark mb-2">Edge Deployment</h4>
+                    <p className="text-muted-dark text-sm">Local processing for latency-sensitive applications</p>
                   </div>
                 </div>
               </div>
@@ -404,26 +404,26 @@ gateway:
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Agent Team Organisation</h3>
                   <div className="space-y-3">
-                    <p className="text-slate-600 text-sm mb-4">
+                    <p className="text-muted-dark text-sm mb-4">
                       <a href="https://clawroster.io" className="text-orange hover:text-orange-hover">ClawRoster, the digital CV platform for AI agent teams</a>, 
                       provides enterprise-grade agent management capabilities for large-scale OpenClaw deployments.
                     </p>
                     <div className="space-y-2">
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-slate-600 text-sm">Centralized agent portfolio management</span>
+                        <span className="text-muted-dark text-sm">Centralized agent portfolio management</span>
                       </div>
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-slate-600 text-sm">Skills and capability tracking</span>
+                        <span className="text-muted-dark text-sm">Skills and capability tracking</span>
                       </div>
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-slate-600 text-sm">Performance metrics and analytics</span>
+                        <span className="text-muted-dark text-sm">Performance metrics and analytics</span>
                       </div>
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-slate-600 text-sm">Team collaboration and workflows</span>
+                        <span className="text-muted-dark text-sm">Team collaboration and workflows</span>
                       </div>
                     </div>
                   </div>
@@ -432,26 +432,26 @@ gateway:
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Enterprise Support</h3>
                   <div className="space-y-3">
-                    <p className="text-slate-600 text-sm mb-4">
+                    <p className="text-muted-dark text-sm mb-4">
                       Partner with <a href="https://heypinchy.com" className="text-orange hover:text-orange-hover">Pinchy by Clemens Helm</a> for 
                       enterprise OpenClaw deployment support and ongoing operational excellence.
                     </p>
                     <div className="space-y-2">
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-slate-600 text-sm">24/7 enterprise support services</span>
+                        <span className="text-muted-dark text-sm">24/7 enterprise support services</span>
                       </div>
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-slate-600 text-sm">Custom deployment architectures</span>
+                        <span className="text-muted-dark text-sm">Custom deployment architectures</span>
                       </div>
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-slate-600 text-sm">Training and change management</span>
+                        <span className="text-muted-dark text-sm">Training and change management</span>
                       </div>
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-slate-600 text-sm">Ongoing optimisation and upgrades</span>
+                        <span className="text-muted-dark text-sm">Ongoing optimisation and upgrades</span>
                       </div>
                     </div>
                   </div>
@@ -465,51 +465,51 @@ gateway:
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Enterprise Deployment FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What are the key requirements for enterprise OpenClaw deployment?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Key requirements include robust infrastructure (high availability, scalability, security), enterprise integrations (SSO, RBAC, monitoring), compliance capabilities (audit logging, data governance), skilled technical teams, and executive sponsorship. Budget £150K-£500K+ depending on scale and complexity.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How long does enterprise OpenClaw deployment typically take?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Enterprise deployment typically takes 6-12 months: 8 weeks for pilot phase, 16 weeks for production deployment, and ongoing scaling. Timeline depends on organisational complexity, integration requirements, security reviews, and change management needs.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What security considerations are critical for enterprise OpenClaw?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Critical security considerations include end-to-end encryption, enterprise SSO integration, RBAC implementation, comprehensive audit logging, data loss prevention, network segmentation, regular security assessments, and incident response procedures. Compliance with industry regulations is essential.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How does OpenClaw integrate with existing enterprise systems?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   OpenClaw integrates through APIs, webhooks, and enterprise connectors for CRM (Salesforce, Dynamics), ERP (SAP, Oracle), communication platforms (Teams, Slack), and data systems. Custom integrations are supported for proprietary systems with comprehensive SDK and documentation.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What ongoing support is available for enterprise OpenClaw deployments?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Enterprise support includes 24/7 technical support, dedicated customer success management, regular health checks, performance optimisation, security updates, training programmes, and strategic guidance. Partner with Blue Canvas AI for deployment strategy and Pinchy for operational support.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How can enterprises measure ROI from OpenClaw deployment?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Measure ROI through productivity gains (automation of manual tasks), cost reductions (operational efficiency), revenue increases (improved customer service), and strategic benefits (innovation capacity). Track metrics like task completion time, error rates, customer satisfaction, and employee productivity improvements.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What team structures work best for enterprise OpenClaw management?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Successful team structures include a Centre of Excellence with executive sponsorship, technical teams (architects, developers, operators), business champions from each department, and dedicated change management resources. Use ClawRoster for agent team management and coordination across the organisation.
                 </p>
               </div>
@@ -530,7 +530,7 @@ gateway:
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Deployment Plan
           </a>
@@ -540,23 +540,23 @@ gateway:
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-agent-team" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-agent-team" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">Build an OpenClaw Agent Team</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-agent-team-setup" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-agent-team-setup" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Agent Team Setup Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -564,13 +564,13 @@ gateway:
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Plan Your Enterprise OpenClaw Deployment
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a consultation to discuss your enterprise OpenClaw requirements and develop a tailored deployment strategy.
             </p>
           </div>

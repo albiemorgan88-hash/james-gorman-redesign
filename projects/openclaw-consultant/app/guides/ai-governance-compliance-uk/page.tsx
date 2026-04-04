@@ -67,11 +67,11 @@ export default function AIGovernanceComplianceUKPage() {
           
           {/* Introduction */}
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               As AI becomes integral to UK business operations, robust governance and compliance frameworks are no longer optional—they're essential for sustainable success. With the UK's evolving AI regulatory landscape and increasing scrutiny on algorithmic decision-making, organisations need comprehensive strategies that balance innovation with responsibility.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This guide provides UK organisations with a practical framework for implementing AI governance that ensures regulatory compliance, mitigates risks, and builds stakeholder trust. From GDPR requirements to ethical AI principles, you'll learn how to establish governance structures that support both innovation and accountability.
             </p>
           </div>
@@ -84,16 +84,16 @@ export default function AIGovernanceComplianceUKPage() {
               
               <div className="space-y-4">
                 <div className="border-l-4 border-blue pl-4">
-                  <h4 className="font-medium text-slate-800 mb-1">UK GDPR & Data Protection Act 2018</h4>
-                  <p className="text-slate-600 text-sm">Rights regarding automated decision-making, data processing lawfulness, privacy by design requirements</p>
+                  <h4 className="font-medium text-dark mb-1">UK GDPR & Data Protection Act 2018</h4>
+                  <p className="text-muted-dark text-sm">Rights regarding automated decision-making, data processing lawfulness, privacy by design requirements</p>
                 </div>
                 <div className="border-l-4 border-orange pl-4">
-                  <h4 className="font-medium text-slate-800 mb-1">Equality Act 2010</h4>
-                  <p className="text-slate-600 text-sm">Non-discrimination requirements for AI systems affecting protected characteristics</p>
+                  <h4 className="font-medium text-dark mb-1">Equality Act 2010</h4>
+                  <p className="text-muted-dark text-sm">Non-discrimination requirements for AI systems affecting protected characteristics</p>
                 </div>
                 <div className="border-l-4 border-green-500 pl-4">
-                  <h4 className="font-medium text-slate-800 mb-1">Sector-Specific Regulations</h4>
-                  <p className="text-slate-600 text-sm">FCA guidance (financial services), MHRA regulations (healthcare), Employment Rights Act (HR)</p>
+                  <h4 className="font-medium text-dark mb-1">Sector-Specific Regulations</h4>
+                  <p className="text-muted-dark text-sm">FCA guidance (financial services), MHRA regulations (healthcare), Employment Rights Act (HR)</p>
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function AIGovernanceComplianceUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">£17.5M</div>
-                <div className="text-slate-600 text-sm">Maximum GDPR fine</div>
+                <div className="text-muted-dark text-sm">Maximum GDPR fine</div>
               </div>
               
               <div className="text-center">
@@ -116,7 +116,7 @@ export default function AIGovernanceComplianceUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">72 hrs</div>
-                <div className="text-slate-600 text-sm">Breach notification</div>
+                <div className="text-muted-dark text-sm">Breach notification</div>
               </div>
               
               <div className="text-center">
@@ -126,7 +126,7 @@ export default function AIGovernanceComplianceUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">30 days</div>
-                <div className="text-slate-600 text-sm">Subject access response</div>
+                <div className="text-muted-dark text-sm">Subject access response</div>
               </div>
               
               <div className="text-center">
@@ -136,7 +136,7 @@ export default function AIGovernanceComplianceUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">DPIA</div>
-                <div className="text-slate-600 text-sm">Required for high-risk AI</div>
+                <div className="text-muted-dark text-sm">Required for high-risk AI</div>
               </div>
             </div>
           </section>
@@ -150,8 +150,8 @@ export default function AIGovernanceComplianceUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">1. AI Strategy & Policy</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Key Components:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Key Components:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• AI vision and strategic objectives</li>
                       <li>• Risk appetite and tolerance levels</li>
                       <li>• Ethical AI principles and values</li>
@@ -160,8 +160,8 @@ export default function AIGovernanceComplianceUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Implementation:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Implementation:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Board-level AI strategy approval</li>
                       <li>• AI policy documentation and communication</li>
                       <li>• Regular policy review and updates</li>
@@ -176,8 +176,8 @@ export default function AIGovernanceComplianceUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">2. AI Risk Management</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Risk Categories:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Risk Categories:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Algorithmic bias and discrimination</li>
                       <li>• Data privacy and security breaches</li>
                       <li>• Regulatory non-compliance</li>
@@ -186,8 +186,8 @@ export default function AIGovernanceComplianceUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Mitigation Strategies:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Mitigation Strategies:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• AI risk assessment frameworks</li>
                       <li>• Continuous monitoring and testing</li>
                       <li>• Incident response procedures</li>
@@ -202,8 +202,8 @@ export default function AIGovernanceComplianceUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">3. Data Governance & Quality</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Data Management:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Data Management:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Data quality standards and metrics</li>
                       <li>• Data lineage and traceability</li>
                       <li>• Access controls and security measures</li>
@@ -212,8 +212,8 @@ export default function AIGovernanceComplianceUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Privacy Protection:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Privacy Protection:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Privacy by design implementation</li>
                       <li>• Data minimisation principles</li>
                       <li>• Anonymisation and pseudonymisation</li>
@@ -230,7 +230,7 @@ export default function AIGovernanceComplianceUKPage() {
           <section className="mb-16">
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">GDPR Compliance for AI Systems</h2>
             
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100 mb-8">
+            <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light mb-8">
               <h3 className="font-heading text-lg font-bold text-navy mb-4">Article 22 - Automated Decision-Making</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-red-50 rounded-lg p-4">
@@ -249,12 +249,12 @@ export default function AIGovernanceComplianceUKPage() {
             </div>
 
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6">
+              <div className="bg-surface rounded-lg p-6">
                 <h4 className="font-semibold text-navy mb-3">Data Protection Impact Assessment (DPIA) Requirements</h4>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h5 className="font-medium text-slate-800 mb-2">When Required:</h5>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h5 className="font-medium text-dark mb-2">When Required:</h5>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• Systematic monitoring of public areas</li>
                       <li>• Large-scale processing of sensitive data</li>
                       <li>• Automated decision-making with legal effects</li>
@@ -263,8 +263,8 @@ export default function AIGovernanceComplianceUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h5 className="font-medium text-slate-800 mb-2">DPIA Content:</h5>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h5 className="font-medium text-dark mb-2">DPIA Content:</h5>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• Processing description and purposes</li>
                       <li>• Necessity and proportionality assessment</li>
                       <li>• Risk identification and analysis</li>
@@ -275,28 +275,28 @@ export default function AIGovernanceComplianceUKPage() {
                 </div>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6">
+              <div className="bg-surface rounded-lg p-6">
                 <h4 className="font-semibold text-navy mb-3">Individual Rights in AI Systems</h4>
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="space-y-2">
-                    <h5 className="font-medium text-slate-800">Information Rights</h5>
-                    <ul className="text-slate-600 text-sm">
+                    <h5 className="font-medium text-dark">Information Rights</h5>
+                    <ul className="text-muted-dark text-sm">
                       <li>• Right to be informed about AI processing</li>
                       <li>• Meaningful information about logic</li>
                       <li>• Significance and consequences</li>
                     </ul>
                   </div>
                   <div className="space-y-2">
-                    <h5 className="font-medium text-slate-800">Control Rights</h5>
-                    <ul className="text-slate-600 text-sm">
+                    <h5 className="font-medium text-dark">Control Rights</h5>
+                    <ul className="text-muted-dark text-sm">
                       <li>• Right to object to automated decisions</li>
                       <li>• Right to human intervention</li>
                       <li>• Right to contest and correct</li>
                     </ul>
                   </div>
                   <div className="space-y-2">
-                    <h5 className="font-medium text-slate-800">Data Rights</h5>
-                    <ul className="text-slate-600 text-sm">
+                    <h5 className="font-medium text-dark">Data Rights</h5>
+                    <ul className="text-muted-dark text-sm">
                       <li>• Right of access to AI decisions</li>
                       <li>• Right to rectification and erasure</li>
                       <li>• Right to data portability</li>
@@ -318,29 +318,29 @@ export default function AIGovernanceComplianceUKPage() {
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-orange text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</div>
                     <div>
-                      <h4 className="font-medium text-slate-800 mb-1">Fairness & Non-Discrimination</h4>
-                      <p className="text-slate-600 text-sm">AI systems must treat all individuals fairly without bias or discrimination</p>
+                      <h4 className="font-medium text-dark mb-1">Fairness & Non-Discrimination</h4>
+                      <p className="text-muted-dark text-sm">AI systems must treat all individuals fairly without bias or discrimination</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-orange text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</div>
                     <div>
-                      <h4 className="font-medium text-slate-800 mb-1">Transparency & Explainability</h4>
-                      <p className="text-slate-600 text-sm">AI decisions must be understandable and explainable to affected individuals</p>
+                      <h4 className="font-medium text-dark mb-1">Transparency & Explainability</h4>
+                      <p className="text-muted-dark text-sm">AI decisions must be understandable and explainable to affected individuals</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-orange text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
                     <div>
-                      <h4 className="font-medium text-slate-800 mb-1">Human Oversight</h4>
-                      <p className="text-slate-600 text-sm">Meaningful human control and intervention must be maintained in AI systems</p>
+                      <h4 className="font-medium text-dark mb-1">Human Oversight</h4>
+                      <p className="text-muted-dark text-sm">Meaningful human control and intervention must be maintained in AI systems</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-orange text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">4</div>
                     <div>
-                      <h4 className="font-medium text-slate-800 mb-1">Accountability</h4>
-                      <p className="text-slate-600 text-sm">Clear responsibility and liability for AI system outcomes and decisions</p>
+                      <h4 className="font-medium text-dark mb-1">Accountability</h4>
+                      <p className="text-muted-dark text-sm">Clear responsibility and liability for AI system outcomes and decisions</p>
                     </div>
                   </div>
                 </div>
@@ -350,20 +350,20 @@ export default function AIGovernanceComplianceUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Implementation Framework</h3>
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4 border border-blue/20">
-                    <h4 className="font-medium text-slate-800 mb-2">Ethics Review Board</h4>
-                    <p className="text-slate-600 text-sm">Cross-functional team to review AI projects for ethical compliance</p>
+                    <h4 className="font-medium text-dark mb-2">Ethics Review Board</h4>
+                    <p className="text-muted-dark text-sm">Cross-functional team to review AI projects for ethical compliance</p>
                   </div>
                   <div className="bg-white rounded-lg p-4 border border-blue/20">
-                    <h4 className="font-medium text-slate-800 mb-2">Bias Testing Protocols</h4>
-                    <p className="text-slate-600 text-sm">Regular testing for algorithmic bias across protected characteristics</p>
+                    <h4 className="font-medium text-dark mb-2">Bias Testing Protocols</h4>
+                    <p className="text-muted-dark text-sm">Regular testing for algorithmic bias across protected characteristics</p>
                   </div>
                   <div className="bg-white rounded-lg p-4 border border-blue/20">
-                    <h4 className="font-medium text-slate-800 mb-2">Explainability Requirements</h4>
-                    <p className="text-slate-600 text-sm">Documentation and tools to explain AI decisions to stakeholders</p>
+                    <h4 className="font-medium text-dark mb-2">Explainability Requirements</h4>
+                    <p className="text-muted-dark text-sm">Documentation and tools to explain AI decisions to stakeholders</p>
                   </div>
                   <div className="bg-white rounded-lg p-4 border border-blue/20">
-                    <h4 className="font-medium text-slate-800 mb-2">Continuous Monitoring</h4>
-                    <p className="text-slate-600 text-sm">Ongoing assessment of AI system performance and ethical compliance</p>
+                    <h4 className="font-medium text-dark mb-2">Continuous Monitoring</h4>
+                    <p className="text-muted-dark text-sm">Ongoing assessment of AI system performance and ethical compliance</p>
                   </div>
                 </div>
               </div>
@@ -384,8 +384,8 @@ export default function AIGovernanceComplianceUKPage() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2">Establish Governance:</h4>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-2">Establish Governance:</h4>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• Form AI ethics committee</li>
                       <li>• Develop AI policy framework</li>
                       <li>• Conduct current state assessment</li>
@@ -393,8 +393,8 @@ export default function AIGovernanceComplianceUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2">Legal & Compliance:</h4>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-2">Legal & Compliance:</h4>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• Review regulatory requirements</li>
                       <li>• Update privacy policies</li>
                       <li>• Establish DPIA processes</li>
@@ -413,8 +413,8 @@ export default function AIGovernanceComplianceUKPage() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2">Technical Controls:</h4>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-2">Technical Controls:</h4>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• Deploy monitoring systems</li>
                       <li>• Implement bias testing</li>
                       <li>• Build audit trail systems</li>
@@ -422,8 +422,8 @@ export default function AIGovernanceComplianceUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2">Process & Training:</h4>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-2">Process & Training:</h4>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• Train staff on AI governance</li>
                       <li>• Establish review processes</li>
                       <li>• Create incident procedures</li>
@@ -442,8 +442,8 @@ export default function AIGovernanceComplianceUKPage() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2">Continuous Improvement:</h4>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-2">Continuous Improvement:</h4>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• Regular governance reviews</li>
                       <li>• Process optimisation</li>
                       <li>• Stakeholder feedback integration</li>
@@ -451,8 +451,8 @@ export default function AIGovernanceComplianceUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2">Maturity Development:</h4>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-2">Maturity Development:</h4>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>• Advanced monitoring capabilities</li>
                       <li>• Automated compliance checks</li>
                       <li>• Industry leadership initiatives</li>
@@ -469,51 +469,51 @@ export default function AIGovernanceComplianceUKPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">AI Governance FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What are the key components of an AI governance framework?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Key components include AI strategy and policy, risk management frameworks, data governance, ethical guidelines, compliance monitoring, audit and accountability mechanisms, stakeholder engagement processes, and continuous improvement systems. Effective governance requires board oversight, cross-functional committees, clear roles and responsibilities, and regular assessment and review processes.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How does UK GDPR apply to AI systems?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   UK GDPR applies to AI systems processing personal data. Key requirements include lawful basis for processing, privacy by design, Data Protection Impact Assessments for high-risk AI, individual rights regarding automated decision-making, transparency about AI logic and consequences, and safeguards for solely automated decisions with legal or significant effects.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">When is a DPIA required for AI systems?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   A DPIA is required for AI systems involving systematic monitoring, large-scale processing of sensitive data, automated decision-making with legal effects, profiling with significant effects, or use of new technologies with high privacy risks. The assessment must evaluate necessity, proportionality, risks to individuals, and mitigation measures.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How can organisations ensure AI systems are fair and unbiased?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Ensure fairness through diverse training data, regular bias testing across protected characteristics, algorithmic auditing, human oversight of decisions, transparent decision processes, impact assessments on different groups, continuous monitoring, and corrective measures. Establish bias detection metrics and regular review processes.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What are the penalties for AI governance failures in the UK?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Penalties include GDPR fines up to £17.5 million or 4% of annual turnover, discrimination claims under Equality Act 2010, sector-specific sanctions (FCA, MHRA), reputational damage, civil liability, and operational restrictions. Effective governance significantly reduces these risks through proactive compliance and risk management.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How often should AI governance frameworks be reviewed?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Review governance frameworks quarterly for operational effectiveness, annually for strategic alignment, and immediately following regulatory changes, incidents, or significant system updates. Regular reviews should assess policy effectiveness, compliance status, risk landscape changes, stakeholder feedback, and emerging best practices.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Should organisations seek external expertise for AI governance?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   External expertise is valuable for framework development, regulatory compliance assessment, technical implementation guidance, and ongoing assurance. Consider consultancies like Blue Canvas AI for strategic governance planning, legal specialists for compliance, and technical partners like Pinchy for implementation. ClawRoster can help manage AI governance teams effectively.
                 </p>
               </div>
@@ -534,7 +534,7 @@ export default function AIGovernanceComplianceUKPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Governance Assessment
           </a>
@@ -544,23 +544,23 @@ export default function AIGovernanceComplianceUKPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-transformation-strategy-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-transformation-strategy-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Transformation Strategy 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-workforce-planning-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-workforce-planning-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Workforce Planning 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -568,13 +568,13 @@ export default function AIGovernanceComplianceUKPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Establish AI Governance Framework
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a consultation to develop comprehensive AI governance and compliance strategies tailored to your organisation's needs.
             </p>
           </div>

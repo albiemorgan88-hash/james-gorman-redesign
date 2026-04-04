@@ -299,13 +299,13 @@ export default function EnterpriseOpenClawPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#capabilities"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 Explore Enterprise Features
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 Get Consultation ↓
               </a>
@@ -328,7 +328,7 @@ export default function EnterpriseOpenClawPage() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white rounded-box p-8 shadow-card">
+              <div className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="text-3xl mb-4">👤</div>
                 <h3 className="font-heading font-bold text-dark mb-3">Individual OpenClaw</h3>
                 <p className="text-muted text-sm leading-relaxed mb-4">
@@ -343,7 +343,7 @@ export default function EnterpriseOpenClawPage() {
                 </ul>
               </div>
 
-              <div className="bg-white rounded-box p-8 shadow-card border-2 border-orange">
+              <div className="bg-white rounded-2xl p-8 shadow-card border-2 border-orange">
                 <div className="text-3xl mb-4">🏢</div>
                 <h3 className="font-heading font-bold text-dark mb-3">Enterprise OpenClaw</h3>
                 <p className="text-muted text-sm leading-relaxed mb-4">
@@ -363,7 +363,7 @@ export default function EnterpriseOpenClawPage() {
       </section>
 
       {/* Enterprise Capabilities Section */}
-      <section id="capabilities" className="bg-white py-24">
+      <section id="capabilities" className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -379,7 +379,7 @@ export default function EnterpriseOpenClawPage() {
 
           <div className="space-y-16">
             {enterpriseCapabilities.map((capability, index) => (
-              <div key={index} className="bg-surface rounded-box p-8">
+              <div key={index} className="bg-surface rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-2xl text-dark mb-4">{capability.capability}</h3>
                 <p className="text-muted text-lg leading-relaxed mb-8">{capability.description}</p>
                 
@@ -428,7 +428,7 @@ export default function EnterpriseOpenClawPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {useCases.map((useCase, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="bg-orange text-white text-xs font-bold px-2 py-1 rounded">
                     {useCase.industry}
@@ -482,7 +482,7 @@ export default function EnterpriseOpenClawPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {securityFeatures.map((feature, index) => (
-              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl text-white mb-3">{feature.feature}</h3>
                 <p className="text-white/60 leading-relaxed mb-6">{feature.description}</p>
                 
@@ -501,7 +501,7 @@ export default function EnterpriseOpenClawPage() {
       </section>
 
       {/* Deployment Options Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -514,7 +514,7 @@ export default function EnterpriseOpenClawPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {deploymentOptions.map((option, index) => (
-              <div key={index} className="bg-surface rounded-box p-8">
+              <div key={index} className="bg-surface rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl text-dark mb-2">{option.option}</h3>
                 <p className="text-muted leading-relaxed mb-6">{option.description}</p>
                 
@@ -569,7 +569,7 @@ export default function EnterpriseOpenClawPage() {
                 <div className="bg-orange text-white font-bold text-lg w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                   {index + 1}
                 </div>
-                <div className="flex-1 bg-white rounded-box p-8 shadow-card">
+                <div className="flex-1 bg-white rounded-2xl p-8 shadow-card">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="font-heading font-bold text-xl text-dark">{phase.phase}</h3>
                     <span className="bg-orange/10 text-orange text-xs font-semibold px-2 py-1 rounded">
@@ -610,7 +610,7 @@ export default function EnterpriseOpenClawPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -681,7 +681,7 @@ export default function EnterpriseOpenClawPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Schedule Enterprise Consultation →
           </a>
@@ -724,7 +724,7 @@ export default function EnterpriseOpenClawPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Enterprise Consultation</h3>
               <p className="text-white/40 text-sm mb-6">Tell us about your enterprise OpenClaw needs</p>
               <ContactForm />

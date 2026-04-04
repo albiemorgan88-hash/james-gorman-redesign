@@ -375,7 +375,7 @@ export default function OpenClawVsN8nPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#quick-comparison" className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange">
+              <a href="#quick-comparison" className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange">
                 View Comparison
               </a>
             </div>
@@ -383,7 +383,7 @@ export default function OpenClawVsN8nPage() {
         </div>
       </section>
 
-      <section id="quick-comparison" className="bg-white py-24">
+      <section id="quick-comparison" className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -391,7 +391,7 @@ export default function OpenClawVsN8nPage() {
             </h2>
           </div>
 
-          <div className="bg-surface rounded-box p-8 shadow-card overflow-x-auto">
+          <div className="bg-surface rounded-2xl p-8 shadow-card overflow-x-auto">
             <table className="w-full">
               <thead>
                 <tr className="border-b border-gray-200">
@@ -428,7 +428,7 @@ export default function OpenClawVsN8nPage() {
                 <h3 className="font-heading text-2xl font-bold text-dark mb-8 text-center">{category.category}</h3>
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                  <div className="bg-white rounded-box p-8 shadow-card border-l-4 border-orange">
+                  <div className="bg-white rounded-2xl p-8 shadow-card border-l-4 border-orange">
                     <h4 className="font-heading font-bold text-lg text-orange mb-4">OpenClaw</h4>
                     
                     <div className="mb-6">
@@ -456,7 +456,7 @@ export default function OpenClawVsN8nPage() {
                     </div>
                   </div>
 
-                  <div className="bg-white rounded-box p-8 shadow-card border-l-4 border-blue-600">
+                  <div className="bg-white rounded-2xl p-8 shadow-card border-l-4 border-blue-600">
                     <h4 className="font-heading font-bold text-lg text-blue-600 mb-4">n8n</h4>
                     
                     <div className="mb-6">
@@ -500,7 +500,7 @@ export default function OpenClawVsN8nPage() {
 
           <div className="space-y-8">
             {useCaseComparison.map((useCase, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-6">{useCase.useCase}</h3>
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -542,7 +542,7 @@ export default function OpenClawVsN8nPage() {
         </div>
       </section>
 
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -552,7 +552,7 @@ export default function OpenClawVsN8nPage() {
 
           <div className="space-y-8">
             {pricingComparison.map((tier, index) => (
-              <div key={index} className="bg-surface rounded-box p-8 shadow-card">
+              <div key={index} className="bg-surface rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-6">{tier.tier}</h3>
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -634,7 +634,7 @@ export default function OpenClawVsN8nPage() {
 
           <div className="space-y-6">
             {recommendations.map((rec, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="flex flex-col lg:flex-row lg:items-start justify-between mb-4">
                   <h3 className="font-heading font-bold text-lg text-dark">{rec.scenario}</h3>
                   <span className={`px-4 py-2 rounded-full text-sm font-medium ${
@@ -657,23 +657,23 @@ export default function OpenClawVsN8nPage() {
 
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-vs-chatgpt" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-vs-chatgpt" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs ChatGPT: Key Differences</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-vs-zapier-vs-make" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-vs-zapier-vs-make" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs Zapier vs Make</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -710,7 +710,7 @@ export default function OpenClawVsN8nPage() {
               </ul>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Platform Selection Consultation</h3>
               <p className="text-white/40 text-sm mb-6">Choose the right automation tool for your needs</p>
               <ContactForm />

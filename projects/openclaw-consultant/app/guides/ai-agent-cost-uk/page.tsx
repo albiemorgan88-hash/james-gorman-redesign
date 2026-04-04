@@ -169,13 +169,13 @@ export default function AIAgentCostUKPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#pricing"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 See Pricing Breakdown
               </a>
               <a
                 href="/"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 ← Back to Home
               </a>
@@ -199,7 +199,7 @@ export default function AIAgentCostUKPage() {
 
           <div className="space-y-8">
             {costBreakdown.map((platform, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-start">
                   <div>
                     <h3 className="font-heading font-bold text-xl text-dark mb-3">{platform.platform}</h3>
@@ -234,7 +234,7 @@ export default function AIAgentCostUKPage() {
                     </ul>
                   </div>
                   
-                  <div className="bg-surface rounded-box p-4">
+                  <div className="bg-surface rounded-2xl p-4">
                     <h4 className="font-semibold text-dark mb-2">Total Year 1:</h4>
                     <div className="text-2xl font-bold text-orange">
                       {platform.platform === "OpenClaw Setup" ? "£3,550-8,500" : 
@@ -251,7 +251,7 @@ export default function AIAgentCostUKPage() {
       </section>
 
       {/* ROI Calculations */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -264,7 +264,7 @@ export default function AIAgentCostUKPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {roiCalculations.map((calc, index) => (
-              <div key={index} className="bg-surface rounded-box p-8 card-lift">
+              <div key={index} className="bg-surface rounded-2xl p-8 card-lift">
                 <h3 className="font-heading font-bold text-xl text-dark mb-6">{calc.businessSize}</h3>
                 
                 <div className="space-y-4 mb-6">
@@ -292,7 +292,7 @@ export default function AIAgentCostUKPage() {
                   </div>
                 </div>
                 
-                <div className="bg-navy text-white rounded-box p-4">
+                <div className="bg-navy text-white rounded-2xl p-4">
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
                       <div className="text-orange font-bold text-lg">{calc.paybackTime}</div>
@@ -324,7 +324,7 @@ export default function AIAgentCostUKPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {hiddenCosts.map((cost, index) => (
-              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-lg text-white mb-3">{cost.cost}</h3>
                 <p className="text-white/60 text-sm leading-relaxed mb-4">{cost.description}</p>
                 
@@ -358,7 +358,7 @@ export default function AIAgentCostUKPage() {
 
           <div className="space-y-6">
             {costOptimizationTips.map((tip, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
                   <div>
                     <div className="flex items-center gap-3 mb-3">
@@ -372,7 +372,7 @@ export default function AIAgentCostUKPage() {
                     <p className="text-muted text-sm leading-relaxed">{tip.description}</p>
                   </div>
                   <div>
-                    <div className="bg-green-50 border border-green-200 rounded-box p-4">
+                    <div className="bg-green-50 border border-green-200 rounded-2xl p-4">
                       <p className="text-green-600 font-semibold text-sm">{tip.savings}</p>
                     </div>
                   </div>
@@ -384,7 +384,7 @@ export default function AIAgentCostUKPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark">
@@ -444,7 +444,7 @@ export default function AIAgentCostUKPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Get Cost Assessment →
           </a>
@@ -454,23 +454,23 @@ export default function AIAgentCostUKPage() {
       {/* Contact Section */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-pricing-explained" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-pricing-explained" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Pricing & Costs Explained</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-automation-roi-calculator" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-automation-roi-calculator" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Automation ROI Calculator</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -492,7 +492,7 @@ export default function AIAgentCostUKPage() {
               </p>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Cost Assessment Consultation</h3>
               <p className="text-white/40 text-sm mb-6">Get personalized pricing and ROI calculations</p>
               <ContactForm />

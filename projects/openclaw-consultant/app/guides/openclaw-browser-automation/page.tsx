@@ -704,7 +704,7 @@ export default function OpenClawBrowserAutomationPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#setup" className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange">
+              <a href="#setup" className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange">
                 Start Automating
               </a>
             </div>
@@ -712,7 +712,7 @@ export default function OpenClawBrowserAutomationPage() {
         </div>
       </section>
 
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -725,7 +725,7 @@ export default function OpenClawBrowserAutomationPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {browserCapabilities.map((capability, index) => (
-              <div key={index} className="bg-surface rounded-box p-8 shadow-card">
+              <div key={index} className="bg-surface rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-3">{capability.capability}</h3>
                 <p className="text-muted mb-6">{capability.description}</p>
 
@@ -772,7 +772,7 @@ export default function OpenClawBrowserAutomationPage() {
 
           <div className="space-y-12">
             {setupGuide.map((step, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="flex items-start gap-6">
                   <div className="bg-orange text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                     {step.step}
@@ -853,7 +853,7 @@ export default function OpenClawBrowserAutomationPage() {
 
           <div className="space-y-12">
             {automationExamples.map((category, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-3">{category.category}</h3>
                 <p className="text-muted mb-8">{category.description}</p>
 
@@ -885,7 +885,7 @@ export default function OpenClawBrowserAutomationPage() {
                       {'selectors' in example && example.selectors && (
                         <div className="mb-6">
                           <h5 className="font-semibold text-dark mb-3">Common Selectors:</h5>
-                          <div className="bg-slate-50 rounded-lg p-4">
+                          <div className="bg-surface rounded-lg p-4">
                             {'selectors' in example && Object.entries(example.selectors).map(([key, selector]) => (
                               <div key={key} className="mb-2">
                                 <span className="font-medium text-dark capitalize">{key.replace('_', ' ')}:</span>
@@ -899,7 +899,7 @@ export default function OpenClawBrowserAutomationPage() {
                       {'formHandling' in example && example.formHandling && (
                         <div className="mb-6">
                           <h5 className="font-semibold text-dark mb-3">Form Element Selectors:</h5>
-                          <div className="bg-slate-50 rounded-lg p-4">
+                          <div className="bg-surface rounded-lg p-4">
                             {'formHandling' in example && Object.entries(example.formHandling).map(([type, selector]) => (
                               <div key={type} className="mb-2">
                                 <span className="font-medium text-dark capitalize">{type.replace('-', ' ')}:</span>
@@ -938,7 +938,7 @@ export default function OpenClawBrowserAutomationPage() {
         </div>
       </section>
 
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -951,7 +951,7 @@ export default function OpenClawBrowserAutomationPage() {
 
           <div className="space-y-8">
             {advancedTechniques.map((technique, index) => (
-              <div key={index} className="bg-surface rounded-box p-8 shadow-card">
+              <div key={index} className="bg-surface rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-3">{technique.technique}</h3>
                 <p className="text-muted mb-6">{technique.description}</p>
 
@@ -967,7 +967,7 @@ export default function OpenClawBrowserAutomationPage() {
                   </ul>
                 </div>
 
-                <div className="bg-slate-50 rounded-lg p-4">
+                <div className="bg-surface rounded-lg p-4">
                   <h4 className="font-semibold text-dark mb-3">Implementation:</h4>
                   <div className="bg-slate-900 text-green-400 p-4 rounded-md font-mono text-xs overflow-x-auto">
                     <pre className="whitespace-pre-wrap">{technique.implementation}</pre>
@@ -992,7 +992,7 @@ export default function OpenClawBrowserAutomationPage() {
 
           <div className="space-y-8">
             {browserCommands.map((category, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-6">{category.category}</h3>
                 
                 <div className="space-y-4">
@@ -1038,7 +1038,7 @@ export default function OpenClawBrowserAutomationPage() {
 
           <div className="space-y-6">
             {troubleshooting.map((issue, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-lg text-dark mb-3">{issue.problem}</h3>
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -1073,23 +1073,23 @@ export default function OpenClawBrowserAutomationPage() {
 
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Skills: Complete Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-cron-jobs" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-cron-jobs" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Cron Jobs: Automation Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -1126,7 +1126,7 @@ export default function OpenClawBrowserAutomationPage() {
               </ul>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Browser Automation Help</h3>
               <p className="text-white/40 text-sm mb-6">Build powerful web automation workflows</p>
               <ContactForm />

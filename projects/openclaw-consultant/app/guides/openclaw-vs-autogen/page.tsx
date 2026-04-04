@@ -63,11 +63,11 @@ export default function OpenClawVsAutoGenPage() {
       <article className="py-16 bg-white">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               UK businesses are increasingly adopting AI agent frameworks to automate complex workflows. OpenClaw and AutoGen represent two distinct approaches to business automation, each with unique strengths for different use cases and technical requirements.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This comprehensive comparison examines both frameworks across key business criteria: ease of implementation, scalability, cost-effectiveness, and practical business applications. Learn which platform best fits your automation needs and technical capabilities.
             </p>
           </div>
@@ -85,10 +85,10 @@ export default function OpenClawVsAutoGenPage() {
                   </div>
                   <h3 className="font-heading text-xl font-bold text-navy">OpenClaw</h3>
                 </div>
-                <p className="text-slate-600 text-sm mb-4">
+                <p className="text-muted-dark text-sm mb-4">
                   Business-focused agent framework designed for practical automation and operational workflows. Emphasis on reliability, integration, and business outcomes.
                 </p>
-                <div className="space-y-2 text-slate-600 text-sm">
+                <div className="space-y-2 text-muted-dark text-sm">
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-orange rounded-full" />
                     <span>Production-ready business automation</span>
@@ -117,10 +117,10 @@ export default function OpenClawVsAutoGenPage() {
                   </div>
                   <h3 className="font-heading text-xl font-bold text-navy">AutoGen</h3>
                 </div>
-                <p className="text-slate-600 text-sm mb-4">
+                <p className="text-muted-dark text-sm mb-4">
                   Microsoft Research framework for multi-agent conversations and collaborative AI workflows. Focus on research applications and agent communication patterns.
                 </p>
-                <div className="space-y-2 text-slate-600 text-sm">
+                <div className="space-y-2 text-muted-dark text-sm">
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-blue rounded-full" />
                     <span>Multi-agent conversation framework</span>
@@ -146,10 +146,10 @@ export default function OpenClawVsAutoGenPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Detailed Feature Comparison</h2>
             
             <div className="overflow-x-auto mb-8">
-              <table className="w-full bg-white rounded-lg border border-slate-200">
-                <thead className="bg-slate-50">
+              <table className="w-full bg-white rounded-lg border border-border-light">
+                <thead className="bg-surface">
                   <tr>
-                    <th className="text-left p-4 font-semibold text-slate-800">Feature</th>
+                    <th className="text-left p-4 font-semibold text-dark">Feature</th>
                     <th className="text-center p-4 font-semibold text-orange">OpenClaw</th>
                     <th className="text-center p-4 font-semibold text-blue">AutoGen</th>
                   </tr>
@@ -199,7 +199,7 @@ export default function OpenClawVsAutoGenPage() {
               </table>
             </div>
 
-            <div className="text-xs text-slate-500 flex gap-4">
+            <div className="text-xs text-muted flex gap-4">
               <div className="flex items-center gap-2">
                 <span className="inline-block w-4 h-4 bg-green-500 rounded-full"></span>
                 <span>Excellent</span>
@@ -223,8 +223,8 @@ export default function OpenClawVsAutoGenPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">OpenClaw: Best for Business Operations</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Ideal Use Cases:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Ideal Use Cases:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Customer service automation</li>
                       <li>• Invoice and document processing</li>
                       <li>• Sales pipeline automation</li>
@@ -234,8 +234,8 @@ export default function OpenClawVsAutoGenPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Business Benefits:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Business Benefits:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Rapid deployment (2-4 weeks)</li>
                       <li>• Predictable costs and ROI</li>
                       <li>• Enterprise-grade security</li>
@@ -251,8 +251,8 @@ export default function OpenClawVsAutoGenPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">AutoGen: Best for Research & Experimentation</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Ideal Use Cases:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Ideal Use Cases:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Research and development projects</li>
                       <li>• Complex multi-agent simulations</li>
                       <li>• Academic and experimental workflows</li>
@@ -262,8 +262,8 @@ export default function OpenClawVsAutoGenPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Technical Benefits:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Technical Benefits:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Open-source flexibility</li>
                       <li>• Rich agent interaction patterns</li>
                       <li>• Strong academic community</li>
@@ -281,65 +281,65 @@ export default function OpenClawVsAutoGenPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Cost & Implementation Analysis</h2>
             
             <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <h3 className="font-heading text-lg font-bold text-orange mb-4">OpenClaw Total Cost of Ownership</h3>
                 
                 <div className="space-y-4 mb-6">
                   <div className="flex justify-between">
-                    <span className="text-slate-600">Platform License</span>
+                    <span className="text-muted-dark">Platform License</span>
                     <span className="font-semibold">£2K-£15K/year</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-600">Implementation</span>
+                    <span className="text-muted-dark">Implementation</span>
                     <span className="font-semibold">£15K-£50K</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-600">Training & Support</span>
+                    <span className="text-muted-dark">Training & Support</span>
                     <span className="font-semibold">£5K-£20K</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-600">Annual Maintenance</span>
+                    <span className="text-muted-dark">Annual Maintenance</span>
                     <span className="font-semibold">£3K-£12K</span>
                   </div>
                   <div className="border-t pt-2 flex justify-between">
-                    <span className="font-semibold text-slate-800">3-Year Total</span>
+                    <span className="font-semibold text-dark">3-Year Total</span>
                     <span className="font-bold text-orange">£35K-£150K</span>
                   </div>
                 </div>
                 
-                <div className="text-sm text-slate-600">
+                <div className="text-sm text-muted-dark">
                   <strong>ROI Timeline:</strong> 6-12 months<br/>
                   <strong>Typical Savings:</strong> £100K-£500K/year
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <h3 className="font-heading text-lg font-bold text-blue mb-4">AutoGen Total Cost of Ownership</h3>
                 
                 <div className="space-y-4 mb-6">
                   <div className="flex justify-between">
-                    <span className="text-slate-600">Platform License</span>
+                    <span className="text-muted-dark">Platform License</span>
                     <span className="font-semibold text-green-600">£0 (Open Source)</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-600">Development</span>
+                    <span className="text-muted-dark">Development</span>
                     <span className="font-semibold">£25K-£100K</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-600">Infrastructure</span>
+                    <span className="text-muted-dark">Infrastructure</span>
                     <span className="font-semibold">£5K-£25K/year</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-600">Ongoing Development</span>
+                    <span className="text-muted-dark">Ongoing Development</span>
                     <span className="font-semibold">£15K-£60K/year</span>
                   </div>
                   <div className="border-t pt-2 flex justify-between">
-                    <span className="font-semibold text-slate-800">3-Year Total</span>
+                    <span className="font-semibold text-dark">3-Year Total</span>
                     <span className="font-bold text-blue">£85K-£355K</span>
                   </div>
                 </div>
                 
-                <div className="text-sm text-slate-600">
+                <div className="text-sm text-muted-dark">
                   <strong>ROI Timeline:</strong> 12-24 months<br/>
                   <strong>Typical Savings:</strong> Variable
                 </div>
@@ -347,11 +347,11 @@ export default function OpenClawVsAutoGenPage() {
             </div>
 
             <div className="bg-gradient-to-r from-orange/5 to-blue/5 rounded-xl p-6 border border-orange/10">
-              <h4 className="font-semibold text-slate-800 mb-4">Decision Framework</h4>
+              <h4 className="font-semibold text-dark mb-4">Decision Framework</h4>
               <div className="grid md:grid-cols-3 gap-6 text-sm">
                 <div>
                   <h5 className="font-medium text-orange mb-2">Choose OpenClaw If:</h5>
-                  <ul className="space-y-1 text-slate-600">
+                  <ul className="space-y-1 text-muted-dark">
                     <li>• Need quick business ROI</li>
                     <li>• Require enterprise support</li>
                     <li>• Focus on operational automation</li>
@@ -361,7 +361,7 @@ export default function OpenClawVsAutoGenPage() {
                 </div>
                 <div>
                   <h5 className="font-medium text-blue mb-2">Choose AutoGen If:</h5>
-                  <ul className="space-y-1 text-slate-600">
+                  <ul className="space-y-1 text-muted-dark">
                     <li>• Research-focused projects</li>
                     <li>• Strong technical team</li>
                     <li>• Custom agent patterns needed</li>
@@ -371,7 +371,7 @@ export default function OpenClawVsAutoGenPage() {
                 </div>
                 <div>
                   <h5 className="font-medium text-green-600 mb-2">Consider Both If:</h5>
-                  <ul className="space-y-1 text-slate-600">
+                  <ul className="space-y-1 text-muted-dark">
                     <li>• Large enterprise with diverse needs</li>
                     <li>• Mixed research and production requirements</li>
                     <li>• Pilot-then-scale approach</li>
@@ -389,7 +389,7 @@ export default function OpenClawVsAutoGenPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Getting Started</h3>
-                  <div className="space-y-3 text-slate-600 text-sm">
+                  <div className="space-y-3 text-muted-dark text-sm">
                     <div className="flex items-start gap-3">
                       <input type="checkbox" className="mt-1" />
                       <span>Define business automation objectives and success metrics</span>
@@ -413,8 +413,8 @@ export default function OpenClawVsAutoGenPage() {
                   </div>
 
                   <div className="mt-6">
-                    <h4 className="font-semibold text-slate-800 mb-3">Expert Support:</h4>
-                    <div className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Expert Support:</h4>
+                    <div className="space-y-2 text-muted-dark text-sm">
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas AI consultancy</a> for framework selection and strategy</span>
@@ -431,20 +431,20 @@ export default function OpenClawVsAutoGenPage() {
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Success Factors</h3>
                   <div className="space-y-4">
                     <div className="border-l-4 border-orange pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Clear Business Case</h4>
-                      <p className="text-slate-600 text-sm">Define specific outcomes and ROI expectations before starting</p>
+                      <h4 className="font-medium text-dark mb-1">Clear Business Case</h4>
+                      <p className="text-muted-dark text-sm">Define specific outcomes and ROI expectations before starting</p>
                     </div>
                     <div className="border-l-4 border-blue pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Technical Readiness</h4>
-                      <p className="text-slate-600 text-sm">Ensure team capabilities match framework complexity</p>
+                      <h4 className="font-medium text-dark mb-1">Technical Readiness</h4>
+                      <p className="text-muted-dark text-sm">Ensure team capabilities match framework complexity</p>
                     </div>
                     <div className="border-l-4 border-green-500 pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Phased Approach</h4>
-                      <p className="text-slate-600 text-sm">Start small, prove value, then scale successful patterns</p>
+                      <h4 className="font-medium text-dark mb-1">Phased Approach</h4>
+                      <p className="text-muted-dark text-sm">Start small, prove value, then scale successful patterns</p>
                     </div>
                     <div className="border-l-4 border-purple pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Change Management</h4>
-                      <p className="text-slate-600 text-sm">Prepare organisation for workflow and role changes</p>
+                      <h4 className="font-medium text-dark mb-1">Change Management</h4>
+                      <p className="text-muted-dark text-sm">Prepare organisation for workflow and role changes</p>
                     </div>
                   </div>
                 </div>
@@ -457,51 +457,51 @@ export default function OpenClawVsAutoGenPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Framework Selection FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Which framework is better for business automation projects?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   OpenClaw is designed specifically for business automation with built-in integrations, enterprise security, and commercial support. AutoGen excels at research and experimental multi-agent workflows but requires more development effort for production business applications.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Can I migrate from AutoGen to OpenClaw or vice versa?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Migration is possible but requires significant effort as the frameworks use different architectures. OpenClaw focuses on business workflows whilst AutoGen centres on agent conversations. Plan migration carefully and consider running both frameworks in parallel during transition.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Which framework has lower total cost of ownership?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   OpenClaw typically has lower TCO for business applications due to faster implementation, reduced development costs, and included support. AutoGen has no license fees but requires substantial development investment and ongoing technical maintenance.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Do I need technical expertise to implement either framework?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   OpenClaw requires basic technical understanding but includes business-friendly configuration tools. AutoGen requires strong Python development skills and agent architecture knowledge. OpenClaw is accessible to business analysts whilst AutoGen needs dedicated AI/ML engineers.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Which framework scales better for enterprise use?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   OpenClaw includes enterprise-grade scaling, monitoring, and management features out-of-the-box. AutoGen can scale but requires custom infrastructure development. For enterprise deployments, OpenClaw provides better operational support and predictability.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Can I use both frameworks in the same organisation?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Yes, many large organisations use OpenClaw for production business automation and AutoGen for research and development projects. This hybrid approach leverages each framework's strengths whilst managing complexity and costs appropriately.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How do I evaluate which framework fits my specific needs?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Assess your primary objectives: business automation (OpenClaw) or research/experimentation (AutoGen). Consider technical capabilities, budget, timeline, and support requirements. A proof-of-concept project can help validate framework fit before full commitment.
                 </p>
               </div>
@@ -522,7 +522,7 @@ export default function OpenClawVsAutoGenPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Framework Consultation
           </a>
@@ -532,23 +532,23 @@ export default function OpenClawVsAutoGenPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-vs-chatgpt" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-vs-chatgpt" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs ChatGPT: Key Differences</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-vs-zapier-vs-make" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-vs-zapier-vs-make" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs Zapier vs Make</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -556,13 +556,13 @@ export default function OpenClawVsAutoGenPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Expert Agent Framework Guidance
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a consultation to discuss your automation requirements and get personalised framework recommendations.
             </p>
           </div>

@@ -205,13 +205,13 @@ export default function WhatIsOpenClawPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#overview"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 Read Full Guide
               </a>
               <a
                 href="/"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 ← Back to Home
               </a>
@@ -245,7 +245,7 @@ export default function WhatIsOpenClawPage() {
       </section>
 
       {/* Key Features */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -258,7 +258,7 @@ export default function WhatIsOpenClawPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {keyFeatures.map((item, index) => (
-              <div key={index} className="bg-surface rounded-box p-8 card-lift">
+              <div key={index} className="bg-surface rounded-2xl p-8 card-lift">
                 <div className="text-2xl mb-4">
                   {index === 0 ? "🧠" : index === 1 ? "🔧" : index === 2 ? "🤝" : index === 3 ? "⏰" : index === 4 ? "🔗" : "🔒"}
                 </div>
@@ -288,7 +288,7 @@ export default function WhatIsOpenClawPage() {
           </div>
 
           <div className="overflow-x-auto">
-            <table className="w-full bg-white/[0.03] border border-white/[0.06] rounded-box">
+            <table className="w-full bg-white/[0.03] border border-white/[0.06] rounded-2xl">
               <thead>
                 <tr className="border-b border-white/[0.06]">
                   <th className="text-left p-6 text-white font-heading font-bold">Feature</th>
@@ -324,7 +324,7 @@ export default function WhatIsOpenClawPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {useCaseExamples.map((category) => (
-              <div key={category.category} className="bg-white rounded-box p-8 shadow-card">
+              <div key={category.category} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-6">{category.category}</h3>
                 <ul className="space-y-3">
                   {category.examples.map((example, index) => (
@@ -341,7 +341,7 @@ export default function WhatIsOpenClawPage() {
       </section>
 
       {/* Architecture Overview */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -354,7 +354,7 @@ export default function WhatIsOpenClawPage() {
 
           <div className="space-y-8">
             {architectureComponents.map((component, index) => (
-              <div key={index} className="bg-surface rounded-box p-8 shadow-card">
+              <div key={index} className="bg-surface rounded-2xl p-8 shadow-card">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
                   <div>
                     <div className="flex items-center gap-3 mb-3">
@@ -393,7 +393,7 @@ export default function WhatIsOpenClawPage() {
 
           <div className="space-y-6">
             {implementationLevels.map((level, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-center">
                   <div>
                     <h3 className="font-heading font-bold text-xl text-dark mb-2">{level.level}</h3>
@@ -468,9 +468,9 @@ export default function WhatIsOpenClawPage() {
       </section>
 
       {/* Getting Started */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
-          <div className="bg-surface rounded-box p-12 text-center">
+          <div className="bg-surface rounded-2xl p-12 text-center">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-6">
               Ready to Explore OpenClaw for Your Business?
             </h2>
@@ -498,7 +498,7 @@ export default function WhatIsOpenClawPage() {
             
             <a
               href="#contact"
-              className="inline-flex items-center justify-center bg-orange text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-xl"
+              className="inline-flex items-center justify-center bg-orange text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-xl"
             >
               Book Free OpenClaw Consultation →
             </a>
@@ -509,23 +509,23 @@ export default function WhatIsOpenClawPage() {
       {/* Contact Section */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-beginner-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-beginner-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Beginner Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-tutorial-beginners" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-tutorial-beginners" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Tutorial for Beginners</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Skills: Complete Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -568,7 +568,7 @@ export default function WhatIsOpenClawPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">OpenClaw Consultation</h3>
               <p className="text-white/40 text-sm mb-6">Explore OpenClaw for your business needs</p>
               <ContactForm />

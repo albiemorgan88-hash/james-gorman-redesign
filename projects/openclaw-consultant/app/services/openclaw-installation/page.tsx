@@ -3,7 +3,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "OpenClaw Installation Service",
-  description: "Professional OpenClaw installation service. 24hr turnaround, complete configuration, WhatsApp/Telegram/Discord/Slack integration. Expert setup from Phil Patterson.",
+  description: "Professional OpenClaw installation service. 24hr turnaround, complete configuration, WhatsApp/Telegram/Discord/Slack integration. Expert setup from Blue Canvas.",
   keywords: [
     "openclaw install",
     "openclaw installation service",
@@ -30,7 +30,7 @@ const jsonLd = {
   "description": "Professional OpenClaw installation and configuration service with 24-hour turnaround",
   "provider": {
     "@type": "Person",
-    "name": "Phil Patterson",
+    "name": "Blue Canvas",
     "jobTitle": "OpenClaw Consultant"
   },
   "areaServed": { "@type": "Country", name: "United Kingdom" },
@@ -208,10 +208,10 @@ export default function OpenClawInstallationPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#pricing" className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange">
+              <a href="#pricing" className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange">
                 View Pricing
               </a>
-              <a href="#process" className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10">
+              <a href="#process" className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10">
                 How It Works ↓
               </a>
             </div>
@@ -219,7 +219,7 @@ export default function OpenClawInstallationPage() {
         </div>
       </section>
 
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -232,7 +232,7 @@ export default function OpenClawInstallationPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {installationFeatures.map((feature) => (
-              <div key={feature.title} className="bg-surface rounded-box p-8 border border-border card-lift">
+              <div key={feature.title} className="bg-surface rounded-2xl p-8 border border-border card-lift">
                 <div className="text-3xl mb-4">{feature.icon}</div>
                 <h3 className="font-heading font-bold text-dark text-lg mb-2">{feature.title}</h3>
                 <p className="text-muted text-sm leading-relaxed">{feature.description}</p>
@@ -255,7 +255,7 @@ export default function OpenClawInstallationPage() {
 
           <div className="space-y-8">
             {whyChooseProfessional.map((item) => (
-              <div key={item.challenge} className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+              <div key={item.challenge} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl text-orange mb-6">{item.challenge}</h3>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div className="bg-red-900/20 border border-red-500/20 rounded-lg p-6">
@@ -290,7 +290,7 @@ export default function OpenClawInstallationPage() {
 
           <div className="space-y-8">
             {installationProcess.map((step) => (
-              <div key={step.step} className="bg-white rounded-box p-8 shadow-card">
+              <div key={step.step} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="flex items-start gap-6">
                   <div className="bg-orange text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                     {step.step}
@@ -308,7 +308,7 @@ export default function OpenClawInstallationPage() {
           </div>
 
           <div className="text-center mt-12">
-            <div className="bg-green-50 border border-green-200 rounded-box p-6 inline-block">
+            <div className="bg-green-50 border border-green-200 rounded-2xl p-6 inline-block">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">⚡</span>
                 <div>
@@ -321,7 +321,7 @@ export default function OpenClawInstallationPage() {
         </div>
       </section>
 
-      <section id="pricing" className="bg-white py-24">
+      <section id="pricing" className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -336,7 +336,7 @@ export default function OpenClawInstallationPage() {
             {pricingTiers.map((tier) => (
               <div 
                 key={tier.name} 
-                className={`rounded-box p-8 ${
+                className={`rounded-2xl p-8 ${
                   tier.popular 
                     ? 'bg-navy text-white border-2 border-orange/30 relative' 
                     : 'bg-surface border border-border'
@@ -374,7 +374,7 @@ export default function OpenClawInstallationPage() {
                 </ul>
                 <a
                   href="#contact"
-                  className={`block text-center px-6 py-3 rounded-btn font-semibold text-sm transition-all ${
+                  className={`block text-center px-6 py-3 rounded-xl font-semibold text-sm transition-all ${
                     tier.popular
                       ? 'bg-orange text-white hover:bg-orange-hover'
                       : 'bg-dark text-white hover:bg-dark/90'
@@ -390,7 +390,7 @@ export default function OpenClawInstallationPage() {
 
       <section className="bg-surface py-16">
         <div className="max-w-[1140px] mx-auto px-6">
-          <div className="bg-white rounded-box p-8 shadow-card">
+          <div className="bg-white rounded-2xl p-8 shadow-card">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="font-heading font-bold text-2xl text-dark mb-4">
@@ -417,7 +417,7 @@ export default function OpenClawInstallationPage() {
               <div className="text-center">
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-bold text-lg hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-xl"
+                  className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-xl"
                 >
                   Book Free Consultation
                 </a>
@@ -443,7 +443,7 @@ export default function OpenClawInstallationPage() {
                 Start with a free consultation. Phil will assess your needs, recommend the right package, and give you a clear timeline for getting OpenClaw working in your business.
               </p>
 
-              <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-6 mb-8">
+              <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 mb-8">
                 <h3 className="font-semibold text-white mb-3">What happens next:</h3>
                 <ul className="space-y-2 text-white/70 text-sm">
                   <li className="flex gap-2">
@@ -481,7 +481,7 @@ export default function OpenClawInstallationPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Get Your Installation Quote</h3>
               <p className="text-white/40 text-sm mb-6">Free consultation — no commitment required</p>
               <ContactForm />

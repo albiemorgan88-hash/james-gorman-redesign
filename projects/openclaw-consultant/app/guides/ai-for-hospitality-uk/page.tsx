@@ -63,11 +63,11 @@ export default function AIForHospitalityUKPage() {
       <article className="py-16 bg-white">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               UK hotels implementing AI are seeing average revenue increases of 32% and guest satisfaction improvements of 45%. From intelligent revenue management to personalised guest experiences, AI is revolutionising how hospitality businesses operate and deliver exceptional service.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This comprehensive guide shows UK hospitality operators exactly how to implement AI solutions that drive measurable business growth. Learn from successful implementations across boutique hotels, chains, B&Bs, restaurants, and event venues throughout the UK.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function AIForHospitalityUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">18%</div>
-                <div className="text-slate-600 text-sm">Revenue per room increase</div>
+                <div className="text-muted-dark text-sm">Revenue per room increase</div>
               </div>
               
               <div className="text-center">
@@ -93,7 +93,7 @@ export default function AIForHospitalityUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">85%</div>
-                <div className="text-slate-600 text-sm">Occupancy rate optimisation</div>
+                <div className="text-muted-dark text-sm">Occupancy rate optimisation</div>
               </div>
               
               <div className="text-center">
@@ -103,7 +103,7 @@ export default function AIForHospitalityUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">67%</div>
-                <div className="text-slate-600 text-sm">Front desk efficiency gain</div>
+                <div className="text-muted-dark text-sm">Front desk efficiency gain</div>
               </div>
               
               <div className="text-center">
@@ -113,7 +113,7 @@ export default function AIForHospitalityUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">91%</div>
-                <div className="text-slate-600 text-sm">Guest satisfaction scores</div>
+                <div className="text-muted-dark text-sm">Guest satisfaction scores</div>
               </div>
             </div>
 
@@ -122,8 +122,8 @@ export default function AIForHospitalityUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Revenue Management & Dynamic Pricing</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">AI-Powered Solutions:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">AI-Powered Solutions:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Real-time demand forecasting and pricing</li>
                       <li>• Market competitor rate monitoring</li>
                       <li>• Event-based pricing adjustments</li>
@@ -132,8 +132,8 @@ export default function AIForHospitalityUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Financial Impact:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Financial Impact:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 15-25% increase in average daily rate</li>
                       <li>• 10-20% improvement in RevPAR</li>
                       <li>• 8-15% boost in total revenue</li>
@@ -148,8 +148,8 @@ export default function AIForHospitalityUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Guest Experience Personalisation</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Personalisation Features:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Personalisation Features:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Customised room preferences and amenities</li>
                       <li>• Personalised dining and activity recommendations</li>
                       <li>• Targeted promotional offers</li>
@@ -158,8 +158,8 @@ export default function AIForHospitalityUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Guest Satisfaction Benefits:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Guest Satisfaction Benefits:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 40-60% increase in repeat bookings</li>
                       <li>• 30-45% improvement in review scores</li>
                       <li>• 25-35% higher guest lifetime value</li>
@@ -174,8 +174,8 @@ export default function AIForHospitalityUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Operations Automation</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Automated Processes:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Automated Processes:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Check-in/check-out automation</li>
                       <li>• Housekeeping scheduling and optimisation</li>
                       <li>• Maintenance request management</li>
@@ -184,8 +184,8 @@ export default function AIForHospitalityUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Operational Improvements:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Operational Improvements:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 40-60% reduction in check-in wait times</li>
                       <li>• 30-50% improvement in housekeeping efficiency</li>
                       <li>• 25-35% decrease in operational costs</li>
@@ -202,11 +202,11 @@ export default function AIForHospitalityUKPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">UK Hospitality AI Success Stories</h2>
             
             <div className="space-y-8">
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">Boutique Hotel Chain</h3>
-                    <p className="text-slate-600 text-sm">15-property boutique hotel group across UK cities</p>
+                    <p className="text-muted-dark text-sm">15-property boutique hotel group across UK cities</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     380% ROI
@@ -214,38 +214,38 @@ export default function AIForHospitalityUKPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Competing with larger chains on personalisation whilst maintaining boutique charm and optimising rates across diverse locations</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Competing with larger chains on personalisation whilst maintaining boutique charm and optimising rates across diverse locations</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">AI Solution:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Implemented guest preference tracking, dynamic pricing, and automated concierge services across all properties</p>
+                  <h4 className="font-semibold text-dark mb-2">AI Solution:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Implemented guest preference tracking, dynamic pricing, and automated concierge services across all properties</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">RevPAR Growth</div>
+                    <div className="text-sm font-medium text-muted mb-1">RevPAR Growth</div>
                     <div className="text-green-700 font-semibold text-sm">28%</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Guest Satisfaction</div>
+                    <div className="text-sm font-medium text-muted mb-1">Guest Satisfaction</div>
                     <div className="text-green-700 font-semibold text-sm">4.7/5</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Repeat Bookings</div>
+                    <div className="text-sm font-medium text-muted mb-1">Repeat Bookings</div>
                     <div className="text-green-700 font-semibold text-sm">52% increase</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Operational Efficiency</div>
+                    <div className="text-sm font-medium text-muted mb-1">Operational Efficiency</div>
                     <div className="text-green-700 font-semibold text-sm">43% improvement</div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">Country House Hotel</h3>
-                    <p className="text-slate-600 text-sm">Historic 4-star hotel and events venue in the Cotswolds</p>
+                    <p className="text-muted-dark text-sm">Historic 4-star hotel and events venue in the Cotswolds</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     450% ROI
@@ -253,28 +253,28 @@ export default function AIForHospitalityUKPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Managing complex wedding and event bookings whilst optimising room rates for leisure guests during peak seasons</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Managing complex wedding and event bookings whilst optimising room rates for leisure guests during peak seasons</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">AI Solution:</h4>
-                  <p className="text-slate-600 text-sm mb-4">AI-powered event planning, guest journey personalisation, and intelligent inventory management</p>
+                  <h4 className="font-semibold text-dark mb-2">AI Solution:</h4>
+                  <p className="text-muted-dark text-sm mb-4">AI-powered event planning, guest journey personalisation, and intelligent inventory management</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Wedding Revenue</div>
+                    <div className="text-sm font-medium text-muted mb-1">Wedding Revenue</div>
                     <div className="text-green-700 font-semibold text-sm">41% increase</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Guest Spend</div>
+                    <div className="text-sm font-medium text-muted mb-1">Guest Spend</div>
                     <div className="text-green-700 font-semibold text-sm">35% higher</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Planning Efficiency</div>
+                    <div className="text-sm font-medium text-muted mb-1">Planning Efficiency</div>
                     <div className="text-green-700 font-semibold text-sm">60% faster</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Customer Reviews</div>
+                    <div className="text-sm font-medium text-muted mb-1">Customer Reviews</div>
                     <div className="text-green-700 font-semibold text-sm">4.9/5</div>
                   </div>
                 </div>
@@ -289,7 +289,7 @@ export default function AIForHospitalityUKPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Getting Started</h3>
-                  <div className="space-y-3 text-slate-600 text-sm">
+                  <div className="space-y-3 text-muted-dark text-sm">
                     <div className="flex items-start gap-3">
                       <input type="checkbox" className="mt-1" />
                       <span>Audit current guest data and booking systems</span>
@@ -313,8 +313,8 @@ export default function AIForHospitalityUKPage() {
                   </div>
 
                   <div className="mt-6">
-                    <h4 className="font-semibold text-slate-800 mb-3">Expert Support:</h4>
-                    <div className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Expert Support:</h4>
+                    <div className="space-y-2 text-muted-dark text-sm">
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas AI consultancy</a> for hospitality AI strategy</span>
@@ -331,20 +331,20 @@ export default function AIForHospitalityUKPage() {
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Success Factors</h3>
                   <div className="space-y-4">
                     <div className="border-l-4 border-orange pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Guest Data Integration</h4>
-                      <p className="text-slate-600 text-sm">Unified guest profiles across all systems are essential for personalisation</p>
+                      <h4 className="font-medium text-dark mb-1">Guest Data Integration</h4>
+                      <p className="text-muted-dark text-sm">Unified guest profiles across all systems are essential for personalisation</p>
                     </div>
                     <div className="border-l-4 border-blue pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Staff Adoption</h4>
-                      <p className="text-slate-600 text-sm">Train your team to leverage AI insights for better guest service</p>
+                      <h4 className="font-medium text-dark mb-1">Staff Adoption</h4>
+                      <p className="text-muted-dark text-sm">Train your team to leverage AI insights for better guest service</p>
                     </div>
                     <div className="border-l-4 border-green-500 pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Guest Privacy</h4>
-                      <p className="text-slate-600 text-sm">Transparent data practices build trust and enhance guest relationships</p>
+                      <h4 className="font-medium text-dark mb-1">Guest Privacy</h4>
+                      <p className="text-muted-dark text-sm">Transparent data practices build trust and enhance guest relationships</p>
                     </div>
                     <div className="border-l-4 border-purple pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Continuous Learning</h4>
-                      <p className="text-slate-600 text-sm">Regular system optimisation drives long-term performance gains</p>
+                      <h4 className="font-medium text-dark mb-1">Continuous Learning</h4>
+                      <p className="text-muted-dark text-sm">Regular system optimisation drives long-term performance gains</p>
                     </div>
                   </div>
                 </div>
@@ -357,51 +357,51 @@ export default function AIForHospitalityUKPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Hospitality AI FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What are the most effective AI applications for UK hotels?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Most effective applications include dynamic revenue management (15-25% RevPAR increase), guest personalisation (40-60% repeat booking lift), operational automation (30-50% efficiency gains), and intelligent booking management. Start with revenue management for quickest financial impact.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How much should hotels invest in AI technology?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Investment varies by hotel size: boutique hotels (20-50 rooms): £15K-£50K annually. Mid-size (50-150 rooms): £50K-£150K. Large hotels (150+ rooms): £150K-£500K+. Most properties see positive ROI within 8-15 months with 250-450% returns over 3 years.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How does AI improve guest satisfaction without feeling impersonal?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   AI enhances human service rather than replacing it. By anticipating guest needs, providing relevant recommendations, and enabling staff to focus on high-value interactions, AI actually makes service more personal and attentive whilst maintaining authentic hospitality.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What guest data is needed for effective hotel AI implementation?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Essential data includes booking history, stay preferences, spending patterns, service requests, feedback, and demographic information. Integration with PMS, booking engines, and guest communication platforms creates comprehensive profiles for personalisation.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How quickly can hotels see ROI from AI investments?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   ROI timeline varies by application: revenue management (2-6 months), guest personalisation (3-9 months), operational automation (4-12 months). Most hotels achieve positive returns within 12 months, with full benefits realised over 18-24 months as AI systems optimise.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Should hotels build AI capabilities internally or use external providers?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Most hotels benefit from partnering with AI specialists like Blue Canvas for strategy and implementation, using proven hospitality AI platforms, and developing internal capabilities for ongoing management. This approach balances speed, expertise, and cost control.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How does AI impact hotel staff roles and employment?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   AI typically enhances staff capabilities rather than replacing roles. While automating routine tasks, it enables staff to focus on guest relationships, problem-solving, and high-value services. Invest in training to help staff leverage AI insights effectively.
                 </p>
               </div>
@@ -422,7 +422,7 @@ export default function AIForHospitalityUKPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Hospitality AI Assessment
           </a>
@@ -432,23 +432,23 @@ export default function AIForHospitalityUKPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-agents-accountants" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-agents-accountants" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Agents for Accountants UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-agents-charities" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-agents-charities" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Agents for Charities UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -456,13 +456,13 @@ export default function AIForHospitalityUKPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Enhance Your Guest Experience with AI
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a consultation to discuss how AI can transform your hospitality operations and guest satisfaction.
             </p>
           </div>

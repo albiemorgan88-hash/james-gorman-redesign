@@ -5,14 +5,14 @@ import QuickContactForm from "@/components/QuickContactForm";
 export const metadata: Metadata = {
   title: "OpenClaw Consultant UK — Expert Setup, Custom Skills & AI Automation",
   description:
-    "Phil Patterson is the UK's leading OpenClaw consultant. 25+ production skills, daily operation, expert setup and training. Get OpenClaw working for your business. Free consultation.",
+    "Blue Canvas is the UK's leading OpenClaw consultancy. 25+ production skills, daily operation, expert setup and training. Get OpenClaw working for your business. Free consultation.",
   alternates: { canonical: "https://openclawconsultant.co.uk" },
   openGraph: {
     type: "website",
     locale: "en_GB",
     siteName: "OpenClaw Consultant UK",
     title: "OpenClaw Consultant UK — Expert Setup, Custom Skills & AI Automation",
-    description: "Phil Patterson is the UK's leading OpenClaw consultant. 25+ production skills, daily operation, expert setup and training. Get OpenClaw working for your business. Free consultation.",
+    description: "Blue Canvas is the UK's leading OpenClaw consultancy. 25+ production skills, daily operation, expert setup and training. Get OpenClaw working for your business. Free consultation.",
     url: "https://openclawconsultant.co.uk",
     images: [
       {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: { 
     card: "summary_large_image",
     title: "OpenClaw Consultant UK — Expert Setup, Custom Skills & AI Automation",
-    description: "Phil Patterson is the UK's leading OpenClaw consultant. 25+ production skills, daily operation, expert setup and training. Free consultation.",
+    description: "Blue Canvas is the UK's leading OpenClaw consultancy. 25+ production skills, daily operation, expert setup and training. Free consultation.",
     images: ["https://openclawconsultant.co.uk/api/og"],
   },
 };
@@ -138,19 +138,19 @@ export default function Home() {
             </h1>
 
             <p className="text-white/60 text-lg md:text-xl max-w-[560px] mb-10 leading-relaxed">
-              Phil Patterson runs OpenClaw in production every single day — managing an entire AI consultancy through it. Let him set it up for yours.
+              Blue Canvas runs OpenClaw in production every single day — managing entire businesses through it. Let us set it up for yours.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 Book Free Consultation
               </a>
               <a
                 href="#services"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 See Services ↓
               </a>
@@ -159,11 +159,11 @@ export default function Home() {
         </div>
 
         {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#fafbfc] to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-cream to-transparent" />
       </section>
 
       {/* ============ PROMINENT CONTACT FORM ============ */}
-      <section className="bg-gradient-to-br from-orange/5 via-white to-blue/5 py-20 border-b border-border relative overflow-hidden">
+      <section className="bg-gradient-to-br from-orange/5 via-cream to-blue/5 py-24 border-b border-border-light relative overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute top-0 left-[10%] w-[300px] h-[300px] bg-orange/10 rounded-full blur-[100px]" />
         <div className="absolute bottom-0 right-[15%] w-[250px] h-[250px] bg-blue/10 rounded-full blur-[80px]" />
@@ -185,7 +185,7 @@ export default function Home() {
           </div>
 
           <div className="max-w-[700px] mx-auto">
-            <div className="bg-white rounded-2xl p-8 md:p-10 border-2 border-orange/20 shadow-2xl shadow-orange/10 relative hover:shadow-3xl hover:border-orange/30 transition-all duration-300">
+            <div className="bg-white rounded-2xl p-8 md:p-12 border border-orange/15 shadow-soft-lg relative hover:shadow-card-hover hover:border-orange/25 transition-all duration-200">
               {/* Accent decoration */}
               <div className="absolute -top-3 left-8 bg-orange text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg animate-pulse">
                 ✨ Free Consultation
@@ -199,7 +199,7 @@ export default function Home() {
               <QuickContactForm />
               
               {/* Trust indicators */}
-              <div className="flex flex-wrap justify-center gap-6 mt-8 pt-6 border-t border-border text-xs text-muted">
+              <div className="flex flex-wrap justify-center gap-6 mt-8 pt-6 border-t border-border-light text-xs text-muted">
                 <div className="flex items-center gap-2">
                   <span className="text-green-500">✓</span>
                   <span>Free consultation</span>
@@ -223,7 +223,7 @@ export default function Home() {
       </section>
 
       {/* ============ WHAT IS OPENCLAW ============ */}
-      <section className="bg-light py-24">
+      <section className="bg-cream py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="max-w-[740px] mx-auto text-center">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -236,20 +236,20 @@ export default function Home() {
               OpenClaw is an open-source AI operating system that lets you deploy persistent AI agents — complete with memory, custom skills, scheduling, and multi-agent orchestration. Think of it as giving your business an AI team that works 24/7, integrates with your tools, and gets smarter over time.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200">
                 <div className="text-2xl mb-3">🧠</div>
-                <h3 className="font-heading font-bold text-dark mb-1">Persistent Memory</h3>
-                <p className="text-muted text-sm">Agents remember context across sessions. No starting from scratch.</p>
+                <h3 className="font-heading font-bold text-dark mb-1.5">Persistent Memory</h3>
+                <p className="text-muted text-sm leading-relaxed">Agents remember context across sessions. No starting from scratch.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200">
                 <div className="text-2xl mb-3">🔧</div>
-                <h3 className="font-heading font-bold text-dark mb-1">Custom Skills</h3>
-                <p className="text-muted text-sm">Build skills for anything — SEO, lead gen, deployments, monitoring.</p>
+                <h3 className="font-heading font-bold text-dark mb-1.5">Custom Skills</h3>
+                <p className="text-muted text-sm leading-relaxed">Build skills for anything — SEO, lead gen, deployments, monitoring.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200">
                 <div className="text-2xl mb-3">⚡</div>
-                <h3 className="font-heading font-bold text-dark mb-1">Always Running</h3>
-                <p className="text-muted text-sm">Heartbeats, cron jobs, and subagents working while you sleep.</p>
+                <h3 className="font-heading font-bold text-dark mb-1.5">Always Running</h3>
+                <p className="text-muted text-sm leading-relaxed">Heartbeats, cron jobs, and subagents working while you sleep.</p>
               </div>
             </div>
           </div>
@@ -257,7 +257,7 @@ export default function Home() {
       </section>
 
       {/* ============ SERVICES ============ */}
-      <section id="services" className="bg-white py-24">
+      <section id="services" className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
             Services
@@ -272,7 +272,7 @@ export default function Home() {
             {services.map((s) => (
               <div
                 key={s.title}
-                className="bg-surface rounded-box p-8 border border-border card-lift"
+                className="bg-cream rounded-2xl p-8 border border-border-light card-lift shadow-card"
               >
                 <div className="text-3xl mb-4">{s.icon}</div>
                 <h3 className="font-heading font-bold text-dark text-lg mb-2">{s.title}</h3>
@@ -284,7 +284,7 @@ export default function Home() {
       </section>
 
       {/* ============ LATEST GUIDES ============ */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-28 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -293,7 +293,7 @@ export default function Home() {
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-6">
               Expert OpenClaw Knowledge
             </h2>
-            <p className="text-slate-600 text-lg max-w-[600px] mx-auto">
+            <p className="text-muted-dark text-lg max-w-[600px] mx-auto">
               In-depth guides covering everything from cost analysis to enterprise security. Written by someone who runs OpenClaw in production daily.
             </p>
           </div>
@@ -301,18 +301,18 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <a
               href="/guides/openclaw-vs-virtual-assistant-cost"
-              className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+              className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
             >
               <div className="flex items-center justify-between mb-3">
                 <span className="inline-block bg-orange/10 text-orange px-3 py-1 rounded-full text-xs font-medium">
                   Cost Analysis
                 </span>
-                <span className="text-slate-400 text-xs">8 min read</span>
+                <span className="text-muted text-xs">8 min read</span>
               </div>
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
                 OpenClaw vs Virtual Assistant Cost Comparison 2026
               </h3>
-              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+              <p className="text-muted-dark text-sm mb-4 leading-relaxed">
                 Complete cost breakdown comparing OpenClaw AI agents vs traditional virtual assistants. Calculate ROI and savings.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
@@ -322,18 +322,18 @@ export default function Home() {
 
             <a
               href="/guides/openclaw-enterprise-security-compliance"
-              className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+              className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
             >
               <div className="flex items-center justify-between mb-3">
                 <span className="inline-block bg-blue/10 text-blue px-3 py-1 rounded-full text-xs font-medium">
                   Security
                 </span>
-                <span className="text-slate-400 text-xs">12 min read</span>
+                <span className="text-muted text-xs">12 min read</span>
               </div>
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
                 Enterprise Security & UK Compliance Guide 2026
               </h3>
-              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+              <p className="text-muted-dark text-sm mb-4 leading-relaxed">
                 Complete guide to OpenClaw enterprise security features, UK GDPR compliance, and data protection requirements.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
@@ -343,18 +343,18 @@ export default function Home() {
 
             <a
               href="/guides/openclaw-performance-optimization-guide"
-              className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+              className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
             >
               <div className="flex items-center justify-between mb-3">
                 <span className="inline-block bg-green-500/10 text-green-600 px-3 py-1 rounded-full text-xs font-medium">
                   Performance
                 </span>
-                <span className="text-slate-400 text-xs">10 min read</span>
+                <span className="text-muted text-xs">10 min read</span>
               </div>
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
                 Performance Optimization Guide 2026
               </h3>
-              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+              <p className="text-muted-dark text-sm mb-4 leading-relaxed">
                 Complete guide to optimizing OpenClaw AI agent performance, reducing response times, and maximizing efficiency.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
@@ -364,18 +364,18 @@ export default function Home() {
 
             <a
               href="/guides/openclaw-business-systems-integration"
-              className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+              className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
             >
               <div className="flex items-center justify-between mb-3">
                 <span className="inline-block bg-purple-500/10 text-purple-600 px-3 py-1 rounded-full text-xs font-medium">
                   Integration
                 </span>
-                <span className="text-slate-400 text-xs">15 min read</span>
+                <span className="text-muted text-xs">15 min read</span>
               </div>
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
                 Business Systems Integration Guide 2026
               </h3>
-              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+              <p className="text-muted-dark text-sm mb-4 leading-relaxed">
                 Complete guide to integrating OpenClaw AI agents with CRM, ERP, accounting software, and custom APIs.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
@@ -387,7 +387,7 @@ export default function Home() {
           <div className="text-center">
             <a
               href="/guides"
-              className="inline-flex items-center justify-center bg-navy text-white px-6 py-3 rounded-btn font-semibold text-sm hover:bg-navy/90 transition-all"
+              className="inline-flex items-center justify-center bg-navy text-white px-6 py-3.5 rounded-xl font-semibold text-sm hover:bg-navy/90 hover:-translate-y-0.5 transition-all"
             >
               View All Guides
             </a>
@@ -412,7 +412,7 @@ export default function Home() {
                 <a href="https://bluecanvas.ai" target="_blank" rel="noopener" className="text-orange hover:text-orange-hover transition-colors">Blue Canvas AI</a> is a consultancy based in Derry, Northern Ireland that helps SMEs adopt AI that actually delivers. We don&apos;t pitch theory — we run OpenClaw in production every single day, managing SEO campaigns, generating leads, deploying code, and orchestrating AI agents across real business operations.
               </p>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Founded by Phil Patterson, Blue Canvas is hands-on and founder-led — not a faceless agency. With 25+ custom skills built and running in production, we&apos;ve already solved the problems most businesses are just starting to think about.
+                Blue Canvas is hands-on and founder-led — not a faceless agency. With 25+ custom skills built and running in production, we&apos;ve already solved the problems most businesses are just starting to think about.
               </p>
               <ul className="space-y-4">
                 {[
@@ -437,7 +437,7 @@ export default function Home() {
                 {credentials.map((c) => (
                   <div
                     key={c.label}
-                    className="bg-white/[0.03] border border-white/[0.06] rounded-box p-6 text-center"
+                    className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 text-center"
                   >
                     <div className="font-heading font-extrabold text-3xl md:text-4xl text-orange mb-1">
                       {c.value}
@@ -450,11 +450,11 @@ export default function Home() {
               </div>
 
               {/* Trust signal */}
-              <div className="mt-6 bg-white/[0.03] border border-white/[0.06] rounded-box p-6">
+              <div className="mt-6 bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6">
                 <p className="text-white/50 text-sm leading-relaxed italic">
                   &ldquo;We don&apos;t just consult on OpenClaw — we live inside it. Our agent reads emails, manages calendars, deploys websites, runs SEO, and generates leads. If it breaks, we feel it immediately. That&apos;s the kind of knowledge you get when you work with Blue Canvas.&rdquo;
                 </p>
-                <p className="text-orange text-sm font-semibold mt-3">— Phil Patterson, Founder</p>
+                <p className="text-orange text-sm font-semibold mt-3">— Blue Canvas</p>
               </div>
             </div>
           </div>
@@ -462,7 +462,7 @@ export default function Home() {
       </section>
 
       {/* ============ USE CASES ============ */}
-      <section id="use-cases" className="bg-light py-24">
+      <section id="use-cases" className="bg-cream py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
             Use Cases
@@ -477,7 +477,7 @@ export default function Home() {
             {useCases.map((uc) => (
               <div
                 key={uc.title}
-                className="bg-white rounded-box p-8 border border-border card-lift group"
+                className="bg-white rounded-2xl p-8 border border-border-light card-lift group shadow-card"
               >
                 <span className="inline-block bg-blue/5 text-blue text-xs font-semibold px-3 py-1 rounded-full mb-4">
                   {uc.tag}
@@ -493,7 +493,7 @@ export default function Home() {
       </section>
 
       {/* ============ PRICING ============ */}
-      <section id="pricing" className="bg-white py-24">
+      <section id="pricing" className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -509,7 +509,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[960px] mx-auto">
             {/* Free Consultation */}
-            <div className="bg-surface rounded-box p-8 border border-border card-lift">
+            <div className="bg-cream rounded-2xl p-8 border border-border-light card-lift shadow-card">
               <div className="text-sm font-semibold text-muted uppercase tracking-wider mb-6">
                 Discovery
               </div>
@@ -530,14 +530,14 @@ export default function Home() {
               </ul>
               <a
                 href="#contact"
-                className="block text-center bg-dark text-white px-6 py-3 rounded-btn font-semibold text-sm hover:bg-dark/90 transition-all"
+                className="block text-center bg-dark text-white px-6 py-3.5 rounded-xl font-semibold text-sm hover:bg-dark/90 hover:-translate-y-0.5 transition-all"
               >
                 Get Started
               </a>
             </div>
 
             {/* Setup */}
-            <div className="bg-navy text-white rounded-box p-8 border-2 border-orange/30 card-lift relative">
+            <div className="bg-navy text-white rounded-2xl p-8 border-2 border-orange/30 card-lift relative shadow-soft-lg">
               <div className="absolute -top-3 left-6 bg-orange text-white text-xs font-bold px-3 py-1 rounded-full">
                 Most Popular
               </div>
@@ -565,14 +565,14 @@ export default function Home() {
               </ul>
               <a
                 href="#contact"
-                className="block text-center bg-orange text-white px-6 py-3 rounded-btn font-semibold text-sm hover:bg-orange-hover transition-all"
+                className="block text-center bg-orange text-white px-6 py-3.5 rounded-xl font-semibold text-sm hover:bg-orange-hover hover:-translate-y-0.5 transition-all"
               >
                 Book Consultation
               </a>
             </div>
 
             {/* Monthly Support */}
-            <div className="bg-surface rounded-box p-8 border border-border card-lift">
+            <div className="bg-cream rounded-2xl p-8 border border-border-light card-lift shadow-card">
               <div className="text-sm font-semibold text-muted uppercase tracking-wider mb-6">
                 Monthly Support
               </div>
@@ -596,7 +596,7 @@ export default function Home() {
               </ul>
               <a
                 href="#contact"
-                className="block text-center bg-dark text-white px-6 py-3 rounded-btn font-semibold text-sm hover:bg-dark/90 transition-all"
+                className="block text-center bg-dark text-white px-6 py-3.5 rounded-xl font-semibold text-sm hover:bg-dark/90 hover:-translate-y-0.5 transition-all"
               >
                 Get in Touch
               </a>
@@ -606,7 +606,7 @@ export default function Home() {
       </section>
 
       {/* ============ FAQ ============ */}
-      <section className="bg-surface py-24">
+      <section className="bg-surface py-28">
         <div className="max-w-[740px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -643,7 +643,7 @@ export default function Home() {
                 a: "Great — Phil can audit your existing setup, optimise it, build custom skills, or help you scale. The consultation will identify the highest-impact improvements.",
               },
             ].map((faq, i) => (
-              <details key={i} className="group border-b border-border">
+              <details key={i} className="group border-b border-border-light">
                 <summary className="flex justify-between items-center py-5 cursor-pointer font-heading font-semibold text-dark hover:text-blue transition-colors list-none [&::-webkit-details-marker]:hidden">
                   {faq.q}
                   <span className="text-orange text-xl ml-4 group-open:rotate-45 transition-transform duration-200 flex-shrink-0">
@@ -669,7 +669,7 @@ export default function Home() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-white text-orange px-8 py-3 rounded-btn font-bold text-lg hover:bg-gray-50 transition-all hover:-translate-y-0.5 shadow-lg"
+            className="inline-flex items-center justify-center bg-white text-orange px-8 py-3.5 rounded-xl font-bold text-lg hover:bg-cream transition-all hover:-translate-y-0.5 shadow-lg"
           >
             Book Free Consultation
           </a>
@@ -693,7 +693,7 @@ export default function Home() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Book Your Free Consultation →
           </a>
@@ -701,7 +701,7 @@ export default function Home() {
       </section>
 
       {/* ============ CONTACT ============ */}
-      <section id="contact" className="bg-gradient-to-br from-navy via-slate-800 to-navy text-white py-24 relative overflow-hidden">
+      <section id="contact" className="bg-gradient-to-br from-navy via-slate-800 to-navy text-white py-28 relative overflow-hidden">
         <div className="absolute bottom-0 left-[20%] w-[500px] h-[500px] bg-orange/10 rounded-full blur-[120px]" />
         <div className="absolute top-0 right-[10%] w-[400px] h-[400px] bg-amber-400/10 rounded-full blur-[100px]" />
         <div className="absolute inset-0 bg-gradient-to-t from-orange/5 via-transparent to-transparent" />
@@ -720,7 +720,7 @@ export default function Home() {
               <p className="text-white/60 text-lg leading-relaxed mb-4">
                 Book a free, no-obligation call. Phil will walk you through his live OpenClaw setup, assess your business, and give you a straight answer — even if that&apos;s &ldquo;you don&apos;t need this yet.&rdquo;
               </p>
-              <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-5 mb-8">
+              <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 mb-8">
                 <p className="text-white/70 text-sm leading-relaxed">
                   <span className="text-orange font-semibold">What you&apos;ll get:</span> A live demo of a production OpenClaw setup, honest assessment of your automation opportunities, and a clear plan — no sales pressure.
                 </p>
@@ -745,7 +745,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Book Your Free Consultation</h3>
               <p className="text-white/40 text-sm mb-6">Usually responds within a few hours</p>
               <ContactForm />

@@ -63,11 +63,11 @@ export default function AIAppointmentBookingPage() {
       <article className="py-16 bg-white">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               For any business that lives on appointments — salons, dental practices, plumbers, solicitors, consultants, physios — every missed enquiry is lost revenue. The average UK service business misses 20-40% of inbound calls, and most of those callers won&apos;t ring back. They&apos;ll Google the next result instead.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               AI appointment booking isn&apos;t just about having a calendar on your website. Modern AI systems handle the entire booking journey: answering questions, qualifying the enquiry, checking availability, booking the slot, sending confirmations, and managing reminders. They work across every channel your customers use — and they never take a lunch break.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function AIAppointmentBookingPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">62%</div>
-                <div className="text-slate-600 text-sm">Calls missed during peak</div>
+                <div className="text-muted-dark text-sm">Calls missed during peak</div>
               </div>
               
               <div className="text-center">
@@ -93,7 +93,7 @@ export default function AIAppointmentBookingPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">85%</div>
-                <div className="text-slate-600 text-sm">Won&apos;t call back</div>
+                <div className="text-muted-dark text-sm">Won&apos;t call back</div>
               </div>
               
               <div className="text-center">
@@ -103,7 +103,7 @@ export default function AIAppointmentBookingPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">40%</div>
-                <div className="text-slate-600 text-sm">No-show reduction with AI</div>
+                <div className="text-muted-dark text-sm">No-show reduction with AI</div>
               </div>
               
               <div className="text-center">
@@ -113,11 +113,11 @@ export default function AIAppointmentBookingPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">£25K+</div>
-                <div className="text-slate-600 text-sm">Revenue lost annually</div>
+                <div className="text-muted-dark text-sm">Revenue lost annually</div>
               </div>
             </div>
 
-            <p className="text-slate-600 leading-relaxed">
+            <p className="text-muted-dark leading-relaxed">
               Consider a salon that charges £50 average per appointment and misses 5 calls a day. That&apos;s £250 in potential revenue, every single day. Even converting half of those missed calls would add £30,000 to annual revenue. For higher-value services like solicitors or consultants, the numbers are even more stark — one missed £500 consultation per week adds up to £26,000 per year.
             </p>
           </section>
@@ -128,13 +128,13 @@ export default function AIAppointmentBookingPage() {
             <div className="space-y-6">
               <div className="bg-gradient-to-r from-orange/5 to-blue/5 rounded-xl p-6 border border-orange/10">
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Multi-Channel Lead Capture</h3>
-                <p className="text-slate-600 text-sm mb-4">
+                <p className="text-muted-dark text-sm mb-4">
                   AI booking assistants sit across every channel your customers use. Someone messages at 11pm on Instagram? The AI responds, qualifies the enquiry, and books an appointment — all before you wake up. It handles website chat, WhatsApp, Facebook Messenger, Instagram DMs, SMS, and even phone calls with AI voice agents.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2 text-sm">Channels Covered:</h4>
-                    <ul className="space-y-1 text-slate-600 text-xs">
+                    <h4 className="font-semibold text-dark mb-2 text-sm">Channels Covered:</h4>
+                    <ul className="space-y-1 text-muted-dark text-xs">
                       <li>• Website chatbot with booking widget</li>
                       <li>• WhatsApp Business automated responses</li>
                       <li>• Facebook and Instagram DM integration</li>
@@ -144,8 +144,8 @@ export default function AIAppointmentBookingPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2 text-sm">What the AI Handles:</h4>
-                    <ul className="space-y-1 text-slate-600 text-xs">
+                    <h4 className="font-semibold text-dark mb-2 text-sm">What the AI Handles:</h4>
+                    <ul className="space-y-1 text-muted-dark text-xs">
                       <li>• Answering common questions about services and pricing</li>
                       <li>• Qualifying leads (what they need, when, budget)</li>
                       <li>• Checking real-time availability</li>
@@ -159,13 +159,13 @@ export default function AIAppointmentBookingPage() {
 
               <div className="bg-gradient-to-r from-blue/5 to-green-500/5 rounded-xl p-6 border border-blue/10">
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Smart Scheduling and Optimisation</h3>
-                <p className="text-slate-600 text-sm mb-4">
+                <p className="text-muted-dark text-sm mb-4">
                   Beyond basic calendar management, AI scheduling optimises your diary for maximum efficiency. It considers travel time between jobs (for mobile services), resource requirements, staff skills, and even customer preferences to build the most productive schedule possible.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2 text-sm">Intelligent Features:</h4>
-                    <ul className="space-y-1 text-slate-600 text-xs">
+                    <h4 className="font-semibold text-dark mb-2 text-sm">Intelligent Features:</h4>
+                    <ul className="space-y-1 text-muted-dark text-xs">
                       <li>• Buffer time between appointments</li>
                       <li>• Travel time calculation for mobile services</li>
                       <li>• Resource and room allocation</li>
@@ -173,8 +173,8 @@ export default function AIAppointmentBookingPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2 text-sm">No-Show Prevention:</h4>
-                    <ul className="space-y-1 text-slate-600 text-xs">
+                    <h4 className="font-semibold text-dark mb-2 text-sm">No-Show Prevention:</h4>
+                    <ul className="space-y-1 text-muted-dark text-xs">
                       <li>• Multi-stage reminders (48hr, 24hr, 2hr)</li>
                       <li>• Easy rescheduling via text or chat</li>
                       <li>• Automatic waitlist filling for cancellations</li>
@@ -186,13 +186,13 @@ export default function AIAppointmentBookingPage() {
 
               <div className="bg-gradient-to-r from-green-500/5 to-purple/5 rounded-xl p-6 border border-green-500/10">
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Post-Booking Automation</h3>
-                <p className="text-slate-600 text-sm mb-4">
+                <p className="text-muted-dark text-sm mb-4">
                   The appointment is just the beginning. AI continues working after the booking: sending pre-appointment instructions, collecting feedback afterwards, prompting reviews, and scheduling follow-ups. This turns one-time customers into long-term clients.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2 text-sm">Before the Appointment:</h4>
-                    <ul className="space-y-1 text-slate-600 text-xs">
+                    <h4 className="font-semibold text-dark mb-2 text-sm">Before the Appointment:</h4>
+                    <ul className="space-y-1 text-muted-dark text-xs">
                       <li>• Pre-appointment forms and questionnaires</li>
                       <li>• Directions and parking information</li>
                       <li>• What to bring / preparation instructions</li>
@@ -200,8 +200,8 @@ export default function AIAppointmentBookingPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-2 text-sm">After the Appointment:</h4>
-                    <ul className="space-y-1 text-slate-600 text-xs">
+                    <h4 className="font-semibold text-dark mb-2 text-sm">After the Appointment:</h4>
+                    <ul className="space-y-1 text-muted-dark text-xs">
                       <li>• Thank you messages and satisfaction surveys</li>
                       <li>• Google review requests (timed for best results)</li>
                       <li>• Rebooking prompts at the right interval</li>
@@ -217,21 +217,21 @@ export default function AIAppointmentBookingPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Industry-Specific Applications</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <h3 className="font-heading text-lg font-bold text-navy mb-3">Healthcare and Dental</h3>
-                <p className="text-slate-600 text-sm">NHS and private appointment management, patient triage, recall systems, and treatment plan follow-ups. See our detailed <a href="/guides/ai-for-dentists-uk" className="text-orange hover:text-orange-hover">AI for dental practices</a> guide.</p>
+                <p className="text-muted-dark text-sm">NHS and private appointment management, patient triage, recall systems, and treatment plan follow-ups. See our detailed <a href="/guides/ai-for-dentists-uk" className="text-orange hover:text-orange-hover">AI for dental practices</a> guide.</p>
               </div>
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <h3 className="font-heading text-lg font-bold text-navy mb-3">Trade Services</h3>
-                <p className="text-slate-600 text-sm">Job booking with travel time optimisation, quote request handling, and emergency callout prioritisation. Perfect for plumbers, electricians, and heating engineers. Check out our <a href="/guides/ai-for-plumbers-uk" className="text-orange hover:text-orange-hover">AI for plumbers</a> guide.</p>
+                <p className="text-muted-dark text-sm">Job booking with travel time optimisation, quote request handling, and emergency callout prioritisation. Perfect for plumbers, electricians, and heating engineers. Check out our <a href="/guides/ai-for-plumbers-uk" className="text-orange hover:text-orange-hover">AI for plumbers</a> guide.</p>
               </div>
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <h3 className="font-heading text-lg font-bold text-navy mb-3">Salons and Beauty</h3>
-                <p className="text-slate-600 text-sm">Stylist-specific booking, service duration management, upselling during booking, and client preference tracking for personalised experiences.</p>
+                <p className="text-muted-dark text-sm">Stylist-specific booking, service duration management, upselling during booking, and client preference tracking for personalised experiences.</p>
               </div>
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <h3 className="font-heading text-lg font-bold text-navy mb-3">Professional Services</h3>
-                <p className="text-slate-600 text-sm">Consultation booking for solicitors, accountants, and financial advisers with lead qualification, conflict checking, and document collection before the meeting.</p>
+                <p className="text-muted-dark text-sm">Consultation booking for solicitors, accountants, and financial advisers with lead qualification, conflict checking, and document collection before the meeting.</p>
               </div>
             </div>
           </section>
@@ -244,12 +244,12 @@ export default function AIAppointmentBookingPage() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b">
-                      <th className="text-left py-3 font-medium text-slate-800">Solution Level</th>
+                      <th className="text-left py-3 font-medium text-dark">Solution Level</th>
                       <th className="text-center py-3 font-medium text-orange">Monthly Cost</th>
                       <th className="text-center py-3 font-medium text-blue">Best For</th>
                     </tr>
                   </thead>
-                  <tbody className="text-slate-600">
+                  <tbody className="text-muted-dark">
                     <tr className="border-b">
                       <td className="py-3">Basic (chatbot + calendar)</td>
                       <td className="py-3 text-center">£50-£150</td>
@@ -278,7 +278,7 @@ export default function AIAppointmentBookingPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Implementation</h3>
-                  <div className="space-y-3 text-slate-600 text-sm">
+                  <div className="space-y-3 text-muted-dark text-sm">
                     <div className="flex items-start gap-3">
                       <input type="checkbox" className="mt-1" readOnly />
                       <span>Audit current booking process and missed lead rate</span>
@@ -304,7 +304,7 @@ export default function AIAppointmentBookingPage() {
                 
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Expert Support</h3>
-                  <div className="space-y-2 text-slate-600 text-sm">
+                  <div className="space-y-2 text-muted-dark text-sm">
                     <div className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                       <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas</a> designs and implements AI booking systems that integrate with your existing business tools.</span>
@@ -324,44 +324,44 @@ export default function AIAppointmentBookingPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">AI Appointment Booking FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Will AI booking feel impersonal to my customers?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Modern AI booking assistants are remarkably natural. They&apos;re trained on your business&apos;s tone and knowledge base, so responses feel personal and helpful. Most customers prefer instant 24/7 responses to being put on hold or waiting for a callback. You can always set the AI to hand off to a human for complex requests.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Does it integrate with my existing calendar and booking system?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Yes. AI booking tools integrate with Google Calendar, Outlook, Calendly, Acuity, Setmore, and most industry-specific platforms (Dentally, Treatwell, SimplyBook, ServiceM8). The key is real-time two-way sync so availability is always accurate.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What happens when the AI can&apos;t handle a request?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Good AI systems have clear escalation paths. If a query is too complex, the AI captures the customer&apos;s details and preferred callback time, then alerts your team. The customer gets a prompt human follow-up rather than an unhelpful automated loop.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How effective are AI reminders at reducing no-shows?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   AI-powered multi-stage reminders (48-hour, 24-hour, 2-hour before) reduce no-shows by 35-45% compared to no reminders, and by 15-20% compared to basic SMS reminders. The AI personalises timing and channel based on each customer&apos;s past behaviour.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Can AI handle bookings that need deposits or payments?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Yes. Most AI booking platforms integrate with Stripe or other payment processors to collect deposits at booking time. This both secures the appointment and dramatically reduces no-shows — customers who&apos;ve paid a deposit are 80% less likely to miss their appointment.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Is AI phone answering realistic enough for professional services?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   AI voice agents have improved dramatically. Modern systems handle natural conversation, answer questions, and book appointments by phone with high customer satisfaction. For professional services, most businesses start with AI handling overflow and after-hours calls before expanding to primary answering.
                 </p>
               </div>
@@ -382,7 +382,7 @@ export default function AIAppointmentBookingPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Your Free Booking Audit
           </a>
@@ -392,23 +392,23 @@ export default function AIAppointmentBookingPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-customer-service-automation-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-customer-service-automation-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Customer Service Automation UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-chatbot-for-business-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-chatbot-for-business-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Chatbots for UK Businesses</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -416,13 +416,13 @@ export default function AIAppointmentBookingPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Never Miss Another Lead
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a consultation to discuss AI appointment booking for your business.
             </p>
           </div>

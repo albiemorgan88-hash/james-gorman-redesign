@@ -176,11 +176,11 @@ export default function AIAutomationROICalculatorPage() {
           
           {/* Introduction */}
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               Calculating the return on investment (ROI) for AI automation isn't just about comparing costs—it's about understanding the full spectrum of business impact. From obvious labour savings to hidden productivity gains, this guide provides you with the frameworks and formulas to measure, justify, and optimise your AI automation investments.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               Whether you're building a business case for OpenClaw implementation or measuring the success of existing automation, these practical tools will help you quantify value and drive decision-making with confidence.
             </p>
           </div>
@@ -191,14 +191,14 @@ export default function AIAutomationROICalculatorPage() {
             
             <div className="grid gap-6 mb-8">
               {roiMetrics.map((metric, i) => (
-                <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                <div key={i} className="bg-surface rounded-xl p-6 border border-border-light">
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">{metric.category}</h3>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Metrics to Measure:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Metrics to Measure:</h4>
                       <ul className="space-y-2">
                         {metric.metrics.map((item, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark">
                             <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                             {item}
                           </li>
@@ -206,8 +206,8 @@ export default function AIAutomationROICalculatorPage() {
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Calculation Method:</h4>
-                      <div className="bg-white rounded-lg p-4 border border-slate-200">
+                      <h4 className="font-semibold text-dark mb-3">Calculation Method:</h4>
+                      <div className="bg-white rounded-lg p-4 border border-border-light">
                         <code className="text-sm text-navy font-mono">{metric.calculation}</code>
                       </div>
                     </div>
@@ -230,16 +230,16 @@ export default function AIAutomationROICalculatorPage() {
                     </div>
                     <div className="flex-grow">
                       <h3 className="font-heading text-xl font-bold text-navy mb-3">{step.title}</h3>
-                      <p className="text-slate-600 mb-4">{step.description}</p>
+                      <p className="text-muted-dark mb-4">{step.description}</p>
                       
-                      <div className="bg-white rounded-lg p-4 border border-slate-200 mb-3">
-                        <div className="text-sm font-medium text-slate-700 mb-2">Formula:</div>
+                      <div className="bg-white rounded-lg p-4 border border-border mb-3">
+                        <div className="text-sm font-medium text-dark mb-2">Formula:</div>
                         <code className="text-navy font-mono">{step.formula}</code>
                       </div>
                       
                       <div className="bg-navy/5 rounded-lg p-3 border border-navy/10">
                         <div className="text-sm font-medium text-navy mb-1">Example:</div>
-                        <div className="text-slate-600 text-sm font-mono">{step.example}</div>
+                        <div className="text-muted-dark text-sm font-mono">{step.example}</div>
                       </div>
                     </div>
                   </div>
@@ -254,7 +254,7 @@ export default function AIAutomationROICalculatorPage() {
             
             <div className="grid gap-6">
               {realWorldExamples.map((example, i) => (
-                <div key={i} className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+                <div key={i} className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                   <div className="flex flex-wrap items-center justify-between mb-4">
                     <h3 className="font-heading text-lg font-bold text-navy">{example.company}</h3>
                     <div className="flex items-center gap-4">
@@ -266,20 +266,20 @@ export default function AIAutomationROICalculatorPage() {
                   
                   <div className="grid md:grid-cols-3 gap-4 mb-4">
                     <div>
-                      <div className="text-sm font-medium text-slate-500 mb-1">Process Automated</div>
+                      <div className="text-sm font-medium text-muted mb-1">Process Automated</div>
                       <div className="text-navy font-semibold">{example.process}</div>
                     </div>
                     <div>
-                      <div className="text-sm font-medium text-slate-500 mb-1">Total Investment</div>
+                      <div className="text-sm font-medium text-muted mb-1">Total Investment</div>
                       <div className="text-navy font-semibold">{example.investment}</div>
                     </div>
                     <div>
-                      <div className="text-sm font-medium text-slate-500 mb-1">Annual Savings</div>
+                      <div className="text-sm font-medium text-muted mb-1">Annual Savings</div>
                       <div className="text-green-600 font-semibold">{example.annualSavings}</div>
                     </div>
                   </div>
                   
-                  <p className="text-slate-600 text-sm">{example.details}</p>
+                  <p className="text-muted-dark text-sm">{example.details}</p>
                 </div>
               ))}
             </div>
@@ -289,24 +289,24 @@ export default function AIAutomationROICalculatorPage() {
           <section className="mb-16">
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">ROI Calculation Template</h2>
             
-            <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
+            <div className="bg-surface rounded-xl p-8 border border-border-light">
               <h3 className="font-heading text-xl font-bold text-navy mb-6">Use This Template for Your Project</h3>
               
               <div className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-4">
-                    <h4 className="font-semibold text-slate-800">Current State (Annual)</h4>
+                    <h4 className="font-semibold text-dark">Current State (Annual)</h4>
                     <div className="space-y-3">
-                      <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                        <span className="text-slate-600">Staff costs:</span>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                        <span className="text-muted-dark">Staff costs:</span>
                         <span className="font-mono">£______</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                        <span className="text-slate-600">Error correction:</span>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                        <span className="text-muted-dark">Error correction:</span>
                         <span className="font-mono">£______</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                        <span className="text-slate-600">Management overhead:</span>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                        <span className="text-muted-dark">Management overhead:</span>
                         <span className="font-mono">£______</span>
                       </div>
                       <div className="flex justify-between items-center p-3 bg-orange/10 rounded-lg border border-orange/20">
@@ -317,18 +317,18 @@ export default function AIAutomationROICalculatorPage() {
                   </div>
                   
                   <div className="space-y-4">
-                    <h4 className="font-semibold text-slate-800">Investment Required</h4>
+                    <h4 className="font-semibold text-dark">Investment Required</h4>
                     <div className="space-y-3">
-                      <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                        <span className="text-slate-600">Setup & configuration:</span>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                        <span className="text-muted-dark">Setup & configuration:</span>
                         <span className="font-mono">£______</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                        <span className="text-slate-600">Annual operating costs:</span>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                        <span className="text-muted-dark">Annual operating costs:</span>
                         <span className="font-mono">£______</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
-                        <span className="text-slate-600">Training & support:</span>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-border-light">
+                        <span className="text-muted-dark">Training & support:</span>
                         <span className="font-mono">£______</span>
                       </div>
                       <div className="flex justify-between items-center p-3 bg-blue/10 rounded-lg border border-blue/20">
@@ -339,22 +339,22 @@ export default function AIAutomationROICalculatorPage() {
                   </div>
                 </div>
                 
-                <div className="bg-white rounded-lg p-6 border border-slate-200">
-                  <h4 className="font-semibold text-slate-800 mb-4">ROI Calculation</h4>
+                <div className="bg-white rounded-lg p-6 border border-border-light">
+                  <h4 className="font-semibold text-dark mb-4">ROI Calculation</h4>
                   <div className="space-y-3">
                     <div className="flex justify-between items-center">
-                      <span className="text-slate-600">Efficiency improvement:</span>
+                      <span className="text-muted-dark">Efficiency improvement:</span>
                       <span className="font-mono">_____%</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-slate-600">Annual savings:</span>
+                      <span className="text-muted-dark">Annual savings:</span>
                       <span className="font-mono">£______ × ____% = £______</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-slate-600">Net annual benefit:</span>
+                      <span className="text-muted-dark">Net annual benefit:</span>
                       <span className="font-mono">£______ - £______ = £______</span>
                     </div>
-                    <div className="border-t border-slate-200 pt-3 mt-3">
+                    <div className="border-t border-border pt-3 mt-3">
                       <div className="flex justify-between items-center">
                         <span className="font-bold text-green-600 text-lg">ROI Percentage:</span>
                         <span className="font-mono font-bold text-green-600 text-lg">(£______ ÷ £______) × 100 = ____%</span>
@@ -375,16 +375,16 @@ export default function AIAutomationROICalculatorPage() {
                 <h3 className="font-heading text-xl font-bold text-navy">Hidden Benefits</h3>
                 <div className="space-y-4">
                   <div className="border-l-4 border-orange pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">Scalability Value</h4>
-                    <p className="text-slate-600 text-sm">AI systems handle increased workload without proportional cost increases, unlike human resources.</p>
+                    <h4 className="font-semibold text-dark mb-2">Scalability Value</h4>
+                    <p className="text-muted-dark text-sm">AI systems handle increased workload without proportional cost increases, unlike human resources.</p>
                   </div>
                   <div className="border-l-4 border-blue pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">Compliance Improvements</h4>
-                    <p className="text-slate-600 text-sm">Consistent adherence to UK GDPR and regulatory requirements reduces compliance risk costs.</p>
+                    <h4 className="font-semibold text-dark mb-2">Compliance Improvements</h4>
+                    <p className="text-muted-dark text-sm">Consistent adherence to UK GDPR and regulatory requirements reduces compliance risk costs.</p>
                   </div>
                   <div className="border-l-4 border-green-500 pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">Innovation Capacity</h4>
-                    <p className="text-slate-600 text-sm">Staff freed from routine tasks can focus on strategic, revenue-generating activities.</p>
+                    <h4 className="font-semibold text-dark mb-2">Innovation Capacity</h4>
+                    <p className="text-muted-dark text-sm">Staff freed from routine tasks can focus on strategic, revenue-generating activities.</p>
                   </div>
                 </div>
               </div>
@@ -393,16 +393,16 @@ export default function AIAutomationROICalculatorPage() {
                 <h3 className="font-heading text-xl font-bold text-navy">Risk Factors</h3>
                 <div className="space-y-4">
                   <div className="border-l-4 border-red-400 pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">Implementation Complexity</h4>
-                    <p className="text-slate-600 text-sm">Factor in potential delays and additional training requirements during rollout phases.</p>
+                    <h4 className="font-semibold text-dark mb-2">Implementation Complexity</h4>
+                    <p className="text-muted-dark text-sm">Factor in potential delays and additional training requirements during rollout phases.</p>
                   </div>
                   <div className="border-l-4 border-yellow-400 pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">Change Management</h4>
-                    <p className="text-slate-600 text-sm">Staff resistance and adaptation periods may temporarily reduce productivity during transition.</p>
+                    <h4 className="font-semibold text-dark mb-2">Change Management</h4>
+                    <p className="text-muted-dark text-sm">Staff resistance and adaptation periods may temporarily reduce productivity during transition.</p>
                   </div>
                   <div className="border-l-4 border-purple-400 pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">Technology Evolution</h4>
-                    <p className="text-slate-600 text-sm">Rapid AI advancement may require upgrades or replacements sooner than traditional systems.</p>
+                    <h4 className="font-semibold text-dark mb-2">Technology Evolution</h4>
+                    <p className="text-muted-dark text-sm">Rapid AI advancement may require upgrades or replacements sooner than traditional systems.</p>
                   </div>
                 </div>
               </div>
@@ -418,10 +418,10 @@ export default function AIAutomationROICalculatorPage() {
                 </svg>
                 UK GDPR & Data Protection Impact
               </h3>
-              <p className="text-slate-700 mb-4">
+              <p className="text-dark mb-4">
                 When calculating ROI for AI automation in the UK, factor in GDPR compliance benefits. Automated systems can provide:
               </p>
-              <ul className="space-y-2 text-slate-600">
+              <ul className="space-y-2 text-muted-dark">
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                   Consistent data handling procedures reducing breach risk
@@ -450,7 +450,7 @@ export default function AIAutomationROICalculatorPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Ready to Start?</h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-dark mb-4">
                     Now that you understand how to calculate ROI, the next step is choosing the right automation platform and implementation approach.
                   </p>
                   <div className="space-y-2">
@@ -468,10 +468,10 @@ export default function AIAutomationROICalculatorPage() {
                 
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Need Expert Help?</h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-dark mb-4">
                     Building a compelling business case and implementing AI automation successfully requires experience and expertise. I can help you:
                   </p>
-                  <ul className="space-y-2 text-slate-600 text-sm mb-4">
+                  <ul className="space-y-2 text-muted-dark text-sm mb-4">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                       Create detailed ROI models for your specific business
@@ -504,7 +504,7 @@ export default function AIAutomationROICalculatorPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Free ROI Assessment
           </a>
@@ -514,23 +514,23 @@ export default function AIAutomationROICalculatorPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-pricing-explained" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-pricing-explained" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Pricing & Costs Explained</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-agent-cost-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-agent-cost-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Agent Costs UK: Full Pricing Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -538,13 +538,13 @@ export default function AIAutomationROICalculatorPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Get Your Custom ROI Analysis
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a free consultation to discuss your specific automation requirements and get a detailed ROI projection.
             </p>
           </div>

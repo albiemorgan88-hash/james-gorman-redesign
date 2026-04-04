@@ -7,11 +7,11 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   metadataBase: new URL("https://openclawconsultant.co.uk"),
   title: {
-    default: "OpenClaw Consultant UK — Expert Setup, Skills & Automation | Phil Patterson",
+    default: "OpenClaw Consultant UK — Expert Setup, Skills & Automation | Blue Canvas",
     template: "%s | OpenClaw",
   },
   description:
-    "UK's leading OpenClaw consultant. Phil Patterson runs OpenClaw in production daily with 25+ custom skills. Expert setup, custom skill development, and AI agent orchestration for UK businesses. Free consultation.",
+    "UK's leading OpenClaw consultant. Blue Canvas runs OpenClaw in production daily with 25+ custom skills. Expert setup, custom skill development, and AI agent orchestration for UK businesses. Free consultation.",
   keywords: [
     "openclaw consultant",
     "openclaw setup",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "OpenClaw Consultant UK",
     title: "OpenClaw Consultant UK — Get OpenClaw Working For Your Business",
     description:
-      "Phil Patterson is the UK's leading OpenClaw consultant. 25+ custom skills, production experience, expert setup and training. Free consultation available.",
+      "Blue Canvas is the UK's leading OpenClaw consultant. 25+ custom skills, production experience, expert setup and training. Free consultation available.",
     url: "https://openclawconsultant.co.uk",
     images: [
       {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: { 
     card: "summary_large_image",
     title: "OpenClaw Consultant UK — Expert Setup & Training",
-    description: "Phil Patterson is the UK's leading OpenClaw consultant. 25+ custom skills, production experience, expert setup and training. Free consultation available.",
+    description: "Blue Canvas is the UK's leading OpenClaw consultant. 25+ custom skills, production experience, expert setup and training. Free consultation available.",
     images: ["https://openclawconsultant.co.uk/api/og"],
   },
   robots: { index: true, follow: true },
@@ -59,7 +59,7 @@ const jsonLd = {
   areaServed: { "@type": "Country", name: "United Kingdom" },
   founder: {
     "@type": "Person",
-    name: "Phil Patterson",
+    name: "Blue Canvas",
     jobTitle: "OpenClaw Consultant",
     worksFor: { "@type": "Organization", name: "Blue Canvas AI", url: "https://bluecanvas.ai" },
   },

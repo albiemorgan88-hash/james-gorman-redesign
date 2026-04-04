@@ -33,16 +33,16 @@ export default function PricingPage() {
             {/* Consultation */}
             <div className="bg-white border-2 border-gray-200 rounded-xl p-6 text-center">
               <div className="mb-6">
-                <h3 className="text-xl font-bold text-gray-900">Strategy Consultation</h3>
-                <p className="text-gray-600 text-sm mt-2">Perfect for exploring possibilities</p>
+                <h3 className="text-xl font-bold text-dark">Strategy Consultation</h3>
+                <p className="text-muted-dark text-sm mt-2">Perfect for exploring possibilities</p>
               </div>
               
               <div className="mb-6">
                 <div className="text-4xl font-bold text-blue-500">£197</div>
-                <div className="text-gray-500 text-sm">2-hour session</div>
+                <div className="text-muted text-sm">2-hour session</div>
               </div>
               
-              <ul className="text-sm text-gray-600 space-y-3 mb-6">
+              <ul className="text-sm text-muted-dark space-y-3 mb-6">
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
                   Business workflow analysis
@@ -69,7 +69,7 @@ export default function PricingPage() {
                 Book Consultation
               </Link>
               
-              <p className="text-xs text-gray-500 mt-3">
+              <p className="text-xs text-muted mt-3">
                 £197 credited toward full setup if booked within 30 days
               </p>
             </div>
@@ -83,16 +83,16 @@ export default function PricingPage() {
               </div>
               
               <div className="mb-6 mt-3">
-                <h3 className="text-xl font-bold text-gray-900">AI Setup Sprint</h3>
-                <p className="text-gray-600 text-sm mt-2">Complete OpenClaw implementation</p>
+                <h3 className="text-xl font-bold text-dark">AI Setup Sprint</h3>
+                <p className="text-muted-dark text-sm mt-2">Complete OpenClaw implementation</p>
               </div>
               
               <div className="mb-6">
                 <div className="text-4xl font-bold text-blue-500">£497</div>
-                <div className="text-gray-500 text-sm">One-time payment</div>
+                <div className="text-muted text-sm">One-time payment</div>
               </div>
               
-              <ul className="text-sm text-gray-600 space-y-3 mb-6">
+              <ul className="text-sm text-muted-dark space-y-3 mb-6">
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
                   Full OpenClaw setup & config
@@ -123,7 +123,7 @@ export default function PricingPage() {
                 Start Setup Sprint
               </Link>
               
-              <p className="text-xs text-gray-500 mt-3">
+              <p className="text-xs text-muted mt-3">
                 Delivered within 1 week
               </p>
             </div>
@@ -131,16 +131,16 @@ export default function PricingPage() {
             {/* Business Automation */}
             <div className="bg-white border-2 border-gray-200 rounded-xl p-6 text-center">
               <div className="mb-6">
-                <h3 className="text-xl font-bold text-gray-900">Business Automation</h3>
-                <p className="text-gray-600 text-sm mt-2">Ongoing managed service</p>
+                <h3 className="text-xl font-bold text-dark">Business Automation</h3>
+                <p className="text-muted-dark text-sm mt-2">Ongoing managed service</p>
               </div>
               
               <div className="mb-6">
                 <div className="text-4xl font-bold text-green-500">£997</div>
-                <div className="text-gray-500 text-sm">per month</div>
+                <div className="text-muted text-sm">per month</div>
               </div>
               
-              <ul className="text-sm text-gray-600 space-y-3 mb-6">
+              <ul className="text-sm text-muted-dark space-y-3 mb-6">
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
                   Everything in Setup Sprint
@@ -171,7 +171,7 @@ export default function PricingPage() {
                 Start Automation
               </Link>
               
-              <p className="text-xs text-gray-500 mt-3">
+              <p className="text-xs text-muted mt-3">
                 Cancel anytime, no long-term contracts
               </p>
             </div>
@@ -179,16 +179,16 @@ export default function PricingPage() {
             {/* Enterprise */}
             <div className="bg-white border-2 border-purple-400 rounded-xl p-6 text-center">
               <div className="mb-6">
-                <h3 className="text-xl font-bold text-gray-900">Enterprise AI</h3>
-                <p className="text-gray-600 text-sm mt-2">Custom solutions for large teams</p>
+                <h3 className="text-xl font-bold text-dark">Enterprise AI</h3>
+                <p className="text-muted-dark text-sm mt-2">Custom solutions for large teams</p>
               </div>
               
               <div className="mb-6">
                 <div className="text-4xl font-bold text-purple-500">£2997</div>
-                <div className="text-gray-500 text-sm">setup + £497/month</div>
+                <div className="text-muted text-sm">setup + £497/month</div>
               </div>
               
-              <ul className="text-sm text-gray-600 space-y-3 mb-6">
+              <ul className="text-sm text-muted-dark space-y-3 mb-6">
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
                   Multi-agent architecture
@@ -219,7 +219,7 @@ export default function PricingPage() {
                 Contact Sales
               </Link>
               
-              <p className="text-xs text-gray-500 mt-3">
+              <p className="text-xs text-muted mt-3">
                 Custom pricing for 10+ users
               </p>
             </div>
@@ -229,11 +229,11 @@ export default function PricingPage() {
       </section>
 
       {/* ROI Calculator */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Calculate Your ROI</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-2xl font-bold text-dark mb-4">Calculate Your ROI</h2>
+            <p className="text-muted-dark max-w-2xl mx-auto">
               See how OpenClaw automation pays for itself through time savings and productivity gains.
             </p>
           </div>
@@ -241,33 +241,33 @@ export default function PricingPage() {
           <div className="bg-white rounded-xl shadow-sm p-8">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Time Savings Scenarios</h3>
+                <h3 className="text-lg font-semibold text-dark mb-4">Time Savings Scenarios</h3>
                 
                 <div className="space-y-4">
                   <div className="border-l-4 border-blue-400 pl-4">
                     <h4 className="font-semibold text-blue-800">Email Management</h4>
-                    <p className="text-sm text-gray-600">Save 2 hours/day → £260/week value</p>
+                    <p className="text-sm text-muted-dark">Save 2 hours/day → £260/week value</p>
                   </div>
                   
                   <div className="border-l-4 border-green-400 pl-4">
                     <h4 className="font-semibold text-green-800">Content Creation</h4>
-                    <p className="text-sm text-gray-600">Save 5 hours/week → £325/week value</p>
+                    <p className="text-sm text-muted-dark">Save 5 hours/week → £325/week value</p>
                   </div>
                   
                   <div className="border-l-4 border-purple-400 pl-4">
                     <h4 className="font-semibold text-purple-800">Data Analysis</h4>
-                    <p className="text-sm text-gray-600">Save 3 hours/week → £195/week value</p>
+                    <p className="text-sm text-muted-dark">Save 3 hours/week → £195/week value</p>
                   </div>
                   
                   <div className="border-l-4 border-orange-400 pl-4">
                     <h4 className="font-semibold text-orange-800">Customer Support</h4>
-                    <p className="text-sm text-gray-600">Save 10 hours/week → £650/week value</p>
+                    <p className="text-sm text-muted-dark">Save 10 hours/week → £650/week value</p>
                   </div>
                 </div>
               </div>
               
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Payback Period</h3>
+                <h3 className="text-lg font-semibold text-dark mb-4">Payback Period</h3>
                 
                 <div className="space-y-6">
                   <div className="bg-blue-50 p-4 rounded-lg">
@@ -301,7 +301,7 @@ export default function PricingPage() {
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">What's Included in Each Package</h2>
+            <h2 className="text-2xl font-bold text-dark mb-4">What's Included in Each Package</h2>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -426,40 +426,40 @@ export default function PricingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-2xl font-bold text-dark mb-4">Frequently Asked Questions</h2>
           </div>
           
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-xl">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">How quickly can you get started?</h3>
-              <p className="text-gray-600 text-sm">
+              <h3 className="text-lg font-semibold text-dark mb-2">How quickly can you get started?</h3>
+              <p className="text-muted-dark text-sm">
                 Setup Sprint can begin within 48 hours of booking. Full implementation 
                 typically takes 3-7 days depending on complexity.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-xl">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Do you provide training?</h3>
-              <p className="text-gray-600 text-sm">
+              <h3 className="text-lg font-semibold text-dark mb-2">Do you provide training?</h3>
+              <p className="text-muted-dark text-sm">
                 Yes, all packages include comprehensive training so you can operate 
                 and maintain your AI agent independently.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-xl">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">What if I'm not satisfied?</h3>
-              <p className="text-gray-600 text-sm">
+              <h3 className="text-lg font-semibold text-dark mb-2">What if I'm not satisfied?</h3>
+              <p className="text-muted-dark text-sm">
                 We offer a 30-day satisfaction guarantee. If you're not seeing value, 
                 we'll refund your setup fee and help you transition off the platform.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-xl">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Can you integrate with our existing tools?</h3>
-              <p className="text-gray-600 text-sm">
+              <h3 className="text-lg font-semibold text-dark mb-2">Can you integrate with our existing tools?</h3>
+              <p className="text-muted-dark text-sm">
                 Almost certainly. OpenClaw has native integrations for 50+ platforms, 
                 and we can build custom integrations for proprietary systems.
               </p>
@@ -481,12 +481,12 @@ export default function PricingPage() {
             <Link href="#book-consultation" className="bg-blue-500 text-white font-bold px-8 py-3 rounded-lg hover:bg-blue-400 transition-colors">
               Book Free Strategy Call
             </Link>
-            <Link href="/case-studies/seo-agency-250-month" className="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition-colors">
+            <Link href="/case-studies/seo-agency-250-month" className="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white hover:text-dark transition-colors">
               See Case Studies
             </Link>
           </div>
           
-          <p className="text-xs text-gray-400 mt-4">
+          <p className="text-xs text-muted mt-4">
             30-minute call, no obligation, no sales pressure
           </p>
         </div>

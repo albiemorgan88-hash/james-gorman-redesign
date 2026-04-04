@@ -9,16 +9,20 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
   color: #0a0f1e;
   line-height: 1.7;
-  background-color: #fafbfc;
+  background-color: #FAF8F5;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Outfit', sans-serif;
   line-height: 1.1;
+  letter-spacing: -0.025em;
+  text-rendering: optimizeLegibility;
 }
 
 /* Grain overlay */
@@ -55,13 +59,13 @@ h1, h2, h3, h4, h5, h6 {
   animation: glow-pulse 6s ease-in-out infinite;
 }
 
-/* Card hover */
+/* Card hover — smoother cubic-bezier */
 .card-lift {
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  transition: transform 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .card-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px -12px rgba(0,0,0,0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
 }
 
 /* Counter animation */
@@ -99,7 +103,26 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Selection color */
 ::selection {
-  background: rgba(43, 77, 175, 0.2);
+  background: rgba(43, 77, 175, 0.15);
   color: #0a0f1e;
 }
-/* Force new deployment Wed Mar 18 11:07:48 GMT 2026 */
+
+/* Smooth link transitions globally */
+a {
+  transition: color 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Button base transitions */
+button, [role="button"], a[href] {
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Input focus glow */
+input:focus, textarea:focus, select:focus {
+  box-shadow: 0 0 0 3px rgba(255, 69, 32, 0.12);
+}
+
+/* Details/summary smooth open */
+details summary {
+  transition: color 200ms ease;
+}

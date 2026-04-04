@@ -63,11 +63,11 @@ export default function AIChatbotForBusinessUKPage() {
       <article className="py-16 bg-white">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               UK businesses implementing AI chatbots see average customer service cost reductions of 65% and customer satisfaction improvements of 38%. However, choosing between building custom solutions or buying ready-made platforms can make the difference between success and expensive failure.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This comprehensive guide examines the build vs buy decision for UK businesses, including detailed cost analysis, feature requirements, implementation timelines, and practical advice for maximising chatbot ROI across different business contexts.
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function AIChatbotForBusinessUKPage() {
                   </div>
                   <h3 className="font-heading text-xl font-bold text-navy">Buy Ready-Made Platform</h3>
                 </div>
-                <p className="text-slate-600 text-sm mb-4">
+                <p className="text-muted-dark text-sm mb-4">
                   Commercial chatbot platforms with pre-built features, integrations, and industry templates. Faster deployment with proven functionality.
                 </p>
                 <div className="space-y-3 mb-6">
@@ -118,7 +118,7 @@ export default function AIChatbotForBusinessUKPage() {
                   </div>
                   <h3 className="font-heading text-xl font-bold text-navy">Build Custom Solution</h3>
                 </div>
-                <p className="text-slate-600 text-sm mb-4">
+                <p className="text-muted-dark text-sm mb-4">
                   Custom-developed chatbot tailored to specific business processes, brand voice, and complex integration requirements.
                 </p>
                 <div className="space-y-3 mb-6">
@@ -155,7 +155,7 @@ export default function AIChatbotForBusinessUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">65%</div>
-                <div className="text-slate-600 text-sm">Support cost reduction</div>
+                <div className="text-muted-dark text-sm">Support cost reduction</div>
               </div>
               
               <div className="text-center">
@@ -165,7 +165,7 @@ export default function AIChatbotForBusinessUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">24/7</div>
-                <div className="text-slate-600 text-sm">Customer availability</div>
+                <div className="text-muted-dark text-sm">Customer availability</div>
               </div>
               
               <div className="text-center">
@@ -175,7 +175,7 @@ export default function AIChatbotForBusinessUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">89%</div>
-                <div className="text-slate-600 text-sm">Query resolution rate</div>
+                <div className="text-muted-dark text-sm">Query resolution rate</div>
               </div>
               
               <div className="text-center">
@@ -185,7 +185,7 @@ export default function AIChatbotForBusinessUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">6 months</div>
-                <div className="text-slate-600 text-sm">Average ROI timeline</div>
+                <div className="text-muted-dark text-sm">Average ROI timeline</div>
               </div>
             </div>
 
@@ -194,8 +194,8 @@ export default function AIChatbotForBusinessUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Essential Chatbot Features for UK Businesses</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Core Functionality:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Core Functionality:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Natural language understanding (NLU)</li>
                       <li>• Multi-channel deployment (web, WhatsApp, Teams)</li>
                       <li>• CRM and ticketing system integration</li>
@@ -204,8 +204,8 @@ export default function AIChatbotForBusinessUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">UK-Specific Requirements:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">UK-Specific Requirements:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• GDPR compliance and data protection</li>
                       <li>• British English language processing</li>
                       <li>• Local business hours and time zones</li>
@@ -222,12 +222,12 @@ export default function AIChatbotForBusinessUKPage() {
                   <table className="w-full text-sm">
                     <thead>
                       <tr className="border-b">
-                        <th className="text-left py-3 font-medium text-slate-800">Cost Factor</th>
+                        <th className="text-left py-3 font-medium text-dark">Cost Factor</th>
                         <th className="text-center py-3 font-medium text-orange">Buy Platform</th>
                         <th className="text-center py-3 font-medium text-blue">Build Custom</th>
                       </tr>
                     </thead>
-                    <tbody className="text-slate-600">
+                    <tbody className="text-muted-dark">
                       <tr className="border-b">
                         <td className="py-3">Initial Setup</td>
                         <td className="py-3 text-center">£2K-£15K</td>
@@ -259,12 +259,12 @@ export default function AIChatbotForBusinessUKPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">UK Business Chatbot Success Stories</h2>
             
             <div className="space-y-8">
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">E-commerce Retailer</h3>
-                    <p className="text-slate-600 text-sm">Mid-sized online fashion retailer serving UK customers</p>
-                    <p className="text-slate-500 text-xs mt-1">Solution: Buy Platform (Intercom + custom training)</p>
+                    <p className="text-muted-dark text-sm">Mid-sized online fashion retailer serving UK customers</p>
+                    <p className="text-muted text-xs mt-1">Solution: Buy Platform (Intercom + custom training)</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     340% ROI
@@ -272,39 +272,39 @@ export default function AIChatbotForBusinessUKPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">High volume of size, shipping, and return queries overwhelming customer service team, especially during sales periods</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">High volume of size, shipping, and return queries overwhelming customer service team, especially during sales periods</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">Implementation:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Deployed chatbot handling FAQs, order tracking, and return requests with escalation to human agents for complex issues</p>
+                  <h4 className="font-semibold text-dark mb-2">Implementation:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Deployed chatbot handling FAQs, order tracking, and return requests with escalation to human agents for complex issues</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Query Resolution</div>
+                    <div className="text-sm font-medium text-muted mb-1">Query Resolution</div>
                     <div className="text-green-700 font-semibold text-sm">78% automated</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Response Time</div>
+                    <div className="text-sm font-medium text-muted mb-1">Response Time</div>
                     <div className="text-green-700 font-semibold text-sm">Instant vs 4 hours</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Customer Satisfaction</div>
+                    <div className="text-sm font-medium text-muted mb-1">Customer Satisfaction</div>
                     <div className="text-green-700 font-semibold text-sm">4.3/5</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Implementation</div>
+                    <div className="text-sm font-medium text-muted mb-1">Implementation</div>
                     <div className="text-green-700 font-semibold text-sm">6 weeks</div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">Financial Services Firm</h3>
-                    <p className="text-slate-600 text-sm">Independent financial adviser with complex compliance needs</p>
-                    <p className="text-slate-500 text-xs mt-1">Solution: Build Custom (FCA compliance requirements)</p>
+                    <p className="text-muted-dark text-sm">Independent financial adviser with complex compliance needs</p>
+                    <p className="text-muted text-xs mt-1">Solution: Build Custom (FCA compliance requirements)</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     280% ROI
@@ -312,28 +312,28 @@ export default function AIChatbotForBusinessUKPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Complex financial product queries requiring FCA-compliant responses and sophisticated client data integration</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Complex financial product queries requiring FCA-compliant responses and sophisticated client data integration</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">Implementation:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Custom-built chatbot with regulatory compliance, client portal integration, and appointment booking functionality</p>
+                  <h4 className="font-semibold text-dark mb-2">Implementation:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Custom-built chatbot with regulatory compliance, client portal integration, and appointment booking functionality</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Compliance</div>
+                    <div className="text-sm font-medium text-muted mb-1">Compliance</div>
                     <div className="text-green-700 font-semibold text-sm">100% FCA aligned</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Client Queries</div>
+                    <div className="text-sm font-medium text-muted mb-1">Client Queries</div>
                     <div className="text-green-700 font-semibold text-sm">-67% to advisers</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Appointment Booking</div>
+                    <div className="text-sm font-medium text-muted mb-1">Appointment Booking</div>
                     <div className="text-green-700 font-semibold text-sm">+45%</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Implementation</div>
+                    <div className="text-sm font-medium text-muted mb-1">Implementation</div>
                     <div className="text-green-700 font-semibold text-sm">4 months</div>
                   </div>
                 </div>
@@ -348,7 +348,7 @@ export default function AIChatbotForBusinessUKPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Decision Process</h3>
-                  <div className="space-y-3 text-slate-600 text-sm">
+                  <div className="space-y-3 text-muted-dark text-sm">
                     <div className="flex items-start gap-3">
                       <input type="checkbox" className="mt-1" />
                       <span>Audit current customer service volume and common queries</span>
@@ -372,8 +372,8 @@ export default function AIChatbotForBusinessUKPage() {
                   </div>
 
                   <div className="mt-6">
-                    <h4 className="font-semibold text-slate-800 mb-3">Expert Support:</h4>
-                    <div className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Expert Support:</h4>
+                    <div className="space-y-2 text-muted-dark text-sm">
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas AI consultancy</a> for chatbot strategy and implementation</span>
@@ -390,20 +390,20 @@ export default function AIChatbotForBusinessUKPage() {
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Success Factors</h3>
                   <div className="space-y-4">
                     <div className="border-l-4 border-orange pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Clear Scope Definition</h4>
-                      <p className="text-slate-600 text-sm">Start with specific use cases and expand gradually</p>
+                      <h4 className="font-medium text-dark mb-1">Clear Scope Definition</h4>
+                      <p className="text-muted-dark text-sm">Start with specific use cases and expand gradually</p>
                     </div>
                     <div className="border-l-4 border-blue pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Quality Training Data</h4>
-                      <p className="text-slate-600 text-sm">Invest time in conversation design and testing</p>
+                      <h4 className="font-medium text-dark mb-1">Quality Training Data</h4>
+                      <p className="text-muted-dark text-sm">Invest time in conversation design and testing</p>
                     </div>
                     <div className="border-l-4 border-green-500 pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Human Handoff Strategy</h4>
-                      <p className="text-slate-600 text-sm">Design seamless escalation for complex queries</p>
+                      <h4 className="font-medium text-dark mb-1">Human Handoff Strategy</h4>
+                      <p className="text-muted-dark text-sm">Design seamless escalation for complex queries</p>
                     </div>
                     <div className="border-l-4 border-purple pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Continuous Improvement</h4>
-                      <p className="text-slate-600 text-sm">Regular analysis and optimisation drive better results</p>
+                      <h4 className="font-medium text-dark mb-1">Continuous Improvement</h4>
+                      <p className="text-muted-dark text-sm">Regular analysis and optimisation drive better results</p>
                     </div>
                   </div>
                 </div>
@@ -416,51 +416,51 @@ export default function AIChatbotForBusinessUKPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Business Chatbot FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Should UK small businesses build or buy chatbot solutions?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Most UK SMEs should buy proven platforms like Intercom, Tidio, or Drift for faster ROI and lower risk. Build custom only if you have unique compliance needs, complex integrations, or budget over £100K annually for development and maintenance.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What's the typical ROI timeline for business chatbots?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Most UK businesses see positive ROI within 3-9 months. Buy platforms typically deliver faster returns (3-6 months) due to quicker implementation, whilst custom builds take longer (6-12 months) but offer higher long-term value for complex use cases.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How do chatbots handle British English and local business requirements?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Modern platforms include British English language models and can be trained on UK-specific terminology, business hours, and cultural nuances. Ensure your chosen solution supports GDPR compliance, local payment systems, and accessibility standards.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What percentage of customer queries can chatbots realistically handle?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Well-implemented chatbots handle 70-90% of routine queries automatically. Success depends on proper training data, clear conversation design, and intelligent handoff to humans for complex issues. Start with simple FAQs and expand gradually.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How do I ensure chatbot GDPR compliance for UK customers?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Choose platforms with EU data hosting, clear privacy policies, and consent management. Implement data minimisation, provide opt-out options, and ensure secure data handling. Document data processing activities and maintain audit trails for compliance.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What integration capabilities should I look for in chatbot platforms?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Essential integrations include your CRM (Salesforce, HubSpot), help desk (Zendesk, Freshdesk), website platform, and payment systems. Consider WhatsApp Business API for UK customers who prefer messaging over traditional chat.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How do I measure chatbot success and optimise performance?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Track resolution rate, customer satisfaction scores, response times, escalation rates, and cost per interaction. Use conversation analytics to identify improvement opportunities and regularly update training data based on real customer interactions.
                 </p>
               </div>
@@ -481,7 +481,7 @@ export default function AIChatbotForBusinessUKPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Chatbot Strategy Assessment
           </a>
@@ -491,23 +491,23 @@ export default function AIChatbotForBusinessUKPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-customer-service-automation-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-customer-service-automation-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Customer Service Automation UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-appointment-booking" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-appointment-booking" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Appointment Booking for Business</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -515,13 +515,13 @@ export default function AIChatbotForBusinessUKPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Automate Customer Service Intelligently
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a consultation to discuss your chatbot requirements and get personalised build vs buy recommendations.
             </p>
           </div>

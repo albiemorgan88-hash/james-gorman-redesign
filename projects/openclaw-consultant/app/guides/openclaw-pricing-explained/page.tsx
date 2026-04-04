@@ -30,7 +30,7 @@ const jsonLd = {
   "description": "Complete breakdown of OpenClaw pricing including API costs, hosting, setup, and maintenance with ROI calculations",
   "author": {
     "@type": "Person",
-    "name": "Phil Patterson"
+    "name": "Blue Canvas"
   },
   "publisher": {
     "@type": "Organization",
@@ -330,10 +330,10 @@ export default function OpenClawPricingExplainedPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#breakdown" className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange">
+              <a href="#breakdown" className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange">
                 See Costs
               </a>
-              <a href="#roi" className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10">
+              <a href="#roi" className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10">
                 ROI Calculator ↓
               </a>
             </div>
@@ -341,7 +341,7 @@ export default function OpenClawPricingExplainedPage() {
         </div>
       </section>
 
-      <section id="breakdown" className="bg-white py-24">
+      <section id="breakdown" className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -354,7 +354,7 @@ export default function OpenClawPricingExplainedPage() {
 
           <div className="space-y-8">
             {costBreakdown.map((item) => (
-              <div key={item.category} className="bg-surface rounded-box p-8 shadow-card">
+              <div key={item.category} className="bg-surface rounded-2xl p-8 shadow-card">
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading font-bold text-xl text-dark mb-2">{item.category}</h3>
@@ -421,7 +421,7 @@ export default function OpenClawPricingExplainedPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {businessSizeComparison.map((business) => (
-              <div key={business.size} className="bg-white rounded-box p-8 shadow-card">
+              <div key={business.size} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="text-center mb-6">
                   <h3 className="font-heading font-bold text-xl text-dark mb-2">{business.size}</h3>
                   <p className="text-muted text-sm">{business.employees}</p>
@@ -495,7 +495,7 @@ export default function OpenClawPricingExplainedPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Year 1 Comparison */}
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-6">Year 1 Costs</h3>
               
               <div className="space-y-6">
@@ -564,7 +564,7 @@ export default function OpenClawPricingExplainedPage() {
             </div>
 
             {/* 3-Year Total */}
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-6">3-Year Total</h3>
               
               <div className="space-y-6">
@@ -632,7 +632,7 @@ export default function OpenClawPricingExplainedPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {hiddenCosts.map((cost) => (
-              <div key={cost.cost} className="bg-white rounded-box p-8 shadow-card">
+              <div key={cost.cost} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-lg text-dark mb-4">{cost.cost}</h3>
                 
                 <div className="space-y-4">
@@ -657,7 +657,7 @@ export default function OpenClawPricingExplainedPage() {
         </div>
       </section>
 
-      <section id="roi" className="bg-white py-24">
+      <section id="roi" className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -670,7 +670,7 @@ export default function OpenClawPricingExplainedPage() {
 
           <div className="space-y-8">
             {roiCalculator.map((scenario) => (
-              <div key={scenario.scenario} className="bg-surface rounded-box p-8 shadow-card">
+              <div key={scenario.scenario} className="bg-surface rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-6">{scenario.scenario}</h3>
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-6">
@@ -736,7 +736,7 @@ export default function OpenClawPricingExplainedPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {pricingMyths.map((myth) => (
-              <div key={myth.myth} className="bg-white rounded-box p-6 shadow-card">
+              <div key={myth.myth} className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="bg-red-100 border border-red-200 rounded-lg p-4 mb-4">
                   <h3 className="font-semibold text-red-800 mb-1">❌ Myth:</h3>
                   <p className="text-red-700 text-sm italic">"{myth.myth}"</p>
@@ -766,7 +766,7 @@ export default function OpenClawPricingExplainedPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Get Custom Quote →
           </a>
@@ -775,23 +775,23 @@ export default function OpenClawPricingExplainedPage() {
 
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-agent-cost-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-agent-cost-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Agent Costs UK: Full Pricing Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-automation-roi-calculator" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-automation-roi-calculator" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Automation ROI Calculator</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -812,7 +812,7 @@ export default function OpenClawPricingExplainedPage() {
                 Every business is different. Book a free consultation to get a custom cost analysis and ROI projection based on your specific needs and usage patterns.
               </p>
 
-              <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-6 mb-8">
+              <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 mb-8">
                 <h3 className="font-semibold text-white mb-3">What you'll get:</h3>
                 <ul className="space-y-2 text-white/70 text-sm">
                   <li className="flex gap-2">
@@ -835,7 +835,7 @@ export default function OpenClawPricingExplainedPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Get Your Custom Quote</h3>
               <p className="text-white/40 text-sm mb-6">Free consultation with personalized ROI analysis</p>
               <ContactForm />

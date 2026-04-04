@@ -188,13 +188,13 @@ export default function InstallingPinchyPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#installation"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 Start Installation
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 Get Expert Setup ↓
               </a>
@@ -217,17 +217,17 @@ export default function InstallingPinchyPage() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">🦞</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Enterprise Governance</h3>
                 <p className="text-muted text-sm">Plugin-based permissions, approval workflows, and audit trails for enterprise compliance.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">👥</div>
                 <h3 className="font-heading font-bold text-dark mb-2">User Management</h3>
                 <p className="text-muted text-sm">Role-based access control, team agent assignments, and centralized administration.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">🐳</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Self-Hosted Control</h3>
                 <p className="text-muted text-sm">Deploy on your infrastructure with Docker. Complete data sovereignty and customization.</p>
@@ -238,14 +238,14 @@ export default function InstallingPinchyPage() {
       </section>
 
       {/* Prerequisites Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="max-w-[800px] mx-auto">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-8 text-center">
               Before You Begin
             </h2>
             
-            <div className="bg-surface rounded-box p-8 mb-12">
+            <div className="bg-surface rounded-2xl p-8 mb-12">
               <h3 className="font-heading font-bold text-xl text-dark mb-4">System Requirements</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -269,7 +269,7 @@ export default function InstallingPinchyPage() {
               </div>
             </div>
 
-            <div className="bg-orange/5 border border-orange/20 rounded-box p-6 mb-8">
+            <div className="bg-orange/5 border border-orange/20 rounded-2xl p-6 mb-8">
               <div className="flex gap-3 items-start">
                 <span className="text-orange text-xl flex-shrink-0">⚠️</span>
                 <div>
@@ -308,7 +308,7 @@ export default function InstallingPinchyPage() {
                 <div className="bg-orange text-white font-bold text-lg w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                   {step.step}
                 </div>
-                <div className="flex-1 bg-white rounded-box p-8 shadow-card">
+                <div className="flex-1 bg-white rounded-2xl p-8 shadow-card">
                   <h3 className="font-heading font-bold text-xl text-dark mb-2">{step.title}</h3>
                   <p className="text-muted leading-relaxed mb-4">{step.description}</p>
                   <ul className="space-y-2">
@@ -327,7 +327,7 @@ export default function InstallingPinchyPage() {
       </section>
 
       {/* Configuration Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -340,7 +340,7 @@ export default function InstallingPinchyPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {configurationSections.map((section, index) => (
-              <div key={index} className="bg-surface rounded-box p-8">
+              <div key={index} className="bg-surface rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl text-dark mb-3">{section.section}</h3>
                 <p className="text-muted leading-relaxed mb-4">{section.description}</p>
                 <ul className="space-y-2">
@@ -361,7 +361,7 @@ export default function InstallingPinchyPage() {
       <section className="bg-dark text-white py-16">
         <div className="max-w-[900px] mx-auto px-6">
           <h3 className="font-heading text-2xl font-bold mb-8 text-center">Quick Installation Commands</h3>
-          <div className="bg-black/50 rounded-box p-6 font-mono text-sm">
+          <div className="bg-black/50 rounded-2xl p-6 font-mono text-sm">
             <div className="space-y-2">
               <p className="text-orange"># Clone Pinchy repository</p>
               <p>git clone https://github.com/heypinchy/pinchy.git</p>
@@ -396,7 +396,7 @@ export default function InstallingPinchyPage() {
 
           <div className="space-y-6">
             {troubleshootingIssues.map((issue, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-lg text-dark mb-4">{issue.issue}</h3>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -431,7 +431,7 @@ export default function InstallingPinchyPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -502,7 +502,7 @@ export default function InstallingPinchyPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Get Professional Setup →
           </a>
@@ -512,23 +512,23 @@ export default function InstallingPinchyPage() {
       {/* Contact Section */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-windows" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-windows" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Windows</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Skills: Complete Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -571,7 +571,7 @@ export default function InstallingPinchyPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Professional Setup</h3>
               <p className="text-white/40 text-sm mb-6">Get expert Pinchy installation and configuration</p>
               <ContactForm />

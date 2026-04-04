@@ -355,13 +355,13 @@ export default function OpenClawSecurityCompliancePage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#threats"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 See Security Guide
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 Get Expert Setup ↓
               </a>
@@ -386,7 +386,7 @@ export default function OpenClawSecurityCompliancePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {securityThreats.map((threat, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="font-heading font-bold text-dark">{threat.threat}</h3>
                   <span className={`text-xs font-bold px-2 py-1 rounded ${
@@ -416,7 +416,7 @@ export default function OpenClawSecurityCompliancePage() {
       </section>
 
       {/* Compliance Frameworks Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -432,7 +432,7 @@ export default function OpenClawSecurityCompliancePage() {
 
           <div className="space-y-12">
             {complianceFrameworks.map((framework, index) => (
-              <div key={index} className="bg-surface rounded-box p-8">
+              <div key={index} className="bg-surface rounded-2xl p-8">
                 <div className="mb-6">
                   <h3 className="font-heading font-bold text-xl text-dark mb-2">{framework.framework}</h3>
                   <p className="text-muted leading-relaxed">{framework.description}</p>
@@ -483,7 +483,7 @@ export default function OpenClawSecurityCompliancePage() {
 
           <div className="space-y-12">
             {securityHardeningSteps.map((category, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-6">{category.category}</h3>
                 
                 <div className="space-y-6">
@@ -502,7 +502,7 @@ export default function OpenClawSecurityCompliancePage() {
       </section>
 
       {/* Data Handling Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -515,7 +515,7 @@ export default function OpenClawSecurityCompliancePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {dataHandlingPractices.map((practice, index) => (
-              <div key={index} className="bg-surface rounded-box p-8">
+              <div key={index} className="bg-surface rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl text-dark mb-3">{practice.practice}</h3>
                 <p className="text-muted leading-relaxed mb-6">{practice.description}</p>
                 
@@ -551,7 +551,7 @@ export default function OpenClawSecurityCompliancePage() {
                 <div className="bg-orange text-white font-bold text-lg w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                   {index + 1}
                 </div>
-                <div className="flex-1 bg-white rounded-box p-8 shadow-card">
+                <div className="flex-1 bg-white rounded-2xl p-8 shadow-card">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="font-heading font-bold text-xl text-dark">{phase.phase}</h3>
                     <span className="bg-orange/10 text-orange text-xs font-semibold px-2 py-1 rounded">
@@ -591,7 +591,7 @@ export default function OpenClawSecurityCompliancePage() {
       </section>
 
       {/* Audit Requirements Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -604,7 +604,7 @@ export default function OpenClawSecurityCompliancePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {auditRequirements.map((requirement, index) => (
-              <div key={index} className="bg-surface rounded-box p-8">
+              <div key={index} className="bg-surface rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl text-dark mb-3">{requirement.requirement}</h3>
                 <p className="text-muted leading-relaxed mb-6">{requirement.description}</p>
                 
@@ -687,7 +687,7 @@ export default function OpenClawSecurityCompliancePage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Get Security Consultation →
           </a>
@@ -697,23 +697,23 @@ export default function OpenClawSecurityCompliancePage() {
       {/* Contact Section */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-agent-team" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-agent-team" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">Build an OpenClaw Agent Team</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-agent-team-setup" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-agent-team-setup" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Agent Team Setup Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -756,7 +756,7 @@ export default function OpenClawSecurityCompliancePage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Security Consultation</h3>
               <p className="text-white/40 text-sm mb-6">Tell us about your security and compliance requirements</p>
               <ContactForm />

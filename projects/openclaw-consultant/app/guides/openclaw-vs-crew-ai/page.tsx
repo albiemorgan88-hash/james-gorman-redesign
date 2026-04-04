@@ -63,11 +63,11 @@ export default function OpenClawVsCrewAIPage() {
       <article className="py-16 bg-white">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               The multi-agent AI space has exploded in 2025-2026, with dozens of frameworks competing for developer attention. OpenClaw and CrewAI represent two genuinely different philosophies: OpenClaw is a persistent runtime where agents live, remember, and act continuously. CrewAI is a Python framework for orchestrating task-based agent crews that execute and complete.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               Neither is universally &quot;better&quot; — they excel at different things. This comparison breaks down architecture, use cases, pricing, ease of use, and real-world performance to help you make the right choice for your specific needs.
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function OpenClawVsCrewAIPage() {
                   </div>
                   <h3 className="font-heading text-xl font-bold text-navy">OpenClaw</h3>
                 </div>
-                <p className="text-slate-600 text-sm mb-4">
+                <p className="text-muted-dark text-sm mb-4">
                   A persistent agent runtime and CLI. Agents run continuously on your hardware (Mac, Linux, VPS), maintain memory across sessions, and interact through messaging channels (Telegram, Discord, WhatsApp).
                 </p>
                 <div className="space-y-3 mb-6">
@@ -120,7 +120,7 @@ export default function OpenClawVsCrewAIPage() {
                   </div>
                   <h3 className="font-heading text-xl font-bold text-navy">CrewAI</h3>
                 </div>
-                <p className="text-slate-600 text-sm mb-4">
+                <p className="text-muted-dark text-sm mb-4">
                   A Python framework for defining agent &quot;crews&quot; that collaborate on tasks. You define agents with roles, assign tasks, and the framework orchestrates execution through sequential or hierarchical processes.
                 </p>
                 <div className="space-y-3 mb-6">
@@ -156,12 +156,12 @@ export default function OpenClawVsCrewAIPage() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b">
-                      <th className="text-left py-3 font-medium text-slate-800">Feature</th>
+                      <th className="text-left py-3 font-medium text-dark">Feature</th>
                       <th className="text-center py-3 font-medium text-orange">OpenClaw</th>
                       <th className="text-center py-3 font-medium text-blue">CrewAI</th>
                     </tr>
                   </thead>
-                  <tbody className="text-slate-600">
+                  <tbody className="text-muted-dark">
                     <tr className="border-b">
                       <td className="py-3 font-medium">Agent Persistence</td>
                       <td className="py-3 text-center">✅ Always-on, persistent memory</td>
@@ -220,13 +220,13 @@ export default function OpenClawVsCrewAIPage() {
               <div className="bg-gradient-to-r from-orange/5 to-blue/5 rounded-xl p-6 border border-orange/10">
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Choose OpenClaw When:</h3>
                 <div className="grid md:grid-cols-2 gap-4">
-                  <ul className="space-y-2 text-slate-600 text-sm">
+                  <ul className="space-y-2 text-muted-dark text-sm">
                     <li>• You need agents that run 24/7 and respond to messages</li>
                     <li>• Your workflow requires persistent memory across days/weeks</li>
                     <li>• You want agents controlling real tools (browser, APIs, deployments)</li>
                     <li>• Multi-channel communication is essential (Telegram, WhatsApp, Discord)</li>
                   </ul>
-                  <ul className="space-y-2 text-slate-600 text-sm">
+                  <ul className="space-y-2 text-muted-dark text-sm">
                     <li>• You&apos;re building a virtual team of specialised agents</li>
                     <li>• Data privacy matters — you want everything running locally</li>
                     <li>• You need scheduled automated tasks (daily reports, monitoring)</li>
@@ -234,20 +234,20 @@ export default function OpenClawVsCrewAIPage() {
                   </ul>
                 </div>
                 <div className="mt-4 p-3 bg-orange/10 rounded-lg">
-                  <p className="text-slate-700 text-sm"><strong>Example:</strong> A marketing agency running an always-on agent team that monitors SEO, generates content, manages social media, and reports via Telegram — all with persistent context about each client.</p>
+                  <p className="text-dark text-sm"><strong>Example:</strong> A marketing agency running an always-on agent team that monitors SEO, generates content, manages social media, and reports via Telegram — all with persistent context about each client.</p>
                 </div>
               </div>
 
               <div className="bg-gradient-to-r from-blue/5 to-green-500/5 rounded-xl p-6 border border-blue/10">
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Choose CrewAI When:</h3>
                 <div className="grid md:grid-cols-2 gap-4">
-                  <ul className="space-y-2 text-slate-600 text-sm">
+                  <ul className="space-y-2 text-muted-dark text-sm">
                     <li>• You need batch processing of defined tasks</li>
                     <li>• Your team is Python-first and ML-experienced</li>
                     <li>• The workflow is sequential: research → analyse → write → review</li>
                     <li>• You want quick prototyping of agent collaboration patterns</li>
                   </ul>
-                  <ul className="space-y-2 text-slate-600 text-sm">
+                  <ul className="space-y-2 text-muted-dark text-sm">
                     <li>• Tasks are self-contained and don&apos;t need persistent state</li>
                     <li>• You&apos;re building internal tools, not customer-facing agents</li>
                     <li>• You prefer a managed hosted solution (CrewAI Enterprise)</li>
@@ -255,7 +255,7 @@ export default function OpenClawVsCrewAIPage() {
                   </ul>
                 </div>
                 <div className="mt-4 p-3 bg-blue/10 rounded-lg">
-                  <p className="text-slate-700 text-sm"><strong>Example:</strong> A data team running a weekly research crew that scrapes competitor pricing, analyses trends, and generates a summary report — kicked off by a Python script.</p>
+                  <p className="text-dark text-sm"><strong>Example:</strong> A data team running a weekly research crew that scrapes competitor pricing, analyses trends, and generates a summary report — kicked off by a Python script.</p>
                 </div>
               </div>
             </div>
@@ -265,16 +265,16 @@ export default function OpenClawVsCrewAIPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Real-World Performance</h2>
             
             <div className="space-y-6">
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-muted-dark leading-relaxed">
                 In our testing across multiple business automation scenarios, OpenClaw excelled at complex, long-running workflows that required maintaining context over days or weeks. An agent managing a content calendar, for instance, remembers editorial decisions, learns from performance data, and improves over time.
               </p>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-muted-dark leading-relaxed">
                 CrewAI performed well for defined, repeatable tasks — research pipelines, content generation batches, and data analysis workflows. Where tasks are well-scoped and don&apos;t require inter-session memory, CrewAI&apos;s simplicity is a genuine advantage.
               </p>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-muted-dark leading-relaxed">
                 The choice often comes down to: do your agents need to <em>live</em> (OpenClaw) or just <em>execute</em> (CrewAI)? For businesses building AI-powered operations that run continuously, OpenClaw&apos;s persistent architecture is compelling. For development teams adding AI capabilities to existing workflows, CrewAI&apos;s Python integration is hard to beat.
               </p>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-muted-dark leading-relaxed">
                 Worth noting: some teams use both. CrewAI for batch processing pipelines, OpenClaw for the always-on operational layer. They&apos;re not mutually exclusive — the agent ecosystem rewards picking the right tool for each job.
               </p>
             </div>
@@ -287,7 +287,7 @@ export default function OpenClawVsCrewAIPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">OpenClaw Quick Start</h3>
-                  <div className="space-y-3 text-slate-600 text-sm">
+                  <div className="space-y-3 text-muted-dark text-sm">
                     <div className="flex items-start gap-3">
                       <span className="bg-orange text-white w-6 h-6 rounded-full flex items-center justify-center text-xs flex-shrink-0">1</span>
                       <span>Install via npm: <code className="bg-slate-100 px-1 rounded">npm i -g openclaw</code></span>
@@ -309,7 +309,7 @@ export default function OpenClawVsCrewAIPage() {
                 
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Need Help Choosing?</h3>
-                  <div className="space-y-2 text-slate-600 text-sm">
+                  <div className="space-y-2 text-muted-dark text-sm">
                     <div className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                       <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas</a> helps businesses choose and implement the right AI agent framework for their specific needs.</span>
@@ -333,44 +333,44 @@ export default function OpenClawVsCrewAIPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">OpenClaw vs CrewAI FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Can I use OpenClaw and CrewAI together?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Yes. Some teams use CrewAI for batch processing tasks (data analysis, content generation pipelines) and OpenClaw for persistent, always-on operations (monitoring, communication, scheduling). OpenClaw can even trigger CrewAI workflows via shell commands.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Which framework is better for non-technical users?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   OpenClaw is more accessible for non-developers because agents interact through familiar messaging apps (Telegram, WhatsApp). You talk to your agent like a colleague. CrewAI requires Python coding to set up and run, making it better suited to technical teams.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How do costs compare between OpenClaw and CrewAI?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Both are open source and free to use. Your main costs are LLM API usage (OpenAI, Anthropic, etc.), which depends on how much your agents process. OpenClaw requires a host machine (Mac mini, VPS, or similar). CrewAI Enterprise offers managed hosting at enterprise pricing.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Which handles multi-agent collaboration better?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Different strengths. CrewAI&apos;s crew model is excellent for structured collaboration where agents hand off tasks sequentially or hierarchically. OpenClaw&apos;s subagent model excels at parallel work where a coordinator spawns specialists for simultaneous tasks, with persistent context shared across the team.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What about AutoGen, LangGraph, and other alternatives?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   The multi-agent space is crowded. AutoGen (Microsoft) is strong for conversational agent patterns. LangGraph excels at complex stateful workflows. Compared to these, OpenClaw differentiates on persistence and real-world tool access, whilst CrewAI wins on simplicity and Pythonic design. The best choice depends entirely on your specific use case.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Is one framework more reliable in production?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Both are being used in production, though maturity levels differ by use case. OpenClaw&apos;s persistent architecture means agents can recover from failures and maintain state. CrewAI&apos;s task-based model means failures are scoped to individual runs. For mission-critical work, both recommend human oversight and approval workflows.
                 </p>
               </div>
@@ -391,7 +391,7 @@ export default function OpenClawVsCrewAIPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Framework Recommendation
           </a>
@@ -401,23 +401,23 @@ export default function OpenClawVsCrewAIPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-vs-chatgpt" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-vs-chatgpt" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs ChatGPT: Key Differences</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-vs-zapier-vs-make" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-vs-zapier-vs-make" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs Zapier vs Make</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -425,13 +425,13 @@ export default function OpenClawVsCrewAIPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Choose the Right AI Agent Framework
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a consultation to discuss your multi-agent requirements and get a tailored recommendation.
             </p>
           </div>

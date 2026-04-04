@@ -318,11 +318,11 @@ export default function AICustomerServiceAutomationUKPage() {
           
           {/* Introduction */}
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               UK businesses are revolutionising customer service with AI automation, achieving 24/7 support, dramatic cost reductions, and improved customer satisfaction. The key is implementing the right automation strategy while maintaining the personal touch your customers expect.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This comprehensive guide covers everything from channel selection and technical implementation to UK regulatory compliance and proven ROI strategies. Whether you're handling 50 or 5,000 customer interactions daily, you'll find actionable strategies to transform your customer service operation.
             </p>
           </div>
@@ -339,7 +339,7 @@ export default function AICustomerServiceAutomationUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">75%</div>
-                <div className="text-slate-600 text-sm">Cost Reduction</div>
+                <div className="text-muted-dark text-sm">Cost Reduction</div>
               </div>
               
               <div className="text-center">
@@ -349,7 +349,7 @@ export default function AICustomerServiceAutomationUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">24/7</div>
-                <div className="text-slate-600 text-sm">Availability</div>
+                <div className="text-muted-dark text-sm">Availability</div>
               </div>
               
               <div className="text-center">
@@ -359,7 +359,7 @@ export default function AICustomerServiceAutomationUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">90%</div>
-                <div className="text-slate-600 text-sm">Query Resolution</div>
+                <div className="text-muted-dark text-sm">Query Resolution</div>
               </div>
               
               <div className="text-center">
@@ -369,7 +369,7 @@ export default function AICustomerServiceAutomationUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">85%</div>
-                <div className="text-slate-600 text-sm">Customer Satisfaction</div>
+                <div className="text-muted-dark text-sm">Customer Satisfaction</div>
               </div>
             </div>
           </section>
@@ -380,7 +380,7 @@ export default function AICustomerServiceAutomationUKPage() {
             
             <div className="space-y-8">
               {automationChannels.map((channel, i) => (
-                <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                <div key={i} className="bg-surface rounded-xl p-6 border border-border-light">
                   <div className="flex flex-wrap items-start justify-between mb-6">
                     <h3 className="font-heading text-xl font-bold text-navy">{channel.channel}</h3>
                     <div className="flex gap-3">
@@ -398,10 +398,10 @@ export default function AICustomerServiceAutomationUKPage() {
                   
                   <div className="grid md:grid-cols-3 gap-6">
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Key Features:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Key Features:</h4>
                       <ul className="space-y-2">
                         {channel.features.map((feature, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                             {feature}
                           </li>
@@ -410,10 +410,10 @@ export default function AICustomerServiceAutomationUKPage() {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Business Benefits:</h4>
+                      <h4 className="font-semibold text-dark mb-3">Business Benefits:</h4>
                       <ul className="space-y-2">
                         {channel.benefits.map((benefit, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                             {benefit}
                           </li>
@@ -422,8 +422,8 @@ export default function AICustomerServiceAutomationUKPage() {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">UK Compliance:</h4>
-                      <p className="text-slate-600 text-sm">{channel.compliance}</p>
+                      <h4 className="font-semibold text-dark mb-3">UK Compliance:</h4>
+                      <p className="text-muted-dark text-sm">{channel.compliance}</p>
                     </div>
                   </div>
                 </div>
@@ -445,17 +445,17 @@ export default function AICustomerServiceAutomationUKPage() {
                     <div className="flex-grow">
                       <div className="flex flex-wrap items-center gap-3 mb-4">
                         <h3 className="font-heading text-xl font-bold text-navy">{step.phase}</h3>
-                        <span className="bg-white border border-slate-200 px-3 py-1 rounded-full text-sm font-medium text-slate-600">
+                        <span className="bg-white border border-border px-3 py-1 rounded-full text-sm font-medium text-muted-dark">
                           {step.duration}
                         </span>
                       </div>
                       
                       <div className="grid md:grid-cols-2 gap-6">
                         <div>
-                          <h4 className="font-semibold text-slate-800 mb-3">Key Activities:</h4>
+                          <h4 className="font-semibold text-dark mb-3">Key Activities:</h4>
                           <ul className="space-y-2">
                             {step.activities.map((activity, j) => (
-                              <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                              <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                                 <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                                 {activity}
                               </li>
@@ -464,10 +464,10 @@ export default function AICustomerServiceAutomationUKPage() {
                         </div>
                         
                         <div>
-                          <h4 className="font-semibold text-slate-800 mb-3">Deliverables:</h4>
+                          <h4 className="font-semibold text-dark mb-3">Deliverables:</h4>
                           <ul className="space-y-2">
                             {step.deliverables.map((deliverable, j) => (
-                              <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                              <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                                 <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                                 {deliverable}
                               </li>
@@ -496,7 +496,7 @@ export default function AICustomerServiceAutomationUKPage() {
                       <h4 className="font-semibold text-blue mb-3">Requirements:</h4>
                       <ul className="space-y-2">
                         {reg.requirements.map((req, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                             {req}
                           </li>
@@ -508,7 +508,7 @@ export default function AICustomerServiceAutomationUKPage() {
                       <h4 className="font-semibold text-blue mb-3">Implementation Steps:</h4>
                       <ul className="space-y-2">
                         {reg.implementation.map((impl, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <li key={j} className="flex items-start gap-2 text-muted-dark text-sm">
                             <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                             {impl}
                           </li>
@@ -527,11 +527,11 @@ export default function AICustomerServiceAutomationUKPage() {
             
             <div className="space-y-8">
               {industryExamples.map((example, i) => (
-                <div key={i} className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+                <div key={i} className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                   <div className="flex flex-wrap items-center justify-between mb-4">
                     <div>
                       <h3 className="font-heading text-lg font-bold text-navy">{example.industry}</h3>
-                      <p className="text-slate-600 text-sm">{example.company}</p>
+                      <p className="text-muted-dark text-sm">{example.company}</p>
                     </div>
                     <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                       {example.roi} ROI
@@ -539,19 +539,19 @@ export default function AICustomerServiceAutomationUKPage() {
                   </div>
                   
                   <div className="mb-6">
-                    <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                    <p className="text-slate-600 text-sm mb-4">{example.challenge}</p>
+                    <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                    <p className="text-muted-dark text-sm mb-4">{example.challenge}</p>
                     
-                    <h4 className="font-semibold text-slate-800 mb-2">Solution:</h4>
-                    <p className="text-slate-600 text-sm mb-4">{example.solution}</p>
+                    <h4 className="font-semibold text-dark mb-2">Solution:</h4>
+                    <p className="text-muted-dark text-sm mb-4">{example.solution}</p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Results:</h4>
+                    <h4 className="font-semibold text-dark mb-3">Results:</h4>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                       {Object.entries(example.results).map(([metric, value], j) => (
-                        <div key={j} className="bg-slate-50 rounded-lg p-3 text-center">
-                          <div className="text-sm font-medium text-slate-500 mb-1">{metric}</div>
+                        <div key={j} className="bg-surface rounded-lg p-3 text-center">
+                          <div className="text-sm font-medium text-muted mb-1">{metric}</div>
                           <div className="text-navy font-semibold text-sm">{value}</div>
                         </div>
                       ))}
@@ -566,12 +566,12 @@ export default function AICustomerServiceAutomationUKPage() {
           <section className="mb-16">
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Technical Implementation with OpenClaw</h2>
             
-            <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
+            <div className="bg-surface rounded-xl p-8 border border-border-light">
               <h3 className="font-heading text-xl font-bold text-navy mb-6">Core Architecture Components</h3>
               
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-4">AI Agent Configuration</h4>
+                  <h4 className="font-semibold text-dark mb-4">AI Agent Configuration</h4>
                   <div className="bg-navy/5 rounded-lg p-4 mb-4">
                     <pre className="text-sm text-navy font-mono overflow-x-auto">
 {`// Customer Service Agent Setup
@@ -591,7 +591,7 @@ const customerAgent = {
 };`}
                     </pre>
                   </div>
-                  <ul className="space-y-2 text-slate-600 text-sm">
+                  <ul className="space-y-2 text-muted-dark text-sm">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                       Multi-channel agent deployment
@@ -608,30 +608,30 @@ const customerAgent = {
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-4">Integration Examples</h4>
+                  <h4 className="font-semibold text-dark mb-4">Integration Examples</h4>
                   <div className="space-y-4">
                     <div className="border-l-4 border-orange pl-4">
-                      <h5 className="font-medium text-slate-800 mb-1">CRM Integration</h5>
-                      <p className="text-slate-600 text-sm">Sync customer data, update contact records, create follow-up tasks</p>
+                      <h5 className="font-medium text-dark mb-1">CRM Integration</h5>
+                      <p className="text-muted-dark text-sm">Sync customer data, update contact records, create follow-up tasks</p>
                     </div>
                     <div className="border-l-4 border-blue pl-4">
-                      <h5 className="font-medium text-slate-800 mb-1">Helpdesk Connection</h5>
-                      <p className="text-slate-600 text-sm">Create tickets, update status, route to specialists</p>
+                      <h5 className="font-medium text-dark mb-1">Helpdesk Connection</h5>
+                      <p className="text-muted-dark text-sm">Create tickets, update status, route to specialists</p>
                     </div>
                     <div className="border-l-4 border-green-500 pl-4">
-                      <h5 className="font-medium text-slate-800 mb-1">E-commerce Systems</h5>
-                      <p className="text-slate-600 text-sm">Order lookups, refund processing, inventory checks</p>
+                      <h5 className="font-medium text-dark mb-1">E-commerce Systems</h5>
+                      <p className="text-muted-dark text-sm">Order lookups, refund processing, inventory checks</p>
                     </div>
                   </div>
                 </div>
               </div>
               
-              <div className="bg-white rounded-lg p-6 border border-slate-200">
-                <h4 className="font-semibold text-slate-800 mb-3">Implementation Checklist:</h4>
+              <div className="bg-white rounded-lg p-6 border border-border-light">
+                <h4 className="font-semibold text-dark mb-3">Implementation Checklist:</h4>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h5 className="font-medium text-slate-700 mb-2">Pre-Implementation:</h5>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h5 className="font-medium text-dark mb-2">Pre-Implementation:</h5>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>☐ Audit existing customer service processes</li>
                       <li>☐ Identify integration requirements</li>
                       <li>☐ Prepare training data and FAQs</li>
@@ -640,8 +640,8 @@ const customerAgent = {
                     </ul>
                   </div>
                   <div>
-                    <h5 className="font-medium text-slate-700 mb-2">Post-Implementation:</h5>
-                    <ul className="space-y-1 text-slate-600 text-sm">
+                    <h5 className="font-medium text-dark mb-2">Post-Implementation:</h5>
+                    <ul className="space-y-1 text-muted-dark text-sm">
                       <li>☐ Monitor response accuracy</li>
                       <li>☐ Track customer satisfaction</li>
                       <li>☐ Optimise agent responses</li>
@@ -663,19 +663,19 @@ const customerAgent = {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Key Performance Indicators</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-orange/20">
-                    <span className="text-slate-700 font-medium">First Response Time</span>
+                    <span className="text-dark font-medium">First Response Time</span>
                     <span className="text-orange font-bold">&lt; 2 minutes</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-orange/20">
-                    <span className="text-slate-700 font-medium">Query Resolution Rate</span>
+                    <span className="text-dark font-medium">Query Resolution Rate</span>
                     <span className="text-orange font-bold">85%+</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-orange/20">
-                    <span className="text-slate-700 font-medium">Customer Satisfaction</span>
+                    <span className="text-dark font-medium">Customer Satisfaction</span>
                     <span className="text-orange font-bold">4.5/5</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-orange/20">
-                    <span className="text-slate-700 font-medium">Cost per Interaction</span>
+                    <span className="text-dark font-medium">Cost per Interaction</span>
                     <span className="text-orange font-bold">75% reduction</span>
                   </div>
                 </div>
@@ -685,8 +685,8 @@ const customerAgent = {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">ROI Calculation Framework</h3>
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4 border border-blue/20">
-                    <h4 className="font-medium text-slate-800 mb-2">Monthly Savings Calculation:</h4>
-                    <div className="text-sm text-slate-600 space-y-1">
+                    <h4 className="font-medium text-dark mb-2">Monthly Savings Calculation:</h4>
+                    <div className="text-sm text-muted-dark space-y-1">
                       <div>Staff time saved: 200 hours × £15/hour = <strong>£3,000</strong></div>
                       <div>Efficiency gains: 50 hours × £25/hour = <strong>£1,250</strong></div>
                       <div>Error reduction: 20 errors × £50 = <strong>£1,000</strong></div>
@@ -694,8 +694,8 @@ const customerAgent = {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-4 border border-blue/20">
-                    <h4 className="font-medium text-slate-800 mb-2">Implementation Cost:</h4>
-                    <div className="text-sm text-slate-600 space-y-1">
+                    <h4 className="font-medium text-dark mb-2">Implementation Cost:</h4>
+                    <div className="text-sm text-muted-dark space-y-1">
                       <div>Setup and configuration: <strong>£3,500</strong></div>
                       <div>Monthly operating cost: <strong>£200</strong></div>
                       <div className="border-t pt-2 mt-2 font-semibold text-green-600">ROI: 1,400% annually</div>
@@ -720,20 +720,20 @@ const customerAgent = {
                 </h3>
                 <div className="space-y-4">
                   <div className="border-l-4 border-green-500 pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">Start Simple</h4>
-                    <p className="text-slate-600 text-sm">Begin with FAQ automation and basic query routing before advanced features.</p>
+                    <h4 className="font-semibold text-dark mb-2">Start Simple</h4>
+                    <p className="text-muted-dark text-sm">Begin with FAQ automation and basic query routing before advanced features.</p>
                   </div>
                   <div className="border-l-4 border-green-500 pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">Maintain Human Touch</h4>
-                    <p className="text-slate-600 text-sm">Always provide easy escalation to human agents for complex issues.</p>
+                    <h4 className="font-semibold text-dark mb-2">Maintain Human Touch</h4>
+                    <p className="text-muted-dark text-sm">Always provide easy escalation to human agents for complex issues.</p>
                   </div>
                   <div className="border-l-4 border-green-500 pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">Regular Training Updates</h4>
-                    <p className="text-slate-600 text-sm">Continuously update AI knowledge base with new products, policies, and FAQs.</p>
+                    <h4 className="font-semibold text-dark mb-2">Regular Training Updates</h4>
+                    <p className="text-muted-dark text-sm">Continuously update AI knowledge base with new products, policies, and FAQs.</p>
                   </div>
                   <div className="border-l-4 border-green-500 pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">Monitor & Optimise</h4>
-                    <p className="text-slate-600 text-sm">Track performance metrics and continuously improve response quality.</p>
+                    <h4 className="font-semibold text-dark mb-2">Monitor & Optimise</h4>
+                    <p className="text-muted-dark text-sm">Track performance metrics and continuously improve response quality.</p>
                   </div>
                 </div>
               </div>
@@ -747,20 +747,20 @@ const customerAgent = {
                 </h3>
                 <div className="space-y-4">
                   <div className="border-l-4 border-red-500 pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">Over-Automation</h4>
-                    <p className="text-slate-600 text-sm">Don't automate everything at once. Gradual implementation reduces risk and improves adoption.</p>
+                    <h4 className="font-semibold text-dark mb-2">Over-Automation</h4>
+                    <p className="text-muted-dark text-sm">Don't automate everything at once. Gradual implementation reduces risk and improves adoption.</p>
                   </div>
                   <div className="border-l-4 border-red-500 pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">Inadequate Training Data</h4>
-                    <p className="text-slate-600 text-sm">Poor quality training data leads to inaccurate responses and customer frustration.</p>
+                    <h4 className="font-semibold text-dark mb-2">Inadequate Training Data</h4>
+                    <p className="text-muted-dark text-sm">Poor quality training data leads to inaccurate responses and customer frustration.</p>
                   </div>
                   <div className="border-l-4 border-red-500 pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">Ignoring Compliance</h4>
-                    <p className="text-slate-600 text-sm">UK GDPR and PECR violations can result in significant fines and reputation damage.</p>
+                    <h4 className="font-semibold text-dark mb-2">Ignoring Compliance</h4>
+                    <p className="text-muted-dark text-sm">UK GDPR and PECR violations can result in significant fines and reputation damage.</p>
                   </div>
                   <div className="border-l-4 border-red-500 pl-4">
-                    <h4 className="font-semibold text-slate-800 mb-2">No Feedback Loop</h4>
-                    <p className="text-slate-600 text-sm">Failing to collect and act on customer feedback limits improvement opportunities.</p>
+                    <h4 className="font-semibold text-dark mb-2">No Feedback Loop</h4>
+                    <p className="text-muted-dark text-sm">Failing to collect and act on customer feedback limits improvement opportunities.</p>
                   </div>
                 </div>
               </div>
@@ -775,7 +775,7 @@ const customerAgent = {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Ready to Automate?</h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-dark mb-4">
                     Start with a customer service audit to identify your highest-impact automation opportunities. 
                     Then choose the right channels and implementation approach for your business.
                   </p>
@@ -797,10 +797,10 @@ const customerAgent = {
                 
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Need Expert Implementation?</h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-dark mb-4">
                     Customer service automation requires careful planning and execution. I can help you avoid common pitfalls and achieve faster time to value.
                   </p>
-                  <ul className="space-y-2 text-slate-600 text-sm mb-4">
+                  <ul className="space-y-2 text-muted-dark text-sm mb-4">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                       Customer service process audit and automation planning
@@ -837,7 +837,7 @@ const customerAgent = {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Free Assessment
           </a>
@@ -847,23 +847,23 @@ const customerAgent = {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-appointment-booking" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-appointment-booking" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Appointment Booking for Business</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-chatbot-for-business-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-chatbot-for-business-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Chatbots for UK Businesses</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -871,13 +871,13 @@ const customerAgent = {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Ready to Automate Customer Service?
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a free consultation to discuss your customer service automation requirements and get a custom implementation plan.
             </p>
           </div>

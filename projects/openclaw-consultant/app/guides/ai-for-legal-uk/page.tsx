@@ -63,11 +63,11 @@ export default function AIForLegalUKPage() {
       <article className="py-16 bg-white">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               UK law firms implementing AI are reporting 45% reductions in research time and 38% improvements in document review accuracy. From automated legal research to contract analysis, AI is revolutionising legal practice whilst maintaining professional ethical standards.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This comprehensive guide shows UK solicitors and barristers exactly how to implement AI solutions that enhance legal practice and client service. Learn from successful implementations across commercial, family, criminal, and property law practices.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function AIForLegalUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">45%</div>
-                <div className="text-slate-600 text-sm">Legal research time saved</div>
+                <div className="text-muted-dark text-sm">Legal research time saved</div>
               </div>
               
               <div className="text-center">
@@ -93,7 +93,7 @@ export default function AIForLegalUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">62%</div>
-                <div className="text-slate-600 text-sm">Document review efficiency</div>
+                <div className="text-muted-dark text-sm">Document review efficiency</div>
               </div>
               
               <div className="text-center">
@@ -103,7 +103,7 @@ export default function AIForLegalUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">33%</div>
-                <div className="text-slate-600 text-sm">Billable hour increase</div>
+                <div className="text-muted-dark text-sm">Billable hour increase</div>
               </div>
               
               <div className="text-center">
@@ -113,7 +113,7 @@ export default function AIForLegalUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">88%</div>
-                <div className="text-slate-600 text-sm">Client satisfaction scores</div>
+                <div className="text-muted-dark text-sm">Client satisfaction scores</div>
               </div>
             </div>
 
@@ -122,8 +122,8 @@ export default function AIForLegalUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Legal Research & Case Analysis</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Applications:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Applications:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Automated case law research and precedent identification</li>
                       <li>• Statutory interpretation and regulatory analysis</li>
                       <li>• Legal memo and brief generation assistance</li>
@@ -132,8 +132,8 @@ export default function AIForLegalUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Practice Impact:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Practice Impact:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 40-60% reduction in research time</li>
                       <li>• 25-35% improvement in case coverage</li>
                       <li>• 30-45% faster brief preparation</li>
@@ -148,8 +148,8 @@ export default function AIForLegalUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Document Review & Contract Analysis</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">AI Solutions:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">AI Solutions:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Automated contract clause extraction and analysis</li>
                       <li>• Due diligence document screening</li>
                       <li>• Risk identification and compliance checking</li>
@@ -158,8 +158,8 @@ export default function AIForLegalUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Efficiency Gains:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Efficiency Gains:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 60-80% faster document review</li>
                       <li>• 35-50% improvement in accuracy</li>
                       <li>• 70-85% reduction in manual sorting</li>
@@ -174,8 +174,8 @@ export default function AIForLegalUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Case Management & Client Communication</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Implementation Areas:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Implementation Areas:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Automated case timeline and deadline management</li>
                       <li>• Client communication and update generation</li>
                       <li>• Invoice and time recording assistance</li>
@@ -184,8 +184,8 @@ export default function AIForLegalUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Practice Benefits:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Practice Benefits:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 50% reduction in administrative overhead</li>
                       <li>• 95% improvement in deadline compliance</li>
                       <li>• 40% increase in client responsiveness</li>
@@ -202,11 +202,11 @@ export default function AIForLegalUKPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">UK Legal AI Success Stories</h2>
             
             <div className="space-y-8">
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">Commercial Law Firm</h3>
-                    <p className="text-slate-600 text-sm">Mid-tier commercial firm with 45 solicitors across three offices</p>
+                    <p className="text-muted-dark text-sm">Mid-tier commercial firm with 45 solicitors across three offices</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     520% ROI
@@ -214,38 +214,38 @@ export default function AIForLegalUKPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Managing large-scale due diligence projects and contract reviews for M&A transactions</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Managing large-scale due diligence projects and contract reviews for M&A transactions</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">AI Solution:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Implemented AI-powered document review and contract analysis platform for due diligence</p>
+                  <h4 className="font-semibold text-dark mb-2">AI Solution:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Implemented AI-powered document review and contract analysis platform for due diligence</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Review Speed</div>
+                    <div className="text-sm font-medium text-muted mb-1">Review Speed</div>
                     <div className="text-green-700 font-semibold text-sm">73% faster</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Cost Reduction</div>
+                    <div className="text-sm font-medium text-muted mb-1">Cost Reduction</div>
                     <div className="text-green-700 font-semibold text-sm">48%</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Client Satisfaction</div>
+                    <div className="text-sm font-medium text-muted mb-1">Client Satisfaction</div>
                     <div className="text-green-700 font-semibold text-sm">41% improvement</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Deal Capacity</div>
+                    <div className="text-sm font-medium text-muted mb-1">Deal Capacity</div>
                     <div className="text-green-700 font-semibold text-sm">35% increase</div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">Family Law Practice</h3>
-                    <p className="text-slate-600 text-sm">Specialist family law firm handling divorce and custody cases</p>
+                    <p className="text-muted-dark text-sm">Specialist family law firm handling divorce and custody cases</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     380% ROI
@@ -253,28 +253,28 @@ export default function AIForLegalUKPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Managing high caseloads whilst maintaining personalised client service and accurate documentation</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Managing high caseloads whilst maintaining personalised client service and accurate documentation</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">AI Solution:</h4>
-                  <p className="text-slate-600 text-sm mb-4">AI-assisted case management, document drafting, and client communication systems</p>
+                  <h4 className="font-semibold text-dark mb-2">AI Solution:</h4>
+                  <p className="text-muted-dark text-sm mb-4">AI-assisted case management, document drafting, and client communication systems</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Caseload Capacity</div>
+                    <div className="text-sm font-medium text-muted mb-1">Caseload Capacity</div>
                     <div className="text-green-700 font-semibold text-sm">42% increase</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Document Accuracy</div>
+                    <div className="text-sm font-medium text-muted mb-1">Document Accuracy</div>
                     <div className="text-green-700 font-semibold text-sm">89% improvement</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Client Response Time</div>
+                    <div className="text-sm font-medium text-muted mb-1">Client Response Time</div>
                     <div className="text-green-700 font-semibold text-sm">67% faster</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Billing Efficiency</div>
+                    <div className="text-sm font-medium text-muted mb-1">Billing Efficiency</div>
                     <div className="text-green-700 font-semibold text-sm">38% improvement</div>
                   </div>
                 </div>
@@ -289,7 +289,7 @@ export default function AIForLegalUKPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Getting Started</h3>
-                  <div className="space-y-3 text-slate-600 text-sm">
+                  <div className="space-y-3 text-muted-dark text-sm">
                     <div className="flex items-start gap-3">
                       <input type="checkbox" className="mt-1" />
                       <span>Assess current document management and research workflows</span>
@@ -313,8 +313,8 @@ export default function AIForLegalUKPage() {
                   </div>
 
                   <div className="mt-6">
-                    <h4 className="font-semibold text-slate-800 mb-3">Expert Support:</h4>
-                    <div className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Expert Support:</h4>
+                    <div className="space-y-2 text-muted-dark text-sm">
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas AI consultancy</a> for legal AI strategy</span>
@@ -331,20 +331,20 @@ export default function AIForLegalUKPage() {
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Professional Standards</h3>
                   <div className="space-y-4">
                     <div className="border-l-4 border-orange pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Client Confidentiality</h4>
-                      <p className="text-slate-600 text-sm">Robust data protection ensuring client information remains secure and privileged</p>
+                      <h4 className="font-medium text-dark mb-1">Client Confidentiality</h4>
+                      <p className="text-muted-dark text-sm">Robust data protection ensuring client information remains secure and privileged</p>
                     </div>
                     <div className="border-l-4 border-blue pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Professional Judgement</h4>
-                      <p className="text-slate-600 text-sm">AI augments rather than replaces legal expertise and professional responsibility</p>
+                      <h4 className="font-medium text-dark mb-1">Professional Judgement</h4>
+                      <p className="text-muted-dark text-sm">AI augments rather than replaces legal expertise and professional responsibility</p>
                     </div>
                     <div className="border-l-4 border-green-500 pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Quality Assurance</h4>
-                      <p className="text-slate-600 text-sm">Comprehensive review processes ensure AI outputs meet professional standards</p>
+                      <h4 className="font-medium text-dark mb-1">Quality Assurance</h4>
+                      <p className="text-muted-dark text-sm">Comprehensive review processes ensure AI outputs meet professional standards</p>
                     </div>
                     <div className="border-l-4 border-purple pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Regulatory Compliance</h4>
-                      <p className="text-slate-600 text-sm">Ongoing adherence to SRA principles and emerging legal technology guidance</p>
+                      <h4 className="font-medium text-dark mb-1">Regulatory Compliance</h4>
+                      <p className="text-muted-dark text-sm">Ongoing adherence to SRA principles and emerging legal technology guidance</p>
                     </div>
                   </div>
                 </div>
@@ -357,51 +357,51 @@ export default function AIForLegalUKPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Legal AI FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What are the most valuable AI applications for UK law firms?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Most valuable applications include document review and analysis (60-80% time savings), legal research automation (40-60% efficiency gains), contract management (35-50% accuracy improvement), and case management (30-45% productivity increase). Start with document review for immediate impact.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How do law firms ensure AI compliance with SRA professional standards?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Compliance requires maintaining professional judgement oversight, ensuring client confidentiality through secure AI systems, implementing quality assurance processes, maintaining accurate records, and following SRA guidance on legal technology. AI augments but doesn't replace professional responsibility.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What budget should UK law firms allocate for AI implementation?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Budget varies by firm size and practice areas. Small firms (1-10 solicitors): £15K-£50K annually. Medium firms (10-50): £50K-£200K. Large firms (50+): £200K-£1M+. Expect 12-18 month payback periods with 300-500% ROI through increased billable efficiency.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How do legal AI systems protect client confidentiality and privilege?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Protection through end-to-end encryption, access controls, audit trails, data residency compliance, secure hosting environments, and professional privilege preservation. Choose AI providers with legal industry experience and robust security certifications.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How long does it take to see benefits from legal AI investments?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Benefits timeline varies: document review (immediate-3 months), research automation (2-6 months), case management (3-9 months). Most firms see measurable efficiency gains within 6 months, with full workflow optimisation achieved over 12-18 months.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Should law firms build AI capabilities internally or use external solutions?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Most firms benefit from specialist AI solutions designed for legal practice, combined with expert implementation support from consultancies like Blue Canvas AI. This approach ensures professional compliance, security standards, and faster deployment than internal development.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How does AI impact legal careers and professional development?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   AI enhances rather than replaces legal expertise. It automates routine tasks, allowing lawyers to focus on strategy, client relationships, and complex legal analysis. Firms investing in AI training and technology adoption attract top talent and improve job satisfaction.
                 </p>
               </div>
@@ -422,7 +422,7 @@ export default function AIForLegalUKPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Legal AI Assessment
           </a>
@@ -432,23 +432,23 @@ export default function AIForLegalUKPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-agents-accountants" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-agents-accountants" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Agents for Accountants UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-agents-charities" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-agents-charities" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Agents for Charities UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -456,13 +456,13 @@ export default function AIForLegalUKPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Enhance Your Practice with AI
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a consultation to discuss how AI can transform your legal operations whilst maintaining the highest professional standards.
             </p>
           </div>

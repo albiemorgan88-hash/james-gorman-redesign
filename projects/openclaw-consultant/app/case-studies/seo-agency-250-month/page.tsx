@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Case Study: £250/Month SEO Agency with OpenClaw',
-  description: 'How Phil Patterson built a £250/month SEO agency using just one OpenClaw agent. Complete breakdown of setup, workflows, and revenue generation.',
+  description: 'How Blue Canvas built a £250/month SEO agency using just one OpenClaw agent. Complete breakdown of setup, workflows, and revenue generation.',
   alternates: { canonical: 'https://openclawconsultant.co.uk/case-studies/seo-agency-250-month' },
 };
 
@@ -24,7 +24,7 @@ export default function SEOAgencyCaseStudy() {
           </h1>
           
           <p className="text-lg text-gray-300 max-w-2xl mb-8">
-            How Phil Patterson automated an entire SEO agency workflow using OpenClaw, 
+            How Blue Canvas automated an entire SEO agency workflow using OpenClaw, 
             generating consistent £250/month recurring revenue from day one.
           </p>
           
@@ -32,7 +32,7 @@ export default function SEOAgencyCaseStudy() {
             <Link href="#implementation" className="bg-blue-500 text-white font-bold px-8 py-3 rounded-lg hover:bg-blue-400 transition-colors inline-block text-center">
               See Implementation
             </Link>
-            <Link href="#contact" className="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition-colors inline-block text-center">
+            <Link href="#contact" className="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white hover:text-dark transition-colors inline-block text-center">
               Build Your Agency
             </Link>
           </div>
@@ -40,28 +40,28 @@ export default function SEOAgencyCaseStudy() {
       </section>
 
       {/* Key Metrics */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900">Agency Performance Metrics</h2>
+            <h2 className="text-2xl font-bold text-dark">Agency Performance Metrics</h2>
           </div>
           
           <div className="grid md:grid-cols-4 gap-6 text-center">
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <div className="text-3xl font-bold text-blue-500">£250</div>
-              <div className="text-sm text-gray-600 mt-1">Monthly Recurring Revenue</div>
+              <div className="text-sm text-muted-dark mt-1">Monthly Recurring Revenue</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <div className="text-3xl font-bold text-green-500">8 pages</div>
-              <div className="text-sm text-gray-600 mt-1">Published in 24 hours</div>
+              <div className="text-sm text-muted-dark mt-1">Published in 24 hours</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <div className="text-3xl font-bold text-purple-500">23 crons</div>
-              <div className="text-sm text-gray-600 mt-1">Automated workflows</div>
+              <div className="text-sm text-muted-dark mt-1">Automated workflows</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <div className="text-3xl font-bold text-orange-500">95%</div>
-              <div className="text-sm text-gray-600 mt-1">Automation rate</div>
+              <div className="text-sm text-muted-dark mt-1">Automation rate</div>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function SEOAgencyCaseStudy() {
         
         {/* Challenge */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-8">The Challenge</h2>
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark mb-8">The Challenge</h2>
           
           <div className="bg-red-50 border-l-4 border-red-400 p-6 mb-8">
             <h3 className="text-lg font-semibold text-red-800 mb-3">Traditional SEO Agency Problems</h3>
@@ -84,38 +84,38 @@ export default function SEOAgencyCaseStudy() {
             </ul>
           </div>
           
-          <blockquote className="border-l-4 border-gray-300 pl-6 italic text-gray-600 text-lg">
+          <blockquote className="border-l-4 border-gray-300 pl-6 italic text-muted-dark text-lg">
             "I wanted to prove that one person with the right AI agent could deliver 
             the same results as a traditional 5-person SEO agency — at a fraction of the cost."
-            <footer className="text-sm text-gray-500 mt-2">— Phil Patterson, Blue Canvas AI</footer>
+            <footer className="text-sm text-muted mt-2">— Blue Canvas, Blue Canvas AI</footer>
           </blockquote>
         </section>
 
         {/* Solution Overview */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-8">The OpenClaw Solution</h2>
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark mb-8">The OpenClaw Solution</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div className="border-l-4 border-blue-400 pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Automated SEO Audits</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-xl font-semibold text-dark mb-2">Automated SEO Audits</h3>
+                <p className="text-muted-dark text-sm">
                   Agent automatically crawls client websites, runs technical SEO audits, 
                   and generates comprehensive reports with actionable recommendations.
                 </p>
               </div>
               
               <div className="border-l-4 border-green-400 pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Content Generation</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-xl font-semibold text-dark mb-2">Content Generation</h3>
+                <p className="text-muted-dark text-sm">
                   AI-powered content creation based on keyword research, competitor analysis, 
                   and client brand voice. Published directly to client websites.
                 </p>
               </div>
               
               <div className="border-l-4 border-purple-400 pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Performance Monitoring</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-xl font-semibold text-dark mb-2">Performance Monitoring</h3>
+                <p className="text-muted-dark text-sm">
                   Continuous tracking of rankings, traffic, and conversions. 
                   Automated monthly reporting sent directly to clients.
                 </p>
@@ -124,24 +124,24 @@ export default function SEOAgencyCaseStudy() {
             
             <div className="space-y-6">
               <div className="border-l-4 border-orange-400 pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Technical Implementation</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-xl font-semibold text-dark mb-2">Technical Implementation</h3>
+                <p className="text-muted-dark text-sm">
                   Automated fixing of technical SEO issues: meta tags, schema markup, 
                   internal linking, and site speed optimizations.
                 </p>
               </div>
               
               <div className="border-l-4 border-pink-400 pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Client Communication</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-xl font-semibold text-dark mb-2">Client Communication</h3>
+                <p className="text-muted-dark text-sm">
                   Proactive client updates, progress reports, and strategy recommendations 
                   delivered via their preferred channels.
                 </p>
               </div>
               
               <div className="border-l-4 border-indigo-400 pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Competitor Intelligence</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-xl font-semibold text-dark mb-2">Competitor Intelligence</h3>
+                <p className="text-muted-dark text-sm">
                   Automated monitoring of competitor strategies, backlink opportunities, 
                   and market gap identification.
                 </p>
@@ -152,7 +152,7 @@ export default function SEOAgencyCaseStudy() {
 
         {/* Implementation Details */}
         <section id="implementation" className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-8">Implementation Breakdown</h2>
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark mb-8">Implementation Breakdown</h2>
           
           <div className="space-y-8">
             {/* Phase 1 */}
@@ -184,7 +184,7 @@ export default function SEOAgencyCaseStudy() {
               </div>
               
               <div className="mt-6 bg-white p-4 rounded-lg">
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-muted-dark">
                   <strong>Result:</strong> Fully functional SEO monitoring and audit system. 
                   First client onboarded with immediate value delivery.
                 </p>
@@ -220,7 +220,7 @@ export default function SEOAgencyCaseStudy() {
               </div>
               
               <div className="mt-6 bg-white p-4 rounded-lg">
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-muted-dark">
                   <strong>Achievement:</strong> 8 high-quality blog posts published in 24 hours. 
                   Client called the output "fantastic" — indistinguishable from human work.
                 </p>
@@ -256,7 +256,7 @@ export default function SEOAgencyCaseStudy() {
               </div>
               
               <div className="mt-6 bg-white p-4 rounded-lg">
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-muted-dark">
                   <strong>Outcome:</strong> Client retention rate of 100%. Positive feedback on 
                   communication quality and proactive service approach.
                 </p>
@@ -267,11 +267,11 @@ export default function SEOAgencyCaseStudy() {
 
         {/* Results & ROI */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-8">Results & ROI Analysis</h2>
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark mb-8">Results & ROI Analysis</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Financial Performance</h3>
+              <h3 className="text-xl font-semibold text-dark mb-4">Financial Performance</h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center p-4 bg-green-50 rounded-lg">
                   <span className="font-semibold">Monthly Revenue:</span>
@@ -291,7 +291,7 @@ export default function SEOAgencyCaseStudy() {
                 </div>
               </div>
               
-              <div className="mt-6 text-sm text-gray-600">
+              <div className="mt-6 text-sm text-muted-dark">
                 <h4 className="font-semibold mb-2">Cost Breakdown:</h4>
                 <ul className="space-y-1">
                   <li>• OpenClaw Pro: £19/month</li>
@@ -302,27 +302,27 @@ export default function SEOAgencyCaseStudy() {
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Operational Metrics</h3>
+              <h3 className="text-xl font-semibold text-dark mb-4">Operational Metrics</h3>
               
               <div className="space-y-4">
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <div className="text-2xl font-bold text-gray-900">4 hours</div>
-                  <div className="text-sm text-gray-600">Weekly time investment</div>
+                <div className="p-4 bg-cream rounded-lg">
+                  <div className="text-2xl font-bold text-dark">4 hours</div>
+                  <div className="text-sm text-muted-dark">Weekly time investment</div>
                 </div>
                 
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <div className="text-2xl font-bold text-gray-900">£50.75</div>
-                  <div className="text-sm text-gray-600">Hourly rate (equivalent)</div>
+                <div className="p-4 bg-cream rounded-lg">
+                  <div className="text-2xl font-bold text-dark">£50.75</div>
+                  <div className="text-sm text-muted-dark">Hourly rate (equivalent)</div>
                 </div>
                 
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <div className="text-2xl font-bold text-gray-900">95%</div>
-                  <div className="text-sm text-gray-600">Automated tasks</div>
+                <div className="p-4 bg-cream rounded-lg">
+                  <div className="text-2xl font-bold text-dark">95%</div>
+                  <div className="text-sm text-muted-dark">Automated tasks</div>
                 </div>
                 
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <div className="text-2xl font-bold text-gray-900">100%</div>
-                  <div className="text-sm text-gray-600">Client retention</div>
+                <div className="p-4 bg-cream rounded-lg">
+                  <div className="text-2xl font-bold text-dark">100%</div>
+                  <div className="text-sm text-muted-dark">Client retention</div>
                 </div>
               </div>
             </div>
@@ -340,13 +340,13 @@ export default function SEOAgencyCaseStudy() {
 
         {/* Technical Architecture */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-8">Technical Architecture</h2>
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark mb-8">Technical Architecture</h2>
           
-          <div className="bg-gray-50 p-8 rounded-xl">
+          <div className="bg-cream p-8 rounded-xl">
             <div className="grid md:grid-cols-3 gap-8">
               <div>
-                <h3 className="font-semibold text-gray-900 mb-4">Core Agent</h3>
-                <ul className="text-sm text-gray-600 space-y-2">
+                <h3 className="font-semibold text-dark mb-4">Core Agent</h3>
+                <ul className="text-sm text-muted-dark space-y-2">
                   <li>• OpenClaw with SEO personality</li>
                   <li>• Custom memory system</li>
                   <li>• 23 automated cron jobs</li>
@@ -356,8 +356,8 @@ export default function SEOAgencyCaseStudy() {
               </div>
               
               <div>
-                <h3 className="font-semibold text-gray-900 mb-4">Integrations</h3>
-                <ul className="text-sm text-gray-600 space-y-2">
+                <h3 className="font-semibold text-dark mb-4">Integrations</h3>
+                <ul className="text-sm text-muted-dark space-y-2">
                   <li>• Ahrefs API (keywords, backlinks)</li>
                   <li>• Google Search Console</li>
                   <li>• Google Analytics 4</li>
@@ -367,8 +367,8 @@ export default function SEOAgencyCaseStudy() {
               </div>
               
               <div>
-                <h3 className="font-semibold text-gray-900 mb-4">Automation</h3>
-                <ul className="text-sm text-gray-600 space-y-2">
+                <h3 className="font-semibold text-dark mb-4">Automation</h3>
+                <ul className="text-sm text-muted-dark space-y-2">
                   <li>• Daily ranking monitoring</li>
                   <li>• Weekly audit generation</li>
                   <li>• Content publishing pipeline</li>
@@ -405,12 +405,12 @@ export default function SEOAgencyCaseStudy() {
               <Link href="#" className="bg-blue-500 text-white font-bold px-8 py-3 rounded-lg hover:bg-blue-400 transition-colors">
                 Book Strategy Call (£0)
               </Link>
-              <Link href="#" className="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition-colors">
+              <Link href="#" className="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white hover:text-dark transition-colors">
                 View Pricing
               </Link>
             </div>
             
-            <p className="text-xs text-gray-400 mt-4">
+            <p className="text-xs text-muted mt-4">
               30-minute strategy call to discuss your specific needs. 
               No obligation, no sales pressure.
             </p>

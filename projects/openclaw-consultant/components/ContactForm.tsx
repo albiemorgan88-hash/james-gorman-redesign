@@ -63,8 +63,8 @@ export default function ContactForm() {
             id="name"
             name="name"
             required
-            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-btn text-white placeholder:text-white/30 focus:outline-none focus:border-orange/50 focus:ring-1 focus:ring-orange/30 transition-all"
-            placeholder="Phil Patterson"
+            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:outline-none focus:border-orange/50 focus:ring-2 focus:ring-orange/20 transition-all"
+            placeholder="Your full name"
           />
         </div>
         <div>
@@ -76,7 +76,7 @@ export default function ContactForm() {
             id="email"
             name="email"
             required
-            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-btn text-white placeholder:text-white/30 focus:outline-none focus:border-orange/50 focus:ring-1 focus:ring-orange/30 transition-all"
+            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:outline-none focus:border-orange/50 focus:ring-2 focus:ring-orange/20 transition-all"
             placeholder="you@company.co.uk"
           />
         </div>
@@ -89,7 +89,7 @@ export default function ContactForm() {
           type="text"
           id="company"
           name="company"
-          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-btn text-white placeholder:text-white/30 focus:outline-none focus:border-orange/50 focus:ring-1 focus:ring-orange/30 transition-all"
+          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:outline-none focus:border-orange/50 focus:ring-2 focus:ring-orange/20 transition-all"
           placeholder="Your company name"
         />
       </div>
@@ -102,14 +102,14 @@ export default function ContactForm() {
           name="message"
           rows={4}
           required
-          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-btn text-white placeholder:text-white/30 focus:outline-none focus:border-orange/50 focus:ring-1 focus:ring-orange/30 transition-all resize-none"
+          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:outline-none focus:border-orange/50 focus:ring-2 focus:ring-orange/20 transition-all resize-none"
           placeholder="Tell us about your business and what you'd like OpenClaw to do..."
         />
       </div>
       <button
         type="submit"
         disabled={loading}
-        className="w-full sm:w-auto bg-orange text-white px-8 py-3.5 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full sm:w-auto bg-orange text-white px-8 py-3.5 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {loading ? "Sending..." : "Book Free Consultation →"}
       </button>

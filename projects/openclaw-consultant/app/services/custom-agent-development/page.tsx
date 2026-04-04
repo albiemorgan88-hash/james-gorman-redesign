@@ -166,13 +166,13 @@ export default function CustomAgentDevelopmentPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 Discuss Your Project
               </a>
               <a
                 href="/"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 ← Back to Home
               </a>
@@ -195,17 +195,17 @@ export default function CustomAgentDevelopmentPage() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">🔌</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Integration Gaps</h3>
                 <p className="text-muted text-sm">Your tools don&apos;t talk to each other. Manual data transfer and context switching waste hours daily.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">📝</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Custom Processes</h3>
                 <p className="text-muted text-sm">Your workflows are unique. Generic AI tools can&apos;t understand your specific business logic and rules.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">🔒</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Data Silos</h3>
                 <p className="text-muted text-sm">Critical business data locked in different systems with no intelligent way to connect and analyze it.</p>
@@ -216,7 +216,7 @@ export default function CustomAgentDevelopmentPage() {
       </section>
 
       {/* Development Services */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -232,7 +232,7 @@ export default function CustomAgentDevelopmentPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {developmentServices.map((service) => (
-              <div key={service.title} className="bg-surface rounded-box p-8 card-lift">
+              <div key={service.title} className="bg-surface rounded-2xl p-8 card-lift">
                 <div className="flex gap-4 items-start mb-6">
                   <div className="text-3xl">{service.icon}</div>
                   <div>
@@ -279,7 +279,7 @@ export default function CustomAgentDevelopmentPage() {
                 <h3 className="font-heading font-bold text-2xl text-dark mb-6">{category.category}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {category.skills.map((skill) => (
-                    <div key={skill.name} className="bg-white rounded-box p-6 shadow-card card-lift">
+                    <div key={skill.name} className="bg-white rounded-2xl p-6 shadow-card card-lift">
                       <h4 className="font-heading font-bold text-lg text-dark mb-2">{skill.name}</h4>
                       <p className="text-muted text-sm leading-relaxed">{skill.desc}</p>
                     </div>
@@ -333,7 +333,7 @@ export default function CustomAgentDevelopmentPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-6">Technical Capabilities</h3>
               <div className="grid grid-cols-2 gap-3">
                 {technicalCapabilities.map((capability) => (
@@ -349,7 +349,7 @@ export default function CustomAgentDevelopmentPage() {
       </section>
 
       {/* Development Process */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -365,7 +365,7 @@ export default function CustomAgentDevelopmentPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {developmentProcess.map((step, index) => (
-              <div key={index} className="bg-surface rounded-box p-6 shadow-card relative">
+              <div key={index} className="bg-surface rounded-2xl p-6 shadow-card relative">
                 <div className="absolute -top-3 -left-3 bg-orange text-white font-bold text-lg w-8 h-8 rounded-full flex items-center justify-center text-sm">
                   {index + 1}
                 </div>
@@ -401,7 +401,7 @@ export default function CustomAgentDevelopmentPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1000px] mx-auto">
-            <div className="bg-white rounded-box p-8 border border-border card-lift">
+            <div className="bg-white rounded-2xl p-8 border border-border card-lift">
               <div className="text-sm font-semibold text-muted uppercase tracking-wider mb-6">
                 Simple Integration
               </div>
@@ -424,13 +424,13 @@ export default function CustomAgentDevelopmentPage() {
               </ul>
               <a
                 href="#contact"
-                className="block text-center bg-dark text-white px-6 py-3 rounded-btn font-semibold text-sm hover:bg-dark/90 transition-all"
+                className="block text-center bg-dark text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-dark/90 transition-all"
               >
                 Get Quote
               </a>
             </div>
 
-            <div className="bg-navy text-white rounded-box p-8 border-2 border-orange/30 card-lift relative">
+            <div className="bg-navy text-white rounded-2xl p-8 border-2 border-orange/30 card-lift relative">
               <div className="absolute -top-3 left-6 bg-orange text-white text-xs font-bold px-3 py-1 rounded-full">
                 Most Popular
               </div>
@@ -459,13 +459,13 @@ export default function CustomAgentDevelopmentPage() {
               </ul>
               <a
                 href="#contact"
-                className="block text-center bg-orange text-white px-6 py-3 rounded-btn font-semibold text-sm hover:bg-orange-hover transition-all"
+                className="block text-center bg-orange text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-orange-hover transition-all"
               >
                 Discuss Project
               </a>
             </div>
 
-            <div className="bg-white rounded-box p-8 border border-border card-lift">
+            <div className="bg-white rounded-2xl p-8 border border-border card-lift">
               <div className="text-sm font-semibold text-muted uppercase tracking-wider mb-6">
                 Enterprise System
               </div>
@@ -491,7 +491,7 @@ export default function CustomAgentDevelopmentPage() {
               </ul>
               <a
                 href="#contact"
-                className="block text-center bg-dark text-white px-6 py-3 rounded-btn font-semibold text-sm hover:bg-dark/90 transition-all"
+                className="block text-center bg-dark text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-dark/90 transition-all"
               >
                 Book Discovery
               </a>
@@ -564,7 +564,7 @@ export default function CustomAgentDevelopmentPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Discuss Your Project →
           </a>
@@ -607,7 +607,7 @@ export default function CustomAgentDevelopmentPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Project Discovery Call</h3>
               <p className="text-white/40 text-sm mb-6">Tell us about your automation requirements</p>
               <ContactForm />

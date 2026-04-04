@@ -63,11 +63,11 @@ export default function AICustomerOnboardingPage() {
       <article className="py-16 bg-white">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               Companies implementing AI-powered customer onboarding see average time-to-value reductions of 75% and satisfaction score improvements of 42%. From intelligent document processing to personalised journey orchestration, AI is revolutionising how businesses welcome and activate new customers.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This comprehensive guide shows businesses exactly how to implement AI-powered onboarding solutions that accelerate customer success. Learn from successful implementations across SaaS, financial services, e-commerce, and professional services sectors.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function AICustomerOnboardingPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">75%</div>
-                <div className="text-slate-600 text-sm">Faster time-to-value</div>
+                <div className="text-muted-dark text-sm">Faster time-to-value</div>
               </div>
               
               <div className="text-center">
@@ -93,7 +93,7 @@ export default function AICustomerOnboardingPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">89%</div>
-                <div className="text-slate-600 text-sm">Completion rate increase</div>
+                <div className="text-muted-dark text-sm">Completion rate increase</div>
               </div>
               
               <div className="text-center">
@@ -103,7 +103,7 @@ export default function AICustomerOnboardingPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">68%</div>
-                <div className="text-slate-600 text-sm">Support ticket reduction</div>
+                <div className="text-muted-dark text-sm">Support ticket reduction</div>
               </div>
               
               <div className="text-center">
@@ -113,7 +113,7 @@ export default function AICustomerOnboardingPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">94%</div>
-                <div className="text-slate-600 text-sm">Customer satisfaction score</div>
+                <div className="text-muted-dark text-sm">Customer satisfaction score</div>
               </div>
             </div>
 
@@ -122,8 +122,8 @@ export default function AICustomerOnboardingPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Intelligent Journey Orchestration</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">AI-Powered Features:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">AI-Powered Features:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Dynamic workflow adaptation based on customer profile</li>
                       <li>• Personalised onboarding paths and sequences</li>
                       <li>• Intelligent step progression and pacing</li>
@@ -132,8 +132,8 @@ export default function AICustomerOnboardingPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Business Impact:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Business Impact:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 70-85% improvement in completion rates</li>
                       <li>• 50-75% reduction in time-to-first-value</li>
                       <li>• 40-60% increase in feature adoption</li>
@@ -148,8 +148,8 @@ export default function AICustomerOnboardingPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Document Processing & Verification</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Automation Capabilities:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Automation Capabilities:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Intelligent document upload and classification</li>
                       <li>• Automated data extraction and validation</li>
                       <li>• Real-time identity and compliance verification</li>
@@ -158,8 +158,8 @@ export default function AICustomerOnboardingPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Operational Benefits:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Operational Benefits:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 90-95% reduction in manual data entry</li>
                       <li>• 80-90% faster document processing</li>
                       <li>• 95-99% accuracy in data extraction</li>
@@ -174,8 +174,8 @@ export default function AICustomerOnboardingPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Proactive Support & Guidance</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">AI Support Features:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">AI Support Features:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Contextual chatbots and virtual assistants</li>
                       <li>• Predictive issue identification and resolution</li>
                       <li>• Automated progress check-ins and nudges</li>
@@ -184,8 +184,8 @@ export default function AICustomerOnboardingPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Customer Experience:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Customer Experience:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 24/7 instant support availability</li>
                       <li>• 85-95% self-service resolution rate</li>
                       <li>• 60-80% reduction in support tickets</li>
@@ -202,11 +202,11 @@ export default function AICustomerOnboardingPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">AI Onboarding Success Stories</h2>
             
             <div className="space-y-8">
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">SaaS Platform</h3>
-                    <p className="text-slate-600 text-sm">B2B project management software with 50,000+ users</p>
+                    <p className="text-muted-dark text-sm">B2B project management software with 50,000+ users</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     560% ROI
@@ -214,38 +214,38 @@ export default function AICustomerOnboardingPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Complex product requiring extensive setup, low completion rates, and high early churn from confused new users</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Complex product requiring extensive setup, low completion rates, and high early churn from confused new users</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">AI Solution:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Implemented intelligent onboarding flows, contextual guidance, and predictive assistance based on user behaviour</p>
+                  <h4 className="font-semibold text-dark mb-2">AI Solution:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Implemented intelligent onboarding flows, contextual guidance, and predictive assistance based on user behaviour</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Completion Rate</div>
+                    <div className="text-sm font-medium text-muted mb-1">Completion Rate</div>
                     <div className="text-green-700 font-semibold text-sm">89% (+73%)</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Time-to-Value</div>
+                    <div className="text-sm font-medium text-muted mb-1">Time-to-Value</div>
                     <div className="text-green-700 font-semibold text-sm">78% faster</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">30-Day Retention</div>
+                    <div className="text-sm font-medium text-muted mb-1">30-Day Retention</div>
                     <div className="text-green-700 font-semibold text-sm">+45%</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Support Tickets</div>
+                    <div className="text-sm font-medium text-muted mb-1">Support Tickets</div>
                     <div className="text-green-700 font-semibold text-sm">-67%</div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">Financial Services</h3>
-                    <p className="text-slate-600 text-sm">Digital banking platform serving UK SME customers</p>
+                    <p className="text-muted-dark text-sm">Digital banking platform serving UK SME customers</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     420% ROI
@@ -253,28 +253,28 @@ export default function AICustomerOnboardingPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Regulatory compliance requirements, complex KYC processes, and lengthy account activation times frustrating business customers</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Regulatory compliance requirements, complex KYC processes, and lengthy account activation times frustrating business customers</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">AI Solution:</h4>
-                  <p className="text-slate-600 text-sm mb-4">AI-powered document processing, automated compliance checks, and personalised onboarding journeys</p>
+                  <h4 className="font-semibold text-dark mb-2">AI Solution:</h4>
+                  <p className="text-muted-dark text-sm mb-4">AI-powered document processing, automated compliance checks, and personalised onboarding journeys</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Onboarding Time</div>
+                    <div className="text-sm font-medium text-muted mb-1">Onboarding Time</div>
                     <div className="text-green-700 font-semibold text-sm">From 14 to 2 days</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Document Accuracy</div>
+                    <div className="text-sm font-medium text-muted mb-1">Document Accuracy</div>
                     <div className="text-green-700 font-semibold text-sm">99.2%</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Customer Satisfaction</div>
+                    <div className="text-sm font-medium text-muted mb-1">Customer Satisfaction</div>
                     <div className="text-green-700 font-semibold text-sm">4.7/5</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Drop-off Rate</div>
+                    <div className="text-sm font-medium text-muted mb-1">Drop-off Rate</div>
                     <div className="text-green-700 font-semibold text-sm">-82%</div>
                   </div>
                 </div>
@@ -289,7 +289,7 @@ export default function AICustomerOnboardingPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Getting Started</h3>
-                  <div className="space-y-3 text-slate-600 text-sm">
+                  <div className="space-y-3 text-muted-dark text-sm">
                     <div className="flex items-start gap-3">
                       <input type="checkbox" className="mt-1" />
                       <span>Map current onboarding journey and identify friction points</span>
@@ -313,8 +313,8 @@ export default function AICustomerOnboardingPage() {
                   </div>
 
                   <div className="mt-6">
-                    <h4 className="font-semibold text-slate-800 mb-3">Expert Support:</h4>
-                    <div className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Expert Support:</h4>
+                    <div className="space-y-2 text-muted-dark text-sm">
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas AI consultancy</a> for onboarding AI strategy</span>
@@ -331,20 +331,20 @@ export default function AICustomerOnboardingPage() {
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Success Factors</h3>
                   <div className="space-y-4">
                     <div className="border-l-4 border-orange pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Customer Data Unity</h4>
-                      <p className="text-slate-600 text-sm">Integrated customer data across all touchpoints enables personalisation</p>
+                      <h4 className="font-medium text-dark mb-1">Customer Data Unity</h4>
+                      <p className="text-muted-dark text-sm">Integrated customer data across all touchpoints enables personalisation</p>
                     </div>
                     <div className="border-l-4 border-blue pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Gradual Implementation</h4>
-                      <p className="text-slate-600 text-sm">Phased rollout allows for optimisation and staff adaptation</p>
+                      <h4 className="font-medium text-dark mb-1">Gradual Implementation</h4>
+                      <p className="text-muted-dark text-sm">Phased rollout allows for optimisation and staff adaptation</p>
                     </div>
                     <div className="border-l-4 border-green-500 pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Human Handoff</h4>
-                      <p className="text-slate-600 text-sm">Seamless escalation to human support when AI reaches limits</p>
+                      <h4 className="font-medium text-dark mb-1">Human Handoff</h4>
+                      <p className="text-muted-dark text-sm">Seamless escalation to human support when AI reaches limits</p>
                     </div>
                     <div className="border-l-4 border-purple pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Continuous Learning</h4>
-                      <p className="text-slate-600 text-sm">Regular analysis and refinement improve performance over time</p>
+                      <h4 className="font-medium text-dark mb-1">Continuous Learning</h4>
+                      <p className="text-muted-dark text-sm">Regular analysis and refinement improve performance over time</p>
                     </div>
                   </div>
                 </div>
@@ -357,51 +357,51 @@ export default function AICustomerOnboardingPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">AI Customer Onboarding FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What are the most effective AI applications for customer onboarding?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Most effective applications include intelligent journey orchestration (70-85% completion rate increase), document processing automation (90-95% manual entry reduction), proactive support chatbots (60-80% ticket reduction), and predictive intervention systems. Start with workflow automation for immediate efficiency gains.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How much should companies invest in AI-powered onboarding?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Investment varies by customer volume: startups (100-1K customers): £10K-£50K annually. Growing businesses (1K-10K): £50K-£200K. Enterprise (10K+): £200K-£1M+. Most companies see positive ROI within 6-12 months with 300-600% returns over 3 years.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How does AI onboarding improve customer experience without feeling impersonal?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   AI personalises experiences by adapting to individual customer needs, providing relevant guidance, and connecting customers with human support when needed. This creates more helpful, efficient onboarding whilst freeing staff to focus on relationship building and complex issues.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What customer data is needed for effective onboarding AI?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Essential data includes customer profile information, behavioural analytics, support interactions, product usage patterns, and journey completion metrics. Integration with CRM, product analytics, and support platforms creates comprehensive customer understanding for personalisation.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How quickly can businesses see ROI from onboarding AI investments?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   ROI timeline varies by implementation: chatbots (1-3 months), document automation (2-6 months), journey orchestration (3-9 months). Most businesses achieve positive returns within 9 months, with full benefits realised over 12-18 months as AI learns and optimises.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Should companies build onboarding AI internally or use external providers?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Most companies benefit from partnering with specialists like Blue Canvas for strategy and implementation, using proven onboarding AI platforms, and developing internal capabilities for ongoing optimisation. This approach balances speed, expertise, and cost control.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How does AI impact customer success team roles and responsibilities?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   AI enhances customer success teams by automating routine tasks and enabling focus on strategic relationship building, complex problem solving, and proactive customer growth initiatives. Teams typically see increased productivity and higher-value work rather than job displacement.
                 </p>
               </div>
@@ -422,7 +422,7 @@ export default function AICustomerOnboardingPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Onboarding AI Assessment
           </a>
@@ -432,23 +432,23 @@ export default function AICustomerOnboardingPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-customer-service-automation-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-customer-service-automation-uk" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Customer Service Automation UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-appointment-booking" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-appointment-booking" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Appointment Booking for Business</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -456,13 +456,13 @@ export default function AICustomerOnboardingPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Accelerate Customer Success with AI
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a consultation to discuss how AI can transform your customer onboarding and activation processes.
             </p>
           </div>

@@ -389,13 +389,13 @@ export default function OpenClawForTeamsPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#deployment-options"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 Explore Team Options
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 Get Team Setup Help ↓
               </a>
@@ -418,17 +418,17 @@ export default function OpenClawForTeamsPage() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">🤝</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Collaborative Intelligence</h3>
                 <p className="text-muted text-sm">Agents share knowledge and context, building on each other&apos;s work for compound productivity gains.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">⚡</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Parallel Processing</h3>
                 <p className="text-muted text-sm">Multiple agents work simultaneously on different aspects of complex tasks, dramatically reducing completion time.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">🎯</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Specialized Expertise</h3>
                 <p className="text-muted text-sm">Each agent can be optimized for specific functions while contributing to larger team objectives.</p>
@@ -439,7 +439,7 @@ export default function OpenClawForTeamsPage() {
       </section>
 
       {/* Team Deployment Options Section */}
-      <section id="deployment-options" className="bg-white py-24">
+      <section id="deployment-options" className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -455,7 +455,7 @@ export default function OpenClawForTeamsPage() {
 
           <div className="space-y-12">
             {teamDeploymentOptions.map((option, index) => (
-              <div key={index} className="bg-surface rounded-box p-8">
+              <div key={index} className="bg-surface rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-2xl text-dark mb-4">{option.approach}</h3>
                 <p className="text-muted text-lg leading-relaxed mb-6">{option.description}</p>
                 <p className="text-muted-dark text-sm mb-8 font-medium">Setup: {option.setup}</p>
@@ -516,7 +516,7 @@ export default function OpenClawForTeamsPage() {
 
           <div className="space-y-12">
             {orchestrationPatterns.map((pattern, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="font-heading font-bold text-xl text-dark">{pattern.pattern}</h3>
                   <span className="bg-orange/10 text-orange text-xs font-semibold px-2 py-1 rounded">
@@ -582,7 +582,7 @@ export default function OpenClawForTeamsPage() {
       </section>
 
       {/* Team Permissions Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -595,7 +595,7 @@ export default function OpenClawForTeamsPage() {
 
           <div className="space-y-12">
             {teamPermissionModels.map((model, index) => (
-              <div key={index} className="bg-surface rounded-box p-8">
+              <div key={index} className="bg-surface rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-2xl text-dark mb-4">{model.model}</h3>
                 <p className="text-muted text-lg leading-relaxed mb-8">{model.description}</p>
                 
@@ -604,7 +604,7 @@ export default function OpenClawForTeamsPage() {
                     <h4 className="font-heading font-bold text-dark mb-4">Team Roles & Permissions</h4>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {model.roles.map((role, idx) => (
-                        <div key={idx} className="bg-white rounded-box p-6">
+                        <div key={idx} className="bg-white rounded-2xl p-6">
                           <h5 className="font-semibold text-dark mb-3">{role.role}</h5>
                           <ul className="space-y-1">
                             {role.permissions.map((permission, permIdx) => (
@@ -692,7 +692,7 @@ export default function OpenClawForTeamsPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {communicationPatterns.map((pattern, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-4">{pattern.pattern}</h3>
                 <p className="text-muted leading-relaxed mb-6">{pattern.description}</p>
                 
@@ -743,7 +743,7 @@ export default function OpenClawForTeamsPage() {
       </section>
 
       {/* Scaling Strategies Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -756,7 +756,7 @@ export default function OpenClawForTeamsPage() {
 
           <div className="space-y-8">
             {scalingStrategies.map((strategy, index) => (
-              <div key={index} className="bg-surface rounded-box p-8">
+              <div key={index} className="bg-surface rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl text-dark mb-3">{strategy.strategy}</h3>
                 <p className="text-muted leading-relaxed mb-6">{strategy.description}</p>
                 
@@ -822,7 +822,7 @@ export default function OpenClawForTeamsPage() {
 
           <div className="space-y-12">
             {bestPractices.map((category, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-2xl text-dark mb-6">{category.category}</h3>
                 
                 <div className="space-y-8">
@@ -849,7 +849,7 @@ export default function OpenClawForTeamsPage() {
       </section>
 
       {/* Troubleshooting Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -862,7 +862,7 @@ export default function OpenClawForTeamsPage() {
 
           <div className="space-y-8">
             {troubleshooting.map((issue, index) => (
-              <div key={index} className="bg-light rounded-box p-8">
+              <div key={index} className="bg-light rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl text-dark mb-4">{issue.problem}</h3>
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -978,7 +978,7 @@ export default function OpenClawForTeamsPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Get Team Deployment Help →
           </a>
@@ -988,23 +988,23 @@ export default function OpenClawForTeamsPage() {
       {/* Contact Section */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-agent-team" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-agent-team" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">Build an OpenClaw Agent Team</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-agent-team-setup" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-agent-team-setup" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Agent Team Setup Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -1047,7 +1047,7 @@ export default function OpenClawForTeamsPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Team Deployment Consultation</h3>
               <p className="text-white/40 text-sm mb-6">Tell us about your team OpenClaw requirements</p>
               <ContactForm />

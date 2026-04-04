@@ -230,13 +230,13 @@ export default function TrainingAndSupportPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 Book Training Session
               </a>
               <a
                 href="/"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 ← Back to Home
               </a>
@@ -259,17 +259,17 @@ export default function TrainingAndSupportPage() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">😰</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Team Frustration</h3>
                 <p className="text-muted text-sm">Your team struggles to get agents to work properly, leading to abandoned automation attempts.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">🔧</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Technical Issues</h3>
                 <p className="text-muted text-sm">When problems occur, no one knows how to fix them, causing downtime and lost productivity.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">📈</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Untapped Potential</h3>
                 <p className="text-muted text-sm">Your OpenClaw system could automate much more, but no one knows how to identify or implement new opportunities.</p>
@@ -280,7 +280,7 @@ export default function TrainingAndSupportPage() {
       </section>
 
       {/* Training Services */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -296,7 +296,7 @@ export default function TrainingAndSupportPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {trainingServices.map((service) => (
-              <div key={service.title} className="bg-surface rounded-box p-8 card-lift">
+              <div key={service.title} className="bg-surface rounded-2xl p-8 card-lift">
                 <div className="flex gap-4 items-start mb-6">
                   <div className="text-3xl">{service.icon}</div>
                   <div className="flex-1">
@@ -349,10 +349,10 @@ export default function TrainingAndSupportPage() {
             {supportPackages.map((pkg) => (
               <div
                 key={pkg.name}
-                className={`rounded-box p-8 card-lift relative ${
+                className={`rounded-2xl p-8 card-lift relative ${
                   pkg.popular
                     ? "bg-navy text-white border-2 border-orange/30"
-                    : "bg-white border border-border"
+                    : "bg-white border border-border-light"
                 }`}
               >
                 {pkg.popular && (
@@ -417,7 +417,7 @@ export default function TrainingAndSupportPage() {
                 
                 <a
                   href="#contact"
-                  className={`block text-center px-6 py-3 rounded-btn font-semibold text-sm transition-all ${
+                  className={`block text-center px-6 py-3 rounded-xl font-semibold text-sm transition-all ${
                     pkg.popular
                       ? "bg-orange text-white hover:bg-orange-hover"
                       : "bg-dark text-white hover:bg-dark/90"
@@ -432,7 +432,7 @@ export default function TrainingAndSupportPage() {
       </section>
 
       {/* Support Areas */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -452,7 +452,7 @@ export default function TrainingAndSupportPage() {
                 <h3 className="font-heading font-bold text-2xl text-dark mb-6">{area.category}</h3>
                 <div className="space-y-4">
                   {area.services.map((service) => (
-                    <div key={service.name} className="bg-surface rounded-box p-6 card-lift">
+                    <div key={service.name} className="bg-surface rounded-2xl p-6 card-lift">
                       <h4 className="font-heading font-bold text-lg text-dark mb-2">{service.name}</h4>
                       <p className="text-muted text-sm">{service.desc}</p>
                     </div>
@@ -483,7 +483,7 @@ export default function TrainingAndSupportPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {trainingOutcomes.map((outcome) => (
-              <div key={outcome.outcome} className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+              <div key={outcome.outcome} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl text-white mb-3">{outcome.outcome}</h3>
                 <p className="text-white/60 leading-relaxed mb-6">{outcome.description}</p>
                 
@@ -521,7 +521,7 @@ export default function TrainingAndSupportPage() {
 
           <div className="space-y-6">
             {commonIssues.map((item, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-start">
                   <div>
                     <h3 className="font-heading font-bold text-lg text-dark mb-2">{item.issue}</h3>
@@ -541,7 +541,7 @@ export default function TrainingAndSupportPage() {
                   <div>
                     <a
                       href="#contact"
-                      className="block text-center bg-orange text-white px-4 py-2 rounded-btn font-medium text-sm hover:bg-orange-hover transition-all"
+                      className="block text-center bg-orange text-white px-4 py-2 rounded-xl font-medium text-sm hover:bg-orange-hover transition-all"
                     >
                       Get Support
                     </a>
@@ -617,7 +617,7 @@ export default function TrainingAndSupportPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Book Training Session →
           </a>
@@ -660,7 +660,7 @@ export default function TrainingAndSupportPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Training & Support Consultation</h3>
               <p className="text-white/40 text-sm mb-6">Tell us about your team and support needs</p>
               <ContactForm />

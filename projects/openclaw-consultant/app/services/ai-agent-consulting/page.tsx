@@ -134,13 +134,13 @@ export default function AIAgentConsultingPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 Book Strategy Session
               </a>
               <a
                 href="/"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 ← Back to Home
               </a>
@@ -163,17 +163,17 @@ export default function AIAgentConsultingPage() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">📊</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Manual Processes</h3>
                 <p className="text-muted text-sm">Repetitive tasks eating 20-40% of your team&apos;s time that could be automated.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">💡</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Unclear Strategy</h3>
                 <p className="text-muted text-sm">No clear plan for which AI tools to use or how to integrate them effectively.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">⚡</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Implementation Gaps</h3>
                 <p className="text-muted text-sm">AI projects that start with enthusiasm but fail to deliver real business value.</p>
@@ -184,7 +184,7 @@ export default function AIAgentConsultingPage() {
       </section>
 
       {/* Consulting Services */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -200,7 +200,7 @@ export default function AIAgentConsultingPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {consultingAreas.map((area) => (
-              <div key={area.title} className="bg-surface rounded-box p-8 card-lift">
+              <div key={area.title} className="bg-surface rounded-2xl p-8 card-lift">
                 <div className="flex gap-4 items-start mb-6">
                   <div className="text-3xl">{area.icon}</div>
                   <div>
@@ -245,7 +245,7 @@ export default function AIAgentConsultingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {industries.map((industry) => (
-              <div key={industry.industry} className="bg-white/[0.03] border border-white/[0.06] rounded-box p-6">
+              <div key={industry.industry} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6">
                 <h3 className="font-heading font-bold text-lg text-white mb-3">{industry.industry}</h3>
                 <div className="space-y-2 mb-4">
                   {industry.useCases.map((useCase) => (
@@ -281,7 +281,7 @@ export default function AIAgentConsultingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {processSteps.map((step, index) => (
-              <div key={index} className="bg-white rounded-box p-6 shadow-card relative">
+              <div key={index} className="bg-white rounded-2xl p-6 shadow-card relative">
                 <div className="absolute -top-3 -left-3 bg-orange text-white font-bold text-lg w-8 h-8 rounded-full flex items-center justify-center text-sm">
                   {index + 1}
                 </div>
@@ -302,9 +302,9 @@ export default function AIAgentConsultingPage() {
       </section>
 
       {/* Case Study Preview */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
-          <div className="bg-surface rounded-box p-8 lg:p-12">
+          <div className="bg-surface rounded-2xl p-8 lg:p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -342,7 +342,7 @@ export default function AIAgentConsultingPage() {
                 </div>
               </div>
               
-              <div className="bg-navy text-white rounded-box p-8">
+              <div className="bg-navy text-white rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl mb-6">Results</h3>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
@@ -367,7 +367,7 @@ export default function AIAgentConsultingPage() {
                   <p className="text-white/70 text-sm italic">
                     &quot;If our agents stop working, we feel it immediately. That&apos;s the level of integration you want in your business.&quot;
                   </p>
-                  <p className="text-orange text-sm font-semibold mt-2">— Phil Patterson, Founder</p>
+                  <p className="text-orange text-sm font-semibold mt-2">— Blue Canvas, Founder</p>
                 </div>
               </div>
             </div>
@@ -439,7 +439,7 @@ export default function AIAgentConsultingPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Book Strategy Session →
           </a>
@@ -482,7 +482,7 @@ export default function AIAgentConsultingPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Book Strategy Session</h3>
               <p className="text-white/40 text-sm mb-6">Tell us about your business and automation goals</p>
               <ContactForm />

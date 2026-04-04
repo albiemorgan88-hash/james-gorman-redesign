@@ -142,13 +142,13 @@ export default function SetupConfigurationPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 Get Your Quote
               </a>
               <a
                 href="#process"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 See Process ↓
               </a>
@@ -171,17 +171,17 @@ export default function SetupConfigurationPage() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">⚠️</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Gateway Issues</h3>
                 <p className="text-muted text-sm">Complex networking, SSL certificates, and daemon management that breaks silently.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">💸</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Model Costs</h3>
                 <p className="text-muted text-sm">Poor routing configuration leads to expensive model calls and slow response times.</p>
               </div>
-              <div className="bg-white rounded-box p-6 shadow-card">
+              <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">🔒</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Security Gaps</h3>
                 <p className="text-muted text-sm">Exposed endpoints, weak authentication, and unencrypted data storage.</p>
@@ -192,7 +192,7 @@ export default function SetupConfigurationPage() {
       </section>
 
       {/* Solution Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -203,7 +203,7 @@ export default function SetupConfigurationPage() {
                 Production-Ready OpenClaw From Day One
               </h2>
               <p className="text-muted text-lg leading-relaxed mb-8">
-                Skip the weeks of trial and error. Phil Patterson has built and deployed dozens of OpenClaw systems for UK businesses. You get a battle-tested setup that works immediately.
+                Skip the weeks of trial and error. Blue Canvas has built and deployed dozens of OpenClaw systems for UK businesses. You get a battle-tested setup that works immediately.
               </p>
               
               <div className="space-y-4">
@@ -231,7 +231,7 @@ export default function SetupConfigurationPage() {
               </div>
             </div>
 
-            <div className="bg-surface rounded-box p-8">
+            <div className="bg-surface rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-dark mb-6">What&apos;s Included</h3>
               <div className="space-y-3">
                 {technicalFeatures.map((feature) => (
@@ -267,7 +267,7 @@ export default function SetupConfigurationPage() {
                 <div className="bg-orange text-white font-bold text-lg w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                   {step.step}
                 </div>
-                <div className="flex-1 bg-white rounded-box p-8 shadow-card">
+                <div className="flex-1 bg-white rounded-2xl p-8 shadow-card">
                   <h3 className="font-heading font-bold text-xl text-dark mb-2">{step.title}</h3>
                   <p className="text-muted leading-relaxed">{step.desc}</p>
                 </div>
@@ -278,7 +278,7 @@ export default function SetupConfigurationPage() {
       </section>
 
       {/* Packages Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
@@ -296,10 +296,10 @@ export default function SetupConfigurationPage() {
             {packages.map((pkg) => (
               <div
                 key={pkg.name}
-                className={`rounded-box p-8 card-lift relative ${
+                className={`rounded-2xl p-8 card-lift relative ${
                   pkg.popular
                     ? "bg-navy text-white border-2 border-orange/30"
-                    : "bg-surface border border-border"
+                    : "bg-surface border border-border-light"
                 }`}
               >
                 {pkg.popular && (
@@ -337,7 +337,7 @@ export default function SetupConfigurationPage() {
                 
                 <a
                   href="#contact"
-                  className={`block text-center px-6 py-3 rounded-btn font-semibold text-sm transition-all ${
+                  className={`block text-center px-6 py-3 rounded-xl font-semibold text-sm transition-all ${
                     pkg.popular
                       ? "bg-orange text-white hover:bg-orange-hover"
                       : "bg-dark text-white hover:bg-dark/90"
@@ -415,7 +415,7 @@ export default function SetupConfigurationPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Book Free Consultation →
           </a>
@@ -458,7 +458,7 @@ export default function SetupConfigurationPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Get Your Quote</h3>
               <p className="text-white/40 text-sm mb-6">Tell us about your OpenClaw requirements</p>
               <ContactForm />

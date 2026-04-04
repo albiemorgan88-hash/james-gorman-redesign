@@ -59,8 +59,8 @@ export default function QuickContactForm() {
             id="quick-name"
             name="name"
             required
-            className="w-full px-4 py-3.5 bg-gray-50 border-2 border-gray-200 rounded-lg text-dark placeholder:text-muted focus:outline-none focus:border-orange focus:ring-2 focus:ring-orange/20 focus:bg-white transition-all"
-            placeholder="Phil Patterson"
+            className="w-full px-4 py-3.5 bg-cream border border-border rounded-xl text-dark placeholder:text-muted focus:outline-none focus:border-orange focus:ring-2 focus:ring-orange/15 focus:bg-white transition-all"
+            placeholder="Your full name"
           />
         </div>
         <div>
@@ -72,7 +72,7 @@ export default function QuickContactForm() {
             id="quick-email"
             name="email"
             required
-            className="w-full px-4 py-3.5 bg-gray-50 border-2 border-gray-200 rounded-lg text-dark placeholder:text-muted focus:outline-none focus:border-orange focus:ring-2 focus:ring-orange/20 focus:bg-white transition-all"
+            className="w-full px-4 py-3.5 bg-cream border border-border rounded-xl text-dark placeholder:text-muted focus:outline-none focus:border-orange focus:ring-2 focus:ring-orange/15 focus:bg-white transition-all"
             placeholder="you@company.co.uk"
           />
         </div>
@@ -86,7 +86,7 @@ export default function QuickContactForm() {
           type="text"
           id="quick-company"
           name="company"
-          className="w-full px-4 py-3.5 bg-gray-50 border-2 border-gray-200 rounded-lg text-dark placeholder:text-muted focus:outline-none focus:border-orange focus:ring-2 focus:ring-orange/20 focus:bg-white transition-all"
+          className="w-full px-4 py-3.5 bg-cream border border-border rounded-xl text-dark placeholder:text-muted focus:outline-none focus:border-orange focus:ring-2 focus:ring-orange/15 focus:bg-white transition-all"
           placeholder="Your company name"
         />
       </div>
@@ -100,7 +100,7 @@ export default function QuickContactForm() {
           name="message"
           rows={4}
           required
-          className="w-full px-4 py-3.5 bg-gray-50 border-2 border-gray-200 rounded-lg text-dark placeholder:text-muted focus:outline-none focus:border-orange focus:ring-2 focus:ring-orange/20 focus:bg-white transition-all resize-none"
+          className="w-full px-4 py-3.5 bg-cream border border-border rounded-xl text-dark placeholder:text-muted focus:outline-none focus:border-orange focus:ring-2 focus:ring-orange/15 focus:bg-white transition-all resize-none"
           placeholder="Tell us about your business, current challenges, or what you'd like OpenClaw to automate..."
         />
       </div>
@@ -108,7 +108,7 @@ export default function QuickContactForm() {
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-gradient-to-r from-orange to-orange-600 text-white px-8 py-4 rounded-lg font-bold text-base hover:from-orange-600 hover:to-orange-700 transition-all transform hover:-translate-y-0.5 shadow-lg hover:shadow-xl disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none"
+        className="w-full bg-gradient-to-r from-orange to-orange-600 text-white px-8 py-4 rounded-xl font-bold text-base hover:from-orange-600 hover:to-orange-700 hover:-translate-y-0.5 transition-all transform hover:-translate-y-0.5 shadow-lg hover:shadow-xl disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none"
       >
         {loading ? (
           <span className="flex items-center justify-center gap-2">

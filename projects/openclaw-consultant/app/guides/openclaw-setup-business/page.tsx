@@ -30,7 +30,7 @@ const jsonLd = {
   "description": "Complete guide to setting up OpenClaw for business use, comparing professional installation vs DIY approaches",
   "author": {
     "@type": "Person",
-    "name": "Phil Patterson"
+    "name": "Blue Canvas"
   },
   "publisher": {
     "@type": "Organization",
@@ -87,7 +87,7 @@ const setupComparison = [
     },
     professional: {
       title: "Direct Expert Support",
-      details: "Direct line to Phil Patterson. Issues resolved quickly by someone who knows your setup",
+      details: "Direct line to Blue Canvas. Issues resolved quickly by someone who knows your setup",
       pain: "Low"
     }
   },
@@ -302,10 +302,10 @@ export default function OpenClawSetupBusinessPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#comparison" className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange">
+              <a href="#comparison" className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange">
                 Compare Options
               </a>
-              <a href="#contact" className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10">
+              <a href="#contact" className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10">
                 Get Expert Help →
               </a>
             </div>
@@ -313,7 +313,7 @@ export default function OpenClawSetupBusinessPage() {
         </div>
       </section>
 
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -326,7 +326,7 @@ export default function OpenClawSetupBusinessPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {businessBenefits.map((benefit) => (
-              <div key={benefit.title} className="bg-surface rounded-box p-8 border border-border card-lift">
+              <div key={benefit.title} className="bg-surface rounded-2xl p-8 border border-border card-lift">
                 <div className="text-3xl mb-4">{benefit.icon}</div>
                 <h3 className="font-heading font-bold text-dark text-lg mb-2">{benefit.title}</h3>
                 <p className="text-muted text-sm leading-relaxed">{benefit.description}</p>
@@ -349,7 +349,7 @@ export default function OpenClawSetupBusinessPage() {
 
           <div className="space-y-8">
             {setupComparison.map((comparison) => (
-              <div key={comparison.aspect} className="bg-white rounded-box p-8 shadow-card">
+              <div key={comparison.aspect} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-6">{comparison.aspect}</h3>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div className={`border-l-4 pl-6 ${
@@ -398,7 +398,7 @@ export default function OpenClawSetupBusinessPage() {
 
           <div className="space-y-12">
             {implementationPhases.map((phase) => (
-              <div key={phase.phase} className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+              <div key={phase.phase} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="bg-orange text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center">
                     {phase.phase}
@@ -456,7 +456,7 @@ export default function OpenClawSetupBusinessPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* DIY Costs */}
-            <div className="bg-red-50 border-2 border-red-200 rounded-box p-8">
+            <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-red-800 mb-6">{costComparison.diy.title}</h3>
               <div className="space-y-3 mb-6">
                 {costComparison.diy.items.map((item) => (
@@ -476,7 +476,7 @@ export default function OpenClawSetupBusinessPage() {
             </div>
 
             {/* Professional Costs */}
-            <div className="bg-green-50 border-2 border-green-200 rounded-box p-8">
+            <div className="bg-green-50 border-2 border-green-200 rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-green-800 mb-6">{costComparison.professional.title}</h3>
               <div className="space-y-3 mb-6">
                 {costComparison.professional.items.map((item) => (
@@ -497,7 +497,7 @@ export default function OpenClawSetupBusinessPage() {
           </div>
 
           <div className="text-center mt-8">
-            <div className="bg-white border-2 border-orange/30 rounded-box p-6 inline-block">
+            <div className="bg-white border-2 border-orange/30 rounded-2xl p-6 inline-block">
               <h3 className="font-semibold text-dark mb-2">💡 Bottom Line</h3>
               <p className="text-muted text-sm max-w-md">
                 Professional setup saves <strong>£6,250+</strong> in first year costs while delivering immediate productivity and peace of mind.
@@ -507,7 +507,7 @@ export default function OpenClawSetupBusinessPage() {
         </div>
       </section>
 
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -520,7 +520,7 @@ export default function OpenClawSetupBusinessPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {redFlags.map((flag) => (
-              <div key={flag.title} className="bg-yellow-50 border border-yellow-200 rounded-box p-6">
+              <div key={flag.title} className="bg-yellow-50 border border-yellow-200 rounded-2xl p-6">
                 <h3 className="font-semibold text-yellow-800 mb-3 flex items-center gap-2">
                   ⚠️ {flag.title}
                 </h3>
@@ -544,7 +544,7 @@ export default function OpenClawSetupBusinessPage() {
 
           <div className="space-y-8">
             {successStories.map((story) => (
-              <div key={story.business} className="bg-white rounded-box p-8 shadow-card">
+              <div key={story.business} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="mb-6">
                   <h3 className="font-heading font-bold text-xl text-dark mb-2">{story.business}</h3>
                   <p className="text-muted"><strong>Challenge:</strong> {story.challenge}</p>
@@ -581,7 +581,7 @@ export default function OpenClawSetupBusinessPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Get Professional Setup →
           </a>
@@ -590,23 +590,23 @@ export default function OpenClawSetupBusinessPage() {
 
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-beginner-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-beginner-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Beginner Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Skills: Complete Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -627,7 +627,7 @@ export default function OpenClawSetupBusinessPage() {
                 Stop wasting time on setup and start getting value from AI. Book a free consultation to discuss your requirements and get a custom quote.
               </p>
 
-              <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-6 mb-8">
+              <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 mb-8">
                 <h3 className="font-semibold text-white mb-3">Why businesses choose professional setup:</h3>
                 <ul className="space-y-2 text-white/70 text-sm">
                   <li className="flex gap-2">
@@ -650,7 +650,7 @@ export default function OpenClawSetupBusinessPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Get Your Setup Quote</h3>
               <p className="text-white/40 text-sm mb-6">Free consultation with no commitment</p>
               <ContactForm />

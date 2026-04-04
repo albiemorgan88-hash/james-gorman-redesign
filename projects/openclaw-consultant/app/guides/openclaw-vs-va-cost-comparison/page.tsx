@@ -344,13 +344,13 @@ export default function OpenClawVsVaCostComparisonPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#comparison"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 See Cost Breakdown
               </a>
               <a
                 href="/guides"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 ← All Guides
               </a>
@@ -382,7 +382,7 @@ export default function OpenClawVsVaCostComparisonPage() {
 
             {/* Quick Comparison Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white rounded-box p-8 shadow-card border-l-4 border-orange">
+              <div className="bg-white rounded-2xl p-8 shadow-card border-l-4 border-orange">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="text-2xl">🤖</div>
                   <h3 className="font-heading font-bold text-xl text-dark">OpenClaw</h3>
@@ -407,7 +407,7 @@ export default function OpenClawVsVaCostComparisonPage() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-box p-8 shadow-card border-l-4 border-blue-500">
+              <div className="bg-white rounded-2xl p-8 shadow-card border-l-4 border-blue-500">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="text-2xl">👤</div>
                   <h3 className="font-heading font-bold text-xl text-dark">Virtual Assistant</h3>
@@ -437,7 +437,7 @@ export default function OpenClawVsVaCostComparisonPage() {
       </section>
 
       {/* Detailed Cost Breakdown */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -540,7 +540,7 @@ export default function OpenClawVsVaCostComparisonPage() {
 
           <div className="space-y-8">
             {capabilityComparison.map((capability, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-6">{capability.capability}</h3>
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -552,7 +552,7 @@ export default function OpenClawVsVaCostComparisonPage() {
                         capability.openclaw.level === 'Excellent' ? 'bg-green-100 text-green-700' :
                         capability.openclaw.level === 'Advanced' ? 'bg-blue-100 text-blue-700' :
                         capability.openclaw.level === 'Good' ? 'bg-yellow-100 text-yellow-700' :
-                        'bg-gray-100 text-gray-700'
+                        'bg-gray-100 text-dark'
                       }`}>
                         {capability.openclaw.level}
                       </span>
@@ -578,7 +578,7 @@ export default function OpenClawVsVaCostComparisonPage() {
                         capability.va.level === 'Excellent' ? 'bg-green-100 text-green-700' :
                         capability.va.level === 'Advanced' ? 'bg-blue-100 text-blue-700' :
                         capability.va.level === 'Good' ? 'bg-yellow-100 text-yellow-700' :
-                        'bg-gray-100 text-gray-700'
+                        'bg-gray-100 text-dark'
                       }`}>
                         {capability.va.level}
                       </span>
@@ -618,7 +618,7 @@ export default function OpenClawVsVaCostComparisonPage() {
 
           <div className="space-y-8">
             {businessScenarios.map((scenario, index) => (
-              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                   <div>
                     <h3 className="font-heading font-bold text-xl text-white mb-2">{scenario.scenario}</h3>
@@ -659,7 +659,7 @@ export default function OpenClawVsVaCostComparisonPage() {
       </section>
 
       {/* Hidden Costs */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -740,7 +740,7 @@ export default function OpenClawVsVaCostComparisonPage() {
             </p>
           </div>
 
-          <div className="bg-white rounded-box p-8 shadow-card mb-12">
+          <div className="bg-white rounded-2xl p-8 shadow-card mb-12">
             <h3 className="font-heading font-bold text-xl text-dark mb-6">ROI Calculation Framework</h3>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
@@ -821,7 +821,7 @@ export default function OpenClawVsVaCostComparisonPage() {
             </p>
           </div>
 
-          <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+          <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
@@ -846,7 +846,7 @@ export default function OpenClawVsVaCostComparisonPage() {
             </div>
           </div>
 
-          <div className="mt-12 bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+          <div className="mt-12 bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
             <h3 className="font-heading font-bold text-xl text-white mb-4">Quick Decision Guidelines</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -875,9 +875,9 @@ export default function OpenClawVsVaCostComparisonPage() {
       </section>
 
       {/* Next Steps */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
-          <div className="bg-surface rounded-box p-12 text-center">
+          <div className="bg-surface rounded-2xl p-12 text-center">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-6">
               Ready to Calculate Your Specific ROI?
             </h2>
@@ -905,7 +905,7 @@ export default function OpenClawVsVaCostComparisonPage() {
             
             <a
               href="#contact"
-              className="inline-flex items-center justify-center bg-orange text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-xl"
+              className="inline-flex items-center justify-center bg-orange text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-xl"
             >
               Get Your Custom ROI Analysis →
             </a>
@@ -916,23 +916,23 @@ export default function OpenClawVsVaCostComparisonPage() {
       {/* Contact Section */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-vs-chatgpt" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-vs-chatgpt" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs ChatGPT: Key Differences</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-vs-zapier-vs-make" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-vs-zapier-vs-make" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs Zapier vs Make</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -975,7 +975,7 @@ export default function OpenClawVsVaCostComparisonPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Free ROI Analysis</h3>
               <p className="text-white/40 text-sm mb-6">Compare OpenClaw vs VA costs for your business</p>
               <ContactForm />

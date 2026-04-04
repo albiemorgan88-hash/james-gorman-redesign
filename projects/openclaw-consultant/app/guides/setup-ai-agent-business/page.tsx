@@ -206,13 +206,13 @@ export default function SetupAIAgentBusinessPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#guide"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 Read Setup Guide
               </a>
               <a
                 href="/"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 ← Back to Home
               </a>
@@ -243,7 +243,7 @@ export default function SetupAIAgentBusinessPage() {
           {/* Step-by-step guide */}
           <div className="space-y-8">
             {setupSteps.map((step) => (
-              <div key={step.step} className="bg-white rounded-box p-8 shadow-card">
+              <div key={step.step} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="flex gap-6 items-start">
                   <div className="bg-orange text-white font-bold text-lg w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                     {step.step}
@@ -274,7 +274,7 @@ export default function SetupAIAgentBusinessPage() {
       </section>
 
       {/* Platform Comparison */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -287,7 +287,7 @@ export default function SetupAIAgentBusinessPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {platformComparison.map((platform) => (
-              <div key={platform.solution} className="bg-surface rounded-box p-8 card-lift">
+              <div key={platform.solution} className="bg-surface rounded-2xl p-8 card-lift">
                 <h3 className="font-heading font-bold text-xl text-dark mb-3">{platform.solution}</h3>
                 <p className="text-blue text-sm font-medium mb-6">{platform.bestFor}</p>
                 
@@ -343,7 +343,7 @@ export default function SetupAIAgentBusinessPage() {
 
           <div className="space-y-8">
             {integrationAreas.map((area) => (
-              <div key={area.category} className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+              <div key={area.category} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl text-white mb-3">{area.category}</h3>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   <div>
@@ -384,7 +384,7 @@ export default function SetupAIAgentBusinessPage() {
 
           <div className="space-y-6">
             {commonMistakes.map((mistake, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
                   <div>
                     <div className="flex items-center gap-3 mb-3">
@@ -410,7 +410,7 @@ export default function SetupAIAgentBusinessPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark">
@@ -470,7 +470,7 @@ export default function SetupAIAgentBusinessPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
+            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
             Get Expert Setup Help →
           </a>
@@ -480,23 +480,23 @@ export default function SetupAIAgentBusinessPage() {
       {/* Contact Section */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-beginner-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-beginner-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Beginner Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Skills: Complete Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -539,7 +539,7 @@ export default function SetupAIAgentBusinessPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">AI Agent Setup Consultation</h3>
               <p className="text-white/40 text-sm mb-6">Tell us about your business automation needs</p>
               <ContactForm />

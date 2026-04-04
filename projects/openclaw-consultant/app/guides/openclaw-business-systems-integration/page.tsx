@@ -491,7 +491,7 @@ const integrationROI = [
 
 export default function OpenClawBusinessSystemsIntegrationPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-cream">
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-purple-900 via-blue-800 to-indigo-900 text-white py-20">
         <div className="container mx-auto px-6">
@@ -519,7 +519,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
       <div className="py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">Popular Business System Integrations</h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
             Pre-built connectors and integration patterns for the most common business systems used by UK companies.
           </p>
           
@@ -547,13 +547,13 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
                         </div>
                         <div>
                           <span className="font-medium">Setup Time:</span>
-                          <span className="ml-2 text-gray-600">{system.setupTime}</span>
+                          <span className="ml-2 text-muted-dark">{system.setupTime}</span>
                         </div>
                       </div>
                       
                       <div className="space-y-4">
                         <div>
-                          <h5 className="font-semibold mb-2 text-gray-700">Key Features</h5>
+                          <h5 className="font-semibold mb-2 text-dark">Key Features</h5>
                           <ul className="space-y-1">
                             {system.keyFeatures.map((feature, fIndex) => (
                               <li key={fIndex} className="flex items-start text-sm">
@@ -565,7 +565,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
                         </div>
                         
                         <div>
-                          <h5 className="font-semibold mb-2 text-gray-700">Business Benefits</h5>
+                          <h5 className="font-semibold mb-2 text-dark">Business Benefits</h5>
                           <ul className="space-y-1">
                             {system.benefits.map((benefit, bIndex) => (
                               <li key={bIndex} className="flex items-start text-sm">
@@ -589,24 +589,24 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">4-Phase Integration Process</h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
             Systematic approach to ensure successful, secure, and maintainable business system integrations.
           </p>
           
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-4 gap-6">
               {integrationSteps.map((phase, index) => (
-                <div key={index} className="bg-gray-50 rounded-lg p-6 relative">
+                <div key={index} className="bg-cream rounded-lg p-6 relative">
                   <div className="absolute -top-3 left-6 bg-purple-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
                     {index + 1}
                   </div>
                   
                   <h3 className="text-xl font-semibold mb-2 mt-4">{phase.phase}</h3>
-                  <div className="text-sm text-gray-600 mb-4">Duration: {phase.duration}</div>
+                  <div className="text-sm text-muted-dark mb-4">Duration: {phase.duration}</div>
                   
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold mb-2 text-gray-700">Activities</h4>
+                      <h4 className="font-semibold mb-2 text-dark">Activities</h4>
                       <ul className="space-y-1">
                         {phase.activities.map((activity, aIndex) => (
                           <li key={aIndex} className="flex items-start text-sm">
@@ -618,7 +618,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold mb-2 text-gray-700">Deliverables</h4>
+                      <h4 className="font-semibold mb-2 text-dark">Deliverables</h4>
                       <ul className="space-y-1">
                         {phase.deliverables.map((deliverable, dIndex) => (
                           <li key={dIndex} className="flex items-start text-sm">
@@ -637,10 +637,10 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
       </div>
 
       {/* Integration Patterns */}
-      <div className="py-16 bg-gray-50">
+      <div className="py-16 bg-cream">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">Common Integration Patterns</h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
             Choose the right integration pattern based on your business requirements, data sensitivity, and performance needs.
           </p>
           
@@ -650,7 +650,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
                 <div className="grid lg:grid-cols-4 gap-6">
                   <div>
                     <h3 className="text-xl font-semibold mb-2">{pattern.pattern}</h3>
-                    <p className="text-gray-600 mb-4">{pattern.description}</p>
+                    <p className="text-muted-dark mb-4">{pattern.description}</p>
                     <div className="bg-blue-50 p-3 rounded-lg">
                       <div className="text-sm font-medium text-blue-800 mb-1">Best For:</div>
                       <div className="text-sm text-blue-700">{pattern.bestFor}</div>
@@ -658,11 +658,11 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-3 text-gray-700">Use Case</h4>
-                    <p className="text-sm text-gray-600 mb-4">{pattern.useCase}</p>
+                    <h4 className="font-semibold mb-3 text-dark">Use Case</h4>
+                    <p className="text-sm text-muted-dark mb-4">{pattern.useCase}</p>
                     
-                    <h4 className="font-semibold mb-2 text-gray-700">Implementation</h4>
-                    <p className="text-sm text-gray-600">{pattern.implementation}</p>
+                    <h4 className="font-semibold mb-2 text-dark">Implementation</h4>
+                    <p className="text-sm text-muted-dark">{pattern.implementation}</p>
                   </div>
                   
                   <div>
@@ -702,12 +702,12 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
           
           <div className="max-w-6xl mx-auto space-y-8">
             {integrationSecurity.map((aspect, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6">
+              <div key={index} className="bg-cream rounded-lg p-6">
                 <h3 className="text-xl font-semibold mb-6">{aspect.aspect}</h3>
                 
                 <div className="grid lg:grid-cols-2 gap-8">
                   <div>
-                    <h4 className="font-semibold mb-3 text-gray-700">Security Requirements</h4>
+                    <h4 className="font-semibold mb-3 text-dark">Security Requirements</h4>
                     <ul className="space-y-2">
                       {aspect.requirements.map((requirement, rIndex) => (
                         <li key={rIndex} className="flex items-start text-sm">
@@ -719,7 +719,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-3 text-gray-700">Best Practices</h4>
+                    <h4 className="font-semibold mb-3 text-dark">Best Practices</h4>
                     <ul className="space-y-2">
                       {aspect.bestPractices.map((practice, pIndex) => (
                         <li key={pIndex} className="flex items-start text-sm">
@@ -737,10 +737,10 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
       </div>
 
       {/* ROI Analysis */}
-      <div className="py-16 bg-gray-50">
+      <div className="py-16 bg-cream">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">Integration ROI Analysis</h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
             Real-world performance improvements and cost savings from OpenClaw business system integrations.
           </p>
           
@@ -754,19 +754,19 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
                     <h4 className="font-semibold text-red-600 mb-4">Before Integration</h4>
                     <div className="space-y-3">
                       <div>
-                        <div className="text-sm text-gray-600">Time Spent</div>
+                        <div className="text-sm text-muted-dark">Time Spent</div>
                         <div className="text-lg font-bold text-red-600">{process.beforeIntegration.timeSpent}</div>
                       </div>
                       <div>
-                        <div className="text-sm text-gray-600">Error Rate</div>
+                        <div className="text-sm text-muted-dark">Error Rate</div>
                         <div className="text-lg font-bold text-red-600">{process.beforeIntegration.errorRate}</div>
                       </div>
                       <div>
-                        <div className="text-sm text-gray-600">Response Time</div>
+                        <div className="text-sm text-muted-dark">Response Time</div>
                         <div className="text-lg font-bold text-red-600">{process.beforeIntegration.responseTime}</div>
                       </div>
                       <div>
-                        <div className="text-sm text-gray-600">Monthly Cost</div>
+                        <div className="text-sm text-muted-dark">Monthly Cost</div>
                         <div className="text-lg font-bold text-red-600">{process.beforeIntegration.cost}</div>
                       </div>
                     </div>
@@ -776,19 +776,19 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
                     <h4 className="font-semibold text-green-600 mb-4">After Integration</h4>
                     <div className="space-y-3">
                       <div>
-                        <div className="text-sm text-gray-600">Time Spent</div>
+                        <div className="text-sm text-muted-dark">Time Spent</div>
                         <div className="text-lg font-bold text-green-600">{process.afterIntegration.timeSpent}</div>
                       </div>
                       <div>
-                        <div className="text-sm text-gray-600">Error Rate</div>
+                        <div className="text-sm text-muted-dark">Error Rate</div>
                         <div className="text-lg font-bold text-green-600">{process.afterIntegration.errorRate}</div>
                       </div>
                       <div>
-                        <div className="text-sm text-gray-600">Response Time</div>
+                        <div className="text-sm text-muted-dark">Response Time</div>
                         <div className="text-lg font-bold text-green-600">{process.afterIntegration.responseTime}</div>
                       </div>
                       <div>
-                        <div className="text-sm text-gray-600">Monthly Cost</div>
+                        <div className="text-sm text-muted-dark">Monthly Cost</div>
                         <div className="text-lg font-bold text-green-600">{process.afterIntegration.cost}</div>
                       </div>
                     </div>
@@ -798,19 +798,19 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
                     <h4 className="font-semibold text-blue-600 mb-4 text-center">Improvement Metrics</h4>
                     <div className="grid grid-cols-2 gap-4">
                       <div className="bg-blue-50 rounded-lg p-4 text-center">
-                        <div className="text-sm text-gray-600 mb-1">Time Saved</div>
+                        <div className="text-sm text-muted-dark mb-1">Time Saved</div>
                         <div className="text-2xl font-bold text-blue-600">{process.improvement.timeSaved}</div>
                       </div>
                       <div className="bg-blue-50 rounded-lg p-4 text-center">
-                        <div className="text-sm text-gray-600 mb-1">Error Reduction</div>
+                        <div className="text-sm text-muted-dark mb-1">Error Reduction</div>
                         <div className="text-2xl font-bold text-blue-600">{process.improvement.errorReduction}</div>
                       </div>
                       <div className="bg-blue-50 rounded-lg p-4 text-center">
-                        <div className="text-sm text-gray-600 mb-1">Speed Increase</div>
+                        <div className="text-sm text-muted-dark mb-1">Speed Increase</div>
                         <div className="text-2xl font-bold text-blue-600">{process.improvement.speedIncrease}</div>
                       </div>
                       <div className="bg-blue-50 rounded-lg p-4 text-center">
-                        <div className="text-sm text-gray-600 mb-1">Monthly Saving</div>
+                        <div className="text-sm text-muted-dark mb-1">Monthly Saving</div>
                         <div className="text-2xl font-bold text-blue-600">{process.improvement.costSaving}</div>
                       </div>
                     </div>
@@ -829,12 +829,12 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
           
           <div className="max-w-6xl mx-auto space-y-6">
             {troubleshootingGuide.map((issue, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6">
+              <div key={index} className="bg-cream rounded-lg p-6">
                 <h3 className="text-xl font-semibold mb-4 text-red-700">{issue.issue}</h3>
                 
                 <div className="grid lg:grid-cols-4 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-3 text-gray-700">Symptoms</h4>
+                    <h4 className="font-semibold mb-3 text-dark">Symptoms</h4>
                     <ul className="space-y-2">
                       {issue.symptoms.map((symptom, sIndex) => (
                         <li key={sIndex} className="flex items-start text-sm">
@@ -846,7 +846,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-3 text-gray-700">Common Causes</h4>
+                    <h4 className="font-semibold mb-3 text-dark">Common Causes</h4>
                     <ul className="space-y-2">
                       {issue.causes.map((cause, cIndex) => (
                         <li key={cIndex} className="flex items-start text-sm">
@@ -858,7 +858,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
                   </div>
                   
                   <div className="lg:col-span-2">
-                    <h4 className="font-semibold mb-3 text-gray-700">Solutions</h4>
+                    <h4 className="font-semibold mb-3 text-dark">Solutions</h4>
                     <ul className="space-y-2">
                       {issue.solutions.map((solution, solIndex) => (
                         <li key={solIndex} className="flex items-start text-sm">
@@ -902,7 +902,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
       </div>
 
       {/* Related Guides */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center bg-orange/10 text-orange px-4 py-2 rounded-full text-sm font-medium mb-4">
@@ -912,7 +912,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mb-4">
               Continue Learning
             </h2>
-            <p className="text-slate-600 max-w-[500px] mx-auto">
+            <p className="text-muted-dark max-w-[500px] mx-auto">
               Explore more expert guides to get the most out of OpenClaw for your business.
             </p>
           </div>
@@ -920,7 +920,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
           <div className="grid md:grid-cols-3 gap-6">
             <a
               href="/guides/openclaw-vs-virtual-assistant-cost"
-              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-border-light"
             >
               <span className="inline-block bg-orange/10 text-orange px-3 py-1 rounded-full text-xs font-medium mb-3">
                 Cost Analysis
@@ -928,7 +928,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors leading-tight">
                 OpenClaw vs Virtual Assistant Cost Comparison
               </h3>
-              <p className="text-slate-600 text-sm mb-4">
+              <p className="text-muted-dark text-sm mb-4">
                 Complete cost breakdown comparing AI agents vs traditional virtual assistants. Calculate your ROI.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
@@ -938,7 +938,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
 
             <a
               href="/guides/openclaw-enterprise-security-compliance"
-              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-border-light"
             >
               <span className="inline-block bg-blue/10 text-blue px-3 py-1 rounded-full text-xs font-medium mb-3">
                 Security & Compliance
@@ -946,7 +946,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors leading-tight">
                 Enterprise Security & UK Compliance Guide
               </h3>
-              <p className="text-slate-600 text-sm mb-4">
+              <p className="text-muted-dark text-sm mb-4">
                 GDPR compliance, data protection, and enterprise security features for business deployments.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
@@ -956,7 +956,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
 
             <a
               href="/guides/openclaw-performance-optimization-guide"
-              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-border-light"
             >
               <span className="inline-block bg-green-500/10 text-green-600 px-3 py-1 rounded-full text-xs font-medium mb-3">
                 Performance
@@ -964,7 +964,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors leading-tight">
                 Performance Optimization Guide
               </h3>
-              <p className="text-slate-600 text-sm mb-4">
+              <p className="text-muted-dark text-sm mb-4">
                 Optimize AI agent performance, reduce response times, and maximize efficiency for business applications.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
@@ -976,7 +976,7 @@ export default function OpenClawBusinessSystemsIntegrationPage() {
           <div className="text-center mt-8">
             <a
               href="/guides"
-              className="inline-flex items-center justify-center bg-navy text-white px-6 py-3 rounded-btn font-semibold text-sm hover:bg-navy/90 transition-all"
+              className="inline-flex items-center justify-center bg-navy text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-navy/90 transition-all"
             >
               View All Guides
             </a>

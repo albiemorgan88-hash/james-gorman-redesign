@@ -147,7 +147,7 @@ export default function AIAgentsPropertyManagementPage() {
             </p>
             <a
               href="#automations"
-              className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+              className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
             >
               See Property Automations
             </a>
@@ -190,7 +190,7 @@ export default function AIAgentsPropertyManagementPage() {
 
           <div className="space-y-8">
             {automationAreas.map((area, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-start">
                   <div>
                     <h3 className="font-heading font-bold text-xl text-dark mb-3">{area.area}</h3>
@@ -224,7 +224,7 @@ export default function AIAgentsPropertyManagementPage() {
       </section>
 
       {/* Use Cases */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -234,7 +234,7 @@ export default function AIAgentsPropertyManagementPage() {
 
           <div className="space-y-12">
             {useCases.map((useCase, index) => (
-              <div key={index} className="bg-surface rounded-box p-8">
+              <div key={index} className="bg-surface rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-2xl text-dark mb-6">{useCase.useCase}</h3>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div className="space-y-6">
@@ -278,7 +278,7 @@ export default function AIAgentsPropertyManagementPage() {
             </h2>
           </div>
 
-          <div className="bg-white rounded-box p-8 shadow-card">
+          <div className="bg-white rounded-2xl p-8 shadow-card">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div>
                 <h3 className="font-heading font-bold text-xl text-dark mb-6">Before AI Automation:</h3>
@@ -317,7 +317,7 @@ export default function AIAgentsPropertyManagementPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -327,7 +327,7 @@ export default function AIAgentsPropertyManagementPage() {
 
           <div className="max-w-[800px] mx-auto space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-surface rounded-box p-6">
+              <div key={index} className="bg-surface rounded-2xl p-6">
                 <h3 className="font-heading font-bold text-lg text-dark mb-3">{faq.question}</h3>
                 <p className="text-muted text-sm leading-relaxed">{faq.answer}</p>
               </div>
@@ -336,12 +336,12 @@ export default function AIAgentsPropertyManagementPage() {
         </div>
       </section>
 
-      {/* About Phil Patterson */}
+      {/* About Blue Canvas */}
       <section className="bg-light py-16">
         <div className="max-w-[1140px] mx-auto px-6 text-center">
-          <h3 className="font-heading font-bold text-xl text-dark mb-4">About Phil Patterson</h3>
+          <h3 className="font-heading font-bold text-xl text-dark mb-4">About Blue Canvas</h3>
           <p className="text-muted max-w-[600px] mx-auto text-sm">
-            Phil Patterson helps UK letting agents and property managers implement AI automation from his base in Derry, Northern Ireland. 
+            Blue Canvas helps UK letting agents and property managers implement AI automation from his base in Derry, Northern Ireland. 
             With extensive experience in property technology and rental management systems, Phil understands the unique challenges 
             facing property professionals and designs automation solutions that improve tenant satisfaction while scaling portfolio operations efficiently.
           </p>
@@ -377,7 +377,7 @@ export default function AIAgentsPropertyManagementPage() {
                 </div>
               </div>
             </div>
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Property Management AI Consultation</h3>
               <p className="text-white/60 text-sm mb-6">Get a custom automation plan for your property portfolio</p>
               <ContactForm />
@@ -387,23 +387,23 @@ export default function AIAgentsPropertyManagementPage() {
       </section>
 
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-agents-accountants" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-agents-accountants" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Agents for Accountants UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-agents-charities" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-agents-charities" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Agents for Charities UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>

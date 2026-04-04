@@ -322,7 +322,7 @@ const scalingStrategies = [
 
 export default function OpenClawPerformanceOptimizationPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-cream">
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-emerald-900 via-teal-800 to-cyan-900 text-white py-20">
         <div className="container mx-auto px-6">
@@ -350,7 +350,7 @@ export default function OpenClawPerformanceOptimizationPage() {
       <div className="py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">Performance Improvement Benchmarks</h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
             Real-world performance improvements achieved through systematic optimization across multiple client deployments.
           </p>
           
@@ -368,7 +368,7 @@ export default function OpenClawPerformanceOptimizationPage() {
                 </thead>
                 <tbody>
                   {performanceMetrics.map((metric, index) => (
-                    <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                    <tr key={index} className={index % 2 === 0 ? 'bg-cream' : 'bg-white'}>
                       <td className="px-6 py-4 font-medium">{metric.metric}</td>
                       <td className="px-6 py-4 text-center text-red-600 font-medium">{metric.baseline}</td>
                       <td className="px-6 py-4 text-center text-green-600 font-medium">{metric.optimized}</td>
@@ -391,13 +391,13 @@ export default function OpenClawPerformanceOptimizationPage() {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">Advanced Optimization Techniques</h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
             Comprehensive optimization strategies covering model configuration, infrastructure tuning, and architectural improvements.
           </p>
           
           <div className="max-w-6xl mx-auto space-y-12">
             {optimizationTechniques.map((category, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-8">
+              <div key={index} className="bg-cream rounded-lg p-8">
                 <h3 className="text-2xl font-semibold mb-8 text-center">{category.category}</h3>
                 
                 <div className="space-y-6">
@@ -406,16 +406,16 @@ export default function OpenClawPerformanceOptimizationPage() {
                       <div className="grid lg:grid-cols-4 gap-6">
                         <div>
                           <h4 className="font-semibold text-lg mb-2">{technique.name}</h4>
-                          <p className="text-gray-600 text-sm">{technique.description}</p>
+                          <p className="text-muted-dark text-sm">{technique.description}</p>
                         </div>
                         
                         <div>
-                          <h5 className="font-semibold mb-2 text-gray-700">Implementation</h5>
-                          <p className="text-sm text-gray-600">{technique.implementation}</p>
+                          <h5 className="font-semibold mb-2 text-dark">Implementation</h5>
+                          <p className="text-sm text-muted-dark">{technique.implementation}</p>
                         </div>
                         
                         <div>
-                          <h5 className="font-semibold mb-2 text-gray-700">Expected Impact</h5>
+                          <h5 className="font-semibold mb-2 text-dark">Expected Impact</h5>
                           <p className="text-sm text-emerald-700 font-medium">{technique.impact}</p>
                         </div>
                         
@@ -435,10 +435,10 @@ export default function OpenClawPerformanceOptimizationPage() {
       </div>
 
       {/* Performance Tuning Process */}
-      <div className="py-16 bg-gray-50">
+      <div className="py-16 bg-cream">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">Systematic Performance Tuning Process</h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
             Structured 4-phase approach to optimize your OpenClaw deployment with measurable results.
           </p>
           
@@ -451,11 +451,11 @@ export default function OpenClawPerformanceOptimizationPage() {
                   </div>
                   
                   <h3 className="text-xl font-semibold mb-2 mt-4">{phase.phase}</h3>
-                  <div className="text-sm text-gray-600 mb-4">Duration: {phase.duration}</div>
+                  <div className="text-sm text-muted-dark mb-4">Duration: {phase.duration}</div>
                   
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold mb-2 text-gray-700">Key Steps</h4>
+                      <h4 className="font-semibold mb-2 text-dark">Key Steps</h4>
                       <ul className="space-y-1">
                         {phase.steps.map((step, sIndex) => (
                           <li key={sIndex} className="flex items-start text-sm">
@@ -467,10 +467,10 @@ export default function OpenClawPerformanceOptimizationPage() {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold mb-2 text-gray-700">Tools Used</h4>
+                      <h4 className="font-semibold mb-2 text-dark">Tools Used</h4>
                       <div className="flex flex-wrap gap-1">
                         {phase.tools.map((tool, toolIndex) => (
-                          <span key={toolIndex} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">
+                          <span key={toolIndex} className="bg-gray-100 text-dark px-2 py-1 rounded text-xs">
                             {tool}
                           </span>
                         ))}
@@ -491,12 +491,12 @@ export default function OpenClawPerformanceOptimizationPage() {
           
           <div className="max-w-6xl mx-auto space-y-8">
             {commonBottlenecks.map((bottleneck, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6">
+              <div key={index} className="bg-cream rounded-lg p-6">
                 <h3 className="text-xl font-semibold mb-6 text-red-700">{bottleneck.bottleneck}</h3>
                 
                 <div className="grid lg:grid-cols-4 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-3 text-gray-700">Symptoms</h4>
+                    <h4 className="font-semibold mb-3 text-dark">Symptoms</h4>
                     <ul className="space-y-2">
                       {bottleneck.symptoms.map((symptom, sIndex) => (
                         <li key={sIndex} className="flex items-start text-sm">
@@ -508,7 +508,7 @@ export default function OpenClawPerformanceOptimizationPage() {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-3 text-gray-700">Root Causes</h4>
+                    <h4 className="font-semibold mb-3 text-dark">Root Causes</h4>
                     <ul className="space-y-2">
                       {bottleneck.causes.map((cause, cIndex) => (
                         <li key={cIndex} className="flex items-start text-sm">
@@ -520,7 +520,7 @@ export default function OpenClawPerformanceOptimizationPage() {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-3 text-gray-700">Solutions</h4>
+                    <h4 className="font-semibold mb-3 text-dark">Solutions</h4>
                     <ul className="space-y-2">
                       {bottleneck.solutions.map((solution, solIndex) => (
                         <li key={solIndex} className="flex items-start text-sm">
@@ -545,10 +545,10 @@ export default function OpenClawPerformanceOptimizationPage() {
       </div>
 
       {/* Monitoring Setup */}
-      <div className="py-16 bg-gray-50">
+      <div className="py-16 bg-cream">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">Performance Monitoring Setup</h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
             Comprehensive monitoring strategy to maintain optimal performance and proactively identify issues.
           </p>
           
@@ -559,7 +559,7 @@ export default function OpenClawPerformanceOptimizationPage() {
                 
                 <div className="grid lg:grid-cols-4 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-3 text-gray-700">Key Metrics</h4>
+                    <h4 className="font-semibold mb-3 text-dark">Key Metrics</h4>
                     <ul className="space-y-2">
                       {component.metrics.map((metric, mIndex) => (
                         <li key={mIndex} className="flex items-start text-sm">
@@ -571,13 +571,13 @@ export default function OpenClawPerformanceOptimizationPage() {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-3 text-gray-700">Recommended Tools</h4>
-                    <p className="text-sm text-gray-600">{component.tools}</p>
+                    <h4 className="font-semibold mb-3 text-dark">Recommended Tools</h4>
+                    <p className="text-sm text-muted-dark">{component.tools}</p>
                   </div>
                   
                   <div className="lg:col-span-2">
-                    <h4 className="font-semibold mb-3 text-gray-700">Alerting Strategy</h4>
-                    <p className="text-sm text-gray-600">{component.alerting}</p>
+                    <h4 className="font-semibold mb-3 text-dark">Alerting Strategy</h4>
+                    <p className="text-sm text-muted-dark">{component.alerting}</p>
                   </div>
                 </div>
               </div>
@@ -590,26 +590,26 @@ export default function OpenClawPerformanceOptimizationPage() {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">Advanced Scaling Strategies</h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
             Choose the right scaling approach based on your workload patterns, performance requirements, and budget constraints.
           </p>
           
           <div className="max-w-6xl mx-auto space-y-8">
             {scalingStrategies.map((strategy, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6">
+              <div key={index} className="bg-cream rounded-lg p-6">
                 <div className="grid lg:grid-cols-3 gap-6">
                   <div>
                     <h3 className="text-xl font-semibold mb-2">{strategy.strategy}</h3>
-                    <p className="text-gray-600 mb-4">{strategy.description}</p>
+                    <p className="text-muted-dark mb-4">{strategy.description}</p>
                     
                     <div className="mb-4">
-                      <h4 className="font-semibold mb-2 text-gray-700">When to Use</h4>
-                      <p className="text-sm text-gray-600">{strategy.whenToUse}</p>
+                      <h4 className="font-semibold mb-2 text-dark">When to Use</h4>
+                      <p className="text-sm text-muted-dark">{strategy.whenToUse}</p>
                     </div>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-3 text-gray-700">Implementation</h4>
+                    <h4 className="font-semibold mb-3 text-dark">Implementation</h4>
                     <ul className="space-y-2 mb-4">
                       {strategy.implementation.map((impl, iIndex) => (
                         <li key={iIndex} className="flex items-start text-sm">
@@ -679,7 +679,7 @@ export default function OpenClawPerformanceOptimizationPage() {
       </div>
 
       {/* Related Guides */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center bg-orange/10 text-orange px-4 py-2 rounded-full text-sm font-medium mb-4">
@@ -689,7 +689,7 @@ export default function OpenClawPerformanceOptimizationPage() {
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mb-4">
               Continue Learning
             </h2>
-            <p className="text-slate-600 max-w-[500px] mx-auto">
+            <p className="text-muted-dark max-w-[500px] mx-auto">
               Explore more expert guides to get the most out of OpenClaw for your business.
             </p>
           </div>
@@ -697,7 +697,7 @@ export default function OpenClawPerformanceOptimizationPage() {
           <div className="grid md:grid-cols-3 gap-6">
             <a
               href="/guides/openclaw-vs-virtual-assistant-cost"
-              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-border-light"
             >
               <span className="inline-block bg-orange/10 text-orange px-3 py-1 rounded-full text-xs font-medium mb-3">
                 Cost Analysis
@@ -705,7 +705,7 @@ export default function OpenClawPerformanceOptimizationPage() {
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors leading-tight">
                 OpenClaw vs Virtual Assistant Cost Comparison
               </h3>
-              <p className="text-slate-600 text-sm mb-4">
+              <p className="text-muted-dark text-sm mb-4">
                 Complete cost breakdown comparing AI agents vs traditional virtual assistants. Calculate your ROI.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
@@ -715,7 +715,7 @@ export default function OpenClawPerformanceOptimizationPage() {
 
             <a
               href="/guides/openclaw-enterprise-security-compliance"
-              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-border-light"
             >
               <span className="inline-block bg-blue/10 text-blue px-3 py-1 rounded-full text-xs font-medium mb-3">
                 Security & Compliance
@@ -723,7 +723,7 @@ export default function OpenClawPerformanceOptimizationPage() {
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors leading-tight">
                 Enterprise Security & UK Compliance Guide
               </h3>
-              <p className="text-slate-600 text-sm mb-4">
+              <p className="text-muted-dark text-sm mb-4">
                 GDPR compliance, data protection, and enterprise security features for business deployments.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
@@ -733,7 +733,7 @@ export default function OpenClawPerformanceOptimizationPage() {
 
             <a
               href="/guides/openclaw-business-systems-integration"
-              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-border-light"
             >
               <span className="inline-block bg-purple-500/10 text-purple-600 px-3 py-1 rounded-full text-xs font-medium mb-3">
                 Integration
@@ -741,7 +741,7 @@ export default function OpenClawPerformanceOptimizationPage() {
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors leading-tight">
                 Business Systems Integration Guide
               </h3>
-              <p className="text-slate-600 text-sm mb-4">
+              <p className="text-muted-dark text-sm mb-4">
                 Integrate OpenClaw with CRM, ERP, accounting software, marketing tools, and custom APIs.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
@@ -753,7 +753,7 @@ export default function OpenClawPerformanceOptimizationPage() {
           <div className="text-center mt-8">
             <a
               href="/guides"
-              className="inline-flex items-center justify-center bg-navy text-white px-6 py-3 rounded-btn font-semibold text-sm hover:bg-navy/90 transition-all"
+              className="inline-flex items-center justify-center bg-navy text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-navy/90 transition-all"
             >
               View All Guides
             </a>

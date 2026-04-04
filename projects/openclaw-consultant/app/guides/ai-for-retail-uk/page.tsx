@@ -63,11 +63,11 @@ export default function AIForRetailUKPage() {
       <article className="py-16 bg-white">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               UK retailers implementing AI are seeing average revenue increases of 28% and customer satisfaction improvements of 35%. From personalised recommendations to intelligent inventory management, AI is transforming how retailers connect with customers and optimise operations.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This comprehensive guide shows UK retailers exactly how to implement AI solutions that drive measurable business growth. Learn from successful implementations across fashion, electronics, home goods, and specialty retail sectors.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function AIForRetailUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">41%</div>
-                <div className="text-slate-600 text-sm">Conversion rate lift</div>
+                <div className="text-muted-dark text-sm">Conversion rate lift</div>
               </div>
               
               <div className="text-center">
@@ -93,7 +93,7 @@ export default function AIForRetailUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">23%</div>
-                <div className="text-slate-600 text-sm">Inventory cost reduction</div>
+                <div className="text-muted-dark text-sm">Inventory cost reduction</div>
               </div>
               
               <div className="text-center">
@@ -103,7 +103,7 @@ export default function AIForRetailUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">67%</div>
-                <div className="text-slate-600 text-sm">Customer service efficiency</div>
+                <div className="text-muted-dark text-sm">Customer service efficiency</div>
               </div>
               
               <div className="text-center">
@@ -113,7 +113,7 @@ export default function AIForRetailUKPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">89%</div>
-                <div className="text-slate-600 text-sm">Customer satisfaction</div>
+                <div className="text-muted-dark text-sm">Customer satisfaction</div>
               </div>
             </div>
 
@@ -122,8 +122,8 @@ export default function AIForRetailUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Personalisation & Recommendations</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Applications:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Applications:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Product recommendations based on browsing history</li>
                       <li>• Personalised email marketing campaigns</li>
                       <li>• Dynamic website content customisation</li>
@@ -132,8 +132,8 @@ export default function AIForRetailUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Business Impact:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Business Impact:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 35-50% increase in click-through rates</li>
                       <li>• 25-40% improvement in conversion rates</li>
                       <li>• 20-30% higher average order value</li>
@@ -148,8 +148,8 @@ export default function AIForRetailUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Inventory Management & Forecasting</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">AI Solutions:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">AI Solutions:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Demand forecasting and trend analysis</li>
                       <li>• Automated reordering and stock optimisation</li>
                       <li>• Seasonal pattern recognition</li>
@@ -158,8 +158,8 @@ export default function AIForRetailUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Operational Benefits:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Operational Benefits:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 20-30% reduction in holding costs</li>
                       <li>• 15-25% improvement in stock turnover</li>
                       <li>• 40-60% reduction in stockouts</li>
@@ -174,8 +174,8 @@ export default function AIForRetailUKPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Customer Service Automation</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Implementation Areas:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Implementation Areas:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• AI chatbots for customer inquiries</li>
                       <li>• Automated order tracking and updates</li>
                       <li>• Returns and refunds processing</li>
@@ -184,8 +184,8 @@ export default function AIForRetailUKPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Service Improvements:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Service Improvements:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 24/7 customer support availability</li>
                       <li>• 80% reduction in response times</li>
                       <li>• 60% of inquiries resolved automatically</li>
@@ -202,11 +202,11 @@ export default function AIForRetailUKPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">UK Retail AI Success Stories</h2>
             
             <div className="space-y-8">
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">Fashion Retailer</h3>
-                    <p className="text-slate-600 text-sm">Multi-channel fashion brand with 150+ UK stores</p>
+                    <p className="text-muted-dark text-sm">Multi-channel fashion brand with 150+ UK stores</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     420% ROI
@@ -214,38 +214,38 @@ export default function AIForRetailUKPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Seasonal inventory management and personalising experiences across online and offline channels</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Seasonal inventory management and personalising experiences across online and offline channels</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">AI Solution:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Implemented demand forecasting, personalised recommendations, and dynamic pricing across all channels</p>
+                  <h4 className="font-semibold text-dark mb-2">AI Solution:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Implemented demand forecasting, personalised recommendations, and dynamic pricing across all channels</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Sales Growth</div>
+                    <div className="text-sm font-medium text-muted mb-1">Sales Growth</div>
                     <div className="text-green-700 font-semibold text-sm">32%</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Inventory Turnover</div>
+                    <div className="text-sm font-medium text-muted mb-1">Inventory Turnover</div>
                     <div className="text-green-700 font-semibold text-sm">28% faster</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Customer Retention</div>
+                    <div className="text-sm font-medium text-muted mb-1">Customer Retention</div>
                     <div className="text-green-700 font-semibold text-sm">41% improvement</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Margin Improvement</div>
+                    <div className="text-sm font-medium text-muted mb-1">Margin Improvement</div>
                     <div className="text-green-700 font-semibold text-sm">15%</div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">Electronics Retailer</h3>
-                    <p className="text-slate-600 text-sm">Leading UK electronics and appliance retailer</p>
+                    <p className="text-muted-dark text-sm">Leading UK electronics and appliance retailer</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     380% ROI
@@ -253,28 +253,28 @@ export default function AIForRetailUKPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Complex product catalogues and technical customer support at scale</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Complex product catalogues and technical customer support at scale</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">AI Solution:</h4>
-                  <p className="text-slate-600 text-sm mb-4">AI-powered product search, technical support chatbots, and intelligent product recommendations</p>
+                  <h4 className="font-semibold text-dark mb-2">AI Solution:</h4>
+                  <p className="text-muted-dark text-sm mb-4">AI-powered product search, technical support chatbots, and intelligent product recommendations</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Search Conversion</div>
+                    <div className="text-sm font-medium text-muted mb-1">Search Conversion</div>
                     <div className="text-green-700 font-semibold text-sm">67% increase</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Support Efficiency</div>
+                    <div className="text-sm font-medium text-muted mb-1">Support Efficiency</div>
                     <div className="text-green-700 font-semibold text-sm">75% improvement</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Customer Satisfaction</div>
+                    <div className="text-sm font-medium text-muted mb-1">Customer Satisfaction</div>
                     <div className="text-green-700 font-semibold text-sm">4.8/5</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Support Cost Reduction</div>
+                    <div className="text-sm font-medium text-muted mb-1">Support Cost Reduction</div>
                     <div className="text-green-700 font-semibold text-sm">45%</div>
                   </div>
                 </div>
@@ -289,7 +289,7 @@ export default function AIForRetailUKPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Getting Started</h3>
-                  <div className="space-y-3 text-slate-600 text-sm">
+                  <div className="space-y-3 text-muted-dark text-sm">
                     <div className="flex items-start gap-3">
                       <input type="checkbox" className="mt-1" />
                       <span>Assess current customer data and analytics capabilities</span>
@@ -313,8 +313,8 @@ export default function AIForRetailUKPage() {
                   </div>
 
                   <div className="mt-6">
-                    <h4 className="font-semibold text-slate-800 mb-3">Expert Support:</h4>
-                    <div className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Expert Support:</h4>
+                    <div className="space-y-2 text-muted-dark text-sm">
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas AI consultancy</a> for retail AI strategy</span>
@@ -331,20 +331,20 @@ export default function AIForRetailUKPage() {
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Success Factors</h3>
                   <div className="space-y-4">
                     <div className="border-l-4 border-orange pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Data Quality</h4>
-                      <p className="text-slate-600 text-sm">Clean, comprehensive customer and product data is essential for AI success</p>
+                      <h4 className="font-medium text-dark mb-1">Data Quality</h4>
+                      <p className="text-muted-dark text-sm">Clean, comprehensive customer and product data is essential for AI success</p>
                     </div>
                     <div className="border-l-4 border-blue pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Staff Training</h4>
-                      <p className="text-slate-600 text-sm">Invest in team education and change management for adoption</p>
+                      <h4 className="font-medium text-dark mb-1">Staff Training</h4>
+                      <p className="text-muted-dark text-sm">Invest in team education and change management for adoption</p>
                     </div>
                     <div className="border-l-4 border-green-500 pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Customer Privacy</h4>
-                      <p className="text-slate-600 text-sm">Transparent data use and robust privacy protections build trust</p>
+                      <h4 className="font-medium text-dark mb-1">Customer Privacy</h4>
+                      <p className="text-muted-dark text-sm">Transparent data use and robust privacy protections build trust</p>
                     </div>
                     <div className="border-l-4 border-purple pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Continuous Optimisation</h4>
-                      <p className="text-slate-600 text-sm">Regular analysis and refinement of AI systems drive long-term value</p>
+                      <h4 className="font-medium text-dark mb-1">Continuous Optimisation</h4>
+                      <p className="text-muted-dark text-sm">Regular analysis and refinement of AI systems drive long-term value</p>
                     </div>
                   </div>
                 </div>
@@ -357,51 +357,51 @@ export default function AIForRetailUKPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Retail AI FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What are the most impactful AI applications for UK retailers?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Most impactful applications include personalised product recommendations (30-50% conversion lift), inventory demand forecasting (20-30% cost reduction), customer service automation (60-80% efficiency gains), and dynamic pricing (10-20% margin improvement). Start with personalisation for quickest ROI.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How much should UK retailers budget for AI implementation?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Budget varies by retailer size and scope. Small retailers (£1-10M revenue): £25K-£100K annually. Mid-size (£10-100M): £100K-£500K. Large retailers (£100M+): £500K-£2M+. Expect 12-18 month payback periods with 200-400% ROI over 3 years.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How do retailers ensure customer privacy with AI personalisation?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Ensure privacy through data minimisation, explicit consent, anonymisation techniques, transparent privacy policies, customer control over data use, and GDPR compliance. Build trust through clear communication about how AI improves customer experience while protecting privacy.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What data is needed to implement retail AI successfully?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Essential data includes customer transaction history, product catalogues, inventory levels, website/app behaviour, customer service interactions, and seasonal patterns. Clean, integrated data from all touchpoints is crucial. Start with available data and improve quality over time.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How long does it take to see ROI from retail AI investments?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   ROI timeline varies by application: personalisation (3-6 months), customer service automation (2-4 months), inventory optimisation (6-12 months). Most retailers see positive ROI within 12 months, with full benefits realised over 18-24 months as systems learn and optimise.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Should retailers build AI capabilities in-house or outsource?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Most retailers benefit from hybrid approaches: partner with specialists like Blue Canvas AI for strategy and implementation, use SaaS AI solutions for standard features, and build internal capabilities for ongoing management. This balances speed, cost, and long-term control.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How does AI impact retail workforce and employment?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   AI typically augments rather than replaces retail workers. While automating routine tasks, it creates opportunities for higher-value roles in customer experience, data analysis, and AI system management. Invest in retraining and upskilling programs to support workforce transition.
                 </p>
               </div>
@@ -422,7 +422,7 @@ export default function AIForRetailUKPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Retail AI Assessment
           </a>
@@ -432,23 +432,23 @@ export default function AIForRetailUKPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-agents-accountants" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-agents-accountants" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Agents for Accountants UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-agents-charities" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-agents-charities" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Agents for Charities UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -456,13 +456,13 @@ export default function AIForRetailUKPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Grow Your Retail Business with AI
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a consultation to discuss how AI can transform your retail operations and drive customer growth.
             </p>
           </div>

@@ -153,7 +153,7 @@ const industryROIData = [
 
 export default function OpenClawVsVirtualAssistantCostPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-cream">
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-20">
         <div className="container mx-auto px-6">
@@ -185,7 +185,7 @@ export default function OpenClawVsVirtualAssistantCostPage() {
           <div className="max-w-6xl mx-auto space-y-8">
             {costComparisonData.map((item, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className="bg-gray-50 px-6 py-4">
+                <div className="bg-cream px-6 py-4">
                   <h3 className="text-xl font-semibold">{item.category}</h3>
                 </div>
                 
@@ -193,15 +193,15 @@ export default function OpenClawVsVirtualAssistantCostPage() {
                   <div className="text-center">
                     <h4 className="font-semibold text-red-600 mb-3">Traditional Virtual Assistant</h4>
                     <div className="text-2xl font-bold text-red-600 mb-2">{item.virtualAssistant.cost}</div>
-                    <div className="text-sm text-gray-600 mb-2">{item.virtualAssistant.timeframe}</div>
-                    <p className="text-sm text-gray-700">{item.virtualAssistant.details}</p>
+                    <div className="text-sm text-muted-dark mb-2">{item.virtualAssistant.timeframe}</div>
+                    <p className="text-sm text-dark">{item.virtualAssistant.details}</p>
                   </div>
                   
                   <div className="text-center">
                     <h4 className="font-semibold text-green-600 mb-3">OpenClaw AI Agent</h4>
                     <div className="text-2xl font-bold text-green-600 mb-2">{item.openclawAgent.cost}</div>
-                    <div className="text-sm text-gray-600 mb-2">{item.openclawAgent.timeframe}</div>
-                    <p className="text-sm text-gray-700">{item.openclawAgent.details}</p>
+                    <div className="text-sm text-muted-dark mb-2">{item.openclawAgent.timeframe}</div>
+                    <p className="text-sm text-dark">{item.openclawAgent.details}</p>
                   </div>
                   
                   <div className="text-center">
@@ -221,14 +221,14 @@ export default function OpenClawVsVirtualAssistantCostPage() {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">Task-by-Task Performance Analysis</h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
             Not every task is suitable for AI automation. Here's our detailed breakdown of where OpenClaw agents excel vs where human VAs still have advantages.
           </p>
           
           <div className="max-w-6xl mx-auto">
             <div className="overflow-x-auto">
               <table className="w-full bg-white rounded-lg shadow-lg">
-                <thead className="bg-gray-50">
+                <thead className="bg-cream">
                   <tr>
                     <th className="px-6 py-4 text-left font-semibold">Use Case</th>
                     <th className="px-6 py-4 text-center font-semibold">VA Availability</th>
@@ -240,7 +240,7 @@ export default function OpenClawVsVirtualAssistantCostPage() {
                 </thead>
                 <tbody>
                   {useCaseAnalysis.map((item, index) => (
-                    <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                    <tr key={index} className={index % 2 === 0 ? 'bg-cream' : 'bg-white'}>
                       <td className="px-6 py-4 font-medium">{item.useCase}</td>
                       <td className="px-6 py-4 text-center text-sm">{item.vaTime}</td>
                       <td className="px-6 py-4 text-center text-sm text-green-600 font-medium">{item.agentTime}</td>
@@ -263,10 +263,10 @@ export default function OpenClawVsVirtualAssistantCostPage() {
       </div>
 
       {/* Industry ROI Analysis */}
-      <div className="py-16 bg-gray-50">
+      <div className="py-16 bg-cream">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">ROI by Industry</h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
             Real-world cost savings and payback periods across different UK business sectors based on our client implementations.
           </p>
           
@@ -277,28 +277,28 @@ export default function OpenClawVsVirtualAssistantCostPage() {
                 
                 <div className="space-y-4">
                   <div className="text-center">
-                    <div className="text-sm text-gray-600">Monthly VA Cost</div>
+                    <div className="text-sm text-muted-dark">Monthly VA Cost</div>
                     <div className="text-lg font-bold text-red-600">{item.avgVaCost}</div>
                   </div>
                   
                   <div className="text-center">
-                    <div className="text-sm text-gray-600">Monthly Agent Cost</div>
+                    <div className="text-sm text-muted-dark">Monthly Agent Cost</div>
                     <div className="text-lg font-bold text-green-600">{item.avgAgentCost}</div>
                   </div>
                   
                   <div className="text-center bg-blue-50 rounded-lg p-3">
-                    <div className="text-sm text-gray-600">Annual Saving</div>
+                    <div className="text-sm text-muted-dark">Annual Saving</div>
                     <div className="text-xl font-bold text-blue-800">{item.annualSaving}</div>
                   </div>
                   
                   <div className="text-center">
-                    <div className="text-sm text-gray-600">Payback Period</div>
-                    <div className="text-lg font-semibold text-gray-800">{item.paybackPeriod}</div>
+                    <div className="text-sm text-muted-dark">Payback Period</div>
+                    <div className="text-lg font-semibold text-dark">{item.paybackPeriod}</div>
                   </div>
                   
                   <div className="pt-4 border-t">
-                    <div className="text-sm text-gray-600 mb-2">Key Benefits:</div>
-                    <div className="text-sm text-gray-700">{item.keyBenefits}</div>
+                    <div className="text-sm text-muted-dark mb-2">Key Benefits:</div>
+                    <div className="text-sm text-dark">{item.keyBenefits}</div>
                   </div>
                 </div>
               </div>
@@ -371,7 +371,7 @@ export default function OpenClawVsVirtualAssistantCostPage() {
       </div>
 
       {/* Related Guides */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center bg-orange/10 text-orange px-4 py-2 rounded-full text-sm font-medium mb-4">
@@ -381,7 +381,7 @@ export default function OpenClawVsVirtualAssistantCostPage() {
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mb-4">
               Continue Learning
             </h2>
-            <p className="text-slate-600 max-w-[500px] mx-auto">
+            <p className="text-muted-dark max-w-[500px] mx-auto">
               Explore more expert guides to get the most out of OpenClaw for your business.
             </p>
           </div>
@@ -389,7 +389,7 @@ export default function OpenClawVsVirtualAssistantCostPage() {
           <div className="grid md:grid-cols-3 gap-6">
             <a
               href="/guides/openclaw-enterprise-security-compliance"
-              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-border-light"
             >
               <span className="inline-block bg-blue/10 text-blue px-3 py-1 rounded-full text-xs font-medium mb-3">
                 Security & Compliance
@@ -397,7 +397,7 @@ export default function OpenClawVsVirtualAssistantCostPage() {
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors leading-tight">
                 Enterprise Security & UK Compliance Guide
               </h3>
-              <p className="text-slate-600 text-sm mb-4">
+              <p className="text-muted-dark text-sm mb-4">
                 GDPR compliance, data protection, and enterprise security features for business deployments.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
@@ -407,7 +407,7 @@ export default function OpenClawVsVirtualAssistantCostPage() {
 
             <a
               href="/guides/openclaw-performance-optimization-guide"
-              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-border-light"
             >
               <span className="inline-block bg-green-500/10 text-green-600 px-3 py-1 rounded-full text-xs font-medium mb-3">
                 Performance
@@ -415,7 +415,7 @@ export default function OpenClawVsVirtualAssistantCostPage() {
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors leading-tight">
                 Performance Optimization Guide
               </h3>
-              <p className="text-slate-600 text-sm mb-4">
+              <p className="text-muted-dark text-sm mb-4">
                 Optimize AI agent performance, reduce response times, and maximize efficiency for business applications.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
@@ -425,7 +425,7 @@ export default function OpenClawVsVirtualAssistantCostPage() {
 
             <a
               href="/guides/openclaw-business-systems-integration"
-              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100"
+              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-border-light"
             >
               <span className="inline-block bg-purple-500/10 text-purple-600 px-3 py-1 rounded-full text-xs font-medium mb-3">
                 Integration
@@ -433,7 +433,7 @@ export default function OpenClawVsVirtualAssistantCostPage() {
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors leading-tight">
                 Business Systems Integration Guide
               </h3>
-              <p className="text-slate-600 text-sm mb-4">
+              <p className="text-muted-dark text-sm mb-4">
                 Integrate OpenClaw with CRM, ERP, accounting software, marketing tools, and custom APIs.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
@@ -445,7 +445,7 @@ export default function OpenClawVsVirtualAssistantCostPage() {
           <div className="text-center mt-8">
             <a
               href="/guides"
-              className="inline-flex items-center justify-center bg-navy text-white px-6 py-3 rounded-btn font-semibold text-sm hover:bg-navy/90 transition-all"
+              className="inline-flex items-center justify-center bg-navy text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-navy/90 transition-all"
             >
               View All Guides
             </a>

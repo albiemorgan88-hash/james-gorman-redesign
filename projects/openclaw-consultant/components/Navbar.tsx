@@ -66,7 +66,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="bg-orange text-white px-5 py-2.5 rounded-btn text-sm font-semibold hover:bg-orange-hover transition-all hover:-translate-y-0.5"
+            className="bg-orange text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-orange-hover transition-all hover:-translate-y-0.5"
           >
             Free Consultation
           </a>

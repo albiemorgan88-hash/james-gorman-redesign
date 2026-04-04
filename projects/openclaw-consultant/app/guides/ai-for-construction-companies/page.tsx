@@ -63,11 +63,11 @@ export default function AIForConstructionCompaniesPage() {
       <article className="py-16 bg-white">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               UK construction companies implementing AI are seeing average project efficiency improvements of 35% and cost reductions of 22%. From predictive safety monitoring to intelligent resource allocation, AI is transforming how construction firms manage projects and deliver results.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This comprehensive guide shows UK construction companies exactly how to implement AI solutions that drive measurable business improvements. Learn from successful implementations across residential, commercial, infrastructure, and specialist construction projects.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function AIForConstructionCompaniesPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">22%</div>
-                <div className="text-slate-600 text-sm">Project cost reduction</div>
+                <div className="text-muted-dark text-sm">Project cost reduction</div>
               </div>
               
               <div className="text-center">
@@ -93,7 +93,7 @@ export default function AIForConstructionCompaniesPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">68%</div>
-                <div className="text-slate-600 text-sm">Safety incident reduction</div>
+                <div className="text-muted-dark text-sm">Safety incident reduction</div>
               </div>
               
               <div className="text-center">
@@ -103,7 +103,7 @@ export default function AIForConstructionCompaniesPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">89%</div>
-                <div className="text-slate-600 text-sm">Cost estimation accuracy</div>
+                <div className="text-muted-dark text-sm">Cost estimation accuracy</div>
               </div>
               
               <div className="text-center">
@@ -113,7 +113,7 @@ export default function AIForConstructionCompaniesPage() {
                   </svg>
                 </div>
                 <div className="text-2xl font-bold text-navy mb-1">91%</div>
-                <div className="text-slate-600 text-sm">On-time delivery rate</div>
+                <div className="text-muted-dark text-sm">On-time delivery rate</div>
               </div>
             </div>
 
@@ -122,8 +122,8 @@ export default function AIForConstructionCompaniesPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Project Management & Scheduling</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">AI-Powered Solutions:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">AI-Powered Solutions:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Intelligent project scheduling and resource allocation</li>
                       <li>• Predictive delay identification and mitigation</li>
                       <li>• Automated progress tracking and reporting</li>
@@ -132,8 +132,8 @@ export default function AIForConstructionCompaniesPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Business Impact:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Business Impact:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 25-40% improvement in project delivery times</li>
                       <li>• 15-30% reduction in project overruns</li>
                       <li>• 20-35% better resource utilisation</li>
@@ -148,8 +148,8 @@ export default function AIForConstructionCompaniesPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Safety Monitoring & Risk Management</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Safety AI Features:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Safety AI Features:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Computer vision for PPE compliance monitoring</li>
                       <li>• Predictive hazard identification and alerts</li>
                       <li>• Automated safety inspection reports</li>
@@ -158,8 +158,8 @@ export default function AIForConstructionCompaniesPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Safety Improvements:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Safety Improvements:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 60-80% reduction in safety incidents</li>
                       <li>• 40-60% faster safety violation detection</li>
                       <li>• 30-50% improvement in safety compliance</li>
@@ -174,8 +174,8 @@ export default function AIForConstructionCompaniesPage() {
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Cost Estimation & Quality Control</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">AI Applications:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">AI Applications:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• Automated quantity take-offs from drawings</li>
                       <li>• Predictive cost modelling and budgeting</li>
                       <li>• Quality defect detection and classification</li>
@@ -184,8 +184,8 @@ export default function AIForConstructionCompaniesPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Financial Benefits:</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Financial Benefits:</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li>• 80-95% accuracy in cost estimation</li>
                       <li>• 20-35% reduction in material waste</li>
                       <li>• 40-60% faster estimation processes</li>
@@ -202,11 +202,11 @@ export default function AIForConstructionCompaniesPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">UK Construction AI Success Stories</h2>
             
             <div className="space-y-8">
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">Regional House Builder</h3>
-                    <p className="text-slate-600 text-sm">Mid-sized developer building 200+ homes annually across the Midlands</p>
+                    <p className="text-muted-dark text-sm">Mid-sized developer building 200+ homes annually across the Midlands</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     320% ROI
@@ -214,38 +214,38 @@ export default function AIForConstructionCompaniesPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Managing multiple concurrent build projects whilst maintaining quality standards and controlling costs in a competitive market</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Managing multiple concurrent build projects whilst maintaining quality standards and controlling costs in a competitive market</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">AI Solution:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Implemented AI-powered project scheduling, quality monitoring, and predictive cost management across all sites</p>
+                  <h4 className="font-semibold text-dark mb-2">AI Solution:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Implemented AI-powered project scheduling, quality monitoring, and predictive cost management across all sites</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Build Time Reduction</div>
+                    <div className="text-sm font-medium text-muted mb-1">Build Time Reduction</div>
                     <div className="text-green-700 font-semibold text-sm">18%</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Cost Overruns</div>
+                    <div className="text-sm font-medium text-muted mb-1">Cost Overruns</div>
                     <div className="text-green-700 font-semibold text-sm">78% reduction</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Quality Issues</div>
+                    <div className="text-sm font-medium text-muted mb-1">Quality Issues</div>
                     <div className="text-green-700 font-semibold text-sm">65% fewer</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Profit Margins</div>
+                    <div className="text-sm font-medium text-muted mb-1">Profit Margins</div>
                     <div className="text-green-700 font-semibold text-sm">24% improvement</div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-border-light">
                 <div className="flex flex-wrap items-center justify-between mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-navy">Commercial Contractor</h3>
-                    <p className="text-slate-600 text-sm">Specialist in office fit-outs and commercial refurbishments across London</p>
+                    <p className="text-muted-dark text-sm">Specialist in office fit-outs and commercial refurbishments across London</p>
                   </div>
                   <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
                     410% ROI
@@ -253,28 +253,28 @@ export default function AIForConstructionCompaniesPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-slate-800 mb-2">Challenge:</h4>
-                  <p className="text-slate-600 text-sm mb-4">Tight project deadlines, complex coordination with multiple trades, and maintaining safety standards in occupied buildings</p>
+                  <h4 className="font-semibold text-dark mb-2">Challenge:</h4>
+                  <p className="text-muted-dark text-sm mb-4">Tight project deadlines, complex coordination with multiple trades, and maintaining safety standards in occupied buildings</p>
                   
-                  <h4 className="font-semibold text-slate-800 mb-2">AI Solution:</h4>
-                  <p className="text-slate-600 text-sm mb-4">AI-powered safety monitoring, trade coordination, and real-time progress tracking with client dashboards</p>
+                  <h4 className="font-semibold text-dark mb-2">AI Solution:</h4>
+                  <p className="text-muted-dark text-sm mb-4">AI-powered safety monitoring, trade coordination, and real-time progress tracking with client dashboards</p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Project Delivery</div>
+                    <div className="text-sm font-medium text-muted mb-1">Project Delivery</div>
                     <div className="text-green-700 font-semibold text-sm">96% on time</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Safety Incidents</div>
+                    <div className="text-sm font-medium text-muted mb-1">Safety Incidents</div>
                     <div className="text-green-700 font-semibold text-sm">85% reduction</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Client Satisfaction</div>
+                    <div className="text-sm font-medium text-muted mb-1">Client Satisfaction</div>
                     <div className="text-green-700 font-semibold text-sm">4.8/5</div>
                   </div>
                   <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-sm font-medium text-slate-500 mb-1">Repeat Business</div>
+                    <div className="text-sm font-medium text-muted mb-1">Repeat Business</div>
                     <div className="text-green-700 font-semibold text-sm">67% increase</div>
                   </div>
                 </div>
@@ -289,7 +289,7 @@ export default function AIForConstructionCompaniesPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Getting Started</h3>
-                  <div className="space-y-3 text-slate-600 text-sm">
+                  <div className="space-y-3 text-muted-dark text-sm">
                     <div className="flex items-start gap-3">
                       <input type="checkbox" className="mt-1" />
                       <span>Assess current project management systems and data</span>
@@ -313,8 +313,8 @@ export default function AIForConstructionCompaniesPage() {
                   </div>
 
                   <div className="mt-6">
-                    <h4 className="font-semibold text-slate-800 mb-3">Expert Support:</h4>
-                    <div className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Expert Support:</h4>
+                    <div className="space-y-2 text-muted-dark text-sm">
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas AI consultancy</a> for construction AI strategy</span>
@@ -331,20 +331,20 @@ export default function AIForConstructionCompaniesPage() {
                   <h3 className="font-heading text-xl font-bold text-navy mb-4">Success Factors</h3>
                   <div className="space-y-4">
                     <div className="border-l-4 border-orange pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Data Infrastructure</h4>
-                      <p className="text-slate-600 text-sm">Integrated project data from all sources is essential for AI effectiveness</p>
+                      <h4 className="font-medium text-dark mb-1">Data Infrastructure</h4>
+                      <p className="text-muted-dark text-sm">Integrated project data from all sources is essential for AI effectiveness</p>
                     </div>
                     <div className="border-l-4 border-blue pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Workforce Training</h4>
-                      <p className="text-slate-600 text-sm">Invest in team education to maximise AI adoption and benefits</p>
+                      <h4 className="font-medium text-dark mb-1">Workforce Training</h4>
+                      <p className="text-muted-dark text-sm">Invest in team education to maximise AI adoption and benefits</p>
                     </div>
                     <div className="border-l-4 border-green-500 pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Safety Culture</h4>
-                      <p className="text-slate-600 text-sm">AI enhances but doesn't replace strong safety management practices</p>
+                      <h4 className="font-medium text-dark mb-1">Safety Culture</h4>
+                      <p className="text-muted-dark text-sm">AI enhances but doesn't replace strong safety management practices</p>
                     </div>
                     <div className="border-l-4 border-purple pl-4">
-                      <h4 className="font-medium text-slate-800 mb-1">Continuous Improvement</h4>
-                      <p className="text-slate-600 text-sm">Regular system refinement drives long-term performance gains</p>
+                      <h4 className="font-medium text-dark mb-1">Continuous Improvement</h4>
+                      <p className="text-muted-dark text-sm">Regular system refinement drives long-term performance gains</p>
                     </div>
                   </div>
                 </div>
@@ -357,51 +357,51 @@ export default function AIForConstructionCompaniesPage() {
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Construction AI FAQs</h2>
             
             <div className="space-y-6">
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What are the most impactful AI applications for UK construction companies?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Most impactful applications include safety monitoring (60-80% incident reduction), predictive project scheduling (25-40% efficiency gains), cost estimation (80-95% accuracy), and quality control (40-60% defect reduction). Start with safety monitoring for immediate risk mitigation benefits.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How much should construction companies budget for AI implementation?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Investment varies by company size: small contractors (£1-10M revenue): £20K-£80K annually. Mid-size (£10-50M): £80K-£300K. Large contractors (£50M+): £300K-£1M+. Most companies see positive ROI within 12-18 months with 250-400% returns over 3 years.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How does AI improve construction safety without replacing safety managers?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   AI enhances safety management by providing 24/7 monitoring, predictive hazard identification, and automated compliance checking. Safety managers can focus on strategic safety initiatives whilst AI handles routine monitoring and alerting, creating a more comprehensive safety programme.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">What data is needed for effective construction AI implementation?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Essential data includes project schedules, cost histories, safety records, quality inspections, supplier performance, weather patterns, and resource utilisation. Integration with existing project management systems, IoT sensors, and mobile apps creates comprehensive datasets for AI analysis.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How quickly can construction companies see ROI from AI investments?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   ROI timeline varies by application: safety monitoring (immediate), cost estimation (3-6 months), project management (6-12 months), quality control (4-9 months). Most companies achieve positive returns within 15 months, with full benefits realised over 2-3 years.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">Should construction companies build AI capabilities internally or outsource?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   Most construction companies benefit from partnering with specialists like Blue Canvas for AI strategy and implementation, using proven construction AI platforms, and developing internal capabilities for ongoing management. This approach balances expertise, cost, and speed to value.
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
+              <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How does AI impact construction workforce and job roles?</h3>
-                <p className="text-slate-600 text-sm">
+                <p className="text-muted-dark text-sm">
                   AI typically enhances rather than replaces construction roles. While automating routine monitoring and reporting tasks, it creates opportunities for higher-skilled positions in data analysis, system management, and strategic planning. Invest in training to help workers transition to AI-enhanced roles.
                 </p>
               </div>
@@ -422,7 +422,7 @@ export default function AIForConstructionCompaniesPage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Construction AI Assessment
           </a>
@@ -432,23 +432,23 @@ export default function AIForConstructionCompaniesPage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-agents-accountants" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-agents-accountants" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Agents for Accountants UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/ai-agents-charities" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/ai-agents-charities" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Agents for Charities UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -456,13 +456,13 @@ export default function AIForConstructionCompaniesPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Build Smarter with AI
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a consultation to discuss how AI can transform your construction operations and project delivery.
             </p>
           </div>

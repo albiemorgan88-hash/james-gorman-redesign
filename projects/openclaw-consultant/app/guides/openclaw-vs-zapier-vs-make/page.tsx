@@ -251,11 +251,11 @@ export default function OpenClawVsZapierVsMakePage() {
           
           {/* Introduction */}
           <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-muted-dark leading-relaxed mb-8">
               Choosing the right automation platform can make or break your digital transformation efforts. While Zapier dominates the no-code space and Make.com offers visual workflow building, OpenClaw represents the next generation of AI-native automation.
             </p>
             
-            <p className="text-slate-600 leading-relaxed mb-8">
+            <p className="text-muted-dark leading-relaxed mb-8">
               This guide provides an honest comparison across key dimensions that matter to UK businesses: cost, capabilities, control, compliance, and long-term strategic value. By the end, you'll know exactly which platform fits your needs and budget.
             </p>
           </div>
@@ -272,7 +272,7 @@ export default function OpenClawVsZapierVsMakePage() {
                     <span className="text-white font-bold">Z</span>
                   </div>
                 </div>
-                <ul className="space-y-2 text-slate-600 text-sm">
+                <ul className="space-y-2 text-muted-dark text-sm">
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                     You need immediate results with minimal setup
@@ -299,7 +299,7 @@ export default function OpenClawVsZapierVsMakePage() {
                     <span className="text-white font-bold">M</span>
                   </div>
                 </div>
-                <ul className="space-y-2 text-slate-600 text-sm">
+                <ul className="space-y-2 text-muted-dark text-sm">
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 bg-purple rounded-full mt-2 flex-shrink-0" />
                     You want visual workflow building
@@ -326,7 +326,7 @@ export default function OpenClawVsZapierVsMakePage() {
                     <span className="text-white font-bold">O</span>
                   </div>
                 </div>
-                <ul className="space-y-2 text-slate-600 text-sm">
+                <ul className="space-y-2 text-muted-dark text-sm">
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                     AI automation is a strategic priority
@@ -354,11 +354,11 @@ export default function OpenClawVsZapierVsMakePage() {
             
             <div className="space-y-6">
               {platformComparison.map((comparison, i) => (
-                <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                <div key={i} className="bg-surface rounded-xl p-6 border border-border-light">
                   <h3 className="font-heading text-xl font-bold text-navy mb-6">{comparison.feature}</h3>
                   
                   <div className="grid md:grid-cols-3 gap-6">
-                    <div className="bg-white rounded-lg p-4 border border-slate-200">
+                    <div className="bg-white rounded-lg p-4 border border-border-light">
                       <div className="flex items-center justify-between mb-3">
                         <h4 className="font-semibold text-orange">OpenClaw</h4>
                         <div className="flex items-center gap-1">
@@ -369,11 +369,11 @@ export default function OpenClawVsZapierVsMakePage() {
                           ))}
                         </div>
                       </div>
-                      <div className="font-medium text-slate-800 mb-2">{comparison.openclaw.value}</div>
-                      <div className="text-slate-600 text-sm">{comparison.openclaw.details}</div>
+                      <div className="font-medium text-dark mb-2">{comparison.openclaw.value}</div>
+                      <div className="text-muted-dark text-sm">{comparison.openclaw.details}</div>
                     </div>
                     
-                    <div className="bg-white rounded-lg p-4 border border-slate-200">
+                    <div className="bg-white rounded-lg p-4 border border-border-light">
                       <div className="flex items-center justify-between mb-3">
                         <h4 className="font-semibold text-blue">Zapier</h4>
                         <div className="flex items-center gap-1">
@@ -384,11 +384,11 @@ export default function OpenClawVsZapierVsMakePage() {
                           ))}
                         </div>
                       </div>
-                      <div className="font-medium text-slate-800 mb-2">{comparison.zapier.value}</div>
-                      <div className="text-slate-600 text-sm">{comparison.zapier.details}</div>
+                      <div className="font-medium text-dark mb-2">{comparison.zapier.value}</div>
+                      <div className="text-muted-dark text-sm">{comparison.zapier.details}</div>
                     </div>
                     
-                    <div className="bg-white rounded-lg p-4 border border-slate-200">
+                    <div className="bg-white rounded-lg p-4 border border-border-light">
                       <div className="flex items-center justify-between mb-3">
                         <h4 className="font-semibold text-purple">Make.com</h4>
                         <div className="flex items-center gap-1">
@@ -399,8 +399,8 @@ export default function OpenClawVsZapierVsMakePage() {
                           ))}
                         </div>
                       </div>
-                      <div className="font-medium text-slate-800 mb-2">{comparison.make.value}</div>
-                      <div className="text-slate-600 text-sm">{comparison.make.details}</div>
+                      <div className="font-medium text-dark mb-2">{comparison.make.value}</div>
+                      <div className="text-muted-dark text-sm">{comparison.make.details}</div>
                     </div>
                   </div>
                 </div>
@@ -414,14 +414,14 @@ export default function OpenClawVsZapierVsMakePage() {
             
             <div className="space-y-6">
               {useCaseComparison.map((useCase, i) => (
-                <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+                <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-border-light">
                   <h3 className="font-heading text-xl font-bold text-navy mb-3">{useCase.useCase}</h3>
-                  <p className="text-slate-600 mb-4">{useCase.description}</p>
+                  <p className="text-muted-dark mb-4">{useCase.description}</p>
                   
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <div className="flex items-center gap-3 mb-2">
-                        <span className="text-sm font-medium text-slate-500">Recommended:</span>
+                        <span className="text-sm font-medium text-muted">Recommended:</span>
                         <span className={`font-bold ${
                           useCase.recommendation === 'OpenClaw' ? 'text-orange' :
                           useCase.recommendation === 'Zapier' ? 'text-blue' : 'text-purple'
@@ -429,10 +429,10 @@ export default function OpenClawVsZapierVsMakePage() {
                           {useCase.recommendation}
                         </span>
                       </div>
-                      <p className="text-slate-600 text-sm mb-3">{useCase.reason}</p>
-                      <div className="bg-slate-50 rounded-lg p-3">
-                        <span className="text-sm font-medium text-slate-700">Best for: </span>
-                        <span className="text-slate-600 text-sm">{useCase.bestFor}</span>
+                      <p className="text-muted-dark text-sm mb-3">{useCase.reason}</p>
+                      <div className="bg-surface rounded-lg p-3">
+                        <span className="text-sm font-medium text-dark">Best for: </span>
+                        <span className="text-muted-dark text-sm">{useCase.bestFor}</span>
                       </div>
                     </div>
                   </div>
@@ -445,76 +445,76 @@ export default function OpenClawVsZapierVsMakePage() {
           <section className="mb-16">
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Real-World Cost Analysis</h2>
             
-            <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-8 border border-slate-200">
+            <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-8 border border-border-light">
               <h3 className="font-heading text-xl font-bold text-navy mb-6">Scenario: Medium UK Business (100 automated tasks/day)</h3>
               
               <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-white rounded-lg p-6 border border-slate-200">
+                <div className="bg-white rounded-lg p-6 border border-border-light">
                   <h4 className="font-semibold text-orange mb-4">OpenClaw</h4>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Setup cost:</span>
+                      <span className="text-muted-dark">Setup cost:</span>
                       <span className="font-medium">£2,500</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Monthly running:</span>
+                      <span className="text-muted-dark">Monthly running:</span>
                       <span className="font-medium">£150</span>
                     </div>
-                    <div className="border-t border-slate-200 pt-3">
+                    <div className="border-t border-border pt-3">
                       <div className="flex justify-between">
-                        <span className="text-slate-600">Year 1 total:</span>
+                        <span className="text-muted-dark">Year 1 total:</span>
                         <span className="font-bold text-orange">£4,300</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-600">Year 2+ annual:</span>
+                        <span className="text-muted-dark">Year 2+ annual:</span>
                         <span className="font-bold text-orange">£1,800</span>
                       </div>
                     </div>
                   </div>
                 </div>
                 
-                <div className="bg-white rounded-lg p-6 border border-slate-200">
+                <div className="bg-white rounded-lg p-6 border border-border-light">
                   <h4 className="font-semibold text-blue mb-4">Zapier</h4>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Setup cost:</span>
+                      <span className="text-muted-dark">Setup cost:</span>
                       <span className="font-medium">£0</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Monthly subscription:</span>
+                      <span className="text-muted-dark">Monthly subscription:</span>
                       <span className="font-medium">£299</span>
                     </div>
-                    <div className="border-t border-slate-200 pt-3">
+                    <div className="border-t border-border pt-3">
                       <div className="flex justify-between">
-                        <span className="text-slate-600">Year 1 total:</span>
+                        <span className="text-muted-dark">Year 1 total:</span>
                         <span className="font-bold text-blue">£3,588</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-600">Year 2+ annual:</span>
+                        <span className="text-muted-dark">Year 2+ annual:</span>
                         <span className="font-bold text-blue">£3,588</span>
                       </div>
                     </div>
                   </div>
                 </div>
                 
-                <div className="bg-white rounded-lg p-6 border border-slate-200">
+                <div className="bg-white rounded-lg p-6 border border-border-light">
                   <h4 className="font-semibold text-purple mb-4">Make.com</h4>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Setup cost:</span>
+                      <span className="text-muted-dark">Setup cost:</span>
                       <span className="font-medium">£0</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Monthly subscription:</span>
+                      <span className="text-muted-dark">Monthly subscription:</span>
                       <span className="font-medium">£179</span>
                     </div>
-                    <div className="border-t border-slate-200 pt-3">
+                    <div className="border-t border-border pt-3">
                       <div className="flex justify-between">
-                        <span className="text-slate-600">Year 1 total:</span>
+                        <span className="text-muted-dark">Year 1 total:</span>
                         <span className="font-bold text-purple">£2,148</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-600">Year 2+ annual:</span>
+                        <span className="text-muted-dark">Year 2+ annual:</span>
                         <span className="font-bold text-purple">£2,148</span>
                       </div>
                     </div>
@@ -524,7 +524,7 @@ export default function OpenClawVsZapierVsMakePage() {
               
               <div className="mt-8 p-4 bg-orange/10 rounded-lg border border-orange/20">
                 <h4 className="font-semibold text-orange mb-2">Cost Analysis Summary:</h4>
-                <ul className="space-y-1 text-slate-700 text-sm">
+                <ul className="space-y-1 text-dark text-sm">
                   <li>• OpenClaw becomes most cost-effective after 18 months</li>
                   <li>• Make.com offers best short-term value for complex workflows</li>
                   <li>• Zapier competitive for simple integrations but expensive at scale</li>
@@ -540,7 +540,7 @@ export default function OpenClawVsZapierVsMakePage() {
             
             <div className="space-y-6">
               {migrationScenarios.map((migration, i) => (
-                <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                <div key={i} className="bg-surface rounded-xl p-6 border border-border-light">
                   <div className="flex flex-wrap items-center gap-3 mb-4">
                     <h3 className="font-heading text-lg font-bold text-navy">
                       {migration.from} → OpenClaw
@@ -552,21 +552,21 @@ export default function OpenClawVsZapierVsMakePage() {
                     }`}>
                       {migration.effort} effort
                     </span>
-                    <span className="text-slate-500 text-sm">{migration.timeline}</span>
+                    <span className="text-muted text-sm">{migration.timeline}</span>
                   </div>
                   
                   <div className="grid md:grid-cols-3 gap-6">
                     <div>
-                      <h4 className="font-medium text-slate-700 mb-2">When to Consider:</h4>
-                      <p className="text-slate-600 text-sm">{migration.when}</p>
+                      <h4 className="font-medium text-dark mb-2">When to Consider:</h4>
+                      <p className="text-muted-dark text-sm">{migration.when}</p>
                     </div>
                     <div>
-                      <h4 className="font-medium text-slate-700 mb-2">Migration Benefits:</h4>
-                      <p className="text-slate-600 text-sm">{migration.benefits}</p>
+                      <h4 className="font-medium text-dark mb-2">Migration Benefits:</h4>
+                      <p className="text-muted-dark text-sm">{migration.benefits}</p>
                     </div>
                     <div>
-                      <h4 className="font-medium text-slate-700 mb-2">Timeline:</h4>
-                      <p className="text-slate-600 text-sm">Typical migration takes {migration.timeline} including testing and training</p>
+                      <h4 className="font-medium text-dark mb-2">Timeline:</h4>
+                      <p className="text-muted-dark text-sm">Typical migration takes {migration.timeline} including testing and training</p>
                     </div>
                   </div>
                 </div>
@@ -587,7 +587,7 @@ export default function OpenClawVsZapierVsMakePage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <div>
                   <h4 className="font-semibold text-orange mb-2">OpenClaw</h4>
-                  <ul className="space-y-1 text-slate-600 text-sm">
+                  <ul className="space-y-1 text-muted-dark text-sm">
                     <li>• Complete data sovereignty</li>
                     <li>• UK-hosted infrastructure option</li>
                     <li>• Full audit trail control</li>
@@ -596,7 +596,7 @@ export default function OpenClawVsZapierVsMakePage() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-blue mb-2">Zapier</h4>
-                  <ul className="space-y-1 text-slate-600 text-sm">
+                  <ul className="space-y-1 text-muted-dark text-sm">
                     <li>• US-based, data crosses borders</li>
                     <li>• GDPR compliance claimed</li>
                     <li>• Limited data residency control</li>
@@ -605,7 +605,7 @@ export default function OpenClawVsZapierVsMakePage() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-purple mb-2">Make.com</h4>
-                  <ul className="space-y-1 text-slate-600 text-sm">
+                  <ul className="space-y-1 text-muted-dark text-sm">
                     <li>• EU-based with UK data centres</li>
                     <li>• Strong GDPR compliance</li>
                     <li>• Better than Zapier for UK data</li>
@@ -626,8 +626,8 @@ export default function OpenClawVsZapierVsMakePage() {
               <div className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Technical Considerations</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Technical Considerations</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         Do you need AI-powered automation?
@@ -648,8 +648,8 @@ export default function OpenClawVsZapierVsMakePage() {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Business Considerations</h4>
-                    <ul className="space-y-2 text-slate-600 text-sm">
+                    <h4 className="font-semibold text-dark mb-3">Business Considerations</h4>
+                    <ul className="space-y-2 text-muted-dark text-sm">
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-blue rounded-full mt-2 flex-shrink-0" />
                         What's your expected automation volume?
@@ -670,9 +670,9 @@ export default function OpenClawVsZapierVsMakePage() {
                   </div>
                 </div>
                 
-                <div className="bg-white rounded-lg p-6 border border-slate-200">
-                  <h4 className="font-semibold text-slate-800 mb-3">Recommended Decision Process:</h4>
-                  <ol className="space-y-2 text-slate-600 text-sm">
+                <div className="bg-white rounded-lg p-6 border border-border-light">
+                  <h4 className="font-semibold text-dark mb-3">Recommended Decision Process:</h4>
+                  <ol className="space-y-2 text-muted-dark text-sm">
                     <li className="flex items-start gap-3">
                       <span className="w-6 h-6 bg-orange text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">1</span>
                       Start with a pilot project on your current platform or Zapier for quick wins
@@ -720,10 +720,10 @@ export default function OpenClawVsZapierVsMakePage() {
               
               <div>
                 <h3 className="font-heading text-xl font-bold text-navy mb-4">Get Expert Guidance</h3>
-                <p className="text-slate-600 mb-4">
+                <p className="text-muted-dark mb-4">
                   Choosing the right automation platform is a strategic decision. I can help you:
                 </p>
-                <ul className="space-y-2 text-slate-600 text-sm mb-4">
+                <ul className="space-y-2 text-muted-dark text-sm mb-4">
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                     Assess your specific automation needs
@@ -755,7 +755,7 @@ export default function OpenClawVsZapierVsMakePage() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+            className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
           >
             Get Platform Recommendation
           </a>
@@ -765,23 +765,23 @@ export default function OpenClawVsZapierVsMakePage() {
       {/* Contact Form */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-vs-chatgpt" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-vs-chatgpt" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs ChatGPT: Key Differences</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-vs-n8n" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-vs-n8n" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw vs n8n: Which to Choose?</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -789,13 +789,13 @@ export default function OpenClawVsZapierVsMakePage() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-surface">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
               Get Your Custom Platform Analysis
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-dark text-lg">
               Book a free consultation to receive a detailed comparison tailored to your specific business needs.
             </p>
           </div>

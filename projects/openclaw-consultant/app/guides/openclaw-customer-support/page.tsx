@@ -430,13 +430,13 @@ export default function OpenClawCustomerSupportPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#capabilities"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
               >
                 Explore Support Automation
               </a>
               <a
                 href="/guides"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-btn font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
                 ← All Guides
               </a>
@@ -470,7 +470,7 @@ export default function OpenClawCustomerSupportPage() {
       </section>
 
       {/* Core Capabilities */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -483,7 +483,7 @@ export default function OpenClawCustomerSupportPage() {
 
           <div className="space-y-12">
             {supportCapabilities.map((capability, index) => (
-              <div key={index} className="bg-surface rounded-box p-8 shadow-card">
+              <div key={index} className="bg-surface rounded-2xl p-8 shadow-card">
                 <div className="flex items-start gap-6">
                   <div className="bg-orange text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                     {index + 1}
@@ -544,7 +544,7 @@ export default function OpenClawCustomerSupportPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {implementationLevels.map((level, index) => (
-              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
                 <div className="text-center mb-6">
                   <h3 className="font-heading font-bold text-xl text-white mb-2">{level.level}</h3>
                   <div className="text-orange text-sm font-medium">{level.timeframe}</div>
@@ -582,7 +582,7 @@ export default function OpenClawCustomerSupportPage() {
                 <div className="mt-6">
                   <a
                     href="#contact"
-                    className={`block text-center px-6 py-3 rounded-btn font-semibold text-sm transition-all ${
+                    className={`block text-center px-6 py-3 rounded-xl font-semibold text-sm transition-all ${
                       index === 1 
                         ? "bg-orange text-white hover:bg-orange-hover shadow-glow-orange" 
                         : "bg-white/10 text-white border border-white/20 hover:bg-white/20"
@@ -611,7 +611,7 @@ export default function OpenClawCustomerSupportPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {channelIntegrations.map((channel, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="font-heading font-bold text-lg text-dark">{channel.channel}</h3>
                   <span className={`px-3 py-1 rounded-full text-xs font-medium ${
@@ -652,7 +652,7 @@ export default function OpenClawCustomerSupportPage() {
       </section>
 
       {/* Workflow Examples */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -665,7 +665,7 @@ export default function OpenClawCustomerSupportPage() {
 
           <div className="space-y-8">
             {workflowExamples.map((workflow, index) => (
-              <div key={index} className="bg-surface rounded-box p-8 shadow-card">
+              <div key={index} className="bg-surface rounded-2xl p-8 shadow-card">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                   <div>
                     <h3 className="font-heading font-bold text-lg text-dark mb-3">{workflow.scenario}</h3>
@@ -718,7 +718,7 @@ export default function OpenClawCustomerSupportPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {performanceMetrics.map((category, index) => (
-              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+              <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
                 <h3 className="font-heading font-bold text-xl text-white mb-6 text-center">
                   {category.category}
                 </h3>
@@ -762,7 +762,7 @@ export default function OpenClawCustomerSupportPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {industrySpecifics.map((industry, index) => (
-              <div key={index} className="bg-white rounded-box p-8 shadow-card">
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-4">{industry.industry}</h3>
                 
                 <div className="mb-6">
@@ -801,7 +801,7 @@ export default function OpenClawCustomerSupportPage() {
       </section>
 
       {/* Best Practices */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
@@ -814,7 +814,7 @@ export default function OpenClawCustomerSupportPage() {
 
           <div className="space-y-8">
             {bestPractices.map((practice, index) => (
-              <div key={index} className="bg-surface rounded-box p-8 shadow-card">
+              <div key={index} className="bg-surface rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-bold text-xl text-dark mb-4">{practice.practice}</h3>
                 <p className="text-muted leading-relaxed mb-6">{practice.description}</p>
                 
@@ -842,7 +842,7 @@ export default function OpenClawCustomerSupportPage() {
         <div className="absolute bottom-0 left-[20%] w-[500px] h-[500px] bg-orange/5 rounded-full blur-[120px]" />
 
         <div className="max-w-[1140px] mx-auto px-6 relative z-10">
-          <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-12 text-center">
+          <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-12 text-center">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to Automate Your Customer Support?
             </h2>
@@ -870,7 +870,7 @@ export default function OpenClawCustomerSupportPage() {
             
             <a
               href="#contact"
-              className="inline-flex items-center justify-center bg-orange text-white px-10 py-4 rounded-btn font-bold text-lg hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-xl"
+              className="inline-flex items-center justify-center bg-orange text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-xl"
             >
               Get Your Support Automation Assessment →
             </a>
@@ -881,23 +881,23 @@ export default function OpenClawCustomerSupportPage() {
       {/* Contact Section */}
       
       {/* Related Guides */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-skills-guide" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Skills: Complete Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-cron-jobs" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-cron-jobs" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Cron Jobs: Automation Guide</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/what-is-openclaw-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What is OpenClaw? Complete Guide 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
-            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-slate-100">
+            <a href="/guides/openclaw-setup-mac" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Setup Guide for Mac 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>
@@ -940,7 +940,7 @@ export default function OpenClawCustomerSupportPage() {
               </div>
             </div>
 
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-box p-8">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Support Automation Consultation</h3>
               <p className="text-white/40 text-sm mb-6">Assess your customer support automation potential</p>
               <ContactForm />
