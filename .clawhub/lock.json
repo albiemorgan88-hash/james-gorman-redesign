@@ -16,6 +16,18 @@
     "self-improving": {
       "version": "1.2.16",
       "installedAt": 1775312834396
+    },
+    "zoho-crm": {
+      "version": "1.0.4",
+      "installedAt": 1775327588167
+    },
+    "zoho-mail": {
+      "version": "1.0.4",
+      "installedAt": 1775327595695
+    },
+    "ahrefs": {
+      "version": "1.2.0",
+      "installedAt": 1775327623674
     }
   }
 }
