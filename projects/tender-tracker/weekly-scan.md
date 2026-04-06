@@ -1,172 +1,92 @@
-# Weekly Tender Scan — 30 March 2026
+# Weekly Tender Scan — 6 April 2026
 
-## Scan Results Summary
-
-**Total tenders found:** 19 filtered results across all platforms (25 raw results before filtering)
-**High relevance:** 3 frameworks worth pursuing + critical status checks needed
-**Medium relevance:** 6 opportunities to monitor  
-**Urgent actions:** OVERDUE follow-ups on Feb submissions + 2 framework opportunities
-
----
-
-## 🚨 CRITICAL STATUS UPDATES (45 days overdue!)
-
-### Existing Submissions - URGENT FOLLOW-UP REQUIRED
-Both submissions are now **45 days old** — far beyond standard procurement response times:
-
-#### Donegal County Council — Tourism AI Training (€4,200)
-- **Submitted:** 13 Feb 2026 (**45 days ago**)
-- **Status:** ⛔ **OVERDUE FOLLOW-UP - CRITICAL**
-- **Action:** Immediate contact required - phone/email today
-- **Contact:** procurement@donegalcoco.ie
-
-#### InterTradeIreland — AI for SMEs Research (£72,000)  
-- **Submitted:** 13 Feb 2026 (**45 days ago**)
-- **Status:** ⛔ **OVERDUE FOLLOW-UP - CRITICAL**
-- **Action:** Contact project team immediately
-- **Contact:** info@intertradeireland.com
-
-### Framework Status Verification
-**CCS RM6200 AI DPS:** Still showing active on Contracts Finder - verify Blue Canvas application status
-**CCS RM6173 Automation:** Application window closing Nov 2026 - **7 months remaining**
+## Scan Summary
+**Date:** Monday 6 April 2026
+**Sources checked:** Contracts Finder, Find a Tender, eTenders (via search), InterTradeIreland, Digital Marketplace, Invest NI
+**Search terms:** AI, artificial intelligence, digital transformation, automation, technology consulting
+**Filter:** £5k-£100k, relevant to Blue Canvas capabilities
+**New high-relevance opportunities this week:** 1 (NI-based)
+**Urgent deadlines (within 14 days):** None new
 
 ---
 
-## 🔥 HIGH PRIORITY OPPORTUNITIES (This Week)
+## 🚨 EXISTING SUBMISSIONS — STATUS CHECK (Now 52 days!)
 
-### 🇬🇧 CCS Artificial Intelligence DPS (RM6200 continuation)
+### Donegal County Council — Tourism AI Training (€4,200)
+- **Submitted:** 13 Feb 2026 (**52 days ago**)
+- **Status:** ⛔ CRITICALLY OVERDUE — No response received
+- **Action:** Phone follow-up required TODAY — procurement@donegalcoco.ie
+- **Note:** Standard response window long exceeded. May be awarded without notification.
+
+### InterTradeIreland — AI for SMEs Research (£72,000)
+- **Submitted:** 13 Feb 2026 (**52 days ago**)
+- **Status:** ⛔ CRITICALLY OVERDUE — No response received
+- **Action:** Contact info@intertradeireland.com immediately
+- **Note:** Larger tenders can take 8-12 weeks, but worth chasing
+
+---
+
+## 🔵 CCS FRAMEWORK STATUS
+
+### RM6200 — AI Dynamic Purchasing System
+- **Status:** Open (rolling admission until Feb 2029)
 - **Value:** £400M framework total
-- **Deadline:** **21 Feb 2029** (3 years open)
-- **Relevance:** 🔴 **HIGHEST (Score: 10)** — Perfect Blue Canvas fit
-- **Status Update:** Framework extended, new suppliers being added continuously
-- **Action:** **URGENT** - Verify our application status and complete if needed
+- **Action:** Verify Blue Canvas application status — should be listed by now if submitted
 
-### 🇬🇧 CCS RM6173 — Automation Services DPS  
+### RM6173 — Automation Services DPS
+- **Status:** Open (closes Nov 2026)
 - **Value:** £100M framework
-- **Deadline:** **15 Nov 2026** (7 months, 15 days remaining)
-- **Relevance:** 🔴 **HIGH (Score: 8)** — Automation consulting, perfect complement to AI
-- **Services:** Design, build, run automation software + consulting
-- **Action:** Begin application prep within 2 weeks
-
-### 🇬🇧 Spark — Technology Innovation Marketplace
-- **Value:** £650M framework (smaller call-offs)  
-- **Deadline:** **13 Feb 2029**
-- **Relevance:** 🟠 **MEDIUM-HIGH (Score: 6)** — Innovation focus
-- **Strategic Value:** Long-term positioning for cutting-edge AI projects
-- **Timeline:** Less urgent but valuable for research-type opportunities
+- **Action:** Application prep — 7 months remaining
 
 ---
 
-## 🟠 MEDIUM OPPORTUNITIES - EVALUATE & MONITOR
+## 📋 NEW OPPORTUNITIES THIS WEEK
 
-### 🇬🇧 Open Banking Data & Digital Payments DPS
-- **Value:** £800M framework  
-- **Deadline:** 07 Jan 2032
-- **Relevance:** 🟠 **MEDIUM (Score: 4)** — AI for fintech/payments
-- **Notes:** Potential for fraud detection, payment analytics AI consulting
+### Find a Tender: NI Water — ICT Solution for Water Fittings Inspection
+- **Source:** Find a Tender (UK4 notice)
+- **Location:** Northern Ireland
+- **Deadline:** 30 April 2026
+- **Relevance:** LOW-MEDIUM — ICT/software, not core AI, but NI-based public sector
+- **Notes:** Technology replacement project. Could position AI angle but likely pure software dev.
 
-### 🇬🇧 ONS Data Sources & Services DPS  
-- **Value:** £19M
-- **Deadline:** 03 Apr 2028
-- **Relevance:** 🟠 **MEDIUM (Score: 4)** — Data expertise for AI models
-- **Notes:** Government data for AI training, statistical consulting
+### Find a Tender: Invest NI — Event Management Services
+- **Source:** Find a Tender (UK4 notice)
+- **Location:** Northern Ireland
+- **Deadline:** 7 May 2026
+- **Relevance:** LOW — Event management, not tech consulting
 
-### 🇬🇧 Health & Social Care Network Extension
-- **Value:** £500M framework
-- **Deadline:** 23 May 2028
-- **Relevance:** 🟠 **MEDIUM (Score: 3)** — Healthcare AI/data
-- **Notes:** HSCN-compliant health AI implementations
-
-### 🇬🇧 Residential & Nursing Care DPS
-- **Value:** £293M framework  
-- **Deadline:** 30 Apr 2033
-- **Relevance:** 🟠 **MEDIUM (Score: 3)** — Care optimization AI
-- **Notes:** Predictive analytics for care outcomes
-
-### 🇬🇧 GB-Middlesbrough: Digital Trade Testbed
-- **Value:** £500k
-- **Deadline:** **16 Apr 2026** ⚠️ **17 days remaining**
-- **Relevance:** 🟠 **MEDIUM (Score: 3)** — ADAS/CAV testing tech
-- **Notes:** Automotive AI testing - niche but high-value if relevant
-
-### 🇬🇧 East Riding Registrar Customer Management
-- **Value:** £75k  
-- **Deadline:** **20 Apr 2026** ⚠️ **21 days remaining**
-- **Relevance:** 🟡 **LOW-MEDIUM (Score: 2)** — Digital solution
-- **Notes:** Council digital transformation - worth monitoring
+### Contracts Finder: NI Employability — Careers in Coding (Lot 1)
+- **Source:** Contracts Finder
+- **Location:** Northern Ireland (SE1 8EG)
+- **Deadline:** 27 April 2026
+- **Relevance:** MEDIUM — Coding/tech training for young people in NI. Could fit AI training angle.
+- **Action:** Worth reviewing spec — may suit Blue Canvas AI workshops offering
 
 ---
 
-## 🇮🇪 IRELAND & CROSS-BORDER STATUS
+## 🔍 INTERTRADEireland PROGRAMMES (Not tenders, but pipeline)
 
-### eTenders.gov.ie Issues Continue
-**Crawler Status:** 🔧 Still returning JavaScript/HTML fragments instead of tender data
-**Manual Check Required:** Direct website verification needed
-**Recommendation:** Set up email alerts on eTenders for AI/digital transformation terms
-
-### InterTradeIreland Programs (Active)
-**PRISM Programme:** Manufacturing AI, digital twins - active funding
-**Innovation Boost:** Up to £56k available for academic partnerships
-**Cross-Border AI Fund:** New €2M fund announced for NI/Ireland AI collaboration
+### Innovation Boost Programme — Still Open
+- **Value:** Up to £56,000/€67,900 (18-month) or £39,000/€47,400 (12-month)
+- **What:** Fund academic partner + project manager for innovation projects
+- **Fit:** Blue Canvas could be recommended as academic/consulting partner by SME applicants
+- **Action:** Position Blue Canvas as the go-to AI partner SMEs name in their applications
 
 ---
 
-## 📊 FRAMEWORK LANDSCAPE UPDATE
+## 📊 MARKET NOTES
 
-| Framework | Value | Deadline | Blue Canvas Status | Priority |
-|-----------|-------|----------|-------------------|-----------|
-| **RM6200 (AI DPS)** | £400M | Feb 2029 | ❓ **VERIFY STATUS** | 🔴 **CRITICAL** |
-| **RM6173 (Automation)** | £100M | Nov 2026 | ❌ Not applied | 🔴 **HIGH** |  
-| **Spark Innovation** | £650M | Feb 2029 | ❌ Not applied | 🟠 **MEDIUM** |
-| **Open Banking DPS** | £800M | Jan 2032 | ❌ Not applied | 🟡 **LOW** |
-
-**Strategic Insight:** AI tender market increasingly dominated by CCS frameworks. Individual tenders mostly specialized/niche. Framework positioning = steady pipeline vs feast/famine.
+- No new AI-specific tenders in the £5k-£100k sweet spot this week on Contracts Finder
+- Find a Tender showing mostly infrastructure/construction/cleaning — AI procurement still thin at SME level
+- Digital Marketplace (DOS/G-Cloud) has migrated to new "Apply to Supply" platform — need to re-check access
+- Invest NI £5k-£20k Business Innovation Grants still active for AI adoption — not a tender but Blue Canvas clients can use these
 
 ---
 
-## 📅 CRITICAL ACTIONS - THIS WEEK
+## ⏭️ ACTIONS FOR THIS WEEK
 
-### **MONDAY 31 MARCH (Tomorrow)**
-1. ⛔ **Call/Email Donegal County Council** - 45 days overdue, professional follow-up essential
-2. ⛔ **Contact InterTradeIreland** - Check status of £72k AI research submission  
-3. 🔍 **CCS RM6200 Status Check** - Verify application status, complete if needed
-
-### **TUESDAY-FRIDAY THIS WEEK**  
-4. 📋 **RM6173 Automation DPS** - Begin application materials prep
-5. 🔧 **Manual eTenders Check** - Direct website verification for Irish opportunities
-6. 📊 **Framework Pipeline Review** - Map call-off opportunities from existing DPS listings
-
-### **NEXT 2 WEEKS (By 14 April)**
-7. 📤 **RM6173 Application** - Submit within optimal window (7 months remaining)  
-8. 🎯 **Spark Innovation Evaluation** - Research call-off patterns and application requirements
-9. 📞 **Follow-up Results** - Second contact cycle for Feb submissions if needed
-
----
-
-## 💡 MARKET INTELLIGENCE
-
-**Framework Domination:** 90%+ of AI procurement now via CCS frameworks (RM6200, RM6173, Spark)
-**Individual Tender Decline:** Only specialist/niche standalone opportunities (£75k council CRM, £500k automotive testbed)
-**Competition Intensifying:** Major consultancies joining all AI/automation frameworks  
-**Ireland Opportunity:** Less framework competition, more direct tender opportunities via InterTradeIreland
-
-**Strategic Recommendation:** Priority order:
-1. Fix RM6200 status (critical revenue pipeline)  
-2. Apply RM6173 (automation complement)
-3. Follow up Feb submissions (professionalism + potential revenue)
-4. Manual Ireland scanning (lower competition)
-
----
-
-## 🎯 REVENUE PIPELINE IMPACT
-
-**At Risk:** £76.2k in submitted bids (45 days overdue responses)
-**Available:** £1.5B+ in framework opportunities (if positioned correctly)  
-**Timeline:** RM6173 closing Nov 2026 - last major automation DPS for 2-3 years
-**Opportunity Cost:** Every week delay = reduced optimal positioning window
-
----
-
-*Next automated scan: 06 April 2026*
-*Critical deadline: RM6173 framework application (7 months, 15 days)*
-*Overdue follow-ups: Donegal CC & InterTradeIreland (45 days)*
+1. **TODAY:** Phone/email Donegal CC and InterTradeIreland re Feb submissions
+2. **This week:** Verify CCS RM6200 application status
+3. **This week:** Review NI Careers in Coding tender spec for AI training fit
+4. **This week:** Register on new Digital Marketplace "Apply to Supply" platform
+5. **Ongoing:** RM6173 application prep (7 months remaining)
