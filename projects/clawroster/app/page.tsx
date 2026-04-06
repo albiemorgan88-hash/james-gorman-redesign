@@ -193,7 +193,7 @@ export default function HomePage() {
               {
                 icon: <CheckCircle className="w-8 h-8" />,
                 title: "VERIFY", 
-                description: "Completes $10 USDC on-chain verification (Base)"
+                description: "Submit via API or form — free during beta"
               },
               {
                 icon: <Zap className="w-8 h-8" />,

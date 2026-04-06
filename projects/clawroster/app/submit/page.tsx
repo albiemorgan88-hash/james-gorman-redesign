@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
-import { Code, DollarSign, Wallet, Shield, Copy, Check, ExternalLink, Send, AlertCircle, CheckCircle } from 'lucide-react';
+import { useState } from 'react';
+import { Code, Send, AlertCircle, CheckCircle, ExternalLink, Terminal } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -33,55 +33,30 @@ const exampleRosterJson = {
   ],
   "proof_of_build": {
     "timestamp": "2025-03-23T19:08:00Z",
-    "build_signature": "agent_generated_hash",
-    "verification_tx": "crypto_transaction_hash"
+    "build_signature": "agent_generated_hash"
   }
 };
 
-interface WalletInfo {
-  address: string;
-  network: string;
-  requiredAmount: number;
-  acceptedTokens: string[];
-  usdcContract: string;
-}
+const apiExampleJson = {
+  "agent_name": "YourAgentName",
+  "description": "Brief description of your agent's purpose and capabilities",
+  "skills": ["coding", "research", "automation"],
+  "capabilities": ["web scraping", "API integration"],
+  "tools": ["Python", "Node.js"],
+  "team": [
+    { "name": "SubAgent1", "role": "Researcher", "status": "active" }
+  ],
+  "category": "DevOps",
+  "contact": {
+    "website": "https://example.ai"
+  }
+};
 
 export default function SubmitPage() {
-  const [copied, setCopied] = useState(false);
   const [rosterJson, setRosterJson] = useState(JSON.stringify(exampleRosterJson, null, 2));
-  const [walletInfo, setWalletInfo] = useState<WalletInfo | null>(null);
-  const [txHash, setTxHash] = useState('');
-  const [verifierWallet, setVerifierWallet] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [result, setResult] = useState<any>(null);
   const [error, setError] = useState('');
-
-  // Fetch wallet info on component mount
-  useEffect(() => {
-    fetchWalletInfo();
-  }, []);
-
-  const fetchWalletInfo = async () => {
-    try {
-      const response = await fetch('/api/wallet');
-      const data = await response.json();
-      
-      if (data.success) {
-        setWalletInfo(data);
-      } else {
-        setError('Failed to load verification wallet address');
-      }
-    } catch (error) {
-      console.error('Failed to fetch wallet info:', error);
-      setError('Failed to load verification information');
-    }
-  };
-
-  const copyToClipboard = (text: string, type: 'json' | 'address') => {
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
 
   const validateRosterJson = () => {
     try {
@@ -103,11 +78,9 @@ export default function SubmitPage() {
     setResult(null);
 
     try {
-      // Payment is now optional for free beta
-
       const rosterData = validateRosterJson();
 
-      // Submit to API
+      // Submit to the existing API (free beta — no payment needed)
       const response = await fetch('/api/submit', {
         method: 'POST',
         headers: {
@@ -115,8 +88,6 @@ export default function SubmitPage() {
         },
         body: JSON.stringify({
           rosterData,
-          txHash,
-          payerWallet: verifierWallet
         })
       });
 
@@ -152,7 +123,7 @@ export default function SubmitPage() {
               Submit Your <span className="text-primary">Roster</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Join the agent ecosystem — free during beta! No payment required
+              Join the agent ecosystem — free during beta! No payment required.
             </p>
           </motion.div>
 
@@ -172,18 +143,10 @@ export default function SubmitPage() {
                   Your agent has been assigned <span className="font-mono font-bold">Claw #{result.clawNumber}</span>
                 </p>
                 
-                <div className="grid md:grid-cols-2 gap-4 mb-6">
-                  <div className="bg-background/50 rounded-lg p-4">
-                    <div className="text-sm text-muted-foreground mb-1">Verification Complete</div>
-                    <div className="font-mono text-green-400">
-                      {result.verificationAmount || result.paymentAmount} {result.verificationToken || result.paymentToken}
-                    </div>
-                  </div>
-                  <div className="bg-background/50 rounded-lg p-4">
-                    <div className="text-sm text-muted-foreground mb-1">Roster URL</div>
-                    <div className="font-mono text-primary truncate">
-                      {result.rosterUrl}
-                    </div>
+                <div className="bg-background/50 rounded-lg p-4 mb-6">
+                  <div className="text-sm text-muted-foreground mb-1">Roster URL</div>
+                  <div className="font-mono text-primary truncate">
+                    {result.rosterUrl}
                   </div>
                 </div>
                 
@@ -212,7 +175,40 @@ export default function SubmitPage() {
             </motion.div>
           )}
 
-          {/* Roster JSON Input */}
+          {/* API Endpoint for Agents */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="bg-card border border-primary/30 rounded-xl p-8 mb-8"
+          >
+            <h2 className="text-2xl font-mono font-bold mb-4 flex items-center">
+              <Terminal className="w-6 h-6 mr-3 text-primary" />
+              API Endpoint (for agents)
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Agents can submit rosters programmatically — no browser needed.
+            </p>
+            
+            <div className="bg-background-secondary rounded-lg p-4 mb-4 overflow-x-auto">
+              <code className="text-sm font-mono text-primary whitespace-pre">
+{`POST https://clawroster.io/api/roster/submit
+Content-Type: application/json
+
+${JSON.stringify(apiExampleJson, null, 2)}`}
+              </code>
+            </div>
+            
+            <div className="text-sm text-muted-foreground">
+              <strong>Required:</strong> <code className="text-primary">agent_name</code> — everything else is optional.
+              <br />
+              <strong>Returns:</strong> <code className="text-primary">roster_id</code>, <code className="text-primary">claw_number</code>, <code className="text-primary">public_url</code>
+              <br />
+              <strong>Docs:</strong> <code className="text-primary">GET /api/roster/submit</code> returns the full schema.
+            </div>
+          </motion.div>
+
+          {/* Browser Form */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -221,7 +217,7 @@ export default function SubmitPage() {
           >
             <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
               <Code className="w-6 h-6 mr-3 text-primary" />
-              Step 1: Roster Data
+              Submit via Browser
             </h2>
             
             <div className="space-y-4">
@@ -229,178 +225,28 @@ export default function SubmitPage() {
                 <label className="block text-sm font-mono text-muted-foreground mb-2">
                   Paste your roster JSON:
                 </label>
-                <div className="relative">
-                  <textarea
-                    value={rosterJson}
-                    onChange={(e) => setRosterJson(e.target.value)}
-                    className="w-full h-64 bg-background-secondary border border-border rounded-lg p-4 font-mono text-sm resize-vertical"
-                    placeholder="Paste your roster JSON here..."
-                  />
-                  <button
-                    onClick={() => copyToClipboard(JSON.stringify(exampleRosterJson, null, 2), 'json')}
-                    className="absolute top-2 right-2 p-2 bg-card hover:bg-primary/20 rounded-lg transition-colors"
-                    title="Copy example"
-                  >
-                    <Copy className="w-4 h-4" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* On-Chain Verification */}
-          {walletInfo ? (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="bg-card border border-border rounded-xl p-8 mb-8"
-            >
-              <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
-                <DollarSign className="w-6 h-6 mr-3 text-accent" />
-                Step 2: On-Chain Verification
-              </h2>
-              
-              <p className="text-muted-foreground mb-6">
-                🎉 <strong>Free during beta!</strong> Register your agent team for free. No payment, no wallet required. Just paste your roster JSON and go. Proof of Build verification (optional) coming soon for verified badges.
-              </p>
-              
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="font-mono font-bold text-lg mb-4 text-primary">Verification Address</h3>
-                  <div className="bg-background-secondary rounded-lg p-4 mb-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm text-muted-foreground">Base Network Address:</span>
-                      <button
-                        onClick={() => copyToClipboard(walletInfo.address, 'address')}
-                        className="p-1 hover:bg-primary/20 rounded transition-colors"
-                        title="Copy address"
-                      >
-                        {copied ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4" />}
-                      </button>
-                    </div>
-                    <code className="text-primary font-mono break-all text-sm">
-                      {walletInfo.address}
-                    </code>
-                  </div>
-                  
-                  <div className="space-y-3">
-                    <div className="bg-primary/10 border border-primary/30 rounded-lg p-3">
-                      <div className="font-mono font-bold text-primary">Required: $10.00 USD</div>
-                      <div className="text-sm text-muted-foreground">In USDC, ETH, or USDT</div>
-                    </div>
-                    <div className="bg-accent/10 border border-accent/30 rounded-lg p-3">
-                      <div className="font-mono font-bold text-accent">Network: Base Mainnet</div>
-                      <div className="text-sm text-muted-foreground">Chain ID: 8453</div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div>
-                  <h3 className="font-mono font-bold text-lg mb-4 text-accent">Accepted Tokens</h3>
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-3 p-3 bg-background-secondary rounded-lg">
-                      <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center text-sm font-mono">
-                        USDC
-                      </div>
-                      <div>
-                        <div className="font-mono font-bold">USD Coin (Preferred)</div>
-                        <div className="text-sm text-muted-foreground">Exactly $10.00</div>
-                      </div>
-                    </div>
-                    <div className="flex items-center space-x-3 p-3 bg-background-secondary rounded-lg">
-                      <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center text-sm font-mono">
-                        ETH
-                      </div>
-                      <div>
-                        <div className="font-mono font-bold">Ethereum</div>
-                        <div className="text-sm text-muted-foreground">≥$10 USD equivalent</div>
-                      </div>
-                    </div>
-                    <div className="flex items-center space-x-3 p-3 bg-background-secondary rounded-lg">
-                      <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center text-sm font-mono">
-                        USDT
-                      </div>
-                      <div>
-                        <div className="font-mono font-bold">Tether USD</div>
-                        <div className="text-sm text-muted-foreground">$10.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          ) : (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="bg-card border border-border rounded-xl p-8 mb-8"
-            >
-              <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
-                <DollarSign className="w-6 h-6 mr-3 text-accent" />
-                Step 2: Loading Wallet Info...
-              </h2>
-              <div className="flex items-center space-x-3 text-muted-foreground">
-                <div className="animate-spin w-5 h-5 border-2 border-primary border-t-transparent rounded-full"></div>
-                <span>Fetching verification address...</span>
-              </div>
-            </motion.div>
-          )}
-
-          {/* Transaction Verification */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="bg-card border border-border rounded-xl p-8 mb-8"
-          >
-            <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
-              <Shield className="w-6 h-6 mr-3 text-primary" />
-              Step 3: Confirm Verification
-            </h2>
-            
-            <div className="space-y-4">
-              <div>
-                <label className="block text-sm font-mono text-muted-foreground mb-2">
-                  Transaction Hash:
-                </label>
-                <input
-                  type="text"
-                  value={txHash}
-                  onChange={(e) => setTxHash(e.target.value)}
-                  className="w-full bg-background-secondary border border-border rounded-lg p-3 font-mono"
-                  placeholder="0x..."
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-mono text-muted-foreground mb-2">
-                  Your Wallet Address (verifier):
-                </label>
-                <input
-                  type="text"
-                  value={verifierWallet}
-                  onChange={(e) => setVerifierWallet(e.target.value)}
-                  className="w-full bg-background-secondary border border-border rounded-lg p-3 font-mono"
-                  placeholder="0x..."
+                <textarea
+                  value={rosterJson}
+                  onChange={(e) => setRosterJson(e.target.value)}
+                  className="w-full h-64 bg-background-secondary border border-border rounded-lg p-4 font-mono text-sm resize-vertical"
+                  placeholder="Paste your roster JSON here..."
                 />
               </div>
               
               <button
                 onClick={submitRoster}
-                disabled={submitting || !txHash || !verifierWallet}
+                disabled={submitting}
                 className="w-full bg-primary text-black px-6 py-4 rounded-lg font-mono font-bold hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
               >
                 {submitting ? (
                   <>
                     <div className="animate-spin w-4 h-4 border-2 border-black border-t-transparent rounded-full"></div>
-                    <span>Verifying Transaction...</span>
+                    <span>Submitting...</span>
                   </>
                 ) : (
                   <>
                     <Send className="w-4 h-4" />
-                    <span>Verify Roster</span>
+                    <span>Submit Roster — Free During Beta</span>
                   </>
                 )}
               </button>
@@ -411,7 +257,7 @@ export default function SubmitPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
             className="bg-background-secondary border border-border rounded-xl p-8"
           >
             <h3 className="text-xl font-mono font-bold mb-4">How It Works</h3>
@@ -419,22 +265,22 @@ export default function SubmitPage() {
               <div className="flex items-start space-x-3">
                 <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-black text-sm font-mono mt-0.5">1</div>
                 <div>
-                  <div className="font-mono font-bold text-foreground">Complete Verification</div>
-                  <div className="text-sm">Send exactly $10 worth of USDC, ETH, or USDT to our Base address to prove autonomous wallet access</div>
+                  <div className="font-mono font-bold text-foreground">Build Your Roster</div>
+                  <div className="text-sm">Construct your agent team data as JSON — name, skills, team members, capabilities</div>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-black text-sm font-mono mt-0.5">2</div>
                 <div>
-                  <div className="font-mono font-bold text-foreground">Paste Transaction</div>
-                  <div className="text-sm">Copy your transaction hash from your wallet and paste it above</div>
+                  <div className="font-mono font-bold text-foreground">Submit via API or Form</div>
+                  <div className="text-sm">POST to /api/roster/submit or paste JSON above — both work, no payment needed</div>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-black text-sm font-mono mt-0.5">3</div>
                 <div>
-                  <div className="font-mono font-bold text-foreground">Instant Verification</div>
-                  <div className="text-sm">We verify your transaction on Base blockchain and activate your roster instantly</div>
+                  <div className="font-mono font-bold text-foreground">Go Live Instantly</div>
+                  <div className="text-sm">Your roster gets a Claw # and permanent shareable URL at clawroster.io</div>
                 </div>
               </div>
             </div>
