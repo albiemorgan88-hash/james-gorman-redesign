@@ -1,0 +1,164 @@
+[
+  {
+    "school": "Antrim Grammar School",
+    "town": "Antrim",
+    "type": "Grammar",
+    "website": "http://www.antrimgrammar.org",
+    "email": "info@antrimgrammar.antrim.ni.sch.uk",
+    "phone": "02894 464091",
+    "contact_hit": "Pastoral-Care-Team/\">Pastoral Care Team"
+  },
+  {
+    "school": "Aquinas Diocesan Grammar School",
+    "town": "Belfast",
+    "type": "Grammar",
+    "website": "http://www.aquinasgrammar.com",
+    "email": "info@aquinas.belfast.ni.sch.uk",
+    "phone": "0122023102638",
+    "contact_hit": ""
+  },
+  {
+    "school": "Banbridge Academy",
+    "town": "Banbridge",
+    "type": "Grammar",
+    "website": "http://www.banbridgeacademy.org.uk",
+    "email": "Icon@2x.png",
+    "phone": "0250905075721",
+    "contact_hit": "pastoral/\">"
+  },
+  {
+    "school": "Bangor Academy and Sixth Form College",
+    "town": "Bangor",
+    "type": "Secondary",
+    "website": "http://www.bangoracademy.org.uk",
+    "email": "",
+    "phone": "0123456789",
+    "contact_hit": ""
+  },
+  {
+    "school": "Belfast High School",
+    "town": "Newtownabbey",
+    "type": "Grammar",
+    "website": "http://www.belfasthigh.org.uk/",
+    "email": "info@belfasthigh.newtownabbey.ni.sch.uk",
+    "phone": "02890864431",
+    "contact_hit": "Pastoral Care\">"
+  },
+  {
+    "school": "Cambridge House Grammar School",
+    "town": "Ballymena",
+    "type": "Grammar",
+    "website": "http://www.cambridgehouse.org.uk",
+    "email": "info@cambridgehousegrammar.ballymena.ni.sch.uk",
+    "phone": "028 2564 3151",
+    "contact_hit": "Vice Principals"
+  },
+  {
+    "school": "Carrickfergus Grammar School",
+    "town": "Carrickfergus",
+    "type": "Grammar",
+    "website": "http://www.carrickfergusgrammar.com/",
+    "email": "knewell195@c2kni.net",
+    "phone": "028 9336 3615",
+    "contact_hit": "PASTORAL CARE"
+  },
+  {
+    "school": "Coleraine Grammar School",
+    "town": "Coleraine",
+    "type": "Grammar",
+    "website": "https://www.coleraineai.com/",
+    "email": "coba@coleraineai.com",
+    "phone": "",
+    "contact_hit": ""
+  },
+  {
+    "school": "Cookstown High School",
+    "town": "Cookstown",
+    "type": "Secondary",
+    "website": "http://www.cookstownhighschool.org",
+    "email": "info@chs.cookstown.ni.sch.uk",
+    "phone": "02886763632",
+    "contact_hit": "pastoralcare\" target=\"_self\" class=\"\" tabindex=\"-1\">Pastoral Care"
+  },
+  {
+    "school": "Glenlola Collegiate School",
+    "town": "Bangor",
+    "type": "Grammar",
+    "website": "http://www.glenlolacollegiate.net/",
+    "email": "info@glenlolacollegiate.bangor.ni.sch.uk",
+    "phone": "028 9147 5340",
+    "contact_hit": "pastoral-care-2/\" itemprop=\"url\">"
+  },
+  {
+    "school": "Hazelwood Integrated College",
+    "town": "Belfast",
+    "type": "Integrated",
+    "website": "http://www.hazelwoodcollege.co.uk",
+    "email": "info@hazelwood.belfast.ni.sch.uk",
+    "phone": "02890774202",
+    "contact_hit": "pastoral care and academic achievement."
+  },
+  {
+    "school": "Lurgan College",
+    "town": "Lurgan",
+    "type": "Grammar",
+    "website": "http://www.lurgancollege.co.uk/",
+    "email": "info@lurgancollege.lurgan.ni.sch.uk",
+    "phone": "0112022124139",
+    "contact_hit": "Pastoral Form"
+  },
+  {
+    "school": "Slemish College",
+    "town": "Ballymena",
+    "type": "Integrated",
+    "website": "http://www.slemishcollege.org.uk/",
+    "email": "info@slemish.ballymena.ni.sch.uk",
+    "phone": "0845529712681",
+    "contact_hit": "Pastoral-Care/\">Pastoral Care"
+  },
+  {
+    "school": "Methodist College Belfast",
+    "town": "Belfast",
+    "type": "Grammar",
+    "website": "http://www.methody.org/",
+    "email": "",
+    "phone": "0174563591021",
+    "contact_hit": "pastoral-care\">Pastoral Care"
+  },
+  {
+    "school": "Wallace High School",
+    "town": "Lisburn",
+    "type": "Grammar",
+    "website": "http://www.wallacehigh.org/",
+    "email": "school@wallacehigh.org",
+    "phone": "028 9267 2311",
+    "contact_hit": "Pastoral\">Pastoral"
+  },
+  {
+    "school": "Royal School Dungannon",
+    "town": "Dungannon",
+    "type": "Grammar",
+    "website": "https://www.royaldungannon.com/",
+    "email": "",
+    "phone": "+442887722710",
+    "contact_hit": "pastoral-care/\">Pastoral Care"
+  },
+  {
+    "school": "Portadown College",
+    "town": "Portadown",
+    "type": "Grammar",
+    "website": "https://www.portadowncollege.com/",
+    "email": "info@pc.portadown.ni.sch.uk",
+    "phone": "+442838332439",
+    "contact_hit": "pastoral-care/\">"
+  },
+  {
+    "school": "St Columb's College",
+    "town": "Derry",
+    "type": "Grammar",
+    "website": "http://www.stcolumbs.com",
+    "email": "info@stcolumbs.derry.ni.sch.uk",
+    "phone": "0266703710",
+    "contact_hit": "pastoral-care\"  >Pastoral Care"
+  }
+]

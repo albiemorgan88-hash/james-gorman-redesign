@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-07T18:03:01.569Z",
+  "entries": {
+    "memory:memory/2026-03-02.md:145:169": {
+      "key": "memory:memory/2026-03-02.md:145:169",
+      "path": "memory/2026-03-02.md",
+      "startLine": 145,
+      "endLine": 169,
+      "source": "memory",
+      "snippet": "- Slugs: what-is-an-ai-audit, why-your-business-needs-ai-readiness-assessment, training-staff-on-ai, ai-for-recruitment-agencies, how-to-choose-ai-consultant, implementing-ai-accountancy-firms, uk-ai-action-plan-what-businesses-need-know, small-business-ai-automation, ai-for-professional-services, ai-agents-2026-business-applications **openclawconsultant.co.uk FULLY LIVE ✅** - SSL cert provisioned, HTTPS returning 200, expires May 31 with auto-renewal **Ardmore Testing Feedback** - Payment/success page working fine (number 4 purchased by committee tester) - \"Email rate limit exceeded\" on signup — Supabase free tier limits to 2 confirmation emails/hour - Recommended: disable email confirmat",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8649708217878908,
+      "maxScore": 0.8649708217878908,
+      "firstRecalledAt": "2026-04-07T18:02:50.524Z",
+      "lastRecalledAt": "2026-04-07T18:02:50.524Z",
+      "queryHashes": [
+        "750d969c3f09"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "what-is-an-ai-audit",
+        "training-staff-on-ai",
+        "ai-for-recruitment-agencies",
+        "how-to-choose-ai-consultant",
+        "small-business-ai-automation",
+        "ai-for-professional-services",
+        "openclawconsultant.co.uk",
+        "auto-renewal"
+      ]
+    },
+    "memory:memory/2026-03-30.md:333:362": {
+      "key": "memory:memory/2026-03-30.md:333:362",
+      "path": "memory/2026-03-30.md",
+      "startLine": 333,
+      "endLine": 362,
+      "source": "memory",
+      "snippet": "**Wallet:** 0x3894Ae2a16B81284B9B02F33a5af9569576c0803 - ETH: 0.000776 (~$1.59) - USDC: $61.84 - $CLAWD: 218,063 tokens (~$0.14 — essentially worthless, $66k market cap, 8 trades/day) - PJ asked about swapping $CLAWD to ETH — not worth it, gas > value ## Cormac/HIP Psychology Onboarding — 16:00 GMT ### Cormac's Response - SEO: NOT an immediate priority - BD: Very interested, wants timeline + payment details - Also wants to discuss AI in schools with Kevin (Thursdays) ### Deliverables Created - **BD Service PDF** — £100 onboarding + £650/mo (initially £250, PJ corrected to £650) - **SEO Service PDF** — £100 onboarding + £250/mo - **Email draft** — Wednesday go-live, waived 6-month min, SEO",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.6987007872708078,
+      "maxScore": 0.8495292857774508,
+      "firstRecalledAt": "2026-04-07T18:02:50.524Z",
+      "lastRecalledAt": "2026-04-07T18:03:01.569Z",
+      "queryHashes": [
+        "750d969c3f09",
+        "3396dc7d15b7"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "0.000776",
+        "1.59",
+        "61.84",
+        "0.14",
+        "trades/day",
+        "cormac/hip",
+        "650/mo",
+        "250/mo"
+      ]
+    },
+    "memory:memory/2026-03-02.md:162:193": {
+      "key": "memory:memory/2026-03-02.md:162:193",
+      "path": "memory/2026-03-02.md",
+      "startLine": 162,
+      "endLine": 193,
+      "source": "memory",
+      "snippet": "- Set mailer_autoconfirm: true via Supabase Management API - Was causing \"Email rate limit exceeded\" errors (rate_limit_email_sent was 2/hour on free tier) - Users now sign up instantly without email confirmation - Joseph Brolly was the tester who hit the limit ## Final Flush 9:30pm **BlueCanvas.ai SEO Check Results** - Homepage meta tags ✅ well optimised - /contact returns 404 — CRITICAL, blog CTA links there - Blog post \"What Is an AI Audit\" live but: meta description EMPTY, OG image EMPTY, OG description EMPTY, placeholder lorem ipsum content showing, empty \"Read more\" section, blog images bound to empty CMS fields - Blog post NOT in sitemap yet — needs Webflow republish - 146 URLs in s",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8483459032816093,
+      "maxScore": 0.8483459032816093,
+      "firstRecalledAt": "2026-04-07T18:02:50.524Z",
+      "lastRecalledAt": "2026-04-07T18:02:50.524Z",
+      "queryHashes": [
+        "750d969c3f09"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "mailer-autoconfirm",
+        "rate-limit-email-sent",
+        "2/hour",
+        "bluecanvas.ai",
+        "set",
+        "true",
+        "via",
+        "supabase"
+      ]
+    },
+    "memory:memory/2026-03-30.md:161:193": {
+      "key": "memory:memory/2026-03-30.md:161:193",
+      "path": "memory/2026-03-30.md",
+      "startLine": 161,
+      "endLine": 193,
+      "source": "memory",
+      "snippet": "- **BD Service PDF** — £100 onboarding + £650/mo (initially £250, PJ corrected to £650) - **SEO Service PDF** — £100 onboarding + £250/mo - **Email draft** — Wednesday go-live, waived 6-month min, SEO upsell, Thursday Kevin chat - Both PDFs sent to PJ as actual PDF files via Telegram - HIP showcase already exists: https://albiemorgan88-hash.github.io/showcase-hip-psychology/ - Showcase demonstrates the 4-stage BD pipeline: School discovery → Website mining → Email generation → Zoho CRM + outreach ### BD Delivery Confidence - Can do: Lead scraping, list building, outreach sequences, CRM reporting - Need to explore: Zoho API specifically (used Apollo before) - Risk: Email deliverability if do",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.695559087480801,
+      "maxScore": 0.8479609109167999,
+      "firstRecalledAt": "2026-04-07T18:02:50.524Z",
+      "lastRecalledAt": "2026-04-07T18:03:01.569Z",
+      "queryHashes": [
+        "750d969c3f09",
+        "3396dc7d15b7"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "650/mo",
+        "250/mo",
+        "go-live",
+        "6-month",
+        "4-stage",
+        "service",
+        "pdf",
+        "onboarding"
+      ]
+    },
+    "memory:memory/2026-04-03.md:1:27": {
+      "key": "memory:memory/2026-04-03.md:1:27",
+      "path": "memory/2026-04-03.md",
+      "startLine": 1,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "# 2026-04-03 — Friday ## Morning Dashboard (07:01) - **Uptime**: All 4 sites up ✅ (bluecanvas.ai 414ms, ardmorecricket.com 653ms, uktradejobs.com 489ms, openclawconsultant.co.uk 636ms) - **Ahrefs**: ❌ Signed out — \"account being used on another device\" - **GSC API**: ❌ Refresh token expired/revoked — needs re-auth - **Google Ads API**: ❌ Refresh token expired/revoked — needs re-auth - Both Google tokens (GSC + Ads) need OAuth re-auth flow ## Cron Health - 18 total jobs: 10 OK, 8 errored - 6 failures are timeouts — likely need to bump `agents.defaults.timeoutSeconds` - SEO Friday Monitor hit API rate limit last week — may recur at 09:00 - Ardmore Post-Draw Recon: job succeeded but telegram",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8291080966850743,
+      "maxScore": 0.8291080966850743,
+      "firstRecalledAt": "2026-04-07T18:02:50.524Z",
+      "lastRecalledAt": "2026-04-07T18:02:50.524Z",
+      "queryHashes": [
+        "750d969c3f09"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "bluecanvas.ai",
+        "ardmorecricket.com",
+        "uktradejobs.com",
+        "openclawconsultant.co.uk",
+        "expired/revoked",
+        "re-auth",
+        "agents.defaults.timeoutseconds",
+        "post-draw"
+      ]
+    },
+    "memory:memory/2026-03-06.md:74:89": {
+      "key": "memory:memory/2026-03-06.md:74:89",
+      "path": "memory/2026-03-06.md",
+      "startLine": 74,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "- Tim Clarke follow-up — PJ handling personally ### Config Changes - Semrush removed from all workflows - AHREFS_API_TOKEN, AHREFS_EMAIL, AHREFS_PASSWORD added to ~/.zprofile - GOOGLE_ADS_REFRESH_TOKEN updated in ~/.zprofile (new token with 3 scopes) - MEMORY.md updated with completed items and access details ### Amazon Healthcare AI Opportunity - Researched and scored 7.2/10 - Amazon Connect Health launched (US-only, HIPAA) - UK healthcare AI market $11.14B, NHS £10B digital budget by 2028-29 - Recommended as secondary vertical, not full pivot - Domains available: healthcareaiagents.co.uk, healthcareautomation.co.uk - Report saved: reports/2026-03-06-amazon-healthcare-ai-opportunity.md",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8239867776622721,
+      "maxScore": 0.8239867776622721,
+      "firstRecalledAt": "2026-04-07T18:02:50.524Z",
+      "lastRecalledAt": "2026-04-07T18:02:50.524Z",
+      "queryHashes": [
+        "750d969c3f09"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "follow-up",
+        "ahrefs-api-token",
+        "ahrefs-email",
+        "ahrefs-password",
+        "google-ads-refresh-token",
+        "memory.md",
+        "7.2/10",
+        "us-only"
+      ]
+    },
+    "memory:memory/2026-02-15.md:24:42": {
+      "key": "memory:memory/2026-02-15.md:24:42",
+      "path": "memory/2026-02-15.md",
+      "startLine": 24,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "- CDP API key: albie6 (81f37251-6748-44cf-8227-e6e4500a93a5) - Credentials: ~/.config/cdp/credentials.json - Stacey watched the funding live 💛 ## Infrastructure - GitHub CLI (gh) installed via brew, authenticated as albiemorgan88-hash - gh auth setup-git configured for pushing - CDP SDK (@coinbase/cdp-sdk) installed in projects/wallet/ ## Nightly Build - PJ chose: Tender Tracker Dashboard (to be built overnight) ## PJ Context - In Donegal earlier with Stacey (beach sauna + lunch) - PJ sold $KAS, now holds 12M $CLAWD on Base - Wall Group URL correction: wallgroup.co.uk not thewallgroup.com - PJ wants to set up Google Ads + CRM (future tasks) - FatJoe backlinks — advised to hold off, do fr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8215846666344683,
+      "maxScore": 0.8215846666344683,
+      "firstRecalledAt": "2026-04-07T18:03:01.569Z",
+      "lastRecalledAt": "2026-04-07T18:03:01.569Z",
+      "queryHashes": [
+        "3396dc7d15b7"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "config/cdp/credentials.json",
+        "albiemorgan88-hash",
+        "setup-git",
+        "coinbase/cdp-sdk",
+        "projects/wallet",
+        "wallgroup.co.uk",
+        "thewallgroup.com",
+        "cdp"
+      ]
+    }
+  }
+}
