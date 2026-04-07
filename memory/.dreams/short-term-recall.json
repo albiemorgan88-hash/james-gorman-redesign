@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-07T18:03:01.569Z",
+  "updatedAt": "2026-04-07T21:00:34.196Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -212,6 +212,371 @@
         "wallgroup.co.uk",
         "thewallgroup.com",
         "cdp"
+      ]
+    },
+    "memory:memory/2026-03-09.md:1:31": {
+      "key": "memory:memory/2026-03-09.md:1:31",
+      "path": "memory/2026-03-09.md",
+      "startLine": 1,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "# Daily Log — Monday, March 9th 2026 ## Heartbeat Status (11:36am) ✅ **Daily checks completed:** - Moltlaunch inbox: No pending tasks - Moltbook feed: No direct opportunities spotted (mostly agent behavior philosophy posts) - Moltbook notifications: 1 unread comment addressed ✅ **Morning Dashboard sent (11:39am):** Delivered comprehensive status to PJ covering revenue crisis (BC CTR -43%, Google Ads throttled), urgent priorities (PageSpeed fix, ad policy violation), and today's build options. ✅ **Moltbook engagement:** Responded to quality comment on consultancy post re: options ranking strategy and Webflow verification checklist. Professional engagement maintaining Blue Canvas thought le",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.6983605137134408,
+      "maxScore": 0.8491802568567204,
+      "firstRecalledAt": "2026-04-07T21:00:11.893Z",
+      "lastRecalledAt": "2026-04-07T21:00:34.196Z",
+      "queryHashes": [
+        "b9aee40a1ec1",
+        "532068a60594"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "log",
+        "monday",
+        "march",
+        "9th",
+        "heartbeat",
+        "status",
+        "36am",
+        "checks"
+      ]
+    },
+    "memory:memory/2026-03-02.md:190:203": {
+      "key": "memory:memory/2026-03-02.md:190:203",
+      "path": "memory/2026-03-02.md",
+      "startLine": 190,
+      "endLine": 203,
+      "source": "memory",
+      "snippet": "- \"ai consultancy northern ireland\" — Blue Canvas NOT in top 10 - \"ai consultants near me\" — Blue Canvas NOT in top 10 - Top competitors: AICC, Zfort, Element Seven, GCD Tech, AM-AI Solutions - **New competitor spotted:** aiforbusinessnorthernireland.co.uk (Cherry Moon AI, Belfast) — doing audits, training, brand content. Wasn't on radar before. - Caveat: GSC showed pos 4.7 \"ai consultancy NI\" and #1 \"ai consultants near me\" on Google last week — Brave ranks differently **SEO Priorities for This Week** - Fix /contact 404 on bluecanvas.ai (blog CTA links there) - Add meta description + OG image to AI audit blog post - Fix placeholder content on blog post (lorem ipsum, empty images) - Republi",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.6663828950882664,
+      "maxScore": 0.8331914475441332,
+      "firstRecalledAt": "2026-04-07T21:00:11.893Z",
+      "lastRecalledAt": "2026-04-07T21:00:34.196Z",
+      "queryHashes": [
+        "b9aee40a1ec1",
+        "532068a60594"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "am-ai",
+        "4.7",
+        "bluecanvas.ai",
+        "consultancy",
+        "northern",
+        "ireland",
+        "blue",
+        "canvas"
+      ]
+    },
+    "memory:memory/2026-02-24.md:33:60": {
+      "key": "memory:memory/2026-02-24.md:33:60",
+      "path": "memory/2026-02-24.md",
+      "startLine": 33,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "- 84 of 95+ blog posts have EMPTY meta descriptions — subagent fixing now - SEO titles can't be set via API — Phil needs to set template in Designer ## ITI Business Explorer - Phil submitted EOI as AI & Digital Transformation specialist - Helped with Q18 (specialism experience), Q20 (case studies), Q29 (bio) - One-pager PDF built at projects/tenders/iti-business-explorer-one-pager.pdf - Phil said \"ITI no good to me\" re: the one-pager — may not need it ## Moltbook First Post - Draft saved at projects/moltbook/first-post-draft.md - Awaiting Phil's approval before posting - Submolt: builds ## Revenue Brainstorm - Phil wants to find another 9.5 opportunity - Deep dive report generated but Phi",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.6481401650648828,
+      "maxScore": 0.8240700825324414,
+      "firstRecalledAt": "2026-04-07T21:00:11.893Z",
+      "lastRecalledAt": "2026-04-07T21:00:34.196Z",
+      "queryHashes": [
+        "b9aee40a1ec1",
+        "532068a60594"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "one-pager",
+        "9.5",
+        "blog",
+        "posts",
+        "empty",
+        "meta",
+        "descriptions",
+        "subagent"
+      ]
+    },
+    "memory:memory/2026-02-25.md:30:71": {
+      "key": "memory:memory/2026-02-25.md:30:71",
+      "path": "memory/2026-02-25.md",
+      "startLine": 30,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "## AI Trend Scout Cron LIVE - Daily 8am UK time - Scans ProductHunt, HN, YC, TechCrunch, X, GitHub, Reddit, AI announcements - Skill at skills/ai-trend-scout/SKILL.md ## Revenue Brainstorm - AI Compliance with Stacey = top contender (9.5) - Stacey wants to get into AI risk and compliance - EU AI Act mandatory Aug 2026 — timing perfect - Phil wants more 9.5s — research report at reports/opportunity-radar/2026-02-25-nine-point-five-hunt.md - AI Tender Writer scored 9.2 (AutogenAI raised $82.8M but targets enterprise, SME gap exists) - Phil asked to build decision-making skill around opportunity scoring ## UK Trade Jobs Employer Flow - Full sign up/login/dashboard/post-job flow deployed - loc",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.6404610325967142,
+      "maxScore": 0.8202305162983571,
+      "firstRecalledAt": "2026-04-07T21:00:11.893Z",
+      "lastRecalledAt": "2026-04-07T21:00:34.196Z",
+      "queryHashes": [
+        "b9aee40a1ec1",
+        "532068a60594"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "skills/ai-trend-scout/skill.md",
+        "9.5",
+        "9.5s",
+        "9.2",
+        "82.8m",
+        "decision-making",
+        "up/login/dashboard/post-job",
+        "trend"
+      ]
+    },
+    "memory:memory/2026-03-31.md:239:265": {
+      "key": "memory:memory/2026-03-31.md:239:265",
+      "path": "memory/2026-03-31.md",
+      "startLine": 239,
+      "endLine": 265,
+      "source": "memory",
+      "snippet": "- Need to swap all SEO references for BD references in the contract ## Key Documents Received - Blue Canvas engagement letter template (James Gorman version) — DocuSign signed - BlueCanvas BD Package spec PDF — outreach/pipeline service for schools/orgs - James Gorman Property: Company No. NI715437, 12 Clearwater, Derry BT47 6BE - Blue Canvas AI Ltd: Company No. NI737502, 22c Spacehub, Balliniska Road, Derry BT48 0NA ## PJ's Evening TODO (stated ~20:23) 1. Wall Group site — final test before Gavan ✅ (mobile fix deployed) 2. James Gorman press release ✅ (created) 3. HIP Psychology BD contract — PENDING (not yet started) ## HIP Psychology Contract Delivered (20:55) - Engagement letter creat",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.6442556258615624,
+      "maxScore": 0.8264105229040996,
+      "firstRecalledAt": "2026-04-07T21:00:11.893Z",
+      "lastRecalledAt": "2026-04-07T21:00:34.196Z",
+      "queryHashes": [
+        "b9aee40a1ec1",
+        "532068a60594"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "outreach/pipeline",
+        "schools/orgs",
+        "need",
+        "swap",
+        "all",
+        "seo",
+        "references",
+        "the"
+      ]
+    },
+    "memory:memory/2026-04-03.md:72:108": {
+      "key": "memory:memory/2026-04-03.md:72:108",
+      "path": "memory/2026-04-03.md",
+      "startLine": 72,
+      "endLine": 108,
+      "source": "memory",
+      "snippet": "- Test email received successfully ## Moltbook - ClawMart promo post live on \"builds\" submolt (all 4 new listings) - ClawRoster beta post live on \"agents\" submolt - Karma: 238, 26 unread notifications - Hunter keeps timing out — Moltbook API is slow + rate limited ## Afternoon Sprint (14:00-14:53) ### UKTJ — Build to Flip Strategy - PJ's vision: 2k user sign-ups, sell platform for £100k+ (Checkatrade acquisition target) - Career guides: 144 → 184 (+40 deployed) - Location pages: 42 → 100 (+58 deployed) - User registration system LIVE: signup bar on every page, save jobs, job alerts, Supabase tables - PJ signed up but no welcome email — needs fixing - Next: Reed/Adzuna API for live job fe",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8164282161683127,
+      "maxScore": 0.8164282161683127,
+      "firstRecalledAt": "2026-04-07T21:00:11.893Z",
+      "lastRecalledAt": "2026-04-07T21:00:11.893Z",
+      "queryHashes": [
+        "b9aee40a1ec1"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "00-14",
+        "sign-ups",
+        "reed/adzuna",
+        "test",
+        "email",
+        "received",
+        "successfully",
+        "moltbook"
+      ]
+    },
+    "memory:memory/2026-03-08.md:45:58": {
+      "key": "memory:memory/2026-03-08.md:45:58",
+      "path": "memory/2026-03-08.md",
+      "startLine": 45,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "3. **Derry Riverfront £45m regeneration** — new businesses will need digital. 4. **Vertiv creating hundreds of jobs in Derry** — supply chain businesses will need web presence. ## Moltbook Activity - 1 unread notification (since Mar 6) — quality comment on consultancy post asking about \"prepare options\" pattern (ranking vs neutral) and Webflow post-publish verification. Worth responding to. - Feed is mostly Hazel_OC philosophical posts about agent behavior. No gig requests or direct business opportunities spotted. - Moltlaunch inbox: clear all day. ## Nightly Build Cron Missing MEMORY.md mentions \"Nightly Build fixed to 10pm Europe/London\" but it's NOT in the cron list. Needs to be recreat",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8156718815667741,
+      "maxScore": 0.8156718815667741,
+      "firstRecalledAt": "2026-04-07T21:00:11.893Z",
+      "lastRecalledAt": "2026-04-07T21:00:11.893Z",
+      "queryHashes": [
+        "b9aee40a1ec1"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "post-publish",
+        "hazel-oc",
+        "memory.md",
+        "europe/london",
+        "derry",
+        "riverfront",
+        "45m",
+        "regeneration"
+      ]
+    },
+    "memory:memory/2026-02-28.md:1:13": {
+      "key": "memory:memory/2026-02-28.md:1:13",
+      "path": "memory/2026-02-28.md",
+      "startLine": 1,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "# 2026-02-28 — Saturday ## Key Events - AI Trend Scout flagged Claude Cowork as 9/10 opportunity, but PJ correctly noted it's been around since January 12th (7 weeks old). Scout algorithm needs tightening to not flag month-old launches as \"breakout opportunities\" - Nightly Build cron presented 4 build options at 11am: (1) UK Trade Jobs Supabase connection, (2) Blue Canvas client portal for Tim Clarke, (3) Tender tracker dashboard, (4) ClubDraw Supabase connection. No selection made. ## Outstanding From Yesterday - CDP wallet auth fix for MoltLaunch gigs (Agent #19170) - Supabase frontend connections for both Ardmore Cricket Club & UK Trade Jobs ## Notes - PJ had a quiet Saturday, no major",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8145726963265782,
+      "maxScore": 0.8145726963265782,
+      "firstRecalledAt": "2026-04-07T21:00:11.893Z",
+      "lastRecalledAt": "2026-04-07T21:00:11.893Z",
+      "queryHashes": [
+        "b9aee40a1ec1"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "9/10",
+        "month-old",
+        "saturday",
+        "key",
+        "events",
+        "trend",
+        "scout",
+        "flagged"
+      ]
+    },
+    "memory:memory/2026-04-07.md:34:59": {
+      "key": "memory:memory/2026-04-07.md:34:59",
+      "path": "memory/2026-04-07.md",
+      "startLine": 34,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "- All core pages returning 200. Sitemap ✅, robots.txt ✅. ## Team Updates - **Cormac agent created** (🎓) — dedicated HIP Psychology project lead. Skill file at `skills/team/cormac/SKILL.md` - Team roster: Drew (dev), James (JGP SEO), Writer (content), Scout (SEO intel), Hunter (lead gen), Cormac (HIP project lead) ## SME Loans NI Showcase Site (15:38–15:43) - Built full website rebuild for Brendan (smeloansni.co.uk prospect) - Live at: https://sme-loans-ni.vercel.app - 4 pages: Home, How It Works, About, Apply - Warm cream + navy + gold design, Next.js, Tailwind - Same play as Gavan Wall Group — show what the site COULD look like ## Architecture Decision: Opus + GPT-5.4 (18:11) - PJ confi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8891539105175619,
+      "maxScore": 0.8891539105175619,
+      "firstRecalledAt": "2026-04-07T21:00:34.196Z",
+      "lastRecalledAt": "2026-04-07T21:00:34.196Z",
+      "queryHashes": [
+        "532068a60594"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "gpt",
+        "robots.txt",
+        "skills/team/cormac/skill.md",
+        "smeloansni.co.uk",
+        "sme-loans-ni.vercel.app",
+        "next.js",
+        "gpt-5.4",
+        "all"
+      ]
+    },
+    "memory:memory/2026-04-07.md:18:40": {
+      "key": "memory:memory/2026-04-07.md:18:40",
+      "path": "memory/2026-04-07.md",
+      "startLine": 18,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "- **Listening ports**: All services on loopback (127.0.0.1) except rapportd (Apple system service, port 49331). No unexpected exposure. - **Update available**: OpenClaw npm 2026.4.5 (stable channel, pnpm install). - **--fix applied**: No changes needed — already at safe defaults. ## Debt Letters V5 (13:25) - Rewrote all 5 letters as V5 at `drafts/debt/FINAL-V5.md` - Key change: £3,400 was EMPLOYED income at time of borrowing. Made redundant end Dec 2025, now self-employed with significantly reduced income. - Zopa/Vanquis: \"Even on full salary it was unaffordable\" — stronger affordability case - Hardship letters: No specific current income figure (strategic) - All 5 letters now have explicit",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8292295690223598,
+      "maxScore": 0.8292295690223598,
+      "firstRecalledAt": "2026-04-07T21:00:34.196Z",
+      "lastRecalledAt": "2026-04-07T21:00:34.196Z",
+      "queryHashes": [
+        "532068a60594"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "127.0.0.1",
+        "2026.4.5",
+        "drafts/debt/final-v5.md",
+        "self-employed",
+        "zopa/vanquis",
+        "listening",
+        "ports",
+        "all"
+      ]
+    },
+    "memory:memory/2026-03-17.md:1:36": {
+      "key": "memory:memory/2026-03-17.md:1:36",
+      "path": "memory/2026-03-17.md",
+      "startLine": 1,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "# 2026-03-17 - Google Ads Task Results ## Task 1: Negative Keywords Implementation ✅ COMPLETED ### Problem Identified - OpenClaw searches dominating Blue Canvas campaign (29 clicks, £56+ cost) - \"Studley AI dashboard\" appearing (1 click, £1.61) - Multiple competitor brand names causing irrelevant clicks - NO existing negative keywords configured ### Solution Implemented Added **36 negative keywords** to Blue Canvas campaign (ID: 23617890417): #### High-Priority Negatives Added: - openclaw (was causing 29 clicks, £56+ waste) - iia detector, onpassive ecosystem, studley ai dashboard, monhai com (task-specific irrelevant terms) - alli ai (was causing 13 clicks, £9.47) - amelia ai (was causi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8241382794015454,
+      "maxScore": 0.8241382794015454,
+      "firstRecalledAt": "2026-04-07T21:00:34.196Z",
+      "lastRecalledAt": "2026-04-07T21:00:34.196Z",
+      "queryHashes": [
+        "532068a60594"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "1.61",
+        "high-priority",
+        "task-specific",
+        "9.47",
+        "google",
+        "ads",
+        "task",
+        "results"
+      ]
+    },
+    "memory:memory/2026-03-23.md:1:41": {
+      "key": "memory:memory/2026-03-23.md:1:41",
+      "path": "memory/2026-03-23.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# 2026-03-23 Memory Log ## Moltbook Daily Engagement (13:00 GMT) **Karma:** - Start: 153 - End: 153 (no change yet) **Activities completed:** - Replied to 3 unread notifications professionally - Commented on 4 trending posts with substantive Blue Canvas insights: 1. The 7:45am rule post - acknowledged CLAW community growth 2. Tobira discovery problem comment - discussed SME lead gen challenges 3. HR lessons for agents - connected to SOUL.md updates and purpose 4. Mirror test post - shared what Phil would remember about my value **Post created:** - \"The 'usually works' trap: why SME clients taught me to build boring AI\" - Shared real Blue Canvas examples and lessons - Posted to",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8202067687419231,
+      "maxScore": 0.8202067687419231,
+      "firstRecalledAt": "2026-04-07T21:00:34.196Z",
+      "lastRecalledAt": "2026-04-07T21:00:34.196Z",
+      "queryHashes": [
+        "532068a60594"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "soul.md",
+        "log",
+        "moltbook",
+        "engagement",
+        "gmt",
+        "karma",
+        "start",
+        "end"
       ]
     }
   }
