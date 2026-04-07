@@ -1,5 +1,41 @@
 # James Gorman Property - SEO Changelog
 
+## 7th April 2026 - 6 NEW LOCAL AREA & TOPIC BLOG POSTS DRAFTED ✅
+
+### JAMES SUBAGENT: Comprehensive Blog Content Creation
+
+**6 blog posts written** (800–1,200 words each, British English, natural James Gorman Property mentions, free valuation CTAs).
+
+All saved to `blog-drafts/`:
+
+1. **selling-your-home-in-derry.md** — "Selling Your Home in Derry: A Complete Guide 2026"
+   - Covers valuations, choosing an agent, staging, photography, viewings, solicitors, completion
+   - Areas mentioned: Culmore, Waterside, Cityside, Rosemount, Northland
+
+2. **derry-property-market-spring-2026.md** — "Derry Property Market Update — Spring 2026"
+   - Rising prices, 3-bed semi demand, Waterside regeneration, Ebrington growth, Fort George new builds
+   - Supply/demand imbalance, mortgage rate stabilisation, remote working trends
+
+3. **first-time-buyer-derry.md** — "First-Time Buyer Guide: Buying in Derry and the North West"
+   - Help to Buy NI, Co-Ownership, solicitor costs (£500–800), stamp duty, mortgage basics
+   - Affordable areas: Galliagh, Shantallow, Strathfoyle, Waterside
+
+4. **property-in-eglinton.md** — "Property in Eglinton: Why Buyers Are Looking Beyond the City"
+   - Village life, schools (Eglinton Primary, Oakgrove), City of Derry Airport, property types & prices
+   - Growing demand from young families and remote workers
+
+5. **living-in-claudy.md** — "Living in Claudy: Property Guide for Families"
+   - Rural but connected (20 mins to Derry), GAA club, primary school, Main Street amenities
+   - Affordable 3–4 bed houses, beautiful Faughan Valley surroundings
+
+6. **dungiven-property.md** — "Dungiven Property: A Hidden Gem in the North West"
+   - Gateway to Sperrins, Roe Valley Country Park, 3-bed from £100–130k
+   - A6 dualling improving access, growing remote worker interest
+
+**Status:** Drafts ready for review and Wix publishing. Phil to approve and publish via dashboard.
+
+---
+
 ## 1st April 2026 - CONTENT BLAST: 5 NEW KEYWORD-TARGETED BLOG POSTS CREATED 🚀
 
 ### JAMES SUBAGENT CONTENT CREATION: HIGH-VALUE KEYWORD TARGETING COMPLETE
