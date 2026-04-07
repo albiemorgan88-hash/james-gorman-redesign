@@ -2,7 +2,22 @@
 
 Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 
-## LATEST UPDATE - 30th March 2026 - MAJOR CONTENT CREATION BLAST COMPLETE ⚡
+## LATEST UPDATE - 7th April 2026 - 6 BLOG POSTS PUBLISHED + SITE AUDIT ⚡
+
+### COMPLETED:
+- [DONE] **6 blog posts published to Wix** — Selling, Market Update, First-Time Buyer, Eglinton, Claudy, Dungiven
+- [DONE] **Site health check** — All core pages returning 200, sitemap/robots.txt present, redirects working
+
+### NEW ISSUES FOUND (7th April):
+- [TODO] **P1 — Fix slug `/items-1/i-am-a-title-02`** — "Sell My Home" page has default Wix placeholder URL. Rename to `/sell-your-home` or `/selling`
+- [TODO] **P1 — Fix slug `/blank-15`** — "Merchants View" page has default Wix placeholder URL. Rename to `/merchants-view` or `/merchants-view-derry`
+- [TODO] **P1 — Replace default Wix social links** — Footer and nav have links to instagram.com/wix, facebook.com/WixStudio etc. Replace with actual James Gorman Property social accounts
+- [TODO] **P2 — Add internal links between blog posts** — Cross-link the 6 new blog posts to each other and to key service pages
+- [TODO] **P2 — Add featured images to blog posts** — Posts published without cover images; add professional property photos
+
+---
+
+## 30th March 2026 - MAJOR CONTENT CREATION BLAST COMPLETE ⚡
 
 **MASSIVE PROGRESS**: 5 complete blog posts created (7,000+ words), comprehensive technical audit delivered, performance metrics analyzed.
 

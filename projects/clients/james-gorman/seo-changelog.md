@@ -1,5 +1,34 @@
 # James Gorman Property - SEO Changelog
 
+## 7th April 2026 - 6 BLOG POSTS PUBLISHED TO WIX + SITE HEALTH CHECK ✅
+
+### BLOG PUBLISHING — ALL 6 LIVE ✅
+
+All 6 blog posts published via Wix Blog API v3 (draft → publish flow):
+
+| # | Title | Wix Post ID |
+|---|-------|-------------|
+| 1 | Selling Your Home in Derry: A Complete Guide 2026 | ad320730-1d3c-49f2-9ccb-13ef8329b9bf |
+| 2 | Derry Property Market Update — Spring 2026 | c83eda4c-f368-4c96-bff6-dea1ceee9fb1 |
+| 3 | First-Time Buyer Guide: Buying in Derry and the North West | fecf5354-cf0b-4ebf-b216-087671d67b34 |
+| 4 | Property in Eglinton: Why Buyers Are Looking Beyond the City | 05d6b355-17ce-42cf-aa3e-49a2685a5b7a |
+| 5 | Living in Claudy: Property Guide for Families | ebbf724d-ea69-483e-ae98-0b5a37a73b24 |
+| 6 | Dungiven Property: A Hidden Gem in the North West | 5f296dbb-8a79-46c2-9c46-c1be58b3d888 |
+
+### SITE HEALTH CHECK ✅
+
+**All core pages returning 200:**
+- Homepage, Search Homes, Sales, Lettings, Our Story, Services, Contact, Blog, Free Valuation
+- sitemap.xml ✅ | robots.txt ✅ | non-www → www 301 redirect ✅
+
+**Issues Found:**
+1. **BAD SLUGS** — "Sell My Home" page uses `/items-1/i-am-a-title-02` (default Wix placeholder slug)
+2. **BAD SLUGS** — "Merchants View" page uses `/blank-15` (default Wix placeholder slug)
+3. **DEFAULT SOCIAL LINKS** — Homepage footer has default Wix social media links (instagram.com/wix, facebook.com/WixStudio, etc.) instead of James Gorman Property social accounts
+4. **Social media links in nav** — Same Wix default social links appear in the navigation area
+
+---
+
 ## 7th April 2026 - 6 NEW LOCAL AREA & TOPIC BLOG POSTS DRAFTED ✅
 
 ### JAMES SUBAGENT: Comprehensive Blog Content Creation
