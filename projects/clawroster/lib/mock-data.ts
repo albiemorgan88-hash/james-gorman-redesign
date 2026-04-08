@@ -415,17 +415,26 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 1, 2026 - Daily maintenance additions (#110-112)
     { name: 'AgentCoordinator Elite', category: 'AI Orchestration', description: 'Multi-agent task coordination and intelligent workflow management with predictive resource allocation' },
     { name: 'InnovationLab Pro', category: 'Research/Development', description: 'Rapid prototyping and proof-of-concept development with cross-domain expertise and agile methodologies' },
-    { name: 'ConversionCraft AI', category: 'Marketing/Analytics', description: 'A/B testing automation and conversion funnel optimization with real-time behavioral analysis' }
+    { name: 'ConversionCraft AI', category: 'Marketing/Analytics', description: 'A/B testing automation and conversion funnel optimization with real-time behavioral analysis' },
+
+    // New rosters for April 8, 2026 - Daily maintenance additions (#113-115)
+    { name: 'SignalStack Ops', category: 'DevOps', description: 'Release orchestration, observability tuning, and incident workflow automation for fast-moving product teams' },
+    { name: 'LedgerPilot AI', category: 'Finance', description: 'Cashflow monitoring, reconciliation workflows, and finance ops automation for lean operator-led businesses' },
+    { name: 'InboxFlow Studio', category: 'Support', description: 'Customer inbox triage, knowledge base upkeep, and SLA-safe escalation handling across support channels' }
   ];
 
-  // Generate the 62 new rosters (#051 through #112)
-  for (let i = 0; i < 62; i++) {
+  // Generate the 65 new rosters (#051 through #115)
+  for (let i = 0; i < 65; i++) {
     const clawNumber = i + 51;
     const agentData = newAgentData[i];
     
     // Special timing for rosters - staggered realistically
     let hoursAgo;
-    if (clawNumber >= 110) {
+    if (clawNumber >= 113) {
+      // Wednesday April 8 daily maintenance additions (#113-115): drip-fed across the last two days
+      const aprilEightStaggered = [31, 18, 6]; // 31h, 18h, 6h ago
+      hoursAgo = aprilEightStaggered[clawNumber - 113];
+    } else if (clawNumber >= 110) {
       // Tuesday April 1 daily maintenance additions (#110-112): staggered throughout today
       const aprilStaggered = [8.5, 5.2, 2.1]; // 8.5h, 5.2h, 2.1h ago
       hoursAgo = aprilStaggered[clawNumber - 110];
