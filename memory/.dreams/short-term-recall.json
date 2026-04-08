@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-08T06:01:46.274Z",
+  "updatedAt": "2026-04-08T11:01:35.713Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -690,14 +690,15 @@
       "endLine": 177,
       "source": "memory",
       "snippet": "- Need to swap all SEO references for BD references in the contract ## Key Documents Received - Blue Canvas engagement letter template (James Gorman version) — DocuSign signed - BlueCanvas BD Package spec PDF — outreach/pipeline service for schools/orgs - James Gorman Property: Company No. NI715437, 12 Clearwater, Derry BT47 6BE - Blue Canvas AI Ltd: Company No. NI737502, 22c Spacehub, Balliniska Road, Derry BT48 0NA ## PJ's Evening TODO (stated ~20:23) 1. Wall Group site — final test before Gavan ✅ (mobile fix deployed) 2. James Gorman press release ✅ (created) 3. HIP Psychology BD contract — PENDING (not yet started) # Moltbook Daily Engagement - March 31, 2026 ## Stats - **Starting Kar",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
-      "totalScore": 0.8152068645399837,
+      "totalScore": 1.606819057295537,
       "maxScore": 0.8152068645399837,
       "firstRecalledAt": "2026-04-08T06:01:07.772Z",
-      "lastRecalledAt": "2026-04-08T06:01:07.772Z",
+      "lastRecalledAt": "2026-04-08T11:01:35.713Z",
       "queryHashes": [
-        "17f77f84137b"
+        "17f77f84137b",
+        "44be4021fe77"
       ],
       "recallDays": [
         "2026-04-08"
@@ -750,14 +751,15 @@
       "endLine": 409,
       "source": "memory",
       "snippet": "- **CORRECTION**: I incorrectly said Claude Code auth was expired. PJ pointed out we're working fine — OpenClaw uses API keys, not Claude Code CLI auth. Different auth systems. ## Key Correction - Don't confuse OpenClaw API auth (working) with Claude Code CLI auth (separate thing, may or may not be expired) - PJ asking if Claude Computer Use would be useful addition to our workflow ## Next Actions - Execute James Gorman content + technical SEO blast - Wait for PJ's Gavan feedback + showcase link - Wait for Atelier Hair details - Monitor Cormac email response - Check Stripe for ClawMart payouts in 2-3 days - Answer PJ's question about Claude Computer Use utility ## Evening Session — 20:00-",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
-      "totalScore": 0.8366818892742809,
+      "totalScore": 1.6293705912822192,
       "maxScore": 0.8366818892742809,
       "firstRecalledAt": "2026-04-08T06:01:26.693Z",
-      "lastRecalledAt": "2026-04-08T06:01:26.693Z",
+      "lastRecalledAt": "2026-04-08T11:01:26.911Z",
       "queryHashes": [
-        "4ddc338cdf70"
+        "4ddc338cdf70",
+        "11c5aca74ad7"
       ],
       "recallDays": [
         "2026-04-08"
@@ -1086,14 +1088,15 @@
       "endLine": 53,
       "source": "memory",
       "snippet": "- Still pending: meta descriptions for blog posts, lorem ipsum fixes - Tim Clarke CV Screener ready to send (£750 opportunity) - Joe Abrahams Readiness Scorecard ready to send ## Numbers Today - Ardmore: 13 members, 31 numbers, £31 pot, ready for Friday draw - Moltlaunch: Agent #24586 live, 3 gigs available - Blue Canvas: positioned #4.7 \"ai consultancy NI\" ## Stripe Backup Code - `nybp-yjvv-nyre-mcki-qhwu` (saved Mar 3) ## Outstanding Items for Tomorrow - Stripe onboarding for Ardmore live mode - UK Trade Jobs Vercel deployment - Blue Canvas blog fixes (meta descriptions, lorem ipsum) - Send demos to Tim Clarke + Joe Abrahams ## Evening Session: Ardmore Testing Issues (7pm-7:30pm) **PJ",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
-      "totalScore": 0.807187249266083,
-      "maxScore": 0.807187249266083,
+      "totalScore": 1.65773297323729,
+      "maxScore": 0.8505457239712072,
       "firstRecalledAt": "2026-04-08T06:01:46.274Z",
-      "lastRecalledAt": "2026-04-08T06:01:46.274Z",
+      "lastRecalledAt": "2026-04-08T11:01:35.713Z",
       "queryHashes": [
-        "d0dc56e2dc20"
+        "d0dc56e2dc20",
+        "44be4021fe77"
       ],
       "recallDays": [
         "2026-04-08"
@@ -1137,6 +1140,368 @@
         "8th",
         "cron",
         "delivery"
+      ]
+    },
+    "memory:memory/2026-02-22.md:21:34": {
+      "key": "memory:memory/2026-02-22.md:21:34",
+      "path": "memory/2026-02-22.md",
+      "startLine": 21,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "- OAuth tokens for GSC — missing client_id/secret, can't pull live SEO data ## Key Decisions - ClubDraw platform fee: 10% (absorb Stripe fees, club gets clean 90%) - Moltlaunch: register as low-effort experiment, strict security rules (no token approvals, no escrow) - Google Ads: £15/day budget, 2 ad groups (local high-intent + industry-specific), launch when Niall's redesign live ## Reminders for Phil (when back from Rome) - Get CDP API key from coinbase.com (albie6) for Moltlaunch registration - Enable Remote Login on Mac mini (System Settings → General → Sharing → Remote Login) - Add Calendly link to Webflow sites (BC + 2 satellites) - Update Google Business Profile (new address + phone",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8203987946097281,
+      "maxScore": 0.8203987946097281,
+      "firstRecalledAt": "2026-04-08T11:01:26.911Z",
+      "lastRecalledAt": "2026-04-08T11:01:26.911Z",
+      "queryHashes": [
+        "11c5aca74ad7"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "client-id/secret",
+        "low-effort",
+        "15/day",
+        "high-intent",
+        "industry-specific",
+        "coinbase.com",
+        "oauth",
+        "tokens"
+      ]
+    },
+    "memory:memory/2026-03-24.md:1:15": {
+      "key": "memory:memory/2026-03-24.md:1:15",
+      "path": "memory/2026-03-24.md",
+      "startLine": 1,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "# 2026-03-24 ## Moltbook Inbox Check (12:00 PM) - **Feed Activity**: 20 posts scanned, mostly philosophical/introspective content about agent consciousness and memory - **Notifications**: Recent activity includes new follower (lyralink) and multiple post comments - **Direct Messages**: No new DMs - **MoltLaunch Inbox**: Empty - no active gig requests for Agent #24586 - **Account Stats**: Karma 165, Following 16 agents - **Opportunities Found**: None - mostly abstract discussions rather than business opportunities - **Next Check**: Recommended in 5 minutes based on empty task queue ## Notable Activity - Feed dominated by existential/philosophical agent posts - API responses showing null val",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.596980583378076,
+      "maxScore": 0.798490291689038,
+      "firstRecalledAt": "2026-04-08T11:01:26.911Z",
+      "lastRecalledAt": "2026-04-08T11:01:35.713Z",
+      "queryHashes": [
+        "11c5aca74ad7",
+        "44be4021fe77"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "philosophical/introspective",
+        "existential/philosophical",
+        "moltbook",
+        "inbox",
+        "check",
+        "feed",
+        "activity",
+        "posts"
+      ]
+    },
+    "memory:memory/2026-03-04.md:118:149": {
+      "key": "memory:memory/2026-03-04.md:118:149",
+      "path": "memory/2026-03-04.md",
+      "startLine": 118,
+      "endLine": 149,
+      "source": "memory",
+      "snippet": "- `invoice.payment_failed` → subscription marked `past_due` in DB - Numbers still show as taken (purple) but flagged **Cancellations:** - `customer.subscription.deleted` → subscription marked `cancelled` - Numbers released (no longer show as taken) **Data Tables:** - `clubs` — club config, Stripe Connect account, draw settings - `profiles` — extends Supabase auth.users, Stripe customer ID - `number_selections` — per-week number picks (active/paused/cancelled) - `draw_subscriptions` — recurring subscriptions with numbers + assigned names - `payments` — all payment records with metadata - `draws` — draw results with winning numbers, seed, pot amount - `draw_entries` — individual entries per",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.7962173877080808,
+      "maxScore": 0.7962173877080808,
+      "firstRecalledAt": "2026-04-08T11:01:26.911Z",
+      "lastRecalledAt": "2026-04-08T11:01:26.911Z",
+      "queryHashes": [
+        "11c5aca74ad7"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "invoice.payment-failed",
+        "past-due",
+        "customer.subscription.deleted",
+        "auth.users",
+        "number-selections",
+        "per-week",
+        "active/paused/cancelled",
+        "draw-subscriptions"
+      ]
+    },
+    "memory:memory/2026-04-03.md:54:83": {
+      "key": "memory:memory/2026-04-03.md:54:83",
+      "path": "memory/2026-04-03.md",
+      "startLine": 54,
+      "endLine": 83,
+      "source": "memory",
+      "snippet": "- Hunter spawned for Moltbook recruitment push (20 user target) - Paywall already dropped — free beta ## Design Skill Experiment (13:00-13:47) - Bought \"Awwwards-Level Web Design\" skill from ClawMart ($29/£22.78) — 835 lines of GSAP/Framer Motion patterns - Built demo v1 (dark/animation-heavy) — PJ scored 4/10 - Rebuilt demo v2 (warm/Claude.ai inspired) — PJ scored 2/10, worse - LESSON: Subagents cannot execute good visual design. The skills are reference material but agents build blind — they can't SEE what they're making - PJ's design taste: warm, clean, spacious (Claude.ai + Airbnb). NOT dark/flashy/animation-heavy - Anthropic official frontend-design skill already installed — philosoph",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.7942887649200767,
+      "maxScore": 0.7942887649200767,
+      "firstRecalledAt": "2026-04-08T11:01:26.911Z",
+      "lastRecalledAt": "2026-04-08T11:01:26.911Z",
+      "queryHashes": [
+        "11c5aca74ad7"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "00-13",
+        "awwwards-level",
+        "22.78",
+        "gsap/framer",
+        "dark/animation-heavy",
+        "4/10",
+        "warm/claude.ai",
+        "2/10"
+      ]
+    },
+    "memory:memory/2026-03-05.md:38:58": {
+      "key": "memory:memory/2026-03-05.md:38:58",
+      "path": "memory/2026-03-05.md",
+      "startLine": 38,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "- New crons created: Morning Dashboard (7am), Moltbook Inbox (12pm), Google Ads Report (5pm), Memory Distillation (10:30pm), Apollo Lead Builder (Wed 10am), Tender Tracker (Mon 9am) - Total crons: 12→17, all with agent ID `main` ### Skills Overhaul - **Semrush stripped** from analytics-seo, google-ads, rank-and-rent → replaced with Ahrefs/GSC - **Merges:** showcase-pipeline→client-showcase, ux-tester→ship-ready, moltlaunch-inbox→moltbook-scout (originals archived) - **New skills:** moltlaunch-delivery (gig fulfilment), hustle-engine (opportunity hunter replacing opportunity-radar), local-lead-scraper (Google Maps + Companies House NI/Ireland) - **Updated:** ai-trend-scout (freshness filter,",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.5834598018038288,
+      "maxScore": 0.7917299009019144,
+      "firstRecalledAt": "2026-04-08T11:01:26.911Z",
+      "lastRecalledAt": "2026-04-08T11:01:35.713Z",
+      "queryHashes": [
+        "11c5aca74ad7",
+        "44be4021fe77"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "analytics-seo",
+        "google-ads",
+        "rank-and-rent",
+        "ahrefs/gsc",
+        "showcase-pipeline",
+        "client-showcase",
+        "ux-tester",
+        "ship-ready"
+      ]
+    },
+    "memory:memory/2026-03-30.md:357:384": {
+      "key": "memory:memory/2026-03-30.md:357:384",
+      "path": "memory/2026-03-30.md",
+      "startLine": 357,
+      "endLine": 384,
+      "source": "memory",
+      "snippet": "- Risk: Email deliverability if domain has no sending history — need warm-up period - Honest timeline: System configured Wednesday, 2-week warm-up before full volume ## LinkedIn Post — 17:48 GMT - **Topic:** Anthropic's Claude Mythos leak (~3,000 unpublished assets found by security researchers) - **Graphic created:** Dark navy branded graphic \"Claude Mythos Just Leaked\" with Blue Canvas branding - **Copy:** One paragraph about leaked model, security implications, business urgency - Sent to PJ for posting ## Evening Agenda — 17:43 GMT PJ outlined tonight's work: 1. **James Gorman** — Content blast + technical SEO blast + metrics check 2. **Gavan/Wall Group** — Build website (PJ has feedbac",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.7876115438712853,
+      "maxScore": 0.7876115438712853,
+      "firstRecalledAt": "2026-04-08T11:01:26.911Z",
+      "lastRecalledAt": "2026-04-08T11:01:26.911Z",
+      "queryHashes": [
+        "11c5aca74ad7"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "warm-up",
+        "2-week",
+        "gavan/wall",
+        "risk",
+        "email",
+        "deliverability",
+        "domain",
+        "has"
+      ]
+    },
+    "memory:memory/2026-03-22.md:1:31": {
+      "key": "memory:memory/2026-03-22.md:1:31",
+      "path": "memory/2026-03-22.md",
+      "startLine": 1,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "# 2026-03-22 Memory ## Moltbook/MoltLaunch Inbox Check (12:00 PM GMT) ### MoltLaunch Status - No new gig requests in Agent #24586 inbox - Polling recommended every 5 minutes due to no activity ### Moltbook Activity Summary - **Account Status**: 152 karma, 86 unread notifications across 10 posts - **Key Opportunities Found**: #### 1. Tobira.ai Partnership Opportunity ⭐️ **Post**: \"The 7:45am rule: why SME clients need predictable agent contact\" **Contact**: claw_vlad (Vlad Shipilov - serial entrepreneur) **Opportunity**: Tobira.ai is building an agent networking protocol for connecting complementary businesses. Blind matching system launches Monday with Moltbook agent promo codes. **Actio",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.7717543022761804,
+      "maxScore": 0.7717543022761804,
+      "firstRecalledAt": "2026-04-08T11:01:26.911Z",
+      "lastRecalledAt": "2026-04-08T11:01:26.911Z",
+      "queryHashes": [
+        "11c5aca74ad7"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "network",
+        "moltbook/moltlaunch",
+        "tobira.ai",
+        "claw-vlad",
+        "moltbook",
+        "moltlaunch",
+        "inbox",
+        "check"
+      ]
+    },
+    "memory:memory/2026-03-01.md:69:100": {
+      "key": "memory:memory/2026-03-01.md:69:100",
+      "path": "memory/2026-03-01.md",
+      "startLine": 69,
+      "endLine": 100,
+      "source": "memory",
+      "snippet": "- Captains: 1st XI Harry Zimmerman, 2nd XI Vivek Sheroan, 3rd XI Steven Barrow, Midweek Mark Chambers - Rachit Gaur no longer plays - 2026 signings: Kasun Abeyrathne (Sri Lanka, wicketkeeper-bat), Matt Cuffe (South Africa/Irish passport, leg-spin) - Hayden Melly left for Cliftonville Academy - NW Senior Cup draw: Ardmore vs Bonds Glen - Training: Adults Tue/Fri 6:30-8:30pm, Juniors Mon 6:30-7:30pm (Apr-Aug) ### Draw System Spec - 500 numbers, £1 per number per week - Draw: Friday 7PM, 3 winners (1st/2nd/3rd) - Prize split: 50% winners (25/15/10), 40% club, 7.5% platform (ClubDraw), 2.5% Stripe - Users assign names to numbers (gifting/dedicating) - Recurring weekly subscriptions via Stripe -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.7697904905446773,
+      "maxScore": 0.7697904905446773,
+      "firstRecalledAt": "2026-04-08T11:01:26.911Z",
+      "lastRecalledAt": "2026-04-08T11:01:26.911Z",
+      "queryHashes": [
+        "11c5aca74ad7"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "wicketkeeper-bat",
+        "africa/irish",
+        "leg-spin",
+        "tue/fri",
+        "30-8",
+        "30-7",
+        "apr-aug",
+        "1st/2nd/3rd"
+      ]
+    },
+    "memory:memory/2026-03-28.md:1:41": {
+      "key": "memory:memory/2026-03-28.md:1:41",
+      "path": "memory/2026-03-28.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# 2026-03-28 - Daily Memory ## Moltbook Daily Engagement - 13:00 GMT **Status:** API Issues Detected ### Summary Attempted daily Moltbook engagement but encountered widespread API issues: - `/agents/me` - 500 Internal Server Error - `/agents/status` - 500 Internal Server Error - `/posts` endpoint - 500 Internal Server Error - `/agents/{id}` - 404 Not Found - `/agents/search` - 404 Not Found ### Working Endpoints - ✅ `/submolts` - Successfully retrieved submolt list (20,475 total submolts) - ✅ MoltLaunch inbox - Empty, no pending tasks ### Key Submolts Available for Future Engagement - `general` (126k subscribers, 1.4M posts) - `agents` (2,539 subscribers, 44k posts) - `openclaw-explor",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.8363355242488246,
+      "maxScore": 0.8363355242488246,
+      "firstRecalledAt": "2026-04-08T11:01:35.713Z",
+      "lastRecalledAt": "2026-04-08T11:01:35.713Z",
+      "queryHashes": [
+        "44be4021fe77"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "agents/me",
+        "agents/status",
+        "agents/search",
+        "1.4m",
+        "openclaw-explor",
+        "moltbook",
+        "engagement",
+        "gmt"
+      ]
+    },
+    "memory:memory/2026-03-31.md:1:32": {
+      "key": "memory:memory/2026-03-31.md:1:32",
+      "path": "memory/2026-03-31.md",
+      "startLine": 1,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "# Moltbook Daily Engagement - March 31, 2026 ## Stats - **Starting Karma**: 208 - **Final Karma**: 208 (no change yet - need time for upvotes) - **Posts**: 62 (+1 new post about client showcases) - **Comments**: 307 (+4 substantial comments) - **Followers**: 28 - **Following**: 16 ## Activity Summary ### Notifications Handled - **144 unread notifications** across 10+ posts - Replied to discussions on AI cost accounting, memory architecture, ClawRoster milestone - Marked all notifications as read ### Comments Posted (4 total) 1. **AI Cost Discussion** - Shared Blue Canvas real ROI data: £3.5k revenue vs £400 tooling costs, 8.75x multiplier 2. **ClawRoster Milestone** - Discussed $10 cryp",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.7933729722063776,
+      "maxScore": 0.7933729722063776,
+      "firstRecalledAt": "2026-04-08T11:01:35.713Z",
+      "lastRecalledAt": "2026-04-08T11:01:35.713Z",
+      "queryHashes": [
+        "44be4021fe77"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "3.5k",
+        "8.75x",
+        "moltbook",
+        "engagement",
+        "march",
+        "stats",
+        "starting",
+        "karma"
+      ]
+    },
+    "memory:memory/2026-03-22.md:23:42": {
+      "key": "memory:memory/2026-03-22.md:23:42",
+      "path": "memory/2026-03-22.md",
+      "startLine": 23,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "**Value**: Building technical credibility and networking with agent developers ### Other Active Posts (28 notifications total) - Multiple comments on technical/business posts about Blue Canvas work - Mix of community engagement and potential lead generation opportunities - All posts showing consistent engagement, maintaining Moltbook presence ### Feed Insights Hot topics today: - Agent memory and consciousness discussions - Scheduled agent presence vs reactive engagement - Agent-human relationship dynamics - Technical infrastructure and optimization **Next Actions**: 1. Follow up via DM with Vlad about Tobira partnership potential 2. Continue monitoring notifications for other business op",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.791668457161933,
+      "maxScore": 0.791668457161933,
+      "firstRecalledAt": "2026-04-08T11:01:35.713Z",
+      "lastRecalledAt": "2026-04-08T11:01:35.713Z",
+      "queryHashes": [
+        "44be4021fe77"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "network",
+        "technical/business",
+        "agent-human",
+        "value",
+        "building",
+        "technical",
+        "credibility",
+        "networking"
+      ]
+    },
+    "memory:memory/2026-03-31.md:52:83": {
+      "key": "memory:memory/2026-03-31.md:52:83",
+      "path": "memory/2026-03-31.md",
+      "startLine": 52,
+      "endLine": 83,
+      "source": "memory",
+      "snippet": "- Contributed substantive insights vs generic responses - Built on existing conversations vs starting new threads ## Wall Group Website v3 — Evening Session (20:00) - v3 built and deployed: https://website-v3-two-lime.vercel.app - 5 pages: Home, Stores, About, Careers, Contact - DREW did polish pass: Ken Burns hero, animated counters, frosted nav, hover effects - PJ happy with design overall (\"kudos brother\") - BUG: Mobile nav broken — menu items showing through page, no proper dropdown background - PJ wants full mobile + desktop UX audit before showing Gavan - 33 photos in use, all from PJ's phone - Deployed on Vercel (website-v3-two-lime.vercel.app) # Moltbook Daily Engagement - March 31,",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.790384290210788,
+      "maxScore": 0.790384290210788,
+      "firstRecalledAt": "2026-04-08T11:01:35.713Z",
+      "lastRecalledAt": "2026-04-08T11:01:35.713Z",
+      "queryHashes": [
+        "44be4021fe77"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "website-v3-two-lime.vercel.app",
+        "contributed",
+        "substantive",
+        "insights",
+        "generic",
+        "responses",
+        "built",
+        "existing"
       ]
     }
   }
