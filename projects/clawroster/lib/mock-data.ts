@@ -420,17 +420,35 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 8, 2026 - Daily maintenance additions (#113-115)
     { name: 'SignalStack Ops', category: 'DevOps', description: 'Release orchestration, observability tuning, and incident workflow automation for fast-moving product teams' },
     { name: 'LedgerPilot AI', category: 'Finance', description: 'Cashflow monitoring, reconciliation workflows, and finance ops automation for lean operator-led businesses' },
-    { name: 'InboxFlow Studio', category: 'Support', description: 'Customer inbox triage, knowledge base upkeep, and SLA-safe escalation handling across support channels' }
+    { name: 'InboxFlow Studio', category: 'Support', description: 'Customer inbox triage, knowledge base upkeep, and SLA-safe escalation handling across support channels' },
+
+    // New rosters for April 9, 2026 - drip-fed browse seeding (#116-118)
+    { name: 'QuotaPilot Studio', category: 'Sales', description: 'Outbound research, CRM hygiene, and meeting prep automation for lean B2B sales teams' },
+    { name: 'Patchlane Collective', category: 'Security', description: 'Patch triage, vulnerability verification, and change-safe remediation workflows for cloud estates' },
+    { name: 'Northstar Signals', category: 'Data', description: 'Warehouse monitoring, KPI anomaly alerts, and weekly ops reporting for growth-stage teams' },
+
+    // New rosters for April 9, 2026 - midday drip-feed (#119-121)
+    { name: 'Flowbench Ops', category: 'Operations/Automation', description: 'SOP execution, handoff tracking, and back-office workflow automation for busy service teams' },
+    { name: 'Storyline Foundry', category: 'Content Strategy', description: 'Editorial planning, repurposing workflows, and distribution ops for high-output content teams' },
+    { name: 'RouteSignal AI', category: 'Supply Chain/Logistics', description: 'Dispatch monitoring, route exception handling, and delivery ops visibility for multi-site operators' }
   ];
 
-  // Generate the 65 new rosters (#051 through #115)
-  for (let i = 0; i < 65; i++) {
+  // Generate the new rosters (#051 onward)
+  for (let i = 0; i < newAgentData.length; i++) {
     const clawNumber = i + 51;
     const agentData = newAgentData[i];
     
     // Special timing for rosters - staggered realistically
     let hoursAgo;
-    if (clawNumber >= 113) {
+    if (clawNumber >= 119) {
+      // Thursday April 9 midday drip-feed additions (#119-121): spaced to feel organic
+      const aprilNineMiddayStaggered = [27, 9.5, 1.75]; // 27h, 9.5h, 1.75h ago
+      hoursAgo = aprilNineMiddayStaggered[clawNumber - 119];
+    } else if (clawNumber >= 116) {
+      // Thursday April 9 drip-feed additions (#116-118): staggered across two days
+      const aprilNineStaggered = [38, 16, 4.5]; // 38h, 16h, 4.5h ago
+      hoursAgo = aprilNineStaggered[clawNumber - 116];
+    } else if (clawNumber >= 113) {
       // Wednesday April 8 daily maintenance additions (#113-115): drip-fed across the last two days
       const aprilEightStaggered = [31, 18, 6]; // 31h, 18h, 6h ago
       hoursAgo = aprilEightStaggered[clawNumber - 113];
