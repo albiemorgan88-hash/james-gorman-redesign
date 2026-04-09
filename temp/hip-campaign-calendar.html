@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HIP Psychology | Email Campaign Calendar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: oklch(0.972 0.008 255);
+      --panel: rgba(255, 255, 255, 0.88);
+      --panel-solid: #ffffff;
+      --text: oklch(0.24 0.03 259);
+      --muted: oklch(0.53 0.03 255);
+      --line: oklch(0.91 0.012 255);
+      --navy-1: oklch(0.35 0.12 262);
+      --navy-2: oklch(0.46 0.13 255);
+      --blue-soft: oklch(0.95 0.028 252);
+      --blue-mid: oklch(0.82 0.05 250);
+      --primary-section: oklch(0.97 0.016 250);
+      --staff-section: oklch(0.968 0.022 300);
+      --accent: oklch(0.73 0.13 245);
+      --accent-2: oklch(0.78 0.07 205);
+      --success: oklch(0.87 0.05 155);
+      --success-text: oklch(0.43 0.08 155);
+      --shadow: 0 18px 48px rgba(25, 48, 94, 0.10);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(115, 156, 255, 0.16), transparent 34%),
+        radial-gradient(circle at top right, rgba(40, 87, 187, 0.12), transparent 28%),
+        linear-gradient(180deg, #f3f7fc 0%, #edf3fb 100%);
+      padding: 32px;
+    }
+
+    .frame {
+      width: min(100%, 800px);
+      margin: 0 auto;
+      background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(248,250,255,0.98));
+      border: 1px solid rgba(218, 227, 241, 0.95);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .frame::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(180deg, rgba(255,255,255,0), rgba(86,122,214,0.03));
+    }
+
+    .hero {
+      position: relative;
+      padding: 34px 36px 30px;
+      color: white;
+      background:
+        radial-gradient(circle at 85% 15%, rgba(255,255,255,0.18), transparent 18%),
+        linear-gradient(135deg, #203465 0%, #3556a8 52%, #4a73d1 100%);
+    }
+
+    .hero-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .brand {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    .period {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      opacity: 0.82;
+      padding-top: 2px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 33px;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      max-width: 520px;
+    }
+
+    .subtitle {
+      margin: 12px 0 18px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.84);
+      max-width: 560px;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .summary-card {
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.11);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(10px);
+    }
+
+    .summary-card strong {
+      display: block;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .summary-card span {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.78);
+    }
+
+    .content {
+      padding: 26px 24px 24px;
+    }
+
+    .section {
+      border-radius: 22px;
+      padding: 18px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(219, 228, 242, 0.95);
+      background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(248,251,255,0.96));
+    }
+
+    .section.primary {
+      background: linear-gradient(180deg, rgba(249,251,255,0.98), rgba(242,247,255,0.98));
+    }
+
+    .section.staff {
+      background: linear-gradient(180deg, rgba(250,247,255,0.96), rgba(246,242,255,0.96));
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 0 2px;
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #3556a8;
+    }
+
+    .section-note {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .audience-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .audience-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid rgba(214, 225, 240, 0.98);
+      background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+      padding: 18px 18px 16px;
+      box-shadow: 0 10px 24px rgba(52, 87, 163, 0.05);
+    }
+
+    .audience-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 6px;
+      background: linear-gradient(180deg, #3556a8, #6f93ec);
+    }
+
+    .audience-card.staff::before {
+      background: linear-gradient(180deg, #6844d7, #a97cf5);
+    }
+
+    .audience-card.primary::before {
+      background: linear-gradient(180deg, #2d4b93, #4b77dc);
+    }
+
+    .audience-type {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      color: #3556a8;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .audience-card.staff .audience-type {
+      background: rgba(117, 74, 219, 0.10);
+      color: #6b46dd;
+    }
+
+    .audience-title {
+      margin: 0 0 8px;
+      font-size: 24px;
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+      font-weight: 800;
+      max-width: 560px;
+    }
+
+    .campaign-name {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.35;
+      color: rgba(36, 49, 86, 0.95);
+      margin-bottom: 12px;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+      background: #f5f8ff;
+      color: #34518f;
+      border: 1px solid rgba(212, 223, 239, 0.9);
+    }
+
+    .pill.date {
+      background: linear-gradient(135deg, rgba(54, 89, 171, 0.11), rgba(102, 141, 237, 0.18));
+      color: #27447e;
+    }
+
+    .pill.delivery {
+      background: linear-gradient(135deg, rgba(34, 154, 118, 0.11), rgba(72, 201, 157, 0.15));
+      color: #17644f;
+    }
+
+    .pill.sequence {
+      background: linear-gradient(135deg, rgba(78, 120, 216, 0.10), rgba(157, 185, 248, 0.18));
+      color: #34518f;
+    }
+
+    .supporting {
+      font-size: 11.5px;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+
+    .footer {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-top: 10px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(35, 56, 106, 0.98), rgba(57, 89, 166, 0.98));
+      color: white;
+    }
+
+    .footer-badge {
+      flex: none;
+      padding: 8px 10px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .footer strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.45;
+      color: rgba(255,255,255,0.82);
+    }
+
+    @media (max-width: 720px) {
+      body { padding: 18px; }
+      .hero { padding: 28px 22px 24px; }
+      .content { padding: 18px; }
+      .summary { grid-template-columns: 1fr; }
+      .hero-top, .section-head { flex-direction: column; align-items: flex-start; }
+      .section-note { white-space: normal; }
+      h1 { font-size: 28px; }
+      .audience-title { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="frame">
+    <header class="hero">
+      <div class="hero-top">
+        <div class="brand">HIP Psychology</div>
+        <div class="period">Apr–May 2026</div>
+      </div>
+      <h1>Email campaign calendar, built around who gets what</h1>
+      <p class="subtitle">Audience-first outreach plan for post-primary schools, staff development and primary schools. Target groups lead, campaign names support.</p>
+      <div class="summary">
+        <div class="summary-card">
+          <strong>7</strong>
+          <span>Target groups</span>
+        </div>
+        <div class="summary-card">
+          <strong>11</strong>
+          <span>Email sends</span>
+        </div>
+        <div class="summary-card">
+          <strong>May / June</strong>
+          <span>Main delivery window</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="content">
+      <section class="section">
+        <div class="section-head">
+          <div class="section-label">Post-Primary Schools</div>
+          <div class="section-note">3 distinct audiences, 3 workshop themes</div>
+        </div>
+        <div class="audience-grid">
+          <article class="audience-card">
+            <div class="audience-type">Target audience</div>
+            <h2 class="audience-title">Heads of Year 8 + Key Stage 3</h2>
+            <div class="campaign-name">Team Building, Year 8 transition workshop</div>
+            <div class="meta-row">
+              <div class="pill date">Tue 21 Apr</div>
+              <div class="pill delivery">Delivery: May / June</div>
+            </div>
+            <div class="supporting">Transition-focused workshop for incoming Year 8 pupils.</div>
+          </article>
+
+          <article class="audience-card">
+            <div class="audience-type">Target audience</div>
+            <h2 class="audience-title">Heads of Years 9 to 11 + Head of KS3 &amp; KS4</h2>
+            <div class="campaign-name">Vaping, Be Strong &amp; Resist Peer Pressure</div>
+            <div class="meta-row">
+              <div class="pill date">Mon 28 Apr</div>
+              <div class="pill delivery">Delivery: June</div>
+            </div>
+            <div class="supporting">Prevention-led message for middle and senior post-primary year groups.</div>
+          </article>
+
+          <article class="audience-card">
+            <div class="audience-type">Target audience</div>
+            <h2 class="audience-title">Years 8 &amp; 9 + Head of Key Stage 3</h2>
+            <div class="campaign-name">Tackling Anxiety, timed ahead of school holidays</div>
+            <div class="meta-row">
+              <div class="pill date">Mon 5 May</div>
+              <div class="pill delivery">Delivery: May / June</div>
+            </div>
+            <div class="supporting">Wellbeing-led message timed ahead of the holiday transition.</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section staff">
+        <div class="section-head">
+          <div class="section-label">Staff Development</div>
+          <div class="section-note">One audience, 3-email video sequence</div>
+        </div>
+        <div class="audience-grid">
+          <article class="audience-card staff">
+            <div class="audience-type">Target audience</div>
+            <h2 class="audience-title">Post-Primary Teachers</h2>
+            <div class="campaign-name">Wellbeing, Resilience &amp; Work-Life Balance, 3-part marketing video series</div>
+            <div class="meta-row">
+              <div class="pill date">Thu 23 Apr</div>
+              <div class="pill date">Thu 7 May</div>
+              <div class="pill date">Thu 21 May</div>
+            </div>
+            <div class="meta-row">
+              <div class="pill sequence">Email 1, launch</div>
+              <div class="pill sequence">Email 2, follow-up</div>
+              <div class="pill sequence">Email 3, final push</div>
+            </div>
+            <div class="supporting">One audience, repeated touchpoints, shown as a single clean sequence.</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section primary">
+        <div class="section-head">
+          <div class="section-label">Primary Schools</div>
+          <div class="section-note">2 principal audiences plus nursery leaders</div>
+        </div>
+        <div class="audience-grid">
+          <article class="audience-card primary">
+            <div class="audience-type">Target audience</div>
+            <h2 class="audience-title">All Primary School Principals</h2>
+            <div class="campaign-name">Cultural Diversity, online workshops running 20 to 22 May</div>
+            <div class="meta-row">
+              <div class="pill date">Mon 21 Apr</div>
+              <div class="pill date">Tue 29 Apr</div>
+              <div class="pill date">Wed 14 May</div>
+            </div>
+            <div class="meta-row">
+              <div class="pill sequence">3-week send pattern</div>
+              <div class="pill delivery">Delivery: 20 to 22 May</div>
+            </div>
+            <div class="supporting">Only multi-touch primary campaign, grouped as one clear sequence.</div>
+          </article>
+
+          <article class="audience-card primary">
+            <div class="audience-type">Target audience</div>
+            <h2 class="audience-title">Primary School Principals</h2>
+            <div class="campaign-name">Shared Education</div>
+            <div class="meta-row">
+              <div class="pill date">Wed 23 Apr</div>
+              <div class="pill delivery">Delivery: May / June</div>
+            </div>
+            <div class="supporting">Single-send principal message, separated to keep the hierarchy clean.</div>
+          </article>
+
+          <article class="audience-card primary">
+            <div class="audience-type">Target audience</div>
+            <h2 class="audience-title">Nursery School Leaders / Principals</h2>
+            <div class="campaign-name">Building Friendships</div>
+            <div class="meta-row">
+              <div class="pill date">Wed 30 Apr</div>
+              <div class="pill delivery">Delivery: May / June</div>
+            </div>
+            <div class="supporting">Nursery-specific audience callout, kept distinct from the wider primary campaigns.</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="footer" aria-label="Next meeting note">
+        <div class="footer-badge">Next meeting</div>
+        <div>
+          <strong>Thu 16 Apr, 10:30am on Zoom</strong>
+          <p>Discuss 26/27 year-round plans and lock the wider campaign rhythm beyond this April to May outreach window.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

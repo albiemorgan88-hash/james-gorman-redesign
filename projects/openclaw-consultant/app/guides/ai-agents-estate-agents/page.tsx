@@ -199,6 +199,9 @@ export default function AIAgentsEstateAgentsPage() {
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
               Automate property descriptions, lead qualification, market analysis, and client communications. Win more instructions with less admin work.
             </p>
+            <p className="text-white/50 text-sm md:text-base max-w-[620px] mb-10 leading-relaxed">
+              The best fit is usually an independent agency that already has a strong local reputation, like <a href="https://jamesgormanproperty.com" target="_blank" rel="noopener" className="text-orange hover:text-orange-hover transition-colors duration-200">James Gorman Property</a>, but wants to move faster behind the scenes.
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a

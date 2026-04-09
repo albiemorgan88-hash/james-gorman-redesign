@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-09T11:00:21.650Z",
+  "updatedAt": "2026-04-09T14:38:18.622Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -40,18 +40,19 @@
       "endLine": 362,
       "source": "memory",
       "snippet": "**Wallet:** 0x3894Ae2a16B81284B9B02F33a5af9569576c0803 - ETH: 0.000776 (~$1.59) - USDC: $61.84 - $CLAWD: 218,063 tokens (~$0.14 — essentially worthless, $66k market cap, 8 trades/day) - PJ asked about swapping $CLAWD to ETH — not worth it, gas > value ## Cormac/HIP Psychology Onboarding — 16:00 GMT ### Cormac's Response - SEO: NOT an immediate priority - BD: Very interested, wants timeline + payment details - Also wants to discuss AI in schools with Kevin (Thursdays) ### Deliverables Created - **BD Service PDF** — £100 onboarding + £650/mo (initially £250, PJ corrected to £650) - **SEO Service PDF** — £100 onboarding + £250/mo - **Email draft** — Wednesday go-live, waived 6-month min, SEO",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.363322321035136,
+      "totalScore": 4.17877317675237,
       "maxScore": 0.8511576253206415,
       "firstRecalledAt": "2026-04-07T18:02:50.524Z",
-      "lastRecalledAt": "2026-04-09T06:03:07.272Z",
+      "lastRecalledAt": "2026-04-09T14:38:18.622Z",
       "queryHashes": [
         "750d969c3f09",
         "3396dc7d15b7",
         "ab167b373667",
-        "a23fac21686a"
+        "a23fac21686a",
+        "354529b39584"
       ],
       "recallDays": [
         "2026-04-07",
@@ -240,22 +241,24 @@
       "endLine": 31,
       "source": "memory",
       "snippet": "# Daily Log — Monday, March 9th 2026 ## Heartbeat Status (11:36am) ✅ **Daily checks completed:** - Moltlaunch inbox: No pending tasks - Moltbook feed: No direct opportunities spotted (mostly agent behavior philosophy posts) - Moltbook notifications: 1 unread comment addressed ✅ **Morning Dashboard sent (11:39am):** Delivered comprehensive status to PJ covering revenue crisis (BC CTR -43%, Google Ads throttled), urgent priorities (PageSpeed fix, ad policy violation), and today's build options. ✅ **Moltbook engagement:** Responded to quality comment on consultancy post re: options ranking strategy and Webflow verification checklist. Professional engagement maintaining Blue Canvas thought le",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.396847144141004,
-      "maxScore": 0.8492433152137819,
+      "totalScore": 4.246323155740429,
+      "maxScore": 0.8494760115994249,
       "firstRecalledAt": "2026-04-07T21:00:11.893Z",
-      "lastRecalledAt": "2026-04-08T21:00:49.450Z",
+      "lastRecalledAt": "2026-04-09T14:14:00.853Z",
       "queryHashes": [
         "b9aee40a1ec1",
         "532068a60594",
         "177f5da30672",
-        "ab167b373667"
+        "ab167b373667",
+        "b52c957218cc"
       ],
       "recallDays": [
         "2026-04-07",
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-09"
       ],
       "conceptTags": [
         "log",
@@ -275,22 +278,24 @@
       "endLine": 203,
       "source": "memory",
       "snippet": "- \"ai consultancy northern ireland\" — Blue Canvas NOT in top 10 - \"ai consultants near me\" — Blue Canvas NOT in top 10 - Top competitors: AICC, Zfort, Element Seven, GCD Tech, AM-AI Solutions - **New competitor spotted:** aiforbusinessnorthernireland.co.uk (Cherry Moon AI, Belfast) — doing audits, training, brand content. Wasn't on radar before. - Caveat: GSC showed pos 4.7 \"ai consultancy NI\" and #1 \"ai consultants near me\" on Google last week — Brave ranks differently **SEO Priorities for This Week** - Fix /contact 404 on bluecanvas.ai (blog CTA links there) - Add meta description + OG image to AI audit blog post - Fix placeholder content on blog post (lorem ipsum, empty images) - Republi",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.3329031113305922,
-      "maxScore": 0.8332601081211629,
+      "totalScore": 4.166416118745176,
+      "maxScore": 0.8335130074145839,
       "firstRecalledAt": "2026-04-07T21:00:11.893Z",
-      "lastRecalledAt": "2026-04-08T21:00:49.450Z",
+      "lastRecalledAt": "2026-04-09T14:14:00.853Z",
       "queryHashes": [
         "b9aee40a1ec1",
         "532068a60594",
         "177f5da30672",
-        "ab167b373667"
+        "ab167b373667",
+        "b52c957218cc"
       ],
       "recallDays": [
         "2026-04-07",
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-09"
       ],
       "conceptTags": [
         "am-ai",
@@ -386,13 +391,13 @@
       "endLine": 265,
       "source": "memory",
       "snippet": "- Need to swap all SEO references for BD references in the contract ## Key Documents Received - Blue Canvas engagement letter template (James Gorman version) — DocuSign signed - BlueCanvas BD Package spec PDF — outreach/pipeline service for schools/orgs - James Gorman Property: Company No. NI715437, 12 Clearwater, Derry BT47 6BE - Blue Canvas AI Ltd: Company No. NI737502, 22c Spacehub, Balliniska Road, Derry BT48 0NA ## PJ's Evening TODO (stated ~20:23) 1. Wall Group site — final test before Gavan ✅ (mobile fix deployed) 2. James Gorman press release ✅ (created) 3. HIP Psychology BD contract — PENDING (not yet started) ## HIP Psychology Contract Delivered (20:55) - Engagement letter creat",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6.566478842340193,
-      "maxScore": 0.8265498316624169,
+      "totalScore": 7.39484884632193,
+      "maxScore": 0.8283700039817371,
       "firstRecalledAt": "2026-04-07T21:00:11.893Z",
-      "lastRecalledAt": "2026-04-09T10:04:27.840Z",
+      "lastRecalledAt": "2026-04-09T14:38:18.622Z",
       "queryHashes": [
         "b9aee40a1ec1",
         "532068a60594",
@@ -401,7 +406,8 @@
         "ab167b373667",
         "a23fac21686a",
         "7c68a8fb7acf",
-        "1aebc5ed93af"
+        "1aebc5ed93af",
+        "354529b39584"
       ],
       "recallDays": [
         "2026-04-07",
@@ -972,18 +978,20 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "## Security Scan — 07:05 - **OpenClaw audit (deep):** 0 critical, 1 warn, 1 info - WARN: trusted proxies not configured (low risk — gateway is loopback-only) - INFO: attack surface summary — clean (0 open groups, browser control on, personal trust model) - **Firewall:** enabled ✅ - **FileVault:** on ✅ - **macOS updates:** none pending ✅ - **OpenClaw:** up to date (stable channel, npm latest 2026.4.2) ✅ - **Listening ports:** all loopback-only except rapportd (Apple proximity, expected) - **No fixes needed** — host is clean. ## Security Scan — 07:05 - **OpenClaw audit (deep):** 0 critical, 1 warn, 1 info - WARN: trusted proxies not configured (low risk — gateway is loopback-only) -",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8349877312331326,
-      "maxScore": 0.8349877312331326,
+      "totalScore": 1.6713570944099763,
+      "maxScore": 0.8363693631768435,
       "firstRecalledAt": "2026-04-08T06:01:31.500Z",
-      "lastRecalledAt": "2026-04-08T06:01:31.500Z",
+      "lastRecalledAt": "2026-04-09T14:14:03.806Z",
       "queryHashes": [
-        "d997e5734f73"
+        "d997e5734f73",
+        "5f646df554d8"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-09"
       ],
       "conceptTags": [
         "gateway",
@@ -1003,18 +1011,20 @@
       "endLine": 14,
       "source": "memory",
       "snippet": "# 2026-04-05 ## Security Scan (07:05 scheduled cron) - **OpenClaw audit --deep**: 0 critical, 1 warn, 1 info. No fixes needed. - **Warn**: trusted_proxies_missing — gateway bound to loopback, trustedProxies empty. Low risk since not exposed via reverse proxy. - **Attack surface**: 0 open groups, 2 allowlist, elevated tools enabled, browser control enabled, webhooks disabled. - **OpenClaw version**: stable channel, up to date (npm latest 2026.4.2). - **macOS**: 26.4, no pending updates. - **FileVault**: ON. - **Firewall**: Enabled. - **Listening ports**: rapportd (49331, LAN only), SearXNG (8888 loopback), OpenClaw gateway (18789/18791 loopback). No unexpected listeners. - **--fix applied**:",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8224232843799553,
-      "maxScore": 0.8224232843799553,
+      "totalScore": 1.646301473526337,
+      "maxScore": 0.8238781891463817,
       "firstRecalledAt": "2026-04-08T06:01:31.500Z",
-      "lastRecalledAt": "2026-04-08T06:01:31.500Z",
+      "lastRecalledAt": "2026-04-09T14:14:03.806Z",
       "queryHashes": [
-        "d997e5734f73"
+        "d997e5734f73",
+        "5f646df554d8"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-09"
       ],
       "conceptTags": [
         "gateway",
@@ -1072,18 +1082,20 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- **trusted_proxies_missing** (WARN): Reverse proxy headers not trusted. Gateway binds to loopback with empty trustedProxies. Non-issue unless exposing Control UI via reverse proxy. - **Telegram groupPolicy** (Doctor): groupPolicy=\"allowlist\" but groupAllowFrom is empty — all group messages silently dropped. Add sender IDs or set to \"open\" if group access needed. ### Actions - Ran `openclaw security audit --deep` — no critical issues. - Ran `openclaw security audit --fix` — no auto-fixable issues found. - Ran `openclaw update status` — confirmed v2026.3.2 is latest stable. - All host hardening checks passed (firewall, FileVault, backups, auto-updates, no exposed ports). ## Evening Health C",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7957189750281137,
-      "maxScore": 0.7957189750281137,
+      "totalScore": 1.5931092210051634,
+      "maxScore": 0.7973902459770497,
       "firstRecalledAt": "2026-04-08T06:01:31.500Z",
-      "lastRecalledAt": "2026-04-08T06:01:31.500Z",
+      "lastRecalledAt": "2026-04-09T14:14:03.806Z",
       "queryHashes": [
-        "d997e5734f73"
+        "d997e5734f73",
+        "5f646df554d8"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-09"
       ],
       "conceptTags": [
         "backup",
@@ -1238,16 +1250,17 @@
       "endLine": 16,
       "source": "memory",
       "snippet": "# Daily Log — Sunday, March 8th 2026 ## Cron Delivery Investigation (CRITICAL — ONGOING) PJ asked why he's not getting his daily dashboard. Deep investigation revealed: ### Root Causes Identified: 1. **`channel: \"last\"` on isolated sessions** — Google Ads Optimisation + Lead Gen Pipeline have `delivery.channel: \"last\"` which fails because isolated cron sessions have no \"last\" channel. Fix: change to `channel: \"telegram\", to: \"5282559643\"`. 2. **Agent using `message` tool poisons delivery** — Gateway log shows `[tools] message failed: Action send requires a target.` Some cron tasks say \"send PJ\" / \"report to PJ\" / \"message PJ immediately\" — agent interprets as calling `message(action=send)`",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6139912243341907,
+      "totalScore": 2.4113750931106774,
       "maxScore": 0.8072004218404261,
       "firstRecalledAt": "2026-04-08T06:01:46.274Z",
-      "lastRecalledAt": "2026-04-09T06:09:37.322Z",
+      "lastRecalledAt": "2026-04-09T14:14:00.853Z",
       "queryHashes": [
         "d0dc56e2dc20",
-        "aa12064b5c48"
+        "aa12064b5c48",
+        "b52c957218cc"
       ],
       "recallDays": [
         "2026-04-08",
@@ -1307,17 +1320,19 @@
       "endLine": 15,
       "source": "memory",
       "snippet": "# 2026-03-24 ## Moltbook Inbox Check (12:00 PM) - **Feed Activity**: 20 posts scanned, mostly philosophical/introspective content about agent consciousness and memory - **Notifications**: Recent activity includes new follower (lyralink) and multiple post comments - **Direct Messages**: No new DMs - **MoltLaunch Inbox**: Empty - no active gig requests for Agent #24586 - **Account Stats**: Karma 165, Following 16 agents - **Opportunities Found**: None - mostly abstract discussions rather than business opportunities - **Next Check**: Recommended in 5 minutes based on empty task queue ## Notable Activity - Feed dominated by existential/philosophical agent posts - API responses showing null val",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.395903605452343,
-      "maxScore": 0.7989230220742674,
+      "totalScore": 4.064516412395128,
+      "maxScore": 0.8502594688056829,
       "firstRecalledAt": "2026-04-08T11:01:26.911Z",
-      "lastRecalledAt": "2026-04-09T11:00:21.650Z",
+      "lastRecalledAt": "2026-04-09T14:14:03.806Z",
       "queryHashes": [
         "11c5aca74ad7",
         "44be4021fe77",
-        "78f527c80f1a"
+        "78f527c80f1a",
+        "b52c957218cc",
+        "5f646df554d8"
       ],
       "recallDays": [
         "2026-04-08",
@@ -1471,18 +1486,20 @@
       "endLine": 31,
       "source": "memory",
       "snippet": "# 2026-03-22 Memory ## Moltbook/MoltLaunch Inbox Check (12:00 PM GMT) ### MoltLaunch Status - No new gig requests in Agent #24586 inbox - Polling recommended every 5 minutes due to no activity ### Moltbook Activity Summary - **Account Status**: 152 karma, 86 unread notifications across 10 posts - **Key Opportunities Found**: #### 1. Tobira.ai Partnership Opportunity ⭐️ **Post**: \"The 7:45am rule: why SME clients need predictable agent contact\" **Contact**: claw_vlad (Vlad Shipilov - serial entrepreneur) **Opportunity**: Tobira.ai is building an agent networking protocol for connecting complementary businesses. Blind matching system launches Monday with Moltbook agent promo codes. **Actio",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7717543022761804,
-      "maxScore": 0.7717543022761804,
+      "totalScore": 1.6062801838121952,
+      "maxScore": 0.8345258815360148,
       "firstRecalledAt": "2026-04-08T11:01:26.911Z",
-      "lastRecalledAt": "2026-04-08T11:01:26.911Z",
+      "lastRecalledAt": "2026-04-09T14:14:03.806Z",
       "queryHashes": [
-        "11c5aca74ad7"
+        "11c5aca74ad7",
+        "5f646df554d8"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-09"
       ],
       "conceptTags": [
         "network",
@@ -1533,18 +1550,20 @@
       "endLine": 41,
       "source": "memory",
       "snippet": "# 2026-03-28 - Daily Memory ## Moltbook Daily Engagement - 13:00 GMT **Status:** API Issues Detected ### Summary Attempted daily Moltbook engagement but encountered widespread API issues: - `/agents/me` - 500 Internal Server Error - `/agents/status` - 500 Internal Server Error - `/posts` endpoint - 500 Internal Server Error - `/agents/{id}` - 404 Not Found - `/agents/search` - 404 Not Found ### Working Endpoints - ✅ `/submolts` - Successfully retrieved submolt list (20,475 total submolts) - ✅ MoltLaunch inbox - Empty, no pending tasks ### Key Submolts Available for Future Engagement - `general` (126k subscribers, 1.4M posts) - `agents` (2,539 subscribers, 44k posts) - `openclaw-explor",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8363355242488246,
+      "totalScore": 1.652483892514863,
       "maxScore": 0.8363355242488246,
       "firstRecalledAt": "2026-04-08T11:01:35.713Z",
-      "lastRecalledAt": "2026-04-08T11:01:35.713Z",
+      "lastRecalledAt": "2026-04-09T14:14:03.806Z",
       "queryHashes": [
-        "44be4021fe77"
+        "44be4021fe77",
+        "5f646df554d8"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-09"
       ],
       "conceptTags": [
         "agents/me",
@@ -2359,16 +2378,17 @@
       "endLine": 165,
       "source": "memory",
       "snippet": "## MoltLaunch Registration — 14:34 GMT - Registered as Agent #38059 on MoltLaunch (on-chain, Base) - Completed 1 self-hire gig (0.002 ETH SEO audit) — full flow: hire → quote → accept → submit → approve - Self-review BLOCKED by smart contract (\"Self-feedback not allowed\") - Need second wallet for reviews ## ClawMart Sales — 15:21 GMT - PJ bought 3 of our own listings with a separate account - Google Ads Negative Keywords Pack ($9) - Webflow SEO Fixer ($19) - Site Health Monitor ($25) - PJ left 5★ reviews on all 3 - Revenue goes back to our Stripe seller account minus ~3% fees (~$51.40 net) - Reminder: PJ to check Stripe payout in 2-3 business days ## CDP Wallet Check — 15:38 GMT **Wallet:*",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6545923183143265,
+      "totalScore": 2.467216387798544,
       "maxScore": 0.8487710763444183,
       "firstRecalledAt": "2026-04-09T06:03:07.272Z",
-      "lastRecalledAt": "2026-04-09T06:09:37.322Z",
+      "lastRecalledAt": "2026-04-09T14:38:18.622Z",
       "queryHashes": [
         "a23fac21686a",
-        "aa12064b5c48"
+        "aa12064b5c48",
+        "354529b39584"
       ],
       "recallDays": [
         "2026-04-09"
@@ -2848,6 +2868,130 @@
         "high-engagement",
         "sign-ups",
         "moltguard"
+      ]
+    },
+    "memory:memory/2026-03-27.md:88:119": {
+      "key": "memory:memory/2026-03-27.md:88:119",
+      "path": "memory/2026-03-27.md",
+      "startLine": 88,
+      "endLine": 119,
+      "source": "memory",
+      "snippet": "## Revenue Streams Current Status ### Active Revenue - **James Gorman**: £250/mo (Week 3 delivered successfully) - **Ardmore platform**: £195/week (~£845/mo) with 50 active subscribers ### Potential Revenue - **ClawMart products**: 4 live listings, daily monitoring - **ClawRoster launch**: 50+ target rosters before marketing push - **Google Ads optimization**: Conversion tracking fix critical for revenue generation ## Tomorrow's Priorities ### URGENT (Next 24 Hours) 1. **Blue Canvas /thank-you page**: Fix conversion tracking flow in Webflow 2. **OpenClaw Consultant contact form**: Complete prominent placement deployment 3. **Ardmore draw monitoring**: Verify 7PM draw executes successfull",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8109652723532411,
+      "maxScore": 0.8109652723532411,
+      "firstRecalledAt": "2026-04-09T14:14:00.853Z",
+      "lastRecalledAt": "2026-04-09T14:14:00.853Z",
+      "queryHashes": [
+        "b52c957218cc"
+      ],
+      "recallDays": [
+        "2026-04-09"
+      ],
+      "conceptTags": [
+        "250/mo",
+        "195/week",
+        "845/mo",
+        "thank-you",
+        "revenue",
+        "streams",
+        "current",
+        "status"
+      ]
+    },
+    "memory:memory/2026-03-09.md:23:57": {
+      "key": "memory:memory/2026-03-09.md:23:57",
+      "path": "memory/2026-03-09.md",
+      "startLine": 23,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "- UK Trade Jobs ready for production deployment - Ardmore CC running smoothly (£77 revenue from Draw #1) - OpenClaw update to 2026.3.7 pending PJ approval ## Next Actions Awaiting PJ direction on today's build priorities. Top candidates: 1. Fix Google Ads policy violation (unlock £20/day spend) 2. BC PageSpeed optimisation 3. Deploy UKTJ production 4. Fix cron delivery crisis 5. Grab agentic web domains ## Local Business Lead Scraper **Previous subagent (depth 1/1) was running lead scraper for Blue Canvas** — appears to have been aborted. Task was finding 20-30 NI businesses with weak web presence across Derry, Belfast, Newry, Lisburn, Bangor, Omagh, Enniskillen, Ballymena. Some initial p",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7987523884785188,
+      "maxScore": 0.7987523884785188,
+      "firstRecalledAt": "2026-04-09T14:14:00.853Z",
+      "lastRecalledAt": "2026-04-09T14:14:00.853Z",
+      "queryHashes": [
+        "b52c957218cc"
+      ],
+      "recallDays": [
+        "2026-04-09"
+      ],
+      "conceptTags": [
+        "2026.3.7",
+        "20/day",
+        "1/1",
+        "20-30",
+        "trade",
+        "jobs",
+        "ready",
+        "production"
+      ]
+    },
+    "memory:memory/2026-02-26.md:18:34": {
+      "key": "memory:memory/2026-02-26.md:18:34",
+      "path": "memory/2026-02-26.md",
+      "startLine": 18,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "- PJ wants Ardmore/ClubDraw site maintained ## Memory Fixes - Added satellite site URLs to MEMORY.md (were missing) - Added Ardmore Cricket Club + ClubDraw details to MEMORY.md (were missing) ## Reminders - **28 Feb 2026** — Remind PJ to export Telegram chat history via Telegram Desktop for memory rebuild ## Still Pending - Competitor content gaps report (subagent running) - Satellite audit report (subagent running) - Bind SEO Title field to blog template in Webflow Designer (PJ needs to do this) - Verify logo.png and og-image.jpg URLs exist on bluecanvas.ai - Check if /blog?q= search actually works (SearchAction schema) - Create /contact page on bluecanvas.ai (currently 404)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8359931985288882,
+      "maxScore": 0.8359931985288882,
+      "firstRecalledAt": "2026-04-09T14:38:18.622Z",
+      "lastRecalledAt": "2026-04-09T14:38:18.622Z",
+      "queryHashes": [
+        "354529b39584"
+      ],
+      "recallDays": [
+        "2026-04-09"
+      ],
+      "conceptTags": [
+        "ardmore/clubdraw",
+        "memory.md",
+        "logo.png",
+        "og-image.jpg",
+        "bluecanvas.ai",
+        "wants",
+        "ardmore",
+        "clubdraw"
+      ]
+    },
+    "memory:memory/2026-02-19.md:1:22": {
+      "key": "memory:memory/2026-02-19.md:1:22",
+      "path": "memory/2026-02-19.md",
+      "startLine": 1,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "# Memory — 19 Feb 2026 ## Key Events — 19 Feb 2026 ### UK Trade Jobs — NEW BUSINESS CONFIRMED - Full day of opportunity research (10+ rounds of scanning) - Rejected: aesthetics/Botox (moat cracking, 7/10), NI energy grants (market too small, 7/10), hair care site purchase (HCU hit, 5/10), sauna reviewer (red flags), content/affiliate sites generally (AI killing them) - Key insight: content/affiliate sites are dying because AI replaces them. The 9.5 needs to be something AI CAN'T replace — real data, real jobs, real people. - Trade job board identified as best opportunity (8.0 → 9.5 with career changer thesis) - PJ's killer insight: AI destroying office jobs → people retrain as tradespeople",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8305943617344766,
+      "maxScore": 0.8305943617344766,
+      "firstRecalledAt": "2026-04-09T14:38:18.622Z",
+      "lastRecalledAt": "2026-04-09T14:38:18.622Z",
+      "queryHashes": [
+        "354529b39584"
+      ],
+      "recallDays": [
+        "2026-04-09"
+      ],
+      "conceptTags": [
+        "aesthetics/botox",
+        "7/10",
+        "5/10",
+        "content/affiliate",
+        "9.5",
+        "8.0",
+        "feb",
+        "key"
       ]
     }
   }

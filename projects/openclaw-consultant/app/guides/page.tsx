@@ -33,6 +33,7 @@ const guidesData: Record<string, Guide[]> = {
     { title: "OpenClaw Tutorial for Beginners", href: "/guides/openclaw-tutorial-beginners", category: "Getting Started" },
     { title: "Getting Started with AI Automation", href: "/guides/getting-started-ai-automation", category: "Getting Started" },
     { title: "Set Up an AI Agent for Your Business", href: "/guides/setup-ai-agent-business", category: "Getting Started" },
+    { title: "What Is Agentic AI? The Complete Guide", href: "/guides/what-is-agentic-ai", category: "Getting Started" },
     { title: "OpenClaw Setup for Business", href: "/guides/openclaw-setup-business", category: "Getting Started" },
   ],
   "Setup Guides": [
@@ -59,6 +60,8 @@ const guidesData: Record<string, Guide[]> = {
     { title: "Build an OpenClaw Agent Team", href: "/guides/openclaw-agent-team", category: "Enterprise" },
     { title: "OpenClaw Agent Team Setup Guide", href: "/guides/openclaw-agent-team-setup", category: "Enterprise" },
     { title: "OpenClaw for Teams: Multi-Agent Guide", href: "/guides/openclaw-for-teams", category: "Enterprise" },
+    { title: "AI Agent Memory Systems", href: "/guides/ai-agent-memory-systems", category: "Enterprise" },
+    { title: "Multi-Agent Orchestration: Running AI Agent Teams", href: "/guides/multi-agent-orchestration", category: "Enterprise" },
     { title: "Enterprise OpenClaw Deployment Guide", href: "/guides/enterprise-openclaw-deployment", category: "Enterprise" },
     { title: "OpenClaw + Pinchy Enterprise Stack", href: "/guides/openclaw-pinchy-enterprise-stack", category: "Enterprise" },
     { title: "OpenClaw Enterprise Security & GDPR", href: "/guides/openclaw-enterprise-security-compliance", category: "Enterprise" },
@@ -73,6 +76,7 @@ const guidesData: Record<string, Guide[]> = {
     { title: "OpenClaw vs n8n: Which to Choose?", href: "/guides/openclaw-vs-n8n", category: "Comparison" },
     { title: "OpenClaw vs AutoGen Comparison", href: "/guides/openclaw-vs-autogen", category: "Comparison" },
     { title: "OpenClaw vs CrewAI Comparison", href: "/guides/openclaw-vs-crew-ai", category: "Comparison" },
+    { title: "AI Agent Frameworks Compared", href: "/guides/ai-agent-frameworks-compared", category: "Comparison" },
     { title: "OpenClaw vs Claude Code Comparison", href: "/guides/openclaw-vs-claude-code", category: "Comparison" },
     { title: "OpenClaw vs VA: Cost Comparison 2026", href: "/guides/openclaw-vs-virtual-assistant-cost", category: "Comparison" },
     { title: "OpenClaw vs Virtual Assistant Costs", href: "/guides/openclaw-vs-va-cost-comparison", category: "Comparison" },
@@ -111,6 +115,10 @@ const guidesData: Record<string, Guide[]> = {
     { title: "AI for Plumbers & Trade Businesses", href: "/guides/ai-for-plumbers-uk", category: "Industry" },
     { title: "AI for UK Retail: Growth Guide", href: "/guides/ai-for-retail-uk", category: "Industry" },
     { title: "AI for Schools: Admin & Wellbeing", href: "/guides/ai-for-schools-uk", category: "Industry" },
+    { title: "AI Agents for Education", href: "/guides/ai-agents-for-education", category: "Industry" },
+    { title: "AI Agents for Supply Chain Management", href: "/guides/ai-agents-for-supply-chain", category: "Industry" },
+    { title: "AI Agents for Real Estate", href: "/guides/ai-agents-for-real-estate", category: "Industry" },
+    { title: "AI Agents for Finance", href: "/guides/ai-agents-for-finance", category: "Industry" },
   ],
   "AI Business Strategy": [
     { title: "AI Transformation Strategy 2026", href: "/guides/ai-transformation-strategy-2026", category: "Strategy" },
@@ -119,6 +127,7 @@ const guidesData: Record<string, Guide[]> = {
     { title: "AI Risk Management Framework", href: "/guides/ai-risk-management-framework", category: "Strategy" },
     { title: "Enterprise AI Deployment UK Guide", href: "/guides/enterprise-ai-deployment-uk", category: "Strategy" },
     { title: "AI Compliance Automation: GDPR & More", href: "/guides/ai-compliance-automation", category: "Strategy" },
+    { title: "AI Agents and Compliance Risk", href: "/guides/ai-agents-compliance-risk", category: "Strategy" },
   ],
   "AI Automation": [
     { title: "AI Customer Service Automation UK", href: "/guides/ai-customer-service-automation-uk", category: "Automation" },
@@ -131,6 +140,7 @@ const guidesData: Record<string, Guide[]> = {
     { title: "AI Social Media Management for Business", href: "/guides/ai-social-media-management", category: "Automation" },
     { title: "Automate Accounts & Bookkeeping with AI", href: "/guides/automate-accounts-bookkeeping-ai", category: "Automation" },
     { title: "Managing AI Agent Teams: Practical Guide", href: "/guides/ai-agent-team-management", category: "Automation" },
+    { title: "AI Agents for Customer Support", href: "/guides/ai-agents-for-customer-support", category: "Automation" },
     { title: "Top 10 OpenClaw Skills for Business", href: "/guides/top-10-openclaw-skills", category: "Automation" },
   ],
 };
