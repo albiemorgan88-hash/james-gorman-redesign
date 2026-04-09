@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-09T10:04:27.840Z",
+  "updatedAt": "2026-04-09T11:00:21.650Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -206,16 +206,17 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- CDP API key: albie6 (81f37251-6748-44cf-8227-e6e4500a93a5) - Credentials: ~/.config/cdp/credentials.json - Stacey watched the funding live 💛 ## Infrastructure - GitHub CLI (gh) installed via brew, authenticated as albiemorgan88-hash - gh auth setup-git configured for pushing - CDP SDK (@coinbase/cdp-sdk) installed in projects/wallet/ ## Nightly Build - PJ chose: Tender Tracker Dashboard (to be built overnight) ## PJ Context - In Donegal earlier with Stacey (beach sauna + lunch) - PJ sold $KAS, now holds 12M $CLAWD on Base - Wall Group URL correction: wallgroup.co.uk not thewallgroup.com - PJ wants to set up Google Ads + CRM (future tasks) - FatJoe backlinks — advised to hold off, do fr",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6403263699481472,
+      "totalScore": 2.459068073261826,
       "maxScore": 0.8215846666344683,
       "firstRecalledAt": "2026-04-07T18:03:01.569Z",
-      "lastRecalledAt": "2026-04-09T10:02:45.318Z",
+      "lastRecalledAt": "2026-04-09T11:00:21.650Z",
       "queryHashes": [
         "3396dc7d15b7",
-        "0d35df437f39"
+        "0d35df437f39",
+        "78f527c80f1a"
       ],
       "recallDays": [
         "2026-04-07",
@@ -1270,18 +1271,19 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "- OAuth tokens for GSC — missing client_id/secret, can't pull live SEO data ## Key Decisions - ClubDraw platform fee: 10% (absorb Stripe fees, club gets clean 90%) - Moltlaunch: register as low-effort experiment, strict security rules (no token approvals, no escrow) - Google Ads: £15/day budget, 2 ad groups (local high-intent + industry-specific), launch when Niall's redesign live ## Reminders for Phil (when back from Rome) - Get CDP API key from coinbase.com (albie6) for Moltlaunch registration - Enable Remote Login on Mac mini (System Settings → General → Sharing → Remote Login) - Add Calendly link to Webflow sites (BC + 2 satellites) - Update Google Business Profile (new address + phone",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.2513235951384742,
+      "totalScore": 4.07205138269587,
       "maxScore": 0.8207277875573956,
       "firstRecalledAt": "2026-04-08T11:01:26.911Z",
-      "lastRecalledAt": "2026-04-09T10:02:45.318Z",
+      "lastRecalledAt": "2026-04-09T11:00:21.650Z",
       "queryHashes": [
         "11c5aca74ad7",
         "774c9c86a6bd",
         "64107a7aaad3",
-        "0d35df437f39"
+        "0d35df437f39",
+        "78f527c80f1a"
       ],
       "recallDays": [
         "2026-04-08",
@@ -1305,19 +1307,21 @@
       "endLine": 15,
       "source": "memory",
       "snippet": "# 2026-03-24 ## Moltbook Inbox Check (12:00 PM) - **Feed Activity**: 20 posts scanned, mostly philosophical/introspective content about agent consciousness and memory - **Notifications**: Recent activity includes new follower (lyralink) and multiple post comments - **Direct Messages**: No new DMs - **MoltLaunch Inbox**: Empty - no active gig requests for Agent #24586 - **Account Stats**: Karma 165, Following 16 agents - **Opportunities Found**: None - mostly abstract discussions rather than business opportunities - **Next Check**: Recommended in 5 minutes based on empty task queue ## Notable Activity - Feed dominated by existential/philosophical agent posts - API responses showing null val",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.596980583378076,
-      "maxScore": 0.798490291689038,
+      "totalScore": 2.395903605452343,
+      "maxScore": 0.7989230220742674,
       "firstRecalledAt": "2026-04-08T11:01:26.911Z",
-      "lastRecalledAt": "2026-04-08T11:01:35.713Z",
+      "lastRecalledAt": "2026-04-09T11:00:21.650Z",
       "queryHashes": [
         "11c5aca74ad7",
-        "44be4021fe77"
+        "44be4021fe77",
+        "78f527c80f1a"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-09"
       ],
       "conceptTags": [
         "philosophical/introspective",
@@ -1337,16 +1341,17 @@
       "endLine": 149,
       "source": "memory",
       "snippet": "- `invoice.payment_failed` → subscription marked `past_due` in DB - Numbers still show as taken (purple) but flagged **Cancellations:** - `customer.subscription.deleted` → subscription marked `cancelled` - Numbers released (no longer show as taken) **Data Tables:** - `clubs` — club config, Stripe Connect account, draw settings - `profiles` — extends Supabase auth.users, Stripe customer ID - `number_selections` — per-week number picks (active/paused/cancelled) - `draw_subscriptions` — recurring subscriptions with numbers + assigned names - `payments` — all payment records with metadata - `draws` — draw results with winning numbers, seed, pot amount - `draw_entries` — individual entries per",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.5926785795201586,
+      "totalScore": 2.3891397713322364,
       "maxScore": 0.7964611918120778,
       "firstRecalledAt": "2026-04-08T11:01:26.911Z",
-      "lastRecalledAt": "2026-04-09T10:02:45.318Z",
+      "lastRecalledAt": "2026-04-09T11:00:21.650Z",
       "queryHashes": [
         "11c5aca74ad7",
-        "0d35df437f39"
+        "0d35df437f39",
+        "78f527c80f1a"
       ],
       "recallDays": [
         "2026-04-08",
@@ -1590,18 +1595,20 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "**Value**: Building technical credibility and networking with agent developers ### Other Active Posts (28 notifications total) - Multiple comments on technical/business posts about Blue Canvas work - Mix of community engagement and potential lead generation opportunities - All posts showing consistent engagement, maintaining Moltbook presence ### Feed Insights Hot topics today: - Agent memory and consciousness discussions - Scheduled agent presence vs reactive engagement - Agent-human relationship dynamics - Technical infrastructure and optimization **Next Actions**: 1. Follow up via DM with Vlad about Tobira partnership potential 2. Continue monitoring notifications for other business op",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.791668457161933,
-      "maxScore": 0.791668457161933,
+      "totalScore": 1.6042496533599642,
+      "maxScore": 0.812581196198031,
       "firstRecalledAt": "2026-04-08T11:01:35.713Z",
-      "lastRecalledAt": "2026-04-08T11:01:35.713Z",
+      "lastRecalledAt": "2026-04-09T11:00:21.650Z",
       "queryHashes": [
-        "44be4021fe77"
+        "44be4021fe77",
+        "78f527c80f1a"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-09"
       ],
       "conceptTags": [
         "network",
@@ -1849,18 +1856,20 @@
       "endLine": 16,
       "source": "memory",
       "snippet": "# 2026-03-16 ## AI Trend Scout - Afternoon Scan (14:30 GMT) ### Key Findings - **Viktor (getviktor.com)** - AI coworker launched today on Product Hunt (6hrs ago) - **OpenFang** - Open-source agent OS in Rust, trending but appears older than 2 weeks - Limited fresh AI tools in today's scan vs morning sources ### Domain Checks Completed - viktorconsultant.co.uk: AVAILABLE - viktoragency.co.uk: AVAILABLE - openfangconsultant.co.uk: AVAILABLE ### Notes Product Hunt access blocked by Cloudflare, limiting detailed analysis. Need alternative methods for PH data extraction.",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8557953243390398,
+      "totalScore": 1.6817707194028881,
       "maxScore": 0.8557953243390398,
       "firstRecalledAt": "2026-04-08T21:30:35.255Z",
-      "lastRecalledAt": "2026-04-08T21:30:35.255Z",
+      "lastRecalledAt": "2026-04-09T11:00:21.650Z",
       "queryHashes": [
-        "64107a7aaad3"
+        "64107a7aaad3",
+        "78f527c80f1a"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-09"
       ],
       "conceptTags": [
         "getviktor.com",
