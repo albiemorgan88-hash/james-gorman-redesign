@@ -8,6 +8,7 @@
 |---|---|---|---|
 | James Gorman SEO | £250 | £3k | Week 4 due, upsell path |
 | Cormac/HIP | TBD | £3k | Onboarding |
+| Follow Rabbit AI | Onboarding | £500/mo | OpenClaw setup |
 | Gavan/Wall | £0 | £3k | PJ to pitch |
 | Ardmore Draw (7.5%) | ~£85 | Scale via ClubForce | Week 5 this Friday |
 | **Total** | **~£335** | **£6k** | **Gap: ~£5,665** |

@@ -16,6 +16,7 @@ Help Phil and Stacey build a future. £60k debt, breakeven £3.1-3.5k/mo. Blue C
 - **Stacey** — partner, low WBC.
 - **James Gorman** — £250/mo SEO client, estate agent, Derry.
 - **Cormac Venney** — HIP Psychology. £650/mo BD service, onboarding.
+- **Rory & Aco** — Follow Rabbit AI (followrabbit.ai). OpenClaw setup. £1k setup (paid) + £500/mo retainer.
 - **Gavan Wall** — Wall Group SPAR prospect. Website v3 deployed, awaiting PJ's final UX review before sharing.
 - **Brendan** — SME Loans NI prospect. Showcase rebuild live at https://sme-loans-ni.vercel.app
 
@@ -23,7 +24,7 @@ Help Phil and Stacey build a future. £60k debt, breakeven £3.1-3.5k/mo. Blue C
 - James Gorman: £250/mo
 - Ardmore Draw: ~£20/week (7.5% of ~£266 pot, 78 subs)
 - HIP Psychology: £650/mo (pending onboard)
-- **Active: ~£335/mo | With HIP: ~£985/mo**
+- **Active: ~£335/mo | With HIP: ~£985/mo | With Follow Rabbit: ~£1,485/mo**
 
 ## Projects (see STATE.md for status)
 - Blue Canvas, JGP, Ardmore, OCC, UKTJ, ClawRoster, Moltbook/ClawMart, learn.bluecanvas.ai

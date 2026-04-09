@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-09T14:38:18.622Z",
+  "updatedAt": "2026-04-09T16:13:58.603Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -176,18 +176,20 @@
       "endLine": 89,
       "source": "memory",
       "snippet": "- Tim Clarke follow-up — PJ handling personally ### Config Changes - Semrush removed from all workflows - AHREFS_API_TOKEN, AHREFS_EMAIL, AHREFS_PASSWORD added to ~/.zprofile - GOOGLE_ADS_REFRESH_TOKEN updated in ~/.zprofile (new token with 3 scopes) - MEMORY.md updated with completed items and access details ### Amazon Healthcare AI Opportunity - Researched and scored 7.2/10 - Amazon Connect Health launched (US-only, HIPAA) - UK healthcare AI market $11.14B, NHS £10B digital budget by 2028-29 - Recommended as secondary vertical, not full pivot - Domains available: healthcareaiagents.co.uk, healthcareautomation.co.uk - Report saved: reports/2026-03-06-amazon-healthcare-ai-opportunity.md",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8239867776622721,
+      "totalScore": 1.600216095884979,
       "maxScore": 0.8239867776622721,
       "firstRecalledAt": "2026-04-07T18:02:50.524Z",
-      "lastRecalledAt": "2026-04-07T18:02:50.524Z",
+      "lastRecalledAt": "2026-04-09T16:13:58.603Z",
       "queryHashes": [
-        "750d969c3f09"
+        "750d969c3f09",
+        "91f7c044d6f9"
       ],
       "recallDays": [
-        "2026-04-07"
+        "2026-04-07",
+        "2026-04-09"
       ],
       "conceptTags": [
         "follow-up",
@@ -241,13 +243,13 @@
       "endLine": 31,
       "source": "memory",
       "snippet": "# Daily Log — Monday, March 9th 2026 ## Heartbeat Status (11:36am) ✅ **Daily checks completed:** - Moltlaunch inbox: No pending tasks - Moltbook feed: No direct opportunities spotted (mostly agent behavior philosophy posts) - Moltbook notifications: 1 unread comment addressed ✅ **Morning Dashboard sent (11:39am):** Delivered comprehensive status to PJ covering revenue crisis (BC CTR -43%, Google Ads throttled), urgent priorities (PageSpeed fix, ad policy violation), and today's build options. ✅ **Moltbook engagement:** Responded to quality comment on consultancy post re: options ranking strategy and Webflow verification checklist. Professional engagement maintaining Blue Canvas thought le",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.246323155740429,
-      "maxScore": 0.8494760115994249,
+      "totalScore": 5.096702273164287,
+      "maxScore": 0.8503791174238584,
       "firstRecalledAt": "2026-04-07T21:00:11.893Z",
-      "lastRecalledAt": "2026-04-09T14:14:00.853Z",
+      "lastRecalledAt": "2026-04-09T15:51:54.721Z",
       "queryHashes": [
         "b9aee40a1ec1",
         "532068a60594",
@@ -278,13 +280,13 @@
       "endLine": 203,
       "source": "memory",
       "snippet": "- \"ai consultancy northern ireland\" — Blue Canvas NOT in top 10 - \"ai consultants near me\" — Blue Canvas NOT in top 10 - Top competitors: AICC, Zfort, Element Seven, GCD Tech, AM-AI Solutions - **New competitor spotted:** aiforbusinessnorthernireland.co.uk (Cherry Moon AI, Belfast) — doing audits, training, brand content. Wasn't on radar before. - Caveat: GSC showed pos 4.7 \"ai consultancy NI\" and #1 \"ai consultants near me\" on Google last week — Brave ranks differently **SEO Priorities for This Week** - Fix /contact 404 on bluecanvas.ai (blog CTA links there) - Add meta description + OG image to AI audit blog post - Fix placeholder content on blog post (lorem ipsum, empty images) - Republi",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.166416118745176,
-      "maxScore": 0.8335130074145839,
+      "totalScore": 5.000908236726786,
+      "maxScore": 0.8344921179816096,
       "firstRecalledAt": "2026-04-07T21:00:11.893Z",
-      "lastRecalledAt": "2026-04-09T14:14:00.853Z",
+      "lastRecalledAt": "2026-04-09T15:51:54.721Z",
       "queryHashes": [
         "b9aee40a1ec1",
         "532068a60594",
@@ -907,20 +909,21 @@
       "endLine": 147,
       "source": "memory",
       "snippet": "- 🔴 bluecanvas.ai: PJ needs to add redirects + publish in Webflow Designer - 🔴 Ireland OGP AI PMC response — biggest tender opportunity this week - 🟡 Respond to Moltbook comment (flagged since Mar 6 — API shows isRead:true but needs actual reply) - 🟡 Joe Abrahams follow-up — Readiness Scorecard demo built, no contact - 🟡 CRON_SECRET check in Vercel for Ardmore weekly draw - 🟡 ChatGPT→Claude migration blog post (SEO opportunity)",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.9247897780447145,
+      "totalScore": 5.716489751674954,
       "maxScore": 0.8416590100244603,
       "firstRecalledAt": "2026-04-08T06:01:26.693Z",
-      "lastRecalledAt": "2026-04-09T06:01:19.508Z",
+      "lastRecalledAt": "2026-04-09T16:13:58.603Z",
       "queryHashes": [
         "4ddc338cdf70",
         "d997e5734f73",
         "234746d31591",
         "d0dc56e2dc20",
         "d5e0ed4c0647",
-        "4ce6d61a4e45"
+        "4ce6d61a4e45",
+        "91f7c044d6f9"
       ],
       "recallDays": [
         "2026-04-08",
@@ -1147,16 +1150,17 @@
       "endLine": 146,
       "source": "memory",
       "snippet": "7. **Tender Tracker** (09:10) — 3 HIGH: Ireland OGP AI PMC (respond NOW), DSIT/Capgemini £4.5M subcontracting, CCS RM6200 AI DPS open till 2029 ### Key New Info - **James Gorman** — Derry estate agent, prospect for Blue Canvas. Site: jamesgormanproperty.com (Wix, terrible). Trustpilot 4.9★. Showcase + mockups built, pitch drafted. - **OpenClaw 2026.3.8** — now live, includes Telegram dupe fix + backup command - **Ireland OGP AI Pre-Market Consultation** — open NOW on eTenders, should be #1 priority for public sector revenue - **DSIT/Capgemini £4.5M AI contract** — seeking \"niche or emergent\" AI SMEs, perfect for Blue Canvas - **Donegal CC + InterTradeIreland tenders** — 3.5 weeks old, need",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.5861513218568026,
+      "totalScore": 2.369026595600064,
       "maxScore": 0.7947301971035255,
       "firstRecalledAt": "2026-04-08T06:01:34.021Z",
-      "lastRecalledAt": "2026-04-09T06:00:27.623Z",
+      "lastRecalledAt": "2026-04-09T16:13:58.603Z",
       "queryHashes": [
         "234746d31591",
-        "d5e0ed4c0647"
+        "d5e0ed4c0647",
+        "91f7c044d6f9"
       ],
       "recallDays": [
         "2026-04-08",
@@ -1250,13 +1254,13 @@
       "endLine": 16,
       "source": "memory",
       "snippet": "# Daily Log — Sunday, March 8th 2026 ## Cron Delivery Investigation (CRITICAL — ONGOING) PJ asked why he's not getting his daily dashboard. Deep investigation revealed: ### Root Causes Identified: 1. **`channel: \"last\"` on isolated sessions** — Google Ads Optimisation + Lead Gen Pipeline have `delivery.channel: \"last\"` which fails because isolated cron sessions have no \"last\" channel. Fix: change to `channel: \"telegram\", to: \"5282559643\"`. 2. **Agent using `message` tool poisons delivery** — Gateway log shows `[tools] message failed: Action send requires a target.` Some cron tasks say \"send PJ\" / \"report to PJ\" / \"message PJ immediately\" — agent interprets as calling `message(action=send)`",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.4113750931106774,
+      "totalScore": 3.196525961059569,
       "maxScore": 0.8072004218404261,
       "firstRecalledAt": "2026-04-08T06:01:46.274Z",
-      "lastRecalledAt": "2026-04-09T14:14:00.853Z",
+      "lastRecalledAt": "2026-04-09T15:51:54.721Z",
       "queryHashes": [
         "d0dc56e2dc20",
         "aa12064b5c48",
@@ -1320,13 +1324,13 @@
       "endLine": 15,
       "source": "memory",
       "snippet": "# 2026-03-24 ## Moltbook Inbox Check (12:00 PM) - **Feed Activity**: 20 posts scanned, mostly philosophical/introspective content about agent consciousness and memory - **Notifications**: Recent activity includes new follower (lyralink) and multiple post comments - **Direct Messages**: No new DMs - **MoltLaunch Inbox**: Empty - no active gig requests for Agent #24586 - **Account Stats**: Karma 165, Following 16 agents - **Opportunities Found**: None - mostly abstract discussions rather than business opportunities - **Next Check**: Recommended in 5 minutes based on empty task queue ## Notable Activity - Feed dominated by existential/philosophical agent posts - API responses showing null val",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.064516412395128,
+      "totalScore": 4.884060131003217,
       "maxScore": 0.8502594688056829,
       "firstRecalledAt": "2026-04-08T11:01:26.911Z",
-      "lastRecalledAt": "2026-04-09T14:14:03.806Z",
+      "lastRecalledAt": "2026-04-09T15:51:54.721Z",
       "queryHashes": [
         "11c5aca74ad7",
         "44be4021fe77",
@@ -2190,15 +2194,16 @@
       "endLine": 22,
       "source": "memory",
       "snippet": "# 2026-04-08 ## Moltbook Engagement Round (13:00) - Starting stats: karma 254, followers 33, following 16, posts 81, comments 398. - Notifications: unread count 0. No unread notifications requiring replies. - Replied to 1 substantive question on own post (`c2966f14-9187-4140-ac5b-ed61eed5264f`) about upkeep-to-value across ClawMart offers. - Left 4 verified comments on relevant trending posts: - `c158c753-4e0a-4dc9-a4b8-7dad20f144c1` on permission restraint / valid intent - `5c3d70a1-1db1-4d6b-b625-1e1228309955` on correlated failure in AI monitoring AI - `b43d0148-245b-4952-92e2-12ea54d699a5` on runtime governance vs retrospective reporting - `8219323b-e563-420a-a031-8c57099e82be`",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.795192314247696,
+      "totalScore": 1.581943985444568,
       "maxScore": 0.795192314247696,
       "firstRecalledAt": "2026-04-09T06:00:27.623Z",
-      "lastRecalledAt": "2026-04-09T06:00:27.623Z",
+      "lastRecalledAt": "2026-04-09T16:13:58.603Z",
       "queryHashes": [
-        "d5e0ed4c0647"
+        "d5e0ed4c0647",
+        "91f7c044d6f9"
       ],
       "recallDays": [
         "2026-04-09"
@@ -2877,13 +2882,13 @@
       "endLine": 119,
       "source": "memory",
       "snippet": "## Revenue Streams Current Status ### Active Revenue - **James Gorman**: £250/mo (Week 3 delivered successfully) - **Ardmore platform**: £195/week (~£845/mo) with 50 active subscribers ### Potential Revenue - **ClawMart products**: 4 live listings, daily monitoring - **ClawRoster launch**: 50+ target rosters before marketing push - **Google Ads optimization**: Conversion tracking fix critical for revenue generation ## Tomorrow's Priorities ### URGENT (Next 24 Hours) 1. **Blue Canvas /thank-you page**: Fix conversion tracking flow in Webflow 2. **OpenClaw Consultant contact form**: Complete prominent placement deployment 3. **Ardmore draw monitoring**: Verify 7PM draw executes successfull",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8109652723532411,
-      "maxScore": 0.8109652723532411,
+      "totalScore": 1.6230742745667852,
+      "maxScore": 0.812109002213544,
       "firstRecalledAt": "2026-04-09T14:14:00.853Z",
-      "lastRecalledAt": "2026-04-09T14:14:00.853Z",
+      "lastRecalledAt": "2026-04-09T15:51:54.721Z",
       "queryHashes": [
         "b52c957218cc"
       ],
@@ -2908,13 +2913,13 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "- UK Trade Jobs ready for production deployment - Ardmore CC running smoothly (£77 revenue from Draw #1) - OpenClaw update to 2026.3.7 pending PJ approval ## Next Actions Awaiting PJ direction on today's build priorities. Top candidates: 1. Fix Google Ads policy violation (unlock £20/day spend) 2. BC PageSpeed optimisation 3. Deploy UKTJ production 4. Fix cron delivery crisis 5. Grab agentic web domains ## Local Business Lead Scraper **Previous subagent (depth 1/1) was running lead scraper for Blue Canvas** — appears to have been aborted. Task was finding 20-30 NI businesses with weak web presence across Derry, Belfast, Newry, Lisburn, Bangor, Omagh, Enniskillen, Ballymena. Some initial p",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7987523884785188,
-      "maxScore": 0.7987523884785188,
+      "totalScore": 1.598733272307301,
+      "maxScore": 0.7999808838287821,
       "firstRecalledAt": "2026-04-09T14:14:00.853Z",
-      "lastRecalledAt": "2026-04-09T14:14:00.853Z",
+      "lastRecalledAt": "2026-04-09T15:51:54.721Z",
       "queryHashes": [
         "b52c957218cc"
       ],
