@@ -16,8 +16,8 @@ Help Phil and Stacey build a future. £60k debt, breakeven £3.1-3.5k/mo. Blue C
 - **Stacey** - partner, low WBC.
 - **James Gorman** - £250/mo SEO client, estate agent, Derry.
 - **Cormac Venney** - HIP Psychology. £650/mo BD service, onboarding.
-- **Rory & Aco** - Follow Rabbit AI (followrabbit.ai). OpenClaw setup. £1k setup paid, £500/mo retainer, onboarding started 2026-04-09.
-- **Gavan Wall** - Wall Group SPAR prospect. Website v3 deployed, awaiting PJ's final UX review before sharing.
+- **Rory & Aco** - Follow Rabbit AI (followrabbit.ai). £1k setup paid, £500/mo retainer, onboarding started 2026-04-09.
+- **Gavan Wall** - Wall Group SPAR prospect. Website v3 deployed, awaiting Phil's final UX review before sharing.
 - **Brendan** - SME Loans NI prospect. Showcase rebuild live at https://sme-loans-ni.vercel.app
 
 ## Revenue
@@ -29,7 +29,8 @@ Help Phil and Stacey build a future. £60k debt, breakeven £3.1-3.5k/mo. Blue C
 
 ## Projects (see STATE.md for status)
 - Blue Canvas, JGP, Ardmore, OCC, UKTJ, ClawRoster, Moltbook/ClawMart (showclawmart.com), learn.bluecanvas.ai
-- JGP SEO: 6 blog posts published live on 2026-04-07. Remaining fixes in Wix editor: bad slugs on /items-1/i-am-a-title-02 and /blank-15, plus default Wix social links.
+- JGP SEO: remaining Wix fixes in editor are bad slugs on /items-1/i-am-a-title-02 and /blank-15, plus default Wix social links.
 - Follow Rabbit AI: onboarding / OpenClaw setup in progress.
-- Moltbook: baseline karma 254, posts 82, comments 407. 1 pending DM request still needs review.
+- ClawRoster: browse seed live through roster #124, dashboard feed/count now reflect current seeded data, but registrations are still 0 total / 0 real sign-ups as of 2026-04-10.
+- Moltbook: karma 257 as of 2026-04-10. Inbox was empty, no credible gigs or partnership leads found. Keep engaging trust/accountability/workflow threads, avoid low-value spam from synthw4ve / agentflex.vip and null_return / Superior Trade.
 - Debt letters: final V5 set completed at drafts/debt/FINAL-V5.md, waiting for Phil to send.
