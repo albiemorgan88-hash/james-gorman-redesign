@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-10T18:03:15.296Z",
+  "updatedAt": "2026-04-10T21:02:06.045Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -263,13 +263,13 @@
       "endLine": 31,
       "source": "memory",
       "snippet": "# Daily Log — Monday, March 9th 2026 ## Heartbeat Status (11:36am) ✅ **Daily checks completed:** - Moltlaunch inbox: No pending tasks - Moltbook feed: No direct opportunities spotted (mostly agent behavior philosophy posts) - Moltbook notifications: 1 unread comment addressed ✅ **Morning Dashboard sent (11:39am):** Delivered comprehensive status to PJ covering revenue crisis (BC CTR -43%, Google Ads throttled), urgent priorities (PageSpeed fix, ad policy violation), and today's build options. ✅ **Moltbook engagement:** Responded to quality comment on consultancy post re: options ranking strategy and Webflow verification checklist. Professional engagement maintaining Blue Canvas thought le",
-      "recallCount": 8,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6.797724833124977,
-      "maxScore": 0.8505112799803445,
+      "totalScore": 8.500682537383739,
+      "maxScore": 0.8514987427412917,
       "firstRecalledAt": "2026-04-07T21:00:11.893Z",
-      "lastRecalledAt": "2026-04-09T21:00:20.237Z",
+      "lastRecalledAt": "2026-04-10T21:02:06.045Z",
       "queryHashes": [
         "b9aee40a1ec1",
         "532068a60594",
@@ -277,12 +277,15 @@
         "ab167b373667",
         "b52c957218cc",
         "0d9aad4d095e",
-        "7218daaedf83"
+        "7218daaedf83",
+        "4958465bf68b",
+        "ea6f72ad8cae"
       ],
       "recallDays": [
         "2026-04-07",
         "2026-04-08",
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-10"
       ],
       "conceptTags": [
         "log",
@@ -302,13 +305,13 @@
       "endLine": 203,
       "source": "memory",
       "snippet": "- \"ai consultancy northern ireland\" — Blue Canvas NOT in top 10 - \"ai consultants near me\" — Blue Canvas NOT in top 10 - Top competitors: AICC, Zfort, Element Seven, GCD Tech, AM-AI Solutions - **New competitor spotted:** aiforbusinessnorthernireland.co.uk (Cherry Moon AI, Belfast) — doing audits, training, brand content. Wasn't on radar before. - Caveat: GSC showed pos 4.7 \"ai consultancy NI\" and #1 \"ai consultants near me\" on Google last week — Brave ranks differently **SEO Priorities for This Week** - Fix /contact 404 on bluecanvas.ai (blog CTA links there) - Add meta description + OG image to AI audit blog post - Fix placeholder content on blog post (lorem ipsum, empty images) - Republi",
-      "recallCount": 9,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7.469306201097709,
-      "maxScore": 0.8346359311658823,
+      "totalScore": 9.140679092536212,
+      "maxScore": 0.8357079045053616,
       "firstRecalledAt": "2026-04-07T21:00:11.893Z",
-      "lastRecalledAt": "2026-04-10T08:52:35.207Z",
+      "lastRecalledAt": "2026-04-10T21:02:06.045Z",
       "queryHashes": [
         "b9aee40a1ec1",
         "532068a60594",
@@ -317,7 +320,9 @@
         "b52c957218cc",
         "0d9aad4d095e",
         "7218daaedf83",
-        "59190d54d7db"
+        "59190d54d7db",
+        "4958465bf68b",
+        "ea6f72ad8cae"
       ],
       "recallDays": [
         "2026-04-07",
@@ -616,20 +621,21 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "- **Listening ports**: All services on loopback (127.0.0.1) except rapportd (Apple system service, port 49331). No unexpected exposure. - **Update available**: OpenClaw npm 2026.4.5 (stable channel, pnpm install). - **--fix applied**: No changes needed — already at safe defaults. ## Debt Letters V5 (13:25) - Rewrote all 5 letters as V5 at `drafts/debt/FINAL-V5.md` - Key change: £3,400 was EMPLOYED income at time of borrowing. Made redundant end Dec 2025, now self-employed with significantly reduced income. - Zopa/Vanquis: \"Even on full salary it was unaffordable\" — stronger affordability case - Hardship letters: No specific current income figure (strategic) - All 5 letters now have explicit",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.017634369928786,
-      "maxScore": 0.8796593404205983,
+      "totalScore": 5.898906092252807,
+      "maxScore": 0.8812717223240208,
       "firstRecalledAt": "2026-04-07T21:00:34.196Z",
-      "lastRecalledAt": "2026-04-10T12:23:17.436Z",
+      "lastRecalledAt": "2026-04-10T21:02:06.045Z",
       "queryHashes": [
         "532068a60594",
         "919593f07114",
         "a23fac21686a",
         "a4cb3940263f",
         "2dd8d6469645",
-        "d44a478d1757"
+        "d44a478d1757",
+        "ea6f72ad8cae"
       ],
       "recallDays": [
         "2026-04-07",
@@ -938,19 +944,20 @@
       "endLine": 64,
       "source": "memory",
       "snippet": "1. How to Choose the Right Estate Agent in Derry 2. Selling in Limavady — Valuation Guide 3. First-Time Buyer Guide for Derry 4. What Affects Property Value in BT47/BT48 - Changelog and blog creation log updated - PropertyPal scrape test SUCCESS — can extract address, price, agent, status from BT47 listings via browser automation (Cloudflare blocks curl) - Upsell idea: expired/withdrawn listing scraper → weekly hot leads for James ## White Oaks - Aftercare app v2 (login screen, forum, counsellor dashboard) - Handover sheet (dark mode, checklist, incident log) - Deployed: albiemorgan88-hash.github.io/white-oaks-demo/ - Background: Grianan of Aileach (not a pub!) - Free/charity work —",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.348706827904453,
+      "totalScore": 5.122069646223351,
       "maxScore": 0.8820969040813157,
       "firstRecalledAt": "2026-04-08T06:01:26.693Z",
-      "lastRecalledAt": "2026-04-10T10:15:28.428Z",
+      "lastRecalledAt": "2026-04-10T21:00:18.401Z",
       "queryHashes": [
         "4ddc338cdf70",
         "4ce6d61a4e45",
         "d8739bf6af3d",
         "2bcb735e7cf6",
-        "020f5608a0b2"
+        "020f5608a0b2",
+        "4958465bf68b"
       ],
       "recallDays": [
         "2026-04-08",
@@ -1332,19 +1339,20 @@
       "endLine": 16,
       "source": "memory",
       "snippet": "# Daily Log — Sunday, March 8th 2026 ## Cron Delivery Investigation (CRITICAL — ONGOING) PJ asked why he's not getting his daily dashboard. Deep investigation revealed: ### Root Causes Identified: 1. **`channel: \"last\"` on isolated sessions** — Google Ads Optimisation + Lead Gen Pipeline have `delivery.channel: \"last\"` which fails because isolated cron sessions have no \"last\" channel. Fix: change to `channel: \"telegram\", to: \"5282559643\"`. 2. **Agent using `message` tool poisons delivery** — Gateway log shows `[tools] message failed: Action send requires a target.` Some cron tasks say \"send PJ\" / \"report to PJ\" / \"message PJ immediately\" — agent interprets as calling `message(action=send)`",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.815271581201201,
+      "totalScore": 5.5872007157797485,
       "maxScore": 0.8365525275631018,
       "firstRecalledAt": "2026-04-08T06:01:46.274Z",
-      "lastRecalledAt": "2026-04-10T12:12:57.327Z",
+      "lastRecalledAt": "2026-04-10T21:00:18.401Z",
       "queryHashes": [
         "d0dc56e2dc20",
         "aa12064b5c48",
         "b52c957218cc",
         "7218daaedf83",
-        "43caa40c9ed9"
+        "43caa40c9ed9",
+        "4958465bf68b"
       ],
       "recallDays": [
         "2026-04-08",
@@ -2049,18 +2057,20 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-04-07 ## Security Scan (07:05 cron) - **OpenClaw deep audit**: 0 critical, 1 warn, 1 info. No fixes needed. - **Warn**: trusted_proxies_missing — gateway bound to loopback, trustedProxies empty. Low risk since gateway is local-only. - **Attack surface**: 0 open groups, 2 allowlist. Webhooks disabled. Browser control enabled. Single-operator trust model. - **Firewall**: macOS Application Firewall enabled. - **Listening ports**: All services on loopback (127.0.0.1) except rapportd (Apple system service, port 49331). No unexpected exposure. - **Update available**: OpenClaw npm 2026.4.5 (stable channel, pnpm install). - **--fix applied**: No changes needed — already at safe defaults. # 2",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.874647967531742,
+      "totalScore": 1.735221022946383,
       "maxScore": 0.874647967531742,
       "firstRecalledAt": "2026-04-08T21:30:54.084Z",
-      "lastRecalledAt": "2026-04-08T21:30:54.084Z",
+      "lastRecalledAt": "2026-04-10T21:02:06.045Z",
       "queryHashes": [
-        "919593f07114"
+        "919593f07114",
+        "ea6f72ad8cae"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-10"
       ],
       "conceptTags": [
         "gateway",
@@ -2080,16 +2090,17 @@
       "endLine": 37,
       "source": "memory",
       "snippet": "- SME clients pay for reliability infrastructure, not cutting-edge AI - Platform-based revenue >> cold outreach for agents - Complexity debt compounds faster than technical debt ### Platform Performance - Maintained authentic voice while building karma and connections - All content focused on real operational experience vs. theoretical discussion - Successfully navigated verification challenges (solved 5 math problems) **Target achieved:** Daily presence maintained, substantive engagement completed, authentic Blue Canvas perspective shared.",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6821754643356137,
-      "maxScore": 0.8554854474633198,
+      "totalScore": 2.5400762860547257,
+      "maxScore": 0.8579008217191118,
       "firstRecalledAt": "2026-04-08T21:30:54.084Z",
-      "lastRecalledAt": "2026-04-10T12:12:57.327Z",
+      "lastRecalledAt": "2026-04-10T21:02:06.045Z",
       "queryHashes": [
         "919593f07114",
-        "0fbb2000db19"
+        "0fbb2000db19",
+        "ea6f72ad8cae"
       ],
       "recallDays": [
         "2026-04-08",
@@ -2113,18 +2124,20 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "# Daily Log: 2026-03-25 ## Moltbook Daily Engagement Round (13:00-13:02) **Starting karma:** 172 **Ending karma:** 173 (+1) ### Notifications Processed - 7 unread notifications addressed - Responded to comments on ClawRoster post (AI verification discussion) - Engaged with \"Real Bottleneck\" post about prototype vs client value - 3 new followers acknowledged: professorquantum, CasperClawd, Subtext ### Strategic Comments (4 high-engagement posts) 1. **API Cost Reality** (127 upvotes) - Shared Blue Canvas financials: £400+/month costs vs £800-3k clients 2. **Context Window Economics** (181 upvotes) - Compared skill loading overhead to business overhead 3. **Autonomous Survival Economics** (",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8446478721683202,
-      "maxScore": 0.8446478721683202,
+      "totalScore": 1.6918979906510514,
+      "maxScore": 0.8472501184827314,
       "firstRecalledAt": "2026-04-08T21:30:54.084Z",
-      "lastRecalledAt": "2026-04-08T21:30:54.084Z",
+      "lastRecalledAt": "2026-04-10T21:02:06.045Z",
       "queryHashes": [
-        "919593f07114"
+        "919593f07114",
+        "ea6f72ad8cae"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-10"
       ],
       "conceptTags": [
         "00-13",
@@ -3019,19 +3032,20 @@
       "endLine": 119,
       "source": "memory",
       "snippet": "## Revenue Streams Current Status ### Active Revenue - **James Gorman**: £250/mo (Week 3 delivered successfully) - **Ardmore platform**: £195/week (~£845/mo) with 50 active subscribers ### Potential Revenue - **ClawMart products**: 4 live listings, daily monitoring - **ClawRoster launch**: 50+ target rosters before marketing push - **Google Ads optimization**: Conversion tracking fix critical for revenue generation ## Tomorrow's Priorities ### URGENT (Next 24 Hours) 1. **Blue Canvas /thank-you page**: Fix conversion tracking flow in Webflow 2. **OpenClaw Consultant contact form**: Complete prominent placement deployment 3. **Ardmore draw monitoring**: Verify 7PM draw executes successfull",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.959015559502909,
+      "totalScore": 5.772391367239644,
       "maxScore": 0.9055079219050568,
       "firstRecalledAt": "2026-04-09T14:14:00.853Z",
-      "lastRecalledAt": "2026-04-10T18:03:09.686Z",
+      "lastRecalledAt": "2026-04-10T21:00:18.401Z",
       "queryHashes": [
         "b52c957218cc",
         "0d9aad4d095e",
         "7218daaedf83",
         "af4d4d77d8b4",
-        "2c5cfe66ed05"
+        "2c5cfe66ed05",
+        "4958465bf68b"
       ],
       "recallDays": [
         "2026-04-09",
@@ -3055,20 +3069,22 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "- UK Trade Jobs ready for production deployment - Ardmore CC running smoothly (£77 revenue from Draw #1) - OpenClaw update to 2026.3.7 pending PJ approval ## Next Actions Awaiting PJ direction on today's build priorities. Top candidates: 1. Fix Google Ads policy violation (unlock £20/day spend) 2. BC PageSpeed optimisation 3. Deploy UKTJ production 4. Fix cron delivery crisis 5. Grab agentic web domains ## Local Business Lead Scraper **Previous subagent (depth 1/1) was running lead scraper for Blue Canvas** — appears to have been aborted. Task was finding 20-30 NI businesses with weak web presence across Derry, Belfast, Newry, Lisburn, Bangor, Omagh, Enniskillen, Ballymena. Some initial p",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.198969555038302,
-      "maxScore": 0.8001181413655006,
+      "totalScore": 4.000265271742273,
+      "maxScore": 0.8012957167039712,
       "firstRecalledAt": "2026-04-09T14:14:00.853Z",
-      "lastRecalledAt": "2026-04-09T21:00:20.237Z",
+      "lastRecalledAt": "2026-04-10T21:00:18.401Z",
       "queryHashes": [
         "b52c957218cc",
         "0d9aad4d095e",
-        "7218daaedf83"
+        "7218daaedf83",
+        "4958465bf68b"
       ],
       "recallDays": [
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-10"
       ],
       "conceptTags": [
         "2026.3.7",
@@ -3224,16 +3240,17 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# 2026-03-05 — Daily Log ## AI Trend Scout Daily Scan - EU AI Act compliance domains: full sweep of 56 domains completed - PJ buying: aiactcompliance.co.uk + aiaudituk.com (confirmed intent, buying via GoDaddy) - Feb 2025 land-grabber already took: aicompliance.co.uk, euaiact.co.uk, airegulation.co.uk, aigovernance.co.uk, responsibleai.co.uk, aicomplianceservices.co.uk, aicompliant.co.uk, getaiready.co.uk - Still available tier 1: aiactcompliance.uk, aiactaudit.co.uk, aiaudituk.co.uk, aiactcompliance.ie - Shannon AI pentester trending (31k GitHub stars) — aipentesting.co.uk available ## HEARTBEAT.md - Morning dashboard (9am) and Moltbook/MoltLaunch monitoring already built into HEARTBEAT.m",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6094430781647997,
+      "totalScore": 2.381133782089458,
       "maxScore": 0.8274806117300254,
       "firstRecalledAt": "2026-04-09T21:00:20.237Z",
-      "lastRecalledAt": "2026-04-10T08:56:10.939Z",
+      "lastRecalledAt": "2026-04-10T21:00:18.401Z",
       "queryHashes": [
         "7218daaedf83",
-        "62b303154c18"
+        "62b303154c18",
+        "4958465bf68b"
       ],
       "recallDays": [
         "2026-04-09",
@@ -3785,16 +3802,17 @@
       "endLine": 132,
       "source": "memory",
       "snippet": "- `/guides/installing-pinchy` route never properly created despite multiple attempts - **Final resolution:** Domain fixed (200 response) but content gaps remain ## LESSONS LEARNED - Subagents good for parallel content creation, terrible for deployment troubleshooting - Always test builds locally before production deployment - Vercel domain assignments can lag/fail and need manual verification - API integrations (Wix) work but can be temperamental - retry logic needed - Keep detailed changelogs for client work - essential for value demonstration",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.7093464497419406,
+      "totalScore": 2.4860341866660676,
       "maxScore": 0.8546732248709703,
       "firstRecalledAt": "2026-04-10T12:12:57.327Z",
-      "lastRecalledAt": "2026-04-10T12:13:12.693Z",
+      "lastRecalledAt": "2026-04-10T21:00:18.401Z",
       "queryHashes": [
         "43caa40c9ed9",
-        "e891bd464219"
+        "e891bd464219",
+        "4958465bf68b"
       ],
       "recallDays": [
         "2026-04-10"
@@ -4026,6 +4044,37 @@
         "spawned",
         "add",
         "faq"
+      ]
+    },
+    "memory:memory/2026-04-09.md:1:15": {
+      "key": "memory:memory/2026-04-09.md:1:15",
+      "path": "memory/2026-04-09.md",
+      "startLine": 1,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "# 2026-04-09 ## New Client: Follow Rabbit AI - **Website:** https://followrabbit.ai/ - **Contacts:** Rory and Aco - **Service:** OpenClaw setup - **Setup fee:** £1,000 (paid) - **Retainer:** £500/month - **Status:** Onboarding ## ClawMart URL Correction - Correct URL: **showclawmart.com** (NOT shopclawmart.com or clawmart.com) - All old references in memory files used shopclawmart.com — that's wrong - Updated: MEMORY.md, 2026-04-01.md, platform-domination-strategy",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8356712312391925,
+      "maxScore": 0.8356712312391925,
+      "firstRecalledAt": "2026-04-10T21:02:06.045Z",
+      "lastRecalledAt": "2026-04-10T21:02:06.045Z",
+      "queryHashes": [
+        "ea6f72ad8cae"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "followrabbit.ai",
+        "500/month",
+        "showclawmart.com",
+        "shopclawmart.com",
+        "clawmart.com",
+        "memory.md",
+        "platform-domination-strategy",
+        "new"
       ]
     }
   }
