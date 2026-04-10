@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-09T21:30:30.640Z",
+  "updatedAt": "2026-04-10T06:00:50.971Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -40,13 +40,13 @@
       "endLine": 362,
       "source": "memory",
       "snippet": "**Wallet:** 0x3894Ae2a16B81284B9B02F33a5af9569576c0803 - ETH: 0.000776 (~$1.59) - USDC: $61.84 - $CLAWD: 218,063 tokens (~$0.14 — essentially worthless, $66k market cap, 8 trades/day) - PJ asked about swapping $CLAWD to ETH — not worth it, gas > value ## Cormac/HIP Psychology Onboarding — 16:00 GMT ### Cormac's Response - SEO: NOT an immediate priority - BD: Very interested, wants timeline + payment details - Also wants to discuss AI in schools with Kevin (Thursdays) ### Deliverables Created - **BD Service PDF** — £100 onboarding + £650/mo (initially £250, PJ corrected to £650) - **SEO Service PDF** — £100 onboarding + £250/mo - **Email draft** — Wednesday go-live, waived 6-month min, SEO",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.874682449434519,
+      "totalScore": 6.7184741783455575,
       "maxScore": 0.8511576253206415,
       "firstRecalledAt": "2026-04-07T18:02:50.524Z",
-      "lastRecalledAt": "2026-04-09T21:00:52.749Z",
+      "lastRecalledAt": "2026-04-10T06:00:50.971Z",
       "queryHashes": [
         "750d969c3f09",
         "3396dc7d15b7",
@@ -54,12 +54,14 @@
         "a23fac21686a",
         "354529b39584",
         "c9871a907320",
-        "1893885bb4f5"
+        "1893885bb4f5",
+        "04cbe189fd92"
       ],
       "recallDays": [
         "2026-04-07",
         "2026-04-08",
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-10"
       ],
       "conceptTags": [
         "0.000776",
@@ -110,25 +112,27 @@
       "endLine": 193,
       "source": "memory",
       "snippet": "- **BD Service PDF** — £100 onboarding + £650/mo (initially £250, PJ corrected to £650) - **SEO Service PDF** — £100 onboarding + £250/mo - **Email draft** — Wednesday go-live, waived 6-month min, SEO upsell, Thursday Kevin chat - Both PDFs sent to PJ as actual PDF files via Telegram - HIP showcase already exists: https://albiemorgan88-hash.github.io/showcase-hip-psychology/ - Showcase demonstrates the 4-stage BD pipeline: School discovery → Website mining → Email generation → Zoho CRM + outreach ### BD Delivery Confidence - Can do: Lead scraping, list building, outreach sequences, CRM reporting - Need to explore: Zoho API specifically (used Apollo before) - Risk: Email deliverability if do",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.025018107976802,
+      "totalScore": 5.86226397712232,
       "maxScore": 0.8479609109167999,
       "firstRecalledAt": "2026-04-07T18:02:50.524Z",
-      "lastRecalledAt": "2026-04-09T21:00:52.749Z",
+      "lastRecalledAt": "2026-04-10T06:00:50.971Z",
       "queryHashes": [
         "750d969c3f09",
         "3396dc7d15b7",
         "4ddc338cdf70",
         "a23fac21686a",
         "d8739bf6af3d",
-        "1893885bb4f5"
+        "1893885bb4f5",
+        "04cbe189fd92"
       ],
       "recallDays": [
         "2026-04-07",
         "2026-04-08",
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-10"
       ],
       "conceptTags": [
         "650/mo",
@@ -686,18 +690,20 @@
       "endLine": 155,
       "source": "memory",
       "snippet": "2. Ahrefs subscription (~£80/mo) 3. 5 phone photos ### Albie overnight deliverables: 1. **Ardmore Draw** — NAILED end-to-end. Fix account/user ID issue, manage page, FAQ, success page, nav, 3 full documented E2E tests. No excuses. 2. **UK Trade Jobs** — Run UX + SEO technical skills, figure out Supabase, data flows, employer signup notifications 3. **Google Ads guide** — High-intent keywords for Blue Canvas, £20/day budget, step-by-step campaign setup guide. Then manage it ongoing. 4. **SEO Skill v2** — DONE ✅ (updated with Sarvesh's 6-pillar attack framework). Ready for PJ's deliverables in the morning. ### Current Status: PRODUCTION READY - **Payments:** Live Stripe processing with insta",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8643381104612283,
-      "maxScore": 0.8643381104612283,
+      "totalScore": 1.7298204270956556,
+      "maxScore": 0.8654823166344273,
       "firstRecalledAt": "2026-04-08T06:01:07.772Z",
-      "lastRecalledAt": "2026-04-08T06:01:07.772Z",
+      "lastRecalledAt": "2026-04-10T06:00:24.016Z",
       "queryHashes": [
-        "17f77f84137b"
+        "17f77f84137b",
+        "1eb5c1e480eb"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-10"
       ],
       "conceptTags": [
         "80/mo",
@@ -717,13 +723,13 @@
       "endLine": 70,
       "source": "memory",
       "snippet": "- Originals in .archive/context-cleanup-2026-03-15/ ## Prospects - **Dropped:** Conor (City Hotel), Emma (Airbnb) — PJ's call - **Active:** James Gorman (paying), Charlie O'Hara (wait for PJ convo), White Oaks (charity) - **New channels:** PPH (Skayl OpenClaw retainer job spotted), Upwork, Pinchy partnership ## Key Decisions - UKTJ training section on uktj.com, not separate domain (becomeaplumber.co.uk taken anyway) - ClawMart > MoltLaunch for product revenue - Park Paperclip — not needed yet - Fiverr/Upwork low-end gigs = too grindy. PPH/Upwork AI consultancy at £75-150/hr = worth it - Revenue is the #1 priority. Everything should lead to cash.",
-      "recallCount": 10,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.33494830936672,
+      "totalScore": 9.999773524440066,
       "maxScore": 0.8601354369211595,
       "firstRecalledAt": "2026-04-08T06:01:07.772Z",
-      "lastRecalledAt": "2026-04-09T21:30:30.640Z",
+      "lastRecalledAt": "2026-04-10T06:00:50.971Z",
       "queryHashes": [
         "17f77f84137b",
         "4ddc338cdf70",
@@ -734,11 +740,14 @@
         "4ce6d61a4e45",
         "d1863bb4a556",
         "d8739bf6af3d",
-        "5904c7917590"
+        "5904c7917590",
+        "1eb5c1e480eb",
+        "04cbe189fd92"
       ],
       "recallDays": [
         "2026-04-08",
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-10"
       ],
       "conceptTags": [
         "uktj.com",
@@ -758,18 +767,20 @@
       "endLine": 52,
       "source": "memory",
       "snippet": "- CTR excellent (17%), CPCs reasonable (£1.28 avg) — traffic quality looks OK - **Zero conversions in 7 days on £191 spend** — #1 issue, likely broken tracking or landing page problem - 31% of AI Audit spend yesterday was wasted on irrelevant brand searches (amelia ai, tola ai, docyt ai etc) - Added 14 negative keywords — estimated £5-8/week saving - 2 keywords with Quality Score 1 flagged for pause: \"ai for small business\", \"ai marketing for small business\" - \"ai consultant\" at £2.98 CPC with 0 conversions — on watch - Weekly spend 37% over £140 target **Action items for PJ:** 1. ⚠️ Check conversion tracking is actually firing — this is critical before spending more 2. Consider pausing QS1",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8200351127802683,
-      "maxScore": 0.8200351127802683,
+      "totalScore": 1.6415416297121996,
+      "maxScore": 0.8215065169319313,
       "firstRecalledAt": "2026-04-08T06:01:07.772Z",
-      "lastRecalledAt": "2026-04-08T06:01:07.772Z",
+      "lastRecalledAt": "2026-04-10T06:00:24.016Z",
       "queryHashes": [
-        "17f77f84137b"
+        "17f77f84137b",
+        "1eb5c1e480eb"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-10"
       ],
       "conceptTags": [
         "1.28",
@@ -821,20 +832,22 @@
       "endLine": 214,
       "source": "memory",
       "snippet": "- Execute James Gorman content + technical SEO blast - Wait for PJ's Gavan feedback + showcase link - Wait for Atelier Hair details - Monitor Cormac email response - Check Stripe for ClawMart payouts in 2-3 days # 2026-03-30 Memory Log ## Moltbook Daily Engagement Round - 09:05 GMT **Baseline karma:** 207 **Final karma:** 207 (no change) ### Notifications Addressed - **133 unread notifications** from previous days - Replied to several substantive comment threads on our posts - Focus: Real operations insights from Blue Canvas experience ### Comments Made 1. **Human-agent economics** - Replied to AI cost discussion with Blue Canvas ROI data (£3.5k revenue vs £400 monthly tooling cost) 2. *",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6799172013924424,
-      "maxScore": 0.8400660987501221,
+      "totalScore": 2.5212258050080907,
+      "maxScore": 0.8413086036156485,
       "firstRecalledAt": "2026-04-08T06:01:26.693Z",
-      "lastRecalledAt": "2026-04-09T06:09:26.216Z",
+      "lastRecalledAt": "2026-04-10T06:00:50.971Z",
       "queryHashes": [
         "4ddc338cdf70",
-        "d8739bf6af3d"
+        "d8739bf6af3d",
+        "04cbe189fd92"
       ],
       "recallDays": [
         "2026-04-08",
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-10"
       ],
       "conceptTags": [
         "2-3",
@@ -854,23 +867,25 @@
       "endLine": 409,
       "source": "memory",
       "snippet": "- **CORRECTION**: I incorrectly said Claude Code auth was expired. PJ pointed out we're working fine — OpenClaw uses API keys, not Claude Code CLI auth. Different auth systems. ## Key Correction - Don't confuse OpenClaw API auth (working) with Claude Code CLI auth (separate thing, may or may not be expired) - PJ asking if Claude Computer Use would be useful addition to our workflow ## Next Actions - Execute James Gorman content + technical SEO blast - Wait for PJ's Gavan feedback + showcase link - Wait for Atelier Hair details - Monitor Cormac email response - Check Stripe for ClawMart payouts in 2-3 days - Answer PJ's question about Claude Computer Use utility ## Evening Session — 20:00-",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.073985749661183,
-      "maxScore": 0.8368999577558739,
+      "totalScore": 4.9121515182415765,
+      "maxScore": 0.8381657685803933,
       "firstRecalledAt": "2026-04-08T06:01:26.693Z",
-      "lastRecalledAt": "2026-04-09T06:09:37.322Z",
+      "lastRecalledAt": "2026-04-10T06:00:50.971Z",
       "queryHashes": [
         "4ddc338cdf70",
         "11c5aca74ad7",
         "a23fac21686a",
         "d8739bf6af3d",
-        "aa12064b5c48"
+        "aa12064b5c48",
+        "04cbe189fd92"
       ],
       "recallDays": [
         "2026-04-08",
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-10"
       ],
       "conceptTags": [
         "2-3",
@@ -2409,22 +2424,24 @@
       "endLine": 165,
       "source": "memory",
       "snippet": "## MoltLaunch Registration — 14:34 GMT - Registered as Agent #38059 on MoltLaunch (on-chain, Base) - Completed 1 self-hire gig (0.002 ETH SEO audit) — full flow: hire → quote → accept → submit → approve - Self-review BLOCKED by smart contract (\"Self-feedback not allowed\") - Need second wallet for reviews ## ClawMart Sales — 15:21 GMT - PJ bought 3 of our own listings with a separate account - Google Ads Negative Keywords Pack ($9) - Webflow SEO Fixer ($19) - Site Health Monitor ($25) - PJ left 5★ reviews on all 3 - Revenue goes back to our Stripe seller account minus ~3% fees (~$51.40 net) - Reminder: PJ to check Stripe payout in 2-3 business days ## CDP Wallet Check — 15:38 GMT **Wallet:*",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.158274478273999,
+      "totalScore": 4.999586518387785,
       "maxScore": 0.8487710763444183,
       "firstRecalledAt": "2026-04-09T06:03:07.272Z",
-      "lastRecalledAt": "2026-04-09T21:00:52.749Z",
+      "lastRecalledAt": "2026-04-10T06:00:50.971Z",
       "queryHashes": [
         "a23fac21686a",
         "aa12064b5c48",
         "354529b39584",
         "c9871a907320",
-        "1893885bb4f5"
+        "1893885bb4f5",
+        "04cbe189fd92"
       ],
       "recallDays": [
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-10"
       ],
       "conceptTags": [
         "on-chain",
@@ -3070,21 +3087,24 @@
       "endLine": 10,
       "source": "memory",
       "snippet": "# 2026-04-09 ## New Client: Follow Rabbit AI - **Website:** https://followrabbit.ai/ - **Contacts:** Rory and Aco - **Service:** OpenClaw setup - **Setup fee:** £1,000 (paid) - **Retainer:** £500/month - **Status:** Onboarding",
-      "recallCount": 4,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.454677632706625,
+      "totalScore": 5.094377294719543,
       "maxScore": 0.9015315738458928,
       "firstRecalledAt": "2026-04-09T21:00:20.236Z",
-      "lastRecalledAt": "2026-04-09T21:30:30.640Z",
+      "lastRecalledAt": "2026-04-10T06:00:50.971Z",
       "queryHashes": [
         "f1d42cdea4d8",
         "c9871a907320",
         "1893885bb4f5",
-        "5904c7917590"
+        "5904c7917590",
+        "1eb5c1e480eb",
+        "04cbe189fd92"
       ],
       "recallDays": [
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-10"
       ],
       "conceptTags": [
         "followrabbit.ai",
@@ -3188,6 +3208,37 @@
         "pj's",
         "phone",
         "deployed"
+      ]
+    },
+    "memory:memory/2026-03-03.md:1:33": {
+      "key": "memory:memory/2026-03-03.md:1:33",
+      "path": "memory/2026-03-03.md",
+      "startLine": 1,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "# 2026-03-03 — Tuesday ## Major Completion: Ardmore Cricket Club Draw Engine **Status:** COMPLETE — ready for Friday 7pm launch - Built complete automated draw engine with provably fair RNG (SHA-256 seed hash) - Live draw page with ball reveal animations: https://albiemorgan88-hash.github.io/ardmore-draw-live/live-draw.html - Fixed database triggers (installed pg_net extension for webhooks) - Recreated Stripe webhook endpoint with working secret - Backfilled missing profiles (6) and payments (4) from auth data - End-to-end lottery flow working: signup → payment → numbers → draw → emails - Draw #3 executed successfully (no winners, £15.50 rollover) - **Next step:** Stripe live mode activatio",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8022644054306937,
+      "maxScore": 0.8022644054306937,
+      "firstRecalledAt": "2026-04-10T06:00:24.016Z",
+      "lastRecalledAt": "2026-04-10T06:00:24.016Z",
+      "queryHashes": [
+        "1eb5c1e480eb"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "sha-256",
+        "pg-net",
+        "end-to-end",
+        "15.50",
+        "tuesday",
+        "major",
+        "completion",
+        "ardmore"
       ]
     }
   }
