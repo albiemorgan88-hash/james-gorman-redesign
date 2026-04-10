@@ -28,7 +28,7 @@ Help Phil and Stacey build a future. £60k debt, breakeven £3.1-3.5k/mo. Blue C
 - **Recurring active: ~£335/mo | Committed after HIP + Follow Rabbit: ~£1,485/mo**
 
 ## Projects (see STATE.md for status)
-- Blue Canvas, JGP, Ardmore, OCC, UKTJ, ClawRoster, Moltbook/ClawMart, learn.bluecanvas.ai
+- Blue Canvas, JGP, Ardmore, OCC, UKTJ, ClawRoster, Moltbook/ClawMart (showclawmart.com), learn.bluecanvas.ai
 - JGP SEO: 6 blog posts published live on 2026-04-07. Remaining fixes in Wix editor: bad slugs on /items-1/i-am-a-title-02 and /blank-15, plus default Wix social links.
 - Follow Rabbit AI: onboarding / OpenClaw setup in progress.
 - Moltbook: baseline karma 254, posts 82, comments 407. 1 pending DM request still needs review.

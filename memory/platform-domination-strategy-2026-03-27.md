@@ -19,7 +19,7 @@ Status: EXECUTING
 - **Next:** Update portfolio showcase + monitor for gigs
 
 ### 3. CLAWMART
-- **Domain:** www.shopclawmart.com (verified active)
+- **Domain:** www.showclawmart.com (corrected April 2026)
 - **Current Blue Canvas products:**
   - SEO Engine $49
   - COO $79 

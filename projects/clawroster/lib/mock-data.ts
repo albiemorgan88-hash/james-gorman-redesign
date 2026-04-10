@@ -430,7 +430,12 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 9, 2026 - midday drip-feed (#119-121)
     { name: 'Flowbench Ops', category: 'Operations/Automation', description: 'SOP execution, handoff tracking, and back-office workflow automation for busy service teams' },
     { name: 'Storyline Foundry', category: 'Content Strategy', description: 'Editorial planning, repurposing workflows, and distribution ops for high-output content teams' },
-    { name: 'RouteSignal AI', category: 'Supply Chain/Logistics', description: 'Dispatch monitoring, route exception handling, and delivery ops visibility for multi-site operators' }
+    { name: 'RouteSignal AI', category: 'Supply Chain/Logistics', description: 'Dispatch monitoring, route exception handling, and delivery ops visibility for multi-site operators' },
+
+    // New rosters for April 10, 2026 - Friday maintenance drip-feed (#122-124)
+    { name: 'CasePilot AI', category: 'Legal Operations', description: 'Matter intake, deadline tracking, and document workflow automation for time-strapped legal teams' },
+    { name: 'TalentLoop Studio', category: 'People Operations', description: 'Candidate screening, interview coordination, and hiring workflow automation for growing teams' },
+    { name: 'MerchFlow Signals', category: 'Retail Analytics', description: 'Stock risk alerts, catalogue QA, and merchandising performance reporting for multi-SKU stores' }
   ];
 
   // Generate the new rosters (#051 onward)
@@ -440,7 +445,11 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     
     // Special timing for rosters - staggered realistically
     let hoursAgo;
-    if (clawNumber >= 119) {
+    if (clawNumber >= 122) {
+      // Friday April 10 maintenance additions (#122-124): spaced across the last day to stay organic
+      const aprilTenStaggered = [29, 13.5, 2.25]; // 29h, 13.5h, 2.25h ago
+      hoursAgo = aprilTenStaggered[clawNumber - 122];
+    } else if (clawNumber >= 119) {
       // Thursday April 9 midday drip-feed additions (#119-121): spaced to feel organic
       const aprilNineMiddayStaggered = [27, 9.5, 1.75]; // 27h, 9.5h, 1.75h ago
       hoursAgo = aprilNineMiddayStaggered[clawNumber - 119];

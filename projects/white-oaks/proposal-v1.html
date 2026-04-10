@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>White Oaks Connect — Engagement Letter</title>
+<style>
+  @page { size: A4; margin: 20mm 25mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+    font-size: 14px;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 32px;
+    background: #fff;
+  }
+  @media print {
+    body { padding: 0; max-width: 100%; font-size: 12px; }
+    .page-break { page-break-before: always; }
+    .no-print { display: none; }
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 3px solid #2563EB;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+  .header-brand h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2563EB;
+    letter-spacing: -0.5px;
+  }
+  .header-brand p {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 2px;
+  }
+  .header-contact {
+    text-align: right;
+    font-size: 12px;
+    color: #6b7280;
+    line-height: 1.5;
+  }
+  .header-contact a { color: #2563EB; text-decoration: none; }
+
+  /* Title */
+  .doc-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 32px;
+    padding: 16px 0;
+    background: #f0f5ff;
+    border-radius: 6px;
+  }
+
+  /* Parties */
+  .parties {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 32px;
+  }
+  .party {
+    flex: 1;
+    background: #f9fafb;
+    border-radius: 6px;
+    padding: 16px 20px;
+    border-left: 3px solid #2563EB;
+  }
+  .party-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #2563EB;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .party strong { display: block; font-size: 15px; margin-bottom: 4px; }
+  .party span { font-size: 12px; color: #6b7280; display: block; line-height: 1.5; }
+
+  /* Section headings */
+  h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2563EB;
+    margin: 28px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 16px 0 8px;
+  }
+
+  /* Content */
+  p { margin-bottom: 10px; }
+  ul { margin: 8px 0 12px 20px; }
+  li { margin-bottom: 4px; }
+  li strong { color: #1a1a1a; }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+  }
+  th {
+    text-align: left;
+    background: #2563EB;
+    color: #fff;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 13px;
+  }
+  tr:nth-child(even) td { background: #f9fafb; }
+
+  /* Timeline */
+  .timeline-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+    align-items: flex-start;
+  }
+  .timeline-week {
+    min-width: 80px;
+    font-weight: 600;
+    color: #2563EB;
+    font-size: 13px;
+  }
+  .timeline-desc { font-size: 13px; }
+
+  /* Demo box */
+  .demo-box {
+    background: #f0f5ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 6px;
+    padding: 14px 20px;
+    margin: 12px 0 20px;
+    text-align: center;
+  }
+  .demo-box a {
+    color: #2563EB;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  /* Signature */
+  .signatures {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #e5e7eb;
+  }
+  .sig-block {
+    flex: 1;
+  }
+  .sig-block .sig-company {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #2563EB;
+  }
+  .sig-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 16px;
+  }
+  .sig-label {
+    font-size: 12px;
+    color: #6b7280;
+    min-width: 70px;
+  }
+  .sig-value {
+    flex: 1;
+    border-bottom: 1px solid #d1d5db;
+    margin-left: 8px;
+    min-height: 24px;
+    font-size: 13px;
+    padding-bottom: 2px;
+  }
+
+  /* Footer */
+  .footer-note {
+    margin-top: 40px;
+    padding: 16px 20px;
+    background: #f9fafb;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #6b7280;
+    font-style: italic;
+    text-align: center;
+  }
+
+  /* Tech specs */
+  .tech-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 10px 0 16px;
+  }
+  .tech-item {
+    font-size: 13px;
+    padding: 8px 12px;
+    background: #f9fafb;
+    border-radius: 4px;
+  }
+  .tech-item strong { color: #2563EB; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <div class="header-brand">
+    <h1>Blue Canvas AI</h1>
+    <p>AI Consultancy &amp; Digital Strategy</p>
+  </div>
+  <div class="header-contact">
+    <a href="https://bluecanvas.ai">bluecanvas.ai</a><br>
+    <a href="mailto:hello@bluecanvas.ai">hello@bluecanvas.ai</a><br>
+    Derry, Northern Ireland
+  </div>
+</div>
+
+<!-- Title -->
+<div class="doc-title">App Development Engagement Letter</div>
+
+<!-- Parties -->
+<div class="parties">
+  <div class="party">
+    <div class="party-label">The Provider</div>
+    <strong>Blue Canvas AI Ltd</strong>
+    <span>Company No. NI737502</span>
+    <span>22c Spacehub, Balliniska Road</span>
+    <span>Derry, BT48 0NA</span>
+    <span><a href="https://bluecanvas.ai" style="color:#2563EB;text-decoration:none;">bluecanvas.ai</a></span>
+  </div>
+  <div class="party">
+    <div class="party-label">The Client</div>
+    <strong>White Oaks Rehabilitation Centre</strong>
+    <span>Company No. [____________]</span>
+    <span>[Address line 1]</span>
+    <span>[Address line 2]</span>
+  </div>
+</div>
+
+<p><strong>Date:</strong> _______________</p>
+
+<!-- 1. The Project -->
+<h2>1. The Project — White Oaks Connect</h2>
+<p>White Oaks Connect is a dedicated aftercare app for your residents to stay connected and supported after completing their treatment programme. Think of it as a digital support network that fits in their pocket.</p>
+<p>After leaving White Oaks, residents often feel isolated and vulnerable — this app gives them a lifeline back to their recovery community and tools to maintain their progress. Recovery doesn't end at discharge. This extends your care and support beyond the programme, helping prevent relapse and keeping people connected to their recovery journey.</p>
+<p>Your team will have access to a simple web dashboard showing who's checking in regularly, who might need extra support, and trends across your aftercare community — like a gentle pulse on how your graduates are doing, without being intrusive.</p>
+
+<div class="demo-box">
+  <strong>See the app in action:</strong><br>
+  <a href="https://albiemorgan88-hash.github.io/white-oaks-demo/">albiemorgan88-hash.github.io/white-oaks-demo</a><br>
+  <span style="font-size:12px;color:#6b7280;">Try both resident and counsellor views</span>
+</div>
+
+<!-- 2. What We'll Build -->
+<h2>2. What We'll Build</h2>
+<p>Blue Canvas AI will design, build and deploy the White Oaks Connect app, including:</p>
+<ul>
+  <li><strong>Daily Check-ins</strong> — Simple wellness tracking with mood, sleep, and stress levels</li>
+  <li><strong>Community Support</strong> — Peer-to-peer encouragement and shared experiences</li>
+  <li><strong>Progress Tracking</strong> — Visual charts showing recovery milestones and achievements</li>
+  <li><strong>Emergency Support</strong> — Direct link to crisis helplines and White Oaks support</li>
+  <li><strong>Appointment Reminders</strong> — Follow-up session scheduling and notifications</li>
+  <li><strong>Educational Content</strong> — Recovery resources and coping strategies</li>
+  <li><strong>Staff Dashboard</strong> — Overview of residents' wellbeing without compromising privacy</li>
+</ul>
+
+<!-- 3. Technical Details -->
+<h2>3. Technical Details</h2>
+<div class="tech-grid">
+  <div class="tech-item"><strong>Platform:</strong> Progressive Web App (iOS, Android &amp; desktop)</div>
+  <div class="tech-item"><strong>Backend:</strong> Secure cloud database with real-time updates</div>
+  <div class="tech-item"><strong>Security:</strong> End-to-end encryption, GDPR compliant</div>
+  <div class="tech-item"><strong>Hosting:</strong> Cloud infrastructure, 99.9% uptime</div>
+</div>
+<p style="font-size:13px;color:#6b7280;">The app works through any web browser — residents simply add it to their home screen. No app store download required.</p>
+
+<!-- 4. Reporting -->
+<h2>4. Reporting</h2>
+<p>The Provider will deliver:</p>
+<ul>
+  <li>Monthly usage summary — active users, check-in rates, engagement trends</li>
+  <li>Summary of any maintenance or updates completed</li>
+  <li>Recommendations for improvements based on usage data</li>
+</ul>
+
+<!-- 5. Fees & Payment -->
+<h2>5. Fees &amp; Payment</h2>
+<table>
+  <thead>
+    <tr><th>Item</th><th>Amount</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Setup &amp; development</strong> (one-time)<br><span style="font-size:12px;color:#6b7280;">App development, staff dashboard, backend infrastructure, configuration</span></td>
+      <td><strong>£1,000</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Monthly retainer</strong><br><span style="font-size:12px;color:#6b7280;">Hosting, push notifications, bug fixes, maintenance, monthly usage report</span></td>
+      <td><strong>£100/month</strong></td>
+    </tr>
+  </tbody>
+</table>
+<p>The setup fee is due before work commences. The monthly retainer is due on the same date each calendar month, beginning one month after launch.</p>
+<p><strong>Payable up front:</strong> payment is due in advance of each month's work. Late payments may incur a pause in services until the account is brought up to date.</p>
+
+<!-- 6. Implementation Timeline -->
+<h2>6. Implementation Timeline</h2>
+<div class="timeline-item"><span class="timeline-week">Week 1–2</span><span class="timeline-desc">Requirements gathering and design finalisation</span></div>
+<div class="timeline-item"><span class="timeline-week">Week 3–4</span><span class="timeline-desc">Core app development and testing</span></div>
+<div class="timeline-item"><span class="timeline-week">Week 5</span><span class="timeline-desc">Staff dashboard and admin panel completion</span></div>
+<div class="timeline-item"><span class="timeline-week">Week 6</span><span class="timeline-desc">Beta testing with selected residents and staff</span></div>
+<div class="timeline-item"><span class="timeline-week">Week 7</span><span class="timeline-desc">Final adjustments and full launch</span></div>
+
+<!-- 7. Term & Termination -->
+<h2>7. Term &amp; Termination</h2>
+<p>This agreement has <strong>no minimum term</strong>. Either party may terminate by giving 1 calendar month's written notice (email is sufficient). The agreement continues on a rolling monthly basis until terminated.</p>
+<p><strong>Start date:</strong> _______________</p>
+
+<!-- 8. IP -->
+<h2>8. Intellectual Property</h2>
+<p>All work product, content, and materials created by Blue Canvas AI under this agreement are the property of White Oaks upon payment. This includes the app, dashboard, codebase, design assets, and any other deliverables.</p>
+
+<!-- 9. Confidentiality -->
+<h2>9. Confidentiality</h2>
+<p>Both parties agree to keep confidential any business information, strategies, data, or proprietary information shared during this engagement. This includes user data, analytics, system architecture, and business plans. This obligation survives termination of the agreement.</p>
+<p><em>Given the sensitive nature of resident data, Blue Canvas AI will implement appropriate data protection measures in line with GDPR requirements and healthcare data best practices.</em></p>
+
+<!-- 10. Limitation of Liability -->
+<h2>10. Limitation of Liability</h2>
+<p>Blue Canvas AI will perform all services with reasonable skill and care. However:</p>
+<ul>
+  <li>App usage and engagement depend on many factors outside the Provider's control (resident adoption, device access, internet availability, etc.)</li>
+  <li>The Provider does not guarantee specific usage levels or clinical outcomes</li>
+  <li>The Provider's total liability under this agreement shall not exceed the total fees paid by the Client in the 3 months preceding any claim</li>
+</ul>
+
+<!-- 11. General -->
+<h2>11. General</h2>
+<ul>
+  <li><strong>Communication:</strong> Day-to-day communication via phone, email, or WhatsApp as suits both parties.</li>
+  <li><strong>Changes to scope:</strong> Any significant changes to the scope of services will be discussed and agreed in writing before implementation.</li>
+  <li><strong>Governing law:</strong> This agreement is governed by the laws of Northern Ireland.</li>
+</ul>
+
+<h3>What we need from White Oaks:</h3>
+<ul>
+  <li>List of features to prioritise for launch</li>
+  <li>Branding assets (logo, colours)</li>
+  <li>A contact person for feedback during the build</li>
+  <li>Content for the educational resources section</li>
+</ul>
+
+<!-- Signatures -->
+<div class="signatures">
+  <div class="sig-block">
+    <div class="sig-company">Blue Canvas AI Ltd</div>
+    <div class="sig-line">
+      <span class="sig-label">Name:</span>
+      <span class="sig-value">Phil Patterson</span>
+    </div>
+    <div class="sig-line">
+      <span class="sig-label">Signature:</span>
+      <span class="sig-value"></span>
+    </div>
+    <div class="sig-line">
+      <span class="sig-label">Date:</span>
+      <span class="sig-value"></span>
+    </div>
+  </div>
+  <div class="sig-block">
+    <div class="sig-company">White Oaks Rehabilitation Centre</div>
+    <div class="sig-line">
+      <span class="sig-label">Name:</span>
+      <span class="sig-value"></span>
+    </div>
+    <div class="sig-line">
+      <span class="sig-label">Signature:</span>
+      <span class="sig-value"></span>
+    </div>
+    <div class="sig-line">
+      <span class="sig-label">Date:</span>
+      <span class="sig-value"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer-note">
+  This is a simple engagement letter intended to set out the terms of our working relationship clearly and fairly.<br>
+  If anything's unclear, just ask — happy to talk it through.
+</div>
+
+</body>
+</html>

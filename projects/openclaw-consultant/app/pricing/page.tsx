@@ -481,7 +481,7 @@ export default function PricingPage() {
             <Link href="#book-consultation" className="bg-blue-500 text-white font-bold px-8 py-3 rounded-lg hover:bg-blue-400 transition-colors">
               Book Free Strategy Call
             </Link>
-            <Link href="/case-studies/seo-agency-250-month" className="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white hover:text-dark transition-colors">
+            <Link href="/case-studies" className="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white hover:text-dark transition-colors">
               See Case Studies
             </Link>
           </div>

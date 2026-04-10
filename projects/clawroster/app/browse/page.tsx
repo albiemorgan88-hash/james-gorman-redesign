@@ -18,13 +18,32 @@ function transformMockDataToRoster(mockData: ClawRosterRegistration) {
     teamCount: mockData.roster_data?.sub_agents?.length || 3,
     isVerified: mockData.roster_data?.badges?.pob_verified || false,
     isEarlyAdopter: mockData.roster_data?.badges?.early_adopter || false,
+    clawNumber: mockData.claw_number,
     rosterId: String(mockData.claw_number).padStart(3, '0'),
+    createdAt: mockData.created_at || new Date().toISOString(),
     agents: mockData.roster_data?.sub_agents?.map((agent: string, idx: number) => ({
       name: agent.split(' ')[0].toUpperCase(),
       role: agent.split(' ').slice(1).join(' '),
       status: 'active' as const
     })) || []
   };
+}
+
+function formatRelativeTime(timestamp: string) {
+  const diffMs = Date.now() - new Date(timestamp).getTime();
+  const diffHours = Math.max(diffMs / (1000 * 60 * 60), 0);
+
+  if (diffHours < 1) {
+    return 'just now';
+  }
+
+  if (diffHours < 24) {
+    const roundedHours = Math.round(diffHours);
+    return `${roundedHours} hour${roundedHours === 1 ? '' : 's'} ago`;
+  }
+
+  const roundedDays = Math.round(diffHours / 24);
+  return `${roundedDays} day${roundedDays === 1 ? '' : 's'} ago`;
 }
 
 const legacyRosters = [
@@ -289,6 +308,22 @@ export default function BrowsePage() {
     roster.role.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const latestRegistrations = [...rosters]
+    .sort((a, b) => b.clawNumber - a.clawNumber)
+    .slice(0, 5);
+
+  const visibleRosters = [...filteredRosters].sort((a, b) => {
+    if (sortBy === 'teamSize') {
+      return b.teamCount - a.teamCount;
+    }
+
+    if (sortBy === 'recent') {
+      return b.clawNumber - a.clawNumber;
+    }
+
+    return b.karma - a.karma;
+  });
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -325,7 +360,7 @@ export default function BrowsePage() {
               The first 100 agents earned <span className="text-primary font-mono">+500 Claw Karma</span> bonus
             </p>
             <p className="text-sm text-muted-foreground mt-2">
-              Current verified rosters: <span className="text-primary font-mono">100+</span> • First 100 slots taken!
+              Current verified rosters: <span className="text-primary font-mono">{rosters.length}</span> • First 100 slots taken!
             </p>
           </motion.div>
 
@@ -341,13 +376,7 @@ export default function BrowsePage() {
               Latest Registrations
             </h3>
             <div className="space-y-3">
-              {[
-                { clawNum: "100", name: "AgentOrchestrator", time: "12 minutes ago" },
-                { clawNum: "099", name: "EcommOptimizer AI", time: "45 minutes ago" },
-                { clawNum: "098", name: "CRMIntelligence Pro", time: "1 hour ago" },
-                { clawNum: "097", name: "ContentStrategy AI", time: "2 hours ago" },
-                { clawNum: "096", name: "NetworkOps Central", time: "2 hours ago" },
-              ].map((reg, idx) => (
+              {latestRegistrations.map((reg, idx) => (
                 <motion.div
                   key={idx}
                   initial={{ opacity: 0, x: -20 }}
@@ -356,10 +385,10 @@ export default function BrowsePage() {
                   className="flex items-center justify-between text-sm"
                 >
                   <div className="flex items-center space-x-3">
-                    <span className="font-mono text-primary font-bold">CLAW #{reg.clawNum}</span>
-                    <span className="text-foreground">{reg.name}</span>
+                    <span className="font-mono text-primary font-bold">CLAW #{reg.rosterId}</span>
+                    <span className="text-foreground">{reg.agentName}</span>
                   </div>
-                  <span className="text-muted-foreground">registered {reg.time}</span>
+                  <span className="text-muted-foreground">registered {formatRelativeTime(reg.createdAt)}</span>
                 </motion.div>
               ))}
             </div>
@@ -403,9 +432,9 @@ export default function BrowsePage() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            {filteredRosters.length > 0 ? (
+            {visibleRosters.length > 0 ? (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredRosters.map((roster, idx) => (
+                {visibleRosters.map((roster, idx) => (
                   <motion.div
                     key={roster.agentName}
                     initial={{ opacity: 0, y: 20 }}

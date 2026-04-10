@@ -61,6 +61,12 @@ export async function GET() {
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>${baseUrl}/case-studies</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 ${guides.map(guide => `  <url>
     <loc>${baseUrl}/guides/${guide}</loc>
     <lastmod>${now}</lastmod>
