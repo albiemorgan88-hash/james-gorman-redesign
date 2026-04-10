@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-10T12:23:17.436Z",
+  "updatedAt": "2026-04-10T18:03:15.296Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -2015,19 +2015,21 @@
       "endLine": 59,
       "source": "memory",
       "snippet": "**Status:** Quiet afternoon - only Sashiko crosses threshold for deeper analysis. Most \"new\" tools appear to be either older than 2-week window or lack verification of actual launch dates. Next check: 21:00 GMT evening sweep. ## 21:26 - ClubDraw Critical Fix Complete **MAJOR ISSUE RESOLVED:** Mark Chambers' 10 ClubDraw numbers were showing as available on UI despite payment confirmation. Critical sync failure between payment webhook and database. **Root Cause Identified:** - Payment processed: 2026-03-19T20:27:00 GMT (£10.00) - Email confirmation sent successfully - Database subscription record missing (webhook failure) - UI showing numbers 49,72,127,132,185,209,254,348,474,479 as avail",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6780759677854884,
+      "totalScore": 2.522555198640465,
       "maxScore": 0.8669405510186905,
       "firstRecalledAt": "2026-04-08T21:30:35.255Z",
-      "lastRecalledAt": "2026-04-08T21:32:16.346Z",
+      "lastRecalledAt": "2026-04-10T18:03:09.686Z",
       "queryHashes": [
         "64107a7aaad3",
-        "9822aef9217d"
+        "9822aef9217d",
+        "2c5cfe66ed05"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-10"
       ],
       "conceptTags": [
         "2-week",
@@ -2727,18 +2729,20 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "### Admin Payout Page Built (NOT deployed yet) - `/admin/payouts` — two-tab layout: Draw Payouts + Monthly Summary - Mark as paid checkboxes, CSV export, monthly invoice calculation - Database migration `20260310120000_admin_payout_tracking.sql` ready but NOT run - PJ said \"hold off\" on deploying this — archive page only ### Archive Page — DEPLOYED ✅ - Live at ardmorecricket.com/archive - 3 photos with captions: 1. Trophy team: Mark Gillen, Dean Chambers, George Chambers, Michael Dalton, Phil Patterson, Damien Gallagher, Faye Gallagher, Tom Martin, Caolan Young, Steven Barrow, Steven McDermott, Mark Gillen, Dessie McCourt 2. Phil Simmons photo: Peter Harrigan Sr, Gavin Dalton, Phil Simm",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8312042316990181,
+      "totalScore": 1.6432835795355787,
       "maxScore": 0.8312042316990181,
       "firstRecalledAt": "2026-04-09T08:49:54.775Z",
-      "lastRecalledAt": "2026-04-09T08:49:54.775Z",
+      "lastRecalledAt": "2026-04-10T18:03:09.686Z",
       "queryHashes": [
-        "7c68a8fb7acf"
+        "7c68a8fb7acf",
+        "2c5cfe66ed05"
       ],
       "recallDays": [
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-10"
       ],
       "conceptTags": [
         "admin/payouts",
@@ -2758,17 +2762,18 @@
       "endLine": 126,
       "source": "memory",
       "snippet": "- **One-off path:** creates/merges `number_selections` record + `payments` record - Both paths: send purchase confirmation email to user + admin notification to contact@bluecanvas.ai & Ardmorecc1879@hotmail.com 8. **Success Page** → `ardmorecricket.com/draw/success` → confetti, gold number circles, \"what happens next\" section 9. **Optimistic Cache** → client stores `optimistic_purchased` in localStorage so numbers show immediately as taken without waiting for page reload **Weekly Draw Execution (Friday 7PM):** - Cron triggers draw engine (`run-draw.js` in ardmore-draw-live repo) - Provably fair: SHA-256 hash of seed published before, seed published after - 3 winning numbers drawn from",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.4911180857851005,
+      "totalScore": 3.290308142702925,
       "maxScore": 0.8314120597423256,
       "firstRecalledAt": "2026-04-09T08:49:54.775Z",
-      "lastRecalledAt": "2026-04-10T12:13:17.882Z",
+      "lastRecalledAt": "2026-04-10T18:03:09.686Z",
       "queryHashes": [
         "7c68a8fb7acf",
         "e891bd464219",
-        "106f7007ac89"
+        "106f7007ac89",
+        "2c5cfe66ed05"
       ],
       "recallDays": [
         "2026-04-09",
@@ -3014,18 +3019,19 @@
       "endLine": 119,
       "source": "memory",
       "snippet": "## Revenue Streams Current Status ### Active Revenue - **James Gorman**: £250/mo (Week 3 delivered successfully) - **Ardmore platform**: £195/week (~£845/mo) with 50 active subscribers ### Potential Revenue - **ClawMart products**: 4 live listings, daily monitoring - **ClawRoster launch**: 50+ target rosters before marketing push - **Google Ads optimization**: Conversion tracking fix critical for revenue generation ## Tomorrow's Priorities ### URGENT (Next 24 Hours) 1. **Blue Canvas /thank-you page**: Fix conversion tracking flow in Webflow 2. **OpenClaw Consultant contact form**: Complete prominent placement deployment 3. **Ardmore draw monitoring**: Verify 7PM draw executes successfull",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.153079311653226,
+      "totalScore": 4.959015559502909,
       "maxScore": 0.9055079219050568,
       "firstRecalledAt": "2026-04-09T14:14:00.853Z",
-      "lastRecalledAt": "2026-04-10T12:07:45.821Z",
+      "lastRecalledAt": "2026-04-10T18:03:09.686Z",
       "queryHashes": [
         "b52c957218cc",
         "0d9aad4d095e",
         "7218daaedf83",
-        "af4d4d77d8b4"
+        "af4d4d77d8b4",
+        "2c5cfe66ed05"
       ],
       "recallDays": [
         "2026-04-09",
@@ -3530,15 +3536,16 @@
       "endLine": 72,
       "source": "memory",
       "snippet": "- Membership payments now tagged with category:'membership' in Stripe metadata for reconciliation - \"Powered by Blue Canvas AI\" footer added with logo and link - All deployed to ardmorecricket.com ## James Gorman Property - 37 published blog posts (was 23, grew to 37) - 5 new blog post DRAFTS created via Wix API: buy-to-let guide, downsizing guide, Merchant's View, moving from England, property survey guide - Technical audit: health score 37, 14 blank placeholder pages killing it - Blank pages need deleting in Wix Editor — API can't manage them - Changelog updated at reports/james/changelog.md ## Apollo Outreach - 731 NI decision maker contacts in \"ni biz\" list - Showcase app working: show",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7980465771620242,
-      "maxScore": 0.7980465771620242,
+      "totalScore": 1.6351381856128624,
+      "maxScore": 0.8370916084508381,
       "firstRecalledAt": "2026-04-10T10:15:28.428Z",
-      "lastRecalledAt": "2026-04-10T10:15:28.428Z",
+      "lastRecalledAt": "2026-04-10T18:03:15.296Z",
       "queryHashes": [
-        "2bcb735e7cf6"
+        "2bcb735e7cf6",
+        "193f8fad5d1b"
       ],
       "recallDays": [
         "2026-04-10"
@@ -3810,15 +3817,16 @@
       "endLine": 81,
       "source": "memory",
       "snippet": "## Resend / Email Fix - OCC contact form was sending from draws@ardmorecricket.com — wrong - Changed to contact@bluecanvas.ai but domain not yet verified on Resend - PJ added DNS records at GoDaddy — waiting for verification - Ardmore draw emails stay on draws@ardmorecricket.com — untouched ## Ardmore Draw Payout (Mar 27) - Pot: £239.00 (76 subs, 238 numbers) - Winners: Samantha Polland 1st (£59.75), Joseph Lynch 2nd (£35.85), George Brolly 3rd (£23.90) - Blue Canvas cut: £17.93 ## Key Decisions - Blue Canvas site migration PARKED — Webflow stays, SEO via subdomain instead - Subagent timeout needs increasing — 15 min not enough for big content tasks - Named team only — no more random subag",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8351420309641423,
-      "maxScore": 0.8351420309641423,
+      "totalScore": 1.696812456539586,
+      "maxScore": 0.8616704255754436,
       "firstRecalledAt": "2026-04-10T12:12:57.327Z",
-      "lastRecalledAt": "2026-04-10T12:12:57.327Z",
+      "lastRecalledAt": "2026-04-10T18:03:15.296Z",
       "queryHashes": [
-        "43caa40c9ed9"
+        "43caa40c9ed9",
+        "193f8fad5d1b"
       ],
       "recallDays": [
         "2026-04-10"
@@ -3863,6 +3871,161 @@
         "change",
         "yet",
         "engagement"
+      ]
+    },
+    "memory:memory/2026-03-27.md:20:47": {
+      "key": "memory:memory/2026-03-27.md:20:47",
+      "path": "memory/2026-03-27.md",
+      "startLine": 20,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "- **Number 97 duplicate issue**: Mark Chambers should have had #97, system showed Sabin Babu also picked it - **Root cause identified**: System automatically blocked duplicate allocation, Sabin's subscription was cancelled with empty numbers array - **No manual intervention needed**: ClubDraw platform safeguards worked perfectly - **Draw integrity maintained**: 76 active subscriptions, 247 numbers, ZERO duplicates in database - **7PM draw ready**: System validated and confirmed functional for tonight's draw ## Technical Implementations ### JGP Technical Delivery - **HTML to PDF conversion**: Subagent successfully converted Week 3 report using Chrome headless - **Week 2 format maintained**:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8193802589735927,
+      "maxScore": 0.8193802589735927,
+      "firstRecalledAt": "2026-04-10T18:03:09.686Z",
+      "lastRecalledAt": "2026-04-10T18:03:09.686Z",
+      "queryHashes": [
+        "2c5cfe66ed05"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "number",
+        "duplicate",
+        "issue",
+        "mark",
+        "chambers",
+        "had",
+        "system",
+        "showed"
+      ]
+    },
+    "memory:memory/2026-03-27.md:114:134": {
+      "key": "memory:memory/2026-03-27.md:114:134",
+      "path": "memory/2026-03-27.md",
+      "startLine": 114,
+      "endLine": 134,
+      "source": "memory",
+      "snippet": "- **62 → 89 career guides** (27 new across 5 categories: Green Energy, Advanced Construction, Automotive, Maritime, Emerging Tech) ### Ardmore Draw Executed Successfully - **Draw winners (27 Mar):** Samantha Polland (£59.75, #222), Joseph Lynch (£35.85, #300), George Brolly (£23.90, #96) - **Pot:** £239, 76 active subs, 238 numbers - **All 63 participants emailed** — BUT email included \"Club receives £119.50\" despite PJ saying winners only - **DRAW EMAIL GUIDELINES created:** `/projects/ardmore-cricket/DRAW-EMAIL-GUIDELINES.md` — NEVER include club money in emails - **Number 97 duplicate:** System safeguards worked, Sabin Babu's attempt auto-cancelled - **Pot reconciliation:** All numbers a",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.801105987955732,
+      "maxScore": 0.801105987955732,
+      "firstRecalledAt": "2026-04-10T18:03:09.686Z",
+      "lastRecalledAt": "2026-04-10T18:03:09.686Z",
+      "queryHashes": [
+        "2c5cfe66ed05"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "59.75",
+        "35.85",
+        "23.90",
+        "119.50",
+        "auto-cancelled",
+        "career",
+        "guides",
+        "new"
+      ]
+    },
+    "memory:memory/2026-03-03.md:67:96": {
+      "key": "memory:memory/2026-03-03.md:67:96",
+      "path": "memory/2026-03-03.md",
+      "startLine": 67,
+      "endLine": 96,
+      "source": "memory",
+      "snippet": "4. Test full end-to-end flow with webhook active ## Evening Resolution Session (7:30pm-8pm) **BREAKTHROUGH: Ardmore Draw Now Fully Live** ### Major Discovery: Live Mode Was Already Active - PJ's £5 payment was LIVE Stripe (not test) — real money charged - Vercel production env vars had live Stripe keys already configured - **Immediate action:** Cancelled live subscription + refunded £5.00 to card ending 4908 ### Full Production Chain Deployed ✅ 1. **Stripe live webhook created:** `we_1T6yjdASm3u8i3nlzq4ew0bH` → `https://ardmorecricket.com/api/webhooks/stripe` 2. **Vercel env updated:** Live webhook secret `whsec_nwmhL9aSGCulNw27vX4Un6TyJtpCSUNQ` deployed 3. **Resend domain verified:** `ar",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8403854257991014,
+      "maxScore": 0.8403854257991014,
+      "firstRecalledAt": "2026-04-10T18:03:15.296Z",
+      "lastRecalledAt": "2026-04-10T18:03:15.296Z",
+      "queryHashes": [
+        "193f8fad5d1b"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "end-to-end",
+        "30pm-8pm",
+        "5.00",
+        "we-1t6yjdasm3u8i3nlzq4ew0bh",
+        "test",
+        "full",
+        "end",
+        "flow"
+      ]
+    },
+    "memory:memory/2026-03-03.md:50:74": {
+      "key": "memory:memory/2026-03-03.md:50:74",
+      "path": "memory/2026-03-03.md",
+      "startLine": 50,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "- Email lib uses Resend — currently in **sandbox mode** (can only send to philpatterson85@gmail.com) - **Fix needed:** (a) Add Stripe webhook endpoint in dashboard → `https://ardmorecricket.com/api/webhooks/stripe`, (b) Set Vercel env vars (STRIPE_WEBHOOK_SECRET, RESEND_API_KEY, NEXT_PUBLIC_SITE_URL), (c) Verify ardmorecricket.com domain in Resend ### Issue 2: Subscription Management - PJ asked how to cancel the £5/week recurring payment - Manage page exists at `/draw/manage` — shows subscriptions with cancel button - BUT: no `draw_subscriptions` record exists because webhook never fired - Subscription API (DELETE /api/subscriptions) cancels via Stripe API + updates DB ### Issue 3: Grid Nu",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.820689742082773,
+      "maxScore": 0.820689742082773,
+      "firstRecalledAt": "2026-04-10T18:03:15.296Z",
+      "lastRecalledAt": "2026-04-10T18:03:15.296Z",
+      "queryHashes": [
+        "193f8fad5d1b"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "gmail.com",
+        "stripe-webhook-secret",
+        "resend-api-key",
+        "next-public-site-url",
+        "ardmorecricket.com",
+        "5/week",
+        "draw/manage",
+        "draw-subscriptions"
+      ]
+    },
+    "memory:memory/2026-03-03.md:91:116": {
+      "key": "memory:memory/2026-03-03.md:91:116",
+      "path": "memory/2026-03-03.md",
+      "startLine": 91,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "- Claude Code agent spawned to add FAQ accordion, success page improvements, and nav enhancements - **Status:** Session failed (needed trust confirmation) — will need respawn - **Target:** FAQ on draw page, \"Manage My Numbers\" links, enhanced navigation ### Ardmore Draw — Confirmed Business Rules (from PJ, 8:15pm) - **Buying for others:** YES — can assign any name to a number (e.g. buy for dad) - **Max numbers per person:** NO LIMIT - **Revenue split:** 50% jackpot, 40% club, 10% platform fee — BUT publicly state \"50/50\" (50% prizes, 50% club) - **Age verification:** None required - **One-off purchases:** Valid for one week only - **Subscription:** Weekly recurring — this is the primary pay",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8195985947901907,
+      "maxScore": 0.8195985947901907,
+      "firstRecalledAt": "2026-04-10T18:03:15.296Z",
+      "lastRecalledAt": "2026-04-10T18:03:15.296Z",
+      "queryHashes": [
+        "193f8fad5d1b"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "e.g",
+        "50/50",
+        "one-off",
+        "claude",
+        "code",
+        "spawned",
+        "add",
+        "faq"
       ]
     }
   }
