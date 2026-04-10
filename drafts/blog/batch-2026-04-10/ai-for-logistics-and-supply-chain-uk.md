@@ -1,11 +1,12 @@
 ---
-title: "AI for Logistics and Supply Chain UK: Practical Use Cases That Improve Flow, Cost and Visibility"
-slug: "ai-for-logistics-and-supply-chain-uk"
-seo_title: "AI for Logistics and Supply Chain UK | Practical Guide | Blue Canvas"
-summary: "A practical guide to AI for logistics and supply chain teams in the UK, covering planning, procurement, customer updates, exceptions, reporting and rollout."
-category: "AI for Business"
-author: "Phil Patterson"
-target_keyword: "ai for logistics and supply chain uk"
+title: AI for Logistics and Supply Chain UK
+slug: ai-for-logistics-and-supply-chain-uk
+meta_description: AI for logistics and supply chain UK firms. See practical use cases and book a free consultation today.
+target_keyword: ai for logistics and supply chain uk
+secondary_keywords: [ai in supply chain, ai for logistics companies]
+word_count_target: 1800
+author: Phil Patterson
+date: 2026-04-10
 ---
 
 # AI for Logistics and Supply Chain UK: Practical Use Cases That Improve Flow, Cost and Visibility
@@ -18,6 +19,8 @@ Used well, AI can help teams spot issues earlier, communicate faster and reduce 
 
 This guide focuses on the practical version: where AI can actually improve logistics and supply chain work, where the limits are, and how UK businesses should roll it out sensibly.
 
+
+[Image: Logistics dashboard showing AI-powered routing, stock and delivery planning.]
 ## Why supply chain is a strong fit for AI
 
 Supply chain work produces a constant stream of structured and semi-structured information.

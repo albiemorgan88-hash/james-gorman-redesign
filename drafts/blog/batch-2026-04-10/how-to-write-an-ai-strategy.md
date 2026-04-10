@@ -1,11 +1,12 @@
 ---
-title: "How to Write an AI Strategy: A Practical Framework for UK Business Leaders"
-slug: "how-to-write-an-ai-strategy"
-seo_title: "How to Write an AI Strategy: Practical UK Framework | Blue Canvas"
-summary: "A practical guide to writing an AI strategy for your business, covering priorities, use cases, governance, rollout, budget, metrics and leadership alignment."
-category: "AI Strategy"
-author: "Phil Patterson"
-target_keyword: "how to write an ai strategy"
+title: How to Write an AI Strategy
+slug: how-to-write-an-ai-strategy
+meta_description: How to write an AI strategy for your business. Follow a practical process and book a free consultation today.
+target_keyword: how to write an ai strategy
+secondary_keywords: [ai strategy template, ai strategy for business]
+word_count_target: 1800
+author: Phil Patterson
+date: 2026-04-10
 ---
 
 # How to Write an AI Strategy: A Practical Framework for UK Business Leaders
@@ -22,6 +23,8 @@ The businesses getting real value from AI are usually not the ones doing the lou
 
 This guide shows you **how to write an AI strategy** that is practical enough to use, not just admire in a meeting.
 
+
+[Image: Leadership team shaping an AI strategy with priorities, risks and milestones.]
 ## What an AI strategy is meant to do
 
 At minimum, your AI strategy should answer seven questions:

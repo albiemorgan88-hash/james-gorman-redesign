@@ -1,11 +1,12 @@
 ---
-title: "AI Customer Service Automation: How to Speed Up Support Without Annoying Customers"
-slug: "ai-customer-service-automation"
-seo_title: "AI Customer Service Automation for UK Businesses | Blue Canvas"
-summary: "A practical guide to AI customer service automation, covering support workflows, knowledge bases, escalation rules, metrics, tools and rollout steps."
-category: "AI for Business"
-author: "Phil Patterson"
-target_keyword: "ai customer service automation"
+title: AI Customer Service Automation
+slug: ai-customer-service-automation
+meta_description: AI customer service automation for UK SMEs. See what to automate first and book a free consultation today.
+target_keyword: ai customer service automation
+secondary_keywords: [customer service ai, customer support automation]
+word_count_target: 1800
+author: Phil Patterson
+date: 2026-04-10
 ---
 
 # AI Customer Service Automation: How to Speed Up Support Without Annoying Customers
@@ -22,6 +23,8 @@ The difference is not the tool. It is the workflow design.
 
 This guide covers where AI customer service automation works, where it does not, and how to roll it out without wrecking the customer experience.
 
+
+[Image: Support team reviewing AI-assisted ticket triage and response workflows.]
 ## What AI customer service automation actually includes
 
 There is a tendency to reduce the whole topic to chatbots. That is too narrow.

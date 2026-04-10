@@ -1,11 +1,12 @@
 ---
-title: "AI for Finance Teams: Practical Wins for CFOs, Finance Directors and Ops Leads"
-slug: "ai-for-finance-teams"
-seo_title: "AI for Finance Teams: Practical Guide for UK Finance Leaders | Blue Canvas"
-summary: "A practical guide to AI for finance teams, covering month-end, reporting, AP and AR workflows, controls, governance and how finance leaders should roll AI out."
-category: "AI for Business"
-author: "Phil Patterson"
-target_keyword: "ai for finance teams"
+title: AI for Finance Teams
+slug: ai-for-finance-teams
+meta_description: AI for finance teams explained for UK SMEs. See the best use cases and book a free consultation today.
+target_keyword: ai for finance teams
+secondary_keywords: [ai for finance departments, ai for cfo]
+word_count_target: 1800
+author: Phil Patterson
+date: 2026-04-10
 ---
 
 # AI for Finance Teams: Practical Wins for CFOs, Finance Directors and Ops Leads
@@ -20,6 +21,8 @@ The opportunity is real, but finance is also one of the areas where loose AI ado
 
 This guide is about the practical middle ground: where AI can help finance teams now, where it should be used carefully, and how to roll it out without losing control.
 
+
+[Image: Finance team using AI to review reports, forecasts and month-end workflows.]
 ## Where AI fits in finance
 
 AI is strongest in finance when it supports work that follows a repeatable pattern.

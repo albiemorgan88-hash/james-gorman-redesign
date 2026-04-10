@@ -1,11 +1,12 @@
 ---
-title: "AI for Solicitors UK: Practical Use Cases, Risks and a Safe Rollout Plan for Law Firms"
-slug: "ai-for-solicitors-uk"
-seo_title: "AI for Solicitors UK: Practical Guide for Law Firms | Blue Canvas"
-summary: "A practical guide to AI for solicitors in the UK, covering legal use cases, SRA risk points, client confidentiality, rollout steps and where law firms should start."
-category: "AI for Business"
-author: "Phil Patterson"
-target_keyword: "ai for solicitors uk"
+title: AI for Solicitors UK
+slug: ai-for-solicitors-uk
+meta_description: AI for solicitors UK firms. Learn safe legal use cases and book a free consultation today.
+target_keyword: ai for solicitors uk
+secondary_keywords: [ai for law firms, legal ai uk]
+word_count_target: 1800
+author: Phil Patterson
+date: 2026-04-10
 ---
 
 # AI for Solicitors UK: Practical Use Cases, Risks and a Safe Rollout Plan for Law Firms
@@ -24,6 +25,8 @@ That matters because legal work is not like generic office work. Accuracy matter
 
 This guide is for UK firms that want the useful bits of AI without creating a compliance headache.
 
+
+[Image: Solicitors reviewing a secure AI workflow for drafting and document summaries.]
 ## Where AI helps law firms in the real world
 
 The best use cases are not dramatic. They are the routine, text-heavy tasks that eat time but still need legal judgement around them.

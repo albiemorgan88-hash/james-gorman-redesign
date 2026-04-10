@@ -1,11 +1,12 @@
 ---
-title: "AI Workflow Automation: How to Find, Fix and Automate the Work That Slows Your Business Down"
-slug: "ai-workflow-automation"
-seo_title: "AI Workflow Automation for UK Businesses | Blue Canvas"
-summary: "A practical guide to AI workflow automation for UK businesses, from process mapping and tool selection to governance, ROI and rollout."
-category: "AI Strategy"
-author: "Phil Patterson"
-target_keyword: "ai workflow automation"
+title: AI Workflow Automation Guide
+slug: ai-workflow-automation
+meta_description: AI workflow automation for UK businesses. Learn how to map and improve workflows, then book a free consultation.
+target_keyword: ai workflow automation
+secondary_keywords: [workflow automation ai, ai workflow tools]
+word_count_target: 1800
+author: Phil Patterson
+date: 2026-04-10
 ---
 
 # AI Workflow Automation: How to Find, Fix and Automate the Work That Slows Your Business Down
@@ -16,10 +17,10 @@ The team is busy, the inbox is full, work gets stuck between systems, and people
 
 **AI workflow automation** works when you apply it to a process that already matters, already happens regularly, and already has a clear output. Done properly, it helps your team move faster without creating a mess behind the scenes.
 
-Done badly, it gives you brittle automations, wrong answers, confused staff and a bigger clean-up job than the one you started with.
-
 This guide is the practical version. No hype, no “replace your whole team by Friday” nonsense. Just a simple way to work out what to automate, what to leave alone, and how to roll out AI workflow automation in a way that actually sticks.
 
+
+[Image: Operations team mapping a process before adding AI workflow automation.]
 ## What AI workflow automation actually means
 
 Traditional automation follows rules.
@@ -191,7 +192,7 @@ AI helps when it is plugged into a proper workflow:
 - escalate edge cases;
 - tag and close cleanly in the helpdesk.
 
-If customer support is high on your list, read our guide on [AI customer service automation](/lp/ai-for-customer-service) as well as your internal policy position in [this AI policy template for business](/blog/ai-policy-template-business).
+If customer support is high on your list, read our guide on [AI customer service automation](/blog/ai-automation-small-business) as well as your internal policy position in [this AI policy template for business](/blog/ai-policy-template-business).
 
 ### Internal reporting
 Managers waste a shocking amount of time building updates from scattered notes and dashboards.
@@ -234,35 +235,6 @@ The point is not to build the fanciest workflow in the company. The point is to 
 
 ### No owner
 Every workflow needs someone who owns quality, exceptions, updates and measurement.
-
-## What a good first 30 days looks like
-
-Week 1:
-
-- pick one workflow;
-- map the current state;
-- define the success metric;
-- identify the systems involved.
-
-Week 2:
-
-- design the smallest viable automation;
-- write prompts and fallback rules;
-- test with real examples.
-
-Week 3:
-
-- run it with a small internal group;
-- compare output against the current process;
-- fix the obvious weak spots.
-
-Week 4:
-
-- launch more widely;
-- track time saved and errors;
-- decide whether to scale, refine or stop.
-
-That is enough to learn a lot without creating a giant dependency.
 
 ## Final word
 
