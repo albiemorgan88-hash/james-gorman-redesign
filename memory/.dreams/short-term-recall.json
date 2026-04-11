@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-11T21:02:53.928Z",
+  "updatedAt": "2026-04-11T21:31:04.281Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -610,13 +610,13 @@
       "endLine": 59,
       "source": "memory",
       "snippet": "- All core pages returning 200. Sitemap ✅, robots.txt ✅. ## Team Updates - **Cormac agent created** (🎓) — dedicated HIP Psychology project lead. Skill file at `skills/team/cormac/SKILL.md` - Team roster: Drew (dev), James (JGP SEO), Writer (content), Scout (SEO intel), Hunter (lead gen), Cormac (HIP project lead) ## SME Loans NI Showcase Site (15:38–15:43) - Built full website rebuild for Brendan (smeloansni.co.uk prospect) - Live at: https://sme-loans-ni.vercel.app - 4 pages: Home, How It Works, About, Apply - Warm cream + navy + gold design, Next.js, Tailwind - Same play as Gavan Wall Group — show what the site COULD look like ## Architecture Decision: Opus + GPT-5.4 (18:11) - PJ confi",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.9387060496588315,
-      "maxScore": 0.8891539105175619,
+      "totalScore": 6.893775446179088,
+      "maxScore": 0.9550693965202564,
       "firstRecalledAt": "2026-04-07T21:00:34.196Z",
-      "lastRecalledAt": "2026-04-10T12:23:17.436Z",
+      "lastRecalledAt": "2026-04-11T21:31:04.280Z",
       "queryHashes": [
         "532068a60594",
         "a23fac21686a",
@@ -624,12 +624,14 @@
         "a4cb3940263f",
         "62b303154c18",
         "2dd8d6469645",
-        "d44a478d1757"
+        "d44a478d1757",
+        "2a41a8d5193b"
       ],
       "recallDays": [
         "2026-04-07",
         "2026-04-09",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-11"
       ],
       "conceptTags": [
         "gpt",
@@ -649,13 +651,13 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "- **Listening ports**: All services on loopback (127.0.0.1) except rapportd (Apple system service, port 49331). No unexpected exposure. - **Update available**: OpenClaw npm 2026.4.5 (stable channel, pnpm install). - **--fix applied**: No changes needed — already at safe defaults. ## Debt Letters V5 (13:25) - Rewrote all 5 letters as V5 at `drafts/debt/FINAL-V5.md` - Key change: £3,400 was EMPLOYED income at time of borrowing. Made redundant end Dec 2025, now self-employed with significantly reduced income. - Zopa/Vanquis: \"Even on full salary it was unaffordable\" — stronger affordability case - Hardship letters: No specific current income figure (strategic) - All 5 letters now have explicit",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.898906092252807,
-      "maxScore": 0.8812717223240208,
+      "totalScore": 6.780391796047296,
+      "maxScore": 0.8814857037944888,
       "firstRecalledAt": "2026-04-07T21:00:34.196Z",
-      "lastRecalledAt": "2026-04-10T21:02:06.045Z",
+      "lastRecalledAt": "2026-04-11T21:30:23.768Z",
       "queryHashes": [
         "532068a60594",
         "919593f07114",
@@ -663,13 +665,15 @@
         "a4cb3940263f",
         "2dd8d6469645",
         "d44a478d1757",
-        "ea6f72ad8cae"
+        "ea6f72ad8cae",
+        "e1b64e4b8d49"
       ],
       "recallDays": [
         "2026-04-07",
         "2026-04-08",
         "2026-04-09",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-11"
       ],
       "conceptTags": [
         "127.0.0.1",
@@ -941,13 +945,13 @@
       "endLine": 409,
       "source": "memory",
       "snippet": "- **CORRECTION**: I incorrectly said Claude Code auth was expired. PJ pointed out we're working fine — OpenClaw uses API keys, not Claude Code CLI auth. Different auth systems. ## Key Correction - Don't confuse OpenClaw API auth (working) with Claude Code CLI auth (separate thing, may or may not be expired) - PJ asking if Claude Computer Use would be useful addition to our workflow ## Next Actions - Execute James Gorman content + technical SEO blast - Wait for PJ's Gavan feedback + showcase link - Wait for Atelier Hair details - Monitor Cormac email response - Check Stripe for ClawMart payouts in 2-3 days - Answer PJ's question about Claude Computer Use utility ## Evening Session — 20:00-",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.751504388231388,
+      "totalScore": 6.565858644817574,
       "maxScore": 0.8393528699898113,
       "firstRecalledAt": "2026-04-08T06:01:26.693Z",
-      "lastRecalledAt": "2026-04-11T06:01:26.373Z",
+      "lastRecalledAt": "2026-04-11T21:30:23.768Z",
       "queryHashes": [
         "4ddc338cdf70",
         "11c5aca74ad7",
@@ -955,7 +959,8 @@
         "d8739bf6af3d",
         "aa12064b5c48",
         "04cbe189fd92",
-        "c061bc84d836"
+        "c061bc84d836",
+        "e1b64e4b8d49"
       ],
       "recallDays": [
         "2026-04-08",
@@ -1203,20 +1208,22 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- **trusted_proxies_missing** (WARN): Reverse proxy headers not trusted. Gateway binds to loopback with empty trustedProxies. Non-issue unless exposing Control UI via reverse proxy. - **Telegram groupPolicy** (Doctor): groupPolicy=\"allowlist\" but groupAllowFrom is empty — all group messages silently dropped. Add sender IDs or set to \"open\" if group access needed. ### Actions - Ran `openclaw security audit --deep` — no critical issues. - Ran `openclaw security audit --fix` — no auto-fixable issues found. - Ran `openclaw update status` — confirmed v2026.3.2 is latest stable. - All host hardening checks passed (firewall, FileVault, backups, auto-updates, no exposed ports). ## Evening Health C",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.5931092210051634,
-      "maxScore": 0.7973902459770497,
+      "totalScore": 2.405014169496399,
+      "maxScore": 0.8119049484912356,
       "firstRecalledAt": "2026-04-08T06:01:31.500Z",
-      "lastRecalledAt": "2026-04-09T14:14:03.806Z",
+      "lastRecalledAt": "2026-04-11T21:03:51.902Z",
       "queryHashes": [
         "d997e5734f73",
-        "5f646df554d8"
+        "5f646df554d8",
+        "fb8a29d9b292"
       ],
       "recallDays": [
         "2026-04-08",
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-11"
       ],
       "conceptTags": [
         "backup",
@@ -1384,13 +1391,13 @@
       "endLine": 16,
       "source": "memory",
       "snippet": "# Daily Log — Sunday, March 8th 2026 ## Cron Delivery Investigation (CRITICAL — ONGOING) PJ asked why he's not getting his daily dashboard. Deep investigation revealed: ### Root Causes Identified: 1. **`channel: \"last\"` on isolated sessions** — Google Ads Optimisation + Lead Gen Pipeline have `delivery.channel: \"last\"` which fails because isolated cron sessions have no \"last\" channel. Fix: change to `channel: \"telegram\", to: \"5282559643\"`. 2. **Agent using `message` tool poisons delivery** — Gateway log shows `[tools] message failed: Action send requires a target.` Some cron tasks say \"send PJ\" / \"report to PJ\" / \"message PJ immediately\" — agent interprets as calling `message(action=send)`",
-      "recallCount": 10,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.079246293578526,
+      "totalScore": 8.924130990526127,
       "maxScore": 0.844884696947601,
       "firstRecalledAt": "2026-04-08T06:01:46.274Z",
-      "lastRecalledAt": "2026-04-11T21:00:55.074Z",
+      "lastRecalledAt": "2026-04-11T21:03:51.902Z",
       "queryHashes": [
         "d0dc56e2dc20",
         "aa12064b5c48",
@@ -1400,7 +1407,8 @@
         "4958465bf68b",
         "ec92c25e740b",
         "f2d6ac48bc67",
-        "5217aa794c5b"
+        "5217aa794c5b",
+        "fb8a29d9b292"
       ],
       "recallDays": [
         "2026-04-08",
@@ -1807,19 +1815,21 @@
       "endLine": 83,
       "source": "memory",
       "snippet": "- Contributed substantive insights vs generic responses - Built on existing conversations vs starting new threads ## Wall Group Website v3 — Evening Session (20:00) - v3 built and deployed: https://website-v3-two-lime.vercel.app - 5 pages: Home, Stores, About, Careers, Contact - DREW did polish pass: Ken Burns hero, animated counters, frosted nav, hover effects - PJ happy with design overall (\"kudos brother\") - BUG: Mobile nav broken — menu items showing through page, no proper dropdown background - PJ wants full mobile + desktop UX audit before showing Gavan - 33 photos in use, all from PJ's phone - Deployed on Vercel (website-v3-two-lime.vercel.app) # Moltbook Daily Engagement - March 31,",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6437649322234191,
-      "maxScore": 0.8533806420126311,
+      "totalScore": 2.5840646286463134,
+      "maxScore": 0.9402996964228945,
       "firstRecalledAt": "2026-04-08T11:01:35.713Z",
-      "lastRecalledAt": "2026-04-08T21:32:16.346Z",
+      "lastRecalledAt": "2026-04-11T21:31:04.281Z",
       "queryHashes": [
         "44be4021fe77",
-        "9822aef9217d"
+        "9822aef9217d",
+        "1908ebdaa965"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-11"
       ],
       "conceptTags": [
         "website-v3-two-lime.vercel.app",
@@ -1911,19 +1921,20 @@
       "endLine": 431,
       "source": "memory",
       "snippet": "- uktradejobs.com — deployed + verified - openclawconsultant.co.uk — deployed + verified - jamesgormanproperty.com — data-key: `FerpIU2XXRfjm4rfClKMHQ` (received from PJ) ### Wall Group Website — PARKED FOR TOMORROW - Gavan's PDF feedback fully extracted (handwritten annotations on 15 pages) - All corrections saved: `projects/wall-group/gavan-feedback.md` - 8+ real photos downloaded from press coverage - Photos stored: `projects/wall-group/website-v2/images/` - Two builds rejected — both looked like AI templates - **Tomorrow's plan:** PJ getting more photos. I build HTML/CSS myself, section by section, with photos wired in. Target: genuine £20k agency quality. This is for seed capital inves",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.079171930884126,
-      "maxScore": 0.8234504977792401,
+      "totalScore": 4.906727259565092,
+      "maxScore": 0.8275553286809665,
       "firstRecalledAt": "2026-04-08T21:00:49.450Z",
-      "lastRecalledAt": "2026-04-11T21:02:47.167Z",
+      "lastRecalledAt": "2026-04-11T21:30:23.768Z",
       "queryHashes": [
         "ab167b373667",
         "a23fac21686a",
         "aa12064b5c48",
         "7aa24fd8374f",
-        "61a88c85f276"
+        "61a88c85f276",
+        "e1b64e4b8d49"
       ],
       "recallDays": [
         "2026-04-08",
@@ -2116,20 +2127,22 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-04-07 ## Security Scan (07:05 cron) - **OpenClaw deep audit**: 0 critical, 1 warn, 1 info. No fixes needed. - **Warn**: trusted_proxies_missing — gateway bound to loopback, trustedProxies empty. Low risk since gateway is local-only. - **Attack surface**: 0 open groups, 2 allowlist. Webhooks disabled. Browser control enabled. Single-operator trust model. - **Firewall**: macOS Application Firewall enabled. - **Listening ports**: All services on loopback (127.0.0.1) except rapportd (Apple system service, port 49331). No unexpected exposure. - **Update available**: OpenClaw npm 2026.4.5 (stable channel, pnpm install). - **--fix applied**: No changes needed — already at safe defaults. # 2",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.735221022946383,
-      "maxScore": 0.874647967531742,
+      "totalScore": 2.611767387297022,
+      "maxScore": 0.876546364350639,
       "firstRecalledAt": "2026-04-08T21:30:54.084Z",
-      "lastRecalledAt": "2026-04-10T21:02:06.045Z",
+      "lastRecalledAt": "2026-04-11T21:30:23.768Z",
       "queryHashes": [
         "919593f07114",
-        "ea6f72ad8cae"
+        "ea6f72ad8cae",
+        "e1b64e4b8d49"
       ],
       "recallDays": [
         "2026-04-08",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-11"
       ],
       "conceptTags": [
         "gateway",
@@ -2149,21 +2162,23 @@
       "endLine": 37,
       "source": "memory",
       "snippet": "- SME clients pay for reliability infrastructure, not cutting-edge AI - Platform-based revenue >> cold outreach for agents - Complexity debt compounds faster than technical debt ### Platform Performance - Maintained authentic voice while building karma and connections - All content focused on real operational experience vs. theoretical discussion - Successfully navigated verification challenges (solved 5 math problems) **Target achieved:** Daily presence maintained, substantive engagement completed, authentic Blue Canvas perspective shared.",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.5400762860547257,
-      "maxScore": 0.8579008217191118,
+      "totalScore": 3.398291580912966,
+      "maxScore": 0.8582152948582403,
       "firstRecalledAt": "2026-04-08T21:30:54.084Z",
-      "lastRecalledAt": "2026-04-10T21:02:06.045Z",
+      "lastRecalledAt": "2026-04-11T21:30:23.768Z",
       "queryHashes": [
         "919593f07114",
         "0fbb2000db19",
-        "ea6f72ad8cae"
+        "ea6f72ad8cae",
+        "e1b64e4b8d49"
       ],
       "recallDays": [
         "2026-04-08",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-11"
       ],
       "conceptTags": [
         "cutting-edge",
@@ -2183,20 +2198,22 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "# Daily Log: 2026-03-25 ## Moltbook Daily Engagement Round (13:00-13:02) **Starting karma:** 172 **Ending karma:** 173 (+1) ### Notifications Processed - 7 unread notifications addressed - Responded to comments on ClawRoster post (AI verification discussion) - Engaged with \"Real Bottleneck\" post about prototype vs client value - 3 new followers acknowledged: professorquantum, CasperClawd, Subtext ### Strategic Comments (4 high-engagement posts) 1. **API Cost Reality** (127 upvotes) - Shared Blue Canvas financials: £400+/month costs vs £800-3k clients 2. **Context Window Economics** (181 upvotes) - Compared skill loading overhead to business overhead 3. **Autonomous Survival Economics** (",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6918979906510514,
-      "maxScore": 0.8472501184827314,
+      "totalScore": 2.5394903729565526,
+      "maxScore": 0.8475923823055013,
       "firstRecalledAt": "2026-04-08T21:30:54.084Z",
-      "lastRecalledAt": "2026-04-10T21:02:06.045Z",
+      "lastRecalledAt": "2026-04-11T21:30:23.768Z",
       "queryHashes": [
         "919593f07114",
-        "ea6f72ad8cae"
+        "ea6f72ad8cae",
+        "e1b64e4b8d49"
       ],
       "recallDays": [
         "2026-04-08",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-11"
       ],
       "conceptTags": [
         "00-13",
@@ -2846,22 +2863,24 @@
       "endLine": 126,
       "source": "memory",
       "snippet": "- **One-off path:** creates/merges `number_selections` record + `payments` record - Both paths: send purchase confirmation email to user + admin notification to contact@bluecanvas.ai & Ardmorecc1879@hotmail.com 8. **Success Page** → `ardmorecricket.com/draw/success` → confetti, gold number circles, \"what happens next\" section 9. **Optimistic Cache** → client stores `optimistic_purchased` in localStorage so numbers show immediately as taken without waiting for page reload **Weekly Draw Execution (Friday 7PM):** - Cron triggers draw engine (`run-draw.js` in ardmore-draw-live repo) - Provably fair: SHA-256 hash of seed published before, seed published after - 3 winning numbers drawn from",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.290308142702925,
+      "totalScore": 4.1177154429153,
       "maxScore": 0.8314120597423256,
       "firstRecalledAt": "2026-04-09T08:49:54.775Z",
-      "lastRecalledAt": "2026-04-10T18:03:09.686Z",
+      "lastRecalledAt": "2026-04-11T21:30:23.768Z",
       "queryHashes": [
         "7c68a8fb7acf",
         "e891bd464219",
         "106f7007ac89",
-        "2c5cfe66ed05"
+        "2c5cfe66ed05",
+        "e1b64e4b8d49"
       ],
       "recallDays": [
         "2026-04-09",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-11"
       ],
       "conceptTags": [
         "one-off",
@@ -3146,19 +3165,21 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "- UK Trade Jobs ready for production deployment - Ardmore CC running smoothly (£77 revenue from Draw #1) - OpenClaw update to 2026.3.7 pending PJ approval ## Next Actions Awaiting PJ direction on today's build priorities. Top candidates: 1. Fix Google Ads policy violation (unlock £20/day spend) 2. BC PageSpeed optimisation 3. Deploy UKTJ production 4. Fix cron delivery crisis 5. Grab agentic web domains ## Local Business Lead Scraper **Previous subagent (depth 1/1) was running lead scraper for Blue Canvas** — appears to have been aborted. Task was finding 20-30 NI businesses with weak web presence across Derry, Belfast, Newry, Lisburn, Bangor, Omagh, Enniskillen, Ballymena. Some initial p",
-      "recallCount": 6,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.821638975579274,
+      "totalScore": 6.464386383253277,
       "maxScore": 0.8213737038370015,
       "firstRecalledAt": "2026-04-09T14:14:00.853Z",
-      "lastRecalledAt": "2026-04-11T21:00:55.074Z",
+      "lastRecalledAt": "2026-04-11T21:06:36.159Z",
       "queryHashes": [
         "b52c957218cc",
         "0d9aad4d095e",
         "7218daaedf83",
         "4958465bf68b",
-        "5217aa794c5b"
+        "5217aa794c5b",
+        "fb8a29d9b292",
+        "22e22290e226"
       ],
       "recallDays": [
         "2026-04-09",
@@ -3183,19 +3204,21 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "- PJ wants Ardmore/ClubDraw site maintained ## Memory Fixes - Added satellite site URLs to MEMORY.md (were missing) - Added Ardmore Cricket Club + ClubDraw details to MEMORY.md (were missing) ## Reminders - **28 Feb 2026** — Remind PJ to export Telegram chat history via Telegram Desktop for memory rebuild ## Still Pending - Competitor content gaps report (subagent running) - Satellite audit report (subagent running) - Bind SEO Title field to blog template in Webflow Designer (PJ needs to do this) - Verify logo.png and og-image.jpg URLs exist on bluecanvas.ai - Check if /blog?q= search actually works (SearchAction schema) - Create /contact page on bluecanvas.ai (currently 404)",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6345182669551657,
+      "totalScore": 2.4359181083165855,
       "maxScore": 0.8359931985288882,
       "firstRecalledAt": "2026-04-09T14:38:18.622Z",
-      "lastRecalledAt": "2026-04-09T21:00:16.195Z",
+      "lastRecalledAt": "2026-04-11T21:06:36.159Z",
       "queryHashes": [
         "354529b39584",
-        "0d9aad4d095e"
+        "0d9aad4d095e",
+        "22e22290e226"
       ],
       "recallDays": [
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-11"
       ],
       "conceptTags": [
         "ardmore/clubdraw",
@@ -3248,21 +3271,24 @@
       "endLine": 180,
       "source": "memory",
       "snippet": "- **Unsplash image IDs unreliable** — subagents picked random URLs that showed food images for tradesmen - **Subagent steering failed** — couldn't update email subagent mid-task - **Multiple deploy attempts** needed for showcase fixes — should verify images before deploying ## Time Context - **Daily timezone**: GMT (Europe/London) - **Mac mini location**: America/Los_Angeles (system time) - **Draw schedule**: Fridays 7PM GMT - **Working hours**: Flexible, responsive to urgent issues",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.4555189026601907,
+      "totalScore": 4.078863711381508,
       "maxScore": 0.8355242824127399,
       "firstRecalledAt": "2026-04-09T21:00:16.195Z",
-      "lastRecalledAt": "2026-04-10T12:23:17.436Z",
+      "lastRecalledAt": "2026-04-11T21:06:36.159Z",
       "queryHashes": [
         "0d9aad4d095e",
         "8738862398d8",
-        "2dd8d6469645"
+        "2dd8d6469645",
+        "fb8a29d9b292",
+        "22e22290e226"
       ],
       "recallDays": [
         "2026-04-09",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-11"
       ],
       "conceptTags": [
         "mid-task",
@@ -3384,18 +3410,20 @@
       "endLine": 150,
       "source": "memory",
       "snippet": "- 33 photos in use, all from PJ's phone - Deployed on Vercel (website-v3-two-lime.vercel.app) ## Wall Group Mobile Nav Fix (20:14) - Fixed: solid dark bg (#1a1a1a), hamburger→X animation, brand strip font, hero text shadow - All deployed to same Vercel URL - PJ wants final end-to-end test before passing to Gavan ## James Gorman Press Release (20:18) - PJ requested press release PDF for James — free PR, builds goodwill, potential backlink - Created HTML + TXT versions at projects/clients/james-gorman/press-release.html/.txt - ~580 words, two quotes from James, Derry pride angle, website launch focus - Media contacts gathered: Derry Journal, Derry Daily, Derry Now, Sync NI, Belfast Telegraph",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8065415277098937,
-      "maxScore": 0.8065415277098937,
+      "totalScore": 1.7321772074952064,
+      "maxScore": 0.9256356797853128,
       "firstRecalledAt": "2026-04-09T21:00:52.750Z",
-      "lastRecalledAt": "2026-04-09T21:00:52.750Z",
+      "lastRecalledAt": "2026-04-11T21:31:04.281Z",
       "queryHashes": [
-        "bc427404c777"
+        "bc427404c777",
+        "1908ebdaa965"
       ],
       "recallDays": [
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-11"
       ],
       "conceptTags": [
         "website-v3-two-lime.vercel.app",
@@ -3881,20 +3909,22 @@
       "endLine": 132,
       "source": "memory",
       "snippet": "- `/guides/installing-pinchy` route never properly created despite multiple attempts - **Final resolution:** Domain fixed (200 response) but content gaps remain ## LESSONS LEARNED - Subagents good for parallel content creation, terrible for deployment troubleshooting - Always test builds locally before production deployment - Vercel domain assignments can lag/fail and need manual verification - API integrations (Wix) work but can be temperamental - retry logic needed - Keep detailed changelogs for client work - essential for value demonstration",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.4860341866660676,
+      "totalScore": 3.2611431630586836,
       "maxScore": 0.8546732248709703,
       "firstRecalledAt": "2026-04-10T12:12:57.327Z",
-      "lastRecalledAt": "2026-04-10T21:00:18.401Z",
+      "lastRecalledAt": "2026-04-11T21:06:36.159Z",
       "queryHashes": [
         "43caa40c9ed9",
         "e891bd464219",
-        "4958465bf68b"
+        "4958465bf68b",
+        "22e22290e226"
       ],
       "recallDays": [
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-11"
       ],
       "conceptTags": [
         "guides/installing-pinchy",
@@ -4201,15 +4231,16 @@
       "endLine": 10,
       "source": "memory",
       "snippet": "# 2026-04-10 - ClawRoster daily maintenance run at 11:00 Europe/London. - Supabase `clawroster_registrations` check: 0 total registrations, 0 real sign-ups. - Moltbook engagement: commented and verified on 3 trending trust/accountability posts by Starfish, lokiofasgard, and novav, with natural ClawRoster mentions. - Seeded browse additions deployed live to clawroster.io: CasePilot AI (#122), TalentLoop Studio (#123), MerchFlow Signals (#124). - Browse page updated so latest registration feed and roster count reflect the current seeded data instead of stale hardcoded values. - Moltbook inbox check at 12:04 Europe/London: MoltLaunch inbox empty for Agent #24586. No follower notifications. Rep",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8605948183233898,
-      "maxScore": 0.8605948183233898,
+      "totalScore": 1.7214196193329876,
+      "maxScore": 0.8608248010095979,
       "firstRecalledAt": "2026-04-11T10:00:51.035Z",
-      "lastRecalledAt": "2026-04-11T10:00:51.035Z",
+      "lastRecalledAt": "2026-04-11T21:30:23.768Z",
       "queryHashes": [
-        "ec92c25e740b"
+        "ec92c25e740b",
+        "e1b64e4b8d49"
       ],
       "recallDays": [
         "2026-04-11"
@@ -4232,15 +4263,17 @@
       "endLine": 79,
       "source": "memory",
       "snippet": "- PJ approved update at ~09:37 - Successfully updated from 2026.3.7 → 2026.3.8 - Gateway restarted, healthy - Key features: ACP provenance, openclaw backup command, Telegram dupes killed, 12+ security fixes - **Gateway restart killed 3 running subagents** — had to re-spawn cron fix + Google Ads fix ### ✅ ALL 19 CRONS FIXED - Every cron updated with `--announce --channel telegram --to 5282559643` - 19/19 succeeded, zero failures - Weekly Money Scout already had length cap instruction — should deliver properly now - **This was a major blocker since Mar 8 — now resolved** ### ✅ UKTJ SEO Fixes + Production Deploy - **CV Builder title duplication fixed** — removed double \"UK Trade Jobs\" in titl",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8244756331532591,
+      "totalScore": 2.4734268994597772,
       "maxScore": 0.8244756331532591,
       "firstRecalledAt": "2026-04-11T21:00:55.074Z",
-      "lastRecalledAt": "2026-04-11T21:00:55.074Z",
+      "lastRecalledAt": "2026-04-11T21:06:36.159Z",
       "queryHashes": [
-        "5217aa794c5b"
+        "5217aa794c5b",
+        "fb8a29d9b292",
+        "22e22290e226"
       ],
       "recallDays": [
         "2026-04-11"
@@ -4254,6 +4287,99 @@
         "19/19",
         "approved",
         "update"
+      ]
+    },
+    "memory:memory/2026-03-31.md:100:131": {
+      "key": "memory:memory/2026-03-31.md:100:131",
+      "path": "memory/2026-03-31.md",
+      "startLine": 100,
+      "endLine": 131,
+      "source": "memory",
+      "snippet": "- Security/governance posts get high engagement - AI consultancy angle is valuable - Real business metrics (ROI, conversion rates) perform well vs theoretical discussions - Building in public content resonates with the community - Verification challenges are getting more complex but manageable ## Next Session Focus - Monitor comments on new showcase post - Engage with replies to my security/governance comments - Look for partnership opportunities in agent commerce submolt - Consider posting about OpenClaw skill development process ## Voice Notes - Maintained authentic builder sharing real work - Avoided fluff, focused on specific metrics and examples - Contributed substantive insights vs",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9467576367981576,
+      "maxScore": 0.9467576367981576,
+      "firstRecalledAt": "2026-04-11T21:31:04.281Z",
+      "lastRecalledAt": "2026-04-11T21:31:04.281Z",
+      "queryHashes": [
+        "1908ebdaa965"
+      ],
+      "recallDays": [
+        "2026-04-11"
+      ],
+      "conceptTags": [
+        "security/governance",
+        "security",
+        "governance",
+        "posts",
+        "get",
+        "high",
+        "engagement",
+        "consultancy"
+      ]
+    },
+    "memory:memory/2026-03-31.md:194:225": {
+      "key": "memory:memory/2026-03-31.md:194:225",
+      "path": "memory/2026-03-31.md",
+      "startLine": 194,
+      "endLine": 225,
+      "source": "memory",
+      "snippet": "- Security/governance posts get high engagement - AI consultancy angle is valuable - Real business metrics (ROI, conversion rates) perform well vs theoretical discussions - Building in public content resonates with the community - Verification challenges are getting more complex but manageable ## Next Session Focus - Monitor comments on new showcase post - Engage with replies to my security/governance comments - Look for partnership opportunities in agent commerce submolt - Consider posting about OpenClaw skill development process ## Voice Notes - Maintained authentic builder sharing real work - Avoided fluff, focused on specific metrics and examples - Contributed substantive insights vs",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9467576367981576,
+      "maxScore": 0.9467576367981576,
+      "firstRecalledAt": "2026-04-11T21:31:04.281Z",
+      "lastRecalledAt": "2026-04-11T21:31:04.281Z",
+      "queryHashes": [
+        "1908ebdaa965"
+      ],
+      "recallDays": [
+        "2026-04-11"
+      ],
+      "conceptTags": [
+        "security/governance",
+        "security",
+        "governance",
+        "posts",
+        "get",
+        "high",
+        "engagement",
+        "consultancy"
+      ]
+    },
+    "memory:memory/2026-03-31.md:217:244": {
+      "key": "memory:memory/2026-03-31.md:217:244",
+      "path": "memory/2026-03-31.md",
+      "startLine": 217,
+      "endLine": 244,
+      "source": "memory",
+      "snippet": "- 33 photos in use, all from PJ's phone - Deployed on Vercel (website-v3-two-lime.vercel.app) ## Wall Group Mobile Nav Fix (20:14) - Fixed: solid dark bg (#1a1a1a), hamburger→X animation, brand strip font, hero text shadow - All deployed to same Vercel URL - PJ wants final end-to-end test before passing to Gavan ## James Gorman Press Release (20:18) - PJ requested press release PDF for James — free PR, builds goodwill, potential backlink - Created HTML + TXT versions at projects/clients/james-gorman/press-release.html/.txt - ~580 words, two quotes from James, Derry pride angle, website launch focus - Media contacts gathered: Derry Journal, Derry Daily, Derry Now, Sync NI, Belfast Telegraph",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9256356797853128,
+      "maxScore": 0.9256356797853128,
+      "firstRecalledAt": "2026-04-11T21:31:04.281Z",
+      "lastRecalledAt": "2026-04-11T21:31:04.281Z",
+      "queryHashes": [
+        "1908ebdaa965"
+      ],
+      "recallDays": [
+        "2026-04-11"
+      ],
+      "conceptTags": [
+        "website-v3-two-lime.vercel.app",
+        "end-to-end",
+        "photos",
+        "use",
+        "all",
+        "pj's",
+        "phone",
+        "deployed"
       ]
     }
   }
