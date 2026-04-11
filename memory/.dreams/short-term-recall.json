@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-11T10:00:51.035Z",
+  "updatedAt": "2026-04-11T11:04:10.725Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -1368,13 +1368,13 @@
       "endLine": 16,
       "source": "memory",
       "snippet": "# Daily Log — Sunday, March 8th 2026 ## Cron Delivery Investigation (CRITICAL — ONGOING) PJ asked why he's not getting his daily dashboard. Deep investigation revealed: ### Root Causes Identified: 1. **`channel: \"last\"` on isolated sessions** — Google Ads Optimisation + Lead Gen Pipeline have `delivery.channel: \"last\"` which fails because isolated cron sessions have no \"last\" channel. Fix: change to `channel: \"telegram\", to: \"5282559643\"`. 2. **Agent using `message` tool poisons delivery** — Gateway log shows `[tools] message failed: Action send requires a target.` Some cron tasks say \"send PJ\" / \"report to PJ\" / \"message PJ immediately\" — agent interprets as calling `message(action=send)`",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6.4238067962252945,
+      "totalScore": 7.234361596630925,
       "maxScore": 0.8366060804455464,
       "firstRecalledAt": "2026-04-08T06:01:46.274Z",
-      "lastRecalledAt": "2026-04-11T10:00:51.035Z",
+      "lastRecalledAt": "2026-04-11T11:04:10.725Z",
       "queryHashes": [
         "d0dc56e2dc20",
         "aa12064b5c48",
@@ -1382,7 +1382,8 @@
         "7218daaedf83",
         "43caa40c9ed9",
         "4958465bf68b",
-        "ec92c25e740b"
+        "ec92c25e740b",
+        "f2d6ac48bc67"
       ],
       "recallDays": [
         "2026-04-08",
@@ -1484,23 +1485,25 @@
       "endLine": 149,
       "source": "memory",
       "snippet": "- `invoice.payment_failed` → subscription marked `past_due` in DB - Numbers still show as taken (purple) but flagged **Cancellations:** - `customer.subscription.deleted` → subscription marked `cancelled` - Numbers released (no longer show as taken) **Data Tables:** - `clubs` — club config, Stripe Connect account, draw settings - `profiles` — extends Supabase auth.users, Stripe customer ID - `number_selections` — per-week number picks (active/paused/cancelled) - `draw_subscriptions` — recurring subscriptions with numbers + assigned names - `payments` — all payment records with metadata - `draws` — draw results with winning numbers, seed, pot amount - `draw_entries` — individual entries per",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.2349684929797364,
+      "totalScore": 4.06117498996402,
       "maxScore": 0.8458287216475,
       "firstRecalledAt": "2026-04-08T11:01:26.911Z",
-      "lastRecalledAt": "2026-04-10T09:10:49.741Z",
+      "lastRecalledAt": "2026-04-11T11:04:10.725Z",
       "queryHashes": [
         "11c5aca74ad7",
         "0d35df437f39",
         "78f527c80f1a",
-        "a912c3e62448"
+        "a912c3e62448",
+        "f2d6ac48bc67"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-09",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-11"
       ],
       "conceptTags": [
         "invoice.payment-failed",
@@ -2254,18 +2257,20 @@
       "endLine": 162,
       "source": "memory",
       "snippet": "- Conversion tracking: not yet set up (needs thank-you page) - Display Network: OFF, AI Max: OFF - Sitelinks: 4 set up, Callouts: 6 set up - Campaign submitted for review ~7pm 4 Mar ### Access Granted Today - ✅ GBP — Manager (albiemorgan88@gmail.com), accepted - ✅ Ahrefs — team member (albiemorgan88@gmail.com), browser login - ✅ Google Ads — Admin (albiemorgan88@gmail.com) - ✅ Supabase (uk-trade-jobs) — new project created, credentials in ~/.zprofile ### Key Files - Ardmore Next.js source: `/Users/philsagent/Projects/ardmore-cricket/` - Email lib: `/Users/philsagent/Projects/ardmore-cricket/src/lib/email.ts` - Stripe webhook: `/Users/philsagent/Projects/ardmore-cricket/src/app/api/webhooks",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.768174488418532,
-      "maxScore": 0.768174488418532,
+      "totalScore": 1.6142088661825298,
+      "maxScore": 0.8460343777639979,
       "firstRecalledAt": "2026-04-08T21:30:54.084Z",
-      "lastRecalledAt": "2026-04-08T21:30:54.084Z",
+      "lastRecalledAt": "2026-04-11T11:04:10.725Z",
       "queryHashes": [
-        "919593f07114"
+        "919593f07114",
+        "f2d6ac48bc67"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-11"
       ],
       "conceptTags": [
         "network",
@@ -4095,18 +4100,20 @@
       "endLine": 15,
       "source": "memory",
       "snippet": "# 2026-04-09 ## New Client: Follow Rabbit AI - **Website:** https://followrabbit.ai/ - **Contacts:** Rory and Aco - **Service:** OpenClaw setup - **Setup fee:** £1,000 (paid) - **Retainer:** £500/month - **Status:** Onboarding ## ClawMart URL Correction - Correct URL: **showclawmart.com** (NOT shopclawmart.com or clawmart.com) - All old references in memory files used shopclawmart.com — that's wrong - Updated: MEMORY.md, 2026-04-01.md, platform-domination-strategy",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8356712312391925,
+      "totalScore": 1.6588316687836984,
       "maxScore": 0.8356712312391925,
       "firstRecalledAt": "2026-04-10T21:02:06.045Z",
-      "lastRecalledAt": "2026-04-10T21:02:06.045Z",
+      "lastRecalledAt": "2026-04-11T11:04:10.725Z",
       "queryHashes": [
-        "ea6f72ad8cae"
+        "ea6f72ad8cae",
+        "f2d6ac48bc67"
       ],
       "recallDays": [
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-11"
       ],
       "conceptTags": [
         "followrabbit.ai",
