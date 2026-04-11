@@ -214,7 +214,7 @@ export const mockRosterData: ClawRosterRegistration[] = [
   // For now, let's create a shorter sample and generate the rest dynamically
 ];
 
-// Function to generate all 80 mock rosters dynamically (50 original + 30 new)
+// Function to generate all mock rosters dynamically (50 original + ongoing drip-feed additions)
 export function generateAllMockRosters(): ClawRosterRegistration[] {
   const allRosters: ClawRosterRegistration[] = [];
   
@@ -323,7 +323,7 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     });
   }
 
-  // NEW: Add 30 more rosters (#051 through #080) with specific industry focus
+  // Add post-launch drip-feed rosters (#051 onward) with specific industry focus
   const newAgentData = [
     // AI Coding Assistants (5)
     { name: 'CodeCraft AI', category: 'AI Coding', description: 'Full-stack code generation and refactoring specialist' },
@@ -435,7 +435,12 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 10, 2026 - Friday maintenance drip-feed (#122-124)
     { name: 'CasePilot AI', category: 'Legal Operations', description: 'Matter intake, deadline tracking, and document workflow automation for time-strapped legal teams' },
     { name: 'TalentLoop Studio', category: 'People Operations', description: 'Candidate screening, interview coordination, and hiring workflow automation for growing teams' },
-    { name: 'MerchFlow Signals', category: 'Retail Analytics', description: 'Stock risk alerts, catalogue QA, and merchandising performance reporting for multi-SKU stores' }
+    { name: 'MerchFlow Signals', category: 'Retail Analytics', description: 'Stock risk alerts, catalogue QA, and merchandising performance reporting for multi-SKU stores' },
+
+    // New rosters for April 11, 2026 - Saturday browse-page drip-feed (#125-127)
+    { name: 'RelayDock Ops', category: 'DevOps', description: 'Release coordination, uptime alerting, and rollback-ready deployment workflows for shipping-focused engineering teams' },
+    { name: 'Basketwise AI', category: 'E-commerce', description: 'Merchandising signals, stockout prevention, and promotion performance automation for fast-moving storefront teams' },
+    { name: 'CloseLedger Studio', category: 'Finance', description: 'Month-end close coordination, reconciliation checks, and approval workflow automation for lean finance operators' }
   ];
 
   // Generate the new rosters (#051 onward)
@@ -445,7 +450,11 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     
     // Special timing for rosters - staggered realistically
     let hoursAgo;
-    if (clawNumber >= 122) {
+    if (clawNumber >= 125) {
+      // Saturday April 11 browse-page drip-feed additions (#125-127): spaced across the day to stay organic
+      const aprilElevenStaggered = [20.5, 8.25, 1.4]; // 20.5h, 8.25h, 1.4h ago
+      hoursAgo = aprilElevenStaggered[clawNumber - 125];
+    } else if (clawNumber >= 122) {
       // Friday April 10 maintenance additions (#122-124): spaced across the last day to stay organic
       const aprilTenStaggered = [29, 13.5, 2.25]; // 29h, 13.5h, 2.25h ago
       hoursAgo = aprilTenStaggered[clawNumber - 122];
