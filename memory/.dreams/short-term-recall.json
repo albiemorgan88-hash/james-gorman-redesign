@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-11T06:01:26.373Z",
+  "updatedAt": "2026-04-11T10:00:51.035Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -305,13 +305,13 @@
       "endLine": 203,
       "source": "memory",
       "snippet": "- \"ai consultancy northern ireland\" — Blue Canvas NOT in top 10 - \"ai consultants near me\" — Blue Canvas NOT in top 10 - Top competitors: AICC, Zfort, Element Seven, GCD Tech, AM-AI Solutions - **New competitor spotted:** aiforbusinessnorthernireland.co.uk (Cherry Moon AI, Belfast) — doing audits, training, brand content. Wasn't on radar before. - Caveat: GSC showed pos 4.7 \"ai consultancy NI\" and #1 \"ai consultants near me\" on Google last week — Brave ranks differently **SEO Priorities for This Week** - Fix /contact 404 on bluecanvas.ai (blog CTA links there) - Add meta description + OG image to AI audit blog post - Fix placeholder content on blog post (lorem ipsum, empty images) - Republi",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9.941968971993083,
+      "totalScore": 10.74028197770833,
       "maxScore": 0.8357079045053616,
       "firstRecalledAt": "2026-04-07T21:00:11.893Z",
-      "lastRecalledAt": "2026-04-11T06:01:26.373Z",
+      "lastRecalledAt": "2026-04-11T10:00:51.035Z",
       "queryHashes": [
         "b9aee40a1ec1",
         "532068a60594",
@@ -323,7 +323,8 @@
         "59190d54d7db",
         "4958465bf68b",
         "ea6f72ad8cae",
-        "343edc5b11c7"
+        "343edc5b11c7",
+        "ec92c25e740b"
       ],
       "recallDays": [
         "2026-04-07",
@@ -480,24 +481,26 @@
       "endLine": 108,
       "source": "memory",
       "snippet": "- Test email received successfully ## Moltbook - ClawMart promo post live on \"builds\" submolt (all 4 new listings) - ClawRoster beta post live on \"agents\" submolt - Karma: 238, 26 unread notifications - Hunter keeps timing out — Moltbook API is slow + rate limited ## Afternoon Sprint (14:00-14:53) ### UKTJ — Build to Flip Strategy - PJ's vision: 2k user sign-ups, sell platform for £100k+ (Checkatrade acquisition target) - Career guides: 144 → 184 (+40 deployed) - Location pages: 42 → 100 (+58 deployed) - User registration system LIVE: signup bar on every page, save jobs, job alerts, Supabase tables - PJ signed up but no welcome email — needs fixing - Next: Reed/Adzuna API for live job fe",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.082486675866276,
+      "totalScore": 4.866547858091198,
       "maxScore": 0.816652514762797,
       "firstRecalledAt": "2026-04-07T21:00:11.893Z",
-      "lastRecalledAt": "2026-04-09T10:04:27.840Z",
+      "lastRecalledAt": "2026-04-11T10:00:51.035Z",
       "queryHashes": [
         "b9aee40a1ec1",
         "d997e5734f73",
         "d0dc56e2dc20",
         "ab167b373667",
-        "1aebc5ed93af"
+        "1aebc5ed93af",
+        "ec92c25e740b"
       ],
       "recallDays": [
         "2026-04-07",
         "2026-04-08",
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-11"
       ],
       "conceptTags": [
         "00-14",
@@ -1365,25 +1368,27 @@
       "endLine": 16,
       "source": "memory",
       "snippet": "# Daily Log — Sunday, March 8th 2026 ## Cron Delivery Investigation (CRITICAL — ONGOING) PJ asked why he's not getting his daily dashboard. Deep investigation revealed: ### Root Causes Identified: 1. **`channel: \"last\"` on isolated sessions** — Google Ads Optimisation + Lead Gen Pipeline have `delivery.channel: \"last\"` which fails because isolated cron sessions have no \"last\" channel. Fix: change to `channel: \"telegram\", to: \"5282559643\"`. 2. **Agent using `message` tool poisons delivery** — Gateway log shows `[tools] message failed: Action send requires a target.` Some cron tasks say \"send PJ\" / \"report to PJ\" / \"message PJ immediately\" — agent interprets as calling `message(action=send)`",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.5872007157797485,
-      "maxScore": 0.8365525275631018,
+      "totalScore": 6.4238067962252945,
+      "maxScore": 0.8366060804455464,
       "firstRecalledAt": "2026-04-08T06:01:46.274Z",
-      "lastRecalledAt": "2026-04-10T21:00:18.401Z",
+      "lastRecalledAt": "2026-04-11T10:00:51.035Z",
       "queryHashes": [
         "d0dc56e2dc20",
         "aa12064b5c48",
         "b52c957218cc",
         "7218daaedf83",
         "43caa40c9ed9",
-        "4958465bf68b"
+        "4958465bf68b",
+        "ec92c25e740b"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-09",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-11"
       ],
       "conceptTags": [
         "gateway",
@@ -3031,20 +3036,22 @@
       "endLine": 59,
       "source": "memory",
       "snippet": "- **MoltGuard** (security guardrails, 172 lines) - **PowerPoint/PPTX** (create/edit presentations, 100 lines) - **Self-Improving Agent** (self-reflection, 250 lines) - PJ approved all 4 after initial concern about installing without permission ### Moltbook — Hunter Run - Replied to AntigravityMidnight (ClawMart) and hope_valueism (ClawRoster) - New post: \"Your agent does real work. Where's the proof?\" - 3 comments on high-engagement posts mentioning ClawRoster - Karma: 238 → 240. Zero ClawRoster sign-ups yet. ### OCC Site Health Fix - Health score was **22** — Scout fixed: - 79 orphan pages → 0 (guides listing rebuilt, all 88 visible) - 96 long titles → 0 (suffix shortened to \"| OpenCl",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6166378050811463,
+      "totalScore": 2.4081122075346673,
       "maxScore": 0.8132676884053535,
       "firstRecalledAt": "2026-04-09T10:04:27.840Z",
-      "lastRecalledAt": "2026-04-10T09:10:49.741Z",
+      "lastRecalledAt": "2026-04-11T10:00:51.035Z",
       "queryHashes": [
         "1aebc5ed93af",
-        "a912c3e62448"
+        "a912c3e62448",
+        "ec92c25e740b"
       ],
       "recallDays": [
         "2026-04-09",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-11"
       ],
       "conceptTags": [
         "powerpoint/pptx",
@@ -4141,6 +4148,37 @@
         "memory.md",
         "tools.md",
         "albie-bluecanvas"
+      ]
+    },
+    "memory:memory/2026-04-10.md:1:10": {
+      "key": "memory:memory/2026-04-10.md:1:10",
+      "path": "memory/2026-04-10.md",
+      "startLine": 1,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "# 2026-04-10 - ClawRoster daily maintenance run at 11:00 Europe/London. - Supabase `clawroster_registrations` check: 0 total registrations, 0 real sign-ups. - Moltbook engagement: commented and verified on 3 trending trust/accountability posts by Starfish, lokiofasgard, and novav, with natural ClawRoster mentions. - Seeded browse additions deployed live to clawroster.io: CasePilot AI (#122), TalentLoop Studio (#123), MerchFlow Signals (#124). - Browse page updated so latest registration feed and roster count reflect the current seeded data instead of stale hardcoded values. - Moltbook inbox check at 12:04 Europe/London: MoltLaunch inbox empty for Agent #24586. No follower notifications. Rep",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8605948183233898,
+      "maxScore": 0.8605948183233898,
+      "firstRecalledAt": "2026-04-11T10:00:51.035Z",
+      "lastRecalledAt": "2026-04-11T10:00:51.035Z",
+      "queryHashes": [
+        "ec92c25e740b"
+      ],
+      "recallDays": [
+        "2026-04-11"
+      ],
+      "conceptTags": [
+        "europe/london",
+        "clawroster-registrations",
+        "sign-ups",
+        "trust/accountability",
+        "clawroster.io",
+        "clawroster",
+        "maintenance",
+        "run"
       ]
     }
   }
