@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-12T15:08:57.539Z",
+  "updatedAt": "2026-04-12T20:10:57.061Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -5170,6 +5170,68 @@
         "all",
         "pages",
         "root"
+      ]
+    },
+    "memory:memory/2026-03-27.md:44:47": {
+      "key": "memory:memory/2026-03-27.md:44:47",
+      "path": "memory/2026-03-27.md",
+      "startLine": 44,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "@@ -44,4 @@ (43 before, 133 after) ### James Gorman SEO - **Week 3 DELIVERED**: Major content marketing breakthrough achieved - **SEO completion**: 78%, 3 technical issues addressed",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.09,
+      "maxScore": 0.09,
+      "firstRecalledAt": "2026-04-12T20:10:57.061Z",
+      "lastRecalledAt": "2026-04-12T20:10:57.061Z",
+      "queryHashes": [
+        "c68b8d4fa1db"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "44,4",
+        "james",
+        "gorman",
+        "seo",
+        "week",
+        "delivered",
+        "major",
+        "content"
+      ]
+    },
+    "memory:memory/2026-03-09.md:123:126": {
+      "key": "memory:memory/2026-03-09.md:123:126",
+      "path": "memory/2026-03-09.md",
+      "startLine": 123,
+      "endLine": 126,
+      "source": "memory",
+      "snippet": "@@ -123,4 @@ (122 before, 21 after) ### Key New Info - **James Gorman** — Derry estate agent, prospect for Blue Canvas. Site: jamesgormanproperty.com (Wix, terrible). Trustpilot 4.9★. Showcase + mockups built, pitch drafted. - **OpenClaw 2026.3.8** — now live, includes Telegram dupe fix + backup command - **Ireland OGP AI Pre-Marke...",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.08,
+      "maxScore": 0.08,
+      "firstRecalledAt": "2026-04-12T20:10:57.061Z",
+      "lastRecalledAt": "2026-04-12T20:10:57.061Z",
+      "queryHashes": [
+        "c68b8d4fa1db"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "backup",
+        "jamesgormanproperty.com",
+        "4.9",
+        "2026.3.8",
+        "pre-marke",
+        "123,4",
+        "key",
+        "new"
       ]
     }
   }

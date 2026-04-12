@@ -1694,3 +1694,77 @@ curl -X POST "https://www.wixapis.com/blog/v3/draft-posts/{id}/publish" \
 - **Content depth:** 600-750 words per page as planned
 
 **Status: COMPLETE** - All area pages now live on James Gorman Property blog.
+---
+
+## 12th April 2026 - 4 NEW LOCATION BLOG DRAFTS CREATED IN WIX ✅
+
+### DELIVERED: Claudy, Dungiven and Eglinton expansion, draft-only
+
+**Authoring Status:** Completed as Wix **drafts only**, not published  
+**Site ID used:** `4b8170fd-99cc-45e8-a4fb-e28bb7156d52`  
+**Workflow:** Ahrefs keyword validation → local draft writing → Wix Blog API draft creation  
+**Notes:** Existing April location posts for Claudy, Dungiven and Eglinton were already live, so these four pieces were written with different search intent angles to avoid simple duplication.
+
+### Ahrefs keyword findings used
+
+- **houses for sale eglinton** → 300 volume, KD 0, already covered by existing live post
+- **houses for sale dungiven** → 250 volume, KD 0
+- **houses for sale in eglinton** → 200 volume, KD 0, closely overlaps existing live Eglinton article
+- **houses for sale claudy** → 150 volume, KD 0
+- **property for sale claudy** → 70 volume, KD 0
+- **estate agent claudy** → no measurable Ahrefs volume returned
+- **estate agent eglinton** → no measurable Ahrefs volume returned
+
+### New draft posts created
+
+#### 1. Estate Agent Claudy
+- **Draft ID:** `07c9c006-993e-45c7-b967-ef8d51cc460f`
+- **Slug:** `estate-agent-claudy`
+- **Title:** "Estate Agent Claudy: Local Advice for Sellers, Buyers and Landlords in BT47"
+- **Intent:** Seller and service-led Claudy article, supported by Claudy buyer and valuation secondary terms
+- **Local detail included:** Main Street, Faughan Valley, River Faughan, Diamond Centre, local schools, village buyer profile
+
+#### 2. Houses for Sale Dungiven
+- **Draft ID:** `bfb197e1-147e-40fe-aed9-5cef395bae41`
+- **Slug:** `houses-for-sale-dungiven`
+- **Title:** "Houses for Sale Dungiven: A 2026 Buyer's Guide to Homes, Prices and Village Life"
+- **Primary keyword:** `houses for sale dungiven`
+- **Ahrefs:** 250 volume, KD 0
+- **Local detail included:** Main Street, Chapel Road, Curragh Road, Garvagh Road, St Canice's, Gaelscoil Neachtain, St Patrick's College, Gaelcholáiste Dhoire, Benbradagh, Roe Valley, Dungiven Priory
+
+#### 3. Estate Agent Eglinton
+- **Draft ID:** `7d16c11c-931f-4c1f-9659-d8eedc156427`
+- **Slug:** `estate-agent-eglinton`
+- **Title:** "Estate Agent Eglinton: Why Local Pricing and Marketing Matter in BT47"
+- **Intent:** Seller and service-led Eglinton article, supported by Eglinton property and lettings secondary terms
+- **Local detail included:** Church Road, Hill Street, School Lane, Mill Road, Queen Street, River View, Oakwood Drive, Castle Gardens, Eglinton Primary, Muff Glen, City of Derry Airport
+- **Pricing evidence used:** Internal March 2026 Eglinton listing review, average ~£243k across 7 priced listings
+
+#### 4. Houses for Sale Claudy
+- **Draft ID:** `f68463b2-d6ff-4260-a4da-1403523d4809`
+- **Slug:** `houses-for-sale-claudy`
+- **Title:** "Houses for Sale Claudy: A Buyer's Guide to Village Homes and Countryside Value"
+- **Primary keyword:** `houses for sale claudy`
+- **Ahrefs:** 150 volume, KD 0
+- **Intent:** Buyer-led Claudy article to complement, not duplicate, the service-led Claudy draft above
+
+### Content standards achieved
+
+- 4 new blog drafts written locally and pushed to Wix draft status only
+- Each draft exceeds 1,900 words
+- British English throughout
+- FAQ sections included in every article
+- Internal linking suggestions included in every article
+- Local schools, roads, amenities and price guidance included
+- No publish action taken
+
+### Local files saved
+
+- `blog-estate-agent-claudy-2026-04-12.md`
+- `blog-houses-for-sale-dungiven-2026-04-12.md`
+- `blog-estate-agent-eglinton-2026-04-12.md`
+- `blog-houses-for-sale-claudy-2026-04-12.md`
+
+### Follow-up note
+
+Wix draft creation is now confirmed working in this runtime. These posts are staged for Phil review and manual publish only.
