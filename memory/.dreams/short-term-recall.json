@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-12T14:46:08.425Z",
+  "updatedAt": "2026-04-12T15:08:57.539Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -1045,13 +1045,13 @@
       "endLine": 147,
       "source": "memory",
       "snippet": "- 🔴 bluecanvas.ai: PJ needs to add redirects + publish in Webflow Designer - 🔴 Ireland OGP AI PMC response — biggest tender opportunity this week - 🟡 Respond to Moltbook comment (flagged since Mar 6 — API shows isRead:true but needs actual reply) - 🟡 Joe Abrahams follow-up — Readiness Scorecard demo built, no contact - 🟡 CRON_SECRET check in Vercel for Ardmore weekly draw - 🟡 ChatGPT→Claude migration blog post (SEO opportunity)",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6.502181822127595,
+      "totalScore": 7.289632568747091,
       "maxScore": 0.8416590100244603,
       "firstRecalledAt": "2026-04-08T06:01:26.693Z",
-      "lastRecalledAt": "2026-04-10T10:15:28.428Z",
+      "lastRecalledAt": "2026-04-12T15:06:48.539Z",
       "queryHashes": [
         "4ddc338cdf70",
         "d997e5734f73",
@@ -1060,12 +1060,14 @@
         "d5e0ed4c0647",
         "4ce6d61a4e45",
         "91f7c044d6f9",
-        "020f5608a0b2"
+        "020f5608a0b2",
+        "241ca38979d9"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-09",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-12"
       ],
       "conceptTags": [
         "gpt",
@@ -3974,22 +3976,24 @@
       "endLine": 132,
       "source": "memory",
       "snippet": "- `/guides/installing-pinchy` route never properly created despite multiple attempts - **Final resolution:** Domain fixed (200 response) but content gaps remain ## LESSONS LEARNED - Subagents good for parallel content creation, terrible for deployment troubleshooting - Always test builds locally before production deployment - Vercel domain assignments can lag/fail and need manual verification - API integrations (Wix) work but can be temperamental - retry logic needed - Keep detailed changelogs for client work - essential for value demonstration",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.2611431630586836,
+      "totalScore": 4.047187335738488,
       "maxScore": 0.8546732248709703,
       "firstRecalledAt": "2026-04-10T12:12:57.327Z",
-      "lastRecalledAt": "2026-04-11T21:06:36.159Z",
+      "lastRecalledAt": "2026-04-12T15:06:48.539Z",
       "queryHashes": [
         "43caa40c9ed9",
         "e891bd464219",
         "4958465bf68b",
-        "22e22290e226"
+        "22e22290e226",
+        "241ca38979d9"
       ],
       "recallDays": [
         "2026-04-10",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "guides/installing-pinchy",
@@ -4763,6 +4767,409 @@
         "spam/crypto",
         "social",
         "activist"
+      ]
+    },
+    "memory:memory/2026-03-30.md:426:438": {
+      "key": "memory:memory/2026-03-30.md:426:438",
+      "path": "memory/2026-03-30.md",
+      "startLine": 426,
+      "endLine": 438,
+      "source": "memory",
+      "snippet": "- data-key: `FerpIU2XXRfjm4rfClKMHQ` - Ahrefs Health Score: **37** — 55 errors, 287 warnings - Top issues: 38 broken links, 12 orphan pages, 41 missing meta descriptions, 66 missing alt text, 67 slow pages ### Tomorrow's Locked Plan (confirmed by PJ at 22:21) 1. **Wall Group website** — PJ sending photos, I build it properly 2. **James web fixes** — tackle the Ahrefs health score (broken links, meta descriptions, orphan pages, alt text) 3. Add Ahrefs snippet to James's Wix site ### Still Pending - Atelier Hair showcase (PJ to share details) - Cormac email response - Stripe ClawMart payouts (2-3 business days)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8204731515616386,
+      "maxScore": 0.8204731515616386,
+      "firstRecalledAt": "2026-04-12T15:06:48.539Z",
+      "lastRecalledAt": "2026-04-12T15:06:48.539Z",
+      "queryHashes": [
+        "241ca38979d9"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "data-key",
+        "2-3",
+        "data",
+        "key",
+        "ferpiu2xxrfjm4rfclkmhq",
+        "ahrefs",
+        "health",
+        "errors"
+      ]
+    },
+    "memory:memory/2026-03-09.md:23:26": {
+      "key": "memory:memory/2026-03-09.md:23:26",
+      "path": "memory/2026-03-09.md",
+      "startLine": 23,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "@@ -23,4 @@ (22 before, 121 after) - UK Trade Jobs ready for production deployment - Ardmore CC running smoothly (£77 revenue from Draw #1) - OpenClaw update to 2026.3.7 pending PJ approval",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.07,
+      "maxScore": 0.07,
+      "firstRecalledAt": "2026-04-12T15:07:08.685Z",
+      "lastRecalledAt": "2026-04-12T15:07:08.685Z",
+      "queryHashes": [
+        "06e8a8421ffe"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "2026.3.7",
+        "23,4",
+        "trade",
+        "jobs",
+        "ready",
+        "production",
+        "deployment",
+        "ardmore"
+      ]
+    },
+    "memory:memory/2026-03-04.md:90:93": {
+      "key": "memory:memory/2026-03-04.md:90:93",
+      "path": "memory/2026-03-04.md",
+      "startLine": 90,
+      "endLine": 93,
+      "source": "memory",
+      "snippet": "@@ -90,4 @@ (89 before, 69 after) 1. **Sign Up** → `ardmorecricket.com/signup` → email + password → Supabase Auth creates user → `profiles` table populated → welcome email sent from `draws@ardmorecricket.com` via Resend 2. **Pick Numbers** → `ardmorecricket.com/draw` → grid shows 500 numbers (5 pages of 100) → blue = available, g...",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.05,
+      "maxScore": 0.05,
+      "firstRecalledAt": "2026-04-12T15:07:08.685Z",
+      "lastRecalledAt": "2026-04-12T15:07:08.685Z",
+      "queryHashes": [
+        "06e8a8421ffe"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "ardmorecricket.com/signup",
+        "ardmorecricket.com",
+        "ardmorecricket.com/draw",
+        "90,4",
+        "sign",
+        "signup",
+        "email",
+        "password"
+      ]
+    },
+    "memory:memory/2026-03-10.md:12:15": {
+      "key": "memory:memory/2026-03-10.md:12:15",
+      "path": "memory/2026-03-10.md",
+      "startLine": 12,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "@@ -12,4 @@ (11 before, 108 after) - **Stripe Connect:** Rejected as too complex — winners shouldn't need KYC for small prizes. Wise batch payments also rejected as too much effort. - **Current process:** Manual — Stripe pays to Ardmore's bank, Ardmore pays winners + PJ's 7.5% platform fee. ### Admin Payout Page Built (NOT deploy...",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.29,
+      "maxScore": 0.29,
+      "firstRecalledAt": "2026-04-12T15:08:13.946Z",
+      "lastRecalledAt": "2026-04-12T15:08:13.946Z",
+      "queryHashes": [
+        "337b1fe4d0ba"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "7.5",
+        "12,4",
+        "stripe",
+        "connect",
+        "rejected",
+        "too",
+        "complex",
+        "winners"
+      ]
+    },
+    "memory:memory/2026-03-02.md:48:51": {
+      "key": "memory:memory/2026-03-02.md:48:51",
+      "path": "memory/2026-03-02.md",
+      "startLine": 48,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "@@ -48,4 @@ (47 before, 152 after) ## Active Projects Status - Blue Canvas: openclawconsultant.co.uk down, blog content ready - Ardmore: awaiting lottery registration",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.27,
+      "maxScore": 0.27,
+      "firstRecalledAt": "2026-04-12T15:08:13.946Z",
+      "lastRecalledAt": "2026-04-12T15:08:13.946Z",
+      "queryHashes": [
+        "337b1fe4d0ba"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "openclawconsultant.co.uk",
+        "48,4",
+        "active",
+        "projects",
+        "status",
+        "blue",
+        "canvas",
+        "down"
+      ]
+    },
+    "memory:memory/2026-03-10.md:8:11": {
+      "key": "memory:memory/2026-03-10.md:8:11",
+      "path": "memory/2026-03-10.md",
+      "startLine": 8,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "@@ -8,4 @@ (7 before, 112 after) - **Draw #2 pot:** £165 — significant growth from £28 in one week - **Payout decision:** Ardmore CC is the lottery operator, NOT Blue Canvas. Money should flow to Ardmore, not through PJ's accounts (tax/legal reasons). PJ invoices Ardmore 7.5% monthly as platform fee. - **Stripe setup:** Only one...",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.15,
+      "maxScore": 0.15,
+      "firstRecalledAt": "2026-04-12T15:08:14.280Z",
+      "lastRecalledAt": "2026-04-12T15:08:14.280Z",
+      "queryHashes": [
+        "d7cd0ff90152"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "tax/legal",
+        "7.5",
+        "8,4",
+        "draw",
+        "pot",
+        "significant",
+        "growth",
+        "one"
+      ]
+    },
+    "memory:memory/2026-03-23.md:10:13": {
+      "key": "memory:memory/2026-03-23.md:10:13",
+      "path": "memory/2026-03-23.md",
+      "startLine": 10,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "@@ -10,4 @@ (9 before, 82 after) - Replied to 3 unread notifications professionally - Commented on 4 trending posts with substantive Blue Canvas insights: 1. The 7:45am rule post - acknowledged CLAW community growth 2. Tobira discovery problem comment - discussed SME lead gen challenges",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.15,
+      "maxScore": 0.15,
+      "firstRecalledAt": "2026-04-12T15:08:14.280Z",
+      "lastRecalledAt": "2026-04-12T15:08:14.280Z",
+      "queryHashes": [
+        "d7cd0ff90152"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "10,4",
+        "replied",
+        "unread",
+        "notifications",
+        "professionally",
+        "commented",
+        "trending",
+        "posts"
+      ]
+    },
+    "memory:memory/2026-03-02.md:16:19": {
+      "key": "memory:memory/2026-03-02.md:16:19",
+      "path": "memory/2026-03-02.md",
+      "startLine": 16,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "@@ -16,4 @@ (15 before, 184 after) - Certification status colour-coding, job match score (87%), recommendation (Shortlist) - \"Built for Quay Group by Blue Canvas\" branding, CTA to bluecanvas.ai/contact - Follow-up tool to convert Tim from £750 client to retainer",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.15,
+      "maxScore": 0.15,
+      "firstRecalledAt": "2026-04-12T15:08:14.280Z",
+      "lastRecalledAt": "2026-04-12T15:08:14.280Z",
+      "queryHashes": [
+        "d7cd0ff90152"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "colour-coding",
+        "bluecanvas.ai/contact",
+        "follow-up",
+        "16,4",
+        "certification",
+        "status",
+        "colour",
+        "coding"
+      ]
+    },
+    "memory:memory/2026-04-03.md:3:6": {
+      "key": "memory:memory/2026-04-03.md:3:6",
+      "path": "memory/2026-04-03.md",
+      "startLine": 3,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "@@ -3,4 @@ (2 before, 111 after) ## Morning Dashboard (07:01) - **Uptime**: All 4 sites up ✅ (bluecanvas.ai 414ms, ardmorecricket.com 653ms, uktradejobs.com 489ms, openclawconsultant.co.uk 636ms) - **Ahrefs**: ❌ Signed out — \"account being used on another device\" - **GSC API**: ❌ Refresh token expired/revoked — needs re-auth",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.06,
+      "maxScore": 0.06,
+      "firstRecalledAt": "2026-04-12T15:08:34.638Z",
+      "lastRecalledAt": "2026-04-12T15:08:34.638Z",
+      "queryHashes": [
+        "721036c41898"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "bluecanvas.ai",
+        "ardmorecricket.com",
+        "uktradejobs.com",
+        "openclawconsultant.co.uk",
+        "expired/revoked",
+        "re-auth",
+        "3,4",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-04-04.md:52:55": {
+      "key": "memory:memory/2026-04-04.md:52:55",
+      "path": "memory/2026-04-04.md",
+      "startLine": 52,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "@@ -52,4 @@ (51 before, 17 after) ### learn.bluecanvas.ai Content Blast - 42 → **63 guides** (20 new authority-building guides) - Key pages: \"Best AI Consultancies UK\", \"AI Strategy for CEOs\", \"AI Consulting Costs\", \"Why AI Projects Fail\", \"AI Consultants Northern Ireland\", \"AI Trends 2026\"",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.05,
+      "maxScore": 0.05,
+      "firstRecalledAt": "2026-04-12T15:08:34.638Z",
+      "lastRecalledAt": "2026-04-12T15:08:34.638Z",
+      "queryHashes": [
+        "721036c41898"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "learn.bluecanvas.ai",
+        "authority-building",
+        "52,4",
+        "content",
+        "blast",
+        "guides",
+        "new",
+        "authority"
+      ]
+    },
+    "memory:memory/2026-03-01.md:45:48": {
+      "key": "memory:memory/2026-03-01.md:45:48",
+      "path": "memory/2026-03-01.md",
+      "startLine": 45,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "@@ -45,4 @@ (44 before, 107 after) ## Supabase Backends Deployed - UK Trade Jobs: schema, functions, storage all migrated - ClubDraw: schema, draw functions, Ardmore seed data migrated - Both sharing same Supabase project (bluecanvas-apps)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.1,
+      "maxScore": 0.1,
+      "firstRecalledAt": "2026-04-12T15:08:49.713Z",
+      "lastRecalledAt": "2026-04-12T15:08:49.713Z",
+      "queryHashes": [
+        "de0790330b9f"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "bluecanvas-apps",
+        "45,4",
+        "supabase",
+        "backends",
+        "deployed",
+        "trade",
+        "jobs",
+        "schema"
+      ]
+    },
+    "memory:memory/2026-03-27.md:6:9": {
+      "key": "memory:memory/2026-03-27.md:6:9",
+      "path": "memory/2026-03-27.md",
+      "startLine": 6,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "@@ -6,4 @@ (5 before, 171 after) - **Week 3 report delivered**: Beautiful PDF format matching Week 2 styling exactly - **3 blog posts published live**: Property Valuation Guide (2,200+ words), Quick House Sale Guide (2,400+ words), Derry Property Market Analysis (2,500+ words) - **Market leadership established**: First Derry est...",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.1,
+      "maxScore": 0.1,
+      "firstRecalledAt": "2026-04-12T15:08:57.539Z",
+      "lastRecalledAt": "2026-04-12T15:08:57.539Z",
+      "queryHashes": [
+        "6b900ccd9406"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "6,4",
+        "week",
+        "report",
+        "delivered",
+        "beautiful",
+        "pdf",
+        "format",
+        "matching"
+      ]
+    },
+    "memory:memory/2026-03-30.md:74:77": {
+      "key": "memory:memory/2026-03-30.md:74:77",
+      "path": "memory/2026-03-30.md",
+      "startLine": 74,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "@@ -74,4 @@ (73 before, 361 after) ### Problem - openclawconsultant.co.uk returning 404 on all pages - Root cause: Ghost project `openclaw-consultant-fix` (from 12 days ago) had stolen the domain assignment - Vercel CLI couldn't reassign — \"already assigned to another project\" error",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.09,
+      "maxScore": 0.09,
+      "firstRecalledAt": "2026-04-12T15:08:57.539Z",
+      "lastRecalledAt": "2026-04-12T15:08:57.539Z",
+      "queryHashes": [
+        "6b900ccd9406"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "openclawconsultant.co.uk",
+        "openclaw-consultant-fix",
+        "74,4",
+        "problem",
+        "returning",
+        "all",
+        "pages",
+        "root"
       ]
     }
   }

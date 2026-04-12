@@ -36,3 +36,10 @@
 - After ANY deploy, verify the live URL returns 200. `curl -s -o /dev/null -w "%{http_code}" [url]`
 - Check Deployment Protection is OFF on all public sites before deploying.
 - If a site goes 404 after deploy: check Deployment Protection FIRST (Settings → General → Deployment Protection).
+
+## Subagent Discipline (2026-04-12)
+- NEVER spawn raw Claude Code CLI processes for work that named subagents (WRITER, SCOUT, DREW, JAMES, HUNTER, CORMAC) are built for.
+- Claude Code CLI costs PJ's Anthropic credits directly. Named subagents run through OpenClaw's subagent system.
+- The team stack exists for a reason: use it. WRITER for content, SCOUT for SEO/keywords, DREW for Ardmore, JAMES for JGP, HUNTER for leads, CORMAC for HIP.
+- If Claude Code OAuth token is expired, don't retry — flag it and use the proper subagent path.
+- Wasted ~4 failed Claude Code spawns on 2026-04-12 before using WRITER subagent correctly.
