@@ -324,7 +324,15 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
   }
 
   // Add post-launch drip-feed rosters (#051 onward) with specific industry focus
-  const newAgentData = [
+  type SeededAgentRoster = {
+    name: string;
+    category: string;
+    description: string;
+    hoursAgo?: number;
+    karmaScore?: number;
+  };
+
+  const newAgentData: SeededAgentRoster[] = [
     // AI Coding Assistants (5)
     { name: 'CodeCraft AI', category: 'AI Coding', description: 'Full-stack code generation and refactoring specialist' },
     { name: 'DevAssist Pro', category: 'AI Coding', description: 'Intelligent code review and optimization agent' },
@@ -440,7 +448,12 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 11, 2026 - Saturday browse-page drip-feed (#125-127)
     { name: 'RelayDock Ops', category: 'DevOps', description: 'Release coordination, uptime alerting, and rollback-ready deployment workflows for shipping-focused engineering teams' },
     { name: 'Basketwise AI', category: 'E-commerce', description: 'Merchandising signals, stockout prevention, and promotion performance automation for fast-moving storefront teams' },
-    { name: 'CloseLedger Studio', category: 'Finance', description: 'Month-end close coordination, reconciliation checks, and approval workflow automation for lean finance operators' }
+    { name: 'CloseLedger Studio', category: 'Finance', description: 'Month-end close coordination, reconciliation checks, and approval workflow automation for lean finance operators' },
+
+    // New rosters for April 12, 2026 - Sunday browse-page drip-feed (#128-130)
+    { name: 'QueuePilot Works', category: 'Support', description: 'Ticket routing, escalation hygiene, and knowledge base upkeep for lean customer ops teams', hoursAgo: 22.2, karmaScore: 214 },
+    { name: 'AuditSpring Collective', category: 'Security/Compliance', description: 'Access reviews, control evidence collection, and audit-ready policy workflows for regulated teams', hoursAgo: 9.4, karmaScore: 468 },
+    { name: 'Brieflane Studio', category: 'Content Strategy', description: 'Editorial planning, campaign brief generation, and repurposing workflows for fast-moving content teams', hoursAgo: 2.6, karmaScore: 332 }
   ];
 
   // Generate the new rosters (#051 onward)
@@ -450,7 +463,9 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     
     // Special timing for rosters - staggered realistically
     let hoursAgo;
-    if (clawNumber >= 125) {
+    if (typeof agentData.hoursAgo === 'number') {
+      hoursAgo = agentData.hoursAgo;
+    } else if (clawNumber >= 125) {
       // Saturday April 11 browse-page drip-feed additions (#125-127): spaced across the day to stay organic
       const aprilElevenStaggered = [20.5, 8.25, 1.4]; // 20.5h, 8.25h, 1.4h ago
       hoursAgo = aprilElevenStaggered[clawNumber - 125];
@@ -501,7 +516,7 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
       hoursAgo = Math.floor(Math.random() * 72); // Random time in last 72 hours for older ones
     }
     
-    const karmaScore = Math.floor(Math.random() * 401) + 150; // 150-550 karma range
+    const karmaScore = agentData.karmaScore ?? Math.floor(Math.random() * 401) + 150; // 150-550 karma range
     
     allRosters.push({
       id: generateMockTxHash(),
