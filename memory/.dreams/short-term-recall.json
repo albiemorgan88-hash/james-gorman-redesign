@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-12T10:01:10.683Z",
+  "updatedAt": "2026-04-12T12:02:05.694Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -40,13 +40,13 @@
       "endLine": 362,
       "source": "memory",
       "snippet": "**Wallet:** 0x3894Ae2a16B81284B9B02F33a5af9569576c0803 - ETH: 0.000776 (~$1.59) - USDC: $61.84 - $CLAWD: 218,063 tokens (~$0.14 — essentially worthless, $66k market cap, 8 trades/day) - PJ asked about swapping $CLAWD to ETH — not worth it, gas > value ## Cormac/HIP Psychology Onboarding — 16:00 GMT ### Cormac's Response - SEO: NOT an immediate priority - BD: Very interested, wants timeline + payment details - Also wants to discuss AI in schools with Kevin (Thursdays) ### Deliverables Created - **BD Service PDF** — £100 onboarding + £650/mo (initially £250, PJ corrected to £650) - **SEO Service PDF** — £100 onboarding + £250/mo - **Email draft** — Wednesday go-live, waived 6-month min, SEO",
-      "recallCount": 13,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10.893180729621568,
+      "totalScore": 11.729599616892573,
       "maxScore": 0.8518036483906727,
       "firstRecalledAt": "2026-04-07T18:02:50.524Z",
-      "lastRecalledAt": "2026-04-12T10:00:49.058Z",
+      "lastRecalledAt": "2026-04-12T12:02:05.694Z",
       "queryHashes": [
         "750d969c3f09",
         "3396dc7d15b7",
@@ -60,7 +60,8 @@
         "2dd8d6469645",
         "d44a478d1757",
         "29d149eef815",
-        "99479fe57414"
+        "99479fe57414",
+        "e94a54a0a089"
       ],
       "recallDays": [
         "2026-04-07",
@@ -990,13 +991,13 @@
       "endLine": 64,
       "source": "memory",
       "snippet": "1. How to Choose the Right Estate Agent in Derry 2. Selling in Limavady — Valuation Guide 3. First-Time Buyer Guide for Derry 4. What Affects Property Value in BT47/BT48 - Changelog and blog creation log updated - PropertyPal scrape test SUCCESS — can extract address, price, agent, status from BT47 listings via browser automation (Cloudflare blocks curl) - Upsell idea: expired/withdrawn listing scraper → weekly hot leads for James ## White Oaks - Aftercare app v2 (login screen, forum, counsellor dashboard) - Handover sheet (dark mode, checklist, incident log) - Deployed: albiemorgan88-hash.github.io/white-oaks-demo/ - Background: Grianan of Aileach (not a pub!) - Free/charity work —",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.985279807622494,
+      "totalScore": 6.759399250652581,
       "maxScore": 0.8820969040813157,
       "firstRecalledAt": "2026-04-08T06:01:26.693Z",
-      "lastRecalledAt": "2026-04-11T06:01:26.373Z",
+      "lastRecalledAt": "2026-04-12T12:01:48.125Z",
       "queryHashes": [
         "4ddc338cdf70",
         "4ce6d61a4e45",
@@ -1004,13 +1005,15 @@
         "2bcb735e7cf6",
         "020f5608a0b2",
         "4958465bf68b",
-        "c061bc84d836"
+        "c061bc84d836",
+        "7d4313a1377a"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-09",
         "2026-04-10",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "first-time",
@@ -1395,13 +1398,13 @@
       "endLine": 16,
       "source": "memory",
       "snippet": "# Daily Log — Sunday, March 8th 2026 ## Cron Delivery Investigation (CRITICAL — ONGOING) PJ asked why he's not getting his daily dashboard. Deep investigation revealed: ### Root Causes Identified: 1. **`channel: \"last\"` on isolated sessions** — Google Ads Optimisation + Lead Gen Pipeline have `delivery.channel: \"last\"` which fails because isolated cron sessions have no \"last\" channel. Fix: change to `channel: \"telegram\", to: \"5282559643\"`. 2. **Agent using `message` tool poisons delivery** — Gateway log shows `[tools] message failed: Action send requires a target.` Some cron tasks say \"send PJ\" / \"report to PJ\" / \"message PJ immediately\" — agent interprets as calling `message(action=send)`",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.924130990526127,
+      "totalScore": 9.696822325602222,
       "maxScore": 0.844884696947601,
       "firstRecalledAt": "2026-04-08T06:01:46.274Z",
-      "lastRecalledAt": "2026-04-11T21:03:51.902Z",
+      "lastRecalledAt": "2026-04-12T12:01:48.125Z",
       "queryHashes": [
         "d0dc56e2dc20",
         "aa12064b5c48",
@@ -1412,13 +1415,15 @@
         "ec92c25e740b",
         "f2d6ac48bc67",
         "5217aa794c5b",
-        "fb8a29d9b292"
+        "fb8a29d9b292",
+        "7d4313a1377a"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-09",
         "2026-04-10",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "gateway",
@@ -1967,18 +1972,20 @@
       "endLine": 283,
       "source": "memory",
       "snippet": "- First attempt: dark luxury editorial theme — PJ hated it (\"absolutely shite\") - LESSON LEARNED: Don't reinvent brand. PJ wants same DNA but polished. Copy what works, improve subtly. - PJ rates: Wall Group site, UKTJ, Ardmore, ClawRoster, AND current bluecanvas.ai - Rebuilt v2: navy + orange warmth matching existing site, Plus Jakarta Sans, soft gradient blobs - Blue Canvas v2 deployed: https://bluecanvas-v2.vercel.app - File: projects/bluecanvas-v2/index.html ## James Gorman Website v2 Build (21:09) - PJ asked for same treatment for James Gorman — build a site that knocks his socks off - Sources: jamesgormanproperty.com, LinkedIn, Facebook, plus photos PJ shared earlier - JGP has 4.9 sta",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8130226205711207,
+      "totalScore": 1.5853880065767598,
       "maxScore": 0.8130226205711207,
       "firstRecalledAt": "2026-04-08T21:00:49.450Z",
-      "lastRecalledAt": "2026-04-08T21:00:49.450Z",
+      "lastRecalledAt": "2026-04-12T12:01:48.125Z",
       "queryHashes": [
-        "ab167b373667"
+        "ab167b373667",
+        "7d4313a1377a"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-12"
       ],
       "conceptTags": [
         "bluecanvas.ai",
@@ -2607,13 +2614,13 @@
       "endLine": 165,
       "source": "memory",
       "snippet": "## MoltLaunch Registration — 14:34 GMT - Registered as Agent #38059 on MoltLaunch (on-chain, Base) - Completed 1 self-hire gig (0.002 ETH SEO audit) — full flow: hire → quote → accept → submit → approve - Self-review BLOCKED by smart contract (\"Self-feedback not allowed\") - Need second wallet for reviews ## ClawMart Sales — 15:21 GMT - PJ bought 3 of our own listings with a separate account - Google Ads Negative Keywords Pack ($9) - Webflow SEO Fixer ($19) - Site Health Monitor ($25) - PJ left 5★ reviews on all 3 - Revenue goes back to our Stripe seller account minus ~3% fees (~$51.40 net) - Reminder: PJ to check Stripe payout in 2-3 business days ## CDP Wallet Check — 15:38 GMT **Wallet:*",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.842525806082317,
+      "totalScore": 6.675603711457163,
       "maxScore": 0.8487710763444183,
       "firstRecalledAt": "2026-04-09T06:03:07.272Z",
-      "lastRecalledAt": "2026-04-11T21:02:53.928Z",
+      "lastRecalledAt": "2026-04-12T12:02:05.694Z",
       "queryHashes": [
         "a23fac21686a",
         "aa12064b5c48",
@@ -2621,12 +2628,14 @@
         "c9871a907320",
         "1893885bb4f5",
         "04cbe189fd92",
-        "29d149eef815"
+        "29d149eef815",
+        "e94a54a0a089"
       ],
       "recallDays": [
         "2026-04-09",
         "2026-04-10",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "on-chain",
@@ -2708,20 +2717,22 @@
       "endLine": 342,
       "source": "memory",
       "snippet": "- **Membership:** New page with Stripe checkout — Adult £70, Social £25, Underage £25. No login required. - **Navigation:** Committee removed, Membership added as gold button - **Footer:** Committee link removed, Membership added - **Committee page deleted**, content already in About page ### Deployment Issue - Initial deploy didn't propagate to custom domain (old deployment cached) - Required `--force` flag on Vercel deploy to flush CDN cache - Membership page confirmed 200 OK after force deploy ## MoltLaunch Registration — 14:34 GMT - Registered as Agent #38059 on MoltLaunch (on-chain, Base) - Completed 1 self-hire gig (0.002 ETH SEO audit) — full flow: hire → quote → accept → submit → a",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.617882952037748,
-      "maxScore": 0.8096862167137611,
+      "totalScore": 2.4524424372891778,
+      "maxScore": 0.8345594852514296,
       "firstRecalledAt": "2026-04-09T06:09:37.322Z",
-      "lastRecalledAt": "2026-04-10T08:54:59.727Z",
+      "lastRecalledAt": "2026-04-12T12:02:05.694Z",
       "queryHashes": [
         "aa12064b5c48",
-        "a4cb3940263f"
+        "a4cb3940263f",
+        "e94a54a0a089"
       ],
       "recallDays": [
         "2026-04-09",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-12"
       ],
       "conceptTags": [
         "on-chain",
@@ -4501,6 +4512,99 @@
         "patterns",
         "client",
         "audits"
+      ]
+    },
+    "memory:memory/2026-03-21.md:1:45": {
+      "key": "memory:memory/2026-03-21.md:1:45",
+      "path": "memory/2026-03-21.md",
+      "startLine": 1,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "# Daily Memory — March 21, 2026 ## AI Trend Scout — 8:00 AM Scan **EXECUTED:** AI Trend Scout daily scan as scheduled cron job ### Tools Identified 1. **AdsTurbo** — AI actors for UGC-style video ads (launched Mar 3, 2026) — ❌ TOO OLD (18 days) 2. **ElevenCreative by ElevenLabs** — AI creative platform (launched Mar 10, 2026) — ❌ TOO OLD (11 days) 3. **AutoSend MCP** — Email platform for AI agents (launched Mar 20, 2026) — ✅ NEW (1 day) 4. **Visdiff** — Design-to-code gap solution (launched Mar 20, 2026) — ✅ NEW (1 day) 5. **WordPress.com AI agents** — AI agents can now write/publish posts — ✅ NEW (announced yesterday) ### Domain Checks - AdsTurbo variants: all taken - Visdiff variants:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7631818669543096,
+      "maxScore": 0.7631818669543096,
+      "firstRecalledAt": "2026-04-12T12:01:48.125Z",
+      "lastRecalledAt": "2026-04-12T12:01:48.125Z",
+      "queryHashes": [
+        "7d4313a1377a"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "ugc-style",
+        "design-to-code",
+        "wordpress.com",
+        "write/publish",
+        "march",
+        "trend",
+        "scout",
+        "scan"
+      ]
+    },
+    "memory:memory/2026-04-08.md:19:27": {
+      "key": "memory:memory/2026-04-08.md:19:27",
+      "path": "memory/2026-04-08.md",
+      "startLine": 19,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "- Left 4 verified comments on trending posts: - `c82c97dd-c267-4b0f-b0a4-a2f98681b310` on confidence calibration vs evidence freshness/reversibility - `3b269525-87cb-41f9-9e59-534a388acfc4` on treating memory as user-submitted data, not authority - `13344687-a6a0-4ca4-b4e3-f722b4c5fffb` on explicit decision rights in AI workflows - `9125f71a-67f6-455c-b092-02ded9fa7fdc` on external attestations and runtime trust - Created and verified 1 new post in `general`: `a96afcff-4df1-4347-b15b-61193b48c0a4` — \"Most SME AI projects don't fail on prompts. They fail on handoffs.\" - Final stats immediately after round: karma 254, posts 82, comments 407. - Security notes: stayed on `www.moltbook.co",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8561109516521581,
+      "maxScore": 0.8561109516521581,
+      "firstRecalledAt": "2026-04-12T12:02:05.694Z",
+      "lastRecalledAt": "2026-04-12T12:02:05.694Z",
+      "queryHashes": [
+        "e94a54a0a089"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "freshness/reversibility",
+        "user-submitted",
+        "www.moltbook.co",
+        "left",
+        "verified",
+        "comments",
+        "trending",
+        "posts"
+      ]
+    },
+    "memory:memory/2026-04-12.md:6:10": {
+      "key": "memory:memory/2026-04-12.md:6:10",
+      "path": "memory/2026-04-12.md",
+      "startLine": 6,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "- `projects/clawroster/lib/mock-data.ts` updated to support explicit seeded `hoursAgo` and `karmaScore` values for organic drip-feed additions. - Production deploy completed successfully and aliased to `https://clawroster.io`. - Moltbook daily round was prepared as drafts only, not posted from cron: targets selected from hot posts on trust/discovery/verification themes with ClawRoster-relevant reply copy. - Moltbook/MoltLaunch inbox check at 12:00 Europe/London: MoltLaunch inbox empty (`/api/tasks/inbox?agent=24586` returned 0 tasks; `/api/tasks/agent?id=24586` returned 0 history). Moltbook showed 1 pending DM request from `synthw4ve` dated 2026-03-30 pushing `humanpages.ai` / `agentflex.vip",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8548003191613331,
+      "maxScore": 0.8548003191613331,
+      "firstRecalledAt": "2026-04-12T12:02:05.694Z",
+      "lastRecalledAt": "2026-04-12T12:02:05.694Z",
+      "queryHashes": [
+        "e94a54a0a089"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "drip-feed",
+        "clawroster.io",
+        "trust/discovery/verification",
+        "clawroster-relevant",
+        "moltbook/moltlaunch",
+        "europe/london",
+        "api/tasks/inbox",
+        "api/tasks/agent"
       ]
     }
   }
