@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-11T21:31:04.281Z",
+  "updatedAt": "2026-04-12T06:00:26.583Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -791,13 +791,13 @@
       "endLine": 70,
       "source": "memory",
       "snippet": "- Originals in .archive/context-cleanup-2026-03-15/ ## Prospects - **Dropped:** Conor (City Hotel), Emma (Airbnb) — PJ's call - **Active:** James Gorman (paying), Charlie O'Hara (wait for PJ convo), White Oaks (charity) - **New channels:** PPH (Skayl OpenClaw retainer job spotted), Upwork, Pinchy partnership ## Key Decisions - UKTJ training section on uktj.com, not separate domain (becomeaplumber.co.uk taken anyway) - ClawMart > MoltLaunch for product revenue - Park Paperclip — not needed yet - Fiverr/Upwork low-end gigs = too grindy. PPH/Upwork AI consultancy at £75-150/hr = worth it - Revenue is the #1 priority. Everything should lead to cash.",
-      "recallCount": 16,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 13.417325131848871,
+      "totalScore": 14.25128131876121,
       "maxScore": 0.861851021216879,
       "firstRecalledAt": "2026-04-08T06:01:07.772Z",
-      "lastRecalledAt": "2026-04-11T06:01:26.373Z",
+      "lastRecalledAt": "2026-04-12T06:00:26.583Z",
       "queryHashes": [
         "17f77f84137b",
         "4ddc338cdf70",
@@ -814,13 +814,15 @@
         "2bcb735e7cf6",
         "020f5608a0b2",
         "2f09dd2f2828",
-        "c061bc84d836"
+        "c061bc84d836",
+        "7d6caae8efc3"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-09",
         "2026-04-10",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "uktj.com",
@@ -1434,25 +1436,27 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "- OAuth tokens for GSC — missing client_id/secret, can't pull live SEO data ## Key Decisions - ClubDraw platform fee: 10% (absorb Stripe fees, club gets clean 90%) - Moltlaunch: register as low-effort experiment, strict security rules (no token approvals, no escrow) - Google Ads: £15/day budget, 2 ad groups (local high-intent + industry-specific), launch when Niall's redesign live ## Reminders for Phil (when back from Rome) - Get CDP API key from coinbase.com (albie6) for Moltlaunch registration - Enable Remote Login on Mac mini (System Settings → General → Sharing → Remote Login) - Add Calendly link to Webflow sites (BC + 2 satellites) - Update Google Business Profile (new address + phone",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.89460892511278,
+      "totalScore": 5.703527182393368,
       "maxScore": 0.8225575424169104,
       "firstRecalledAt": "2026-04-08T11:01:26.911Z",
-      "lastRecalledAt": "2026-04-10T11:05:00.687Z",
+      "lastRecalledAt": "2026-04-12T06:00:26.583Z",
       "queryHashes": [
         "11c5aca74ad7",
         "774c9c86a6bd",
         "64107a7aaad3",
         "0d35df437f39",
         "78f527c80f1a",
-        "456a130cb30f"
+        "456a130cb30f",
+        "7d6caae8efc3"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-09",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-12"
       ],
       "conceptTags": [
         "client-id/secret",
@@ -2731,20 +2735,22 @@
       "endLine": 77,
       "source": "memory",
       "snippet": "- Phil updated Google Business Profile with new address/phone ## Overnight Builds Running - 10 new UK Trade Jobs location pages - Blog title optimisation based on GSC data ## Reminders for Phil (Friday) - Publish any new staged Webflow changes - Set blog SEO title template in Designer - Disable AirPlay Receiver - Restart Tailscale - Delete old CDP keys (Albie-Albie7) - Create standard user account on Mac (CE compliance) - Create Supabase account for UK Trade Jobs + ClubDraw - Check Chrome version on MacBook Air - Get DUNS number to Albie",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6000713386822187,
-      "maxScore": 0.8011147797248017,
+      "totalScore": 2.4207680644506606,
+      "maxScore": 0.820696725768442,
       "firstRecalledAt": "2026-04-09T06:09:37.322Z",
-      "lastRecalledAt": "2026-04-11T06:01:26.373Z",
+      "lastRecalledAt": "2026-04-12T06:00:26.583Z",
       "queryHashes": [
         "aa12064b5c48",
-        "18fa55704e2d"
+        "18fa55704e2d",
+        "7d6caae8efc3"
       ],
       "recallDays": [
         "2026-04-09",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "address/phone",
@@ -3204,21 +3210,23 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "- PJ wants Ardmore/ClubDraw site maintained ## Memory Fixes - Added satellite site URLs to MEMORY.md (were missing) - Added Ardmore Cricket Club + ClubDraw details to MEMORY.md (were missing) ## Reminders - **28 Feb 2026** — Remind PJ to export Telegram chat history via Telegram Desktop for memory rebuild ## Still Pending - Competitor content gaps report (subagent running) - Satellite audit report (subagent running) - Bind SEO Title field to blog template in Webflow Designer (PJ needs to do this) - Verify logo.png and og-image.jpg URLs exist on bluecanvas.ai - Check if /blog?q= search actually works (SearchAction schema) - Create /contact page on bluecanvas.ai (currently 404)",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.4359181083165855,
+      "totalScore": 3.248334253794391,
       "maxScore": 0.8359931985288882,
       "firstRecalledAt": "2026-04-09T14:38:18.622Z",
-      "lastRecalledAt": "2026-04-11T21:06:36.159Z",
+      "lastRecalledAt": "2026-04-12T06:00:26.583Z",
       "queryHashes": [
         "354529b39584",
         "0d9aad4d095e",
-        "22e22290e226"
+        "22e22290e226",
+        "7d6caae8efc3"
       ],
       "recallDays": [
         "2026-04-09",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "ardmore/clubdraw",
@@ -4380,6 +4388,37 @@
         "pj's",
         "phone",
         "deployed"
+      ]
+    },
+    "memory:memory/2026-03-21.md:65:73": {
+      "key": "memory:memory/2026-03-21.md:65:73",
+      "path": "memory/2026-03-21.md",
+      "startLine": 65,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "- \"ai consultancy uk\" — 14.29% CTR, low volume - \"ai consulting services\" — 11.76% CTR, good volume - \"openclaw automation\" — 7.84% CTR ### Action Items for PJ 1. **Conversion tracking check** — Why zero conversions with this CTR performance? 2. **Weekend bid adjustments** — Consider dayparting to control weekend spend 3. **Keyword pruning** — Pause 0% CTR keywords after 25+ impressions 4. **Landing page review** — Strong clicks but no conversions suggests page issue",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7973818032444908,
+      "maxScore": 0.7973818032444908,
+      "firstRecalledAt": "2026-04-12T06:00:26.583Z",
+      "lastRecalledAt": "2026-04-12T06:00:26.583Z",
+      "queryHashes": [
+        "7d6caae8efc3"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "14.29",
+        "11.76",
+        "7.84",
+        "consultancy",
+        "ctr",
+        "low",
+        "volume",
+        "consulting"
       ]
     }
   }
