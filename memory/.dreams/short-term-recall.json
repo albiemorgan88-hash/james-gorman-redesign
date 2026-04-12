@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-12T12:02:05.694Z",
+  "updatedAt": "2026-04-12T14:46:08.425Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -9,18 +9,20 @@
       "endLine": 169,
       "source": "memory",
       "snippet": "- Slugs: what-is-an-ai-audit, why-your-business-needs-ai-readiness-assessment, training-staff-on-ai, ai-for-recruitment-agencies, how-to-choose-ai-consultant, implementing-ai-accountancy-firms, uk-ai-action-plan-what-businesses-need-know, small-business-ai-automation, ai-for-professional-services, ai-agents-2026-business-applications **openclawconsultant.co.uk FULLY LIVE ✅** - SSL cert provisioned, HTTPS returning 200, expires May 31 with auto-renewal **Ardmore Testing Feedback** - Payment/success page working fine (number 4 purchased by committee tester) - \"Email rate limit exceeded\" on signup — Supabase free tier limits to 2 confirmation emails/hour - Recommended: disable email confirmat",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8649708217878908,
+      "totalScore": 1.689369744458454,
       "maxScore": 0.8649708217878908,
       "firstRecalledAt": "2026-04-07T18:02:50.524Z",
-      "lastRecalledAt": "2026-04-07T18:02:50.524Z",
+      "lastRecalledAt": "2026-04-12T13:18:27.008Z",
       "queryHashes": [
-        "750d969c3f09"
+        "750d969c3f09",
+        "127c03a8c91f"
       ],
       "recallDays": [
-        "2026-04-07"
+        "2026-04-07",
+        "2026-04-12"
       ],
       "conceptTags": [
         "what-is-an-ai-audit",
@@ -233,24 +235,29 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- CDP API key: albie6 (81f37251-6748-44cf-8227-e6e4500a93a5) - Credentials: ~/.config/cdp/credentials.json - Stacey watched the funding live 💛 ## Infrastructure - GitHub CLI (gh) installed via brew, authenticated as albiemorgan88-hash - gh auth setup-git configured for pushing - CDP SDK (@coinbase/cdp-sdk) installed in projects/wallet/ ## Nightly Build - PJ chose: Tender Tracker Dashboard (to be built overnight) ## PJ Context - In Donegal earlier with Stacey (beach sauna + lunch) - PJ sold $KAS, now holds 12M $CLAWD on Base - Wall Group URL correction: wallgroup.co.uk not thewallgroup.com - PJ wants to set up Google Ads + CRM (future tasks) - FatJoe backlinks — advised to hold off, do fr",
-      "recallCount": 5,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.104277985483408,
-      "maxScore": 0.824580335456659,
+      "totalScore": 7.435962835733838,
+      "maxScore": 0.8367294282858065,
       "firstRecalledAt": "2026-04-07T18:03:01.569Z",
-      "lastRecalledAt": "2026-04-10T12:23:17.436Z",
+      "lastRecalledAt": "2026-04-12T14:46:08.425Z",
       "queryHashes": [
         "3396dc7d15b7",
         "0d35df437f39",
         "78f527c80f1a",
         "456a130cb30f",
-        "2dd8d6469645"
+        "2dd8d6469645",
+        "38c7258b5df9",
+        "94e39eefecdb",
+        "bd869a9aa048",
+        "bba2dcc0cbad"
       ],
       "recallDays": [
         "2026-04-07",
         "2026-04-09",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-12"
       ],
       "conceptTags": [
         "config/cdp/credentials.json",
@@ -405,13 +412,13 @@
       "endLine": 71,
       "source": "memory",
       "snippet": "## AI Trend Scout Cron LIVE - Daily 8am UK time - Scans ProductHunt, HN, YC, TechCrunch, X, GitHub, Reddit, AI announcements - Skill at skills/ai-trend-scout/SKILL.md ## Revenue Brainstorm - AI Compliance with Stacey = top contender (9.5) - Stacey wants to get into AI risk and compliance - EU AI Act mandatory Aug 2026 — timing perfect - Phil wants more 9.5s — research report at reports/opportunity-radar/2026-02-25-nine-point-five-hunt.md - AI Tender Writer scored 9.2 (AutogenAI raised $82.8M but targets enterprise, SME gap exists) - Phil asked to build decision-making skill around opportunity scoring ## UK Trade Jobs Employer Flow - Full sign up/login/dashboard/post-job flow deployed - loc",
-      "recallCount": 10,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.180941172935356,
+      "totalScore": 9.794703355078536,
       "maxScore": 0.8206606270513264,
       "firstRecalledAt": "2026-04-07T21:00:11.893Z",
-      "lastRecalledAt": "2026-04-11T21:00:16.828Z",
+      "lastRecalledAt": "2026-04-12T14:46:08.425Z",
       "queryHashes": [
         "b9aee40a1ec1",
         "532068a60594",
@@ -422,14 +429,17 @@
         "8738862398d8",
         "2f09dd2f2828",
         "18fa55704e2d",
-        "0d1ded1d065e"
+        "0d1ded1d065e",
+        "bd869a9aa048",
+        "bba2dcc0cbad"
       ],
       "recallDays": [
         "2026-04-07",
         "2026-04-08",
         "2026-04-09",
         "2026-04-10",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "skills/ai-trend-scout/skill.md",
@@ -574,26 +584,28 @@
       "endLine": 13,
       "source": "memory",
       "snippet": "# 2026-02-28 — Saturday ## Key Events - AI Trend Scout flagged Claude Cowork as 9/10 opportunity, but PJ correctly noted it's been around since January 12th (7 weeks old). Scout algorithm needs tightening to not flag month-old launches as \"breakout opportunities\" - Nightly Build cron presented 4 build options at 11am: (1) UK Trade Jobs Supabase connection, (2) Blue Canvas client portal for Tim Clarke, (3) Tender tracker dashboard, (4) ClubDraw Supabase connection. No selection made. ## Outstanding From Yesterday - CDP wallet auth fix for MoltLaunch gigs (Agent #19170) - Supabase frontend connections for both Ardmore Cricket Club & UK Trade Jobs ## Notes - PJ had a quiet Saturday, no major",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.888912859344742,
-      "maxScore": 0.820644014649344,
+      "totalScore": 5.748598122396347,
+      "maxScore": 0.8596852630516039,
       "firstRecalledAt": "2026-04-07T21:00:11.893Z",
-      "lastRecalledAt": "2026-04-11T21:00:16.828Z",
+      "lastRecalledAt": "2026-04-12T14:16:57.037Z",
       "queryHashes": [
         "b9aee40a1ec1",
         "177f5da30672",
         "ab167b373667",
         "4ce6d61a4e45",
         "0d9aad4d095e",
-        "0d1ded1d065e"
+        "0d1ded1d065e",
+        "38c7258b5df9"
       ],
       "recallDays": [
         "2026-04-07",
         "2026-04-08",
         "2026-04-09",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "9/10",
@@ -1521,25 +1533,27 @@
       "endLine": 149,
       "source": "memory",
       "snippet": "- `invoice.payment_failed` → subscription marked `past_due` in DB - Numbers still show as taken (purple) but flagged **Cancellations:** - `customer.subscription.deleted` → subscription marked `cancelled` - Numbers released (no longer show as taken) **Data Tables:** - `clubs` — club config, Stripe Connect account, draw settings - `profiles` — extends Supabase auth.users, Stripe customer ID - `number_selections` — per-week number picks (active/paused/cancelled) - `draw_subscriptions` — recurring subscriptions with numbers + assigned names - `payments` — all payment records with metadata - `draws` — draw results with winning numbers, seed, pot amount - `draw_entries` — individual entries per",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.06117498996402,
+      "totalScore": 4.881861124322802,
       "maxScore": 0.8458287216475,
       "firstRecalledAt": "2026-04-08T11:01:26.911Z",
-      "lastRecalledAt": "2026-04-11T11:04:10.725Z",
+      "lastRecalledAt": "2026-04-12T13:18:27.008Z",
       "queryHashes": [
         "11c5aca74ad7",
         "0d35df437f39",
         "78f527c80f1a",
         "a912c3e62448",
-        "f2d6ac48bc67"
+        "f2d6ac48bc67",
+        "127c03a8c91f"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-09",
         "2026-04-10",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "invoice.payment-failed",
@@ -2106,23 +2120,25 @@
       "endLine": 59,
       "source": "memory",
       "snippet": "**Status:** Quiet afternoon - only Sashiko crosses threshold for deeper analysis. Most \"new\" tools appear to be either older than 2-week window or lack verification of actual launch dates. Next check: 21:00 GMT evening sweep. ## 21:26 - ClubDraw Critical Fix Complete **MAJOR ISSUE RESOLVED:** Mark Chambers' 10 ClubDraw numbers were showing as available on UI despite payment confirmation. Critical sync failure between payment webhook and database. **Root Cause Identified:** - Payment processed: 2026-03-19T20:27:00 GMT (£10.00) - Email confirmation sent successfully - Database subscription record missing (webhook failure) - UI showing numbers 49,72,127,132,185,209,254,348,474,479 as avail",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.391598783448356,
+      "totalScore": 4.237742806636794,
       "maxScore": 0.8690435848078911,
       "firstRecalledAt": "2026-04-08T21:30:35.255Z",
-      "lastRecalledAt": "2026-04-11T21:02:47.167Z",
+      "lastRecalledAt": "2026-04-12T14:16:57.037Z",
       "queryHashes": [
         "64107a7aaad3",
         "9822aef9217d",
         "2c5cfe66ed05",
-        "61a88c85f276"
+        "61a88c85f276",
+        "38c7258b5df9"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-10",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "2-week",
@@ -2314,20 +2330,22 @@
       "endLine": 162,
       "source": "memory",
       "snippet": "- Conversion tracking: not yet set up (needs thank-you page) - Display Network: OFF, AI Max: OFF - Sitelinks: 4 set up, Callouts: 6 set up - Campaign submitted for review ~7pm 4 Mar ### Access Granted Today - ✅ GBP — Manager (albiemorgan88@gmail.com), accepted - ✅ Ahrefs — team member (albiemorgan88@gmail.com), browser login - ✅ Google Ads — Admin (albiemorgan88@gmail.com) - ✅ Supabase (uk-trade-jobs) — new project created, credentials in ~/.zprofile ### Key Files - Ardmore Next.js source: `/Users/philsagent/Projects/ardmore-cricket/` - Email lib: `/Users/philsagent/Projects/ardmore-cricket/src/lib/email.ts` - Stripe webhook: `/Users/philsagent/Projects/ardmore-cricket/src/app/api/webhooks",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6142088661825298,
+      "totalScore": 2.429384463589342,
       "maxScore": 0.8460343777639979,
       "firstRecalledAt": "2026-04-08T21:30:54.084Z",
-      "lastRecalledAt": "2026-04-11T11:04:10.725Z",
+      "lastRecalledAt": "2026-04-12T14:43:17.305Z",
       "queryHashes": [
         "919593f07114",
-        "f2d6ac48bc67"
+        "f2d6ac48bc67",
+        "af15c5843961"
       ],
       "recallDays": [
         "2026-04-08",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "network",
@@ -2886,24 +2904,26 @@
       "endLine": 126,
       "source": "memory",
       "snippet": "- **One-off path:** creates/merges `number_selections` record + `payments` record - Both paths: send purchase confirmation email to user + admin notification to contact@bluecanvas.ai & Ardmorecc1879@hotmail.com 8. **Success Page** → `ardmorecricket.com/draw/success` → confetti, gold number circles, \"what happens next\" section 9. **Optimistic Cache** → client stores `optimistic_purchased` in localStorage so numbers show immediately as taken without waiting for page reload **Weekly Draw Execution (Friday 7PM):** - Cron triggers draw engine (`run-draw.js` in ardmore-draw-live repo) - Provably fair: SHA-256 hash of seed published before, seed published after - 3 winning numbers drawn from",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.1177154429153,
-      "maxScore": 0.8314120597423256,
+      "totalScore": 4.956309231724515,
+      "maxScore": 0.8385937888092155,
       "firstRecalledAt": "2026-04-09T08:49:54.775Z",
-      "lastRecalledAt": "2026-04-11T21:30:23.768Z",
+      "lastRecalledAt": "2026-04-12T13:18:27.008Z",
       "queryHashes": [
         "7c68a8fb7acf",
         "e891bd464219",
         "106f7007ac89",
         "2c5cfe66ed05",
-        "e1b64e4b8d49"
+        "e1b64e4b8d49",
+        "127c03a8c91f"
       ],
       "recallDays": [
         "2026-04-09",
         "2026-04-10",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "one-off",
@@ -3052,20 +3072,22 @@
       "endLine": 41,
       "source": "memory",
       "snippet": "- Apollo cold outreach to solicitors/accountants: priority when Apollo is set up ## PJ's Day Plan 1. Setup AdWords ✅ (account created, billing later) 2. Chase Niall on site redesign 3. Install more OpenClaw skills (cold email, ads, entrepreneurial) 4. Find OpenClaw meetups 5. Tighten security 6. Check job post, pimp LinkedIn page 7. Finish blog (not posting yet) 8. Golf 🏌️ ## Cron Status - Nightly Build: runs but delivery fails (Telegram thread bug) - Weekly SEO: runs but delivery fails (same bug) - CCS Reminder: set for Fri 20 Feb 5pm UK ✅ - Weekly Money Scout: created, Sundays 9am UK ✅ - QMD reindex: working fine ✅",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6736259101757787,
+      "totalScore": 2.5352627824783633,
       "maxScore": 0.8683985255483271,
       "firstRecalledAt": "2026-04-09T10:02:45.318Z",
-      "lastRecalledAt": "2026-04-11T21:00:55.074Z",
+      "lastRecalledAt": "2026-04-12T14:43:17.305Z",
       "queryHashes": [
         "0d35df437f39",
-        "5217aa794c5b"
+        "5217aa794c5b",
+        "af15c5843961"
       ],
       "recallDays": [
         "2026-04-09",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "qmd",
@@ -3853,18 +3875,20 @@
       "endLine": 69,
       "source": "memory",
       "snippet": "Also added 4 cross-contamination negatives to OpenClaw campaign to prevent Blue Canvas searches appearing there. **Expected Impact:** Should save £6+/day mentioned in task + significant additional savings from competitor brands. ## Task 2: Conversion Tracking Investigation ⚠️ ISSUES IDENTIFIED ### Current Status - **Recent Performance:** 123 total clicks, 0 conversions (last 7 days) - Blue Canvas campaign: 85 clicks, £93.49, 0 conversions - OpenClaw campaign: 38 clicks, £73.57, 0 conversions ### Conversion Actions Configuration ✅ GOOD 5 conversion actions configured in account: 1. **Book appointment** (GA4 custom) - ENABLED, included in metrics 2. **Contact Form Submission** (Webpage",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8212951505085453,
-      "maxScore": 0.8212951505085453,
+      "totalScore": 1.644106550595815,
+      "maxScore": 0.8228114000872696,
       "firstRecalledAt": "2026-04-10T12:07:49.743Z",
-      "lastRecalledAt": "2026-04-10T12:07:49.743Z",
+      "lastRecalledAt": "2026-04-12T14:38:24.260Z",
       "queryHashes": [
-        "5c15f797702c"
+        "5c15f797702c",
+        "7cd157df49a3"
       ],
       "recallDays": [
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-12"
       ],
       "conceptTags": [
         "cross-contamination",
@@ -3884,18 +3908,20 @@
       "endLine": 129,
       "source": "memory",
       "snippet": "- **Fix:** Upgraded Vercel to Pro, rolled back to last working deployment (22h ago) - **Cost:** Vercel Pro upgrade ($20/mo), ~1hr of wasted ad spend (~£0.80-£1) - **Lesson:** NEVER let subagents deploy to production sites running ads without testing first. Always verify build locally before deploying. Keep rollback-ready deployments. - **Prevention:** Deploy to preview URL first, verify, THEN promote to production ## JAMES GORMAN SEO - WEEK 2 COMPLETE ✅ - **5 blog posts published via Wix API:** Property Valuation, Best Areas, Selling Guide, First Time Buyer, Market 2026 - **6 area pages published:** Waterside, Cityside, Culmore, Eglinton, Drumahoe, Strathfoyle - **Technical analysis:** Ah",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8209925114537253,
-      "maxScore": 0.8209925114537253,
+      "totalScore": 1.6435042455806892,
+      "maxScore": 0.8225117341269639,
       "firstRecalledAt": "2026-04-10T12:07:49.743Z",
-      "lastRecalledAt": "2026-04-10T12:07:49.743Z",
+      "lastRecalledAt": "2026-04-12T14:38:24.260Z",
       "queryHashes": [
-        "5c15f797702c"
+        "5c15f797702c",
+        "7cd157df49a3"
       ],
       "recallDays": [
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-12"
       ],
       "conceptTags": [
         "20/mo",
@@ -3915,18 +3941,20 @@
       "endLine": 117,
       "source": "memory",
       "snippet": "- PJ's taste: Claude.ai + Airbnb warmth (cream, serif, spacious, minimal animation) - Bought Awwwards design skill from ClawMart ($29/£22.78) — good reference, bad agent execution ### Resend bluecanvas.ai - Domain verified, API key: re_LW8p2X8X_EqWb7tmRRJYGL9BsSV5UsStj - OCC contact form now sends from hello@bluecanvas.ai - TO: contact@bluecanvas.ai + philpatterson85@gmail.com - Test email confirmed working ### Revenue APIs to explore - Reed.co.uk API (free, register at reed.co.uk/developers) - Adzuna API (free tier, aggregates multiple job boards) - Both filter by trade keywords for live job feeds",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7940279184045668,
-      "maxScore": 0.7940279184045668,
+      "totalScore": 1.617523754528086,
+      "maxScore": 0.8234958361235193,
       "firstRecalledAt": "2026-04-10T12:07:49.743Z",
-      "lastRecalledAt": "2026-04-10T12:07:49.743Z",
+      "lastRecalledAt": "2026-04-12T13:18:27.008Z",
       "queryHashes": [
-        "5c15f797702c"
+        "5c15f797702c",
+        "127c03a8c91f"
       ],
       "recallDays": [
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-12"
       ],
       "conceptTags": [
         "claude.ai",
@@ -4140,18 +4168,20 @@
       "endLine": 74,
       "source": "memory",
       "snippet": "- Email lib uses Resend — currently in **sandbox mode** (can only send to philpatterson85@gmail.com) - **Fix needed:** (a) Add Stripe webhook endpoint in dashboard → `https://ardmorecricket.com/api/webhooks/stripe`, (b) Set Vercel env vars (STRIPE_WEBHOOK_SECRET, RESEND_API_KEY, NEXT_PUBLIC_SITE_URL), (c) Verify ardmorecricket.com domain in Resend ### Issue 2: Subscription Management - PJ asked how to cancel the £5/week recurring payment - Manage page exists at `/draw/manage` — shows subscriptions with cancel button - BUT: no `draw_subscriptions` record exists because webhook never fired - Subscription API (DELETE /api/subscriptions) cancels via Stripe API + updates DB ### Issue 3: Grid Nu",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.820689742082773,
+      "totalScore": 1.6406016447990583,
       "maxScore": 0.820689742082773,
       "firstRecalledAt": "2026-04-10T18:03:15.296Z",
-      "lastRecalledAt": "2026-04-10T18:03:15.296Z",
+      "lastRecalledAt": "2026-04-12T13:18:27.008Z",
       "queryHashes": [
-        "193f8fad5d1b"
+        "193f8fad5d1b",
+        "127c03a8c91f"
       ],
       "recallDays": [
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-12"
       ],
       "conceptTags": [
         "gmail.com",
@@ -4202,22 +4232,24 @@
       "endLine": 15,
       "source": "memory",
       "snippet": "# 2026-04-09 ## New Client: Follow Rabbit AI - **Website:** https://followrabbit.ai/ - **Contacts:** Rory and Aco - **Service:** OpenClaw setup - **Setup fee:** £1,000 (paid) - **Retainer:** £500/month - **Status:** Onboarding ## ClawMart URL Correction - Correct URL: **showclawmart.com** (NOT shopclawmart.com or clawmart.com) - All old references in memory files used shopclawmart.com — that's wrong - Updated: MEMORY.md, 2026-04-01.md, platform-domination-strategy",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.3308706679599123,
+      "totalScore": 4.1392157970923416,
       "maxScore": 0.836019499588107,
       "firstRecalledAt": "2026-04-10T21:02:06.045Z",
-      "lastRecalledAt": "2026-04-11T21:02:53.928Z",
+      "lastRecalledAt": "2026-04-12T14:38:24.260Z",
       "queryHashes": [
         "ea6f72ad8cae",
         "f2d6ac48bc67",
         "61a88c85f276",
-        "29d149eef815"
+        "29d149eef815",
+        "7cd157df49a3"
       ],
       "recallDays": [
         "2026-04-10",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-12"
       ],
       "conceptTags": [
         "followrabbit.ai",
@@ -4605,6 +4637,132 @@
         "europe/london",
         "api/tasks/inbox",
         "api/tasks/agent"
+      ]
+    },
+    "memory:memory/2026-02-25.md:1:38": {
+      "key": "memory:memory/2026-02-25.md:1:38",
+      "path": "memory/2026-02-25.md",
+      "startLine": 1,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "# 2026-02-25 ## Tim Clarke — First Paid Client - £750 for half day custom session - Found Blue Canvas via openclawconsultant.co.uk (satellite site) - Quay Group, superyacht recruitment - Scope TBC ## Cyber Essentials Resubmission - IASME assessor (Ben Archer) flagged ~20 questions needing more detail - Albie drafted all answers — devices, networks, cloud services, firewall, passwords, malware, user accounts - Key details: 3 devices (Mac mini + MacBook Air + iPhone 17), macOS Sequoia 15.3, iOS 18.3, XProtect 5331, Safari 26.3, Chrome 134, BT Smart Hub, iCloud Keychain, Google Workspace - Phil submitted — awaiting final assessment ## ITI Business Explorer EOI - Phil submitted Expression of",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.617471432880789,
+      "maxScore": 0.8087357164403945,
+      "firstRecalledAt": "2026-04-12T14:40:03.191Z",
+      "lastRecalledAt": "2026-04-12T14:46:08.425Z",
+      "queryHashes": [
+        "bd869a9aa048",
+        "bba2dcc0cbad"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "network",
+        "openclawconsultant.co.uk",
+        "15.3",
+        "18.3",
+        "26.3",
+        "tim",
+        "clarke",
+        "first"
+      ]
+    },
+    "memory:memory/2026-02-22.md:1:27": {
+      "key": "memory:memory/2026-02-22.md:1:27",
+      "path": "memory/2026-02-22.md",
+      "startLine": 1,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "# 2026-02-22 ## Key Events - Phil & Stacey flew to Rome (Ryanair, few days trip) - Stacey had mole checked at hospital — waiting on results - OpenClaw updated to 2026.2.21 — caused gateway pairing issue, fixed by approving device re-pair - Tailscale reconnected on Mac mini (philpatterson85@gmail.com, IP 100.113.233.3) - SSH refused — Remote Login not enabled on mini. Need to enable when Phil's back. ## Completed - UK Trade Jobs: 10 more content pages deployed (location guides + industry content). Total now 35 career guides + 3,009 jobs - Ardmore/ClubDraw: Design polish — testimonials, better animations, consistent nav/footers, CTAs everywhere - Cyber Essentials badge added to openclawconsu",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.6145849891272583,
+      "maxScore": 0.8072924945636292,
+      "firstRecalledAt": "2026-04-12T14:40:03.191Z",
+      "lastRecalledAt": "2026-04-12T14:46:08.425Z",
+      "queryHashes": [
+        "bd869a9aa048",
+        "bba2dcc0cbad"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "gateway",
+        "2026.2.21",
+        "re-pair",
+        "gmail.com",
+        "100.113.233.3",
+        "ardmore/clubdraw",
+        "nav/footers",
+        "key"
+      ]
+    },
+    "memory:memory/2026-02-17.md:1:35": {
+      "key": "memory:memory/2026-02-17.md:1:35",
+      "path": "memory/2026-02-17.md",
+      "startLine": 1,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "# 2026-02-17 (Tuesday) ## Done - Fixed gateway token mismatch (PJ restarted gateway via CLI) - Created Weekly Money Scout cron (Sundays 9am UK, ID: 077257b9) - Apollo API key saved and working (key: qAcSeyUvTvqNR3ka1knbig) - Google Ads account ID: 801-851-4760 (no billing yet, build only) - Moltbook feed scanned — no major opportunities, KlodLobster top post about AGENTS.md - Confirmed separate Apollo accounts: PJ+Albie vs Davy+Friel ## Key Decisions - **Parking Google Ads** until Niall's site redesign is live. Build structure now, go live later - **Apollo native** for CRM/outreach instead of HubSpot. Maybe HubSpot later when scaling - **Niche keywords on Ads** when ready: \"ai audit uk\", \"",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.820799671799838,
+      "maxScore": 0.820799671799838,
+      "firstRecalledAt": "2026-04-12T14:43:17.305Z",
+      "lastRecalledAt": "2026-04-12T14:43:17.305Z",
+      "queryHashes": [
+        "af15c5843961"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "gateway",
+        "801-851-4760",
+        "agents.md",
+        "crm/outreach",
+        "tuesday",
+        "done",
+        "fixed",
+        "token"
+      ]
+    },
+    "memory:memory/2026-03-30.md:52:84": {
+      "key": "memory:memory/2026-03-30.md:52:84",
+      "path": "memory/2026-03-30.md",
+      "startLine": 52,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "3. **Social-activist multi-agent team post** - Directly mentioned ClawRoster.io as verification solution for agent teams ### Marketing Strategy Followed ✅ Led with concept of proving agents are real (not payment/crypto language) ✅ Used \"on-chain verification\" terminology instead of payment ✅ Focused on \"Proof of Build\" concept throughout ✅ Natural mentions of ClawRoster.io where genuinely relevant ✅ Avoided spam/crypto flags by focusing on verification value ### Verification Challenges Completed - All 3 comments required math verification (lobster claw force problems) - Successfully solved and verified all comments - Comments now live and visible ### Engagement Quality - Natural, thoughtf",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8157637920142513,
+      "maxScore": 0.8157637920142513,
+      "firstRecalledAt": "2026-04-12T14:43:17.305Z",
+      "lastRecalledAt": "2026-04-12T14:43:17.305Z",
+      "queryHashes": [
+        "af15c5843961"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "social-activist",
+        "multi-agent",
+        "clawroster.io",
+        "payment/crypto",
+        "on-chain",
+        "spam/crypto",
+        "social",
+        "activist"
       ]
     }
   }
