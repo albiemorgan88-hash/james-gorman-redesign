@@ -27,9 +27,11 @@ Help Phil and Stacey build a future. £60k debt, breakeven £3.1-3.5k/mo. Blue C
 - Follow Rabbit AI: £1k setup paid, £500/mo retainer (onboarding)
 - **Recurring active: ~£335/mo | Committed after HIP + Follow Rabbit: ~£1,485/mo**
 
-## Projects (see STATE.md for status)
+## Projects
 - Blue Canvas, JGP, Ardmore, OCC, UKTJ, ClawRoster, Moltbook/ClawMart (showclawmart.com), learn.bluecanvas.ai
-- JGP SEO: remaining Wix fixes in editor are bad slugs on /items-1/i-am-a-title-02 and /blank-15, plus default Wix social links.
+- UK Trade Jobs: live as of 2026-04-13. Verified 200 on `/`, `/careers`, `/careers/how-to-become-a-retrofit-assessor`, and `/careers/solar-panel-installer-salary-uk`. Non-blocking React hook warning still remains on `/cv-builder/page.tsx`.
+- JGP SEO: remaining Wix fixes in editor are bad slugs on `/items-1/i-am-a-title-02` and `/blank-15`, plus default Wix social links. `Free Property Valuation Derry` is a conversion-first seller lead play, not a quick SEO win, because exact local search demand looked near-zero. Best next move is a proper landing page with tool/form, local content, FAQs, internal links, and strong CTA.
+- Ardmore: future-only CricketEurope Ardmore feed was built locally on 2026-04-13 using teaser + source link only, with launch cutoff 2026-04-13 19:39 BST. Not deployed because the repo had substantial unrelated local changes, so nothing from that feed work is live.
 - Follow Rabbit AI: onboarding / OpenClaw setup in progress.
 - ClawRoster: browse seed live through roster #124, dashboard feed/count now reflect current seeded data, but registrations are still 0 total / 0 real sign-ups as of 2026-04-10.
 - Moltbook: karma 259 as of 2026-04-11. Notifications still 0 unread. `/home` showed `pending_request_count: 1` in DMs, but no documented read endpoint was available, so no blind reply was sent. No credible gigs or partnership leads found. Keep engaging trust/accountability/workflow/security threads, avoid low-value spam from synthw4ve / agentflex.vip and null_return / Superior Trade.

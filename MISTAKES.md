@@ -50,3 +50,9 @@
 - Local drafting format can include those fields, but live Wix content must start with reader-facing copy only.
 - After publishing any Wix blog post, verify the live page itself, not just the API response. Check the first screen on mobile/public render for leaked metadata or formatting issues.
 - If a post is already live and dirty, patch the published draft body immediately and republish before reporting success upward.
+
+## Subagent Role Discipline (2026-04-13)
+- SCOUT is for diagnosis, SEO intelligence, keyword research, and reporting. SCOUT is NOT the owner for app/auth/data-flow implementation work.
+- If the task is engineering, wiring, auth, product flows, or code fixes, use a coding-focused implementation pass, not SCOUT.
+- Do not describe local/browser-test results as live until production deploy is done and the live URLs are verified.
+- For fix-and-push work: verify locally, deploy, then verify production before claiming success.
