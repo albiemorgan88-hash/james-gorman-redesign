@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-12T20:10:57.061Z",
+  "updatedAt": "2026-04-13T18:10:50.967Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -4141,18 +4141,20 @@
       "endLine": 96,
       "source": "memory",
       "snippet": "4. Test full end-to-end flow with webhook active ## Evening Resolution Session (7:30pm-8pm) **BREAKTHROUGH: Ardmore Draw Now Fully Live** ### Major Discovery: Live Mode Was Already Active - PJ's £5 payment was LIVE Stripe (not test) — real money charged - Vercel production env vars had live Stripe keys already configured - **Immediate action:** Cancelled live subscription + refunded £5.00 to card ending 4908 ### Full Production Chain Deployed ✅ 1. **Stripe live webhook created:** `we_1T6yjdASm3u8i3nlzq4ew0bH` → `https://ardmorecricket.com/api/webhooks/stripe` 2. **Vercel env updated:** Live webhook secret `whsec_nwmhL9aSGCulNw27vX4Un6TyJtpCSUNQ` deployed 3. **Resend domain verified:** `ar",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8403854257991014,
+      "totalScore": 1.6664987960292867,
       "maxScore": 0.8403854257991014,
       "firstRecalledAt": "2026-04-10T18:03:15.296Z",
-      "lastRecalledAt": "2026-04-10T18:03:15.296Z",
+      "lastRecalledAt": "2026-04-13T18:10:50.967Z",
       "queryHashes": [
-        "193f8fad5d1b"
+        "193f8fad5d1b",
+        "a6391f1f1b99"
       ],
       "recallDays": [
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-13"
       ],
       "conceptTags": [
         "end-to-end",
@@ -4205,18 +4207,20 @@
       "endLine": 116,
       "source": "memory",
       "snippet": "- Claude Code agent spawned to add FAQ accordion, success page improvements, and nav enhancements - **Status:** Session failed (needed trust confirmation) — will need respawn - **Target:** FAQ on draw page, \"Manage My Numbers\" links, enhanced navigation ### Ardmore Draw — Confirmed Business Rules (from PJ, 8:15pm) - **Buying for others:** YES — can assign any name to a number (e.g. buy for dad) - **Max numbers per person:** NO LIMIT - **Revenue split:** 50% jackpot, 40% club, 10% platform fee — BUT publicly state \"50/50\" (50% prizes, 50% club) - **Age verification:** None required - **One-off purchases:** Valid for one week only - **Subscription:** Weekly recurring — this is the primary pay",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8195985947901907,
-      "maxScore": 0.8195985947901907,
+      "totalScore": 1.6406762301556692,
+      "maxScore": 0.8210776353654784,
       "firstRecalledAt": "2026-04-10T18:03:15.296Z",
-      "lastRecalledAt": "2026-04-10T18:03:15.296Z",
+      "lastRecalledAt": "2026-04-13T18:10:50.967Z",
       "queryHashes": [
-        "193f8fad5d1b"
+        "193f8fad5d1b",
+        "a6391f1f1b99"
       ],
       "recallDays": [
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-13"
       ],
       "conceptTags": [
         "e.g",
@@ -5232,6 +5236,68 @@
         "123,4",
         "key",
         "new"
+      ]
+    },
+    "memory:memory/2026-03-02.md:68:99": {
+      "key": "memory:memory/2026-03-02.md:68:99",
+      "path": "memory/2026-03-02.md",
+      "startLine": 68,
+      "endLine": 99,
+      "source": "memory",
+      "snippet": "- HTTP works but HTTPS cert not provisioning — Vercel may need domain remove/re-add - Domain not showing under current Vercel CLI token — may be on different account/team **Context File Audit & Cleanup** - MEMORY.md cut from 8,107 → 3,186 bytes (61% reduction, ~1,400 tokens saved per message) - Archived completed milestones, old reminders, historical SEO data → memory/archive.md - All other context files (SOUL, TOOLS, USER, AGENTS, HEARTBEAT, IDENTITY) already lean **PJ Preferences Noted** - Use subagents for execution, keep main session for strategy - Use Sonnet for routine/easy tasks, Opus for complex/strategy - ClubDraw to stay separate from Blue Canvas (different exit stories) - Davy A",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8115755008462302,
+      "maxScore": 0.8115755008462302,
+      "firstRecalledAt": "2026-04-13T18:10:50.967Z",
+      "lastRecalledAt": "2026-04-13T18:10:50.967Z",
+      "queryHashes": [
+        "a6391f1f1b99"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "remove/re-add",
+        "account/team",
+        "memory.md",
+        "memory/archive.md",
+        "routine/easy",
+        "complex/strategy",
+        "http",
+        "works"
+      ]
+    },
+    "memory:memory/2026-03-10.md:78:107": {
+      "key": "memory:memory/2026-03-10.md:78:107",
+      "path": "memory/2026-03-10.md",
+      "startLine": 78,
+      "endLine": 107,
+      "source": "memory",
+      "snippet": "- **PJ's order: DO NOT engage with CashClaw repos/npm packages. Stay away until official release from verified MoltLaunch channels.** - Use `bird` CLI to verify MoltLaunch tweets, not web search ### MoltLaunch Status Confirmed - Agent #24586 — REGISTERED ✅ (previous subagent incorrectly claimed we weren't) - Wallet: 0xaC62E141658969097Bf989fDeCE3438b36b107d5 - 3 gigs listed: SEO Audit (0.005 ETH), AI Readiness Assessment (0.008 ETH), Local SEO (0.004 ETH) - No takers yet, 0 reviews ## Key Decisions / PJ Preferences - Don't embellish photo captions — just names, no descriptions - Don't make LinkedIn posts about \"I\"/\"me\" — keep it about the company/industry - Don't mention Ardmore CC in Link",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8107015114238588,
+      "maxScore": 0.8107015114238588,
+      "firstRecalledAt": "2026-04-13T18:10:50.967Z",
+      "lastRecalledAt": "2026-04-13T18:10:50.967Z",
+      "queryHashes": [
+        "a6391f1f1b99"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "repos/npm",
+        "0.005",
+        "0.008",
+        "0.004",
+        "company/industry",
+        "pj's",
+        "order",
+        "not"
       ]
     }
   }
