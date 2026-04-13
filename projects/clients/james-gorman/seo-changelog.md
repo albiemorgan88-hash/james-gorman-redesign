@@ -1,5 +1,47 @@
 # James Gorman Property - SEO Changelog
 
+## 13th April 2026 - GUIDE PRICE ENGINE UPGRADED IN DEMO REPO 🏡
+
+### WHAT CHANGED
+
+Upgraded the shareable valuation demo from a mock calculator into a more believable guide-price engine inside:
+
+- `projects/demos/jgp-valuation-tool/index.html`
+
+The page now keeps the stronger premium visual work, but the result is driven by a clearer local model rather than a lightweight placeholder output.
+
+### PRICING MODEL NOW INCLUDED
+
+- postcode district base rates for `BT47`, `BT48`, `BT49`, `BT51`, `BT82`
+- area/town weighting for Waterside, Cityside, Culmore, Eglinton, Drumahoe, Strathfoyle, Claudy, Dungiven, Greysteel, Limavady and Strabane
+- property type weighting
+- modelled floor area from bedrooms + bathrooms + reception rooms
+- condition multiplier
+- parking and outdoor-space adjustments
+- practical feature uplift for garage, extension, modern kitchen, home office, utility room and en suite
+
+### RESULT UX ADDED
+
+- live guide range
+- midpoint
+- confidence label + band width
+- modelled footprint
+- top price-driver chips
+- transparent pricing breakdown rows
+- short homeowner-facing explanation of what is moving the number
+
+### LEAD CAPTURE / HANDOFF
+
+- added a follow-up form so the estimate is useful before submission, but still hands off into a proper James valuation request
+- current demo handoff uses a pre-filled `mailto:` flow to `james@jamesgormanproperty.com`
+- this is suitable for demo/shareable use, but production should use a real inbox or CRM route
+
+### QA NOTES
+
+- local desktop and mobile screenshots generated after the rebuild
+- mobile pass tightened so the live price appears earlier and the hero image stack is lighter on small screens
+- logic sense-checked with contrasting scenarios, including a lower-range terrace case, a higher-spec detached case, and a postcode/area mismatch case with a wider confidence band
+
 ## 13th April 2026 - JGP VALUATION TOOL MOCKUP BUILT 🏠
 
 ### MOCKUP CREATED

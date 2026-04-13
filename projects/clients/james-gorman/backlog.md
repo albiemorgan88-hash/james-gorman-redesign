@@ -2,6 +2,21 @@
 
 Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 
+## LATEST UPDATE - 13th April 2026 - GUIDE PRICE ENGINE UPGRADE
+
+### COMPLETED:
+- [DONE] Rebuilt the valuation showcase in `projects/demos/jgp-valuation-tool/index.html` as a proper guide-price engine rather than a mock output card
+- [DONE] Added a transparent pricing model using postcode district base rates, area weighting, property type, bedrooms, bathrooms, reception rooms, condition, parking, outdoor space and practical extras
+- [DONE] Added live outputs for guide range, midpoint, confidence band, modelled footprint, price-driver chips and a visible breakdown of what is moving the estimate
+- [DONE] Added homeowner-facing follow-up capture so the result is useful before submission but still hands cleanly into a fuller James valuation
+- [DONE] Tightened mobile UX so the price panel lands earlier and the hero/image stack is less heavy on smaller screens
+
+### NEXT ACTIONS:
+- [TODO] **P1 — Connect lead capture to a real inbox/CRM flow** before any production rollout, because the demo currently opens a pre-filled mailto draft
+- [TODO] **P1 — Sense check the pricing table against live James comparables** for Culmore, Waterside, Cityside, Eglinton, Claudy and Limavady before replacing the live valuation page
+- [TODO] **P2 — Decide whether postcode should auto-sync to area** in production or stay manually adjustable with a wider confidence band when mismatched
+- [TODO] **P2 — Add below-the-fold trust content** for production handoff: testimonial/proof, FAQs, and a clearer explanation of James's in-person valuation process
+
 ## LATEST UPDATE - 13th April 2026 - VALUATION TOOL MOCKUP
 
 ### COMPLETED:
