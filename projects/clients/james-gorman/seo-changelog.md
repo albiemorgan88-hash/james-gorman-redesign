@@ -1,5 +1,75 @@
 # James Gorman Property - SEO Changelog
 
+## 13th April 2026 - JGP VALUATION TOOL MOCKUP BUILT 🏠
+
+### MOCKUP CREATED
+
+Built a local interactive mockup for a James Gorman Property seller lead hook:
+
+- File: `website-v2/valuation-tool-mockup.html`
+- Purpose: quick valuation-range estimate + seller lead capture concept
+- Format: standalone HTML mockup, styled to fit the darker premium JGP concept work already in `website-v2`
+
+### FILTERS INCLUDED
+
+- postcode district
+- area / town
+- property type
+- bedrooms
+- bathrooms
+- reception rooms
+- condition
+- parking
+- garden size
+- selling timeline
+- garage
+- extension
+- modern kitchen
+- home office / converted space
+
+### PRODUCT / SEO THINKING
+
+- Tool is positioned as a conversion asset first, not a promise of precise automated pricing.
+- Mockup shows an estimate band, midpoint, confidence, local drivers, and a soft handoff into a proper James callback.
+- Best deployment path would be a dedicated `free property valuation derry` landing page with this tool embedded above FAQs, proof, and CTA copy.
+
+### SHAREABLE DEMO
+
+- Shareable link deployed to GitHub Pages: `https://albiemorgan88-hash.github.io/showcase-jgp-valuation-tool/`
+- Demo repo: `https://github.com/albiemorgan88-hash/showcase-jgp-valuation-tool`
+- Current demo uses James Gorman Property branding and contact framing, built as a showcase proof-of-concept rather than a live production valuation engine.
+
+## 13th April 2026 - FREE VALUATION LEAD HOOK SENSE CHECK 📈
+
+### AHREFS SNAPSHOT
+
+Checked valuation-intent terms in Ahrefs GB database.
+
+- `property valuation derry` — volume `0`
+- `house valuation derry` — volume `0`
+- `estate agents derry` — volume `100`, KD `17`, CPC `50`
+- `houses for sale derry` — volume `2300`, KD `2`, CPC `40`
+- broader non-local valuation terms remain strong nationally:
+  - `free valuation` — `1100`
+  - `instant valuation` — `800`
+  - `online valuation` — `1300`
+  - `free house valuation` — `2700`
+  - `house valuation` — `18000`
+
+### TAKEAWAY
+
+- Exact Derry valuation keyword demand looks very low in Ahrefs right now.
+- That does **not** make a valuation tool a bad idea, because seller-intent lead capture can still convert well even on low-volume local queries.
+- Best route is to treat the tool as a **conversion asset first** and an SEO asset second.
+- If built, pair it with a strong local landing page targeting seller intent in Derry rather than relying on the tool alone to rank.
+
+### RECOMMENDED DRAFT ROUTE
+
+1. Create a strong service page around `free property valuation Derry` / `sell your home in Derry` intent.
+2. Add the valuation tool/embed on that page, not as a thin standalone page only.
+3. Support it with local proof: Derry areas covered, recent sales examples, clear valuation process, FAQs, and CTA follow-up.
+4. Internally link from homepage, sales page, contact page, and relevant Derry blog posts.
+
 ## 13th April 2026 - 4 AHREFS-VALIDATED LOCAL BLOG POSTS PUBLISHED LIVE ✅
 
 ### KEYWORD SET USED

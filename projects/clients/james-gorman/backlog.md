@@ -2,6 +2,33 @@
 
 Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 
+## LATEST UPDATE - 13th April 2026 - VALUATION TOOL MOCKUP
+
+### COMPLETED:
+- [DONE] Built local mockup file `website-v2/valuation-tool-mockup.html`
+- [DONE] Added seller-focused filters for postcode, area, bedrooms, bathrooms, parking, garage, condition, garden, extension, kitchen and office space
+- [DONE] Mockup includes valuation band, midpoint, confidence, local drivers and callback handoff concept
+
+### NEXT ACTIONS:
+- [TODO] **P2 — Decide final page format**: standalone valuation landing page vs embed within `Sell My Home` / valuation page
+- [TODO] **P2 — Replace mock pricing logic** with James-approved comparable-sale logic or tighter area heuristics before any live rollout
+- [TODO] **P2 — Add trust layer**: testimonial, valuation process steps, FAQs, and local proof below tool
+- [TODO] **P2 — Decide lead capture flow**: email to James, CRM push, or calendar callback booking
+- [DONE] Shareable showcase deployed: `https://albiemorgan88-hash.github.io/showcase-jgp-valuation-tool/`
+
+## LATEST UPDATE - 13th April 2026 - FREE VALUATION LEAD HOOK CHECK
+
+### FINDINGS:
+- [DONE] Ahrefs sense check completed for valuation-intent terms around Derry
+- [DONE] Exact local terms checked: `property valuation derry` and `house valuation derry` both returned volume `0` in current Ahrefs GB snapshot
+- [DONE] Broader supporting demand still strong nationally for `free valuation`, `instant valuation`, `online valuation`, and `free house valuation`
+
+### NEXT ACTIONS:
+- [TODO] **P2 — Draft a seller-intent landing page** around `free valuation Derry` / `sell your home in Derry` rather than relying on a tool page alone
+- [TODO] **P2 — Decide valuation UX**: instant estimate widget vs form-led manual valuation request
+- [TODO] **P2 — If building the hook, add proof elements**: areas covered, recent sales, FAQs, and strong CTA follow-up sequence
+- [TODO] **P2 — Internally link valuation page** from homepage, sales page, contact page, and local area/blog content
+
 ## LATEST UPDATE - 13th April 2026 - 4 AHREFS-VALIDATED LOCAL POSTS LIVE ✅
 
 ### COMPLETED:
