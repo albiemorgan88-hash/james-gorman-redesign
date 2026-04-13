@@ -6273,4 +6273,306 @@ export const guides: Guide[] = [
       { q: 'Is banning AI the safest option?', a: 'Usually not. Clear rules, approved tools, and practical monitoring are safer and more realistic than pretending the tools will not be used.' },
     ],
   },
+  {
+    slug: 'ai-procurement-checklist',
+    title: 'AI Procurement Checklist for UK Businesses',
+    metaTitle: 'AI Procurement Checklist | Blue Canvas',
+    metaDescription: 'A practical AI procurement checklist for UK businesses covering use case clarity, data risk, vendor questions, approvals, pricing, and rollout planning.',
+    excerpt: 'Buying AI well is mostly about asking better questions before the contract is signed.',
+    category: 'Buying AI',
+    content: `<p>Most AI buying mistakes happen before a tool is ever switched on. The business gets excited by the demo, likes the speed of the promise, and only later realises nobody pinned down the workflow, data exposure, ownership, or review rules. That is why an AI procurement checklist matters. It forces the buyer to slow down in the useful places.</p>
+
+<p>The goal is not to make buying slower for the sake of it. The goal is to make the first live deployment more likely to work. If a tool cannot be tied to a clear business process, a named owner, and a measurable improvement, the problem is not usually procurement delay. It is weak decision quality.</p>
+
+<h2>Start with the workflow, not the software category</h2>
+<p>Before comparing vendors, define the job. What exact workflow is the tool supposed to improve? Which team owns that process now? What does success look like in boring commercial terms such as faster response, fewer manual touches, reduced admin hours, better conversion, or lower error rates?</p>
+<p>This is the step many teams skip, especially when the tool category is broad. A lot of AI products can write, search, summarise, route, or automate. That does not mean they solve your problem equally well. You need the workflow first.</p>
+
+<h2>Questions procurement and operations should ask together</h2>
+<ul><li>What business outcome are we buying this for?</li><li>Who owns the live workflow after implementation?</li><li>What data will the tool touch or store?</li><li>Where must human approval remain in place?</li><li>How will we measure value after 30, 60, and 90 days?</li></ul>
+
+<p>If procurement cannot get those answers, the deal is not mature enough yet. That is not being awkward. It is protecting budget.</p>
+
+<h2>Vendor questions that actually matter</h2>
+<p>Ask where data is stored, whether it is used for model training, what logs exist, how deletion works, what permissions integrations require, and how the product behaves when confidence is low or inputs are poor. A polished UI is not the same thing as an operationally safe product.</p>
+<p>You should also ask what the rollout really looks like. Is this a tool that works out of the box for the narrow use case you care about, or does it still require prompt design, workflow mapping, approval logic, and internal training before value shows up?</p>
+<p>Related guides worth reading next are <a href="/guides/ai-vendor-selection-guide">AI Vendor Selection Guide</a>, <a href="/guides/ai-data-readiness-checklist">AI Data Readiness Checklist</a>, and <a href="/guides/ai-workflow-mapping">AI Workflow Mapping</a>.</p>
+
+<h2>Commercial checks buyers often forget</h2>
+<p>Look beyond seat price. Check implementation fees, support boundaries, usage caps, overage pricing, renewal mechanics, and what happens if the tool expands from one team into three. Plenty of AI tools look affordable until real usage starts.</p>
+<p>Also check exit risk. Can you export data, prompts, workflow history, or documentation if the vendor stops being a fit? Procurement should care about reversibility, not just launch speed.</p>
+
+<h2>A simple scorecard for choosing between tools</h2>
+<p>Score each option against workflow fit, data risk, implementation effort, ownership clarity, measurement clarity, and commercial flexibility. That usually produces a better buying decision than a long feature comparison table.</p>
+<p>Good AI procurement is rarely about finding the most impressive platform. It is about buying the tool that best fits the process you are actually trying to improve.</p>
+
+<p>If you want help pressure-testing the shortlist, <a href="https://www.bluecanvas.ai/#book">book a consultation with Blue Canvas</a>. We can help turn a vague buying conversation into a proper operational decision.</p>`,
+    faqs: [
+      { q: 'What should come first, the use case or the vendor shortlist?', a: 'The use case. Vendor comparisons are weak until the business has named the workflow, owner, and success metric.' },
+      { q: 'What is the biggest AI procurement mistake?', a: 'Buying a broad tool because the demo feels clever before checking workflow fit, data exposure, and rollout ownership.' },
+      { q: 'Should procurement involve operations early?', a: 'Yes. Procurement, operations, and the workflow owner need to shape the buying decision together.' },
+      { q: 'Do we need to ask about data storage and training?', a: 'Absolutely. Those details matter more than glossy product claims when real business data is involved.' },
+      { q: 'How should buyers compare tools quickly?', a: 'Use a short scorecard around workflow fit, risk, implementation effort, ownership, and commercial terms.' },
+      { q: 'Can a cheap tool still be expensive?', a: 'Yes. Low seat cost can hide heavy implementation work, overages, or expansion costs later.' },
+    ],
+  },
+  {
+    slug: 'ai-policy-for-employees',
+    title: 'AI Policy for Employees: A Practical SME Template',
+    metaTitle: 'AI Policy for Employees | Blue Canvas',
+    metaDescription: 'A practical guide to writing an AI policy for employees, including approved tools, prohibited data, review rules, and rollout advice for SMEs.',
+    excerpt: 'The best employee AI policy is short, specific, and tied to real workflows, not corporate waffle.',
+    category: 'Governance & Risk',
+    content: `<p>Most employee AI policies fail in one of two ways. They are either so vague that nobody knows what to do, or so heavy that staff ignore them completely. The useful middle ground is a short operational policy that tells people which tools are approved, what data stays off limits, where review is mandatory, and who to ask when they are unsure.</p>
+
+<p>That matters because staff will use AI anyway if the business gives them no guidance. A policy is not about stopping adoption. It is about turning uncontrolled experimentation into safer, more consistent use.</p>
+
+<h2>What an employee AI policy should cover</h2>
+<p>Start with approved tools. Name the tools staff can use and how they should access them. If you want employees on managed accounts rather than personal sign-ups, say that plainly.</p>
+<p>Then define prohibited data. Most SMEs should restrict sensitive customer information, financial records, passwords, regulated content drafts, and strategic documents unless a clear approval process exists. A short list of examples helps far more than abstract wording.</p>
+<p>Next, state where human review is mandatory. Customer-facing emails, legal-sounding copy, pricing decisions, HR content, and anything externally published should usually be reviewed before it goes out.</p>
+
+<h2>What to avoid when writing the policy</h2>
+<p>Avoid generic lines about using AI responsibly if they are not backed by examples. People need to know what responsible means in their own business. Avoid pretending staff are not already experimenting. And avoid writing the policy as if every use case carries the same level of risk, because that just makes the document harder to follow.</p>
+<p>One good approach is to separate low-risk internal drafting from higher-risk external or sensitive workflows. That gives staff permission to use AI productively without blurring the areas where review and approvals matter.</p>
+
+<h2>A simple structure that works</h2>
+<ul><li>Approved tools and accounts</li><li>Prohibited or restricted data types</li><li>Where human review is required</li><li>Rules for storing, sharing, or publishing AI output</li><li>Who owns updates and questions</li><li>What happens if someone makes a mistake</li></ul>
+
+<p>You can pair this with <a href="/guides/ai-prompt-governance">AI Prompt Governance</a>, <a href="/guides/ai-security-for-small-business">AI Security for Small Business</a>, and <a href="/guides/ai-change-management">AI Change Management</a> if you want a fuller operating model.</p>
+
+<h2>How to roll it out</h2>
+<p>Train managers first, then teams. Use real examples from your business. Show what is allowed, what is restricted, and when a human should step in. If the only rollout is sending a PDF around, the policy is not really live.</p>
+<p>Review it regularly as the tool stack changes. The point is to keep the rules aligned with actual use, not write a document that becomes wrong within a month.</p>
+
+<p>If you want help turning rough internal guidance into something usable, <a href="https://www.bluecanvas.ai/#book">Blue Canvas can help</a>.</p>`,
+    faqs: [
+      { q: 'Do small businesses really need an employee AI policy?', a: 'Yes. If staff are already using AI, a short clear policy reduces avoidable risk and confusion quickly.' },
+      { q: 'How long should the policy be?', a: 'Short. Most SMEs need something practical enough to read and use, not a huge policy pack.' },
+      { q: 'What is the most important section?', a: 'Usually the approved tools list, prohibited data rules, and where human review must stay in place.' },
+      { q: 'Should the policy ban AI completely?', a: 'Usually no. Clear boundaries are more realistic and more useful than pretending staff will not use the tools.' },
+      { q: 'Who should own the policy?', a: 'Someone operationally close to the workflows, with leadership backing and input from compliance where relevant.' },
+      { q: 'How should it be introduced?', a: 'Through simple training and examples, not just a document sent around by email.' },
+    ],
+  },
+  {
+    slug: 'ai-knowledge-management',
+    title: 'AI Knowledge Management for Growing Businesses',
+    metaTitle: 'AI Knowledge Management | Blue Canvas',
+    metaDescription: 'How businesses use AI for knowledge management, including search, summaries, onboarding, SOP support, and the limits of poor source material.',
+    excerpt: 'AI does not magically create knowledge. It helps teams find, structure, and reuse what they already know, if the source material is usable.',
+    category: 'Operations',
+    content: `<p>Most businesses do not have a lack-of-information problem. They have a find-the-right-information-at-the-right-moment problem. Important decisions, process notes, customer context, meeting actions, and internal know-how are scattered across inboxes, drives, chats, and individual heads. That is why AI knowledge management keeps coming up as a serious use case.</p>
+
+<p>The opportunity is real, but it is not magic. AI can make retrieval, summarisation, onboarding, and internal support much better. It cannot rescue completely chaotic source material without some structure.</p>
+
+<h2>Where AI helps most</h2>
+<p>Internal search is the obvious starting point. Teams waste huge time hunting for old proposals, process notes, client context, or the latest version of a document. AI can make that easier by turning search into a question-and-answer experience grounded in company material.</p>
+<p>It also helps with summarisation. Long meeting notes, project histories, and scattered docs can be turned into cleaner summaries, handover notes, or onboarding material. That is especially valuable when teams grow and tribal knowledge becomes a bottleneck.</p>
+<p>Another strong use case is SOP support. AI can help staff find the right process quickly, explain it in plainer language, or guide them through the next step without making them read a long document from top to bottom.</p>
+
+<h2>What stops it working</h2>
+<p>Poor source quality is the big blocker. If files are badly named, outdated, duplicated, or contradictory, the AI layer will expose those weaknesses rather than hide them. That is why some light information hygiene matters before you pile intelligence on top.</p>
+<p>Permissions matter too. Not every employee should see the same content, and not every connected source should be searchable through one universal layer. Good knowledge management still needs access control and ownership.</p>
+
+<h2>A sensible rollout pattern</h2>
+<p>Start with one domain, not the whole business. That could be sales collateral, project delivery processes, client support knowledge, or internal operations documentation. Clean it enough to be usable, then build search and summary support around that slice first.</p>
+<p>Once that works, expand carefully. This is much better than trying to dump the whole company drive into a shiny AI interface on day one.</p>
+<p>Related guides worth pairing with this are <a href="/guides/ai-workflow-mapping">AI Workflow Mapping</a>, <a href="/guides/ai-for-meeting-notes">AI for Meeting Notes</a>, and <a href="/guides/ai-data-readiness-checklist">AI Data Readiness Checklist</a>.</p>
+
+<h2>How to measure whether it is helping</h2>
+<p>Look for faster onboarding, fewer interruptions to senior staff, quicker document retrieval, cleaner handovers, and less duplicated work. If people are still asking the same questions in Slack because they do not trust the AI layer, the workflow is not mature yet.</p>
+
+<p>Used well, AI knowledge management is not about building a clever internal chatbot. It is about making the business easier to run.</p>`,
+    faqs: [
+      { q: 'What is AI knowledge management?', a: 'It is the use of AI to help teams find, summarise, organise, and reuse internal knowledge more effectively.' },
+      { q: 'Does AI fix messy documentation automatically?', a: 'No. It can help, but bad source material still needs some cleanup and ownership.' },
+      { q: 'What is the best first use case?', a: 'Usually one bounded knowledge area such as SOPs, sales materials, or client-support documentation.' },
+      { q: 'Do permissions still matter?', a: 'Absolutely. Knowledge access should still reflect role, sensitivity, and business need.' },
+      { q: 'How do you measure success?', a: 'Faster retrieval, better onboarding, fewer repeated questions, and cleaner handovers are good starting metrics.' },
+      { q: 'Is this just a chatbot project?', a: 'No. The real goal is smoother operations, not novelty.' },
+    ],
+  },
+  {
+    slug: 'ai-for-internal-communications',
+    title: 'AI for Internal Communications: Practical Uses for SMEs',
+    metaTitle: 'AI for Internal Communications | Blue Canvas',
+    metaDescription: 'How SMEs can use AI for internal communications, including updates, summaries, policy rollouts, manager enablement, and keeping noise under control.',
+    excerpt: 'AI can make internal comms clearer and faster, but only if it reduces noise instead of creating more of it.',
+    category: 'Use Cases',
+    content: `<p>Internal communication gets messy long before a business feels large. Important updates are buried in Slack, managers rewrite the same messages differently, policy rollouts land without context, and nobody is sure which version of the announcement people actually saw. AI can help, but only if it is used to improve clarity rather than generate more noise.</p>
+
+<h2>Where AI helps internal comms teams most</h2>
+<p>It helps with drafting and adapting updates for different audiences. One core message can be turned into a manager briefing, a company-wide note, a short channel update, and a FAQ explainer much faster than doing each one from scratch.</p>
+<p>It also helps with summarisation. Town halls, leadership calls, and project updates can be turned into cleaner recaps and action-focused notes. That is useful when teams are tired of long recordings and overloaded channels.</p>
+<p>Another strong use case is policy and change communication. AI can turn dense operational or governance updates into plain-language explanations that employees are more likely to understand and follow.</p>
+
+<h2>What to watch out for</h2>
+<p>The main risk is volume. AI makes it easy to produce more content than the organisation can absorb. Internal communications only improve if the tool helps the business say less, more clearly, and with better targeting.</p>
+<p>Human judgement still matters around tone, sensitivity, and timing. Redundancies, restructures, pay issues, health updates, or anything likely to land badly should not be handed off to automated draft logic without careful review.</p>
+
+<h2>A good operating pattern</h2>
+<p>Use AI to prepare the message, not replace the communicator. Let it help structure updates, draft FAQs, and turn long material into useful summaries. Then have a human owner review the message for tone, audience fit, and timing.</p>
+<p>It also helps to define a small number of internal formats. Leadership update, policy explainer, manager cascade note, meeting recap, and urgent operational alert are often enough. Once those formats exist, AI becomes more useful because it is filling a clear template rather than guessing from scratch.</p>
+<p>Related reads include <a href="/guides/ai-change-management">AI Change Management</a>, <a href="/guides/ai-policy-for-employees">AI Policy for Employees</a>, and <a href="/guides/ai-meeting-action-tracking">AI Meeting Action Tracking</a>.</p>
+
+<h2>How to judge whether it is working</h2>
+<p>Measure understanding, not output volume. Are managers spending less time rewriting updates? Are staff asking fewer clarifying questions? Are policy changes being understood faster? Are key messages getting through without five extra follow-ups?</p>
+<p>If the answer is yes, AI is helping internal comms do its actual job, which is reducing confusion.</p>`,
+    faqs: [
+      { q: 'Can AI write internal comms?', a: 'Yes, but it works best as a drafting and summarising tool with human review on tone and timing.' },
+      { q: 'What is the main risk?', a: 'Producing more content than people can absorb. Better internal comms is about clarity, not volume.' },
+      { q: 'Which messages need the most human oversight?', a: 'Sensitive topics such as people changes, pay, conflict, or anything likely to affect trust significantly.' },
+      { q: 'What is a good first use case?', a: 'Leadership update summaries, meeting recaps, or policy explainers are often strong starting points.' },
+      { q: 'Should teams create standard formats first?', a: 'Yes. AI is far more useful when the communication pattern is already clear.' },
+      { q: 'How do you measure success?', a: 'Less confusion, fewer rewrites, better understanding, and cleaner follow-up are better metrics than raw message output.' },
+    ],
+  },
+  {
+    slug: 'ai-for-project-management',
+    title: 'AI for Project Management: Where It Helps, Where It Needs Guardrails',
+    metaTitle: 'AI for Project Management | Blue Canvas',
+    metaDescription: 'A practical guide to using AI for project management, including planning, meeting summaries, risk logs, status reporting, and keeping accountability with humans.',
+    excerpt: 'AI can make project management cleaner and faster, but it should support ownership, not blur it.',
+    category: 'Use Cases',
+    content: `<p>Project management is full of repetitive coordination work. Status updates, meeting recaps, action tracking, risk logs, stakeholder summaries, and plan revisions eat time fast. That is why AI for project management keeps surfacing as a useful business use case. The gains are real if the business uses AI to support structure and follow-through rather than pretend the tool is now the project manager.</p>
+
+<h2>Where AI is strong in PM work</h2>
+<p>Meeting summaries and action extraction are the obvious starting point. Project teams lose a lot of time turning calls into usable actions. AI can pull out owners, deadlines, blockers, and risks much faster.</p>
+<p>Status reporting is another strong fit. Weekly updates often require collecting fragments from different people and rewriting them into one stakeholder-friendly view. AI can help pull that together, provided the source inputs are trustworthy.</p>
+<p>Risk and issue logs can also benefit. AI can spot repeated blockers in notes or messages and suggest where something needs escalation, though a human should still own the judgement.</p>
+
+<h2>Where teams get carried away</h2>
+<p>The risk is assuming AI can own accountability. It cannot. A project still needs a human lead who decides priorities, resolves conflict, and makes trade-offs. AI can support coordination, but it should not become an excuse for vagueness about who owns what.</p>
+<p>It also struggles if the project operating rhythm is poor. If nobody updates tasks consistently and meetings do not end with clear decisions, the AI layer will only polish a messy process.</p>
+
+<h2>A practical rollout pattern</h2>
+<p>Start with one meeting-to-action workflow or one reporting workflow. Define the template, the owner, and the review step. Make sure somebody checks the output before it becomes the official project record.</p>
+<p>Then connect it to a lightweight operating rhythm. That might mean project calls feed into an action summary, which feeds into a status update, which feeds into a risk review. AI is most useful when those handoffs are already visible.</p>
+<p>Useful companions here are <a href="/guides/ai-meeting-action-tracking">AI Meeting Action Tracking</a>, <a href="/guides/ai-workflow-mapping">AI Workflow Mapping</a>, and <a href="/guides/ai-rollout-plan">AI Rollout Plan</a>.</p>
+
+<h2>How to measure value</h2>
+<p>Look for faster follow-up after meetings, cleaner reporting, fewer missed actions, better visibility of blockers, and less admin time from project leads. If those improve without confusion rising, you are heading the right way.</p>
+
+<p>Done well, AI for project management makes the work more disciplined. Done badly, it makes the language sound organised while the project stays chaotic underneath.</p>`,
+    faqs: [
+      { q: 'Can AI replace a project manager?', a: 'No. It can support planning, summaries, and reporting, but ownership and decision-making still need a human lead.' },
+      { q: 'What is the best first project-management use case?', a: 'Meeting summaries, action extraction, and status reporting are usually the strongest places to begin.' },
+      { q: 'Why do some teams get poor results?', a: 'Because the underlying process is weak. AI cannot fix missing ownership or unclear decisions on its own.' },
+      { q: 'Should AI-generated project records be reviewed?', a: 'Yes. The output should be checked before it becomes the official version.' },
+      { q: 'How do you measure success?', a: 'Less admin, faster follow-up, fewer dropped actions, and better visibility of risk are sensible metrics.' },
+      { q: 'Can it help small teams too?', a: 'Yes. Smaller teams often feel the admin burden even more sharply, so they can benefit quickly.' },
+    ],
+  },
+  {
+    slug: 'ai-workflow-mapping',
+    title: 'AI Workflow Mapping: The Step Most Businesses Skip',
+    metaTitle: 'AI Workflow Mapping | Blue Canvas',
+    metaDescription: 'A practical guide to AI workflow mapping, showing how to define steps, owners, inputs, approvals, and metrics before buying or building AI workflows.',
+    excerpt: 'If a workflow is not clear enough to map, it is usually not ready for AI yet.',
+    category: 'Operations',
+    content: `<p>AI workflow mapping sounds boring, which is exactly why it matters. Most weak AI projects begin with tool enthusiasm before anyone has mapped the actual process. Inputs are unclear, approvals are informal, exceptions are hidden in people’s heads, and nobody can explain where the workflow starts or ends. Then the tool gets blamed.</p>
+
+<p>Mapping the workflow first does two useful things. It shows whether the process is even ready for automation, and it makes the first implementation much easier to scope. That is true whether you are using a simple assistant or a more agentic operating model.</p>
+
+<h2>What to map before you automate anything</h2>
+<p>Start with the trigger. What causes the workflow to begin? Then list the inputs used, the people involved, the decision points, the systems touched, and the outputs produced. Finally, note the exceptions and edge cases. They are often where the project either proves itself or falls apart.</p>
+<p>You should also name the owner at each stage. If accountability is fuzzy before AI enters the picture, the rollout gets harder fast.</p>
+
+<h2>The minimum useful workflow map</h2>
+<ul><li>The trigger that starts the process</li><li>The inputs required</li><li>The current human steps</li><li>The approvals or review points</li><li>The systems or files involved</li><li>The desired output</li><li>The exceptions and fallback path</li><li>The metric that proves improvement</li></ul>
+
+<p>That is enough to pressure-test whether the workflow is suitable for AI at all. Some are. Some are not yet.</p>
+
+<h2>What workflow mapping reveals</h2>
+<p>It often reveals that the problem is not lack of AI. It is lack of standardisation. Teams discover that steps vary wildly by person, source data is inconsistent, and there is no shared definition of a completed output. That is valuable because it tells you what needs fixing first.</p>
+<p>It also reveals which parts of the process are low risk and repetitive enough to automate, versus which parts depend on judgement and should stay with humans for now.</p>
+
+<h2>How to use the map in practice</h2>
+<p>Pick one workflow. Map it on one page. Then decide what AI could support safely. That might be summarising, drafting, routing, checking completeness, or preparing a handover for approval. You do not need to automate the whole thing in one go.</p>
+<p>This guide pairs well with <a href="/guides/ai-readiness-assessment">AI Readiness Assessment</a>, <a href="/guides/ai-rollout-plan">AI Rollout Plan</a>, and <a href="/guides/ai-implementation-mistakes">AI Implementation Mistakes</a>.</p>
+
+<p>Workflow mapping feels less exciting than product demos. It is still one of the highest-value steps you can take before spending money.</p>`,
+    faqs: [
+      { q: 'What is AI workflow mapping?', a: 'It is the process of documenting the trigger, steps, inputs, owners, approvals, systems, and outputs in a workflow before introducing AI.' },
+      { q: 'Why does it matter so much?', a: 'Because unclear workflows create weak implementations, regardless of how good the tool looks in a demo.' },
+      { q: 'How much detail do we need?', a: 'Enough to see who does what, what data is used, where approvals sit, and how success would be measured.' },
+      { q: 'Can mapping show that a workflow is not ready?', a: 'Yes, and that is useful. Sometimes the right answer is to fix the process first.' },
+      { q: 'Should we automate the whole mapped workflow?', a: 'Usually no. Start with the low-risk, repetitive parts that clearly support the owner.' },
+      { q: 'Who should help build the map?', a: 'The workflow owner and the people actually doing the work, not just leadership.' },
+    ],
+  },
+  {
+    slug: 'ai-prompt-governance',
+    title: 'AI Prompt Governance: How Teams Stop Repeating the Same Mistakes',
+    metaTitle: 'AI Prompt Governance | Blue Canvas',
+    metaDescription: 'A practical guide to AI prompt governance for teams, covering standard prompts, review, versioning, ownership, and when prompt libraries actually help.',
+    excerpt: 'Prompt governance sounds technical, but it is really about consistency, repeatability, and safer team use.',
+    category: 'Governance & Risk',
+    content: `<p>Once a team uses AI regularly, prompts stop being a personal productivity trick and start becoming part of the workflow. That is where prompt governance matters. Without it, everyone writes their own version, quality varies wildly, sensitive instructions get copied around without review, and nobody knows which prompt is actually driving the live output.</p>
+
+<p>Prompt governance is not about killing flexibility. It is about deciding which prompts should be standardised, who owns them, how they are reviewed, and when they should be updated.</p>
+
+<h2>Where prompt governance becomes useful</h2>
+<p>It matters when prompts touch customer-facing work, regulated content, repetitive internal processes, or anything where consistency affects quality. Sales follow-up, support summaries, report templates, policy explainers, and internal knowledge prompts are common examples.</p>
+<p>In those cases, a managed prompt is much more useful than twenty slightly different versions floating around the company.</p>
+
+<h2>What a lightweight governance model looks like</h2>
+<ul><li>Name the prompt owner</li><li>Store the current approved version somewhere accessible</li><li>Record what the prompt is for and where it is used</li><li>Define when changes need review</li><li>Test the output against a few realistic examples</li><li>Retire prompts that are outdated or no longer trusted</li></ul>
+
+<p>This does not need enterprise ceremony. It just needs enough discipline that the prompt can be treated like an operational asset rather than private magic.</p>
+
+<h2>What teams usually get wrong</h2>
+<p>They standardise too early without understanding the workflow, or they never standardise at all and let inconsistency spread. They also forget that prompts interact with source data, permissions, and review steps. A strong prompt inside a weak workflow still produces weak outcomes.</p>
+<p>Another mistake is never checking drift. Teams often improve prompts informally but forget to update the shared version, so the library stops matching real use.</p>
+
+<h2>How to make prompt libraries worth having</h2>
+<p>Keep them small and tied to valuable workflows. Document the purpose, tone, constraints, review expectations, and example inputs. If the library becomes a giant prompt museum, nobody uses it.</p>
+<p>This guide sits well alongside <a href="/guides/ai-policy-for-employees">AI Policy for Employees</a>, <a href="/guides/ai-security-for-small-business">AI Security for Small Business</a>, and <a href="/guides/ai-workflow-mapping">AI Workflow Mapping</a>.</p>
+
+<p>Prompt governance sounds niche. In practice, it is one of the clearest ways to turn random AI use into repeatable team performance.</p>`,
+    faqs: [
+      { q: 'What is prompt governance?', a: 'It is the practice of managing important prompts with ownership, versioning, review, and clear use cases.' },
+      { q: 'Do all prompts need governance?', a: 'No. Focus on prompts that affect repeatable workflows, quality, or risk.' },
+      { q: 'Who should own a prompt?', a: 'Usually the workflow owner or subject-matter lead closest to the output.' },
+      { q: 'What is the biggest mistake teams make?', a: 'Letting prompts spread informally with no shared standard or review path.' },
+      { q: 'Should prompt libraries be large?', a: 'Usually not. Smaller, better-maintained libraries are far more useful.' },
+      { q: 'How often should prompts be reviewed?', a: 'Whenever the workflow, source data, or expected output changes materially.' },
+    ],
+  },
+  {
+    slug: 'ai-rollout-plan',
+    title: 'AI Rollout Plan: A 90-Day Approach for SMEs',
+    metaTitle: 'AI Rollout Plan | Blue Canvas',
+    metaDescription: 'A practical 90-day AI rollout plan for SMEs covering prioritisation, pilot design, staff enablement, governance, and how to scale from proof.',
+    excerpt: 'The best AI rollout plan is not a grand transformation deck. It is a tight sequence of sensible decisions over 90 days.',
+    category: 'Team Adoption',
+    content: `<p>Most SMEs do not need an AI transformation programme. They need a rollout plan that gets from curiosity to one working workflow without creating confusion, tool sprawl, or a pile of half-finished experiments. That is why a 90-day AI rollout plan is usually more useful than a sweeping strategy document.</p>
+
+<h2>Days 1 to 30: choose and scope the first workflow</h2>
+<p>The first month should be about selection and clarity. Pick a workflow that is frequent, painful, measurable, and not catastrophically risky. Name the owner. Map the process. Check the data. Decide where human review must stay. If you cannot answer those questions, the workflow is not ready yet.</p>
+<p>This is also the moment to settle tool boundaries. Approved stack, permissions, and who is allowed to change the workflow should all be clear before the pilot starts moving.</p>
+
+<h2>Days 31 to 60: run the pilot properly</h2>
+<p>The second month is about live use with guardrails. Keep the scope narrow. Review output. Capture mistakes. Measure time saved, speed improved, or quality gained. Talk to the people actually using the workflow rather than only the sponsor who approved it.</p>
+<p>Most of the learning happens here. You will discover edge cases, missing information, clunky handoffs, and the bits of the process that looked clean on paper but are messy in reality.</p>
+
+<h2>Days 61 to 90: decide what deserves scale</h2>
+<p>By month three, the business should be able to answer some basic questions honestly. Did the workflow improve? Was the gain material enough to keep? What needs tightening before expansion? Should the business apply the same operating pattern to another workflow?</p>
+<p>This is where discipline matters. Scale from proof, not from excitement. If the pilot is weak, fix it or stop it. If it works, document what made it work and use that as the model for the next rollout.</p>
+
+<h2>The support pieces that make the rollout stick</h2>
+<p>Even a good pilot can die if staff are confused, managers are unconvinced, or governance is missing. Pair the rollout with a short employee policy, light training, and clear ownership. That is usually enough for SMEs. You do not need layers of change bureaucracy.</p>
+<p>Helpful companion guides are <a href="/guides/ai-change-management">AI Change Management</a>, <a href="/guides/ai-workflow-mapping">AI Workflow Mapping</a>, and <a href="/guides/ai-policy-for-employees">AI Policy for Employees</a>.</p>
+
+<p>The point of a rollout plan is not to look ambitious. It is to help the business make one good AI decision after another.</p>`,
+    faqs: [
+      { q: 'How long should an SME AI rollout plan be?', a: 'Short. A 90-day plan with clear phases is usually more useful than a long strategic document.' },
+      { q: 'What should happen first?', a: 'Pick one workflow, name the owner, map the process, and define the metric before going live.' },
+      { q: 'How wide should the first pilot be?', a: 'Narrow. The goal is proof, not maximum coverage.' },
+      { q: 'When should a business scale?', a: 'Only once the first workflow has shown clear value and the guardrails have been tested properly.' },
+      { q: 'What usually kills rollouts?', a: 'Unclear ownership, weak process definition, poor staff understanding, and trying to do too much at once.' },
+      { q: 'Do we need formal change management?', a: 'You need some change discipline, but most SMEs can keep it lightweight if the rollout is clear and well-owned.' },
+    ],
+  },
 ];

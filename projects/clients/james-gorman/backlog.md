@@ -2,6 +2,20 @@
 
 Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 
+## LATEST UPDATE - 13th April 2026 - 4 AHREFS-VALIDATED LOCAL POSTS LIVE ✅
+
+### COMPLETED:
+- [DONE] **Published 4 new local-intent blog posts to Wix** — Property for Sale Eglinton, Houses for Sale Dungiven, Houses for Sale Claudy, Property for Sale Claudy
+- [DONE] **Saved dated local copies of all 4 posts** in `blog-drafts/` with keyword volume and KD recorded
+- [DONE] **Validated and reused working Wix Blog API publish flow** for live posting in this run
+- [DONE] **Avoided direct Eglinton duplication** by using `property for sale eglinton` and `property for sale claudy` instead of publishing another near-duplicate `houses for sale eglinton` article
+
+### NEXT CONTENT ACTIONS:
+- [TODO] **P2 — Add internal links across April location posts** — connect new Eglinton, Claudy and Dungiven articles to existing location, valuation and sales pages
+- [TODO] **P2 — Add featured images to the 4 newly published posts** — current live posts are text-first and would benefit from location/property imagery
+- [TODO] **P2 — Monitor indexing and cannibalisation risk in Eglinton** — existing live Eglinton article + new property-for-sale Eglinton article should be checked in GSC after indexing
+
+
 ## LATEST UPDATE - 7th April 2026 - 6 BLOG POSTS PUBLISHED + SITE AUDIT ⚡
 
 ### COMPLETED:

@@ -1,5 +1,53 @@
 # James Gorman Property - SEO Changelog
 
+## 13th April 2026 - 4 AHREFS-VALIDATED LOCAL BLOG POSTS PUBLISHED LIVE ✅
+
+### KEYWORD SET USED
+
+Used validated Ahrefs terms only. Chose a slight variation from the default recommendation to avoid doubling down on `houses for sale eglinton`, which already had an existing live Eglinton post.
+
+- `property for sale eglinton` — volume 200, KD 0
+- `houses for sale dungiven` — volume 250, KD 0
+- `houses for sale claudy` — volume 150, KD 0
+- `property for sale claudy` — volume 70, KD 0
+
+### LOCAL FILES SAVED
+
+- `blog-drafts/2026-04-13-property-for-sale-eglinton-buyer-guide-2026.md`
+- `blog-drafts/2026-04-13-houses-for-sale-dungiven-buyer-guide-2026.md`
+- `blog-drafts/2026-04-13-houses-for-sale-claudy-buyer-guide-2026.md`
+- `blog-drafts/2026-04-13-property-for-sale-claudy-village-guide-2026.md`
+
+### LIVE POSTS PUBLISHED
+
+1. **Property for Sale Eglinton: A 2026 Guide to Prices, Family Areas and Buying Well**
+   - **Post ID:** `e00b4f9e-cf96-41e4-84ff-b051cd34883f`
+   - **URL:** https://www.jamesgormanproperty.com/post/property-for-sale-eglinton-buyer-guide-2026
+   - **Keyword:** `property for sale eglinton`
+
+2. **Houses for Sale Dungiven: A 2026 Buyer's Guide to Homes, Prices and Village Life**
+   - **Post ID:** `bfb197e1-147e-40fe-aed9-5cef395bae41`
+   - **URL:** https://www.jamesgormanproperty.com/post/houses-for-sale-dungiven
+   - **Keyword:** `houses for sale dungiven`
+
+3. **Houses for Sale Claudy: A Buyer's Guide to Village Homes and Countryside Value**
+   - **Post ID:** `f68463b2-d6ff-4260-a4da-1403523d4809`
+   - **URL:** https://www.jamesgormanproperty.com/post/houses-for-sale-claudy
+   - **Keyword:** `houses for sale claudy`
+
+4. **Property for Sale Claudy: What Buyers Can Expect from This Village Market in 2026**
+   - **Post ID:** `85fa3a41-d7ef-45fb-9378-9f86c1c64f23`
+   - **URL:** https://www.jamesgormanproperty.com/post/property-for-sale-claudy-village-guide-2026
+   - **Keyword:** `property for sale claudy`
+
+### CONTENT / QA NOTES
+
+- All 4 posts saved locally first, then published live in Wix after PJ approval in this run.
+- All 4 posts use British English, clear local detail, FAQs and James Gorman Property CTAs.
+- Local intent covered across Eglinton, Claudy and Dungiven with buyer-focused commercial angles.
+- New richContent draft creation and publish flow validated again in runtime for Eglinton + Claudy property pieces.
+
+
 ## 7th April 2026 - 6 BLOG POSTS PUBLISHED TO WIX + SITE HEALTH CHECK ✅
 
 ### BLOG PUBLISHING — ALL 6 LIVE ✅

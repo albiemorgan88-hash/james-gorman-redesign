@@ -1,1 +1,97 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.guide-content {
+  color: #334155;
+  font-size: 1.0625rem;
+  line-height: 1.85;
+}
+
+.guide-content > * + * {
+  margin-top: 1.2rem;
+}
+
+.guide-content h2,
+.guide-content h3 {
+  scroll-margin-top: 7rem;
+  color: #1b1464;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.guide-content h2 {
+  margin-top: 3rem;
+  font-size: clamp(1.65rem, 1.2rem + 1.2vw, 2.15rem);
+  line-height: 1.2;
+}
+
+.guide-content h3 {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.guide-content p,
+.guide-content ul,
+.guide-content ol,
+.guide-content blockquote {
+  max-width: 70ch;
+}
+
+.guide-content ul,
+.guide-content ol {
+  padding-left: 1.3rem;
+}
+
+.guide-content li + li {
+  margin-top: 0.7rem;
+}
+
+.guide-content strong {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.guide-content a {
+  color: #ff6b35;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.18em;
+}
+
+.guide-content a:hover {
+  color: #e55a2b;
+}
+
+.guide-content blockquote {
+  border-left: 4px solid rgba(255, 107, 53, 0.35);
+  padding-left: 1rem;
+  color: #475569;
+}
+
+@media (max-width: 640px) {
+  .guide-content {
+    font-size: 1rem;
+    line-height: 1.78;
+  }
+
+  .guide-content h2 {
+    margin-top: 2.5rem;
+  }
+
+  .guide-content p,
+  .guide-content ul,
+  .guide-content ol,
+  .guide-content blockquote {
+    max-width: none;
+  }
+}

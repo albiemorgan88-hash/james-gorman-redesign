@@ -1,0 +1,94 @@
+import type { Metadata } from "next";
+import GuideLandingPage from "@/components/GuideLandingPage";
+
+export const metadata: Metadata = {
+  title: "AI Governance Policy Template: A Practical UK Starting Point",
+  description: "A practical guide to AI governance policy for UK organisations, covering approved tools, data handling, review rules, access control, ownership, and escalation.",
+  keywords: [
+    "ai governance policy template",
+    "ai governance policy",
+    "ai governance uk",
+    "ai policy business",
+    "blue canvas"
+  ],
+  alternates: { canonical: "https://openclawconsultant.co.uk/guides/ai-governance-policy-template" },
+  openGraph: {
+    title: "AI Governance Policy Template: A Practical UK Starting Point",
+    description: "A practical guide to AI governance policy for UK organisations, covering approved tools, data handling, review rules, access control, ownership, and escalation.",
+    url: "https://openclawconsultant.co.uk/guides/ai-governance-policy-template",
+    type: "article",
+  },
+};
+
+const stats = [
+  { value: "5 parts", label: "Tools, data, approvals, owners, incidents" },
+  { value: "Short policy", label: "Clear beats corporate waffle" },
+  { value: "Lower risk", label: "Without freezing useful adoption" },
+];
+
+const sections = [
+  {
+    id: "why-you-need-one",
+    title: "Why most businesses need a simple AI governance policy now",
+    html: "<p>The main AI governance problem in SMEs is not complex model risk. It is uncontrolled tool use. Staff sign up for tools with company email, paste business data into them, and build ad hoc workflows without any shared rule on what is allowed. That is how risk shows up quietly.</p><p>A governance policy gives the business a short operating rulebook. Which tools are approved. What data cannot be pasted. Which outputs need review. Who signs off new use cases. What happens when something goes wrong. That is enough to reduce a huge amount of avoidable chaos.</p><p>Good governance should not feel like a legal threat stapled to a staff handbook. It should feel like a practical instruction set that lets people use AI safely and consistently.</p>",
+  },
+  {
+    id: "what-to-include",
+    title: "What the policy should include",
+    html: "<p>Start with an approved tools list. Name the tools staff can use and which accounts they should use to access them. If there are settings for training opt-out, logging, or team-level controls, set them once and document them clearly.</p><p>Then define data boundaries. The policy should name prohibited data types, such as sensitive customer information, pricing logic, legal advice drafts, or anything that creates regulatory or contractual exposure if handled badly.</p><p>Next comes output review. The business should state where human review is mandatory, such as regulated communications, pricing decisions, legal or HR content, and external content that carries brand or compliance risk.</p><p>Finally, give the policy an owner and an escalation route. If nobody owns updates or incidents, the document becomes decorative within a month.</p>",
+  },
+  {
+    id: "what-buyers-miss",
+    title: "What buyers and operators often miss",
+    html: "<p>They focus on what AI can generate and forget the permissions sitting behind the workflow. If a tool connects to inboxes, drives, CRM records, or finance systems, governance has to cover identity, access, and offboarding, not just prompt behaviour.</p><p>They also forget to govern low-friction experimentation. People will test AI anyway. The policy has to account for that reality. It should say where experimentation is fine, what data stays off limits, and when a test becomes a live workflow that needs approval.</p><p>Useful companion reads here are <a href=\"/guides/ai-readiness-assessment-uk\">AI Readiness Assessment UK</a>, <a href=\"/guides/openclaw-enterprise-security-compliance\">OpenClaw Enterprise Security & GDPR</a>, and <a href=\"/guides/ai-implementation-consultant-uk\">AI Implementation Consultant UK</a>.</p>",
+  },
+  {
+    id: "how-to-roll-out",
+    title: "How to roll the policy out without killing momentum",
+    html: "<p>Keep the first version short. One page is better than a bloated document nobody reads. Train managers first, then staff. Use real examples from your own workflows. Explain what is allowed, what needs approval, and what should never happen.</p><p>Then review it regularly. AI governance is not a once-a-year paperwork exercise. It should evolve as your tools, permissions, and live workflows change. If the team starts running agent-based processes, browser automations, or customer-facing flows, the policy needs to keep pace.</p><p>The right policy gives the business confidence to move faster because the guardrails are already there.</p>",
+  },
+];
+
+const faqs = [
+  { question: "What is an AI governance policy?", answer: "It is a practical internal policy that defines approved tools, data rules, review requirements, ownership, and incident handling for AI use inside the business." },
+  { question: "Does a small business really need one?", answer: "Yes, especially if staff are already experimenting with AI tools. A short policy reduces avoidable risk quickly." },
+  { question: "How long should the policy be?", answer: "Short. Most SMEs need something clear and operational, not a long legal document nobody can use." },
+  { question: "What is the most important section?", answer: "Usually the combination of approved tools, prohibited data, and where human review must stay in place." },
+  { question: "Who should own the policy?", answer: "Someone operationally close to the workflows, with input from leadership and compliance where needed." },
+  { question: "How often should it be reviewed?", answer: "Whenever tools, permissions, or live AI workflows change, and at a minimum on a regular quarterly rhythm." },
+];
+
+const relatedGuides = [
+  { href: "/guides/ai-readiness-assessment-uk", title: "AI Readiness Assessment UK" },
+  { href: "/guides/openclaw-enterprise-security-compliance", title: "OpenClaw Enterprise Security & GDPR" },
+  { href: "/guides/ai-implementation-consultant-uk", title: "AI Implementation Consultant UK" },
+  { href: "/guides/ai-risk-management-framework", title: "AI Risk Management Framework" },
+];
+
+export default function AIGovernancePolicyTemplatePage() {
+  return (
+    <GuideLandingPage
+      badge="Governance Guide 2026"
+      title="AI Governance Policy Template"
+      intro="Most firms do not need a grand AI constitution. They need a clear policy that tells staff which tools are approved, what data stays off limits, where review is mandatory, and who owns the rules."
+      stats={stats}
+      sections={sections}
+      faqs={faqs}
+      relatedGuides={relatedGuides}
+      sidebarTitle="Governance that people can use"
+      sidebarBody="If the policy is too vague, staff ignore it. If it is too heavy, staff route around it. The sweet spot is practical and specific."
+      sidebarPoints={[
+        "Approve tools centrally.",
+        "State prohibited data plainly.",
+        "Name the owner and escalation route.",
+      ]}
+      assessmentIntro="Blue Canvas can review your current tool use, flag the gaps, and help turn governance into something your team will actually follow."
+      practicalTakeaway="The best AI governance policy is short, specific, and tied to real workflows. If it cannot answer what staff should do this afternoon, it is not finished."
+      takeawayCards={[
+        { title: "Write for operators", text: "People need clear rules on tools, data, and approvals, not abstract policy language." },
+        { title: "Govern permissions too", text: "Connected systems, shared inboxes, and browser access matter as much as prompts." },
+        { title: "Update as you scale", text: "Every new live workflow should trigger a quick governance check, not a policy rewrite from scratch." },
+      ]}
+    />
+  );
+}

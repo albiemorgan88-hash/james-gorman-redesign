@@ -16,6 +16,8 @@ Work on **James Gorman Property SEO only**.
   - `seo-changelog.md`
   - `backlog.md`
 - Keep recommendations practical, prioritised, and easy for Phil to publish manually.
+- If Phil explicitly approves a publish in the current run, publish only after a live render QA pass.
+- Never let drafting metadata or SEO planning notes leak into the public article body.
 
 ## Working files
 

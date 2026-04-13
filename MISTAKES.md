@@ -43,3 +43,10 @@
 - The team stack exists for a reason: use it. WRITER for content, SCOUT for SEO/keywords, DREW for Ardmore, JAMES for JGP, HUNTER for leads, CORMAC for HIP.
 - If Claude Code OAuth token is expired, don't retry — flag it and use the proper subagent path.
 - Wasted ~4 failed Claude Code spawns on 2026-04-12 before using WRITER subagent correctly.
+
+## Wix Blog Publishing Hygiene (2026-04-13)
+- NEVER publish local markdown files to Wix until the metadata header is stripped from the article body.
+- Remove all preamble fields like Title, Target keyword, Ahrefs volume/KD, Suggested slug, Draft status, Primary keyword, Secondary keywords, Meta title, and Meta description from the live rich content.
+- Local drafting format can include those fields, but live Wix content must start with reader-facing copy only.
+- After publishing any Wix blog post, verify the live page itself, not just the API response. Check the first screen on mobile/public render for leaked metadata or formatting issues.
+- If a post is already live and dirty, patch the published draft body immediately and republish before reporting success upward.

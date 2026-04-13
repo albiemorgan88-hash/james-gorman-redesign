@@ -81,6 +81,7 @@ const guidesData: Record<string, Guide[]> = {
     { title: "OpenClaw vs VA: Cost Comparison 2026", href: "/guides/openclaw-vs-virtual-assistant-cost", category: "Comparison" },
     { title: "OpenClaw vs Virtual Assistant Costs", href: "/guides/openclaw-vs-va-cost-comparison", category: "Comparison" },
     { title: "Pinchy vs Manual OpenClaw Management", href: "/guides/pinchy-vs-manual", category: "Comparison" },
+    { title: "OpenClaw vs Manus", href: "/guides/openclaw-vs-manus", category: "Comparison" },
   ],
   "Pricing & ROI": [
     { title: "OpenClaw Pricing & Costs Explained", href: "/guides/openclaw-pricing-explained", category: "Pricing" },
@@ -119,6 +120,8 @@ const guidesData: Record<string, Guide[]> = {
     { title: "AI Agents for Supply Chain Management", href: "/guides/ai-agents-for-supply-chain", category: "Industry" },
     { title: "AI Agents for Real Estate", href: "/guides/ai-agents-for-real-estate", category: "Industry" },
     { title: "AI Agents for Finance", href: "/guides/ai-agents-for-finance", category: "Industry" },
+    { title: "AI Agents for Procurement", href: "/guides/ai-agents-for-procurement", category: "Industry" },
+    { title: "AI Agents for Insurance Brokers", href: "/guides/ai-agents-for-insurance-brokers", category: "Industry" },
   ],
   "AI Business Strategy": [
     { title: "AI Transformation Strategy 2026", href: "/guides/ai-transformation-strategy-2026", category: "Strategy" },
@@ -128,6 +131,9 @@ const guidesData: Record<string, Guide[]> = {
     { title: "Enterprise AI Deployment UK Guide", href: "/guides/enterprise-ai-deployment-uk", category: "Strategy" },
     { title: "AI Compliance Automation: GDPR & More", href: "/guides/ai-compliance-automation", category: "Strategy" },
     { title: "AI Agents and Compliance Risk", href: "/guides/ai-agents-compliance-risk", category: "Strategy" },
+    { title: "AI Readiness Assessment UK", href: "/guides/ai-readiness-assessment-uk", category: "Strategy" },
+    { title: "AI Implementation Consultant UK", href: "/guides/ai-implementation-consultant-uk", category: "Strategy" },
+    { title: "AI Governance Policy Template", href: "/guides/ai-governance-policy-template", category: "Strategy" },
   ],
   "AI Automation": [
     { title: "AI Customer Service Automation UK", href: "/guides/ai-customer-service-automation-uk", category: "Automation" },
@@ -186,14 +192,14 @@ export default function GuidesPage() {
       </section>
 
       {/* Quick Nav */}
-      <section className="py-8 bg-white border-b border-border-light sticky top-0 z-20">
+      <section className="sticky top-16 z-20 border-b border-border-light bg-white py-5 md:top-20 md:py-8">
         <div className="max-w-[1140px] mx-auto px-6">
-          <div className="flex flex-wrap gap-2 justify-center">
+          <div className="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:flex-wrap md:justify-center">
             {Object.keys(guidesData).map((cat) => (
               <a
                 key={cat}
                 href={`#${cat.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-                className="text-sm px-3 py-1.5 rounded-full bg-slate-100 text-muted-dark hover:bg-orange/10 hover:text-orange transition-colors font-medium"
+                className="shrink-0 whitespace-nowrap rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-muted-dark transition-colors hover:bg-orange/10 hover:text-orange"
               >
                 {cat}
               </a>

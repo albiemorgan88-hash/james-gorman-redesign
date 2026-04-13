@@ -80,6 +80,14 @@ Deliver the highest-value SEO progress within the time budget. Some weeks that's
 - **Professional tone:** James is an established estate agent - content must be professional
 - **Real data:** Use actual property market data, not made-up statistics
 
+## Wix Publishing Hygiene (Critical)
+- Local draft files may contain workflow metadata like: Title, Target keyword, Ahrefs volume, Ahrefs KD, Suggested slug, Draft status, Primary keyword, Secondary keywords, Meta title, Meta description.
+- **None of that metadata may appear in the live article body. Ever.**
+- Before pushing to Wix, strip all planning/SEO header lines and ensure the live content starts with reader-facing copy immediately.
+- When converting markdown/local drafts to Wix rich content, remove the local H1 if Wix is already using the post title as the live title.
+- After every publish, verify the public live URL on mobile/public render and inspect the first screen for leaked metadata, formatting issues, or duplicate titles.
+- Do not report success to Albie/PJ until the live page itself looks clean.
+
 ## Change Log
 Maintain a running log at: ~/.openclaw/workspace/skills/james-gorman-seo/changelog.md
 
