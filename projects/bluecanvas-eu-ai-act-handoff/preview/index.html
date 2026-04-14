@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Canvas | EU AI Act readiness self-check</title>
+  <meta name="description" content="Static preview mockup for a Blue Canvas EU AI Act readiness self-check landing page." />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #07111f;
+      --bg-soft: #0d1930;
+      --panel: rgba(12, 22, 42, 0.78);
+      --panel-strong: rgba(14, 27, 52, 0.95);
+      --stroke: rgba(164, 189, 255, 0.14);
+      --stroke-strong: rgba(164, 189, 255, 0.24);
+      --text: #f5f8ff;
+      --muted: #9cb0d8;
+      --muted-2: #7d91bb;
+      --brand: #83a7ff;
+      --brand-2: #7de0ff;
+      --brand-3: #c0a3ff;
+      --success: #89f1c5;
+      --warning: #ffd28a;
+      --danger: #ff9b96;
+      --shadow: 0 24px 80px rgba(3, 9, 23, 0.42);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-sm: 12px;
+      --container: 1180px;
+      --font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background:
+        radial-gradient(circle at top left, rgba(125, 224, 255, 0.16), transparent 28%),
+        radial-gradient(circle at top right, rgba(192, 163, 255, 0.12), transparent 30%),
+        radial-gradient(circle at 50% 20%, rgba(131, 167, 255, 0.10), transparent 45%),
+        linear-gradient(180deg, #07101d 0%, #081220 28%, #07111f 100%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      inset: auto;
+      pointer-events: none;
+      z-index: 0;
+      width: 34rem;
+      height: 34rem;
+      border-radius: 50%;
+      filter: blur(70px);
+      opacity: 0.28;
+    }
+
+    body::before {
+      top: -10rem;
+      left: -12rem;
+      background: radial-gradient(circle, rgba(125, 224, 255, 0.9), transparent 70%);
+    }
+
+    body::after {
+      right: -14rem;
+      top: 10rem;
+      background: radial-gradient(circle, rgba(192, 163, 255, 0.85), transparent 70%);
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+
+    .page-shell {
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .container {
+      width: min(calc(100% - 2rem), var(--container));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(6, 11, 21, 0.55);
+      border-bottom: 1px solid rgba(164, 189, 255, 0.08);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 78px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.9rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-mark {
+      width: 2.3rem;
+      height: 2.3rem;
+      border-radius: 14px;
+      background: linear-gradient(145deg, rgba(125, 224, 255, 0.95), rgba(131, 167, 255, 0.8) 48%, rgba(192, 163, 255, 0.8));
+      box-shadow: 0 8px 30px rgba(131, 167, 255, 0.28);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .brand-mark::before,
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      inset: 16%;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      transform: rotate(10deg);
+    }
+
+    .brand-mark::after {
+      inset: 33%;
+      transform: rotate(-12deg);
+      opacity: 0.85;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      min-height: 48px;
+      padding: 0.8rem 1.25rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 0.96rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+      cursor: pointer;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn:focus-visible,
+    .option:focus-visible,
+    .input:focus-visible,
+    summary:focus-visible {
+      outline: 2px solid rgba(125, 224, 255, 0.75);
+      outline-offset: 2px;
+    }
+
+    .btn-primary {
+      color: #08111f;
+      background: linear-gradient(135deg, var(--brand-2), var(--brand), var(--brand-3));
+      box-shadow: 0 10px 35px rgba(125, 224, 255, 0.22);
+    }
+
+    .btn-secondary {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 255, 255, 0.09);
+    }
+
+    .btn-ghost {
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.02);
+      border-color: rgba(255, 255, 255, 0.06);
+    }
+
+    .btn[disabled] {
+      opacity: 0.38;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .hero {
+      padding: 4.5rem 0 2.5rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+      gap: 2rem;
+      align-items: stretch;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.48rem 0.82rem;
+      border: 1px solid rgba(164, 189, 255, 0.16);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      color: #dce7ff;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      margin-bottom: 1.15rem;
+    }
+
+    .eyebrow-dot {
+      width: 0.56rem;
+      height: 0.56rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--brand-2), var(--brand-3));
+      box-shadow: 0 0 0 0.28rem rgba(125, 224, 255, 0.14);
+    }
+
+    h1, h2, h3, p { margin: 0; }
+
+    h1 {
+      font-size: clamp(2.7rem, 6vw, 4.6rem);
+      line-height: 0.96;
+      letter-spacing: -0.055em;
+      max-width: 12ch;
+    }
+
+    .hero-copy {
+      max-width: 62ch;
+      margin-top: 1.3rem;
+      font-size: 1.08rem;
+      line-height: 1.7;
+      color: #d7e2fb;
+    }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin: 1.55rem 0 2rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .hero-points li,
+    .trust-pill,
+    .micro-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.48rem;
+      padding: 0.72rem 0.95rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: #eaf0ff;
+      font-size: 0.92rem;
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-points svg,
+    .micro-pill svg,
+    .trust-pill svg,
+    .detail-list svg,
+    .cover-item svg,
+    .timeline-stat svg,
+    .faq-tag svg,
+    .badge-icon svg {
+      width: 1rem;
+      height: 1rem;
+      flex: 0 0 auto;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-note {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      max-width: 62ch;
+    }
+
+    .glass-card {
+      position: relative;
+      background: linear-gradient(180deg, rgba(18, 31, 57, 0.92), rgba(9, 18, 34, 0.88));
+      border: 1px solid rgba(164, 189, 255, 0.14);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .glass-card::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      background: linear-gradient(135deg, rgba(125, 224, 255, 0.18), transparent 28%, transparent 65%, rgba(192, 163, 255, 0.18));
+      pointer-events: none;
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      padding: 1px;
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+
+    .hero-panel {
+      min-height: 100%;
+      padding: 1.25rem;
+      display: grid;
+      gap: 1rem;
+      background:
+        radial-gradient(circle at top right, rgba(125, 224, 255, 0.14), transparent 32%),
+        radial-gradient(circle at left 80%, rgba(192, 163, 255, 0.12), transparent 28%),
+        linear-gradient(180deg, rgba(16, 28, 52, 0.95), rgba(10, 19, 36, 0.95));
+    }
+
+    .hero-panel-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.45rem 0.2rem 0;
+    }
+
+    .mini-kicker {
+      color: #d6e2ff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .mini-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border-radius: 999px;
+      border: 1px solid rgba(137, 241, 197, 0.18);
+      padding: 0.42rem 0.72rem;
+      color: #d8ffee;
+      background: rgba(137, 241, 197, 0.09);
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .checker-shell {
+      position: relative;
+      padding: 1.2rem;
+      background: rgba(6, 12, 23, 0.48);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 24px;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .progress-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      color: #d4e1ff;
+      font-size: 0.88rem;
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 0.58rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      width: 33%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--brand-2), var(--brand), var(--brand-3));
+      box-shadow: 0 0 30px rgba(125, 224, 255, 0.32);
+      transition: width 220ms ease;
+    }
+
+    .question-eyebrow {
+      color: var(--muted);
+      font-size: 0.84rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .question-title {
+      font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+      line-height: 1.18;
+      letter-spacing: -0.035em;
+    }
+
+    .option-grid {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .option {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 18px;
+      padding: 1rem 1rem 1rem 3.5rem;
+      color: var(--text);
+      text-align: left;
+      position: relative;
+      cursor: pointer;
+      transition: border-color 160ms ease, transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+    }
+
+    .option:hover {
+      border-color: rgba(125, 224, 255, 0.26);
+      transform: translateY(-1px);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .option.active {
+      border-color: rgba(125, 224, 255, 0.55);
+      background: linear-gradient(180deg, rgba(125, 224, 255, 0.11), rgba(131, 167, 255, 0.08));
+      box-shadow: inset 0 0 0 1px rgba(125, 224, 255, 0.18);
+    }
+
+    .option-bullet {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.45rem;
+      height: 1.45rem;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.02);
+      box-shadow: inset 0 0 0 0.22rem rgba(7, 17, 31, 0.9);
+    }
+
+    .option.active .option-bullet {
+      background: linear-gradient(135deg, var(--brand-2), var(--brand-3));
+      border-color: transparent;
+    }
+
+    .option-title {
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.28rem;
+    }
+
+    .option-meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .checker-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding-top: 0.25rem;
+    }
+
+    .hero-side-note {
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .micro-card {
+      padding: 1rem;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .micro-label {
+      color: var(--muted);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.55rem;
+    }
+
+    .micro-value {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.25;
+    }
+
+    section {
+      padding: 1.4rem 0;
+    }
+
+    .section-heading {
+      display: grid;
+      gap: 0.75rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(1.9rem, 3vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.045em;
+      max-width: 14ch;
+    }
+
+    .section-heading p {
+      max-width: 64ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    .timing-strip {
+      display: grid;
+      gap: 1rem;
+      padding: 1.1rem;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 26px;
+      backdrop-filter: blur(14px);
+    }
+
+    .timing-top {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .timing-top h2 {
+      font-size: clamp(1.55rem, 2.2vw, 2.2rem);
+      letter-spacing: -0.04em;
+    }
+
+    .timing-top p {
+      color: var(--muted);
+      max-width: 56ch;
+      line-height: 1.6;
+    }
+
+    .timeline-row {
+      display: grid;
+      gap: 0.85rem;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .timeline-stat {
+      padding: 1rem;
+      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(12, 21, 40, 0.95), rgba(10, 18, 34, 0.92));
+      border: 1px solid rgba(164, 189, 255, 0.12);
+      min-height: 100%;
+      display: grid;
+      align-content: start;
+      gap: 0.8rem;
+    }
+
+    .timeline-stat .icon-wrap,
+    .badge-icon,
+    .cover-icon,
+    .audience-icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: rgba(125, 224, 255, 0.09);
+      color: #d6f7ff;
+      border: 1px solid rgba(125, 224, 255, 0.16);
+    }
+
+    .timeline-date {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    .timeline-copy {
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 0.92rem;
+    }
+
+    .small-note {
+      color: var(--muted-2);
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    .checker-section {
+      padding-top: 2.2rem;
+    }
+
+    .checker-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.96fr) minmax(320px, 0.82fr);
+      gap: 1.15rem;
+      align-items: start;
+    }
+
+    .panel {
+      padding: 1.3rem;
+    }
+
+    .panel-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .panel-title {
+      display: grid;
+      gap: 0.38rem;
+    }
+
+    .panel-title h3 {
+      font-size: 1.35rem;
+      letter-spacing: -0.035em;
+    }
+
+    .panel-title p {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 0.95rem;
+      max-width: 50ch;
+    }
+
+    .panel-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.46rem 0.74rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #dce8ff;
+      font-size: 0.82rem;
+      white-space: nowrap;
+    }
+
+    .question-card {
+      padding: 1.15rem;
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.03);
+      display: grid;
+      gap: 0.95rem;
+    }
+
+    .question-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .result-card {
+      min-height: 100%;
+      background:
+        radial-gradient(circle at 100% 0%, rgba(125, 224, 255, 0.12), transparent 35%),
+        linear-gradient(180deg, rgba(16, 30, 57, 0.98), rgba(9, 18, 34, 0.95));
+    }
+
+    .badge-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .result-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.7rem 0.92rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #08111f;
+      background: linear-gradient(135deg, var(--warning), #ffe7bf);
+      box-shadow: 0 12px 30px rgba(255, 210, 138, 0.18);
+    }
+
+    .result-score {
+      color: #dce7ff;
+      font-size: 0.9rem;
+      padding: 0.7rem 0.92rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .result-card h3 {
+      font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+      letter-spacing: -0.04em;
+      margin-bottom: 0.7rem;
+    }
+
+    .result-copy {
+      color: #d7e3ff;
+      line-height: 1.72;
+      margin-bottom: 1.25rem;
+    }
+
+    .detail-stack {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .detail-block {
+      padding: 1rem;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .detail-block h4 {
+      margin-bottom: 0.78rem;
+      font-size: 0.96rem;
+      letter-spacing: -0.02em;
+    }
+
+    .detail-list {
+      display: grid;
+      gap: 0.7rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .detail-list li,
+    .cover-item,
+    .why-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.72rem;
+      color: #dce6ff;
+      line-height: 1.55;
+      font-size: 0.95rem;
+    }
+
+    .detail-list li span,
+    .cover-item span,
+    .why-list li span { flex: 1; }
+
+    .gate-card {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+
+    .field,
+    .field-wide {
+      display: grid;
+      gap: 0.42rem;
+    }
+
+    .field-wide { grid-column: 1 / -1; }
+
+    label {
+      font-size: 0.88rem;
+      color: #dce7ff;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .input {
+      min-height: 50px;
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(5, 10, 20, 0.42);
+      color: var(--text);
+      padding: 0.8rem 0.92rem;
+      transition: border-color 150ms ease, background 150ms ease;
+    }
+
+    .input::placeholder { color: #7085b3; }
+    .input:focus-visible {
+      border-color: rgba(125, 224, 255, 0.38);
+      background: rgba(5, 10, 20, 0.58);
+    }
+
+    textarea.input { min-height: 116px; resize: vertical; }
+
+    .consent {
+      display: flex;
+      gap: 0.72rem;
+      align-items: flex-start;
+      padding: 0.85rem 0.9rem;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    .consent input {
+      margin-top: 0.18rem;
+      width: 1rem;
+      height: 1rem;
+      accent-color: #9be7ff;
+    }
+
+    .audience-grid,
+    .cover-grid,
+    .why-grid,
+    .faq-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .audience-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .cover-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .why-grid {
+      grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.78fr);
+      align-items: stretch;
+    }
+
+    .audience-card,
+    .cover-card,
+    .why-card,
+    .cta-band {
+      padding: 1.2rem;
+    }
+
+    .audience-card,
+    .cover-card,
+    .why-card {
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(17, 29, 53, 0.92), rgba(10, 18, 34, 0.92));
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: var(--shadow);
+    }
+
+    .audience-card {
+      display: grid;
+      gap: 0.95rem;
+      min-height: 100%;
+    }
+
+    .audience-card h3,
+    .cover-card h3,
+    .why-card h3,
+    .timeline-extended h3,
+    .faq-card h3,
+    .cta-band h2 {
+      font-size: 1.18rem;
+      letter-spacing: -0.03em;
+    }
+
+    .audience-card p,
+    .cover-card p,
+    .why-card p,
+    .timeline-extended p,
+    .faq-card p,
+    details p,
+    .cta-band p {
+      color: var(--muted);
+      line-height: 1.68;
+      font-size: 0.96rem;
+    }
+
+    .audience-icon,
+    .cover-icon {
+      background: rgba(255, 255, 255, 0.04);
+      color: #d7f8ff;
+      border-color: rgba(125, 224, 255, 0.14);
+    }
+
+    .cover-card {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .cover-item {
+      padding: 0.82rem 0.9rem;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .timeline-extended {
+      display: grid;
+      grid-template-columns: minmax(0, 0.74fr) minmax(0, 1.1fr);
+      gap: 1rem;
+    }
+
+    .timeline-left,
+    .timeline-right,
+    .why-card,
+    .faq-card,
+    .cta-band {
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(15, 26, 48, 0.96), rgba(8, 15, 28, 0.96));
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: var(--shadow);
+      padding: 1.3rem;
+    }
+
+    .timeline-left {
+      display: grid;
+      gap: 1.15rem;
+      align-content: start;
+    }
+
+    .timeline-right {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .timeline-line {
+      display: grid;
+      gap: 0.72rem;
+    }
+
+    .timeline-node {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.9rem;
+      align-items: start;
+    }
+
+    .timeline-node-mark {
+      width: 0.92rem;
+      height: 0.92rem;
+      border-radius: 50%;
+      margin-top: 0.38rem;
+      background: linear-gradient(135deg, var(--brand-2), var(--brand-3));
+      box-shadow: 0 0 0 0.32rem rgba(125, 224, 255, 0.08);
+    }
+
+    .timeline-node h4 {
+      margin-bottom: 0.2rem;
+      font-size: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .timeline-node p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .why-list {
+      margin: 1rem 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .consult-card {
+      display: grid;
+      gap: 0.95rem;
+      align-content: space-between;
+      background:
+        radial-gradient(circle at top right, rgba(125, 224, 255, 0.13), transparent 30%),
+        linear-gradient(180deg, rgba(20, 36, 66, 0.98), rgba(9, 18, 34, 0.98));
+    }
+
+    .faq-grid {
+      grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.72fr);
+      align-items: start;
+    }
+
+    .faq-card {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .faq-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 0.72rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      color: #dce7ff;
+      font-size: 0.84rem;
+      width: fit-content;
+    }
+
+    details {
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.03);
+      overflow: hidden;
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 1rem 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    details p { padding: 0 1.1rem 1rem; }
+
+    .faq-plus {
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      color: var(--muted);
+      font-size: 1rem;
+      flex: 0 0 auto;
+    }
+
+    .cta-band {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      gap: 1rem;
+      background:
+        radial-gradient(circle at top right, rgba(125, 224, 255, 0.14), transparent 28%),
+        radial-gradient(circle at bottom left, rgba(192, 163, 255, 0.12), transparent 26%),
+        linear-gradient(180deg, rgba(16, 29, 54, 0.98), rgba(8, 15, 28, 0.98));
+    }
+
+    .cta-band::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -35% auto;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(125, 224, 255, 0.18), transparent 70%);
+      filter: blur(20px);
+      pointer-events: none;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .footer-note {
+      padding: 1.6rem 0 2.8rem;
+      color: var(--muted-2);
+      font-size: 0.88rem;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .mono { font-variant-numeric: tabular-nums; }
+
+    .hide-mobile { display: inline-flex; }
+
+    @media (max-width: 1120px) {
+      .hero-grid,
+      .checker-layout,
+      .why-grid,
+      .timeline-extended,
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .audience-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .cover-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .timeline-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .hero-panel { order: -1; }
+    }
+
+    @media (max-width: 760px) {
+      .container { width: min(calc(100% - 1.1rem), var(--container)); }
+      .site-header { position: static; }
+      .header-inner { min-height: 72px; }
+      .hero { padding-top: 1.2rem; padding-bottom: 1.8rem; }
+      h1 {
+        max-width: 11ch;
+        font-size: clamp(2.35rem, 11vw, 3.1rem);
+      }
+      .hero-copy {
+        font-size: 1rem;
+        line-height: 1.62;
+      }
+      .hero-panel { padding: 1rem; }
+      .hero-panel-top { flex-wrap: wrap; }
+      .mini-chip { font-size: 0.76rem; }
+      section { padding: 1rem 0; }
+      .section-heading {
+        gap: 0.6rem;
+        margin-bottom: 1rem;
+      }
+      .section-heading h2 {
+        max-width: none;
+        font-size: clamp(1.7rem, 8vw, 2.15rem);
+      }
+      .section-heading p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+      .checker-shell,
+      .question-card,
+      .panel,
+      .timeline-left,
+      .timeline-right,
+      .faq-card,
+      .cta-band,
+      .audience-card,
+      .cover-card,
+      .why-card { padding: 1rem; }
+      .micro-card { padding: 0.9rem; }
+      .micro-value { font-size: 1rem; }
+      .hero-side-note { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero-side-note .micro-card:last-child { grid-column: 1 / -1; }
+      .timeline-row,
+      .audience-grid,
+      .cover-grid,
+      .form-grid { grid-template-columns: 1fr; }
+      .timing-top,
+      .panel-head,
+      .question-footer,
+      .checker-actions { align-items: flex-start; }
+      .header-actions .hide-mobile { display: none; }
+      .progress-row { flex-direction: column; align-items: flex-start; }
+      .hero-actions,
+      .cta-actions { flex-direction: column; }
+      .hero-actions .btn,
+      .cta-actions .btn,
+      .header-actions .btn { width: 100%; }
+      .checker-actions .btn { flex: 1 1 0; }
+      .timeline-row { grid-template-columns: 1fr; }
+      .timeline-top-badge { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Blue Canvas home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Blue Canvas</span>
+        </a>
+        <div class="header-actions">
+          <a class="btn btn-secondary hide-mobile" href="#timeline">Key dates</a>
+          <a class="btn btn-primary" href="#book">Book a consultation</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              EU AI Act readiness self-check
+            </div>
+            <h1>Check how ready your business is for the EU AI Act</h1>
+            <p class="hero-copy">
+              Answer a few quick questions and get a plain-English view of likely pressure points, governance gaps, and what to do next. Built for businesses using, buying, deploying, or selling AI that may touch the EU market.
+            </p>
+            <ul class="hero-points" aria-label="Key benefits">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="8"/></svg>
+                Takes around 3 minutes
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h10M4 17h7"/></svg>
+                Plain English, not legal waffle
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>
+                Practical next-step view, not just theory
+              </li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#checker">Start the self-check</a>
+              <a class="btn btn-secondary" href="#book">Talk to Blue Canvas</a>
+            </div>
+            <p class="hero-note">Not formal legal advice. A practical readiness self-check designed to help you spot where to focus next.</p>
+          </div>
+
+          <div class="glass-card hero-panel" aria-label="Interactive preview panel">
+            <div class="hero-panel-top">
+              <div class="mini-kicker">Live checker preview</div>
+              <div class="mini-chip">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>
+                Plain-English triage
+              </div>
+            </div>
+
+            <div class="checker-shell">
+              <div class="progress-row">
+                <span class="mono" id="heroProgressText">Question 1 of 3</span>
+                <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="heroProgressBar"></div></div>
+              </div>
+              <div>
+                <div class="question-eyebrow">Quick preview</div>
+                <h2 class="question-title" id="heroQuestionTitle">Does your business sell into the EU, support EU clients, or produce AI outputs that affect people in the EU?</h2>
+              </div>
+              <div class="option-grid" id="heroOptions"></div>
+              <div class="checker-actions">
+                <button class="btn btn-ghost" id="heroBack" type="button">Back</button>
+                <button class="btn btn-primary" id="heroNext" type="button" disabled>Next</button>
+              </div>
+            </div>
+
+            <div class="hero-side-note">
+              <div class="micro-card">
+                <div class="micro-label">Output</div>
+                <div class="micro-value">Readiness view, not a legal verdict</div>
+              </div>
+              <div class="micro-card">
+                <div class="micro-label">Conversion</div>
+                <div class="micro-value">Detailed summary gated after the result</div>
+              </div>
+              <div class="micro-card">
+                <div class="micro-label">Tone</div>
+                <div class="micro-value">Calm, commercial, credible</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container timing-strip">
+          <div class="timing-top">
+            <div>
+              <h2>Key dates to know</h2>
+              <p>As at <strong>14 April 2026</strong>, the AI Act has already phased in key duties, with most remaining obligations due from <strong>2 August 2026</strong>.</p>
+            </div>
+            <div class="trust-pill timeline-top-badge">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 4v5c0 4.5-2.9 8.7-7 10-4.1-1.3-7-5.5-7-10V7l7-4z"/><path d="M9.5 12.5l1.7 1.7 3.8-4.2"/></svg>
+              Exact dates, careful wording
+            </div>
+          </div>
+
+          <div class="timeline-row">
+            <article class="timeline-stat">
+              <div class="icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2v4M16 2v4M4 10h16"/><rect x="4" y="4" width="16" height="16" rx="2"/></svg></div>
+              <div class="timeline-date mono">1 Aug 2024</div>
+              <div class="timeline-copy">AI Act entered into force.</div>
+            </article>
+            <article class="timeline-stat">
+              <div class="icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20"/></svg></div>
+              <div class="timeline-date mono">2 Feb 2025</div>
+              <div class="timeline-copy">Prohibited practices, definitions, and AI literacy provisions applied.</div>
+            </article>
+            <article class="timeline-stat">
+              <div class="icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V8l7-3 7 3v11"/><path d="M9 19v-4h6v4"/></svg></div>
+              <div class="timeline-date mono">2 Aug 2025</div>
+              <div class="timeline-copy">Governance rules and GPAI obligations applied.</div>
+            </article>
+            <article class="timeline-stat">
+              <div class="icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h12"/><path d="M12 6l6 6-6 6"/></svg></div>
+              <div class="timeline-date mono">2 Aug 2026</div>
+              <div class="timeline-copy">Most remaining obligations are due.</div>
+            </article>
+            <article class="timeline-stat">
+              <div class="icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 4v5c0 4.5-2.9 8.7-7 10-4.1-1.3-7-5.5-7-10V7l7-4z"/></svg></div>
+              <div class="timeline-date mono">2 Aug 2027</div>
+              <div class="timeline-copy">Some product safety and Annex I-linked obligations follow later.</div>
+            </article>
+          </div>
+          <p class="small-note">The European Commission proposed simplification changes on <strong>19 November 2025</strong>, so timing and scope messaging should stay practical and avoid false certainty.</p>
+        </div>
+      </section>
+
+      <section class="checker-section" id="checker">
+        <div class="container checker-layout">
+          <div class="glass-card panel">
+            <div class="panel-head">
+              <div class="panel-title">
+                <h3>Run a quick EU AI Act readiness check</h3>
+                <p>This self-check looks at where you operate, how you use AI, whether your systems affect people in meaningful ways, and whether the basics of governance are already in place.</p>
+              </div>
+              <div class="panel-badge">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10M6 8h12M7 12h10M8 16h8M10 20h4"/></svg>
+                12-step flow
+              </div>
+            </div>
+
+            <div class="question-card" aria-label="Checker concept panel">
+              <div class="progress-row">
+                <span class="mono">Question 4 of 12</span>
+                <span>Progress feels achievable</span>
+              </div>
+              <div class="progress-track" aria-hidden="true"><div class="progress-bar" style="width: 33%"></div></div>
+              <div>
+                <div class="question-eyebrow">Prohibited-practice proximity</div>
+                <h2 class="question-title">Are you using AI for highly restricted use cases, or are you unsure whether one might be in play?</h2>
+              </div>
+              <div class="option-grid">
+                <button class="option" type="button">
+                  <span class="option-bullet" aria-hidden="true"></span>
+                  <span class="option-title">No</span>
+                  <span class="option-meta">No obvious proximity to manipulative influence, social scoring, untargeted biometric scraping, or similar restricted uses.</span>
+                </button>
+                <button class="option active" type="button">
+                  <span class="option-bullet" aria-hidden="true"></span>
+                  <span class="option-title">Not sure</span>
+                  <span class="option-meta">The use case needs a proper look because the line is not obvious from an operational view alone.</span>
+                </button>
+                <button class="option" type="button">
+                  <span class="option-bullet" aria-hidden="true"></span>
+                  <span class="option-title">Yes or possibly in one area</span>
+                  <span class="option-meta">This should push the result into a higher-priority review path straight away.</span>
+                </button>
+              </div>
+              <div class="question-footer">
+                <span>One question per screen on mobile, same state preserved in-session.</span>
+                <div class="panel-badge">Next stays disabled until an answer is picked</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="glass-card panel result-card">
+            <div class="badge-row">
+              <div class="result-badge">
+                <span class="badge-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg></span>
+                Priority readiness work needed
+              </div>
+              <div class="result-score">Preview score band: <strong class="mono">58 / 121</strong></div>
+            </div>
+            <h3>Give the visitor enough value before the gate.</h3>
+            <p class="result-copy">This preview shows the ideal handoff between checker and conversion. The visitor gets a clear headline result, a few likely pressure points, and sensible next steps before the detailed summary is gated.</p>
+
+            <div class="detail-stack">
+              <div class="detail-block">
+                <h4>Based on your answers, you may need to review</h4>
+                <ul class="detail-list">
+                  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="8"/></svg><span>whether your use case falls into a higher-risk or restricted context</span></li>
+                  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg><span>whether documentation, ownership, and vendor evidence are actually usable</span></li>
+                  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 4v6c0 4.5-2.9 8.6-7 10-4.1-1.4-7-5.5-7-10V6l7-4z"/></svg><span>whether oversight, escalation, and AI literacy are strong enough in practice</span></li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Recommended next steps</h4>
+                <ul class="detail-list">
+                  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>map your current AI systems, owners, and affected workflows</span></li>
+                  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M7 15l4-4 3 3 4-6"/></svg><span>review risk classification, intended use, and vendor controls</span></li>
+                  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 11-9 11s-9-4-9-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3z"/></svg><span>book a practical scoping call if you want a roadmap rather than more theory</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel-badge">Detailed summary unlocks after form submission</div>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <div class="container why-grid">
+          <div class="glass-card panel gate-card">
+            <div class="panel-title">
+              <h3>Get your detailed result and next-step summary</h3>
+              <p>Enter your details and the fuller result summary lands in your lead workflow with score, bucket, flags, and answers attached. The form sits directly under the result so the value exchange feels earned.</p>
+            </div>
+            <form class="form-grid" aria-label="Lead form preview">
+              <div class="field"><label for="first">First name</label><input class="input" id="first" placeholder="jane" /></div>
+              <div class="field"><label for="last">Last name</label><input class="input" id="last" placeholder="smith" /></div>
+              <div class="field"><label for="email">Work email</label><input class="input" id="email" placeholder="jane@company.com" /></div>
+              <div class="field"><label for="company">Company name</label><input class="input" id="company" placeholder="Company Ltd" /></div>
+              <div class="field"><label for="role">Job title</label><input class="input" id="role" placeholder="Operations Director" /></div>
+              <div class="field"><label for="website">Company website</label><input class="input" id="website" placeholder="https://company.com" /></div>
+              <div class="field"><label for="size">Company size</label><select class="input" id="size"><option>11 to 50</option><option>1 to 10</option><option>51 to 250</option><option>251+</option></select></div>
+              <div class="field"><label for="country">Country</label><input class="input" id="country" value="United Kingdom" /></div>
+              <div class="field"><label for="usecase">Main AI use case</label><select class="input" id="usecase"><option>Customer support</option><option>Internal productivity</option><option>Decision support</option><option>Product feature</option><option>Other</option></select></div>
+              <div class="field"><label for="timeframe">Target timeframe</label><select class="input" id="timeframe"><option>Before August 2026</option><option>This quarter</option><option>Later</option><option>Just researching</option></select></div>
+              <div class="field-wide"><label for="blocker">Biggest blocker</label><textarea class="input" id="blocker" placeholder="We are unsure where to start"></textarea></div>
+              <div class="field-wide consent"><input id="consent" type="checkbox" checked /><label for="consent">I agree to be contacted about my result and relevant Blue Canvas services.</label></div>
+              <div class="field-wide" style="display:flex;flex-wrap:wrap;gap:0.8rem;align-items:center;justify-content:space-between;">
+                <div class="small-note">We will use your details to send your result and follow up if it looks like we can help. No spam, no nonsense.</div>
+                <button class="btn btn-primary" type="button">Email me the detailed result</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="why-card consult-card" id="book">
+            <div>
+              <div class="faq-tag">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 4v5c0 4.5-2.9 8.7-7 10-4.1-1.3-7-5.5-7-10V7l7-4z"/></svg>
+                Consultation route
+              </div>
+              <h3 style="margin:0.9rem 0 0.7rem;">Turn the result into a practical action plan</h3>
+              <p>Blue Canvas helps teams move from vague concern to a clear next-step plan. That can include mapping systems, tightening governance, reviewing vendor evidence, and shaping a realistic roadmap.</p>
+              <ul class="why-list">
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Practical, plain-English guidance</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Useful for operational teams, not just legal teams</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Focused on what to do next, not just what the law says</span></li>
+              </ul>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="#checker">Start the self-check</a>
+              <a class="btn btn-secondary" href="#book">Book a consultation</a>
+            </div>
+            <p class="small-note">This self-check is for general information and readiness planning. It is not formal legal advice or a substitute for matter-specific review.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="who-its-for">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Who this self-check is for</h2>
+            <p>Use this section to help visitors self-qualify quickly, without making the page feel niche or over-lawyered.</p>
+          </div>
+          <div class="audience-grid">
+            <article class="audience-card">
+              <div class="audience-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></div>
+              <h3>Teams using AI internally</h3>
+              <p>If you are using copilots, workflow automation, or internal decision support, this helps you sense-check governance basics early.</p>
+            </article>
+            <article class="audience-card">
+              <div class="audience-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M6 15l4-4 3 3 5-7"/></svg></div>
+              <h3>Businesses selling AI-enabled products or services</h3>
+              <p>If AI is part of what you sell, the need for documentation, oversight, and clarity is usually higher.</p>
+            </article>
+            <article class="audience-card">
+              <div class="audience-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18"/><path d="M12 3a15.3 15.3 0 0 1 0 18"/><path d="M12 3a15.3 15.3 0 0 0 0 18"/></svg></div>
+              <h3>Companies serving EU customers</h3>
+              <p>You do not need to be based in the EU for the Act to matter. EU market exposure is the key question.</p>
+            </article>
+            <article class="audience-card">
+              <div class="audience-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <h3>Ops, product, compliance, and leadership teams</h3>
+              <p>Useful for the people who need a practical view before they involve legal, procurement, or engineering.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="what-it-covers">
+        <div class="container">
+          <div class="section-heading">
+            <h2>What the check looks at</h2>
+            <p>The content breadth matters because the page should feel operationally useful, not like a shallow lead magnet.</p>
+          </div>
+          <div class="cover-grid">
+            <article class="cover-card">
+              <div class="cover-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18"/><path d="M12 3a15.3 15.3 0 0 1 0 18"/><path d="M12 3a15.3 15.3 0 0 0 0 18"/></svg></div>
+              <h3>Exposure and market touchpoints</h3>
+              <div class="cover-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Your EU exposure and whether outputs affect people in the EU</span></div>
+            </article>
+            <article class="cover-card">
+              <div class="cover-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+              <h3>Use case and risk pattern</h3>
+              <div class="cover-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>The kinds of decisions your AI affects and whether higher-risk use cases may be in play</span></div>
+            </article>
+            <article class="cover-card">
+              <div class="cover-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 4v6c0 4.5-2.9 8.6-7 10-4.1-1.4-7-5.5-7-10V6l7-4z"/></svg></div>
+              <h3>Governance basics</h3>
+              <div class="cover-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>System inventory, ownership, approval steps, and documented monitoring</span></div>
+            </article>
+            <article class="cover-card">
+              <div class="cover-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M7 15l4-4 3 3 4-6"/></svg></div>
+              <h3>Oversight and escalation</h3>
+              <div class="cover-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>How strong your human review, override, and escalation really are</span></div>
+            </article>
+            <article class="cover-card">
+              <div class="cover-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12"/><path d="M6 12h12"/></svg></div>
+              <h3>Training and AI literacy</h3>
+              <div class="cover-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Whether the people using or supervising AI have role-appropriate training</span></div>
+            </article>
+            <article class="cover-card">
+              <div class="cover-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8h10"/><path d="M7 12h6"/><path d="M7 16h8"/><rect x="4" y="4" width="16" height="16" rx="2"/></svg></div>
+              <h3>Vendor documentation and controls</h3>
+              <div class="cover-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>What your vendors can evidence on limitations, controls, intended use, and support</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline">
+        <div class="container timeline-extended">
+          <div class="timeline-left">
+            <div class="faq-tag">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2v4M16 2v4M4 10h16"/><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+              Timing section
+            </div>
+            <h3>The timing matters</h3>
+            <p>As at <strong>14 April 2026</strong>, most remaining EU AI Act obligations are due from <strong>2 August 2026</strong>. If a business may be in scope, now is the window to get organised rather than scramble late.</p>
+            <p class="small-note">There have already been proposed simplification changes, including the European Commission proposal on <strong>19 November 2025</strong>. The right tone here is practical readiness, not false certainty.</p>
+          </div>
+          <div class="timeline-right">
+            <div class="timeline-line">
+              <div class="timeline-node">
+                <div class="timeline-node-mark" aria-hidden="true"></div>
+                <div><h4>Now</h4><p>Make the visitor feel there is still time to act, but not time to drift.</p></div>
+              </div>
+              <div class="timeline-node">
+                <div class="timeline-node-mark" aria-hidden="true"></div>
+                <div><h4>Before August 2026</h4><p>Map systems, assess pressure points, tighten governance, and line up evidence.</p></div>
+              </div>
+              <div class="timeline-node">
+                <div class="timeline-node-mark" aria-hidden="true"></div>
+                <div><h4>If the result is stronger-risk</h4><p>Move quickly into a scoping call or workshop, especially if there are higher-risk or unclear use cases.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container faq-grid" id="faq">
+          <div class="faq-card">
+            <div class="faq-tag">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.09 9a3 3 0 1 1 5.82 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+              FAQ cues
+            </div>
+            <h3>Handle the usual objections without bloating the page</h3>
+            <details open>
+              <summary>Does the EU AI Act apply if we are based in the UK?<span class="faq-plus">+</span></summary>
+              <p>It can. If your AI systems, services, or outputs are placed on the EU market or affect people in the EU, the Act may still matter.</p>
+            </details>
+            <details>
+              <summary>Does this checker tell us whether we are compliant?<span class="faq-plus">+</span></summary>
+              <p>No. It gives a practical readiness view based on your answers. It is designed to highlight likely areas for review, not provide formal legal advice.</p>
+            </details>
+            <details>
+              <summary>Do we need this if we only use third-party AI tools?<span class="faq-plus">+</span></summary>
+              <p>Possibly, yes. Even if you are not building models yourself, your use of AI, your governance, and your vendor controls can still matter.</p>
+            </details>
+            <details>
+              <summary>What happens after I submit my details?<span class="faq-plus">+</span></summary>
+              <p>You receive a fuller result summary and, where relevant, a recommendation to speak with Blue Canvas about the next practical steps.</p>
+            </details>
+          </div>
+
+          <div class="cta-band">
+            <h2>Need a clearer view of your next move?</h2>
+            <p>Run the self-check now, or book a consultation if you already know you want practical support.</p>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="#checker">Start the self-check</a>
+              <a class="btn btn-secondary" href="#book">Book a consultation</a>
+            </div>
+            <div class="micro-pill">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 4v5c0 4.5-2.9 8.7-7 10-4.1-1.3-7-5.5-7-10V7l7-4z"/><path d="M9.5 12.5l1.7 1.7 3.8-4.2"/></svg>
+              Lead-capture first, but still useful on first visit
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="container footer-note">
+      Static concept preview for Blue Canvas. British English, careful legal framing, and no legal-tech cliché visuals.
+    </div>
+  </div>
+
+  <script>
+    const heroQuestions = [
+      {
+        title: 'Does your business sell into the EU, support EU clients, or produce AI outputs that affect people in the EU?',
+        options: [
+          { title: 'No, none of those', meta: 'Lower likelihood of direct EU AI Act exposure, though basic governance still helps.' },
+          { title: 'Not sure or possibly', meta: 'Common where supply chains, delivery models, or downstream use are not fully mapped yet.' },
+          { title: 'Yes, in at least one of those ways', meta: 'Likely worth a closer look, especially if AI outputs reach EU users, buyers, or staff.' }
+        ]
+      },
+      {
+        title: 'Which best describes your current AI use?',
+        options: [
+          { title: 'Occasional experiments', meta: 'Early-stage use, usually better suited to lighter governance and awareness steps.' },
+          { title: 'Third-party tools in operations', meta: 'Common for service teams using copilots, workflow tools, or AI assistants.' },
+          { title: 'AI-enabled products or workflows', meta: 'Usually calls for clearer ownership, documentation, and controls.' }
+        ]
+      },
+      {
+        title: 'Do your AI systems influence decisions, access, eligibility, safety, or meaningful business outcomes?',
+        options: [
+          { title: 'No', meta: 'Lower pressure, but still worth documenting how outputs are reviewed.' },
+          { title: 'Sometimes or in limited cases', meta: 'A sign to tighten oversight, escalation, and record-keeping.' },
+          { title: 'Yes, regularly', meta: 'Typically a stronger signal for earlier scoping and governance work.' }
+        ]
+      }
+    ];
+
+    const heroState = { index: 0, selected: Array(heroQuestions.length).fill(null) };
+
+    const heroTitle = document.getElementById('heroQuestionTitle');
+    const heroOptions = document.getElementById('heroOptions');
+    const heroProgressText = document.getElementById('heroProgressText');
+    const heroProgressBar = document.getElementById('heroProgressBar');
+    const heroBack = document.getElementById('heroBack');
+    const heroNext = document.getElementById('heroNext');
+
+    function renderHeroQuestion() {
+      const item = heroQuestions[heroState.index];
+      heroTitle.textContent = item.title;
+      heroProgressText.textContent = `Question ${heroState.index + 1} of ${heroQuestions.length}`;
+      heroProgressBar.style.width = `${((heroState.index + 1) / heroQuestions.length) * 100}%`;
+      heroBack.disabled = heroState.index === 0;
+      heroNext.textContent = heroState.index === heroQuestions.length - 1 ? 'See result' : 'Next';
+      heroNext.disabled = heroState.selected[heroState.index] === null;
+      heroOptions.innerHTML = '';
+
+      item.options.forEach((option, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = `option${heroState.selected[heroState.index] === idx ? ' active' : ''}`;
+        btn.innerHTML = `
+          <span class="option-bullet" aria-hidden="true"></span>
+          <span class="option-title">${option.title}</span>
+          <span class="option-meta">${option.meta}</span>
+        `;
+        btn.addEventListener('click', () => {
+          heroState.selected[heroState.index] = idx;
+          renderHeroQuestion();
+        });
+        heroOptions.appendChild(btn);
+      });
+    }
+
+    heroBack.addEventListener('click', () => {
+      if (heroState.index > 0) {
+        heroState.index -= 1;
+        renderHeroQuestion();
+      }
+    });
+
+    heroNext.addEventListener('click', () => {
+      if (heroState.selected[heroState.index] === null) return;
+      if (heroState.index < heroQuestions.length - 1) {
+        heroState.index += 1;
+        renderHeroQuestion();
+        return;
+      }
+
+      heroTitle.textContent = 'Preview result: Early action recommended';
+      heroProgressText.textContent = 'Result ready';
+      heroProgressBar.style.width = '100%';
+      heroOptions.innerHTML = `
+        <div class="detail-block" style="margin:0;">
+          <h4 style="margin-bottom:0.55rem;">Why this feels credible</h4>
+          <ul class="detail-list">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Useful headline result shown instantly</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Detailed summary and follow-up steps gated afterwards</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Commercial tone without pretending to give legal certainty</span></li>
+          </ul>
+        </div>
+      `;
+      heroBack.disabled = true;
+      heroNext.disabled = true;
+      heroNext.textContent = 'Ready';
+    });
+
+    renderHeroQuestion();
+  </script>
+</body>
+</html>

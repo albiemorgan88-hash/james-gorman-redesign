@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-14T13:05:18.418Z",
+  "updatedAt": "2026-04-14T15:37:50.066Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -1045,13 +1045,13 @@
       "endLine": 147,
       "source": "memory",
       "snippet": "- 🔴 bluecanvas.ai: PJ needs to add redirects + publish in Webflow Designer - 🔴 Ireland OGP AI PMC response — biggest tender opportunity this week - 🟡 Respond to Moltbook comment (flagged since Mar 6 — API shows isRead:true but needs actual reply) - 🟡 Joe Abrahams follow-up — Readiness Scorecard demo built, no contact - 🟡 CRON_SECRET check in Vercel for Ardmore weekly draw - 🟡 ChatGPT→Claude migration blog post (SEO opportunity)",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7.289632568747091,
+      "totalScore": 8.103237124096646,
       "maxScore": 0.8416590100244603,
       "firstRecalledAt": "2026-04-08T06:01:26.693Z",
-      "lastRecalledAt": "2026-04-12T15:06:48.539Z",
+      "lastRecalledAt": "2026-04-14T15:37:47.593Z",
       "queryHashes": [
         "4ddc338cdf70",
         "d997e5734f73",
@@ -1061,13 +1061,15 @@
         "4ce6d61a4e45",
         "91f7c044d6f9",
         "020f5608a0b2",
-        "241ca38979d9"
+        "241ca38979d9",
+        "cbeb99b5e2db"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-09",
         "2026-04-10",
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-14"
       ],
       "conceptTags": [
         "gpt",
@@ -1300,21 +1302,23 @@
       "endLine": 146,
       "source": "memory",
       "snippet": "7. **Tender Tracker** (09:10) — 3 HIGH: Ireland OGP AI PMC (respond NOW), DSIT/Capgemini £4.5M subcontracting, CCS RM6200 AI DPS open till 2029 ### Key New Info - **James Gorman** — Derry estate agent, prospect for Blue Canvas. Site: jamesgormanproperty.com (Wix, terrible). Trustpilot 4.9★. Showcase + mockups built, pitch drafted. - **OpenClaw 2026.3.8** — now live, includes Telegram dupe fix + backup command - **Ireland OGP AI Pre-Market Consultation** — open NOW on eTenders, should be #1 priority for public sector revenue - **DSIT/Capgemini £4.5M AI contract** — seeking \"niche or emergent\" AI SMEs, perfect for Blue Canvas - **Donegal CC + InterTradeIreland tenders** — 3.5 weeks old, need",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.369026595600064,
-      "maxScore": 0.7947301971035255,
+      "totalScore": 3.1984211421173163,
+      "maxScore": 0.8293945465172526,
       "firstRecalledAt": "2026-04-08T06:01:34.021Z",
-      "lastRecalledAt": "2026-04-09T16:13:58.603Z",
+      "lastRecalledAt": "2026-04-14T15:37:47.593Z",
       "queryHashes": [
         "234746d31591",
         "d5e0ed4c0647",
-        "91f7c044d6f9"
+        "91f7c044d6f9",
+        "cbeb99b5e2db"
       ],
       "recallDays": [
         "2026-04-08",
-        "2026-04-09"
+        "2026-04-09",
+        "2026-04-14"
       ],
       "conceptTags": [
         "backup",
@@ -2122,25 +2126,27 @@
       "endLine": 59,
       "source": "memory",
       "snippet": "**Status:** Quiet afternoon - only Sashiko crosses threshold for deeper analysis. Most \"new\" tools appear to be either older than 2-week window or lack verification of actual launch dates. Next check: 21:00 GMT evening sweep. ## 21:26 - ClubDraw Critical Fix Complete **MAJOR ISSUE RESOLVED:** Mark Chambers' 10 ClubDraw numbers were showing as available on UI despite payment confirmation. Critical sync failure between payment webhook and database. **Root Cause Identified:** - Payment processed: 2026-03-19T20:27:00 GMT (£10.00) - Email confirmation sent successfully - Database subscription record missing (webhook failure) - UI showing numbers 49,72,127,132,185,209,254,348,474,479 as avail",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.237742806636794,
-      "maxScore": 0.8690435848078911,
+      "totalScore": 5.107229417408332,
+      "maxScore": 0.869486610771538,
       "firstRecalledAt": "2026-04-08T21:30:35.255Z",
-      "lastRecalledAt": "2026-04-12T14:16:57.037Z",
+      "lastRecalledAt": "2026-04-14T15:37:50.066Z",
       "queryHashes": [
         "64107a7aaad3",
         "9822aef9217d",
         "2c5cfe66ed05",
         "61a88c85f276",
-        "38c7258b5df9"
+        "38c7258b5df9",
+        "078b79773540"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-10",
         "2026-04-11",
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-14"
       ],
       "conceptTags": [
         "2-week",
@@ -2398,25 +2404,28 @@
       "endLine": 74,
       "source": "memory",
       "snippet": "Payment webhook sync failures can create UI/database disconnects. Manual intervention possible via Supabase API when payment confirmation exists. ## 21:26 - Wall Group Professional Mockups Complete **Task Completed:** Created 4 high-quality mobile mockup screenshots for Gavan (Wall Group SPAR): 1. **Homepage mockup** - \"Belfast's Premier SPAR Group\" with 8 store locations, SPAR branding 2. **Store locator** - Interactive map with service filters, all Belfast locations 3. **Flax EUROSPAR page** - Individual store with FeedMe menu, reviews, social integration 4. **About/services** - 37-year heritage, team showcase, career opportunities **Design Specs:** - Mobile-first 375px width (WhatsA",
-      "recallCount": 5,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.179488481906501,
+      "totalScore": 5.907953425217627,
       "maxScore": 0.8887196179394652,
       "firstRecalledAt": "2026-04-08T21:32:16.346Z",
-      "lastRecalledAt": "2026-04-11T21:02:47.167Z",
+      "lastRecalledAt": "2026-04-14T15:37:50.066Z",
       "queryHashes": [
         "9822aef9217d",
         "7aa24fd8374f",
         "2bcb735e7cf6",
         "020f5608a0b2",
-        "61a88c85f276"
+        "61a88c85f276",
+        "cbeb99b5e2db",
+        "078b79773540"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-09",
         "2026-04-10",
-        "2026-04-11"
+        "2026-04-11",
+        "2026-04-14"
       ],
       "conceptTags": [
         "ui/database",
@@ -3976,24 +3985,26 @@
       "endLine": 132,
       "source": "memory",
       "snippet": "- `/guides/installing-pinchy` route never properly created despite multiple attempts - **Final resolution:** Domain fixed (200 response) but content gaps remain ## LESSONS LEARNED - Subagents good for parallel content creation, terrible for deployment troubleshooting - Always test builds locally before production deployment - Vercel domain assignments can lag/fail and need manual verification - API integrations (Wix) work but can be temperamental - retry logic needed - Keep detailed changelogs for client work - essential for value demonstration",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.047187335738488,
+      "totalScore": 4.898482546365965,
       "maxScore": 0.8546732248709703,
       "firstRecalledAt": "2026-04-10T12:12:57.327Z",
-      "lastRecalledAt": "2026-04-12T15:06:48.539Z",
+      "lastRecalledAt": "2026-04-14T15:37:50.066Z",
       "queryHashes": [
         "43caa40c9ed9",
         "e891bd464219",
         "4958465bf68b",
         "22e22290e226",
-        "241ca38979d9"
+        "241ca38979d9",
+        "078b79773540"
       ],
       "recallDays": [
         "2026-04-10",
         "2026-04-11",
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-14"
       ],
       "conceptTags": [
         "guides/installing-pinchy",
@@ -5453,6 +5464,37 @@
         "built",
         "client",
         "showcases"
+      ]
+    },
+    "memory:memory/2026-03-09.md:73:96": {
+      "key": "memory:memory/2026-03-09.md:73:96",
+      "path": "memory/2026-03-09.md",
+      "startLine": 73,
+      "endLine": 96,
+      "source": "memory",
+      "snippet": "- Homepage title: 75 → 46 chars (\"AI Consultancy Northern Ireland | Blue Canvas\") - OG title & description updated to match **Needs PJ in Webflow Designer (API blocked on non-Enterprise):** - `/ai-audit` → `/lp/ai-audit` redirect (Site Settings → Hosting → 301 Redirects) - `/ai-consultancy-northern-ireland` → `/` redirect - Remove \"Sarah Chen — Founder\" placeholder on /about page - Fix consultation page FAQ (Academy content copy-pasted incorrectly) - Add canonical trailing slash in custom head code ### ✅ Google Ads Investigation - **API still blocked** — test-mode developer token returns 500 on production account - Basic access pending since Mar 6 (PJ submitted form) - **Full manual fix gu",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8337517299974555,
+      "maxScore": 0.8337517299974555,
+      "firstRecalledAt": "2026-04-14T15:37:47.593Z",
+      "lastRecalledAt": "2026-04-14T15:37:47.593Z",
+      "queryHashes": [
+        "cbeb99b5e2db"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "non-enterprise",
+        "ai-audit",
+        "lp/ai-audit",
+        "ai-consultancy-northern-ireland",
+        "copy-pasted",
+        "test-mode",
+        "homepage",
+        "title"
       ]
     }
   }

@@ -1,5 +1,9 @@
-2026/04/14-07:08:21.446 342795 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Session Storage/MANIFEST-000001
-2026/04/14-07:08:21.447 342795 Recovering log #327
-2026/04/14-07:08:21.448 342795 Level-0 table #331: started
-2026/04/14-07:08:21.451 342795 Level-0 table #331: 19540 bytes OK
-2026/04/14-07:08:21.454 342795 Delete type=0 #327
+2026/04/14-10:02:03.524 342795 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Session Storage/MANIFEST-000001
+2026/04/14-10:02:03.525 342795 Recovering log #332
+2026/04/14-10:02:03.525 342795 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Session Storage/000332.log 
+2026/04/14-12:06:01.427 342798 Level-0 table #335: started
+2026/04/14-12:06:01.432 342798 Level-0 table #335: 17844 bytes OK
+2026/04/14-12:06:01.435 342798 Delete type=0 #332
+2026/04/14-12:09:46.954 342798 Level-0 table #337: started
+2026/04/14-12:09:46.958 342798 Level-0 table #337: 186665 bytes OK
+2026/04/14-12:09:46.960 342798 Delete type=0 #334
