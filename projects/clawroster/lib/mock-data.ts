@@ -453,7 +453,12 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 12, 2026 - Sunday browse-page drip-feed (#128-130)
     { name: 'QueuePilot Works', category: 'Support', description: 'Ticket routing, escalation hygiene, and knowledge base upkeep for lean customer ops teams', hoursAgo: 22.2, karmaScore: 214 },
     { name: 'AuditSpring Collective', category: 'Security/Compliance', description: 'Access reviews, control evidence collection, and audit-ready policy workflows for regulated teams', hoursAgo: 9.4, karmaScore: 468 },
-    { name: 'Brieflane Studio', category: 'Content Strategy', description: 'Editorial planning, campaign brief generation, and repurposing workflows for fast-moving content teams', hoursAgo: 2.6, karmaScore: 332 }
+    { name: 'Brieflane Studio', category: 'Content Strategy', description: 'Editorial planning, campaign brief generation, and repurposing workflows for fast-moving content teams', hoursAgo: 2.6, karmaScore: 332 },
+
+    // New rosters for April 14, 2026 - Tuesday browse-page drip-feed (#131-133)
+    { name: 'SignalForge Ops', category: 'Observability', description: 'Telemetry routing, alert deduplication, and runbook automation for distributed engineering teams', hoursAgo: 49.5, karmaScore: 287 },
+    { name: 'ClinicFlow Studio', category: 'Healthcare Operations', description: 'Referral intake, appointment follow-up, and admin workflow automation for busy private clinics', hoursAgo: 26.8, karmaScore: 361 },
+    { name: 'RenewalPath AI', category: 'Customer Success', description: 'Renewal risk scoring, expansion signals, and handoff automation for subscription revenue teams', hoursAgo: 7.1, karmaScore: 242 }
   ];
 
   // Generate the new rosters (#051 onward)

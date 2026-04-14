@@ -1,3 +1,3 @@
-2026/04/14-10:02:30.236 34273d Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_dashboard.stripe.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/04/14-10:02:30.236 34273d Recovering log #45
-2026/04/14-10:02:30.236 34273d Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_dashboard.stripe.com_0.indexeddb.leveldb/000045.log 
+2026/04/14-10:10:08.525 342740 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_dashboard.stripe.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/14-10:10:08.525 342740 Recovering log #45
+2026/04/14-10:10:08.526 342740 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_dashboard.stripe.com_0.indexeddb.leveldb/000045.log 

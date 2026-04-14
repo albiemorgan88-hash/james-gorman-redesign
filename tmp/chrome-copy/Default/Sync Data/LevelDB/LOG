@@ -1,3 +1,39 @@
 2026/04/14-10:01:59.880 342748 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Sync Data/LevelDB/MANIFEST-000001
 2026/04/14-10:01:59.881 342748 Recovering log #676
 2026/04/14-10:01:59.881 342748 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Sync Data/LevelDB/000676.log 
+2026/04/14-10:09:35.998 342740 Level-0 table #680: started
+2026/04/14-10:09:36.000 342740 Level-0 table #680: 147436 bytes OK
+2026/04/14-10:09:36.002 342740 Delete type=0 #676
+2026/04/14-10:13:28.424 342740 Level-0 table #682: started
+2026/04/14-10:13:28.428 342740 Level-0 table #682: 111667 bytes OK
+2026/04/14-10:13:28.434 342740 Delete type=0 #679
+2026/04/14-10:13:28.435 342740 Compacting 4@0 + 1@1 files
+2026/04/14-10:13:28.440 342740 Generated table #683@0: 210 keys, 42612 bytes
+2026/04/14-10:13:28.440 342740 Compacted 4@0 + 1@1 files => 42612 bytes
+2026/04/14-10:13:28.441 342740 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/14-10:13:28.441 342740 Delete type=2 #672
+2026/04/14-10:13:28.441 342740 Delete type=2 #677
+2026/04/14-10:13:28.441 342740 Delete type=2 #674
+2026/04/14-10:13:28.441 342740 Delete type=2 #680
+2026/04/14-10:13:28.441 342740 Delete type=2 #682
+2026/04/14-11:41:55.694 34273d Level-0 table #685: started
+2026/04/14-11:41:55.699 34273d Level-0 table #685: 107364 bytes OK
+2026/04/14-11:41:55.702 34273d Delete type=0 #681
+2026/04/14-11:50:41.922 34273d Level-0 table #687: started
+2026/04/14-11:50:41.925 34273d Level-0 table #687: 110022 bytes OK
+2026/04/14-11:50:41.929 34273d Delete type=0 #684
+2026/04/14-11:56:23.303 34273d Level-0 table #689: started
+2026/04/14-11:56:23.306 34273d Level-0 table #689: 102256 bytes OK
+2026/04/14-11:56:23.310 34273d Delete type=0 #686
+2026/04/14-11:57:16.938 342740 Level-0 table #691: started
+2026/04/14-11:57:16.941 342740 Level-0 table #691: 132330 bytes OK
+2026/04/14-11:57:16.944 342740 Delete type=0 #688
+2026/04/14-11:57:16.944 342740 Compacting 4@0 + 1@1 files
+2026/04/14-11:57:16.956 342740 Generated table #692@0: 210 keys, 42445 bytes
+2026/04/14-11:57:16.956 342740 Compacted 4@0 + 1@1 files => 42445 bytes
+2026/04/14-11:57:16.957 342740 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/14-11:57:16.957 342740 Delete type=2 #689
+2026/04/14-11:57:16.957 342740 Delete type=2 #687
+2026/04/14-11:57:16.957 342740 Delete type=2 #691
+2026/04/14-11:57:16.957 342740 Delete type=2 #685
+2026/04/14-11:57:16.957 342740 Delete type=2 #683

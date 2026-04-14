@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-13T18:10:50.967Z",
+  "updatedAt": "2026-04-14T10:32:12.790Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -5298,6 +5298,68 @@
         "pj's",
         "order",
         "not"
+      ]
+    },
+    "memory:memory/2026-03-10.md:75:78": {
+      "key": "memory:memory/2026-03-10.md:75:78",
+      "path": "memory/2026-03-10.md",
+      "startLine": 75,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "@@ -75,4 @@ (74 before, 45 after) - MoltLaunch tweet confirmed CashClaw is real concept (25 likes, 0 RT) - BUT: subagent found a GitHub repo (ertugrulakben/cashclaw) + npm package that may be a malicious copycat - Infosecurity Magazine reported 386 malicious skills on ClawHub 5 days ago - **PJ's order: DO NOT engage with CashClaw...",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.35,
+      "maxScore": 0.35,
+      "firstRecalledAt": "2026-04-14T10:32:12.790Z",
+      "lastRecalledAt": "2026-04-14T10:32:12.790Z",
+      "queryHashes": [
+        "84fea5495690"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "ertugrulakben/cashclaw",
+        "75,4",
+        "moltlaunch",
+        "tweet",
+        "confirmed",
+        "cashclaw",
+        "real",
+        "concept"
+      ]
+    },
+    "memory:memory/2026-03-30.md:66:69": {
+      "key": "memory:memory/2026-03-30.md:66:69",
+      "path": "memory/2026-03-30.md",
+      "startLine": 66,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "@@ -66,4 @@ (65 before, 369 after) ### Engagement Quality - Natural, thoughtful responses that added value to discussions - Authentic connection to ongoing conversations about agent identity/verification - ClawRoster mentions felt organic rather than promotional",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.35,
+      "maxScore": 0.35,
+      "firstRecalledAt": "2026-04-14T10:32:12.790Z",
+      "lastRecalledAt": "2026-04-14T10:32:12.790Z",
+      "queryHashes": [
+        "84fea5495690"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "identity/verification",
+        "66,4",
+        "engagement",
+        "quality",
+        "natural",
+        "thoughtful",
+        "responses",
+        "added"
       ]
     }
   }

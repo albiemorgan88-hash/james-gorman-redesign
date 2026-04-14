@@ -1,15 +1,3 @@
-2026/04/10-12:49:30.036 2925 Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_webflow.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/04/10-12:49:30.036 2925 Recovering log #4
-2026/04/10-12:49:30.037 2925 Reusing old log /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_webflow.com_0.indexeddb.leveldb/000004.log 
-2026/04/10-12:49:33.942 2925 Level-0 table #8: started
-2026/04/10-12:49:33.943 2925 Level-0 table #8: 209 bytes OK
-2026/04/10-12:49:33.944 2925 Delete type=0 #4
-2026/04/10-12:49:33.945 2925 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2026/04/10-12:49:33.945 2925 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x06' @ 272 : 1
-2026/04/10-12:49:33.945 2925 Compacting 1@1 + 1@2 files
-2026/04/10-12:49:33.946 2925 Generated table #9@1: 81 keys, 1348 bytes
-2026/04/10-12:49:33.946 2925 Compacted 1@1 + 1@2 files => 1348 bytes
-2026/04/10-12:49:33.947 2925 compacted to: files[ 0 0 1 0 0 0 0 ]
-2026/04/10-12:49:33.947 2925 Delete type=2 #5
-2026/04/10-12:49:33.947 2925 Delete type=2 #8
-2026/04/10-12:49:33.947 2925 Manual compaction at level-1 from '\x00\x00\x00\x00\x06' @ 272 : 1 .. (end); will stop at (end)
+2026/04/14-10:08:00.722 34273d Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_webflow.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/14-10:08:00.722 34273d Recovering log #7
+2026/04/14-10:08:00.722 34273d Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_webflow.com_0.indexeddb.leveldb/000007.log 
