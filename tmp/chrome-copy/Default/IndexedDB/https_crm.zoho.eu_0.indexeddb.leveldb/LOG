@@ -1,13 +1,25 @@
-2026/04/14-10:10:06.616 342740 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_crm.zoho.eu_0.indexeddb.leveldb/MANIFEST-000001
-2026/04/14-10:10:06.616 342740 Recovering log #29
-2026/04/14-10:10:06.616 342740 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_crm.zoho.eu_0.indexeddb.leveldb/000029.log 
-2026/04/14-10:10:06.642 34273d Level-0 table #34: started
-2026/04/14-10:10:06.643 34273d Level-0 table #34: 3236 bytes OK
-2026/04/14-10:10:06.644 34273d Delete type=0 #29
-2026/04/14-10:10:06.644 34273d Manual compaction at level-0 from '\x00\x0f\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0f\x01\x02\x01\x03\x00k\x00e\x00y' @ 1343 : 1
-2026/04/14-10:10:06.644 34273d Compacting 1@0 + 1@1 files
-2026/04/14-10:10:06.645 34273d Generated table #35@0: 146 keys, 1937 bytes
-2026/04/14-10:10:06.645 34273d Compacted 1@0 + 1@1 files => 1937 bytes
-2026/04/14-10:10:06.646 34273d compacted to: files[ 0 1 1 0 0 0 0 ]
-2026/04/14-10:10:06.646 34273d Delete type=2 #34
-2026/04/14-10:10:06.646 34273d Manual compaction at level-0 from '\x00\x0f\x01\x02\x01\x03\x00k\x00e\x00y' @ 1343 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/04/14-19:41:32.755 342748 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_crm.zoho.eu_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/14-19:41:32.755 342748 Recovering log #33
+2026/04/14-19:41:32.756 342748 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_crm.zoho.eu_0.indexeddb.leveldb/000033.log 
+2026/04/14-19:41:32.756 342748 Delete type=2 #31
+2026/04/14-19:41:32.866 342748 Level-0 table #38: started
+2026/04/14-19:41:32.867 342748 Level-0 table #38: 1774 bytes OK
+2026/04/14-19:41:32.872 342748 Delete type=0 #33
+2026/04/14-19:41:32.872 34273d Manual compaction at level-0 from '\x00\x10\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x11\x00\x00\x00' @ 0 : 0; will stop at '\x00\x10\x01\x02\x01\x03\x00k\x00e\x00y' @ 1434 : 1
+2026/04/14-19:41:32.872 34273d Compacting 1@0 + 1@1 files
+2026/04/14-19:41:32.873 34273d Generated table #39@0: 147 keys, 1974 bytes
+2026/04/14-19:41:32.873 34273d Compacted 1@0 + 1@1 files => 1974 bytes
+2026/04/14-19:41:32.874 34273d compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/14-19:41:32.874 34273d Delete type=2 #38
+2026/04/14-19:41:32.874 34273d Manual compaction at level-0 from '\x00\x10\x01\x02\x01\x03\x00k\x00e\x00y' @ 1434 : 1 .. '\x00\x11\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/04/14-19:42:02.825 342740 Level-0 table #41: started
+2026/04/14-19:42:02.827 342740 Level-0 table #41: 1924 bytes OK
+2026/04/14-19:42:02.830 342740 Delete type=2 #35
+2026/04/14-19:42:02.830 342740 Delete type=0 #37
+2026/04/14-19:42:02.830 342740 Manual compaction at level-0 from '\x00\x11\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x12\x00\x00\x00' @ 0 : 0; will stop at '\x00\x11\x01\x02\x01\x03\x00k\x00e\x00y' @ 1536 : 1
+2026/04/14-19:42:02.830 342740 Compacting 1@0 + 1@1 files
+2026/04/14-19:42:02.831 342740 Generated table #42@0: 147 keys, 1983 bytes
+2026/04/14-19:42:02.831 342740 Compacted 1@0 + 1@1 files => 1983 bytes
+2026/04/14-19:42:02.832 342740 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/14-19:42:02.832 342740 Delete type=2 #41
+2026/04/14-19:42:02.832 342740 Manual compaction at level-0 from '\x00\x11\x01\x02\x01\x03\x00k\x00e\x00y' @ 1536 : 1 .. '\x00\x12\x00\x00\x00' @ 0 : 0; will stop at (end)

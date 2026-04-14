@@ -1,4 +1,16 @@
-2026/04/10-12:04:27.929 2923 Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_vercel.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/04/10-12:04:27.929 2923 Recovering log #23
-2026/04/10-12:04:27.930 2923 Reusing old log /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_vercel.com_0.indexeddb.leveldb/000023.log 
-2026/04/10-12:04:27.932 297d Manual compaction at level-0 from '\x00\x0d\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0e\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/04/14-18:43:54.843 342740 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_vercel.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/14-18:43:54.843 342740 Recovering log #23
+2026/04/14-18:43:54.843 342740 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_vercel.com_0.indexeddb.leveldb/000023.log 
+2026/04/14-18:43:54.852 342749 Manual compaction at level-0 from '\x00\x0e\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0f\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/04/14-18:43:58.432 34273d Level-0 table #28: started
+2026/04/14-18:43:58.433 34273d Level-0 table #28: 15518 bytes OK
+2026/04/14-18:43:58.436 34273d Delete type=0 #23
+2026/04/14-18:43:58.436 34273d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2026/04/14-18:43:58.436 34273d Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x0f\x00\x00\xc8\x06\x00S\x00c\x00o\x00p\x00e\x00s' @ 3644 : 1
+2026/04/14-18:43:58.436 34273d Compacting 1@1 + 1@2 files
+2026/04/14-18:43:58.437 34273d Generated table #29@1: 60 keys, 997 bytes
+2026/04/14-18:43:58.437 34273d Compacted 1@1 + 1@2 files => 997 bytes
+2026/04/14-18:43:58.438 34273d compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/14-18:43:58.438 34273d Delete type=2 #28
+2026/04/14-18:43:58.438 34273d Delete type=2 #25
+2026/04/14-18:43:58.438 34273d Manual compaction at level-1 from '\x00\x0f\x00\x00\xc8\x06\x00S\x00c\x00o\x00p\x00e\x00s' @ 3644 : 1 .. (end); will stop at (end)

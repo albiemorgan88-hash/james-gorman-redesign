@@ -1,13 +1,13 @@
-2026/04/10-12:04:34.559 2923 Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_manage.wix.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/04/10-12:04:34.559 2923 Recovering log #21
-2026/04/10-12:04:34.561 2923 Reusing old log /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_manage.wix.com_0.indexeddb.leveldb/000021.log 
-2026/04/10-12:04:34.807 297d Level-0 table #26: started
-2026/04/10-12:04:34.808 297d Level-0 table #26: 126949 bytes OK
-2026/04/10-12:04:34.814 297d Delete type=0 #21
-2026/04/10-12:04:34.816 2925 Manual compaction at level-0 from '\x00\x09\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at (end)
-2026/04/10-12:46:27.898 2923 Compacting 1@1 + 1@2 files
-2026/04/10-12:46:27.905 2923 Generated table #27@1: 38 keys, 978 bytes
-2026/04/10-12:46:27.905 2923 Compacted 1@1 + 1@2 files => 978 bytes
-2026/04/10-12:46:27.909 2923 compacted to: files[ 0 0 1 0 0 0 0 ]
-2026/04/10-12:46:27.910 2923 Delete type=2 #23
-2026/04/10-12:46:27.910 2923 Delete type=2 #26
+2026/04/14-19:41:28.863 342740 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_manage.wix.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/14-19:41:28.863 342740 Recovering log #25
+2026/04/14-19:41:28.864 342740 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_manage.wix.com_0.indexeddb.leveldb/000025.log 
+2026/04/14-19:41:29.726 34273d Level-0 table #30: started
+2026/04/14-19:41:29.729 34273d Level-0 table #30: 143221 bytes OK
+2026/04/14-19:41:29.733 34273d Delete type=0 #25
+2026/04/14-19:41:29.733 34273d Manual compaction at level-0 from '\x00\x0a\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/04/14-19:43:04.693 342740 Compacting 1@1 + 1@2 files
+2026/04/14-19:43:04.700 342740 Generated table #31@1: 38 keys, 977 bytes
+2026/04/14-19:43:04.701 342740 Compacted 1@1 + 1@2 files => 977 bytes
+2026/04/14-19:43:04.703 342740 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/14-19:43:04.704 342740 Delete type=2 #27
+2026/04/14-19:43:04.704 342740 Delete type=2 #30

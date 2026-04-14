@@ -1,5 +1,89 @@
 # James Gorman Property - SEO Changelog
 
+## 14th April 2026 - NEXT DRAFT-ONLY CONTENT BLAST WRITTEN FOR WATERSIDE, CITYSIDE + LIMAVADY 📝
+
+### AUDIT / DECISION NOTES
+
+Reviewed the local JGP draft library first, then checked the live blog-post sitemap before choosing the next batch.
+
+Key recent live topics confirmed from the sitemap:
+
+- **13 April 2026:** `property-for-sale-eglinton-buyer-guide-2026`, `houses-for-sale-dungiven`, `houses-for-sale-claudy`, `property-for-sale-claudy-village-guide-2026`
+- **7 April 2026:** `selling-your-home-in-derry-a-complete-guide-2026`, `property-in-eglinton-why-buyers-are-looking-beyond-the-city`, `living-in-claudy-property-guide-for-families`, `first-time-buyer-guide-buying-in-derry-and-the-north-west`, `dungiven-property-a-hidden-gem-in-the-north-west`, `derry-property-market-update-spring-2026`
+- **9 April 2026:** `how-to-choose-an-estate-agent-in-derry-your-complete-2026-guide`
+
+Because Eglinton, Claudy and Dungiven were just expanded live in April, I deliberately avoided drafting another batch in those same clusters. I also avoided writing another buyer-style Waterside / Cityside piece because older live area posts already exist there.
+
+### CHOSEN CONTENT ANGLE
+
+Moved to the cleaner next-commercial cluster:
+
+- **Waterside** — seller/service intent
+- **Cityside** — seller/service intent
+- **Limavady** — buyer intent
+- **Limavady** — seller intent
+
+This keeps intent separation cleaner against the current live set:
+
+- Waterside + Cityside already have buyer/location-style live posts, so the new drafts were written as **estate-agent / seller-led** articles rather than another near-duplicate buyer guide
+- Limavady already has a live service page and valuation-led pieces, so the new drafts split into **houses for sale Limavady** and **sell my house Limavady** to cover both sides of the funnel without touching the April Eglinton / Claudy / Dungiven cluster
+
+### NEW LOCAL DRAFTS CREATED
+
+Saved all four as **local drafts only** in `blog-drafts/`:
+
+1. `blog-drafts/2026-04-14-estate-agent-waterside-derry-seller-guide.md`
+   - **Title:** *Estate Agent Waterside Derry: Pricing, Presentation and Selling Well by the Foyle*
+   - **Intent:** seller/service-led Waterside piece
+
+2. `blog-drafts/2026-04-14-estate-agent-cityside-derry-seller-guide.md`
+   - **Title:** *Estate Agent Cityside Derry: Selling Period Homes, Flats and City-Centre Property Well*
+   - **Intent:** seller/service-led Cityside piece
+
+3. `blog-drafts/2026-04-14-houses-for-sale-limavady-buyer-guide-2026.md`
+   - **Title:** *Houses for Sale Limavady: A 2026 Buyer's Guide to Areas, Prices and Everyday Living*
+   - **Intent:** buyer-led Limavady piece
+
+4. `blog-drafts/2026-04-14-sell-my-house-limavady-guide-2026.md`
+   - **Title:** *Sell My House Limavady: How to Price, Prepare and Launch for a Better Result in 2026*
+   - **Intent:** seller-led Limavady piece
+
+### IMPORTANT STATUS NOTE
+
+- No Wix publish action taken
+- No external/public changes made
+- These four files are draft-only and remain local for Phil review
+
+## 14th April 2026 - WIX BUILD FEASIBILITY CHECK FOR VALUATION TOOL ✅
+
+### VERDICT
+
+Yes, the current valuation showcase can be built out on the live James Gorman Property Wix site.
+
+### MOST PRACTICAL IMPLEMENTATION ROUTE
+
+- build it as a dedicated seller landing page rather than dropping it into a general service page
+- best target remains a production valuation page such as `free-property-valuation-derry` / `sell-your-home-in-derry`
+- port the current calculator UI and pricing logic into a Wix page via custom embed / custom code or Velo-assisted page scripting
+- keep the current premium visual direction, but simplify any pieces that fight Wix layout constraints
+
+### WHAT IS ALREADY PROVEN
+
+- the current showcase is a self-contained front-end experience with HTML/CSS/JS pricing logic, so it does not depend on a separate app server
+- the current handoff is demo-safe but not production-safe: it still uses a prefilled `mailto:` flow
+- Wix is suitable for the front-end build, but real production value depends on a proper form/inbox/CRM path and a James-approved pricing model
+
+### BLOCKERS BEFORE LIVE ROLLOUT
+
+- replace `mailto:` handoff with a real inbox/CRM capture route
+- sense check pricing against James comparables for Derry, Culmore, Waterside, Cityside, Eglinton, Claudy and Limavady
+- authenticated Wix editor session still needed for build/publish work inside the live site
+- no public/live changes should be made without Phil approval
+
+### RECOMMENDED NEXT STEP
+
+Create a production-ready Wix implementation draft first, then QA on mobile/desktop, then publish only after Phil signs off.
+
 ## 13th April 2026 - GUIDE PRICE ENGINE UPGRADED IN DEMO REPO 🏡
 
 ### WHAT CHANGED

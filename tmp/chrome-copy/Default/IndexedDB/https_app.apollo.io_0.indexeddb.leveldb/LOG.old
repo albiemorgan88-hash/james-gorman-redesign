@@ -1,35 +1,12 @@
-2026/04/10-12:03:26.842 297d Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_app.apollo.io_0.indexeddb.leveldb/MANIFEST-000001
-2026/04/10-12:03:26.843 297d Recovering log #1487
-2026/04/10-12:03:26.845 297d Reusing old log /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_app.apollo.io_0.indexeddb.leveldb/001487.log 
-2026/04/10-12:03:42.032 2923 Compacting 1@1 + 1@2 files
-2026/04/10-12:03:42.042 2923 Generated table #1490@1: 1052 keys, 276520 bytes
-2026/04/10-12:03:42.042 2923 Compacted 1@1 + 1@2 files => 276520 bytes
-2026/04/10-12:03:42.044 2923 compacted to: files[ 0 0 1 0 0 0 0 ]
-2026/04/10-12:03:42.052 2925 Level-0 table #1492: started
-2026/04/10-12:03:42.060 2925 Level-0 table #1492: 3450180 bytes OK
-2026/04/10-12:03:42.061 2925 Delete type=0 #1487
-2026/04/10-12:03:42.062 2925 Delete type=2 #1486
-2026/04/10-12:03:42.062 2925 Delete type=2 #1488
-2026/04/10-12:03:42.081 2925 Level-0 table #1494: started
-2026/04/10-12:03:42.088 2925 Level-0 table #1494: 3368835 bytes OK
-2026/04/10-12:03:42.090 2925 Delete type=0 #1491
-2026/04/10-12:03:42.241 297d Level-0 table #1496: started
-2026/04/10-12:03:42.255 297d Level-0 table #1496: 3376424 bytes OK
-2026/04/10-12:03:42.259 297d Delete type=0 #1493
-2026/04/10-12:03:44.845 2925 Level-0 table #1498: started
-2026/04/10-12:03:44.851 2925 Level-0 table #1498: 3534105 bytes OK
-2026/04/10-12:03:44.853 2925 Delete type=0 #1495
-2026/04/10-12:03:44.944 297d Compacting 3@0 + 1@1 files
-2026/04/10-12:03:44.965 297d Generated table #1499@0: 914 keys, 100547 bytes
-2026/04/10-12:03:44.965 297d Compacted 3@0 + 1@1 files => 100547 bytes
-2026/04/10-12:03:44.966 297d compacted to: files[ 0 1 1 0 0 0 0 ]
-2026/04/10-12:03:44.966 297d Delete type=2 #1492
-2026/04/10-12:03:44.966 297d Delete type=2 #1494
-2026/04/10-12:03:44.966 297d Delete type=2 #1496
-2026/04/10-12:03:44.966 297d Delete type=2 #1498
-2026/04/10-14:03:27.942 297d Compacting 1@1 + 1@2 files
-2026/04/10-14:03:27.948 297d Generated table #1500@1: 1056 keys, 263924 bytes
-2026/04/10-14:03:27.948 297d Compacted 1@1 + 1@2 files => 263924 bytes
-2026/04/10-14:03:27.950 297d compacted to: files[ 0 0 1 0 0 0 0 ]
-2026/04/10-14:03:27.950 297d Delete type=2 #1490
-2026/04/10-14:03:27.950 297d Delete type=2 #1499
+2026/04/14-10:09:36.620 342740 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_app.apollo.io_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/14-10:09:36.620 342740 Recovering log #1497
+2026/04/14-10:09:36.624 342740 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/IndexedDB/https_app.apollo.io_0.indexeddb.leveldb/001497.log 
+2026/04/14-11:40:41.990 342740 Level-0 table #1503: started
+2026/04/14-11:40:42.012 342740 Level-0 table #1503: 3253871 bytes OK
+2026/04/14-11:40:42.015 342740 Delete type=0 #1497
+2026/04/14-11:41:29.302 342740 Compacting 1@1 + 1@2 files
+2026/04/14-11:41:29.313 342740 Generated table #1504@1: 1068 keys, 182924 bytes
+2026/04/14-11:41:29.313 342740 Compacted 1@1 + 1@2 files => 182924 bytes
+2026/04/14-11:41:29.314 342740 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/14-11:41:29.314 342740 Delete type=2 #1503
+2026/04/14-11:41:29.315 342740 Delete type=2 #1500

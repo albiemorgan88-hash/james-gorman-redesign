@@ -2,6 +2,18 @@
 
 Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 
+## LATEST UPDATE - 14th April 2026 - NEXT DRAFT-ONLY CONTENT BLAST PREPPED
+
+### COMPLETED:
+- [DONE] Audited recent local drafts plus live blog-post sitemap to avoid duplication and fresh cannibalisation risk before writing the next batch
+- [DONE] Confirmed the newest live April location posts remain Eglinton, Claudy and Dungiven, so the next blast was shifted away from those clusters
+- [DONE] Created 4 new draft-only posts in `blog-drafts/` focused on the next cleaner commercial opportunities: Waterside seller intent, Cityside seller intent, Limavady buyer intent and Limavady seller intent
+
+### NEXT ACTIONS:
+- [TODO] **P2 — Review the new 14 April drafts for publish order** — recommended first pass is Waterside seller piece, Cityside seller piece, Houses for Sale Limavady, then Sell My House Limavady
+- [TODO] **P2 — If publishing any of the new drafts, add tight internal links** into live valuation, sales, contact and relevant area/location posts to reduce cannibalisation risk
+- [TODO] **P2 — Monitor overlap carefully if Limavady expands further** — existing live `estate-agent-limavady` / valuation posts mean future Limavady drafts should stay clearly split by buyer vs seller intent
+
 ## LATEST UPDATE - 13th April 2026 - GUIDE PRICE ENGINE UPGRADE
 
 ### COMPLETED:
@@ -14,6 +26,7 @@ Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 ### NEXT ACTIONS:
 - [TODO] **P1 — Connect lead capture to a real inbox/CRM flow** before any production rollout, because the demo currently opens a pre-filled mailto draft
 - [TODO] **P1 — Sense check the pricing table against live James comparables** for Culmore, Waterside, Cityside, Eglinton, Claudy and Limavady before replacing the live valuation page
+- [TODO] **P1 — Port the guide-price engine into a real Wix page draft** using custom embed / Velo-friendly front-end code, then QA it before any publish decision
 - [TODO] **P2 — Decide whether postcode should auto-sync to area** in production or stay manually adjustable with a wider confidence band when mismatched
 - [TODO] **P2 — Add below-the-fold trust content** for production handoff: testimonial/proof, FAQs, and a clearer explanation of James's in-person valuation process
 

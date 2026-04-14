@@ -1,3 +1,15 @@
 2026/04/14-16:34:48.368 3cbe8d Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Session Storage/MANIFEST-000001
 2026/04/14-16:34:48.370 3cbe8d Recovering log #336
 2026/04/14-16:34:48.371 3cbe8d Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Session Storage/000336.log 
+2026/04/14-19:31:14.414 3cbe90 Level-0 table #340: started
+2026/04/14-19:31:14.428 3cbe90 Level-0 table #340: 48207 bytes OK
+2026/04/14-19:31:14.433 3cbe90 Delete type=0 #336
+2026/04/14-19:31:14.439 3cbe90 Compacting 4@0 + 1@1 files
+2026/04/14-19:31:14.444 3cbe90 Generated table #341@0: 3974 keys, 327699 bytes
+2026/04/14-19:31:14.444 3cbe90 Compacted 4@0 + 1@1 files => 327699 bytes
+2026/04/14-19:31:14.445 3cbe90 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/14-19:31:14.446 3cbe90 Delete type=2 #329
+2026/04/14-19:31:14.446 3cbe90 Delete type=2 #340
+2026/04/14-19:31:14.446 3cbe90 Delete type=2 #335
+2026/04/14-19:31:14.446 3cbe90 Delete type=2 #337
+2026/04/14-19:31:14.446 3cbe90 Delete type=2 #331
