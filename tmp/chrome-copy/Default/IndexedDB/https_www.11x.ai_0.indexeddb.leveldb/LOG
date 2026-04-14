@@ -1,0 +1,6 @@
+2026/04/01-18:36:07.177 43ff56 Creating DB /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_www.11x.ai_0.indexeddb.leveldb since it was missing.
+2026/04/01-18:36:07.178 43ff56 Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_www.11x.ai_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/01-18:36:18.094 43ff56 Level-0 table #5: started
+2026/04/01-18:36:18.095 43ff56 Level-0 table #5: 1433 bytes OK
+2026/04/01-18:36:18.098 43ff56 Delete type=0 #3
+2026/04/01-18:36:18.098 43ff56 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

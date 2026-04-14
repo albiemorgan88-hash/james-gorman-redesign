@@ -1,0 +1,21 @@
+2026/04/01-22:13:44.857 43ff60 Creating DB /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_account.simplybusiness.co.uk_0.indexeddb.leveldb since it was missing.
+2026/04/01-22:13:44.860 43ff60 Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_account.simplybusiness.co.uk_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/01-22:13:44.866 43ff60 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/04/01-22:13:44.868 43ff54 Level-0 table #5: started
+2026/04/01-22:13:44.869 43ff54 Level-0 table #5: 5461 bytes OK
+2026/04/01-22:13:44.869 43ff54 Delete type=0 #3
+2026/04/01-22:13:44.870 43ff54 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/04/01-22:14:30.341 43ff60 Level-0 table #7: started
+2026/04/01-22:14:30.345 43ff60 Level-0 table #7: 11416 bytes OK
+2026/04/01-22:14:30.347 43ff60 Delete type=0 #4
+2026/04/01-22:14:30.347 43ff61 Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/04/01-22:14:30.348 43ff54 Level-0 table #9: started
+2026/04/01-22:14:30.348 43ff54 Level-0 table #9: 556 bytes OK
+2026/04/01-22:14:30.349 43ff54 Delete type=0 #6
+2026/04/01-22:14:30.349 43ff54 Manual compaction at level-0 from '\x00\x09\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at '\x00\x09\x00\x00\x05' @ 931 : 1
+2026/04/01-22:14:30.349 43ff54 Compacting 1@0 + 1@1 files
+2026/04/01-22:14:30.350 43ff54 Generated table #10@0: 211 keys, 2986 bytes
+2026/04/01-22:14:30.350 43ff54 Compacted 1@0 + 1@1 files => 2986 bytes
+2026/04/01-22:14:30.350 43ff54 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/01-22:14:30.350 43ff54 Delete type=2 #9
+2026/04/01-22:14:30.350 43ff54 Manual compaction at level-0 from '\x00\x09\x00\x00\x05' @ 931 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at (end)

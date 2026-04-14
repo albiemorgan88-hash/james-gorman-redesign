@@ -1,0 +1,37 @@
+{
+   "checksum": "3955de8d96669335652ef8837c5f4107",
+   "roots": {
+      "bookmark_bar": {
+         "children": [  ],
+         "date_added": "13417267271369773",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13417267271369773",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13417267271369773",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile Bookmarks",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "Ct8BCr4BCIiBAhK3ASAAkgGjAQqgAQoOY2hyb21lX3N5bmNfYm0SBTUxIWJtGhIJ/8BctFhMBgAR/8BctFhMBgAiNAmsWUa0WEwGABADGRhkNf6cwc9WIAEqHDUxIWJtL2ZkOjkxNjM3MjM1NTk0Njg4OTMxNjEiNAmsWUa0WEwGABADGRhkNf6cwc9WIAEqHDUxIWJtL2ZkOjkxNjM3MjM1NTk0Njg4OTMxNjEpjfRctFhMBgDqAQsI/96qzQYQmO/AFRIAKhhhR2xEc3hOZWlQWFN5cCtRMXVrTDFRPT1IAxLDAQgCEr4BChxZY1NUb252RVNQd3FDczRMMmNyVmh2NjhMOTg9EmZaOkFEcXRBWnhaQmNiV2pSdW5pQzEySitMdzY5bTg2UndyeW5yR1NKWlo0enBPa0tEN082QnhQU0tVRzduWWpFY2xselc2dERCNlZWcmZUV1dJSGJXMVBLRFFjUWpJelRsK1FBPT0YACAAKAAwmOT9uPCKkwM4AEAAShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAABKrAQgBEqYBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9Ek5aOkFEcXRBWngxayt2aFl5YlRuZStTc0p4aERuN3hqTHJMRWtGeWNtcE42dkNZdFVtRmFKYXpBTGlJWS9sSDZlRDMwYWNyMXZReExxN3cYACAAKAAwmOT9uPCKkwM4AEAAShxhUkNXTGdoRjliNUlucUtJRHZ1Si9qdlFrRmM9WgBlAAAAABLDAQgDEr4BChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EmZaOkFEcXRBWnkzK1lYVkhaMERLNlIwV1FMaWVuZEZWeTRERUVNNndrN29udUNVS1RRczh4UFNXNUZ2eSs1RHhjL3dJcTlZN3lvWGFaYi9ZM2lkc25jOXVjMDdsV1NoWHBMU3FRPT0YACAAKAAwmOT9uPCKkwM4AEAAShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAADABOAA=",
+   "version": 1
+}

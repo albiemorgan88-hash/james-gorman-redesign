@@ -1,0 +1,5 @@
+2026/04/10-12:04:17.018 2923 Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_crm.zoho.eu_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/10-12:04:17.019 2923 Recovering log #29
+2026/04/10-12:04:17.019 2923 Reusing old log /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_crm.zoho.eu_0.indexeddb.leveldb/000029.log 
+2026/04/10-12:04:17.019 2923 Delete type=2 #28
+2026/04/10-12:04:17.050 297d Manual compaction at level-0 from '\x00\x0e\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0f\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,18 @@
+2026/04/10-12:03:31.566 2925 Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/10-12:03:31.567 2925 Recovering log #36
+2026/04/10-12:03:31.576 2925 Reusing old log /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000036.log 
+2026/04/10-12:03:34.874 2923 Level-0 table #42: started
+2026/04/10-12:03:34.890 2923 Level-0 table #42: 2981339 bytes OK
+2026/04/10-12:03:34.894 2923 Delete type=0 #36
+2026/04/10-12:03:51.771 2923 Compacting 1@1 + 1@2 files
+2026/04/10-12:03:51.782 2923 Generated table #43@1: 288 keys, 1750323 bytes
+2026/04/10-12:03:51.782 2923 Compacted 1@1 + 1@2 files => 1750323 bytes
+2026/04/10-12:03:51.783 2923 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/10-12:03:51.783 2923 Delete type=2 #39
+2026/04/10-12:03:51.783 2923 Delete type=2 #42
+2026/04/10-12:04:07.040 2925 Level-0 table #45: started
+2026/04/10-12:04:07.056 2925 Level-0 table #45: 3196274 bytes OK
+2026/04/10-12:04:07.058 2925 Delete type=0 #41
+2026/04/10-12:04:07.073 2925 Level-0 table #47: started
+2026/04/10-12:04:07.085 2925 Level-0 table #47: 3266090 bytes OK
+2026/04/10-12:04:07.090 2925 Delete type=0 #44

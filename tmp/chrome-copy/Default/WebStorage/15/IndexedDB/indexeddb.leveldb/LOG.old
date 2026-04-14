@@ -1,0 +1,15 @@
+2026/04/10-10:52:02.358 a22fc8 Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/WebStorage/15/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2026/04/10-10:52:02.359 a22fc8 Recovering log #19
+2026/04/10-10:52:02.359 a22fc8 Reusing old log /Users/philsagent/Library/Application Support/Google/Chrome/Default/WebStorage/15/IndexedDB/indexeddb.leveldb/000019.log 
+2026/04/10-10:53:15.424 a22fcb Level-0 table #24: started
+2026/04/10-10:53:15.448 a22fcb Level-0 table #24: 209 bytes OK
+2026/04/10-10:53:15.454 a22fcb Delete type=0 #19
+2026/04/10-10:53:15.454 a22fcb Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2026/04/10-10:53:15.454 a22fcb Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x06' @ 280 : 1
+2026/04/10-10:53:15.454 a22fcb Compacting 1@1 + 1@2 files
+2026/04/10-10:53:15.455 a22fcb Generated table #25@1: 81 keys, 1352 bytes
+2026/04/10-10:53:15.455 a22fcb Compacted 1@1 + 1@2 files => 1352 bytes
+2026/04/10-10:53:15.456 a22fcb compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/10-10:53:15.456 a22fcb Delete type=2 #21
+2026/04/10-10:53:15.456 a22fcb Delete type=2 #24
+2026/04/10-10:53:15.456 a22fcb Manual compaction at level-1 from '\x00\x00\x00\x00\x06' @ 280 : 1 .. (end); will stop at (end)
