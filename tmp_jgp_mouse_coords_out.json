@@ -1,0 +1,413 @@
+[
+  {
+    "id": "comp-lwdtc78616",
+    "box": {
+      "x": 302.65625,
+      "y": 419.765625,
+      "width": 139.984375,
+      "height": 67.171875
+    },
+    "tries": [
+      {
+        "point": "center",
+        "clicks": 1,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Page",
+          "label": ""
+        }
+      },
+      {
+        "point": "center",
+        "clicks": 2,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Page",
+          "label": ""
+        }
+      },
+      {
+        "point": "center",
+        "clicks": 3,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Page",
+          "label": ""
+        }
+      },
+      {
+        "point": "topLeft",
+        "clicks": 1,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Page",
+          "label": ""
+        }
+      },
+      {
+        "point": "topLeft",
+        "clicks": 2,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Page",
+          "label": ""
+        }
+      },
+      {
+        "point": "topLeft",
+        "clicks": 3,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Page",
+          "label": ""
+        }
+      },
+      {
+        "point": "midLeft",
+        "clicks": 1,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Page",
+          "label": ""
+        }
+      },
+      {
+        "point": "midLeft",
+        "clicks": 2,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Page",
+          "label": ""
+        }
+      },
+      {
+        "point": "midLeft",
+        "clicks": 3,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Page",
+          "label": ""
+        }
+      },
+      {
+        "point": "textish",
+        "clicks": 1,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Page",
+          "label": ""
+        }
+      },
+      {
+        "point": "textish",
+        "clicks": 2,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Page",
+          "label": ""
+        }
+      },
+      {
+        "point": "textish",
+        "clicks": 3,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Page",
+          "label": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "comp-lwdtc78314",
+    "box": {
+      "x": 458.796875,
+      "y": 419.8125,
+      "width": 257.59375,
+      "height": 89.5625
+    },
+    "tries": [
+      {
+        "point": "center",
+        "clicks": 1,
+        "selection": {
+          "breadcrumbs": [
+            "PagePage",
+            "Section GridSection Grid",
+            "Section GridSection Grid"
+          ],
+          "inspector": "Section Grid",
+          "label": "Page Section Grid Rows Add Cell Add Section"
+        }
+      },
+      {
+        "point": "center",
+        "clicks": 2,
+        "selection": {
+          "breadcrumbs": [
+            "Section GridSection Grid",
+            "CellCell",
+            "ImageImage",
+            "ImageImage"
+          ],
+          "inspector": "Image",
+          "label": "Section Grid Cell Image Change Image Create AI Image"
+        }
+      },
+      {
+        "point": "center",
+        "clicks": 3,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Image",
+          "label": ""
+        }
+      },
+      {
+        "point": "topLeft",
+        "clicks": 1,
+        "selection": {
+          "breadcrumbs": [
+            "PagePage",
+            "Section GridSection Grid",
+            "Section GridSection Grid"
+          ],
+          "inspector": "Section Grid",
+          "label": "Page Section Grid Rows Add Cell Add Section"
+        }
+      },
+      {
+        "point": "topLeft",
+        "clicks": 2,
+        "selection": {
+          "breadcrumbs": [
+            "PagePage",
+            "Section GridSection Grid",
+            "Section GridSection Grid"
+          ],
+          "inspector": "Section Grid",
+          "label": "Page Section Grid Rows Add Cell Add Section"
+        }
+      },
+      {
+        "point": "topLeft",
+        "clicks": 3,
+        "selection": {
+          "breadcrumbs": [
+            "PagePage",
+            "Section GridSection Grid",
+            "Section GridSection Grid"
+          ],
+          "inspector": "Section Grid",
+          "label": "Page Section Grid Rows Add Cell Add Section"
+        }
+      },
+      {
+        "point": "midLeft",
+        "clicks": 1,
+        "selection": {
+          "breadcrumbs": [
+            "PagePage",
+            "Section GridSection Grid",
+            "Section GridSection Grid"
+          ],
+          "inspector": "Section Grid",
+          "label": "Page Section Grid Rows Add Cell Add Section"
+        }
+      },
+      {
+        "point": "midLeft",
+        "clicks": 2,
+        "selection": {
+          "breadcrumbs": [
+            "PagePage",
+            "Section GridSection Grid",
+            "Section GridSection Grid"
+          ],
+          "inspector": "Section Grid",
+          "label": "Page Section Grid Rows Add Cell Add Section"
+        }
+      },
+      {
+        "point": "midLeft",
+        "clicks": 3,
+        "selection": {
+          "breadcrumbs": [
+            "PagePage",
+            "Section GridSection Grid",
+            "Section GridSection Grid"
+          ],
+          "inspector": "Section Grid",
+          "label": "Page Section Grid Rows Add Cell Add Section"
+        }
+      },
+      {
+        "point": "textish",
+        "clicks": 1,
+        "selection": {
+          "breadcrumbs": [
+            "PagePage",
+            "Section GridSection Grid",
+            "Section GridSection Grid"
+          ],
+          "inspector": "Section Grid",
+          "label": "Page Section Grid Rows Add Cell Add Section"
+        }
+      },
+      {
+        "point": "textish",
+        "clicks": 2,
+        "selection": {
+          "breadcrumbs": [
+            "PagePage",
+            "Section GridSection Grid",
+            "Section GridSection Grid"
+          ],
+          "inspector": "Section Grid",
+          "label": "Page Section Grid Rows Add Cell Add Section"
+        }
+      },
+      {
+        "point": "textish",
+        "clicks": 3,
+        "selection": {
+          "breadcrumbs": [
+            "PagePage",
+            "Section GridSection Grid",
+            "Section GridSection Grid"
+          ],
+          "inspector": "Section Grid",
+          "label": "Page Section Grid Rows Add Cell Add Section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "comp-mdsoxoys",
+    "box": {
+      "x": 672.921875,
+      "y": 425.78125,
+      "width": 266.890625,
+      "height": 54.140625
+    },
+    "tries": [
+      {
+        "point": "center",
+        "clicks": 1,
+        "selection": {
+          "breadcrumbs": [
+            "PagePage",
+            "Section GridSection Grid",
+            "Section GridSection Grid"
+          ],
+          "inspector": "Section Grid",
+          "label": "Page Section Grid Collage Add Cell Add Section"
+        }
+      },
+      {
+        "point": "center",
+        "clicks": 2,
+        "selection": {
+          "breadcrumbs": [
+            "Section GridSection Grid",
+            "CellCell",
+            "ImageImage",
+            "ImageImage"
+          ],
+          "inspector": "Image",
+          "label": "Section Grid Cell Image Change Image Create AI Image"
+        }
+      },
+      {
+        "point": "center",
+        "clicks": 3,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Image",
+          "label": ""
+        }
+      },
+      {
+        "point": "topLeft",
+        "clicks": 1,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Image",
+          "label": ""
+        }
+      },
+      {
+        "point": "topLeft",
+        "clicks": 2,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Image",
+          "label": ""
+        }
+      },
+      {
+        "point": "topLeft",
+        "clicks": 3,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Image",
+          "label": ""
+        }
+      },
+      {
+        "point": "midLeft",
+        "clicks": 1,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Image",
+          "label": ""
+        }
+      },
+      {
+        "point": "midLeft",
+        "clicks": 2,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Image",
+          "label": ""
+        }
+      },
+      {
+        "point": "midLeft",
+        "clicks": 3,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Image",
+          "label": ""
+        }
+      },
+      {
+        "point": "textish",
+        "clicks": 1,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Image",
+          "label": ""
+        }
+      },
+      {
+        "point": "textish",
+        "clicks": 2,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Image",
+          "label": ""
+        }
+      },
+      {
+        "point": "textish",
+        "clicks": 3,
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Image",
+          "label": ""
+        }
+      }
+    ]
+  }
+]

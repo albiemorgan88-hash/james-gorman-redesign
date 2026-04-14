@@ -1,0 +1,136 @@
+[
+  {
+    "id": "comp-lwdtc78616",
+    "box": {
+      "x": 302.65625,
+      "y": 419.765625,
+      "width": 139.984375,
+      "height": 67.171875
+    },
+    "text": "Home\n\nAbout\n\nContact",
+    "href": null,
+    "tries": [
+      {
+        "attempt": "click-center",
+        "error": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('#comp-lwdtc78616')\n    - locator resolved to <div id=\"comp-lwdtc78616\" data-testid=\"richTextElement\" class=\"ku3DBC zQ9jDz Vq6kJx comp-lwdtc78616 wixui-rich-text\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    6 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n"
+      },
+      {
+        "attempt": "dblclick-center",
+        "error": "TimeoutError: locator.dblclick: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('#comp-lwdtc78616')\n    - locator resolved to <div id=\"comp-lwdtc78616\" data-testid=\"richTextElement\" class=\"ku3DBC zQ9jDz Vq6kJx comp-lwdtc78616 wixui-rich-text\">…</div>\n  - attempting dblclick action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing dblclick action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying dblclick action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing dblclick action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying dblclick action\n      - waiting 100ms\n    7 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing dblclick action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying dblclick action\n      - waiting 500ms\n"
+      },
+      {
+        "attempt": "click-center-alt",
+        "error": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('#comp-lwdtc78616')\n    - locator resolved to <div id=\"comp-lwdtc78616\" data-testid=\"richTextElement\" class=\"ku3DBC zQ9jDz Vq6kJx comp-lwdtc78616 wixui-rich-text\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    6 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n"
+      },
+      {
+        "attempt": "click-center-meta",
+        "error": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('#comp-lwdtc78616')\n    - locator resolved to <div id=\"comp-lwdtc78616\" data-testid=\"richTextElement\" class=\"ku3DBC zQ9jDz Vq6kJx comp-lwdtc78616 wixui-rich-text\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    7 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n"
+      },
+      {
+        "attempt": "click-offset",
+        "error": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('#comp-lwdtc78616')\n    - locator resolved to <div id=\"comp-lwdtc78616\" data-testid=\"richTextElement\" class=\"ku3DBC zQ9jDz Vq6kJx comp-lwdtc78616 wixui-rich-text\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    6 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n"
+      }
+    ]
+  },
+  {
+    "id": "comp-lwdtc78314",
+    "box": {
+      "x": 458.796875,
+      "y": 704.8125,
+      "width": 257.59375,
+      "height": 89.5625
+    },
+    "text": "Sales@jamesgormanproperty.com\n\nLettings@jamesgormaproperty.com\n\nTel: 028 7161 0402\nMob: 07786 910 768",
+    "href": null,
+    "tries": [
+      {
+        "attempt": "click-center",
+        "error": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('#comp-lwdtc78314')\n    - locator resolved to <div id=\"comp-lwdtc78314\" data-testid=\"richTextElement\" class=\"ku3DBC zQ9jDz Vq6kJx comp-lwdtc78314 wixui-rich-text\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    7 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n"
+      },
+      {
+        "attempt": "dblclick-center",
+        "error": "TimeoutError: locator.dblclick: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('#comp-lwdtc78314')\n    - locator resolved to <div id=\"comp-lwdtc78314\" data-testid=\"richTextElement\" class=\"ku3DBC zQ9jDz Vq6kJx comp-lwdtc78314 wixui-rich-text\">…</div>\n  - attempting dblclick action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing dblclick action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying dblclick action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing dblclick action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying dblclick action\n      - waiting 100ms\n    7 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing dblclick action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying dblclick action\n      - waiting 500ms\n"
+      },
+      {
+        "attempt": "click-center-alt",
+        "error": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('#comp-lwdtc78314')\n    - locator resolved to <div id=\"comp-lwdtc78314\" data-testid=\"richTextElement\" class=\"ku3DBC zQ9jDz Vq6kJx comp-lwdtc78314 wixui-rich-text\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    6 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n"
+      },
+      {
+        "attempt": "click-center-meta",
+        "error": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('#comp-lwdtc78314')\n    - locator resolved to <div id=\"comp-lwdtc78314\" data-testid=\"richTextElement\" class=\"ku3DBC zQ9jDz Vq6kJx comp-lwdtc78314 wixui-rich-text\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    7 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n"
+      },
+      {
+        "attempt": "click-offset",
+        "error": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('#comp-lwdtc78314')\n    - locator resolved to <div id=\"comp-lwdtc78314\" data-testid=\"richTextElement\" class=\"ku3DBC zQ9jDz Vq6kJx comp-lwdtc78314 wixui-rich-text\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    7 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing click action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n"
+      }
+    ]
+  },
+  {
+    "id": "comp-lwq3m8rr7",
+    "error": "not found"
+  },
+  {
+    "id": "comp-mdsoxoys",
+    "box": {
+      "x": 672.921875,
+      "y": 425.78125,
+      "width": 266.890625,
+      "height": 54.140625
+    },
+    "text": "SELL MY HOME",
+    "href": null,
+    "tries": [
+      {
+        "attempt": "click-center",
+        "selection": {
+          "breadcrumbs": [
+            "Section GridSection Grid",
+            "CellCell",
+            "StackStack",
+            "StackStack"
+          ],
+          "inspector": "Stack",
+          "label": "Section Grid Cell Stack Vertical Unstack"
+        }
+      },
+      {
+        "attempt": "dblclick-center",
+        "error": "TimeoutError: locator.dblclick: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('#comp-mdsoxoys')\n    - locator resolved to <div id=\"comp-mdsoxoys\" class=\"comp-mdsoxoys\" data-semantic-classname=\"button\">…</div>\n  - attempting dblclick action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing dblclick action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying dblclick action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing dblclick action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying dblclick action\n      - waiting 100ms\n    7 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - performing dblclick action\n      - <div id=\"BLOCKING_LAYER\" class=\"BLOCKING_LAYER\"></div> intercepts pointer events\n    - retrying dblclick action\n      - waiting 500ms\n"
+      },
+      {
+        "attempt": "click-center-alt",
+        "selection": {
+          "breadcrumbs": [
+            "Section GridSection Grid",
+            "CellCell",
+            "StackStack",
+            "StackStack"
+          ],
+          "inspector": "Stack",
+          "label": "Section Grid Cell Stack Vertical Unstack"
+        }
+      },
+      {
+        "attempt": "click-center-meta",
+        "selection": {
+          "breadcrumbs": [
+            "Section GridSection Grid",
+            "CellCell",
+            "StackStack",
+            "StackStack"
+          ],
+          "inspector": "Stack",
+          "label": "Section Grid Cell Stack Vertical Unstack"
+        }
+      },
+      {
+        "attempt": "click-offset",
+        "selection": {
+          "breadcrumbs": [],
+          "inspector": "Page",
+          "label": ""
+        }
+      }
+    ]
+  }
+]

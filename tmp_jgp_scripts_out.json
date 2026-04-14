@@ -1,0 +1,18 @@
+[
+  "https://static.parastorage.com/services/wix-ck-editor/1.663.0/dist/wixckloader.js",
+  "https://static.parastorage.com/services/wix-ck-editor/1.663.0/dist/ckeditor/config.js?t=PARH",
+  "https://static.parastorage.com/services/wix-ck-editor/1.663.0/dist/ckeditor/lang/en.js?t=PARH",
+  "https://static.parastorage.com/services/wix-ck-editor/1.663.0/dist/ckeditor/styles.js?t=PARH",
+  "https://static.parastorage.com/services/tag-manager-host-scripts/1.1109.0//assets/EDITOR_X/google-tag-manager.js",
+  "https://static.parastorage.com/unpkg/@wix/responsive-editor-symbols@1.0.1193/dist/statics/symbols.bundle.min.js",
+  "https://static.parastorage.com/unpkg/@wix/santa-editor-symbols@1.3657.0/dist/santa-editor-symbols.js",
+  "https://static.parastorage.com/services/editor-elements-panel-service/1.964.0/editor-elements-panel-service.js",
+  "https://static.parastorage.com/services/marketplace-editor-container/1.2405.3586//add-panel-marketplace.umd.min.js",
+  "https://static.parastorage.com/services/responsive-editor-common-infra/1.3140.0/responsive-editor-common-infra.bundle.min.js",
+  "https://static.parastorage.com/services/editor-platform-host-integration/1.5822.0/editor-platform-host-integration-repluggable.umd.min.js",
+  "https://static.parastorage.com/services/responsive-editor-packages/1.18351.0/responsive-editor-packages.bundle.min.js",
+  "https://static.parastorage.com/services/editorx-santa-editor-bridge/1.5092.0/editorx-santa-editor-bridge.bundle.min.js",
+  "https://static.parastorage.com/services/responsive-editor-migration/1.2814.0/responsive-editor-migration-loader.bundle.min.js",
+  "https://static.parastorage.com/services/responsive-editor-startup/1.301.179/startup.bundle.min.js",
+  "https://static.parastorage.com/services/wix-ck-editor/1.663.0/dist/ckeditor/ckeditor.js"
+]

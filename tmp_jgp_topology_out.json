@@ -1,0 +1,142 @@
+{
+  "topology": {
+    "version": "1.8220.0",
+    "fullArtifactId": "com.wixpress.studio-topology"
+  },
+  "serviceTopology": {
+    "core": "https://static.parastorage.com/services/core/2.1229.80/",
+    "skins": "https://static.parastorage.com/services/skins/2.1229.80/",
+    "bootstrap": "https://static.parastorage.com/services/bootstrap/2.1229.80/",
+    "add-panel-data-classic-editor": "https://static.parastorage.com/services/add-panel-data-classic-editor/1.2220.0/",
+    "web": "https://static.parastorage.com/services/web/2.1229.80/",
+    "wixapps": "https://static.parastorage.com/services/wixapps/2.486.0/",
+    "langs": "https://static.parastorage.com/services/langs/2.577.0/",
+    "ck-editor": "https://static.parastorage.com/services/ck-editor/1.87.3/",
+    "ecommerce": "https://static.parastorage.com/services/ecommerce/1.203.0/",
+    "tpa": "https://static.parastorage.com/services/tpa/2.1065.0/",
+    "automation": "https://static.parastorage.com/services/automation/1.23.0/",
+    "santa-langs": "https://static.parastorage.com/services/santa-langs/1.11047.0/",
+    "santa-resources": "https://static.parastorage.com/services/santa-resources/1.2.0/",
+    "santa": "https://static.parastorage.com/services/santa/1.11783.0/",
+    "wix-bolt": "https://static.parastorage.com/services/wix-bolt/1.7777.0/",
+    "wix-thunderbolt": "https://static.parastorage.com/services/wix-thunderbolt/1.17110.0/",
+    "santa-editor": "https://static.parastorage.com/services/santa-editor/1.17642.0/",
+    "santa-platform-apps-container": "https://static.parastorage.com/services/santa-platform-apps-container/1.3092.0/",
+    "media-gallery-g5": "https://static.parastorage.com/services/media-gallery-g5/1.1769.0/",
+    "wixmp-sdk": "https://static.parastorage.com/services/wixmp-sdk/1.16.0/",
+    "tpa-gfpp-data": "https://static.parastorage.com/services/tpa-gfpp-data/1.2215.0/",
+    "dbsm-editor-app": "https://static.parastorage.com/services/dbsm-editor-app/1.13882.0/",
+    "dbsm-viewer-app": "https://static.parastorage.com/services/dbsm-viewer-app/1.9025.0/",
+    "wix-code-editor-app": "https://static.parastorage.com/services/wix-code-editor-app/1.1667.417/",
+    "wix-code-viewer-app": "https://static.parastorage.com/services/wix-code-viewer-app/1.1479.749/",
+    "wix-code-classic-editor": "https://static.parastorage.com/services/wix-code-classic-editor/1.1279.4148/",
+    "sitemembers": "https://static.parastorage.com/services/sm-js-sdk/1.31.0/",
+    "js-platform-editor-sdk": "https://static.parastorage.com/services/js-platform-editor-sdk/1.4706.0/",
+    "wix-music-embed": "https://static.parastorage.com/services/wix-music-embed/1.26.0/",
+    "wix-code-platform": "https://static.parastorage.com/services/wix-code-platform/1.1097.93/",
+    "semi-native-sdk": "https://static.parastorage.com/services/semi-native-sdk/1.8.0/",
+    "dealer-cms-translations": "https://static.parastorage.com/services/dealer-cms-translations/1.7565.0/",
+    "js-platform-apps-configuration": "https://static.parastorage.com/services/js-platform-apps-configuration/1.235.0/",
+    "wix-code-code-editor": "https://static.parastorage.com/services/wix-code-code-editor/1.1823.0/",
+    "dealer-react-viewer": "https://static.parastorage.com/services/dealer-react-viewer/1.36.0/",
+    "react-dealer-viewer": "https://static.parastorage.com/services/react-dealer-viewer/2.0.81/",
+    "dealer-client-api": "https://static.parastorage.com/services/dealer-client-api/4.0.62/",
+    "universal-editor-app": "https://static.parastorage.com/services/universal-editor-app/1.3320.0/",
+    "fallback-viewer-app": "https://static.parastorage.com/services/fallback-viewer-app/1.0.0/",
+    "wixcode-namespaces": "https://static.parastorage.com/services/wixcode-namespaces/1.1035.0/",
+    "wix-ui-santa": "https://static.parastorage.com/services/wix-ui-santa/1.1805.0/",
+    "linguist-flags": "https://static.parastorage.com/services/linguist-flags/1.1005.0/",
+    "santa-site-auth-module": "https://static.parastorage.com/services/santa-site-auth-module/1.9.0/",
+    "advanced-seo-client": "https://static.parastorage.com/services/advanced-seo-client/2.2185.0/",
+    "marketplace-editor-container": "https://static.parastorage.com/services/marketplace-editor-container/1.2405.3586/",
+    "promote-seo-renderer": "https://static.parastorage.com/services/promote-seo-renderer/1.2.0/",
+    "responsive-editor-packages": "https://static.parastorage.com/services/responsive-editor-packages/1.18351.0/",
+    "responsive-editor-presets-metadata": "https://static.parastorage.com/services/responsive-editor-presets-metadata/1.5993.0/",
+    "editorx-santa-editor-bridge": "https://static.parastorage.com/services/editorx-santa-editor-bridge/1.5092.0/",
+    "responsive-blocks-packages": "https://static.parastorage.com/services/responsive-blocks-packages/1.8432.0/",
+    "responsive-editor-common-infra": "https://static.parastorage.com/services/responsive-editor-common-infra/1.3140.0/",
+    "responsive-editor-migration": "https://static.parastorage.com/services/responsive-editor-migration/1.2814.0/",
+    "notifications-widget-component": "https://static.parastorage.com/services/notifications-widget-component/1.1902.0/",
+    "marketplace-component": "https://static.parastorage.com/services/marketplace-component/1.5176.0/",
+    "manage-installed-apps": "https://static.parastorage.com/services/manage-installed-apps/1.2957.0/",
+    "promote-analytics-adapter": "https://static.parastorage.com/services/promote-analytics-adapter/2.1241.0/",
+    "locale-dataset-data": "https://static.parastorage.com/services/locale-dataset-data/2.0.0/",
+    "editor-elements": "https://static.parastorage.com/services/editor-elements/1.15050.0/",
+    "editor-elements-library": "https://static.parastorage.com/services/editor-elements-library/1.9661.0/",
+    "editor-elements-design-systems": "https://static.parastorage.com/services/editor-elements-design-systems/1.4481.0/",
+    "members-area-app-definitions": "https://static.parastorage.com/services/members-area-app-definitions/2.624.0/",
+    "site-generator-statics-metadata": "https://static.parastorage.com/services/site-generator-statics-metadata/1.1703.0/",
+    "editor-presets-bundle": "https://static.parastorage.com/services/editor-presets-bundle/1.1138.0/",
+    "editor-platform-host-integration": "https://static.parastorage.com/services/editor-platform-host-integration/1.5822.0/",
+    "blocks-client-viewer-app": "https://static.parastorage.com/services/blocks-client-viewer-app/1.2564.0/",
+    "identity-fed-common": "https://static.parastorage.com/services/identity-fed-common/3.0.637/",
+    "account-team-client": "https://static.parastorage.com/services/account-team-client/1.2582.0/",
+    "mobile-app-elements-library": "https://static.parastorage.com/services/mobile-app-elements-library/1.1450.0/",
+    "auto-frontend-modules": "https://static.parastorage.com/services/auto-frontend-modules/1.6238.0/",
+    "pulse": "https://static.parastorage.com/services/pulse/2.0.12/",
+    "stylable-panel": "https://static.parastorage.com/services/stylable-panel/3.255.0/",
+    "responsive-editor": "https://static.parastorage.com/services/responsive-editor/1.4498.0/",
+    "document-management": "https://static.parastorage.com/services/document-management/1.17428.0/",
+    "tag-manager-client": "https://static.parastorage.com/services/tag-manager-client/1.1028.0/",
+    "cookie-consent-policy-client": "https://static.parastorage.com/services/cookie-consent-policy-client/1.972.0/",
+    "static-site-assets-versions": "https://static.parastorage.com/services/static-site-assets-versions/1.1374.0/",
+    "odeditor-add-panel-data": "https://static.parastorage.com/services/odeditor-add-panel-data/1.703.0/",
+    "a11y-repluggable": "https://static.parastorage.com/services/a11y-repluggable/1.2314.0/",
+    "studio-topology": "https://static.parastorage.com/services/studio-topology/1.8220.0/",
+    "wix-data-client-studio": "https://static.parastorage.com/services/wix-data-client-studio/1.3676.0/",
+    "a11y-repluggable-packages-loader": "https://static.parastorage.com/services/a11y-repluggable-packages-loader/1.3267.0/"
+  },
+  "configuration": {
+    "application": {
+      "title": "Wix Studio",
+      "titlePrefix": "Wix Studio",
+      "brand": "studio",
+      "host": "STUDIO",
+      "shortcutIconUrl": "https://static.parastorage.com/services/santa-resources/dist/editor/favicons/wixStudioFavicon.ico",
+      "baseUrls": [
+        "https://editor.wix.com/studio/"
+      ]
+    },
+    "bi": {
+      "builderType": "studio",
+      "endpoint": "editor-x",
+      "src": 110,
+      "appLoadedEventId": 2,
+      "errorEventId": 10
+    },
+    "fedops": {
+      "appName": "studio",
+      "backend": "fedops+panorama"
+    },
+    "recorder": {
+      "label": "studio",
+      "eventId": 6,
+      "urlFieldName": "fullstoryUrl"
+    },
+    "sentry": {
+      "dsn": "https://0f08e0090df74a3ba34fc7419bf6318f@sentry-next.wixpress.com/1817",
+      "release": "studio-topology@86c3f61afd6ad2ecc5e6b0c32783907a8e0747a6f601513ad87392cd"
+    },
+    "marketing": {
+      "dataLayerLoadEventName": "Open Studio"
+    },
+    "site": {
+      "freeDomainBaseUrl": "https://<username>.wixstudio.io/"
+    },
+    "petri": {
+      "topologyRolloutSpec": "specs.StudioTopologyRollout",
+      "platform": "Studio",
+      "scopes": [
+        "responsive-editor-site-owner"
+      ]
+    }
+  },
+  "environment": {
+    "branchId": "00000000-0000-0000-0000-000000000000",
+    "isAutomation": false,
+    "isRollout": false,
+    "isDebug": false,
+    "isLongRunAutomationMode": false,
+    "requestId": "1776203526.66220922474051302"
+  }
+}
