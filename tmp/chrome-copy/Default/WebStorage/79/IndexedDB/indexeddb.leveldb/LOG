@@ -1,0 +1,6 @@
+2026/04/14-12:06:05.677 342740 Creating DB /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/WebStorage/79/IndexedDB/indexeddb.leveldb since it was missing.
+2026/04/14-12:06:05.679 342740 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/WebStorage/79/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2026/04/14-12:06:10.999 34273d Level-0 table #5: started
+2026/04/14-12:06:11.000 34273d Level-0 table #5: 480 bytes OK
+2026/04/14-12:06:11.005 34273d Delete type=0 #3
+2026/04/14-12:06:11.005 34273d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
