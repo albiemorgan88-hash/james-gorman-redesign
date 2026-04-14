@@ -6414,7 +6414,7 @@ export const guides: Guide[] = [
 <h2>A good operating pattern</h2>
 <p>Use AI to prepare the message, not replace the communicator. Let it help structure updates, draft FAQs, and turn long material into useful summaries. Then have a human owner review the message for tone, audience fit, and timing.</p>
 <p>It also helps to define a small number of internal formats. Leadership update, policy explainer, manager cascade note, meeting recap, and urgent operational alert are often enough. Once those formats exist, AI becomes more useful because it is filling a clear template rather than guessing from scratch.</p>
-<p>Related reads include <a href="/guides/ai-change-management">AI Change Management</a>, <a href="/guides/ai-policy-for-employees">AI Policy for Employees</a>, and <a href="/guides/ai-meeting-action-tracking">AI Meeting Action Tracking</a>.</p>
+<p>Related reads include <a href="/guides/ai-change-management">AI Change Management</a>, <a href="/guides/ai-policy-for-employees">AI Policy for Employees</a>, and <a href="/guides/ai-for-meeting-notes">AI for Meeting Notes</a>.</p>
 
 <h2>How to judge whether it is working</h2>
 <p>Measure understanding, not output volume. Are managers spending less time rewriting updates? Are staff asking fewer clarifying questions? Are policy changes being understood faster? Are key messages getting through without five extra follow-ups?</p>
@@ -6449,7 +6449,7 @@ export const guides: Guide[] = [
 <h2>A practical rollout pattern</h2>
 <p>Start with one meeting-to-action workflow or one reporting workflow. Define the template, the owner, and the review step. Make sure somebody checks the output before it becomes the official project record.</p>
 <p>Then connect it to a lightweight operating rhythm. That might mean project calls feed into an action summary, which feeds into a status update, which feeds into a risk review. AI is most useful when those handoffs are already visible.</p>
-<p>Useful companions here are <a href="/guides/ai-meeting-action-tracking">AI Meeting Action Tracking</a>, <a href="/guides/ai-workflow-mapping">AI Workflow Mapping</a>, and <a href="/guides/ai-rollout-plan">AI Rollout Plan</a>.</p>
+<p>Useful companions here are <a href="/guides/ai-for-meeting-notes">AI for Meeting Notes</a>, <a href="/guides/ai-workflow-mapping">AI Workflow Mapping</a>, and <a href="/guides/ai-rollout-plan">AI Rollout Plan</a>.</p>
 
 <h2>How to measure value</h2>
 <p>Look for faster follow-up after meetings, cleaner reporting, fewer missed actions, better visibility of blockers, and less admin time from project leads. If those improve without confusion rising, you are heading the right way.</p>

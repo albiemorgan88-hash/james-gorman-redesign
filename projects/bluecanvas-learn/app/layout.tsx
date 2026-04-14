@@ -23,9 +23,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/guides" className="rounded-full px-3 py-2 text-white/85 transition hover:bg-white/10 hover:text-white">
                 All guides
               </Link>
-              <Link href="/#latest" className="rounded-full px-3 py-2 text-white/85 transition hover:bg-white/10 hover:text-white">
+              <a href="/#latest" className="rounded-full px-3 py-2 text-white/85 transition hover:bg-white/10 hover:text-white">
                 Latest
-              </Link>
+              </a>
               <a href="https://www.bluecanvas.ai" className="rounded-full px-3 py-2 text-white/85 transition hover:bg-white/10 hover:text-white">
                 Blue Canvas
               </a>

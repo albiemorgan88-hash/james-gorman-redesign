@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const links = [
   { href: "#services", label: "Services" },
@@ -11,6 +12,7 @@ const links = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -20,6 +22,13 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  function resolveHref(href: string) {
+    if (!href.startsWith("#")) return href;
+    if (pathname === "/") return href;
+    if (pathname === "/guides" && href === "#contact") return href;
+    return `/${href}`;
+  }
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -28,8 +37,8 @@ export default function Navbar() {
           : "bg-transparent py-5"
       }`}
     >
-      <div className="max-w-[1140px] mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="font-heading font-bold text-xl text-white flex items-center gap-2">
+      <div className="max-w-[1140px] mx-auto px-6 flex justify-between items-center gap-4">
+        <a href="/" className="font-heading font-bold text-xl text-white flex items-center gap-2 shrink-0">
           <span className="w-8 h-8 bg-orange rounded-lg flex items-center justify-center text-sm font-black">
             OC
           </span>
@@ -49,24 +58,24 @@ export default function Navbar() {
         <div
           className={`${
             open ? "flex" : "hidden"
-          } md:flex flex-col md:flex-row absolute md:static top-full left-0 right-0 bg-navy md:bg-transparent p-6 md:p-0 gap-5 md:gap-7 items-start md:items-center border-b border-white/10 md:border-0`}
+          } md:flex flex-col md:flex-row absolute md:static top-full left-0 right-0 bg-navy md:bg-transparent p-6 md:p-0 gap-5 md:gap-4 xl:gap-6 items-start md:items-center border-b border-white/10 md:border-0`}
         >
           {links.map((l) => (
             <a
               key={l.href}
-              href={l.href}
-              className="text-white/70 text-sm font-medium hover:text-white transition-colors"
+              href={resolveHref(l.href)}
+              className="text-white/70 text-sm font-medium hover:text-white transition-colors whitespace-nowrap"
               onClick={() => setOpen(false)}
             >
               {l.label}
             </a>
           ))}
-          <a href="mailto:contact@bluecanvas.ai" className="text-white/50 text-xs hover:text-white transition-colors hidden lg:block">contact@bluecanvas.ai</a>
-          <a href="tel:07849071946" className="text-white/50 text-xs hover:text-white transition-colors hidden lg:block">07849 071946</a>
+          <a href="mailto:contact@bluecanvas.ai" className="text-white/50 text-xs hover:text-white transition-colors hidden 2xl:block whitespace-nowrap">contact@bluecanvas.ai</a>
+          <a href="tel:07849071946" className="text-white/50 text-xs hover:text-white transition-colors hidden 2xl:block whitespace-nowrap">07849 071946</a>
           <a
-            href="#contact"
+            href={resolveHref("#contact")}
             onClick={() => setOpen(false)}
-            className="bg-orange text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-orange-hover transition-all hover:-translate-y-0.5"
+            className="bg-orange text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-orange-hover transition-all hover:-translate-y-0.5 whitespace-nowrap shrink-0"
           >
             Free Consultation
           </a>

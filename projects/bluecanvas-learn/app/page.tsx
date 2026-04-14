@@ -71,13 +71,13 @@ export default function Home() {
               Latest guides
             </Link>
             {categoryGroups.slice(0, 5).map((group) => (
-              <Link
+              <a
                 key={group.category}
                 href={`/guides#${getCategoryAnchor(group.category)}`}
                 className="shrink-0 whitespace-nowrap rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#ff6b35]/40 hover:text-[#ff6b35]"
               >
                 {group.category}
-              </Link>
+              </a>
             ))}
             <Link
               href="/guides"
@@ -176,7 +176,7 @@ export default function Home() {
 
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {categoryGroups.map((group) => (
-            <Link
+            <a
               key={group.category}
               href={`/guides#${getCategoryAnchor(group.category)}`}
               className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-[#ff6b35]/40 hover:shadow-lg"
@@ -190,7 +190,7 @@ export default function Home() {
               <p className="mt-3 text-sm leading-7 text-slate-600">
                 {categoryDescriptions[group.category] ?? 'Browse practical, business-focused guides in this topic area.'}
               </p>
-            </Link>
+            </a>
           ))}
         </div>
       </section>

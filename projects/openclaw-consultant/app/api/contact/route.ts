@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const RESEND_API_KEY = process.env.RESEND_API_KEY || "re_LW8p2X8X_EqWb7tmRRJYGL9BsSV5UsStj";
+const RESEND_API_KEY = process.env.RESEND_API_KEY || "";
 const SUPABASE_URL = "https://smhzgkvatlwbaxlyhnbm.supabase.co";
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
 
@@ -14,32 +14,36 @@ export async function POST(request: NextRequest) {
     }
 
     // 1. Send email notification via Resend
-    try {
-      await fetch("https://api.resend.com/emails", {
-        method: "POST",
-        headers: {
-          "Authorization": `Bearer ${RESEND_API_KEY}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          from: "OpenClaw Consultant <hello@bluecanvas.ai>",
-          reply_to: email,
-          to: ["contact@bluecanvas.ai", "philpatterson85@gmail.com"],
-          subject: `New OCC Enquiry: ${name}${company ? ` (${company})` : ""}`,
-          html: `
-            <h2>New enquiry from OpenClaw Consultant</h2>
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Company:</strong> ${company || "Not provided"}</p>
-            <p><strong>Message:</strong></p>
-            <p>${message}</p>
-            <hr>
-            <p style="color:#888;font-size:12px">Submitted via openclawconsultant.co.uk contact form</p>
-          `,
-        }),
-      });
-    } catch (emailErr) {
-      console.error("Email send failed:", emailErr);
+    if (RESEND_API_KEY) {
+      try {
+        await fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${RESEND_API_KEY}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            from: "OpenClaw Consultant <hello@bluecanvas.ai>",
+            reply_to: email,
+            to: ["contact@bluecanvas.ai", "philpatterson85@gmail.com"],
+            subject: `New OCC Enquiry: ${name}${company ? ` (${company})` : ""}`,
+            html: `
+              <h2>New enquiry from OpenClaw Consultant</h2>
+              <p><strong>Name:</strong> ${name}</p>
+              <p><strong>Email:</strong> ${email}</p>
+              <p><strong>Company:</strong> ${company || "Not provided"}</p>
+              <p><strong>Message:</strong></p>
+              <p>${message}</p>
+              <hr>
+              <p style="color:#888;font-size:12px">Submitted via openclawconsultant.co.uk contact form</p>
+            `,
+          }),
+        });
+      } catch (emailErr) {
+        console.error("Email send failed:", emailErr);
+      }
+    } else {
+      console.warn("RESEND_API_KEY is not configured for openclawconsultant.co.uk");
     }
 
     // 2. Store in Supabase (best effort)

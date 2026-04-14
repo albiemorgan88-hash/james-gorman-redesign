@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id],
+div[id] {
+  scroll-margin-top: 96px;
+}
+
 body {
   font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
   color: #0a0f1e;

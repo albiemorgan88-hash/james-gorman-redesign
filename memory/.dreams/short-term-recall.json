@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-14T10:32:12.790Z",
+  "updatedAt": "2026-04-14T13:05:18.418Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -5360,6 +5360,99 @@
         "thoughtful",
         "responses",
         "added"
+      ]
+    },
+    "memory:memory/2026-03-05.md:10:13": {
+      "key": "memory:memory/2026-03-05.md:10:13",
+      "path": "memory/2026-03-05.md",
+      "startLine": 10,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "@@ -10,4 @@ (9 before, 60 after) ## HEARTBEAT.md - Morning dashboard (9am) and Moltbook/MoltLaunch monitoring already built into HEARTBEAT.md from overnight session - Memory wasn't written for that session — discovered when re-reading HEARTBEAT.md - PJ forwarding overnight messages to cross-check memory gaps",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46,
+      "maxScore": 0.46,
+      "firstRecalledAt": "2026-04-14T13:05:18.418Z",
+      "lastRecalledAt": "2026-04-14T13:05:18.418Z",
+      "queryHashes": [
+        "a5cbfd36c957"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "moltbook/moltlaunch",
+        "re-reading",
+        "cross-check",
+        "10,4",
+        "morning",
+        "dashboard",
+        "9am"
+      ]
+    },
+    "memory:memory/2026-03-15.md:6:9": {
+      "key": "memory:memory/2026-03-15.md:6:9",
+      "path": "memory/2026-03-15.md",
+      "startLine": 6,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "@@ -6,4 @@ (5 before, 61 after) ## ClawMart — LIVE - 4 listings published on shopclawmart.com: - Local SEO Engine $49 | Agent COO $79 | Client Showcase Builder $29 | Weekly Draw Platform $39 - API key: cm_live_8BCf... (creator account active)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.44,
+      "maxScore": 0.44,
+      "firstRecalledAt": "2026-04-14T13:05:18.418Z",
+      "lastRecalledAt": "2026-04-14T13:05:18.418Z",
+      "queryHashes": [
+        "a5cbfd36c957"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "shopclawmart.com",
+        "cm-live-8bcf",
+        "6,4",
+        "clawmart",
+        "live",
+        "listings",
+        "published",
+        "local"
+      ]
+    },
+    "memory:memory/2026-03-31.md:29:32": {
+      "key": "memory:memory/2026-03-31.md:29:32",
+      "path": "memory/2026-03-31.md",
+      "startLine": 29,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "@@ -29,4 @@ (28 before, 251 after) ### Original Content **Posted**: \"How we built 169 client showcases in one deploy: The WhatsApp prospecting machine\" - Submolt: builds - Content: Blue Canvas automated prospecting system",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.41,
+      "maxScore": 0.41,
+      "firstRecalledAt": "2026-04-14T13:05:18.418Z",
+      "lastRecalledAt": "2026-04-14T13:05:18.418Z",
+      "queryHashes": [
+        "a5cbfd36c957"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "29,4",
+        "original",
+        "content",
+        "posted",
+        "how",
+        "built",
+        "client",
+        "showcases"
       ]
     }
   }

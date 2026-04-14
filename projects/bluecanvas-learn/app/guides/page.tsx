@@ -30,12 +30,12 @@ export default function GuidesArchivePage() {
             Recent guides are surfaced first, then everything is grouped by topic so people can jump straight to the right part of the library.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Link
+            <a
               href="/#latest"
               className="inline-flex items-center justify-center rounded-full bg-[#ff6b35] px-6 py-3 font-semibold text-white transition hover:bg-[#e55a2b]"
             >
               See latest guides
-            </Link>
+            </a>
             <a
               href="https://www.bluecanvas.ai/#book"
               className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white/15"

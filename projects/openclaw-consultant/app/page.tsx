@@ -144,13 +144,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange"
+                className="inline-flex w-full max-w-full items-center justify-center bg-orange px-8 py-4 text-base font-semibold text-white rounded-xl hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange sm:w-auto"
               >
                 Book Free Consultation
               </a>
               <a
                 href="#services"
-                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+                className="inline-flex w-full max-w-full items-center justify-center border border-white/10 bg-white/5 px-8 py-4 text-base font-semibold text-white rounded-xl hover:bg-white/10 transition-all sm:w-auto"
               >
                 See Services ↓
               </a>
