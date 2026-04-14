@@ -1,3 +1,6 @@
-2026/04/14-07:08:00.580 342795 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Local Storage/leveldb/MANIFEST-000001
-2026/04/14-07:08:00.583 342795 Recovering log #13119
-2026/04/14-07:08:00.584 342795 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Local Storage/leveldb/013119.log 
+2026/04/14-10:01:59.892 342795 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Local Storage/leveldb/MANIFEST-000001
+2026/04/14-10:01:59.894 342795 Recovering log #13119
+2026/04/14-10:01:59.895 342795 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Local Storage/leveldb/013119.log 
+2026/04/14-10:02:35.030 342798 Level-0 table #13123: started
+2026/04/14-10:02:35.036 342798 Level-0 table #13123: 21871 bytes OK
+2026/04/14-10:02:35.039 342798 Delete type=0 #13119

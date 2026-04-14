@@ -1,6 +1,3 @@
-2026/04/14-07:08:00.544 342749 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Sync Data/LevelDB/MANIFEST-000001
-2026/04/14-07:08:00.549 342749 Recovering log #673
-2026/04/14-07:08:00.553 342749 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Sync Data/LevelDB/000673.log 
-2026/04/14-07:09:37.637 342740 Level-0 table #677: started
-2026/04/14-07:09:37.641 342740 Level-0 table #677: 107657 bytes OK
-2026/04/14-07:09:37.643 342740 Delete type=0 #673
+2026/04/14-10:01:59.880 342748 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Sync Data/LevelDB/MANIFEST-000001
+2026/04/14-10:01:59.881 342748 Recovering log #676
+2026/04/14-10:01:59.881 342748 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Sync Data/LevelDB/000676.log 
