@@ -2,16 +2,37 @@
 
 Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 
-## LATEST UPDATE - 14th April 2026 - NEXT DRAFT-ONLY CONTENT BLAST PREPPED
+## LATEST UPDATE - 14th April 2026 - LIVE TECHNICAL SEO PASS ⚠️
 
 ### COMPLETED:
-- [DONE] Audited recent local drafts plus live blog-post sitemap to avoid duplication and fresh cannibalisation risk before writing the next batch
-- [DONE] Confirmed the newest live April location posts remain Eglinton, Claudy and Dungiven, so the next blast was shifted away from those clusters
-- [DONE] Created 4 new draft-only posts in `blog-drafts/` focused on the next cleaner commercial opportunities: Waterside seller intent, Cityside seller intent, Limavady buyer intent and Limavady seller intent
+- [DONE] Audited the live site for sitemap/indexation, blank URLs, titles/meta, canonicals, H1 structure, CTA pathing, and footer/contact issues
+- [DONE] Confirmed `https://www.jamesgormanproperty.com/sitemap.xml` is live and the current `pages-sitemap.xml` contains **25 URLs**, including **13 indexable `blank-*` URLs**
+- [DONE] Confirmed sampled core pages and placeholder URLs are self-canonical with no `noindex`, so Wix is currently eligible to index the placeholder set
 
 ### NEXT ACTIONS:
-- [TODO] **P2 — Review the new 14 April drafts for publish order** — recommended first pass is Waterside seller piece, Cityside seller piece, Houses for Sale Limavady, then Sell My House Limavady
-- [TODO] **P2 — If publishing any of the new drafts, add tight internal links** into live valuation, sales, contact and relevant area/location posts to reduce cannibalisation risk
+- [TODO] **P1 — Remove/rename the indexed `blank-*` URLs and update internal links** — examples still in the sitemap or live navigation/cards: `https://www.jamesgormanproperty.com/blank-6`, `https://www.jamesgormanproperty.com/blank-14`, `https://www.jamesgormanproperty.com/blank-11`, `https://www.jamesgormanproperty.com/blank-11-1`, `https://www.jamesgormanproperty.com/blank-11-1-2`
+- [TODO] **P1 — Fix the sitewide footer/contact email issues** — footer `Contact` still uses `mailto:james@jamesgormanproperty.co`, and the visible lettings address still shows `Lettings@jamesgormaproperty.com`
+- [TODO] **P1 — Replace the remaining Wix default social links in the homepage menu overlay** — homepage still exposes Wix URLs like `instagram.com/wix` / `facebook.com/WixStudio`
+- [TODO] **P1 — Fix H1 structure on the core pages** — homepage has 6 H1s, `search-homes-derry` has 5, `property-for-sale-derry` has 7, `estate-agent-services-derry` has no real content H1, and `merchants-view` / `book-online` / `items` have no H1
+- [TODO] **P1 — Clean the indexation set** — `https://www.jamesgormanproperty.com/sell-your-home` is live but missing from `pages-sitemap.xml`, while low-value `https://www.jamesgormanproperty.com/items` and `https://www.jamesgormanproperty.com/book-online` remain indexable
+- [TODO] **P2 — Rewrite weak or empty metadata on key URLs** — `https://www.jamesgormanproperty.com/blog`, `https://www.jamesgormanproperty.com/sell-your-home`, `https://www.jamesgormanproperty.com/merchants-view`, and `https://www.jamesgormanproperty.com/items` all have poor titles and/or blank meta descriptions
+- [TODO] **P2 — Fix duplicated property meta descriptions on placeholder detail pages** — several `blank-11*` pages are reusing the wrong descriptions, including `blank-11-1-2`, `blank-11-1-2-1`, `blank-11-2`, and `blank-11-2-1`
+
+## LATEST UPDATE - 14th April 2026 - 4 NEW LOCAL POSTS PUBLISHED LIVE ON WIX ✅
+
+### COMPLETED:
+- [DONE] Published the 4 new 14 April drafts live to the James Gorman Property Wix blog after Phil approved publish in this run
+- [DONE] Live URLs verified 200:
+  - `https://www.jamesgormanproperty.com/post/estate-agent-waterside-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-cityside-derry`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-limavady-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/sell-my-house-limavady-guide-2026`
+- [DONE] Cleaned the public Wix post body so SEO planning notes did not leak into the visible article content
+- [DONE] Set proper custom excerpts on all 4 live posts so blog cards/snippets show clean seller/buyer-facing copy instead of draft metadata
+
+### NEXT ACTIONS:
+- [TODO] **P2 — Add tight internal links into the 4 newly published posts** pointing to live valuation, sales, contact and the most relevant existing area/location posts
+- [TODO] **P2 — Add featured images to the 4 newly published posts** so the new cluster looks stronger in the blog feed and on shares
 - [TODO] **P2 — Monitor overlap carefully if Limavady expands further** — existing live `estate-agent-limavady` / valuation posts mean future Limavady drafts should stay clearly split by buyer vs seller intent
 
 ## LATEST UPDATE - 13th April 2026 - GUIDE PRICE ENGINE UPGRADE

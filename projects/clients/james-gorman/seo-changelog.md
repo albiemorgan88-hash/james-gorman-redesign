@@ -1,5 +1,87 @@
 # James Gorman Property - SEO Changelog
 
+## 14th April 2026 - LIVE TECHNICAL SEO PASS (NO PUBLIC CHANGES MADE) ⚠️
+
+### WHAT I CHECKED
+
+- `https://www.jamesgormanproperty.com/sitemap.xml`
+- `https://www.jamesgormanproperty.com/pages-sitemap.xml`
+- homepage, search homes, sales, lettings, services, contact, blog, valuation, sell-your-home, merchants-view, terms, privacy, and the live `blank-11*` property URLs
+
+### MAIN FINDINGS
+
+1. **Indexation set still needs cleanup**
+   - `pages-sitemap.xml` currently exposes **25 URLs**, including **13 `blank-*` URLs**.
+   - These include `https://www.jamesgormanproperty.com/blank-6`, `https://www.jamesgormanproperty.com/blank-14`, `https://www.jamesgormanproperty.com/blank-11`, `https://www.jamesgormanproperty.com/blank-11-1`, `https://www.jamesgormanproperty.com/blank-11-1-2`, `https://www.jamesgormanproperty.com/blank-11-2`, and related variants.
+   - On the sampled pages, canonicals are self-referencing and no `noindex` was present, so the placeholder URLs are currently eligible for indexing.
+
+2. **Homepage/footer contact issues are still live**
+   - Footer `Contact` still points to `mailto:james@jamesgormanproperty.co`.
+   - Visible footer lettings email still shows `Lettings@jamesgormaproperty.com`.
+   - Homepage menu overlay still exposes Wix default social links, including `https://www.instagram.com/wix/` and `https://www.facebook.com/WixStudio`.
+
+3. **CTA pathing is still a bit messy**
+   - Homepage hero `SELL MY HOME` correctly points to `https://www.jamesgormanproperty.com/sell-your-home`.
+   - But the later homepage `SELL MY HOME` CTA in the "Chat with James" section still points back to the homepage instead of the seller page.
+   - `https://www.jamesgormanproperty.com/search-homes-derry` still pushes users into `blank-11*` property URLs from live listing cards.
+
+4. **H1 structure is still poor on key pages**
+   - Homepage has **6 H1s**.
+   - `https://www.jamesgormanproperty.com/search-homes-derry` has **5 H1s** and the prominent H1 is a property address.
+   - `https://www.jamesgormanproperty.com/property-for-sale-derry` has **7 H1s**.
+   - `https://www.jamesgormanproperty.com/estate-agent-services-derry` has no real page-topic H1.
+   - `https://www.jamesgormanproperty.com/merchants-view`, `https://www.jamesgormanproperty.com/book-online`, and `https://www.jamesgormanproperty.com/items` returned no H1.
+
+5. **Some key pages still have weak metadata**
+   - `https://www.jamesgormanproperty.com/blog` → title still `Blog | JamesGormanProperty`, blank meta description.
+   - `https://www.jamesgormanproperty.com/sell-your-home` → title still `Sell Your Home | JamesGormanProperty`, blank meta description, weak H1 (`Contact us`).
+   - `https://www.jamesgormanproperty.com/merchants-view` → blank meta description and no H1.
+   - `https://www.jamesgormanproperty.com/items` → blank meta description and no H1.
+   - Several `blank-11*` property pages are also reusing the wrong meta descriptions, so duplicate/misaligned snippets are still live.
+
+6. **One notable sitemap mismatch**
+   - `https://www.jamesgormanproperty.com/sell-your-home` is live and linked from the homepage, but it does **not** currently appear in `pages-sitemap.xml`.
+
+### PRACTICAL TAKEAWAY
+
+- Most of the live technical issues are still Wix-editor fixes rather than rebuild work.
+- I did **not** publish or change anything live in this run.
+- Best next manual pass in Wix: clean the `blank-*` slugs/indexation set first, then fix footer/email/social leftovers, then correct the H1/meta issues on the key service pages.
+
+## 14th April 2026 - 4 WATERSIDE / CITYSIDE / LIMAVADY POSTS PUBLISHED LIVE ✅
+
+### LIVE POSTS PUBLISHED
+
+1. **Estate Agent Waterside Derry: Pricing, Presentation and Selling Well by the Foyle**
+   - **Post ID:** `0d2fa464-1f6f-47da-8ee5-cc63c877ac1c`
+   - **URL:** https://www.jamesgormanproperty.com/post/estate-agent-waterside-derry
+
+2. **Estate Agent Cityside Derry: Selling Period Homes, Flats and City-Centre Property Well**
+   - **Post ID:** `62720827-b90d-4c56-8a91-824e6da28838`
+   - **URL:** https://www.jamesgormanproperty.com/post/estate-agent-cityside-derry
+
+3. **Houses for Sale Limavady: A 2026 Buyer's Guide to Areas, Prices and Everyday Living**
+   - **Post ID:** `a1d18bbd-86a8-4e0c-afce-c7960af18cd2`
+   - **URL:** https://www.jamesgormanproperty.com/post/houses-for-sale-limavady-buyer-guide-2026
+
+4. **Sell My House Limavady: How to Price, Prepare and Launch for a Better Result in 2026**
+   - **Post ID:** `d1626a27-ea01-4b14-87a3-3a85872de443`
+   - **URL:** https://www.jamesgormanproperty.com/post/sell-my-house-limavady-guide-2026
+
+### QA / CLEANUP NOTES
+
+- Phil explicitly approved publish in this run, so the four 14 April draft-only posts were pushed live on 14 April 2026.
+- All four live URLs were verified returning `200`.
+- After first publish, Wix had pulled the draft metadata block into the public body/excerpt on some posts.
+- Fixed that by patching the published draft objects, removing the SEO planning note block from `richContent`, setting proper custom excerpts, and re-publishing.
+- Final verification confirmed the public pages render cleanly and the post excerpts are now clean buyer/seller-facing copy.
+
+### FOLLOW-UP STILL WORTH DOING
+
+- add tight internal links into these four new posts
+- add featured images for feed/share quality
+- watch Limavady overlap as that cluster expands
+
 ## 14th April 2026 - NEXT DRAFT-ONLY CONTENT BLAST WRITTEN FOR WATERSIDE, CITYSIDE + LIMAVADY 📝
 
 ### AUDIT / DECISION NOTES
