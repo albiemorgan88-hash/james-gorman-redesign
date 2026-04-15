@@ -1,0 +1,6 @@
+2026/04/10-12:03:56.254 2923 Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_claude.ai_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/10-12:03:56.254 2923 Recovering log #3
+2026/04/10-12:03:56.265 2923 Reusing old log /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_claude.ai_0.indexeddb.leveldb/000003.log 
+2026/04/12-08:00:06.480 2925 Level-0 table #5: started
+2026/04/12-08:00:06.496 2925 Level-0 table #5: 772499 bytes OK
+2026/04/12-08:00:06.497 2925 Delete type=0 #3

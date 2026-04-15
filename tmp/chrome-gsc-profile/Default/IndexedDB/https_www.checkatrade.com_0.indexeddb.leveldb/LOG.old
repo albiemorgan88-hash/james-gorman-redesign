@@ -1,0 +1,6 @@
+2026/04/05-16:28:40.896 43ff60 Creating DB /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_www.checkatrade.com_0.indexeddb.leveldb since it was missing.
+2026/04/05-16:28:40.898 43ff60 Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_www.checkatrade.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/05-16:28:42.918 43ff56 Level-0 table #5: started
+2026/04/05-16:28:42.921 43ff56 Level-0 table #5: 3874 bytes OK
+2026/04/05-16:28:42.924 43ff56 Delete type=0 #3
+2026/04/05-16:28:42.924 43ff56 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

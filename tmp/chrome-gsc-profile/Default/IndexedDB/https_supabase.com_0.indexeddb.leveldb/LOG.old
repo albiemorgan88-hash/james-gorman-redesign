@@ -1,0 +1,15 @@
+2026/03/20-19:05:10.881 11f84fc Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_supabase.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/03/20-19:05:10.882 11f84fc Recovering log #4
+2026/03/20-19:05:10.882 11f84fc Reusing old log /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_supabase.com_0.indexeddb.leveldb/000004.log 
+2026/03/20-19:05:17.388 11f84fc Level-0 table #8: started
+2026/03/20-19:05:17.388 11f84fc Level-0 table #8: 1175 bytes OK
+2026/03/20-19:05:17.390 11f84fc Delete type=0 #4
+2026/03/20-19:05:17.391 11f84fc Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2026/03/20-19:05:17.391 11f84fc Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x14\x00s\x00m\x00h\x00z\x00g\x00k\x00v\x00a\x00t\x00l\x00w\x00b\x00a\x00x\x00l\x00y\x00h\x00n\x00b\x00m' @ 51 : 1
+2026/03/20-19:05:17.391 11f84fc Compacting 1@1 + 1@2 files
+2026/03/20-19:05:17.392 11f84fc Generated table #9@1: 21 keys, 849 bytes
+2026/03/20-19:05:17.392 11f84fc Compacted 1@1 + 1@2 files => 849 bytes
+2026/03/20-19:05:17.393 11f84fc compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/03/20-19:05:17.394 11f84fc Delete type=2 #5
+2026/03/20-19:05:17.394 11f84fc Delete type=2 #8
+2026/03/20-19:05:17.394 11f84fc Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x14\x00s\x00m\x00h\x00z\x00g\x00k\x00v\x00a\x00t\x00l\x00w\x00b\x00a\x00x\x00l\x00y\x00h\x00n\x00b\x00m' @ 51 : 1 .. (end); will stop at (end)

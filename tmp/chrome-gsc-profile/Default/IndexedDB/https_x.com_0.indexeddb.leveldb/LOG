@@ -1,0 +1,15 @@
+2026/04/07-13:38:34.554 a22fcb Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_x.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/07-13:38:34.554 a22fcb Recovering log #7
+2026/04/07-13:38:34.554 a22fcb Reusing old log /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_x.com_0.indexeddb.leveldb/000007.log 
+2026/04/07-14:09:00.684 a22fc8 Level-0 table #12: started
+2026/04/07-14:09:00.685 a22fc8 Level-0 table #12: 1285 bytes OK
+2026/04/07-14:09:00.694 a22fc8 Delete type=0 #7
+2026/04/07-14:09:00.694 a22fc8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2026/04/07-14:09:00.694 a22fc8 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x1f\x00u\x00s\x00e\x00r\x00:\x00u\x00n\x00k\x00n\x00o\x00w\x00n\x00:\x00r\x00w\x00e\x00b\x00.\x00f\x00a\x00t\x00i\x00g\x00u\x00e\x00S\x00t\x00a\x00t\x00e\x00s' @ 53 : 1
+2026/04/07-14:09:00.694 a22fc8 Compacting 1@1 + 1@2 files
+2026/04/07-14:09:00.695 a22fc8 Generated table #13@1: 21 keys, 771 bytes
+2026/04/07-14:09:00.695 a22fc8 Compacted 1@1 + 1@2 files => 771 bytes
+2026/04/07-14:09:00.696 a22fc8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/07-14:09:00.697 a22fc8 Delete type=2 #12
+2026/04/07-14:09:00.697 a22fc8 Delete type=2 #9
+2026/04/07-14:09:00.697 a22fc8 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x1f\x00u\x00s\x00e\x00r\x00:\x00u\x00n\x00k\x00n\x00o\x00w\x00n\x00:\x00r\x00w\x00e\x00b\x00.\x00f\x00a\x00t\x00i\x00g\x00u\x00e\x00S\x00t\x00a\x00t\x00e\x00s' @ 53 : 1 .. (end); will stop at (end)

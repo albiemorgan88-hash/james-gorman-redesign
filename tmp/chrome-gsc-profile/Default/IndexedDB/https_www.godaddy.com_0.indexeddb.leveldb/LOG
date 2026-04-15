@@ -1,0 +1,6 @@
+2026/03/19-22:19:32.294 112a2c0 Creating DB /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_www.godaddy.com_0.indexeddb.leveldb since it was missing.
+2026/03/19-22:19:32.295 112a2c0 Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_www.godaddy.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/03/19-22:19:40.486 112a2bd Level-0 table #5: started
+2026/03/19-22:19:40.488 112a2bd Level-0 table #5: 1939 bytes OK
+2026/03/19-22:19:40.492 112a2bd Delete type=0 #3
+2026/03/19-22:19:40.493 112a2bd Manual compaction at level-0 from (begin) .. (end); will stop at (end)

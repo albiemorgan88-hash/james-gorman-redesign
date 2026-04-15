@@ -1,0 +1,555 @@
+{
+  "metrics": {
+    "bluecanvas.ai": {
+      "dr": 26.0,
+      "refdomains": 17,
+      "backlinks": 5799,
+      "org_keywords": 0,
+      "org_traffic": 0
+    },
+    "brainpool.ai": {
+      "dr": 38.0,
+      "refdomains": 553,
+      "backlinks": 1445,
+      "org_keywords": 73,
+      "org_traffic": 1318
+    },
+    "iwantmore.ai": {
+      "dr": 6.0,
+      "refdomains": 128,
+      "backlinks": 231,
+      "org_keywords": 22,
+      "org_traffic": 247
+    },
+    "aicc.co": {
+      "dr": 36.0,
+      "refdomains": 202,
+      "backlinks": 14127,
+      "org_keywords": 10,
+      "org_traffic": 22
+    },
+    "artellis.ie": {
+      "dr": 0.1,
+      "refdomains": 1,
+      "backlinks": 1,
+      "org_keywords": 0,
+      "org_traffic": 0
+    },
+    "elementseven.co.uk": {
+      "dr": 0.0,
+      "refdomains": 32,
+      "backlinks": 42,
+      "org_keywords": 0,
+      "org_traffic": 0
+    },
+    "aiforbusinessnorthernireland.co.uk": {
+      "dr": 0.0,
+      "refdomains": 1,
+      "backlinks": 1,
+      "org_keywords": 0,
+      "org_traffic": 0
+    }
+  },
+  "shared_backlink_gap": [],
+  "top_single_backlink_targets": [
+    {
+      "domain": "blogspot.com",
+      "competitor": "brainpool.ai",
+      "domain_rating": 95.0,
+      "traffic_domain": 22207820,
+      "links_to_target": 17,
+      "dofollow_links": 17
+    },
+    {
+      "domain": "amazonaws.com",
+      "competitor": "brainpool.ai",
+      "domain_rating": 95.0,
+      "traffic_domain": 7096164,
+      "links_to_target": 6,
+      "dofollow_links": 6
+    },
+    {
+      "domain": "squarespace.com",
+      "competitor": "brainpool.ai",
+      "domain_rating": 95.0,
+      "traffic_domain": 3585984,
+      "links_to_target": 5,
+      "dofollow_links": 5
+    },
+    {
+      "domain": "medium.com",
+      "competitor": "brainpool.ai",
+      "domain_rating": 94.0,
+      "traffic_domain": 26354946,
+      "links_to_target": 10,
+      "dofollow_links": 1
+    },
+    {
+      "domain": "forbes.com",
+      "competitor": "brainpool.ai",
+      "domain_rating": 94.0,
+      "traffic_domain": 20283252,
+      "links_to_target": 17,
+      "dofollow_links": 5
+    },
+    {
+      "domain": "github.io",
+      "competitor": "brainpool.ai",
+      "domain_rating": 94.0,
+      "traffic_domain": 11992573,
+      "links_to_target": 4,
+      "dofollow_links": 4
+    },
+    {
+      "domain": "pages.dev",
+      "competitor": "brainpool.ai",
+      "domain_rating": 93.0,
+      "traffic_domain": 297169088,
+      "links_to_target": 1,
+      "dofollow_links": 0
+    },
+    {
+      "domain": "businessinsider.com",
+      "competitor": "brainpool.ai",
+      "domain_rating": 92.0,
+      "traffic_domain": 5937638,
+      "links_to_target": 2,
+      "dofollow_links": 0
+    },
+    {
+      "domain": "bloomberg.com",
+      "competitor": "brainpool.ai",
+      "domain_rating": 92.0,
+      "traffic_domain": 5811198,
+      "links_to_target": 7,
+      "dofollow_links": 0
+    },
+    {
+      "domain": "prnewswire.com",
+      "competitor": "brainpool.ai",
+      "domain_rating": 92.0,
+      "traffic_domain": 885194,
+      "links_to_target": 1,
+      "dofollow_links": 0
+    },
+    {
+      "domain": "designrush.com",
+      "competitor": "iwantmore.ai",
+      "domain_rating": 91.0,
+      "traffic_domain": 265322,
+      "links_to_target": 15,
+      "dofollow_links": 0
+    },
+    {
+      "domain": "tickettailor.com",
+      "competitor": "aicc.co",
+      "domain_rating": 91.0,
+      "traffic_domain": 58271,
+      "links_to_target": 22,
+      "dofollow_links": 12
+    },
+    {
+      "domain": "humanitix.com",
+      "competitor": "aicc.co",
+      "domain_rating": 90.0,
+      "traffic_domain": 80507,
+      "links_to_target": 4,
+      "dofollow_links": 4
+    },
+    {
+      "domain": "itxoft.com",
+      "competitor": "aicc.co",
+      "domain_rating": 85.0,
+      "traffic_domain": 0,
+      "links_to_target": 2,
+      "dofollow_links": 0
+    },
+    {
+      "domain": "qub.ac.uk",
+      "competitor": "aicc.co",
+      "domain_rating": 82.0,
+      "traffic_domain": 128790,
+      "links_to_target": 5,
+      "dofollow_links": 5
+    },
+    {
+      "domain": "postandcourier.com",
+      "competitor": "aicc.co",
+      "domain_rating": 82.0,
+      "traffic_domain": 112388,
+      "links_to_target": 1,
+      "dofollow_links": 1
+    },
+    {
+      "domain": "mcas.ms",
+      "competitor": "aicc.co",
+      "domain_rating": 80.0,
+      "traffic_domain": 7285,
+      "links_to_target": 2,
+      "dofollow_links": 2
+    },
+    {
+      "domain": "physicsworld.com",
+      "competitor": "aicc.co",
+      "domain_rating": 79.0,
+      "traffic_domain": 26466,
+      "links_to_target": 1,
+      "dofollow_links": 1
+    },
+    {
+      "domain": "buybacklinks.agency",
+      "competitor": "aicc.co",
+      "domain_rating": 79.0,
+      "traffic_domain": 0,
+      "links_to_target": 2,
+      "dofollow_links": 0
+    },
+    {
+      "domain": "ulster.ac.uk",
+      "competitor": "aicc.co",
+      "domain_rating": 78.0,
+      "traffic_domain": 235510,
+      "links_to_target": 10,
+      "dofollow_links": 10
+    }
+  ],
+  "priority_keyword_gap": [
+    {
+      "keyword": "ai consultancy",
+      "volume": 1100,
+      "best_position": 1,
+      "sum_traffic": 190,
+      "cpc": 457,
+      "kd": 61,
+      "competitors": [
+        "brainpool.ai",
+        "iwantmore.ai"
+      ],
+      "flags": [
+        "commercial",
+        "informational"
+      ],
+      "urls": [
+        "https://brainpool.ai/",
+        "https://iwantmore.ai/"
+      ]
+    },
+    {
+      "keyword": "ai consulting company",
+      "volume": 250,
+      "best_position": 2,
+      "sum_traffic": 85,
+      "cpc": 562,
+      "kd": 63,
+      "competitors": [
+        "brainpool.ai",
+        "iwantmore.ai"
+      ],
+      "flags": [
+        "informational"
+      ],
+      "urls": [
+        "https://brainpool.ai/",
+        "https://iwantmore.ai/"
+      ]
+    },
+    {
+      "keyword": "ai consultancy uk",
+      "volume": 350,
+      "best_position": 1,
+      "sum_traffic": 55,
+      "cpc": 762,
+      "kd": 40,
+      "competitors": [
+        "brainpool.ai",
+        "iwantmore.ai"
+      ],
+      "flags": [
+        "commercial",
+        "informational",
+        "local"
+      ],
+      "urls": [
+        "https://brainpool.ai/",
+        "https://iwantmore.ai/"
+      ]
+    },
+    {
+      "keyword": "ai consulting companies",
+      "volume": 900,
+      "best_position": 3,
+      "sum_traffic": 135,
+      "cpc": 859,
+      "kd": 68,
+      "competitors": [
+        "brainpool.ai"
+      ],
+      "flags": [
+        "informational"
+      ],
+      "urls": [
+        "https://brainpool.ai/"
+      ]
+    },
+    {
+      "keyword": "ai consulting agency",
+      "volume": 2000,
+      "best_position": 9,
+      "sum_traffic": 94,
+      "cpc": 948,
+      "kd": 62,
+      "competitors": [
+        "brainpool.ai"
+      ],
+      "flags": [
+        "informational"
+      ],
+      "urls": [
+        "https://brainpool.ai/"
+      ]
+    },
+    {
+      "keyword": "ai consultancy services",
+      "volume": 600,
+      "best_position": 4,
+      "sum_traffic": 71,
+      "cpc": 157,
+      "kd": 66,
+      "competitors": [
+        "brainpool.ai"
+      ],
+      "flags": [
+        "commercial",
+        "informational"
+      ],
+      "urls": [
+        "https://brainpool.ai/"
+      ]
+    },
+    {
+      "keyword": "ai consulting services",
+      "volume": 700,
+      "best_position": 1,
+      "sum_traffic": 63,
+      "cpc": 1520,
+      "kd": 41,
+      "competitors": [
+        "iwantmore.ai"
+      ],
+      "flags": [
+        "commercial",
+        "informational"
+      ],
+      "urls": [
+        "https://iwantmore.ai/"
+      ]
+    },
+    {
+      "keyword": "ai consulting firms",
+      "volume": 350,
+      "best_position": 3,
+      "sum_traffic": 51,
+      "cpc": 562,
+      "kd": 55,
+      "competitors": [
+        "iwantmore.ai"
+      ],
+      "flags": [
+        "informational"
+      ],
+      "urls": [
+        "https://iwantmore.ai/"
+      ]
+    },
+    {
+      "keyword": "machine learning consulting company",
+      "volume": 500,
+      "best_position": 6,
+      "sum_traffic": 37,
+      "cpc": 42,
+      "kd": 53,
+      "competitors": [
+        "brainpool.ai"
+      ],
+      "flags": [
+        "commercial",
+        "informational"
+      ],
+      "urls": [
+        "https://brainpool.ai/"
+      ]
+    },
+    {
+      "keyword": "ai consulting",
+      "volume": 1200,
+      "best_position": 17,
+      "sum_traffic": 8,
+      "cpc": 607,
+      "kd": 2,
+      "competitors": [
+        "iwantmore.ai"
+      ],
+      "flags": [
+        "commercial",
+        "informational"
+      ],
+      "urls": [
+        "https://iwantmore.ai/"
+      ]
+    },
+    {
+      "keyword": "ai consultants",
+      "volume": 600,
+      "best_position": 16,
+      "sum_traffic": 5,
+      "cpc": 607,
+      "kd": 55,
+      "competitors": [
+        "iwantmore.ai"
+      ],
+      "flags": [
+        "informational"
+      ],
+      "urls": [
+        "https://iwantmore.ai/"
+      ]
+    },
+    {
+      "keyword": "ai consultancy london",
+      "volume": 150,
+      "best_position": 11,
+      "sum_traffic": 4,
+      "cpc": 0,
+      "kd": 43,
+      "competitors": [
+        "iwantmore.ai"
+      ],
+      "flags": [
+        "commercial",
+        "informational",
+        "local"
+      ],
+      "urls": [
+        "https://iwantmore.ai/"
+      ]
+    }
+  ],
+  "gsc_quick_wins_last_verified": [
+    {
+      "query": "ai consultancy for small business",
+      "clicks": 0,
+      "impressions": 83,
+      "ctr": "0.0%",
+      "position": 8.9
+    },
+    {
+      "query": "ai consultants for small business",
+      "clicks": 0,
+      "impressions": 52,
+      "ctr": "0.0%",
+      "position": 7.8
+    },
+    {
+      "query": "ai consultancy northern ireland",
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": "0.0%",
+      "position": 5.5
+    },
+    {
+      "query": "ai consulting agency",
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": "0.0%",
+      "position": 8.3
+    }
+  ],
+  "gsc_ahrefs_overlap": [
+    {
+      "query": "ai consultancy",
+      "impressions": 42,
+      "position_gsc": 10.9,
+      "best_comp_position": 1,
+      "competitors": [
+        "brainpool.ai",
+        "iwantmore.ai"
+      ],
+      "volume": 1100,
+      "sum_traffic": 190,
+      "cpc": 457
+    },
+    {
+      "query": "ai consulting agency",
+      "impressions": 27,
+      "position_gsc": 8.3,
+      "best_comp_position": 9,
+      "competitors": [
+        "brainpool.ai"
+      ],
+      "volume": 2000,
+      "sum_traffic": 94,
+      "cpc": 948
+    },
+    {
+      "query": "ai consulting",
+      "impressions": 15,
+      "position_gsc": 13.1,
+      "best_comp_position": 17,
+      "competitors": [
+        "iwantmore.ai"
+      ],
+      "volume": 1200,
+      "sum_traffic": 8,
+      "cpc": 607
+    },
+    {
+      "query": "ai consulting services",
+      "impressions": 10,
+      "position_gsc": 8.8,
+      "best_comp_position": 1,
+      "competitors": [
+        "iwantmore.ai"
+      ],
+      "volume": 700,
+      "sum_traffic": 63,
+      "cpc": 1520
+    },
+    {
+      "query": "ai consultants",
+      "impressions": 5,
+      "position_gsc": 8.8,
+      "best_comp_position": 16,
+      "competitors": [
+        "iwantmore.ai"
+      ],
+      "volume": 600,
+      "sum_traffic": 5,
+      "cpc": 607
+    },
+    {
+      "query": "ai consultancy uk",
+      "impressions": 5,
+      "position_gsc": 21.0,
+      "best_comp_position": 1,
+      "competitors": [
+        "brainpool.ai",
+        "iwantmore.ai"
+      ],
+      "volume": 350,
+      "sum_traffic": 55,
+      "cpc": 762
+    },
+    {
+      "query": "ai consultancy services",
+      "impressions": 2,
+      "position_gsc": 13.0,
+      "best_comp_position": 4,
+      "competitors": [
+        "brainpool.ai"
+      ],
+      "volume": 600,
+      "sum_traffic": 71,
+      "cpc": 157
+    }
+  ]
+}

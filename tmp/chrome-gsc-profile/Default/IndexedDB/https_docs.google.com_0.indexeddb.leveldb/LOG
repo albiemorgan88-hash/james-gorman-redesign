@@ -1,0 +1,18 @@
+2026/04/10-12:03:27.171 2981 Reusing MANIFEST /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/10-12:03:27.173 2981 Recovering log #3
+2026/04/10-12:03:27.183 2981 Reusing old log /Users/philsagent/Library/Application Support/Google/Chrome/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/000003.log 
+2026/04/10-18:31:49.478 2925 Level-0 table #5: started
+2026/04/10-18:31:49.492 2925 Level-0 table #5: 4021696 bytes OK
+2026/04/10-18:31:49.493 2925 Delete type=0 #3
+2026/04/12-14:28:40.502 2925 Level-0 table #7: started
+2026/04/12-14:28:40.507 2925 Level-0 table #7: 1792341 bytes OK
+2026/04/12-14:28:40.510 2925 Delete type=0 #4
+2026/04/12-14:28:40.512 297d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2026/04/12-14:28:40.512 2925 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x03\x02\x01%\x001\x009\x008\x00e\x009\x002\x001\x00a\x005\x006\x008\x006\x000\x003\x009\x00b\x00f\x001\x003\x007\x00b\x002\x00e\x00b\x001\x008\x00a\x009\x009\x006\x001\x006\x00_\x007\x00:\x000\x000' @ 3813 : 1
+2026/04/12-14:28:40.512 2925 Compacting 1@1 + 1@2 files
+2026/04/12-14:28:40.519 2925 Generated table #8@1: 289 keys, 119361 bytes
+2026/04/12-14:28:40.520 2925 Compacted 1@1 + 1@2 files => 119361 bytes
+2026/04/12-14:28:40.521 2925 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/12-14:28:40.522 2925 Delete type=2 #7
+2026/04/12-14:28:40.522 2925 Delete type=2 #5
+2026/04/12-14:28:40.522 2925 Manual compaction at level-1 from '\x00\x01\x03\x02\x01%\x001\x009\x008\x00e\x009\x002\x001\x00a\x005\x006\x008\x006\x000\x003\x009\x00b\x00f\x001\x003\x007\x00b\x002\x00e\x00b\x001\x008\x00a\x009\x009\x006\x001\x006\x00_\x007\x00:\x000\x000' @ 3813 : 1 .. (end); will stop at (end)

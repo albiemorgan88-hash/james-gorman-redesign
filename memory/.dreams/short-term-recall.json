@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-14T15:37:50.066Z",
+  "updatedAt": "2026-04-15T08:19:06.670Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -5039,18 +5039,20 @@
       "endLine": 6,
       "source": "memory",
       "snippet": "@@ -3,4 @@ (2 before, 111 after) ## Morning Dashboard (07:01) - **Uptime**: All 4 sites up ✅ (bluecanvas.ai 414ms, ardmorecricket.com 653ms, uktradejobs.com 489ms, openclawconsultant.co.uk 636ms) - **Ahrefs**: ❌ Signed out — \"account being used on another device\" - **GSC API**: ❌ Refresh token expired/revoked — needs re-auth",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.06,
-      "maxScore": 0.06,
+      "totalScore": 0.13,
+      "maxScore": 0.07,
       "firstRecalledAt": "2026-04-12T15:08:34.638Z",
-      "lastRecalledAt": "2026-04-12T15:08:34.638Z",
+      "lastRecalledAt": "2026-04-15T08:19:06.670Z",
       "queryHashes": [
-        "721036c41898"
+        "721036c41898",
+        "bc066d58cf62"
       ],
       "recallDays": [
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-15"
       ],
       "conceptTags": [
         "bluecanvas.ai",
