@@ -11,10 +11,10 @@ export const starterGuideSlugs = [
 ] as const;
 
 export const featuredGuideSlugs = [
-  'ai-automation-save-money',
-  'ai-implementation-cost-uk',
-  'what-is-an-ai-agent',
-  'ai-training-for-teams',
+  'ai-audit-northern-ireland',
+  'ai-implementation-services-uk',
+  'ai-training-northern-ireland',
+  'ai-consultancy-derry',
 ] as const;
 
 export const categoryDescriptions: Record<string, string> = {

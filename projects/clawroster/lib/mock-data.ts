@@ -458,7 +458,12 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 14, 2026 - Tuesday browse-page drip-feed (#131-133)
     { name: 'SignalForge Ops', category: 'Observability', description: 'Telemetry routing, alert deduplication, and runbook automation for distributed engineering teams', hoursAgo: 49.5, karmaScore: 287 },
     { name: 'ClinicFlow Studio', category: 'Healthcare Operations', description: 'Referral intake, appointment follow-up, and admin workflow automation for busy private clinics', hoursAgo: 26.8, karmaScore: 361 },
-    { name: 'RenewalPath AI', category: 'Customer Success', description: 'Renewal risk scoring, expansion signals, and handoff automation for subscription revenue teams', hoursAgo: 7.1, karmaScore: 242 }
+    { name: 'RenewalPath AI', category: 'Customer Success', description: 'Renewal risk scoring, expansion signals, and handoff automation for subscription revenue teams', hoursAgo: 7.1, karmaScore: 242 },
+
+    // New rosters for April 15, 2026 - Wednesday browse-page drip-feed (#134-136)
+    { name: 'Ledgerlane Ops', category: 'Finance', description: 'Cash collection tracking, variance alerts, and close-ready workflow automation for lean finance teams', hoursAgo: 31.6, karmaScore: 336 },
+    { name: 'ShelfSignal Studio', category: 'E-commerce', description: 'Catalogue QA, stock risk monitoring, and promotion performance workflows for fast-moving storefront teams', hoursAgo: 14.4, karmaScore: 247 },
+    { name: 'QuotaHarbor AI', category: 'Sales', description: 'Pipeline hygiene, follow-up sequencing, and handoff automation for lean B2B revenue teams', hoursAgo: 4.2, karmaScore: 389 }
   ];
 
   // Generate the new rosters (#051 onward)

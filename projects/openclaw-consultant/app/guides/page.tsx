@@ -64,6 +64,7 @@ const guidesData: Record<string, Guide[]> = {
     { title: "AI Agent Memory Systems", href: "/guides/ai-agent-memory-systems", category: "Enterprise" },
     { title: "Multi-Agent Orchestration: Running AI Agent Teams", href: "/guides/multi-agent-orchestration", category: "Enterprise" },
     { title: "Enterprise OpenClaw Deployment Guide", href: "/guides/enterprise-openclaw-deployment", category: "Enterprise" },
+    { title: "OpenClaw Enterprise Deployment", href: "/guides/openclaw-enterprise-deployment", category: "Enterprise" },
     { title: "OpenClaw Deployment Service UK", href: "/guides/openclaw-deployment-service-uk", category: "Enterprise" },
     { title: "OpenClaw + Pinchy Enterprise Stack", href: "/guides/openclaw-pinchy-enterprise-stack", category: "Enterprise" },
     { title: "OpenClaw Enterprise Security & GDPR", href: "/guides/openclaw-enterprise-security-compliance", category: "Enterprise" },
@@ -139,6 +140,7 @@ const guidesData: Record<string, Guide[]> = {
     { title: "AI Implementation Consultant UK", href: "/guides/ai-implementation-consultant-uk", category: "Strategy" },
     { title: "OpenClaw Implementation Consultant UK", href: "/guides/openclaw-implementation-consultant-uk", category: "Strategy" },
     { title: "OpenClaw Audit Service", href: "/guides/openclaw-audit-service", category: "Strategy" },
+    { title: "OpenClaw Managed Service UK", href: "/guides/openclaw-managed-service-uk", category: "Strategy" },
     { title: "OpenClaw Compliance Checklist UK", href: "/guides/openclaw-compliance-checklist-uk", category: "Strategy" },
     { title: "AI Governance Policy Template", href: "/guides/ai-governance-policy-template", category: "Strategy" },
   ],
@@ -154,6 +156,7 @@ const guidesData: Record<string, Guide[]> = {
     { title: "Automate Accounts & Bookkeeping with AI", href: "/guides/automate-accounts-bookkeeping-ai", category: "Automation" },
     { title: "Managing AI Agent Teams: Practical Guide", href: "/guides/ai-agent-team-management", category: "Automation" },
     { title: "AI Agents for Customer Support", href: "/guides/ai-agents-for-customer-support", category: "Automation" },
+    { title: "OpenClaw Training for Teams", href: "/guides/openclaw-training-for-teams", category: "Automation" },
     { title: "Top 10 OpenClaw Skills for Business", href: "/guides/top-10-openclaw-skills", category: "Automation" },
   ],
 };

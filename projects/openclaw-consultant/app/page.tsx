@@ -342,20 +342,20 @@ export default function Home() {
             </a>
 
             <a
-              href="/guides/openclaw-performance-optimization-guide"
+              href="/guides/openclaw-managed-service-uk"
               className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
             >
               <div className="flex items-center justify-between mb-3">
                 <span className="inline-block bg-green-500/10 text-green-600 px-3 py-1 rounded-full text-xs font-medium">
-                  Performance
+                  Support
                 </span>
-                <span className="text-muted text-xs">10 min read</span>
+                <span className="text-muted text-xs">9 min read</span>
               </div>
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
-                Performance Optimization Guide 2026
+                OpenClaw Managed Service UK
               </h3>
               <p className="text-muted-dark text-sm mb-4 leading-relaxed">
-                Complete guide to optimizing OpenClaw AI agent performance, reducing response times, and maximizing efficiency.
+                What ongoing OpenClaw support should actually include, when a monthly retainer is worth it, and what should still stay in-house.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
                 Read Guide →
@@ -363,20 +363,20 @@ export default function Home() {
             </a>
 
             <a
-              href="/guides/openclaw-business-systems-integration"
+              href="/guides/openclaw-training-for-teams"
               className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
             >
               <div className="flex items-center justify-between mb-3">
                 <span className="inline-block bg-purple-500/10 text-purple-600 px-3 py-1 rounded-full text-xs font-medium">
-                  Integration
+                  Training
                 </span>
-                <span className="text-muted text-xs">15 min read</span>
+                <span className="text-muted text-xs">8 min read</span>
               </div>
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
-                Business Systems Integration Guide 2026
+                OpenClaw Training for Teams
               </h3>
               <p className="text-muted-dark text-sm mb-4 leading-relaxed">
-                Complete guide to integrating OpenClaw AI agents with CRM, ERP, accounting software, and custom APIs.
+                How to get real adoption after setup, what different roles need to learn, and how to handle handover without confusion.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
                 Read Guide →
