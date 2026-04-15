@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-15T08:19:06.670Z",
+  "updatedAt": "2026-04-15T19:42:00.646Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -5497,6 +5497,68 @@
         "test-mode",
         "homepage",
         "title"
+      ]
+    },
+    "memory:memory/2026-03-30.md:152:155": {
+      "key": "memory:memory/2026-03-30.md:152:155",
+      "path": "memory/2026-03-30.md",
+      "startLine": 152,
+      "endLine": 155,
+      "source": "memory",
+      "snippet": "@@ -152,4 @@ (151 before, 283 after) ## Cormac/HIP Psychology Onboarding — 16:00 GMT ### Cormac's Response",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.05,
+      "maxScore": 0.05,
+      "firstRecalledAt": "2026-04-15T19:42:00.646Z",
+      "lastRecalledAt": "2026-04-15T19:42:00.646Z",
+      "queryHashes": [
+        "e4b30eab3a5c"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "cormac/hip",
+        "152,4",
+        "cormac",
+        "hip",
+        "psychology",
+        "onboarding",
+        "gmt",
+        "cormac's"
+      ]
+    },
+    "memory:memory/2026-04-15.md:2:5": {
+      "key": "memory:memory/2026-04-15.md:2:5",
+      "path": "memory/2026-04-15.md",
+      "startLine": 2,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "@@ -2,4 @@ (1 before, 79 after) - Imported `apollo-contacts-export_5---3fd9a50b-a7dc-4d55-a226-2c983225bb6a.csv` into Zoho Leads for Cormac as an incremental Apollo schools batch. - CSV rows: 73. Internal unique rows: 73. Existing lead matches found before import: 0. New leads created: 73. - Tagged the new records with both `A...",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.04,
+      "maxScore": 0.04,
+      "firstRecalledAt": "2026-04-15T19:42:00.646Z",
+      "lastRecalledAt": "2026-04-15T19:42:00.646Z",
+      "queryHashes": [
+        "e4b30eab3a5c"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "apollo-contacts-export-5",
+        "2,4",
+        "imported",
+        "apollo",
+        "contacts",
+        "export-5",
+        "3fd9a50b",
+        "a7dc"
       ]
     }
   }
