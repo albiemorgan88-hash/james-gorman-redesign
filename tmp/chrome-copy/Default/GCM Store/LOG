@@ -1,3 +1,2 @@
-2026/04/14-10:01:59.898 34273e Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/GCM Store/MANIFEST-000001
-2026/04/14-10:01:59.899 34273e Recovering log #3
-2026/04/14-10:01:59.899 34273e Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/GCM Store/000003.log 
+2026/04/16-07:03:40.794 5ed2e0 Creating DB /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/GCM Store since it was missing.
+2026/04/16-07:03:40.800 5ed2e0 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/GCM Store/MANIFEST-000001

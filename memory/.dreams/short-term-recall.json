@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-15T19:42:00.646Z",
+  "updatedAt": "2026-04-16T06:08:29.350Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -5559,6 +5559,68 @@
         "export-5",
         "3fd9a50b",
         "a7dc"
+      ]
+    },
+    "memory:memory/2026-04-03.md:24:27": {
+      "key": "memory:memory/2026-04-03.md:24:27",
+      "path": "memory/2026-04-03.md",
+      "startLine": 24,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "@@ -24,4 @@ (23 before, 90 after) ## Security Scan — 07:05 AM - **OpenClaw audit (deep):** 0 critical, 1 warn, 1 info - WARN: trusted_proxies_missing (gateway bound to loopback, no proxy configured — low risk since no reverse proxy in use) - INFO: attack surface clean — no open groups, elevated tools enabled, webhooks disabled",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.04,
+      "maxScore": 0.04,
+      "firstRecalledAt": "2026-04-16T06:08:29.350Z",
+      "lastRecalledAt": "2026-04-16T06:08:29.350Z",
+      "queryHashes": [
+        "89711dd8d40c"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "gateway",
+        "trusted-proxies-missing",
+        "24,4",
+        "security",
+        "scan",
+        "openclaw",
+        "audit",
+        "deep"
+      ]
+    },
+    "memory:memory/2026-04-04.md:3:6": {
+      "key": "memory:memory/2026-04-04.md:3:6",
+      "path": "memory/2026-04-04.md",
+      "startLine": 3,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "@@ -3,4 @@ (2 before, 66 after) - **OpenClaw audit (deep):** 0 critical, 1 warn, 1 info - WARN: trusted proxies not configured (low risk — gateway is loopback-only) - INFO: attack surface summary — clean (0 open groups, browser control on, personal trust model)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.03,
+      "maxScore": 0.03,
+      "firstRecalledAt": "2026-04-16T06:08:29.350Z",
+      "lastRecalledAt": "2026-04-16T06:08:29.350Z",
+      "queryHashes": [
+        "89711dd8d40c"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "gateway",
+        "loopback-only",
+        "3,4",
+        "openclaw",
+        "audit",
+        "deep",
+        "critical",
+        "warn"
       ]
     }
   }
