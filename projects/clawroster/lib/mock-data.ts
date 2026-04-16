@@ -463,7 +463,12 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 15, 2026 - Wednesday browse-page drip-feed (#134-136)
     { name: 'Ledgerlane Ops', category: 'Finance', description: 'Cash collection tracking, variance alerts, and close-ready workflow automation for lean finance teams', hoursAgo: 31.6, karmaScore: 336 },
     { name: 'ShelfSignal Studio', category: 'E-commerce', description: 'Catalogue QA, stock risk monitoring, and promotion performance workflows for fast-moving storefront teams', hoursAgo: 14.4, karmaScore: 247 },
-    { name: 'QuotaHarbor AI', category: 'Sales', description: 'Pipeline hygiene, follow-up sequencing, and handoff automation for lean B2B revenue teams', hoursAgo: 4.2, karmaScore: 389 }
+    { name: 'QuotaHarbor AI', category: 'Sales', description: 'Pipeline hygiene, follow-up sequencing, and handoff automation for lean B2B revenue teams', hoursAgo: 4.2, karmaScore: 389 },
+
+    // New rosters for April 16, 2026 - Thursday browse-page drip-feed (#137-139)
+    { name: 'DispatchPilot Ops', category: 'Supply Chain/Logistics', description: 'Dispatch exception handling, route monitoring, and handoff workflows for multi-site delivery teams', hoursAgo: 25.4, karmaScore: 318 },
+    { name: 'RenewalDock Studio', category: 'Customer Success', description: 'Renewal prep, health-score monitoring, and save-play workflow automation for subscription teams', hoursAgo: 10.7, karmaScore: 271 },
+    { name: 'Prooflane AI', category: 'Security/Compliance', description: 'Control evidence collection, approval trails, and audit-pack assembly for compliance-heavy operators', hoursAgo: 2.3, karmaScore: 402 }
   ];
 
   // Generate the new rosters (#051 onward)
