@@ -1,5 +1,45 @@
 # James Gorman Property - SEO Changelog
 
+## 17th April 2026 - RECOVERY CHECK FOR 4 APRIL BLOG POSTS, ALL STILL LIVE ✅
+
+### CHANGED LIVE
+
+- No new public edit was applied in this pass.
+- No Wix restore or re-publish was needed because all 4 target posts were already live when re-checked on 17 April 2026.
+
+### ATTEMPTED
+
+- Re-checked these 4 live URLs with no-cache requests after Phil reported they looked gone:
+  - `https://www.jamesgormanproperty.com/post/estate-agent-waterside-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-cityside-derry`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-limavady-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/sell-my-house-limavady-guide-2026`
+- Confirmed each URL returned `200` and still rendered the expected live article title/H1.
+- Confirmed the live HTML for each page still contains the matching Wix post ID from the 14 April publish run:
+  - `estate-agent-waterside-derry` -> `0d2fa464-1f6f-47da-8ee5-cc63c877ac1c`
+  - `estate-agent-cityside-derry` -> `62720827-b90d-4c56-8a91-824e6da28838`
+  - `houses-for-sale-limavady-buyer-guide-2026` -> `a1d18bbd-86a8-4e0c-afce-c7960af18cd2`
+  - `sell-my-house-limavady-guide-2026` -> `d1626a27-ea01-4b14-87a3-3a85872de443`
+- Pulled readable public text for all 4 posts and re-checked for the earlier content-leak problem. No draft markers such as `Draft status`, `Meta title`, `Meta description`, or `Focus keyphrase` were present in the public article text.
+- Re-confirmed the local recovery drafts still exist here if a future restore is needed:
+  - `projects/clients/james-gorman/blog-drafts/2026-04-14-estate-agent-waterside-derry-seller-guide.md`
+  - `projects/clients/james-gorman/blog-drafts/2026-04-14-estate-agent-cityside-derry-seller-guide.md`
+  - `projects/clients/james-gorman/blog-drafts/2026-04-14-houses-for-sale-limavady-buyer-guide-2026.md`
+  - `projects/clients/james-gorman/blog-drafts/2026-04-14-sell-my-house-limavady-guide-2026.md`
+- **Inference:** the reported disappearance was not reproducible during this pass and may have been a transient cache/render issue rather than a true unpublished-state event.
+
+### STILL BLOCKED
+
+- No blocker on these 4 posts in this run.
+- Restore flow remains available if the posts genuinely disappear again, but it was intentionally not executed because the live/public state was already healthy.
+
+### HOW VERIFIED
+
+- HTTP status checks against all 4 public URLs with cache-busting headers
+- live `<title>` / `<h1>` confirmation from public HTML
+- live HTML search for the exact expected Wix post IDs
+- readability-style public text extraction to confirm article bodies still read cleanly
+
 ## 14th April 2026 - AUTHENTICATED WIX STUDIO ACCESS REACHED, BUT NO SAFE COMPONENT WRITE COMPLETED ⚠️
 
 ### CHANGED LIVE

@@ -2,6 +2,29 @@
 
 Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 
+## LATEST UPDATE - 17th April 2026 - BLOG RECOVERY CHECK PASSED, NO REPUBLISH NEEDED ✅
+
+### COMPLETED:
+- [DONE] Re-checked all 4 target post URLs on the live site after Phil flagged them as missing
+- [DONE] Confirmed all 4 URLs still return `200` on 17 April 2026:
+  - `https://www.jamesgormanproperty.com/post/estate-agent-waterside-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-cityside-derry`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-limavady-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/sell-my-house-limavady-guide-2026`
+- [DONE] Confirmed the live HTML still exposes the expected Wix post IDs for those 4 posts, matching the 14 April publish log:
+  - `0d2fa464-1f6f-47da-8ee5-cc63c877ac1c`
+  - `62720827-b90d-4c56-8a91-824e6da28838`
+  - `a1d18bbd-86a8-4e0c-afce-c7960af18cd2`
+  - `d1626a27-ea01-4b14-87a3-3a85872de443`
+- [DONE] Confirmed public render is still clean, with correct live titles/H1s and no leaked draft markers like `Draft status`, `Meta title`, `Meta description`, or `Focus keyphrase`
+- [DONE] Re-confirmed the local source drafts are still present in `blog-drafts/` if a future restore is ever needed
+- [DONE] No Wix restore/re-publish was required in this run because the reported outage could not be reproduced
+
+### NEXT ACTIONS:
+- [TODO] **P2 — Add tight internal links into the 4 live posts** pointing to valuation, sales, contact, and the strongest related area/location pages
+- [TODO] **P2 — Add featured images to the 4 live posts** so the cluster is stronger in the blog feed and on shares
+- [TODO] **P2 — If the posts vanish again, run the proven Wix blog restore flow immediately** using the matching local drafts already saved in `blog-drafts/`
+
 ## LATEST UPDATE - 14th April 2026 - AUTHENTICATED WIX STUDIO ACCESS REACHED, BUT NO SAFE COMPONENT WRITE COMPLETED ⚠️
 
 ### COMPLETED:
