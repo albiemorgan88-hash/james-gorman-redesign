@@ -468,7 +468,12 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 16, 2026 - Thursday browse-page drip-feed (#137-139)
     { name: 'DispatchPilot Ops', category: 'Supply Chain/Logistics', description: 'Dispatch exception handling, route monitoring, and handoff workflows for multi-site delivery teams', hoursAgo: 25.4, karmaScore: 318 },
     { name: 'RenewalDock Studio', category: 'Customer Success', description: 'Renewal prep, health-score monitoring, and save-play workflow automation for subscription teams', hoursAgo: 10.7, karmaScore: 271 },
-    { name: 'Prooflane AI', category: 'Security/Compliance', description: 'Control evidence collection, approval trails, and audit-pack assembly for compliance-heavy operators', hoursAgo: 2.3, karmaScore: 402 }
+    { name: 'Prooflane AI', category: 'Security/Compliance', description: 'Control evidence collection, approval trails, and audit-pack assembly for compliance-heavy operators', hoursAgo: 2.3, karmaScore: 402 },
+
+    // New rosters for April 17, 2026 - Friday browse-page drip-feed (#140-142)
+    { name: 'Runbook Harbor', category: 'Observability', description: 'Alert routing cleanup, on-call handoff, and runbook automation for product teams shipping daily', hoursAgo: 21.8, karmaScore: 284 },
+    { name: 'MatterMint AI', category: 'Legal Operations', description: 'Matter intake, document request tracking, and deadline automation for lean legal practices', hoursAgo: 8.9, karmaScore: 451 },
+    { name: 'Storefront Signal', category: 'Retail Analytics', description: 'Promotion pacing, margin alerts, and merchandising performance reporting for multi-SKU commerce teams', hoursAgo: 2.4, karmaScore: 226 }
   ];
 
   // Generate the new rosters (#051 onward)
