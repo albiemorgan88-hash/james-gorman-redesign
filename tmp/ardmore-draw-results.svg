@@ -1,0 +1,31 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#F4F7F2"/>
+  <rect x="70" y="70" width="940" height="1210" rx="36" fill="#FFFFFF" stroke="#DDE4DB" stroke-width="2"/>
+  <text x="540" y="170" text-anchor="middle" style="font-family: Arial; font-size: 62px; font-weight: 700; fill: #14233A;">Ardmore Cricket Club</text>
+  <text x="540" y="225" text-anchor="middle" style="font-family: Arial; font-size: 34px; font-weight: 600; fill: #3D6546;">Weekly Draw Results</text>
+  <text x="540" y="270" text-anchor="middle" style="font-family: Arial; font-size: 28px; fill: #66707C;">Friday 17 April 2026</text>
+  <rect x="180" y="315" width="720" height="8" rx="4" fill="#C7A34C"/>
+
+  <rect x="125" y="385" width="830" height="190" rx="28" fill="#FAFCF9" stroke="#DDE4DB" stroke-width="2"/>
+  <circle cx="205" cy="480" r="40" fill="#C7A34C"/>
+  <text x="205" y="493" text-anchor="middle" style="font-family: Arial; font-size: 34px; font-weight: 700; fill: #FFFFFF;">1</text>
+  <text x="275" y="462" style="font-family: Arial; font-size: 42px; font-weight: 700; fill: #14233A;">Vicky Burns</text>
+  <text x="275" y="515" style="font-family: Arial; font-size: 32px; font-weight: 600; fill: #3D6546;">1st Prize • No. 67</text>
+  <text x="885" y="490" text-anchor="end" style="font-family: Arial; font-size: 42px; font-weight: 700; fill: #14233A;">£65.00</text>
+
+  <rect x="125" y="615" width="830" height="190" rx="28" fill="#F7F9FB" stroke="#DDE4DB" stroke-width="2"/>
+  <circle cx="205" cy="710" r="40" fill="#A8B1BD"/>
+  <text x="205" y="723" text-anchor="middle" style="font-family: Arial; font-size: 34px; font-weight: 700; fill: #FFFFFF;">2</text>
+  <text x="275" y="692" style="font-family: Arial; font-size: 42px; font-weight: 700; fill: #14233A;">Vicky Burns</text>
+  <text x="275" y="745" style="font-family: Arial; font-size: 32px; font-weight: 600; fill: #3D6546;">2nd Prize • No. 469</text>
+  <text x="885" y="720" text-anchor="end" style="font-family: Arial; font-size: 42px; font-weight: 700; fill: #14233A;">£39.00</text>
+
+  <rect x="125" y="845" width="830" height="190" rx="28" fill="#FAFCF9" stroke="#DDE4DB" stroke-width="2"/>
+  <circle cx="205" cy="940" r="40" fill="#B6784E"/>
+  <text x="205" y="953" text-anchor="middle" style="font-family: Arial; font-size: 34px; font-weight: 700; fill: #FFFFFF;">3</text>
+  <text x="275" y="922" style="font-family: Arial; font-size: 42px; font-weight: 700; fill: #14233A;">Vicky Burns</text>
+  <text x="275" y="975" style="font-family: Arial; font-size: 32px; font-weight: 600; fill: #3D6546;">3rd Prize • No. 373</text>
+  <text x="885" y="950" text-anchor="end" style="font-family: Arial; font-size: 42px; font-weight: 700; fill: #14233A;">£26.00</text>
+
+  <text x="540" y="1145" text-anchor="middle" style="font-family: Arial; font-size: 28px; fill: #66707C;">Congratulations from everyone at Ardmore CC</text>
+</svg>
