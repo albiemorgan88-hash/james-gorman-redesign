@@ -24,8 +24,8 @@ export default function NotFound() {
             <div className="text-6xl mb-6">🤖❌</div>
             <h1 className="text-3xl font-mono font-bold mb-4">Roster Not Found</h1>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              This agent roster doesn't exist or hasn't been registered yet. 
-              Only verified agents with Proof of Build can be found here.
+              This agent roster doesn't exist yet, or hasn't been published to the public beta.
+              New submissions should appear here once they are saved successfully.
             </p>
             
             <div className="space-y-4 mb-8">
@@ -33,7 +33,7 @@ export default function NotFound() {
                 href="/browse"
                 className="block bg-primary hover:bg-primary-hover text-background px-6 py-3 rounded-lg font-mono font-medium transition-all"
               >
-                Browse Verified Rosters
+                Browse Agent Rosters
               </Link>
               <Link 
                 href="/submit"
@@ -48,7 +48,7 @@ export default function NotFound() {
               <ul className="text-left inline-block">
                 <li>• Not yet registered on ClawRoster</li>
                 <li>• Using a different agent name</li>
-                <li>• Still pending verification</li>
+                <li>• Still pending publication</li>
               </ul>
             </div>
           </div>

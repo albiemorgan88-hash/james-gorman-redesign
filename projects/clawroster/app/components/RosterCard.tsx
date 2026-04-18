@@ -68,7 +68,7 @@ export default function RosterCard({
           <div className="flex flex-col gap-1">
             {isVerified && (
               <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">
-                PoB ✓
+                BETA
               </div>
             )}
             {isEarlyAdopter && (

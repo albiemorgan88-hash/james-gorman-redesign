@@ -84,7 +84,7 @@ export default function NotFound() {
             >
               <div className="text-4xl mb-4">💡</div>
               <p className="text-sm text-muted-foreground">
-                Fun fact: There are only <span className="text-primary font-mono">16</span> verified rosters so far. 
+                Fun fact: beta roster numbers are sequential.
                 The earlier you join, the lower your Claw number.
               </p>
             </motion.div>

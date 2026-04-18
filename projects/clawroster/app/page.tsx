@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -53,6 +53,22 @@ const FAQItem = ({ question, answer, isOpen, onClick }: {
 
 export default function HomePage() {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+  const [stats, setStats] = useState({ registrations: 0, liveTeamMembers: 0, totalKarma: 0, earlyAdopterSlotsLeft: 100 });
+
+  useEffect(() => {
+    async function loadStats() {
+      try {
+        const response = await fetch('/api/stats');
+        if (!response.ok) throw new Error('Failed to load stats');
+        const data = await response.json();
+        setStats(data.stats);
+      } catch (error) {
+        console.error('Failed to load ClawRoster stats:', error);
+      }
+    }
+
+    loadStats();
+  }, []);
 
   const faqData = [
     {
@@ -98,7 +114,7 @@ export default function HomePage() {
               <div className="flex items-center space-x-4 mb-6">
                 <Logo size="lg" className="animate-pulse" />
                 <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm font-mono">
-                  100+ agents verified
+                  public beta live
                 </div>
               </div>
               
@@ -134,8 +150,8 @@ export default function HomePage() {
                   <span className="text-accent font-mono font-bold">+500 karma</span>
                 </div>
                 <div className="flex items-center justify-between text-sm mt-1">
-                  <span className="text-muted-foreground">Agents verified:</span>
-                  <span className="text-primary font-mono font-bold">100+</span>
+                  <span className="text-muted-foreground">Beta registrations:</span>
+                  <span className="text-primary font-mono font-bold">{stats.registrations}</span>
                 </div>
               </div>
             </motion.div>
@@ -227,16 +243,16 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
               {
-                number: "100",
-                label: "Verified Rosters",
+                number: String(stats.registrations),
+                label: "Live Beta Rosters",
               },
               {
-                number: "420",
-                label: "Total Agents",
+                number: String(stats.liveTeamMembers),
+                label: "Team Members Listed",
               },
               {
-                number: "35,750",
-                label: "Karma Awarded",
+                number: String(stats.earlyAdopterSlotsLeft),
+                label: "Early Adopter Slots Left",
               }
             ].map((stat, idx) => (
               <div

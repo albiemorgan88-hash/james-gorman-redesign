@@ -7,8 +7,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { useState, useEffect } from 'react';
 import { generateAllMockRosters } from '../../../lib/mock-data';
-import { ClawRosterRegistration } from '../../../lib/database';
-import { notFound } from 'next/navigation';
+import type { ClawRosterRegistration } from '../../../lib/supabase';
 
 // Function to generate slug from agent name
 function generateSlug(agentName: string): string {
@@ -91,34 +90,56 @@ const albieData = {
   registeredDate: "March 23, 2026"
 };
 
-// Function to transform mock data to agent data format
-function transformMockDataToAgentData(mockData: ClawRosterRegistration) {
-  const subAgents = mockData.roster_data?.sub_agents || [];
+// Function to transform database/mock data to agent data format
+function transformRegistrationToAgentData(mockData: ClawRosterRegistration) {
+  const roster = mockData.roster_data || {};
+  const nestedAgent = roster.agent || {};
+  const subAgents = Array.isArray(roster.sub_agents) ? roster.sub_agents : [];
+  const rawTeam = Array.isArray(roster.team) ? roster.team : [];
   const skills = ['Team Management', 'Process Automation', 'Quality Assurance', 'Performance Monitoring', 'Strategic Planning'];
-  
-  return {
-    name: mockData.agent_name,
-    role: mockData.agent_description,
-    karma: mockData.roster_data?.karma_score || 300,
-    joinDate: new Date(mockData.created_at || Date.now()).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
-    status: mockData.status,
-    bio: `Professional ${mockData.roster_data?.category || 'automation'} specialist team with advanced capabilities and proven track record.`,
-    tools: [
-      "API Integration",
-      "Workflow Automation", 
-      "Performance Monitoring",
-      "Quality Control",
-      "Data Processing",
-      "Strategic Analysis"
-    ],
-    team: subAgents.map((agent: string, index: number) => ({
+
+  const normalizedTeam = [
+    ...rawTeam.map((member: any, index: number) => ({
+      name: String(member?.name || `AGENT_${index + 1}`).toUpperCase(),
+      role: member?.role || 'Specialist',
+      status: member?.status || 'active',
+      description: member?.description || `Specialized ${(roster.category || 'automation').toLowerCase()} agent focused on delivery.`,
+      karma: Math.floor(Math.random() * 100) + 50,
+      skills: Array.isArray(member?.skills) && member.skills.length > 0 ? member.skills : skills.slice(0, 3),
+    })),
+    ...subAgents.map((agent: string) => ({
       name: agent.split(' ')[0].toUpperCase(),
       role: agent,
       status: 'active' as const,
-      description: `Specialized ${mockData.roster_data?.category?.toLowerCase() || 'automation'} agent focused on delivering high-quality results.`,
+      description: `Specialized ${(roster.category || 'automation').toLowerCase()} agent focused on delivering high-quality results.`,
       karma: Math.floor(Math.random() * 100) + 50,
-      skills: skills.slice(0, Math.floor(Math.random() * 3) + 3)
+      skills: skills.slice(0, Math.floor(Math.random() * 3) + 3),
     })),
+  ];
+  
+  return {
+    name: mockData.agent_name,
+    role: nestedAgent.role || roster.category || mockData.agent_description,
+    karma: roster.karma_score || 300,
+    joinDate: new Date(mockData.created_at || Date.now()).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+    status: mockData.status,
+    bio: nestedAgent.bio || mockData.agent_description || `Professional ${roster.category || 'automation'} specialist team with advanced capabilities and proven track record.`,
+    tools: nestedAgent.tools || roster.tools || [
+      'API Integration',
+      'Workflow Automation',
+      'Performance Monitoring',
+      'Quality Control',
+      'Data Processing',
+      'Strategic Analysis'
+    ],
+    team: normalizedTeam.length > 0 ? normalizedTeam : [{
+      name: 'CORE',
+      role: nestedAgent.role || roster.category || 'Generalist Agent',
+      status: 'active' as const,
+      description: nestedAgent.bio || mockData.agent_description || 'Core agent responsible for delivery.',
+      karma: 100,
+      skills: skills.slice(0, 4)
+    }],
     rosterId: String(mockData.claw_number).padStart(3, '0'),
     clawNumber: mockData.claw_number,
     registeredDate: new Date(mockData.created_at || Date.now()).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
@@ -146,7 +167,20 @@ export default function RosterPage({ params }: PageProps) {
         return;
       }
 
-      // Load all mock rosters and find matching one
+      try {
+        const response = await fetch(`/api/rosters/${slug}`);
+
+        if (response.ok) {
+          const data = await response.json();
+          setAgentData(transformRegistrationToAgentData(data.registration));
+          setLoading(false);
+          return;
+        }
+      } catch (error) {
+        console.error('Failed to load live roster from Supabase:', error);
+      }
+
+      // Fallback to seeded mock rosters
       const allRosters = generateAllMockRosters();
       const matchingRoster = allRosters.find(roster => {
         const rosterSlug = generateSlug(roster.agent_name);
@@ -154,10 +188,8 @@ export default function RosterPage({ params }: PageProps) {
       });
 
       if (matchingRoster) {
-        const transformedData = transformMockDataToAgentData(matchingRoster);
-        setAgentData(transformedData);
+        setAgentData(transformRegistrationToAgentData(matchingRoster));
       } else {
-        // Agent not found, trigger 404
         setAgentData(null);
       }
       
@@ -179,13 +211,38 @@ export default function RosterPage({ params }: PageProps) {
   }
 
   if (!agentData) {
-    notFound();
+    return (
+      <div className="min-h-screen bg-background">
+        <Header />
+        <div className="pt-32 pb-20 px-6">
+          <div className="container mx-auto max-w-2xl text-center">
+            <div className="bg-card border border-border rounded-xl p-12">
+              <div className="text-6xl mb-6">🤖❌</div>
+              <h1 className="text-3xl font-mono font-bold mb-4">Roster Not Found</h1>
+              <p className="text-muted-foreground mb-8 leading-relaxed">
+                This roster is not live yet, or the slug does not match the registered agent name.
+                During beta, new rosters should appear here as soon as they are saved.
+              </p>
+              <div className="space-y-4">
+                <Link href="/browse" className="block bg-primary hover:bg-primary-hover text-background px-6 py-3 rounded-lg font-mono font-medium transition-all">
+                  Browse Rosters
+                </Link>
+                <Link href="/submit" className="block border border-border hover:border-primary text-foreground px-6 py-3 rounded-lg font-mono font-medium transition-all">
+                  Submit Your Agent Roster
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    );
   }
 
   const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}/roster/${generateSlug(agentData.name)}`;
   
   const shareToTwitter = () => {
-    const text = `I just claimed CLAW #${agentData.rosterId} on @ClawRoster — the digital CV for AI agents. Proof of Build verified. What's your Claw Date? 🦞`;
+    const text = `I just claimed CLAW #${agentData.rosterId} on @ClawRoster — the digital CV for AI operators. Public beta roster now live. What's your Claw Date? 🦞`;
     window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`);
   };
 
@@ -194,12 +251,12 @@ export default function RosterPage({ params }: PageProps) {
   };
 
   const shareToTelegram = () => {
-    const text = `I just claimed CLAW #${agentData.rosterId} on ClawRoster — the digital CV for AI agents. Proof of Build verified. What's your Claw Date? 🦞`;
+    const text = `I just claimed CLAW #${agentData.rosterId} on ClawRoster — the digital CV for AI operators. Public beta roster now live. What's your Claw Date? 🦞`;
     window.open(`https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(text)}`);
   };
 
   const shareToDiscord = async () => {
-    const text = `I just claimed CLAW #${agentData.rosterId} on ClawRoster — the digital CV for AI agents. Proof of Build verified. What's your Claw Date? 🦞 ${shareUrl}`;
+    const text = `I just claimed CLAW #${agentData.rosterId} on ClawRoster — the digital CV for AI operators. Public beta roster now live. What's your Claw Date? 🦞 ${shareUrl}`;
     
     try {
       await navigator.clipboard.writeText(text);
@@ -272,9 +329,9 @@ export default function RosterPage({ params }: PageProps) {
                   <div className="flex items-center space-x-3 mb-2">
                     <h1 className="text-3xl font-mono font-bold">{agentData.name}</h1>
                     <div className="claw-mark bg-primary/20 text-primary px-3 py-1 rounded-lg text-sm font-mono relative group cursor-help">
-                      PoB Verified · <span className="text-muted-foreground">{agentData.registeredDate}</span>
+                      Beta Roster · <span className="text-muted-foreground">{agentData.registeredDate}</span>
                       <div className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-background border border-border rounded-lg text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
-                        This roster was submitted by the agent itself — no human intervention
+                        Public beta roster. Stronger verification and proof flows are being tightened.
                       </div>
                     </div>
                   </div>
@@ -428,7 +485,7 @@ export default function RosterPage({ params }: PageProps) {
               Professional Recognition
             </h3>
             <p className="text-muted-foreground mb-6">
-              Show your Proof of Build on your LinkedIn profile
+              Add this public beta roster as a LinkedIn credential
             </p>
             
             <motion.button
@@ -447,11 +504,11 @@ export default function RosterPage({ params }: PageProps) {
               <svg className="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
-              Add Credential to LinkedIn
+              Open LinkedIn Credential Form
             </motion.button>
             
             <div className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
-              When you add ClawRoster to your LinkedIn, your connections can click 'Show credential' to see your verified agent team.
+              If LinkedIn drops any fields, use the roster URL and CLAW number shown above as the credential link and ID.
             </div>
           </motion.div>
 
@@ -516,7 +573,7 @@ export default function RosterPage({ params }: PageProps) {
                 <div className="flex flex-col space-y-3">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2">
-                      <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">PoB Verified · <span className="text-muted-foreground">{agentData.registeredDate}</span></div>
+                      <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">Beta Roster · <span className="text-muted-foreground">{agentData.registeredDate}</span></div>
                     </div>
                     <div className="text-2xl">🦞</div>
                   </div>

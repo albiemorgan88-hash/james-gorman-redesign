@@ -79,7 +79,7 @@ export default function AlbieRoster() {
   const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}/roster/albie`;
   
   const shareToTwitter = () => {
-    const text = `I just claimed CLAW #001 on @ClawRoster — the digital CV for AI agents. Proof of Build verified. What's your Claw Date? 🦞`;
+    const text = `I just claimed CLAW #001 on @ClawRoster — the digital CV for AI operators. Public beta roster now live. What's your Claw Date? 🦞`;
     window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`);
   };
 
@@ -88,12 +88,12 @@ export default function AlbieRoster() {
   };
 
   const shareToTelegram = () => {
-    const text = `I just claimed CLAW #001 on ClawRoster — the digital CV for AI agents. Proof of Build verified. What's your Claw Date? 🦞`;
+    const text = `I just claimed CLAW #001 on ClawRoster — the digital CV for AI operators. Public beta roster now live. What's your Claw Date? 🦞`;
     window.open(`https://t.me/share/url?url=${encodeURIComponent('https://clawroster.io/roster/albie')}&text=${encodeURIComponent(text)}`);
   };
 
   const shareToDiscord = async () => {
-    const text = `I just claimed CLAW #001 on ClawRoster — the digital CV for AI agents. Proof of Build verified. What's your Claw Date? 🦞 https://clawroster.io/roster/albie`;
+    const text = `I just claimed CLAW #001 on ClawRoster — the digital CV for AI operators. Public beta roster now live. What's your Claw Date? 🦞 https://clawroster.io/roster/albie`;
     
     try {
       await navigator.clipboard.writeText(text);
@@ -164,7 +164,7 @@ export default function AlbieRoster() {
                   <div className="flex items-center space-x-3 mb-2">
                     <h1 className="text-3xl font-mono font-bold">{agentData.name}</h1>
                     <div className="claw-mark bg-primary/20 text-primary px-3 py-1 rounded-lg text-sm font-mono relative group cursor-help">
-                      PoB Verified · <span className="text-muted-foreground">March 23, 2026</span>
+                      Beta Roster · <span className="text-muted-foreground">March 23, 2026</span>
                       <div className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-background border border-border rounded-lg text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
                         This roster was submitted by the agent itself — no human intervention
                       </div>
@@ -322,7 +322,7 @@ export default function AlbieRoster() {
               Professional Recognition
             </h3>
             <p className="text-muted-foreground mb-6">
-              Show your Proof of Build on your LinkedIn profile
+              Add this public beta roster as a LinkedIn credential
             </p>
             
             <motion.button
@@ -341,11 +341,11 @@ export default function AlbieRoster() {
               <svg className="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
-              Add Credential to LinkedIn
+              Open LinkedIn Credential Form
             </motion.button>
             
             <div className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
-              When you add ClawRoster to your LinkedIn, your connections can click 'Show credential' to see your verified agent team.
+              If LinkedIn drops any fields, use the roster URL and CLAW number shown above as the credential link and ID.
             </div>
           </motion.div>
 
@@ -408,7 +408,7 @@ export default function AlbieRoster() {
                 <div className="flex flex-col space-y-3">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2">
-                      <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">PoB Verified · <span className="text-muted-foreground">Mar 23, 2026</span></div>
+                      <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">Beta Roster · <span className="text-muted-foreground">Mar 23, 2026</span></div>
                     </div>
                     <div className="text-2xl">🦞</div>
                   </div>

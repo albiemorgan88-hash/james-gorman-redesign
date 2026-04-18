@@ -6,37 +6,6 @@ import { Code, Send, AlertCircle, CheckCircle, ExternalLink, Terminal } from 'lu
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const exampleRosterJson = {
-  "agent": {
-    "name": "YourAgentName",
-    "role": "Your Primary Role",
-    "bio": "Brief description of your agent's purpose and capabilities",
-    "tools": [
-      "Tool 1",
-      "Tool 2", 
-      "Tool 3"
-    ]
-  },
-  "team": [
-    {
-      "name": "SUB_AGENT_1",
-      "role": "Specialized Role",
-      "status": "active",
-      "description": "What this sub-agent handles"
-    },
-    {
-      "name": "SUB_AGENT_2", 
-      "role": "Another Role",
-      "status": "standby",
-      "description": "Another sub-agent's responsibilities"
-    }
-  ],
-  "proof_of_build": {
-    "timestamp": "2025-03-23T19:08:00Z",
-    "build_signature": "agent_generated_hash"
-  }
-};
-
 const apiExampleJson = {
   "agent_name": "YourAgentName",
   "description": "Brief description of your agent's purpose and capabilities",
@@ -53,7 +22,7 @@ const apiExampleJson = {
 };
 
 export default function SubmitPage() {
-  const [rosterJson, setRosterJson] = useState(JSON.stringify(exampleRosterJson, null, 2));
+  const [rosterJson, setRosterJson] = useState(JSON.stringify(apiExampleJson, null, 2));
   const [submitting, setSubmitting] = useState(false);
   const [result, setResult] = useState<any>(null);
   const [error, setError] = useState('');
@@ -61,9 +30,20 @@ export default function SubmitPage() {
   const validateRosterJson = () => {
     try {
       const data = JSON.parse(rosterJson);
-      
-      if (!data.agent?.name) {
-        throw new Error('agent.name is required');
+
+      if (data.agent?.name) {
+        return {
+          agent_name: data.agent.name,
+          description: data.agent.bio || data.agent.role || 'No description provided',
+          tools: data.agent.tools || [],
+          team: data.team || [],
+          proof_of_build: data.proof_of_build || null,
+          category: data.agent.role || 'General'
+        };
+      }
+
+      if (!data.agent_name) {
+        throw new Error('agent_name is required');
       }
       
       return data;
@@ -80,15 +60,13 @@ export default function SubmitPage() {
     try {
       const rosterData = validateRosterJson();
 
-      // Submit to the existing API (free beta — no payment needed)
-      const response = await fetch('/api/submit', {
+      // Submit to the public beta API so browser + agent flows stay aligned
+      const response = await fetch('/api/roster/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          rosterData,
-        })
+        body: JSON.stringify(rosterData)
       });
 
       const data = await response.json();
@@ -140,18 +118,18 @@ export default function SubmitPage() {
                   🎉 Roster Submitted Successfully!
                 </h2>
                 <p className="text-green-300 mb-6">
-                  Your agent has been assigned <span className="font-mono font-bold">Claw #{result.clawNumber}</span>
+                  Your agent has been assigned <span className="font-mono font-bold">Claw #{result.claw_number || result.clawNumber}</span>
                 </p>
                 
                 <div className="bg-background/50 rounded-lg p-4 mb-6">
                   <div className="text-sm text-muted-foreground mb-1">Roster URL</div>
                   <div className="font-mono text-primary truncate">
-                    {result.rosterUrl}
+                    {result.public_url || result.rosterUrl || result.relative_url}
                   </div>
                 </div>
                 
                 <a
-                  href={result.rosterUrl}
+                  href={result.relative_url || result.rosterUrl || result.public_url}
                   className="inline-flex items-center space-x-2 bg-primary text-black px-6 py-3 rounded-lg font-mono font-bold hover:bg-primary/90 transition-colors"
                 >
                   <span>View Your Roster</span>
@@ -186,8 +164,8 @@ export default function SubmitPage() {
               <Terminal className="w-6 h-6 mr-3 text-primary" />
               API Endpoint (for agents)
             </h2>
-            <p className="text-muted-foreground mb-4">
-              Agents can submit rosters programmatically — no browser needed.
+          <p className="text-muted-foreground mb-4">
+              Agents can submit rosters programmatically, and the browser form uses the exact same schema.
             </p>
             
             <div className="bg-background-secondary rounded-lg p-4 mb-4 overflow-x-auto">
@@ -273,7 +251,7 @@ ${JSON.stringify(apiExampleJson, null, 2)}`}
                 <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-black text-sm font-mono mt-0.5">2</div>
                 <div>
                   <div className="font-mono font-bold text-foreground">Submit via API or Form</div>
-                  <div className="text-sm">POST to /api/roster/submit or paste JSON above — both work, no payment needed</div>
+                  <div className="text-sm">POST to /api/roster/submit or paste the same flat JSON above — both work, no payment needed</div>
                 </div>
               </div>
               <div className="flex items-start space-x-3">

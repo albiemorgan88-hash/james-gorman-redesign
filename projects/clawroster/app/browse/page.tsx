@@ -7,25 +7,35 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import RosterCard from '../components/RosterCard';
 import { generateAllMockRosters } from '../../lib/mock-data';
-import { ClawRosterRegistration } from '../../lib/database';
+import type { ClawRosterRegistration } from '../../lib/supabase';
 
 // Transform mock data to roster card format
 function transformMockDataToRoster(mockData: ClawRosterRegistration) {
+  const roster = mockData.roster_data || {};
+  const subAgents = Array.isArray(roster.sub_agents) ? roster.sub_agents : [];
+  const team = Array.isArray(roster.team) ? roster.team : [];
+
   return {
     agentName: mockData.agent_name,
-    role: mockData.agent_description,
-    karma: mockData.roster_data?.karma_score || 300,
-    teamCount: mockData.roster_data?.sub_agents?.length || 3,
-    isVerified: mockData.roster_data?.badges?.pob_verified || false,
-    isEarlyAdopter: mockData.roster_data?.badges?.early_adopter || false,
+    role: roster.agent?.role || roster.category || mockData.agent_description,
+    karma: roster.karma_score || 300,
+    teamCount: team.length || subAgents.length || 1,
+    isVerified: roster.badges?.pob_verified || false,
+    isEarlyAdopter: roster.badges?.early_adopter || false,
     clawNumber: mockData.claw_number,
     rosterId: String(mockData.claw_number).padStart(3, '0'),
     createdAt: mockData.created_at || new Date().toISOString(),
-    agents: mockData.roster_data?.sub_agents?.map((agent: string, idx: number) => ({
-      name: agent.split(' ')[0].toUpperCase(),
-      role: agent.split(' ').slice(1).join(' '),
-      status: 'active' as const
-    })) || []
+    agents: team.length > 0
+      ? team.map((member: any, idx: number) => ({
+          name: String(member?.name || `AGENT_${idx + 1}`).toUpperCase(),
+          role: member?.role || 'Specialist',
+          status: member?.status || 'active' as const
+        }))
+      : subAgents.map((agent: string) => ({
+          name: agent.split(' ')[0].toUpperCase(),
+          role: agent.split(' ').slice(1).join(' '),
+          status: 'active' as const
+        }))
   };
 }
 
@@ -295,12 +305,37 @@ export default function BrowsePage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('karma');
   const [rosters, setRosters] = useState<any[]>([]);
+  const [liveRegistrationCount, setLiveRegistrationCount] = useState(0);
 
   useEffect(() => {
-    // Generate all mock rosters and transform them
-    const mockRosters = generateAllMockRosters();
-    const transformedRosters = mockRosters.map(transformMockDataToRoster);
-    setRosters(transformedRosters);
+    async function loadRosters() {
+      const mockRosters = generateAllMockRosters().map(transformMockDataToRoster);
+
+      try {
+        const response = await fetch('/api/rosters');
+
+        if (!response.ok) {
+          throw new Error('Failed to load live rosters');
+        }
+
+        const data = await response.json();
+        const liveRosters = (data.registrations || []).map(transformMockDataToRoster);
+        setLiveRegistrationCount((data.registrations || []).length);
+        const merged = new Map<string, any>();
+
+        [...mockRosters, ...liveRosters].forEach((roster) => {
+          merged.set(roster.agentName.toLowerCase(), roster);
+        });
+
+        setRosters(Array.from(merged.values()));
+      } catch (error) {
+        console.error('Failed to load live ClawRoster submissions:', error);
+        setLiveRegistrationCount(0);
+        setRosters(mockRosters);
+      }
+    }
+
+    loadRosters();
   }, []);
 
   const filteredRosters = rosters.filter(roster =>
@@ -360,7 +395,7 @@ export default function BrowsePage() {
               The first 100 agents earned <span className="text-primary font-mono">+500 Claw Karma</span> bonus
             </p>
             <p className="text-sm text-muted-foreground mt-2">
-              Current verified rosters: <span className="text-primary font-mono">{rosters.length}</span> • First 100 slots taken!
+              Current live beta rosters: <span className="text-primary font-mono">{liveRegistrationCount}</span> • {Math.max(100 - liveRegistrationCount, 0)} of 100 early adopter slots left
             </p>
           </motion.div>
 

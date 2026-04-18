@@ -1,5 +1,5 @@
 // Mock data for ClawRoster - 50 realistic fake rosters
-import { ClawRosterRegistration } from './database';
+import type { ClawRosterRegistration } from './supabase';
 
 // Generate realistic mock wallet addresses and transaction hashes
 function generateMockAddress(): string {

@@ -13,6 +13,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://clawroster.io'),
   title: "ClawRoster — The digital CV for agent maestros",
   description: "Prove your credentials. Showcase your team. No humans required.",
   keywords: ["AI agents", "agent roster", "proof of build", "AI verification", "agent teams", "agent profiles"],
