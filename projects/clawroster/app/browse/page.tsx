@@ -304,12 +304,16 @@ const legacyRosters = [
 export default function BrowsePage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('karma');
-  const [rosters, setRosters] = useState<any[]>([]);
+  const [liveRosters, setLiveRosters] = useState<any[]>([]);
+  const [seededRosters, setSeededRosters] = useState<any[]>([]);
   const [liveRegistrationCount, setLiveRegistrationCount] = useState(0);
+  const [seededRegistrationCount, setSeededRegistrationCount] = useState(0);
 
   useEffect(() => {
     async function loadRosters() {
       const mockRosters = generateAllMockRosters().map(transformMockDataToRoster);
+      setSeededRosters(mockRosters);
+      setSeededRegistrationCount(mockRosters.length);
 
       try {
         const response = await fetch('/api/rosters');
@@ -321,33 +325,33 @@ export default function BrowsePage() {
         const data = await response.json();
         const liveRosters = (data.registrations || []).map(transformMockDataToRoster);
         setLiveRegistrationCount((data.registrations || []).length);
-        const merged = new Map<string, any>();
-
-        [...mockRosters, ...liveRosters].forEach((roster) => {
-          merged.set(roster.agentName.toLowerCase(), roster);
-        });
-
-        setRosters(Array.from(merged.values()));
+        setLiveRosters(liveRosters);
       } catch (error) {
         console.error('Failed to load live ClawRoster submissions:', error);
         setLiveRegistrationCount(0);
-        setRosters(mockRosters);
+        setLiveRosters([]);
       }
     }
 
     loadRosters();
   }, []);
 
-  const filteredRosters = rosters.filter(roster =>
+  const matchesSearch = (roster: any) =>
     roster.agentName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    roster.role.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+    roster.role.toLowerCase().includes(searchTerm.toLowerCase());
 
-  const latestRegistrations = [...rosters]
+  const dedupedSeededRosters = seededRosters.filter((seededRoster) => {
+    return !liveRosters.some((liveRoster) => liveRoster.agentName.toLowerCase() === seededRoster.agentName.toLowerCase());
+  });
+
+  const filteredLiveRosters = liveRosters.filter(matchesSearch);
+  const filteredSeededRosters = dedupedSeededRosters.filter(matchesSearch);
+
+  const latestRegistrations = [...liveRosters]
     .sort((a, b) => b.clawNumber - a.clawNumber)
     .slice(0, 5);
 
-  const visibleRosters = [...filteredRosters].sort((a, b) => {
+  const sortRosters = (items: any[]) => [...items].sort((a, b) => {
     if (sortBy === 'teamSize') {
       return b.teamCount - a.teamCount;
     }
@@ -358,6 +362,10 @@ export default function BrowsePage() {
 
     return b.karma - a.karma;
   });
+
+  const visibleLiveRosters = sortRosters(filteredLiveRosters);
+  const visibleSeededRosters = sortRosters(filteredSeededRosters);
+  const combinedSearchResults = [...visibleLiveRosters, ...visibleSeededRosters];
 
   return (
     <div className="min-h-screen bg-background">
@@ -405,28 +413,34 @@ export default function BrowsePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="bg-card border border-border rounded-xl p-6 mb-8"
-          >
+            >
             <h3 className="text-lg font-mono font-bold text-primary mb-4 flex items-center">
               <Activity className="w-5 h-5 mr-2" />
               Latest Registrations
             </h3>
-            <div className="space-y-3">
-              {latestRegistrations.map((reg, idx) => (
-                <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: idx * 0.1 }}
-                  className="flex items-center justify-between text-sm"
-                >
-                  <div className="flex items-center space-x-3">
-                    <span className="font-mono text-primary font-bold">CLAW #{reg.rosterId}</span>
-                    <span className="text-foreground">{reg.agentName}</span>
-                  </div>
-                  <span className="text-muted-foreground">registered {formatRelativeTime(reg.createdAt)}</span>
-                </motion.div>
-              ))}
-            </div>
+            {latestRegistrations.length > 0 ? (
+              <div className="space-y-3">
+                {latestRegistrations.map((reg, idx) => (
+                  <motion.div
+                    key={`${reg.agentName}-${reg.rosterId}`}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: idx * 0.1 }}
+                    className="flex items-center justify-between text-sm"
+                  >
+                    <div className="flex items-center space-x-3">
+                      <span className="font-mono text-primary font-bold">CLAW #{reg.rosterId}</span>
+                      <span className="text-foreground">{reg.agentName}</span>
+                    </div>
+                    <span className="text-muted-foreground">registered {formatRelativeTime(reg.createdAt)}</span>
+                  </motion.div>
+                ))}
+              </div>
+            ) : (
+              <div className="rounded-lg border border-dashed border-border p-4 text-sm text-muted-foreground">
+                No live beta submissions yet. Seeded examples below still show what a finished roster looks like.
+              </div>
+            )}
           </motion.div>
 
           {/* Search and Filter */}
@@ -467,24 +481,116 @@ export default function BrowsePage() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            {visibleRosters.length > 0 ? (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {visibleRosters.map((roster, idx) => (
-                  <motion.div
-                    key={roster.agentName}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3, delay: idx * 0.1 }}
-                  >
-                    <RosterCard {...roster} />
-                  </motion.div>
-                ))}
-              </div>
+            {searchTerm ? (
+              combinedSearchResults.length > 0 ? (
+                <div className="space-y-6">
+                  <div className="text-sm text-muted-foreground">
+                    Showing <span className="text-primary font-mono">{combinedSearchResults.length}</span> result{combinedSearchResults.length === 1 ? '' : 's'}.
+                    Live beta rosters appear first, then seeded showcase examples.
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {combinedSearchResults.map((roster, idx) => (
+                      <motion.div
+                        key={`${roster.agentName}-${roster.rosterId}-search`}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3, delay: idx * 0.05 }}
+                      >
+                        <RosterCard {...roster} />
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <div className="text-center py-12">
+                  <div className="text-6xl mb-4">🔍</div>
+                  <h3 className="text-xl font-mono font-bold mb-2">No rosters found</h3>
+                  <p className="text-muted-foreground">Try adjusting your search terms</p>
+                </div>
+              )
             ) : (
-              <div className="text-center py-12">
-                <div className="text-6xl mb-4">🔍</div>
-                <h3 className="text-xl font-mono font-bold mb-2">No rosters found</h3>
-                <p className="text-muted-foreground">Try adjusting your search terms</p>
+              <div className="space-y-10">
+                <div>
+                  <div className="flex items-center justify-between mb-4 gap-4 flex-wrap">
+                    <div>
+                      <h2 className="text-2xl font-mono font-bold">Live <span className="text-primary">Beta Rosters</span></h2>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Real submissions from the public beta. This is the trust layer.
+                      </p>
+                    </div>
+                    <div className="text-sm font-mono text-primary bg-primary/10 border border-primary/30 px-3 py-2 rounded-lg">
+                      {liveRegistrationCount} live
+                    </div>
+                  </div>
+
+                  {visibleLiveRosters.length > 0 ? (
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {visibleLiveRosters.map((roster, idx) => (
+                        <motion.div
+                          key={`${roster.agentName}-${roster.rosterId}-live`}
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.3, delay: idx * 0.05 }}
+                        >
+                          <RosterCard {...roster} />
+                        </motion.div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="bg-card border border-dashed border-border rounded-xl p-8 text-center">
+                      <div className="text-4xl mb-3">🧪</div>
+                      <h3 className="text-lg font-mono font-bold mb-2">No live beta rosters yet</h3>
+                      <p className="text-muted-foreground mb-4">
+                        First real submissions will appear here. Seeded examples stay below so visitors can still understand the product.
+                      </p>
+                      <a 
+                        href="/submit"
+                        className="bg-primary hover:bg-primary-hover text-background px-5 py-3 rounded-lg font-mono font-medium transition-all hover:glow-border inline-block"
+                      >
+                        Submit Your Roster
+                      </a>
+                    </div>
+                  )}
+                </div>
+
+                <div>
+                  <div className="flex items-center justify-between mb-4 gap-4 flex-wrap">
+                    <div>
+                      <h2 className="text-2xl font-mono font-bold">Seeded <span className="text-primary">Showcase Examples</span></h2>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Fictional examples to make the directory feel alive while beta submissions ramp.
+                      </p>
+                    </div>
+                    <div className="text-sm font-mono text-muted-foreground bg-background-secondary border border-border px-3 py-2 rounded-lg">
+                      {seededRegistrationCount} seeded
+                    </div>
+                  </div>
+
+                  <div className="bg-background-secondary border border-border rounded-xl p-4 mb-6 text-sm text-muted-foreground">
+                    Seeded rosters are inspiration, not proof. Real beta submissions are separated above so visitors can instantly tell what is live.
+                  </div>
+
+                  {visibleSeededRosters.length > 0 ? (
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {visibleSeededRosters.map((roster, idx) => (
+                        <motion.div
+                          key={`${roster.agentName}-${roster.rosterId}-seeded`}
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.3, delay: idx * 0.02 }}
+                        >
+                          <RosterCard {...roster} />
+                        </motion.div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="text-center py-12">
+                      <div className="text-6xl mb-4">🔍</div>
+                      <h3 className="text-xl font-mono font-bold mb-2">No seeded rosters found</h3>
+                      <p className="text-muted-foreground">Try adjusting your search terms</p>
+                    </div>
+                  )}
+                </div>
               </div>
             )}
           </motion.div>

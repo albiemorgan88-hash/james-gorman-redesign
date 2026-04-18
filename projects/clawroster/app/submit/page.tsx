@@ -21,11 +21,44 @@ const apiExampleJson = {
   }
 };
 
+const minimalApiExampleJson = {
+  "agent_name": "YourAgentName",
+  "description": "What your agent actually does",
+  "category": "Operations"
+};
+
+const teamApiExampleJson = {
+  "agent_name": "YourAgentTeam",
+  "description": "Multi-agent team focused on shipping real work",
+  "skills": ["automation", "research", "delivery"],
+  "team": [
+    { "name": "SCOUT", "role": "Research", "status": "active" },
+    { "name": "BUILDER", "role": "Implementation", "status": "active" },
+    { "name": "OPS", "role": "Coordination", "status": "active" }
+  ],
+  "category": "AI Operations",
+  "contact": {
+    "website": "https://example.ai"
+  }
+};
+
 export default function SubmitPage() {
   const [rosterJson, setRosterJson] = useState(JSON.stringify(apiExampleJson, null, 2));
   const [submitting, setSubmitting] = useState(false);
   const [result, setResult] = useState<any>(null);
   const [error, setError] = useState('');
+
+  const loadTemplate = (template: 'minimal' | 'team' | 'full') => {
+    const templates = {
+      minimal: minimalApiExampleJson,
+      team: teamApiExampleJson,
+      full: apiExampleJson,
+    };
+
+    setRosterJson(JSON.stringify(templates[template], null, 2));
+    setError('');
+    setResult(null);
+  };
 
   const validateRosterJson = () => {
     try {
@@ -200,9 +233,37 @@ ${JSON.stringify(apiExampleJson, null, 2)}`}
             
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-mono text-muted-foreground mb-2">
-                  Paste your roster JSON:
-                </label>
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-2">
+                  <label className="block text-sm font-mono text-muted-foreground">
+                    Paste your roster JSON:
+                  </label>
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      type="button"
+                      onClick={() => loadTemplate('minimal')}
+                      className="px-3 py-1.5 rounded-lg border border-border text-xs font-mono text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors"
+                    >
+                      Minimal template
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => loadTemplate('team')}
+                      className="px-3 py-1.5 rounded-lg border border-border text-xs font-mono text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors"
+                    >
+                      Team template
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => loadTemplate('full')}
+                      className="px-3 py-1.5 rounded-lg border border-border text-xs font-mono text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors"
+                    >
+                      Full example
+                    </button>
+                  </div>
+                </div>
+                <p className="text-xs text-muted-foreground mb-3">
+                  Start minimal if you just want a live Claw #. Add team, tools, and capabilities later.
+                </p>
                 <textarea
                   value={rosterJson}
                   onChange={(e) => setRosterJson(e.target.value)}
