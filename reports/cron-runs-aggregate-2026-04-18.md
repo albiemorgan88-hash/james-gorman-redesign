@@ -1,0 +1,50 @@
+- 2026-04-18 09:00:00 BST | cron-watchdog | ok | duration=37959ms | next=2026-04-19 09:00 BST
+- 2026-04-18 08:10:00 BST | api-key-health | ok | duration=47678ms | next=2026-04-19 08:10 BST
+- 2026-04-18 07:09:15 BST | Security Scan & Fix | ok | duration=233575ms | next=2026-04-19 07:05 BST
+- 2026-04-18 07:00:00 BST | Morning Dashboard | ok | duration=551182ms | next=2026-04-19 07:00 BST
+- 2026-04-17 22:30:00 BST | Memory Distillation | ok | duration=135757ms | next=2026-04-18 22:30 BST
+- 2026-04-17 22:16:15 BST | ClawMart Sales Check | ok | duration=285430ms | next=2026-04-18 10:00 BST
+- 2026-04-17 22:00:00 BST | Nightly Build | ok | duration=204277ms | next=2026-04-18 22:00 BST
+- 2026-04-17 19:15:00 BST | Ardmore Post-Draw Reconciliation | ok | duration=22090ms | next=2026-04-24 19:15 BST
+- 2026-04-17 19:00:00 BST | Ardmore Friday Draw | ok | duration=26749ms | next=2026-04-24 19:00 BST
+- 2026-04-17 13:00:00 BST | moltbook-daily-engagement | ok | duration=45247ms | next=2026-04-18 13:00 BST
+- 2026-04-17 12:00:00 BST | Moltbook Inbox Check | ok | duration=493572ms | next=2026-04-18 12:00 BST
+- 2026-04-17 11:00:00 BST | ClawRoster Daily | ok | duration=646208ms | next=2026-04-18 11:00 BST
+- 2026-04-17 10:05:56 BST | cron-watchdog | error | duration=120081ms | next=2026-04-18 09:00 BST | error=cron: job execution timed out
+- 2026-04-17 09:55:56 BST | SEO: Friday Monitor | error | duration=600018ms | next=2026-04-24 09:00 BST | error=cron: job execution timed out
+- 2026-04-17 09:54:56 BST | api-key-health | ok | duration=60094ms | next=2026-04-18 08:10 BST
+- 2026-04-17 09:50:02 BST | Security Scan & Fix | ok | duration=293964ms | next=2026-04-18 07:05 BST
+- 2026-04-17 07:00:00 BST | Morning Dashboard | ok | duration=436429ms | next=2026-04-18 07:00 BST
+- 2026-04-16 22:30:00 BST | Memory Distillation | ok | duration=120101ms | next=2026-04-17 22:30 BST
+- 2026-04-16 22:00:00 BST | Nightly Build | ok | duration=192256ms | next=2026-04-17 22:00 BST
+- 2026-04-16 13:00:00 BST | moltbook-daily-engagement | ok | duration=599048ms | next=2026-04-17 13:00 BST
+- 2026-04-16 12:00:00 BST | Moltbook Inbox Check | error | duration=604272ms | next=2026-04-17 12:00 BST | error=Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.
+- 2026-04-16 11:00:00 BST | ClawRoster Daily | ok | duration=378736ms | next=2026-04-17 11:00 BST
+- 2026-04-16 10:00:00 BST | ClawMart Sales Check | ok | duration=348723ms | next=2026-04-17 10:00 BST
+- 2026-04-16 09:05:00 BST | cron-watchdog | error | duration=120012ms | next=2026-04-17 09:00 BST | error=cron: job execution timed out
+- 2026-04-16 09:00:00 BST | SEO: Thursday Content | error | duration=300012ms | next=2026-04-23 09:00 BST | error=cron: job execution timed out
+- 2026-04-16 08:10:00 BST | api-key-health | ok | duration=137719ms | next=2026-04-17 08:10 BST
+- 2026-04-16 07:07:39 BST | Security Scan & Fix | ok | duration=284293ms | next=2026-04-17 07:05 BST
+- 2026-04-16 07:00:00 BST | Morning Dashboard | ok | duration=456873ms | next=2026-04-17 07:00 BST
+- 2026-04-15 22:30:00 BST | Memory Distillation | ok | duration=119169ms | next=2026-04-16 22:30 BST
+- 2026-04-15 22:00:00 BST | Nightly Build | ok | duration=68955ms | next=2026-04-16 22:00 BST
+- 2026-04-15 13:00:00 BST | moltbook-daily-engagement | error | duration=600014ms | next=2026-04-16 13:00 BST | error=cron: job execution timed out
+- 2026-04-15 12:00:00 BST | Moltbook Inbox Check | ok | duration=278773ms | next=2026-04-16 12:00 BST
+- 2026-04-15 11:00:00 BST | ClawRoster Daily | ok | duration=316411ms | next=2026-04-16 11:00 BST
+- 2026-04-15 10:00:00 BST | ClawMart Sales Check | ok | duration=51159ms | next=2026-04-16 10:00 BST
+- 2026-04-15 09:02:00 BST | SEO: Wednesday Attack | ok | duration=30784ms | next=2026-04-22 09:00 BST
+- 2026-04-15 09:00:00 BST | cron-watchdog | error | duration=120016ms | next=2026-04-16 09:00 BST | error=cron: job execution timed out
+- 2026-04-15 08:10:00 BST | api-key-health | ok | duration=27010ms | next=2026-04-16 08:10 BST
+- 2026-04-15 07:06:48 BST | Security Scan & Fix | error | duration=300076ms | next=2026-04-16 07:05 BST | error=cron: job execution timed out
+- 2026-04-15 07:00:00 BST | Morning Dashboard | ok | duration=405517ms | next=2026-04-16 07:00 BST
+- 2026-04-14 22:30:00 BST | Memory Distillation | ok | duration=97268ms | next=2026-04-15 22:30 BST
+- 2026-04-14 22:00:00 BST | Nightly Build | ok | duration=134902ms | next=2026-04-15 22:00 BST
+- 2026-04-14 13:00:00 BST | moltbook-daily-engagement | ok | duration=344074ms | next=2026-04-15 13:00 BST
+- 2026-04-14 12:00:00 BST | Moltbook Inbox Check | ok | duration=457584ms | next=2026-04-15 12:00 BST
+- 2026-04-14 11:00:00 BST | ClawRoster Daily | ok | duration=268547ms | next=2026-04-15 11:00 BST
+- 2026-04-14 10:00:00 BST | ClawMart Sales Check | ok | duration=98281ms | next=2026-04-15 10:00 BST
+- 2026-04-14 09:02:00 BST | SEO: Tuesday Fix | ok | duration=428788ms | next=2026-04-21 09:00 BST
+- 2026-04-14 09:00:00 BST | cron-watchdog | error | duration=120008ms | next=2026-04-15 09:00 BST | error=cron: job execution timed out
+- 2026-04-14 08:10:00 BST | api-key-health | ok | duration=63406ms | next=2026-04-15 08:10 BST
+- 2026-04-14 07:10:09 BST | Security Scan & Fix | ok | duration=228348ms | next=2026-04-15 07:05 BST
+- 2026-04-14 07:00:00 BST | Morning Dashboard | error | duration=605578ms | next=2026-04-15 07:00 BST | error=Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.

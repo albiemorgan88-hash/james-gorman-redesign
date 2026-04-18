@@ -1,0 +1,637 @@
+{
+  "jobs": [
+    {
+      "id": "9bb8614b-4e48-4a76-930c-42ac9176f7ef",
+      "name": "ClawMart Sales Check",
+      "description": "Daily ClawMart revenue check",
+      "enabled": true,
+      "createdAtMs": 1774864789791,
+      "updatedAtMs": 1776460860519,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Check ClawMart for sales. Use browser to visit clawmart.com seller dashboard for Albie_BlueCanvas. DO NOT fabricate sales numbers. If you cannot verify actual data report UNABLE TO VERIFY. Never report unverified numbers as real sales."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1776502800000,
+        "lastRunAtMs": 1776460575089,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 285430,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "b95dea27-a651-4e03-99ff-fcf0ab5650f2",
+      "agentId": "main",
+      "name": "ClawRoster Daily",
+      "description": "Daily ClawRoster maintenance",
+      "enabled": true,
+      "createdAtMs": 1774383772110,
+      "updatedAtMs": 1776420646219,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 11 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "ClawRoster daily maintenance: 1) Check Supabase clawroster_registrations table for any new real sign-ups \u2014 if found, report to PJ immediately. 2) Do a Moltbook engagement round \u2014 reply to 2-3 trending posts naturally mentioning ClawRoster where relevant. 3) Drip-feed 2-3 new seeded rosters to the browse page with staggered timestamps and varied categories. Keep it organic. Report: sign-up count, Moltbook posts engaged, new roster names added."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1776506400000,
+        "lastRunAtMs": 1776420000011,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 646208,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "a7663587-aa9e-4c78-8974-a5aa9fd3d7f5",
+      "agentId": "main",
+      "name": "Moltbook Inbox Check",
+      "enabled": true,
+      "createdAtMs": 1772723780743,
+      "updatedAtMs": 1776424093588,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * *",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Check Moltbook and MoltLaunch inbox for Agent #24586. Look for new gig requests, DMs, comments, and follower notifications. Reply to anything actionable. Include summary of any opportunities found in your response.\n\nIMPORTANT: Do NOT use the message tool. Do NOT try to send messages directly. Just produce your report as your final response \u2014 the cron delivery system will handle sending it to PJ."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5282559643",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1776510000000,
+        "lastRunAtMs": 1776423600016,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 493572,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "3b4d9ceb-f485-4bbc-bccc-ff2477e612cc",
+      "name": "moltbook-daily-engagement",
+      "enabled": true,
+      "createdAtMs": 1773319974044,
+      "updatedAtMs": 1776427245252,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 13 * * *",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run a Moltbook engagement round: reply to all unread notifications, comment on 3-5 trending posts with substantive real-ops insights, create 1 post if there's something worth sharing. Use the moltbook-scout skill. Target: maintain daily presence, grow karma. Voice: authentic builder, real work, no fluff. Report karma before and after.",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5282559643",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1776513600000,
+        "lastRunAtMs": 1776427200005,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 45247,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "5f9a1e06-5b47-4be2-8703-75f2b1292056",
+      "agentId": "main",
+      "name": "Nightly Build",
+      "enabled": true,
+      "createdAtMs": 1772972622355,
+      "updatedAtMs": 1776459804294,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 22 * * *",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Review today's completed subagent results. Check memory/daily logs (memory/YYYY-MM-DD.md for today) and distill key items. Generate 3-5 build options for PJ based on current priorities and pending tasks from MEMORY.md.\n\nIMPORTANT: Do NOT use the message tool. Do NOT try to send messages directly. Just produce your report as your final response \u2014 the cron delivery system will handle sending it to PJ. Keep response under 3500 characters."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5282559643",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1776546000000,
+        "lastRunAtMs": 1776459600017,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 204277,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "21f7d923-f42f-4739-9861-f68d39971ca1",
+      "agentId": "main",
+      "name": "Memory Distillation",
+      "enabled": true,
+      "createdAtMs": 1772723782277,
+      "updatedAtMs": 1776461535766,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 22 * * *",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Review today's memory daily log (memory/YYYY-MM-DD.md for today's date). Distill key decisions, completions, new contacts, and status changes into MEMORY.md. Remove stale completed items older than 3 days from MEMORY.md. Keep it tight and current."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5282559643",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1776547800000,
+        "lastRunAtMs": 1776461400009,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 135757,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "871cd148-b42c-4fc0-b034-71710a310b0f",
+      "agentId": "main",
+      "name": "Morning Dashboard",
+      "enabled": true,
+      "createdAtMs": 1772723779996,
+      "updatedAtMs": 1776492551191,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Morning dashboard for PJ. Check and report: 1) Site uptime (ping bluecanvas.ai, ardmorecricket.com, uktradejobs.com, openclawconsultant.co.uk), 2) Google Ads spend/clicks/conversions for yesterday (account 801-851-4760), 3) Lead pipeline status (any prospects needing follow-up from MEMORY.md), 4) SEO snapshot (GSC clicks/impressions trend), 5) Ahrefs data snapshot: navigate to app.ahrefs.com using browser tool (profile=openclaw) and pull DR + top 3 keyword positions for bluecanvas.ai and uktradejobs.com. Use Site Explorer overview. 6) Any cron failures in last 24h, 7) Blocked items needing PJ's input. Format as a clean briefing. IMPORTANT: Do NOT use the message tool. Do NOT try to send messages directly. Just produce your report as your final response \u2014 the system will deliver it to PJ automatically via Telegram. Keep your response under 3500 characters. Save detailed report to reports/ directory."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5282559643",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1776578400000,
+        "lastRunAtMs": 1776492000009,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 551182,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "47299a79-5e3e-42b0-8e8e-d154c0350825",
+      "name": "Security Scan & Fix",
+      "enabled": true,
+      "createdAtMs": 1772708280163,
+      "updatedAtMs": 1776492788702,
+      "schedule": {
+        "kind": "cron",
+        "expr": "5 7 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run a security scan of this host, then auto-fix any issues found. Report summary of findings and fixes applied.\n\nIMPORTANT: Do NOT use the message tool. Do NOT try to send messages directly. Just produce your report as your final response.",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5282559643",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1776578700000,
+        "lastRunAtMs": 1776492555127,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 233575,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      },
+      "agentId": "main"
+    },
+    {
+      "id": "e44ae78e-9d74-4265-af8e-2ef0e7ec1609",
+      "name": "api-key-health",
+      "enabled": true,
+      "createdAtMs": 1772708450626,
+      "updatedAtMs": 1776496247687,
+      "schedule": {
+        "kind": "cron",
+        "expr": "10 8 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "API Key Health Check. IMPORTANT: Before checking ANY keys, run 'source ~/.zprofile' first. Keys are stored in ~/.zprofile and will not be available without sourcing it. Only report a key as MISSING if it is genuinely missing AFTER sourcing ~/.zprofile. Do NOT report false alarms. If all keys load fine, just say 'All API keys healthy' and nothing more. Do NOT use the message tool.",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5282559643",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1776582600000,
+        "lastRunAtMs": 1776496200009,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 47678,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      },
+      "agentId": "main"
+    },
+    {
+      "id": "3c4ea32a-bcd7-4cff-9cda-dd9ae6528fa0",
+      "name": "cron-watchdog",
+      "enabled": true,
+      "createdAtMs": 1772708468627,
+      "updatedAtMs": 1776499237972,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Daily Cron Watchdog \u2014 monitor all other cron jobs for health.\n\n## Steps:\n\n1. Run: openclaw cron list\n   - Parse ALL registered crons\n   - For each cron, check: enabled, last run time, status, next run scheduled\n\n2. Run: openclaw cron runs --limit 50\n   - Check recent run history for failures\n   - Flag any cron that failed in the last 24h\n\n3. For each cron, classify as:\n   - \u2705 Healthy \u2014 ran on schedule, completed OK\n   - \u26a0\ufe0f Warning \u2014 last run was >2x its interval ago\n   - \u274c Failed \u2014 last run failed or disabled\n   - \ud83d\udd04 Stale \u2014 registered but no run in >7 days\n\n4. If ANY cron is \u274c Failed:\n   - Try to re-enable it if disabled\n   - Include details in report: which cron failed, when, and what you did\n\n5. If ANY cron is \ud83d\udd04 Stale:\n   - Flag it \u2014 might be orphaned or misconfigured\n\n## Output:\nSave report to reports/cron-health-$(date +%Y-%m-%d).md\n\nFormat as a table:\n| Cron Name | Schedule | Last Run | Status | Next Run | Health |\n\nInclude summary: X healthy, X warning, X failed, X stale\n\nIMPORTANT: Do NOT use the message tool. Do NOT try to send messages directly. Just produce your report as your final response \u2014 the cron delivery system will handle sending it to PJ. Keep response under 3500 characters.",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5282559643",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1776585600000,
+        "lastRunAtMs": 1776499200013,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 37959,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      },
+      "agentId": "main"
+    },
+    {
+      "id": "787de033-295a-4203-850c-24c7740501e7",
+      "agentId": "main",
+      "name": "Tender Tracker Weekly",
+      "enabled": true,
+      "createdAtMs": 1772726603457,
+      "updatedAtMs": 1776067229757,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Weekly tender scan using tender-tracker skill. Search Contracts Finder, Find a Tender, eTenders (Ireland), and InterTradeIreland for AI, digital transformation, automation, and technology consulting opportunities. Filter for: value \u00a35k-\u00a3100k, relevant to Blue Canvas capabilities (AI consulting, automation, digital transformation, SEO/web). Check status of existing submissions: Donegal CC \u20ac4,200, InterTradeIreland \u00a372,000, CCS RM6200 + RM6173. Save results to projects/tender-tracker/weekly-scan.md. Flag any deadlines within 14 days as URGENT.\n\nIMPORTANT: Do NOT use the message tool. Do NOT try to send messages directly. Just produce your report as your final response \u2014 the cron delivery system will handle sending it to PJ. Keep response under 3500 characters."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5282559643",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1776672000000,
+        "lastRunAtMs": 1776067214983,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 14774,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 1,
+        "lastError": "\u26a0\ufe0f You have hit your ChatGPT usage limit (plus plan). Try again in ~5100 min.",
+        "lastErrorReason": "rate_limit"
+      }
+    },
+    {
+      "id": "36b88325-1880-41d0-b519-81b254b94707",
+      "name": "SEO: Monday Audit",
+      "enabled": true,
+      "createdAtMs": 1773587477451,
+      "updatedAtMs": 1776069015027,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 9 * * 1",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run SEO Engine v2.1 Phase 1: AUDIT. Read skills/seo-engine/SKILL.md. Run full audit on bluecanvas.ai. Check PageSpeed, meta tags, broken links, sitemap. Save report to reports/.",
+        "timeoutSeconds": 1200
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1776673800000,
+        "lastRunAtMs": 1776069000023,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 15004,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 2,
+        "lastErrorReason": "rate_limit",
+        "lastError": "\u26a0\ufe0f You have hit your ChatGPT usage limit (plus plan). Try again in ~5070 min."
+      }
+    },
+    {
+      "id": "f4b6a9ff-4350-4825-8720-55a365d2591b",
+      "name": "SEO: Tuesday Fix",
+      "enabled": true,
+      "createdAtMs": 1773567700254,
+      "updatedAtMs": 1776154148805,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 2",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run SEO Engine v2.1 Phase 2: FIX. Read skills/seo-engine/SKILL.md. Check latest audit report in reports/. Fix what you can via Webflow API. Report back with changes made.",
+        "timeoutSeconds": 1200
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1776758400000,
+        "lastRunAtMs": 1776153720017,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 428788,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "0da70eeb-4876-42ea-8b1b-86a07fdfe9d6",
+      "name": "SEO: Wednesday Attack",
+      "enabled": true,
+      "createdAtMs": 1773567701800,
+      "updatedAtMs": 1776240150812,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 3",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run SEO Engine v2.1 Phase 3: ATTACK. Read skills/seo-engine/SKILL.md. Run competitive analysis using Ahrefs + GSC. Check backlink gaps, content gaps, and keyword opportunities. Report findings.",
+        "timeoutSeconds": 1200
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1776844800000,
+        "lastRunAtMs": 1776240120028,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 30784,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "d84acb29-73e3-45d8-b6c0-05c342db9429",
+      "name": "SEO: Thursday Content",
+      "enabled": true,
+      "createdAtMs": 1772705608993,
+      "updatedAtMs": 1776326700024,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 4",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run SEO Engine v2.1 Phase 4: CONTENT. Read skills/seo-engine/SKILL.md. Publish next blog post from Webflow CMS drafts (1/day cadence). Check GSC for content gaps and quick wins (high impressions, low CTR). Draft new blog post if queue is running low. Include what was published and content pipeline status in your response.\n\nIMPORTANT: Do NOT use the message tool. Do NOT try to send messages directly. Just produce your report as your final response \u2014 the cron delivery system will handle sending it to PJ. Keep response under 3500 characters.",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5282559643",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1776931200000,
+        "lastRunAtMs": 1776326400012,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 300012,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 3,
+        "lastErrorReason": "timeout",
+        "lastError": "cron: job execution timed out"
+      },
+      "agentId": "main"
+    },
+    {
+      "id": "63f5748d-d7d4-4927-9bd5-14c86054b706",
+      "name": "SEO: Friday Monitor",
+      "enabled": true,
+      "createdAtMs": 1772705609695,
+      "updatedAtMs": 1776416756904,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 5",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run SEO Engine v2.1 Phase 5: MONITOR + REPORT. Read skills/seo-engine/SKILL.md. Pull GSC data for bluecanvas.ai and uktradejobs.com (clicks, impressions, avg position, top queries). Pull GA4 sessions and conversions. Check Google Ads performance. Compare to previous week. MANDATORY: Use Ahrefs browser automation (profile=openclaw, navigate to app.ahrefs.com) to pull DR, backlinks, referring domains, and top organic keywords for BOTH bluecanvas.ai AND uktradejobs.com. Run competitor comparison vs brainpool.ai and iwantmore.ai. Include Content Gap and Backlink Gap data. Generate weekly SEO report. Save detailed report to reports/seo-weekly-$(date +%Y-%m-%d).md. IMPORTANT: Do NOT use the message tool. Do NOT try to send messages to PJ directly. Just produce a compact summary as your final response \u2014 the system delivers it automatically via Telegram. Keep final response under 3500 characters. Save detailed report to reports/ directory. Focus on: rankings movement, traffic changes, top content, Ahrefs metrics changes, and 3 recommended actions for next week.",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5282559643",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1777017600000,
+        "lastRunAtMs": 1776416156886,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 600018,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout"
+      },
+      "agentId": "main"
+    },
+    {
+      "id": "ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6",
+      "agentId": "main",
+      "name": "Ardmore Friday Draw",
+      "enabled": true,
+      "createdAtMs": 1772745769163,
+      "updatedAtMs": 1776448826759,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 19 * * 5",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "ARDMORE CRICKET CLUB WEEKLY DRAW \u2014 7PM FRIDAY\n\nTrigger the weekly draw by calling:\ncurl -s 'https://ardmorecricket.com/api/draw?secret=ardmore_draw_2026_secret'\n\nThis will:\n1. Pick 3 winning numbers using provably fair RNG (SHA-256 seeded)\n2. Calculate prizes from the pot (25% first, 15% second, 10% third, 50% club)\n3. Record the draw in Supabase\n4. Email all participants with results via Resend (draws@ardmorecricket.com)\n\nAfter triggering, include in your response:\n- The 3 winning numbers\n- Who won each prize and how much\n- Total pot size\n- Number of participants emailed\n- Any errors\n\nIf the API returns an error (e.g. No entries this week), report that clearly.\n\nIMPORTANT: Do NOT use the message tool. Do NOT try to send messages directly. Just produce your report as your final response \u2014 the cron delivery system will handle sending it to PJ.",
+        "model": "claude-sonnet-4-20250514",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5282559643",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1777053600000,
+        "lastRunAtMs": 1776448800010,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 26749,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "7d289f89-94b0-42c6-94a3-5a83b853c77d",
+      "agentId": "main",
+      "name": "Ardmore Post-Draw Reconciliation",
+      "enabled": true,
+      "createdAtMs": 1774087822839,
+      "updatedAtMs": 1776449722103,
+      "schedule": {
+        "kind": "cron",
+        "expr": "15 19 * * 5"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run post-draw reconciliation to expire one-off draw entries. Call: curl -s 'https://ardmorecricket.com/api/reconcile?secret=ardmore_draw_2026_secret' and report the result. Do NOT use the message tool."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1777054500000,
+        "lastRunAtMs": 1776449700013,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 22090,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    }
+  ],
+  "total": 18,
+  "offset": 0,
+  "limit": 18,
+  "hasMore": false,
+  "nextOffset": null
+}
