@@ -1,0 +1,7 @@
+## sudo-noninteractive
+sudo: a password is required
+exit_code=1
+
+## systemsetup-remotelogin
+You need administrator access to run this tool... exiting!
+

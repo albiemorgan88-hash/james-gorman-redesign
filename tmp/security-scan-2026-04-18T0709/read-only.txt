@@ -1,0 +1,209 @@
+## date
+2026-04-18T06:10:26Z
+
+## uname -a
+Darwin Philss-Mac-mini.local 25.4.0 Darwin Kernel Version 25.4.0: Thu Mar 19 19:31:09 PDT 2026; root:xnu-12377.101.15~1/RELEASE_ARM64_T8132 arm64
+
+## sw_vers
+ProductName:		macOS
+ProductVersion:		26.4.1
+BuildVersion:		25E253
+
+## id
+uid=501(philsagent) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),701(com.apple.sharepoint.group.1),33(_appstore),98(_lpadmin),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae)
+
+## groups
+staff everyone localaccounts _appserverusr admin _appserveradm com.apple.sharepoint.group.1 _appstore _lpadmin _lpoperator _developer _analyticsusers com.apple.access_ftp com.apple.access_screensharing com.apple.access_ssh com.apple.access_remote_ae
+
+## admin-membership
+yes philsagent is a member of admin
+
+## lsof-listen
+COMMAND     PID       USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+rapportd    951 philsagent   10u  IPv4 0x6b72ab717921331a      0t0  TCP *:49153 (LISTEN)
+rapportd    951 philsagent   11u  IPv6 0xc80f4bd0f28a7828      0t0  TCP *:49153 (LISTEN)
+Python     1351 philsagent   19u  IPv4 0x157600f97ca6dc95      0t0  TCP 127.0.0.1:8888 (LISTEN)
+limactl   30515 philsagent   15u  IPv4  0xf6c4da7e29cc352      0t0  TCP 127.0.0.1:53094 (LISTEN)
+limactl   30517 philsagent   10u  IPv6 0x946331dd58b17f7a      0t0  TCP *:53 (LISTEN)
+node      31545 philsagent   15u  IPv4 0xf494d826df943c25      0t0  TCP 127.0.0.1:18789 (LISTEN)
+node      31545 philsagent   16u  IPv6 0xc0442d2f32bc6ee9      0t0  TCP [::1]:18789 (LISTEN)
+node      31545 philsagent   28u  IPv4 0x80dba0d077b33d8c      0t0  TCP 127.0.0.1:18791 (LISTEN)
+Google    32385 philsagent   56u  IPv4 0x7f3f50f3e90d53f7      0t0  TCP 127.0.0.1:18800 (LISTEN)
+node      32912 philsagent   13u  IPv4 0x491a47041ffc53d2      0t0  TCP 127.0.0.1:3001 (LISTEN)
+
+## firewall-app
+Firewall is enabled. (State = 1)
+
+## pfctl-info
+pfctl: /dev/pf: Permission denied
+
+## filevault
+FileVault is On.
+
+## tmutil-latestbackup
+tmutil: latestbackup requires Full Disk Access privileges.
+To allow this operation, select Full Disk Access in the Privacy
+tab of the Security & Privacy preference pane, and add Terminal
+to the list of applications which are allowed Full Disk Access.
+
+## tmutil-destinationinfo
+====================================================
+Name          : ArmorATD
+Kind          : Local
+Mount Point   : /Volumes/ArmorATD
+ID            : DD571C05-2DC0-4605-9809-9B61DFD98B90
+
+## tmutil-status
+Backup session status:
+{
+    ClientID = "com.apple.backupd";
+    Percent = "-1";
+    Running = 0;
+}
+
+## softwareupdate-schedule
+Automatic checking for updates is turned on
+
+## defaults-automaticcheck
+2026-04-18 07:10:27.960 defaults[77263:9853544] 
+The domain/default pair of (/Library/Preferences/com.apple.SoftwareUpdate, AutomaticCheckEnabled) does not exist
+
+## defaults-automaticdownload
+1
+
+## defaults-criticalinstall
+1
+
+## defaults-configdata
+1
+
+## commerce-autoupdate
+0
+
+## openclaw-status-deep
+[plugins] active-memory: config.modelFallbackPolicy is deprecated and no longer changes runtime behavior; set config.modelFallback explicitly if you want a fallback model
+[plugins] active-memory: config.modelFallbackPolicy is deprecated and no longer changes runtime behavior; set config.modelFallback explicitly if you want a fallback model
+OpenClaw status
+
+Overview
+┌──────────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Item                 │ Value                                                                                         │
+├──────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────┤
+│ OS                   │ macos 26.4.1 (arm64) · node 22.22.0                                                           │
+│ Dashboard            │ http://127.0.0.1:18789/                                                                       │
+│ Tailscale            │ off                                                                                           │
+│ Channel              │ stable (default)                                                                              │
+│ Update               │ pnpm · up to date · npm latest 2026.4.15                                                      │
+│ Gateway              │ local · ws://127.0.0.1:18789 (local loopback) · reachable 103ms · auth token · Philss-Mac-    │
+│                      │ mini.local (192.168.1.199) app 2026.4.15 macos 26.4.1                                         │
+│ Gateway self         │ Philss-Mac-mini.local (192.168.1.199) app 2026.4.15 macos 26.4.1                              │
+│ Gateway service      │ LaunchAgent installed · loaded · running (pid 31545, state active)                            │
+│ Node service         │ LaunchAgent not installed                                                                     │
+│ Agents               │ 1 · no bootstrap files · sessions 401 · default main active 1m ago                            │
+│ Memory               │ 1602 files · 1602 chunks · sources memory, sessions · plugin memory-core · vector unavailable │
+│ Plugin compatibility │ none                                                                                          │
+│ Probes               │ enabled                                                                                       │
+│ Events               │ none                                                                                          │
+│ Tasks                │ 39 active · 0 queued · 39 running · 70 issues · audit 40 errors · 69 warn · 423 tracked       │
+│ Heartbeat            │ 1h (main)                                                                                     │
+│ Last heartbeat       │ ok-token · 3m ago ago · unknown                                                               │
+│ Sessions             │ 401 active · default gpt-5.4 (200k ctx) · ~/.openclaw/agents/main/sessions/sessions.json      │
+└──────────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────┘
+
+Task maintenance: openclaw tasks maintenance --apply
+
+Security audit
+Summary: 0 critical · 0 warn · 1 info
+No critical or warn findings detected.
+Full report: openclaw security audit
+Deep probe: openclaw security audit --deep
+
+Channels
+┌──────────┬─────────┬────────┬────────────────────────────────────────────────────────────────────────────────────────┐
+│ Channel  │ Enabled │ State  │ Detail                                                                                 │
+├──────────┼─────────┼────────┼────────────────────────────────────────────────────────────────────────────────────────┤
+│ Telegram │ ON      │ OK     │ token env (8233…C1-M · len 46) · accounts 1/1                                          │
+│ WhatsApp │ ON      │ WARN   │ linked · +447828699027 · auth 68d ago · accounts 1 · gateway: Linked but stopped       │
+│          │         │        │ (reconnectAttempts=1): {"error":{"data":{"reason":"401","locatio…                      │
+└──────────┴─────────┴────────┴────────────────────────────────────────────────────────────────────────────────────────┘
+
+Sessions
+┌──────────────────────────────────────────────────┬────────┬─────────┬──────────────┬─────────────────────────────────┐
+│ Key                                              │ Kind   │ Age     │ Model        │ Tokens                          │
+├──────────────────────────────────────────────────┼────────┼─────────┼──────────────┼─────────────────────────────────┤
+│ agent:main:subagent:b76d1966-b5…                 │ direct │ 1m ago  │ gpt-5.4      │ unknown/200k (?%)               │
+│ agent:main:subagent:1b62274a-74…                 │ direct │ 1m ago  │ gpt-5.4      │ 36k/200k (18%) · 🗄️ 96% cached  │
+│ agent:main:cron:871cd148-b42c-4…                 │ direct │ 1m ago  │ gpt-5.4      │ 58k/200k (29%) · 🗄️ 90% cached  │
+│ agent:main:cron:47299a79-5e3e-4…                 │ direct │ 1m ago  │ gpt-5.4      │ 40k/200k (20%) · 🗄️ 32% cached  │
+│ agent:main:cron:47299a79-5e3e-4…                 │ direct │ 2m ago  │ gpt-5.4      │ 40k/200k (20%) · 🗄️ 32% cached  │
+│ agent:main:main                                  │ direct │ 3m ago  │ gpt-5.4      │ 99k/200k (49%) · 🗄️ 100% cached │
+│ agent:main:cron:871cd148-b42c-4…                 │ direct │ 11m ago │ gpt-5.4      │ 52k/200k (26%) · 🗄️ 97% cached  │
+│ agent:main:cron:21f7d923-f42f-4…                 │ direct │ 9h ago  │ gpt-5.4      │ 24k/200k (12%) · 🗄️ 84% cached  │
+│ agent:main:cron:21f7d923-f42f-4…                 │ direct │ 9h ago  │ gpt-5.4      │ 24k/200k (12%) · 🗄️ 84% cached  │
+│ agent:main:cron:9bb8614b-4e48-4…                 │ direct │ 9h ago  │ gpt-5.4      │ 42k/200k (21%) · 🗄️ 92% cached  │
+└──────────────────────────────────────────────────┴────────┴─────────┴──────────────┴─────────────────────────────────┘
+
+Health
+┌──────────┬───────────┬───────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Item     │ Status    │ Detail                                                                                        │
+├──────────┼───────────┼───────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Gateway  │ reachable │ 113ms                                                                                         │
+│ Telegram │ OK        │ ok (@albiemorganbot:default:107ms)                                                            │
+│ WhatsApp │ LINKED    │ linked (auth age 97327m)                                                                      │
+└──────────┴───────────┴───────────────────────────────────────────────────────────────────────────────────────────────┘
+
+FAQ: https://docs.openclaw.ai/faq
+Troubleshooting: https://docs.openclaw.ai/troubleshooting
+Next steps:
+  Need to share?      openclaw status --all
+  Need to debug live? openclaw logs --follow
+  Need to test channels? openclaw status --deep
+
+## openclaw-gateway-status
+Service: LaunchAgent (loaded)
+File logs: /tmp/openclaw/openclaw-2026-04-18.log
+Command: /opt/homebrew/opt/node@22/bin/node /opt/homebrew/lib/node_modules/openclaw/dist/index.js gateway --port 18789
+Service file: ~/Library/LaunchAgents/ai.openclaw.gateway.plist
+Service env: OPENCLAW_GATEWAY_PORT=18789
+
+Config (cli): ~/.openclaw/openclaw.json
+Config (service): ~/.openclaw/openclaw.json
+
+Gateway: bind=loopback (127.0.0.1), port=18789 (service args)
+Probe target: ws://127.0.0.1:18789
+Dashboard: http://127.0.0.1:18789/
+Probe note: Loopback-only gateway; only local clients can connect.
+
+Runtime: running (pid 31545, state active)
+RPC probe: ok
+
+Listening: 127.0.0.1:18789
+Troubles: run openclaw status
+Troubleshooting: https://docs.openclaw.ai/troubleshooting
+
+## openclaw-security-audit-deep
+OpenClaw security audit
+Summary: 0 critical · 0 warn · 1 info
+Run deeper: openclaw security audit --deep
+
+INFO
+summary.attack_surface Attack surface summary
+  groups: open=0, allowlist=2
+tools.elevated: enabled
+hooks.webhooks: disabled
+hooks.internal: enabled
+browser control: enabled
+trust model: personal assistant (one trusted operator boundary), not hostile multi-tenant on one shared gateway
+
+## openclaw-update-status
+OpenClaw update status
+
+┌──────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Item     │ Value                                                                                                     │
+├──────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Install  │ pnpm                                                                                                      │
+│ Channel  │ stable (default)                                                                                          │
+│ Update   │ pnpm · up to date · npm latest 2026.4.15                                                                  │
+└──────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
