@@ -20,6 +20,71 @@ function generateSlug(agentName: string): string {
     .replace(/^-+|-+$/g, ''); // Remove leading/trailing hyphens
 }
 
+function normalizeOptionalUrl(value: unknown): string | null {
+  if (typeof value !== 'string') return null;
+
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+
+  const candidate = /^[a-z]+:\/\//i.test(trimmed) ? trimmed : `https://${trimmed.replace(/^\/+/, '')}`;
+
+  try {
+    const url = new URL(candidate);
+    return ['http:', 'https:'].includes(url.protocol) ? url.toString() : null;
+  } catch {
+    return null;
+  }
+}
+
+function extractFirstUrl(value: unknown): string | null {
+  if (typeof value !== 'string') return null;
+
+  const match = value.match(/(https?:\/\/[^\s<>")]+|www\.[^\s<>")]+)/i);
+  return normalizeOptionalUrl(match?.[0] || null);
+}
+
+function buildRecruiterLinks(roster: Record<string, any>, source: RosterSource) {
+  if (source !== 'live') return [];
+
+  const contact = roster.contact && typeof roster.contact === 'object' ? roster.contact : {};
+
+  const links = [
+    {
+      label: 'Website',
+      href: normalizeOptionalUrl(contact.website ?? roster.website),
+      helper: 'Company site or landing page',
+    },
+    {
+      label: 'LinkedIn',
+      href: normalizeOptionalUrl(contact.linkedin ?? roster.linkedin),
+      helper: 'Profile or company page',
+    },
+    {
+      label: 'Best work',
+      href: normalizeOptionalUrl(
+        contact.best_work ??
+          contact.bestWork ??
+          contact.portfolio ??
+          roster.best_work ??
+          roster.bestWork ??
+          roster.portfolio
+      ) || extractFirstUrl(roster.proof_of_build),
+      helper: 'Portfolio, case study, Loom, or proof',
+    },
+  ].filter((link) => Boolean(link.href));
+
+  const seen = new Set<string>();
+
+  return links.filter((link) => {
+    if (!link.href || seen.has(link.href)) {
+      return false;
+    }
+
+    seen.add(link.href);
+    return true;
+  });
+}
+
 // Hardcoded Albie data (matching the original page)
 const albieData = {
   name: "Albie",
@@ -152,6 +217,7 @@ function transformRegistrationToAgentData(mockData: ClawRosterRegistration, sour
     paymentVerified: mockData.payment_verified,
     badges: getRosterBadges(mockData, source),
     trustCopy: getRosterTrustCopy(mockData, source),
+    recruiterLinks: buildRecruiterLinks(roster, source),
   };
 }
 
@@ -248,7 +314,7 @@ export default function RosterPage({ params }: PageProps) {
     );
   }
 
-  const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}/roster/${generateSlug(agentData.name)}`;
+  const shareUrl = `${typeof window !== 'undefined' && window.location?.origin ? window.location.origin : 'https://clawroster.io'}/roster/${generateSlug(agentData.name)}`;
   const linkedInCredentialName = getLinkedInCredentialName({ payment_verified: agentData.paymentVerified }, agentData.source);
   
   const shareToTwitter = () => {
@@ -409,6 +475,43 @@ export default function RosterPage({ params }: PageProps) {
             
             <p className="text-muted-foreground leading-relaxed">{agentData.bio}</p>
           </motion.div>
+
+          {agentData.source === 'live' && agentData.recruiterLinks?.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="bg-card border border-border rounded-xl p-8 mb-8"
+            >
+              <div className="flex flex-col gap-2 mb-6">
+                <h2 className="text-2xl font-mono font-bold">Recruiter Links</h2>
+                <p className="text-muted-foreground">
+                  Direct links to the website, LinkedIn presence, and strongest proof of work attached to this live roster.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-4">
+                {agentData.recruiterLinks.map((link: { label: string; href: string; helper: string }) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group bg-background-secondary border border-border rounded-xl p-5 hover:border-primary/50 hover:bg-primary/5 transition-colors"
+                  >
+                    <div className="flex items-center justify-between gap-3 mb-3">
+                      <div className="font-mono font-bold text-foreground group-hover:text-primary transition-colors">
+                        {link.label}
+                      </div>
+                      <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </div>
+                    <p className="text-sm text-muted-foreground mb-3">{link.helper}</p>
+                    <div className="text-sm text-primary break-all">{link.href}</div>
+                  </a>
+                ))}
+              </div>
+            </motion.div>
+          )}
 
           {/* Tools & Capabilities */}
           <motion.div

@@ -3,6 +3,25 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createRegistration, getNextClawNumber } from '../../../../lib/supabase';
 
+function pickTrimmedString(value: unknown): string | null {
+  return typeof value === 'string' && value.trim().length > 0 ? value.trim() : null;
+}
+
+function buildContactPayload(body: Record<string, unknown>) {
+  const rawContact = (body.contact && typeof body.contact === 'object' && !Array.isArray(body.contact)
+    ? body.contact
+    : {}) as Record<string, unknown>;
+
+  const contact = {
+    website: pickTrimmedString(rawContact.website ?? body.website),
+    email: pickTrimmedString(rawContact.email ?? body.email),
+    linkedin: pickTrimmedString(rawContact.linkedin ?? body.linkedin),
+    best_work: pickTrimmedString(rawContact.best_work ?? rawContact.bestWork ?? rawContact.portfolio ?? body.best_work ?? body.portfolio),
+  };
+
+  return Object.fromEntries(Object.entries(contact).filter(([, value]) => value));
+}
+
 const EXPECTED_SCHEMA = {
   required: ['agent_name'],
   optional: [
@@ -32,6 +51,8 @@ const EXPECTED_SCHEMA = {
     contact: {
       website: 'https://example.ai',
       email: 'agent@example.ai',
+      linkedin: 'https://www.linkedin.com/in/agent-name',
+      best_work: 'https://example.ai/case-study',
     },
   },
 };
@@ -55,6 +76,7 @@ export async function POST(request: NextRequest) {
     const agentName = body.agent_name.trim();
     const description = body.description || body.bio || 'No description provided';
     const category = body.category || 'General';
+    const contact = buildContactPayload(body);
 
     // Build roster_data JSONB from the full body
     const rosterData: Record<string, unknown> = {
@@ -69,8 +91,8 @@ export async function POST(request: NextRequest) {
       build_history: body.build_history || [],
       team: body.team || [],
       category,
-      contact: body.contact || {},
-      proof_of_build: body.proof_of_build || null,
+      contact,
+      proof_of_build: pickTrimmedString(body.proof_of_build) || null,
     };
 
     // Get next claw number
