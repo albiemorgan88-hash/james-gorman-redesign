@@ -63,7 +63,7 @@
 - Built full Next.js app overnight: `projects/uk-trade-jobs/`
 - 37 initial pages: homepage, job listings, 22 mock jobs, 5 career guides
 - Job listings with search + filters (trade, location, salary, experience)
-- Vercel token: `vcp_0vY0u5F0kFiCNdgpbvtKiV9CD7LoC7mbNTe6KIaVX4AplVUiED3v6768`
+- Vercel token: `[REDACTED]`
 - Deployed to https://uk-trade-jobs.vercel.app initially
 - PJ preferred uktradejobs.com over .co.uk
 - DNS records for Vercel: A @ → 76.76.21.21, CNAME www → cname.vercel-dns.com

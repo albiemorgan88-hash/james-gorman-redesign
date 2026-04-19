@@ -169,7 +169,7 @@
 ### Albie's Infrastructure
 - **Email:** albiemorgan88@gmail.com
 - **GitHub:** albiemorgan88-hash (ClubDraw demo, Mission Control, 6 showcases, Precision Education, Tender Dashboard)
-- **Vercel:** albiemorgan88@gmail.com. API token: `vcp_0vY0u5F0kFiCNdgpbvtKiV9CD7LoC7mbNTe6KIaVX4AplVUiED3v6768`. Free/Hobby plan (can't invite team members). PJ also signed up with contact@bluecanvas.ai.
+- **Vercel:** albiemorgan88@gmail.com. API token: `[REDACTED]`. Free/Hobby plan (can't invite team members). PJ also signed up with contact@bluecanvas.ai.
 - **Mac mini:** philsagent user, macOS Sequoia 15.3. Tailscale IP: 100.113.233.3. Auto-sleep OFF. Firewall ON. SSH OFF.
 
 ### Coinbase CDP Wallet

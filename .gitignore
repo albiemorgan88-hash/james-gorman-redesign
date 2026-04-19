@@ -4,6 +4,8 @@ node_modules/
 .DS_Store
 .vercel/
 screenshots/
+extra/shared-albie-eddie/creds/
+*.env
 
 # Nested git projects — these have their own repos
 projects/ardmore-cricket/

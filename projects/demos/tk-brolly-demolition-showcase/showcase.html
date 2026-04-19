@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TK Brolly Demolition — Premium Showcase Direction</title>
+  <meta name="description" content="A first-pass premium website showcase direction for TK Brolly Demolition by Blue Canvas." />
+  <meta name="robots" content="noindex,nofollow" />
+  <style>
+    :root {
+      --bg: #101315;
+      --panel: #171b1f;
+      --panel-2: #1d2329;
+      --line: rgba(255,255,255,0.08);
+      --text: #f5f2ec;
+      --muted: #a7afa9;
+      --soft: #d8d2c8;
+      --accent: #e46a2e;
+      --accent-soft: rgba(228,106,46,0.15);
+      --steel: #2b3138;
+      --ok: #86a48d;
+      --radius: 22px;
+      --shadow: 0 18px 60px rgba(0,0,0,0.28);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(228,106,46,0.12), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(216,210,200,0.07), transparent 28%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .container {
+      width: min(1140px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 28px 0 72px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 0 28px;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: var(--soft);
+    }
+
+    .nav-tag {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.03);
+      padding: 10px 14px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .hero-card {
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      box-shadow: var(--shadow);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      min-height: 680px;
+    }
+
+    .hero-copy {
+      padding: 56px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #ffb389;
+      border: 1px solid rgba(228,106,46,0.25);
+      font-size: 13px;
+      font-weight: 600;
+      width: fit-content;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      font-weight: 800;
+      max-width: 720px;
+    }
+
+    .subhead {
+      max-width: 640px;
+      color: var(--soft);
+      font-size: clamp(18px, 2.2vw, 22px);
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+
+    .proof-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .proof-chip {
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.03);
+      color: var(--soft);
+      font-size: 14px;
+    }
+
+    .hero-visual {
+      background:
+        linear-gradient(180deg, rgba(16,19,21,0.1), rgba(16,19,21,0.6)),
+        linear-gradient(135deg, #2b3138 0%, #171b1f 42%, #0e1012 100%);
+      border-left: 1px solid var(--line);
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-visual::before,
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(228,106,46,0.08);
+      filter: blur(10px);
+    }
+
+    .hero-visual::before {
+      width: 220px;
+      height: 220px;
+      top: -40px;
+      right: -70px;
+    }
+
+    .hero-visual::after {
+      width: 180px;
+      height: 180px;
+      left: -40px;
+      bottom: 30px;
+    }
+
+    .visual-note {
+      position: relative;
+      z-index: 1;
+      background: rgba(16,19,21,0.62);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 18px;
+      backdrop-filter: blur(8px);
+    }
+
+    .visual-note strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .visual-note span {
+      color: var(--muted);
+      font-size: 13px;
+      display: block;
+    }
+
+    .machine-stack {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 12px;
+      margin-top: auto;
+    }
+
+    .machine-bar {
+      height: 68px;
+      border-radius: 16px;
+      background: linear-gradient(90deg, rgba(228,106,46,0.18), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      padding: 0 18px;
+      color: var(--soft);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    section {
+      padding: 28px 0 88px;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 28px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(30px, 4.8vw, 52px);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 680px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .card .kicker {
+      color: #ffb389;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      line-height: 1.1;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .proof-card {
+      padding: 22px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+      border: 1px solid var(--line);
+      min-height: 180px;
+    }
+
+    .proof-number {
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      margin-bottom: 10px;
+      color: var(--soft);
+    }
+
+    .proof-label {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .proof-note {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .case-study {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 18px;
+    }
+
+    .mock-image {
+      min-height: 440px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(180deg, rgba(16,19,21,0.18), rgba(16,19,21,0.65)),
+        linear-gradient(135deg, rgba(228,106,46,0.18), rgba(43,49,56,0.7), rgba(16,19,21,1));
+      padding: 24px;
+      display: flex;
+      align-items: end;
+      box-shadow: var(--shadow);
+    }
+
+    .mock-image-copy {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 12px;
+    }
+
+    .mock-image-copy h3 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+
+    .mock-image-copy p {
+      margin: 0;
+      color: var(--soft);
+      max-width: 360px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid rgba(255,255,255,0.08);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+    }
+
+    .list {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .list-row {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    .list-row:first-child { border-top: 0; padding-top: 0; }
+
+    .list-row strong {
+      color: var(--soft);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .list-row span {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .process-card {
+      padding: 22px 18px;
+      border-radius: 22px;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      min-height: 180px;
+    }
+
+    .process-card .step {
+      display: inline-flex;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      background: var(--accent-soft);
+      color: #ffb389;
+      margin-bottom: 14px;
+    }
+
+    .process-card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .process-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .cta-panel {
+      border-radius: 28px;
+      padding: 34px;
+      background: linear-gradient(135deg, rgba(228,106,46,0.16), rgba(255,255,255,0.03));
+      border: 1px solid rgba(228,106,46,0.22);
+      box-shadow: var(--shadow);
+    }
+
+    .cta-panel h2 { margin: 0 0 10px; font-size: clamp(30px, 5vw, 48px); line-height: 1; letter-spacing: -0.04em; }
+    .cta-panel p { margin: 0 0 24px; color: var(--soft); max-width: 700px; }
+
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-note {
+      padding: 20px 0 44px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .section-head,
+      .case-study {
+        grid-template-columns: 1fr;
+      }
+
+      .proof-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .process-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero-copy { padding: 32px; }
+      .hero-visual { border-left: 0; border-top: 1px solid var(--line); min-height: 360px; }
+    }
+
+    @media (max-width: 720px) {
+      .grid-3,
+      .proof-grid,
+      .process-grid,
+      .proof-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .hero { padding-top: 20px; }
+      .hero-copy { padding: 26px; }
+      .hero-grid { min-height: auto; }
+      .list-row { grid-template-columns: 1fr; gap: 6px; }
+      .cta-row { flex-direction: column; }
+      .btn { width: 100%; }
+      .cta-panel { padding: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="container">
+      <div class="nav">
+        <div class="brand">TK Brolly Demolition — Showcase Direction</div>
+        <div class="nav-tag">Blue Canvas concept piece</div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div>
+              <div class="eyebrow">Proposed premium homepage direction</div>
+              <h1>Complex demolition.<br/>Controlled delivery.</h1>
+              <p class="subhead">A stronger first impression for TK Brolly, built around authority, safety, specialist capability, and project proof across the UK and Ireland.</p>
+            </div>
+
+            <div>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="#capabilities">View capabilities</a>
+                <a class="btn btn-secondary" href="#projects">See project structure</a>
+              </div>
+              <div class="proof-strip" style="margin-top:18px;">
+                <div class="proof-chip">50+ years of experience</div>
+                <div class="proof-chip">UK &amp; Ireland coverage</div>
+                <div class="proof-chip">Structural alterations</div>
+                <div class="proof-chip">Façade retention</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="visual-note">
+              <strong>What changes here</strong>
+              <span>Less brochure-site. More serious contractor. Stronger hierarchy, premium tone, and a clearer path from trust to enquiry.</span>
+            </div>
+
+            <div class="machine-stack">
+              <div class="machine-bar">Demolition / dismantling / high-risk enabling works</div>
+              <div class="machine-bar">Method-first, safety-led, environmentally responsible delivery</div>
+              <div class="machine-bar">Modern fleet, haulage, trained operators, experienced management</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="capabilities">
+    <div class="container">
+      <div class="section-head">
+        <h2>Built for serious demolition, not generic brochure copy.</h2>
+        <p>This direction keeps the clarity of a top-tier contractor site, but shifts TK Brolly toward stronger authority, cleaner visual hierarchy, and more specialist capability proof.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="kicker">Capability</div>
+          <h3>Demolition &amp; dismantling</h3>
+          <p>Position TK Brolly as a trusted partner for planned demolition, controlled dismantling, structural alteration, and industrial clearance works.</p>
+        </div>
+        <div class="card">
+          <div class="kicker">Capability</div>
+          <h3>High-risk specialist works</h3>
+          <p>Bring structural alterations, façade retention, hydro demolition, and constrained-site delivery to the front instead of burying them in service-list copy.</p>
+        </div>
+        <div class="card">
+          <div class="kicker">Capability</div>
+          <h3>Recycling, waste, and recovery</h3>
+          <p>Show the process and environmental side properly, not as an afterthought. This is a trust lever, especially for larger tenders and public-sector work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Proof and trust need to feel earned.</h2>
+        <p>TK Brolly already has some credible signals. The problem is that the current site claims them, but doesn’t package them in a premium way.</p>
+      </div>
+
+      <div class="proof-grid">
+        <div class="proof-card">
+          <div class="proof-number">1968</div>
+          <div class="proof-label">Founded</div>
+          <div class="proof-note">Use trading history properly. Make experience feel substantial, not buried.</div>
+        </div>
+        <div class="proof-card">
+          <div class="proof-number">50+</div>
+          <div class="proof-label">Years of experience</div>
+          <div class="proof-note">A clear authority signal that should be front and centre.</div>
+        </div>
+        <div class="proof-card">
+          <div class="proof-number">UK + IE</div>
+          <div class="proof-label">Regional coverage</div>
+          <div class="proof-note">Use this to push scale and capability beyond a local-firm feel.</div>
+        </div>
+        <div class="proof-card">
+          <div class="proof-number">Safe-T-Cert</div>
+          <div class="proof-label">Trust marker</div>
+          <div class="proof-note">Accreditations and compliance should sit in a proper trust wall.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-head">
+        <h2>Project proof should lead the conversation.</h2>
+        <p>For a top-end demolition brand, services alone are not enough. This mockup shows how a featured project section could carry more weight and feel far more premium.</p>
+      </div>
+
+      <div class="case-study">
+        <div class="mock-image">
+          <div class="mock-image-copy">
+            <div>
+              <div class="tag">Featured project structure</div>
+              <h3>Complex urban demolition with live-site constraints</h3>
+              <p>Large project photography, cleaner captions, and project-type context instead of generic stock messaging.</p>
+            </div>
+            <div class="tag">Controlled delivery</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="kicker">Case study spotlight</div>
+          <h3>How this section should work</h3>
+          <p>One flagship project should show how TK Brolly handles technical complexity, safety, programme pressure, and environmental responsibility.</p>
+
+          <div class="list">
+            <div class="list-row">
+              <strong>Project</strong>
+              <span>Named job, location, sector, and the specific demolition challenge.</span>
+            </div>
+            <div class="list-row">
+              <strong>Constraint</strong>
+              <span>Live site, neighbouring structures, façade retention, hazardous materials, restricted access, or programme pressure.</span>
+            </div>
+            <div class="list-row">
+              <strong>Approach</strong>
+              <span>Method statement, sequencing, site isolation, dismantling plan, recycling and waste handling, controlled handover.</span>
+            </div>
+            <div class="list-row">
+              <strong>Outcome</strong>
+              <span>Completed safely, on programme, with recovery / recycling figures and client confidence baked in.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Safety and process should feel methodical.</h2>
+        <p>One of the biggest visual upgrades is turning safety and environmental responsibility into a structured process, not a paragraph.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="step">1</div>
+          <h3>Plan</h3>
+          <p>Scope, sequencing, surveys, risk control, and a clearer method-led starting point.</p>
+        </div>
+        <div class="process-card">
+          <div class="step">2</div>
+          <h3>Isolate</h3>
+          <p>Protect surrounding structures, segregate hazards, and prepare for controlled works.</p>
+        </div>
+        <div class="process-card">
+          <div class="step">3</div>
+          <h3>Demolish</h3>
+          <p>Use the right machinery, operators, and programme discipline for the site conditions.</p>
+        </div>
+        <div class="process-card">
+          <div class="step">4</div>
+          <h3>Recover</h3>
+          <p>Recycling, waste segregation, haulage, and environmental performance handled visibly.</p>
+        </div>
+        <div class="process-card">
+          <div class="step">5</div>
+          <h3>Handover</h3>
+          <p>Clean site closeout, compliance confidence, and a more professional final impression.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-panel">
+        <h2>A stronger demolition brand starts with stronger proof.</h2>
+        <p>This mini showcase is the direction: a premium contractor homepage with better authority, cleaner messaging, stronger project structure, and a more serious visual language. Enough to show how TK Brolly could move from dated brochure site to high-trust demolition partner.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#">Discuss full build direction</a>
+          <a class="btn btn-secondary" href="#projects">Refine project section</a>
+        </div>
+        <div class="meta">First-pass showcase concept for TK Brolly Demolition, inspired by clearer contractor structures like BSG but tailored to demolition, structural alteration, and specialist site works.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-note container">Blue Canvas showcase concept · TK Brolly Demolition</div>
+</body>
+</html>
