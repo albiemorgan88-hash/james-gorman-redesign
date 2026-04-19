@@ -1,8 +1,13 @@
 // API Route: Admin data and operations
 import { NextRequest, NextResponse } from 'next/server';
 import { getAllRegistrations, getTotalRevenue, updateRegistrationStatus } from '../../../lib/supabase';
+import { isAdminRequestAuthorized } from '../../../lib/admin-auth';
 
 export async function GET(request: NextRequest) {
+  if (!isAdminRequestAuthorized(request)) {
+    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     const [registrations, totalRevenue] = await Promise.all([
       getAllRegistrations(),
@@ -37,9 +42,13 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
+  if (!isAdminRequestAuthorized(request)) {
+    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     const body = await request.json();
-    const { action, registrationId, status } = body;
+    const { action, registrationId, status, paymentVerified } = body;
     
     if (action === 'update_status') {
       if (!registrationId || !status) {
@@ -52,8 +61,7 @@ export async function POST(request: NextRequest) {
         );
       }
       
-      const verified = status === 'active';
-      await updateRegistrationStatus(registrationId, status, verified);
+      await updateRegistrationStatus(registrationId, status, paymentVerified === true);
       
       return NextResponse.json({
         success: true,

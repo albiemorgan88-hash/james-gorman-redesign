@@ -1,8 +1,12 @@
 // Database initialization and operations for ClawRoster
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
-const SUPABASE_URL = 'https://smhzgkvatlwbaxlyhnbm.supabase.co';
-const SERVICE_ROLE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNtaHpna3ZhdGx3YmF4bHlobmJtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MjMzMzkwMiwiZXhwIjoyMDg3OTA5OTAyfQ.9cX2EBuHVBFtXWeODEvpjAlsvpl3CORhGAozKgwFC5Q';
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+const SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
+
+if (!SUPABASE_URL || !SERVICE_ROLE_KEY) {
+  throw new Error('Missing Supabase environment variables for ClawRoster database client');
+}
 
 // Create Supabase client
 const supabase: SupabaseClient = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);

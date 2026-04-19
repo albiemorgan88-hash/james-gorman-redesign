@@ -1,0 +1,112 @@
+{
+  "entries": [
+    {
+      "ts": 1776154148884,
+      "jobId": "f4b6a9ff-4350-4825-8720-55a365d2591b",
+      "action": "finished",
+      "status": "ok",
+      "summary": "Ran SEO Engine v2.1 Phase 2: FIX for bluecanvas.ai.\n\nAudit checked:\n- Latest explicit audit in reports/: reports/seo-audit-bluecanvas-2026-03-30.md\n- Cross-check used: reports/seo-fix-report-2026-04-07.md\n\nChanges staged via Webflow API, not published:\n- Fixed 4 location pages that still had truncated placeholder body copy:\n  - /locations/ai-consultancy-glasgow, 9 words -> 221 words\n  - /locations/ai-consultancy-birmingham, 11 words -> 208 words\n  - /locations/ai-consultancy-leeds, 12 words -> 211 words\n  - /locations/ai-consultancy-liverpool, 13 words -> 196 words\n- Replaced “[Content truncated]” content with proper city-specific copy\n- Added internal links on each to:\n  - /lp/ai-audit\n  - /lp/ai-implementation-automation\n  - /lp/free-ai-consultation\n- Left existing page titles and meta descriptions in place because they were already populated and usable\n\nBlocked, not fixable via current API path:\n- Homepage H1 update\n- About page H1 update\n- LocalBusiness / FAQ schema injection\n- Static placeholder content on /about, including the Sarah Chen section, which looks Designer-side rather than CMS/API-editable here\n\nVerification:\n- Re-fetched each updated CMS item after patching\n- Confirmed staged content no longer contains truncated placeholders\n- No publish endpoint was called\n\nReport saved:\n- reports/seo-fix-report-2026-04-14.md",
+      "runAtMs": 1776153720017,
+      "durationMs": 428788,
+      "nextRunAtMs": 1776758400000,
+      "model": "gpt-5.4",
+      "provider": "openai-codex",
+      "usage": {
+        "input_tokens": 73992,
+        "output_tokens": 11404,
+        "total_tokens": 83678
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "e0d7d407-b2b0-4b28-85e0-6b1745d4103e",
+      "sessionKey": "agent:main:cron:f4b6a9ff-4350-4825-8720-55a365d2591b:run:e0d7d407-b2b0-4b28-85e0-6b1745d4103e"
+    },
+    {
+      "ts": 1775548911375,
+      "jobId": "f4b6a9ff-4350-4825-8720-55a365d2591b",
+      "action": "finished",
+      "status": "ok",
+      "runAtMs": 1775548862331,
+      "durationMs": 49040,
+      "nextRunAtMs": 1776153600000,
+      "model": "claude-opus-4-6",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 7,
+        "output_tokens": 2001,
+        "total_tokens": 36885
+      },
+      "delivered": false,
+      "deliveryStatus": "not-delivered",
+      "sessionId": "f699b152-16b0-4f6a-bebd-3bf395837b9c",
+      "sessionKey": "agent:main:cron:f4b6a9ff-4350-4825-8720-55a365d2591b:run:f699b152-16b0-4f6a-bebd-3bf395837b9c"
+    },
+    {
+      "ts": 1774944097277,
+      "jobId": "f4b6a9ff-4350-4825-8720-55a365d2591b",
+      "action": "finished",
+      "status": "ok",
+      "runAtMs": 1774944047662,
+      "durationMs": 49612,
+      "nextRunAtMs": 1775548800000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 45,
+        "output_tokens": 985,
+        "total_tokens": 34156
+      },
+      "delivered": false,
+      "deliveryStatus": "not-delivered",
+      "sessionId": "0978dee9-0bf9-4e90-bff9-83e8fadfa11a",
+      "sessionKey": "agent:main:cron:f4b6a9ff-4350-4825-8720-55a365d2591b:run:0978dee9-0bf9-4e90-bff9-83e8fadfa11a"
+    },
+    {
+      "ts": 1774343073581,
+      "jobId": "f4b6a9ff-4350-4825-8720-55a365d2591b",
+      "action": "finished",
+      "status": "ok",
+      "summary": "# SEO Engine Phase 2: FIX — Completed ✅\n\n**Tuesday Fix run complete.** Good news: the site's in better shape than expected.\n\n## What Got Fixed\n- **Analytics mystery solved** — tracking works fine, just monitoring wrong GA4 property (`G-5E3DHWY3CN` vs actual `G-4V6VBC391D`)\n- **Content gap plugged** — drafted 4k-word \"AI consultancy for small business\" piece targeting that pos 6.7 opportunity\n- **Technical audit clean** — most meta/template issues from March 10th already resolved\n\n## Action Required (PJ)\n**Critical — today:**\n1. **301 redirects** — 7 URLs need manual setup in Webflow (Google Ads likely hitting 404s)\n2. **Check Google Ads destinations** — ensure campaigns point to `/lp/` paths, not broken URLs\n\n**High impact — this week:**\n1. **Fix blog listing** — 67 orphaned posts not displaying (Webflow Designer issue)\n2. **Homepage internal links** — add links to key service pages\n3. **Deploy small business content** — either as landing page or blog post\n\nFiles ready: `drafts/blog/ai-consultancy-for-small-business.md`\n\nThe 404 redirects are likely killing your Google Ads Quality Scores (explains those 1/10 ratings). Fix those first — immediate £££ impact.",
+      "runAtMs": 1774342857510,
+      "durationMs": 216059,
+      "nextRunAtMs": 1774944000000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 40,
+        "output_tokens": 987,
+        "total_tokens": 31021
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "f043fc8a-cb57-4c03-b547-32cebcf32d20",
+      "sessionKey": "agent:main:cron:f4b6a9ff-4350-4825-8720-55a365d2591b:run:f043fc8a-cb57-4c03-b547-32cebcf32d20"
+    },
+    {
+      "ts": 1773738444520,
+      "jobId": "f4b6a9ff-4350-4825-8720-55a365d2591b",
+      "action": "finished",
+      "status": "ok",
+      "summary": "Now let me spawn a sub-agent to execute the SEO Engine Phase 2: FIX according to the skill guidelines. I'll delegate this to a subagent since this is orchestrator mode:",
+      "runAtMs": 1773738057045,
+      "durationMs": 387463,
+      "nextRunAtMs": 1774342800000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 49,
+        "output_tokens": 1577,
+        "total_tokens": 33134
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "6b750f96-b30f-470e-9390-5631841881d1",
+      "sessionKey": "agent:main:cron:f4b6a9ff-4350-4825-8720-55a365d2591b:run:6b750f96-b30f-470e-9390-5631841881d1"
+    }
+  ],
+  "total": 5,
+  "offset": 0,
+  "limit": 50,
+  "hasMore": false,
+  "nextOffset": null
+}

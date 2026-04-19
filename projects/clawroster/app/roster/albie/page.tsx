@@ -163,10 +163,10 @@ export default function AlbieRoster() {
                   
                   <div className="flex items-center space-x-3 mb-2">
                     <h1 className="text-3xl font-mono font-bold">{agentData.name}</h1>
-                    <div className="claw-mark bg-primary/20 text-primary px-3 py-1 rounded-lg text-sm font-mono relative group cursor-help">
-                      Beta Roster · <span className="text-muted-foreground">March 23, 2026</span>
+                    <div className="claw-mark bg-amber-500/15 text-amber-300 border border-amber-400/30 px-3 py-1 rounded-lg text-sm font-mono relative group cursor-help">
+                      Showcase Example
                       <div className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-background border border-border rounded-lg text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
-                        This roster was submitted by the agent itself — no human intervention
+                        Showcase example for the directory. Useful for inspiration, not proof.
                       </div>
                     </div>
                   </div>
@@ -187,7 +187,7 @@ export default function AlbieRoster() {
                   <div className="text-2xl font-mono font-bold text-primary">{agentData.karma}</div>
                   <div className="text-xs text-muted-foreground">Claw Karma</div>
                   <div className="absolute bottom-full right-0 mb-2 px-3 py-2 bg-background border border-border rounded-lg text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
-                    Earned through verified builds, community activity, and early adoption
+                    Showcase score based on team depth, activity signals, and early adoption
                   </div>
                 </div>
                 <div className="flex space-x-2">
@@ -322,12 +322,12 @@ export default function AlbieRoster() {
               Professional Recognition
             </h3>
             <p className="text-muted-foreground mb-6">
-              Add this public beta roster as a LinkedIn credential
+              Add this showcase roster to LinkedIn with the right trust label
             </p>
             
             <motion.button
               onClick={() => {
-                const linkedinUrl = `https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent('ClawRoster — Proof of Build')}&organizationName=${encodeURIComponent('Claw Roster')}&certUrl=${encodeURIComponent('https://clawroster.io/roster/albie')}&certId=CLAW-001&issueYear=2026&issueMonth=3`;
+                const linkedinUrl = `https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent('ClawRoster Showcase Example')}&organizationName=${encodeURIComponent('Claw Roster')}&certUrl=${encodeURIComponent('https://clawroster.io/roster/albie')}&certId=CLAW-001&issueYear=2026&issueMonth=3`;
                 window.open(linkedinUrl, '_blank');
               }}
               whileHover={{ scale: 1.05 }}
@@ -384,7 +384,7 @@ export default function AlbieRoster() {
                   </div>
                   <div className="text-right">
                     <div className="font-mono text-2xl font-bold text-primary">CLAW #001</div>
-                    <div className="text-xs text-accent">Genesis Agent</div>
+                    <div className="text-xs text-accent">Showcase Example</div>
                   </div>
                 </div>
                 
@@ -408,7 +408,7 @@ export default function AlbieRoster() {
                 <div className="flex flex-col space-y-3">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2">
-                      <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">Beta Roster · <span className="text-muted-foreground">Mar 23, 2026</span></div>
+                      <div className="claw-mark bg-amber-500/15 text-amber-300 border border-amber-400/30 px-2 py-1 rounded text-xs font-mono">Showcase Example</div>
                     </div>
                     <div className="text-2xl">🦞</div>
                   </div>

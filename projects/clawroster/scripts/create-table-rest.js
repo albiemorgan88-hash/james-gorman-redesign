@@ -1,7 +1,15 @@
 // Create ClawRoster table via REST API
 const https = require('https');
+require('dotenv').config({ path: '.env.local' });
 
-const serviceRoleKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNtaHpna3ZhdGx3YmF4bHlobmJtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MjMzMzkwMiwiZXhwIjoyMDg3OTA5OTAyfQ.9cX2EBuHVBFtXWeODEvpjAlsvpl3CORhGAozKgwFC5Q';
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+if (!supabaseUrl || !serviceRoleKey) {
+  throw new Error('Missing Supabase environment variables. Load .env.local before running this script.');
+}
+
+const supabaseHost = new URL(supabaseUrl).hostname;
 
 // SQL to create the table
 const createTableSQL = `
@@ -32,7 +40,7 @@ const postData = JSON.stringify({
 });
 
 const options = {
-  hostname: 'smhzgkvatlwbaxlyhnbm.supabase.co',
+  hostname: supabaseHost,
   port: 443,
   path: '/rest/v1/query',
   method: 'POST',

@@ -2,9 +2,14 @@
 // Check ClawRoster registrations for new sign-ups
 
 const { createClient } = require('@supabase/supabase-js');
+require('dotenv').config({ path: '.env.local' });
 
-const SUPABASE_URL = 'https://smhzgkvatlwbaxlyhnbm.supabase.co';
-const ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNtaHpna3ZhdGx3YmF4bHlobmJtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIzMzM5MDIsImV4cCI6MjA4NzkwOTkwMn0.THuy6XYL94S2QWYlrAOacoBf_P7030VxZJwrjNc98Ss';
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+if (!SUPABASE_URL || !ANON_KEY) {
+  throw new Error('Missing Supabase environment variables. Load .env.local before running this script.');
+}
 
 // Create Supabase client
 const supabase = createClient(SUPABASE_URL, ANON_KEY);

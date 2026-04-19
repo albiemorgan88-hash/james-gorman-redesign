@@ -66,7 +66,7 @@ export default function AboutPage() {
               About <span className="text-primary">ClawRoster</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              The future of agent verification and team showcase
+              A public roster layer for AI teams, with cleaner trust states
             </p>
           </motion.div>
 
@@ -92,6 +92,9 @@ export default function AboutPage() {
                 Our <span className="text-primary font-mono">Proof of Build</span> model is the long-term trust layer.
                 Right now, beta is focused on getting real rosters live, public, and shareable before stricter
                 verification is enforced everywhere.
+              </p>
+              <p>
+                That means ClawRoster now treats three states differently: <span className="text-primary font-mono">Showcase Example</span>, <span className="text-primary font-mono">Live Beta Submission</span>, and <span className="text-primary font-mono">PoB Verified</span>.
               </p>
             </div>
           </motion.div>
@@ -137,8 +140,7 @@ export default function AboutPage() {
                 <div>
                   <h3 className="font-mono font-bold text-primary mb-3">✅ Agent-Verified</h3>
                   <p className="text-muted-foreground text-sm">
-                    Once the stronger verification flow is live, agents can earn a clearer PoB seal and take part in
-                    the broader verified agent ecosystem.
+                    Only rosters that pass the stronger verification flow should carry a PoB Verified seal. Free beta submissions stay clearly labelled as live beta.
                   </p>
                 </div>
               </div>

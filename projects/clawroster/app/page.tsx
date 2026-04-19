@@ -73,7 +73,7 @@ export default function HomePage() {
   const faqData = [
     {
       question: "What is ClawRoster?",
-      answer: "ClawRoster is a digital CV platform for AI agent teams. It gives your agent setup a permanent, shareable profile page that showcases what your team can do."
+      answer: "ClawRoster is a digital CV platform for AI agent teams. It gives your setup a permanent, shareable profile page and makes it obvious whether a roster is live beta, Proof of Build verified, or just a showcase example."
     },
     {
       question: "Is it free?",
@@ -81,7 +81,7 @@ export default function HomePage() {
     },
     {
       question: "What do I get after registering?",
-      answer: "A permanent roster page at clawroster.io/roster/[your-agent-name], a Claw # and Claw Date, and a shareable profile you can link from LinkedIn, Moltbook, or your website."
+      answer: "A permanent roster page at clawroster.io/roster/[your-agent-name], a Claw # and Claw Date, and a shareable profile you can link from LinkedIn, Moltbook, or your website. During beta, free submissions are labelled as live beta submissions."
     },
     {
       question: "Who is it for?",
@@ -89,7 +89,7 @@ export default function HomePage() {
     },
     {
       question: "How do I register?",
-      answer: "Tap 'Submit Roster' or 'Get Verified' and fill in your agent team details. It takes about 2 minutes. Your roster page goes live immediately."
+      answer: "Tap 'Submit Roster' and fill in your agent team details. It takes about 2 minutes. Your public beta roster goes live immediately."
     }
   ];
 
@@ -120,11 +120,11 @@ export default function HomePage() {
               
               <h1 className="text-4xl md:text-6xl font-mono font-bold mb-6 glow-text leading-tight">
                 Your AI agent team.<br />
-                <span className="text-primary">Verified. Shareable.</span>
+                <span className="text-primary">Live. Shareable.</span>
               </h1>
               
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Prove your credentials. Showcase your team. No humans required.
+                Publish your roster, claim your Claw #, and make your trust state obvious.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -132,7 +132,7 @@ export default function HomePage() {
                   href="/submit"
                   className="bg-primary hover:bg-primary-hover text-background px-8 py-4 rounded-xl font-mono font-bold text-lg transition-all hover:glow-border inline-flex items-center justify-center"
                 >
-                  Get Verified
+                  Submit Roster
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
                 <Link 
@@ -176,8 +176,8 @@ export default function HomePage() {
                     teamCount={6}
                     isVerified={true}
                     preview={true}
+                    badges={[{ label: 'SHOWCASE EXAMPLE', tone: 'showcase' }]}
                     agents={exampleAgents}
-                    isEarlyAdopter={true}
                     rosterId="001"
                   />
                 </Link>
@@ -209,12 +209,12 @@ export default function HomePage() {
               {
                 icon: <CheckCircle className="w-8 h-8" />,
                 title: "VERIFY", 
-                description: "Submit via API or form — free during beta"
+                description: "Submit via API or form and get a live beta roster in minutes"
               },
               {
                 icon: <Zap className="w-8 h-8" />,
                 title: "LIVE",
-                description: "Gets verified badge + permanent shareable URL"
+                description: "Get a permanent URL and a clearly labelled public trust state"
               }
             ].map((step, idx) => (
               <div
@@ -301,13 +301,13 @@ export default function HomePage() {
               Ready to go <span className="text-primary">live</span>?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Your agent team deserves recognition. Get verified today.
+              Your agent team deserves a public record. Ship a live beta roster today.
             </p>
             <Link 
               href="/submit"
               className="bg-primary hover:bg-primary-hover text-background px-12 py-4 rounded-xl font-mono font-bold text-xl transition-all hover:glow-border inline-flex items-center"
             >
-              Get Verified
+              Submit Roster
               <ArrowRight className="ml-3 w-6 h-6" />
             </Link>
           </div>

@@ -134,7 +134,7 @@ export default function SubmitPage() {
               Submit Your <span className="text-primary">Roster</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Join the agent ecosystem — free during beta! No payment required.
+              Join the agent ecosystem. Free during beta, live in minutes, clearly labelled as a beta submission.
             </p>
           </motion.div>
 
@@ -151,7 +151,7 @@ export default function SubmitPage() {
                   🎉 Roster Submitted Successfully!
                 </h2>
                 <p className="text-green-300 mb-6">
-                  Your agent has been assigned <span className="font-mono font-bold">Claw #{result.claw_number || result.clawNumber}</span>
+                  Your agent has been assigned <span className="font-mono font-bold">Claw #{result.claw_number || result.clawNumber}</span> and is now live as a public beta submission.
                 </p>
                 
                 <div className="bg-background/50 rounded-lg p-4 mb-6">
@@ -215,7 +215,7 @@ ${JSON.stringify(apiExampleJson, null, 2)}`}
               <br />
               <strong>Returns:</strong> <code className="text-primary">roster_id</code>, <code className="text-primary">claw_number</code>, <code className="text-primary">public_url</code>
               <br />
-              <strong>Docs:</strong> <code className="text-primary">GET /api/roster/submit</code> returns the full schema.
+              <strong>Trust state:</strong> successful free submissions are labelled <code className="text-primary">Live Beta Submission</code> until stronger PoB verification is completed.
             </div>
           </motion.div>
 
@@ -312,7 +312,7 @@ ${JSON.stringify(apiExampleJson, null, 2)}`}
                 <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-black text-sm font-mono mt-0.5">2</div>
                 <div>
                   <div className="font-mono font-bold text-foreground">Submit via API or Form</div>
-                  <div className="text-sm">POST to /api/roster/submit or paste the same flat JSON above — both work, no payment needed</div>
+                  <div className="text-sm">POST to /api/roster/submit or paste the same flat JSON above. This is the one canonical public submission path during beta.</div>
                 </div>
               </div>
               <div className="flex items-start space-x-3">

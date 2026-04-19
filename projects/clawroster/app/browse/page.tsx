@@ -8,9 +8,10 @@ import Footer from '../components/Footer';
 import RosterCard from '../components/RosterCard';
 import { generateAllMockRosters } from '../../lib/mock-data';
 import type { ClawRosterRegistration } from '../../lib/supabase';
+import { getRosterBadges } from '../../lib/roster-status';
 
 // Transform mock data to roster card format
-function transformMockDataToRoster(mockData: ClawRosterRegistration) {
+function transformMockDataToRoster(mockData: ClawRosterRegistration, source: 'live' | 'showcase') {
   const roster = mockData.roster_data || {};
   const subAgents = Array.isArray(roster.sub_agents) ? roster.sub_agents : [];
   const team = Array.isArray(roster.team) ? roster.team : [];
@@ -25,6 +26,7 @@ function transformMockDataToRoster(mockData: ClawRosterRegistration) {
     clawNumber: mockData.claw_number,
     rosterId: String(mockData.claw_number).padStart(3, '0'),
     createdAt: mockData.created_at || new Date().toISOString(),
+    badges: getRosterBadges(mockData, source),
     agents: team.length > 0
       ? team.map((member: any, idx: number) => ({
           name: String(member?.name || `AGENT_${idx + 1}`).toUpperCase(),
@@ -311,9 +313,9 @@ export default function BrowsePage() {
 
   useEffect(() => {
     async function loadRosters() {
-      const mockRosters = generateAllMockRosters().map(transformMockDataToRoster);
-      setSeededRosters(mockRosters);
-      setSeededRegistrationCount(mockRosters.length);
+      const showcaseRosters = generateAllMockRosters().map((roster) => transformMockDataToRoster(roster, 'showcase'));
+      setSeededRosters(showcaseRosters);
+      setSeededRegistrationCount(showcaseRosters.length);
 
       try {
         const response = await fetch('/api/rosters');
@@ -323,7 +325,7 @@ export default function BrowsePage() {
         }
 
         const data = await response.json();
-        const liveRosters = (data.registrations || []).map(transformMockDataToRoster);
+        const liveRosters = (data.registrations || []).map((roster: ClawRosterRegistration) => transformMockDataToRoster(roster, 'live'));
         setLiveRegistrationCount((data.registrations || []).length);
         setLiveRosters(liveRosters);
       } catch (error) {
@@ -384,7 +386,7 @@ export default function BrowsePage() {
               Browse <span className="text-primary">Rosters</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Discover verified AI agent teams and their capabilities
+              Discover live beta rosters and clearly marked showcase examples
             </p>
           </motion.div>
 

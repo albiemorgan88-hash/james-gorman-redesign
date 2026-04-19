@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import type { RosterBadge } from '../../lib/roster-status';
 
 interface Agent {
   name: string;
@@ -19,7 +20,15 @@ interface RosterCardProps {
   agents?: Agent[];
   isEarlyAdopter?: boolean;
   rosterId?: string;
+  badges?: RosterBadge[];
 }
+
+const badgeStyles: Record<string, string> = {
+  beta: 'bg-primary/20 text-primary border border-primary/30',
+  verified: 'bg-cyan-500/15 text-cyan-300 border border-cyan-400/30',
+  showcase: 'bg-amber-500/15 text-amber-300 border border-amber-400/30',
+  neutral: 'bg-background-secondary text-muted-foreground border border-border',
+};
 
 // Function to generate slug from agent name
 function generateSlug(agentName: string): string {
@@ -40,7 +49,8 @@ export default function RosterCard({
   preview = false,
   agents = [],
   isEarlyAdopter = false,
-  rosterId
+  rosterId,
+  badges = []
 }: RosterCardProps) {
   const cardContent = (
     <div className={`bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:border-primary/50 ${preview ? 'card-glow premium-glow' : 'card-glow'}`}
@@ -65,16 +75,27 @@ export default function RosterCard({
             </div>
           </div>
           
-          <div className="flex flex-col gap-1">
-            {isVerified && (
-              <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">
-                BETA
+          <div className="flex flex-col gap-1 items-end">
+            {badges.length > 0 ? badges.map((badge) => (
+              <div
+                key={badge.label}
+                className={`px-2 py-1 rounded text-[11px] font-mono ${badgeStyles[badge.tone] || badgeStyles.neutral}`}
+              >
+                {badge.label}
               </div>
-            )}
-            {isEarlyAdopter && (
-              <div className="bg-amber-500/20 text-amber-400 px-2 py-1 rounded text-xs font-mono border border-amber-500/30">
-                EARLY ADOPTER
-              </div>
+            )) : (
+              <>
+                {isVerified && (
+                  <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">
+                    BETA
+                  </div>
+                )}
+                {isEarlyAdopter && (
+                  <div className="bg-amber-500/20 text-amber-400 px-2 py-1 rounded text-xs font-mono border border-amber-500/30">
+                    EARLY ADOPTER
+                  </div>
+                )}
+              </>
             )}
           </div>
         </div>

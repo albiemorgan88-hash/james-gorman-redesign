@@ -1,0 +1,105 @@
+{
+  "entries": [
+    {
+      "ts": 1776069015073,
+      "jobId": "36b88325-1880-41d0-b519-81b254b94707",
+      "action": "finished",
+      "status": "error",
+      "error": "⚠️ You have hit your ChatGPT usage limit (plus plan). Try again in ~5070 min.",
+      "summary": "⚠️ You have hit your ChatGPT usage limit (plus plan). Try again in ~5070 min.",
+      "runAtMs": 1776069000023,
+      "durationMs": 15004,
+      "nextRunAtMs": 1776673800000,
+      "model": "gpt-5.4",
+      "provider": "openai-codex",
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "1ec38bba-6f05-4f7a-8bc8-a71bbf3f84a5",
+      "sessionKey": "agent:main:cron:36b88325-1880-41d0-b519-81b254b94707:run:1ec38bba-6f05-4f7a-8bc8-a71bbf3f84a5"
+    },
+    {
+      "ts": 1775464262456,
+      "jobId": "36b88325-1880-41d0-b519-81b254b94707",
+      "action": "finished",
+      "status": "error",
+      "error": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.",
+      "summary": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.",
+      "runAtMs": 1775464200009,
+      "durationMs": 62442,
+      "nextRunAtMs": 1776069000000,
+      "model": "claude-opus-4-6",
+      "provider": "anthropic",
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "d56dc89b-c529-4512-bb7c-a2bf9aed549b",
+      "sessionKey": "agent:main:cron:36b88325-1880-41d0-b519-81b254b94707:run:d56dc89b-c529-4512-bb7c-a2bf9aed549b"
+    },
+    {
+      "ts": 1774861824415,
+      "jobId": "36b88325-1880-41d0-b519-81b254b94707",
+      "action": "finished",
+      "status": "ok",
+      "runAtMs": 1774861809361,
+      "durationMs": 15050,
+      "nextRunAtMs": 1775464200000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 21,
+        "output_tokens": 450,
+        "total_tokens": 26757
+      },
+      "delivered": false,
+      "deliveryStatus": "not-delivered",
+      "sessionId": "e94b30cb-9824-47d5-a865-fd5887b9b8e3",
+      "sessionKey": "agent:main:cron:36b88325-1880-41d0-b519-81b254b94707:run:e94b30cb-9824-47d5-a865-fd5887b9b8e3"
+    },
+    {
+      "ts": 1774258400306,
+      "jobId": "36b88325-1880-41d0-b519-81b254b94707",
+      "action": "finished",
+      "status": "ok",
+      "summary": "Right, time to fire up the Monday Audit phase. Monday morning SEO ritual — let's get the full health check on bluecanvas.ai done.",
+      "runAtMs": 1774258200013,
+      "durationMs": 200275,
+      "nextRunAtMs": 1774859400000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 21,
+        "output_tokens": 791,
+        "total_tokens": 25293
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "f6d714d6-c68c-4f33-9c58-da7d20ac7b36",
+      "sessionKey": "agent:main:cron:36b88325-1880-41d0-b519-81b254b94707:run:f6d714d6-c68c-4f33-9c58-da7d20ac7b36"
+    },
+    {
+      "ts": 1773653417306,
+      "jobId": "36b88325-1880-41d0-b519-81b254b94707",
+      "action": "finished",
+      "status": "ok",
+      "summary": "<invoke name=\"sessions_spawn\">\n<parameter name=\"runtime\">subagent</parameter>\n<parameter name=\"mode\">run</parameter>\n<parameter name=\"task\">SEO Engine v2.1 PHASE 1 AUDIT: Monday audit for bluecanvas.ai. Run complete technical + content audit following the skill instructions. Check PageSpeed, meta tags, broken links, sitemap, Core Web Vitals, H1 structure, schema markup, content depth, internal linking, and on-page SEO checklist. Save comprehensive report to reports/ directory. Include specific recommendations with fix priorities.</parameter>\n<parameter name=\"label\">seo-audit-monday</parameter>\n<parameter name=\"cleanup\">delete</parameter>\n<parameter name=\"timeoutSeconds\">300</parameter>\n</invoke>",
+      "runAtMs": 1773653400070,
+      "durationMs": 17227,
+      "nextRunAtMs": 1774258200000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 16,
+        "output_tokens": 418,
+        "total_tokens": 24582
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "52a88ffb-1a80-49d5-8b35-28973a259d51",
+      "sessionKey": "agent:main:cron:36b88325-1880-41d0-b519-81b254b94707:run:52a88ffb-1a80-49d5-8b35-28973a259d51"
+    }
+  ],
+  "total": 5,
+  "offset": 0,
+  "limit": 50,
+  "hasMore": false,
+  "nextOffset": null
+}

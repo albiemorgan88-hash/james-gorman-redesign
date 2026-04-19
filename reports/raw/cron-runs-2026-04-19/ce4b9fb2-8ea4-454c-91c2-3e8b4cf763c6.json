@@ -1,0 +1,152 @@
+{
+  "entries": [
+    {
+      "ts": 1776448826764,
+      "jobId": "ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6",
+      "action": "finished",
+      "status": "ok",
+      "summary": "Ardmore Weekly Draw triggered successfully.\n\nWinning numbers:\n67\n469\n373\n\nResults:\n1st prize, number 67: Conor King won £65.00\n2nd prize, number 469: Vicky won £39.00\n3rd prize, number 373: Vicky won £26.00\n\nTotal pot size:\n£260.00\n\nClub share:\n£104.00\n\nParticipants emailed:\n16\n\nErrors:\nNone",
+      "runAtMs": 1776448800010,
+      "durationMs": 26749,
+      "nextRunAtMs": 1777053600000,
+      "model": "gpt-5.4",
+      "provider": "openai-codex",
+      "usage": {
+        "input_tokens": 10276,
+        "output_tokens": 471,
+        "total_tokens": 12858
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "0386c71d-47f4-4d82-b3a0-8a433ad26ac4",
+      "sessionKey": "agent:main:cron:ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6:run:0386c71d-47f4-4d82-b3a0-8a433ad26ac4"
+    },
+    {
+      "ts": 1775844026665,
+      "jobId": "ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6",
+      "action": "finished",
+      "status": "ok",
+      "summary": "Ardmore Friday Draw triggered successfully.\n\nWinning numbers: 386, 403, 108\n\nPrizes:\n1st: John Crawford, £65.25\n2nd: Damien Gallagher, £39.15\n3rd: Unknown, £26.10\n\nTotal pot: £261.00\nParticipants emailed: 30\nErrors: none",
+      "runAtMs": 1775844000010,
+      "durationMs": 26653,
+      "nextRunAtMs": 1776448800000,
+      "model": "gpt-5.4",
+      "provider": "openai-codex",
+      "usage": {
+        "input_tokens": 15397,
+        "output_tokens": 430,
+        "total_tokens": 15479
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "6ae5a5dc-bee5-4252-a257-98f47e29a91c",
+      "sessionKey": "agent:main:cron:ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6:run:6ae5a5dc-bee5-4252-a257-98f47e29a91c"
+    },
+    {
+      "ts": 1775239262116,
+      "jobId": "ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6",
+      "action": "finished",
+      "status": "error",
+      "error": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.",
+      "summary": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.",
+      "runAtMs": 1775239200010,
+      "durationMs": 62097,
+      "nextRunAtMs": 1775844000000,
+      "model": "claude-opus-4-6",
+      "provider": "anthropic",
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "9c7bd0ba-aa74-4d82-b462-99f123d0362a",
+      "sessionKey": "agent:main:cron:ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6:run:9c7bd0ba-aa74-4d82-b462-99f123d0362a"
+    },
+    {
+      "ts": 1774638044181,
+      "jobId": "ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6",
+      "action": "finished",
+      "status": "ok",
+      "summary": "**ARDMORE CRICKET CLUB WEEKLY DRAW #4 COMPLETE** 🎉\n\n**Winning Numbers:** 222, 300, 96\n\n**Winners:**\n- 🥇 **1st Place (222):** Samantha polland - £62.00\n- 🥈 **2nd Place (300):** Joseph Lynch - £37.20  \n- 🥉 **3rd Place (96):** Unknown - £24.80\n\n**Draw Stats:**\n- **Total Pot:** £248.00 (248 entries)\n- **Club Share:** £99.20 (40%)\n- **Platform Fee:** £18.60 + £6.20 processing\n- **Participants Emailed:** 34 members\n- **Payouts Created:** 5\n\nDraw completed successfully at 7:00 PM Friday. All participants have been notified via email from draws@ardmorecricket.com.",
+      "runAtMs": 1774638000007,
+      "durationMs": 44173,
+      "nextRunAtMs": 1775239200000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 15,
+        "output_tokens": 492,
+        "total_tokens": 19939
+      },
+      "delivered": false,
+      "deliveryStatus": "not-delivered",
+      "sessionId": "59f09675-8b3d-4201-a999-9129fe454d6e",
+      "sessionKey": "agent:main:cron:ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6:run:59f09675-8b3d-4201-a999-9129fe454d6e"
+    },
+    {
+      "ts": 1774033225700,
+      "jobId": "ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6",
+      "action": "finished",
+      "status": "ok",
+      "summary": "**ARDMORE CRICKET CLUB WEEKLY DRAW RESULTS — FRIDAY 20TH MARCH 2026**\n\n**WINNING NUMBERS:** 227, 414, 105\n\n**WINNERS:**\n- **1st Place:** Alfie McAllister (Number 227) — £57.00\n- **2nd Place:** Dessie Brolly (Number 414) — £34.20 \n- **3rd Place:** Unknown (Number 105) — £22.80\n\n**DRAW STATS:**\n- Total participants: 228 entries\n- Total pot: £228.00\n- Prize distribution: £114.00 to winners, £91.20 to club, £17.10 platform fee, £5.70 fees\n- Participants emailed: 32\n- Payouts created: 5\n\nDraw completed successfully — all participants notified via email from draws@ardmorecricket.com.",
+      "runAtMs": 1774033200012,
+      "durationMs": 25679,
+      "nextRunAtMs": 1774638000000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 15,
+        "output_tokens": 397,
+        "total_tokens": 17972
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "873df2a4-fabc-4771-9dc2-47bdd142e1e9",
+      "sessionKey": "agent:main:cron:ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6:run:873df2a4-fabc-4771-9dc2-47bdd142e1e9"
+    },
+    {
+      "ts": 1773428428169,
+      "jobId": "ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6",
+      "action": "finished",
+      "status": "ok",
+      "summary": "Ardmore Friday draw failed to run.\n\nError:\n- API returned HTTP 500\n- Message: Failed to create draw record\n\nWhat I tried:\n- Triggered: https://ardmorecricket.com/api/draw?secret=ardmore_draw_2026_secret\n- Retried once\n- Same result both times\n\nNo draw results are available because the draw was not completed, so I can’t report:\n- Winning numbers\n- Prize winners / amounts\n- Total pot size\n- Number of participants emailed\n\nLooks like the failure happened while creating the draw record, likely in the database/Supabase step.",
+      "runAtMs": 1773428400015,
+      "durationMs": 28135,
+      "nextRunAtMs": 1774033200000,
+      "model": "gpt-5.4",
+      "provider": "openai-codex",
+      "usage": {
+        "input_tokens": 13197,
+        "output_tokens": 515,
+        "total_tokens": 17778
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "d520b1c4-1cf1-4318-b1c8-4c4cc8ea5922",
+      "sessionKey": "agent:main:cron:ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6:run:d520b1c4-1cf1-4318-b1c8-4c4cc8ea5922"
+    },
+    {
+      "ts": 1772823621487,
+      "jobId": "ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6",
+      "action": "finished",
+      "status": "ok",
+      "summary": "Subagent dispatched to trigger the draw — I'll report back to you as soon as results come in, Phil. 🏏",
+      "runAtMs": 1772823600013,
+      "durationMs": 21464,
+      "nextRunAtMs": 1773428400000,
+      "model": "claude-opus-4-6",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 4,
+        "output_tokens": 272,
+        "total_tokens": 16799
+      },
+      "delivered": false,
+      "deliveryStatus": "not-delivered",
+      "sessionId": "ca865ece-54e5-4799-a16a-35f924ba47bb",
+      "sessionKey": "agent:main:cron:ce4b9fb2-8ea4-454c-91c2-3e8b4cf763c6:run:ca865ece-54e5-4799-a16a-35f924ba47bb"
+    }
+  ],
+  "total": 7,
+  "offset": 0,
+  "limit": 50,
+  "hasMore": false,
+  "nextOffset": null
+}

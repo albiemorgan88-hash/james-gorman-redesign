@@ -1,0 +1,192 @@
+{
+  "entries": [
+    {
+      "ts": 1776416876989,
+      "jobId": "63f5748d-d7d4-4927-9bd5-14c86054b706",
+      "action": "finished",
+      "status": "error",
+      "error": "cron: job execution timed out",
+      "runAtMs": 1776416156886,
+      "durationMs": 600018,
+      "nextRunAtMs": 1777017600000,
+      "deliveryStatus": "unknown"
+    },
+    {
+      "ts": 1775808531434,
+      "jobId": "63f5748d-d7d4-4927-9bd5-14c86054b706",
+      "action": "finished",
+      "status": "ok",
+      "summary": "Saved: reports/seo-weekly-2026-04-10.md\n\nWeekly SEO read:\n- Both sites are up and healthy today.\n- Live reporting is still blocked: GSC/GA4 auth failed, Google Ads returned invalid_grant, Ahrefs on openclaw hit “signed out because this account is being used on another device”.\n\nBlue Canvas:\n- Last clean GSC snapshot on file: 5 clicks (-29% WoW), 441 impressions (+24%), avg position 8.2.\n- Last clean GA4 snapshot: 107 sessions (-37.8% WoW), 0 conversions.\n- Best query cluster still looks the same: ai consultancy for small business, ai consultants for small business, ai consultancy northern ireland.\n- “Near me” terms were ranking 1.0 to 1.5, so the issue looks more like CTR / conversion path than pure ranking.\n- Ahrefs on file: baseline DR 19, 13 backlinks, 11 ref domains. Later on-file dashboard snapshot suggests DR 26, but still weak keyword footprint.\n\nUK Trade Jobs:\n- Last clean GSC snapshot on file: 10 clicks (+900% WoW), 792 impressions (+118%), avg position 28.6.\n- Strongest content/page signals: /careers/switching-to-trades, bricklayer-birmingham, engineers-oil-and-gas-london, tiler-belfast.\n- Biggest upside remains electrician/trade-career queries.\n- Ahrefs on file: baseline DR 0, 1 backlink, 1 ref domain. Later on-file snapshot suggests 16 ref domains and 5 organic keywords, so link traction was improving.\n\nCompetitor gap:\n- brainpool.ai remains the real benchmark: DR 42, 555 ref domains, 100 organic keywords.\n- iwantmore.ai is the nearer-term target: DR 2.4, 126 ref domains, 26 keywords.\n- Main gap is still authority and linking root domains, not lack of content ideas.\n\nTop recommendations for next week:\n1. Re-auth Google stack first, GSC + GA4 + Google Ads, so reporting stops being half-blind.\n2. Fix Blue Canvas CTR + conversion path, especially the small-business cluster and ai consultancy northern ireland.\n3. Resolve the Ahrefs session conflict, then run the real live Content Gap + Backlink Gap pull vs brainpool.ai and iwantmore.ai.\n\nBottom line:\n- Blue …",
+      "runAtMs": 1775808000009,
+      "durationMs": 411417,
+      "nextRunAtMs": 1776412800000,
+      "model": "gpt-5.4",
+      "provider": "openai-codex",
+      "usage": {
+        "input_tokens": 159329,
+        "output_tokens": 13636,
+        "total_tokens": 67737
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "2c202b00-5436-4adf-a19e-f4eb554b0d76",
+      "sessionKey": "agent:main:cron:63f5748d-d7d4-4927-9bd5-14c86054b706:run:2c202b00-5436-4adf-a19e-f4eb554b0d76"
+    },
+    {
+      "ts": 1775203313803,
+      "jobId": "63f5748d-d7d4-4927-9bd5-14c86054b706",
+      "action": "finished",
+      "status": "error",
+      "error": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.",
+      "summary": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.",
+      "runAtMs": 1775203200010,
+      "durationMs": 62143,
+      "nextRunAtMs": 1775808000000,
+      "model": "claude-opus-4-6",
+      "provider": "anthropic",
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "0ca7ec6d-e074-427f-959a-11e4341fdc27",
+      "sessionKey": "agent:main:cron:63f5748d-d7d4-4927-9bd5-14c86054b706:run:0ca7ec6d-e074-427f-959a-11e4341fdc27"
+    },
+    {
+      "ts": 1774602051602,
+      "jobId": "63f5748d-d7d4-4927-9bd5-14c86054b706",
+      "action": "finished",
+      "status": "error",
+      "error": "⚠️ API rate limit reached. Please try again later.",
+      "summary": "⚠️ API rate limit reached. Please try again later.",
+      "runAtMs": 1774602000010,
+      "durationMs": 26286,
+      "nextRunAtMs": 1775203200000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "delivered": false,
+      "deliveryStatus": "not-delivered",
+      "deliveryError": "⚠️ API rate limit reached. Please try again later.",
+      "sessionId": "64a620c7-d1ef-401d-ad6b-8a51abc42af1",
+      "sessionKey": "agent:main:cron:63f5748d-d7d4-4927-9bd5-14c86054b706:run:64a620c7-d1ef-401d-ad6b-8a51abc42af1"
+    },
+    {
+      "ts": 1773997645646,
+      "jobId": "63f5748d-d7d4-4927-9bd5-14c86054b706",
+      "action": "finished",
+      "status": "ok",
+      "summary": "Now I'll spawn a subagent to execute the comprehensive SEO monitoring and reporting workflow, as this is a multi-step complex task that requires orchestration of multiple data sources and tools.",
+      "runAtMs": 1773997200015,
+      "durationMs": 386332,
+      "nextRunAtMs": 1774602000000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 25,
+        "output_tokens": 1418,
+        "total_tokens": 25939
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "002bbfa6-591e-4373-a603-20e133f913ff",
+      "sessionKey": "agent:main:cron:63f5748d-d7d4-4927-9bd5-14c86054b706:run:002bbfa6-591e-4373-a603-20e133f913ff"
+    },
+    {
+      "ts": 1773392997345,
+      "jobId": "63f5748d-d7d4-4927-9bd5-14c86054b706",
+      "action": "finished",
+      "status": "ok",
+      "summary": "SEO weekly done. Detailed report saved to:\nreports/seo-weekly-2026-03-13.md\n\nHeadline:\n- Blue Canvas is still showing ranking opportunity, but the measurement stack is a mess right now.\n- UK Trade Jobs still looks like the strongest organic growth story from the last clean dataset.\n- Google Ads is driving clicks, but £185.57 this week produced 0 tracked conversions.\n\nBlue Canvas\n- Last clean GSC weekly snapshot: 5 clicks (-29% WoW), 441 impressions (+24%), avg position 8.2 (improved from 10.0).\n- Best opportunities still sit around:\n  - “ai consultants for small business” — pos 6.7\n  - “ai consultancy for small business” — pos 8.3\n  - “ai consultancy northern ireland” — pos 6.4 weekly / 4.8 in baseline\n- Local intent remains strongest:\n  - “ai consulting near me” — pos 1.5\n  - “ai consultants near me” — pos 1.0\n- GA4 is the real problem: latest export showed 107 sessions (-37.8%), but today’s GA4 UI for the selected property says “No data received from your website yet.” That means tracking/property setup needs fixed before trusting any trend line.\n\nUK Trade Jobs\n- Last clean GSC weekly snapshot: 10 clicks (+900% WoW), 792 impressions (+118%), CTR up, avg position weaker at 28.6 because more long-tail terms are entering.\n- Top content/page: /careers/switching-to-trades\n- Best ranking/content opportunities:\n  - “become an electrician”\n  - “drainage engineer”\n  - “best trade jobs”\n\nGoogle Ads\n- This week: 1,395 impressions, 165 clicks, 11.83% CTR, £1.12 avg CPC, £185.57 spend, 0 conversions.\n- Best clicks, worst business outcome: loads of traffic, no measurable return.\n- Biggest wasted spend buckets remain broad commercial-ish terms like:\n  - ai solutions for business\n  - ai tools for business\n  - ai implementation\n- QS issues still there on “ai for small business” and “ai marketing for small business”.\n\nAhrefs / competitors\n- I did attempt the mandatory Ahrefs browser pull on app.ahrefs.com via the openclaw browser profile.\n- Blocker: Ahrefs session/login issue (“sig…",
+      "runAtMs": 1773392400020,
+      "durationMs": 530949,
+      "nextRunAtMs": 1773997200000,
+      "model": "gpt-5.4",
+      "provider": "openai-codex",
+      "usage": {
+        "input_tokens": 181010,
+        "output_tokens": 12933,
+        "total_tokens": 72788
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "52881277-88e0-408a-88b6-a311ef7ba642",
+      "sessionKey": "agent:main:cron:63f5748d-d7d4-4927-9bd5-14c86054b706:run:52881277-88e0-408a-88b6-a311ef7ba642"
+    },
+    {
+      "ts": 1772794501767,
+      "jobId": "63f5748d-d7d4-4927-9bd5-14c86054b706",
+      "action": "finished",
+      "status": "ok",
+      "summary": "📊 **Weekly SEO Report — 6 March 2026**\n\n**BLUE CANVAS (bluecanvas.ai)**\n🟢 Impressions: 441 (+24% WoW) | Position: 8.2 (improved from 10.0)\n🔴 Sessions: 107 (-38%) | Organic search: 11 sessions (-73%)\n🟢 Paid search: 11 sessions (+267%) — Google Ads ramping nicely\n⚠️ \"Near me\" queries dominating #1 — local SEO working well\n⚠️ Target keyword \"ai consultancy NI\" slipped to pos 6.4\n\nTop queries showing up: \"artificial intelligence consulting services\" (57 impr, pos 12.8), \"ai consultants for small business\" (31 impr, pos 6.7), \"ai consulting near me\" (26 impr, pos 1.5)\n\n**UK TRADE JOBS (uktradejobs.com)**\n🚀 Clicks: 10 (+900%) | Impressions: 792 (+118%)\nStar page: /careers/switching-to-trades (130 impressions)\nJob pages getting indexed & ranking — bricklayer Birmingham at pos 3.6\n\"Become an electrician\" = 38 impressions but pos 87 — huge content opp\n\n**🔴 CRITICAL ISSUES:**\n1. Zero GA4 conversion tracking — can't measure ROI on anything\n2. Organic search sessions collapsed 73% in GA4 (but GSC impressions UP — likely tracking/attribution issue, not ranking loss)\n3. Google Ads API still blocked (test token) — can't automate reporting\n\n**3 ACTIONS FOR NEXT WEEK:**\n1️⃣ **Set up GA4 key events** — contact form, CTA clicks, pricing page. We're flying blind without conversion data\n2️⃣ **Investigate organic session drop** — GA4 vs GSC mismatch suggests tracking issue, not ranking loss. Check GA4 code integrity\n3️⃣ **Create \"AI for Small Business\" landing page** — 55+ weekly impressions across variants at pos 6-8. Dedicated page could crack top 3\n\nFull report saved: `reports/seo-weekly-2026-03-06.md`",
+      "runAtMs": 1772794244074,
+      "durationMs": 257690,
+      "nextRunAtMs": 1773392400000,
+      "model": "claude-opus-4-6",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 17,
+        "output_tokens": 6603,
+        "total_tokens": 36536
+      },
+      "delivered": false,
+      "deliveryStatus": "not-delivered",
+      "sessionId": "f19d17c2-1741-4985-9518-beef0383a1cf",
+      "sessionKey": "agent:main:cron:63f5748d-d7d4-4927-9bd5-14c86054b706:run:f19d17c2-1741-4985-9518-beef0383a1cf"
+    },
+    {
+      "ts": 1772794128268,
+      "jobId": "63f5748d-d7d4-4927-9bd5-14c86054b706",
+      "action": "finished",
+      "status": "ok",
+      "summary": "📊 **Weekly SEO Report — 6 Mar 2026**\n\n**🔵 Blue Canvas (bluecanvas.ai)**\n• GSC: Impressions up 24% (441), avg position improved to 8.2 (from 10.0) — but clicks down 29% (5) and CTR dropped to 1.13%. Rankings improving, titles not converting.\n• GA4: Sessions down 38% (107), bounce rate spiked to 77%, avg duration collapsed from 4min→1.4min. Zero conversions. ⚠️ Needs investigation.\n• Traffic: 68% Direct, only 10% organic. Paid Search = 11 sessions.\n• 🏆 Ranking #1 for \"ai consulting near me\", \"ai consultants near me\", \"ai consulting services near me\"\n• Quick wins: \"ai consultants for small business\" cluster (55 imps, pos 6-8), \"artificial intelligence consulting services\" (85 imps, pos 12.8)\n\n**🟠 UK Trade Jobs (uktradejobs.com)**\n• 🚀 Clicks up 900% (1→10), impressions doubled (364→792). Breakout week.\n• /careers/switching-to-trades = 130 impressions, only 1.5% CTR — meta rewrite needed\n• \"Plumbing apprenticeship london\" at position 3.0, \"bricklaying jobs\" at #1\n• \"Become an electrician\" cluster (73+ imps) ranking page 8+ — needs dedicated content\n\n**💰 Google Ads:** API still blocked (test token). Manual dashboard check needed. GA4 shows 11 paid sessions.\n\n**3 Actions Next Week:**\n1. **Rewrite Blue Canvas titles/metas** — 310 homepage impressions at 1.6% CTR. Add \"small business\" + \"consulting services\" to title tags.\n2. **Publish electrician career guide on UKTJ** — 73+ impressions growing fast, needs a dedicated page.\n3. **Investigate BC engagement crash** — 38% session drop + 77% bounce rate. Check Clarity for bot traffic or UX issues.\n\nFull report: `reports/seo-weekly-2026-03-06.md`",
+      "runAtMs": 1772793894501,
+      "durationMs": 233763,
+      "nextRunAtMs": 1773392400000,
+      "model": "claude-opus-4-6",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 17,
+        "output_tokens": 6622,
+        "total_tokens": 40619
+      },
+      "delivered": false,
+      "deliveryStatus": "not-delivered",
+      "sessionId": "bee15254-f8db-4d8c-bf9f-09eff06ca915",
+      "sessionKey": "agent:main:cron:63f5748d-d7d4-4927-9bd5-14c86054b706:run:bee15254-f8db-4d8c-bf9f-09eff06ca915"
+    },
+    {
+      "ts": 1772790483683,
+      "jobId": "63f5748d-d7d4-4927-9bd5-14c86054b706",
+      "action": "finished",
+      "status": "ok",
+      "summary": "📊 **Weekly SEO Report — 6 Mar 2026**\n\n🔴 **ALL DATA SOURCES DOWN** — Google OAuth token has expired. No live data this week.\n\n**What broke:**\n- GSC (both sites): refresh token expired/revoked\n- GA4: same token issue\n- Google Ads API: developer token still test-level (can't hit production)\n\nThis is **3 consecutive weeks** without live SEO data (Feb 23 also failed).\n\n**Last known baselines (Feb 16):**\n- 78 sessions/week, 65 users\n- \"ai consultancy northern ireland\" → position 10.8 (almost page 1)\n- 9 organic sessions, 82% direct traffic\n- All 3 satellite sites at zero indexing\n\n**3 Actions for Next Week:**\n\n1. 🔴 **Fix OAuth tokens NOW** — I can set up a one-click localhost redirect script. You open a URL, click authorize, done. Without this we're flying blind. Takes 2 minutes.\n\n2. 🟡 **Apply for Google Ads API Basic access** — Go to API Centre in manager account (396-378-6948) and submit the form. Currently test-level = can't pull any campaign data via API.\n\n3. 🟡 **Backfill 3 weeks of data** — Once auth is fixed, pull GSC/GA4 data for Feb 16–Mar 6 to see if that position 10.8 for \"ai consultancy NI\" has moved to page 1 or slipped.\n\nReport saved: `reports/weekly-seo/2026-03-06.md`\n\nWant me to set up the OAuth re-auth script? It's a quick win that unblocks everything.",
+      "runAtMs": 1772790257630,
+      "durationMs": 226050,
+      "nextRunAtMs": 1773392400000,
+      "model": "claude-opus-4-6",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 27,
+        "output_tokens": 7090,
+        "total_tokens": 43595
+      },
+      "delivered": false,
+      "deliveryStatus": "not-delivered",
+      "sessionId": "f486d158-0aa9-4adf-8347-f5e58c2a35a5",
+      "sessionKey": "agent:main:cron:63f5748d-d7d4-4927-9bd5-14c86054b706:run:f486d158-0aa9-4adf-8347-f5e58c2a35a5"
+    },
+    {
+      "ts": 1772787949001,
+      "jobId": "63f5748d-d7d4-4927-9bd5-14c86054b706",
+      "action": "finished",
+      "status": "error",
+      "error": "cron: job execution timed out",
+      "runAtMs": 1772787600016,
+      "durationMs": 300007,
+      "nextRunAtMs": 1773392400000,
+      "deliveryStatus": "unknown"
+    }
+  ],
+  "total": 10,
+  "offset": 0,
+  "limit": 50,
+  "hasMore": false,
+  "nextOffset": null
+}

@@ -8,6 +8,7 @@ import Footer from '../../components/Footer';
 import { useState, useEffect } from 'react';
 import { generateAllMockRosters } from '../../../lib/mock-data';
 import type { ClawRosterRegistration } from '../../../lib/supabase';
+import { getLinkedInCredentialName, getRosterBadges, getRosterTrustCopy, type RosterSource } from '../../../lib/roster-status';
 
 // Function to generate slug from agent name
 function generateSlug(agentName: string): string {
@@ -87,11 +88,15 @@ const albieData = {
   ],
   rosterId: "001",
   clawNumber: 1,
-  registeredDate: "March 23, 2026"
+  registeredDate: "March 23, 2026",
+  source: 'showcase' as RosterSource,
+  paymentVerified: false,
+  badges: [{ label: 'SHOWCASE EXAMPLE', tone: 'showcase' as const }],
+  trustCopy: 'Showcase example for the directory. Useful for inspiration, not proof.'
 };
 
 // Function to transform database/mock data to agent data format
-function transformRegistrationToAgentData(mockData: ClawRosterRegistration) {
+function transformRegistrationToAgentData(mockData: ClawRosterRegistration, source: RosterSource) {
   const roster = mockData.roster_data || {};
   const nestedAgent = roster.agent || {};
   const subAgents = Array.isArray(roster.sub_agents) ? roster.sub_agents : [];
@@ -142,7 +147,11 @@ function transformRegistrationToAgentData(mockData: ClawRosterRegistration) {
     }],
     rosterId: String(mockData.claw_number).padStart(3, '0'),
     clawNumber: mockData.claw_number,
-    registeredDate: new Date(mockData.created_at || Date.now()).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+    registeredDate: new Date(mockData.created_at || Date.now()).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+    source,
+    paymentVerified: mockData.payment_verified,
+    badges: getRosterBadges(mockData, source),
+    trustCopy: getRosterTrustCopy(mockData, source),
   };
 }
 
@@ -172,7 +181,7 @@ export default function RosterPage({ params }: PageProps) {
 
         if (response.ok) {
           const data = await response.json();
-          setAgentData(transformRegistrationToAgentData(data.registration));
+          setAgentData(transformRegistrationToAgentData(data.registration, 'live'));
           setLoading(false);
           return;
         }
@@ -188,7 +197,7 @@ export default function RosterPage({ params }: PageProps) {
       });
 
       if (matchingRoster) {
-        setAgentData(transformRegistrationToAgentData(matchingRoster));
+        setAgentData(transformRegistrationToAgentData(matchingRoster, 'showcase'));
       } else {
         setAgentData(null);
       }
@@ -240,6 +249,7 @@ export default function RosterPage({ params }: PageProps) {
   }
 
   const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}/roster/${generateSlug(agentData.name)}`;
+  const linkedInCredentialName = getLinkedInCredentialName({ payment_verified: agentData.paymentVerified }, agentData.source);
   
   const shareToTwitter = () => {
     const text = `I just claimed CLAW #${agentData.rosterId} on @ClawRoster — the digital CV for AI operators. Public beta roster now live. What's your Claw Date? 🦞`;
@@ -328,12 +338,14 @@ export default function RosterPage({ params }: PageProps) {
                   
                   <div className="flex items-center space-x-3 mb-2">
                     <h1 className="text-3xl font-mono font-bold">{agentData.name}</h1>
-                    <div className="claw-mark bg-primary/20 text-primary px-3 py-1 rounded-lg text-sm font-mono relative group cursor-help">
-                      Beta Roster · <span className="text-muted-foreground">{agentData.registeredDate}</span>
-                      <div className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-background border border-border rounded-lg text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
-                        Public beta roster. Stronger verification and proof flows are being tightened.
+                    {agentData.badges.map((badge: any) => (
+                      <div key={badge.label} className="claw-mark bg-background-secondary text-primary px-3 py-1 rounded-lg text-sm font-mono relative group cursor-help border border-border">
+                        {badge.label}
+                        <div className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-background border border-border rounded-lg text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
+                          {agentData.trustCopy}
+                        </div>
                       </div>
-                    </div>
+                    ))}
                   </div>
                   <p className="text-xl text-muted-foreground mb-2">{agentData.role}</p>
                   <div className="flex items-center space-x-4 text-sm text-muted-foreground">
@@ -352,7 +364,7 @@ export default function RosterPage({ params }: PageProps) {
                   <div className="text-2xl font-mono font-bold text-primary">{agentData.karma}</div>
                   <div className="text-xs text-muted-foreground">Claw Karma</div>
                   <div className="absolute bottom-full right-0 mb-2 px-3 py-2 bg-background border border-border rounded-lg text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
-                    Earned through verified builds, community activity, and early adoption
+                    Beta-era score based on roster depth, activity signals, and early adoption
                   </div>
                 </div>
                 <div className="flex space-x-2">
@@ -485,12 +497,12 @@ export default function RosterPage({ params }: PageProps) {
               Professional Recognition
             </h3>
             <p className="text-muted-foreground mb-6">
-              Add this public beta roster as a LinkedIn credential
+              Add this roster to LinkedIn with the right trust label
             </p>
             
             <motion.button
               onClick={() => {
-                const linkedinUrl = `https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent('ClawRoster — Proof of Build')}&organizationName=${encodeURIComponent('Claw Roster')}&certUrl=${encodeURIComponent(shareUrl)}&certId=CLAW-${agentData.rosterId}&issueYear=2026&issueMonth=3`;
+                const linkedinUrl = `https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent(linkedInCredentialName)}&organizationName=${encodeURIComponent('Claw Roster')}&certUrl=${encodeURIComponent(shareUrl)}&certId=CLAW-${agentData.rosterId}&issueYear=2026&issueMonth=3`;
                 window.open(linkedinUrl, '_blank');
               }}
               whileHover={{ scale: 1.05 }}
@@ -548,7 +560,7 @@ export default function RosterPage({ params }: PageProps) {
                   <div className="text-right">
                     <div className="font-mono text-2xl font-bold text-primary">CLAW #{agentData.rosterId}</div>
                     <div className="text-xs text-accent">
-                      {agentData.clawNumber === 1 ? 'Genesis Agent' : 'Early Adopter'}
+                      {agentData.badges[0]?.label || 'PUBLIC ROSTER'}
                     </div>
                   </div>
                 </div>
@@ -573,7 +585,7 @@ export default function RosterPage({ params }: PageProps) {
                 <div className="flex flex-col space-y-3">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2">
-                      <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">Beta Roster · <span className="text-muted-foreground">{agentData.registeredDate}</span></div>
+                      <div className="claw-mark bg-background-secondary text-primary border border-border px-2 py-1 rounded text-xs font-mono">{agentData.badges[0]?.label || 'PUBLIC ROSTER'}</div>
                     </div>
                     <div className="text-2xl">🦞</div>
                   </div>

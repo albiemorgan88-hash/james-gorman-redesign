@@ -1,0 +1,113 @@
+{
+  "entries": [
+    {
+      "ts": 1776240150815,
+      "jobId": "0da70eeb-4876-42ea-8b1b-86a07fdfe9d6",
+      "action": "finished",
+      "status": "ok",
+      "runAtMs": 1776240120028,
+      "durationMs": 30784,
+      "nextRunAtMs": 1776844800000,
+      "model": "gpt-5.4",
+      "provider": "openai-codex",
+      "usage": {
+        "input_tokens": 21660,
+        "output_tokens": 1180,
+        "total_tokens": 24831
+      },
+      "delivered": false,
+      "deliveryStatus": "not-delivered",
+      "sessionId": "358ea9e7-a941-4968-bda1-ed0088d016a4",
+      "sessionKey": "agent:main:cron:0da70eeb-4876-42ea-8b1b-86a07fdfe9d6:run:358ea9e7-a941-4968-bda1-ed0088d016a4"
+    },
+    {
+      "ts": 1775635467680,
+      "jobId": "0da70eeb-4876-42ea-8b1b-86a07fdfe9d6",
+      "action": "finished",
+      "status": "ok",
+      "summary": "SEO ATTACK summary for Blue Canvas, 2026-04-08\n\nLive status:\n- Blue Canvas homepage is now showing “AI Consultancy Northern Ireland — Real Results”, which is a good fix versus the March gap.\n- Live GSC pull failed today because local OAuth creds are broken (`401 Invalid Credentials`, refresh also failing).\n- Ahrefs app is currently blocked by Cloudflare verification in this environment, so Ahrefs findings below use the latest stored Ahrefs-derived reports already in the workspace.\n\nBacklink gaps:\n- Blue Canvas baseline is still weak: DR 19, 11 referring domains.\n- Main benchmark remains brainpool.ai at DR 42 with 555 referring domains.\n- That backlink deficit is still the biggest structural weakness.\n- Best link opportunities remain:\n  - NI/Derry directories\n  - Londonderry Chamber, NI Chamber, Catalyst, FSB\n  - Clutch, Crunchbase, TechBehemoths, SelectedFirms, TopDevelopers\n  - NI/Ireland tech publications like SyncNI and Irish Tech News\n- Bottom line: strategy is already known, execution is the bottleneck. Getting from 11 RDs to 30-40+ is the quickest authority win.\n\nContent gaps:\n- Competitors still beat Blue Canvas on content depth and commercial assets.\n- Biggest missing/under-served pieces:\n  - AI Audit page\n  - AI Readiness Assessment page/tool\n  - proper case study pages\n  - industry/vertical landing pages\n  - governance/responsible AI content\n- iwantmore.ai still looks broader on content architecture and service depth.\n- brainpool.ai still has stronger authority plus deeper service/vertical coverage.\n\nKeyword opportunities:\nBest existing GSC opportunities from the latest usable export:\n- artificial intelligence consulting services, 158 impressions, pos 12.8\n- ai consultancy for small business, 83 impressions, pos 8.9\n- artificial intelligence consulting service, 67 impressions, pos 12.8\n- ai consultants for small business, 52 impressions, pos 7.8\n- ai consultancy northern ireland, 33 impressions, pos 5.5\n- ai consulting agency, 27 impressions, pos 8.3\n- ai …",
+      "runAtMs": 1775635246986,
+      "durationMs": 220692,
+      "nextRunAtMs": 1776240000000,
+      "model": "gpt-5.4",
+      "provider": "openai-codex",
+      "usage": {
+        "input_tokens": 127922,
+        "output_tokens": 4306,
+        "total_tokens": 49390
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "2e7ec175-19f5-4856-b8de-35a28a1b2857",
+      "sessionKey": "agent:main:cron:0da70eeb-4876-42ea-8b1b-86a07fdfe9d6:run:2e7ec175-19f5-4856-b8de-35a28a1b2857"
+    },
+    {
+      "ts": 1775030743779,
+      "jobId": "0da70eeb-4876-42ea-8b1b-86a07fdfe9d6",
+      "action": "finished",
+      "status": "ok",
+      "summary": "Now I need to spawn a subagent to execute Phase 3: ATTACK of the SEO Engine. This is competitive analysis work that involves Ahrefs integration, backlink gap analysis, and content opportunity identification.",
+      "runAtMs": 1775030498595,
+      "durationMs": 245104,
+      "nextRunAtMs": 1775635200000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 25,
+        "output_tokens": 1489,
+        "total_tokens": 27812
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "74676aeb-3307-486c-b702-df666dddc7fc",
+      "sessionKey": "agent:main:cron:0da70eeb-4876-42ea-8b1b-86a07fdfe9d6:run:74676aeb-3307-486c-b702-df666dddc7fc"
+    },
+    {
+      "ts": 1774432133557,
+      "jobId": "0da70eeb-4876-42ea-8b1b-86a07fdfe9d6",
+      "action": "finished",
+      "status": "ok",
+      "summary": "Now I need to execute the SEO Engine Phase 3: ATTACK. This is a detailed competitive warfare phase that requires running competitive analysis using Ahrefs + GSC, checking backlink gaps, content gaps, and keyword opportunities. Let me spawn a specialized subagent to handle this complex analysis task.",
+      "runAtMs": 1774431860673,
+      "durationMs": 272882,
+      "nextRunAtMs": 1775030400000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 21,
+        "output_tokens": 891,
+        "total_tokens": 26253
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "6c9eef1c-2c67-46ee-8b98-e6cb5edbcf29",
+      "sessionKey": "agent:main:cron:0da70eeb-4876-42ea-8b1b-86a07fdfe9d6:run:6c9eef1c-2c67-46ee-8b98-e6cb5edbcf29"
+    },
+    {
+      "ts": 1773824800397,
+      "jobId": "0da70eeb-4876-42ea-8b1b-86a07fdfe9d6",
+      "action": "finished",
+      "status": "ok",
+      "summary": "Perfect - running the SEO Engine Phase 3: ATTACK on this Wednesday as scheduled. Let me spawn a subagent to execute the competitive warfare analysis.",
+      "runAtMs": 1773824459311,
+      "durationMs": 341071,
+      "nextRunAtMs": 1774429200000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 21,
+        "output_tokens": 639,
+        "total_tokens": 24959
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "be4ac4fa-d2bd-497c-8539-8889038c6217",
+      "sessionKey": "agent:main:cron:0da70eeb-4876-42ea-8b1b-86a07fdfe9d6:run:be4ac4fa-d2bd-497c-8539-8889038c6217"
+    }
+  ],
+  "total": 5,
+  "offset": 0,
+  "limit": 50,
+  "hasMore": false,
+  "nextOffset": null
+}

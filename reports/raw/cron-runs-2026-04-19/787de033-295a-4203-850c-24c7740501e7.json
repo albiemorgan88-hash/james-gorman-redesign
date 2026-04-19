@@ -1,0 +1,131 @@
+{
+  "entries": [
+    {
+      "ts": 1776067229761,
+      "jobId": "787de033-295a-4203-850c-24c7740501e7",
+      "action": "finished",
+      "status": "error",
+      "error": "⚠️ You have hit your ChatGPT usage limit (plus plan). Try again in ~5100 min.",
+      "summary": "⚠️ You have hit your ChatGPT usage limit (plus plan). Try again in ~5100 min.",
+      "runAtMs": 1776067214983,
+      "durationMs": 14774,
+      "nextRunAtMs": 1776672000000,
+      "model": "gpt-5.4",
+      "provider": "openai-codex",
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "d2424418-b9cf-4a5d-9bb7-3ce358528ed5",
+      "sessionKey": "agent:main:cron:787de033-295a-4203-850c-24c7740501e7:run:d2424418-b9cf-4a5d-9bb7-3ce358528ed5"
+    },
+    {
+      "ts": 1775462566777,
+      "jobId": "787de033-295a-4203-850c-24c7740501e7",
+      "action": "finished",
+      "status": "ok",
+      "summary": "🔧 **Weekly Tender Scan — 6 April 2026**\n\n**Sources:** Contracts Finder, Find a Tender, eTenders, InterTradeIreland, Digital Marketplace\n\n---\n\n**⛔ EXISTING SUBMISSIONS — 52 DAYS, NO RESPONSE**\n\nBoth Feb 13th submissions are now critically overdue:\n- **Donegal CC Tourism AI Training** (€4,200) — Phone today\n- **InterTradeIreland AI for SMEs Research** (£72,000) — Email chase today\n\nThe ITI one could legitimately take 8-12 weeks for larger procurement, but Donegal at €4,200 should've been decided weeks ago. Either it's been awarded silently or stuck in bureaucracy.\n\n---\n\n**🔵 CCS FRAMEWORKS**\n- **RM6200 (AI DPS):** Still open, rolling admission to Feb 2029. Need to verify our application status.\n- **RM6173 (Automation):** 7 months remaining. Should start application prep.\n\n---\n\n**📋 NEW THIS WEEK**\n\nSlim pickings for AI-specific tenders in our range:\n\n1. **NI Careers in Coding programme** — Employability training for young people in NI. Deadline 27 Apr. Worth reviewing the spec — could position AI/coding workshops angle. MEDIUM fit.\n2. **NI Water ICT Solution** — Technology replacement, NI-based. Deadline 30 Apr. Not core AI but local public sector. LOW-MEDIUM fit.\n\nNo new direct AI consulting tenders in the £5k-£100k sweet spot this week across any platform.\n\n---\n\n**💡 PIPELINE NOTE**\n\nInterTradeIreland's **Innovation Boost** (up to £56k) is still open — not a tender we bid on directly, but SMEs applying can name Blue Canvas as their AI consulting partner. Worth marketing this angle.\n\n---\n\n**⏭️ THIS WEEK'S ACTIONS**\n1. ☎️ Chase Donegal CC + InterTradeIreland submissions TODAY\n2. ✅ Verify CCS RM6200 application status\n3. 📄 Review NI Careers in Coding tender spec\n4. 🔑 Register on new Digital Marketplace \"Apply to Supply\" platform\n5. 📝 Start RM6173 application prep\n\nSaved to `projects/tender-tracker/weekly-scan.md`.",
+      "runAtMs": 1775462462702,
+      "durationMs": 104059,
+      "nextRunAtMs": 1776067200000,
+      "model": "claude-opus-4-6",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 10,
+        "output_tokens": 3488,
+        "total_tokens": 49694
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "d4bd97d3-2579-47d4-b553-6afb819de102",
+      "sessionKey": "agent:main:cron:787de033-295a-4203-850c-24c7740501e7:run:d4bd97d3-2579-47d4-b553-6afb819de102"
+    },
+    {
+      "ts": 1774861824414,
+      "jobId": "787de033-295a-4203-850c-24c7740501e7",
+      "action": "finished",
+      "status": "ok",
+      "summary": "# 🔧 Weekly Tender Tracker Report — 30 March 2026\n\n## 🚨 CRITICAL ALERTS\n\n**OVERDUE FOLLOW-UPS (45 days!):**\n- Donegal CC Tourism AI Training (€4,200) - submitted 13 Feb\n- InterTradeIreland AI Research (£72k) - submitted 13 Feb\n**Action required:** Phone/email both TODAY\n\n**URGENT FRAMEWORK STATUS:**\n- CCS RM6200 AI DPS (£400M) - verify Blue Canvas application status ASAP\n- CCS RM6173 Automation (£100M) - only 7 months left to apply\n\n## 🎯 TOP OPPORTUNITIES\n\n**HIGH PRIORITY (Apply within 2 weeks):**\n1. **CCS RM6173 Automation DPS** - £100M framework, perfect Blue Canvas fit, deadline Nov 2026\n2. **CCS AI DPS RM6200** - £400M framework, verify/complete application status\n3. **Spark Innovation Marketplace** - £650M CCS framework, open until Feb 2029\n\n**URGENT DEADLINES (Under 3 weeks):**\n- Digital Trade Testbed: £500k, 17 days (automotive AI)  \n- East Riding Council CRM: £75k, 21 days (digital transformation)\n\n## 📊 SCAN RESULTS\n- **Total found:** 25 tenders across UK/Ireland  \n- **Relevant:** 19 after filtering\n- **Framework opportunities:** 6 major DPS systems\n- **Individual contracts:** 13 standalone tenders\n\n**Ireland status:** eTenders crawler still broken - needs manual check\n\n## 📅 THIS WEEK ACTIONS\n1. **Monday:** Contact Donegal CC + InterTradeIreland (45-day follow-up)\n2. **Tuesday:** Verify CCS RM6200 application status  \n3. **Wed-Fri:** Begin RM6173 automation framework application prep\n\n**Strategic focus:** Framework positioning over individual tender chasing - 90% of AI procurement now via CCS frameworks.\n\n---\n*Full details saved to projects/tender-tracker/weekly-scan.md*  \n*Next scan: 06 April 2026*",
+      "runAtMs": 1774861195482,
+      "durationMs": 169572,
+      "nextRunAtMs": 1775462400000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 46,
+        "output_tokens": 4026,
+        "total_tokens": 30853
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "c080d87f-321c-408b-b7a7-c2946cb7964d",
+      "sessionKey": "agent:main:cron:787de033-295a-4203-850c-24c7740501e7:run:c080d87f-321c-408b-b7a7-c2946cb7964d"
+    },
+    {
+      "ts": 1774256662601,
+      "jobId": "787de033-295a-4203-850c-24c7740501e7",
+      "action": "finished",
+      "status": "ok",
+      "summary": "The subagent has finished its scan and saved the results. Let me read the key findings and deliver the summary.\n\n🔧 **Weekly Tender Scan — 9 Mar 2026**\n\n**6 opportunities found. 3 need action THIS WEEK.**\n\n---\n\n**🔥 TOP 3 — ACT NOW:**\n\n**1. Ireland OGP — AI Systems & Governance PMC** 🇮🇪\nPre-Market Consultation on eTenders for a central AI procurement arrangement covering ALL Irish public bodies. AI discovery, governance, EU AI Act, training — our exact wheelhouse. **Respond ASAP** to position for the actual tender.\n\n**2. CCS RM6200 — AI Dynamic Purchasing System** 🇬🇧\nOpen until Feb 2029. Apply anytime. This is THE route into UK public sector AI work. **Blue Canvas should apply now.** Covers consultancy, discovery, implementation.\n\n**3. DSIT/Capgemini — SME Subcontracting** 🇬🇧\n£4.5M Capgemini contract specifically to bring in \"niche or emergent\" AI SMEs for DSIT and AI Security Institute. **Designed for companies like us.** Contact their public sector AI team to register.\n\n---\n\n**📋 OTHER OPPORTUNITIES:**\n- **EPSRC £40M AI Research Lab** — ⚠️ URGENT EOI deadline 16 Mar. Primarily academic but watch for subcontracting.\n- **CCS RM6173 (Automation Marketplace)** — Open DPS, expires Nov 2026. Secondary priority.\n- **Ireland GovTech 2026 Challenge** — New programme, details TBC. Watch for launch.\n\n**🇮🇪 Ireland context:** 90-action Digital & AI Strategy published 19 Feb. AI Advisory Unit, National AI Fellowship, new AI Office by Aug 2026. Massive pipeline building.\n\n---\n\n**📊 EXISTING SUBMISSIONS:**\n| Tender | Value | Status |\n|---|---|---|\n| Donegal CC Tourism AI Training | €4,200 | Awaiting decision (~3.5 weeks) — **follow up this week** |\n| InterTradeIreland AI for SMEs | £72,000 | Awaiting decision (~3.5 weeks) — **follow up this week** |\n\n**CCS Frameworks:** RM6200 ✅ open | RM6173 ✅ open | G-Cloud 15 in evaluation (go-live Sep 2026, missed this round)\n\n---\n\nFull results saved to `projects/tender-tracker/weekly-scan.md`.",
+      "runAtMs": 1774256446318,
+      "durationMs": 216274,
+      "nextRunAtMs": 1774857600000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 21,
+        "output_tokens": 836,
+        "total_tokens": 19997
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "03e2658f-b487-4823-90d0-bcc307de08f9",
+      "sessionKey": "agent:main:cron:787de033-295a-4203-850c-24c7740501e7:run:03e2658f-b487-4823-90d0-bcc307de08f9"
+    },
+    {
+      "ts": 1773651803512,
+      "jobId": "787de033-295a-4203-850c-24c7740501e7",
+      "action": "finished",
+      "status": "ok",
+      "summary": "# 🔧 Weekly Tender Scan Complete — 16 March 2026\n\n## Key Findings\n\n**📊 Total Results:** 23 tenders found across UK platforms\n**🎯 High-Value Targets:** 2 strategic framework opportunities  \n**⚠️ Urgent Actions:** Follow-ups overdue on existing submissions\n\n---\n\n## 🚨 IMMEDIATE ACTIONS REQUIRED\n\n### Critical (This Week)\n- **Follow up overdue submissions:** Both Donegal CC (€4.2k) and InterTradeIreland (£72k) are 31+ days old — professional follow-up needed immediately\n- **Manual eTenders check:** Scraper failed on Irish site — need human verification of opportunities\n- **RM6200 status check:** Verify Blue Canvas is on the main AI framework (found £400M renewal in scan)\n\n### Strategic Priority (Next 14 Days)  \n- **Apply to RM6173 Automation DPS:** £100M framework, perfect Blue Canvas fit — open until Nov 2026\n- **Contact Capgemini:** DSIT subcontracting opportunity (£4.5M contract seeking SME AI specialists)\n\n---\n\n## 🎯 Best Opportunities\n\n**CCS RM6173 Automation Marketplace:** £100M+ framework covering intelligent automation, consultancy, solutions — direct Blue Canvas alignment\n\n**RM6200 AI DPS renewal:** £400M framework confirmed active through 2029 — verify application status\n\n**DSIT/Capgemini route:** Backdoor to central gov AI work without framework requirements\n\n---\n\n## 📈 Market Assessment\n\nIndividual tender market remains quiet — most AI opportunities flowing through CCS frameworks. Framework-first strategy confirmed correct approach for sustainable pipeline over one-off chasing.\n\n**Ireland pipeline:** Technical issues with eTenders require manual oversight, but broader Ireland AI strategy (90 actions, GovTech Challenge) creates strong medium-term opportunity landscape.\n\nFull detailed scan saved to `projects/tender-tracker/weekly-scan.md`",
+      "runAtMs": 1773651650175,
+      "durationMs": 153322,
+      "nextRunAtMs": 1774256400000,
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 42,
+        "output_tokens": 2766,
+        "total_tokens": 27503
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "ca0bdb9a-e0d5-45d0-8798-2f33d7d3f2ef",
+      "sessionKey": "agent:main:cron:787de033-295a-4203-850c-24c7740501e7:run:ca0bdb9a-e0d5-45d0-8798-2f33d7d3f2ef"
+    },
+    {
+      "ts": 1773047425150,
+      "jobId": "787de033-295a-4203-850c-24c7740501e7",
+      "action": "finished",
+      "status": "ok",
+      "summary": "The subagent has finished its scan and saved the results. Let me read the key findings and deliver the summary.\n\n🔧 **Weekly Tender Scan — 9 Mar 2026**\n\n**6 opportunities found. 3 need action THIS WEEK.**\n\n---\n\n**🔥 TOP 3 — ACT NOW:**\n\n**1. Ireland OGP — AI Systems & Governance PMC** 🇮🇪\nPre-Market Consultation on eTenders for a central AI procurement arrangement covering ALL Irish public bodies. AI discovery, governance, EU AI Act, training — our exact wheelhouse. **Respond ASAP** to position for the actual tender.\n\n**2. CCS RM6200 — AI Dynamic Purchasing System** 🇬🇧\nOpen until Feb 2029. Apply anytime. This is THE route into UK public sector AI work. **Blue Canvas should apply now.** Covers consultancy, discovery, implementation.\n\n**3. DSIT/Capgemini — SME Subcontracting** 🇬🇧\n£4.5M Capgemini contract specifically to bring in \"niche or emergent\" AI SMEs for DSIT and AI Security Institute. **Designed for companies like us.** Contact their public sector AI team to register.\n\n---\n\n**📋 OTHER OPPORTUNITIES:**\n- **EPSRC £40M AI Research Lab** — ⚠️ URGENT EOI deadline 16 Mar. Primarily academic but watch for subcontracting.\n- **CCS RM6173 (Automation Marketplace)** — Open DPS, expires Nov 2026. Secondary priority.\n- **Ireland GovTech 2026 Challenge** — New programme, details TBC. Watch for launch.\n\n**🇮🇪 Ireland context:** 90-action Digital & AI Strategy published 19 Feb. AI Advisory Unit, National AI Fellowship, new AI Office by Aug 2026. Massive pipeline building.\n\n---\n\n**📊 EXISTING SUBMISSIONS:**\n| Tender | Value | Status |\n|---|---|---|\n| Donegal CC Tourism AI Training | €4,200 | Awaiting decision (~3.5 weeks) — **follow up this week** |\n| InterTradeIreland AI for SMEs | £72,000 | Awaiting decision (~3.5 weeks) — **follow up this week** |\n\n**CCS Frameworks:** RM6200 ✅ open | RM6173 ✅ open | G-Cloud 15 in evaluation (go-live Sep 2026, missed this round)\n\n---\n\nFull results saved to `projects/tender-tracker/weekly-scan.md`.",
+      "runAtMs": 1773047144366,
+      "durationMs": 280771,
+      "nextRunAtMs": 1773651600000,
+      "model": "claude-opus-4-6",
+      "provider": "anthropic",
+      "usage": {
+        "input_tokens": 35,
+        "output_tokens": 3713,
+        "total_tokens": 30618
+      },
+      "delivered": true,
+      "deliveryStatus": "delivered",
+      "sessionId": "e791789f-ad6f-42e7-8255-d39c83bbaa5e",
+      "sessionKey": "agent:main:cron:787de033-295a-4203-850c-24c7740501e7:run:e791789f-ad6f-42e7-8255-d39c83bbaa5e"
+    }
+  ],
+  "total": 6,
+  "offset": 0,
+  "limit": 50,
+  "hasMore": false,
+  "nextOffset": null
+}
