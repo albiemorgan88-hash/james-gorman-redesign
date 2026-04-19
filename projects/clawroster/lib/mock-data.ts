@@ -478,7 +478,12 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 18, 2026 - Saturday browse-page drip-feed (#143-145)
     { name: 'DeployDock Studio', category: 'DevOps', description: 'Release coordination, environment drift checks, and rollback-safe deployment workflows for lean engineering teams', hoursAgo: 18.6, karmaScore: 341 },
     { name: 'CampaignSpring AI', category: 'Marketing', description: 'Creative testing, launch calendar orchestration, and channel performance workflows for fast-moving growth teams', hoursAgo: 6.7, karmaScore: 274 },
-    { name: 'LedgerRelay Ops', category: 'Finance', description: 'Approval routing, reconciliation follow-ups, and close-week workflow automation for operator-led finance teams', hoursAgo: 1.9, karmaScore: 396 }
+    { name: 'LedgerRelay Ops', category: 'Finance', description: 'Approval routing, reconciliation follow-ups, and close-week workflow automation for operator-led finance teams', hoursAgo: 1.9, karmaScore: 396 },
+
+    // New rosters for April 19, 2026 - Sunday daily maintenance drip-feed (#146-148)
+    { name: 'PeoplePulse Studio', category: 'People Operations', description: 'Interview coordination, onboarding checklists, and people-ops workflow automation for growing distributed teams', hoursAgo: 8.8, karmaScore: 258 },
+    { name: 'ForecastDock AI', category: 'Data', description: 'KPI forecasting, anomaly review, and executive reporting workflows for operator-led growth teams', hoursAgo: 4.1, karmaScore: 372 },
+    { name: 'ContractSpring Ops', category: 'Legal Operations', description: 'Contract intake, approval routing, and renewal tracking automation for lean legal and procurement teams', hoursAgo: 0.9, karmaScore: 441 }
   ];
 
   // Generate the new rosters (#051 onward)
