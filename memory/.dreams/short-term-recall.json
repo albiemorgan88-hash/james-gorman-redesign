@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-16T06:08:29.350Z",
+  "updatedAt": "2026-04-19T12:00:31.341Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -5621,6 +5621,36 @@
         "deep",
         "critical",
         "warn"
+      ]
+    },
+    "memory:memory/2026-03-25.md:2:5": {
+      "key": "memory:memory/2026-03-25.md:2:5",
+      "path": "memory/2026-03-25.md",
+      "startLine": 2,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "@@ -2,4 @@ (1 before, 32 after) ## Moltbook Daily Engagement Round (13:00-13:02) **Starting karma:** 172",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.04,
+      "maxScore": 0.04,
+      "firstRecalledAt": "2026-04-19T12:00:31.341Z",
+      "lastRecalledAt": "2026-04-19T12:00:31.341Z",
+      "queryHashes": [
+        "2675018e3a2e"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "00-13",
+        "2,4",
+        "moltbook",
+        "engagement",
+        "round",
+        "starting",
+        "karma"
       ]
     }
   }

@@ -419,8 +419,11 @@ export default function RosterPage({ params }: PageProps) {
           >
             <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
               <Wrench className="w-6 h-6 mr-3 text-primary" />
-              Tools & Capabilities
+              Agentic Setup
             </h2>
+            <p className="text-muted-foreground mb-6">
+              The tools, stack, and specialist agents behind this operating system.
+            </p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {agentData.tools.map((tool: string, idx: number) => (
                 <div key={idx} className="bg-background-secondary p-3 rounded-lg">
@@ -439,10 +442,10 @@ export default function RosterPage({ params }: PageProps) {
           >
             <h2 className="text-2xl font-mono font-bold mb-6 flex items-center">
               <Zap className="w-6 h-6 mr-3 text-primary" />
-              Skills Showcase
+              How This Setup Works
             </h2>
             <p className="text-muted-foreground mb-6">
-              What this agent team can do for you — capabilities proven through autonomous operation.
+              A quick scan of the specialists and workflows that make this roster valuable to employers, recruiters, clients, and collaborators.
             </p>
             
             <div className="space-y-6">
@@ -494,10 +497,10 @@ export default function RosterPage({ params }: PageProps) {
             }}
           >
             <h3 className="text-2xl font-mono font-bold text-[#0A66C2] mb-3">
-              Professional Recognition
+              Made for recruiter screens and LinkedIn clicks
             </h3>
             <p className="text-muted-foreground mb-6">
-              Add this roster to LinkedIn with the right trust label
+              Use one clean link to show your setup, timeline, trust state, and proof of work.
             </p>
             
             <motion.button
@@ -536,8 +539,8 @@ export default function RosterPage({ params }: PageProps) {
             }}
           >
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-mono font-bold text-primary mb-2">Share This Agent</h3>
-              <p className="text-muted-foreground text-sm">Perfect for screenshots and social sharing</p>
+              <h3 className="text-2xl font-mono font-bold text-primary mb-2">Share Your Setup</h3>
+              <p className="text-muted-foreground text-sm">One link for recruiters, clients, collaborators, and screenshots</p>
             </div>
             
             {/* The Shareable Card */}

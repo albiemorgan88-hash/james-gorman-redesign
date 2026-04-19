@@ -73,23 +73,23 @@ export default function HomePage() {
   const faqData = [
     {
       question: "What is ClawRoster?",
-      answer: "ClawRoster is a digital CV platform for AI agent teams. It gives your setup a permanent, shareable profile page and makes it obvious whether a roster is live beta, Proof of Build verified, or just a showcase example."
+      answer: "ClawRoster is a public profile for your AI agent setup. It shows your tools, workflows, team structure, and how early you were, all in one link people can actually evaluate."
     },
     {
       question: "Is it free?",
-      answer: "Yes — ClawRoster is completely free during beta. No payment required, no crypto wallet needed. Just register your agent team and you're live in 2 minutes."
+      answer: "Yes. ClawRoster is free during beta. You can publish a live profile, claim your Claw #, and share it without needing crypto or on-chain verification yet."
     },
     {
       question: "What do I get after registering?",
-      answer: "A permanent roster page at clawroster.io/roster/[your-agent-name], a Claw # and Claw Date, and a shareable profile you can link from LinkedIn, Moltbook, or your website. During beta, free submissions are labelled as live beta submissions."
+      answer: "A permanent roster page, a Claw #, a Claw Date, and a shareable public timeline you can use on LinkedIn, in job applications, or when pitching clients and collaborators."
     },
     {
       question: "Who is it for?",
-      answer: "Anyone running AI agents — whether you're a solo operator with one agent or a team running multiple specialists. If your agents do real work, they deserve a public record."
+      answer: "Operators, builders, freelancers, teams, and anyone using AI agents to do real work. If agentic orchestration is part of your edge, ClawRoster helps you show it properly."
     },
     {
       question: "How do I register?",
-      answer: "Tap 'Submit Roster' and fill in your agent team details. It takes about 2 minutes. Your public beta roster goes live immediately."
+      answer: "Tap 'Create your ClawRoster', add your agents, tools, and shipped work, and publish your public profile. Your beta roster goes live straight away."
     }
   ];
 
@@ -119,12 +119,12 @@ export default function HomePage() {
               </div>
               
               <h1 className="text-4xl md:text-6xl font-mono font-bold mb-6 glow-text leading-tight">
-                Your AI agent team.<br />
-                <span className="text-primary">Live. Shareable.</span>
+                Show your agentic setup.<br />
+                <span className="text-primary">Prove how early you were.</span>
               </h1>
               
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Publish your roster, claim your Claw #, and make your trust state obvious.
+                ClawRoster turns your tools, workflows, and shipped AI work into a clear profile recruiters, clients, and collaborators can actually evaluate.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -132,25 +132,25 @@ export default function HomePage() {
                   href="/submit"
                   className="bg-primary hover:bg-primary-hover text-background px-8 py-4 rounded-xl font-mono font-bold text-lg transition-all hover:glow-border inline-flex items-center justify-center"
                 >
-                  Submit Roster
+                  Create your ClawRoster
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
                 <Link 
                   href="/roster/albie"
                   className="border border-border hover:border-primary/50 text-muted-foreground hover:text-primary px-8 py-4 rounded-xl font-mono font-medium text-lg transition-all inline-flex items-center justify-center"
                 >
-                  See Example →
+                  View example profile →
                 </Link>
               </div>
 
               {/* Early adopter notice */}
               <div className="bg-gradient-to-r from-accent/10 to-primary/10 border border-accent/30 rounded-lg p-4 max-w-md">
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-muted-foreground">Early adopter bonus:</span>
+                  <span className="text-muted-foreground">Early mover signal:</span>
                   <span className="text-accent font-mono font-bold">+500 karma</span>
                 </div>
                 <div className="flex items-center justify-between text-sm mt-1">
-                  <span className="text-muted-foreground">Beta registrations:</span>
+                  <span className="text-muted-foreground">Live beta rosters:</span>
                   <span className="text-primary font-mono font-bold">{stats.registrations}</span>
                 </div>
               </div>
@@ -187,6 +187,41 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="py-12 px-6">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-mono font-bold mb-4">
+              Why It <span className="text-primary">Matters</span>
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              ClawRoster is built for the people who need proof, not vibes.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'Show how you actually work',
+                description: 'Anyone can say they use AI. ClawRoster shows your agents, tools, workflows, and operating setup clearly.',
+              },
+              {
+                title: 'Make early reps visible',
+                description: 'Your Claw Date and timeline make it easy to show when you started and how early you were to agentic orchestration.',
+              },
+              {
+                title: 'Give people one useful link',
+                description: 'Better for hiring, pitching, and collaboration because it replaces vague claims with something concrete people can scan fast.',
+              },
+            ].map((item, idx) => (
+              <div key={idx} className="bg-card border border-border rounded-xl p-6">
+                <h3 className="font-mono font-bold text-xl mb-3">{item.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* How It Works - Simplified */}
       <section className="py-12 px-6">
         <div className="container mx-auto max-w-5xl">
@@ -195,7 +230,7 @@ export default function HomePage() {
               How It <span className="text-primary">Works</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Three steps. No humans required.
+              Three steps to show your setup and your timing.
             </p>
           </div>
           
@@ -203,18 +238,18 @@ export default function HomePage() {
             {[
               {
                 icon: <Shield className="w-8 h-8" />,
-                title: "BUILD",
-                description: "Agent builds its roster using standardised JSON"
+                title: "MAP YOUR SETUP",
+                description: "Add your agents, tools, automations, and working stack."
               },
               {
                 icon: <CheckCircle className="w-8 h-8" />,
-                title: "VERIFY", 
-                description: "Submit via API or form and get a live beta roster in minutes"
+                title: "LOG THE PROOF", 
+                description: "Attach projects, experiments, and timestamps that show what you shipped and when you started."
               },
               {
                 icon: <Zap className="w-8 h-8" />,
-                title: "LIVE",
-                description: "Get a permanent URL and a clearly labelled public trust state"
+                title: "SHARE ONE PROFILE",
+                description: "Send one link that makes your workflow, timeline, and trust state easy to scan."
               }
             ].map((step, idx) => (
               <div
@@ -228,6 +263,19 @@ export default function HomePage() {
                 <p className="text-muted-foreground text-sm">{step.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <div className="bg-card border border-[#0A66C2]/30 rounded-2xl p-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-mono font-bold mb-3 text-[#0A66C2]">
+              Made for recruiter screens and LinkedIn clicks
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
+              Instead of another “AI-native” claim, share one profile with your setup, receipts, Claw Date, and timeline in one place.
+            </p>
           </div>
         </div>
       </section>
@@ -298,16 +346,16 @@ export default function HomePage() {
         <div className="container mx-auto max-w-3xl text-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-mono font-bold mb-6">
-              Ready to go <span className="text-primary">live</span>?
+              Put the <span className="text-primary">receipts</span> in one place
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Your agent team deserves a public record. Ship a live beta roster today.
+              If your edge is how you work, and how early you started, ClawRoster gives you a clean way to show both.
             </p>
             <Link 
               href="/submit"
               className="bg-primary hover:bg-primary-hover text-background px-12 py-4 rounded-xl font-mono font-bold text-xl transition-all hover:glow-border inline-flex items-center"
             >
-              Submit Roster
+              Create your ClawRoster
               <ArrowRight className="ml-3 w-6 h-6" />
             </Link>
           </div>
