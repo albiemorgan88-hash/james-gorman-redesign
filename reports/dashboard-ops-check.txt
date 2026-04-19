@@ -1,0 +1,50 @@
+Morning dashboard ops check
+Generated: 2026-04-19 07:05 BST
+Workspace: /Users/philsagent/.openclaw/workspace
+
+1) Site uptime / HTTP reachability
+- bluecanvas.ai -> HTTPS 200, total 0.550s, connect 0.093s, final URL https://www.bluecanvas.ai/, IP 2620:cb:2000::1
+- ardmorecricket.com -> HTTPS 200, total 0.277s, connect 0.048s, final URL https://ardmorecricket.com/, IP 76.76.21.21
+- uktradejobs.com -> HTTPS 200, total 0.287s, connect 0.052s, final URL https://uktradejobs.com/, IP 76.76.21.21
+- openclawconsultant.co.uk -> HTTPS 200, total 0.317s, connect 0.047s, final URL https://openclawconsultant.co.uk/, IP 216.150.1.1
+Summary: all four sites were reachable over HTTPS during checks.
+
+2) Cron failures in last 24h
+Window checked: 2026-04-18 07:04 BST to 2026-04-19 07:04 BST.
+- No concrete cron failures found in that window from current cron state (`openclaw cron list --all --json`).
+- Recent completed runs in-window were all status=ok: Security Scan & Fix, api-key-health, cron-watchdog, ClawMart Sales Check, ClawRoster Daily, Moltbook Inbox Check, moltbook-daily-engagement, Nightly Build, Memory Distillation.
+- Note: older failures exist outside this window in `reports/cron-health-2026-04-18.md`, including 2026-04-17 timeouts for SEO: Friday Monitor and cron-watchdog.
+
+3) Lead pipeline follow-ups from MEMORY.md + memory/*.md
+Prospects / follow-ups needing attention:
+- Gavan Wall / Wall Group SPAR
+  - Status: website v3 deployed, awaiting Phil's final UX review before sharing.
+  - Next action: Phil to do final UX review, then share the site.
+  - Evidence: MEMORY.md; memory/2026-04-03.md.
+- Joe Abrahams
+  - Status: AI Readiness Scorecard demo was sent on 2026-03-02; later notes say no recent follow-up / no contact.
+  - Next action: nudge Joe / close the loop.
+  - Date markers: sent 2026-03-02, still open on 2026-03-07 and 2026-03-09.
+  - Evidence: memory/2026-03-02.md, memory/2026-03-07.md, memory/2026-03-09.md.
+- Tim Clarke / Quay Group
+  - Status: CV Screener demo sent on 2026-03-02; follow-up is Phil-owned.
+  - Next action: Phil follow-up to convert demo into further work/retainer if still live.
+  - Date markers: sent 2026-03-02, Phil-owned follow-up noted 2026-03-06 and 2026-03-07.
+  - Evidence: memory/2026-03-02.md, memory/2026-03-06.md, memory/2026-03-07.md, memory/archive.md.
+- Tobira.ai / Vlad Shipilov
+  - Status: partnership opportunity identified; explicit follow-up DM to Vlad recorded.
+  - Next action: DM Vlad about Tobira partnership potential.
+  - Date marker: 2026-03-22.
+  - Evidence: memory/2026-03-22.md, memory/final-execution-plan-2026-03-27.md.
+
+Client workstream worth surfacing (not really a prospect, but still pending action):
+- White Oaks
+  - Paid £1,000 on 2026-04-17 for app build.
+  - Next action: capture discovery/spec in workspace.
+  - Evidence: MEMORY.md, memory/2026-04-17.md.
+
+Evidence paths / commands used
+- Site checks: `curl -I -L -o /dev/null -sS -w 'url=%{url_effective} code=%{http_code} connect=%{time_connect} starttransfer=%{time_starttransfer} total=%{time_total} ip=%{remote_ip}\n' --max-time 20 https://<domain>`
+- Cron status: `openclaw cron list --all --json`
+- Prior cron report context: `/Users/philsagent/.openclaw/workspace/reports/cron-health-2026-04-18.md`, `/Users/philsagent/.openclaw/workspace/reports/cron-runs-aggregate-2026-04-18.md`
+- Memory review: `/Users/philsagent/.openclaw/workspace/MEMORY.md` plus targeted reads/searches across `/Users/philsagent/.openclaw/workspace/memory/*.md`

@@ -1,0 +1,99 @@
+Morning Dashboard Google Metrics
+Generated: 2026-04-19 07:xx BST
+Workspace: /Users/philsagent/.openclaw/workspace
+
+1) Google Ads, account 801-851-4760
+Requested date: yesterday = 2026-04-18
+Method used for final verification: live Google Ads browser UI (official Google UI), because local OAuth refresh token is currently invalid.
+
+Live browser result, filtered to "Yesterday" (18 Apr 2026):
+- Spend: £0.00
+- Clicks: 0
+- Conversions: 0.00
+- Also visible in UI: Impr. 0
+
+Live UI context observed:
+- Account selected: Google Ads account 801-851-4760
+- Date filter shown: Yesterday, 18 Apr 2026
+- Campaigns page totals showed account total cost £0.00, clicks 0, conversions 0.00
+- UI banner/status indicated: "None of your ads are running"
+- Both visible campaigns were paused:
+  - Blue Canvas - AI Audit
+  - OpenClaw Consultant
+
+API / local tooling notes for Ads:
+- Attempted local Google Ads API access via workspace tooling and ~/.zprofile credentials.
+- OAuth refresh failed with: invalid_grant / Bad Request
+- So the API path is currently blocked, but the browser UI still allowed a read-only live check.
+
+2) Search Console trend snapshot
+Requested properties:
+- bluecanvas.ai
+- uktradejobs.com
+Requested comparison: recent clicks / impressions trend, ideally last 7 days vs previous 7 days.
+
+Live API result:
+- Not available this morning.
+- Current access token in /Users/philsagent/.config/google-analytics-tokens.json returned 401 Invalid Credentials.
+- Refresh using the token file credentials failed.
+- Refresh using ~/.config/gcp-oauth.keys.json + GSC_REFRESH_TOKEN from ~/.zprofile also failed with invalid_grant / Bad Request.
+
+Live browser result:
+- Search Console opened under contact@bluecanvas.ai.
+- Accessible property confirmed in browser: https://learn.bluecanvas.ai/
+- Direct checks for the requested Blue Canvas root properties failed with no-access messages:
+  - sc-domain:bluecanvas.ai
+  - https://bluecanvas.ai/
+  - https://www.bluecanvas.ai/
+- Property search for uktradejobs.com in the Search Console browser UI did not resolve to an accessible property during this run.
+- Existing workspace reporting from 2026-04-17 also notes that the signed-in browser account had no access to both bluecanvas.ai and uktradejobs.com GSC properties.
+
+Conclusion for GSC:
+- I could not pull a fresh live Search Console snapshot for either requested domain on 2026-04-19.
+- Root cause appears to be a mix of revoked/invalid OAuth refresh credentials and missing browser-property access for the signed-in account.
+
+3) Best available fallback, clearly not live
+Because live GSC was blocked, the latest verified on-file GSC weekly comparison available in the workspace remains:
+
+bluecanvas.ai
+Source files:
+- reports/seo-data/gsc-bluecanvas-2026-03-06.md
+- reports/seo-weekly-2026-04-17.md
+Last verified comparison on file:
+- Current window: 2026-02-27 to 2026-03-05
+- Previous window: 2026-02-20 to 2026-02-26
+Metrics:
+- Clicks: 5 vs 7, change -29%
+- Impressions: 441 vs 357, change +24%
+- CTR: 1.13% vs 1.96%
+- Avg position: 8.2 vs 10.0
+Trend call:
+- Clicks down, impressions up
+
+uktradejobs.com
+Source files:
+- reports/seo-data/gsc-uktradejobs-2026-03-06.md
+- reports/seo-weekly-2026-04-17.md
+Last verified comparison on file:
+- Current window: 2026-02-27 to 2026-03-05
+- Previous window: 2026-02-20 to 2026-02-26
+Metrics:
+- Clicks: 10 vs 1, change +900%
+- Impressions: 792 vs 364, change +118%
+- CTR: 1.26% vs 0.27%
+- Avg position: 28.6 vs 24.3
+Trend call:
+- Clicks up sharply, impressions up strongly
+
+4) Summary
+What I could verify live today:
+- Google Ads yesterday for account 801-851-4760: spend £0.00, clicks 0, conversions 0.00 on 2026-04-18
+
+What I could not verify live today:
+- Fresh Search Console clicks / impressions trend for bluecanvas.ai
+- Fresh Search Console clicks / impressions trend for uktradejobs.com
+
+Current blockers:
+- Google Ads OAuth refresh token: invalid_grant, but browser UI still worked for read-only verification
+- Search Console OAuth refresh: invalid_grant
+- Search Console browser account contact@bluecanvas.ai does not currently have access to the requested bluecanvas.ai root properties, and uktradejobs.com property could not be resolved/accessed in the browser during this run

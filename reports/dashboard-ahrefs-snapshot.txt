@@ -1,0 +1,46 @@
+Ahrefs dashboard snapshot
+Captured: 2026-04-19 (Europe/London)
+Source: live browser extraction from app.ahrefs.com using OpenClaw managed browser (logged in successfully)
+
+Login / access status
+- No login blocker encountered.
+- Ahrefs dashboard and Site Explorer pages were accessible.
+- Ahrefs displayed a platform notice: some SERPs since late March may show incomplete or unusual results.
+
+1) bluecanvas.ai
+- Domain target: bluecanvas.ai/ (mode: Subdomains)
+- Project ID: 9691554
+- Domain Rating (DR): 13
+- Dashboard / overview context showed: Organic keywords 0
+- Organic keywords page showed: 0 keywords, table state = "No results found"
+- Top organic keyword positions visible: none
+- Relevant page URL: https://app.ahrefs.com/site-explorer/organic-keywords?mode=subdomains&projectId=9691554&target=bluecanvas.ai%2F&volume_type=monthly
+- Notes: dashboard also showed DR change as -12, but the requested metric is DR=13.
+
+2) uktradejobs.com
+- Domain target: uktradejobs.com/ (mode: Subdomains)
+- Project ID: 9541040
+- Domain Rating (DR): 8
+- Dashboard / overview context showed: Organic keywords 3 (dashboard card), while the organic keywords table page displayed 7 keywords total on 19 Apr 2026.
+- Top 3 visible organic keyword positions observed on the organic keywords table:
+  1. Keyword: is city and guilds an nvq
+     - Position: 7
+     - Traffic: 5
+     - URL: https://uktradejobs.com/careers/trade-qualifications-explained
+     - Updated: 26 Mar 2026
+  2. Keyword: plumbing apprenticeship london
+     - Position: 26
+     - Traffic: 1
+     - URL: https://uktradejobs.com/job/plumbing-apprentice-london
+     - Updated: 3 d ago
+  3. Keyword: train to be a locksmith
+     - Position: 32
+     - Traffic: 0
+     - URL: https://uktradejobs.com/careers/how-to-become-a-locksmith
+     - Updated: 6 Mar 2026
+- Additional visible rows on the table had positions 56, 56, 64, and 65.
+- Relevant page URL: https://app.ahrefs.com/site-explorer/organic-keywords?mode=subdomains&projectId=9541040&target=uktradejobs.com%2F&volume_type=monthly
+
+Quick summary
+- bluecanvas.ai: DR 13, no visible organic keywords.
+- uktradejobs.com: DR 8, best visible keyword positions were 7, 26, and 32.
