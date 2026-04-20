@@ -21,12 +21,12 @@ Help Phil and Stacey build a future. £60k debt, breakeven £3.1k-£3.5k/mo. Blu
 - **Stacey**, partner, low WBC.
 - **James Gorman**, £250/mo SEO client, estate agent, Derry.
 - **Cormac Venney**, HIP Psychology. £650/mo BD service, delivery active.
-- **Rory & Aco**, Follow Rabbit AI (followrabbit.ai). £1k setup paid, £500/mo retainer, onboarding started 2026-04-09.
+- **Rory & Aco**, Follow Rabbit AI (followrabbit.ai). £1k setup paid, £500/mo retainer, onboarding active.
 - **Gavan Wall**, Wall Group SPAR prospect. Website v3 deployed, awaiting Phil's final UX review before sharing.
 - **White Oaks**, new client. Paid £1,000 on 2026-04-17 for an app build; discovery/spec still needs captured.
 
 ## Recent Contacts / Watchouts
-- **ghostseven** and **synthw4ve** sent low-signal Moltbook DMs on 2026-04-19 (wallet / off-platform style asks). Boundary replies sent, no links clicked, no secrets shared, no off-platform move.
+- **ghostseven**, **synthw4ve**, and **null_return** are low-signal Moltbook accounts. Default stance: public-first only, refuse wallet / funding / off-platform asks, click no links, share no secrets; `null_return` can be ignored unless signal improves.
 
 ## Revenue
 - James Gorman: £250/mo
@@ -43,6 +43,6 @@ Help Phil and Stacey build a future. £60k debt, breakeven £3.1k-£3.5k/mo. Blu
 - **Follow Rabbit / Blue Canvas:** onboarding in progress.
 - **White Oaks:** active new app-build workstream after £1,000 payment on 2026-04-17. Need to capture discovery/spec in workspace.
 - **ClawRoster:** browse seed is live through roster `#142`, but registrations still show `0` rows and `0` real sign-ups. Positioning is now anchored around two proofs: `agentic setup` and `how early you were`. Live copy leans into recruiter / LinkedIn / employer utility. Next agreed product move is to replace the JSON-heavy `/submit` flow with a proper form-first submit experience. Frame the proof layer as `activity receipts` / `proof-of-work feed`, not a realtime agent stream.
-- **Moltbook / MoltLaunch:** karma is `303` as of 2026-04-19. Latest engagement round cleared the inbox back to `0` unread and `0` pending DM requests, with `4` substantive trending-post comments and `1` new `/builds` post live (`Before we let an agent build a page, we force the brief to name the next action`). Keep engaging governance, accountability, workflow, and security threads. MoltLaunch inbox is still empty.
+- **Moltbook / MoltLaunch:** as of 2026-04-20, Moltbook is at `308 karma` and `36 followers`, with inbox clear at `0` unread notifications, `0` unread DMs, and `0` pending DM requests. MoltLaunch inbox is still empty with `0` active tasks. Latest round added `9` verified comments across governance / workflow / auditability threads and `1` new `agents` post live (`The cheapest anti-drift habit in a scheduled agent is a one-call home snapshot`); `1` extra comment is still pending verification. Keep leaning into governance, accountability, workflow, and security topics, and keep low-signal DMs on a strict public-first boundary.
 - **TK Brolly:** current showcase direction was rejected on 2026-04-19 as still feeling fake / "no good". Next pass must rebuild much closer to `bsg-ltd.com` using real TK Brolly site / demolition imagery, not placeholders. Critical blocker is `3-5` proper photos.
 - **Ardmore:** future-only CricketEurope Ardmore feed exists locally and is not live because the repo had unrelated local changes.
