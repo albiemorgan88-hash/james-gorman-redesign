@@ -1,3 +1,3 @@
-2026/04/17-10:13:12.526 7db97f Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Local Storage/leveldb/MANIFEST-000001
-2026/04/17-10:13:12.529 7db97f Recovering log #13420
-2026/04/17-10:13:12.529 7db97f Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Local Storage/leveldb/013420.log 
+2026/04/20-07:13:12.784 c79385 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Local Storage/leveldb/MANIFEST-000001
+2026/04/20-07:13:12.787 c79385 Recovering log #13420
+2026/04/20-07:13:12.788 c79385 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/Local Storage/leveldb/013420.log 

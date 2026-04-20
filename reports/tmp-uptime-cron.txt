@@ -1,0 +1,46 @@
+Uptime + cron check
+Checked at: 2026-04-20 07:02:54 BST
+Workspace: /Users/philsagent/.openclaw/workspace
+
+1) HTTPS availability
+- bluecanvas.ai
+  status: 200
+  final_url: https://www.bluecanvas.ai/
+  total_time_s: 0.586
+  notes: redirect to www
+- ardmorecricket.com
+  status: 200
+  final_url: https://ardmorecricket.com/
+  total_time_s: 0.145
+- uktradejobs.com
+  status: 200
+  final_url: https://uktradejobs.com/
+  total_time_s: 0.381
+- openclawconsultant.co.uk
+  status: 200
+  final_url: https://openclawconsultant.co.uk/
+  total_time_s: 0.380
+
+Summary: all 4 sites returned HTTPS 200 on live check.
+
+2) Cron failures in the last 24h (accessible local history)
+Source: `openclaw cron list` + `openclaw cron runs --id ...`
+Window relative to check time: since about 2026-04-19 07:02 BST
+
+Failures found:
+- cron-watchdog
+  when: 2026-04-19 09:00:00 BST
+  duration_s: 120
+  error: cron: job execution timed out
+- ClawRoster Daily
+  when: 2026-04-19 11:00:00 BST
+  duration_s: 607
+  error: Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.
+- moltbook-daily-engagement
+  when: 2026-04-19 13:00:00 BST
+  duration_s: 600
+  error: cron: job execution timed out
+
+No failure found in the user crontab backup job:
+- crontab entry: `0 9 * * * /Users/philsagent/env-backup.sh >> /Users/philsagent/env-backup.log 2>&1`
+- latest accessible log line: 2026-04-19 09:00:00 BST, backup completed and cleanup ran, no error shown.

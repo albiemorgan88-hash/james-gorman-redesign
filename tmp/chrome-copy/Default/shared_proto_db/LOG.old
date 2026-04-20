@@ -1,3 +1,6 @@
-2026/04/16-07:03:37.443 5ed2eb Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/shared_proto_db/MANIFEST-000001
-2026/04/16-07:03:37.443 5ed2eb Recovering log #7
-2026/04/16-07:03:37.451 5ed2eb Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/shared_proto_db/000007.log 
+2026/04/17-10:13:12.719 7db932 Reusing MANIFEST /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/shared_proto_db/MANIFEST-000001
+2026/04/17-10:13:12.719 7db932 Recovering log #7
+2026/04/17-10:13:12.722 7db932 Reusing old log /Users/philsagent/.openclaw/workspace/tmp/chrome-copy/Default/shared_proto_db/000007.log 
+2026/04/17-10:13:12.739 7db91d Level-0 table #13: started
+2026/04/17-10:13:12.745 7db91d Level-0 table #13: 121575 bytes OK
+2026/04/17-10:13:12.751 7db91d Delete type=0 #7

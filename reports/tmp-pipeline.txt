@@ -1,0 +1,63 @@
+# Pipeline review — 2026-04-20
+
+## Follow-up needed
+
+1. **Gavan Wall / Wall Group (prospect)**
+   - Website v3 is deployed, but it still appears unsent because Phil/PJ has not done the final UX review/test.
+   - Recent trail: "awaiting Phil's final UX review before sharing"; later note says "PJ needs to do final UX test on Wall Group site."
+   - Sources: `MEMORY.md:25`, `memory/2026-04-03.md:20`, `memory/2026-03-30.md:183`
+
+2. **White Oaks (new client)**
+   - £1,000 has been paid and the app build is active, but discovery/spec has still not been captured in the workspace.
+   - This is the clearest active client follow-up gap.
+   - Sources: `MEMORY.md:26`, `MEMORY.md:44`, `memory/2026-04-17.md:37`
+
+3. **Joe Abrahams (lead)**
+   - Readiness Scorecard demo exists, but memory repeatedly says there has been no recent follow-up / no contact.
+   - PJ was explicitly asked to nudge Joe.
+   - Sources: `memory/2026-03-07.md:7-8`, `memory/2026-03-09.md:145`
+
+4. **Apollo outreach status (solicitors, then accountants)**
+   - Solicitor sequence was launched live; accountant batch was prepared afterward.
+   - On 2026-04-03 the explicit follow-up item was: check whether approved Apollo sequences were actually sent.
+   - Sources: `memory/2026-03-23.md:44-46`, `memory/2026-03-23.md:87`, `memory/2026-04-03.md:19`
+
+5. **James Gorman / JGP next-step work**
+   - Current instruction is not more new pages. Next run should begin with a full live review + end-to-end test, then technical SEO fixes only.
+   - Remaining issues are still live: blank/indexation cleanup, footer/contact errors, H1/meta cleanup, CTA targets.
+   - Separate follow-up item: press release was created but later memory says it still needs sending to media contacts.
+   - Sources: `MEMORY.md:41`, `memory/2026-04-14.md:108-112`, `memory/2026-04-14.md:199`, `memory/2026-04-03.md:22`
+
+6. **Follow Rabbit AI (client onboarding)**
+   - Client is paid and marked onboarding/in progress.
+   - Two Webflow CMS items were staged for Blue Canvas but not published, so there is a lightweight follow-up if PJ wants the logo strip/case study visible.
+   - Sources: `MEMORY.md:24`, `MEMORY.md:43`, `memory/2026-04-09.md:3-8`, `memory/2026-04-14.md:57`
+
+## Blocked / needs PJ input
+
+1. **Wall Group final review**
+   - The blocker is still PJ/Phil's final UX test before sharing with Gavan.
+   - Sources: `MEMORY.md:25`, `memory/2026-04-03.md:20`
+
+2. **JGP Wix-editor fixes**
+   - Some remaining JGP fixes look like Wix editor tasks, not a clean API lane: footer/contact cleanup, social links, slug/indexation cleanup, H1/meta cleanup.
+   - Earlier note also says PJ to fix bad slugs/social links in Wix editor.
+   - Sources: `memory/2026-04-07.md:33`, `memory/2026-04-14.md:110-112`, `memory/2026-04-14.md:199`
+
+3. **Follow Rabbit CMS publish decision**
+   - Draft items were staged but not published; publication depends on Phil/PJ.
+   - Source: `memory/2026-04-14.md:57`
+
+4. **HIP Psychology DocuSign check**
+   - Engagement letter PDF was sent to PJ for review/DocuSign, and later memory still said to check whether the DocuSign contract had been sent/signed.
+   - Sources: `memory/2026-03-31.md:258`, `memory/2026-04-03.md:21`
+
+5. **Lead-gen infrastructure blockers owned by PJ**
+   - Google Ads still needed PJ's manual UI fix for the punctuation violation.
+   - bluecanvas.ai still needed redirects/publish in Webflow Designer.
+   - These are not individual prospects, but they directly block lead capture and campaign performance.
+   - Sources: `memory/2026-03-09.md:141-142`
+
+## Short priority recommendation
+- Highest urgency: **White Oaks discovery/spec**, **Wall Group final review**, **Joe Abrahams nudge**, **Apollo sent-status check**.
+- Best "ask PJ now" list: **Wall Group UX sign-off**, **JGP Wix fixes / press release send**, **Follow Rabbit publish decision**, **HIP DocuSign status**, **Ads/Webflow manual fixes**.
