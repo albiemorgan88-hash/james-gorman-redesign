@@ -2,6 +2,31 @@
 
 Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 
+## LATEST UPDATE - 20th April 2026 - NEXT CONTENT BLAST DRAFTED LOCALLY, KEPT DRAFT-ONLY 📝
+
+### COMPLETED:
+- [DONE] Re-checked the current live content mix before drafting the next batch by reviewing:
+  - `seo-changelog.md`
+  - `backlog.md`
+  - local `blog-drafts/`
+  - live `https://www.jamesgormanproperty.com/blog`
+  - live `https://www.jamesgormanproperty.com/blog-posts-sitemap.xml`
+- [DONE] Confirmed the recent April live cluster is already heavy on **Claudy / Dungiven / Eglinton / Waterside / Cityside / Limavady**, so the next batch should avoid piling more buyer-led April overlap into those same topics
+- [DONE] Chose a cleaner next-commercial angle: **seller/service-led companion posts** for underused live area pages plus one high-intent Derry commercial explainer
+- [DONE] Created 4 new local draft-only posts:
+  - `blog-drafts/2026-04-20-estate-agent-culmore-derry-seller-guide.md`
+  - `blog-drafts/2026-04-20-estate-agent-drumahoe-derry-seller-guide.md`
+  - `blog-drafts/2026-04-20-estate-agent-strathfoyle-derry-seller-guide.md`
+  - `blog-drafts/2026-04-20-estate-agent-fees-derry-seller-guide.md`
+- [DONE] Kept this run **draft-only**. No Wix publish action taken.
+
+### NEXT ACTIONS:
+- [TODO] **P2 — Review and publish the 4 new drafts manually in Wix if Phil wants this batch to go live**
+- [TODO] **P2 — When publishing, strip the draft metadata header from the visible article body** so the earlier Wix content-leak issue does not reappear
+- [TODO] **P2 — Add custom excerpts + featured images to the new batch at publish time** so the blog feed looks stronger and snippets stay clean
+- [TODO] **P2 — Add tight internal links after publish** between the new Culmore / Drumahoe / Strathfoyle / fees pieces and the strongest live valuation, seller, and area pages
+- [TODO] **P2 — If Phil wants a bigger local batch next, expand with seller/service companions only** rather than adding more overlapping buyer guides into the April location clusters
+
 ## LATEST UPDATE - 17th April 2026 - BLOG RECOVERY CHECK PASSED, NO REPUBLISH NEEDED ✅
 
 ### COMPLETED:

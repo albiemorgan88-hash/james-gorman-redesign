@@ -288,53 +288,32 @@ export default function Home() {
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
-              Latest Guides
+              Buyer Guides
             </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-6">
-              Expert OpenClaw Knowledge
+              Start With The Commercial Stuff
             </h2>
-            <p className="text-muted-dark text-lg max-w-[600px] mx-auto">
-              In-depth guides covering everything from cost analysis to enterprise security. Written by someone who runs OpenClaw in production daily.
+            <p className="text-muted-dark text-lg max-w-[640px] mx-auto">
+              These are the pages serious buyers usually read first, scope, pricing, audit logic, and what good OpenClaw help should actually look like.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <a
-              href="/guides/openclaw-vs-virtual-assistant-cost"
-              className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
-            >
-              <div className="flex items-center justify-between mb-3">
-                <span className="inline-block bg-orange/10 text-orange px-3 py-1 rounded-full text-xs font-medium">
-                  Cost Analysis
-                </span>
-                <span className="text-muted text-xs">8 min read</span>
-              </div>
-              <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
-                OpenClaw vs Virtual Assistant Cost Comparison 2026
-              </h3>
-              <p className="text-muted-dark text-sm mb-4 leading-relaxed">
-                Complete cost breakdown comparing OpenClaw AI agents vs traditional virtual assistants. Calculate ROI and savings.
-              </p>
-              <div className="flex items-center text-orange font-semibold text-sm">
-                Read Guide →
-              </div>
-            </a>
-
-            <a
-              href="/guides/openclaw-enterprise-security-compliance"
+              href="/guides/openclaw-consultant-uk"
               className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
             >
               <div className="flex items-center justify-between mb-3">
                 <span className="inline-block bg-blue/10 text-blue px-3 py-1 rounded-full text-xs font-medium">
-                  Security
+                  Consulting
                 </span>
-                <span className="text-muted text-xs">12 min read</span>
+                <span className="text-muted text-xs">7 min read</span>
               </div>
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
-                Enterprise Security & UK Compliance Guide 2026
+                OpenClaw Consultant UK
               </h3>
               <p className="text-muted-dark text-sm mb-4 leading-relaxed">
-                Complete guide to OpenClaw enterprise security features, UK GDPR compliance, and data protection requirements.
+                What good OpenClaw consulting should include, when outside help is worth it, and how to avoid paying for vague AI theatre.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
                 Read Guide →
@@ -342,20 +321,41 @@ export default function Home() {
             </a>
 
             <a
-              href="/guides/openclaw-managed-service-uk"
+              href="/guides/openclaw-consultant-cost-uk"
+              className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="inline-block bg-orange/10 text-orange px-3 py-1 rounded-full text-xs font-medium">
+                  Pricing
+                </span>
+                <span className="text-muted text-xs">6 min read</span>
+              </div>
+              <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
+                OpenClaw Consultant Cost UK
+              </h3>
+              <p className="text-muted-dark text-sm mb-4 leading-relaxed">
+                A straight view of UK OpenClaw consultant pricing, from audits and pilots through implementation and managed support.
+              </p>
+              <div className="flex items-center text-orange font-semibold text-sm">
+                Read Guide →
+              </div>
+            </a>
+
+            <a
+              href="/guides/ai-audit-for-business"
               className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
             >
               <div className="flex items-center justify-between mb-3">
                 <span className="inline-block bg-green-500/10 text-green-600 px-3 py-1 rounded-full text-xs font-medium">
-                  Support
+                  Audit
                 </span>
-                <span className="text-muted text-xs">9 min read</span>
+                <span className="text-muted text-xs">7 min read</span>
               </div>
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
-                OpenClaw Managed Service UK
+                AI Audit for Business
               </h3>
               <p className="text-muted-dark text-sm mb-4 leading-relaxed">
-                What ongoing OpenClaw support should actually include, when a monthly retainer is worth it, and what should still stay in-house.
+                What to review before you automate anything serious, including workflow clarity, ownership, data risk, and approval points.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
                 Read Guide →
@@ -363,20 +363,20 @@ export default function Home() {
             </a>
 
             <a
-              href="/guides/openclaw-training-for-teams"
+              href="/guides/ai-consultancy-costs-uk"
               className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
             >
               <div className="flex items-center justify-between mb-3">
                 <span className="inline-block bg-purple-500/10 text-purple-600 px-3 py-1 rounded-full text-xs font-medium">
-                  Training
+                  Budgeting
                 </span>
                 <span className="text-muted text-xs">8 min read</span>
               </div>
               <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
-                OpenClaw Training for Teams
+                AI Consultancy Costs UK
               </h3>
               <p className="text-muted-dark text-sm mb-4 leading-relaxed">
-                How to get real adoption after setup, what different roles need to learn, and how to handle handover without confusion.
+                Typical UK consultancy cost bands for audits, pilots, implementation work, and retainers, without the usual pricing waffle.
               </p>
               <div className="flex items-center text-orange font-semibold text-sm">
                 Read Guide →

@@ -1,5 +1,75 @@
 # James Gorman Property - SEO Changelog
 
+## 20th April 2026 - NEXT JAMES CONTENT BLAST PREPPED AS 4 NEW LOCAL DRAFTS, NO LIVE PUSH 📝
+
+### CHANGED LIVE
+
+- No new public edit was applied in this pass.
+- No Wix publish was attempted in this run.
+
+### AUDIT / DECISION NOTES
+
+- Reviewed the current draft/history state first, as required:
+  - `README.md`
+  - `backlog.md`
+  - latest `seo-changelog.md` entries
+  - local `blog-drafts/`
+- Re-checked the live blog surface before choosing topics:
+  - `https://www.jamesgormanproperty.com/blog`
+  - `https://www.jamesgormanproperty.com/blog-posts-sitemap.xml`
+- Confirmed the recent live April cluster is already concentrated around:
+  - **Claudy**
+  - **Dungiven**
+  - **Eglinton**
+  - **Waterside**
+  - **Cityside**
+  - **Limavady**
+- Also confirmed existing live area posts already cover buyer/location-style slugs for:
+  - `properties-for-sale-in-culmore-derry`
+  - `properties-for-sale-in-drumahoe-derry`
+  - `properties-for-sale-in-strathfoyle-derry`
+- **Decision:** avoid drafting another buyer-heavy April location batch on the same live clusters and instead move to cleaner **seller/service-intent companion content** for underused areas, plus one Derry-wide commercial explainer.
+
+### NEW LOCAL DRAFTS CREATED
+
+Saved all four as **local drafts only** in `blog-drafts/`:
+
+1. `blog-drafts/2026-04-20-estate-agent-culmore-derry-seller-guide.md`
+   - **Title:** *Estate Agent Culmore Derry: How to Price, Present and Sell Well in One of Derry's Stronger Family Markets*
+   - **Suggested slug:** `estate-agent-culmore-derry`
+   - **Intent:** seller/service-led Culmore companion to the live buyer-style Culmore article
+
+2. `blog-drafts/2026-04-20-estate-agent-drumahoe-derry-seller-guide.md`
+   - **Title:** *Estate Agent Drumahoe Derry: How to Price, Present and Launch for Better Buyer Response*
+   - **Suggested slug:** `estate-agent-drumahoe-derry`
+   - **Intent:** seller/service-led Drumahoe companion to the live buyer-style Drumahoe article
+
+3. `blog-drafts/2026-04-20-estate-agent-strathfoyle-derry-seller-guide.md`
+   - **Title:** *Estate Agent Strathfoyle Derry: Practical Advice on Pricing, Presentation and Selling Well*
+   - **Suggested slug:** `estate-agent-strathfoyle-derry`
+   - **Intent:** seller/service-led Strathfoyle companion to the live buyer-style Strathfoyle article
+
+4. `blog-drafts/2026-04-20-estate-agent-fees-derry-seller-guide.md`
+   - **Title:** *Estate Agent Fees Derry: What Sellers Should Expect and What Good Value Actually Looks Like*
+   - **Suggested slug:** `estate-agent-fees-derry`
+   - **Intent:** commercial-intent Derry seller explainer built off the existing keyword-export gap for `estate agent fees derry`
+
+### IMPORTANT STATUS NOTE
+
+- These four files are draft-only and remain local for Phil review.
+- I did **not** push anything into Wix in this run.
+- A proven Wix blog publish path appears to exist from the validated 13-14 April publish runs, but I intentionally did not use it here because this run did not include fresh explicit publish approval.
+
+### LIVE-READINESS / PUBLISH NOTES
+
+- The article bodies, metadata drafts, slugs and internal-link suggestions are ready for Wix draft/publish handling.
+- Before any live push, the draft metadata header at the top of each local file should be kept out of the public body, because a previous Wix publish pass briefly leaked planning fields like title/meta blocks into the visible article content.
+- Strongest publish order if Phil wants this batch live: Culmore -> Drumahoe -> Strathfoyle -> Fees explainer.
+- Still worth adding at publish time:
+  - clean custom excerpts
+  - featured images
+  - post-to-post internal links into valuation, selling, and the matching live area pages
+
 ## 17th April 2026 - RECOVERY CHECK FOR 4 APRIL BLOG POSTS, ALL STILL LIVE ✅
 
 ### CHANGED LIVE

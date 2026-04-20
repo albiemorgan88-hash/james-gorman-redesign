@@ -11,6 +11,184 @@ export interface Guide {
 
 export const guides: Guide[] = [
   {
+    slug: 'ai-for-manufacturing-uk',
+    title: 'AI for Manufacturing UK: Practical Wins for Mid-Sized Makers',
+    metaTitle: 'AI for Manufacturing UK | Practical Use Cases | Blue Canvas',
+    metaDescription: 'A practical guide to AI for UK manufacturers, covering quality, planning, maintenance, document handling, and where to start without wasting budget.',
+    excerpt: 'UK manufacturers do not need hype. They need fewer defects, cleaner scheduling, tighter documents, and downtime that is predicted rather than endured.',
+    category: 'Industry Guides',
+    content: `<p>Most UK manufacturers are not looking for a futurist vision. They are looking for fewer defects, cleaner handovers between shifts, faster quoting, less chasing of paperwork, and a bit more warning before a machine causes a three-day problem. That is where <strong>AI for manufacturing</strong> gets useful, and that is where the sensible projects live.</p>
+
+<p>The good news is that the bar for a first AI project in a UK factory is lower than most leadership teams assume. The bar for a good one is operational clarity, not clever technology. At <a href="https://www.bluecanvas.ai">Blue Canvas</a>, we see the strongest results when one bottleneck is mapped properly before any tool is chosen.</p>
+
+<h2>Where AI earns its keep on UK factory floors</h2>
+<p><strong>Quality and defect detection.</strong> Vision models can flag inconsistent parts, missed features, or surface defects earlier than a tired set of eyes at shift end. The measurable wins are rework reduction, fewer customer returns, and less firefighting on Monday morning.</p>
+
+<p><strong>Planning and scheduling.</strong> Demand forecasting, MRP clean-up, and shift planning benefit when AI is applied to reasonably tidy ERP data. Start with the product lines that cause the most disruption rather than boiling the whole schedule at once.</p>
+
+<p><strong>Predictive maintenance.</strong> Sensor data plus simple models can flag drift before a breakdown. You do not need a full IIoT platform to get value. Many mid-sized manufacturers begin with one critical asset and a focused rollout.</p>
+
+<p><strong>Document and compliance handling.</strong> RFQs, engineering change notes, supplier certificates, CE/UKCA paperwork, and audit packs eat hours. AI can summarise, route, and extract structured fields so engineers stop acting as admins. See <a href="/guides/ai-document-processing">AI Document Processing</a> for the pattern.</p>
+
+<h2>Where manufacturers get stuck</h2>
+<p>The usual blocker is data. Not a lack of it, but the shape of it: machine logs in one system, quality records in another, shop-floor notes on paper, and a supervisor with the real picture in their head. Before committing to a platform, it is worth walking through the <a href="/guides/ai-data-readiness-checklist">AI Data Readiness Checklist</a>.</p>
+
+<p>The other blocker is governance. Safety-critical products and regulated customers do not reward vague AI rollouts. Decide early where human sign-off is mandatory and where the model can suggest rather than decide.</p>
+
+<h2>A sensible first project for UK manufacturers</h2>
+<p>Pick one line, one shift, or one asset. Pick one KPI, such as defect rate, downtime minutes, or quote turnaround. Map the workflow, name the owner, and run a narrow pilot for 60 to 90 days. If it moves the KPI, scale from proof. If it does not, you have lost a sensible experiment, not a strategic programme.</p>
+
+<p>This pairs well with <a href="/guides/ai-workflow-mapping">AI Workflow Mapping</a>, <a href="/guides/ai-implementation-roadmap">AI Implementation Roadmap</a>, and <a href="/guides/ai-readiness-assessment">AI Readiness Assessment</a>.</p>
+
+<h2>Local context still matters</h2>
+<p>Manufacturing in Northern Ireland, the North West, and across UK regional clusters runs on tight teams and real cashflow pressure. A good AI partner should understand that a £40k failed project is not a learning opportunity. It is a problem. The right scope is whatever is small enough to measure and big enough to matter.</p>
+
+<p>If you want a pragmatic second opinion before you commit budget, <a href="https://www.bluecanvas.ai/#book">book a free 15-minute consultation</a>.</p>`,
+    faqs: [
+      { q: 'What is the best first AI project for a UK manufacturer?', a: 'Usually a narrow quality, scheduling, or document workflow where the pain is measurable and the data is already decent enough to work with.' },
+      { q: 'Do we need IIoT or new sensors to start?', a: 'Not always. Many useful projects begin with existing ERP, MES, or quality data before any new hardware is added.' },
+      { q: 'How do we prove ROI to the board?', a: 'Pick one KPI such as defect rate, downtime minutes, or quote turnaround and baseline it before the pilot starts. Compare honestly at 60 to 90 days.' },
+      { q: 'Is AI risky for regulated or safety-critical products?', a: 'It can be if governance is weak. Decide early where AI suggests and where a human signs off, and document that clearly.' },
+      { q: 'Can small manufacturers benefit or is this only for large factories?', a: 'Smaller manufacturers often move faster because decisions are simpler. A focused pilot can work well for firms with under 100 staff.' },
+      { q: 'How long before we see value?', a: 'Expect 60 to 90 days for a first pilot to show measurable results if the workflow and data are properly scoped up front.' },
+    ],
+  },
+  {
+    slug: 'ai-for-ecommerce-uk',
+    title: 'AI for E-commerce UK: Where It Actually Moves the Numbers',
+    metaTitle: 'AI for E-commerce UK | Practical Playbook | Blue Canvas',
+    metaDescription: 'A practical guide to AI for UK e-commerce, covering product content, merchandising, customer service, returns, and where AI does not yet belong.',
+    excerpt: 'UK e-commerce teams do not need another dashboard. They need faster product content, sharper merchandising, fewer support tickets, and lower return rates.',
+    category: 'Industry Guides',
+    content: `<p>UK e-commerce is a margin business pretending to be a growth business. Paid media is expensive, returns are brutal, and the unit economics punish sloppy execution. That is why <strong>AI for e-commerce</strong> matters. Used properly, it shortens the cycle from supplier to storefront, tightens merchandising, and removes a chunk of repetitive support work.</p>
+
+<p>It also attracts a lot of nonsense. Not every AI feature shipped by a SaaS vendor deserves a slot in your stack. The useful lens is always the same: does this move a number that actually runs your P&L?</p>
+
+<h2>Where AI consistently pays back</h2>
+<p><strong>Product content at scale.</strong> Descriptions, bullets, metadata, and category copy are classic AI wins because they are repetitive, templated, and volume-heavy. Pair this with human review for tone and claims, and you can onboard new SKUs in a fraction of the time.</p>
+
+<p><strong>On-site search and merchandising.</strong> Better search, smarter recommendations, and category-page tuning lift conversion directly. This is usually a vendor upgrade rather than a bespoke build.</p>
+
+<p><strong>Customer service and returns.</strong> First-line CX, order status, returns triage, and FAQ handling can be largely AI-assisted if the workflows are clean. Pair with <a href="/guides/ai-customer-service-guide">AI Customer Service Guide</a> and <a href="/guides/ai-chatbot-uk-business">AI Chatbot UK Business</a>.</p>
+
+<p><strong>Inventory and pricing.</strong> Demand signals, markdown timing, and SKU-level pricing benefit from AI on top of decent sales data. See <a href="/guides/ai-inventory-forecasting">AI Inventory Forecasting</a> and <a href="/guides/ai-pricing-optimisation">AI Pricing Optimisation</a> for the pattern.</p>
+
+<h2>Where AI is not ready yet</h2>
+<p>It is still a weak fit for brand-critical campaign creative, nuanced customer complaints, or decisions that depend on commercial judgement about suppliers, promotions, or long-term positioning. Use AI to speed the operators, not to replace them.</p>
+
+<p>Be careful around claims and compliance too. Product descriptions that imply health, safety, or regulatory benefits need human review, especially for food, beauty, supplements, and anything sold into regulated categories.</p>
+
+<h2>A sensible rollout order</h2>
+<p>Start with product content and customer service because the volume and variance are both high. Move on to merchandising once the catalogue is clean. Tackle inventory and pricing last because those need the most trustworthy data.</p>
+
+<p>This pairs well with <a href="/guides/ai-email-marketing-guide">AI Email Marketing Guide</a>, <a href="/guides/ai-for-retailers-uk">AI for Retailers UK</a>, and <a href="/guides/ai-workflow-automation">AI Workflow Automation</a>.</p>
+
+<h2>What good looks like</h2>
+<p>Measure the right things: content time per SKU, first-response time in support, returns avoided through better merchandising, conversion on priority categories, and contribution margin. If those numbers move, the AI is working. If only the dashboards look prettier, it is not.</p>
+
+<p>If you want a pragmatic review of where AI will move your numbers first, <a href="https://www.bluecanvas.ai/#book">book a free consultation with Blue Canvas</a>.</p>`,
+    faqs: [
+      { q: 'What is the fastest AI win for a UK e-commerce brand?', a: 'Usually product content at scale or first-line customer service. Both are high-volume, templated, and easy to measure.' },
+      { q: 'Do we need a custom build or will SaaS features do?', a: 'Most brands get further by adopting AI features inside existing platforms first, then building bespoke only where a real gap remains.' },
+      { q: 'Is AI-generated product copy safe for regulated categories?', a: 'It can be, but claims around health, safety, or efficacy need human review. Do not ship regulated copy straight from a model.' },
+      { q: 'How do we avoid damaging brand voice?', a: 'Give the model a short brand guide, sample approved copy, and a review step. Do not treat AI output as final until someone signs it off.' },
+      { q: 'Where should inventory and pricing AI sit in the roadmap?', a: 'Later than content and service. These need clean sales, stock, and margin data to produce decisions worth acting on.' },
+      { q: 'How do we measure whether AI is actually helping?', a: 'Track content time per SKU, first-response time, returns rate, category conversion, and contribution margin before and after rollout.' },
+    ],
+  },
+  {
+    slug: 'ai-grants-and-funding-uk',
+    title: 'AI Grants and Funding UK: What Is Available and What Is Worth Chasing',
+    metaTitle: 'AI Grants and Funding UK | Practical Guide | Blue Canvas',
+    metaDescription: 'A practical guide to AI grants and funding in the UK and Northern Ireland, covering Innovate UK, Invest NI, local support schemes, and what to avoid.',
+    excerpt: 'UK grants and funding for AI are real but narrow. The smart move is knowing which schemes fit your stage and which ones waste more time than they are worth.',
+    category: 'ROI & Business Case',
+    content: `<p>There is money around for UK businesses adopting AI. There is also a lot of noise. Not every scheme is worth the application burden, and not every adviser selling grant support is adding real value. A sensible approach to <strong>AI grants and funding in the UK</strong> starts with the same question as any other investment: is the project worth doing on its own merits, with grant money as an accelerant?</p>
+
+<p>If a project only works because of a grant, it is usually not a project. It is a funding exercise.</p>
+
+<h2>The main sources worth knowing about</h2>
+<p><strong>Innovate UK and UKRI.</strong> Competitions and Smart Grants support R&D-heavy AI projects, usually with match funding and a strong emphasis on genuine innovation. Good fit for firms with a real technical question to answer, less good for off-the-shelf adoption.</p>
+
+<p><strong>Invest NI and regional economic agencies.</strong> Northern Ireland businesses can look at Invest NI support for digital adoption, innovation vouchers, and productivity programmes. Scotland, Wales, and English regions have equivalents through their enterprise bodies and growth hubs.</p>
+
+<p><strong>Made Smarter and sector programmes.</strong> Manufacturers in particular should check Made Smarter adoption support, which has covered matched funding for digital and AI projects in participating regions.</p>
+
+<p><strong>Local council and LEP schemes.</strong> Smaller but easier. Often focused on productivity, skills, or digital adoption and sometimes the quickest route to a usable pilot budget.</p>
+
+<p><strong>Training and apprenticeship levies.</strong> If your project depends on upskilling staff, the apprenticeship levy, Skills Bootcamps, and sector training schemes can carry real weight alongside a core budget. See <a href="/guides/ai-training-for-teams">AI Training for Teams</a>.</p>
+
+<h2>What to avoid</h2>
+<p>Avoid chasing grants that do not match the project. Avoid advisers who take a large percentage cut without helping you shape the project itself. Avoid stretching the proposal to fit a funder's wording when the real work is narrower and simpler. Funders eventually notice, and your team pays the price in reporting overhead.</p>
+
+<p>Also avoid treating a grant as free money. Match funding, reporting burden, and audit obligations are real. The project still has to earn its keep commercially.</p>
+
+<h2>How to make a grant-backed AI project succeed</h2>
+<p>Start with the commercial case, not the application. Map the workflow, name the owner, and define the KPI first. A strong application is usually a strong business case with a grant wrapper, not the other way around.</p>
+
+<p>Pair this with <a href="/guides/ai-implementation-cost-uk">AI Implementation Cost UK</a>, <a href="/guides/ai-roi-calculator-uk">AI ROI Calculator UK</a>, and <a href="/guides/ai-audit-northern-ireland">AI Audit Northern Ireland</a> to pressure-test numbers before you write anything.</p>
+
+<h2>When grants are genuinely worth it</h2>
+<p>They work best when the project is slightly more ambitious than you would fund purely from operating cashflow, when the workflow is well understood, and when the team has capacity to run the reporting without dropping delivery. They also work well for skills-heavy rollouts where training costs would otherwise get squeezed.</p>
+
+<p>If you want help scoping a project that is worth funding, whether with a grant or without one, <a href="https://www.bluecanvas.ai/#book">book a free consultation with Blue Canvas</a>.</p>`,
+    faqs: [
+      { q: 'Where do UK businesses usually start looking for AI grants?', a: 'Innovate UK for R&D, regional agencies such as Invest NI for adoption support, and local growth hubs or LEPs for smaller productivity-focused schemes.' },
+      { q: 'Are grants worth the effort for an SME?', a: 'Only if the project is worth doing anyway. Grants should accelerate a real plan, not invent one.' },
+      { q: 'Do I need a grant writer?', a: 'Sometimes. A good one helps sharpen the case. Avoid anyone taking a large percentage without also improving the underlying project.' },
+      { q: 'Is match funding always required?', a: 'Very often, yes. Budget for it from the start so the business case is not fragile.' },
+      { q: 'What is a common mistake?', a: 'Stretching the project to fit the scheme rather than picking a scheme that fits the project. Funders notice the gap later.' },
+      { q: 'Can training be funded too?', a: 'Yes, through the apprenticeship levy, Skills Bootcamps, and various sector programmes that support digital and AI upskilling.' },
+    ],
+  },
+  {
+    slug: 'ai-for-marketing-agencies-uk',
+    title: 'AI for Marketing Agencies UK: Faster Delivery Without Diluting the Product',
+    metaTitle: 'AI for Marketing Agencies UK | Blue Canvas',
+    metaDescription: 'A practical guide to AI for UK marketing agencies, covering delivery speed, quality control, client transparency, margin, and where AI should not touch the work.',
+    excerpt: 'UK agencies are quietly rebuilding how work gets made. The winners use AI to tighten delivery and margin without turning output into template slop.',
+    category: 'Industry Guides',
+    content: `<p>Marketing agencies in the UK are in an awkward spot. Clients expect faster turnaround, tighter costs, and sharper creative, all at the same time. AI genuinely helps, but only if the agency treats it as an operating change rather than a prompt library. Used badly, AI turns agency output into the same generic content everyone else is shipping. Used well, it expands what a small team can deliver without diluting the product.</p>
+
+<p>The shift for agency leadership is less about tools and more about how work is planned, reviewed, priced, and owned.</p>
+
+<h2>Where AI genuinely helps agency delivery</h2>
+<p><strong>Research and discovery.</strong> Competitor scans, audience briefs, content audits, and first-draft strategy documents take hours that AI can compress without compromising the final output.</p>
+
+<p><strong>Content production.</strong> First drafts, social variants, metadata, long-form breakdowns, and repurposing of hero assets are strong AI territory when brand voice is clearly defined. See <a href="/guides/ai-content-creation-guide">AI Content Creation Guide</a>.</p>
+
+<p><strong>Analytics and reporting.</strong> Pulling performance narratives out of campaign data, drafting monthly reports, and explaining what moved are all good fits. Review still matters, especially when numbers meet client politics.</p>
+
+<p><strong>Internal operations.</strong> Meeting notes, handover documents, SOPs, and proposal structures benefit from AI support, which frees strategists and creatives to do the work only humans can do.</p>
+
+<h2>Where AI should not touch the work</h2>
+<p>Avoid AI-only creative on brand-critical campaigns. Avoid AI-generated social copy that goes live without a human pass. Avoid letting AI make tonal decisions for regulated clients in finance, health, legal, or public sector. The reputational risk is bigger than the efficiency gain.</p>
+
+<p>Also avoid hiding AI use from clients who have explicit policies about it. Most mature clients are fine with AI-assisted delivery if the agency is honest about scope and review.</p>
+
+<h2>Operating changes that actually matter</h2>
+<p>Price the output, not the hours. If AI compresses delivery by 40%, the pricing model needs to reflect that or the agency trains clients to expect cheaper work with thinner margin. Bring strategy and creative leadership into scoping earlier so the AI-assisted draft is built on the right brief.</p>
+
+<p>Govern prompts like an asset. A shared prompt library with owners and review cycles beats 30 freelance prompts drifting inside personal accounts. Pair with <a href="/guides/ai-prompt-governance">AI Prompt Governance</a> and <a href="/guides/ai-policy-for-employees">AI Policy for Employees</a>.</p>
+
+<p>Decide what AI does not do at your agency. Writing that down is a positioning choice, not just a policy choice.</p>
+
+<h2>A sensible first rollout</h2>
+<p>Pick one service line. Map the delivery flow, name the owner, and define the quality bar. Introduce AI at the drafting and reporting steps first, not at the creative-direction step. Measure time per deliverable, revision count, and client satisfaction.</p>
+
+<p>Pair this with <a href="/guides/ai-workflow-mapping">AI Workflow Mapping</a>, <a href="/guides/ai-rollout-plan">AI Rollout Plan</a>, and <a href="/guides/ai-email-marketing-guide">AI Email Marketing Guide</a>.</p>
+
+<p>If you want a pragmatic view on where AI fits into your agency's delivery and margin, <a href="https://www.bluecanvas.ai/#book">book a free consultation with Blue Canvas</a>.</p>`,
+    faqs: [
+      { q: 'Should agencies tell clients when AI has been used?', a: 'Yes, especially for clients with explicit policies. Most mature clients are fine with AI-assisted delivery if the agency is transparent about scope and review.' },
+      { q: 'Will AI replace junior agency roles?', a: 'It shifts them. Juniors move from heavy drafting toward review, QA, and client-ready refinement, which is arguably better training anyway.' },
+      { q: 'How should agencies price AI-assisted work?', a: 'By output and outcome, not by hours. Otherwise productivity gains get passed straight to the client and margin disappears.' },
+      { q: 'What is the biggest risk?', a: 'Generic output. If the brand voice is not properly defined and reviewed, AI can flatten the creative product quickly.' },
+      { q: 'Which service lines benefit first?', a: 'Content, research, analytics, and reporting. Brand-critical creative should come later, with stronger guardrails.' },
+      { q: 'Do we need a formal AI policy?', a: 'Yes. A short, practical policy covering approved tools, client disclosure, and review steps is enough for most agencies.' },
+    ],
+  },
+  {
     slug: 'ai-consultancy-derry',
     title: 'AI Consultancy Derry: Practical AI Support for North West Businesses',
     metaTitle: 'AI Consultancy Derry | Practical AI Support | Blue Canvas',
