@@ -2,13 +2,20 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowLeft, Share2, ExternalLink, Activity, Wrench, Clock, CheckCircle, Zap, Clipboard } from 'lucide-react';
+import { ArrowLeft, Share2, ExternalLink, Activity, Wrench, Clock, CheckCircle, Zap, Clipboard, ShieldCheck } from 'lucide-react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { useState, useEffect } from 'react';
 import { generateAllMockRosters } from '../../../lib/mock-data';
 import type { ClawRosterRegistration } from '../../../lib/supabase';
-import { getLinkedInCredentialName, getRosterBadges, getRosterTrustCopy, type RosterSource } from '../../../lib/roster-status';
+import {
+  getLinkedInCredentialName,
+  getLinkedInHandoffState,
+  getProofLaneState,
+  getRosterBadges,
+  getRosterTrustCopy,
+  type RosterSource,
+} from '../../../lib/roster-status';
 
 // Function to generate slug from agent name
 function generateSlug(agentName: string): string {
@@ -83,6 +90,17 @@ function buildRecruiterLinks(roster: Record<string, any>, source: RosterSource) 
     seen.add(link.href);
     return true;
   });
+}
+
+function getLinkedInIssueDateParts(value: unknown) {
+  const parsed = value ? new Date(String(value)) : new Date();
+  const fallback = new Date();
+  const safeDate = Number.isNaN(parsed.getTime()) ? fallback : parsed;
+
+  return {
+    year: safeDate.getFullYear(),
+    month: safeDate.getMonth() + 1,
+  };
 }
 
 // Hardcoded Albie data (matching the original page)
@@ -187,6 +205,19 @@ function transformRegistrationToAgentData(mockData: ClawRosterRegistration, sour
     })),
   ];
   
+  const payment = roster.payment && typeof roster.payment === 'object' ? roster.payment : null;
+  const paymentReceipt = mockData.payment_verified
+    ? {
+        network: (payment?.network as string) || 'base-mainnet',
+        chainId: (payment?.chain_id as number) || 8453,
+        txHash: (payment?.tx_hash as string) || mockData.tx_hash,
+        payerWallet: (payment?.payer_wallet as string) || mockData.wallet_address,
+        recipientWallet: (payment?.recipient_wallet as string) || null,
+        token: (payment?.token as string) || mockData.payment_token,
+        amount: (payment?.amount as number) ?? mockData.payment_amount,
+      }
+    : null;
+
   return {
     name: mockData.agent_name,
     role: nestedAgent.role || roster.category || mockData.agent_description,
@@ -218,6 +249,7 @@ function transformRegistrationToAgentData(mockData: ClawRosterRegistration, sour
     badges: getRosterBadges(mockData, source),
     trustCopy: getRosterTrustCopy(mockData, source),
     recruiterLinks: buildRecruiterLinks(roster, source),
+    paymentReceipt,
   };
 }
 
@@ -229,6 +261,7 @@ export default function RosterPage({ params }: PageProps) {
   const [agentData, setAgentData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [copiedToClipboard, setCopiedToClipboard] = useState(false);
+  const [copiedLinkedInField, setCopiedLinkedInField] = useState<string | null>(null);
 
   useEffect(() => {
     const loadAgentData = async () => {
@@ -316,9 +349,20 @@ export default function RosterPage({ params }: PageProps) {
 
   const shareUrl = `${typeof window !== 'undefined' && window.location?.origin ? window.location.origin : 'https://clawroster.io'}/roster/${generateSlug(agentData.name)}`;
   const linkedInCredentialName = getLinkedInCredentialName({ payment_verified: agentData.paymentVerified }, agentData.source);
+  const linkedInHandoff = getLinkedInHandoffState({ payment_verified: agentData.paymentVerified }, agentData.source);
+  const proofLane = getProofLaneState({ payment_verified: agentData.paymentVerified }, agentData.source);
+  const linkedInOrganizationName = 'Claw Roster';
+  const linkedInCredentialId = `CLAW-${agentData.rosterId}`;
+  const linkedInIssueDate = getLinkedInIssueDateParts(agentData.registeredDate || agentData.joinDate);
+  const linkedInCredentialFormUrl = `https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent(linkedInCredentialName)}&organizationName=${encodeURIComponent(linkedInOrganizationName)}&certUrl=${encodeURIComponent(shareUrl)}&certId=${encodeURIComponent(linkedInCredentialId)}&issueYear=${linkedInIssueDate.year}&issueMonth=${linkedInIssueDate.month}`;
+  const shareStatus = agentData.source === 'showcase'
+    ? 'Showcase example live for inspiration.'
+    : agentData.paymentVerified
+      ? 'Payment-verified roster now live on Base.'
+      : 'Public beta roster now live.';
   
   const shareToTwitter = () => {
-    const text = `I just claimed CLAW #${agentData.rosterId} on @ClawRoster — the digital CV for AI operators. Public beta roster now live. What's your Claw Date? 🦞`;
+    const text = `I just claimed CLAW #${agentData.rosterId} on @ClawRoster — the digital CV for AI operators. ${shareStatus} What's your Claw Date? 🦞`;
     window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`);
   };
 
@@ -327,12 +371,12 @@ export default function RosterPage({ params }: PageProps) {
   };
 
   const shareToTelegram = () => {
-    const text = `I just claimed CLAW #${agentData.rosterId} on ClawRoster — the digital CV for AI operators. Public beta roster now live. What's your Claw Date? 🦞`;
+    const text = `I just claimed CLAW #${agentData.rosterId} on ClawRoster — the digital CV for AI operators. ${shareStatus} What's your Claw Date? 🦞`;
     window.open(`https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(text)}`);
   };
 
   const shareToDiscord = async () => {
-    const text = `I just claimed CLAW #${agentData.rosterId} on ClawRoster — the digital CV for AI operators. Public beta roster now live. What's your Claw Date? 🦞 ${shareUrl}`;
+    const text = `I just claimed CLAW #${agentData.rosterId} on ClawRoster — the digital CV for AI operators. ${shareStatus} What's your Claw Date? 🦞 ${shareUrl}`;
     
     try {
       await navigator.clipboard.writeText(text);
@@ -340,6 +384,16 @@ export default function RosterPage({ params }: PageProps) {
       setTimeout(() => setCopiedToClipboard(false), 2000);
     } catch (err) {
       console.error('Failed to copy to clipboard:', err);
+    }
+  };
+
+  const copyLinkedInField = async (value: string, key: string) => {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopiedLinkedInField(key);
+      setTimeout(() => setCopiedLinkedInField(null), 1800);
+    } catch (err) {
+      console.error('Failed to copy LinkedIn field:', err);
     }
   };
 
@@ -404,14 +458,22 @@ export default function RosterPage({ params }: PageProps) {
                   
                   <div className="flex items-center space-x-3 mb-2">
                     <h1 className="text-3xl font-mono font-bold">{agentData.name}</h1>
-                    {agentData.badges.map((badge: any) => (
-                      <div key={badge.label} className="claw-mark bg-background-secondary text-primary px-3 py-1 rounded-lg text-sm font-mono relative group cursor-help border border-border">
-                        {badge.label}
-                        <div className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-background border border-border rounded-lg text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
-                          {agentData.trustCopy}
+                    {agentData.badges.map((badge: any) => {
+                      const toneClass = badge.tone === 'verified'
+                        ? 'bg-cyan-500/15 text-cyan-200 border-cyan-400/40'
+                        : badge.tone === 'showcase'
+                          ? 'bg-amber-500/15 text-amber-300 border-amber-400/30'
+                          : 'bg-background-secondary text-primary border-border';
+                      return (
+                        <div key={badge.label} className={`claw-mark inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-sm font-mono relative group cursor-help border ${toneClass}`}>
+                          {badge.tone === 'verified' && <ShieldCheck className="w-3.5 h-3.5" />}
+                          {badge.label}
+                          <div className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-background border border-border rounded-lg text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-normal max-w-xs z-10">
+                            {agentData.trustCopy}
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                   <p className="text-xl text-muted-foreground mb-2">{agentData.role}</p>
                   <div className="flex items-center space-x-4 text-sm text-muted-foreground">
@@ -513,6 +575,91 @@ export default function RosterPage({ params }: PageProps) {
             </motion.div>
           )}
 
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.18 }}
+            className="bg-card border border-border rounded-xl p-8 mb-8"
+          >
+            <div className="flex flex-col gap-2 mb-6">
+              <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-mono uppercase tracking-[0.18em] text-primary">
+                Trust lane
+              </div>
+              <h2 className="text-2xl font-mono font-bold">Roster tier and proof lane</h2>
+              <p className="text-muted-foreground">{proofLane.note}</p>
+            </div>
+
+            <div className={`grid gap-4 ${proofLane.nextLabel ? 'md:grid-cols-2' : 'md:grid-cols-1'}`}>
+              <div className="rounded-2xl border border-primary/20 bg-primary/5 p-5">
+                <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-2">Current tier</div>
+                <div className="font-mono text-2xl font-bold text-foreground mb-1">{proofLane.currentLabel}</div>
+                <div className="font-mono text-sm text-primary mb-3">{proofLane.currentMeta}</div>
+                <p className="text-sm text-muted-foreground leading-relaxed">{proofLane.currentSummary}</p>
+              </div>
+
+              {proofLane.nextLabel && (
+                <div className="rounded-2xl border border-border bg-background-secondary/60 p-5">
+                  <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-2">Next tier</div>
+                  <div className="font-mono text-2xl font-bold text-foreground mb-1">{proofLane.nextLabel}</div>
+                  <div className="font-mono text-sm text-accent mb-3">{proofLane.nextMeta}</div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{proofLane.nextSummary}</p>
+                </div>
+              )}
+            </div>
+          </motion.div>
+
+          {agentData.paymentVerified && agentData.paymentReceipt && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.19 }}
+              className="bg-cyan-950/20 border border-cyan-400/30 rounded-xl p-8 mb-8"
+            >
+              <div className="flex items-start gap-3 mb-6">
+                <ShieldCheck className="w-6 h-6 text-cyan-300 shrink-0 mt-1" />
+                <div>
+                  <h2 className="text-2xl font-mono font-bold text-cyan-200">On-chain registration receipt</h2>
+                  <p className="text-sm text-cyan-100/80 mt-1 max-w-2xl leading-relaxed">
+                    Payment verified on Base mainnet for this registration. This is a payment receipt only — it is not an independent audit of the operator&apos;s work, skills, or claims.
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4 text-sm">
+                <div className="rounded-xl border border-cyan-400/20 bg-background/30 p-4">
+                  <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-1">Network</div>
+                  <div className="font-mono text-cyan-100">{agentData.paymentReceipt.network} (chain {agentData.paymentReceipt.chainId})</div>
+                </div>
+                <div className="rounded-xl border border-cyan-400/20 bg-background/30 p-4">
+                  <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-1">Token paid</div>
+                  <div className="font-mono text-cyan-100">{agentData.paymentReceipt.token} · {agentData.paymentReceipt.amount}</div>
+                </div>
+                <div className="rounded-xl border border-cyan-400/20 bg-background/30 p-4 md:col-span-2">
+                  <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-1">Transaction hash</div>
+                  <a
+                    href={`https://basescan.org/tx/${agentData.paymentReceipt.txHash}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-cyan-300 break-all hover:text-cyan-200 transition-colors inline-flex items-center gap-2"
+                  >
+                    {agentData.paymentReceipt.txHash}
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+                <div className="rounded-xl border border-cyan-400/20 bg-background/30 p-4">
+                  <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-1">Payer wallet</div>
+                  <div className="font-mono text-cyan-100 break-all">{agentData.paymentReceipt.payerWallet}</div>
+                </div>
+                {agentData.paymentReceipt.recipientWallet && (
+                  <div className="rounded-xl border border-cyan-400/20 bg-background/30 p-4">
+                    <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-1">Recipient wallet</div>
+                    <div className="font-mono text-cyan-100 break-all">{agentData.paymentReceipt.recipientWallet}</div>
+                  </div>
+                )}
+              </div>
+            </motion.div>
+          )}
+
           {/* Tools & Capabilities */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -599,17 +746,22 @@ export default function RosterPage({ params }: PageProps) {
               boxShadow: '0 0 40px rgba(10, 102, 194, 0.1), inset 0 0 20px rgba(10, 102, 194, 0.05)'
             }}
           >
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#0A66C2]/30 bg-[#0A66C2]/10 px-3 py-1 text-xs font-mono uppercase tracking-[0.18em] text-[#73b7ff] mb-4">
+              LinkedIn handoff
+            </div>
             <h3 className="text-2xl font-mono font-bold text-[#0A66C2] mb-3">
-              Made for recruiter screens and LinkedIn clicks
+              {linkedInHandoff.heading}
             </h3>
-            <p className="text-muted-foreground mb-6">
-              Use one clean link to show your setup, timeline, trust state, and proof of work.
+            <p className="text-muted-foreground mb-4 max-w-2xl mx-auto">
+              {linkedInHandoff.description}
             </p>
+            <div className="max-w-2xl mx-auto rounded-xl border border-[#0A66C2]/20 bg-background/40 px-4 py-3 text-sm text-muted-foreground mb-6">
+              {linkedInHandoff.note}
+            </div>
             
             <motion.button
               onClick={() => {
-                const linkedinUrl = `https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent(linkedInCredentialName)}&organizationName=${encodeURIComponent('Claw Roster')}&certUrl=${encodeURIComponent(shareUrl)}&certId=CLAW-${agentData.rosterId}&issueYear=2026&issueMonth=3`;
-                window.open(linkedinUrl, '_blank');
+                window.open(linkedInCredentialFormUrl, '_blank');
               }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -622,11 +774,33 @@ export default function RosterPage({ params }: PageProps) {
               <svg className="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
-              Open LinkedIn Credential Form
+              {linkedInHandoff.buttonLabel}
             </motion.button>
             
             <div className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
-              If LinkedIn drops any fields, use the roster URL and CLAW number shown above as the credential link and ID.
+              If LinkedIn strips any fields, copy the values below and drop the roster into Featured or Licenses & certifications manually.
+            </div>
+
+            <div className="mt-6 grid gap-3 max-w-2xl mx-auto text-left">
+              {[
+                { label: 'LinkedIn title', value: linkedInCredentialName, key: 'name' },
+                { label: 'Organization', value: linkedInOrganizationName, key: 'org' },
+                { label: 'Roster ID', value: linkedInCredentialId, key: 'id' },
+                { label: 'Roster URL', value: shareUrl, key: 'url' },
+              ].map((field) => (
+                <div key={field.key} className="flex flex-col md:flex-row md:items-center gap-3 rounded-xl border border-[#0A66C2]/20 bg-background/40 p-4">
+                  <div className="md:w-40 text-xs uppercase tracking-[0.18em] text-muted-foreground">{field.label}</div>
+                  <div className="flex-1 font-mono text-sm text-foreground break-all">{field.value}</div>
+                  <button
+                    type="button"
+                    onClick={() => copyLinkedInField(field.value, field.key)}
+                    className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#0A66C2]/30 px-3 py-2 text-sm font-mono text-[#0A66C2] hover:border-[#0A66C2]/60 hover:bg-[#0A66C2]/10 transition-colors"
+                  >
+                    <Clipboard className="w-4 h-4" />
+                    {copiedLinkedInField === field.key ? 'Copied' : 'Copy'}
+                  </button>
+                </div>
+              ))}
             </div>
           </motion.div>
 

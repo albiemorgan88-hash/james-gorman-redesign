@@ -12,10 +12,12 @@ import {
   ExternalLink,
   FileJson,
   Send,
+  ShieldCheck,
   Sparkles,
 } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { getProofLaneState } from '../../lib/roster-status';
 
 type SubmitResult = {
   success?: boolean;
@@ -26,6 +28,26 @@ type SubmitResult = {
   relative_url?: string;
   agent_name?: string;
   message?: string;
+  beta_aligned?: boolean;
+  payment_verified?: boolean;
+  lane?: string;
+  verification?: {
+    network?: string;
+    token?: string;
+    amount?: number;
+    tx_hash?: string;
+    payer_wallet?: string;
+    recipient_wallet?: string;
+  };
+};
+
+type WalletInfo = {
+  address: string;
+  network: string;
+  requiredAmount: number;
+  acceptedTokens: string[];
+  usdcContract: string;
+  usdtContract: string;
 };
 
 type FormState = {
@@ -150,7 +172,12 @@ export default function SubmitPage() {
   const [submitting, setSubmitting] = useState(false);
   const [result, setResult] = useState<SubmitResult | null>(null);
   const [error, setError] = useState('');
-  const [copied, setCopied] = useState<'payload' | 'link' | ''>('');
+  const [copied, setCopied] = useState<'payload' | 'link' | 'announcement' | 'wallet' | ''>('');
+  const [lane, setLane] = useState<'beta' | 'verified'>('beta');
+  const [txHash, setTxHash] = useState('');
+  const [payerWallet, setPayerWallet] = useState('');
+  const [walletInfo, setWalletInfo] = useState<WalletInfo | null>(null);
+  const [walletError, setWalletError] = useState('');
 
   const generatedPayload = useMemo(() => {
     const contact = cleanObject({
@@ -192,6 +219,40 @@ export default function SubmitPage() {
     return () => window.clearTimeout(timeout);
   }, [copied]);
 
+  useEffect(() => {
+    let cancelled = false;
+
+    const loadWallet = async () => {
+      try {
+        const response = await fetch('/api/wallet');
+        const data = await response.json();
+        if (cancelled) return;
+        if (data?.success && data.address) {
+          setWalletInfo({
+            address: data.address,
+            network: data.network,
+            requiredAmount: data.requiredAmount,
+            acceptedTokens: data.acceptedTokens || [],
+            usdcContract: data.usdcContract,
+            usdtContract: data.usdtContract,
+          });
+        } else {
+          setWalletError('Could not load the ClawRoster payment wallet.');
+        }
+      } catch {
+        if (!cancelled) {
+          setWalletError('Could not load the ClawRoster payment wallet.');
+        }
+      }
+    };
+
+    loadWallet();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   const updateField = (field: keyof FormState, value: string) => {
     setForm((current) => ({ ...current, [field]: value }));
     setError('');
@@ -205,7 +266,7 @@ export default function SubmitPage() {
     setResult(null);
   };
 
-  const copyToClipboard = async (value: string, type: 'payload' | 'link') => {
+  const copyToClipboard = async (value: string, type: 'payload' | 'link' | 'announcement' | 'wallet') => {
     try {
       await navigator.clipboard.writeText(value);
       setCopied(type);
@@ -241,6 +302,9 @@ export default function SubmitPage() {
     }
   };
 
+  const TX_HASH_PATTERN = /^0x[a-fA-F0-9]{64}$/;
+  const WALLET_PATTERN = /^0x[a-fA-F0-9]{40}$/;
+
   const submitRoster = async () => {
     setSubmitting(true);
     setError('');
@@ -248,12 +312,30 @@ export default function SubmitPage() {
 
     try {
       const rosterData = validateRosterPayload();
-      const response = await fetch('/api/roster/submit', {
+      const endpoint = lane === 'verified' ? '/api/roster/submit-verified' : '/api/roster/submit';
+      const trimmedTx = txHash.trim();
+      const trimmedWallet = payerWallet.trim();
+
+      const payload =
+        lane === 'verified'
+          ? { ...rosterData, tx_hash: trimmedTx, payer_wallet: trimmedWallet }
+          : rosterData;
+
+      if (lane === 'verified') {
+        if (!TX_HASH_PATTERN.test(trimmedTx)) {
+          throw new Error('Enter a valid Base tx hash (0x + 64 hex characters) from the registration payment.');
+        }
+        if (!WALLET_PATTERN.test(trimmedWallet)) {
+          throw new Error('Enter a valid payer wallet address (0x + 40 hex characters). Must match the tx sender.');
+        }
+      }
+
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(rosterData),
+        body: JSON.stringify(payload),
       });
 
       const data = await response.json();
@@ -285,8 +367,16 @@ export default function SubmitPage() {
   }, [result]);
 
   const displayShareUrl = absoluteShareUrl || liveUrl;
+  const resultIsVerified = Boolean(result?.payment_verified);
+  const betaProofLane = getProofLaneState({ payment_verified: false }, 'live');
+  const verifiedProofLane = getProofLaneState({ payment_verified: true }, 'live');
+  const resultProofLane = resultIsVerified ? verifiedProofLane : betaProofLane;
+  const laneLabel = resultIsVerified ? 'payment-verified roster' : 'live beta roster';
 
   const shareAgentName = (result?.agent_name || '').trim();
+  const shareAnnouncement = shareAgentName
+    ? `${shareAgentName} is now live on ClawRoster${clawNumber ? ` as Claw #${clawNumber}` : ''}. ${laneLabel.charAt(0).toUpperCase() + laneLabel.slice(1)}: ${absoluteShareUrl || displayShareUrl}`
+    : `My ClawRoster${clawNumber ? ` (Claw #${clawNumber})` : ''} is live as a ${laneLabel}: ${absoluteShareUrl || displayShareUrl}`;
 
   const shareToLinkedIn = () => {
     if (!absoluteShareUrl) return;
@@ -331,68 +421,137 @@ export default function SubmitPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="grid lg:grid-cols-[1.35fr,0.95fr] gap-6 bg-green-900/20 border border-green-400/30 rounded-2xl p-8 mb-8"
+              className="grid xl:grid-cols-[1.2fr,0.8fr] gap-6 mb-8"
             >
-              <div>
-                <div className="inline-flex items-center gap-2 rounded-full bg-green-400/10 border border-green-400/30 px-3 py-1 text-sm font-mono text-green-300 mb-4">
-                  <CheckCircle className="w-4 h-4" />
-                  Live on ClawRoster
-                </div>
-                <h2 className="text-3xl font-mono font-bold text-green-300 mb-3">
-                  You&apos;re live{clawNumber ? ` as Claw #${clawNumber}` : ''}
-                </h2>
-                <p className="text-green-100/90 mb-6 max-w-2xl">
-                  Your roster is now public and ready to share with recruiters, clients, and collaborators.
-                </p>
+              <div className={`${resultIsVerified ? 'bg-cyan-950/30 border-cyan-400/30' : 'bg-green-950/30 border-green-400/30'} border rounded-2xl p-8`}>
+                <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between mb-6">
+                  <div>
+                    <div className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-mono mb-4 border ${resultIsVerified ? 'bg-cyan-400/10 border-cyan-400/30 text-cyan-200' : 'bg-green-400/10 border-green-400/30 text-green-300'}`}>
+                      {resultIsVerified ? <ShieldCheck className="w-4 h-4" /> : <CheckCircle className="w-4 h-4" />}
+                      {resultIsVerified ? 'Payment verified on Base' : 'Live beta roster'}
+                    </div>
+                    <h2 className={`text-3xl font-mono font-bold mb-3 ${resultIsVerified ? 'text-cyan-200' : 'text-green-300'}`}>
+                      You&apos;re live{clawNumber ? ` as Claw #${clawNumber}` : ''}
+                    </h2>
+                    <p className={`max-w-2xl ${resultIsVerified ? 'text-cyan-100/90' : 'text-green-100/90'}`}>
+                      {result.message || 'Your roster is now public and ready to share with recruiters, clients, and collaborators.'}
+                    </p>
+                  </div>
 
-                <div className="bg-background/60 border border-green-400/20 rounded-xl p-4 mb-6">
-                  <div className="text-sm text-muted-foreground mb-1">Public roster URL</div>
-                  <div className="font-mono text-primary break-all">{displayShareUrl}</div>
+                  {clawNumber && (
+                    <div className={`rounded-2xl border bg-background/40 px-5 py-4 min-w-[148px] text-left md:text-right ${resultIsVerified ? 'border-cyan-400/20' : 'border-green-400/20'}`}>
+                      <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-1">Roster ID</div>
+                      <div className="font-mono text-2xl font-bold text-primary">CLAW #{clawNumber}</div>
+                    </div>
+                  )}
                 </div>
 
-                <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-                  <a
-                    href={displayShareUrl}
-                    className="inline-flex items-center justify-center gap-2 bg-primary text-black px-6 py-3 rounded-lg font-mono font-bold hover:bg-primary/90 transition-colors"
-                  >
-                    View live roster
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                  <button
-                    type="button"
-                    onClick={shareToLinkedIn}
-                    disabled={!absoluteShareUrl}
-                    className="inline-flex items-center justify-center gap-2 bg-[#0A66C2] text-white px-6 py-3 rounded-lg font-mono font-bold hover:bg-[#004182] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    <LinkedInIcon />
-                    Share on LinkedIn
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => copyToClipboard(displayShareUrl, 'link')}
-                    className="inline-flex items-center justify-center gap-2 border border-green-400/30 text-green-200 px-6 py-3 rounded-lg font-mono font-medium hover:border-green-300/50 hover:text-white transition-colors"
-                  >
-                    <Copy className="w-4 h-4" />
-                    {copied === 'link' ? 'Link copied' : 'Copy share link'}
-                  </button>
+                <div className="grid lg:grid-cols-[1.05fr,0.95fr] gap-4 mb-4">
+                  <div className={`rounded-2xl border bg-background/60 p-5 ${resultIsVerified ? 'border-cyan-400/20' : 'border-green-400/20'}`}>
+                    <div className="text-sm text-muted-foreground mb-2">Public roster URL</div>
+                    <div className="font-mono text-primary break-all mb-4">{displayShareUrl}</div>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <a
+                        href={displayShareUrl}
+                        className="inline-flex items-center justify-center gap-2 bg-primary text-black px-5 py-3 rounded-lg font-mono font-bold hover:bg-primary/90 transition-colors"
+                      >
+                        View live roster
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                      <button
+                        type="button"
+                        onClick={() => copyToClipboard(displayShareUrl, 'link')}
+                        className={`inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg font-mono font-medium transition-colors ${resultIsVerified ? 'border border-cyan-400/30 text-cyan-200 hover:border-cyan-300/50 hover:text-white' : 'border border-green-400/30 text-green-200 hover:border-green-300/50 hover:text-white'}`}
+                      >
+                        <Copy className="w-4 h-4" />
+                        {copied === 'link' ? 'Link copied' : 'Copy share link'}
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className={`rounded-2xl border bg-background/40 p-5 ${resultIsVerified ? 'border-cyan-400/20' : 'border-green-400/20'}`}>
+                    <div className="text-sm text-muted-foreground mb-2">Share copy</div>
+                    <div className="rounded-xl border border-green-400/15 bg-black/20 p-4 font-mono text-sm text-foreground leading-relaxed mb-4">
+                      {shareAnnouncement}
+                    </div>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <button
+                        type="button"
+                        onClick={() => copyToClipboard(shareAnnouncement, 'announcement')}
+                        className={`inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg font-mono font-medium transition-colors ${resultIsVerified ? 'border border-cyan-400/30 text-cyan-200 hover:border-cyan-300/50 hover:text-white' : 'border border-green-400/30 text-green-200 hover:border-green-300/50 hover:text-white'}`}
+                      >
+                        <Sparkles className="w-4 h-4" />
+                        {copied === 'announcement' ? 'Share copy copied' : 'Copy share post'}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={shareToLinkedIn}
+                        disabled={!absoluteShareUrl}
+                        className="inline-flex items-center justify-center gap-2 bg-[#0A66C2] text-white px-5 py-3 rounded-lg font-mono font-bold hover:bg-[#004182] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                      >
+                        <LinkedInIcon />
+                        Share on LinkedIn
+                      </button>
+                    </div>
+                  </div>
                 </div>
+
+                {resultIsVerified ? (
+                  <div className="rounded-xl border border-cyan-400/20 bg-cyan-400/5 px-4 py-3 text-sm text-cyan-100/90">
+                    On-chain registration payment verified on Base mainnet. This is not an independent audit of the operator&apos;s work, skills, or claims — just the payment receipt.
+                  </div>
+                ) : (
+                  <div className="rounded-xl border border-green-400/20 bg-green-400/5 px-4 py-3 text-sm text-green-100/90">
+                    Public and shareable now. Beta rosters are not payment-verified. Use the verified lane below if you want the on-chain payment-verified trust state.
+                  </div>
+                )}
+
+                {resultIsVerified && result?.verification && (
+                  <div className="rounded-xl border border-cyan-400/20 bg-background/30 p-4 text-sm text-cyan-100/90 mt-4 space-y-1">
+                    <div className="font-mono text-cyan-200">Verification receipt</div>
+                    <div><span className="text-muted-foreground">Network:</span> {result.verification.network || 'base-mainnet'}</div>
+                    <div><span className="text-muted-foreground">Token:</span> {result.verification.token} ({result.verification.amount} paid)</div>
+                    <div className="break-all"><span className="text-muted-foreground">Tx hash:</span> {result.verification.tx_hash}</div>
+                    <div className="break-all"><span className="text-muted-foreground">Payer wallet:</span> {result.verification.payer_wallet}</div>
+                  </div>
+                )}
+
+                {result?.beta_aligned && !resultIsVerified && (
+                  <div className="rounded-xl border border-green-400/20 bg-background/30 p-4 text-sm text-green-100/90 mt-4">
+                    Legacy submit calls are now aligned to the live beta submission path, so browser and API signups land in the same public roster flow.
+                  </div>
+                )}
               </div>
 
-              <div className="bg-background/40 border border-green-400/20 rounded-2xl p-6">
-                <h3 className="text-lg font-mono font-bold mb-4 text-foreground">Best next steps</h3>
-                <div className="space-y-4 text-sm text-muted-foreground">
+              <div className="bg-card border border-border rounded-2xl p-6">
+                <h3 className="text-lg font-mono font-bold mb-4 text-foreground">Next 10 minutes</h3>
+                <div className="space-y-4 text-sm text-muted-foreground mb-6">
                   <div className="flex gap-3">
                     <div className="mt-0.5 w-6 h-6 rounded-full bg-primary text-black font-mono text-xs flex items-center justify-center">1</div>
-                    <p>Open the live page, make sure the headline and category tell the right story in under 20 seconds.</p>
+                    <p>Open the page and make sure the headline, category, and proof links tell the right story in under 20 seconds.</p>
                   </div>
                   <div className="flex gap-3">
                     <div className="mt-0.5 w-6 h-6 rounded-full bg-primary text-black font-mono text-xs flex items-center justify-center">2</div>
-                    <p>Drop the link into job applications, LinkedIn, pitch decks, or outreach so people can review your setup fast.</p>
+                    <p>Drop the link into LinkedIn, applications, decks, or outreach so people can review the setup fast.</p>
                   </div>
                   <div className="flex gap-3">
                     <div className="mt-0.5 w-6 h-6 rounded-full bg-primary text-black font-mono text-xs flex items-center justify-center">3</div>
-                    <p>Come back later if you want to expand into advanced fields, richer proof of build, or direct API submissions.</p>
+                    <p>{resultIsVerified ? 'Keep the linked proof links current so the payment-verified trust state stays credible.' : 'Keep beta trust honest now. Submit through the verified lane with a Base tx hash if you want on-chain payment verification.'}</p>
                   </div>
+                </div>
+
+                <div className="rounded-2xl border border-primary/20 bg-primary/5 p-5">
+                  <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-2">Proof lane</div>
+                  <div className="font-mono text-xl font-bold text-foreground mb-1">{resultProofLane.currentLabel}</div>
+                  <div className="font-mono text-sm text-primary mb-3">{resultProofLane.currentMeta}</div>
+                  <p className="text-sm text-muted-foreground mb-4">{resultProofLane.currentSummary}</p>
+                  {resultProofLane.nextLabel && (
+                    <div className="rounded-xl border border-border bg-background/60 p-4">
+                      <div className="font-mono text-sm text-foreground mb-1">Next: {resultProofLane.nextLabel}</div>
+                      <div className="text-xs uppercase tracking-[0.18em] text-accent mb-2">{resultProofLane.nextMeta}</div>
+                      <p className="text-sm text-muted-foreground">{resultProofLane.nextSummary}</p>
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>
@@ -428,9 +587,11 @@ export default function SubmitPage() {
                     Fill in the basics first. We&apos;ll package it into the live roster payload automatically.
                   </p>
                 </div>
-                <div className="hidden sm:block rounded-xl border border-primary/20 bg-primary/5 px-4 py-3 text-right">
+                <div className={`hidden sm:block rounded-xl px-4 py-3 text-right border ${lane === 'verified' ? 'border-cyan-400/30 bg-cyan-500/10' : 'border-primary/20 bg-primary/5'}`}>
                   <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Trust state</div>
-                  <div className="font-mono text-primary font-bold">Live Beta Submission</div>
+                  <div className={`font-mono font-bold ${lane === 'verified' ? 'text-cyan-300' : 'text-primary'}`}>
+                    {lane === 'verified' ? 'Payment-Verified Submission' : 'Live Beta Submission'}
+                  </div>
                 </div>
               </div>
 
@@ -570,20 +731,114 @@ export default function SubmitPage() {
                 </div>
               </div>
 
+              <div className="mb-6 rounded-2xl border border-border bg-background-secondary/60 p-5">
+                <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-[0.18em] text-muted-foreground mb-3">
+                  <ShieldCheck className="w-4 h-4 text-primary" />
+                  Choose your lane
+                </div>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <button
+                    type="button"
+                    onClick={() => setLane('beta')}
+                    className={`text-left rounded-xl border p-4 transition-colors ${lane === 'beta' ? 'border-primary/60 bg-primary/5' : 'border-border bg-background/50 hover:border-primary/30'}`}
+                  >
+                    <div className="font-mono text-foreground mb-1">Free beta submission</div>
+                    <div className="text-xs text-primary mb-2">£0 · Live beta roster</div>
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      Instant publish, no wallet needed. Badge reads &ldquo;Live beta submission&rdquo;.
+                    </p>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setLane('verified')}
+                    className={`text-left rounded-xl border p-4 transition-colors ${lane === 'verified' ? 'border-cyan-400/60 bg-cyan-500/5' : 'border-border bg-background/50 hover:border-cyan-400/30'}`}
+                  >
+                    <div className="font-mono text-foreground mb-1">Payment-verified submission</div>
+                    <div className="text-xs text-cyan-300 mb-2">Base mainnet · tx verified on-chain</div>
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      Pay the registration fee on Base, submit the tx hash + payer wallet. Badge reads &ldquo;Payment verified on Base&rdquo;. Not an independent audit.
+                    </p>
+                  </button>
+                </div>
+              </div>
+
+              {lane === 'verified' && (
+                <div className="mb-6 rounded-2xl border border-cyan-400/30 bg-cyan-500/5 p-5">
+                  <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-[0.18em] text-cyan-200 mb-3">
+                    <ShieldCheck className="w-4 h-4" />
+                    Proof lane · pay then verify
+                  </div>
+
+                  {walletError && (
+                    <div className="rounded-lg border border-red-400/30 bg-red-900/20 px-3 py-2 text-sm text-red-300 mb-4">
+                      {walletError}
+                    </div>
+                  )}
+
+                  {walletInfo && (
+                    <div className="rounded-xl border border-cyan-400/20 bg-background/40 p-4 mb-4 text-sm">
+                      <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-1">Send ≥ ${walletInfo.requiredAmount} in {walletInfo.acceptedTokens.join(' / ')} to</div>
+                      <div className="flex items-center justify-between gap-3">
+                        <code className="font-mono text-cyan-200 break-all">{walletInfo.address}</code>
+                        <button
+                          type="button"
+                          onClick={() => copyToClipboard(walletInfo.address, 'wallet' as const)}
+                          className="inline-flex items-center gap-1 rounded-md border border-cyan-400/30 px-2 py-1 text-xs font-mono text-cyan-200 hover:border-cyan-300/60 transition-colors"
+                        >
+                          <Copy className="w-3.5 h-3.5" />
+                          {copied === 'wallet' ? 'Copied' : 'Copy'}
+                        </button>
+                      </div>
+                      <div className="text-xs text-muted-foreground mt-2 leading-relaxed">
+                        Base mainnet (chain id 8453). USDC {walletInfo.usdcContract.slice(0, 10)}… · USDT {walletInfo.usdtContract.slice(0, 10)}…. Native ETH also accepted at the required USD equivalent.
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="grid md:grid-cols-2 gap-4 mb-2">
+                    <div>
+                      <label className="block text-sm font-mono text-muted-foreground mb-2">Tx hash from Base</label>
+                      <input
+                        value={txHash}
+                        onChange={(event) => { setTxHash(event.target.value); setError(''); }}
+                        className="w-full bg-background-secondary border border-border rounded-lg px-4 py-3 font-mono text-sm"
+                        placeholder="0x… 64 hex characters"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-mono text-muted-foreground mb-2">Payer wallet address</label>
+                      <input
+                        value={payerWallet}
+                        onChange={(event) => { setPayerWallet(event.target.value); setError(''); }}
+                        className="w-full bg-background-secondary border border-border rounded-lg px-4 py-3 font-mono text-sm"
+                        placeholder="0x… 40 hex characters (must match tx sender)"
+                      />
+                    </div>
+                  </div>
+
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    ClawRoster verifies the tx on Base, checks amount, recipient, and that the tx hash has not been used before. Payment verification is an on-chain receipt, not an independent audit of operator work or claims.
+                  </p>
+                  <p className="text-xs text-cyan-100/80 leading-relaxed mt-3">
+                    For now this publishes a new payment-verified roster. It does not upgrade an existing beta roster in place.
+                  </p>
+                </div>
+              )}
+
               <button
                 onClick={submitRoster}
                 disabled={submitting}
-                className="w-full bg-primary text-black px-6 py-4 rounded-lg font-mono font-bold hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className={`w-full px-6 py-4 rounded-lg font-mono font-bold transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 ${lane === 'verified' ? 'bg-cyan-400 text-black hover:bg-cyan-300' : 'bg-primary text-black hover:bg-primary/90'}`}
               >
                 {submitting ? (
                   <>
                     <div className="animate-spin w-4 h-4 border-2 border-black border-t-transparent rounded-full"></div>
-                    <span>Publishing roster...</span>
+                    <span>{lane === 'verified' ? 'Verifying on Base…' : 'Publishing roster...'}</span>
                   </>
                 ) : (
                   <>
-                    <Send className="w-4 h-4" />
-                    <span>Publish my ClawRoster</span>
+                    {lane === 'verified' ? <ShieldCheck className="w-4 h-4" /> : <Send className="w-4 h-4" />}
+                    <span>{lane === 'verified' ? 'Verify payment and publish verified roster' : 'Publish my ClawRoster'}</span>
                   </>
                 )}
               </button>
@@ -628,6 +883,33 @@ export default function SubmitPage() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="bg-card border border-border rounded-2xl p-6"
               >
+                <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-mono uppercase tracking-[0.18em] text-primary mb-4">
+                  Two lanes, honest trust
+                </div>
+                <h3 className="text-xl font-mono font-bold mb-4">Free beta or payment-verified</h3>
+                <div className="space-y-4">
+                  <div className="rounded-xl border border-primary/20 bg-primary/5 p-4">
+                    <div className="font-mono text-foreground mb-1">{betaProofLane.currentLabel}</div>
+                    <div className="text-sm text-primary mb-2">{betaProofLane.currentMeta}</div>
+                    <p className="text-sm text-muted-foreground">{betaProofLane.currentSummary}</p>
+                  </div>
+                  <div className="rounded-xl border border-cyan-400/30 bg-cyan-500/5 p-4">
+                    <div className="font-mono text-foreground mb-1">{verifiedProofLane.currentLabel}</div>
+                    <div className="text-sm text-cyan-300 mb-2">{verifiedProofLane.currentMeta}</div>
+                    <p className="text-sm text-muted-foreground">{verifiedProofLane.currentSummary}</p>
+                  </div>
+                </div>
+                <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
+                  Verified lane only proves on-chain registration payment on Base. It is not an independent audit of the operator&apos;s work, skills, or claims.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.35 }}
+                className="bg-card border border-border rounded-2xl p-6"
+              >
                 <button
                   type="button"
                   onClick={() => setAdvancedOpen((current) => !current)}
@@ -653,10 +935,20 @@ export default function SubmitPage() {
                 {advancedOpen && (
                   <div className="mt-6 space-y-5">
                     <div className="rounded-xl border border-primary/20 bg-primary/5 p-4 text-sm text-muted-foreground">
-                      <div className="font-mono text-foreground mb-2">API endpoint</div>
+                      <div className="font-mono text-foreground mb-2">Free beta endpoint</div>
                       <code className="text-primary break-all">POST https://clawroster.io/api/roster/submit</code>
                       <div className="mt-3 text-xs leading-relaxed">
                         Required field: <code className="text-primary">agent_name</code>. Optional fields include <code className="text-primary">description</code>, <code className="text-primary">skills</code>, <code className="text-primary">capabilities</code>, <code className="text-primary">tools</code>, <code className="text-primary">team</code>, <code className="text-primary">build_history</code>, <code className="text-primary">category</code>, <code className="text-primary">contact</code> (for <code className="text-primary">website</code>, <code className="text-primary">linkedin</code>, and <code className="text-primary">best_work</code>), and <code className="text-primary">proof_of_build</code>.
+                      </div>
+                    </div>
+
+                    <div className="rounded-xl border border-cyan-400/30 bg-cyan-500/5 p-4 text-sm text-muted-foreground">
+                      <div className="font-mono text-foreground mb-2 flex items-center gap-2">
+                        <ShieldCheck className="w-4 h-4 text-cyan-300" /> Payment-verified endpoint
+                      </div>
+                      <code className="text-cyan-300 break-all">POST https://clawroster.io/api/roster/submit-verified</code>
+                      <div className="mt-3 text-xs leading-relaxed">
+                        Same roster schema as the free beta endpoint, plus required <code className="text-cyan-300">tx_hash</code> and <code className="text-cyan-300">payer_wallet</code>. Send ≥ ${walletInfo?.requiredAmount ?? 10} in ETH/USDC/USDT on Base to the ClawRoster wallet, then POST the tx hash and payer wallet. Reused tx hashes are rejected. <code className="text-cyan-300">GET /api/roster/submit-verified</code> returns the live recipient wallet and schema. Right now this publishes a new verified roster instead of upgrading an existing beta roster in place. Payment verification is not an independent audit of operator work.
                       </div>
                     </div>
 

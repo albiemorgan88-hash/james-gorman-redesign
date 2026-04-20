@@ -1,5 +1,25 @@
 # James Gorman Property - SEO Changelog
 
+## 20th April 2026 - 4-POST JAMES CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Published 4 new James Gorman blog posts live via the validated Wix blog draft-posts flow:
+  - `https://www.jamesgormanproperty.com/post/estate-agent-culmore-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-drumahoe-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-strathfoyle-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-fees-derry`
+- Verified all 4 live URLs returned `200`
+- After first publish, re-patched and re-published the article bodies to keep the draft metadata header out of the visible public content
+- Re-checked the visible public render for the earlier leak markers (`Primary keyword`, `Secondary keywords`, `Suggested slug`, `Meta title`, `Meta description`, `Draft status`) and confirmed they were not present in the public article text
+
+### IMPORTANT NOTES
+
+- Publish approval for this pass was explicit from Phil: `push james stuff`
+- The raw Wix page HTML still contains lots of platform data, so final verification here was based on visible rendered article text rather than simple raw-HTML string matching
+- Featured images were not added in this pass
+- Further internal-link tightening is still worth doing in a later James follow-up
+
 ## 20th April 2026 - NEXT JAMES CONTENT BLAST PREPPED AS 4 NEW LOCAL DRAFTS, NO LIVE PUSH 📝
 
 ### CHANGED LIVE

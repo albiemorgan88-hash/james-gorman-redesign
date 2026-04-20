@@ -2,6 +2,24 @@
 
 Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 
+## LATEST UPDATE - 20th April 2026 - 4-POST JAMES CONTENT BLAST PUBLISHED LIVE ✅
+
+### COMPLETED:
+- [DONE] Published 4 new James Gorman blog posts live via the proven Wix Blog API draft-posts flow:
+  - `https://www.jamesgormanproperty.com/post/estate-agent-culmore-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-drumahoe-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-strathfoyle-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-fees-derry`
+- [DONE] Verified all 4 live URLs returned `200`
+- [DONE] Re-patched the public article bodies after publish so the draft metadata header was not visible in the rendered post content
+- [DONE] Re-checked the visible public article text for the earlier leak markers (`Primary keyword`, `Secondary keywords`, `Suggested slug`, `Meta title`, `Meta description`, `Draft status`) and confirmed they were not present in the public render
+
+### NEXT ACTIONS:
+- [TODO] **P2 — Add featured images to the 4 newly published posts** so the blog feed and shares look stronger
+- [TODO] **P2 — Add tight internal links** between the new Culmore / Drumahoe / Strathfoyle / fees posts and the strongest live valuation, seller, and area pages
+- [TODO] **P2 — Review custom excerpts on the live Wix objects** and tighten them further if needed
+- [TODO] **P2 — If Phil wants another James batch, keep leaning seller/service-led** rather than overlapping the recent buyer-heavy April clusters
+
 ## LATEST UPDATE - 20th April 2026 - NEXT CONTENT BLAST DRAFTED LOCALLY, KEPT DRAFT-ONLY 📝
 
 ### COMPLETED:

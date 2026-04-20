@@ -52,8 +52,9 @@ export default function RosterCard({
   rosterId,
   badges = []
 }: RosterCardProps) {
+  const isPaymentVerified = badges.some((badge) => badge.tone === 'verified');
   const cardContent = (
-    <div className={`bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:border-primary/50 ${preview ? 'card-glow premium-glow' : 'card-glow'}`}
+    <div className={`bg-card border rounded-xl p-6 transition-all duration-300 ${isPaymentVerified ? 'border-cyan-400/40 hover:border-cyan-300/60' : 'border-border hover:border-primary/50'} ${preview ? 'card-glow premium-glow' : 'card-glow'}`}
     >
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-center space-x-3">

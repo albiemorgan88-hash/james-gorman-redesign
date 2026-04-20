@@ -6,6 +6,7 @@ import { ArrowLeft, Share2, ExternalLink, Activity, Wrench, GitBranch, Clock, Ch
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { useState } from 'react';
+import { getLinkedInCredentialName, getLinkedInHandoffState } from '../../../lib/roster-status';
 
 const agentData = {
   name: "Albie",
@@ -76,10 +77,17 @@ const agentData = {
 
 export default function AlbieRoster() {
   const [copiedToClipboard, setCopiedToClipboard] = useState(false);
+  const [copiedLinkedInField, setCopiedLinkedInField] = useState<string | null>(null);
   const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}/roster/albie`;
+  const linkedInCredentialName = getLinkedInCredentialName({ payment_verified: false }, 'showcase');
+  const linkedInHandoff = getLinkedInHandoffState({ payment_verified: false }, 'showcase');
+  const linkedInOrganizationName = 'Claw Roster';
+  const linkedInCredentialId = 'CLAW-001';
+  const linkedInCredentialFormUrl = `https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent(linkedInCredentialName)}&organizationName=${encodeURIComponent(linkedInOrganizationName)}&certUrl=${encodeURIComponent('https://clawroster.io/roster/albie')}&certId=${encodeURIComponent(linkedInCredentialId)}&issueYear=2026&issueMonth=3`;
+  const shareStatus = 'Showcase example live for inspiration.';
   
   const shareToTwitter = () => {
-    const text = `I just claimed CLAW #001 on @ClawRoster — the digital CV for AI operators. Public beta roster now live. What's your Claw Date? 🦞`;
+    const text = `I just claimed CLAW #001 on @ClawRoster — the digital CV for AI operators. ${shareStatus} What's your Claw Date? 🦞`;
     window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`);
   };
 
@@ -88,12 +96,12 @@ export default function AlbieRoster() {
   };
 
   const shareToTelegram = () => {
-    const text = `I just claimed CLAW #001 on ClawRoster — the digital CV for AI operators. Public beta roster now live. What's your Claw Date? 🦞`;
+    const text = `I just claimed CLAW #001 on ClawRoster — the digital CV for AI operators. ${shareStatus} What's your Claw Date? 🦞`;
     window.open(`https://t.me/share/url?url=${encodeURIComponent('https://clawroster.io/roster/albie')}&text=${encodeURIComponent(text)}`);
   };
 
   const shareToDiscord = async () => {
-    const text = `I just claimed CLAW #001 on ClawRoster — the digital CV for AI operators. Public beta roster now live. What's your Claw Date? 🦞 https://clawroster.io/roster/albie`;
+    const text = `I just claimed CLAW #001 on ClawRoster — the digital CV for AI operators. ${shareStatus} What's your Claw Date? 🦞 https://clawroster.io/roster/albie`;
     
     try {
       await navigator.clipboard.writeText(text);
@@ -101,6 +109,16 @@ export default function AlbieRoster() {
       setTimeout(() => setCopiedToClipboard(false), 2000);
     } catch (err) {
       console.error('Failed to copy to clipboard:', err);
+    }
+  };
+
+  const copyLinkedInField = async (value: string, key: string) => {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopiedLinkedInField(key);
+      setTimeout(() => setCopiedLinkedInField(null), 1800);
+    } catch (err) {
+      console.error('Failed to copy LinkedIn field:', err);
     }
   };
 
@@ -321,17 +339,22 @@ export default function AlbieRoster() {
               boxShadow: '0 0 40px rgba(10, 102, 194, 0.1), inset 0 0 20px rgba(10, 102, 194, 0.05)'
             }}
           >
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#0A66C2]/30 bg-[#0A66C2]/10 px-3 py-1 text-xs font-mono uppercase tracking-[0.18em] text-[#73b7ff] mb-4">
+              LinkedIn handoff
+            </div>
             <h3 className="text-2xl font-mono font-bold text-[#0A66C2] mb-3">
-              Made for recruiter screens and LinkedIn clicks
+              {linkedInHandoff.heading}
             </h3>
-            <p className="text-muted-foreground mb-6">
-              Use one clean link to show your setup, timeline, trust state, and proof of work.
+            <p className="text-muted-foreground mb-4 max-w-2xl mx-auto">
+              {linkedInHandoff.description}
             </p>
+            <div className="max-w-2xl mx-auto rounded-xl border border-[#0A66C2]/20 bg-background/40 px-4 py-3 text-sm text-muted-foreground mb-6">
+              {linkedInHandoff.note}
+            </div>
             
             <motion.button
               onClick={() => {
-                const linkedinUrl = `https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent('ClawRoster Showcase Example')}&organizationName=${encodeURIComponent('Claw Roster')}&certUrl=${encodeURIComponent('https://clawroster.io/roster/albie')}&certId=CLAW-001&issueYear=2026&issueMonth=3`;
-                window.open(linkedinUrl, '_blank');
+                window.open(linkedInCredentialFormUrl, '_blank');
               }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -344,11 +367,33 @@ export default function AlbieRoster() {
               <svg className="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
-              Open LinkedIn Credential Form
+              {linkedInHandoff.buttonLabel}
             </motion.button>
             
             <div className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
-              If LinkedIn drops any fields, use the roster URL and CLAW number shown above as the credential link and ID.
+              If LinkedIn strips any fields, copy the values below and drop the example into Featured or Licenses & certifications manually.
+            </div>
+
+            <div className="mt-6 grid gap-3 max-w-2xl mx-auto text-left">
+              {[
+                { label: 'LinkedIn title', value: linkedInCredentialName, key: 'name' },
+                { label: 'Organization', value: linkedInOrganizationName, key: 'org' },
+                { label: 'Roster ID', value: linkedInCredentialId, key: 'id' },
+                { label: 'Roster URL', value: 'https://clawroster.io/roster/albie', key: 'url' },
+              ].map((field) => (
+                <div key={field.key} className="flex flex-col md:flex-row md:items-center gap-3 rounded-xl border border-[#0A66C2]/20 bg-background/40 p-4">
+                  <div className="md:w-40 text-xs uppercase tracking-[0.18em] text-muted-foreground">{field.label}</div>
+                  <div className="flex-1 font-mono text-sm text-foreground break-all">{field.value}</div>
+                  <button
+                    type="button"
+                    onClick={() => copyLinkedInField(field.value, field.key)}
+                    className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#0A66C2]/30 px-3 py-2 text-sm font-mono text-[#0A66C2] hover:border-[#0A66C2]/60 hover:bg-[#0A66C2]/10 transition-colors"
+                  >
+                    <Clipboard className="w-4 h-4" />
+                    {copiedLinkedInField === field.key ? 'Copied' : 'Copy'}
+                  </button>
+                </div>
+              ))}
             </div>
           </motion.div>
 
