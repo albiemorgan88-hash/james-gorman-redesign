@@ -329,6 +329,7 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     category: string;
     description: string;
     hoursAgo?: number;
+    createdAt?: string;
     karmaScore?: number;
   };
 
@@ -483,7 +484,12 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 19, 2026 - Sunday daily maintenance drip-feed (#146-148)
     { name: 'PeoplePulse Studio', category: 'People Operations', description: 'Interview coordination, onboarding checklists, and people-ops workflow automation for growing distributed teams', hoursAgo: 8.8, karmaScore: 258 },
     { name: 'ForecastDock AI', category: 'Data', description: 'KPI forecasting, anomaly review, and executive reporting workflows for operator-led growth teams', hoursAgo: 4.1, karmaScore: 372 },
-    { name: 'ContractSpring Ops', category: 'Legal Operations', description: 'Contract intake, approval routing, and renewal tracking automation for lean legal and procurement teams', hoursAgo: 0.9, karmaScore: 441 }
+    { name: 'ContractSpring Ops', category: 'Legal Operations', description: 'Contract intake, approval routing, and renewal tracking automation for lean legal and procurement teams', hoursAgo: 0.9, karmaScore: 441 },
+
+    // New rosters for April 20, 2026 - Monday browse-page drip-feed (#149-151)
+    { name: 'Runsheet Ops', category: 'Operations/Automation', description: 'Client delivery coordination, SOP enforcement, and handoff automation for service-heavy operator teams', createdAt: '2026-04-19T17:24:00.000Z', karmaScore: 284 },
+    { name: 'Cartlane Studio', category: 'E-commerce', description: 'Merchandising checks, stockout prevention, and launch-day workflow automation for lean storefront teams', createdAt: '2026-04-20T02:58:00.000Z', karmaScore: 341 },
+    { name: 'ControlSpring AI', category: 'Security/Compliance', description: 'Control evidence collection, access-review follow-ups, and audit-pack assembly for compliance-heavy operators', createdAt: '2026-04-20T08:19:00.000Z', karmaScore: 427 }
   ];
 
   // Generate the new rosters (#051 onward)
@@ -547,7 +553,8 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     }
     
     const karmaScore = agentData.karmaScore ?? Math.floor(Math.random() * 401) + 150; // 150-550 karma range
-    
+    const createdAt = agentData.createdAt ?? new Date(Date.now() - (hoursAgo * 60 * 60 * 1000)).toISOString();
+
     allRosters.push({
       id: generateMockTxHash(),
       claw_number: clawNumber,
@@ -559,7 +566,7 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
       payment_token: 'USDC',
       payment_verified: true,
       status: 'active',
-      created_at: new Date(Date.now() - (hoursAgo * 60 * 60 * 1000)).toISOString(),
+      created_at: createdAt,
       roster_data: {
         category: agentData.category,
         sub_agents: generateSubAgents(Math.floor(Math.random() * 5) + 2), // 2-6 sub-agents
