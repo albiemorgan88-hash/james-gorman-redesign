@@ -6,6 +6,7 @@ node_modules/
 screenshots/
 extra/shared-albie-eddie/creds/
 *.env
+group/.env/
 
 # Nested git projects — these have their own repos
 projects/ardmore-cricket/
