@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "OpenClaw Guides & AI Automation Tutorials",
-  description: "Complete collection of OpenClaw guides, tutorials, and best practices. Learn cost analysis, enterprise security, performance optimization, and business system integration from UK's leading consultant.",
+  title: "OpenClaw Guides, Buyer Guides & AI Automation Tutorials",
+  description: "Complete collection of OpenClaw buyer guides, setup walkthroughs, tutorials, and commercial advice. Learn pricing, pilots, migrations, custom skills, security, and business implementation from the UK's leading consultant.",
   keywords: [
     "openclaw guides",
+    "openclaw buyer guides",
     "openclaw tutorials",
     "ai agent guides",
     "openclaw setup guides",
@@ -13,8 +14,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/guides" },
   openGraph: {
-    title: "OpenClaw Guides & AI Automation Tutorials",
-    description: "Complete collection of OpenClaw guides and tutorials from UK's leading consultant.",
+    title: "OpenClaw Guides, Buyer Guides & AI Automation Tutorials",
+    description: "Complete collection of OpenClaw buyer guides and tutorials from the UK's leading consultant.",
     url: "https://openclawconsultant.co.uk/guides",
     type: "website",
   },
@@ -24,6 +25,14 @@ interface Guide {
   title: string;
   href: string;
   category: string;
+}
+
+interface BuyerGuide {
+  title: string;
+  href: string;
+  tag: string;
+  readTime: string;
+  description: string;
 }
 
 const guidesData: Record<string, Guide[]> = {
@@ -143,9 +152,11 @@ const guidesData: Record<string, Guide[]> = {
     { title: "AI Readiness Assessment Guide", href: "/guides/ai-readiness-assessment-guide", category: "Strategy" },
     { title: "AI Implementation Consultant UK", href: "/guides/ai-implementation-consultant-uk", category: "Strategy" },
     { title: "OpenClaw Consultant UK", href: "/guides/openclaw-consultant-uk", category: "Strategy" },
+    { title: "OpenClaw Proof of Concept UK", href: "/guides/openclaw-proof-of-concept-uk", category: "Strategy" },
     { title: "OpenClaw Implementation Consultant UK", href: "/guides/openclaw-implementation-consultant-uk", category: "Strategy" },
     { title: "OpenClaw Audit Service", href: "/guides/openclaw-audit-service", category: "Strategy" },
     { title: "OpenClaw Managed Service UK", href: "/guides/openclaw-managed-service-uk", category: "Strategy" },
+    { title: "OpenClaw Migration Service", href: "/guides/openclaw-migration-service", category: "Strategy" },
     { title: "OpenClaw Compliance Checklist UK", href: "/guides/openclaw-compliance-checklist-uk", category: "Strategy" },
     { title: "AI Governance Policy Template", href: "/guides/ai-governance-policy-template", category: "Strategy" },
   ],
@@ -162,9 +173,55 @@ const guidesData: Record<string, Guide[]> = {
     { title: "Managing AI Agent Teams: Practical Guide", href: "/guides/ai-agent-team-management", category: "Automation" },
     { title: "AI Agents for Customer Support", href: "/guides/ai-agents-for-customer-support", category: "Automation" },
     { title: "OpenClaw Training for Teams", href: "/guides/openclaw-training-for-teams", category: "Automation" },
+    { title: "OpenClaw Custom Skills Development", href: "/guides/openclaw-custom-skills-development", category: "Automation" },
     { title: "Top 10 OpenClaw Skills for Business", href: "/guides/top-10-openclaw-skills", category: "Automation" },
   ],
 };
+
+const buyerGuides: BuyerGuide[] = [
+  {
+    title: "OpenClaw Consultant UK",
+    href: "/guides/openclaw-consultant-uk",
+    tag: "Consulting",
+    readTime: "7 min read",
+    description: "What good OpenClaw consulting should include, when outside help is worth it, and how to avoid paying for vague AI theatre.",
+  },
+  {
+    title: "OpenClaw Consultant Cost UK",
+    href: "/guides/openclaw-consultant-cost-uk",
+    tag: "Pricing",
+    readTime: "6 min read",
+    description: "A straight view of UK OpenClaw consultant pricing, from audits and pilots through implementation and managed support.",
+  },
+  {
+    title: "OpenClaw Proof of Concept UK",
+    href: "/guides/openclaw-proof-of-concept-uk",
+    tag: "Pilot",
+    readTime: "6 min read",
+    description: "How to run a focused pilot that proves one workflow properly, instead of funding a fuzzy AI experiment.",
+  },
+  {
+    title: "OpenClaw Custom Skills Development",
+    href: "/guides/openclaw-custom-skills-development",
+    tag: "Custom Skills",
+    readTime: "7 min read",
+    description: "When bespoke OpenClaw skills are worth building, how to scope them properly, and what good delivery should look like.",
+  },
+  {
+    title: "OpenClaw Migration Service",
+    href: "/guides/openclaw-migration-service",
+    tag: "Migration",
+    readTime: "7 min read",
+    description: "When moving from ChatGPT, Zapier, or patchwork automations makes sense, and how to avoid recreating old mess on a new stack.",
+  },
+  {
+    title: "OpenClaw Audit Service",
+    href: "/guides/openclaw-audit-service",
+    tag: "Audit",
+    readTime: "7 min read",
+    description: "What to review before you automate anything serious, including workflow fit, ownership, data risk, and approval points.",
+  },
+];
 
 const categoryColors: Record<string, string> = {
   "Getting Started": "bg-green-500/10 text-green-600",
@@ -180,6 +237,7 @@ const categoryColors: Record<string, string> = {
 
 export default function GuidesPage() {
   const totalGuides = Object.values(guidesData).reduce((sum, g) => sum + g.length, 0);
+  const navSections = ["Buyer Guides", ...Object.keys(guidesData)];
 
   return (
     <>
@@ -187,20 +245,20 @@ export default function GuidesPage() {
       <section className="hero-gradient relative overflow-hidden pt-32 pb-20">
         <div className="absolute top-20 right-[10%] w-[400px] h-[400px] bg-orange/5 rounded-full blur-[120px]" />
         <div className="absolute bottom-20 left-[5%] w-[300px] h-[300px] bg-blue/10 rounded-full blur-[100px]" />
-        
+
         <div className="max-w-[1140px] mx-auto px-6 relative z-10">
-          <div className="text-center max-w-[720px] mx-auto">
+          <div className="text-center max-w-[760px] mx-auto">
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-6">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
               <span className="text-white/60 text-sm font-medium">{totalGuides} Expert Guides</span>
             </div>
-            
+
             <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6 leading-[1.05] tracking-tight">
               OpenClaw <span className="text-orange">Guides</span>
             </h1>
-            
-            <p className="text-white/60 text-lg md:text-xl max-w-[600px] mx-auto leading-relaxed">
-              Comprehensive guides and tutorials from Blue Canvas, the UK&apos;s leading OpenClaw consultant. Everything you need to get AI agents working for your business.
+
+            <p className="text-white/60 text-lg md:text-xl max-w-[680px] mx-auto leading-relaxed">
+              Buyer guides, setup walkthroughs, and practical tutorials from Blue Canvas. Start with pricing, pilots, migration, and implementation, then go deeper into setup, features, and industry use cases.
             </p>
           </div>
         </div>
@@ -210,13 +268,50 @@ export default function GuidesPage() {
       <section className="sticky top-16 z-20 border-b border-border-light bg-white py-5 md:top-20 md:py-8">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:flex-wrap md:justify-center">
-            {Object.keys(guidesData).map((cat) => (
+            {navSections.map((cat) => (
               <a
                 key={cat}
                 href={`#${cat.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
                 className="shrink-0 whitespace-nowrap rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-muted-dark transition-colors hover:bg-orange/10 hover:text-orange"
               >
                 {cat}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Buyer Guides */}
+      <section id="buyer-guides" className="py-16 bg-surface scroll-mt-24">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <div className="max-w-[760px] mb-10">
+            <div className="inline-flex items-center gap-2 rounded-full bg-orange/10 px-3 py-1 text-sm font-medium text-orange mb-4">
+              Start here
+            </div>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">Buyer Guides</h2>
+            <p className="text-muted-dark text-lg leading-relaxed">
+              These are the pages serious buyers usually read first, pricing, pilots, migration, audit logic, and what good OpenClaw help should actually look like.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {buyerGuides.map((guide) => (
+              <a
+                key={guide.href}
+                href={guide.href}
+                className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
+              >
+                <div className="flex items-center justify-between gap-4 mb-3">
+                  <span className="inline-block bg-orange/10 text-orange px-3 py-1 rounded-full text-xs font-medium">
+                    {guide.tag}
+                  </span>
+                  <span className="text-muted text-xs">{guide.readTime}</span>
+                </div>
+                <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
+                  {guide.title}
+                </h3>
+                <p className="text-muted-dark text-sm leading-relaxed mb-4">{guide.description}</p>
+                <span className="text-orange text-sm font-semibold">Read Guide →</span>
               </a>
             ))}
           </div>
