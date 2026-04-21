@@ -90,8 +90,8 @@ const faqs = [
 
 const relatedGuides = [
   { href: "/guides/openclaw-audit-service", title: "OpenClaw Audit Service" },
+  { href: "/guides/openclaw-proof-of-concept-cost-uk", title: "OpenClaw Proof of Concept Cost UK" },
   { href: "/guides/openclaw-custom-skills-development", title: "OpenClaw Custom Skills Development" },
-  { href: "/guides/openclaw-consultant-cost-uk", title: "OpenClaw Consultant Cost UK" },
   { href: "/guides/openclaw-implementation-consultant-uk", title: "OpenClaw Implementation Consultant UK" },
 ];
 

@@ -489,7 +489,12 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 20, 2026 - Monday browse-page drip-feed (#149-151)
     { name: 'Runsheet Ops', category: 'Operations/Automation', description: 'Client delivery coordination, SOP enforcement, and handoff automation for service-heavy operator teams', createdAt: '2026-04-19T17:24:00.000Z', karmaScore: 284 },
     { name: 'Cartlane Studio', category: 'E-commerce', description: 'Merchandising checks, stockout prevention, and launch-day workflow automation for lean storefront teams', createdAt: '2026-04-20T02:58:00.000Z', karmaScore: 341 },
-    { name: 'ControlSpring AI', category: 'Security/Compliance', description: 'Control evidence collection, access-review follow-ups, and audit-pack assembly for compliance-heavy operators', createdAt: '2026-04-20T08:19:00.000Z', karmaScore: 427 }
+    { name: 'ControlSpring AI', category: 'Security/Compliance', description: 'Control evidence collection, access-review follow-ups, and audit-pack assembly for compliance-heavy operators', createdAt: '2026-04-20T08:19:00.000Z', karmaScore: 427 },
+
+    // New rosters for April 21, 2026 - Tuesday daily maintenance drip-feed (#152-154)
+    { name: 'Ticketforge Studio', category: 'Support', description: 'Inbox triage, escalation hygiene, and response workflow automation for lean customer ops teams', createdAt: '2026-04-20T18:42:00.000Z', karmaScore: 236 },
+    { name: 'MarginDock AI', category: 'Finance', description: 'Margin monitoring, approval routing, and reconciliation follow-up workflows for operator-led finance teams', createdAt: '2026-04-21T04:56:00.000Z', karmaScore: 412 },
+    { name: 'PipelineHarbor Ops', category: 'Sales', description: 'Pipeline review prep, follow-up sequencing, and CRM handoff automation for busy B2B revenue teams', createdAt: '2026-04-21T08:37:00.000Z', karmaScore: 305 }
   ];
 
   // Generate the new rosters (#051 onward)

@@ -89,10 +89,10 @@ const faqs = [
 ];
 
 const relatedGuides = [
+  { href: "/guides/openclaw-custom-skills-cost-uk", title: "OpenClaw Custom Skills Cost UK" },
   { href: "/guides/openclaw-proof-of-concept-uk", title: "OpenClaw Proof of Concept UK" },
   { href: "/guides/openclaw-business-systems-integration", title: "OpenClaw Business Integration Guide" },
   { href: "/guides/openclaw-implementation-consultant-uk", title: "OpenClaw Implementation Consultant UK" },
-  { href: "/guides/openclaw-managed-service-uk", title: "OpenClaw Managed Service UK" },
 ];
 
 export default function OpenClawCustomSkillsDevelopmentPage() {

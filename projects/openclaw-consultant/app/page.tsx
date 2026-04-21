@@ -104,6 +104,57 @@ const credentials = [
   { value: "100%", label: "AI-Powered Ops" },
 ];
 
+const featuredBuyerGuides = [
+  {
+    href: "/guides/openclaw-consultant-uk",
+    tag: "Consulting",
+    tagClass: "bg-blue/10 text-blue",
+    readTime: "7 min read",
+    title: "OpenClaw Consultant UK",
+    description: "What good OpenClaw consulting should include, when outside help is worth it, and how to avoid paying for vague AI theatre.",
+  },
+  {
+    href: "/guides/openclaw-consultant-cost-uk",
+    tag: "Pricing",
+    tagClass: "bg-orange/10 text-orange",
+    readTime: "6 min read",
+    title: "OpenClaw Consultant Cost UK",
+    description: "A straight view of UK OpenClaw consultant pricing, from audits and pilots through implementation and managed support.",
+  },
+  {
+    href: "/guides/openclaw-setup-service-cost-uk",
+    tag: "Setup Pricing",
+    tagClass: "bg-sky-500/10 text-sky-600",
+    readTime: "6 min read",
+    title: "OpenClaw Setup Service Cost UK",
+    description: "What a proper OpenClaw setup project should cost, what should be included, and how to avoid paying for a half-finished install.",
+  },
+  {
+    href: "/guides/openclaw-proof-of-concept-cost-uk",
+    tag: "Pilot Pricing",
+    tagClass: "bg-green-500/10 text-green-600",
+    readTime: "6 min read",
+    title: "OpenClaw Proof of Concept Cost UK",
+    description: "What a focused OpenClaw pilot should cost, what the budget should buy, and how to avoid funding a vague experiment.",
+  },
+  {
+    href: "/guides/openclaw-custom-skills-cost-uk",
+    tag: "Build Pricing",
+    tagClass: "bg-purple-500/10 text-purple-600",
+    readTime: "7 min read",
+    title: "OpenClaw Custom Skills Cost UK",
+    description: "What bespoke OpenClaw skill development usually costs and how buyers avoid paying for the wrong custom build.",
+  },
+  {
+    href: "/guides/openclaw-managed-service-cost-uk",
+    tag: "Support Pricing",
+    tagClass: "bg-amber-500/10 text-amber-600",
+    readTime: "6 min read",
+    title: "OpenClaw Managed Service Cost UK",
+    description: "What monthly OpenClaw support usually costs, what a retainer should include, and when the spend is commercially justified.",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -293,95 +344,33 @@ export default function Home() {
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-6">
               Start With The Commercial Stuff
             </h2>
-            <p className="text-muted-dark text-lg max-w-[640px] mx-auto">
-              These are the pages serious buyers usually read first, scope, pricing, audit logic, and what good OpenClaw help should actually look like.
+            <p className="text-muted-dark text-lg max-w-[680px] mx-auto">
+              These are the pages serious buyers usually read first, scope, pricing, pilots, migration, custom skills, and what good OpenClaw help should actually look like.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <a
-              href="/guides/openclaw-consultant-uk"
-              className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
-            >
-              <div className="flex items-center justify-between mb-3">
-                <span className="inline-block bg-blue/10 text-blue px-3 py-1 rounded-full text-xs font-medium">
-                  Consulting
-                </span>
-                <span className="text-muted text-xs">7 min read</span>
-              </div>
-              <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
-                OpenClaw Consultant UK
-              </h3>
-              <p className="text-muted-dark text-sm mb-4 leading-relaxed">
-                What good OpenClaw consulting should include, when outside help is worth it, and how to avoid paying for vague AI theatre.
-              </p>
-              <div className="flex items-center text-orange font-semibold text-sm">
-                Read Guide →
-              </div>
-            </a>
-
-            <a
-              href="/guides/openclaw-consultant-cost-uk"
-              className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
-            >
-              <div className="flex items-center justify-between mb-3">
-                <span className="inline-block bg-orange/10 text-orange px-3 py-1 rounded-full text-xs font-medium">
-                  Pricing
-                </span>
-                <span className="text-muted text-xs">6 min read</span>
-              </div>
-              <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
-                OpenClaw Consultant Cost UK
-              </h3>
-              <p className="text-muted-dark text-sm mb-4 leading-relaxed">
-                A straight view of UK OpenClaw consultant pricing, from audits and pilots through implementation and managed support.
-              </p>
-              <div className="flex items-center text-orange font-semibold text-sm">
-                Read Guide →
-              </div>
-            </a>
-
-            <a
-              href="/guides/ai-audit-for-business"
-              className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
-            >
-              <div className="flex items-center justify-between mb-3">
-                <span className="inline-block bg-green-500/10 text-green-600 px-3 py-1 rounded-full text-xs font-medium">
-                  Audit
-                </span>
-                <span className="text-muted text-xs">7 min read</span>
-              </div>
-              <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
-                AI Audit for Business
-              </h3>
-              <p className="text-muted-dark text-sm mb-4 leading-relaxed">
-                What to review before you automate anything serious, including workflow clarity, ownership, data risk, and approval points.
-              </p>
-              <div className="flex items-center text-orange font-semibold text-sm">
-                Read Guide →
-              </div>
-            </a>
-
-            <a
-              href="/guides/ai-consultancy-costs-uk"
-              className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
-            >
-              <div className="flex items-center justify-between mb-3">
-                <span className="inline-block bg-purple-500/10 text-purple-600 px-3 py-1 rounded-full text-xs font-medium">
-                  Budgeting
-                </span>
-                <span className="text-muted text-xs">8 min read</span>
-              </div>
-              <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
-                AI Consultancy Costs UK
-              </h3>
-              <p className="text-muted-dark text-sm mb-4 leading-relaxed">
-                Typical UK consultancy cost bands for audits, pilots, implementation work, and retainers, without the usual pricing waffle.
-              </p>
-              <div className="flex items-center text-orange font-semibold text-sm">
-                Read Guide →
-              </div>
-            </a>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {featuredBuyerGuides.map((guide) => (
+              <a
+                key={guide.href}
+                href={guide.href}
+                className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${guide.tagClass}`}>
+                    {guide.tag}
+                  </span>
+                  <span className="text-muted text-xs">{guide.readTime}</span>
+                </div>
+                <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
+                  {guide.title}
+                </h3>
+                <p className="text-muted-dark text-sm mb-4 leading-relaxed">{guide.description}</p>
+                <div className="flex items-center text-orange font-semibold text-sm">
+                  Read Guide →
+                </div>
+              </a>
+            ))}
           </div>
 
           <div className="text-center">
@@ -394,7 +383,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* ============ WHY BLUE CANVAS ============ */}
       <section id="why-blue-canvas" className="bg-navy text-white py-24 relative overflow-hidden grain">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue/5 rounded-full blur-[150px]" />

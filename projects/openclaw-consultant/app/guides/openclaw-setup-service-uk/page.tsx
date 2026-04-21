@@ -94,10 +94,10 @@ const faqs = [
 ];
 
 const relatedGuides = [
+  { href: "/guides/openclaw-setup-service-cost-uk", title: "OpenClaw Setup Service Cost UK" },
   { href: "/guides/openclaw-setup-business", title: "OpenClaw Setup for Business" },
   { href: "/guides/openclaw-implementation-consultant-uk", title: "OpenClaw Implementation Consultant UK" },
   { href: "/guides/openclaw-deployment-service-uk", title: "OpenClaw Deployment Service UK" },
-  { href: "/guides/openclaw-audit-service", title: "OpenClaw Audit Service" },
 ];
 
 export default function OpenClawSetupServiceUKPage() {
