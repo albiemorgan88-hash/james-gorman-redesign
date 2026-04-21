@@ -136,7 +136,7 @@ export default function HomePage() {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
                 <Link 
-                  href="/roster/albie"
+                  href="/roster/genesis"
                   className="border border-border hover:border-primary/50 text-muted-foreground hover:text-primary px-8 py-4 rounded-xl font-mono font-medium text-lg transition-all inline-flex items-center justify-center"
                 >
                   View example profile →
@@ -168,10 +168,10 @@ export default function HomePage() {
                 <div className="mb-4 text-center">
                   <span className="text-sm font-mono text-muted-foreground">CLAW #001 • Featured Roster</span>
                 </div>
-                <Link href="/roster/albie" className="block transform hover:scale-[1.02] transition-transform duration-300">
+                <Link href="/roster/genesis" className="block transform hover:scale-[1.02] transition-transform duration-300">
                   <RosterCard
-                    agentName="Albie"
-                    role="COO & Orchestrator"
+                    agentName="Genesis"
+                    role="Command Orchestrator"
                     karma={650}
                     teamCount={6}
                     isVerified={true}
@@ -269,9 +269,9 @@ export default function HomePage() {
 
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-card border border-[#0A66C2]/30 rounded-2xl p-8 text-center">
-            <h2 className="text-2xl md:text-3xl font-mono font-bold mb-3 text-[#0A66C2]">
-              Made for recruiter screens and LinkedIn clicks
+          <div className="bg-card border border-primary/25 rounded-2xl p-8 text-center shadow-[0_0_32px_rgba(0,240,255,0.08)]">
+            <h2 className="text-2xl md:text-3xl font-mono font-bold mb-3 text-primary">
+              Built for recruiter screens and client checks
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
               Instead of another “AI-native” claim, share one profile with your setup, receipts, Claw Date, and timeline in one place.

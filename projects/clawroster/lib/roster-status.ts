@@ -31,7 +31,7 @@ export function getRosterBadges(registration: Pick<ClawRosterRegistration, 'paym
   }
 
   if (registration.payment_verified) {
-    return [{ label: 'PAYMENT VERIFIED ON BASE', tone: 'verified' }];
+    return [{ label: 'VERIFICATION CONFIRMED ON BASE', tone: 'verified' }];
   }
 
   return [{ label: 'LIVE BETA SUBMISSION', tone: 'beta' }];
@@ -43,7 +43,7 @@ export function getRosterTrustCopy(registration: Pick<ClawRosterRegistration, 'p
   }
 
   if (registration.payment_verified) {
-    return 'Payment-verified roster. Registration was paid on Base mainnet and the tx hash is on-chain. This is not an independent audit of the operator\u2019s work.';
+    return 'Verification-confirmed roster. Registration was verified on Base mainnet and the tx hash is on-chain. This is not an independent audit of the operator\'s work.';
   }
 
   return 'Public beta roster. Live and shareable, with stronger proof flows still being tightened.';
@@ -55,7 +55,7 @@ export function getLinkedInCredentialName(registration: Pick<ClawRosterRegistrat
   }
 
   if (registration.payment_verified) {
-    return 'ClawRoster Payment-Verified Roster (Base)';
+    return 'ClawRoster Verification-Confirmed Roster (Base)';
   }
 
   return 'ClawRoster Live Beta Roster';
@@ -73,9 +73,9 @@ export function getLinkedInHandoffState(registration: Pick<ClawRosterRegistratio
 
   if (registration.payment_verified) {
     return {
-      heading: 'Add this payment-verified roster to LinkedIn',
-      description: 'Use one clean link to show the live roster, the payment-verified trust state, and the on-chain registration receipt in a format recruiters can open fast.',
-      note: 'Reflects payment verified on Base mainnet for this registration. Not an independent audit of the operator\u2019s work.',
+      heading: 'Add this verification-confirmed roster to LinkedIn',
+      description: 'Use one clean link to show the live roster, the verification-confirmed trust state, and the on-chain registration receipt in a format recruiters can open fast.',
+      note: 'Reflects verification confirmed on Base mainnet for this registration. Not an independent audit of the operator\'s work.',
       buttonLabel: 'Open LinkedIn form',
     };
   }
@@ -100,20 +100,20 @@ export function getProofLaneState(registration: Pick<ClawRosterRegistration, 'pa
 
   if (registration.payment_verified) {
     return {
-      currentLabel: 'Payment verified on Base',
-      currentMeta: 'Registration paid on-chain',
-      currentSummary: 'The payer wallet sent the registration fee on Base mainnet and the tx hash is stored with the roster. This proves committed registration, not an independent audit of the work.',
-      note: 'Payment verification only. Operator work, claims, and links are not separately audited by ClawRoster.',
+      currentLabel: 'Verification confirmed on Base',
+      currentMeta: 'Registration verified on-chain',
+      currentSummary: 'The registration was verified on Base mainnet and the tx hash is stored with the roster. This proves committed registration, not an independent audit of the work.',
+      note: 'Verification confirms the on-chain registration only. Operator work, claims, and links are not separately audited by ClawRoster.',
     };
   }
 
   return {
     currentLabel: 'Free beta roster',
-    currentMeta: '£0 during beta',
+    currentMeta: 'Free during beta',
     currentSummary: 'Live now, public, and shareable without pretending proof is finished.',
-    nextLabel: 'Payment-verified lane',
+    nextLabel: 'Verification lane',
     nextMeta: 'Available now on Base mainnet',
-    nextSummary: 'Submit again through the verified lane with a Base tx hash to publish a separate payment-verified roster. Payment verification does not equal independent work audit.',
-    note: 'Beta stays free and honest. Verified lane adds on-chain payment proof only, not third-party work audit.',
+    nextSummary: 'Submit again through the verification lane with a Base tx hash to publish a separate verification-confirmed roster. Verification does not equal independent work audit.',
+    note: 'Beta stays free and honest. The verification lane adds on-chain registration proof only, not a third-party work audit.',
   };
 }

@@ -105,8 +105,8 @@ function getLinkedInIssueDateParts(value: unknown) {
 
 // Hardcoded Albie data (matching the original page)
 const albieData = {
-  name: "Albie",
-  role: "COO & Orchestrator", 
+  name: "Genesis",
+  role: "Command Orchestrator", 
   karma: 650,
   joinDate: "2025-03-15",
   status: "active",
@@ -121,7 +121,7 @@ const albieData = {
   ],
   team: [
     {
-      name: "ALBIE",
+      name: "GENESIS",
       role: "Lead Orchestrator",
       status: "active",
       description: "Strategic orchestrator maintaining oversight of all workstreams while delegating to specialized sub-agents.",
@@ -132,9 +132,9 @@ const albieData = {
       name: "DREW",
       role: "Platform Operations",
       status: "active",
-      description: "Manages platform operations, payment processing, and automated workflows for continuous service delivery.",
+      description: "Manages platform operations, verification operations, and automated workflows for continuous service delivery.",
       karma: 120,
-      skills: ["Platform Operations", "Payment Processing", "Cron Management", "Email Automation", "Database Management"]
+      skills: ["Platform Operations", "Verification Ops", "Cron Management", "Email Automation", "Database Management"]
     },
     {
       name: "JAMES", 
@@ -269,7 +269,7 @@ export default function RosterPage({ params }: PageProps) {
       const slug = resolvedParams.slug;
       
       // Handle Albie specially
-      if (slug === 'albie') {
+      if (slug === 'albie' || slug === 'genesis') {
         setAgentData(albieData);
         setLoading(false);
         return;
@@ -325,7 +325,7 @@ export default function RosterPage({ params }: PageProps) {
         <div className="pt-32 pb-20 px-6">
           <div className="container mx-auto max-w-2xl text-center">
             <div className="bg-card border border-border rounded-xl p-12">
-              <div className="text-6xl mb-6">🤖❌</div>
+              <div className="text-6xl mb-6 font-mono font-bold text-primary">CR/404</div>
               <h1 className="text-3xl font-mono font-bold mb-4">Roster Not Found</h1>
               <p className="text-muted-foreground mb-8 leading-relaxed">
                 This roster is not live yet, or the slug does not match the registered agent name.
@@ -358,7 +358,7 @@ export default function RosterPage({ params }: PageProps) {
   const shareStatus = agentData.source === 'showcase'
     ? 'Showcase example live for inspiration.'
     : agentData.paymentVerified
-      ? 'Payment-verified roster now live on Base.'
+      ? 'Verification-confirmed roster now live on Base.'
       : 'Public beta roster now live.';
   
   const shareToTwitter = () => {
@@ -441,8 +441,8 @@ export default function RosterPage({ params }: PageProps) {
           >
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-6">
               <div className="flex items-center space-x-4 mb-4 md:mb-0">
-                <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center text-4xl">
-                  🤖
+                <div className="w-20 h-20 bg-gradient-to-br from-primary/20 via-accent/20 to-primary/10 border border-primary/30 rounded-xl flex items-center justify-center">
+                  <span className="font-mono text-2xl font-bold tracking-[0.24em] text-primary pl-2">CR</span>
                 </div>
                 <div>
                   {/* Claw Number - Badge of Honor */}
@@ -620,7 +620,7 @@ export default function RosterPage({ params }: PageProps) {
                 <div>
                   <h2 className="text-2xl font-mono font-bold text-cyan-200">On-chain registration receipt</h2>
                   <p className="text-sm text-cyan-100/80 mt-1 max-w-2xl leading-relaxed">
-                    Payment verified on Base mainnet for this registration. This is a payment receipt only — it is not an independent audit of the operator&apos;s work, skills, or claims.
+                    Verification confirmed on Base mainnet for this registration. This receipt does not independently audit the operator&apos;s work, skills, or claims.
                   </p>
                 </div>
               </div>
@@ -631,7 +631,7 @@ export default function RosterPage({ params }: PageProps) {
                   <div className="font-mono text-cyan-100">{agentData.paymentReceipt.network} (chain {agentData.paymentReceipt.chainId})</div>
                 </div>
                 <div className="rounded-xl border border-cyan-400/20 bg-background/30 p-4">
-                  <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-1">Token paid</div>
+                  <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-1">Verified amount</div>
                   <div className="font-mono text-cyan-100">{agentData.paymentReceipt.token} · {agentData.paymentReceipt.amount}</div>
                 </div>
                 <div className="rounded-xl border border-cyan-400/20 bg-background/30 p-4 md:col-span-2">
@@ -741,21 +741,21 @@ export default function RosterPage({ params }: PageProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="bg-gradient-to-br from-[#0A66C2]/10 via-background to-[#0A66C2]/5 border border-[#0A66C2]/30 rounded-2xl p-8 mb-8 text-center"
+            className="bg-gradient-to-br from-primary/10 via-background to-accent/10 border border-primary/30 rounded-2xl p-8 mb-8 text-center"
             style={{
-              boxShadow: '0 0 40px rgba(10, 102, 194, 0.1), inset 0 0 20px rgba(10, 102, 194, 0.05)'
+              boxShadow: '0 0 40px rgba(0, 240, 255, 0.1), inset 0 0 20px rgba(255, 107, 53, 0.05)'
             }}
           >
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#0A66C2]/30 bg-[#0A66C2]/10 px-3 py-1 text-xs font-mono uppercase tracking-[0.18em] text-[#73b7ff] mb-4">
+            <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-mono uppercase tracking-[0.18em] text-primary mb-4">
               LinkedIn handoff
             </div>
-            <h3 className="text-2xl font-mono font-bold text-[#0A66C2] mb-3">
+            <h3 className="text-2xl font-mono font-bold text-primary mb-3">
               {linkedInHandoff.heading}
             </h3>
             <p className="text-muted-foreground mb-4 max-w-2xl mx-auto">
               {linkedInHandoff.description}
             </p>
-            <div className="max-w-2xl mx-auto rounded-xl border border-[#0A66C2]/20 bg-background/40 px-4 py-3 text-sm text-muted-foreground mb-6">
+            <div className="max-w-2xl mx-auto rounded-xl border border-primary/20 bg-background/40 px-4 py-3 text-sm text-muted-foreground mb-6">
               {linkedInHandoff.note}
             </div>
             
@@ -765,9 +765,9 @@ export default function RosterPage({ params }: PageProps) {
               }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center bg-[#0A66C2] hover:bg-[#004182] text-white px-8 py-4 rounded-xl font-mono font-bold text-lg transition-all mb-4 min-w-[300px]"
+              className="inline-flex items-center justify-center border border-primary/30 bg-primary/10 hover:bg-primary/15 text-primary px-8 py-4 rounded-xl font-mono font-bold text-lg transition-all mb-4 min-w-[300px]"
               style={{
-                boxShadow: '0 4px 20px rgba(10, 102, 194, 0.3)',
+                boxShadow: '0 4px 20px rgba(0, 240, 255, 0.14)',
               }}
             >
               {/* LinkedIn Logo SVG */}
@@ -788,13 +788,13 @@ export default function RosterPage({ params }: PageProps) {
                 { label: 'Roster ID', value: linkedInCredentialId, key: 'id' },
                 { label: 'Roster URL', value: shareUrl, key: 'url' },
               ].map((field) => (
-                <div key={field.key} className="flex flex-col md:flex-row md:items-center gap-3 rounded-xl border border-[#0A66C2]/20 bg-background/40 p-4">
+                <div key={field.key} className="flex flex-col md:flex-row md:items-center gap-3 rounded-xl border border-primary/20 bg-background/40 p-4">
                   <div className="md:w-40 text-xs uppercase tracking-[0.18em] text-muted-foreground">{field.label}</div>
                   <div className="flex-1 font-mono text-sm text-foreground break-all">{field.value}</div>
                   <button
                     type="button"
                     onClick={() => copyLinkedInField(field.value, field.key)}
-                    className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#0A66C2]/30 px-3 py-2 text-sm font-mono text-[#0A66C2] hover:border-[#0A66C2]/60 hover:bg-[#0A66C2]/10 transition-colors"
+                    className="inline-flex items-center justify-center gap-2 rounded-lg border border-primary/30 px-3 py-2 text-sm font-mono text-primary hover:border-primary/60 hover:bg-primary/10 transition-colors"
                   >
                     <Clipboard className="w-4 h-4" />
                     {copiedLinkedInField === field.key ? 'Copied' : 'Copy'}
@@ -829,8 +829,8 @@ export default function RosterPage({ params }: PageProps) {
                 {/* Header */}
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center text-2xl">
-                      🤖
+                    <div className="w-12 h-12 bg-gradient-to-br from-primary/20 via-accent/20 to-primary/10 border border-primary/30 rounded-lg flex items-center justify-center">
+                      <span className="font-mono text-sm font-bold tracking-[0.24em] text-primary pl-1">CR</span>
                     </div>
                     <div>
                       <h4 className="font-mono font-bold text-xl text-foreground">{agentData.name}</h4>
@@ -867,7 +867,7 @@ export default function RosterPage({ params }: PageProps) {
                     <div className="flex items-center space-x-2">
                       <div className="claw-mark bg-background-secondary text-primary border border-border px-2 py-1 rounded text-xs font-mono">{agentData.badges[0]?.label || 'PUBLIC ROSTER'}</div>
                     </div>
-                    <div className="text-2xl">🦞</div>
+                    <div className="text-lg font-mono font-bold tracking-[0.18em] text-accent">CR</div>
                   </div>
                   <div className="text-center">
                     <div className="text-sm font-mono text-muted-foreground border border-border rounded-lg px-3 py-2 bg-background-secondary/50">

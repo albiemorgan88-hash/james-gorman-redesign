@@ -31,20 +31,19 @@ export default function NotFound() {
               </p>
             </div>
             
-            {/* Claw Icon */}
             <motion.div
               animate={{ 
-                rotate: [0, -10, 10, -10, 0],
-                scale: [1, 1.1, 1]
+                y: [0, -6, 0],
+                scale: [1, 1.04, 1]
               }}
               transition={{ 
                 duration: 2,
                 repeat: Infinity,
                 repeatDelay: 3
               }}
-              className="text-8xl mb-8"
+              className="text-6xl mb-8 font-mono font-bold tracking-[0.24em] text-primary"
             >
-              🦞
+              CR404
             </motion.div>
             
             {/* Action Buttons */}

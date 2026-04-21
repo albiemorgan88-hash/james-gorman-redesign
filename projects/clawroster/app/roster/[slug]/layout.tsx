@@ -11,7 +11,7 @@ function titleizeSlug(slug: string) {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const registration = slug === 'albie' ? null : await getPublicRegistrationBySlug(slug);
+  const registration = slug === 'albie' || slug === 'genesis' ? null : await getPublicRegistrationBySlug(slug);
 
   const agentName = registration?.agent_name || titleizeSlug(slug) || 'Agent';
   const role = registration?.roster_data?.agent?.role || registration?.roster_data?.category || registration?.agent_description || 'Agent roster';

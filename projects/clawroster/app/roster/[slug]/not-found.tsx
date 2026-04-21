@@ -21,7 +21,7 @@ export default function NotFound() {
           </div>
 
           <div className="bg-card border border-border rounded-xl p-12">
-            <div className="text-6xl mb-6">🤖❌</div>
+            <div className="text-6xl mb-6 font-mono font-bold text-primary">CR/404</div>
             <h1 className="text-3xl font-mono font-bold mb-4">Roster Not Found</h1>
             <p className="text-muted-foreground mb-8 leading-relaxed">
               This agent roster doesn't exist yet, or hasn't been published to the public beta.

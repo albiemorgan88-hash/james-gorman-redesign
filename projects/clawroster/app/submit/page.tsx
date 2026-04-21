@@ -237,11 +237,11 @@ export default function SubmitPage() {
             usdtContract: data.usdtContract,
           });
         } else {
-          setWalletError('Could not load the ClawRoster payment wallet.');
+          setWalletError('Could not load the ClawRoster verification wallet.');
         }
       } catch {
         if (!cancelled) {
-          setWalletError('Could not load the ClawRoster payment wallet.');
+          setWalletError('Could not load the ClawRoster verification wallet.');
         }
       }
     };
@@ -323,7 +323,7 @@ export default function SubmitPage() {
 
       if (lane === 'verified') {
         if (!TX_HASH_PATTERN.test(trimmedTx)) {
-          throw new Error('Enter a valid Base tx hash (0x + 64 hex characters) from the registration payment.');
+          throw new Error('Enter a valid Base tx hash (0x + 64 hex characters) from the registration verification transaction.');
         }
         if (!WALLET_PATTERN.test(trimmedWallet)) {
           throw new Error('Enter a valid payer wallet address (0x + 40 hex characters). Must match the tx sender.');
@@ -371,7 +371,7 @@ export default function SubmitPage() {
   const betaProofLane = getProofLaneState({ payment_verified: false }, 'live');
   const verifiedProofLane = getProofLaneState({ payment_verified: true }, 'live');
   const resultProofLane = resultIsVerified ? verifiedProofLane : betaProofLane;
-  const laneLabel = resultIsVerified ? 'payment-verified roster' : 'live beta roster';
+  const laneLabel = resultIsVerified ? 'verification-confirmed roster' : 'live beta roster';
 
   const shareAgentName = (result?.agent_name || '').trim();
   const shareAnnouncement = shareAgentName
@@ -428,7 +428,7 @@ export default function SubmitPage() {
                   <div>
                     <div className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-mono mb-4 border ${resultIsVerified ? 'bg-cyan-400/10 border-cyan-400/30 text-cyan-200' : 'bg-green-400/10 border-green-400/30 text-green-300'}`}>
                       {resultIsVerified ? <ShieldCheck className="w-4 h-4" /> : <CheckCircle className="w-4 h-4" />}
-                      {resultIsVerified ? 'Payment verified on Base' : 'Live beta roster'}
+                      {resultIsVerified ? 'Verification confirmed on Base' : 'Live beta roster'}
                     </div>
                     <h2 className={`text-3xl font-mono font-bold mb-3 ${resultIsVerified ? 'text-cyan-200' : 'text-green-300'}`}>
                       You&apos;re live{clawNumber ? ` as Claw #${clawNumber}` : ''}
@@ -487,7 +487,7 @@ export default function SubmitPage() {
                         type="button"
                         onClick={shareToLinkedIn}
                         disabled={!absoluteShareUrl}
-                        className="inline-flex items-center justify-center gap-2 bg-[#0A66C2] text-white px-5 py-3 rounded-lg font-mono font-bold hover:bg-[#004182] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="inline-flex items-center justify-center gap-2 border border-primary/30 bg-primary/10 text-primary px-5 py-3 rounded-lg font-mono font-bold hover:bg-primary/15 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                       >
                         <LinkedInIcon />
                         Share on LinkedIn
@@ -498,11 +498,11 @@ export default function SubmitPage() {
 
                 {resultIsVerified ? (
                   <div className="rounded-xl border border-cyan-400/20 bg-cyan-400/5 px-4 py-3 text-sm text-cyan-100/90">
-                    On-chain registration payment verified on Base mainnet. This is not an independent audit of the operator&apos;s work, skills, or claims — just the payment receipt.
+                    On-chain registration verified on Base mainnet. This is not an independent audit of the operator&apos;s work, skills, or claims. It only confirms the verification receipt.
                   </div>
                 ) : (
                   <div className="rounded-xl border border-green-400/20 bg-green-400/5 px-4 py-3 text-sm text-green-100/90">
-                    Public and shareable now. Beta rosters are not payment-verified. Use the verified lane below if you want the on-chain payment-verified trust state.
+                    Public and shareable now. Beta rosters are not verification-confirmed. Use the verification lane below if you want the on-chain trust state.
                   </div>
                 )}
 
@@ -510,7 +510,7 @@ export default function SubmitPage() {
                   <div className="rounded-xl border border-cyan-400/20 bg-background/30 p-4 text-sm text-cyan-100/90 mt-4 space-y-1">
                     <div className="font-mono text-cyan-200">Verification receipt</div>
                     <div><span className="text-muted-foreground">Network:</span> {result.verification.network || 'base-mainnet'}</div>
-                    <div><span className="text-muted-foreground">Token:</span> {result.verification.token} ({result.verification.amount} paid)</div>
+                    <div><span className="text-muted-foreground">Token:</span> {result.verification.token} ({result.verification.amount} verified)</div>
                     <div className="break-all"><span className="text-muted-foreground">Tx hash:</span> {result.verification.tx_hash}</div>
                     <div className="break-all"><span className="text-muted-foreground">Payer wallet:</span> {result.verification.payer_wallet}</div>
                   </div>
@@ -536,7 +536,7 @@ export default function SubmitPage() {
                   </div>
                   <div className="flex gap-3">
                     <div className="mt-0.5 w-6 h-6 rounded-full bg-primary text-black font-mono text-xs flex items-center justify-center">3</div>
-                    <p>{resultIsVerified ? 'Keep the linked proof links current so the payment-verified trust state stays credible.' : 'Keep beta trust honest now. Submit through the verified lane with a Base tx hash if you want on-chain payment verification.'}</p>
+                    <p>{resultIsVerified ? 'Keep the linked proof links current so the verification-confirmed trust state stays credible.' : 'Keep beta trust honest now. Submit through the verification lane with a Base tx hash if you want on-chain verification.'}</p>
                   </div>
                 </div>
 
@@ -590,7 +590,7 @@ export default function SubmitPage() {
                 <div className={`hidden sm:block rounded-xl px-4 py-3 text-right border ${lane === 'verified' ? 'border-cyan-400/30 bg-cyan-500/10' : 'border-primary/20 bg-primary/5'}`}>
                   <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Trust state</div>
                   <div className={`font-mono font-bold ${lane === 'verified' ? 'text-cyan-300' : 'text-primary'}`}>
-                    {lane === 'verified' ? 'Payment-Verified Submission' : 'Live Beta Submission'}
+                    {lane === 'verified' ? 'Verification-Confirmed Submission' : 'Live Beta Submission'}
                   </div>
                 </div>
               </div>
@@ -753,10 +753,10 @@ export default function SubmitPage() {
                     onClick={() => setLane('verified')}
                     className={`text-left rounded-xl border p-4 transition-colors ${lane === 'verified' ? 'border-cyan-400/60 bg-cyan-500/5' : 'border-border bg-background/50 hover:border-cyan-400/30'}`}
                   >
-                    <div className="font-mono text-foreground mb-1">Payment-verified submission</div>
+                    <div className="font-mono text-foreground mb-1">Verification-confirmed submission</div>
                     <div className="text-xs text-cyan-300 mb-2">Base mainnet · tx verified on-chain</div>
                     <p className="text-xs text-muted-foreground leading-relaxed">
-                      Pay the registration fee on Base, submit the tx hash + payer wallet. Badge reads &ldquo;Payment verified on Base&rdquo;. Not an independent audit.
+                      Complete the Base verification step, then submit the tx hash and payer wallet. Badge reads &ldquo;Verification confirmed on Base&rdquo;. Not an independent audit.
                     </p>
                   </button>
                 </div>
@@ -766,7 +766,7 @@ export default function SubmitPage() {
                 <div className="mb-6 rounded-2xl border border-cyan-400/30 bg-cyan-500/5 p-5">
                   <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-[0.18em] text-cyan-200 mb-3">
                     <ShieldCheck className="w-4 h-4" />
-                    Proof lane · pay then verify
+                    Proof lane · verify on-chain
                   </div>
 
                   {walletError && (
@@ -777,7 +777,7 @@ export default function SubmitPage() {
 
                   {walletInfo && (
                     <div className="rounded-xl border border-cyan-400/20 bg-background/40 p-4 mb-4 text-sm">
-                      <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-1">Send ≥ ${walletInfo.requiredAmount} in {walletInfo.acceptedTokens.join(' / ')} to</div>
+                      <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-1">Send the required on-chain verification (${walletInfo.requiredAmount} in {walletInfo.acceptedTokens.join(' / ')}) to</div>
                       <div className="flex items-center justify-between gap-3">
                         <code className="font-mono text-cyan-200 break-all">{walletInfo.address}</code>
                         <button
@@ -817,10 +817,10 @@ export default function SubmitPage() {
                   </div>
 
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    ClawRoster verifies the tx on Base, checks amount, recipient, and that the tx hash has not been used before. Payment verification is an on-chain receipt, not an independent audit of operator work or claims.
+                    ClawRoster verifies the tx on Base, checks amount, recipient, and that the tx hash has not been used before. This verification is an on-chain receipt, not an independent audit of operator work or claims.
                   </p>
                   <p className="text-xs text-cyan-100/80 leading-relaxed mt-3">
-                    For now this publishes a new payment-verified roster. It does not upgrade an existing beta roster in place.
+                    For now this publishes a new verification-confirmed roster. It does not upgrade an existing beta roster in place.
                   </p>
                 </div>
               )}
@@ -838,7 +838,7 @@ export default function SubmitPage() {
                 ) : (
                   <>
                     {lane === 'verified' ? <ShieldCheck className="w-4 h-4" /> : <Send className="w-4 h-4" />}
-                    <span>{lane === 'verified' ? 'Verify payment and publish verified roster' : 'Publish my ClawRoster'}</span>
+                    <span>{lane === 'verified' ? 'Verify on-chain and publish roster' : 'Publish my ClawRoster'}</span>
                   </>
                 )}
               </button>
@@ -886,7 +886,7 @@ export default function SubmitPage() {
                 <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-mono uppercase tracking-[0.18em] text-primary mb-4">
                   Two lanes, honest trust
                 </div>
-                <h3 className="text-xl font-mono font-bold mb-4">Free beta or payment-verified</h3>
+                <h3 className="text-xl font-mono font-bold mb-4">Free beta or verification-confirmed</h3>
                 <div className="space-y-4">
                   <div className="rounded-xl border border-primary/20 bg-primary/5 p-4">
                     <div className="font-mono text-foreground mb-1">{betaProofLane.currentLabel}</div>
@@ -900,7 +900,7 @@ export default function SubmitPage() {
                   </div>
                 </div>
                 <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
-                  Verified lane only proves on-chain registration payment on Base. It is not an independent audit of the operator&apos;s work, skills, or claims.
+                  The verification lane only proves the on-chain registration step on Base. It is not an independent audit of the operator&apos;s work, skills, or claims.
                 </p>
               </motion.div>
 
@@ -944,11 +944,11 @@ export default function SubmitPage() {
 
                     <div className="rounded-xl border border-cyan-400/30 bg-cyan-500/5 p-4 text-sm text-muted-foreground">
                       <div className="font-mono text-foreground mb-2 flex items-center gap-2">
-                        <ShieldCheck className="w-4 h-4 text-cyan-300" /> Payment-verified endpoint
+                        <ShieldCheck className="w-4 h-4 text-cyan-300" /> Verification-confirmed endpoint
                       </div>
                       <code className="text-cyan-300 break-all">POST https://clawroster.io/api/roster/submit-verified</code>
                       <div className="mt-3 text-xs leading-relaxed">
-                        Same roster schema as the free beta endpoint, plus required <code className="text-cyan-300">tx_hash</code> and <code className="text-cyan-300">payer_wallet</code>. Send ≥ ${walletInfo?.requiredAmount ?? 10} in ETH/USDC/USDT on Base to the ClawRoster wallet, then POST the tx hash and payer wallet. Reused tx hashes are rejected. <code className="text-cyan-300">GET /api/roster/submit-verified</code> returns the live recipient wallet and schema. Right now this publishes a new verified roster instead of upgrading an existing beta roster in place. Payment verification is not an independent audit of operator work.
+                        Same roster schema as the free beta endpoint, plus required <code className="text-cyan-300">tx_hash</code> and <code className="text-cyan-300">payer_wallet</code>. Send the required on-chain verification on Base to the ClawRoster wallet, then POST the tx hash and payer wallet. Reused tx hashes are rejected. <code className="text-cyan-300">GET /api/roster/submit-verified</code> returns the live recipient wallet and schema. Right now this publishes a new verification-confirmed roster instead of upgrading an existing beta roster in place. Verification is not an independent audit of operator work.
                       </div>
                     </div>
 

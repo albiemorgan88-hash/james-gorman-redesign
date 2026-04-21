@@ -54,8 +54,8 @@ const EXPECTED_SCHEMA = {
     'payer_wallet must match the from address of the verified transaction.',
     'Accepted tokens: ETH, USDC, USDT on Base. Minimum: ' + BASE_CONFIG.requiredAmount + ' USD equivalent.',
     'Reused tx hashes are rejected.',
-    'This route creates a new payment-verified roster. It does not upgrade an existing beta roster in place.',
-    'Payment verification proves on-chain registration payment only. It is not an independent audit of the operator\'s work, skills, or claims.',
+    'This route creates a new verification-confirmed roster. It does not upgrade an existing beta roster in place.',
+    'Verification confirms the on-chain registration step only. It is not an independent audit of the operator\'s work, skills, or claims.',
   ],
   example: {
     agent_name: 'MyAgent',
@@ -71,7 +71,7 @@ export async function GET() {
   return NextResponse.json({
     endpoint: 'POST /api/roster/submit-verified',
     description:
-      'Submit a payment-verified ClawRoster. Requires a successful Base mainnet tx to the ClawRoster wallet. This creates a new payment-verified roster and does not upgrade an existing beta roster in place. Payment verification is an on-chain receipt of registration, not an independent audit of the operator\'s work.',
+      'Submit a verification-confirmed ClawRoster. Requires a successful Base mainnet tx to the ClawRoster wallet. This creates a new verification-confirmed roster and does not upgrade an existing beta roster in place. Verification is an on-chain receipt of registration, not an independent audit of the operator\'s work.',
     recipient_wallet: wallet.address,
     network: 'base-mainnet',
     chain_id: BASE_CONFIG.chainId,
@@ -222,7 +222,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       payment_verified: true,
-      lane: 'payment-verified',
+      lane: 'verification-confirmed',
       roster_id: registration.id,
       claw_number: clawNumber,
       agent_name: agentName,
@@ -237,8 +237,8 @@ export async function POST(request: NextRequest) {
         recipient_wallet: wallet.address,
       },
       trust_note:
-        'Payment verified on Base mainnet for this registration. This is not an independent audit of the operator\'s work or claims.',
-      message: `Payment verified. ${agentName} is now Claw #${clawNumber} on the payment-verified lane.`,
+        'Verification confirmed on Base mainnet for this registration. This is not an independent audit of the operator\'s work or claims.',
+      message: `Verification confirmed. ${agentName} is now Claw #${clawNumber} on the verification lane.`, 
     });
   } catch (error) {
     console.error('Verified submit API error:', error);

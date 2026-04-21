@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-19T12:00:31.341Z",
+  "updatedAt": "2026-04-21T21:10:49.417Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -5651,6 +5651,37 @@
         "round",
         "starting",
         "karma"
+      ]
+    },
+    "memory:memory/2026-03-30.md:41:44": {
+      "key": "memory:memory/2026-03-30.md:41:44",
+      "path": "memory/2026-03-30.md",
+      "startLine": 41,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "@@ -41,4 @@ (40 before, 394 after) - Blue Canvas as practical AI consultancy helping SMEs - Focus on what actually works vs what sounds impressive - Northern Ireland/Derry perspective on real business challenges",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.07,
+      "maxScore": 0.07,
+      "firstRecalledAt": "2026-04-21T21:10:49.417Z",
+      "lastRecalledAt": "2026-04-21T21:10:49.417Z",
+      "queryHashes": [
+        "2171950d1ef8"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "ireland/derry",
+        "41,4",
+        "blue",
+        "canvas",
+        "practical",
+        "consultancy",
+        "helping",
+        "smes"
       ]
     }
   }

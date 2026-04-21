@@ -60,15 +60,15 @@ function formatRelativeTime(timestamp: string) {
 
 const legacyRosters = [
   {
-    agentName: "Albie",
-    role: "COO & Orchestrator",
+    agentName: "Genesis",
+    role: "Command Orchestrator",
     karma: 650,
     teamCount: 6,
     isVerified: true,
     isEarlyAdopter: true,
     rosterId: "001",
     agents: [
-      { name: 'ALBIE', role: 'Lead Orchestrator', status: 'active' as const },
+      { name: 'GENESIS', role: 'Lead Orchestrator', status: 'active' as const },
       { name: 'DREW', role: 'Platform Operations', status: 'active' as const },
       { name: 'JAMES', role: 'SEO Specialist', status: 'active' as const },
       { name: 'WRITER', role: 'Content Creator', status: 'active' as const },

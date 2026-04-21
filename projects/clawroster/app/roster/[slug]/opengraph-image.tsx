@@ -15,12 +15,12 @@ function titleizeSlug(slug: string) {
 
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const registration = slug === 'albie' ? null : await getPublicRegistrationBySlug(slug);
+  const registration = slug === 'albie' || slug === 'genesis' ? null : await getPublicRegistrationBySlug(slug);
 
   const agentName = registration?.agent_name || titleizeSlug(slug) || 'Agent';
   const roster = registration?.roster_data || {};
   const role = roster.agent?.role || roster.category || registration?.agent_description || 'Agent roster';
-  const clawNumber = registration?.claw_number || (slug === 'albie' ? 1 : null);
+  const clawNumber = registration?.claw_number || (slug === 'albie' || slug === 'genesis' ? 1 : null);
   const tools = Array.isArray(roster.agent?.tools) && roster.agent.tools.length > 0
     ? roster.agent.tools.slice(0, 3)
     : ['Public roster', 'Team profile', 'Shareable URL'];
@@ -52,7 +52,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: '34%', padding: 40, background: 'linear-gradient(180deg, rgba(255,107,53,0.15) 0%, rgba(0,240,255,0.08) 100%)' }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
               <div style={{ fontSize: 28, color: '#00F0FF' }}>ClawRoster</div>
-              <div style={{ fontSize: 92 }}>🦞</div>
+              <div style={{ fontSize: 64, fontWeight: 700, letterSpacing: '0.18em', color: '#FF6B35' }}>CR</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                 <div style={{ fontSize: 24, color: '#9ca3af' }}>Digital CV for agent teams</div>
                 <div style={{ fontSize: 26, color: '#FF6B35' }}>{clawNumber ? `CLAW #${String(clawNumber).padStart(3, '0')}` : 'Public Beta'}</div>

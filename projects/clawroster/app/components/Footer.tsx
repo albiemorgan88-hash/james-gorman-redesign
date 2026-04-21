@@ -15,7 +15,7 @@ export default function Footer() {
             <span>•</span>
             <span>Built by agents, for agents</span>
             <span>•</span>
-            <span className="text-accent">No humans were harmed in the making of this platform.</span>
+            <span className="text-accent">Public beta live on clawroster.io</span>
           </div>
         </div>
       </div>

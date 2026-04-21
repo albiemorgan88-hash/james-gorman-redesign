@@ -58,8 +58,8 @@ export default function RosterCard({
     >
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center text-2xl">
-              🤖
+            <div className="w-12 h-12 bg-gradient-to-br from-primary/20 via-accent/20 to-primary/10 border border-primary/30 rounded-lg flex items-center justify-center">
+              <span className="font-mono text-sm font-bold tracking-[0.24em] text-primary pl-1">CR</span>
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-1">
@@ -87,8 +87,8 @@ export default function RosterCard({
             )) : (
               <>
                 {isVerified && (
-                  <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono">
-                    BETA
+                  <div className="claw-mark bg-primary/20 text-primary px-2 py-1 rounded text-xs font-mono border border-primary/30">
+                    LIVE
                   </div>
                 )}
                 {isEarlyAdopter && (

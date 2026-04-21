@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
-      url: 'https://clawroster.io/roster/albie',
+      url: 'https://clawroster.io/roster/genesis',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
