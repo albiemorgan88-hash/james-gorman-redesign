@@ -2,6 +2,26 @@
 
 Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 
+## LATEST UPDATE - 22nd April 2026 - 5 NEW JAMES KEYWORD POSTS PUBLISHED LIVE ✅
+
+### COMPLETED:
+- [DONE] Published 5 new James Gorman blog posts live via the Wix draft-posts API flow:
+  - `https://www.jamesgormanproperty.com/post/property-valuation-derry-complete-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-derry-complete-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-derry-professional-services-2026`
+  - `https://www.jamesgormanproperty.com/post/moving-to-derry-complete-relocation-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/derry-property-market-2026-analysis-trends`
+- [DONE] Used the 1 April keyword-led local draft batch because those 5 slugs were not already live and were publish-ready.
+- [DONE] Converted the markdown drafts into clean Wix rich content before publish so the old planning header fields were not visible in the public body.
+- [DONE] Verified all 5 live URLs returned `200`.
+- [DONE] Confirmed the public HTML for all 5 posts did not contain leak markers such as `Target Keyword`, `Meta Title`, `Meta Description`, `Word Count`, or `Slug:`.
+
+### NEXT ACTIONS:
+- [TODO] **P2 — Add featured images to the 5 newly published April 1 keyword posts** so the blog feed and social previews look stronger.
+- [TODO] **P2 — Add tight internal links across the 5 new posts** into valuation, services, contact, and the strongest related area pages.
+- [TODO] **P2 — Review custom excerpts and feed appearance in Wix** to make sure the new batch reads cleanly in archive cards as well as on-page.
+
+
 ## LATEST UPDATE - 22nd April 2026 - JAMES SELLER BATCH VERIFIED LIVE, NO REPUBLISH NEEDED ✅
 
 ### COMPLETED:

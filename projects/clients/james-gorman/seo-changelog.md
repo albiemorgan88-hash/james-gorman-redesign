@@ -1,5 +1,26 @@
 # James Gorman Property - SEO Changelog
 
+## 22nd April 2026 - 5 NEW JAMES KEYWORD POSTS PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Published 5 new James Gorman blog posts live via the Wix draft-posts API flow:
+  - `https://www.jamesgormanproperty.com/post/property-valuation-derry-complete-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-derry-complete-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-derry-professional-services-2026`
+  - `https://www.jamesgormanproperty.com/post/moving-to-derry-complete-relocation-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/derry-property-market-2026-analysis-trends`
+- Used the 1 April 2026 keyword-led local drafts as the source batch, because these 5 slugs were not already live and were the fastest clean publish set available.
+- Converted the markdown drafts into clean Wix rich content before publish so the planning header fields did not leak into the public article body.
+- Verified all 5 public URLs returned `200`.
+- Re-checked the public HTML for the leak markers `Target Keyword`, `Meta Title`, `Meta Description`, `Word Count`, and `Slug:` and confirmed none were present.
+
+### IMPORTANT NOTES
+
+- Publish approval in this run was explicit from Phil: `nah i want new ones, 5 new ones, published now please`
+- The default shell network lane in this session could not reach Wix, so the successful publish run used the OpenClaw gateway execution path instead.
+- No featured images or post-to-post internal-link tightening were added in this pass.
+
 ## 22nd April 2026 - JAMES SELLER BATCH RE-CHECKED LIVE, NO DUPLICATE PUBLISH NEEDED ✅
 
 ### CHANGED LIVE
