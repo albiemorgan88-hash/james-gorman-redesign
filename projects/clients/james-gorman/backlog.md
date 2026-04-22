@@ -2,6 +2,23 @@
 
 Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 
+## LATEST UPDATE - 22nd April 2026 - JAMES SELLER BATCH VERIFIED LIVE, NO REPUBLISH NEEDED ✅
+
+### COMPLETED:
+- [DONE] Re-checked the 4 April seller/service posts on the public site after Phil asked to run the James content blast again
+- [DONE] Confirmed these URLs are already live and publicly rendering:
+  - `https://www.jamesgormanproperty.com/post/estate-agent-culmore-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-drumahoe-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-strathfoyle-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-fees-derry`
+- [DONE] Confirmed the visible article bodies are clean, with no leaked draft markers such as `Primary keyword`, `Meta title`, `Meta description`, `Suggested slug`, or `Draft status`
+- [DONE] Avoided a duplicate Wix publish because this batch was already live
+
+### NEXT ACTIONS:
+- [TODO] **P2 — Add featured images to the 4 live seller/service posts** so the blog feed and shares look stronger
+- [TODO] **P2 — Add tight internal links** between the Culmore / Drumahoe / Strathfoyle / fees posts and the strongest live valuation, seller, and area pages
+- [TODO] **P2 — Tighten excerpt consistency if needed** after a fuller feed-level review in Wix
+
 ## LATEST UPDATE - 20th April 2026 - 4-POST JAMES CONTENT BLAST PUBLISHED LIVE ✅
 
 ### COMPLETED:

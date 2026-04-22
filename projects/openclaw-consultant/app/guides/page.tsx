@@ -39,6 +39,7 @@ const guidesData: Record<string, Guide[]> = {
   "Getting Started": [
     { title: "What is OpenClaw? Complete Guide 2026", href: "/guides/what-is-openclaw-2026", category: "Getting Started" },
     { title: "OpenClaw Beginner Guide 2026", href: "/guides/openclaw-beginner-guide", category: "Getting Started" },
+    { title: "Best AI Agents 2026", href: "/guides/best-ai-agents-2026", category: "Getting Started" },
     { title: "OpenClaw Tutorial for Beginners", href: "/guides/openclaw-tutorial-beginners", category: "Getting Started" },
     { title: "Getting Started with AI Automation", href: "/guides/getting-started-ai-automation", category: "Getting Started" },
     { title: "Set Up an AI Agent for Your Business", href: "/guides/setup-ai-agent-business", category: "Getting Started" },
@@ -85,6 +86,7 @@ const guidesData: Record<string, Guide[]> = {
     { title: "OpenClaw Business Integration Guide", href: "/guides/openclaw-business-systems-integration", category: "Enterprise" },
   ],
   "Comparisons": [
+    { title: "What Is NanoClaw? Lightweight AI Assistant Guide", href: "/guides/what-is-nanoclaw", category: "Alternative" },
     { title: "OpenClaw vs ChatGPT: Key Differences", href: "/guides/openclaw-vs-chatgpt", category: "Comparison" },
     { title: "OpenClaw vs Zapier vs Make", href: "/guides/openclaw-vs-zapier-vs-make", category: "Comparison" },
     { title: "OpenClaw vs n8n: Which to Choose?", href: "/guides/openclaw-vs-n8n", category: "Comparison" },

@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { href: "#services", label: "Services" },
+  { href: "/services", label: "Services" },
   { href: "/guides", label: "Guides" },
-  { href: "#why-blue-canvas", label: "Why Blue Canvas" },
-  { href: "#use-cases", label: "Use Cases" },
-  { href: "#pricing", label: "Pricing" },
+  { href: "/about", label: "About" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/pricing", label: "Pricing" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -24,8 +24,22 @@ export default function Navbar() {
 
   function resolveHref(href: string) {
     if (!href.startsWith("#")) return href;
+
+    if (href === "#contact") {
+      if (
+        pathname === "/" ||
+        pathname === "/about" ||
+        pathname === "/guides" ||
+        pathname === "/services" ||
+        pathname === "/faq" ||
+        pathname.startsWith("/guides/") ||
+        pathname.startsWith("/services/")
+      ) {
+        return href;
+      }
+    }
+
     if (pathname === "/") return href;
-    if (pathname === "/guides" && href === "#contact") return href;
     return `/${href}`;
   }
 

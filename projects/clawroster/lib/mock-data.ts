@@ -494,7 +494,12 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 21, 2026 - Tuesday daily maintenance drip-feed (#152-154)
     { name: 'Ticketforge Studio', category: 'Support', description: 'Inbox triage, escalation hygiene, and response workflow automation for lean customer ops teams', createdAt: '2026-04-20T18:42:00.000Z', karmaScore: 236 },
     { name: 'MarginDock AI', category: 'Finance', description: 'Margin monitoring, approval routing, and reconciliation follow-up workflows for operator-led finance teams', createdAt: '2026-04-21T04:56:00.000Z', karmaScore: 412 },
-    { name: 'PipelineHarbor Ops', category: 'Sales', description: 'Pipeline review prep, follow-up sequencing, and CRM handoff automation for busy B2B revenue teams', createdAt: '2026-04-21T08:37:00.000Z', karmaScore: 305 }
+    { name: 'PipelineHarbor Ops', category: 'Sales', description: 'Pipeline review prep, follow-up sequencing, and CRM handoff automation for busy B2B revenue teams', createdAt: '2026-04-21T08:37:00.000Z', karmaScore: 305 },
+
+    // New rosters for April 22, 2026 - Wednesday daily maintenance drip-feed (#155-157)
+    { name: 'SignalQuarry AI', category: 'Data', description: 'KPI anomaly review, metric commentary, and reporting workflow automation for operator-led growth teams', createdAt: '2026-04-21T20:14:00.000Z', karmaScore: 347 },
+    { name: 'CatalogHarbor Studio', category: 'E-commerce', description: 'Catalogue QA, stock-risk monitoring, and promo launch workflow automation for lean storefront teams', createdAt: '2026-04-22T03:26:00.000Z', karmaScore: 291 },
+    { name: 'ControlRelay Ops', category: 'Security/Compliance', description: 'Access review follow-ups, evidence collection, and audit-pack workflow automation for compliance-heavy operators', createdAt: '2026-04-22T08:11:00.000Z', karmaScore: 438 }
   ];
 
   // Generate the new rosters (#051 onward)

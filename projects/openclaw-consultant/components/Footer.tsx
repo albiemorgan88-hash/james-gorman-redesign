@@ -20,11 +20,13 @@ export default function Footer() {
               · Derry, Northern Ireland
             </p>
           </div>
-          <div className="flex gap-8 text-sm">
-            <a href="#services" className="hover:text-white transition-colors duration-200">Services</a>
-            <a href="#pricing" className="hover:text-white transition-colors duration-200">Pricing</a>
-            <a href="#contact" className="hover:text-white transition-colors duration-200">Contact</a>
-            <a href="tel:07849071946" className="hover:text-white transition-colors duration-200">07849 071946</a>
+          <div className="flex flex-wrap justify-center gap-6 text-sm">
+            <a href="/services" className="hover:text-white transition-colors duration-200">Services</a>
+            <a href="/guides" className="hover:text-white transition-colors duration-200">Guides</a>
+            <a href="/about" className="hover:text-white transition-colors duration-200">About</a>
+            <a href="/faq" className="hover:text-white transition-colors duration-200">FAQ</a>
+            <a href="/pricing" className="hover:text-white transition-colors duration-200">Pricing</a>
+            <a href="/#contact" className="hover:text-white transition-colors duration-200">Contact</a>
           </div>
         </div>
         <div className="border-t border-white/5 mt-10 pt-8 text-center text-xs text-white/30">

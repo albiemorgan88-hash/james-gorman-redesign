@@ -1,0 +1,10 @@
+Manual reconciliation applied on 2026-04-22 from Telegram instruction.
+
+Changes added to reconciled exports:
+- Tim Harris added to memberships as adult because PJ stated he had just paid his membership fees.
+- Dolores added to draw subscribers with 5 numbers because PJ stated Margaret Chambers had subscribed GBP5/week for her mother Dolores, and Ardmore pricing is GBP1 per number per week.
+
+Limits:
+- No live API refresh was possible from this machine because the Supabase host could not be resolved at reconciliation time.
+- The current local exports on disk did not yet include either of these changes.
+- Dolores was only identified as "Dolores" in the instruction, so no surname was added.

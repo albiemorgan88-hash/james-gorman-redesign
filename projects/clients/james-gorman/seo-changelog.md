@@ -1,5 +1,24 @@
 # James Gorman Property - SEO Changelog
 
+## 22nd April 2026 - JAMES SELLER BATCH RE-CHECKED LIVE, NO DUPLICATE PUBLISH NEEDED ✅
+
+### CHANGED LIVE
+
+- No new public edit was applied in this pass.
+- No duplicate Wix publish was attempted, because the target seller/service batch was already live on the public site when re-checked.
+- Re-verified these 4 public URLs were live and rendering the expected article bodies:
+  - `https://www.jamesgormanproperty.com/post/estate-agent-culmore-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-drumahoe-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-strathfoyle-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-fees-derry`
+- Re-checked the visible public article render and confirmed the earlier draft metadata leak markers were not present in the body content.
+
+### IMPORTANT NOTES
+
+- Phil's instruction in this run was explicit: `lets run content blasts on uktj and james' site please`
+- The local history had conflicting entries for this exact James batch, so live verification was done first to avoid creating duplicate Wix posts or clashing slugs.
+- Browser-based public render checks confirmed the posts were already live with the correct H1s and clean first-screen content.
+
 ## 20th April 2026 - 4-POST JAMES CONTENT BLAST PUBLISHED LIVE ✅
 
 ### CHANGED LIVE
