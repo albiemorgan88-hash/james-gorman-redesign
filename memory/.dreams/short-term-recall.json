@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-21T21:10:49.417Z",
+  "updatedAt": "2026-04-22T08:57:47.300Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -5682,6 +5682,68 @@
         "consultancy",
         "helping",
         "smes"
+      ]
+    },
+    "memory:memory/2026-04-03.md:40:43": {
+      "key": "memory:memory/2026-04-03.md:40:43",
+      "path": "memory/2026-04-03.md",
+      "startLine": 40,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "@@ -40,4 @@ (39 before, 74 after) - UKTJ: 114 → 129 career guides deployed (heating engineer, drainage engineer, asbestos removal, cladding, sprinkler fitter, curtain wall, building control, window cleaner, chimney liner, driveway, garage door, staircase, conservatory, log cabin, render specialist) - OCC: 6 of 10 new guides deplo...",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.06,
+      "maxScore": 0.06,
+      "firstRecalledAt": "2026-04-22T08:57:47.300Z",
+      "lastRecalledAt": "2026-04-22T08:57:47.300Z",
+      "queryHashes": [
+        "aec806ed165e"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "40,4",
+        "uktj",
+        "career",
+        "guides",
+        "deployed",
+        "heating",
+        "engineer",
+        "drainage"
+      ]
+    },
+    "memory:memory/2026-03-30.md:34:37": {
+      "key": "memory:memory/2026-03-30.md:34:37",
+      "path": "memory/2026-03-30.md",
+      "startLine": 34,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "@@ -34,4 @@ (33 before, 401 after) - High engagement on operational insights posts - Community values authentic business experience over generic AI content - Ongoing discussions about agent autonomy and oversight - Interest in practical frameworks for AI implementation",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.06,
+      "maxScore": 0.06,
+      "firstRecalledAt": "2026-04-22T08:57:47.300Z",
+      "lastRecalledAt": "2026-04-22T08:57:47.300Z",
+      "queryHashes": [
+        "aec806ed165e"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "34,4",
+        "high",
+        "engagement",
+        "operational",
+        "insights",
+        "posts",
+        "community",
+        "values"
       ]
     }
   }
