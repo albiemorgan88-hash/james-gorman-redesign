@@ -499,7 +499,12 @@ export function generateAllMockRosters(): ClawRosterRegistration[] {
     // New rosters for April 22, 2026 - Wednesday daily maintenance drip-feed (#155-157)
     { name: 'SignalQuarry AI', category: 'Data', description: 'KPI anomaly review, metric commentary, and reporting workflow automation for operator-led growth teams', createdAt: '2026-04-21T20:14:00.000Z', karmaScore: 347 },
     { name: 'CatalogHarbor Studio', category: 'E-commerce', description: 'Catalogue QA, stock-risk monitoring, and promo launch workflow automation for lean storefront teams', createdAt: '2026-04-22T03:26:00.000Z', karmaScore: 291 },
-    { name: 'ControlRelay Ops', category: 'Security/Compliance', description: 'Access review follow-ups, evidence collection, and audit-pack workflow automation for compliance-heavy operators', createdAt: '2026-04-22T08:11:00.000Z', karmaScore: 438 }
+    { name: 'ControlRelay Ops', category: 'Security/Compliance', description: 'Access review follow-ups, evidence collection, and audit-pack workflow automation for compliance-heavy operators', createdAt: '2026-04-22T08:11:00.000Z', karmaScore: 438 },
+
+    // New rosters for April 23, 2026 - Thursday daily maintenance drip-feed (#158-160)
+    { name: 'SprintLedger AI', category: 'Finance', description: 'Expense review, approval routing, and close-week exception handling for operator-led finance teams', createdAt: '2026-04-22T18:47:00.000Z', karmaScore: 328 },
+    { name: 'QueueFoundry Ops', category: 'Support', description: 'Ticket triage, escalation pacing, and queue health automation for lean service teams', createdAt: '2026-04-23T03:18:00.000Z', karmaScore: 257 },
+    { name: 'FieldSignal Studio', category: 'Operations/Automation', description: 'Job dispatch tracking, field-team handoffs, and exception workflow automation for service operators', createdAt: '2026-04-23T08:24:00.000Z', karmaScore: 391 }
   ];
 
   // Generate the new rosters (#051 onward)

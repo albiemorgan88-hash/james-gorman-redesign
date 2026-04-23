@@ -2,6 +2,49 @@
 
 Use status tags: `TODO`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 
+## LATEST UPDATE - 23rd April 2026 - 4-POST JAMES AHREFS BATCH PUBLISHED LIVE ✅
+
+### COMPLETED:
+- [DONE] Published 4 new James Gorman blog posts live via the Wix Draft Posts API flow:
+  - `https://www.jamesgormanproperty.com/post/new-builds-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/sell-my-house-fast-derry-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/bungalows-for-sale-derry-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/buy-to-let-derry-guide-2026`
+- [DONE] Used the 23 April Ahrefs-led local draft batch as the source set.
+- [DONE] Corrected the first-pass title-length slugs by re-patching the draft objects with the intended short `seoSlug` values and re-publishing.
+- [DONE] Removed the planning-only `Internal linking suggestions` block from the live article bodies before final QA.
+- [DONE] Verified all 4 clean short public `/post/` URLs returned `200`.
+- [DONE] Confirmed the public article HTML/body did not contain leak markers such as `Internal linking suggestions`, `Target Keyword`, `Meta Title`, `Meta Description`, `Slug:`, `Draft status`, `Primary keyword`, `Secondary keywords`, or `Suggested slug`.
+
+### NEXT ACTIONS:
+- [TODO] **P2 — Add featured images to the 4 newly published 23 April posts** so the blog feed and social shares look stronger.
+- [TODO] **P2 — Add tighter in-body internal links** from this batch into the strongest live Derry valuation, service, relocation, and contact pages.
+- [TODO] **P2 — Review excerpts / feed appearance in Wix** to make sure the archive cards read cleanly and consistently.
+
+## LATEST UPDATE - 23rd April 2026 - NEW AHREFS-LED JAMES CONTENT BLAST DRAFTED LOCALLY 📝
+
+### COMPLETED:
+- [DONE] Reviewed the current James state before drafting another batch:
+  - `README.md`
+  - `backlog.md`
+  - `seo-changelog.md`
+  - existing `blog-drafts/`
+  - Ahrefs-led keyword research files
+- [DONE] Avoided overlap with the recent April live cluster around Derry-wide valuation / houses-for-sale / estate-agent / moving / market posts
+- [DONE] Created 4 new local draft-only James posts from remaining Ahrefs-led opportunities:
+  - `blog-drafts/2026-04-23-sell-my-house-fast-derry-guide-2026.md`
+  - `blog-drafts/2026-04-23-buy-to-let-derry-guide-2026.md`
+  - `blog-drafts/2026-04-23-new-builds-derry-buyer-guide-2026.md`
+  - `blog-drafts/2026-04-23-bungalows-for-sale-derry-guide-2026.md`
+- [DONE] Added batch handoff note `content-blast-2026-04-23-ahrefs.md` with rationale and suggested publish order
+- [DONE] Kept this run draft-only. No Wix publish attempted.
+
+### NEXT ACTIONS:
+- [TODO] **P2 — Review the 4 new Ahrefs-led local drafts** and choose whether Phil wants this batch published live or held for sequencing behind the 22 April posts
+- [TODO] **P2 — If publishing, strip the metadata header from the visible Wix article body** so the earlier draft-field leak does not reappear
+- [TODO] **P2 — Add custom excerpts and featured images** when this batch goes live
+- [TODO] **P2 — Add tight internal links** from this batch into the strongest live Derry valuation, service, relocation, and contact pages
+
 ## LATEST UPDATE - 22nd April 2026 - 5 NEW JAMES KEYWORD POSTS PUBLISHED LIVE ✅
 
 ### COMPLETED:

@@ -1,5 +1,80 @@
 # James Gorman Property - SEO Changelog
 
+## 23rd April 2026 - 4-POST JAMES AHREFS BATCH PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Published 4 new James Gorman blog posts live via the Wix Draft Posts API create -> update -> publish flow:
+  - `https://www.jamesgormanproperty.com/post/new-builds-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/sell-my-house-fast-derry-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/bungalows-for-sale-derry-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/buy-to-let-derry-guide-2026`
+- Post IDs / Draft IDs:
+  - `399cc961-6d3b-44eb-9762-eba7e7ee8f1a` -> `new-builds-derry-buyer-guide-2026`
+  - `5afc37c1-61a9-434a-898c-3a87e32876df` -> `sell-my-house-fast-derry-guide-2026`
+  - `8a7d150a-d4fd-4238-9ef0-bd04857de90e` -> `bungalows-for-sale-derry-guide-2026`
+  - `7c175717-de52-4a3a-a126-bb3193da6e44` -> `buy-to-let-derry-guide-2026`
+- Used the 23 April 2026 local Ahrefs-led draft batch as the source set.
+- First publish created title-length slugs, so the draft objects were then re-patched with the intended `seoSlug` values and re-published.
+- Removed the non-reader-facing `Internal linking suggestions` planning section from the live article bodies before final sign-off.
+- Verified the clean short `/post/` URLs now return `200`:
+  - `new-builds-derry-buyer-guide-2026`
+  - `sell-my-house-fast-derry-guide-2026`
+  - `bungalows-for-sale-derry-guide-2026`
+  - `buy-to-let-derry-guide-2026`
+- Re-checked for leak markers and confirmed none were present in the public article HTML/body: `Internal linking suggestions`, `Target Keyword`, `Meta Title`, `Meta Description`, `Slug:`, `Draft status`, `Primary keyword`, `Secondary keywords`, `Suggested slug`.
+
+### IMPORTANT NOTES
+
+- Publish approval in this run was explicit from Phil: `publish them live please bro`
+- Final live render QA was done after the slug-fix re-publish, not after the first publish pass.
+- No featured images were added in this pass.
+- No extra internal-link implementation was added inside Wix in this pass beyond removing the planning-only section from the public article body.
+
+## 23rd April 2026 - NEW AHREFS-LED JAMES CONTENT BLAST DRAFTED LOCALLY, NO LIVE PUSH 📝
+
+### CHANGED LIVE
+
+- No new public edit was applied in this pass.
+- No Wix publish was attempted in this run.
+
+### DRAFT BATCH CREATED
+
+- Reviewed the current James working state first:
+  - `README.md`
+  - `backlog.md`
+  - latest `seo-changelog.md`
+  - existing local `blog-drafts/`
+  - existing Ahrefs-led notes in:
+    - `ahrefs-keyword-research-2026-03-19.md`
+    - `keyword-research-export-2026-03-19.md`
+    - `ahrefs-blitz-2026-03-17.md`
+- Deliberately avoided overlap with the recent April live cluster around:
+  - `property valuation derry`
+  - `houses for sale derry`
+  - `estate agent derry`
+  - `moving to derry`
+  - `derry property market`
+  - the recent seller/service batch for Culmore, Drumahoe, Strathfoyle, and the fees explainer
+- Created 4 new local draft-only posts:
+  - `blog-drafts/2026-04-23-sell-my-house-fast-derry-guide-2026.md`
+  - `blog-drafts/2026-04-23-buy-to-let-derry-guide-2026.md`
+  - `blog-drafts/2026-04-23-new-builds-derry-buyer-guide-2026.md`
+  - `blog-drafts/2026-04-23-bungalows-for-sale-derry-guide-2026.md`
+- Added a batch summary / handoff note:
+  - `content-blast-2026-04-23-ahrefs.md`
+
+### IMPORTANT NOTES
+
+- This run stayed draft-only because Phil asked to do a James content blast, but there was no explicit instruction in this run to publish live.
+- The batch was selected to widen intent coverage rather than stack more overlap onto the current Derry-wide April cluster.
+- Cleanest intent mix in this batch:
+  - urgent seller
+  - investor / landlord
+  - new-build buyer
+  - downsizer / property-type buyer
+- If this batch is published later, keep the metadata header out of the visible Wix article body and add clean custom excerpts plus featured images at publish time.
+
 ## 22nd April 2026 - 5 NEW JAMES KEYWORD POSTS PUBLISHED LIVE ✅
 
 ### CHANGED LIVE
