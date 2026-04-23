@@ -363,6 +363,24 @@ const AboutPage = () => {
             <div className="space-y-8">
               <div className="premium-card p-8 text-center">
                 <h3 className="font-display font-bold text-2xl text-white mb-6">Our Brand Partners</h3>
+                <div className="grid grid-cols-2 gap-3 mb-6 text-center">
+                  <div className="border border-gray-700 rounded-lg p-3 sm:p-4">
+                    <div className="text-xl sm:text-2xl font-bold text-spar-green">6+</div>
+                    <div className="text-gray-400 text-xs sm:text-sm">Core Brands</div>
+                  </div>
+                  <div className="border border-gray-700 rounded-lg p-3 sm:p-4">
+                    <div className="text-xl sm:text-2xl font-bold text-wall-gold">16+</div>
+                    <div className="text-gray-400 text-xs sm:text-sm">Years Strong</div>
+                  </div>
+                  <div className="border border-gray-700 rounded-lg p-3 sm:p-4">
+                    <div className="text-xl sm:text-2xl font-bold text-blue-400">12+</div>
+                    <div className="text-gray-400 text-xs sm:text-sm">Locations</div>
+                  </div>
+                  <div className="border border-gray-700 rounded-lg p-3 sm:p-4">
+                    <div className="text-xl sm:text-2xl font-bold text-purple-400">24/7</div>
+                    <div className="text-gray-400 text-xs sm:text-sm">Service Reach</div>
+                  </div>
+                </div>
                 <div className="grid grid-cols-2 gap-6">
                   {[
                     { name: 'SPAR', description: 'Convenience retail excellence' },

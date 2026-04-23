@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-23T08:51:53.561Z",
+  "updatedAt": "2026-04-23T12:04:21.649Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -5837,6 +5837,37 @@
         "hip",
         "psychology",
         "project"
+      ]
+    },
+    "memory:memory/2026-03-01.md:56:59": {
+      "key": "memory:memory/2026-03-01.md:56:59",
+      "path": "memory/2026-03-01.md",
+      "startLine": 56,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "@@ -56,4 @@ (55 before, 96 after) - Full Next.js 16 site built and deployed to ardmorecricket.com (Vercel) - Domain: ardmorecricket.com bought on GoDaddy, DNS pointed to Vercel - Pages: Homepage, About, Committee, News, Draw, Sponsors, Login, Signup, Draw/Manage, Draw/Success - Design: Navy (#1a365d), Gold (#c9a84c), Sky Blue (#8...",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.04,
+      "maxScore": 0.04,
+      "firstRecalledAt": "2026-04-23T12:04:21.649Z",
+      "lastRecalledAt": "2026-04-23T12:04:21.649Z",
+      "queryHashes": [
+        "ec085f2b07ab"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "next.js",
+        "ardmorecricket.com",
+        "draw/manage",
+        "draw/success",
+        "56,4",
+        "full",
+        "site",
+        "built"
       ]
     }
   }
