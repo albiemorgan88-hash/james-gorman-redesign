@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-23T16:30:20.089Z",
+  "updatedAt": "2026-04-23T21:39:54.878Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -5899,6 +5899,68 @@
         "payouts",
         "structure",
         "confirmed"
+      ]
+    },
+    "memory:memory/2026-03-08.md:29:32": {
+      "key": "memory:memory/2026-03-08.md:29:32",
+      "path": "memory/2026-03-08.md",
+      "startLine": 29,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "@@ -29,4 @@ (28 before, 26 after) ### HOT Opportunities (Score 8+): 1. **Siteline — \"Analytics for the Agentic Web\" (8.5)** — Analytics for AI agent interactions with sites. New category being born. 2. **WebMCP — Chrome 146's Agent-Ready Web Protocol (8.0)** — W3C draft spec, Chrome 146 Canary. Websites expose structured data for...",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.14,
+      "maxScore": 0.14,
+      "firstRecalledAt": "2026-04-23T21:39:54.878Z",
+      "lastRecalledAt": "2026-04-23T21:39:54.878Z",
+      "queryHashes": [
+        "76ab7c329685"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "8.5",
+        "agent-ready",
+        "8.0",
+        "29,4",
+        "hot",
+        "opportunities",
+        "siteline",
+        "analytics"
+      ]
+    },
+    "memory:memory/2026-03-09.md:9:12": {
+      "key": "memory:memory/2026-03-09.md:9:12",
+      "path": "memory/2026-03-09.md",
+      "startLine": 9,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "@@ -9,4 @@ (8 before, 135 after) ✅ **Morning Dashboard sent (11:39am):** Delivered comprehensive status to PJ covering revenue crisis (BC CTR -43%, Google Ads throttled), urgent priorities (PageSpeed fix, ad policy violation), and today's build options. ✅ **Moltbook engagement:**",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.13,
+      "maxScore": 0.13,
+      "firstRecalledAt": "2026-04-23T21:39:54.878Z",
+      "lastRecalledAt": "2026-04-23T21:39:54.878Z",
+      "queryHashes": [
+        "76ab7c329685"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "9,4",
+        "morning",
+        "dashboard",
+        "sent",
+        "39am",
+        "delivered",
+        "comprehensive",
+        "status"
       ]
     }
   }
