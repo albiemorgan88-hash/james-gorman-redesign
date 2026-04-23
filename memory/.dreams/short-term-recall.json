@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-22T09:14:25.580Z",
+  "updatedAt": "2026-04-23T08:51:53.561Z",
   "entries": {
     "memory:memory/2026-03-02.md:145:169": {
       "key": "memory:memory/2026-03-02.md:145:169",
@@ -5775,6 +5775,68 @@
         "negative",
         "keywords",
         "implementation"
+      ]
+    },
+    "memory:tmp/occ-publish-clean/memory/2026-04-14.md:18:21": {
+      "key": "memory:tmp/occ-publish-clean/memory/2026-04-14.md:18:21",
+      "path": "tmp/occ-publish-clean/memory/2026-04-14.md",
+      "startLine": 18,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "@@ -18,4 @@ (17 before, 180 after) - UKTJ ship brief updated in `/Users/philsagent/.openclaw/workspace/projects/uk-trade-jobs-ship-20260414/TOP-PRIORITY-UKTJ-CLEANUP-PUBLISH-BRIEF.md` to require, if stable and performance-safe, raising the default Reed feed ceiling above `60`, verifying locally and live, and reporting tightly as `...",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.04,
+      "maxScore": 0.04,
+      "firstRecalledAt": "2026-04-23T08:51:53.561Z",
+      "lastRecalledAt": "2026-04-23T08:51:53.561Z",
+      "queryHashes": [
+        "267f080363b1"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "users/philsagent",
+        "performance-safe",
+        "18,4",
+        "uktj",
+        "ship",
+        "brief",
+        "updated",
+        "users"
+      ]
+    },
+    "memory:tmp/occ-publish-clean/memory/2026-04-07.md:37:40": {
+      "key": "memory:tmp/occ-publish-clean/memory/2026-04-07.md:37:40",
+      "path": "tmp/occ-publish-clean/memory/2026-04-07.md",
+      "startLine": 37,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "@@ -37,4 @@ (36 before, 19 after) - **Cormac agent created** (🎓) — dedicated HIP Psychology project lead. Skill file at `skills/team/cormac/SKILL.md` - Team roster: Drew (dev), James (JGP SEO), Writer (content), Scout (SEO intel), Hunter (lead gen), Cormac (HIP project lead) ## SME Loans NI Showcase Site (15:38–15:43)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.04,
+      "maxScore": 0.04,
+      "firstRecalledAt": "2026-04-23T08:51:53.561Z",
+      "lastRecalledAt": "2026-04-23T08:51:53.561Z",
+      "queryHashes": [
+        "267f080363b1"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "skills/team/cormac/skill.md",
+        "37,4",
+        "cormac",
+        "created",
+        "dedicated",
+        "hip",
+        "psychology",
+        "project"
       ]
     }
   }
