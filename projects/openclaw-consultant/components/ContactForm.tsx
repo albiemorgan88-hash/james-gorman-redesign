@@ -5,10 +5,12 @@ import { useRouter } from "next/navigation";
 export default function ContactForm() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
+    setError("");
 
     const form = e.currentTarget;
     const data = new FormData(form);
@@ -27,15 +29,21 @@ export default function ContactForm() {
         data.append("_subject", "OCC Enquiry from " + (data.get("name") || ""));
         data.append("_template", "table");
         res = await fetch("https://formsubmit.co/ajax/philpatterson85@gmail.com", {
-          method: "POST", 
+          method: "POST",
           body: data,
           headers: { Accept: "application/json" },
-        }).catch(() => ({ ok: true }) as Response);
+        }).catch(() => null);
       }
 
-      router.push("/thank-you");
+      if (res?.ok) {
+        router.push("/thank-you");
+        return;
+      }
+
+      throw new Error("Contact submission failed");
     } catch {
-      router.push("/thank-you");
+      setError("Sorry, we couldn't send that message. Please email contact@bluecanvas.ai directly.");
+      setLoading(false);
     }
   }
 
@@ -95,6 +103,11 @@ export default function ContactForm() {
             placeholder="Tell us about your business and what you'd like OpenClaw to do..."
           />
         </div>
+        {error ? (
+          <p role="alert" className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+            {error}
+          </p>
+        ) : null}
         <button
           type="submit"
           disabled={loading}

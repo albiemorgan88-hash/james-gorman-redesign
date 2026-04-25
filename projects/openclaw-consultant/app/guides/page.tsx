@@ -1,3 +1,5 @@
+import { existsSync, readdirSync } from "fs";
+import { join } from "path";
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
@@ -62,6 +64,7 @@ const guidesData: Record<string, Guide[]> = {
     { title: "OpenClaw Memory Management Guide", href: "/guides/openclaw-memory-management", category: "Features" },
     { title: "OpenClaw Browser Automation Guide", href: "/guides/openclaw-browser-automation", category: "Features" },
     { title: "OpenClaw Email Inbox Management", href: "/guides/openclaw-email-inbox-management", category: "Features" },
+    { title: "OpenClaw Integrations Guide", href: "/guides/openclaw-integrations-guide", category: "Features" },
     { title: "Connect OpenClaw to Moltbook", href: "/guides/openclaw-moltbook-guide", category: "Features" },
     { title: "OpenClaw + WhatsApp Business Guide", href: "/guides/openclaw-whatsapp-business", category: "Features" },
     { title: "OpenClaw Social Media Automation", href: "/guides/openclaw-social-media-management", category: "Features" },
@@ -97,6 +100,7 @@ const guidesData: Record<string, Guide[]> = {
     { title: "OpenClaw vs Copilot Studio", href: "/guides/openclaw-vs-copilot-studio", category: "Comparison" },
     { title: "OpenClaw vs VA: Cost Comparison 2026", href: "/guides/openclaw-vs-virtual-assistant-cost", category: "Comparison" },
     { title: "OpenClaw vs Virtual Assistant Costs", href: "/guides/openclaw-vs-va-cost-comparison", category: "Comparison" },
+    { title: "OpenClaw vs Hiring Staff", href: "/guides/openclaw-vs-hiring-staff", category: "Comparison" },
     { title: "Pinchy vs Manual OpenClaw Management", href: "/guides/pinchy-vs-manual", category: "Comparison" },
     { title: "OpenClaw vs Manus", href: "/guides/openclaw-vs-manus", category: "Comparison" },
   ],
@@ -109,10 +113,12 @@ const guidesData: Record<string, Guide[]> = {
     { title: "OpenClaw Proof of Concept Cost UK", href: "/guides/openclaw-proof-of-concept-cost-uk", category: "Pricing" },
     { title: "OpenClaw Custom Skills Cost UK", href: "/guides/openclaw-custom-skills-cost-uk", category: "Pricing" },
     { title: "OpenClaw Managed Service Cost UK", href: "/guides/openclaw-managed-service-cost-uk", category: "Pricing" },
+    { title: "OpenClaw Retainer UK", href: "/guides/openclaw-retainer-uk", category: "Pricing" },
     { title: "AI Automation ROI Calculator", href: "/guides/ai-automation-roi-calculator", category: "Pricing" },
     { title: "Measuring AI ROI for UK Businesses", href: "/guides/measuring-ai-roi-uk-business", category: "Pricing" },
     { title: "OpenClaw ROI for Business", href: "/guides/openclaw-roi-for-business", category: "Pricing" },
     { title: "AI Automation vs Outsourcing: UK Guide", href: "/guides/ai-automation-vs-outsourcing", category: "Pricing" },
+    { title: "AI Employee vs Outsourcing", href: "/guides/ai-employee-vs-outsourcing", category: "Pricing" },
     { title: "OpenClaw for Accountants: Automation", href: "/guides/openclaw-accountants-automation", category: "Pricing" },
   ],
   "Industry Guides": [
@@ -158,6 +164,7 @@ const guidesData: Record<string, Guide[]> = {
     { title: "AI Audit for Business", href: "/guides/ai-audit-for-business", category: "Strategy" },
     { title: "AI Readiness Assessment UK", href: "/guides/ai-readiness-assessment-uk", category: "Strategy" },
     { title: "AI Readiness Assessment Guide", href: "/guides/ai-readiness-assessment-guide", category: "Strategy" },
+    { title: "AI Operations Consultant UK", href: "/guides/ai-operations-consultant-uk", category: "Strategy" },
     { title: "AI Implementation Consultant UK", href: "/guides/ai-implementation-consultant-uk", category: "Strategy" },
     { title: "OpenClaw Consultant UK", href: "/guides/openclaw-consultant-uk", category: "Strategy" },
     { title: "Hire an OpenClaw Expert", href: "/guides/hire-openclaw-expert", category: "Strategy" },
@@ -168,6 +175,8 @@ const guidesData: Record<string, Guide[]> = {
     { title: "OpenClaw Implementation Consultant UK", href: "/guides/openclaw-implementation-consultant-uk", category: "Strategy" },
     { title: "OpenClaw Audit Service", href: "/guides/openclaw-audit-service", category: "Strategy" },
     { title: "OpenClaw Managed Service UK", href: "/guides/openclaw-managed-service-uk", category: "Strategy" },
+    { title: "AI Managed Services UK", href: "/guides/ai-managed-services-uk", category: "Strategy" },
+    { title: "AI Managed Service Provider UK", href: "/guides/ai-managed-service-provider-uk", category: "Strategy" },
     { title: "OpenClaw Migration Service", href: "/guides/openclaw-migration-service", category: "Strategy" },
     { title: "OpenClaw Compliance Checklist UK", href: "/guides/openclaw-compliance-checklist-uk", category: "Strategy" },
     { title: "AI Governance Policy Template", href: "/guides/ai-governance-policy-template", category: "Strategy" },
@@ -175,6 +184,9 @@ const guidesData: Record<string, Guide[]> = {
   "AI Automation": [
     { title: "AI Customer Service Automation UK", href: "/guides/ai-customer-service-automation-uk", category: "Automation" },
     { title: "AI Workflow Automation UK", href: "/guides/ai-workflow-automation-uk", category: "Automation" },
+    { title: "AI Inbox Triage Automation", href: "/guides/ai-inbox-triage-automation", category: "Automation" },
+    { title: "AI Lead Response Automation UK", href: "/guides/ai-lead-response-automation-uk", category: "Automation" },
+    { title: "AI Reporting Automation UK", href: "/guides/ai-reporting-automation-uk", category: "Automation" },
     { title: "AI Appointment Booking for Business", href: "/guides/ai-appointment-booking", category: "Automation" },
     { title: "AI Chatbots for UK Businesses", href: "/guides/ai-chatbot-for-business-uk", category: "Automation" },
     { title: "Automate Customer Onboarding with AI", href: "/guides/ai-customer-onboarding", category: "Automation" },
@@ -264,6 +276,69 @@ const buyerGuides: BuyerGuide[] = [
   },
 ];
 
+function titleFromSlug(slug: string) {
+  const specialWords: Record<string, string> = {
+    ai: "AI",
+    autogen: "AutoGen",
+    chatgpt: "ChatGPT",
+    eu: "EU",
+    gdpr: "GDPR",
+    n8n: "n8n",
+    openclaw: "OpenClaw",
+    roi: "ROI",
+    smes: "SMEs",
+    uk: "UK",
+    va: "VA",
+    vs: "vs",
+  };
+
+  return slug
+    .split("-")
+    .map((word) => {
+      if (specialWords[word]) return specialWords[word];
+      if (/^\d+$/.test(word)) return word;
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join(" ");
+}
+
+function getGuideRoutes() {
+  try {
+    const guidesDir = join(process.cwd(), "app", "guides");
+
+    return readdirSync(guidesDir, { withFileTypes: true })
+      .filter((entry) => {
+        return (
+          entry.isDirectory() &&
+          !entry.name.startsWith("[") &&
+          !entry.name.startsWith(".") &&
+          !entry.name.startsWith("_") &&
+          existsSync(join(guidesDir, entry.name, "page.tsx"))
+        );
+      })
+      .map((entry) => entry.name)
+      .sort();
+  } catch {
+    return [];
+  }
+}
+
+function getAdditionalGuides(): Guide[] {
+  const listedGuideHrefs = new Set(
+    Object.values(guidesData)
+      .flat()
+      .map((guide) => guide.href),
+  );
+
+  return getGuideRoutes()
+    .filter((slug) => !listedGuideHrefs.has(`/guides/${slug}`))
+    .map((slug) => ({
+      title: titleFromSlug(slug),
+      href: `/guides/${slug}`,
+      category: "More",
+    }));
+}
+
 const categoryColors: Record<string, string> = {
   "Getting Started": "bg-green-500/10 text-green-600",
   "Setup Guides": "bg-blue-500/10 text-blue-600",
@@ -274,11 +349,20 @@ const categoryColors: Record<string, string> = {
   "Industry Guides": "bg-rose-500/10 text-rose-600",
   "AI Business Strategy": "bg-indigo-500/10 text-indigo-600",
   "AI Automation": "bg-teal-500/10 text-teal-600",
+  "More Guides": "bg-slate-100 text-muted-dark",
 };
 
 export default function GuidesPage() {
-  const totalGuides = Object.values(guidesData).reduce((sum, g) => sum + g.length, 0);
-  const navSections = ["Buyer Guides", ...Object.keys(guidesData)];
+  const additionalGuides = getAdditionalGuides();
+  const guideSections: Record<string, Guide[]> = additionalGuides.length
+    ? { ...guidesData, "More Guides": additionalGuides }
+    : guidesData;
+  const totalGuides = new Set(
+    Object.values(guideSections)
+      .flat()
+      .map((guide) => guide.href),
+  ).size;
+  const navSections = ["Buyer Guides", ...Object.keys(guideSections)];
 
   return (
     <>
@@ -362,7 +446,7 @@ export default function GuidesPage() {
       {/* Guide Categories */}
       <section className="py-16 bg-surface">
         <div className="max-w-[1140px] mx-auto px-6">
-          {Object.entries(guidesData).map(([category, guides]) => (
+          {Object.entries(guideSections).map(([category, guides]) => (
             <div key={category} id={category.toLowerCase().replace(/[^a-z0-9]+/g, '-')} className="mb-16 last:mb-0 scroll-mt-24">
               <div className="flex items-center gap-3 mb-6">
                 <h2 className="font-heading text-2xl font-bold text-navy">{category}</h2>

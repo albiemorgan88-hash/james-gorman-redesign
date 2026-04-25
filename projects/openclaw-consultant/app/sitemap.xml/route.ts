@@ -1,5 +1,14 @@
-import { readdirSync } from 'fs';
+import { existsSync, readdirSync } from 'fs';
 import { join } from 'path';
+
+function isRouteDirectory(parentDir: string, name: string) {
+  return (
+    !name.startsWith('[') &&
+    !name.startsWith('.') &&
+    !name.startsWith('_') &&
+    existsSync(join(parentDir, name, 'page.tsx'))
+  );
+}
 
 export async function GET() {
   const baseUrl = 'https://openclawconsultant.co.uk';
@@ -10,7 +19,7 @@ export async function GET() {
   try {
     const guidesDir = join(process.cwd(), 'app', 'guides');
     guides = readdirSync(guidesDir, { withFileTypes: true })
-      .filter(d => d.isDirectory() && !d.name.startsWith('[') && !d.name.startsWith('.'))
+      .filter(d => d.isDirectory() && isRouteDirectory(guidesDir, d.name))
       .map(d => d.name)
       .sort();
   } catch {
@@ -23,7 +32,7 @@ export async function GET() {
     const servicesDir = join(process.cwd(), 'app', 'services');
     const entries = readdirSync(servicesDir, { withFileTypes: true });
     entries
-      .filter(d => d.isDirectory() && !d.name.startsWith('[') && !d.name.startsWith('.'))
+      .filter(d => d.isDirectory() && isRouteDirectory(servicesDir, d.name))
       .forEach(d => services.push(d.name));
   } catch {
     // No services directory — skip
@@ -35,7 +44,7 @@ export async function GET() {
     const csDir = join(process.cwd(), 'app', 'case-studies');
     const entries = readdirSync(csDir, { withFileTypes: true });
     entries
-      .filter(d => d.isDirectory() && !d.name.startsWith('[') && !d.name.startsWith('.'))
+      .filter(d => d.isDirectory() && isRouteDirectory(csDir, d.name))
       .forEach(d => caseStudies.push(d.name));
   } catch {
     // No case studies directory — skip
