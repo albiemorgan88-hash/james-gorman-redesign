@@ -157,10 +157,7 @@ const faqs = [
   }
 ];
 const relatedGuides = [
-  {
-    "title": "AI for Schools: Admin & Wellbeing",
-    "href": "/guides/ai-for-schools-uk"
-  },
+  
   {
     "title": "AI Agents for HR",
     "href": "/guides/ai-agents-for-hr"

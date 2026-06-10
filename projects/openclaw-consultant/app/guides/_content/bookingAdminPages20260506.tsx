@@ -22,7 +22,7 @@ type BookingAdminGuide = {
 };
 
 const commonRelated = [
-  { href: "/guides/ai-appointment-booking", title: "AI Appointment Booking for Business" },
+  { href: "/guides/openclaw-booking-automation", title: "AI Appointment Booking for Business" },
   { href: "/guides/openclaw-business-systems-integration", title: "OpenClaw Business Systems Integration" },
   { href: "/guides/openclaw-crm-automation", title: "OpenClaw CRM Automation" },
   { href: "/guides/openclaw-customer-onboarding", title: "OpenClaw Customer Onboarding" },

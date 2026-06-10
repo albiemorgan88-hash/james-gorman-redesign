@@ -70,7 +70,7 @@ const relatedGuides = [
   { href: "/guides/openclaw-for-business", title: "OpenClaw for Business" },
   { href: "/guides/openclaw-vs-virtual-assistant-cost", title: "OpenClaw vs Virtual Assistant Costs" },
   { href: "/guides/openclaw-managed-service-uk", title: "OpenClaw Managed Service UK" },
-  { href: "/guides/ai-automation-roi-calculator", title: "AI Automation ROI Calculator" },
+  { href: "/guides/openclaw-roi-calculator-guide", title: "AI Automation ROI Calculator" },
 ];
 
 export default function AIEmployeesForBusinessPage() {

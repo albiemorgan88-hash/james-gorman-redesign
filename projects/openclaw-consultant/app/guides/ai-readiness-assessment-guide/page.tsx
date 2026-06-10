@@ -99,7 +99,7 @@ const faqs = [
 
 const relatedGuides = [
   {
-    href: "/guides/ai-audit-for-business",
+    href: "/guides/openclaw-audit-service",
     title: "AI Audit for Business",
   },
   {

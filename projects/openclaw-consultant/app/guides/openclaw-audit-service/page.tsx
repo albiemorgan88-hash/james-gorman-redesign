@@ -94,7 +94,6 @@ const faqs = [
 ];
 
 const relatedGuides = [
-  { href: "/guides/ai-audit-for-business", title: "AI Audit for Business" },
   { href: "/guides/openclaw-implementation-consultant-uk", title: "OpenClaw Implementation Consultant UK" },
   { href: "/guides/openclaw-compliance-checklist-uk", title: "OpenClaw Compliance Checklist UK" },
   { href: "/guides/openclaw-roi-for-business", title: "OpenClaw ROI for Business" },

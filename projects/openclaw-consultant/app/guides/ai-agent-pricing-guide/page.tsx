@@ -190,7 +190,7 @@ const relatedGuides = [
     "title": "OpenClaw Pricing Explained"
   },
   {
-    "href": "/guides/measuring-ai-roi-uk-business",
+    "href": "/guides/ai-agents-roi-guide",
     "title": "Measuring AI ROI for UK Business"
   },
   {

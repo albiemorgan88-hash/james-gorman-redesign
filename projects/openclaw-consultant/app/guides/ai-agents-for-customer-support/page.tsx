@@ -187,10 +187,6 @@ const faqs = [
 ];
 const relatedGuides = [
   {
-    "title": "AI Customer Service Automation UK",
-    "href": "/guides/ai-customer-service-automation-uk"
-  },
-  {
     "title": "AI Agent vs Chatbot",
     "href": "/guides/ai-agent-vs-chatbot"
   },

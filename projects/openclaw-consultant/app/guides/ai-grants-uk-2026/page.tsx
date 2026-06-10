@@ -92,7 +92,7 @@ const relatedGuides = [
     title: "AI Readiness Assessment Guide",
   },
   {
-    href: "/guides/ai-audit-for-business",
+    href: "/guides/openclaw-audit-service",
     title: "AI Audit for Business",
   },
   {

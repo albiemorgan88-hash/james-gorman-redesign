@@ -71,7 +71,7 @@ const relatedGuides = [
   { href: "/guides/ai-implementation-consultant-uk", title: "AI Implementation Consultant UK" },
   { href: "/guides/openclaw-for-business", title: "OpenClaw for Business" },
   { href: "/guides/ai-readiness-assessment-guide", title: "AI Readiness Assessment Guide" },
-  { href: "/guides/ai-customer-service-automation-uk", title: "AI Customer Service Automation UK" },
+  { href: "/guides/ai-agents-for-customer-support", title: "AI Customer Service Automation UK" },
 ];
 
 export default function AIWorkflowAutomationUKPage() {

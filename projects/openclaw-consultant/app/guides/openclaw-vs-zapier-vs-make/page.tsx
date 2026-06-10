@@ -822,7 +822,7 @@ export default function OpenClawVsZapierVsMakePage() {
                   <a href="/guides/openclaw-beginner-guide" className="block text-orange hover:text-orange-hover transition-colors font-medium">
                     → Complete OpenClaw Beginner's Guide
                   </a>
-                  <a href="/guides/ai-automation-roi-calculator" className="block text-orange hover:text-orange-hover transition-colors font-medium">
+                  <a href="/guides/openclaw-roi-calculator-guide" className="block text-orange hover:text-orange-hover transition-colors font-medium">
                     → Calculate Your ROI with AI Automation
                   </a>
                   <a href="/guides/openclaw-vs-virtual-assistant-cost" className="block text-orange hover:text-orange-hover transition-colors font-medium">

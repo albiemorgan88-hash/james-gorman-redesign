@@ -88,7 +88,7 @@ const faqs = [
 
 const relatedGuides = [
   {
-    href: "/guides/ai-customer-service-automation-uk",
+    href: "/guides/ai-agents-for-customer-support",
     title: "AI Customer Service Automation UK",
   },
   {
@@ -100,7 +100,7 @@ const relatedGuides = [
     title: "OpenClaw for Small Business UK",
   },
   {
-    href: "/guides/ai-audit-for-business",
+    href: "/guides/openclaw-audit-service",
     title: "AI Audit for Business",
   }
 ];

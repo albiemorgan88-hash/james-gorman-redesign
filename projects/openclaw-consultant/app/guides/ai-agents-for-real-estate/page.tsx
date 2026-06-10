@@ -167,11 +167,11 @@ const relatedGuides = [
   },
   {
     "title": "AI Appointment Booking for Business",
-    "href": "/guides/ai-appointment-booking"
+    "href": "/guides/openclaw-booking-automation"
   },
   {
     "title": "Automate Customer Onboarding with AI",
-    "href": "/guides/ai-customer-onboarding"
+    "href": "/guides/openclaw-customer-onboarding"
   }
 ];
 const comparisonRows: Array<{ criteria: string; openclaw: string; crewai: string; autogpt: string; langgraph: string; }> = [];

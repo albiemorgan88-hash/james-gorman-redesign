@@ -167,7 +167,7 @@ const relatedGuides = [
   },
   {
     "title": "AI Invoice Processing: Cut Admin 80%",
-    "href": "/guides/ai-invoice-processing"
+    "href": "/guides/openclaw-invoice-processing"
   },
   {
     "title": "AI Risk Management Framework",

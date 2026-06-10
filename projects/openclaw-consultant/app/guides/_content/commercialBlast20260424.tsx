@@ -117,7 +117,7 @@ const guides: Record<string, BlastGuide> = {
     workflowExamples: ["summarising new enquiries before solicitor review", "preparing matter-opening checklists", "drafting non-sensitive client update notes for approval", "tracking missing documents, dates, and follow-up actions"],
     riskNotes: ["legal advice, fee quotes, undertakings, complaints, and risk decisions should stay solicitor-owned", "client confidentiality and source logging need explicit controls", "outputs should be reviewable before anything reaches a client"],
     relatedGuides: [
-      { href: "/guides/ai-for-legal-uk", title: "AI for Law Firms: Legal Automation" },
+      { href: "/guides/ai-agents-for-solicitors", title: "AI for Law Firms: Legal Automation" },
       { href: "/guides/ai-agents-for-solicitors", title: "AI Agents for Solicitors" },
       { href: "/guides/openclaw-document-processing", title: "OpenClaw Document Processing" },
       { href: "/guides/openclaw-compliance-checklist-uk", title: "OpenClaw Compliance Checklist UK" },
@@ -197,9 +197,9 @@ const guides: Record<string, BlastGuide> = {
     workflowExamples: ["preparing appointment reminders and follow-up drafts", "routing admin requests to the right owner", "summarising non-clinical inbox items", "tracking missing forms and internal actions"],
     riskNotes: ["clinical advice, diagnosis, treatment decisions, and safeguarding concerns must stay with qualified professionals", "patient data access should be tightly scoped and logged", "messages should be reviewed where wording could affect care or trust"],
     relatedGuides: [
-      { href: "/guides/ai-for-healthcare-uk", title: "AI in UK Healthcare: Practical Guide" },
+      { href: "/guides/ai-agents-for-healthcare", title: "AI in UK Healthcare: Practical Guide" },
       { href: "/guides/ai-agents-for-healthcare", title: "AI Agents for Healthcare" },
-      { href: "/guides/ai-appointment-booking", title: "AI Appointment Booking for Business" },
+      { href: "/guides/openclaw-booking-automation", title: "AI Appointment Booking for Business" },
       { href: "/guides/ai-governance-compliance-uk", title: "AI Governance & Compliance UK" },
     ],
   }),
@@ -328,7 +328,7 @@ const guides: Record<string, BlastGuide> = {
       { question: "How does this help agencies?", answer: "It can reduce reporting drag, keep content pipelines moving, and make routine checks consistent across clients." },
     ],
     relatedGuides: [
-      { href: "/guides/ai-reporting-automation-uk", title: "AI Reporting Automation UK" },
+      { href: "/guides/openclaw-reporting-automation", title: "AI Reporting Automation UK" },
       { href: "/guides/openclaw-browser-automation", title: "OpenClaw Browser Automation" },
       { href: "/guides/openclaw-cron-jobs", title: "OpenClaw Cron Jobs" },
       { href: "/guides/openclaw-document-processing", title: "OpenClaw Document Processing" },
@@ -367,7 +367,7 @@ const guides: Record<string, BlastGuide> = {
       { question: "What workflow should agencies start with?", answer: "Call-note drafting or candidate follow-up is usually safer than automated screening as a first step." },
     ],
     relatedGuides: [
-      { href: "/guides/ai-recruitment-automation-uk-smes", title: "AI Recruitment Automation UK" },
+      { href: "/guides/ai-agents-for-recruitment", title: "AI Recruitment Automation UK" },
       { href: "/guides/ai-agents-for-recruitment", title: "AI Agents for Recruitment Agencies" },
       { href: "/guides/openclaw-crm-automation", title: "OpenClaw CRM Automation" },
       { href: "/guides/openclaw-document-processing", title: "OpenClaw Document Processing" },
@@ -445,7 +445,7 @@ const guides: Record<string, BlastGuide> = {
       { question: "Who should own it?", answer: "One operational owner should decide checks, thresholds, and what happens when an exception appears." },
     ],
     relatedGuides: [
-      { href: "/guides/ai-reporting-automation-uk", title: "AI Reporting Automation UK" },
+      { href: "/guides/openclaw-reporting-automation", title: "AI Reporting Automation UK" },
       { href: "/guides/ai-data-analysis-for-smes", title: "AI Data Analysis for SMEs" },
       { href: "/guides/openclaw-cron-jobs", title: "OpenClaw Cron Jobs" },
       { href: "/guides/openclaw-business-systems-integration", title: "OpenClaw Business Integration" },
@@ -486,7 +486,7 @@ const guides: Record<string, BlastGuide> = {
     relatedGuides: [
       { href: "/guides/openclaw-managed-service-uk", title: "OpenClaw Managed Service UK" },
       { href: "/guides/openclaw-managed-service-cost-uk", title: "OpenClaw Managed Service Cost UK" },
-      { href: "/guides/ai-managed-services-uk", title: "AI Managed Services UK" },
+      { href: "/guides/openclaw-managed-service-uk", title: "AI Managed Services UK" },
       { href: "/guides/openclaw-audit-service", title: "OpenClaw Audit Service" },
     ],
     sidebarTitle: "Retainer fit check",
@@ -563,7 +563,7 @@ const guides: Record<string, BlastGuide> = {
     ],
     relatedGuides: [
       { href: "/guides/openclaw-email-inbox-management", title: "OpenClaw Email Inbox Management" },
-      { href: "/guides/ai-customer-service-automation-uk", title: "AI Customer Service Automation UK" },
+      { href: "/guides/ai-agents-for-customer-support", title: "AI Customer Service Automation UK" },
       { href: "/guides/openclaw-customer-support", title: "OpenClaw for Customer Support" },
       { href: "/guides/ai-workflow-automation-uk", title: "AI Workflow Automation UK" },
     ],
@@ -602,7 +602,7 @@ const guides: Record<string, BlastGuide> = {
     ],
     relatedGuides: [
       { href: "/guides/ai-agent-for-sales", title: "AI Agent for Sales" },
-      { href: "/guides/ai-customer-onboarding", title: "AI Customer Onboarding" },
+      { href: "/guides/openclaw-customer-onboarding", title: "AI Customer Onboarding" },
       { href: "/guides/openclaw-integrations-guide", title: "OpenClaw Integrations Guide" },
       { href: "/guides/ai-workflow-automation-uk", title: "AI Workflow Automation UK" },
     ],
@@ -679,7 +679,7 @@ const guides: Record<string, BlastGuide> = {
       { question: "How do we reduce mistakes?", answer: "Use structured extraction fields, source references, exception flags, and human approval before external or financial actions." },
     ],
     relatedGuides: [
-      { href: "/guides/ai-invoice-processing", title: "AI Invoice Processing" },
+      { href: "/guides/openclaw-invoice-processing", title: "AI Invoice Processing" },
       { href: "/guides/ai-compliance-automation", title: "AI Compliance Automation" },
       { href: "/guides/openclaw-business-systems-integration", title: "OpenClaw Business Systems Integration" },
       { href: "/guides/openclaw-audit-service", title: "OpenClaw Audit Service" },
@@ -720,7 +720,7 @@ const guides: Record<string, BlastGuide> = {
     relatedGuides: [
       { href: "/guides/openclaw-cron-jobs", title: "OpenClaw Cron Jobs" },
       { href: "/guides/openclaw-integrations-guide", title: "OpenClaw Integrations Guide" },
-      { href: "/guides/ai-customer-onboarding", title: "AI Customer Onboarding" },
+      { href: "/guides/openclaw-customer-onboarding", title: "AI Customer Onboarding" },
       { href: "/guides/ai-workflow-automation-uk", title: "AI Workflow Automation UK" },
     ],
     sidebarTitle: "Meeting rule",

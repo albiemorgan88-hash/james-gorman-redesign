@@ -677,7 +677,7 @@ export default function AITransformationStrategy2026Page() {
                     <a href="/guides/ai-governance-compliance-uk" className="block text-orange hover:text-orange-hover transition-colors font-medium">
                       → AI Governance & Compliance Strategy
                     </a>
-                    <a href="/guides/measuring-ai-roi-uk-business" className="block text-orange hover:text-orange-hover transition-colors font-medium">
+                    <a href="/guides/ai-agents-roi-guide" className="block text-orange hover:text-orange-hover transition-colors font-medium">
                       → AI ROI Measurement Framework
                     </a>
                     <a href="/guides/ai-workforce-planning-2026" className="block text-orange hover:text-orange-hover transition-colors font-medium">

@@ -1,0 +1,60 @@
+slug,recommended_action,destination,status,notes
+ai-customer-service-automation-uk,301,/guides/ai-agents-for-customer-support,IMPLEMENTED,Same topic in agent frame; survivor is curated.
+ai-for-dentists-uk,301,/guides/ai-agents-dentists,IMPLEMENTED,1:1 industry equivalent in agent frame.
+ai-for-gyms-uk,301,/guides/ai-agents-gyms-fitness,IMPLEMENTED,1:1 industry equivalent.
+ai-for-legal-uk,301,/guides/ai-agents-for-solicitors,IMPLEMENTED,Legal-sector page; solicitors guide is the domain's strongest legal asset.
+ai-for-healthcare-uk,301,/guides/ai-agents-for-healthcare,IMPLEMENTED,1:1 industry equivalent.
+ai-for-hospitality-uk,301,/guides/ai-agents-restaurants,IMPLEMENTED,Destination covers restaurants & hospitality.
+ai-for-schools-uk,301,/guides/ai-agents-for-education,IMPLEMENTED,Destination covers schools and universities.
+ai-recruitment-automation-uk-smes,301,/guides/ai-agents-for-recruitment,IMPLEMENTED,Same topic; survivor of the T1 recruitment cluster.
+ai-invoice-processing,301,/guides/openclaw-invoice-processing,IMPLEMENTED,Exact workflow equivalent in openclaw frame.
+ai-customer-onboarding,301,/guides/openclaw-customer-onboarding,IMPLEMENTED,Exact workflow equivalent.
+ai-reporting-automation-uk,301,/guides/openclaw-reporting-automation,IMPLEMENTED,Exact workflow equivalent.
+ai-automation-roi-calculator,301,/guides/openclaw-roi-calculator-guide,IMPLEMENTED,Exact topic equivalent (ROI calculator).
+measuring-ai-roi-uk-business,301,/guides/ai-agents-roi-guide,IMPLEMENTED,Same intent (measure AI ROI) in agent frame.
+ai-managed-services-uk,301,/guides/openclaw-managed-service-uk,IMPLEMENTED,Exact service equivalent on this domain.
+ai-managed-service-provider-uk,301,/guides/openclaw-managed-service-uk,IMPLEMENTED,Near-dupe of ai-managed-services-uk; same destination.
+ai-appointment-booking,301,/guides/openclaw-booking-automation,IMPLEMENTED,Same workflow (booking/appointments).
+ai-audit-for-business,301,/guides/openclaw-audit-service,IMPLEMENTED,Same service intent (pre-automation audit).
+ai-consultancy-uk,FLAG,bluecanvas.ai,FLAGGED,Named in brief as bluecanvas territory; ALSO a Buyer Guides entry and a production-manifest critical route - do not redirect without owner decision.
+ai-consultancy-costs-uk,FLAG,bluecanvas.ai,FLAGGED,Consultancy-cost term; openclaw-consultant-cost-uk exists but the generic term belongs with the consultancy brand decision.
+ai-automation-consultant-uk,FLAG,bluecanvas.ai,FLAGGED,Named in brief; consultancy identity term.
+ai-implementation-services-uk,FLAG,bluecanvas.ai,FLAGGED,Named in brief; Buyer Guides entry; production-manifest critical route.
+ai-implementation-consultant-uk,FLAG,bluecanvas.ai,FLAGGED,Consultancy identity term.
+ai-automation-agency-uk,FLAG,bluecanvas.ai,FLAGGED,Buyer Guides entry; production-manifest critical route.
+ai-operations-consultant-uk,FLAG,bluecanvas.ai,FLAGGED,Consultancy identity term.
+ai-automation-for-business-uk,FLAG,bluecanvas.ai,FLAGGED,Broad generic automation head term.
+ai-workflow-automation-uk,FLAG,bluecanvas.ai,FLAGGED,Curated hub entry; no exact openclaw equivalent page.
+ai-email-automation-uk,FLAG,owner-decision,FLAGGED,Production-manifest critical route (likely traffic); no exact openclaw equivalent.
+ai-receptionist-uk,FLAG,owner-decision,FLAGGED,Production-manifest critical route; distinct product term with no equivalent.
+ai-inbox-triage-automation,FLAG,owner-decision,FLAGGED,No openclaw inbox-triage page exists; candidate for future openclaw equivalent then 301.
+ai-lead-response-automation-uk,FLAG,owner-decision,FLAGGED,Closest is openclaw-lead-generation-automation but lead response is a distinct intent.
+ai-chatbot-for-business-uk,FLAG,owner-decision,FLAGGED,Buying-a-chatbot intent; ai-agent-vs-chatbot is comparison content not an equivalent.
+ai-data-analysis-for-smes,FLAG,bluecanvas.ai,FLAGGED,Generic data/AI consulting topic.
+ai-inventory-management,FLAG,owner-decision,FLAGGED,No agent/openclaw equivalent page.
+ai-social-media-management,FLAG,owner-decision,FLAGGED,No equivalent; possible bluecanvas content.
+ai-compliance-automation,FLAG,owner-decision,FLAGGED,ai-agents-compliance-risk overlaps but is risk commentary not automation service.
+ai-employee-vs-outsourcing,FLAG,owner-decision,FLAGGED,Near-dupe pair with ai-automation-vs-outsourcing; closest equivalent openclaw-vs-hiring-staff; decide all three together.
+ai-automation-vs-outsourcing,FLAG,owner-decision,FLAGGED,See ai-employee-vs-outsourcing row.
+ai-employees-for-business,FLAG,owner-decision,FLAGGED,"AI employees" is a distinct keyword family; ai-agents-for-business is the agent-frame equivalent if owner wants to consolidate.
+ai-for-car-dealerships-uk,FLAG,owner-decision,FLAGGED,No agent equivalent; industry page.
+ai-for-event-planners-uk,FLAG,owner-decision,FLAGGED,No agent equivalent.
+ai-for-financial-services-uk,FLAG,owner-decision,FLAGGED,Sector page; ai-agents-for-finance covers the finance function not the sector; openclaw-for-financial-advisers is advisers only.
+ai-for-manufacturing-uk,FLAG,owner-decision,FLAGGED,No agent equivalent.
+ai-for-nurseries-childcare-uk,FLAG,owner-decision,FLAGGED,No agent equivalent.
+ai-for-pharmacies-uk,FLAG,owner-decision,FLAGGED,No agent equivalent.
+ai-for-plumbers-uk,FLAG,owner-decision,FLAGGED,No agent equivalent; trade-sector overlap with uk-trade-jobs project.
+ai-for-retail-uk,FLAG,owner-decision,FLAGGED,ai-agents-for-ecommerce is ecommerce-specific; retail is broader.
+ai-governance-compliance-uk,FLAG,bluecanvas.ai,FLAGGED,Governance/strategy territory.
+ai-governance-policy-template,FLAG,bluecanvas.ai,FLAGGED,Template asset; governance territory.
+ai-grants-uk-2026,FLAG,bluecanvas.ai,FLAGGED,Funding/strategy content.
+ai-risk-management-framework,FLAG,bluecanvas.ai,FLAGGED,Governance/strategy territory.
+ai-transformation-strategy-2026,FLAG,bluecanvas.ai,FLAGGED,Transformation strategy is consultancy-brand territory.
+ai-workforce-planning-2026,FLAG,bluecanvas.ai,FLAGGED,Strategy territory.
+eu-ai-act-compliance-checker,FLAG,bluecanvas.ai,FLAGGED,Regulatory tool; governance territory.
+ai-training-for-employees,FLAG,owner-decision,FLAGGED,General AI literacy training; openclaw-training-for-teams is product training - not equivalent.
+automate-accounts-bookkeeping-ai,FLAG,owner-decision,FLAGGED,Large content asset (MTD/VAT detail); decide between bluecanvas.ai and merging into ai-agents-for-accountants.
+getting-started-ai-automation,FLAG,owner-decision,FLAGGED,Generic beginner funnel; no single equivalent.
+enterprise-ai-deployment-uk,FLAG,owner-decision,FLAGGED,openclaw-enterprise-deployment exists but the generic enterprise-AI term may belong to bluecanvas.ai.
+workshop-booking-automation,FLAG,owner-decision,FLAGGED,Ambiguous (auto workshops vs training workshops); openclaw-booking-automation or openclaw-for-training-providers could each fit.
+ai-readiness-assessment-guide,KEEP,,FLAGGED,T1 survivor (absorbed ai-readiness-assessment-uk). Generic term but functions as the buyer-guide funnel entry; owner may later move the generic term to bluecanvas.ai.

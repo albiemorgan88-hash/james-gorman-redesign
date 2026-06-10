@@ -66,10 +66,10 @@ const faqs = [
 ];
 
 const relatedGuides = [
-  { href: "/guides/ai-appointment-booking", title: "AI Appointment Booking" },
+  { href: "/guides/openclaw-booking-automation", title: "AI Appointment Booking" },
   { href: "/guides/openclaw-booking-automation", title: "OpenClaw Booking Automation" },
   { href: "/guides/openclaw-calendar-automation", title: "OpenClaw Calendar Automation" },
-  { href: "/guides/ai-customer-service-automation-uk", title: "AI Customer Service Automation UK" },
+  { href: "/guides/ai-agents-for-customer-support", title: "AI Customer Service Automation UK" },
 ];
 
 export default function AIReceptionistUKPage() {
