@@ -100,7 +100,7 @@ const relatedGuides = [
     title: "AI Readiness Assessment Guide",
   },
   {
-    href: "/guides/openclaw-vs-zapier-make-n8n",
+    href: "/guides/openclaw-vs-zapier-vs-make",
     title: "OpenClaw vs Zapier, Make, and n8n",
   }
 ];

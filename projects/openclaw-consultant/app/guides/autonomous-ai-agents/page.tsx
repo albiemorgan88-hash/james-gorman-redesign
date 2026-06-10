@@ -152,7 +152,7 @@ export default function AutonomousAIAgentsPage() {
               For businesses, the practical question isn&apos;t &ldquo;should we use autonomous agents?&rdquo; but &ldquo;what level of autonomy is right for each process?&rdquo; The answer depends on the task&apos;s complexity, risk, and how much trust you&apos;ve built with the technology.
             </p>
             <p>
-              New to AI agents? Start with our <a href="/guides/what-is-an-ai-agent" className="text-orange hover:underline">What Is an AI Agent?</a> explainer. For practical examples of agents in action, see <a href="/guides/ai-agent-examples" className="text-orange hover:underline">AI Agent Examples</a>.
+              New to AI agents? Start with our <a href="/guides/ai-agents-explained" className="text-orange hover:underline">What Is an AI Agent?</a> explainer. For practical examples of agents in action, see <a href="/guides/ai-agent-examples" className="text-orange hover:underline">AI Agent Examples</a>.
             </p>
           </div>
         </div>

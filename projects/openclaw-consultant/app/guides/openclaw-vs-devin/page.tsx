@@ -198,7 +198,7 @@ const relatedGuides = [
     "title": "What Is OpenClaw?"
   },
   {
-    "href": "/guides/how-to-build-an-ai-agent",
+    "href": "/guides/how-to-build-ai-agent",
     "title": "How to Build an AI Agent"
   }
 ];

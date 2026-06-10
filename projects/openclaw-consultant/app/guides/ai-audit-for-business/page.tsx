@@ -96,7 +96,7 @@ const relatedGuides = [
     title: "AI Consultancy Costs UK",
   },
   {
-    href: "/guides/openclaw-vs-zapier-make-n8n",
+    href: "/guides/openclaw-vs-zapier-vs-make",
     title: "OpenClaw vs Zapier, Make, and n8n",
   },
   {

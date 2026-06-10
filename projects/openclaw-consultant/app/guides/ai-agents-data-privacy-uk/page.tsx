@@ -194,11 +194,11 @@ const relatedGuides = [
     "title": "AI Agent Security Guide"
   },
   {
-    "href": "/guides/openclaw-security-compliance",
+    "href": "/guides/openclaw-security-best-practices",
     "title": "OpenClaw Security and Compliance"
   },
   {
-    "href": "/guides/enterprise-openclaw-deployment",
+    "href": "/guides/openclaw-enterprise-deployment",
     "title": "Enterprise OpenClaw Deployment"
   }
 ];

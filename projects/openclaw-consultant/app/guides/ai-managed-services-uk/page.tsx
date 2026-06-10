@@ -29,7 +29,7 @@ const sections = [
   {
     id: "worth-it",
     title: "When ongoing AI support is worth paying for",
-    html: '<p>Managed support is worth considering when the workflow is used frequently, touches customers or staff, connects multiple tools, or creates meaningful cost when it fails. If the workflow saves hours every week or protects response speed, ongoing support is usually cheaper than letting it drift.</p><p>It is less useful when the business is still exploring vague possibilities. In that case, start with an <a href="/guides/ai-readiness-assessment-uk">AI readiness assessment</a>, an <a href="/guides/openclaw-audit-service">OpenClaw audit</a>, or a narrow proof of concept before paying for monthly support.</p><p>The best test is simple: would slow fixes, silent drift, or internal distraction cost more than a scoped retainer? If yes, managed AI support deserves a serious look.</p>',
+    html: '<p>Managed support is worth considering when the workflow is used frequently, touches customers or staff, connects multiple tools, or creates meaningful cost when it fails. If the workflow saves hours every week or protects response speed, ongoing support is usually cheaper than letting it drift.</p><p>It is less useful when the business is still exploring vague possibilities. In that case, start with an <a href="/guides/ai-readiness-assessment-guide">AI readiness assessment</a>, an <a href="/guides/openclaw-audit-service">OpenClaw audit</a>, or a narrow proof of concept before paying for monthly support.</p><p>The best test is simple: would slow fixes, silent drift, or internal distraction cost more than a scoped retainer? If yes, managed AI support deserves a serious look.</p>',
   },
   {
     id: "included",

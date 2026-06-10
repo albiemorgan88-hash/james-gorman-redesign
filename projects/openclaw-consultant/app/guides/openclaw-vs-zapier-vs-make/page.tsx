@@ -3,9 +3,9 @@ import ContactForm from "@/components/ContactForm";
 import GuideArticleJsonLd from "@/components/GuideArticleJsonLd";
 
 const canonicalPath = "/guides/openclaw-vs-zapier-vs-make";
-const pageTitle = "OpenClaw vs Zapier vs Make: AI Agent or Workflow Automation?";
+const pageTitle = "OpenClaw vs Zapier vs Make vs n8n: AI Agent or Workflow Automation?";
 const pageDescription =
-  "Compare OpenClaw, Zapier, and Make for business workflows: setup effort, AI fit, data control, integration patterns, costs to verify, and when each option makes sense.";
+  "Compare OpenClaw, Zapier, Make, and n8n for business workflows: setup effort, AI fit, data control, integration patterns, costs to verify, and when each option makes sense.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   keywords: [
     "openclaw vs zapier",
     "openclaw vs make.com",
+    "openclaw vs n8n alternative",
+    "openclaw vs zapier make n8n",
     "automation platform comparison",
     "zapier alternatives",
     "make.com vs openclaw",
@@ -185,6 +187,48 @@ const useCaseComparison = [
   }
 ];
 
+const atAGlance = [
+  {
+    value: "Zapier",
+    label: "Fastest for simple app-to-app flows"
+  },
+  {
+    value: "n8n",
+    label: "Great for technical control"
+  },
+  {
+    value: "OpenClaw",
+    label: "Best when workflow needs memory, tools, channels, and approvals"
+  }
+];
+
+const faqs = [
+  {
+    question: "Is OpenClaw a replacement for Zapier?",
+    answer: "Sometimes, but not always. Simple app-to-app automations may still suit Zapier or Make perfectly well."
+  },
+  {
+    question: "Is n8n more powerful than OpenClaw?",
+    answer: "For some technical automation jobs, yes. For broader agent workflows with memory, messaging, and browser actions, OpenClaw is usually the better fit."
+  },
+  {
+    question: "What is easiest for non-technical teams?",
+    answer: "Usually Zapier, then Make for slightly richer branching."
+  },
+  {
+    question: "Can these tools be combined?",
+    answer: "Yes. Many businesses combine a lighter automation layer with a broader agent layer."
+  },
+  {
+    question: "What is the biggest buying mistake?",
+    answer: "Choosing by familiarity rather than by the actual shape of the workflow."
+  },
+  {
+    question: "Who should look hardest at OpenClaw?",
+    answer: "Businesses running cross-system operational workflows that need context, escalation, and flexible orchestration."
+  }
+];
+
 const migrationScenarios = [
   {
     from: "Zapier",
@@ -215,7 +259,7 @@ const migrationScenarios = [
 export default function OpenClawVsZapierVsMakePage() {
   return (
     <>
-      <GuideArticleJsonLd canonicalPath={canonicalPath} title={pageTitle} description={pageDescription} />
+      <GuideArticleJsonLd canonicalPath={canonicalPath} title={pageTitle} description={pageDescription} faqs={faqs} />
 
       {/* Article Header */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-navy via-navy-light to-blue">
@@ -226,7 +270,7 @@ export default function OpenClawVsZapierVsMakePage() {
               <span aria-hidden="true">/</span>
               <a href="/guides" className="hover:text-white">Guides</a>
               <span aria-hidden="true">/</span>
-              <span className="text-white/70">OpenClaw vs Zapier vs Make</span>
+              <span className="text-white/70">OpenClaw vs Zapier vs Make vs n8n</span>
             </nav>
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
               <span className="w-2 h-2 bg-orange rounded-full" />
@@ -234,7 +278,7 @@ export default function OpenClawVsZapierVsMakePage() {
             </div>
             
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              <span className="text-orange">OpenClaw</span> vs <span className="text-orange">Zapier</span> vs <span className="text-orange">Make</span>
+              <span className="text-orange">OpenClaw</span> vs <span className="text-orange">Zapier</span> vs <span className="text-orange">Make</span> vs <span className="text-orange">n8n</span>
             </h1>
             
             <p className="text-white/70 text-xl leading-relaxed mb-8">
@@ -267,7 +311,7 @@ export default function OpenClawVsZapierVsMakePage() {
           {/* Introduction */}
           <div className="prose prose-lg max-w-none mb-12">
             <p className="text-xl text-muted-dark leading-relaxed mb-8">
-              Choosing the right automation platform shapes cost, reliability, and operational risk. Zapier is strong for fast no-code workflows, Make.com is strong for visual workflow building, and OpenClaw is a more agentic, self-hostable option for teams that need memory, tool access, and custom skills.
+              Choosing the right automation platform shapes cost, reliability, and operational risk. Zapier is strong for fast no-code workflows, Make.com is strong for visual workflow building, n8n suits technical teams that want more control and self-hosting flexibility, and OpenClaw is a more agentic, self-hostable option for teams that need memory, tool access, and custom skills.
             </p>
             
             <p className="text-muted-dark leading-relaxed mb-8">
@@ -278,8 +322,8 @@ export default function OpenClawVsZapierVsMakePage() {
           {/* Quick Decision Matrix */}
           <section className="mb-16">
             <h2 className="font-heading text-3xl font-bold text-navy mb-8">Quick Decision Matrix</h2>
-            
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
               <div className="bg-gradient-to-br from-blue/5 to-blue/10 rounded-xl p-6 border border-blue/20">
                 <div className="text-center mb-4">
                   <h3 className="font-heading text-xl font-bold text-navy mb-2">Choose Zapier If:</h3>
@@ -333,7 +377,34 @@ export default function OpenClawVsZapierVsMakePage() {
                   </li>
                 </ul>
               </div>
-              
+
+              <div className="bg-gradient-to-br from-green-500/5 to-green-500/10 rounded-xl p-6 border border-green-500/20">
+                <div className="text-center mb-4">
+                  <h3 className="font-heading text-xl font-bold text-navy mb-2">Choose n8n If:</h3>
+                  <div className="w-12 h-12 bg-green-600 rounded-full mx-auto flex items-center justify-center">
+                    <span className="text-white font-bold">n</span>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-muted-dark text-sm">
+                  <li className="flex items-start gap-2">
+                    <span className="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 flex-shrink-0" />
+                    Your team is technical and wants more control
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 flex-shrink-0" />
+                    You want more customisation than Zapier or Make
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 flex-shrink-0" />
+                    Self-hosting flexibility matters
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 flex-shrink-0" />
+                    You do not mind a steeper operational setup
+                  </li>
+                </ul>
+              </div>
+
               <div className="bg-gradient-to-br from-orange/5 to-orange/10 rounded-xl p-6 border border-orange/20">
                 <div className="text-center mb-4">
                   <h3 className="font-heading text-xl font-bold text-navy mb-2">Choose OpenClaw If:</h3>
@@ -360,6 +431,29 @@ export default function OpenClawVsZapierVsMakePage() {
                   </li>
                 </ul>
               </div>
+            </div>
+          </section>
+
+          {/* Where n8n Fits In */}
+          <section className="mb-16">
+            <h2 className="font-heading text-3xl font-bold text-navy mb-8">Where n8n Fits In</h2>
+
+            <div className="prose prose-lg max-w-none mb-8">
+              <p className="text-muted-dark leading-relaxed mb-6">
+                n8n suits technical teams that want more control, more customisation, and self-hosting flexibility. It rewards people who do not mind a steeper operational setup.
+              </p>
+              <p className="text-muted-dark leading-relaxed">
+                If you want a quick form-to-CRM-to-email workflow, start with Zapier or Make. If your team is technical and wants more control or self-hosting, n8n may be the better traditional automation option. If the job needs context, memory, browser work, messaging, and approvals, look hard at OpenClaw.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {atAGlance.map((stat, i) => (
+                <div key={i} className="bg-surface rounded-xl p-6 border border-border-light text-center">
+                  <div className="text-2xl font-bold text-orange mb-2">{stat.value}</div>
+                  <div className="text-muted-dark text-sm">{stat.label}</div>
+                </div>
+              ))}
             </div>
           </section>
 
@@ -706,6 +800,13 @@ export default function OpenClawVsZapierVsMakePage() {
                     </li>
                   </ol>
                 </div>
+
+                <div className="bg-white rounded-lg p-6 border border-border-light">
+                  <h4 className="font-semibold text-dark mb-3">Consider a Hybrid Strategy</h4>
+                  <p className="text-muted-dark text-sm">
+                    You also do not need to be religious about one stack. Many businesses use a classic automation tool for lightweight plumbing and a broader agent layer for higher-value workflows. That can be a very sensible split. The main thing is to buy for workflow fit, not brand familiarity. Simpler is better when it works. Broader is better when the problem actually needs it.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
@@ -753,6 +854,20 @@ export default function OpenClawVsZapierVsMakePage() {
                   </li>
                 </ul>
               </div>
+            </div>
+          </section>
+
+          {/* FAQ */}
+          <section className="mb-16">
+            <h2 className="font-heading text-3xl font-bold text-navy mb-8">Frequently Asked Questions</h2>
+
+            <div className="space-y-6">
+              {faqs.map((faq, i) => (
+                <div key={i} className="bg-surface rounded-xl p-6 border border-border-light">
+                  <h3 className="font-heading text-lg font-bold text-navy mb-3">{faq.question}</h3>
+                  <p className="text-muted-dark text-sm leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
             </div>
           </section>
 

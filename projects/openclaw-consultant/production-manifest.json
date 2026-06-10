@@ -181,13 +181,6 @@
       ]
     },
     {
-      "path": "/guides/openclaw-security-compliance",
-      "markers": [
-        "OpenClaw Security",
-        "Compliance Planning Guide"
-      ]
-    },
-    {
       "path": "/sitemap.xml",
       "markers": [
         "openclawconsultant.co.uk"

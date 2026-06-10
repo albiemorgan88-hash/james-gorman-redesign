@@ -167,7 +167,7 @@ const relatedGuides = [
   },
   {
     "title": "What Is an AI Agent?",
-    "href": "/guides/what-is-an-ai-agent"
+    "href": "/guides/ai-agents-explained"
   },
   {
     "title": "Future of AI Agents",

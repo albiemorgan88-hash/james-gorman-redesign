@@ -94,7 +94,7 @@ const faqs = [
 ];
 
 const relatedGuides = [
-  { href: "/guides/enterprise-openclaw-deployment", title: "Enterprise OpenClaw Deployment Guide" },
+  { href: "/guides/openclaw-enterprise-deployment", title: "Enterprise OpenClaw Deployment Guide" },
   { href: "/guides/openclaw-implementation-consultant-uk", title: "OpenClaw Implementation Consultant UK" },
   { href: "/guides/openclaw-compliance-checklist-uk", title: "OpenClaw Compliance Checklist UK" },
   { href: "/guides/openclaw-setup-business", title: "OpenClaw Setup for Business" },

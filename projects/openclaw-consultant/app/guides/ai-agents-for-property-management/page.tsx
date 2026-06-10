@@ -122,7 +122,7 @@ const faqs = [
   },
   {
     question: "What property management software does AI integrate with?",
-    answer: "AI agents integrate with major UK property management platforms including Arthur, Goodlord, Reapit, PropertyFile, Expert Agent, and Jupix. They also connect to portals (Rightmove, Zoopla, OnTheMarket), accounting tools (Xero, Sage), and communication platforms (WhatsApp Business API, Microsoft 365). If it has an API, an agent can work with it."
+    answer: "AI agents integrate with major UK property management platforms including Arthur, Rentman, PropertyTek, Goodlord, Reapit, PropertyFile, Expert Agent, and Jupix. They also connect to portals (Rightmove, Zoopla, OnTheMarket), accounting tools (Xero, Sage), and communication platforms (WhatsApp Business API, Microsoft 365). If it has an API, an agent can work with it."
   },
   {
     question: "How does AI handle emergency maintenance?",

@@ -697,7 +697,7 @@ export default function EnterpriseAIDeploymentUKPage() {
                     <a href="/guides/ai-governance-compliance-uk" className="block text-orange hover:text-orange-hover transition-colors font-medium">
                       → AI Governance & Compliance Framework
                     </a>
-                    <a href="/guides/enterprise-openclaw-deployment" className="block text-orange hover:text-orange-hover transition-colors font-medium">
+                    <a href="/guides/openclaw-enterprise-deployment" className="block text-orange hover:text-orange-hover transition-colors font-medium">
                       → OpenClaw Enterprise Deployment Guide
                     </a>
                     <a href="/guides/measuring-ai-roi-uk-business" className="block text-orange hover:text-orange-hover transition-colors font-medium">

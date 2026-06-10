@@ -222,7 +222,7 @@ export default function AIAgentUseCasesPage() {
               <strong>Email and document triage</strong> — every business drowns in incoming communication. An AI agent that reads, categorises, and routes emails saves 5-10 hours per person per week.
             </p>
             <p>
-              <strong>Customer enquiry handling</strong> — whether you call them customers, clients, or patients, the first response to inbound enquiries can be automated with 90%+ accuracy. See our guide on <a href="/guides/ai-agent-for-customer-service" className="text-orange hover:underline">AI agents for customer service</a>.
+              <strong>Customer enquiry handling</strong> — whether you call them customers, clients, or patients, the first response to inbound enquiries can be automated with 90%+ accuracy. See our guide on <a href="/guides/ai-agents-for-customer-support" className="text-orange hover:underline">AI agents for customer service</a>.
             </p>
             <p>
               <strong>Report generation</strong> — monthly reports, compliance documentation, performance summaries. If it&apos;s pulling data from systems and formatting it into a document, an agent can do it.

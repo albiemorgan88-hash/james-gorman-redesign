@@ -51,7 +51,7 @@ const sections = [
   {
     id: "what-a-good-service-should-include",
     title: "What a good OpenClaw migration service should include",
-    html: `<p>A strong migration service should review the current workflow, decide what is worth preserving, map the future-state operating model, and then move the right pieces in the right order. That includes access, integrations, approvals, testing, and handover, not just the technical rebuild.</p><p>You should also expect straight advice on whether parts of the old setup should stay put, be replaced with a simpler approach, or be dropped entirely. Migration is a design problem as much as an implementation problem.</p><p>Useful companion reads here are <a href="/guides/openclaw-vs-zapier-make-n8n">OpenClaw vs Zapier, Make, and n8n</a>, <a href="/guides/openclaw-vs-chatgpt">OpenClaw vs ChatGPT</a>, and <a href="/guides/openclaw-setup-service-uk">OpenClaw Setup Service UK</a>.</p>`,
+    html: `<p>A strong migration service should review the current workflow, decide what is worth preserving, map the future-state operating model, and then move the right pieces in the right order. That includes access, integrations, approvals, testing, and handover, not just the technical rebuild.</p><p>You should also expect straight advice on whether parts of the old setup should stay put, be replaced with a simpler approach, or be dropped entirely. Migration is a design problem as much as an implementation problem.</p><p>Useful companion reads here are <a href="/guides/openclaw-vs-zapier-vs-make">OpenClaw vs Zapier, Make, and n8n</a>, <a href="/guides/openclaw-vs-chatgpt">OpenClaw vs ChatGPT</a>, and <a href="/guides/openclaw-setup-service-uk">OpenClaw Setup Service UK</a>.</p>`,
   },
   {
     id: "commercial-case",
@@ -89,7 +89,7 @@ const faqs = [
 ];
 
 const relatedGuides = [
-  { href: "/guides/openclaw-vs-zapier-make-n8n", title: "OpenClaw vs Zapier, Make, and n8n" },
+  { href: "/guides/openclaw-vs-zapier-vs-make", title: "OpenClaw vs Zapier, Make, and n8n" },
   { href: "/guides/openclaw-vs-chatgpt", title: "OpenClaw vs ChatGPT" },
   { href: "/guides/openclaw-proof-of-concept-uk", title: "OpenClaw Proof of Concept UK" },
   { href: "/guides/openclaw-setup-service-uk", title: "OpenClaw Setup Service UK" },

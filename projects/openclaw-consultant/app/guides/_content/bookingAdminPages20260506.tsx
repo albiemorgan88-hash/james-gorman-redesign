@@ -350,7 +350,7 @@ const guides: Record<string, BookingAdminGuide> = {
       { question: "Can OpenClaw retry failed actions?", answer: "It can retry some low-risk actions, but repeated or sensitive failures should be escalated rather than retried forever." },
       { question: "What is the simplest first version?", answer: "An exception queue with source, failure reason, owner, next action, and severity." },
     ],
-    relatedGuides: [{ href: "/guides/openclaw-admin-dashboard", title: "OpenClaw Admin Dashboard" }, { href: "/guides/openclaw-security-compliance", title: "OpenClaw Security & Compliance Guide" }, ...commonRelated.slice(1)],
+    relatedGuides: [{ href: "/guides/openclaw-admin-dashboard", title: "OpenClaw Admin Dashboard" }, { href: "/guides/openclaw-security-best-practices", title: "OpenClaw Security & Compliance Guide" }, ...commonRelated.slice(1)],
     sidebarTitle: "Monitoring rule",
     sidebarPoints: ["Silent failure is the real risk.", "Separate low-priority logs from urgent alerts.", "Give every exception an owner and next action."],
     ctaLabel: "Plan error monitoring",

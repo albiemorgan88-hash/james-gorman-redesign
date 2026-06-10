@@ -122,7 +122,7 @@ const faqs = [
   },
   {
     question: "Which transport management systems do AI agents work with?",
-    answer: "AI agents integrate with major UK TMS platforms including Microlise, TranSend, Paragon, MaxOptra, Podfather, and Stream. They also connect to telematics systems (Trakm8, Webfleet, Samsara), e-commerce platforms (Shopify, WooCommerce), and warehouse management systems. The integration layer uses standard APIs and data formats, so if your system has an API, it can connect."
+    answer: "AI agents integrate with major UK TMS platforms including Microlise, Teletrac Navman, Fleetmatics, TranSend, Paragon, MaxOptra, Podfather, and Stream. They also connect to telematics systems (Trakm8, Webfleet, Samsara), e-commerce platforms (Shopify, WooCommerce), and warehouse management systems. The integration layer uses standard APIs and data formats, so if your system has an API, it can connect."
   },
   {
     question: "How does AI handle proof of delivery?",

@@ -12,7 +12,12 @@ export const metadata: Metadata = {
     "ai agent development",
     "ai agent architecture",
     "build ai agent step by step",
-    "ai agent tools"
+    "ai agent tools",
+    "build an ai agent",
+    "how to create an ai agent",
+    "ai agent development guide",
+    "openclaw tutorial",
+    "ai agent framework"
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/guides/how-to-build-ai-agent" },
   openGraph: {
@@ -152,6 +157,66 @@ const diyVsConsultant = [
     factor: "Ongoing Support",
     diy: "Self-maintained",
     consultant: "Retainer options available",
+  },
+];
+
+const stack = [
+  {
+    layer: "Model",
+    role: "Handles reasoning, language understanding, and content generation.",
+    note: "Pick for reliability, cost, and context size, not marketing noise.",
+  },
+  {
+    layer: "Framework",
+    role: "Coordinates prompts, memory, tool calls, and workflows.",
+    note: "OpenClaw is well suited where you want practical orchestration and production control.",
+  },
+  {
+    layer: "Tools and integrations",
+    role: "Let the agent take action in business systems like HubSpot, Slack, Xero, or Google Workspace.",
+    note: "Start with the tools that create immediate value.",
+  },
+  {
+    layer: "Knowledge layer",
+    role: "Provides grounded business context from documents, SOPs, FAQs, and live records.",
+    note: "Bad data produces bad decisions.",
+  },
+  {
+    layer: "Observability and logging",
+    role: "Shows what the agent did, why it did it, and where it failed.",
+    note: "Essential for trust, debugging, and compliance.",
+  },
+];
+
+const useCases = [
+  "Qualifying and routing inbound leads",
+  "Summarising calls and updating CRM records",
+  "Processing documents and extracting key fields",
+  "Drafting customer replies and escalating complex cases",
+  "Monitoring shared inboxes and creating follow-up tasks",
+  "Researching competitors, pricing, or tender opportunities",
+];
+
+const mistakes = [
+  {
+    title: "Trying to automate everything at once",
+    detail: "One narrow win beats a sprawling failed rollout. Build one agent that saves real time before creating an agent army.",
+  },
+  {
+    title: "Skipping business process design",
+    detail: "If the human workflow is chaotic, the AI version will be chaotic faster. Simplify the process before you automate it.",
+  },
+  {
+    title: "Giving the agent too much access",
+    detail: "Least privilege matters. Start with read-only access where possible, then add write permissions carefully.",
+  },
+  {
+    title: "No fallback for uncertainty",
+    detail: "Good agents know when to ask for help. Confidence thresholds and escalation rules are not optional.",
+  },
+  {
+    title: "Measuring vibes instead of outcomes",
+    detail: "Track response time, completion rate, cost per task, error rate, and human hours saved. Otherwise you are guessing.",
   },
 ];
 
@@ -341,6 +406,38 @@ export default function HowToBuildAIAgentPage() {
         </div>
       </section>
 
+      {/* The Basic AI Agent Stack */}
+      <section className="bg-light py-24">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <div className="text-center mb-14">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
+              The Basic AI Agent Stack
+            </h2>
+            <p className="text-muted text-lg max-w-[600px] mx-auto">
+              A useful agent needs a proper stack behind it. Prompting alone is not a system.
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            {stack.map((item, index) => (
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-card">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+                  <div>
+                    <h3 className="font-heading font-bold text-xl text-dark">{item.layer}</h3>
+                  </div>
+                  <div>
+                    <p className="text-muted text-sm">{item.role}</p>
+                  </div>
+                  <div>
+                    <p className="text-orange text-sm font-medium">{item.note}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* DIY vs Consultant */}
       <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
@@ -377,6 +474,80 @@ export default function HowToBuildAIAgentPage() {
           <p className="text-muted text-sm mt-6 text-center">
             See our <a href="/pricing" className="text-orange hover:underline">pricing page</a> for consultation packages, or read about <a href="/guides/ai-agent-consulting-uk" className="text-orange hover:underline">finding the right AI agent consultant</a>.
           </p>
+        </div>
+      </section>
+
+      {/* What to Build First */}
+      <section className="bg-surface py-24">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <div className="text-center mb-14">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
+              What to Build First
+            </h2>
+            <p className="text-muted text-lg max-w-[600px] mx-auto">
+              If you are choosing a first project, pick something with clear rules, measurable outcomes, and enough volume to matter. The best starter use cases usually sit in operations, sales support, service, or admin.
+            </p>
+          </div>
+
+          <div className="max-w-[800px] mx-auto">
+            <ul className="space-y-3">
+              {useCases.map((useCase, index) => (
+                <li key={index} className="flex gap-2 items-start text-muted-dark bg-white rounded-xl p-4 border border-border-light">
+                  <span className="text-orange mt-0.5 flex-shrink-0">•</span>
+                  {useCase}
+                </li>
+              ))}
+            </ul>
+            <p className="text-muted text-sm mt-6 text-center">
+              Need inspiration? Our <a href="/guides/ai-agent-examples" className="text-orange hover:underline">AI Agent Examples</a> guide and <a href="/guides/ai-agent-use-cases" className="text-orange hover:underline">AI Agent Use Cases by Industry</a> page show where agents are already creating value.
+            </p>
+            <p className="text-muted text-sm mt-4 text-center">
+              For UK businesses in particular, it is smart to focus on workflows tied to revenue, service quality, or compliance. That tends to get buy-in much faster than internal novelty projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Common Mistakes */}
+      <section className="bg-white py-24">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <div className="text-center mb-14">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
+              Common Mistakes When Building AI Agents
+            </h2>
+          </div>
+
+          <div className="max-w-[800px] mx-auto space-y-6">
+            {mistakes.map((mistake, index) => (
+              <div key={index} className="bg-surface rounded-2xl p-6">
+                <h3 className="font-heading font-bold text-lg text-dark mb-3">{mistake.title}</h3>
+                <p className="text-muted text-sm leading-relaxed">{mistake.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* When to Use OpenClaw */}
+      <section className="bg-surface py-24">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <div className="text-center mb-14">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
+              When to Use OpenClaw
+            </h2>
+          </div>
+
+          <div className="max-w-[800px] mx-auto space-y-6">
+            <p className="text-muted">
+              OpenClaw is a strong fit when you need agents that do real operational work, especially when multiple tools, workflows, or specialist agents need coordinating. It is particularly useful when you want practical orchestration rather than a toy demo.
+            </p>
+            <p className="text-muted">
+              That does not mean it is the answer to every problem. If the task is tiny and single-purpose, a simpler automation may do the job. But once you need memory, branching logic, approvals, or multiple agents working together, a framework like OpenClaw starts to make a lot of sense.
+            </p>
+            <p className="text-muted">
+              If you are weighing options, compare this with our <a href="/guides/best-ai-agents-2026" className="text-orange hover:underline">Best AI Agents 2026</a> and <a href="/guides/ai-agent-tools-comparison" className="text-orange hover:underline">AI Agent Tools Comparison 2026</a> guides.
+            </p>
+          </div>
         </div>
       </section>
 

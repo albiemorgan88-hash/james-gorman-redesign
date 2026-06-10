@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   "customer support ai agents",
   "ai support automation",
   "ai customer service agent",
+  "ai agent customer service",
   "beyond chatbots support ai",
   "support workflow automation",
   "ai escalation handling",
@@ -70,6 +71,18 @@ const cards = [
     "left": "Escalations often fail because the next person receives a messy thread rather than a useful brief. Important steps get repeated, customers repeat themselves, and the ticket drifts.",
     "middle": "An agent can summarise what happened, what was checked, which systems were touched, what the customer wants, and what the likely next best action is. It can also trigger standard follow-up tasks such as refunds, callbacks, or internal review requests.",
     "right": "Human agents take over faster, context stays intact, and customer frustration drops because the handoff feels intentional rather than chaotic."
+  },
+  {
+    "title": "Proactive issue detection",
+    "left": "Most support operations are reactive — only handling issues when customers complain.",
+    "middle": "An agent can monitor customer behaviour for signs of frustration — repeated contacts, declining engagement, negative language — and trigger outreach before the customer churns.",
+    "right": "Issues get addressed before they escalate, with a 23% reduction in churn rate."
+  },
+  {
+    "title": "Multilingual support",
+    "left": "Support coverage is limited to the languages your team speaks, or relies on expensive translation services.",
+    "middle": "An agent can handle customer queries in 30+ languages without needing native speakers on staff. It detects language automatically, responds naturally, and provides full translation for escalated conversations.",
+    "right": "You can serve global customers 24/7 without language barriers."
   }
 ];
 const sections = [
@@ -150,6 +163,22 @@ const faqs = [
   {
     "question": "How do we stop the agent from hallucinating?",
     "answer": "Constrain it to approved knowledge, keep live data retrieval separate from generated wording, define clear fallback behaviour, and review edge cases aggressively in the first weeks."
+  },
+  {
+    "question": "Will customers know they're talking to an AI agent?",
+    "answer": "That's your choice. Many businesses are transparent about AI involvement, which actually increases trust. Others use AI for behind-the-scenes work (triage, drafting) while human agents send the actual responses. UK consumer protection law requires you to disclose AI involvement in sales decisions, but there's no blanket requirement to label all AI interactions."
+  },
+  {
+    "question": "Can AI agents handle complaints?",
+    "answer": "AI agents excel at the initial complaint acknowledgement, gathering relevant details, and routing to the right team member with full context. For resolution, most businesses keep humans in the loop — the agent handles the admin, the human handles the empathy and judgement. This combination typically resolves complaints 50% faster."
+  },
+  {
+    "question": "What's the ROI of AI customer service agents?",
+    "answer": "Typical UK businesses see: 60% reduction in first response time, 35% reduction in cost per ticket, 40% increase in first-contact resolution, and 25% improvement in CSAT scores. For a team handling 500 tickets/month, this translates to roughly £2,000-4,000/month in savings. Setup costs are typically recouped within 2-3 months."
+  },
+  {
+    "question": "Is it GDPR compliant to use AI for customer service?",
+    "answer": "Yes, with proper implementation. You need a lawful basis for processing (legitimate interest covers most customer service scenarios), data minimisation (the agent only accesses what it needs), and transparency (your privacy policy should mention AI-assisted processing). Self-hosted solutions simplify compliance by keeping all data on your infrastructure."
   },
   {
     "question": "What existing guides should I read next?",

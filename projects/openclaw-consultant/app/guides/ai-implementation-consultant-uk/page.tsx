@@ -59,7 +59,7 @@ const faqs = [
 ];
 
 const relatedGuides = [
-  { href: "/guides/ai-readiness-assessment-uk", title: "AI Readiness Assessment UK" },
+  { href: "/guides/ai-readiness-assessment-guide", title: "AI Readiness Assessment UK" },
   { href: "/guides/openclaw-for-small-business-uk", title: "OpenClaw for Small Business UK" },
   { href: "/guides/ai-governance-policy-template", title: "AI Governance Policy Template" },
   { href: "/guides/openclaw-vs-manus", title: "OpenClaw vs Manus" },

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   keywords: [
     "ai readiness assessment guide",
     "ai readiness assessment guide for uk businesses",
+    "ai readiness assessment uk",
     "openclaw consultant uk",
     "ai consultant uk",
     "ai automation uk",
@@ -48,9 +49,19 @@ const sections = [
     html: "<p>The most useful readiness reviews cover process, data, people, and governance. <strong>Process</strong> asks whether the job is defined clearly enough to automate or assist. <strong>Data</strong> asks whether the business has trustworthy inputs and knows where they live. <strong>People</strong> asks who owns the workflow, who approves outputs, and how change will be absorbed. <strong>Governance</strong> asks what the system is allowed to do and when it must escalate.</p><p>If even one of those pillars is weak, it changes the rollout recommendation. A workflow may still be worth improving, but perhaps with a smaller assisted pilot rather than a more autonomous design.</p><p>This is where a lot of businesses save themselves money. The goal is not to prove that everything is ready. The goal is to see what is actually ready enough to test.</p><p>That kind of honesty is valuable because it keeps the first step sensible.</p>",
   },
   {
+    id: "what-to-review",
+    title: "What a serious readiness review should cover",
+    html: "<p>The first area is workflow quality. Which tasks are repetitive, frequent, time-sensitive, and measurable. Inbox handling, lead routing, reporting, onboarding admin, document extraction, scheduling, and internal knowledge support are common candidates because the baseline pain is easy to see.</p><p>The second area is data fitness. Where does the information live, how clean is it, who can access it, and how often is it wrong. If the source data is messy or split across tools, the recommendation changes quickly. Good AI cannot rescue poor process design forever.</p><p>The third area is governance. Who approves output, what counts as a risky mistake, and which workflows need a human in the loop. UK buyers should also check GDPR exposure, vendor logging, access controls, and whether staff are already using shadow AI tools without any guardrails.</p><p>The final area is delivery capacity. Someone needs to own the process, success metric, prompt or rule design, and feedback loop. If nobody owns the new workflow, the project will stall even if the technology works.</p>",
+  },
+  {
     id: "outputs",
     title: "What a good assessment should produce",
     html: "<p>A useful readiness assessment ends with decisions, not just observations. You should get a prioritised list of candidate workflows, a view of blockers, a risk summary, and a recommendation on what to pilot first. If the outcome is a glossy deck with no obvious first move, something has gone wrong.</p><p>The best output also distinguishes fast wins from deeper projects. A company may be ready to automate inbound triage next month but nowhere near ready for autonomous quoting or customer-facing decision-making. That distinction matters commercially.</p><p>Good assessors also flag what not to do yet. Sometimes the most valuable recommendation is to fix the CRM, define approvals, or clean up process ownership before buying a bigger stack.</p><p>That is not pessimism. It is how good implementations are protected from bad starts.</p>",
+  },
+  {
+    id: "mistakes",
+    title: "Common mistakes buyers make before rollout",
+    html: "<p>The first mistake is buying software before naming the workflow owner. The second is confusing enthusiasm from one department with operational readiness across the business. The third is skipping measurement. If you cannot define time saved, response speed improved, error rate reduced, or conversion uplift expected, you are not ready to expand.</p><p>Another common error is treating AI as a single decision. It is not. A sensible programme starts with one workflow, one owner, one success metric, and one review loop. Buyers who insist on that structure usually move faster than those trying to design an all-company transformation on day one.</p><p>If you want the short version, readiness means the workflow is clear, the data is usable, the risk is understood, and the owner is named. Miss one of those and the project gets expensive very quickly.</p>",
   },
   {
     id: "use-the-result",

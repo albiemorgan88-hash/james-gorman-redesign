@@ -159,7 +159,7 @@ const faqs = [
 const relatedGuides = [
   {
     "title": "AI Agents for Logistics Companies",
-    "href": "/guides/ai-agents-logistics"
+    "href": "/guides/ai-agents-for-logistics"
   },
   {
     "title": "AI Inventory Management Guide",

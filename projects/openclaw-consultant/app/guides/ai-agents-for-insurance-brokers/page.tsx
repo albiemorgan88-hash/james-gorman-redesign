@@ -61,7 +61,7 @@ const faqs = [
 const relatedGuides = [
   { href: "/guides/ai-agents-compliance-risk", title: "AI Agents and Compliance Risk" },
   { href: "/guides/ai-governance-policy-template", title: "AI Governance Policy Template" },
-  { href: "/guides/ai-readiness-assessment-uk", title: "AI Readiness Assessment UK" },
+  { href: "/guides/ai-readiness-assessment-guide", title: "AI Readiness Assessment UK" },
   { href: "/guides/openclaw-for-teams", title: "OpenClaw for Teams" },
 ];
 

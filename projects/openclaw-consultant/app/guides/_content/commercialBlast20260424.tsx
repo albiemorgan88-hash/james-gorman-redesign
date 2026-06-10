@@ -118,7 +118,7 @@ const guides: Record<string, BlastGuide> = {
     riskNotes: ["legal advice, fee quotes, undertakings, complaints, and risk decisions should stay solicitor-owned", "client confidentiality and source logging need explicit controls", "outputs should be reviewable before anything reaches a client"],
     relatedGuides: [
       { href: "/guides/ai-for-legal-uk", title: "AI for Law Firms: Legal Automation" },
-      { href: "/guides/ai-agents-solicitors", title: "AI Agents for Solicitors" },
+      { href: "/guides/ai-agents-for-solicitors", title: "AI Agents for Solicitors" },
       { href: "/guides/openclaw-document-processing", title: "OpenClaw Document Processing" },
       { href: "/guides/openclaw-compliance-checklist-uk", title: "OpenClaw Compliance Checklist UK" },
     ],
@@ -138,7 +138,7 @@ const guides: Record<string, BlastGuide> = {
     riskNotes: ["tax advice, filing decisions, and client-specific recommendations need qualified review", "client data access should be limited to the agreed workflow", "message drafts should be checked until tone and accuracy are proven"],
     relatedGuides: [
       { href: "/guides/openclaw-accountants-automation", title: "OpenClaw for Accountants: Automation" },
-      { href: "/guides/ai-agents-accountants", title: "AI Agents for Accountants UK" },
+      { href: "/guides/ai-agents-for-accountants", title: "AI Agents for Accountants UK" },
       { href: "/guides/automate-accounts-bookkeeping-ai", title: "Automate Accounts & Bookkeeping with AI" },
       { href: "/guides/openclaw-crm-automation", title: "OpenClaw CRM Automation" },
     ],
@@ -178,7 +178,7 @@ const guides: Record<string, BlastGuide> = {
     riskNotes: ["health and safety decisions, contractual commitments, and commercial claims must stay human-owned", "source evidence matters when project records may be disputed", "site teams need simple handoffs, not extra admin screens"],
     relatedGuides: [
       { href: "/guides/ai-agents-construction", title: "AI Agents for Construction Companies" },
-      { href: "/guides/ai-for-construction-companies", title: "AI for Construction: Automation Guide" },
+      { href: "/guides/ai-agents-construction", title: "AI for Construction: Automation Guide" },
       { href: "/guides/openclaw-document-processing", title: "OpenClaw Document Processing" },
       { href: "/guides/openclaw-reporting-automation", title: "OpenClaw Reporting Automation" },
     ],
@@ -237,7 +237,7 @@ const guides: Record<string, BlastGuide> = {
     workflowExamples: ["summarising tenant maintenance reports", "routing urgent issues to the right person", "chasing contractor updates", "preparing landlord or management-company summaries"],
     riskNotes: ["legal notices, safety-critical issues, deposit disputes, and rent arrears need human review", "urgent maintenance triage should escalate clearly rather than bury risk", "tenant communication should be accurate, courteous, and logged"],
     relatedGuides: [
-      { href: "/guides/ai-agents-property-management", title: "AI Agents for Property Management" },
+      { href: "/guides/ai-agents-for-property-management", title: "AI Agents for Property Management" },
       { href: "/guides/ai-agents-for-property-management", title: "AI Agents for Property Management" },
       { href: "/guides/openclaw-customer-support", title: "OpenClaw for Customer Support" },
       { href: "/guides/openclaw-operations-dashboard", title: "OpenClaw Operations Dashboard" },
@@ -368,7 +368,7 @@ const guides: Record<string, BlastGuide> = {
     ],
     relatedGuides: [
       { href: "/guides/ai-recruitment-automation-uk-smes", title: "AI Recruitment Automation UK" },
-      { href: "/guides/ai-agents-recruitment-agencies", title: "AI Agents for Recruitment Agencies" },
+      { href: "/guides/ai-agents-for-recruitment", title: "AI Agents for Recruitment Agencies" },
       { href: "/guides/openclaw-crm-automation", title: "OpenClaw CRM Automation" },
       { href: "/guides/openclaw-document-processing", title: "OpenClaw Document Processing" },
     ],

@@ -186,7 +186,7 @@ const faqs = [
 
 const relatedGuides = [
   {
-    "href": "/guides/what-is-an-ai-agent",
+    "href": "/guides/ai-agents-explained",
     "title": "What Is an AI Agent? Everything You Need to Know"
   },
   {

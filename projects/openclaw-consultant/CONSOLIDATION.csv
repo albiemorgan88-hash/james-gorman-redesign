@@ -1,0 +1,27 @@
+slug,action,destination,notes
+how-to-build-an-ai-agent,301,/guides/how-to-build-ai-agent,Survivor has deeper structure (framework table; architecture patterns; 7 inbound links vs 2). Merged: stack layers; use-case list; common mistakes; When to Use OpenClaw.
+ai-readiness-assessment-uk,301,/guides/ai-readiness-assessment-guide,74% overlap; survivor has stronger flow. Merged: GDPR/shadow-AI governance detail; specific workflow examples; buyer-mistakes section.
+enterprise-openclaw-deployment,301,/guides/openclaw-enterprise-deployment,Survivor matches site's current authentic voice and openclaw-* slug pattern. Non-survivor contained unverifiable enterprise claims (SLA/budget figures) which were NOT carried over; phased-rollout outline merged.
+openclaw-vs-zapier-make-n8n,301,/guides/openclaw-vs-zapier-vs-make,Survivor is deepest (15 inbound; JSON-LD; UK compliance section) and gains an n8n section so it owns the 4-way comparison. Merged: FAQs; hybrid-strategy guidance; n8n positioning.
+openclaw-vs-n8n,KEPT,,Distinct deep-dive (25-35% overlap with cluster); owns exact-match "openclaw vs n8n" query. Not a duplicate.
+openclaw-vs-va-cost-comparison,301,/guides/openclaw-vs-virtual-assistant-cost,Survivor slug matches primary keyword and has 10 inbound links vs 1. Merged: hidden-cost severity matrix; worked ROI examples; decision matrix; business scenarios.
+openclaw-security-compliance,301,/guides/openclaw-security-best-practices,65-75% overlap. Survivor keeps best-practices slug (6 inbound; referenced from blast templates). Merged: threats; ISO 27001/HIPAA mappings; hardening checklist; incident-response phases; audit-trail specs; pre-deployment checklist.
+ai-agent-security-guide,KEPT,,Generic agent-security reference (35-45% overlap); serves the ai-agent-* keyword family this domain keeps. Not consolidated.
+openclaw-enterprise-security-compliance,KEPT,,Enterprise/UK-certification angle distinct from the consolidated security guide.
+ai-agents-accountants,301,/guides/ai-agents-for-accountants,95% overlap; survivor decisively deeper (HMRC/MTD/ICAEW/ACCA detail; ROI example; FAQs). Nothing unique to merge.
+ai-agents-solicitors,301,/guides/ai-agents-for-solicitors,90% overlap; survivor has SRA compliance; named integrations (Clio LEAP Proclaim Osprey); ROI example.
+ai-agents-logistics,301,/guides/ai-agents-for-logistics,70% overlap; survivor has drivers-hours/DVSA detail and multi-agent design. Merged: named integrations (Microlise; Teletrac Navman; Fleetmatics).
+ai-agents-property-management,301,/guides/ai-agents-for-property-management,75% overlap; survivor has Renters' Reform Bill; GDPR depth; void costing. Merged: named integrations (Rentman; Arthur Online; PropertyTek).
+ai-agents-recruitment-agencies,301,/guides/ai-agents-for-recruitment,80% overlap; survivor has Equality Act/bias auditing; named ATS list. Nothing unique to merge.
+ai-agents-estate-agents,KEPT,,Estate agency (sales/lettings transactions) page; not a duplicate of the property-management cluster.
+ai-agents-for-real-estate,SKIPPED,,FLAG FOR OWNER: not estate-agency content - it covers property management/lettings (~30% overlap with estate-agents page). Options: retitle/refocus to avoid cannibalising ai-agents-for-property-management; or merge there. Judgement call.
+ai-agent-for-customer-service,301,/guides/ai-agents-for-customer-support,Near-identical topic and title ("Beyond (Basic) Chatbots"). Survivor is curated with 5 inbound links. Merged: multilingual handling and proactive-support angles.
+what-is-an-ai-agent,301,/guides/ai-agents-explained,Same jargon-free explainer topic; survivor has 13 inbound links vs 7. Merged: any unique explanatory angles.
+ai-agent-use-cases,SKIPPED,,FLAG FOR OWNER: overlaps ai-agent-examples (industry use cases + ROI data in both) but "use cases by industry" vs "15 examples" may deserve separate queries. Judgement call.
+ai-agent-examples,SKIPPED,,See ai-agent-use-cases row - decide as a pair.
+ai-agents-insurance,KEPT,,Insurance companies vs brokers are distinct audiences.
+ai-agents-for-insurance-brokers,KEPT,,Distinct (broker-specific; regulated-workflow controls).
+what-is-agentic-ai,KEPT,,Explainer vs business-application guide - distinct angles.
+agentic-ai-for-business,KEPT,,See what-is-agentic-ai row.
+ai-automation-for-accountants,301,/guides/ai-agents-for-accountants,Generic-slug industry dupe (T2 family) with a clear agent-family equivalent; 0 inbound links.
+ai-for-construction-companies,301,/guides/ai-agents-construction,Generic-slug industry dupe (T2 family); same audience and topic in agent frame.

@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     "ai agents for beginners",
     "ai agents business",
     "ai agent technology",
-    "understanding ai agents"
+    "understanding ai agents",
+    "what is an ai agent",
+    "ai agent definition",
+    "ai agent vs chatbot"
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/guides/ai-agents-explained" },
   openGraph: {
@@ -77,6 +80,57 @@ const components = [
   }
 ];
 
+const comparisons = [
+  {
+    feature: "Can take independent action",
+    chatbot: "❌ Only responds when asked",
+    traditional: "❌ Follows fixed scripts",
+    aiAgent: "✅ Plans and executes tasks autonomously"
+  },
+  {
+    feature: "Handles unexpected inputs",
+    chatbot: "⚠️ Falls back to 'I don't understand'",
+    traditional: "❌ Breaks or stops",
+    aiAgent: "✅ Adapts and finds alternatives"
+  },
+  {
+    feature: "Connects to business systems",
+    chatbot: "⚠️ Limited integrations",
+    traditional: "✅ Pre-built connectors",
+    aiAgent: "✅ Flexible API integration"
+  },
+  {
+    feature: "Learns from outcomes",
+    chatbot: "❌ Static responses",
+    traditional: "❌ No learning capability",
+    aiAgent: "✅ Improves over time"
+  },
+  {
+    feature: "Multi-step task completion",
+    chatbot: "❌ Single-turn responses",
+    traditional: "⚠️ Linear sequences only",
+    aiAgent: "✅ Complex, branching workflows"
+  }
+];
+
+const realWorldExamples = [
+  {
+    scenario: "A customer emails asking about their order status",
+    chatbotResponse: "A chatbot might reply: 'Please check your order status at [link]' — redirecting the customer to do the work themselves.",
+    agentResponse: "An AI agent reads the email, looks up the order in your system, checks the courier tracking, and replies with the specific status — 'Your order #4521 was dispatched yesterday and is expected tomorrow by 2pm.'"
+  },
+  {
+    scenario: "An invoice arrives with a different format than usual",
+    traditionalResponse: "Traditional automation fails because the invoice doesn't match the expected template. It sits in an error queue until someone processes it manually.",
+    agentResponse: "An AI agent reads the invoice, identifies the key information regardless of format, validates it against the purchase order, and processes it — flagging any discrepancies for human review."
+  },
+  {
+    scenario: "A job application comes in for an open role",
+    manualResponse: "An HR administrator reads the CV, compares it against the job spec, decides whether to shortlist, and sends an acknowledgement email. This takes 10-15 minutes per application.",
+    agentResponse: "An AI agent reads the CV, scores it against the role requirements, adds it to the shortlist or sends a polite rejection, and updates the recruitment tracker — in under 30 seconds."
+  }
+];
+
 const myths = [
   {
     myth: "AI agents are just fancy chatbots",
@@ -120,6 +174,22 @@ const faqs = [
   {
     question: "What's the best AI agent platform for beginners?",
     answer: "OpenClaw offers a good balance of power and accessibility, with templates for common business use cases. If you're already in the Microsoft ecosystem, Copilot Studio is another accessible option. Check our best AI agents 2026 guide for a full comparison."
+  },
+  {
+    question: "Do AI agents need the internet to work?",
+    answer: "Not necessarily. AI agents can run entirely on your own infrastructure (self-hosted) or in the cloud. Self-hosted agents process everything locally — your data never leaves your network. Cloud-based agents use internet-connected AI services. The choice depends on your data sensitivity and infrastructure preferences."
+  },
+  {
+    question: "Can AI agents make mistakes?",
+    answer: "Yes. AI agents can make errors, especially with ambiguous or unusual inputs. This is why well-designed implementations include guardrails — confidence thresholds below which the agent asks a human, audit logging for all actions, and approval workflows for high-stakes decisions. The goal isn't perfection but better accuracy and speed than the manual alternative."
+  },
+  {
+    question: "How much does an AI agent cost?",
+    answer: "Simple AI agents can run for under £50/month. Business-grade agents handling significant workloads typically cost £100-500/month in running costs (hosting + API calls). Enterprise deployments can be more. Implementation (setup, integration, testing) is usually a one-off cost of £2,000-10,000. See our pricing page for specific packages."
+  },
+  {
+    question: "What's the difference between AI agents and RPA?",
+    answer: "RPA (Robotic Process Automation) follows fixed rules — click here, copy that, paste there. AI agents understand context and make decisions. RPA breaks when a screen layout changes; an AI agent adapts. For a detailed comparison, see our guide on AI agents vs RPA."
   }
 ];
 
@@ -245,6 +315,68 @@ export default function AIAgentsExplainedPage() {
         </div>
       </section>
 
+      {/* Comparison Table */}
+      <section className="bg-light py-24">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <div className="text-center mb-14">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
+              AI Agent vs Chatbot vs Traditional Automation
+            </h2>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm border-collapse min-w-[600px] bg-white rounded-2xl overflow-hidden shadow-card">
+              <thead>
+                <tr className="border-b-2 border-orange">
+                  <th className="text-left py-4 px-6 text-dark font-bold">Capability</th>
+                  <th className="text-center py-4 px-4 text-dark font-bold">Chatbot</th>
+                  <th className="text-center py-4 px-4 text-dark font-bold">Traditional Automation</th>
+                  <th className="text-center py-4 px-4 text-dark font-bold">AI Agent</th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisons.map((row, index) => (
+                  <tr key={index} className="border-b border-gray-100">
+                    <td className="py-4 px-6 font-medium text-dark">{row.feature}</td>
+                    <td className="text-center py-4 px-4 text-muted text-xs">{row.chatbot}</td>
+                    <td className="text-center py-4 px-4 text-muted text-xs">{row.traditional}</td>
+                    <td className="text-center py-4 px-4 text-muted text-xs">{row.aiAgent}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Real-World Examples */}
+      <section className="bg-white py-24">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <div className="text-center mb-14">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
+              See the Difference in Action
+            </h2>
+          </div>
+
+          <div className="space-y-8">
+            {realWorldExamples.map((example, index) => (
+              <div key={index} className="bg-surface rounded-2xl p-8">
+                <h3 className="font-heading font-bold text-xl text-dark mb-6">Scenario: {example.scenario}</h3>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div className="border-l-4 border-red-400 pl-4">
+                    <h4 className="font-semibold text-red-600 mb-2">Without an AI Agent:</h4>
+                    <p className="text-muted text-sm">{example.chatbotResponse || example.traditionalResponse || example.manualResponse}</p>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <h4 className="font-semibold text-green-600 mb-2">With an AI Agent:</h4>
+                    <p className="text-muted text-sm">{example.agentResponse}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Myths */}
       <section className="bg-surface py-24">
         <div className="max-w-[1140px] mx-auto px-6">
@@ -261,6 +393,26 @@ export default function AIAgentsExplainedPage() {
                 <p className="text-muted text-sm leading-relaxed"><strong className="text-dark">Reality:</strong> {item.reality}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Now */}
+      <section className="bg-light py-24">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <div className="max-w-[800px] mx-auto prose prose-lg text-muted">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-6 not-prose">
+              Why AI Agents Matter Now
+            </h2>
+            <p>
+              AI agents aren&apos;t new as a concept — researchers have discussed them for decades. What&apos;s changed is that large language models (LLMs) like GPT-4 and Claude have given agents something they never had before: <strong>the ability to understand context and communicate naturally</strong>.
+            </p>
+            <p>
+              Combined with platforms like <a href="/" className="text-orange hover:underline">OpenClaw</a> that orchestrate multiple agents working together, we&apos;re seeing the first truly useful AI agents deployed in real businesses.
+            </p>
+            <p>
+              For UK businesses, the timing is particularly interesting. The UK government&apos;s pro-innovation approach to AI regulation means fewer barriers to adoption than in the EU — and across most <a href="/guides/ai-agent-use-cases" className="text-orange hover:underline">AI agent use cases</a>, early movers have a massive advantage.
+            </p>
           </div>
         </div>
       </section>
@@ -339,10 +491,6 @@ export default function AIAgentsExplainedPage() {
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/what-is-an-ai-agent" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
-              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">What Is an AI Agent?</h3>
-              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
-            </a>
             <a href="/guides/best-ai-agents-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">Best AI Agents 2026</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>

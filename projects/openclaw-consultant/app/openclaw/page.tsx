@@ -112,11 +112,11 @@ const hubLinks = [
   ["OpenClaw for business", "/guides/openclaw-for-business"],
   ["OpenClaw agent team", "/guides/openclaw-agent-team"],
   ["OpenClaw security best practices", "/guides/openclaw-security-best-practices"],
-  ["OpenClaw security & compliance", "/guides/openclaw-security-compliance"],
+  ["OpenClaw security & compliance", "/guides/openclaw-security-best-practices"],
   ["OpenClaw vs ChatGPT", "/guides/openclaw-vs-chatgpt"],
   ["OpenClaw vs Zapier & Make", "/guides/openclaw-vs-zapier-vs-make"],
   ["OpenClaw pricing explained", "/guides/openclaw-pricing-explained"],
-  ["Enterprise OpenClaw deployment", "/guides/enterprise-openclaw-deployment"],
+  ["Enterprise OpenClaw deployment", "/guides/openclaw-enterprise-deployment"],
 ];
 
 const implementationSteps = [

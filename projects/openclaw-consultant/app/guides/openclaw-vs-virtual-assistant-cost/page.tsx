@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     "openclaw pricing analysis",
     "virtual assistant vs ai agent",
     "openclaw roi calculator",
+    "openclaw roi calculation",
+    "va cost comparison",
     "ai automation cost savings",
     "openclaw vs va cost",
     "business automation cost comparison"
@@ -148,6 +150,175 @@ const industryROIData = [
     annualSaving: "£26,640",
     paybackPeriod: "5 weeks",
     keyBenefits: "Client onboarding, appointment scheduling, follow-up automation"
+  }
+];
+
+const hiddenCostsAnalysis = {
+  openclaw: [
+    {
+      cost: "Learning Curve",
+      impact: "Low",
+      description: "Initial time investment to understand agent capabilities",
+      mitigation: "Professional setup and training reduces learning time"
+    },
+    {
+      cost: "Technical Dependency",
+      impact: "Medium",
+      description: "Reliance on technical infrastructure and model providers",
+      mitigation: "Proper backup plans and redundancy reduce risk"
+    },
+    {
+      cost: "Customization Needs",
+      impact: "Medium",
+      description: "Ongoing development for business-specific requirements",
+      mitigation: "Modular skill development spreads costs over time"
+    }
+  ],
+  virtualAssistant: [
+    {
+      cost: "Recruitment Time",
+      impact: "High",
+      description: "Time spent finding, interviewing, and vetting candidates",
+      mitigation: "Use specialized VA agencies (additional cost)"
+    },
+    {
+      cost: "Training Investment",
+      impact: "High",
+      description: "Ongoing training on tools, processes, and business knowledge",
+      mitigation: "Comprehensive documentation and training programs"
+    },
+    {
+      cost: "Turnover Risk",
+      impact: "High",
+      description: "Knowledge loss and replacement costs when VAs leave",
+      mitigation: "Competitive compensation and good working conditions"
+    },
+    {
+      cost: "Management Overhead",
+      impact: "Medium",
+      description: "Time spent managing, reviewing, and coordinating work",
+      mitigation: "Clear processes and regular check-ins"
+    },
+    {
+      cost: "Sick Days & Holidays",
+      impact: "Medium",
+      description: "Work disruption during VA absence",
+      mitigation: "Backup VA arrangements (additional cost)"
+    }
+  ]
+};
+
+const roiCalculator = {
+  factors: [
+    "Hours saved per week",
+    "Hourly value of your time",
+    "Error reduction percentage",
+    "24/7 availability value",
+    "Scaling efficiency gains"
+  ],
+  formula: "(Time Saved × Hourly Rate + Error Reduction Value + Availability Premium) × 12 - Implementation Cost",
+  examples: [
+    {
+      business: "Consulting Firm",
+      timeSaved: "20 hours/week",
+      hourlyRate: "£75",
+      errorReduction: "£500/month",
+      availabilityValue: "£300/month",
+      annualSaving: "£87,600",
+      implementationCost: "£5,000",
+      netRoi: "£82,600 (1,652% ROI)"
+    },
+    {
+      business: "E-commerce Store",
+      timeSaved: "15 hours/week",
+      hourlyRate: "£50",
+      errorReduction: "£800/month",
+      availabilityValue: "£600/month",
+      annualSaving: "£55,800",
+      implementationCost: "£4,000",
+      netRoi: "£51,800 (1,295% ROI)"
+    }
+  ]
+};
+
+const decisionMatrix = [
+  {
+    factor: "Initial Budget",
+    openclawBetter: "Low-Medium",
+    vaBetter: "Very Low",
+    description: "OpenClaw requires upfront investment, VA can start immediately"
+  },
+  {
+    factor: "Ongoing Costs",
+    openclawBetter: "Low-Medium",
+    vaBetter: "High",
+    description: "OpenClaw scales cheaply, VA costs grow linearly"
+  },
+  {
+    factor: "Technical Expertise",
+    openclawBetter: "Medium-High",
+    vaBetter: "Low",
+    description: "OpenClaw setup requires technical knowledge"
+  },
+  {
+    factor: "Task Complexity",
+    openclawBetter: "Routine/Data-heavy",
+    vaBetter: "Creative/Human-touch",
+    description: "Different strengths for different task types"
+  },
+  {
+    factor: "Availability Needs",
+    openclawBetter: "24/7 Operations",
+    vaBetter: "Business Hours",
+    description: "OpenClaw provides continuous operation"
+  },
+  {
+    factor: "Scaling Requirements",
+    openclawBetter: "High Growth",
+    vaBetter: "Stable Operations",
+    description: "OpenClaw scales without proportional cost increases"
+  }
+];
+
+const businessScenarios = [
+  {
+    scenario: "Small Business (£100k revenue)",
+    description: "Solo entrepreneur or small team needing basic automation",
+    recommendation: "Start with OpenClaw",
+    reasoning: [
+      "Lower ongoing costs than part-time VA",
+      "24/7 availability for global customers",
+      "Scales with business growth without hiring",
+      "Handles repetitive tasks efficiently"
+    ],
+    costSavings: "£800-£1,600/month vs VA",
+    timeToRoi: "2-4 months"
+  },
+  {
+    scenario: "Growing Business (£250k-£500k revenue)",
+    description: "Established business with increasing operational complexity",
+    recommendation: "Hybrid: OpenClaw + Part-time VA",
+    reasoning: [
+      "OpenClaw handles data processing and routine tasks",
+      "VA manages complex customer relationships",
+      "Cost-effective scaling model",
+      "Best of both worlds approach"
+    ],
+    costSavings: "£400-£800/month vs full-time VA",
+    timeToRoi: "3-6 months"
+  },
+  {
+    scenario: "Established Business (£500k+ revenue)",
+    description: "Complex operations requiring sophisticated automation",
+    recommendation: "Multi-agent OpenClaw system",
+    reasoning: [
+      "Complex workflows need automation",
+      "Cost of multiple VAs becomes prohibitive",
+      "24/7 operations critical for growth",
+      "Advanced analytics and reporting needed"
+    ],
+    costSavings: "£2,000-£6,000/month vs multiple VAs",
+    timeToRoi: "1-3 months"
   }
 ];
 
@@ -340,6 +511,216 @@ export default function OpenClawVsVirtualAssistantCostPage() {
                 </ul>
               </div>
             </div>
+          </div>
+
+          <div className="max-w-6xl mx-auto mt-16">
+            <h3 className="text-2xl font-bold text-center mb-4">Impact Severity & Mitigations</h3>
+            <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
+              Important costs and factors that aren't immediately obvious but significantly impact total cost of ownership.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-xl font-semibold mb-6">OpenClaw Considerations</h4>
+                <div className="space-y-6">
+                  {hiddenCostsAnalysis.openclaw.map((cost, index) => (
+                    <div key={index} className="bg-cream rounded-lg shadow-lg p-6">
+                      <div className="flex justify-between items-start mb-3">
+                        <h5 className="font-semibold">{cost.cost}</h5>
+                        <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                          cost.impact === 'Low' ? 'bg-green-100 text-green-700' :
+                          cost.impact === 'Medium' ? 'bg-yellow-100 text-yellow-700' :
+                          'bg-red-100 text-red-700'
+                        }`}>
+                          {cost.impact} Impact
+                        </span>
+                      </div>
+                      <p className="text-sm text-muted-dark mb-3">{cost.description}</p>
+                      <p className="text-sm text-dark"><strong>Mitigation:</strong> {cost.mitigation}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-semibold mb-6">Virtual Assistant Considerations</h4>
+                <div className="space-y-6">
+                  {hiddenCostsAnalysis.virtualAssistant.map((cost, index) => (
+                    <div key={index} className="bg-cream rounded-lg shadow-lg p-6">
+                      <div className="flex justify-between items-start mb-3">
+                        <h5 className="font-semibold">{cost.cost}</h5>
+                        <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                          cost.impact === 'Low' ? 'bg-green-100 text-green-700' :
+                          cost.impact === 'Medium' ? 'bg-yellow-100 text-yellow-700' :
+                          'bg-red-100 text-red-700'
+                        }`}>
+                          {cost.impact} Impact
+                        </span>
+                      </div>
+                      <p className="text-sm text-muted-dark mb-3">{cost.description}</p>
+                      <p className="text-sm text-dark"><strong>Mitigation:</strong> {cost.mitigation}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ROI Calculator & Worked Examples */}
+      <div className="py-16 bg-cream">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-4">ROI Calculator & Real Examples</h2>
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
+            Calculate the return on investment for your specific situation with real business examples.
+          </p>
+
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
+              <h3 className="text-xl font-semibold mb-6">ROI Calculation Framework</h3>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="font-semibold mb-4">Key ROI Factors:</h4>
+                  <ul className="space-y-2 text-sm text-muted-dark">
+                    {roiCalculator.factors.map((factor, index) => (
+                      <li key={index}>• {factor}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-4">ROI Formula:</h4>
+                  <div className="bg-cream rounded-lg p-4">
+                    <p className="text-sm font-mono text-dark">{roiCalculator.formula}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {roiCalculator.examples.map((example, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-lg p-8">
+                  <h3 className="text-xl font-semibold mb-6">{example.business}</h3>
+
+                  <div className="space-y-3 text-sm mb-6">
+                    <div className="flex justify-between">
+                      <span className="text-muted-dark">Time Saved:</span>
+                      <span className="font-medium">{example.timeSaved}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-dark">Hourly Rate:</span>
+                      <span className="font-medium">{example.hourlyRate}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-dark">Error Reduction Value:</span>
+                      <span className="font-medium">{example.errorReduction}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-dark">24/7 Availability Value:</span>
+                      <span className="font-medium">{example.availabilityValue}</span>
+                    </div>
+                  </div>
+
+                  <div className="border-t pt-4 space-y-3 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-muted-dark">Annual Saving:</span>
+                      <span className="font-bold text-green-600">{example.annualSaving}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-dark">Implementation Cost:</span>
+                      <span className="font-medium text-red-600">{example.implementationCost}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="font-semibold">Net ROI:</span>
+                      <span className="font-bold text-blue-800">{example.netRoi}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Decision Matrix */}
+      <div className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-4">Decision Matrix: When to Choose What</h2>
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
+            Clear decision framework based on your specific business factors and requirements.
+          </p>
+
+          <div className="max-w-6xl mx-auto">
+            <div className="overflow-x-auto">
+              <table className="w-full bg-white rounded-lg shadow-lg">
+                <thead className="bg-cream">
+                  <tr>
+                    <th className="px-6 py-4 text-left font-semibold">Factor</th>
+                    <th className="px-6 py-4 text-center font-semibold">OpenClaw Better If</th>
+                    <th className="px-6 py-4 text-center font-semibold">VA Better If</th>
+                    <th className="px-6 py-4 text-left font-semibold">Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {decisionMatrix.map((factor, index) => (
+                    <tr key={index} className={index % 2 === 0 ? 'bg-cream' : 'bg-white'}>
+                      <td className="px-6 py-4 font-medium">{factor.factor}</td>
+                      <td className="px-6 py-4 text-center text-sm text-green-600 font-medium">{factor.openclawBetter}</td>
+                      <td className="px-6 py-4 text-center text-sm text-red-600 font-medium">{factor.vaBetter}</td>
+                      <td className="px-6 py-4 text-sm text-muted-dark">{factor.description}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Business Size Scenarios */}
+      <div className="py-16 bg-cream">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-4">Which Should You Choose? Business Scenarios</h2>
+          <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
+            Specific recommendations based on business size, revenue, and operational complexity.
+          </p>
+
+          <div className="max-w-6xl mx-auto space-y-8">
+            {businessScenarios.map((scenario, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-lg p-8">
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">{scenario.scenario}</h3>
+                    <p className="text-sm text-muted-dark mb-4">{scenario.description}</p>
+                    <span className="inline-block bg-blue-50 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                      {scenario.recommendation}
+                    </span>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-3">Key Reasoning:</h4>
+                    <ul className="space-y-2 text-sm text-muted-dark">
+                      {scenario.reasoning.map((reason, idx) => (
+                        <li key={idx}>• {reason}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-3">Financial Impact:</h4>
+                    <div className="space-y-2 text-sm">
+                      <div className="text-green-600">
+                        <strong>Savings:</strong> {scenario.costSavings}
+                      </div>
+                      <div className="text-blue-800">
+                        <strong>ROI Timeline:</strong> {scenario.timeToRoi}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

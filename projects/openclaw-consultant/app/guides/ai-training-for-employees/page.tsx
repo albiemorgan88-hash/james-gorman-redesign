@@ -70,7 +70,7 @@ const relatedGuides = [
   { href: "/guides/openclaw-training-for-teams", title: "OpenClaw Training for Teams" },
   { href: "/guides/ai-governance-policy-template", title: "AI Governance Policy Template" },
   { href: "/guides/ai-governance-compliance-uk", title: "AI Governance & Compliance UK" },
-  { href: "/guides/ai-readiness-assessment-uk", title: "AI Readiness Assessment UK" },
+  { href: "/guides/ai-readiness-assessment-guide", title: "AI Readiness Assessment UK" },
 ];
 
 export default function AITrainingForEmployeesPage() {

@@ -276,7 +276,7 @@ const intentLinks = [
   {
     title: "Need the enterprise buying guide first?",
     body: "Read the enterprise deployment guide if you are comparing governance, rollout, and security expectations before scoping a service engagement.",
-    href: "/guides/enterprise-openclaw-deployment",
+    href: "/guides/openclaw-enterprise-deployment",
     label: "Read enterprise guide",
   },
   {

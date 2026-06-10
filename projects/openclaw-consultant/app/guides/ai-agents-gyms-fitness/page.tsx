@@ -391,7 +391,7 @@ export default function AIAgentsGymsFitnessPage() {
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <a href="/guides/ai-agents-accountants" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
+            <a href="/guides/ai-agents-for-accountants" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">AI Agents for Accountants UK</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
             </a>

@@ -163,7 +163,7 @@ const relatedGuides = [
   },
   {
     "title": "AI Agents for Property Management",
-    "href": "/guides/ai-agents-property-management"
+    "href": "/guides/ai-agents-for-property-management"
   },
   {
     "title": "AI Appointment Booking for Business",

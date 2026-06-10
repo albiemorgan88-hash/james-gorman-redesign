@@ -67,7 +67,7 @@ const faqs = [
 ];
 
 const relatedGuides = [
-  { href: "/guides/what-is-an-ai-agent", title: "What Is an AI Agent" },
+  { href: "/guides/ai-agents-explained", title: "What Is an AI Agent" },
   { href: "/guides/ai-agent-cost-uk", title: "AI Agent Cost UK" },
   { href: "/guides/setup-ai-agent-business", title: "Set Up an AI Agent for Your Business" },
   { href: "/guides/openclaw-for-business", title: "OpenClaw for Business" },

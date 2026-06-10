@@ -59,7 +59,7 @@ const faqs = [
 ];
 
 const relatedGuides = [
-  { href: "/guides/ai-readiness-assessment-uk", title: "AI Readiness Assessment UK" },
+  { href: "/guides/ai-readiness-assessment-guide", title: "AI Readiness Assessment UK" },
   { href: "/guides/openclaw-enterprise-security-compliance", title: "OpenClaw Enterprise Security & GDPR" },
   { href: "/guides/ai-implementation-consultant-uk", title: "AI Implementation Consultant UK" },
   { href: "/guides/ai-risk-management-framework", title: "AI Risk Management Framework" },

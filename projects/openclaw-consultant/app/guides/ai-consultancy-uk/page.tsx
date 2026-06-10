@@ -69,7 +69,7 @@ const relatedGuides = [
   { href: "/guides/ai-automation-consultant-uk", title: "AI Automation Consultant UK" },
   { href: "/guides/ai-implementation-services-uk", title: "AI Implementation Services UK" },
   { href: "/guides/openclaw-consultant-uk", title: "OpenClaw Consultant UK" },
-  { href: "/guides/ai-readiness-assessment-uk", title: "AI Readiness Assessment UK" },
+  { href: "/guides/ai-readiness-assessment-guide", title: "AI Readiness Assessment UK" },
 ];
 
 export default function AIConsultancyUKPage() {
