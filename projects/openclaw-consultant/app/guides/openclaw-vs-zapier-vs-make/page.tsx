@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import GuideArticleJsonLd from "@/components/GuideArticleJsonLd";
+
+const canonicalPath = "/guides/openclaw-vs-zapier-vs-make";
+const pageTitle = "OpenClaw vs Zapier vs Make: AI Agent or Workflow Automation?";
+const pageDescription =
+  "Compare OpenClaw, Zapier, and Make for business workflows: setup effort, AI fit, data control, integration patterns, costs to verify, and when each option makes sense.";
 
 export const metadata: Metadata = {
-  title: "OpenClaw vs Zapier vs Make",
-  description: "Complete comparison of OpenClaw, Zapier, and Make.com automation platforms. Features, pricing, capabilities, and use cases to help UK businesses choose the right solution.",
+  title: pageTitle,
+  description: pageDescription,
   keywords: [
     "openclaw vs zapier",
     "openclaw vs make.com",
@@ -14,11 +20,11 @@ export const metadata: Metadata = {
     "workflow automation platforms",
     "ai automation comparison"
   ],
-  alternates: { canonical: "https://openclawconsultant.co.uk/guides/openclaw-vs-zapier-vs-make" },
+  alternates: { canonical: `https://openclawconsultant.co.uk${canonicalPath}` },
   openGraph: {
-    title: "OpenClaw vs Zapier vs Make",
-    description: "Detailed comparison of OpenClaw, Zapier, and Make.com. Find the perfect automation platform for your UK business needs.",
-    url: "https://openclawconsultant.co.uk/guides/openclaw-vs-zapier-vs-make",
+    title: pageTitle,
+    description: pageDescription,
+    url: `https://openclawconsultant.co.uk${canonicalPath}`,
     type: "article",
   },
 };
@@ -27,45 +33,45 @@ const platformComparison = [
   {
     feature: "Pricing Model",
     openclaw: {
-      value: "Self-hosted, one-time setup cost",
-      details: "£1,000-£3,000 setup, £50-£200/month running costs",
-      rating: 9
+      value: "Self-hosted or managed deployment costs",
+      details: "Setup, hosting, model/API usage, maintenance, and support vary by scope",
+      rating: 7
     },
     zapier: {
       value: "SaaS subscription per task/month",
-      details: "£19-£599/month depending on task volume",
+      details: "Subscription pricing varies by plan, task volume, and features",
       rating: 6
     },
     make: {
       value: "SaaS subscription per operation",
-      details: "£9-£299/month based on operations used",
+      details: "Subscription pricing varies by operations, plan limits, and features",
       rating: 7
     }
   },
   {
     feature: "AI Capabilities",
     openclaw: {
-      value: "Native AI agent integration",
-      details: "Built-in Claude, GPT, local models, custom reasoning",
-      rating: 10
+      value: "AI agent runtime when configured",
+      details: "Can use LLMs, tools, memory, and skills with governance controls",
+      rating: 8
     },
     zapier: {
-      value: "AI tools via integrations",
-      details: "OpenAI, ChatGPT plugins, limited AI workflow",
-      rating: 5
+      value: "AI features via apps and connectors",
+      details: "AI actions and assistants depend on available integrations and plan features",
+      rating: 6
     },
     make: {
       value: "AI modules available",
-      details: "OpenAI, Google AI modules, basic AI automation",
+      details: "AI modules and API calls can be added to visual workflows",
       rating: 6
     }
   },
   {
     feature: "Customisation",
     openclaw: {
-      value: "Fully customisable code",
-      details: "Custom skills, agents, unlimited logic, code access",
-      rating: 10
+      value: "Extensible code and skills",
+      details: "Custom skills, APIs, files, and code-level workflows when maintained",
+      rating: 8
     },
     zapier: {
       value: "Limited custom code",
@@ -81,9 +87,9 @@ const platformComparison = [
   {
     feature: "Data Control",
     openclaw: {
-      value: "Complete data ownership",
-      details: "All data stays on your infrastructure, GDPR compliant",
-      rating: 10
+      value: "Deployment control options",
+      details: "Can run on controlled infrastructure, but model providers and connected tools need review",
+      rating: 8
     },
     zapier: {
       value: "Data passes through Zapier",
@@ -117,9 +123,9 @@ const platformComparison = [
   {
     feature: "Integration Ecosystem",
     openclaw: {
-      value: "API-first, unlimited",
-      details: "Any API, webhooks, custom integrations",
-      rating: 8
+      value: "API-first and skills-based",
+      details: "Custom APIs, webhooks, files, and skills; fewer no-code templates out of the box",
+      rating: 7
     },
     zapier: {
       value: "5,000+ pre-built apps",
@@ -153,14 +159,14 @@ const useCaseComparison = [
     useCase: "AI-Powered Business Processes",
     description: "Customer service automation, content generation, intelligent decision making",
     recommendation: "OpenClaw",
-    reason: "Native AI agent capabilities, custom reasoning, unlimited AI model integration",
-    bestFor: "Businesses wanting true AI automation"
+    reason: "Useful when memory, tool access, approvals, and agent reasoning all matter",
+    bestFor: "Teams with a clear AI workflow and governance plan"
   },
   {
     useCase: "Enterprise Data Processing",
     description: "Large-scale data handling, custom business logic, regulatory compliance",
     recommendation: "OpenClaw",
-    reason: "Complete control over data, unlimited customisation, self-hosted security",
+    reason: "Can keep infrastructure, logs, and operating rules under closer control when designed carefully",
     bestFor: "Regulated industries, sensitive data processing"
   },
   {
@@ -171,11 +177,11 @@ const useCaseComparison = [
     bestFor: "Rapid experimentation, business validation"
   },
   {
-    useCase: "Long-term Strategic Automation",
-    description: "Scalable solutions, future-proof architecture, evolving business needs",
+    useCase: "Strategic AI Automation",
+    description: "Workflows likely to need code-level extensibility, review loops, and changing tool access",
     recommendation: "OpenClaw",
-    reason: "No vendor lock-in, unlimited scaling, adapt to any future requirements",
-    bestFor: "Forward-thinking businesses, long-term planning"
+    reason: "Less tied to a single SaaS task model, but it needs technical ownership and maintenance",
+    bestFor: "Businesses ready to own an agent operating model"
   }
 ];
 
@@ -186,7 +192,7 @@ const migrationScenarios = [
     when: "Task limits exceeded, need AI capabilities, data security concerns",
     effort: "Moderate",
     timeline: "2-4 weeks",
-    benefits: "Cost savings at scale, AI integration, data control"
+    benefits: "Lower SaaS task dependence, agent workflows, stronger deployment control"
   },
   {
     from: "Make.com",
@@ -194,7 +200,7 @@ const migrationScenarios = [
     when: "Complex logic requirements, custom integrations, regulatory compliance",
     effort: "Low-Moderate",
     timeline: "1-3 weeks",
-    benefits: "Unlimited customisation, AI agents, self-hosted control"
+    benefits: "Code-level customisation, AI agent workflows, self-hosted control"
   },
   {
     from: "Manual Processes",
@@ -202,17 +208,26 @@ const migrationScenarios = [
     when: "Ready for AI automation, have technical resources, long-term thinking",
     effort: "Moderate-High",
     timeline: "3-6 weeks",
-    benefits: "Future-proof solution, AI capabilities, complete control"
+    benefits: "AI workflow design, clearer operating rules, controlled tool access"
   }
 ];
 
 export default function OpenClawVsZapierVsMakePage() {
   return (
     <>
+      <GuideArticleJsonLd canonicalPath={canonicalPath} title={pageTitle} description={pageDescription} />
+
       {/* Article Header */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-navy via-navy-light to-blue">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="max-w-[800px]">
+            <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-2 text-xs font-semibold text-white/50">
+              <a href="/" className="hover:text-white">Home</a>
+              <span aria-hidden="true">/</span>
+              <a href="/guides" className="hover:text-white">Guides</a>
+              <span aria-hidden="true">/</span>
+              <span className="text-white/70">OpenClaw vs Zapier vs Make</span>
+            </nav>
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
               <span className="w-2 h-2 bg-orange rounded-full" />
               <span className="text-white/80 text-sm font-medium">Platform Comparison</span>
@@ -223,8 +238,8 @@ export default function OpenClawVsZapierVsMakePage() {
             </h1>
             
             <p className="text-white/70 text-xl leading-relaxed mb-8">
-              A comprehensive comparison of the three leading automation platforms. 
-              Understand the strengths, limitations, and ideal use cases to choose the right solution for your business.
+              A practical comparison of agent-led automation and visual workflow platforms.
+              Understand the strengths, limitations, and ideal use cases before choosing a platform.
             </p>
             
             <div className="flex flex-wrap gap-4 text-white/60 text-sm">
@@ -252,11 +267,11 @@ export default function OpenClawVsZapierVsMakePage() {
           {/* Introduction */}
           <div className="prose prose-lg max-w-none mb-12">
             <p className="text-xl text-muted-dark leading-relaxed mb-8">
-              Choosing the right automation platform can make or break your digital transformation efforts. While Zapier dominates the no-code space and Make.com offers visual workflow building, OpenClaw represents the next generation of AI-native automation.
+              Choosing the right automation platform shapes cost, reliability, and operational risk. Zapier is strong for fast no-code workflows, Make.com is strong for visual workflow building, and OpenClaw is a more agentic, self-hostable option for teams that need memory, tool access, and custom skills.
             </p>
             
             <p className="text-muted-dark leading-relaxed mb-8">
-              This guide provides an honest comparison across key dimensions that matter to UK businesses: cost, capabilities, control, compliance, and long-term strategic value. By the end, you'll know exactly which platform fits your needs and budget.
+              This guide compares the dimensions that matter to UK businesses: setup effort, capabilities, control, compliance work, maintenance, and long-term value. Use it as a decision framework, then verify current vendor pricing and product limits before committing.
             </p>
           </div>
 
@@ -337,11 +352,11 @@ export default function OpenClawVsZapierVsMakePage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
-                    You need unlimited customisation
+                    You need code-level customisation
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
-                    Long-term cost efficiency matters
+                    Long-term operating control matters
                   </li>
                 </ul>
               </div>
@@ -443,10 +458,10 @@ export default function OpenClawVsZapierVsMakePage() {
 
           {/* Cost Analysis */}
           <section className="mb-16">
-            <h2 className="font-heading text-3xl font-bold text-navy mb-8">Real-World Cost Analysis</h2>
+            <h2 className="font-heading text-3xl font-bold text-navy mb-8">Cost Factors to Model</h2>
             
             <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-8 border border-border-light">
-              <h3 className="font-heading text-xl font-bold text-navy mb-6">Scenario: Medium UK Business (100 automated tasks/day)</h3>
+              <h3 className="font-heading text-xl font-bold text-navy mb-6">Scenario: Medium UK Business with recurring automation needs</h3>
               
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-lg p-6 border border-border-light">
@@ -454,20 +469,20 @@ export default function OpenClawVsZapierVsMakePage() {
                   <div className="space-y-3">
                     <div className="flex justify-between">
                       <span className="text-muted-dark">Setup cost:</span>
-                      <span className="font-medium">£2,500</span>
+                      <span className="font-medium">Scope-based</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-dark">Monthly running:</span>
-                      <span className="font-medium">£150</span>
+                      <span className="font-medium">Hosting + models</span>
                     </div>
                     <div className="border-t border-border pt-3">
                       <div className="flex justify-between">
-                        <span className="text-muted-dark">Year 1 total:</span>
-                        <span className="font-bold text-orange">£4,300</span>
+                        <span className="text-muted-dark">Hidden cost:</span>
+                        <span className="font-bold text-orange">Maintenance</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-muted-dark">Year 2+ annual:</span>
-                        <span className="font-bold text-orange">£1,800</span>
+                        <span className="text-muted-dark">Best modelled as:</span>
+                        <span className="font-bold text-orange">Pilot + support</span>
                       </div>
                     </div>
                   </div>
@@ -482,16 +497,16 @@ export default function OpenClawVsZapierVsMakePage() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-dark">Monthly subscription:</span>
-                      <span className="font-medium">£299</span>
+                      <span className="font-medium">Plan-dependent</span>
                     </div>
                     <div className="border-t border-border pt-3">
                       <div className="flex justify-between">
-                        <span className="text-muted-dark">Year 1 total:</span>
-                        <span className="font-bold text-blue">£3,588</span>
+                        <span className="text-muted-dark">Hidden cost:</span>
+                        <span className="font-bold text-blue">Task volume</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-muted-dark">Year 2+ annual:</span>
-                        <span className="font-bold text-blue">£3,588</span>
+                        <span className="text-muted-dark">Best modelled as:</span>
+                        <span className="font-bold text-blue">Tasks/month</span>
                       </div>
                     </div>
                   </div>
@@ -506,16 +521,16 @@ export default function OpenClawVsZapierVsMakePage() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-dark">Monthly subscription:</span>
-                      <span className="font-medium">£179</span>
+                      <span className="font-medium">Plan-dependent</span>
                     </div>
                     <div className="border-t border-border pt-3">
                       <div className="flex justify-between">
-                        <span className="text-muted-dark">Year 1 total:</span>
-                        <span className="font-bold text-purple">£2,148</span>
+                        <span className="text-muted-dark">Hidden cost:</span>
+                        <span className="font-bold text-purple">Operations</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-muted-dark">Year 2+ annual:</span>
-                        <span className="font-bold text-purple">£2,148</span>
+                        <span className="text-muted-dark">Best modelled as:</span>
+                        <span className="font-bold text-purple">Ops/month</span>
                       </div>
                     </div>
                   </div>
@@ -525,10 +540,10 @@ export default function OpenClawVsZapierVsMakePage() {
               <div className="mt-8 p-4 bg-orange/10 rounded-lg border border-orange/20">
                 <h4 className="font-semibold text-orange mb-2">Cost Analysis Summary:</h4>
                 <ul className="space-y-1 text-dark text-sm">
-                  <li>• OpenClaw becomes most cost-effective after 18 months</li>
-                  <li>• Make.com offers best short-term value for complex workflows</li>
-                  <li>• Zapier competitive for simple integrations but expensive at scale</li>
-                  <li>• OpenClaw provides unlimited scaling without additional costs</li>
+                  <li>• OpenClaw cost depends on build scope, hosting, model usage, monitoring, and support</li>
+                  <li>• Make.com can be strong when a visual workflow model fits the process</li>
+                  <li>• Zapier is often fastest for simple integrations and should be priced against task volume</li>
+                  <li>• OpenClaw needs maintenance budget; it is not a zero-cost scaling shortcut</li>
                 </ul>
               </div>
             </div>
@@ -588,10 +603,10 @@ export default function OpenClawVsZapierVsMakePage() {
                 <div>
                   <h4 className="font-semibold text-orange mb-2">OpenClaw</h4>
                   <ul className="space-y-1 text-muted-dark text-sm">
-                    <li>• Complete data sovereignty</li>
+                    <li>• Controlled infrastructure options</li>
                     <li>• UK-hosted infrastructure option</li>
-                    <li>• Full audit trail control</li>
-                    <li>• Custom GDPR compliance features</li>
+                    <li>• Audit trail design under your control</li>
+                    <li>• Custom data handling controls when implemented</li>
                   </ul>
                 </div>
                 <div>
@@ -607,7 +622,7 @@ export default function OpenClawVsZapierVsMakePage() {
                   <h4 className="font-semibold text-purple mb-2">Make.com</h4>
                   <ul className="space-y-1 text-muted-dark text-sm">
                     <li>• EU-based with UK data centres</li>
-                    <li>• Strong GDPR compliance</li>
+                    <li>• GDPR positioning should be checked against your plan and data flows</li>
                     <li>• Better than Zapier for UK data</li>
                     <li>• Third-party processing still required</li>
                   </ul>
@@ -719,7 +734,7 @@ export default function OpenClawVsZapierVsMakePage() {
               </div>
               
               <div>
-                <h3 className="font-heading text-xl font-bold text-navy mb-4">Get Expert Guidance</h3>
+                <h3 className="font-heading text-xl font-bold text-navy mb-4">Get Practical Guidance</h3>
                 <p className="text-muted-dark mb-4">
                   Choosing the right automation platform is a strategic decision. I can help you:
                 </p>

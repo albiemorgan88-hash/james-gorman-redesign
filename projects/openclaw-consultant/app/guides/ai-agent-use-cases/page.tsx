@@ -261,7 +261,7 @@ export default function AIAgentUseCasesPage() {
         <div className="max-w-[1140px] mx-auto px-6 text-center">
           <h3 className="font-heading font-bold text-xl text-dark mb-4">About Blue Canvas</h3>
           <p className="text-muted max-w-[600px] mx-auto text-sm">
-            Blue Canvas has deployed AI agents across every industry listed above. Through <a href="https://bluecanvas.ai" className="text-orange hover:underline">Blue Canvas</a>, Phil Patterson 
+            Blue Canvas helps UK businesses turn AI agent ideas into controlled, practical workflows. Through <a href="https://bluecanvas.ai" className="text-orange hover:underline">Blue Canvas</a>, Phil Patterson 
             helps UK businesses identify the highest-ROI use cases and get agents into production quickly and safely.
           </p>
         </div>

@@ -1,0 +1,235 @@
+{
+  "all_ok": true,
+  "count": 16,
+  "results": [
+    {
+      "slug": "openclaw-hubspot-automation",
+      "url": "https://openclawconsultant.co.uk/guides/openclaw-hubspot-automation",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "canonical": true,
+        "article_schema": true,
+        "faq_schema": true,
+        "blue_canvas": true,
+        "assessment_cta": true,
+        "forbidden_markers": []
+      },
+      "ok": true
+    },
+    {
+      "slug": "openclaw-shopify-automation",
+      "url": "https://openclawconsultant.co.uk/guides/openclaw-shopify-automation",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "canonical": true,
+        "article_schema": true,
+        "faq_schema": true,
+        "blue_canvas": true,
+        "assessment_cta": true,
+        "forbidden_markers": []
+      },
+      "ok": true
+    },
+    {
+      "slug": "openclaw-xero-automation",
+      "url": "https://openclawconsultant.co.uk/guides/openclaw-xero-automation",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "canonical": true,
+        "article_schema": true,
+        "faq_schema": true,
+        "blue_canvas": true,
+        "assessment_cta": true,
+        "forbidden_markers": []
+      },
+      "ok": true
+    },
+    {
+      "slug": "openclaw-quickbooks-automation",
+      "url": "https://openclawconsultant.co.uk/guides/openclaw-quickbooks-automation",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "canonical": true,
+        "article_schema": true,
+        "faq_schema": true,
+        "blue_canvas": true,
+        "assessment_cta": true,
+        "forbidden_markers": []
+      },
+      "ok": true
+    },
+    {
+      "slug": "openclaw-salesforce-automation",
+      "url": "https://openclawconsultant.co.uk/guides/openclaw-salesforce-automation",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "canonical": true,
+        "article_schema": true,
+        "faq_schema": true,
+        "blue_canvas": true,
+        "assessment_cta": true,
+        "forbidden_markers": []
+      },
+      "ok": true
+    },
+    {
+      "slug": "openclaw-pipedrive-automation",
+      "url": "https://openclawconsultant.co.uk/guides/openclaw-pipedrive-automation",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "canonical": true,
+        "article_schema": true,
+        "faq_schema": true,
+        "blue_canvas": true,
+        "assessment_cta": true,
+        "forbidden_markers": []
+      },
+      "ok": true
+    },
+    {
+      "slug": "openclaw-zendesk-automation",
+      "url": "https://openclawconsultant.co.uk/guides/openclaw-zendesk-automation",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "canonical": true,
+        "article_schema": true,
+        "faq_schema": true,
+        "blue_canvas": true,
+        "assessment_cta": true,
+        "forbidden_markers": []
+      },
+      "ok": true
+    },
+    {
+      "slug": "openclaw-intercom-automation",
+      "url": "https://openclawconsultant.co.uk/guides/openclaw-intercom-automation",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "canonical": true,
+        "article_schema": true,
+        "faq_schema": true,
+        "blue_canvas": true,
+        "assessment_cta": true,
+        "forbidden_markers": []
+      },
+      "ok": true
+    },
+    {
+      "slug": "openclaw-stripe-automation",
+      "url": "https://openclawconsultant.co.uk/guides/openclaw-stripe-automation",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "canonical": true,
+        "article_schema": true,
+        "faq_schema": true,
+        "blue_canvas": true,
+        "assessment_cta": true,
+        "forbidden_markers": []
+      },
+      "ok": true
+    },
+    {
+      "slug": "openclaw-calendly-automation",
+      "url": "https://openclawconsultant.co.uk/guides/openclaw-calendly-automation",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "canonical": true,
+        "article_schema": true,
+        "faq_schema": true,
+        "blue_canvas": true,
+        "assessment_cta": true,
+        "forbidden_markers": []
+      },
+      "ok": true
+    },
+    {
+      "slug": "openclaw-asana-automation",
+      "url": "https://openclawconsultant.co.uk/guides/openclaw-asana-automation",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "canonical": true,
+        "article_schema": true,
+        "faq_schema": true,
+        "blue_canvas": true,
+        "assessment_cta": true,
+        "forbidden_markers": []
+      },
+      "ok": true
+    },
+    {
+      "slug": "openclaw-clickup-automation",
+      "url": "https://openclawconsultant.co.uk/guides/openclaw-clickup-automation",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "canonical": true,
+        "article_schema": true,
+        "faq_schema": true,
+        "blue_canvas": true,
+        "assessment_cta": true,
+        "forbidden_markers": []
+      },
+      "ok": true
+    },
+    {
+      "slug": "/",
+      "url": "https://openclawconsultant.co.uk/",
+      "checks": {
+        "http_200": true,
+        "markers": {
+          "Get OpenClaw": true,
+          "Working For": true,
+          "OpenClaw consultant hub": true
+        }
+      },
+      "ok": true
+    },
+    {
+      "slug": "/guides",
+      "url": "https://openclawconsultant.co.uk/guides",
+      "checks": {
+        "http_200": true,
+        "markers": {
+          "OpenClaw Guides": true,
+          "CRM &amp; Ops Platforms": true,
+          "OpenClaw HubSpot Automation": true
+        }
+      },
+      "ok": true
+    },
+    {
+      "slug": "/sitemap.xml",
+      "url": "https://openclawconsultant.co.uk/sitemap.xml",
+      "checks": {
+        "http_200": true,
+        "markers": {
+          "openclaw-hubspot-automation": true,
+          "openclaw-clickup-automation": true
+        }
+      },
+      "ok": true
+    },
+    {
+      "slug": "/robots.txt",
+      "url": "https://openclawconsultant.co.uk/robots.txt",
+      "checks": {
+        "http_200": true,
+        "markers": {
+          "Sitemap": true
+        }
+      },
+      "ok": true
+    }
+  ]
+}

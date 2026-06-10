@@ -68,6 +68,7 @@ const relatedGuides = [
 export default function AIReadinessAssessmentUKPage() {
   return (
     <GuideLandingPage
+      canonicalPath="/guides/ai-readiness-assessment-uk"
       badge="Commercial AI Guide 2026"
       title="AI Readiness Assessment UK"
       intro="If you are about to spend on AI, a readiness assessment should tell you what is genuinely worth piloting, what needs fixing first, and where the risk sits. That is the job, not theatre."

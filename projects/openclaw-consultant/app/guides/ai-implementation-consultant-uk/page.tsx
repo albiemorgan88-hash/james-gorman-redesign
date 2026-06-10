@@ -68,6 +68,7 @@ const relatedGuides = [
 export default function AIImplementationConsultantUKPage() {
   return (
     <GuideLandingPage
+      canonicalPath="/guides/ai-implementation-consultant-uk"
       badge="Buyer Guide 2026"
       title="AI Implementation Consultant UK"
       intro="The right consultant should help you redesign a workflow, prove the business case, and leave you with something your team can actually run, not just a stack of software and a slide deck."

@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import GuideArticleJsonLd from "@/components/GuideArticleJsonLd";
+import SafeSetupLeadMagnet from "@/components/SafeSetupLeadMagnet";
+
+const canonicalPath = "/guides/openclaw-security-best-practices";
+const pageTitle = "OpenClaw Security Best Practices";
+const pageDescription =
+  "Security practices for OpenClaw business deployments, including access control, data protection, network exposure, monitoring, review gates, and compliance evidence planning.";
 
 export const metadata: Metadata = {
-  title: "OpenClaw Security Best Practices",
-  description: "Essential security practices for OpenClaw business deployments. Learn access controls, data protection, compliance, and security hardening for safe AI agent operations.",
+  title: pageTitle,
+  description: pageDescription,
   keywords: [
     "openclaw security best practices",
     "openclaw business security", 
@@ -14,11 +21,11 @@ export const metadata: Metadata = {
     "secure ai deployment",
     "openclaw security hardening"
   ],
-  alternates: { canonical: "https://openclawconsultant.co.uk/guides/openclaw-security-best-practices" },
+  alternates: { canonical: `https://openclawconsultant.co.uk${canonicalPath}` },
   openGraph: {
-    title: "OpenClaw Security Best Practices",
-    description: "Essential security practices for OpenClaw business deployments. Learn access controls, data protection, and compliance.",
-    url: "https://openclawconsultant.co.uk/guides/openclaw-security-best-practices",
+    title: pageTitle,
+    description: pageDescription,
+    url: `https://openclawconsultant.co.uk${canonicalPath}`,
     type: "article",
   },
 };
@@ -26,58 +33,67 @@ export const metadata: Metadata = {
 const securityAreas = [
   {
     area: "Access Control & Authentication",
-    description: "Robust authentication and authorization mechanisms",
+    description: "Authentication, authorization, and approval boundaries for who can steer the agent",
     practices: ["Multi-factor authentication", "Role-based access control", "API key management", "Session security"],
     riskLevel: "Critical",
-    compliance: ["SOC 2", "ISO 27001", "GDPR"]
+    compliance: ["SOC 2 mapping", "ISO 27001 mapping", "GDPR evidence"]
   },
   {
     area: "Data Protection & Privacy",
-    description: "Comprehensive data security and privacy controls",
+    description: "Data handling controls for sensitive files, prompts, logs, transcripts, and connected tools",
     practices: ["End-to-end encryption", "Data anonymization", "Secure storage", "Data retention policies"],
     riskLevel: "Critical",
-    compliance: ["GDPR", "CCPA", "HIPAA"]
+    compliance: ["GDPR evidence", "Privacy review", "Healthcare review"]
   },
   {
     area: "Network Security",
     description: "Secure communication and network architecture",
     practices: ["VPN/secure tunnels", "Firewall configuration", "Network segmentation", "SSL/TLS encryption"],
     riskLevel: "High",
-    compliance: ["PCI DSS", "SOX", "FISMA"]
+    compliance: ["Network controls", "Audit evidence", "Segmentation"]
   },
   {
     area: "Monitoring & Incident Response",
-    description: "Continuous monitoring and rapid incident response",
+    description: "Logging, alerting, and response plans for agent actions and configuration drift",
     practices: ["Security logging", "Anomaly detection", "Incident response plan", "Regular security audits"],
     riskLevel: "High",
-    compliance: ["SOC 2", "ISO 27001"]
+    compliance: ["SOC 2 mapping", "ISO 27001 mapping"]
   }
 ];
 
 const complianceFrameworks = [
   {
-    framework: "GDPR Compliance",
+    framework: "GDPR Readiness",
     requirements: ["Data minimization", "Consent management", "Right to erasure", "Data portability"],
-    implementation: "Built-in privacy controls and data handling policies"
+    implementation: "Documented data flows, retention rules, access limits, and review with qualified privacy counsel"
   },
   {
-    framework: "SOC 2 Type II",
+    framework: "SOC 2 Control Mapping",
     requirements: ["Security controls", "Availability monitoring", "Processing integrity", "Confidentiality"],
-    implementation: "Comprehensive audit trails and control frameworks"
+    implementation: "Audit logging, change records, access reviews, and evidence mapped to selected trust criteria"
   },
   {
-    framework: "HIPAA (Healthcare)",
+    framework: "Healthcare Data Review",
     requirements: ["PHI protection", "Access controls", "Audit logs", "Risk assessments"],
-    implementation: "Healthcare-specific security configurations"
+    implementation: "Avoid PHI until policies, contracts, access controls, and legal review are in place"
   }
 ];
 
 export default function OpenClawSecurityBestPracticesPage() {
   return (
     <>
+      <GuideArticleJsonLd canonicalPath={canonicalPath} title={pageTitle} description={pageDescription} />
+
       <section className="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center grain">
         <div className="max-w-[1140px] mx-auto px-6 relative z-10 py-20">
           <div className="max-w-[720px]">
+            <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-2 text-xs font-semibold text-white/50">
+              <a href="/" className="hover:text-white">Home</a>
+              <span aria-hidden="true">/</span>
+              <a href="/guides" className="hover:text-white">Guides</a>
+              <span aria-hidden="true">/</span>
+              <span className="text-white/70">OpenClaw Security Best Practices</span>
+            </nav>
             <h1 className="font-heading text-4xl sm:text-5xl md:text-[3.2rem] font-extrabold text-white mb-6 leading-[1.05] tracking-tight">
               OpenClaw Security
               <br />
@@ -85,15 +101,24 @@ export default function OpenClawSecurityBestPracticesPage() {
             </h1>
 
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
-              Essential security practices for business OpenClaw deployments. Protect your data, ensure compliance, and maintain secure AI agent operations.
+              Essential security practices for business OpenClaw deployments. Reduce data exposure, define approval boundaries, and collect the evidence needed for compliance review.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#security" className="inline-flex items-center justify-center bg-orange text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange">
                 Explore Security
               </a>
+              <a href="/guides/openclaw-safe-setup-checklist" className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10">
+                Use the Checklist
+              </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-light py-20">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <SafeSetupLeadMagnet />
         </div>
       </section>
 
@@ -133,7 +158,7 @@ export default function OpenClawSecurityBestPracticesPage() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-dark mb-2">Compliance:</h4>
+                  <h4 className="font-semibold text-dark mb-2">Evidence areas:</h4>
                   <div className="flex flex-wrap gap-2">
                     {area.compliance.map((framework, idx) => (
                       <span key={idx} className="bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs">
@@ -189,6 +214,10 @@ export default function OpenClawSecurityBestPracticesPage() {
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
+            <a href="/guides/openclaw-safe-setup-checklist" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Safe Setup Checklist</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
             <a href="/guides/openclaw-agent-team" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">Build an OpenClaw Agent Team</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
@@ -219,7 +248,7 @@ export default function OpenClawSecurityBestPracticesPage() {
                 <span className="text-orange">OpenClaw Deployment</span>
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Free security assessment to evaluate your OpenClaw deployment and implement enterprise-grade security measures.
+                Security review to identify risky access, exposed credentials, weak logging, and missing approval gates before an OpenClaw deployment handles sensitive work.
               </p>
             </div>
 

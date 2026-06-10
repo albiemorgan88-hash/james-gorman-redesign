@@ -126,7 +126,7 @@ const faqSchema = {
 export default function FaqPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c") }} />
 
       <section className="hero-gradient relative overflow-hidden pt-32 pb-20 grain">
         <div className="absolute top-16 right-[10%] h-[360px] w-[360px] rounded-full bg-orange/5 blur-[120px]" />

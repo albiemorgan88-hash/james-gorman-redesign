@@ -39,7 +39,7 @@ export default function AIForConstructionCompaniesPage() {
             </h1>
             
             <p className="text-white/70 text-xl leading-relaxed mb-8">
-              Transform your construction business with AI-powered project management, intelligent safety monitoring, and automated cost estimation. Learn how leading UK construction firms are using AI to improve efficiency, reduce risks, and increase profitability.
+              Transform your construction business with AI-powered project management, intelligent safety monitoring, and automated cost estimation. Learn how construction firms can use AI to reduce admin load, improve handovers, and support safer project coordination.
             </p>
             
             <div className="flex flex-wrap gap-4 text-white/60 text-sm">

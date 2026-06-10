@@ -209,17 +209,17 @@ const monitoringMetrics = [
   {
     category: "Agent Performance",
     metrics: ["Task completion rate", "Response time", "Error frequency", "Resource utilization"],
-    thresholds: ["95% completion", "<30s response", "<1% errors", "<80% CPU"]
+    thresholds: ["Defined completion target", "Workflow-specific response target", "Low error rate", "Resource budget"]
   },
   {
     category: "Business Impact", 
     metrics: ["Process automation rate", "Cost reduction", "Time savings", "Quality improvement"],
-    thresholds: ["80% automation", "30% cost reduction", "50% time savings", "95% quality score"]
+    thresholds: ["Measured automation rate", "Measured cost impact", "Measured time savings", "Quality review score"]
   },
   {
     category: "System Health",
     metrics: ["Uptime", "Memory usage", "Storage consumption", "Network latency"],
-    thresholds: ["99.9% uptime", "<4GB memory", "<100GB storage", "<100ms latency"]
+    thresholds: ["Business-specific uptime target", "Budgeted memory", "Budgeted storage", "Latency target by workflow"]
   }
 ];
 

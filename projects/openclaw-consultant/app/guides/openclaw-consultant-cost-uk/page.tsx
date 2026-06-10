@@ -93,6 +93,7 @@ const relatedGuides = [
 export default function OpenClawConsultantCostUKPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-consultant-cost-uk"
       badge="Pricing Guide 2026"
       title="OpenClaw Consultant"
       highlight="Cost UK"

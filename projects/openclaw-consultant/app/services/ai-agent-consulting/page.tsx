@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import { ServiceBreadcrumb, ServiceSeo } from "@/components/ServiceSeo";
 
 export const metadata: Metadata = {
   title: "AI Agent Consulting UK",
-  description: "Expert AI agent consulting for UK businesses. Strategic planning, implementation roadmaps, workflow automation, and AI integration. Transform your business with intelligent agents.",
+  description: "AI agent consulting for UK businesses that need practical workflow audits, implementation planning, OpenClaw architecture, and safer rollout support.",
   keywords: [
     "ai agent consulting uk",
     "ai automation consultant", 
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://openclawconsultant.co.uk/services/ai-agent-consulting" },
   openGraph: {
     title: "AI Agent Consulting UK", 
-    description: "Expert AI agent consulting for UK businesses. Strategic planning, implementation roadmaps, workflow automation, and AI integration.",
+    description: "Practical AI agent consulting for workflow audits, implementation planning, OpenClaw architecture, and safer rollout support.",
     url: "https://openclawconsultant.co.uk/services/ai-agent-consulting",
     type: "website",
   },
@@ -27,13 +28,13 @@ const consultingAreas = [
   {
     icon: "🎯",
     title: "AI Strategy Development",
-    desc: "Identify high-impact AI opportunities in your business. Create actionable roadmaps with clear ROI projections.",
-    benefits: ["Process audit & opportunity mapping", "ROI analysis & business case", "Implementation timeline", "Risk assessment"]
+    desc: "Identify high-impact AI opportunities in your business. Create actionable roadmaps with clear value models.",
+    benefits: ["Process audit & opportunity mapping", "Value analysis & business case", "Implementation timeline", "Risk assessment"]
   },
   {
     icon: "🤖",
     title: "Agent Architecture Design", 
-    desc: "Design multi-agent systems that work together seamlessly. Memory management, skill orchestration, and workflow automation.",
+    desc: "Design multi-agent systems with clear responsibilities, review points, and operating boundaries. Memory management, skill orchestration, and workflow automation.",
     benefits: ["Multi-agent workflow design", "Memory & context management", "Skill development planning", "Integration architecture"]
   },
   {
@@ -54,32 +55,32 @@ const industries = [
   {
     industry: "Professional Services",
     useCases: ["Client onboarding automation", "Document processing", "Appointment scheduling", "Report generation"],
-    savings: "15-25 hours/week"
+    savings: "High-repeat admin and reporting time"
   },
   {
     industry: "E-commerce & Retail", 
     useCases: ["Customer service automation", "Inventory management", "Price monitoring", "Content creation"],
-    savings: "20-30 hours/week"
+    savings: "Support, catalogue and follow-up time"
   },
   {
     industry: "Marketing Agencies",
     useCases: ["Campaign management", "Content creation pipelines", "Client reporting", "SEO automation"],
-    savings: "25-35 hours/week"
+    savings: "Campaign, reporting and content ops time"
   },
   {
     industry: "Property & Real Estate",
     useCases: ["Lead qualification", "Market analysis", "Property descriptions", "Client communication"],
-    savings: "10-20 hours/week"
+    savings: "Lead, listing and communication time"
   },
   {
     industry: "Financial Services", 
     useCases: ["Compliance monitoring", "Report automation", "Client communications", "Data analysis"],
-    savings: "20-40 hours/week"
+    savings: "Reporting, compliance and analysis time"
   },
   {
     industry: "Healthcare & Wellness",
     useCases: ["Appointment management", "Patient communications", "Documentation", "Compliance tracking"],
-    savings: "15-30 hours/week"
+    savings: "Booking, documentation and admin time"
   }
 ];
 
@@ -87,7 +88,7 @@ const processSteps = [
   {
     phase: "Discovery",
     duration: "1-2 weeks",
-    activities: ["Business process audit", "Technology stack review", "Opportunity identification", "ROI analysis"]
+    activities: ["Business process audit", "Technology stack review", "Opportunity identification", "Value analysis"]
   },
   {
     phase: "Strategy", 
@@ -106,9 +107,31 @@ const processSteps = [
   }
 ];
 
+const intentLinks = [
+  {
+    title: "Need OpenClaw-specific consultant guidance?",
+    body: "Use the OpenClaw consultant guide if you are comparing setup, implementation, audit, and support options before buying.",
+    href: "/guides/openclaw-consultant-uk",
+    label: "Read consultant guide",
+  },
+  {
+    title: "Already choosing a first workflow?",
+    body: "Use the implementation guide when the question is how to move from idea to a controlled pilot or live workflow.",
+    href: "/guides/openclaw-implementation-consultant-uk",
+    label: "Read implementation guide",
+  },
+];
+
 export default function AIAgentConsultingPage() {
   return (
     <>
+      <ServiceSeo
+        name="AI Agent Consulting UK"
+        description="AI agent consulting for UK businesses, covering workflow audits, implementation planning, OpenClaw architecture, and safe rollout support."
+        path="/services/ai-agent-consulting"
+        serviceType="AI agent consulting and OpenClaw implementation planning"
+      />
+
       {/* Hero Section */}
       <section className="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center grain">
         <div className="absolute top-20 right-[10%] w-[400px] h-[400px] bg-orange/5 rounded-full blur-[120px] glow-pulse" />
@@ -116,6 +139,7 @@ export default function AIAgentConsultingPage() {
 
         <div className="max-w-[1140px] mx-auto px-6 relative z-10 py-20">
           <div className="max-w-[720px]">
+            <ServiceBreadcrumb current="AI Agent Consulting UK" />
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
               <span className="text-white/60 text-sm font-medium">Strategic AI Agent Consulting</span>
@@ -128,7 +152,7 @@ export default function AIAgentConsultingPage() {
             </h1>
 
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
-              Strategic AI agent implementation that transforms how your business operates. From strategy development to full automation deployment.
+              Practical AI agent strategy for teams that need a clear first workflow, sensible guardrails, and a rollout plan they can actually operate.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -151,22 +175,38 @@ export default function AIAgentConsultingPage() {
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#fafbfc] to-transparent" />
       </section>
 
+      <section className="bg-white py-16">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            {intentLinks.map((link) => (
+              <div key={link.href} className="rounded-2xl border border-border bg-surface p-7">
+                <h2 className="font-heading text-2xl font-bold text-dark">{link.title}</h2>
+                <p className="mt-3 text-sm leading-relaxed text-muted-dark">{link.body}</p>
+                <a href={link.href} className="mt-5 inline-flex text-sm font-semibold text-orange hover:text-orange-hover">
+                  {link.label} →
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Problem Statement */}
       <section className="bg-light py-24">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="max-w-[800px] mx-auto text-center">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-6">
-              Most Businesses Are Missing the AI Revolution
+              Many Businesses Still Need a Clear Agent Use Case
             </h2>
             <p className="text-muted text-lg leading-relaxed mb-12">
-              While everyone talks about AI, most UK businesses are still doing manual work that could be automated. The gap between AI potential and actual implementation is huge — and it&apos;s costing you time, money, and competitive advantage.
+              Most teams have repetitive work that could be improved, but the hard part is choosing the right first workflow, protecting approvals, and turning interest in AI into something useful enough to measure.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">📊</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Manual Processes</h3>
-                <p className="text-muted text-sm">Repetitive tasks eating 20-40% of your team&apos;s time that could be automated.</p>
+                <p className="text-muted text-sm">Repetitive tasks taking attention away from sales, delivery, service quality, and higher-value decisions.</p>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">💡</div>
@@ -194,7 +234,7 @@ export default function AIAgentConsultingPage() {
               Strategic AI Agent Implementation
             </h2>
             <p className="text-muted text-lg max-w-[600px] mx-auto">
-              From strategy development to full deployment. We help UK businesses implement AI agents that deliver measurable results.
+              From strategy development to rollout planning. We help UK businesses design AI agent workflows that are scoped, reviewable, and tied to a practical business measure.
             </p>
           </div>
 
@@ -239,7 +279,7 @@ export default function AIAgentConsultingPage() {
               AI Agents Across Industries
             </h2>
             <p className="text-white/60 text-lg max-w-[600px] mx-auto">
-              Real automation opportunities we&apos;ve implemented for UK businesses across different sectors.
+              Common automation opportunities for UK businesses across different sectors.
             </p>
           </div>
 
@@ -275,7 +315,7 @@ export default function AIAgentConsultingPage() {
               From Strategy to Implementation
             </h2>
             <p className="text-muted text-lg max-w-[600px] mx-auto">
-              A structured approach that ensures your AI agent implementation delivers real business value.
+              A structured approach for turning an agent idea into scoped workflow evidence.
             </p>
           </div>
 
@@ -314,7 +354,7 @@ export default function AIAgentConsultingPage() {
                   How Blue Canvas Uses AI Agents
                 </h2>
                 <p className="text-muted leading-relaxed mb-6">
-                  We don&apos;t just consult on AI agents — we run our entire business through them. Blue Canvas AI is managed by a constellation of OpenClaw agents handling everything from SEO to client communication to financial monitoring.
+                  We use OpenClaw-style agent workflows in our own operations, so the advice is grounded in day-to-day automation practice rather than abstract AI strategy.
                 </p>
                 
                 <div className="space-y-4">
@@ -322,14 +362,14 @@ export default function AIAgentConsultingPage() {
                     <span className="text-orange mt-1 flex-shrink-0">▸</span>
                     <div>
                       <p className="font-semibold text-dark">Daily SEO Operations</p>
-                      <p className="text-muted text-sm">Automated audits, keyword tracking, content generation, competitor monitoring across 15+ client sites.</p>
+                      <p className="text-muted text-sm">Structured audits, keyword tracking, content planning, and competitor monitoring across live SEO projects.</p>
                     </div>
                   </div>
                   <div className="flex gap-3 items-start">
                     <span className="text-orange mt-1 flex-shrink-0">▸</span>
                     <div>
                       <p className="font-semibold text-dark">Lead Generation Pipelines</p>
-                      <p className="text-muted text-sm">Apollo integration, Google Maps scraping, lead enrichment, and outreach automation generating 50+ qualified leads weekly.</p>
+                      <p className="text-muted text-sm">Lead-source review, enrichment workflows, CRM handoff planning, and outreach preparation with human approval gates.</p>
                     </div>
                   </div>
                   <div className="flex gap-3 items-start">
@@ -343,31 +383,31 @@ export default function AIAgentConsultingPage() {
               </div>
               
               <div className="bg-navy text-white rounded-2xl p-8">
-                <h3 className="font-heading font-bold text-xl mb-6">Results</h3>
+                <h3 className="font-heading font-bold text-xl mb-6">Operating Signals</h3>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <div className="text-3xl font-bold text-orange mb-1">85%</div>
-                    <div className="text-white/60 text-sm">Tasks Automated</div>
+                    <div className="text-3xl font-bold text-orange mb-1">Daily</div>
+                    <div className="text-white/60 text-sm">Agent Workflows</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-orange mb-1">25+</div>
-                    <div className="text-white/60 text-sm">Custom Skills</div>
+                    <div className="text-3xl font-bold text-orange mb-1">Live</div>
+                    <div className="text-white/60 text-sm">SEO Systems</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-orange mb-1">24/7</div>
-                    <div className="text-white/60 text-sm">Operations</div>
+                    <div className="text-3xl font-bold text-orange mb-1">Review</div>
+                    <div className="text-white/60 text-sm">Approval Gates</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-orange mb-1">40h</div>
-                    <div className="text-white/60 text-sm">Weekly Savings</div>
+                    <div className="text-3xl font-bold text-orange mb-1">Logs</div>
+                    <div className="text-white/60 text-sm">Operational Evidence</div>
                   </div>
                 </div>
                 
                 <div className="border-t border-white/10 mt-6 pt-6">
                   <p className="text-white/70 text-sm italic">
-                    &quot;If our agents stop working, we feel it immediately. That&apos;s the level of integration you want in your business.&quot;
+                    &quot;The best agent workflows are boring in the right way: logged, reviewable, and useful every week.&quot;
                   </p>
-                  <p className="text-orange text-sm font-semibold mt-2">— Blue Canvas, Founder</p>
+                  <p className="text-orange text-sm font-semibold mt-2">— Blue Canvas AI</p>
                 </div>
               </div>
             </div>
@@ -395,23 +435,23 @@ export default function AIAgentConsultingPage() {
               },
               {
                 q: "What&apos;s the ROI of implementing AI agents?",
-                a: "Most businesses see 15-40 hours per week in time savings, which typically pays for the implementation within 2-4 months. Beyond time savings, you get 24/7 operations, consistent quality, and the ability to scale without hiring. We&apos;ll calculate specific ROI projections for your business."
+                a: "ROI depends on the workflow, volume, error rate, team cost, and approval requirements. The safest approach is to baseline the current process first, then model time saved, faster response, fewer missed handoffs, or cleaner records before implementation."
               },
               {
                 q: "Do I need technical knowledge to benefit from AI agents?",
-                a: "No technical knowledge required. Our consulting includes training your team to interact with agents through natural conversation. The agents handle all the technical complexity behind the scenes. We design systems that feel intuitive to use."
+                a: "You do not need to be deeply technical day to day, but the business still needs a clear owner, review rules, and a basic understanding of what the agent is allowed to do. Training and handover are part of the consulting work."
               },
               {
                 q: "Can AI agents integrate with our existing systems?",
-                a: "Yes, that&apos;s a core part of our consulting. We can integrate with virtually any system that has an API — CRM, email, accounting software, project management tools, databases, e-commerce platforms, and more. Integration planning is included in every engagement."
+                a: "Often, yes. The right answer depends on API access, authentication, permissions, data quality, and reliability requirements. Integration planning is included so the scope is clear before build work starts."
               },
               {
                 q: "What makes your AI agent consulting different?",
-                a: "We actually run our business through AI agents — this isn&apos;t theoretical. We&apos;ve built 25+ production skills and manage everything from SEO to client communication through OpenClaw. You get advice from someone who lives with these systems daily, not just someone who&apos;s read about them."
+                a: "We work from hands-on OpenClaw and agent workflow experience, including live SEO, research, content, and operational processes. The consulting focuses on practical workflows, approval gates, logs, and rollout discipline rather than generic AI enthusiasm."
               },
               {
                 q: "Is this suitable for small UK businesses?",
-                a: "If you&apos;re already using digital tools and have repetitive processes, absolutely. We work with businesses from 2-person consultancies to larger enterprises. The key is having clear processes that can be automated — business size matters less than process maturity."
+                a: "It can be, especially when the business already uses digital tools and has repetitive processes with enough volume to justify the setup. Process maturity matters more than company size."
               }
             ].map((faq, i) => (
               <details key={i} className="group border-b border-border">
@@ -432,10 +472,10 @@ export default function AIAgentConsultingPage() {
       <section className="bg-orange py-16">
         <div className="max-w-[900px] mx-auto px-6 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-white mb-4">
-            Ready to Transform Your Business with AI Agents?
+            Ready to Assess Where AI Agents Fit?
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-[600px] mx-auto">
-            Book a free strategy session to identify your highest-impact AI opportunities and get a clear implementation roadmap.
+            Book a strategy session to identify the best candidate workflows and get a clear implementation roadmap.
           </p>
           <a
             href="#contact"
@@ -473,7 +513,7 @@ export default function AIAgentConsultingPage() {
                 </div>
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">📊</span>
-                  <span>ROI projections for your specific use cases</span>
+                  <span>Value model for your specific use cases</span>
                 </div>
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">🗺️</span>

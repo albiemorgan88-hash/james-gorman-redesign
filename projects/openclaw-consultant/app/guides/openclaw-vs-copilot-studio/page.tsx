@@ -56,7 +56,7 @@ const sections = [
     id: "how-to-choose",
     title: "How to choose without wasting six months",
     html:
-      "<p>Start with the workflow, not the platform. Where does the work happen. Which systems are involved. Where do approvals sit. How much autonomy is safe. Which environment already owns access and governance. Those answers will usually push the decision in one direction quickly.</p><p>If the process is fundamentally Microsoft-centred and the business wants an assistant layer with familiar governance, Copilot Studio deserves serious attention. If the process needs wider orchestration, deeper flexibility, or implementation-led automation beyond one vendor ecosystem, OpenClaw is usually the stronger fit.</p><p>There is also no rule saying a business must choose only one. Plenty of sensible AI estates will use Microsoft for the Microsoft-shaped work and OpenClaw for the broader agentic workflows. The mistake is pretending they are interchangeable.</p><p>Useful follow-up reads include <a href=\"/guides/openclaw-vs-microsoft-copilot\">OpenClaw vs Microsoft Copilot</a>, <a href=\"/guides/openclaw-deployment-service-uk\">OpenClaw Deployment Service UK</a>, and <a href=\"/guides/openclaw-roi-for-business\">OpenClaw ROI for Business</a>.</p>",
+      "<p>Start with the workflow, not the platform. Where does the work happen. Which systems are involved. Where do approvals sit. How much autonomy is safe. Which environment already owns access and governance. Those answers will usually push the decision in one direction quickly.</p><p>If the process is fundamentally Microsoft-centred and the business wants an assistant layer with familiar governance, Copilot Studio deserves serious attention. If the process needs wider orchestration, deeper flexibility, or implementation-led automation beyond one vendor ecosystem, OpenClaw is usually the stronger fit.</p><p>There is also no rule saying a business must choose only one. Plenty of sensible AI estates will use Microsoft for the Microsoft-shaped work and OpenClaw for the broader agentic workflows. The mistake is pretending they are interchangeable.</p><p>Useful follow-up reads include the <a href=\"/openclaw\">OpenClaw consultant hub</a>, <a href=\"/guides/openclaw-vs-microsoft-copilot\">OpenClaw vs Microsoft Copilot</a>, <a href=\"/services/setup-configuration\">OpenClaw setup service</a>, and <a href=\"/guides/openclaw-deployment-service-uk\">OpenClaw Deployment Service UK</a>.</p>",
   },
 ];
 
@@ -94,15 +94,17 @@ const faqs = [
 ];
 
 const relatedGuides = [
+  { href: "/openclaw", title: "OpenClaw Consultant Hub" },
   { href: "/guides/openclaw-vs-microsoft-copilot", title: "OpenClaw vs Microsoft Copilot" },
+  { href: "/services/setup-configuration", title: "OpenClaw Setup Service" },
   { href: "/guides/openclaw-vs-langchain", title: "OpenClaw vs LangChain" },
   { href: "/guides/openclaw-deployment-service-uk", title: "OpenClaw Deployment Service UK" },
-  { href: "/guides/openclaw-roi-for-business", title: "OpenClaw ROI for Business" },
 ];
 
 export default function OpenClawVsCopilotStudioPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-vs-copilot-studio"
       badge="Comparison Guide 2026"
       title="OpenClaw vs"
       highlight="Copilot Studio"

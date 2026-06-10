@@ -1,748 +1,575 @@
 import type { Metadata } from "next";
+import { caseStudies } from "@/components/Editorial";
+import { discoveryCallUrl } from "@/components/booking";
 import ContactForm from "@/components/ContactForm";
-import QuickContactForm from "@/components/QuickContactForm";
+import SafeSetupLeadMagnet from "@/components/SafeSetupLeadMagnet";
 
 export const metadata: Metadata = {
-  title: "OpenClaw Consultant UK — Expert Setup, Custom Skills & AI Automation",
+  title: "OpenClaw Consultant UK | Setup, Skills & Agent Automation",
   description:
-    "Blue Canvas is the UK's leading OpenClaw consultancy. 25+ production skills, daily operation, expert setup and training. Get OpenClaw working for your business. Free consultation.",
+    "Founder-led OpenClaw consulting from Blue Canvas AI. Setup, custom skills, agent workflows, safe operating rules and ongoing support for UK and remote teams.",
   alternates: { canonical: "https://openclawconsultant.co.uk" },
-  openGraph: {
-    type: "website",
-    locale: "en_GB",
-    siteName: "OpenClaw Consultant UK",
-    title: "OpenClaw Consultant UK — Expert Setup, Custom Skills & AI Automation",
-    description: "Blue Canvas is the UK's leading OpenClaw consultancy. 25+ production skills, daily operation, expert setup and training. Get OpenClaw working for your business. Free consultation.",
-    url: "https://openclawconsultant.co.uk",
-    images: [
-      {
-        url: "https://openclawconsultant.co.uk/api/og",
-        width: 1200,
-        height: 630,
-        alt: "OpenClaw Consultant UK - Expert Setup, Custom Skills & AI Automation",
-      },
-    ],
-  },
-  twitter: { 
-    card: "summary_large_image",
-    title: "OpenClaw Consultant UK — Expert Setup, Custom Skills & AI Automation",
-    description: "Blue Canvas is the UK's leading OpenClaw consultancy. 25+ production skills, daily operation, expert setup and training. Free consultation.",
-    images: ["https://openclawconsultant.co.uk/api/og"],
-  },
 };
 
 const services = [
   {
-    icon: "⚙️",
+    number: "01",
     title: "Setup & Configuration",
-    desc: "Full OpenClaw installation, gateway configuration, model routing, and environment setup. Production-ready from day one.",
+    body: "Install, configure and document OpenClaw around your tools, access rules and real operating process.",
   },
   {
-    icon: "🧩",
+    number: "02",
     title: "Custom Skill Development",
-    desc: "Bespoke skills built for your business — SEO engines, lead scrapers, content pipelines, CRM integrations, whatever you need.",
+    body: "Build practical skills for repeatable jobs such as research, reporting, publishing checks and internal operations.",
   },
   {
-    icon: "🤖",
-    title: "Agent Orchestration",
-    desc: "Multi-agent workflows with subagent spawning, heartbeat monitoring, and cron scheduling. Your AI team, coordinated.",
+    number: "03",
+    title: "Agent Workflows",
+    body: "Map what each agent should do, what stays human, and where review or escalation has to happen.",
   },
   {
-    icon: "🔄",
+    number: "04",
     title: "Workflow Automation",
-    desc: "Connect OpenClaw to your existing tools — Webflow, GitHub, Google Ads, Apollo, Ahrefs, Slack, and more.",
+    body: "Connect OpenClaw to the systems already in the business when there is a clear job worth automating.",
   },
   {
-    icon: "📚",
+    number: "05",
     title: "Training & Handover",
-    desc: "Learn to operate and extend your OpenClaw setup. Skill authoring, SOUL.md tuning, memory management, the lot.",
+    body: "Give your team a working setup, operating notes and a plain-English handover so OpenClaw is useful after launch.",
   },
   {
-    icon: "🛡️",
+    number: "06",
     title: "Ongoing Support",
-    desc: "Monthly retainer for monitoring, skill updates, troubleshooting, and new capability development as your needs grow.",
+    body: "Review outputs, update skills, tune prompts, resolve errors and keep the system aligned with the way the business actually works.",
   },
 ];
 
 const useCases = [
   {
-    title: "SEO Automation",
-    desc: "Automated audits, keyword tracking, content generation, Webflow meta updates, and competitor analysis — all orchestrated by OpenClaw skills.",
     tag: "Marketing",
+    title: "SEO & Content Operations",
+    body: "Keyword checks, content briefs, page audits, internal link suggestions and publishing QA.",
   },
   {
-    title: "Lead Generation",
-    desc: "Scrape prospects from Apollo, Google Maps, and Companies House. Enrich, score, and build targeted outreach lists automatically.",
     tag: "Sales",
+    title: "Lead Research",
+    body: "Prospect research, account summaries, CRM-ready notes and draft outreach prepared for human approval.",
   },
   {
-    title: "Content Creation",
-    desc: "LinkedIn calendars, blog posts, client showcases, and social content — planned, drafted, and scheduled by your agent.",
-    tag: "Content",
-  },
-  {
-    title: "Client Management",
-    desc: "Automated project tracking, report generation, site health monitoring, and proactive client communication.",
     tag: "Operations",
+    title: "Client Reporting",
+    body: "Weekly status packs, site health notes, campaign summaries and follow-up task lists.",
   },
   {
-    title: "Development Workflows",
-    desc: "GitHub issue triage, PR reviews, code generation, and automated deployments through coding agent subagents.",
     tag: "Engineering",
+    title: "Deployment Checks",
+    body: "Build logs, Vercel checks, GitHub issue triage and release notes for small technical teams.",
   },
   {
-    title: "Financial Monitoring",
-    desc: "Crypto wallet management, DeFi position tracking, domain opportunity scouting, and revenue dashboards.",
-    tag: "Finance",
+    tag: "Support",
+    title: "Knowledge Agents",
+    body: "Answers from internal docs, policies, ticket history and saved decisions with source links.",
+  },
+  {
+    tag: "Governance",
+    title: "Risk & Review Loops",
+    body: "Approval gates, sensitive-action rules, audit notes and safe escalation paths for agent work.",
   },
 ];
 
-const credentials = [
-  { value: "25+", label: "Custom Skills Built" },
-  { value: "Daily", label: "Production Use" },
-  { value: "6+", label: "Service Lines" },
-  { value: "100%", label: "AI-Powered Ops" },
+const proofPoints = [
+  { value: "5.0", label: "Blue Canvas Google rating" },
+  { value: "Founder-led", label: "Hands-on delivery" },
+  { value: "OpenClaw", label: "Focused setup support" },
+  { value: "2 case studies", label: "Published workflow examples" },
 ];
 
-const featuredBuyerGuides = [
+const openClawBasics = [
   {
-    href: "/guides/openclaw-consultant-uk",
-    tag: "Consulting",
-    tagClass: "bg-blue/10 text-blue",
-    readTime: "7 min read",
-    title: "OpenClaw Consultant UK",
-    description: "What good OpenClaw consulting should include, when outside help is worth it, and how to avoid paying for vague AI theatre.",
+    title: "Keeps useful context",
+    body: "OpenClaw can carry operating notes, files and decisions forward so each session does not start from scratch.",
   },
   {
-    href: "/guides/openclaw-consultant-cost-uk",
-    tag: "Pricing",
-    tagClass: "bg-orange/10 text-orange",
-    readTime: "6 min read",
-    title: "OpenClaw Consultant Cost UK",
-    description: "A straight view of UK OpenClaw consultant pricing, from audits and pilots through implementation and managed support.",
+    title: "Turns repeat work into skills",
+    body: "Common jobs can become reusable actions that follow the same steps each time.",
   },
   {
-    href: "/guides/openclaw-setup-service-cost-uk",
-    tag: "Setup Pricing",
-    tagClass: "bg-sky-500/10 text-sky-600",
-    readTime: "6 min read",
-    title: "OpenClaw Setup Service Cost UK",
-    description: "What a proper OpenClaw setup project should cost, what should be included, and how to avoid paying for a half-finished install.",
+    title: "Runs routine checks",
+    body: "OpenClaw can watch for the right signals and prepare the next step for human review.",
+  },
+];
+
+const typicalFit = [
+  "Founder-led businesses with a real workflow bottleneck",
+  "Small teams moving from AI curiosity to operating systems",
+  "Enterprise teams needing access, audit, and rollout controls",
+  "Buyers who want direct delivery rather than AI theatre",
+];
+
+const testimonials = [
+  {
+    quote: "Blue Canvas AI helped us integrate AI tools that streamlined our workflows, improved campaign performance, and saved us hours every week.",
+    name: "Stuart Waters",
+    role: "Blue Canvas AI review",
   },
   {
-    href: "/guides/openclaw-proof-of-concept-cost-uk",
-    tag: "Pilot Pricing",
-    tagClass: "bg-green-500/10 text-green-600",
-    readTime: "6 min read",
-    title: "OpenClaw Proof of Concept Cost UK",
-    description: "What a focused OpenClaw pilot should cost, what the budget should buy, and how to avoid funding a vague experiment.",
+    quote: "Their knowledge of process optimisation and ability to identify opportunities for automation was first class.",
+    name: "Kyle Martin",
+    role: "Blue Canvas AI review",
   },
   {
-    href: "/guides/openclaw-custom-skills-cost-uk",
-    tag: "Build Pricing",
-    tagClass: "bg-purple-500/10 text-purple-600",
-    readTime: "7 min read",
-    title: "OpenClaw Custom Skills Cost UK",
-    description: "What bespoke OpenClaw skill development usually costs and how buyers avoid paying for the wrong custom build.",
+    quote: "Blue Canvas's AI expertise gave us the confidence and insight to expand our business successfully.",
+    name: "Gavan Wall",
+    role: "CEO, The Wall Group",
+  },
+];
+
+const pricing = [
+  {
+    title: "Discovery",
+    price: "Scoped call",
+    note: "30 minutes",
+    items: ["Understand your workflow", "Identify good-fit agent tasks", "Flag risks and access needs", "Recommend the next step"],
+    cta: "Start here",
+    featured: false,
   },
   {
-    href: "/guides/openclaw-managed-service-cost-uk",
-    tag: "Support Pricing",
-    tagClass: "bg-amber-500/10 text-amber-600",
-    readTime: "6 min read",
-    title: "OpenClaw Managed Service Cost UK",
-    description: "What monthly OpenClaw support usually costs, what a retainer should include, and when the spend is commercially justified.",
+    title: "Setup Sprint",
+    price: "From £750",
+    note: "Scoped implementation",
+    items: ["OpenClaw setup plan", "Environment and model configuration", "Initial skills or workflows", "Handover notes and operating rules"],
+    cta: "Scope setup",
+    featured: true,
+  },
+  {
+    title: "Support",
+    price: "From £250/mo",
+    note: "Ongoing improvement",
+    items: ["Skill updates", "Troubleshooting", "Workflow reviews", "Monthly planning and recommendations"],
+    cta: "Discuss support",
+    featured: false,
+  },
+];
+
+const guideLinks = [
+  {
+    title: "AI consultancy UK",
+    href: "/guides/ai-consultancy-uk",
+    body: "How to buy practical AI help without drifting into vague transformation work.",
+  },
+  {
+    title: "AI automation agency UK",
+    href: "/guides/ai-automation-agency-uk",
+    body: "What a useful automation partner should deliver before tools or retainers expand.",
+  },
+  {
+    title: "AI implementation services",
+    href: "/guides/ai-implementation-services-uk",
+    body: "A buyer guide for moving from idea to pilot, live workflow and ongoing support.",
+  },
+  {
+    title: "Safe setup checklist",
+    href: "/guides/openclaw-safe-setup-checklist",
+    body: "A practical permission matrix for agent access, approval gates, logs and rollback rules.",
+  },
+  {
+    title: "OpenClaw consultant hub",
+    href: "/openclaw",
+    body: "The central guide to OpenClaw setup, consulting, implementation, skills and support.",
+  },
+  {
+    title: "OpenClaw setup service",
+    href: "/services/setup-configuration",
+    body: "A commercial setup path for teams that want a scoped implementation plan.",
+  },
+];
+
+const faqs = [
+  {
+    question: "Do I need technical knowledge to use OpenClaw?",
+    answer:
+      "Not necessarily. The setup work can include installation, configuration, handover notes and training so your team knows how to operate it safely.",
+  },
+  {
+    question: "How long does setup take?",
+    answer:
+      "A contained setup can often be scoped into a short sprint. More complex agent teams, integrations or governance requirements need a longer plan.",
+  },
+  {
+    question: "Can you help if OpenClaw is already installed?",
+    answer:
+      "Yes. The work can start with an audit of the current setup, then move into fixes, custom skills, operating rules or training.",
+  },
+  {
+    question: "What makes this different from a normal chatbot?",
+    answer:
+      "The focus is on persistent workflows, custom skills, scheduled checks, memory, files, approvals and integrations rather than one-off chat responses.",
   },
 ];
 
 export default function Home() {
   return (
-    <>
-      {/* ============ HERO ============ */}
-      <section className="hero-gradient relative overflow-hidden min-h-[90vh] flex items-center grain">
-        {/* Decorative elements */}
-        <div className="absolute top-20 right-[10%] w-[500px] h-[500px] bg-orange/5 rounded-full blur-[120px] glow-pulse" />
-        <div className="absolute bottom-20 left-[5%] w-[400px] h-[400px] bg-blue/10 rounded-full blur-[100px] glow-pulse" style={{ animationDelay: "3s" }} />
-
-        {/* Grid pattern overlay */}
+    <div className="classic-home">
+      <section className="hero-gradient grain relative flex min-h-[90vh] items-center overflow-hidden">
+        <div className="absolute right-[10%] top-20 h-[500px] w-[500px] rounded-full bg-orange/5 blur-[120px] glow-pulse" />
+        <div className="absolute bottom-20 left-[5%] h-[400px] w-[400px] rounded-full bg-blue/10 blur-[100px] glow-pulse" style={{ animationDelay: "3s" }} />
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
-            backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
 
-        <div className="max-w-[1140px] mx-auto px-6 relative z-10 py-32">
+        <div className="relative z-10 mx-auto max-w-[1140px] px-6 py-32">
           <div className="max-w-[720px]">
-            <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
-              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-              <span className="text-white/60 text-sm font-medium">UK&apos;s First Dedicated OpenClaw Consultant</span>
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5">
+              <span className="h-2 w-2 rounded-full bg-green-400" />
+              <span className="text-sm font-medium text-white/60">Dedicated OpenClaw setup and consulting</span>
             </div>
 
-            <h1 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] lg:text-[4rem] font-extrabold text-white mb-6 leading-[1.05] tracking-tight">
-              Get OpenClaw
+            <h1 className="mb-6 text-4xl font-black leading-[1.05] tracking-normal text-white sm:text-5xl md:text-[3.5rem] lg:text-[4rem]">
+              OpenClaw,
               <br />
-              <span className="text-orange">Working For</span>
+              <span className="text-orange">Set Up Properly</span>
               <br />
-              Your Business
+              and Safe to Run.
+              <span className="block text-white">Founder-Led.</span>
             </h1>
 
-            <p className="text-white/60 text-lg md:text-xl max-w-[560px] mb-10 leading-relaxed">
-              Blue Canvas runs OpenClaw in production every single day — managing entire businesses through it. Let us set it up for yours.
+            <p className="mb-10 max-w-[580px] text-lg leading-relaxed text-white/60 md:text-xl">
+              Founder-led setup, custom skills and ongoing support that gets OpenClaw doing real work, with guardrails you control.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="#contact"
-                className="inline-flex w-full max-w-full items-center justify-center bg-orange px-8 py-4 text-base font-semibold text-white rounded-xl hover:bg-orange-hover transition-all hover:-translate-y-0.5 shadow-glow-orange sm:w-auto"
-              >
-                Book Free Consultation
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a href={discoveryCallUrl} target="_blank" rel="noopener" className="inline-flex items-center justify-center rounded-btn bg-orange px-8 py-4 text-base font-semibold text-white shadow-glow-orange transition hover:-translate-y-0.5 hover:bg-orange-hover">
+                Book a discovery call
               </a>
-              <a
-                href="#services"
-                className="inline-flex w-full max-w-full items-center justify-center border border-white/10 bg-white/5 px-8 py-4 text-base font-semibold text-white rounded-xl hover:bg-white/10 transition-all sm:w-auto"
-              >
-                See Services ↓
+              <a href="#services" className="inline-flex items-center justify-center text-sm font-semibold text-white/65 transition hover:text-white">
+                View services
               </a>
             </div>
+            <p className="mt-6 max-w-[560px] text-sm leading-relaxed text-white/45">
+              Discovery calls are 30 minutes, no pitch deck. If the work is not a fit, you get a referral.
+            </p>
           </div>
         </div>
 
-        {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-cream to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#fafbfc] to-transparent" />
       </section>
 
-      {/* ============ PROMINENT CONTACT FORM ============ */}
-      <section className="bg-gradient-to-br from-orange/5 via-cream to-blue/5 py-24 border-b border-border-light relative overflow-hidden">
-        {/* Decorative background elements */}
-        <div className="absolute top-0 left-[10%] w-[300px] h-[300px] bg-orange/10 rounded-full blur-[100px]" />
-        <div className="absolute bottom-0 right-[15%] w-[250px] h-[250px] bg-blue/10 rounded-full blur-[80px]" />
-        
-        <div className="max-w-[1100px] mx-auto px-6 relative z-10">
-          <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 bg-orange text-white rounded-full px-4 py-2 mb-4 shadow-lg">
-              <span className="w-2 h-2 bg-white rounded-full animate-pulse" />
-              <span className="text-sm font-semibold">Usually Respond Within Hours</span>
-            </div>
-            <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-dark mb-4">
-              Skip the Research Phase.
-              <br />
-              <span className="text-orange">Let&apos;s Talk OpenClaw.</span>
-            </h2>
-            <p className="text-muted-dark text-lg max-w-[600px] mx-auto leading-relaxed">
-              Get straight answers from someone who runs OpenClaw in production daily. No sales pressure — just honest advice about whether it&apos;s right for your business.
+      <section className="bg-light py-24">
+        <div className="mx-auto max-w-[1140px] px-6">
+          <div className="mx-auto max-w-[760px] text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-orange">What Is OpenClaw?</p>
+            <h2 className="mb-6 text-3xl font-black tracking-normal text-dark md:text-4xl">Your Business, Powered by AI Agents</h2>
+            <p className="mb-8 text-lg leading-relaxed text-muted">
+              OpenClaw gives AI agents a place to work from: files, tools, repeatable tasks and rules for when a person needs to check the output. The value comes from fitting it to a real business process, not just installing another tool.
             </p>
-          </div>
-
-          <div className="max-w-[700px] mx-auto">
-            <div className="bg-white rounded-2xl p-8 md:p-12 border border-orange/15 shadow-soft-lg relative hover:shadow-card-hover hover:border-orange/25 transition-all duration-200">
-              {/* Accent decoration */}
-              <div className="absolute -top-3 left-8 bg-orange text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg animate-pulse">
-                ✨ Free Consultation
-              </div>
-              
-              <div className="text-center mb-8">
-                <h3 className="font-heading font-bold text-xl text-dark mb-2">Get In Touch</h3>
-                <p className="text-muted text-sm">Tell us about your business and we&apos;ll show you exactly how OpenClaw can help</p>
-              </div>
-              
-              <QuickContactForm />
-              
-              {/* Trust indicators */}
-              <div className="flex flex-wrap justify-center gap-6 mt-8 pt-6 border-t border-border-light text-xs text-muted">
-                <div className="flex items-center gap-2">
-                  <span className="text-green-500">✓</span>
-                  <span>Free consultation</span>
+            <div className="grid grid-cols-1 gap-6 text-left sm:grid-cols-3">
+              {openClawBasics.map((item, index) => (
+                <div key={item.title} className="rounded-box bg-white p-6 shadow-card">
+                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-orange/10 text-sm font-black text-orange">{index + 1}</div>
+                  <h3 className="mb-2 text-lg font-black tracking-normal text-dark">{item.title}</h3>
+                  <p className="text-sm leading-relaxed text-muted">{item.body}</p>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-green-500">✓</span>
-                  <span>No sales pressure</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-green-500">✓</span>
-                  <span>Production expertise</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-green-500">✓</span>
-                  <span>UK-based team</span>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* ============ WHAT IS OPENCLAW ============ */}
-      <section className="bg-cream py-28">
-        <div className="max-w-[1140px] mx-auto px-6">
-          <div className="max-w-[740px] mx-auto text-center">
-            <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
-              What Is OpenClaw?
-            </p>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-6">
-              Your Business, Run by AI Agents
-            </h2>
-            <p className="text-muted text-lg leading-relaxed mb-8">
-              OpenClaw is an open-source AI operating system that lets you deploy persistent AI agents — complete with memory, custom skills, scheduling, and multi-agent orchestration. Think of it as giving your business an AI team that works 24/7, integrates with your tools, and gets smarter over time.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
-              <div className="bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200">
-                <div className="text-2xl mb-3">🧠</div>
-                <h3 className="font-heading font-bold text-dark mb-1.5">Persistent Memory</h3>
-                <p className="text-muted text-sm leading-relaxed">Agents remember context across sessions. No starting from scratch.</p>
-              </div>
-              <div className="bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200">
-                <div className="text-2xl mb-3">🔧</div>
-                <h3 className="font-heading font-bold text-dark mb-1.5">Custom Skills</h3>
-                <p className="text-muted text-sm leading-relaxed">Build skills for anything — SEO, lead gen, deployments, monitoring.</p>
-              </div>
-              <div className="bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200">
-                <div className="text-2xl mb-3">⚡</div>
-                <h3 className="font-heading font-bold text-dark mb-1.5">Always Running</h3>
-                <p className="text-muted text-sm leading-relaxed">Heartbeats, cron jobs, and subagents working while you sleep.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ============ SERVICES ============ */}
-      <section id="services" className="bg-white py-28">
-        <div className="max-w-[1140px] mx-auto px-6">
-          <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
-            Services
+      <section id="services" className="bg-white py-24">
+        <div className="mx-auto max-w-[1140px] px-6">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-orange">Services</p>
+          <h2 className="mb-4 text-3xl font-black tracking-normal text-dark md:text-4xl">Everything You Need to Get Running</h2>
+          <p className="mb-14 max-w-[600px] text-lg leading-relaxed text-muted">
+            From first install to managed workflows. Hands-on setup, clear documentation and support for the places where agent work can actually help.
           </p>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
-            Everything You Need to Get Running
-          </h2>
-          <p className="text-muted text-lg max-w-[560px] mb-14">
-            From first install to production-grade automation. Hands-on expertise, not theoretical advice.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((s) => (
-              <div
-                key={s.title}
-                className="bg-cream rounded-2xl p-8 border border-border-light card-lift shadow-card"
-              >
-                <div className="text-3xl mb-4">{s.icon}</div>
-                <h3 className="font-heading font-bold text-dark text-lg mb-2">{s.title}</h3>
-                <p className="text-muted text-sm leading-relaxed">{s.desc}</p>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {services.map((service) => (
+              <div key={service.title} className="card-lift rounded-box border border-border bg-surface p-8">
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-orange/10 text-sm font-black text-orange">{service.number}</div>
+                <h3 className="mb-2 text-lg font-black tracking-normal text-dark">{service.title}</h3>
+                <p className="text-sm leading-relaxed text-muted">{service.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ============ LATEST GUIDES ============ */}
-      <section className="py-28 bg-surface">
-        <div className="max-w-[1140px] mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
-              Buyer Guides
-            </p>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-6">
-              Start With The Commercial Stuff
-            </h2>
-            <p className="text-muted-dark text-lg max-w-[680px] mx-auto">
-              These are the pages serious buyers usually read first, scope, pricing, pilots, migration, custom skills, and what good OpenClaw help should actually look like.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {featuredBuyerGuides.map((guide) => (
-              <a
-                key={guide.href}
-                href={guide.href}
-                className="group bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 border border-border-light"
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${guide.tagClass}`}>
-                    {guide.tag}
-                  </span>
-                  <span className="text-muted text-xs">{guide.readTime}</span>
-                </div>
-                <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-orange transition-colors">
-                  {guide.title}
-                </h3>
-                <p className="text-muted-dark text-sm mb-4 leading-relaxed">{guide.description}</p>
-                <div className="flex items-center text-orange font-semibold text-sm">
-                  Read Guide →
-                </div>
-              </a>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <a
-              href="/guides"
-              className="inline-flex items-center justify-center bg-navy text-white px-6 py-3.5 rounded-xl font-semibold text-sm hover:bg-navy/90 hover:-translate-y-0.5 transition-all"
-            >
-              View All Guides
-            </a>
-          </div>
+      <section className="bg-light py-20">
+        <div className="mx-auto max-w-[1140px] px-6">
+          <SafeSetupLeadMagnet />
         </div>
       </section>
-      {/* ============ WHY BLUE CANVAS ============ */}
-      <section id="why-blue-canvas" className="bg-navy text-white py-24 relative overflow-hidden grain">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue/5 rounded-full blur-[150px]" />
 
-        <div className="max-w-[1140px] mx-auto px-6 relative z-10">
-          <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
-            Why Blue Canvas
-          </p>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-            AI That Actually Works. Not Slides About It.
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <section id="why-blue-canvas" className="grain relative overflow-hidden bg-navy py-24 text-white">
+        <div className="absolute right-0 top-0 h-[600px] w-[600px] rounded-full bg-blue/5 blur-[150px]" />
+        <div className="relative z-10 mx-auto max-w-[1140px] px-6">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-orange">Why Blue Canvas</p>
+          <h2 className="mb-6 text-3xl font-black tracking-normal md:text-4xl">AI That Actually Works. Not Slides About It.</h2>
+          <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-2">
             <div>
-              <p className="text-white/60 text-lg leading-relaxed mb-6">
-                <a href="https://bluecanvas.ai" target="_blank" rel="noopener" className="text-orange hover:text-orange-hover transition-colors">Blue Canvas AI</a> is a consultancy based in Derry, Northern Ireland that helps SMEs adopt AI that actually delivers. We don&apos;t pitch theory — we run OpenClaw in production every single day, managing SEO campaigns, generating leads, deploying code, and orchestrating AI agents across real business operations.
+              <p className="mb-6 text-lg leading-relaxed text-white/60">
+                OpenClaw Consultant is led by Phil Patterson, founder of <a href="https://bluecanvas.ai" target="_blank" rel="noopener" className="text-orange transition hover:text-orange-hover">Blue Canvas AI</a>, a hands-on AI consultancy based in Derry, Northern Ireland. The work is practical: set up the system, connect the tools, define the rules and make sure the agent workflow has a useful job to do.
               </p>
-              <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Blue Canvas is hands-on and founder-led — not a faceless agency. With 25+ custom skills built and running in production, we&apos;ve already solved the problems most businesses are just starting to think about.
+              <p className="mb-8 text-lg leading-relaxed text-white/60">
+                The focus is founder-led delivery for small teams: enough structure to be safe, enough speed to be useful, and enough documentation that you are not left with a mystery box.
               </p>
               <ul className="space-y-4">
-                {[
-                  "SEO automation — audits, tracking, content, competitor analysis",
-                  "Lead generation — Apollo, Google Maps, enrichment pipelines",
-                  "Google Ads management — campaigns, bidding, reporting",
-                  "Website builds & deployment — Webflow, Next.js, Vercel",
-                  "Content engines — LinkedIn, blogs, client showcases",
-                  "Crypto & DeFi — wallet management, position monitoring",
-                ].map((item) => (
-                  <li key={item} className="flex gap-3 items-start text-white/70 text-sm">
-                    <span className="text-orange mt-0.5 flex-shrink-0">▸</span>
+                {["SEO and content workflows", "Lead research and account summaries", "Deployment and site health checks", "Knowledge agents for internal docs", "Review gates for sensitive actions", "Training and handover notes"].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-white/70">
+                    <span className="mt-0.5 text-orange">▸</span>
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
-
             <div>
-              {/* Stats grid */}
               <div className="grid grid-cols-2 gap-5">
-                {credentials.map((c) => (
-                  <div
-                    key={c.label}
-                    className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 text-center"
-                  >
-                    <div className="font-heading font-extrabold text-3xl md:text-4xl text-orange mb-1">
-                      {c.value}
-                    </div>
-                    <div className="text-white/40 text-sm font-medium uppercase tracking-wider">
-                      {c.label}
-                    </div>
+                {proofPoints.map((point) => (
+                  <div key={point.label} className="rounded-box border border-white/[0.06] bg-white/[0.03] p-6 text-center">
+                    <div className="mb-1 text-2xl font-black tracking-normal text-orange md:text-3xl">{point.value}</div>
+                    <div className="text-sm font-medium uppercase tracking-[0.12em] text-white/40">{point.label}</div>
                   </div>
                 ))}
               </div>
-
-              {/* Trust signal */}
-              <div className="mt-6 bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6">
-                <p className="text-white/50 text-sm leading-relaxed italic">
-                  &ldquo;We don&apos;t just consult on OpenClaw — we live inside it. Our agent reads emails, manages calendars, deploys websites, runs SEO, and generates leads. If it breaks, we feel it immediately. That&apos;s the kind of knowledge you get when you work with Blue Canvas.&rdquo;
+              <div className="mt-6 rounded-box border border-white/[0.06] bg-white/[0.03] p-6">
+                <div className="mb-5 flex items-center gap-4">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-blue to-orange text-sm font-black text-white shadow-glow">PP</div>
+                  <div>
+                    <p className="font-semibold text-white">Phil Patterson</p>
+                    <p className="text-xs text-white/45">Founder of Blue Canvas AI</p>
+                  </div>
+                </div>
+                <p className="text-sm italic leading-relaxed text-white/50">
+                  Good OpenClaw work is not about claiming an agent can do everything. It is about choosing the right jobs, setting boundaries and making the workflow visible enough to trust.
                 </p>
-                <p className="text-orange text-sm font-semibold mt-3">— Blue Canvas</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ============ USE CASES ============ */}
-      <section id="use-cases" className="bg-cream py-28">
-        <div className="max-w-[1140px] mx-auto px-6">
-          <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
-            Use Cases
-          </p>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
-            What Can OpenClaw Do for You?
-          </h2>
-          <p className="text-muted text-lg max-w-[560px] mb-14">
-            Real automations Phil runs in production. Not demos — actual daily workflows.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {useCases.map((uc) => (
-              <div
-                key={uc.title}
-                className="bg-white rounded-2xl p-8 border border-border-light card-lift group shadow-card"
-              >
-                <span className="inline-block bg-blue/5 text-blue text-xs font-semibold px-3 py-1 rounded-full mb-4">
-                  {uc.tag}
-                </span>
-                <h3 className="font-heading font-bold text-dark text-lg mb-2 group-hover:text-blue transition-colors">
-                  {uc.title}
-                </h3>
-                <p className="text-muted text-sm leading-relaxed">{uc.desc}</p>
+      <section id="case-studies" className="bg-white py-24">
+        <div className="mx-auto max-w-[1140px] px-6">
+          <div className="mb-14 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-orange">Case Studies</p>
+              <h2 className="max-w-[680px] text-3xl font-black tracking-normal text-dark md:text-4xl">Proof from real OpenClaw-style workflows</h2>
+            </div>
+            <a href="/case-studies" className="text-sm font-semibold text-orange transition hover:text-orange-hover">
+              View all case studies
+            </a>
+          </div>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            {caseStudies.map((study) => (
+              <a key={study.href} href={study.href} className="card-lift block rounded-box border border-border bg-surface p-8">
+                <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+                  <span className="rounded-full bg-blue/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-blue">{study.sector}</span>
+                  <span className="text-sm font-black text-orange">{study.metric}</span>
+                </div>
+                <h3 className="mb-3 text-2xl font-black tracking-normal text-dark">{study.title}</h3>
+                <p className="mb-6 text-sm leading-relaxed text-muted">{study.body}</p>
+                <span className="text-sm font-semibold text-orange">Read full story</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="typical-fit" className="bg-light py-24">
+        <div className="mx-auto grid max-w-[1140px] grid-cols-1 gap-12 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-orange">Typical Fit</p>
+            <h2 className="mb-5 text-3xl font-black tracking-normal text-dark md:text-4xl">The best calls start with a real bottleneck.</h2>
+            <p className="text-lg leading-relaxed text-muted">
+              OpenClaw works best when there is a repeatable job, a clear owner, and enough risk awareness to decide what the agent can do safely.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {typicalFit.map((item) => (
+              <div key={item} className="rounded-box border border-border bg-white p-6 shadow-card">
+                <span className="mb-4 flex h-9 w-9 items-center justify-center rounded-lg bg-orange/10 text-orange">✓</span>
+                <p className="text-sm font-semibold leading-relaxed text-dark">{item}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ============ PRICING ============ */}
-      <section id="pricing" className="bg-white py-28">
-        <div className="max-w-[1140px] mx-auto px-6">
-          <div className="text-center mb-14">
-            <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
-              Pricing
-            </p>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
-              Simple, Transparent Pricing
-            </h2>
-            <p className="text-muted text-lg max-w-[500px] mx-auto">
-              Start with a free consultation. No pressure, no hidden costs.
+      <section id="testimonials" className="bg-navy py-24 text-white">
+        <div className="mx-auto max-w-[1140px] px-6">
+          <div className="mb-14 max-w-[700px]">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-orange">Testimonials</p>
+            <h2 className="mb-5 text-3xl font-black tracking-normal md:text-4xl">What Blue Canvas clients say.</h2>
+            <p className="text-lg leading-relaxed text-white/60">
+              Practical delivery, clear recommendations and AI workflows that save real operating time.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[960px] mx-auto">
-            {/* Free Consultation */}
-            <div className="bg-cream rounded-2xl p-8 border border-border-light card-lift shadow-card">
-              <div className="text-sm font-semibold text-muted uppercase tracking-wider mb-6">
-                Discovery
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            {testimonials.map((testimonial) => (
+              <div key={testimonial.quote} className="rounded-box border border-white/[0.06] bg-white/[0.03] p-7">
+                <p className="mb-8 text-sm leading-relaxed text-white/65">&quot;{testimonial.quote}&quot;</p>
+                <p className="font-semibold text-white">{testimonial.name}</p>
+                <p className="mt-1 text-xs uppercase tracking-[0.12em] text-white/35">{testimonial.role}</p>
               </div>
-              <div className="font-heading font-extrabold text-4xl text-dark mb-1">Free</div>
-              <p className="text-muted text-sm mb-8">30-minute consultation call</p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "Assess your current setup",
-                  "Identify automation opportunities",
-                  "Honest recommendation",
-                  "No obligation whatsoever",
-                ].map((i) => (
-                  <li key={i} className="flex gap-2 items-start text-sm text-muted-dark">
-                    <span className="text-green-500 flex-shrink-0">✓</span>
-                    {i}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#contact"
-                className="block text-center bg-dark text-white px-6 py-3.5 rounded-xl font-semibold text-sm hover:bg-dark/90 hover:-translate-y-0.5 transition-all"
-              >
-                Get Started
-              </a>
-            </div>
-
-            {/* Setup */}
-            <div className="bg-navy text-white rounded-2xl p-8 border-2 border-orange/30 card-lift relative shadow-soft-lg">
-              <div className="absolute -top-3 left-6 bg-orange text-white text-xs font-bold px-3 py-1 rounded-full">
-                Most Popular
-              </div>
-              <div className="text-sm font-semibold text-white/50 uppercase tracking-wider mb-6">
-                Setup
-              </div>
-              <div className="font-heading font-extrabold text-4xl mb-1">
-                From <span className="text-orange">£750</span>
-              </div>
-              <p className="text-white/50 text-sm mb-8">One-time setup fee</p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "Full OpenClaw installation",
-                  "Gateway & model configuration",
-                  "Up to 3 custom skills",
-                  "SOUL.md & memory setup",
-                  "Integration with your tools",
-                  "2 weeks post-setup support",
-                ].map((i) => (
-                  <li key={i} className="flex gap-2 items-start text-sm text-white/70">
-                    <span className="text-orange flex-shrink-0">✓</span>
-                    {i}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#contact"
-                className="block text-center bg-orange text-white px-6 py-3.5 rounded-xl font-semibold text-sm hover:bg-orange-hover hover:-translate-y-0.5 transition-all"
-              >
-                Book Consultation
-              </a>
-            </div>
-
-            {/* Monthly Support */}
-            <div className="bg-cream rounded-2xl p-8 border border-border-light card-lift shadow-card">
-              <div className="text-sm font-semibold text-muted uppercase tracking-wider mb-6">
-                Monthly Support
-              </div>
-              <div className="font-heading font-extrabold text-4xl text-dark mb-1">
-                From <span className="text-orange">£250</span>
-              </div>
-              <p className="text-muted text-sm mb-8">Per month, cancel anytime</p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "Ongoing skill development",
-                  "Performance monitoring",
-                  "Troubleshooting & updates",
-                  "Priority support",
-                  "Monthly review call",
-                ].map((i) => (
-                  <li key={i} className="flex gap-2 items-start text-sm text-muted-dark">
-                    <span className="text-green-500 flex-shrink-0">✓</span>
-                    {i}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#contact"
-                className="block text-center bg-dark text-white px-6 py-3.5 rounded-xl font-semibold text-sm hover:bg-dark/90 hover:-translate-y-0.5 transition-all"
-              >
-                Get in Touch
-              </a>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ============ FAQ ============ */}
-      <section className="bg-surface py-28">
-        <div className="max-w-[740px] mx-auto px-6">
-          <div className="text-center mb-14">
-            <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
-              FAQ
-            </p>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark">
-              Common Questions
-            </h2>
+      <section id="use-cases" className="bg-light py-24">
+        <div className="mx-auto max-w-[1140px] px-6">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-orange">Use Cases</p>
+          <h2 className="mb-4 text-3xl font-black tracking-normal text-dark md:text-4xl">What Can OpenClaw Do for You?</h2>
+          <p className="mb-14 max-w-[620px] text-lg leading-relaxed text-muted">
+            The best use cases are repeatable, reviewable and tied to a workflow the business already understands.
+          </p>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {useCases.map((useCase) => (
+              <div key={useCase.title} className="card-lift group rounded-box border border-border bg-white p-8">
+                <span className="mb-4 inline-block rounded-full bg-blue/5 px-3 py-1 text-xs font-semibold text-blue">{useCase.tag}</span>
+                <h3 className="mb-2 text-lg font-black tracking-normal text-dark transition-colors group-hover:text-blue">{useCase.title}</h3>
+                <p className="text-sm leading-relaxed text-muted">{useCase.body}</p>
+              </div>
+            ))}
           </div>
-          <div className="space-y-0">
-            {[
-              {
-                q: "Do I need technical knowledge to use OpenClaw?",
-                a: "Not at all. Phil handles the entire setup and configuration. You interact with your agent through natural conversation — Telegram, Slack, WhatsApp, or wherever you prefer. Training is included so your team feels comfortable.",
-              },
-              {
-                q: "How long does setup take?",
-                a: "A standard setup with 2-3 custom skills takes about a week. More complex multi-agent systems with extensive integrations may take 2-3 weeks. Either way, you&apos;ll have a working system fast.",
-              },
-              {
-                q: "Is my data safe?",
-                a: "OpenClaw runs on your own infrastructure — your data never leaves your control. Phil applies security hardening to every deployment, including proper access controls and environment isolation.",
-              },
-              {
-                q: "What makes this different from ChatGPT or other AI tools?",
-                a: "ChatGPT is a conversation tool. OpenClaw is an operating system. Your agent has persistent memory, custom skills, scheduled tasks, web access, file management, and can orchestrate other agents. It doesn't just answer questions — it does work.",
-              },
-              {
-                q: "Can I see a demo first?",
-                a: "Absolutely. The free consultation includes a walkthrough of Phil's own production setup — the actual system running Blue Canvas AI. No sales decks, just the real thing.",
-              },
-              {
-                q: "What if I already have OpenClaw installed?",
-                a: "Great — Phil can audit your existing setup, optimise it, build custom skills, or help you scale. The consultation will identify the highest-impact improvements.",
-              },
-            ].map((faq, i) => (
-              <details key={i} className="group border-b border-border-light">
-                <summary className="flex justify-between items-center py-5 cursor-pointer font-heading font-semibold text-dark hover:text-blue transition-colors list-none [&::-webkit-details-marker]:hidden">
-                  {faq.q}
-                  <span className="text-orange text-xl ml-4 group-open:rotate-45 transition-transform duration-200 flex-shrink-0">
-                    +
-                  </span>
+        </div>
+      </section>
+
+      <section id="pricing" className="bg-white py-24">
+        <div className="mx-auto max-w-[1140px] px-6">
+          <div className="mb-14 text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-orange">Pricing</p>
+            <h2 className="mb-4 text-3xl font-black tracking-normal text-dark md:text-4xl">Simple, Scoped Pricing</h2>
+            <p className="mx-auto max-w-[520px] text-lg leading-relaxed text-muted">Start with the smallest useful scope, then expand once the workflow proves itself.</p>
+          </div>
+          <div className="mx-auto grid max-w-[960px] grid-cols-1 gap-6 md:grid-cols-3">
+            {pricing.map((tier) => (
+              <div key={tier.title} className={`card-lift relative rounded-box p-8 ${tier.featured ? "border-2 border-orange/30 bg-navy text-white" : "border border-border bg-surface text-dark"}`}>
+                {tier.featured ? <div className="absolute -top-3 left-6 rounded-full bg-orange px-3 py-1 text-xs font-bold text-white">Common starting point</div> : null}
+                <div className={`mb-6 text-sm font-semibold uppercase tracking-[0.12em] ${tier.featured ? "text-white/50" : "text-muted"}`}>{tier.title}</div>
+                <div className="mb-1 text-3xl font-black tracking-normal md:text-4xl">{tier.price}</div>
+                <p className={`mb-8 text-sm ${tier.featured ? "text-white/50" : "text-muted"}`}>{tier.note}</p>
+                <ul className="mb-8 space-y-3">
+                  {tier.items.map((item) => (
+                    <li key={item} className={`flex items-start gap-2 text-sm ${tier.featured ? "text-white/70" : "text-muted-dark"}`}>
+                      <span className={tier.featured ? "text-orange" : "text-green-700"}>✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <a href={discoveryCallUrl} target="_blank" rel="noopener" className={`block rounded-btn px-6 py-3 text-center text-sm font-semibold transition ${tier.featured ? "bg-orange text-white hover:bg-orange-hover" : "bg-dark text-white hover:bg-dark/90"}`}>
+                  {tier.cta}
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-24">
+        <div className="mx-auto max-w-[1140px] px-6">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-orange">OpenClaw Guides</p>
+          <h2 className="mb-4 text-3xl font-black tracking-normal text-dark md:text-4xl">Practical Ways To Put Agents To Work</h2>
+          <p className="mb-12 max-w-[650px] text-lg leading-relaxed text-muted">
+            Start with the commercial hub, the setup path, and the safety resource that shows what the agent can access before it does real work.
+          </p>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            {guideLinks.map((guide) => (
+              <a key={guide.href} href={guide.href} className="card-lift block rounded-box border border-border bg-surface p-7">
+                <h3 className="mb-3 text-xl font-black tracking-normal text-dark">{guide.title}</h3>
+                <p className="mb-5 text-sm leading-relaxed text-muted">{guide.body}</p>
+                <span className="text-sm font-semibold text-orange">Read guide</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-surface py-24">
+        <div className="mx-auto max-w-[760px] px-6">
+          <div className="mb-14 text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-orange">FAQ</p>
+            <h2 className="text-3xl font-black tracking-normal text-dark md:text-4xl">Common Questions</h2>
+          </div>
+          <div>
+            {faqs.map((faq) => (
+              <details key={faq.question} className="group border-b border-border">
+                <summary className="flex cursor-pointer list-none items-center justify-between py-5 text-lg font-black tracking-normal text-dark transition-colors hover:text-blue [&::-webkit-details-marker]:hidden">
+                  {faq.question}
+                  <span className="ml-4 text-xl text-orange transition-transform duration-200 group-open:rotate-45">+</span>
                 </summary>
-                <p className="text-muted text-sm leading-relaxed pb-5 pr-8">{faq.a}</p>
+                <p className="pb-5 pr-8 text-sm leading-relaxed text-muted">{faq.answer}</p>
               </details>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ============ MID-PAGE CONTACT CTA ============ */}
-      <section className="bg-gradient-to-r from-orange to-amber-500 py-12 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-orange/90 to-amber-500/90" />
-        <div className="max-w-[800px] mx-auto px-6 text-center relative z-10">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold text-white mb-3">
-            Got a Question? Let's Talk.
-          </h2>
-          <p className="text-white/90 text-lg mb-6">
-            Book your free consultation now — no slides, just real solutions.
-          </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center justify-center bg-white text-orange px-8 py-3.5 rounded-xl font-bold text-lg hover:bg-cream transition-all hover:-translate-y-0.5 shadow-lg"
-          >
-            Book Free Consultation
-          </a>
-        </div>
-      </section>
-
-      {/* ============ CTA BANNER ============ */}
-      <section className="bg-orange py-16 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10"
+      <section className="relative overflow-hidden bg-orange py-16">
+        <div
+          className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage: "linear-gradient(135deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1) 75%, transparent 75%)",
+            backgroundImage:
+              "linear-gradient(135deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1) 75%, transparent 75%)",
             backgroundSize: "20px 20px",
           }}
         />
-        <div className="max-w-[900px] mx-auto px-6 text-center relative z-10">
-          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-white mb-4">
-            Stop Reading About AI. Start Using It.
-          </h2>
-          <p className="text-white/80 text-lg mb-8 max-w-[600px] mx-auto">
-            30 minutes. Free. No slides. Phil will show you his actual production setup and tell you exactly what OpenClaw can do for your business.
+        <div className="relative z-10 mx-auto max-w-[900px] px-6 text-center">
+          <h2 className="mb-4 text-3xl font-black tracking-normal text-white md:text-4xl">Stop Reading About AI. Start Using It.</h2>
+          <p className="mx-auto mb-8 max-w-[620px] text-lg leading-relaxed text-white/80">
+            Bring one workflow. We will map what OpenClaw should do, what it should not do, and what a sensible first version looks like.
           </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
-          >
-            Book Your Free Consultation →
+          <a href={discoveryCallUrl} target="_blank" rel="noopener" className="inline-flex items-center justify-center rounded-btn bg-navy px-10 py-4 text-lg font-bold text-white shadow-xl transition hover:-translate-y-0.5 hover:bg-dark">
+            Book a discovery call
           </a>
         </div>
       </section>
 
-      {/* ============ CONTACT ============ */}
-      <section id="contact" className="bg-gradient-to-br from-navy via-slate-800 to-navy text-white py-28 relative overflow-hidden">
-        <div className="absolute bottom-0 left-[20%] w-[500px] h-[500px] bg-orange/10 rounded-full blur-[120px]" />
-        <div className="absolute top-0 right-[10%] w-[400px] h-[400px] bg-amber-400/10 rounded-full blur-[100px]" />
-        <div className="absolute inset-0 bg-gradient-to-t from-orange/5 via-transparent to-transparent" />
-
-        <div className="max-w-[1140px] mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <section id="contact" className="grain relative overflow-hidden bg-navy py-24 text-white">
+        <div className="absolute bottom-0 left-[20%] h-[500px] w-[500px] rounded-full bg-orange/5 blur-[120px]" />
+        <div className="absolute right-[10%] top-0 h-[400px] w-[400px] rounded-full bg-blue/5 blur-[100px]" />
+        <div className="relative z-10 mx-auto max-w-[1140px] px-6">
+          <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-2">
             <div>
-              <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">
-                Let&apos;s Talk
-              </p>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-                Your AI Agent Is
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-orange">Let&apos;s Talk</p>
+              <h2 className="mb-6 text-3xl font-black tracking-normal md:text-4xl">
+                Book the Call.
                 <br />
-                <span className="text-orange">One Conversation Away</span>
+                <span className="text-orange">Send a Note If Needed.</span>
               </h2>
-              <p className="text-white/60 text-lg leading-relaxed mb-4">
-                Book a free, no-obligation call. Phil will walk you through his live OpenClaw setup, assess your business, and give you a straight answer — even if that&apos;s &ldquo;you don&apos;t need this yet.&rdquo;
+              <p className="mb-4 text-lg leading-relaxed text-white/60">
+                The fastest path is the 30-minute discovery call. Use the form only if you want to send context first.
               </p>
-              <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 mb-8">
-                <p className="text-white/70 text-sm leading-relaxed">
-                  <span className="text-orange font-semibold">What you&apos;ll get:</span> A live demo of a production OpenClaw setup, honest assessment of your automation opportunities, and a clear plan — no sales pressure.
+              <div className="mb-8 rounded-box border border-white/[0.06] bg-white/[0.03] p-5">
+                <p className="text-sm leading-relaxed text-white/70">
+                  <span className="font-semibold text-orange">No pitch deck:</span> Discovery calls are 30 minutes. If the work is not a fit, you get a referral.
                 </p>
               </div>
-              <div className="space-y-4 text-white/50 text-sm">
-                <div className="flex gap-3 items-center">
-                  <span className="text-orange">📧</span>
-                  <a href="mailto:contact@bluecanvas.ai" className="hover:text-white transition-colors">
-                    contact@bluecanvas.ai
-                  </a>
-                </div>
-                <div className="flex gap-3 items-center">
-                  <span className="text-orange">📞</span>
-                  <a href="tel:07849071946" className="hover:text-white transition-colors">
-                    07849 071946
-                  </a>
-                </div>
-                <div className="flex gap-3 items-center">
-                  <span className="text-orange">📍</span>
-                  <span>Derry, Northern Ireland</span>
-                </div>
+              <div className="space-y-4 text-sm text-white/50">
+                <a href="mailto:contact@bluecanvas.ai" className="block transition hover:text-white">contact@bluecanvas.ai</a>
+                <span className="block">Derry, Northern Ireland - UK and remote</span>
               </div>
             </div>
-
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
-              <h3 className="font-heading font-bold text-xl text-white mb-1">Book Your Free Consultation</h3>
-              <p className="text-white/40 text-sm mb-6">Usually responds within a few hours</p>
-              <ContactForm />
+            <div className="rounded-box border border-white/[0.06] bg-white/[0.03] p-8">
+              <h3 className="mb-1 text-xl font-black tracking-normal text-white">Book a Discovery Call</h3>
+              <p className="mb-6 text-sm text-white/40">30 minutes via booking link</p>
+              <a href={discoveryCallUrl} target="_blank" rel="noopener" className="mb-6 inline-flex w-full items-center justify-center rounded-btn bg-orange px-8 py-3.5 text-sm font-semibold text-white shadow-glow-orange transition hover:-translate-y-0.5 hover:bg-orange-hover">
+                Book a discovery call
+              </a>
+              <div className="mb-6 h-px bg-white/10" />
+              <p className="mb-5 text-sm leading-relaxed text-white/45">
+                Prefer email first? Send a short message below. The workflow details are optional.
+              </p>
+              <ContactForm tone="dark" />
             </div>
           </div>
         </div>
       </section>
-
-      {/* Mobile CTA bar removed — was covering content on mobile */}
-    </>
+    </div>
   );
 }

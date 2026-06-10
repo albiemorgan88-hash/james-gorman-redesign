@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import { ServiceBreadcrumb, ServiceSeo } from "@/components/ServiceSeo";
 
 export const metadata: Metadata = {
   title: "OpenClaw Setup & Configuration",
-  description: "Professional OpenClaw installation, gateway setup, model routing, and environment configuration. Get OpenClaw running in production from day one. UK&apos;s leading OpenClaw consultant.",
+  description: "Professional OpenClaw installation, gateway setup, model routing, and environment configuration for teams that need a safer production path.",
   keywords: [
     "openclaw setup service",
     "openclaw installation UK",
@@ -16,8 +17,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/services/setup-configuration" },
   openGraph: {
-    title: "OpenClaw Setup & Configuration Service UK | Expert Installation",
-    description: "Professional OpenClaw installation, gateway setup, model routing, and environment configuration. Get OpenClaw running in production from day one.",
+    title: "OpenClaw Setup & Configuration Service UK",
+    description: "Scoped OpenClaw installation, gateway setup, model routing, and environment configuration for teams planning a safer production path.",
     url: "https://openclawconsultant.co.uk/services/setup-configuration",
     type: "website",
   },
@@ -27,17 +28,17 @@ const setupSteps = [
   {
     step: "01",
     title: "Environment Assessment",
-    desc: "We audit your infrastructure, identify the optimal hosting approach, and plan your OpenClaw architecture."
+    desc: "Review your infrastructure, compare hosting options, and plan an OpenClaw architecture that fits your constraints."
   },
   {
     step: "02", 
     title: "Gateway Installation",
-    desc: "Full OpenClaw gateway setup with proper security hardening, SSL configuration, and network access controls."
+    desc: "Configure the OpenClaw gateway with SSL, network access controls, and documented handover checks."
   },
   {
     step: "03",
     title: "Model Configuration", 
-    desc: "Configure model routing for Anthropic, OpenAI, and local models. Optimize costs and performance for your use case."
+    desc: "Plan model routing across hosted and local options where appropriate, with cost and reliability trade-offs made explicit."
   },
   {
     step: "04",
@@ -58,58 +59,85 @@ const setupSteps = [
 
 const technicalFeatures = [
   "Gateway daemon configuration",
-  "Model router optimization", 
+  "Model router planning", 
   "SSL certificate setup",
   "Environment variable management",
-  "Security hardening",
+  "Security control review",
   "Memory persistence configuration",
   "Tool integration framework",
   "Skill development environment",
-  "Monitoring & logging setup",
+  "Monitoring and logging setup",
   "Backup & recovery planning"
+];
+
+const intentLinks = [
+  {
+    title: "Still researching what setup should include?",
+    text: "Read the setup service guide if you need an educational checklist before buying done-for-you configuration help.",
+    href: "/guides/openclaw-setup-service-uk",
+    cta: "Read the setup guide",
+  },
+  {
+    title: "Only need the install handled?",
+    text: "Use the installation service when the immediate need is getting OpenClaw installed, tested, and handed over cleanly.",
+    href: "/services/openclaw-installation",
+    cta: "See installation service",
+  },
+  {
+    title: "Need the commercial hub first?",
+    text: "Start with the OpenClaw hub if you want the bigger picture across setup, consulting, skills, pricing, support, and governance.",
+    href: "/openclaw",
+    cta: "Open the OpenClaw hub",
+  },
+  {
+    title: "Comparing costs before scoping?",
+    text: "Use the pricing guide to understand what usually drives setup effort before requesting a quote.",
+    href: "/guides/openclaw-pricing-explained",
+    cta: "Read pricing guidance",
+  },
 ];
 
 const packages = [
   {
     name: "Standard Setup",
-    price: "£750",
-    duration: "3-5 days",
+    price: "Scoped quote",
+    duration: "Small setup scope",
     features: [
       "OpenClaw gateway installation",
       "Single model provider setup",
       "Basic agent configuration", 
-      "2 custom skills included",
+      "Starter skill configuration",
       "Email & Slack integration",
-      "1 week post-setup support"
+      "Post-setup handover support"
     ]
   },
   {
     name: "Business Setup",
-    price: "£1,250",
-    duration: "5-7 days", 
+    price: "Scoped quote",
+    duration: "Business workflow scope", 
     features: [
       "Multi-model gateway setup",
-      "Advanced security hardening",
-      "Production-grade monitoring",
-      "5 custom skills included", 
+      "Security control review",
+      "Monitoring and logging setup",
+      "Custom skills scoped to workflow", 
       "Full tool integration suite",
-      "Team training (up to 5 users)",
-      "2 weeks post-setup support"
+      "Team handover session",
+      "Post-setup support window"
     ],
     popular: true
   },
   {
     name: "Enterprise Setup",
-    price: "From £2,500",
-    duration: "1-2 weeks",
+    price: "Custom scope",
+    duration: "Larger rollout",
     features: [
       "Multi-agent orchestration",
       "Custom infrastructure design",
       "Advanced workflow automation",
-      "Unlimited custom skills",
+      "Additional custom skills scoped separately",
       "Enterprise integrations",
       "Comprehensive team training",
-      "30 days post-setup support"
+      "Ongoing support options"
     ]
   }
 ];
@@ -117,6 +145,13 @@ const packages = [
 export default function SetupConfigurationPage() {
   return (
     <>
+      <ServiceSeo
+        name="OpenClaw Setup and Configuration"
+        description="Professional OpenClaw installation, gateway setup, model routing, and environment configuration for teams that need a safer production path."
+        path="/services/setup-configuration"
+        serviceType="OpenClaw setup and configuration"
+      />
+
       {/* Hero Section */}
       <section className="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center grain">
         <div className="absolute top-20 right-[10%] w-[400px] h-[400px] bg-orange/5 rounded-full blur-[120px] glow-pulse" />
@@ -124,6 +159,7 @@ export default function SetupConfigurationPage() {
 
         <div className="max-w-[1140px] mx-auto px-6 relative z-10 py-20">
           <div className="max-w-[720px]">
+            <ServiceBreadcrumb current="OpenClaw Setup and Configuration" />
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
               <span className="text-white/60 text-sm font-medium">Professional OpenClaw Setup Service</span>
@@ -136,7 +172,7 @@ export default function SetupConfigurationPage() {
             </h1>
 
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
-              Get OpenClaw running in production with expert installation, gateway configuration, model routing, and security hardening.
+              Get OpenClaw running with structured installation, gateway configuration, model routing, and security hardening.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -164,27 +200,27 @@ export default function SetupConfigurationPage() {
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="max-w-[800px] mx-auto text-center">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-6">
-              Why Most OpenClaw Setups Fail
+              Where OpenClaw setup gets risky
             </h2>
             <p className="text-muted text-lg leading-relaxed mb-12">
-              OpenClaw is powerful but complex. Gateway configuration, model routing, memory management, security hardening — get any of it wrong and you&apos;ll spend weeks debugging instead of building.
+              OpenClaw is flexible, but business deployments need deliberate choices around gateway configuration, model routing, memory, permissions, logging, and handover. The goal is to reduce avoidable rework before the system touches real workflows.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">⚠️</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Gateway Issues</h3>
-                <p className="text-muted text-sm">Complex networking, SSL certificates, and daemon management that breaks silently.</p>
+                <p className="text-muted text-sm">Complex networking, SSL certificates, and daemon management that need clear checks.</p>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">💸</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Model Costs</h3>
-                <p className="text-muted text-sm">Poor routing configuration leads to expensive model calls and slow response times.</p>
+                <p className="text-muted text-sm">Routing choices can affect API spend, latency, reliability, and review quality.</p>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-2xl mb-3">🔒</div>
                 <h3 className="font-heading font-bold text-dark mb-2">Security Gaps</h3>
-                <p className="text-muted text-sm">Exposed endpoints, weak authentication, and unencrypted data storage.</p>
+                <p className="text-muted text-sm">Endpoint exposure, authentication, storage, and permissions need explicit review.</p>
               </div>
             </div>
           </div>
@@ -200,32 +236,32 @@ export default function SetupConfigurationPage() {
                 Our Solution
               </p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-6">
-                Production-Ready OpenClaw From Day One
+                A safer path to OpenClaw in production
               </h2>
               <p className="text-muted text-lg leading-relaxed mb-8">
-                Skip the weeks of trial and error. Blue Canvas has built and deployed dozens of OpenClaw systems for UK businesses. You get a battle-tested setup that works immediately.
+                Skip the weeks of trial and error. Blue Canvas uses a repeatable setup process for OpenClaw workflows, with gateway, routing, security, and handover checks before production use.
               </p>
               
               <div className="space-y-4">
                 <div className="flex gap-3 items-start">
                   <span className="text-orange mt-1 flex-shrink-0">✓</span>
                   <div>
-                    <p className="font-semibold text-dark">Expert Installation</p>
-                    <p className="text-muted text-sm">Gateway daemon, model routing, SSL certificates, security hardening — all configured correctly first time.</p>
+                    <p className="font-semibold text-dark">Structured installation</p>
+                    <p className="text-muted text-sm">Gateway daemon, model routing, SSL certificates, and security hardening configured deliberately and checked before handover.</p>
                   </div>
                 </div>
                 <div className="flex gap-3 items-start">
                   <span className="text-orange mt-1 flex-shrink-0">✓</span>
                   <div>
-                    <p className="font-semibold text-dark">Cost Optimization</p>
-                    <p className="text-muted text-sm">Smart model routing saves you hundreds per month on API costs while improving response times.</p>
+                    <p className="font-semibold text-dark">Cost planning</p>
+                    <p className="text-muted text-sm">Smart model routing helps control API spend while improving response times.</p>
                   </div>
                 </div>
                 <div className="flex gap-3 items-start">
                   <span className="text-orange mt-1 flex-shrink-0">✓</span>
                   <div>
-                    <p className="font-semibold text-dark">Production Monitoring</p>
-                    <p className="text-muted text-sm">Logging, metrics, and health checks so you know immediately if anything goes wrong.</p>
+                    <p className="font-semibold text-dark">Monitoring plan</p>
+                    <p className="text-muted text-sm">Logging, metrics, and health checks so the team has evidence when something needs attention.</p>
                   </div>
                 </div>
               </div>
@@ -257,7 +293,7 @@ export default function SetupConfigurationPage() {
               How We Set Up Your OpenClaw System
             </h2>
             <p className="text-muted text-lg max-w-[600px] mx-auto">
-              A proven 6-step process that gets you from zero to production-ready OpenClaw in under a week.
+              A staged process for moving from requirements to a configured OpenClaw environment with handover and review.
             </p>
           </div>
 
@@ -277,6 +313,22 @@ export default function SetupConfigurationPage() {
         </div>
       </section>
 
+      <section className="bg-white py-16">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            {intentLinks.map((item) => (
+              <div key={item.title} className="rounded-2xl border border-border bg-surface p-7">
+                <h2 className="font-heading text-2xl font-bold text-dark">{item.title}</h2>
+                <p className="mt-3 text-sm leading-relaxed text-muted-dark">{item.text}</p>
+                <a href={item.href} className="mt-5 inline-flex text-sm font-semibold text-orange hover:text-orange-hover">
+                  {item.cta} →
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Packages Section */}
       <section className="bg-white py-28">
         <div className="max-w-[1140px] mx-auto px-6">
@@ -288,7 +340,7 @@ export default function SetupConfigurationPage() {
               Choose Your Setup Package
             </h2>
             <p className="text-muted text-lg max-w-[500px] mx-auto">
-              Fixed-price packages for every business size. All include expert installation and post-setup support.
+              Setup scopes are quoted after discovery so price, support, and handover match the actual workflow.
             </p>
           </div>
 
@@ -304,7 +356,7 @@ export default function SetupConfigurationPage() {
               >
                 {pkg.popular && (
                   <div className="absolute -top-3 left-8 bg-orange text-white text-xs font-bold px-3 py-1 rounded-full">
-                    Most Popular
+                    Common Scope
                   </div>
                 )}
                 
@@ -343,7 +395,7 @@ export default function SetupConfigurationPage() {
                       : "bg-dark text-white hover:bg-dark/90"
                   }`}
                 >
-                  Get Started
+                  Discuss Scope
                 </a>
               </div>
             ))}
@@ -367,27 +419,27 @@ export default function SetupConfigurationPage() {
             {[
               {
                 q: "How long does OpenClaw setup take?",
-                a: "Standard setups take 3-5 days from start to finish. Business setups with advanced features take 5-7 days. Enterprise setups with multiple agents can take 1-2 weeks. You&apos;ll have a working system much faster than trying to do it yourself."
+                a: "It depends on hosting, integrations, security requirements, and how many workflows need to be configured. A small setup can often be scoped quickly; a team or enterprise rollout needs more discovery, testing, and handover."
               },
               {
                 q: "Do I need my own server for OpenClaw?",
-                a: "Yes, OpenClaw runs on your infrastructure for security and control. We can help you choose between cloud hosting (AWS, DigitalOcean) or local deployment (Mac mini, dedicated server). We&apos;ll recommend the best option for your needs and budget."
+                a: "Usually, OpenClaw should run in an environment you control. We can help compare cloud hosting, a dedicated server, or local deployment, then document the trade-offs for cost, control, reliability, and security."
               },
               {
                 q: "What model providers does OpenClaw support?",
-                a: "OpenClaw works with Anthropic Claude, OpenAI GPT-4, Google Gemini, local models via Ollama, and many others. We&apos;ll configure smart routing to optimize costs — using cheaper models for simple tasks and premium models only when needed."
+                a: "OpenClaw can be configured with major hosted model providers and local models where appropriate. We map routing around task complexity, cost control, and reliability rather than assuming one model fits every workflow."
               },
               {
                 q: "Can you migrate from my existing AI setup?",
-                a: "Absolutely. We can migrate conversations, memory, and workflows from ChatGPT, custom GPTs, Zapier automations, or other AI tools. The goal is to improve on what you already have, not start from scratch."
+                a: "Often, yes. We review the existing setup first, then decide what can be migrated safely, what should be rebuilt, and what should be left alone."
               },
               {
                 q: "What happens if something breaks after setup?",
-                a: "All setups include post-deployment support (1-4 weeks depending on package). After that, you can continue with monthly support or handle maintenance yourself. We also provide documentation and training so your team isn&apos;t dependent on us."
+                a: "Support is scoped before the work begins. The handover normally includes documentation, troubleshooting notes, and options for continued support if the setup becomes business-critical."
               },
               {
                 q: "Is OpenClaw suitable for small businesses?",
-                a: "Yes, if you&apos;re already using AI tools and want more control. OpenClaw isn&apos;t for businesses just getting started with AI — start with ChatGPT first. But if you&apos;re hitting limitations with existing tools, OpenClaw can be incredibly powerful even for small teams."
+                a: "Yes, if you are already using AI tools and need more control around memory, workflow, integrations, or review. If the business is just getting started with AI, a simpler assistant workflow may be the better first step."
               }
             ].map((faq, i) => (
               <details key={i} className="group border-b border-border">
@@ -411,13 +463,13 @@ export default function SetupConfigurationPage() {
             Ready to Get OpenClaw Working?
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-[600px] mx-auto">
-            Stop fighting with configuration files. Get a production-ready OpenClaw setup installed by an expert. Free consultation to discuss your requirements.
+            Stop fighting with configuration files. Get a scoped OpenClaw setup with installation and handover support. Book a short consultation to discuss your requirements.
           </p>
           <a
             href="#contact"
             className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
-            Book Free Consultation →
+            Book Setup Consultation →
           </a>
         </div>
       </section>
@@ -439,21 +491,21 @@ export default function SetupConfigurationPage() {
                 <span className="text-orange">Setup Consultation</span>
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Free 30-minute call to assess your needs, recommend the right package, and give you a fixed-price quote. No obligation, no pressure.
+                Short call to assess your needs, recommend a setup path, and decide whether a scoped quote makes sense. No obligation, no pressure.
               </p>
               
               <div className="space-y-4 text-white/50 text-sm">
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">⚡</span>
-                  <span>Usually respond within a few hours</span>
+                  <span>Usually respond quickly</span>
                 </div>
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">🔒</span>
-                  <span>Free consultation — no sales pressure</span>
+                  <span>No sales pressure</span>
                 </div>
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">✅</span>
-                  <span>Fixed-price quote after assessment</span>
+                  <span>Scoped quote after assessment</span>
                 </div>
               </div>
             </div>

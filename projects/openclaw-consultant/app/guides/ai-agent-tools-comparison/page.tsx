@@ -299,7 +299,7 @@ export default function AIAgentToolsComparisonPage() {
         <div className="max-w-[1140px] mx-auto px-6 text-center">
           <h3 className="font-heading font-bold text-xl text-dark mb-4">About Blue Canvas</h3>
           <p className="text-muted max-w-[600px] mx-auto text-sm">
-            Blue Canvas has hands-on experience with every tool on this page. Through <a href="https://bluecanvas.ai" className="text-orange hover:underline">Blue Canvas</a>, Phil Patterson 
+            Blue Canvas has hands-on experience with practical AI agent and automation stacks. Through <a href="https://bluecanvas.ai" className="text-orange hover:underline">Blue Canvas</a>, Phil Patterson 
             helps UK businesses cut through the noise, choose the right platform, and get agents into production — without the months of trial and error.
           </p>
         </div>

@@ -77,6 +77,7 @@ const relatedGuides = [
 export default function OpenClawAgentDeploymentPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-agent-deployment"
       badge="Deployment Guide 2026"
       title="OpenClaw Agent"
       highlight="Deployment"

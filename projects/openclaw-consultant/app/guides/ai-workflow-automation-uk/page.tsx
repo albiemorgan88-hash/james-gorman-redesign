@@ -77,6 +77,7 @@ const relatedGuides = [
 export default function AIWorkflowAutomationUKPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/ai-workflow-automation-uk"
       badge="Workflow Guide 2026"
       title="AI Workflow"
       highlight="Automation UK"

@@ -1,0 +1,221 @@
+{
+  "domain": "openclawconsultant.co.uk",
+  "knownGoodDeployment": "openclaw-consultant-ufwoy5spo-albert-morgans-projects.vercel.app",
+  "knownGoodDate": "2026-06-07T19:56:26+01:00",
+  "notes": "June 7 Ahrefs-led SEO content push added six commercial-intent guide pages for AI consultancy UK, AI automation agency UK, AI implementation services UK, AI email automation UK, AI receptionist UK, and OpenClaw alternatives. Deployed after local lint/build, Vercel production deploy, and live URL/sitemap verification. Homepage visual lock remains the May 29 founder-led OpenClaw setup positioning.",
+  "visualLock": {
+    "status": "LOCKED",
+    "canonicalScreenshot": "reports/openclaw-homepage-visual-lock-2026-05-29.png",
+    "canonicalHomepage": "dark navy/orange gradient homepage with OC mark, OpenClaw wordmark, top nav over hero, 'OpenClaw, / Set Up Properly / and Safe to Run. / Founder-Led.' headline, orange Calendly discovery CTA, case-study proof section, and dark contact section",
+    "requiredHomepageMarkers": [
+      "classic-home",
+      "hero-gradient",
+      "bg-navy",
+      "OpenClaw,",
+      "Set Up Properly",
+      "Founder-Led.",
+      "Dedicated OpenClaw setup and consulting",
+      "Book a discovery call",
+      "OpenClaw consultant hub",
+      "Case Studies",
+      "Proof from real OpenClaw-style workflows",
+      "5.0",
+      "What Blue Canvas clients say.",
+      "https://calendly.com/contact-bluecanvas/initial-consultation"
+    ],
+    "bannedHomepageMarkers": [
+      "mesh-bg",
+      "Deploy OpenClaw",
+      "safely, securely",
+      "OpenClaw resource hub",
+      "Pricing built around real outcomes",
+      "Proof-driven, not promise-driven",
+      "Explore OpenClaw hub \u2192"
+    ]
+  },
+  "criticalRoutes": [
+    {
+      "path": "/",
+      "markers": [
+        "OpenClaw,",
+        "Set Up Properly",
+        "Founder-Led.",
+        "OpenClaw consultant hub",
+        "Proof from real OpenClaw-style workflows",
+        "What Blue Canvas clients say."
+      ]
+    },
+    {
+      "path": "/openclaw",
+      "markers": [
+        "OpenClaw setup, consulting and agent implementation",
+        "What is OpenClaw?",
+        "OpenClaw resources"
+      ]
+    },
+    {
+      "path": "/about",
+      "markers": [
+        "Practitioner-led",
+        "Not theory-led"
+      ]
+    },
+    {
+      "path": "/services",
+      "markers": [
+        "OpenClaw setup",
+        "agent teams"
+      ]
+    },
+    {
+      "path": "/services/openclaw-installation",
+      "markers": [
+        "OpenClaw Installation Service",
+        "What's Included"
+      ]
+    },
+    {
+      "path": "/services/setup-configuration",
+      "markers": [
+        "OpenClaw Setup",
+        "Configuration Service"
+      ]
+    },
+    {
+      "path": "/pricing",
+      "markers": [
+        "OpenClaw",
+        "Pricing"
+      ]
+    },
+    {
+      "path": "/guides",
+      "markers": [
+        "OpenClaw Guides",
+        "Expert Guides"
+      ]
+    },
+    {
+      "path": "/guides/ai-consultancy-uk",
+      "markers": [
+        "AI Consultancy",
+        "UK"
+      ]
+    },
+    {
+      "path": "/guides/ai-automation-agency-uk",
+      "markers": [
+        "AI Automation",
+        "Agency UK"
+      ]
+    },
+    {
+      "path": "/guides/ai-implementation-services-uk",
+      "markers": [
+        "AI Implementation",
+        "Services UK"
+      ]
+    },
+    {
+      "path": "/guides/ai-email-automation-uk",
+      "markers": [
+        "AI Email",
+        "Automation UK"
+      ]
+    },
+    {
+      "path": "/guides/ai-receptionist-uk",
+      "markers": [
+        "AI Receptionist",
+        "UK"
+      ]
+    },
+    {
+      "path": "/guides/openclaw-alternatives",
+      "markers": [
+        "OpenClaw",
+        "Alternatives"
+      ]
+    },
+    {
+      "path": "/guides/openclaw-consultant-uk",
+      "markers": [
+        "OpenClaw Consultant",
+        "UK"
+      ]
+    },
+    {
+      "path": "/guides/openclaw-for-law-firms",
+      "markers": [
+        "OpenClaw for Law",
+        "Book an OpenClaw review"
+      ]
+    },
+    {
+      "path": "/guides/openclaw-vs-chatgpt",
+      "markers": [
+        "OpenClaw vs ChatGPT",
+        "Key Differences for Business Use"
+      ]
+    },
+    {
+      "path": "/guides/openclaw-vs-zapier-vs-make",
+      "markers": [
+        "OpenClaw vs Zapier vs Make",
+        "AI Agent or Workflow Automation"
+      ]
+    },
+    {
+      "path": "/guides/openclaw-pricing-explained",
+      "markers": [
+        "OpenClaw Pricing",
+        "ROI Assumptions",
+        "Cost Planning"
+      ]
+    },
+    {
+      "path": "/guides/openclaw-security-best-practices",
+      "markers": [
+        "OpenClaw Security Best Practices",
+        "Evidence areas"
+      ]
+    },
+    {
+      "path": "/guides/openclaw-security-compliance",
+      "markers": [
+        "OpenClaw Security",
+        "Compliance Planning Guide"
+      ]
+    },
+    {
+      "path": "/sitemap.xml",
+      "markers": [
+        "openclawconsultant.co.uk"
+      ]
+    },
+    {
+      "path": "/robots.txt",
+      "markers": [
+        "Sitemap"
+      ]
+    }
+  ],
+  "bannedHomepageMarkers": [
+    "PJ",
+    "Albie",
+    "UK\u2019s leading",
+    "UK's leading",
+    "premier",
+    "guaranteed",
+    "works immediately",
+    "production-ready",
+    "Free consultation",
+    "STAT_HERE",
+    "TESTIMONIAL_1",
+    "TESTIMONIAL_2",
+    "TESTIMONIAL_3",
+    "CLIENT_NAME_1",
+    "CLIENT_NAME_2",
+    "CLIENT_NAME_3"
+  ]
+}

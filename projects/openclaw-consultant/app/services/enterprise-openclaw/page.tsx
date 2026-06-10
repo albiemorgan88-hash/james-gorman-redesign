@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import { ServiceBreadcrumb, ServiceSeo } from "@/components/ServiceSeo";
 
 export const metadata: Metadata = {
   title: "Enterprise OpenClaw Setup",
-  description: "Enterprise OpenClaw deployment with multi-agent architectures, advanced security, compliance frameworks, and team access management. Scalable AI automation for large organisations.",
+  description: "Enterprise OpenClaw setup with multi-agent architecture planning, security controls, governance, access design, and rollout support for larger teams.",
   keywords: [
     "enterprise openclaw",
     "enterprise ai agents",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://openclawconsultant.co.uk/services/enterprise-openclaw" },
   openGraph: {
     title: "Enterprise OpenClaw Setup & Consulting | Multi-Agent Architecture",
-    description: "Enterprise OpenClaw deployment with multi-agent architectures, advanced security, compliance frameworks, and team access management.",
+    description: "Enterprise OpenClaw setup with multi-agent architecture planning, security controls, governance, access design, and rollout support.",
     url: "https://openclawconsultant.co.uk/services/enterprise-openclaw",
     type: "article",
   },
@@ -37,23 +38,23 @@ const enterpriseCapabilities = [
       "Handle complex workflows requiring multiple specializations",
       "Scale agent capacity horizontally across departments",
       "Reduce single points of failure with redundant agents",
-      "Optimize resource allocation based on workload patterns"
+      "Plan resource allocation around workload patterns"
     ]
   },
   {
     capability: "Enterprise Security Framework",
-    description: "Bank-grade security with zero-trust architecture and comprehensive audit trails",
+    description: "Security architecture planning with zero-trust patterns and comprehensive audit trails",
     features: [
       "Role-based access control with granular permissions",
       "Data encryption at rest and in transit with key rotation",
       "Network segmentation and micro-perimeter security",
-      "HMAC-signed audit logs with tamper detection"
+      "Tamper-evident audit logging where required"
     ],
     benefits: [
-      "Meet regulatory requirements for financial services",
+      "Support regulatory control design for sensitive workflows",
       "Protect sensitive data with defense-in-depth strategies",
-      "Maintain compliance with GDPR, SOC 2, and ISO 27001",
-      "Enable forensic investigation with immutable audit trails"
+      "Create evidence for GDPR, SOC 2, ISO 27001, or sector-specific reviews",
+      "Improve incident review with clear audit trails"
     ]
   },
   {
@@ -66,10 +67,10 @@ const enterpriseCapabilities = [
       "Infrastructure as Code with GitOps workflows"
     ],
     benefits: [
-      "Scale from hundreds to thousands of concurrent agents",
-      "Ensure 99.9% uptime with redundant infrastructure",
+      "Scale agent workloads with infrastructure matched to demand",
+      "Improve resilience with redundant infrastructure patterns",
       "Deploy consistently across development and production",
-      "Reduce operational overhead with automated management"
+      "Reduce avoidable operational overhead with repeatable management"
     ]
   },
   {
@@ -85,7 +86,7 @@ const enterpriseCapabilities = [
       "Optimize agent performance and resource utilization",
       "Control AI spending with granular cost management", 
       "Detect security incidents and operational issues",
-      "Demonstrate ROI with detailed business metrics"
+      "Measure value with agreed business metrics"
     ]
   }
 ];
@@ -95,30 +96,30 @@ const deploymentOptions = [
     option: "Fully Managed Cloud",
     description: "We handle everything - you focus on your business",
     included: [
-      "Complete infrastructure setup and management",
-      "24/7 monitoring, maintenance, and support",
+      "Scoped infrastructure setup and management",
+      "Monitoring, maintenance, and support",
       "Automatic scaling and load balancing",
       "Security hardening and compliance management",
       "Regular backups and disaster recovery",
       "Performance optimization and cost management"
     ],
     bestFor: [
-      "Organizations wanting maximum convenience",
+      "Organizations wanting a managed operating model",
       "Teams without dedicated DevOps resources",
       "Rapid deployment requirements",
       "Variable or unpredictable workloads"
     ],
-    pricing: "Starting from £2,500/month"
+    pricing: "Scoped after discovery"
   },
   {
     option: "Hybrid Management",
-    description: "Your infrastructure, our expertise and ongoing support",
+    description: "Your infrastructure, our implementation support and ongoing review",
     included: [
       "Initial setup on your cloud or on-premises infrastructure",
       "Security configuration and compliance hardening",
       "Team training and knowledge transfer",
-      "Ongoing support and optimization guidance", 
-      "Emergency response and incident handling",
+      "Ongoing support and optimization guidance",
+      "Incident response planning and support",
       "Regular health checks and performance reviews"
     ],
     bestFor: [
@@ -127,13 +128,13 @@ const deploymentOptions = [
       "Compliance requirements for data residency",
       "Budget-conscious deployments with internal resources"
     ],
-    pricing: "Starting from £1,200/month"
+    pricing: "Scoped after discovery"
   },
   {
     option: "Setup & Training Only",
     description: "Professional setup with comprehensive training for your team",
     included: [
-      "Complete OpenClaw enterprise deployment", 
+      "Scoped OpenClaw enterprise deployment",
       "Security hardening and compliance configuration",
       "Multi-agent architecture design and implementation",
       "Comprehensive team training and documentation",
@@ -146,7 +147,7 @@ const deploymentOptions = [
       "Budget constraints or preference for self-management",
       "Highly regulated environments requiring full control"
     ],
-    pricing: "Starting from £8,500 one-time"
+    pricing: "Scoped after discovery"
   }
 ];
 
@@ -155,28 +156,28 @@ const useCases = [
     industry: "Financial Services",
     challenge: "Manual compliance monitoring and regulatory reporting",
     solution: "Automated compliance agents monitoring transactions, generating reports, and flagging suspicious activities",
-    results: ["90% reduction in compliance preparation time", "100% audit trail coverage", "Early detection of regulatory changes"],
+    results: ["Less manual compliance preparation", "Clearer audit trail coverage", "Earlier detection of regulatory changes"],
     agents: ["Compliance Monitor", "Report Generator", "Risk Assessor", "Audit Tracker"]
   },
   {
     industry: "Healthcare",
     challenge: "Patient data processing and clinical documentation burden",
-    solution: "HIPAA-compliant agents for patient intake, medical records processing, and clinical decision support",
-    results: ["60% reduction in documentation time", "Improved patient outcome tracking", "Enhanced care coordination"],
+    solution: "Careful workflow design for intake, records handling, documentation support, and approval-aware clinical admin",
+    results: ["Less documentation burden", "Improved patient outcome tracking", "Enhanced care coordination"],
     agents: ["Patient Intake Assistant", "Clinical Documentation", "Treatment Tracker", "Appointment Coordinator"]
   },
   {
     industry: "Manufacturing",
     challenge: "Supply chain disruptions and quality control bottlenecks",
     solution: "Predictive agents monitoring supplier health, quality metrics, and production optimization",
-    results: ["40% improvement in supply chain resilience", "25% reduction in quality issues", "Real-time production insights"],
+    results: ["Better supply chain visibility", "Earlier quality issue detection", "Real-time production insights"],
     agents: ["Supply Chain Monitor", "Quality Inspector", "Production Optimizer", "Vendor Analyst"]
   },
   {
     industry: "Legal Services",
     challenge: "Document review and legal research taking extensive time",
     solution: "Legal research agents for case law analysis, contract review, and compliance verification", 
-    results: ["70% faster document review", "Enhanced legal research accuracy", "Improved client response times"],
+    results: ["Faster document triage", "More consistent legal research workflow", "Improved client response times"],
     agents: ["Contract Reviewer", "Legal Researcher", "Compliance Checker", "Case Analyst"]
   }
 ];
@@ -188,14 +189,14 @@ const implementationProcess = [
     activities: [
       "Current system analysis and integration requirements",
       "Security assessment and compliance requirement gathering",
-      "Use case prioritization and ROI analysis",
+      "Use case prioritization and value analysis",
       "Architecture design and capacity planning"
     ],
     deliverables: [
       "Technical requirements document",
       "Security and compliance assessment",
       "Implementation roadmap and timeline",
-      "Cost-benefit analysis and ROI projections"
+      "Cost-benefit analysis and value model"
     ]
   },
   {
@@ -257,7 +258,7 @@ const securityFeatures = [
   {
     feature: "Data Sovereignty",
     description: "Complete control over where your data lives and how it&apos;s processed",
-    implementation: ["On-premises or private cloud deployment options", "No data transmission to third-party AI providers", "Local model deployment for air-gapped environments"]
+    implementation: ["On-premises or private cloud deployment options", "Data-flow design based on chosen model providers and hosting", "Local model deployment where the use case and environment require it"]
   },
   {
     feature: "Encryption Everywhere",
@@ -266,14 +267,36 @@ const securityFeatures = [
   },
   {
     feature: "Immutable Audit Logs",
-    description: "Tamper-proof logging with cryptographic integrity verification",
-    implementation: ["HMAC-signed log entries", "Write-only log storage", "Blockchain-style integrity verification"]
+    description: "Tamper-evident logging patterns for review, audit, and incident investigation",
+    implementation: ["Signed or append-only log patterns where required", "Restricted log storage", "Integrity checks aligned with the risk profile"]
   }
+];
+
+const intentLinks = [
+  {
+    title: "Need the enterprise buying guide first?",
+    body: "Read the enterprise deployment guide if you are comparing governance, rollout, and security expectations before scoping a service engagement.",
+    href: "/guides/enterprise-openclaw-deployment",
+    label: "Read enterprise guide",
+  },
+  {
+    title: "Need ongoing support after launch?",
+    body: "Use the managed service guide when the question is how to keep live OpenClaw workflows monitored, reviewed, and improving over time.",
+    href: "/guides/openclaw-managed-service-uk",
+    label: "Read managed service guide",
+  },
 ];
 
 export default function EnterpriseOpenClawPage() {
   return (
     <>
+      <ServiceSeo
+        name="Enterprise OpenClaw Setup"
+        description="Enterprise OpenClaw setup and consulting for organizations that need multi-agent workflows, security planning, governance, and rollout support."
+        path="/services/enterprise-openclaw"
+        serviceType="Enterprise OpenClaw setup and consulting"
+      />
+
       {/* Hero Section */}
       <section className="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center grain">
         <div className="absolute top-20 right-[10%] w-[400px] h-[400px] bg-orange/5 rounded-full blur-[120px] glow-pulse" />
@@ -281,6 +304,7 @@ export default function EnterpriseOpenClawPage() {
 
         <div className="max-w-[1140px] mx-auto px-6 relative z-10 py-20">
           <div className="max-w-[720px]">
+            <ServiceBreadcrumb current="Enterprise OpenClaw Setup" />
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
               <span className="text-white/60 text-sm font-medium">Enterprise AI Deployment</span>
@@ -293,7 +317,7 @@ export default function EnterpriseOpenClawPage() {
             </h1>
 
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
-              Scale-ready AI agent deployments for large organizations. Multi-agent architectures, enterprise security, compliance frameworks, and team collaboration.
+              Enterprise OpenClaw planning and delivery support for larger teams that need multi-agent architecture, access controls, governance, and rollout discipline.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -314,6 +338,22 @@ export default function EnterpriseOpenClawPage() {
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#fafbfc] to-transparent" />
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            {intentLinks.map((link) => (
+              <div key={link.href} className="rounded-2xl border border-border bg-surface p-7">
+                <h2 className="font-heading text-2xl font-bold text-dark">{link.title}</h2>
+                <p className="mt-3 text-sm leading-relaxed text-muted-dark">{link.body}</p>
+                <a href={link.href} className="mt-5 inline-flex text-sm font-semibold text-orange hover:text-orange-hover">
+                  {link.label} →
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Enterprise vs Individual Section */}
@@ -350,8 +390,8 @@ export default function EnterpriseOpenClawPage() {
                   Designed for large organizations with complex workflows, security requirements, and compliance needs.
                 </p>
                 <ul className="text-left space-y-2 text-xs text-muted">
-                  <li>• Unlimited users with role-based access</li>
-                  <li>• Bank-grade security and compliance</li>
+                  <li>• Role-based access for teams and departments</li>
+                  <li>• Security and compliance controls designed around your requirements</li>
                   <li>• Multi-agent orchestration platform</li>
                   <li>• Immutable audit trails and forensics</li>
                   <li>• Professional setup and ongoing support</li>
@@ -373,7 +413,7 @@ export default function EnterpriseOpenClawPage() {
               Built for Enterprise Scale
             </h2>
             <p className="text-muted text-lg max-w-[600px] mx-auto">
-              Advanced features and architecture patterns designed specifically for large-scale enterprise AI deployments.
+              Architecture patterns for larger OpenClaw deployments where access, review, monitoring, and operating ownership matter.
             </p>
           </div>
 
@@ -422,7 +462,7 @@ export default function EnterpriseOpenClawPage() {
               Enterprise Use Cases
             </h2>
             <p className="text-muted text-lg max-w-[600px] mx-auto">
-              Real-world applications of enterprise OpenClaw across different industries and organizational functions.
+              Common applications of enterprise OpenClaw across different industries and organizational functions.
             </p>
           </div>
 
@@ -438,10 +478,10 @@ export default function EnterpriseOpenClawPage() {
                 <h3 className="font-heading font-bold text-dark mb-3">Challenge</h3>
                 <p className="text-muted text-sm leading-relaxed mb-4">{useCase.challenge}</p>
                 
-                <h3 className="font-heading font-bold text-dark mb-3">OpenClaw Solution</h3>
+                <h3 className="font-heading font-bold text-dark mb-3">Possible OpenClaw Approach</h3>
                 <p className="text-muted text-sm leading-relaxed mb-4">{useCase.solution}</p>
                 
-                <h3 className="font-heading font-bold text-dark mb-3">Results</h3>
+                <h3 className="font-heading font-bold text-dark mb-3">Possible Results</h3>
                 <ul className="space-y-1 mb-4">
                   {useCase.results.map((result, idx) => (
                     <li key={idx} className="flex gap-2 items-start text-sm">
@@ -476,7 +516,7 @@ export default function EnterpriseOpenClawPage() {
               Enterprise Security Framework
             </h2>
             <p className="text-white/60 text-lg max-w-[600px] mx-auto">
-              Bank-grade security designed for the most demanding enterprise environments and regulatory requirements.
+              Security controls designed around demanding enterprise environments and regulatory requirements.
             </p>
           </div>
 
@@ -559,7 +599,7 @@ export default function EnterpriseOpenClawPage() {
               Implementation Process
             </h2>
             <p className="text-muted text-lg max-w-[600px] mx-auto">
-              Our proven methodology for deploying enterprise OpenClaw with minimal risk and maximum impact.
+              A structured methodology for deploying enterprise OpenClaw with clear scope, review gates, and measurable operating value.
             </p>
           </div>
 
@@ -625,31 +665,31 @@ export default function EnterpriseOpenClawPage() {
             {[
               {
                 q: "How does enterprise OpenClaw differ from individual setups?",
-                a: "Enterprise OpenClaw includes multi-agent orchestration, advanced security frameworks, role-based access control, immutable audit trails, and professional deployment services. Individual OpenClaw is designed for single users with full trust, while enterprise adds layers of governance, security, and scalability for organizational deployments."
+                a: "Enterprise OpenClaw includes multi-agent orchestration, security framework design, role-based access control, audit logging, and professional deployment services. Individual OpenClaw is designed for single users with full trust, while enterprise adds layers of governance, security, and scalability for organizational deployments."
               },
               {
                 q: "Can enterprise OpenClaw integrate with our existing systems?",
-                a: "Yes. Enterprise OpenClaw is designed for seamless integration with existing enterprise systems including CRM, ERP, ITSM, identity providers (Active Directory, OKTA), monitoring systems (Datadog, New Relic), and communication platforms (Slack, Teams, Email). We provide custom integration development as part of the deployment process."
+                a: "Often, yes. The answer depends on API access, identity controls, data boundaries, and reliability requirements across systems such as CRM, ERP, ITSM, identity providers, monitoring systems, and communication platforms."
               },
               {
                 q: "What compliance frameworks does enterprise OpenClaw support?",
-                a: "Enterprise OpenClaw supports GDPR, SOC 2, ISO 27001, HIPAA, and other major compliance frameworks through comprehensive security controls, audit trails, data encryption, and governance features. We work with your compliance team to ensure all requirements are met."
+                a: "Enterprise OpenClaw can be designed with controls, audit trails, encryption, and governance evidence relevant to GDPR, SOC 2, ISO 27001, HIPAA, or other frameworks. Final compliance depends on the wider environment, policies, hosting choices, and legal review."
               },
               {
                 q: "How scalable is enterprise OpenClaw?",
-                a: "Enterprise OpenClaw is designed for massive scale using Kubernetes orchestration, auto-scaling, and distributed architectures. We&apos;ve deployed systems supporting thousands of concurrent agents across multiple regions with 99.9% uptime. The platform scales horizontally to meet growing demand."
+                a: "Enterprise OpenClaw can be designed around Kubernetes orchestration, auto-scaling, and distributed architecture patterns. The right deployment model depends on workload volume, approval requirements, uptime needs, monitoring, and integration risk."
               },
               {
                 q: "What kind of ROI can we expect from enterprise OpenClaw?",
-                a: "Typical enterprise deployments see 40-70% reduction in manual task completion time, 60-90% improvement in process consistency, and full ROI within 6-18 months. Specific ROI depends on use cases, but we provide detailed cost-benefit analysis during the discovery phase."
+                a: "ROI depends on use case volume, current manual effort, integration complexity, review requirements, and risk. We baseline the current workflow first, then model potential value and success measures during discovery."
               },
               {
                 q: "Do you provide ongoing support and maintenance?",
-                a: "Yes. We offer 24/7 support, regular maintenance, security updates, performance optimization, and system monitoring as part of our managed service options. Support levels range from basic email support to dedicated enterprise support teams depending on your needs."
+                a: "Yes. We offer support, regular maintenance, security updates, performance optimization, and system monitoring as part of managed service options. Support levels range from basic email support to priority enterprise support depending on your needs."
               },
               {
                 q: "How secure is enterprise OpenClaw for sensitive data?",
-                a: "Enterprise OpenClaw uses bank-grade security including zero-trust architecture, encryption at rest and in transit, immutable audit logs, network segmentation, and comprehensive access controls. Data can remain entirely on your infrastructure with no external transmission to AI providers."
+                a: "Enterprise OpenClaw can be designed with zero-trust architecture patterns, encryption at rest and in transit, audit logs, network segmentation, and access controls. Data flow depends on your model providers, hosting choices, and integration requirements."
               },
               {
                 q: "What&apos;s the typical implementation timeline?",
@@ -677,7 +717,7 @@ export default function EnterpriseOpenClawPage() {
             Ready for Enterprise AI?
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-[600px] mx-auto">
-            Get a free consultation to discuss your enterprise OpenClaw requirements and create a custom deployment plan.
+            Book a consultation to discuss your enterprise OpenClaw requirements and shape a scoped deployment plan.
           </p>
           <a
             href="#contact"
@@ -705,7 +745,7 @@ export default function EnterpriseOpenClawPage() {
                 <span className="text-orange">OpenClaw Roadmap</span>
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Free discovery session to assess your requirements, design your enterprise architecture, and create a detailed implementation plan.
+                Discovery session to assess your requirements, shape the enterprise architecture, and create a practical implementation plan.
               </p>
               
               <div className="space-y-4 text-white/50 text-sm">
@@ -715,7 +755,7 @@ export default function EnterpriseOpenClawPage() {
                 </div>
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">💰</span>
-                  <span>Detailed ROI analysis and cost projections</span>
+                  <span>Detailed value analysis and cost model</span>
                 </div>
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">⚡</span>

@@ -103,6 +103,7 @@ const relatedGuides = [
 export default function OpenClawROIForBusinessPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-roi-for-business"
       badge="ROI Guide 2026"
       title="OpenClaw ROI"
       highlight="for Business"

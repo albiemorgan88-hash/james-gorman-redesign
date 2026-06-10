@@ -68,7 +68,7 @@ export default function EnterpriseOpenClawDeploymentPage() {
             </p>
             
             <p className="text-muted-dark leading-relaxed mb-8">
-              This comprehensive guide provides enterprise architects and business leaders with proven deployment strategies, from initial pilots through full production scaling. Learn how leading UK enterprises successfully implement OpenClaw across complex organisational structures while maintaining security and compliance standards.
+              This comprehensive guide provides enterprise architects and business leaders with proven deployment strategies, from initial pilots through full production scaling. Learn how UK organisations can approach OpenClaw pilots, governance, security and scaling without creating operational chaos.
             </p>
           </div>
 

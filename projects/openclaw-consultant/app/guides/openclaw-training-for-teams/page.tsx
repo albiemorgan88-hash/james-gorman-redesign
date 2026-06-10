@@ -103,6 +103,7 @@ const relatedGuides = [
 export default function OpenClawTrainingForTeamsPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-training-for-teams"
       badge="Training Guide 2026"
       title="OpenClaw Training"
       highlight="for Teams"

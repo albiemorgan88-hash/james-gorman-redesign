@@ -3,7 +3,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "What is OpenClaw? Complete Guide 2026",
-  description: "Complete guide to OpenClaw in 2026. Learn what OpenClaw is, how it works, key features, use cases, and why it's the most powerful AI agent platform for businesses.",
+  description: "Complete guide to OpenClaw in 2026. Learn what OpenClaw is, how it works, key features, use cases, setup options, and business implementation paths.",
   keywords: [
     "what is openclaw",
     "openclaw guide 2026", 
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://openclawconsultant.co.uk/guides/what-is-openclaw-2026" },
   openGraph: {
     title: "What is OpenClaw? Complete Guide 2026",
-    description: "Complete guide to OpenClaw in 2026. Learn what OpenClaw is, how it works, key features, use cases, and why it's the most powerful AI agent platform.",
+    description: "Complete guide to OpenClaw in 2026. Learn what OpenClaw is, how it works, key features, use cases, setup options, and business implementation paths.",
     url: "https://openclawconsultant.co.uk/guides/what-is-openclaw-2026",
     type: "article",
   },
@@ -199,7 +199,7 @@ export default function WhatIsOpenClawPage() {
             </h1>
 
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
-              Everything you need to know about OpenClaw — the most powerful AI agent platform for businesses. Features, capabilities, and real-world applications explained.
+              Everything you need to know about OpenClaw for business use: features, capabilities, setup options, controls, and practical implementation paths explained.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

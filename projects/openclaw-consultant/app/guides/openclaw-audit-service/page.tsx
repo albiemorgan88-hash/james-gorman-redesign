@@ -103,6 +103,7 @@ const relatedGuides = [
 export default function OpenClawAuditServicePage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-audit-service"
       badge="Implementation-Led Audit Guide 2026"
       title="OpenClaw Audit"
       highlight="Service"

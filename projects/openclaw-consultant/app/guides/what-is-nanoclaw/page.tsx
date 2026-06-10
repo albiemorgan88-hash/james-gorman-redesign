@@ -113,6 +113,7 @@ const relatedGuides = [
 export default function WhatIsNanoClawPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/what-is-nanoclaw"
       badge="NanoClaw Guide 2026"
       title="What Is"
       highlight="NanoClaw?"

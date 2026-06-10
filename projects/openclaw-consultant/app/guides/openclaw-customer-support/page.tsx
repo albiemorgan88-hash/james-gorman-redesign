@@ -34,7 +34,7 @@ const supportCapabilities = [
       "Workload balancing across support staff"
     ],
     benefits: [
-      "Reduced response times by 80%",
+      "Shorter response times for repeat issues",
       "Improved first-contact resolution rates",
       "Better resource allocation and staff utilization",
       "Consistent ticket prioritization"
@@ -52,7 +52,7 @@ const supportCapabilities = [
     benefits: [
       "Instant response to common inquiries",
       "Consistent quality and tone",
-      "24/7 availability without human oversight",
+      "After-hours coverage with clear escalation rules",
       "Reduced training time for new staff"
     ]
   },
@@ -134,7 +134,7 @@ const implementationLevels = [
       "Simple escalation rules"
     ],
     suitableFor: "Small businesses, startups, teams under 10",
-    expectedImpact: "50% reduction in simple query response time",
+    expectedImpact: "Faster handling for simple repeat queries",
     cost: "£2,000-£4,000 setup"
   },
   {
@@ -149,7 +149,7 @@ const implementationLevels = [
       "Multi-channel support (email, chat, social)"
     ],
     suitableFor: "Growing businesses, 10-100 employees",
-    expectedImpact: "75% automation rate, 90% faster responses",
+    expectedImpact: "More consistent triage and faster drafted responses",
     cost: "£5,000-£12,000 setup"
   },
   {
@@ -164,7 +164,7 @@ const implementationLevels = [
       "Custom skill development for specific industries"
     ],
     suitableFor: "Large organizations, complex support needs",
-    expectedImpact: "85% automation, 24/7 coverage, 40% cost reduction",
+    expectedImpact: "Broader coverage with measurable support efficiency gains",
     cost: "£15,000-£35,000 setup"
   }
 ];
@@ -238,8 +238,8 @@ const workflowExamples = [
       "If issue requires action, create internal ticket",
       "Send automated follow-up after resolution"
     ],
-    automationLevel: "95%",
-    averageResolutionTime: "Under 2 minutes"
+    automationLevel: "High for routine cases",
+    averageResolutionTime: "Measured by workflow"
   },
   {
     scenario: "Technical Support Request",
@@ -251,8 +251,8 @@ const workflowExamples = [
       "Escalate to technical team if solution not found",
       "Track resolution and update knowledge base"
     ],
-    automationLevel: "70%",
-    averageResolutionTime: "5-15 minutes"
+    automationLevel: "Medium, with escalation",
+    averageResolutionTime: "Measured by workflow"
   },
   {
     scenario: "Billing Inquiry",
@@ -264,8 +264,8 @@ const workflowExamples = [
       "Process simple requests (invoice copy, payment link)",
       "Escalate complex billing issues to finance team"
     ],
-    automationLevel: "85%",
-    averageResolutionTime: "3-10 minutes"
+    automationLevel: "Medium to high",
+    averageResolutionTime: "Measured by workflow"
   },
   {
     scenario: "Product Information Request",
@@ -277,8 +277,8 @@ const workflowExamples = [
       "Offer demo or trial if appropriate",
       "Follow up with sales team notification"
     ],
-    automationLevel: "90%",
-    averageResolutionTime: "1-3 minutes"
+    automationLevel: "High for standard requests",
+    averageResolutionTime: "Measured by workflow"
   }
 ];
 
@@ -288,14 +288,14 @@ const performanceMetrics = [
     metrics: [
       { metric: "First Response Time", target: "<30 seconds", typical: "2-8 hours without automation" },
       { metric: "Resolution Time", target: "<5 minutes for common issues", typical: "2-24 hours" },
-      { metric: "Availability", target: "99.9% uptime, 24/7", typical: "Business hours only" },
+      { metric: "Availability", target: "Monitored coverage with escalation", typical: "Business hours only" },
       { metric: "Consistency", target: "100% brand voice adherence", typical: "Varies by agent" }
     ]
   },
   {
     category: "Quality Metrics",
     metrics: [
-      { metric: "Automation Rate", target: "70-90% of inquiries", typical: "0% (manual only)" },
+      { metric: "Automation Rate", target: "Measured by inquiry type", typical: "0% (manual only)" },
       { metric: "Customer Satisfaction", target: "4.5+ stars average", typical: "3.5-4.0 stars" },
       { metric: "First Contact Resolution", target: "85%+", typical: "60-70%" },
       { metric: "Escalation Rate", target: "<15%", typical: "20-30%" }
@@ -305,7 +305,7 @@ const performanceMetrics = [
     category: "Cost Metrics",
     metrics: [
       { metric: "Cost per Ticket", target: "£0.50-£2.00", typical: "£15-£30" },
-      { metric: "Support Staff Required", target: "60-80% reduction", typical: "1:100-200 ratio" },
+      { metric: "Support Staff Required", target: "Lower manual load for repeat issues", typical: "1:100-200 ratio" },
       { metric: "Training Time", target: "Minimal ongoing", typical: "40+ hours initial" },
       { metric: "Operational Overhead", target: "Automated monitoring", typical: "Manual management" }
     ]
@@ -322,7 +322,7 @@ const industrySpecifics = [
       "Shipping carrier API connections",
       "Return/refund policy automation"
     ],
-    automationPotential: "85-95%"
+    automationPotential: "High for repeat order questions"
   },
   {
     industry: "SaaS & Technology",
@@ -333,7 +333,7 @@ const industrySpecifics = [
       "User permission and access management",
       "Feature usage analytics and recommendations"
     ],
-    automationPotential: "70-80%"
+    automationPotential: "Medium to high with human escalation"
   },
   {
     industry: "Healthcare",
@@ -344,7 +344,7 @@ const industrySpecifics = [
       "Medical terminology and knowledge base",
       "Appointment booking and reminder automation"
     ],
-    automationPotential: "60-70%"
+    automationPotential: "Moderate with strict privacy controls"
   },
   {
     industry: "Financial Services",
@@ -355,7 +355,7 @@ const industrySpecifics = [
       "Account verification and authentication",
       "Regulatory reporting and documentation"
     ],
-    automationPotential: "65-75%"
+    automationPotential: "Moderate with verification controls"
   }
 ];
 
@@ -462,7 +462,7 @@ export default function OpenClawCustomerSupportPage() {
                 The key advantage is intelligence combined with automation. Your OpenClaw support agent doesn't just follow scripts—it analyzes each inquiry, accesses relevant data, and generates personalized responses that sound human while being available instantly, around the clock.
               </p>
               <p>
-                Most businesses see 70-90% of support inquiries handled automatically, with significant improvements in response times, customer satisfaction, and cost per ticket. The remaining complex cases are escalated to human agents with full context and recommended solutions.
+                Many teams start by automating a narrow set of repeat inquiries, then expand once response quality, escalation rules, customer satisfaction, and cost per ticket have been measured. Complex cases should still be escalated to human agents with full context and recommended next steps.
               </p>
             </div>
           </div>

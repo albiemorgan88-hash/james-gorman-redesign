@@ -93,6 +93,7 @@ const relatedGuides = [
 export default function OpenClawCustomSkillsCostUKPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-custom-skills-cost-uk"
       badge="Custom Skills Pricing Guide 2026"
       title="OpenClaw Custom Skills"
       highlight="Cost UK"

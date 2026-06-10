@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import { ServiceBreadcrumb, ServiceSeo } from "@/components/ServiceSeo";
 
 export const metadata: Metadata = {
   title: "AI Automation for Small Business",
@@ -28,7 +29,7 @@ const smallBusinessChallenges = [
     icon: "⏰",
     title: "Time Poverty",
     desc: "Small teams juggling multiple roles with no time for growth activities.",
-    solution: "Automate repetitive tasks to free up 15-25 hours per week for strategic work."
+    solution: "Automate repetitive tasks so the owner and team can spend more time on sales, delivery, and customer work."
   },
   {
     icon: "💰",
@@ -60,7 +61,7 @@ const automationAreas = [
       "Customer support responses",
       "Review request campaigns"
     ],
-    timeSaved: "8-12 hours/week"
+    timeSaved: "High-fit"
   },
   {
     area: "Marketing & Sales",
@@ -71,7 +72,7 @@ const automationAreas = [
       "Proposal generation",
       "Pipeline reporting"
     ],
-    timeSaved: "10-15 hours/week"
+    timeSaved: "High-fit"
   },
   {
     area: "Operations & Admin",
@@ -82,7 +83,7 @@ const automationAreas = [
       "Inventory tracking",
       "Compliance reporting"
     ],
-    timeSaved: "6-10 hours/week"
+    timeSaved: "High-fit"
   },
   {
     area: "Business Intelligence",
@@ -93,7 +94,7 @@ const automationAreas = [
       "Customer analytics",
       "Trend analysis"
     ],
-    timeSaved: "4-8 hours/week"
+    timeSaved: "Useful"
   }
 ];
 
@@ -146,27 +147,27 @@ const smePackages = [
   }
 ];
 
-const smeResults = [
+const smeWorkflowExamples = [
   {
     business: "Marketing Consultancy",
     size: "3 people", 
     before: "Manual client reporting, social media posting, lead qualification",
     after: "Automated client dashboards, content calendars, lead scoring pipeline",
-    results: ["18 hours/week saved", "40% more qualified leads", "£15k/month revenue increase"]
+    results: ["Less manual reporting", "Cleaner lead handoff", "More consistent follow-up"]
   },
   {
     business: "Property Agency",
     size: "8 people",
     before: "Manual property descriptions, lead follow-up, market analysis", 
     after: "AI property descriptions, automated nurture sequences, market reports",
-    results: ["25 hours/week saved", "60% faster property listings", "22% increase in viewings"]
+    results: ["Faster listing prep", "Clearer buyer follow-up", "Better CRM hygiene"]
   },
   {
     business: "Accounting Practice",
     size: "12 people", 
     before: "Manual expense categorization, client communications, reporting",
     after: "Automated bookkeeping, client portals, real-time dashboards",
-    results: ["35 hours/week saved", "50% faster month-end", "30% client capacity increase"]
+    results: ["Fewer document chasers", "Cleaner month-end admin", "More visible exceptions"]
   }
 ];
 
@@ -174,7 +175,7 @@ const implementationSteps = [
   {
     step: "Business Assessment",
     duration: "1 day",
-    description: "Audit current processes, identify automation opportunities, calculate ROI potential",
+    description: "Audit current processes, identify automation opportunities, and model likely value",
     deliverable: "Automation roadmap with priority workflows"
   },
   {
@@ -200,6 +201,13 @@ const implementationSteps = [
 export default function SmallBusinessAutomationPage() {
   return (
     <>
+      <ServiceSeo
+        name="AI Automation for Small Business"
+        description="AI automation and OpenClaw setup for UK SMEs that want to reduce repetitive admin, improve handoffs, and test practical workflows safely."
+        path="/services/small-business-automation"
+        serviceType="Small business AI automation and OpenClaw setup"
+      />
+
       {/* Hero Section */}
       <section className="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center grain">
         <div className="absolute top-20 right-[10%] w-[400px] h-[400px] bg-orange/5 rounded-full blur-[120px] glow-pulse" />
@@ -207,6 +215,7 @@ export default function SmallBusinessAutomationPage() {
 
         <div className="max-w-[1140px] mx-auto px-6 relative z-10 py-20">
           <div className="max-w-[720px]">
+            <ServiceBreadcrumb current="AI Automation for Small Business" />
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
               <span className="text-white/60 text-sm font-medium">AI Automation for UK Small Business</span>
@@ -219,7 +228,7 @@ export default function SmallBusinessAutomationPage() {
             </h1>
 
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
-              Affordable OpenClaw automation designed for UK SMEs. Save 15-35 hours per week with intelligent agents that work while you focus on growing your business.
+              Affordable OpenClaw automation designed for UK SMEs. Start with the repetitive admin, follow-up, reporting, and handoff work that slows the business down.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -284,7 +293,7 @@ export default function SmallBusinessAutomationPage() {
               Where Small Businesses Save the Most Time
             </h2>
             <p className="text-muted text-lg max-w-[600px] mx-auto">
-              Real automation areas where UK SMEs see immediate time savings and business impact.
+              Practical automation areas where UK SMEs can usually find repeatable, low-risk workflows to improve first.
             </p>
           </div>
 
@@ -429,12 +438,12 @@ export default function SmallBusinessAutomationPage() {
               Real UK Small Businesses, Real Results
             </h2>
             <p className="text-white/60 text-lg max-w-[600px] mx-auto">
-              How OpenClaw automation has transformed operations for UK SMEs across different industries.
+              Common workflow patterns where OpenClaw automation can reduce manual handling, improve consistency, and make follow-up easier to manage.
             </p>
           </div>
 
           <div className="space-y-8">
-            {smeResults.map((result, index) => (
+            {smeWorkflowExamples.map((result, index) => (
               <div key={index} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                   <div>
@@ -454,15 +463,12 @@ export default function SmallBusinessAutomationPage() {
                   </div>
                   
                   <div className="lg:col-span-2">
-                    <h4 className="text-white/80 font-semibold text-sm mb-4">Results:</h4>
+                    <h4 className="text-white/80 font-semibold text-sm mb-4">Likely Improvements:</h4>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       {result.results.map((achievement) => (
                         <div key={achievement} className="bg-white/[0.05] rounded-xl p-4 text-center">
-                          <p className="text-orange font-bold text-lg mb-1">
-                            {achievement.split(' ')[0]} {achievement.split(' ')[1]}
-                          </p>
-                          <p className="text-white/60 text-xs">
-                            {achievement.split(' ').slice(2).join(' ')}
+                          <p className="text-orange font-bold text-sm mb-1">
+                            {achievement}
                           </p>
                         </div>
                       ))}
@@ -486,7 +492,7 @@ export default function SmallBusinessAutomationPage() {
               From Assessment to Automation in Under a Week
             </h2>
             <p className="text-muted text-lg max-w-[600px] mx-auto">
-              Fast implementation designed for busy small business owners. Start seeing results within days, not months.
+              Focused implementation designed for busy small business owners. Start with one useful workflow, prove it, then expand.
             </p>
           </div>
 
@@ -516,72 +522,72 @@ export default function SmallBusinessAutomationPage() {
         </div>
       </section>
 
-      {/* ROI Calculator Preview */}
+      {/* Value Model Preview */}
       <section className="bg-light py-24">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-card">
             <div className="text-center mb-12">
               <h2 className="font-heading text-3xl font-bold text-dark mb-4">
-                Calculate Your Automation ROI
+                Model the Automation Value
               </h2>
               <p className="text-muted text-lg">
-                See how much time and money OpenClaw automation could save your business.
+                A realistic automation case starts with your current process, not a generic savings promise.
               </p>
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="font-heading font-bold text-xl text-dark mb-6">Typical SME Savings</h3>
+                <h3 className="font-heading font-bold text-xl text-dark mb-6">What we baseline first</h3>
                 <div className="space-y-6">
                   <div className="flex justify-between items-center">
                     <span className="text-muted">Email & communication automation</span>
-                    <span className="font-bold text-dark">8-12 hours/week</span>
+                    <span className="font-bold text-dark">Volume</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted">Lead generation & qualification</span>
-                    <span className="font-bold text-dark">6-10 hours/week</span>
+                    <span className="font-bold text-dark">Response time</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted">Administrative tasks</span>
-                    <span className="font-bold text-dark">5-8 hours/week</span>
+                    <span className="font-bold text-dark">Error rate</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted">Reporting & analytics</span>
-                    <span className="font-bold text-dark">3-5 hours/week</span>
+                    <span className="font-bold text-dark">Review effort</span>
                   </div>
                   <div className="border-t pt-4">
                     <div className="flex justify-between items-center">
-                      <span className="font-semibold text-dark">Total Weekly Savings</span>
-                      <span className="font-bold text-orange text-lg">22-35 hours</span>
+                      <span className="font-semibold text-dark">Decision point</span>
+                      <span className="font-bold text-orange text-lg">Worth automating?</span>
                     </div>
                   </div>
                 </div>
               </div>
               
               <div className="bg-navy text-white rounded-2xl p-8">
-                <h3 className="font-heading font-bold text-xl mb-6">Your Monthly ROI</h3>
+                <h3 className="font-heading font-bold text-xl mb-6">Your value case</h3>
                 <div className="space-y-4 mb-6">
                   <div className="flex justify-between items-center">
-                    <span className="text-white/70">Time saved (25 hours/week)</span>
-                    <span className="text-orange font-bold">100 hours/month</span>
+                    <span className="text-white/70">Workflow frequency</span>
+                    <span className="text-orange font-bold">Measured</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-white/70">Value of time (£25/hour)</span>
-                    <span className="text-orange font-bold">£2,500/month</span>
+                    <span className="text-white/70">Human review required</span>
+                    <span className="text-orange font-bold">Mapped</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-white/70">Setup investment (one-time)</span>
-                    <span className="text-white/70">£997</span>
+                    <span className="text-white/70">Risk and approvals</span>
+                    <span className="text-white/70">Scoped</span>
                   </div>
                   <div className="border-t border-white/20 pt-4">
                     <div className="flex justify-between items-center">
-                      <span className="font-semibold text-white">ROI breakeven</span>
-                      <span className="font-bold text-orange text-lg">2 weeks</span>
+                      <span className="font-semibold text-white">Pilot decision</span>
+                      <span className="font-bold text-orange text-lg">Clear</span>
                     </div>
                   </div>
                 </div>
                 <p className="text-white/60 text-sm italic">
-                  "After just 2 weeks, your automation pays for itself. Everything after that is pure profit."
+                  A good pilot should have a named owner, a visible before-and-after measure, and a clear stopping rule if the workflow is not worth automating.
                 </p>
               </div>
             </div>
@@ -605,7 +611,7 @@ export default function SmallBusinessAutomationPage() {
             {[
               {
                 q: "Is OpenClaw suitable for very small businesses (under 5 people)?",
-                a: "Yes, if you have repetitive processes that eat time. Even 1-2 person businesses can benefit significantly. Our Starter package is designed for micro-businesses and typically pays for itself within 2-3 weeks through time savings."
+                a: "Yes, if you have repetitive processes that eat time and follow a clear pattern. Very small teams should start with one workflow, measure the before-and-after, and expand only when the first pilot proves useful."
               },
               {
                 q: "What's the minimum technical knowledge required?",
@@ -613,7 +619,7 @@ export default function SmallBusinessAutomationPage() {
               },
               {
                 q: "How quickly do small businesses see results?",
-                a: "Most SMEs see immediate time savings within 24-48 hours of setup. The first week typically saves 10-15 hours, and full benefits (20-35 hours/week) are realized within the first month as you learn to leverage all the automations."
+                a: "Simple workflows can show value quickly once the inputs and approval rules are clear. The timeline depends on how often the workflow happens, how clean the source data is, and how much review is required."
               },
               {
                 q: "Can the automation scale as my business grows?",
@@ -625,7 +631,7 @@ export default function SmallBusinessAutomationPage() {
               },
               {
                 q: "How does this compare to hiring a virtual assistant?",
-                a: "A VA costs £800-1,500/month and works business hours. OpenClaw works 24/7, never takes holidays, and has a one-time setup cost. For repetitive tasks, automation is typically 3-5x more cost-effective than human assistance."
+                a: "A virtual assistant is better for judgement-heavy, relationship-led or changing work. OpenClaw is better for repeatable preparation, routing, reminders, reporting, and data handoffs. Many teams use both."
               }
             ].map((faq, i) => (
               <details key={i} className="group border-b border-border">
@@ -646,10 +652,10 @@ export default function SmallBusinessAutomationPage() {
       <section className="bg-orange py-16">
         <div className="max-w-[900px] mx-auto px-6 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-white mb-4">
-            Ready to Save 25+ Hours Per Week?
+            Ready to Find the First Workflow?
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-[600px] mx-auto">
-            Free consultation to identify your biggest time drains and calculate your exact automation ROI. No obligation, just honest advice.
+            Free consultation to identify the repetitive work that is most realistic to automate first. No obligation, just honest advice.
           </p>
           <a
             href="#contact"
@@ -677,17 +683,17 @@ export default function SmallBusinessAutomationPage() {
                 <span className="text-orange">Automation Assessment</span>
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Free 30-minute call designed specifically for small business owners. We'll identify your biggest time drains and calculate exactly how much OpenClaw could save your business.
+                Free 30-minute call designed specifically for small business owners. We will identify your biggest time drains and map the first workflow worth testing.
               </p>
               
               <div className="space-y-4 text-white/50 text-sm">
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">⏱️</span>
-                  <span>Identify 15-35 hours/week in time savings</span>
+                  <span>Identify the first realistic automation workflow</span>
                 </div>
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">💰</span>
-                  <span>Calculate exact ROI for your business</span>
+                  <span>Model value using your real process</span>
                 </div>
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">🎯</span>

@@ -68,6 +68,7 @@ const relatedGuides = [
 export default function AIGovernancePolicyTemplatePage() {
   return (
     <GuideLandingPage
+      canonicalPath="/guides/ai-governance-policy-template"
       badge="Governance Guide 2026"
       title="AI Governance Policy Template"
       intro="Most firms do not need a grand AI constitution. They need a clear policy that tells staff which tools are approved, what data stays off limits, where review is mandatory, and who owns the rules."

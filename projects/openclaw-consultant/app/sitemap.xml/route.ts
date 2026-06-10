@@ -1,4 +1,4 @@
-import { existsSync, readdirSync } from 'fs';
+import { existsSync, readdirSync, statSync } from 'fs';
 import { join } from 'path';
 
 function isRouteDirectory(parentDir: string, name: string) {
@@ -10,9 +10,25 @@ function isRouteDirectory(parentDir: string, name: string) {
   );
 }
 
+function routeLastModified(...segments: string[]) {
+  try {
+    return statSync(join(process.cwd(), 'app', ...segments, 'page.tsx')).mtime.toISOString();
+  } catch {
+    return '2026-05-26T00:00:00.000Z';
+  }
+}
+
+function urlEntry(baseUrl: string, path: string, lastmod: string, changefreq: string, priority: string) {
+  return `  <url>
+    <loc>${baseUrl}${path}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`;
+}
+
 export async function GET() {
   const baseUrl = 'https://openclawconsultant.co.uk';
-  const now = new Date().toISOString();
   
   // Auto-discover all guide directories
   let guides: string[] = [];
@@ -50,65 +66,35 @@ export async function GET() {
     // No case studies directory — skip
   }
 
+  const baseRoutes = [
+    { path: '', segments: [] as string[], changefreq: 'weekly', priority: '1.0' },
+    { path: '/openclaw', segments: ['openclaw'], changefreq: 'weekly', priority: '1.0' },
+    { path: '/pricing', segments: ['pricing'], changefreq: 'monthly', priority: '0.8' },
+    { path: '/guides', segments: ['guides'], changefreq: 'weekly', priority: '0.9' },
+    { path: '/services', segments: ['services'], changefreq: 'weekly', priority: '0.9' },
+    { path: '/about', segments: ['about'], changefreq: 'monthly', priority: '0.7' },
+    { path: '/faq', segments: ['faq'], changefreq: 'monthly', priority: '0.7' },
+    { path: '/case-studies', segments: ['case-studies'], changefreq: 'weekly', priority: '0.8' },
+  ];
+
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>${baseUrl}</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/pricing</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/guides</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/services</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/about</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/faq</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/case-studies</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+${baseRoutes.map(route => urlEntry(baseUrl, route.path, routeLastModified(...route.segments), route.changefreq, route.priority)).join('\n')}
 ${guides.map(guide => `  <url>
     <loc>${baseUrl}/guides/${guide}</loc>
-    <lastmod>${now}</lastmod>
+    <lastmod>${routeLastModified('guides', guide)}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`).join('\n')}
 ${services.map(service => `  <url>
     <loc>${baseUrl}/services/${service}</loc>
-    <lastmod>${now}</lastmod>
+    <lastmod>${routeLastModified('services', service)}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>`).join('\n')}
 ${caseStudies.map(study => `  <url>
     <loc>${baseUrl}/case-studies/${study}</loc>
-    <lastmod>${now}</lastmod>
+    <lastmod>${routeLastModified('case-studies', study)}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>`).join('\n')}

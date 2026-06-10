@@ -43,7 +43,7 @@ const topSkills = [
       "Improved search rankings and organic traffic"
     ],
     businessTypes: ["E-commerce", "SaaS", "Local Services", "Content Publishers"],
-    roiImpact: "20-40% increase in organic traffic within 6 months",
+    roiImpact: "Organic traffic growth and better technical visibility over time",
     setupComplexity: "Medium",
     integration: "Google Analytics, Search Console, Ahrefs, Webflow"
   },
@@ -66,7 +66,7 @@ const topSkills = [
       "Detailed analytics on support patterns"
     ],
     businessTypes: ["E-commerce", "SaaS", "Service Businesses", "Healthcare"],
-    roiImpact: "50% reduction in support costs, 90% faster response times",
+    roiImpact: "Lower support load and faster first responses for repeat queries",
     setupComplexity: "Low",
     integration: "Zendesk, Intercom, Slack, WhatsApp Business"
   },
@@ -89,7 +89,7 @@ const topSkills = [
       "Comprehensive lead tracking and attribution"
     ],
     businessTypes: ["B2B Services", "Consulting", "Software", "Real Estate"],
-    roiImpact: "300-500% increase in qualified leads",
+    roiImpact: "More consistent qualified lead capture when CRM and sourcing data are clean",
     setupComplexity: "Medium",
     integration: "HubSpot, Salesforce, LinkedIn Sales Navigator, Apollo"
   },
@@ -112,7 +112,7 @@ const topSkills = [
       "Cost savings on accounting and bookkeeping"
     ],
     businessTypes: ["All Business Types", "Startups", "SMEs", "Professional Services"],
-    roiImpact: "60% reduction in accounting costs, real-time insights",
+    roiImpact: "Less manual reporting time and better visibility into cashflow",
     setupComplexity: "High",
     integration: "QuickBooks, Xero, Stripe, PayPal, Bank APIs"
   },
@@ -135,7 +135,7 @@ const topSkills = [
       "Data-driven content performance optimization"
     ],
     businessTypes: ["Marketing Agencies", "E-commerce", "SaaS", "Personal Brands"],
-    roiImpact: "80% reduction in content creation time, 2x content output",
+    roiImpact: "Less manual content drafting time and more consistent publishing",
     setupComplexity: "Low",
     integration: "WordPress, Buffer, Mailchimp, Canva, YouTube"
   },
@@ -158,7 +158,7 @@ const topSkills = [
       "Better cash flow management through automation"
     ],
     businessTypes: ["E-commerce", "Retail", "Subscription Services", "Dropshipping"],
-    roiImpact: "40% reduction in fulfillment costs, 95% order accuracy",
+    roiImpact: "Fewer manual order steps and clearer exception handling",
     setupComplexity: "Medium",
     integration: "Shopify, WooCommerce, Amazon, eBay, ShipStation"
   },
@@ -181,7 +181,7 @@ const topSkills = [
       "Comprehensive social media analytics and insights"
     ],
     businessTypes: ["Restaurants", "Retail", "Personal Brands", "Local Services"],
-    roiImpact: "3x social media engagement, 50% time savings",
+    roiImpact: "More consistent posting cadence and faster engagement reporting",
     setupComplexity: "Low",
     integration: "Facebook, Instagram, Twitter, LinkedIn, TikTok"
   },
@@ -204,7 +204,7 @@ const topSkills = [
       "Data-driven project optimization insights"
     ],
     businessTypes: ["Agencies", "Consulting", "Software Development", "Construction"],
-    roiImpact: "25% improvement in project delivery times",
+    roiImpact: "Lower project admin overhead and clearer delivery signals",
     setupComplexity: "Medium",
     integration: "Asana, Monday.com, Trello, Slack, Microsoft Teams"
   },
@@ -227,7 +227,7 @@ const topSkills = [
       "Reduced IT support costs and emergency fixes"
     ],
     businessTypes: ["E-commerce", "SaaS", "Service Businesses", "Media Companies"],
-    roiImpact: "99.9% uptime, 30% improvement in page speed",
+    roiImpact: "Earlier outage detection and better page-speed hygiene",
     setupComplexity: "Low",
     integration: "CloudFlare, Google PageSpeed, Security scanners, SSL providers"
   },
@@ -250,7 +250,7 @@ const topSkills = [
       "Comprehensive email marketing analytics and insights"
     ],
     businessTypes: ["E-commerce", "SaaS", "Education", "Professional Services"],
-    roiImpact: "40% increase in email open rates, 25% boost in conversions",
+    roiImpact: "More consistent segmentation, testing and follow-up",
     setupComplexity: "Low",
     integration: "Mailchimp, ConvertKit, ActiveCampaign, HubSpot"
   }
@@ -282,21 +282,21 @@ const implementationGuide = {
     phase: "Start Here (Months 1-2)",
     skills: ["Customer Support Automation", "Social Media Management", "Email Marketing Automation"],
     reasoning: "Low complexity, immediate impact, easy to measure ROI",
-    expectedRoi: "200-400%",
+    expectedRoi: "low-risk proof",
     timeToValue: "2-4 weeks"
   },
   intermediate: {
     phase: "Build Momentum (Months 3-6)",
     skills: ["SEO Engine", "Content Creation & Marketing", "Website Health Monitoring"],
     reasoning: "Medium complexity, significant long-term value, compound benefits",
-    expectedRoi: "300-600%", 
+    expectedRoi: "compound visibility", 
     timeToValue: "6-12 weeks"
   },
   advanced: {
     phase: "Scale & Optimize (Months 6+)",
     skills: ["Lead Generation & Qualification", "Financial Reporting & Analytics", "E-commerce Order Management", "Project Management Automation"],
     reasoning: "High complexity, maximum impact, business transformation",
-    expectedRoi: "500-1000%",
+    expectedRoi: "operational scale",
     timeToValue: "12-24 weeks"
   }
 };
@@ -307,10 +307,10 @@ const successStories = [
     skillsUsed: ["SEO Engine", "Lead Generation", "Project Management", "Content Creation"],
     challenge: "Manual SEO audits taking 40+ hours per month, inconsistent lead generation, project delays",
     results: [
-      "90% reduction in SEO audit time (40hrs → 4hrs)",
-      "5x increase in qualified leads through automation",
-      "25% improvement in project delivery times",
-      "£8,000/month cost savings in manual labor"
+      "SEO audit work moved from manual review into repeatable checks",
+      "Lead qualification became more consistent through automation",
+      "Project status reporting became easier to maintain",
+      "Manual admin time was redirected into client work"
     ],
     timeframe: "6 months implementation"
   },
@@ -319,10 +319,10 @@ const successStories = [
     skillsUsed: ["E-commerce Order Management", "Customer Support", "Email Marketing", "Website Monitoring"],
     challenge: "Order processing errors, slow customer support, manual email campaigns, frequent site issues",
     results: [
-      "99.5% order accuracy (up from 92%)",
-      "Response time reduced from 8 hours to 30 seconds",
-      "40% increase in email conversion rates",
-      "99.9% website uptime achieved"
+      "Order exceptions became easier to catch before fulfilment",
+      "Common support replies were drafted faster",
+      "Email follow-up became more consistent",
+      "Website health monitoring improved incident visibility"
     ],
     timeframe: "4 months implementation"
   },
@@ -332,9 +332,9 @@ const successStories = [
     challenge: "Delayed financial reports, inconsistent marketing, project tracking issues, content bottlenecks",
     results: [
       "Daily financial reports (was monthly)",
-      "400% increase in qualified leads",
-      "30% reduction in project overruns",
-      "10x content production capacity"
+      "Lead capture became more systematic",
+      "Project overruns became easier to spot earlier",
+      "Content drafting capacity increased with human review"
     ],
     timeframe: "8 months implementation"
   }
@@ -345,7 +345,7 @@ const costBenefitAnalysis = [
     skillTier: "Essential (3 skills)",
     setupCost: "£3,000-£6,000",
     monthlyCost: "£300-£600",
-    expectedSavings: "£2,000-£5,000/month",
+    expectedSavings: "Depends on workflow volume",
     roiTimeline: "1-2 months",
     suitableFor: "Small businesses, startups, solo entrepreneurs"
   },
@@ -353,7 +353,7 @@ const costBenefitAnalysis = [
     skillTier: "Professional (6 skills)",
     setupCost: "£6,000-£12,000", 
     monthlyCost: "£600-£1,200",
-    expectedSavings: "£5,000-£12,000/month",
+    expectedSavings: "Depends on team adoption",
     roiTimeline: "2-3 months",
     suitableFor: "Growing businesses, agencies, established SMEs"
   },
@@ -361,7 +361,7 @@ const costBenefitAnalysis = [
     skillTier: "Enterprise (10 skills)",
     setupCost: "£10,000-£20,000",
     monthlyCost: "£1,000-£2,000", 
-    expectedSavings: "£10,000-£25,000/month",
+    expectedSavings: "Depends on operating scope",
     roiTimeline: "2-4 months",
     suitableFor: "Large businesses, complex operations, multiple departments"
   }
@@ -421,7 +421,7 @@ export default function Top10OpenClawSkillsPage() {
             </h2>
             <div className="prose prose-lg max-w-none text-muted leading-relaxed space-y-6">
               <p>
-                After analyzing hundreds of OpenClaw implementations across different industries, these 10 skills consistently deliver the highest ROI and business impact. They're ranked by value, ease of implementation, and universal applicability across business types.
+                These 10 skills are practical starting points for business OpenClaw deployments because they map to repeated operational needs: research, reporting, inbox handling, CRM updates, document processing, monitoring, and team handoff.
               </p>
               <p>
                 Each skill is designed to solve real business challenges while providing measurable results. Whether you're a startup looking to automate basic operations or an enterprise seeking sophisticated workflow automation, these skills form the foundation of any successful OpenClaw deployment.
@@ -536,7 +536,7 @@ export default function Top10OpenClawSkillsPage() {
                     </h4>
                     <div className="space-y-3">
                       <div className="bg-orange/10 p-4 rounded-lg">
-                        <div className="font-medium text-dark text-sm mb-1">Expected ROI Impact:</div>
+                        <div className="font-medium text-dark text-sm mb-1">Potential Impact:</div>
                         <div className="text-orange font-semibold text-sm">{skill.roiImpact}</div>
                       </div>
                       <div>
@@ -577,7 +577,7 @@ export default function Top10OpenClawSkillsPage() {
                     <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-6">
                       <h3 className="font-heading font-bold text-xl text-white">{guide.phase}</h3>
                       <div className="flex gap-4 text-sm">
-                        <span className="text-green-400">ROI: {guide.expectedRoi}</span>
+                        <span className="text-green-400">Focus: {guide.expectedRoi}</span>
                         <span className="text-orange">Time to Value: {guide.timeToValue}</span>
                       </div>
                     </div>
@@ -619,10 +619,10 @@ export default function Top10OpenClawSkillsPage() {
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
-              Real Business Success Stories
+              Example Operating Patterns
             </h2>
             <p className="text-muted text-lg max-w-[600px] mx-auto">
-              How businesses transformed their operations using these top OpenClaw skills.
+              Illustrative ways teams can combine OpenClaw skills once the workflows and controls are clear.
             </p>
           </div>
 
@@ -695,7 +695,7 @@ export default function Top10OpenClawSkillsPage() {
                     <span className="font-semibold text-dark text-sm">{tier.monthlyCost}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted text-sm">Expected Savings:</span>
+                    <span className="text-muted text-sm">Likely Leverage:</span>
                     <span className="font-semibold text-green-600 text-sm">{tier.expectedSavings}</span>
                   </div>
                   <div className="flex justify-between">
@@ -737,7 +737,7 @@ export default function Top10OpenClawSkillsPage() {
               Ready to Implement These Skills?
             </h2>
             <p className="text-muted text-lg leading-relaxed mb-8 max-w-[600px] mx-auto">
-              Get a customized implementation plan showing which skills will deliver the biggest impact for your specific business. Free consultation and ROI analysis included.
+              Get a customized implementation plan showing which skills are most likely to matter for your specific business. Free consultation and value analysis included.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">

@@ -330,7 +330,7 @@ export default function OpenClawVsVirtualAssistantCostPage() {
               <div className="bg-green-50 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-green-800 mb-4">OpenClaw Agent Benefits</h3>
                 <ul className="space-y-3 text-green-700">
-                  <li>• <strong>Zero sick days:</strong> 100% uptime guaranteed</li>
+                  <li>• <strong>Zero sick days:</strong> designed for high availability</li>
                   <li>• <strong>Instant scaling:</strong> Add capacity in minutes</li>
                   <li>• <strong>24/7 availability:</strong> Works while you sleep</li>
                   <li>• <strong>Consistent quality:</strong> Same performance every time</li>

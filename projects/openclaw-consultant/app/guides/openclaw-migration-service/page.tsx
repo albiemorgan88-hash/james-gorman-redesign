@@ -98,6 +98,7 @@ const relatedGuides = [
 export default function OpenClawMigrationServicePage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-migration-service"
       badge="Migration Guide 2026"
       title="OpenClaw Migration"
       highlight="Service"

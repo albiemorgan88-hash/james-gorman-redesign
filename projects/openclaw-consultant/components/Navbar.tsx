@@ -1,13 +1,24 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { discoveryCallUrl } from "@/components/booking";
 
 const links = [
+  { href: "/openclaw", label: "OpenClaw" },
   { href: "/services", label: "Services" },
+  { href: "/pricing", label: "Pricing" },
+  { href: "/case-studies", label: "Case studies" },
   { href: "/guides", label: "Guides" },
   { href: "/about", label: "About" },
-  { href: "/faq", label: "FAQ" },
-  { href: "/pricing", label: "Pricing" },
+  { href: "/#contact", label: "Contact" },
+];
+
+const homeLinks = [
+  { href: "#services", label: "Services" },
+  { href: "/openclaw", label: "OpenClaw" },
+  { href: "#case-studies", label: "Case studies" },
+  { href: "#use-cases", label: "Use Cases" },
+  { href: "#pricing", label: "Pricing" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -17,81 +28,101 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   function resolveHref(href: string) {
-    if (!href.startsWith("#")) return href;
+    if (href === "/#contact" && pathname === "/") return "#contact";
+    return href;
+  }
 
-    if (href === "#contact") {
-      if (
-        pathname === "/" ||
-        pathname === "/about" ||
-        pathname === "/guides" ||
-        pathname === "/services" ||
-        pathname === "/faq" ||
-        pathname.startsWith("/guides/") ||
-        pathname.startsWith("/services/")
-      ) {
-        return href;
-      }
-    }
+  if (pathname === "/") {
+    return (
+      <nav className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${scrolled || open ? "bg-navy/95 py-3 shadow-lg backdrop-blur-md" : "bg-transparent py-5"}`}>
+        <div className="mx-auto flex max-w-[1140px] items-center justify-between px-6">
+          <a href="/" className="flex items-center gap-2 text-xl font-bold text-white" aria-label="OpenClaw Consultant home">
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-orange text-sm font-black text-white">OC</span>
+            OpenClaw<span className="text-orange">.</span>
+          </a>
 
-    if (pathname === "/") return href;
-    return `/${href}`;
+          <button
+            type="button"
+            className="relative z-50 flex cursor-pointer flex-col gap-[5px] md:hidden"
+            onClick={() => setOpen((value) => !value)}
+            aria-label="Toggle menu"
+            aria-expanded={open}
+          >
+            <span className={`h-0.5 w-6 bg-white transition-all duration-300 ${open ? "translate-y-[7px] rotate-45" : ""}`} />
+            <span className={`h-0.5 w-6 bg-white transition-all duration-300 ${open ? "opacity-0" : ""}`} />
+            <span className={`h-0.5 w-6 bg-white transition-all duration-300 ${open ? "-translate-y-[7px] -rotate-45" : ""}`} />
+          </button>
+
+          <div className={`${open ? "flex" : "hidden"} absolute left-0 right-0 top-full flex-col items-start gap-5 border-b border-white/10 bg-navy p-6 md:static md:flex md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0`}>
+            {homeLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="text-sm font-medium text-white/70 transition-colors hover:text-white"
+              >
+                {link.label}
+              </a>
+            ))}
+            <a
+              href={discoveryCallUrl}
+              target="_blank"
+              rel="noopener"
+              onClick={() => setOpen(false)}
+              className="rounded-btn bg-orange px-5 py-2.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-orange-hover"
+            >
+              Discovery call
+            </a>
+          </div>
+        </div>
+      </nav>
+    );
   }
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-navy/95 backdrop-blur-md shadow-lg py-3"
-          : "bg-transparent py-5"
-      }`}
-    >
-      <div className="max-w-[1140px] mx-auto px-6 flex justify-between items-center gap-4">
-        <a href="/" className="font-heading font-bold text-xl text-white flex items-center gap-2 shrink-0">
-          <span className="w-8 h-8 bg-orange rounded-lg flex items-center justify-center text-sm font-black">
-            OC
-          </span>
-          OpenClaw<span className="text-orange">.</span>
+    <nav className={`fixed left-0 right-0 top-0 z-50 border-b transition-all duration-200 ${scrolled || open ? "border-ink-200 bg-white/95 py-3 shadow-soft backdrop-blur" : "border-transparent bg-white/80 py-5 backdrop-blur-sm"}`}>
+      <div className="mx-auto flex max-w-[1100px] items-center justify-between gap-4 px-6">
+        <a href="/" className="flex shrink-0 items-center gap-3 text-ink" aria-label="OpenClaw Consultant home">
+          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-blue-700 to-orange-500 text-[13px] font-bold text-white shadow-card">OC</span>
+          <span className="text-base font-semibold tracking-[-0.01em]">OpenClaw Consultant</span>
         </a>
 
         <button
-          className="md:hidden flex flex-col gap-[5px] cursor-pointer relative z-50"
-          onClick={() => setOpen(!open)}
+          type="button"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-ink-200 text-ink md:hidden"
+          onClick={() => setOpen((value) => !value)}
           aria-label="Toggle menu"
+          aria-expanded={open}
         >
-          <span className={`w-6 h-0.5 bg-white transition-all duration-300 ${open ? "rotate-45 translate-y-[7px]" : ""}`} />
-          <span className={`w-6 h-0.5 bg-white transition-all duration-300 ${open ? "opacity-0" : ""}`} />
-          <span className={`w-6 h-0.5 bg-white transition-all duration-300 ${open ? "-rotate-45 -translate-y-[7px]" : ""}`} />
+          <span className="text-xl leading-none">{open ? "×" : "≡"}</span>
         </button>
 
-        <div
-          className={`${
-            open ? "flex" : "hidden"
-          } md:flex flex-col md:flex-row absolute md:static top-full left-0 right-0 bg-navy md:bg-transparent p-6 md:p-0 gap-5 md:gap-4 xl:gap-6 items-start md:items-center border-b border-white/10 md:border-0`}
-        >
-          {links.map((l) => (
+        <div className={`${open ? "flex" : "hidden"} absolute left-0 right-0 top-full flex-col gap-2 border-b border-ink-200 bg-white px-6 py-5 md:static md:flex md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0`}>
+          {links.map((link) => (
             <a
-              key={l.href}
-              href={resolveHref(l.href)}
-              className="text-white/70 text-sm font-medium hover:text-white transition-colors whitespace-nowrap"
+              key={link.href}
+              href={resolveHref(link.href)}
               onClick={() => setOpen(false)}
+              className="text-sm font-medium text-muted-dark hover:text-ink"
             >
-              {l.label}
+              {link.label}
             </a>
           ))}
-          <a href="mailto:contact@bluecanvas.ai" className="text-white/50 text-xs hover:text-white transition-colors hidden 2xl:block whitespace-nowrap">contact@bluecanvas.ai</a>
-          <a href="tel:07849071946" className="text-white/50 text-xs hover:text-white transition-colors hidden 2xl:block whitespace-nowrap">07849 071946</a>
           <a
-            href={resolveHref("#contact")}
+            href={discoveryCallUrl}
+            target="_blank"
+            rel="noopener"
             onClick={() => setOpen(false)}
-            className="bg-orange text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-orange-hover transition-all hover:-translate-y-0.5 whitespace-nowrap shrink-0"
+            className="mt-3 inline-flex min-h-10 items-center justify-center rounded-full bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white shadow-card hover:bg-blue-800 md:mt-0"
           >
-            Free Consultation
+            Book a discovery call →
           </a>
         </div>
       </div>

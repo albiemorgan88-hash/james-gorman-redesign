@@ -1,194 +1,97 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import { Card, Container, Kicker, SectionIntro, SectionShell, principles } from "@/components/Editorial";
 
 export const metadata: Metadata = {
-  title: "About Blue Canvas AI | OpenClaw Consultancy UK",
-  description:
-    "Learn how Blue Canvas approaches OpenClaw consulting, AI workflow delivery, and practical automation for UK businesses.",
+  title: "About OpenClaw Consultant | Blue Canvas AI",
+  description: "OpenClaw Consultant is the specialist OpenClaw setup and agentic systems practice from Blue Canvas AI in Derry, Northern Ireland.",
   alternates: { canonical: "https://openclawconsultant.co.uk/about" },
-  openGraph: {
-    title: "About Blue Canvas AI | OpenClaw Consultancy UK",
-    description:
-      "Blue Canvas helps UK businesses deploy OpenClaw and AI workflows with practical guardrails, clear ownership, and commercial focus.",
-    url: "https://openclawconsultant.co.uk/about",
-    type: "website",
-  },
 };
-
-const principles = [
-  {
-    title: "We build around workflows, not demos",
-    description:
-      "The useful question is not whether AI looks clever. It is whether a real business process gets faster, cleaner, or easier to trust.",
-  },
-  {
-    title: "We keep the first deployment narrow",
-    description:
-      "A controlled first workflow teaches more than a broad transformation plan. It also makes the second decision easier.",
-  },
-  {
-    title: "We take guardrails seriously",
-    description:
-      "Approvals, permissions, ownership, and fallback paths matter from the start, especially where data, spend, or customer experience is involved.",
-  },
-  {
-    title: "We prefer plain English over AI theatre",
-    description:
-      "If the team cannot explain what the workflow does, where the risk sits, and why it matters commercially, the delivery is not ready yet.",
-  },
-];
-
-const reasons = [
-  "Open source infrastructure and genuine control",
-  "Persistent memory, skills, browser actions, and long-running workflows",
-  "Clearer route from setup to useful business operations",
-  "Better fit for businesses that want something they can actually shape",
-];
-
-const sectors = [
-  "Professional services",
-  "Property and estate agencies",
-  "Recruitment and lead-driven teams",
-  "Accountancy and finance operations",
-  "SMEs that need repeatable internal automation",
-  "Teams exploring more controlled AI rollout",
-];
 
 export default function AboutPage() {
   return (
     <>
-      <section className="hero-gradient relative overflow-hidden pt-32 pb-20 grain">
-        <div className="absolute top-16 right-[10%] h-[360px] w-[360px] rounded-full bg-orange/5 blur-[120px]" />
-        <div className="absolute bottom-10 left-[6%] h-[280px] w-[280px] rounded-full bg-blue/10 blur-[100px]" />
-
-        <div className="relative z-10 mx-auto max-w-[1140px] px-6">
-          <div className="max-w-[760px]">
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5">
-              <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-sm font-medium text-white/60">About Blue Canvas</span>
-            </div>
-
-            <h1 className="mb-6 font-heading text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-[3.2rem]">
-              We build AI
-              <br />
-              <span className="text-orange">that works for a living</span>
-            </h1>
-
-            <p className="text-lg leading-relaxed text-white/70 md:text-xl">
-              Blue Canvas is a UK consultancy focused on practical OpenClaw delivery and workflow automation. The job is simple: get something useful live, make the operating rules clear, and keep the work commercially grounded.
-            </p>
-          </div>
-        </div>
+      <section className="mesh-bg border-b border-ink-200 px-6 pb-16 pt-36 md:pb-20 md:pt-40">
+        <Container>
+          <Kicker>About</Kicker>
+          <h1 className="mt-5 max-w-[960px] font-heading text-6xl leading-[0.98] text-ink md:text-8xl">
+            Practitioner-led. <em className="text-orange-600">Not theory-led.</em>
+          </h1>
+          <p className="mt-6 max-w-[720px] text-lg leading-relaxed text-muted-dark md:text-xl">
+            OpenClaw Consultant is led by Phil Patterson, founder of Blue Canvas AI. Hands-on implementation translated into setups that actually run.
+          </p>
+        </Container>
       </section>
 
-      <section className="bg-white py-24">
-        <div className="mx-auto grid max-w-[1140px] gap-12 px-6 lg:grid-cols-[minmax(0,1fr)_320px]">
-          <div>
-            <h2 className="mb-6 font-heading text-3xl font-bold text-dark md:text-4xl">How we think about the work</h2>
-            <div className="space-y-6 text-lg leading-relaxed text-muted-dark">
-              <p>
-                Blue Canvas treats OpenClaw as operating infrastructure, not just another AI interface. That means the delivery work is not only about prompts or models. It is about channels, permissions, memory, approvals, ownership, and the first workflow that actually matters.
-              </p>
-              <p>
-                We focus on the point where AI becomes operational. For some businesses that starts with installation and setup. For others it starts with a workflow review, a pilot, or a narrower implementation question. The common thread is that the work has to stand up commercially, not just technically.
-              </p>
-              <p>
-                The goal is not to create dependency on a mysterious system. The goal is to leave the business with something easier to understand, easier to trust, and easier to improve.
-              </p>
+      <SectionShell>
+        <Container className="grid gap-12 lg:grid-cols-[320px_1fr]">
+          <aside>
+            <div className="relative mb-5 aspect-[4/5] overflow-hidden rounded-[14px] bg-gradient-to-br from-blue-700 to-orange-500 shadow-glow">
+              <div className="absolute inset-0 opacity-70 [background:var(--mesh)]" />
+              <div className="absolute bottom-5 left-5 right-5 rounded-lg border border-white/15 bg-white/10 p-4 text-white backdrop-blur">
+                <p className="font-semibold">Phil Patterson</p>
+                <p className="mt-1 text-xs text-white/75">Founder · Blue Canvas AI / OpenClaw Consultant</p>
+              </div>
             </div>
-          </div>
-
-          <aside className="rounded-3xl bg-navy p-8 text-white shadow-card">
-            <h3 className="mb-4 font-heading text-2xl font-bold">Based in Derry</h3>
-            <p className="mb-4 text-sm leading-relaxed text-white/70">
-              Blue Canvas works with teams across the UK from Derry, Northern Ireland. The delivery model is remote-first, practical, and suited to businesses that want the work done without unnecessary ceremony.
-            </p>
-            <p className="text-sm leading-relaxed text-white/70">
-              Same timezone, UK business context, and a preference for straight answers over polished theatre.
-            </p>
           </aside>
-        </div>
-      </section>
-
-      <section className="bg-surface py-24">
-        <div className="mx-auto max-w-[1140px] px-6">
-          <div className="mb-12 max-w-[760px]">
-            <h2 className="mb-4 font-heading text-3xl font-bold text-navy md:text-4xl">Principles that shape delivery</h2>
-            <p className="text-lg leading-relaxed text-muted-dark">
-              These principles are what keep the work useful when the first enthusiasm wears off and the workflow has to hold up in normal business conditions.
+          <div className="max-w-[760px] space-y-5 text-lg leading-relaxed text-muted-dark">
+            <p>
+              Most AI consultancies hand over a strategy deck and disappear. OpenClaw Consultant exists for the next 18 months after that — when prompts drift, models change, and the workflow nobody documented breaks at the worst possible moment.
+            </p>
+            <p>
+              The work runs out of Derry, Northern Ireland, and travels for enterprise engagements across the UK. Blue Canvas remains the wider AI consultancy; OpenClaw Consultant is the focused practice for setup, custom skills, agent teams, and operating support.
+            </p>
+            <p>
+              Discovery calls are 30 minutes, no pitch deck. If the work is not a fit, you get a referral.
             </p>
           </div>
+        </Container>
+      </SectionShell>
 
-          <div className="grid gap-6 md:grid-cols-2">
-            {principles.map((item) => (
-              <div key={item.title} className="rounded-2xl border border-border-light bg-white p-8 shadow-card">
-                <h3 className="mb-3 font-heading text-2xl font-bold text-dark">{item.title}</h3>
-                <p className="leading-relaxed text-muted-dark">{item.description}</p>
+      <SectionShell className="bg-white">
+        <Container>
+          <SectionIntro kicker="How I work" title="A few principles, plainly stated." />
+          <div className="grid gap-7 md:grid-cols-2">
+            {principles.map(([title, body]) => (
+              <div key={title} className="border-t border-ink-200 pt-6">
+                <h3 className="font-heading text-3xl text-ink">{title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-dark">{body}</p>
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </Container>
+      </SectionShell>
 
-      <section className="bg-white py-24">
-        <div className="mx-auto grid max-w-[1140px] gap-12 px-6 lg:grid-cols-2">
+      <SectionShell className="mesh-dark text-white">
+        <Container className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-start">
           <div>
-            <h2 className="mb-6 font-heading text-3xl font-bold text-dark md:text-4xl">Why we focus on OpenClaw</h2>
-            <p className="mb-6 text-lg leading-relaxed text-muted-dark">
-              The AI market is crowded with thin wrappers and broad promises. OpenClaw is more demanding than that, but it is also more capable for businesses that need persistent context, real tool access, and workflows that can keep running beyond a chat window.
+            <Kicker dark>Blue Canvas lineage</Kicker>
+            <h2 className="mt-3 font-heading text-5xl text-white md:text-6xl">A focused practice, not a pivot.</h2>
+            <p className="mt-5 text-base leading-relaxed text-white/65">
+              OpenClaw Consultant is sister-brand-but-endorsed: focused enough to be specific, connected enough to inherit Blue Canvas delivery craft and proof.
             </p>
-            <div className="space-y-4">
-              {reasons.map((reason) => (
-                <div key={reason} className="flex items-start gap-3 rounded-2xl border border-border-light bg-light p-5">
-                  <span className="mt-0.5 text-orange">✓</span>
-                  <span className="text-muted-dark">{reason}</span>
-                </div>
-              ))}
-            </div>
           </div>
+          <Card dark className="p-8">
+            <Kicker dark>Typical fit</Kicker>
+            <ul className="mt-5 space-y-4 text-sm leading-relaxed text-white/70">
+              <li>✓ Founder-led businesses with a real workflow bottleneck</li>
+              <li>✓ Small teams moving from AI curiosity to operating systems</li>
+              <li>✓ Enterprise teams needing access, audit, and rollout controls</li>
+              <li>✓ Buyers who want direct delivery rather than AI theatre</li>
+            </ul>
+          </Card>
+        </Container>
+      </SectionShell>
 
-          <div className="rounded-3xl bg-navy p-8 text-white">
-            <h3 className="mb-4 font-heading text-2xl font-bold">Where the work tends to fit</h3>
-            <p className="mb-6 text-sm leading-relaxed text-white/70">
-              Blue Canvas usually works with businesses where communication, process, follow-up, and information handling create the operational drag.
-            </p>
-            <div className="grid gap-3">
-              {sectors.map((sector) => (
-                <div key={sector} className="rounded-xl border border-white/[0.08] bg-white/[0.03] px-4 py-3 text-sm text-white/75">
-                  {sector}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="bg-surface py-24">
-        <div className="mx-auto max-w-[1140px] px-6">
-          <div className="grid gap-12 lg:grid-cols-2">
-            <div>
-              <h2 className="mb-6 font-heading text-3xl font-bold text-navy md:text-4xl">
-                Want to see whether
-                <br />
-                <span className="text-orange">Blue Canvas is the right fit?</span>
-              </h2>
-              <p className="mb-6 text-lg leading-relaxed text-muted-dark">
-                Send the workflow problem, the team context, or the rollout question. We will tell you whether the sensible next step is setup, a pilot, implementation help, or no project yet.
-              </p>
-              <div className="rounded-2xl border border-border-light bg-white p-6 shadow-card">
-                <p className="text-sm leading-relaxed text-muted-dark">
-                  The best first conversations are specific: what process is slow, what outcome matters, and where human judgement still needs to stay in the loop.
-                </p>
-              </div>
-            </div>
-
-            <div className="rounded-2xl border border-white/[0.06] bg-navy p-8">
-              <h3 className="mb-1 font-heading text-xl font-bold text-white">Book a consultation</h3>
-              <p className="mb-6 text-sm text-white/50">Tell us what you are trying to improve</p>
-              <ContactForm />
-            </div>
-          </div>
-        </div>
+      <section id="contact" className="bg-bg-100 px-6 py-20 md:py-24">
+        <Container className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+          <SectionIntro kicker="Contact" title="Want to see whether this is the right fit?">
+            Send the workflow problem, the team context, or the rollout question. We will tell you whether the sensible next step is setup, a pilot, implementation help, or no project yet.
+          </SectionIntro>
+          <Card className="p-7 md:p-9">
+            <ContactForm />
+          </Card>
+        </Container>
       </section>
     </>
   );

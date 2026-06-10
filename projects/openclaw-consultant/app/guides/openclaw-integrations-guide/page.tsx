@@ -66,6 +66,7 @@ const relatedGuides = [
 export default function OpenClawIntegrationsGuidePage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-integrations-guide"
       badge="Integration Guide 2026"
       title="OpenClaw Integrations"
       highlight="Guide"

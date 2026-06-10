@@ -39,7 +39,7 @@ export default function AIForRetailUKPage() {
             </h1>
             
             <p className="text-white/70 text-xl leading-relaxed mb-8">
-              Transform your retail business with AI-powered personalisation, inventory optimisation, and customer service automation. Learn how leading UK retailers are using AI to drive growth, improve customer experience, and increase profitability.
+              Transform your retail business with AI-powered personalisation, inventory optimisation, and customer service automation. Learn how UK retailers can use AI to improve stock visibility, customer service, merchandising, and repeatable admin.
             </p>
             
             <div className="flex flex-wrap gap-4 text-white/60 text-sm">

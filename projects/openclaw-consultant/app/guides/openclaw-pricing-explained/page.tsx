@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import GuideArticleJsonLd from "@/components/GuideArticleJsonLd";
 
 export const metadata: Metadata = {
   title: "OpenClaw Pricing & Costs Explained",
-  description: "Complete breakdown of OpenClaw pricing: API costs, hosting, setup, maintenance. Compare DIY vs managed costs and see real ROI calculations for businesses.",
+  description: "Planning guide for OpenClaw pricing: API usage, hosting, setup, maintenance, DIY trade-offs, managed support, and ROI assumptions.",
   keywords: [
     "openclaw pricing",
     "openclaw cost",
@@ -17,61 +18,46 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://openclawconsultant.co.uk/guides/openclaw-pricing-explained" },
   openGraph: {
     title: "OpenClaw Pricing & Costs Explained",
-    description: "Complete breakdown of OpenClaw costs including API, hosting, setup, and maintenance. See real ROI calculations for businesses.",
+    description: "Plan OpenClaw costs across API usage, hosting, setup, support, DIY trade-offs, and ROI assumptions.",
     url: "https://openclawconsultant.co.uk/guides/openclaw-pricing-explained",
     type: "article",
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "OpenClaw Pricing & Plans Explained — Real Costs & ROI Guide 2026",
-  "description": "Complete breakdown of OpenClaw pricing including API costs, hosting, setup, and maintenance with ROI calculations",
-  "author": {
-    "@type": "Person",
-    "name": "Blue Canvas"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "OpenClaw Consultant UK"
-  }
-};
-
 const costBreakdown = [
   {
     category: "OpenClaw Software",
-    cost: "Free",
-    description: "Open-source software with no licensing fees",
+    cost: "No licence fee",
+    description: "Open-source software costs depend on how it is hosted, operated, and supported",
     details: [
-      "Core OpenClaw platform is completely free",
-      "No per-agent or per-user licensing", 
-      "All features available in open-source version",
-      "Community support included"
+      "Core platform usage does not require a traditional SaaS licence",
+      "No standard per-agent or per-user SaaS fee for self-hosted use", 
+      "Implementation effort still needs to be budgeted",
+      "Community support may be enough for low-risk experiments"
     ],
     oneTime: true
   },
   {
     category: "API Credits",
-    cost: "£80-300/month",
-    description: "Your biggest ongoing cost — varies by usage",
+    cost: "Usage-dependent",
+    description: "Often a major ongoing cost, depending on model choice and activity",
     details: [
-      "Claude/GPT-4: £15-25 per million tokens",
-      "Average business: 2-8M tokens/month",
+      "Hosted model pricing changes by provider and model",
+      "Token usage depends on workflow volume and prompt design",
       "Costs scale with AI activity",
-      "Can optimize with model mixing"
+      "Routing can be planned around task complexity and budget"
     ],
     oneTime: false,
     breakdown: [
-      { usage: "Light (50k tokens/day)", cost: "£80/month" },
-      { usage: "Medium (150k tokens/day)", cost: "£180/month" },
-      { usage: "Heavy (400k tokens/day)", cost: "£300/month" }
+      { usage: "Light internal workflow", cost: "Low monthly range" },
+      { usage: "Regular business workflow", cost: "Moderate monthly range" },
+      { usage: "High-volume workflow", cost: "Higher monthly range" }
     ]
   },
   {
     category: "Infrastructure & Hosting",
-    cost: "£40-150/month",
-    description: "Server, storage, and network costs",
+    cost: "Hosting-dependent",
+    description: "Server, storage, and network costs depend on deployment shape",
     details: [
       "VPS or cloud hosting required",
       "Minimum: 4GB RAM, 2 CPU cores",
@@ -80,36 +66,36 @@ const costBreakdown = [
     ],
     oneTime: false,
     breakdown: [
-      { usage: "Basic VPS (4GB/2CPU)", cost: "£40/month" },
-      { usage: "Business Server (8GB/4CPU)", cost: "£80/month" },
-      { usage: "Enterprise (16GB/8CPU)", cost: "£150/month" }
+      { usage: "Basic VPS-style setup", cost: "Lower monthly range" },
+      { usage: "Business server", cost: "Moderate monthly range" },
+      { usage: "Larger deployment", cost: "Higher monthly range" }
     ]
   },
   {
     category: "Setup & Configuration",
-    cost: "£750-2,500",
-    description: "One-time setup cost (DIY = your time)",
+    cost: "Scoped quote",
+    description: "One-time setup cost depends on workflow, hosting, security, and integrations",
     details: [
-      "Professional installation & configuration",
-      "Security hardening & optimization",
-      "Custom skill development",
+      "Scoped installation and configuration",
+      "Security control review",
+      "Custom skill planning and development",
       "Integration with existing tools"
     ],
     oneTime: true,
-    comparison: "DIY: 40-80 hours of your time (£2,000-4,000 value)"
+    comparison: "DIY: budget for investigation, setup, testing, rework, and documentation time"
   },
   {
     category: "Ongoing Support",
-    cost: "£250-500/month",
-    description: "Optional but recommended for businesses",
+    cost: "Scoped support",
+    description: "Optional, but useful when OpenClaw touches recurring business workflows",
     details: [
       "Skill updates and development",
-      "Performance monitoring",
+      "Monitoring and review",
       "Troubleshooting support",
-      "Monthly optimization reviews"
+      "Monthly improvement reviews"
     ],
     oneTime: false,
-    comparison: "DIY: Handle issues yourself + downtime costs"
+    comparison: "DIY: handle issues, updates, and workflow changes internally"
   }
 ];
 
@@ -120,16 +106,16 @@ const businessSizeComparison = [
     useCases: ["Customer service", "Basic automation", "Social media"],
     monthlyTokens: "50-100k",
     monthlyCost: {
-      api: "£80",
-      hosting: "£40", 
-      support: "£250",
-      total: "£370"
+      api: "Low range",
+      hosting: "Low range", 
+      support: "Scoped",
+      total: "Model first"
     },
-    setup: "£750",
+    setup: "Scoped quote",
     roi: {
-      timeSaved: "20 hours/month",
-      costSaved: "£1,000/month",
-      payback: "0.8 months"
+      timeSaved: "Example: 20 hours/month",
+      costSaved: "Model from hourly cost",
+      payback: "Validate after pilot"
     }
   },
   {
@@ -138,16 +124,16 @@ const businessSizeComparison = [
     useCases: ["Multi-dept automation", "Lead generation", "Content creation"],
     monthlyTokens: "150-300k",
     monthlyCost: {
-      api: "£180",
-      hosting: "£80",
-      support: "£350", 
-      total: "£610"
+      api: "Moderate range",
+      hosting: "Moderate range",
+      support: "Scoped", 
+      total: "Model first"
     },
-    setup: "£1,250",
+    setup: "Scoped quote",
     roi: {
-      timeSaved: "60 hours/month",
-      costSaved: "£3,000/month", 
-      payback: "0.6 months"
+      timeSaved: "Example: 60 hours/month",
+      costSaved: "Model from workflow volume", 
+      payback: "Validate after pilot"
     }
   },
   {
@@ -156,16 +142,16 @@ const businessSizeComparison = [
     useCases: ["Enterprise automation", "Multi-agent systems", "Complex workflows"],
     monthlyTokens: "400k+",
     monthlyCost: {
-      api: "£300",
-      hosting: "£150",
-      support: "£500",
-      total: "£950"
+      api: "Higher range",
+      hosting: "Higher range",
+      support: "Scoped",
+      total: "Model first"
     },
-    setup: "£2,500",
+    setup: "Custom scope",
     roi: {
-      timeSaved: "150 hours/month",
-      costSaved: "£7,500/month",
-      payback: "0.4 months"
+      timeSaved: "Example: 150 hours/month",
+      costSaved: "Model from process value",
+      payback: "Validate after pilot"
     }
   }
 ];
@@ -208,25 +194,25 @@ const hiddenCosts = [
   {
     cost: "Downtime",
     diy: "2-5 hours/month dealing with issues",
-    managed: "< 30 minutes/month",
+    managed: "Reduced with monitoring and support",
     impact: "Lost productivity, missed opportunities, stress"
   },
   {
     cost: "Security Incidents", 
-    diy: "£2,000-50,000 potential cost",
-    managed: "Covered by professional setup",
+    diy: "Potential investigation, remediation, or reputational cost",
+    managed: "Reduced through scoped controls and handover",
     impact: "Data breaches, compliance violations, reputation damage"
   },
   {
     cost: "Scaling Issues",
     diy: "Major rework needed as you grow", 
-    managed: "Architecture scales smoothly",
+    managed: "Architecture decisions reviewed earlier",
     impact: "Additional setup costs, migration pain"
   },
   {
     cost: "Opportunity Cost",
     diy: "Time spent on tech instead of business",
-    managed: "Focus 100% on core business",
+    managed: "More focus on the business workflow",
     impact: "Missed growth opportunities, slower expansion"
   }
 ];
@@ -235,14 +221,14 @@ const roiCalculator = [
   {
     scenario: "Property Management (20 properties)",
     currentCosts: {
-      adminTime: "40 hours/month × £25/hour = £1,000",
-      missedRent: "2% late payments × £15,000 = £300",
-      tenantComms: "£200/month (calls, emails, disputes)"
+      adminTime: "Model assumption: 40 hours/month × £25/hour = £1,000",
+      missedRent: "Model assumption: 2% late payments × £15,000 = £300",
+      tenantComms: "Model assumption: £200/month for calls, emails, and disputes"
     },
     openclawBenefits: {
-      automation: "Reduce admin time by 70% = £700 saved",
-      rentReminders: "Reduce late payments by 50% = £150 saved", 
-      tenantSatisfaction: "Faster responses, fewer disputes = £150 saved"
+      automation: "Pilot target: reduce admin time by 70% = £700 modelled saving",
+      rentReminders: "Pilot target: reduce late payments by 50% = £150 modelled saving", 
+      tenantSatisfaction: "Pilot target: faster responses and fewer disputes = £150 modelled saving"
     },
     totalSaving: "£1,000/month",
     openclawCost: "£370/month",
@@ -252,14 +238,14 @@ const roiCalculator = [
   {
     scenario: "Digital Marketing Agency (10 clients)",
     currentCosts: {
-      reporting: "20 hours/month × £50/hour = £1,000",
-      contentCreation: "30 hours/month × £40/hour = £1,200",
-      socialManagement: "25 hours/month × £35/hour = £875"
+      reporting: "Model assumption: 20 hours/month × £50/hour = £1,000",
+      contentCreation: "Model assumption: 30 hours/month × £40/hour = £1,200",
+      socialManagement: "Model assumption: 25 hours/month × £35/hour = £875"
     },
     openclawBenefits: {
-      autoReporting: "80% reduction in reporting time = £800 saved",
-      contentAssist: "50% faster content creation = £600 saved",
-      socialAutomation: "60% time savings = £525 saved"
+      autoReporting: "Pilot target: 80% reduction in reporting time = £800 modelled saving",
+      contentAssist: "Pilot target: 50% faster content creation = £600 modelled saving",
+      socialAutomation: "Pilot target: 60% time saving = £525 modelled saving"
     },
     totalSaving: "£1,925/month",
     openclawCost: "£610/month", 
@@ -269,14 +255,14 @@ const roiCalculator = [
   {
     scenario: "Legal Practice (3 partners)",
     currentCosts: {
-      adminOverhead: "60 hours/month × £75/hour = £4,500",
-      documentPrep: "40 hours/month × £100/hour = £4,000",
-      clientComms: "£500/month (missed calls, delays)"
+      adminOverhead: "Model assumption: 60 hours/month × £75/hour = £4,500",
+      documentPrep: "Model assumption: 40 hours/month × £100/hour = £4,000",
+      clientComms: "Model assumption: £500/month for missed calls and delays"
     },
     openclawBenefits: {
-      adminReduction: "40% admin efficiency = £1,800 saved",
-      docAutomation: "30% faster document prep = £1,200 saved",
-      clientResponse: "Instant responses = £400 saved"
+      adminReduction: "Pilot target: 40% admin efficiency = £1,800 modelled saving",
+      docAutomation: "Pilot target: 30% faster document prep = £1,200 modelled saving",
+      clientResponse: "Pilot target: faster triage and responses = £400 modelled saving"
     },
     totalSaving: "£3,400/month",
     openclawCost: "£950/month",
@@ -288,37 +274,45 @@ const roiCalculator = [
 const pricingMyths = [
   {
     myth: "OpenClaw is expensive",
-    reality: "OpenClaw software is free. You pay for AI usage and hosting — same as any AI solution.",
-    explanation: "Most businesses spend more on coffee than OpenClaw infrastructure costs."
+    reality: "The software is only one part of the cost. Usage, hosting, setup time, support, and governance matter more.",
+    explanation: "A useful budget separates platform cost from implementation and operating cost."
   },
   {
-    myth: "API costs will bankrupt us",
-    reality: "API costs scale with value. Heavy usage means you're getting massive productivity gains.",
-    explanation: "£300/month in API costs typically correlates to £3,000+ in time savings."
+    myth: "API costs can run away",
+    reality: "API cost risk is manageable when routing, volume, review depth, and model choice are designed deliberately.",
+    explanation: "The safest approach is to monitor usage early and connect cost to a narrow business workflow."
   },
   {
     myth: "DIY is always cheaper",
-    reality: "Only if your time has no value. Factor in opportunity cost and DIY becomes expensive.",
-    explanation: "40 hours of setup time at £50/hour = £2,000. That's before counting mistakes and ongoing issues."
+    reality: "DIY can be cheaper for experiments, but production workflows need time for setup, testing, documentation, and maintenance.",
+    explanation: "The question is whether the team has the time and judgement to own those details."
   },
   {
-    myth: "Small businesses can't afford professional setup",
-    reality: "Small businesses can't afford NOT to get professional setup. Mistakes are proportionally more expensive.",
-    explanation: "A security breach or extended downtime can destroy a small business. Professional setup includes insurance against these risks."
+    myth: "Small businesses should always pay for setup",
+    reality: "Some small businesses should stay simple; others justify support when the workflow is recurring or business-critical.",
+    explanation: "Professional setup is most defensible when it reduces operational risk or shortens the path to a useful pilot."
   }
 ];
 
 export default function OpenClawPricingExplainedPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      <GuideArticleJsonLd
+        canonicalPath="/guides/openclaw-pricing-explained"
+        title="OpenClaw Pricing & Costs Explained"
+        description="Planning guide for OpenClaw costs, API usage, hosting, setup, support, DIY trade-offs, and ROI assumptions."
       />
 
       <section className="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center grain">
         <div className="max-w-[1140px] mx-auto px-6 relative z-10 py-20">
           <div className="max-w-[720px]">
+            <nav className="mb-8 text-sm text-white/50" aria-label="Breadcrumb">
+              <a href="/" className="hover:text-white">Home</a>
+              <span className="mx-2">/</span>
+              <a href="/guides" className="hover:text-white">Guides</a>
+              <span className="mx-2">/</span>
+              <span className="text-white/70">OpenClaw Pricing</span>
+            </nav>
             <h1 className="font-heading text-4xl sm:text-5xl md:text-[3.2rem] font-extrabold text-white mb-6 leading-[1.05] tracking-tight">
               OpenClaw Pricing & Plans
               <br />
@@ -326,7 +320,7 @@ export default function OpenClawPricingExplainedPage() {
             </h1>
 
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
-              Complete breakdown of OpenClaw costs: API credits, hosting, setup, and maintenance. See real ROI calculations and compare DIY vs managed options.
+              A planning guide to OpenClaw costs: API usage, hosting, setup, support, and maintenance. Use the examples as assumptions to validate, not promises.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -334,7 +328,7 @@ export default function OpenClawPricingExplainedPage() {
                 See Costs
               </a>
               <a href="#roi" className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10">
-                ROI Calculator ↓
+                ROI Assumptions ↓
               </a>
             </div>
           </div>
@@ -345,10 +339,10 @@ export default function OpenClawPricingExplainedPage() {
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
-              Complete OpenClaw Cost Breakdown
+              OpenClaw Cost Planning Breakdown
             </h2>
             <p className="text-muted max-w-[700px] mx-auto">
-              Every cost explained — no hidden fees, no surprises. Here's exactly what you'll pay and why.
+              Every cost area to consider before you choose DIY, managed setup, or a hybrid support model.
             </p>
           </div>
 
@@ -415,7 +409,7 @@ export default function OpenClawPricingExplainedPage() {
               Pricing by Business Size
             </h2>
             <p className="text-muted max-w-[600px] mx-auto">
-              See what OpenClaw costs for businesses like yours and the ROI you can expect
+              Use these as planning patterns, then replace the assumptions with your own workflow volume and internal costs.
             </p>
           </div>
 
@@ -469,7 +463,7 @@ export default function OpenClawPricingExplainedPage() {
                 </div>
 
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                  <h4 className="font-semibold text-green-800 mb-2">📈 Expected ROI:</h4>
+                  <h4 className="font-semibold text-green-800 mb-2">📈 Illustrative ROI Assumption:</h4>
                   <div className="text-green-700 text-sm space-y-1">
                     <div>Time saved: {business.roi.timeSaved}</div>
                     <div>Cost savings: {business.roi.costSaved}</div>
@@ -486,10 +480,10 @@ export default function OpenClawPricingExplainedPage() {
         <div className="max-w-[1140px] mx-auto px-6 relative z-10">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-              DIY vs Managed: 3-Year Cost Comparison
+              DIY vs Managed: Example 3-Year Cost Model
             </h2>
             <p className="text-white/60 max-w-[600px] mx-auto">
-              The true cost of each approach over time
+              A planning model for the kinds of costs that can appear over time.
             </p>
           </div>
 
@@ -558,7 +552,7 @@ export default function OpenClawPricingExplainedPage() {
 
               <div className="mt-6 text-center">
                 <div className="text-orange text-sm font-medium">
-                  Year 1 difference: Only £{diyVsManagedComparison.year1.managed.total - diyVsManagedComparison.year1.diy.total} more for professional
+                  In this example model: £{diyVsManagedComparison.year1.managed.total - diyVsManagedComparison.year1.diy.total} more in year one for managed setup and support.
                 </div>
               </div>
             </div>
@@ -626,7 +620,7 @@ export default function OpenClawPricingExplainedPage() {
               Hidden Costs of DIY
             </h2>
             <p className="text-muted max-w-[600px] mx-auto">
-              What the DIY calculators don't tell you
+              Cost areas that are easy to miss when you only compare software and hosting.
             </p>
           </div>
 
@@ -661,10 +655,10 @@ export default function OpenClawPricingExplainedPage() {
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
-              ROI Calculator: Real Business Examples
+              ROI Planning Examples
             </h2>
             <p className="text-muted max-w-[600px] mx-auto">
-              See how different businesses calculate OpenClaw ROI
+              Example assumptions for modelling value before a pilot. Replace these with your own numbers before making a buying decision.
             </p>
           </div>
 
@@ -675,7 +669,7 @@ export default function OpenClawPricingExplainedPage() {
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-6">
                   <div>
-                    <h4 className="font-semibold text-red-800 mb-4">❌ Current Costs (Monthly)</h4>
+                    <h4 className="font-semibold text-red-800 mb-4">❌ Current Cost Assumptions</h4>
                     <div className="space-y-2">
                       {Object.entries(scenario.currentCosts).map(([key, value]) => (
                         <div key={key} className="text-sm">
@@ -687,7 +681,7 @@ export default function OpenClawPricingExplainedPage() {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-green-800 mb-4">✅ OpenClaw Benefits (Monthly)</h4>
+                    <h4 className="font-semibold text-green-800 mb-4">✅ Potential Benefit Assumptions</h4>
                     <div className="space-y-2">
                       {Object.entries(scenario.openclawBenefits).map(([key, value]) => (
                         <div key={key} className="text-sm">
@@ -701,7 +695,7 @@ export default function OpenClawPricingExplainedPage() {
 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 pt-6 border-t border-border">
                   <div className="text-center">
-                    <div className="text-sm text-muted">Total Savings</div>
+                    <div className="text-sm text-muted">Modelled Savings</div>
                     <div className="font-bold text-lg text-green-600">{scenario.totalSaving}</div>
                   </div>
                   <div className="text-center">
@@ -709,11 +703,11 @@ export default function OpenClawPricingExplainedPage() {
                     <div className="font-bold text-lg text-orange">{scenario.openclawCost}</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-sm text-muted">Net Benefit</div>
+                    <div className="text-sm text-muted">Modelled Net</div>
                     <div className="font-bold text-lg text-blue-600">{scenario.netBenefit}</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-sm text-muted">Payback Period</div>
+                    <div className="text-sm text-muted">Payback Assumption</div>
                     <div className="font-bold text-lg text-dark">{scenario.payback}</div>
                   </div>
                 </div>
@@ -727,10 +721,10 @@ export default function OpenClawPricingExplainedPage() {
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-4">
-              Common Pricing Myths Debunked
+              Pricing Questions to Sense-Check
             </h2>
             <p className="text-muted max-w-[600px] mx-auto">
-              Setting the record straight on OpenClaw costs
+              Useful prompts for avoiding both under-budgeting and over-buying.
             </p>
           </div>
 
@@ -759,16 +753,16 @@ export default function OpenClawPricingExplainedPage() {
       <section className="bg-orange py-16 relative overflow-hidden">
         <div className="max-w-[900px] mx-auto px-6 text-center relative z-10">
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-white mb-4">
-            Ready to See Your Custom ROI?
+            Ready to Model Your Costs?
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-[600px] mx-auto">
-            Every business is different. Get a personalized cost breakdown and ROI calculation based on your specific needs.
+            Every business is different. Build a cost model around your workflow, usage, support needs, and value assumptions.
           </p>
           <a
             href="#contact"
             className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-dark transition-all hover:-translate-y-0.5 shadow-xl"
           >
-            Get Custom Quote →
+            Model My Costs →
           </a>
         </div>
       </section>
@@ -809,7 +803,7 @@ export default function OpenClawPricingExplainedPage() {
                 <span className="text-orange">Cost Breakdown</span>
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Every business is different. Book a free consultation to get a custom cost analysis and ROI projection based on your specific needs and usage patterns.
+                Every business is different. Book a short consultation to map cost drivers, value assumptions, and whether OpenClaw is worth piloting for your workflow.
               </p>
 
               <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 mb-8">
@@ -821,7 +815,7 @@ export default function OpenClawPricingExplainedPage() {
                   </li>
                   <li className="flex gap-2">
                     <span className="text-orange">✓</span>
-                    ROI projection based on your specific use cases
+                    ROI assumptions based on your specific use cases
                   </li>
                   <li className="flex gap-2">
                     <span className="text-orange">✓</span>
@@ -829,7 +823,7 @@ export default function OpenClawPricingExplainedPage() {
                   </li>
                   <li className="flex gap-2">
                     <span className="text-orange">✓</span>
-                    No obligation quote for professional setup
+                    Scoped quote if professional setup makes sense
                   </li>
                 </ul>
               </div>
@@ -837,7 +831,7 @@ export default function OpenClawPricingExplainedPage() {
 
             <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8">
               <h3 className="font-heading font-bold text-xl text-white mb-1">Get Your Custom Quote</h3>
-              <p className="text-white/40 text-sm mb-6">Free consultation with personalized ROI analysis</p>
+              <p className="text-white/40 text-sm mb-6">Cost modelling with realistic ROI assumptions</p>
               <ContactForm />
             </div>
           </div>

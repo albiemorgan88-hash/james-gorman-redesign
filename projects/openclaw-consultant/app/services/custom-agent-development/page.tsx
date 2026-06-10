@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import { ServiceBreadcrumb, ServiceSeo } from "@/components/ServiceSeo";
 
 export const metadata: Metadata = {
   title: "Custom AI Agent Development",
@@ -141,6 +142,13 @@ const technicalCapabilities = [
 export default function CustomAgentDevelopmentPage() {
   return (
     <>
+      <ServiceSeo
+        name="Custom AI Agent Development"
+        description="Custom AI agent development and OpenClaw skill creation for UK businesses that need bespoke workflow automation and integrations."
+        path="/services/custom-agent-development"
+        serviceType="Custom AI agent and OpenClaw skill development"
+      />
+
       {/* Hero Section */}
       <section className="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center grain">
         <div className="absolute top-20 right-[10%] w-[400px] h-[400px] bg-orange/5 rounded-full blur-[120px] glow-pulse" />
@@ -148,6 +156,7 @@ export default function CustomAgentDevelopmentPage() {
 
         <div className="max-w-[1140px] mx-auto px-6 relative z-10 py-20">
           <div className="max-w-[720px]">
+            <ServiceBreadcrumb current="Custom AI Agent Development" />
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
               <span className="text-white/60 text-sm font-medium">Bespoke AI Agent Development</span>
@@ -305,15 +314,15 @@ export default function CustomAgentDevelopmentPage() {
                 Production-Grade Development
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                We build enterprise-quality AI agents with proper error handling, security, monitoring, and documentation. Not prototypes — production systems that scale.
+                We build practical AI agents with error handling, security, monitoring, and documentation so the workflow can move beyond a fragile prototype.
               </p>
               
               <div className="space-y-4">
                 <div className="flex gap-3 items-start">
                   <span className="text-orange mt-1 flex-shrink-0">▸</span>
                   <div>
-                    <p className="font-semibold text-white">Battle-Tested Architecture</p>
-                    <p className="text-white/60 text-sm">Built on patterns from 25+ production skills running daily in real businesses.</p>
+                    <p className="font-semibold text-white">Production-Minded Architecture</p>
+                    <p className="text-white/60 text-sm">Built around clear inputs, logs, approval points, recovery paths, and maintainable skill design.</p>
                   </div>
                 </div>
                 <div className="flex gap-3 items-start">

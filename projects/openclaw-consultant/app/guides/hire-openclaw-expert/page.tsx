@@ -77,6 +77,7 @@ const relatedGuides = [
 export default function HireOpenClawExpertPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/hire-openclaw-expert"
       badge="Buyer Guide 2026"
       title="Hire an"
       highlight="OpenClaw Expert"

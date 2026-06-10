@@ -103,6 +103,7 @@ const relatedGuides = [
 export default function OpenClawEnterpriseDeploymentPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-enterprise-deployment"
       badge="Enterprise Guide 2026"
       title="OpenClaw Enterprise Deployment"
       description="A solid enterprise deployment is not just an install on bigger kit. It is a controlled rollout with clear ownership, safe approvals, sensible observability, and a business reason to go live."

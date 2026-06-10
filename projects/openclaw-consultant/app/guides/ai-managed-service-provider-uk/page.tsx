@@ -66,6 +66,7 @@ const relatedGuides = [
 export default function AIManagedServiceProviderUKPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/ai-managed-service-provider-uk"
       badge="Provider Selection Guide 2026"
       title="AI Managed Service"
       highlight="Provider UK"

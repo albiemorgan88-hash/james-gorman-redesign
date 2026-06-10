@@ -39,7 +39,7 @@ export default function AIForHospitalityUKPage() {
             </h1>
             
             <p className="text-white/70 text-xl leading-relaxed mb-8">
-              Transform your hospitality business with AI-powered guest personalisation, intelligent revenue management, and automated operations. Learn how leading UK hotels are using AI to enhance guest experiences, optimise pricing, and increase profitability.
+              Transform your hospitality business with AI-powered guest personalisation, intelligent revenue management, and automated operations. Learn how hospitality teams can use AI to improve guest communication, reporting, pricing support, and repeatable operations.
             </p>
             
             <div className="flex flex-wrap gap-4 text-white/60 text-sm">

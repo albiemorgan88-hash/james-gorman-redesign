@@ -291,7 +291,7 @@ export default function HowToUseOpenClawPage() {
             <p className="text-orange font-heading font-semibold text-sm uppercase tracking-widest mb-4">Case Studies</p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">Real Businesses. Real Results.</h2>
             <p className="text-white/60 max-w-[700px] mx-auto">
-              These are anonymised examples from actual OpenClaw deployments managed by Phil Patterson and Blue Canvas AI. The numbers are real.
+              These are anonymised example patterns based on practical OpenClaw consulting work by Phil Patterson and Blue Canvas AI. Use them as planning benchmarks, not guarantees.
             </p>
           </div>
 
@@ -456,7 +456,7 @@ export default function HowToUseOpenClawPage() {
                 </div>
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">📞</span>
-                  <a href="tel:07935217762" className="hover:text-white transition-colors">07935 217762</a>
+                  <a href="tel:07849071946" className="hover:text-white transition-colors">07849 071946</a>
                 </div>
               </div>
             </div>

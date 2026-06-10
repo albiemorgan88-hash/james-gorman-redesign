@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import { ServiceBreadcrumb, ServiceSeo } from "@/components/ServiceSeo";
 
 export const metadata: Metadata = {
   title: "OpenClaw Installation Service",
-  description: "Professional OpenClaw installation service. 24hr turnaround, complete configuration, WhatsApp/Telegram/Discord/Slack integration. Expert setup from Blue Canvas.",
+  description: "Professional OpenClaw installation service for teams that need a working setup, clear handover, and safer configuration path.",
   keywords: [
     "openclaw install",
     "openclaw installation service",
@@ -12,41 +13,22 @@ export const metadata: Metadata = {
     "openclaw setup service",
     "openclaw configuration",
     "openclaw gateway setup",
-    "openclaw expert installation"
+    "openclaw installation support"
   ],
   alternates: { canonical: "https://openclawconsultant.co.uk/services/openclaw-installation" },
   openGraph: {
     title: "OpenClaw Installation Service — Professional Setup UK",
-    description: "Professional OpenClaw installation with 24hr turnaround. Complete configuration, multi-platform integration, and expert setup.",
+    description: "Professional OpenClaw installation support with configuration, integration planning, testing, and handover.",
     url: "https://openclawconsultant.co.uk/services/openclaw-installation",
     type: "article",
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "OpenClaw Installation Service",
-  "description": "Professional OpenClaw installation and configuration service with 24-hour turnaround",
-  "provider": {
-    "@type": "Person",
-    "name": "Blue Canvas",
-    "jobTitle": "OpenClaw Consultant"
-  },
-  "areaServed": { "@type": "Country", name: "United Kingdom" },
-  "offers": {
-    "@type": "Offer",
-    "price": "750",
-    "priceCurrency": "GBP",
-    "availability": "https://schema.org/InStock"
-  }
-};
-
 const installationFeatures = [
   {
     icon: "⚡",
-    title: "24-Hour Turnaround",
-    description: "Your OpenClaw system installed, configured, and ready to work within 24 hours of starting."
+    title: "Fast Turnaround Planning",
+    description: "A focused installation path once the target environment, access requirements, and first workflow are clear."
   },
   {
     icon: "🔧",
@@ -70,9 +52,24 @@ const installationFeatures = [
   },
   {
     icon: "🎯",
-    title: "Custom SOUL Configuration",
+    title: "Agent Operating Context",
     description: "Agent personality tuned for your business needs and communication style."
   }
+];
+
+const intentLinks = [
+  {
+    title: "Need to understand the buying decision first?",
+    text: "Read the installation guide if you are still comparing what a good OpenClaw installation service should include.",
+    href: "/guides/openclaw-installation-service",
+    cta: "Read the installation guide",
+  },
+  {
+    title: "Need broader setup and configuration help?",
+    text: "Use the setup and configuration service when the job includes environment design, model routing, permissions, integrations, and handover.",
+    href: "/services/setup-configuration",
+    cta: "See setup configuration",
+  },
 ];
 
 const installationProcess = [
@@ -146,7 +143,7 @@ const pricingTiers = [
     description: "Full-scale deployment with custom development",
     features: [
       "Everything in Business",
-      "Unlimited custom skills",
+      "Additional custom skills scoped separately",
       "Complex workflow automation",
       "Multi-server deployment",
       "Advanced security hardening",
@@ -162,39 +159,42 @@ const whyChooseProfessional = [
   {
     challenge: "Complex Configuration",
     diyReality: "Hours wrestling with gateway configs, API routing, environment variables, and connection issues.",
-    professionalSolution: "Everything configured correctly first time. Phil has done this hundreds of times."
+    professionalSolution: "Configuration handled through a repeatable setup process, with the risky gateway, routing and environment details checked before handover."
   },
   {
     challenge: "Security Vulnerabilities",
     diyReality: "Exposed ports, weak authentication, unencrypted connections — common security mistakes.",
-    professionalSolution: "Production-grade security from day one. Proper firewall rules and access controls."
+    professionalSolution: "Security settings, firewall rules, and access controls reviewed before handover."
   },
   {
     challenge: "Integration Headaches",
     diyReality: "Each tool integration requires different approaches, authentication methods, and error handling.",
-    professionalSolution: "Seamless integration with your existing systems. Phil knows the pitfalls and shortcuts."
+    professionalSolution: "Integration planning based on the systems you already use, with authentication, data flow, and failure modes checked before handover."
   },
   {
     challenge: "Performance Issues",
     diyReality: "Slow responses, memory leaks, crashed agents — performance problems are frustrating to debug.",
-    professionalSolution: "Optimized configuration for your specific use case. No trial-and-error period."
+    professionalSolution: "Configuration tuned around the use case, with obvious failure points checked before the system is handed over."
   }
 ];
 
 export default function OpenClawInstallationPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      <ServiceSeo
+        name="OpenClaw Installation Service"
+        description="Professional OpenClaw installation and configuration support for teams that want a safer setup, clear handover, and practical integration guidance."
+        path="/services/openclaw-installation"
+        serviceType="OpenClaw installation and configuration"
       />
 
       <section className="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center grain">
         <div className="max-w-[1140px] mx-auto px-6 relative z-10 py-20">
           <div className="max-w-[720px]">
+            <ServiceBreadcrumb current="OpenClaw Installation Service" />
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-              <span className="text-white/60 text-sm font-medium">24-Hour Turnaround Available</span>
+              <span className="text-white/60 text-sm font-medium">Fast Setup After Scoping</span>
             </div>
 
             <h1 className="font-heading text-4xl sm:text-5xl md:text-[3.2rem] font-extrabold text-white mb-6 leading-[1.05] tracking-tight">
@@ -204,7 +204,7 @@ export default function OpenClawInstallationPage() {
             </h1>
 
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
-              Skip the setup headaches. Get OpenClaw installed, configured, and working for your business in 24 hours with professional integration and support.
+              Skip the setup guesswork. Get OpenClaw installed, configured, tested, and handed over with the access boundaries and first workflow in mind.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -226,7 +226,7 @@ export default function OpenClawInstallationPage() {
               What's Included in Professional Installation
             </h2>
             <p className="text-muted max-w-[600px] mx-auto">
-              Complete setup and configuration — no technical knowledge required from your side
+              Technical setup handled for you, with a plain-English handover so the configuration is understandable.
             </p>
           </div>
 
@@ -242,6 +242,22 @@ export default function OpenClawInstallationPage() {
         </div>
       </section>
 
+      <section className="bg-surface py-16">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            {intentLinks.map((item) => (
+              <div key={item.title} className="rounded-2xl border border-border bg-white p-7 shadow-card">
+                <h2 className="font-heading text-2xl font-bold text-dark">{item.title}</h2>
+                <p className="mt-3 text-sm leading-relaxed text-muted-dark">{item.text}</p>
+                <a href={item.href} className="mt-5 inline-flex text-sm font-semibold text-orange hover:text-orange-hover">
+                  {item.cta} →
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-navy text-white py-24 relative overflow-hidden grain">
         <div className="max-w-[1140px] mx-auto px-6 relative z-10">
           <div className="text-center mb-14">
@@ -249,7 +265,7 @@ export default function OpenClawInstallationPage() {
               Why Choose Professional Installation?
             </h2>
             <p className="text-white/60 max-w-[600px] mx-auto">
-              Save days of frustration and get a production-ready system from the start
+              Reduce avoidable setup frustration and start from a clearer, safer baseline.
             </p>
           </div>
 
@@ -284,7 +300,7 @@ export default function OpenClawInstallationPage() {
               Our Installation Process
             </h2>
             <p className="text-muted max-w-[600px] mx-auto">
-              Systematic approach ensures nothing is missed and your system is production-ready
+              A systematic approach checks the key setup steps before handover.
             </p>
           </div>
 
@@ -312,8 +328,8 @@ export default function OpenClawInstallationPage() {
               <div className="flex items-center gap-3">
                 <span className="text-2xl">⚡</span>
                 <div>
-                  <h3 className="font-semibold text-green-800">Total Time: 5-8 Hours</h3>
-                  <p className="text-green-600 text-sm">Spread across 24-48 hours for proper testing</p>
+                  <h3 className="font-semibold text-green-800">Scoped Delivery Window</h3>
+                  <p className="text-green-600 text-sm">Confirmed after environment, access, and workflow requirements are clear</p>
                 </div>
               </div>
             </div>
@@ -397,7 +413,7 @@ export default function OpenClawInstallationPage() {
                   Not Sure Which Package You Need?
                 </h3>
                 <p className="text-muted mb-6 leading-relaxed">
-                  Book a free consultation and Phil will assess your requirements, recommend the right package, and give you a clear timeline. No obligation.
+                  Book a free consultation and Blue Canvas will assess your requirements, recommend the right package, and give you a clear timeline. No obligation.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex gap-2 text-sm text-muted-dark">
@@ -440,7 +456,7 @@ export default function OpenClawInstallationPage() {
                 <span className="text-orange">OpenClaw Installed?</span>
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Start with a free consultation. Phil will assess your needs, recommend the right package, and give you a clear timeline for getting OpenClaw working in your business.
+                Start with a free consultation. Blue Canvas will assess your needs, recommend the right package, and give you a clear timeline for getting OpenClaw working in your business.
               </p>
 
               <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 mb-8">
@@ -456,11 +472,11 @@ export default function OpenClawInstallationPage() {
                   </li>
                   <li className="flex gap-2">
                     <span className="text-orange">3.</span>
-                    Installation scheduled within 24-48 hours
+                    Installation scheduled once scope and access are confirmed
                   </li>
                   <li className="flex gap-2">
                     <span className="text-orange">4.</span>
-                    Your OpenClaw system ready to work
+                    Your OpenClaw system ready to test, review, and hand over
                   </li>
                 </ul>
               </div>
@@ -474,8 +490,8 @@ export default function OpenClawInstallationPage() {
                 </div>
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">📞</span>
-                  <a href="tel:07935217762" className="hover:text-white transition-colors">
-                    07935 217762
+                  <a href="tel:07849071946" className="hover:text-white transition-colors">
+                    07849 071946
                   </a>
                 </div>
               </div>

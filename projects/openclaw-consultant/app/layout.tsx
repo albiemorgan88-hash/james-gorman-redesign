@@ -1,17 +1,21 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Inter, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const instrumentSerif = Instrument_Serif({ weight: "400", subsets: ["latin"], variable: "--font-instrument-serif", display: "swap" });
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://openclawconsultant.co.uk"),
   title: {
-    default: "OpenClaw Consultant UK — Expert Setup, Skills & Automation | Blue Canvas",
-    template: "%s | OpenClaw",
+    default: "OpenClaw Consultant UK | Setup, Skills, Agent Teams & Support",
+    template: "%s | OpenClaw Consultant",
   },
   description:
-    "UK's leading OpenClaw consultant. Blue Canvas runs OpenClaw in production daily with 25+ custom skills. Expert setup, custom skill development, and AI agent orchestration for UK businesses. Free consultation.",
+    "Founder-led OpenClaw consulting from Blue Canvas AI. Setup, custom skills, agentic stacks, secure workflows and ongoing support for UK teams.",
   keywords: [
     "openclaw consultant",
     "openclaw setup",
@@ -19,30 +23,30 @@ export const metadata: Metadata = {
     "openclaw consultant UK",
     "openclaw custom skills",
     "AI agent automation UK",
-    "openclaw configuration",
-    "openclaw support",
+    "agentic AI consulting",
+    "enterprise OpenClaw",
   ],
   openGraph: {
     type: "website",
     locale: "en_GB",
     siteName: "OpenClaw Consultant UK",
-    title: "OpenClaw Consultant UK — Get OpenClaw Working For Your Business",
+    title: "OpenClaw Consultant UK | Setup, Skills, Agent Teams & Support",
     description:
-      "Blue Canvas is the UK's leading OpenClaw consultant. 25+ custom skills, production experience, expert setup and training. Free consultation available.",
+      "Founder-led OpenClaw consulting from Blue Canvas AI. Setup, custom skills, agentic stacks, secure workflows and ongoing support for UK teams.",
     url: "https://openclawconsultant.co.uk",
     images: [
       {
         url: "https://openclawconsultant.co.uk/api/og",
         width: 1200,
         height: 630,
-        alt: "OpenClaw Consultant UK - Expert Setup & Training",
+        alt: "OpenClaw Consultant UK",
       },
     ],
   },
-  twitter: { 
+  twitter: {
     card: "summary_large_image",
-    title: "OpenClaw Consultant UK — Expert Setup & Training",
-    description: "Blue Canvas is the UK's leading OpenClaw consultant. 25+ custom skills, production experience, expert setup and training. Free consultation available.",
+    title: "OpenClaw Consultant UK | Setup, Skills, Agent Teams & Support",
+    description: "Founder-led OpenClaw consulting from Blue Canvas AI for setup, custom skills, agent teams and ongoing support.",
     images: ["https://openclawconsultant.co.uk/api/og"],
   },
   robots: { index: true, follow: true },
@@ -51,19 +55,44 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: "OpenClaw Consultant UK",
-  description: "Expert OpenClaw setup, custom skill development, and AI agent automation for UK businesses.",
-  url: "https://openclawconsultant.co.uk",
-  telephone: "+447935217762",
-  areaServed: { "@type": "Country", name: "United Kingdom" },
-  founder: {
-    "@type": "Person",
-    name: "Blue Canvas",
-    jobTitle: "OpenClaw Consultant",
-    worksFor: { "@type": "Organization", name: "Blue Canvas AI", url: "https://bluecanvas.ai" },
-  },
-  priceRange: "£750 - £5000",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://openclawconsultant.co.uk/#business",
+      name: "OpenClaw Consultant UK",
+      description: "Independent OpenClaw setup, custom skill development, agent workflow design, and ongoing support for UK and remote teams.",
+      url: "https://openclawconsultant.co.uk",
+      areaServed: [{ "@type": "Country", name: "United Kingdom" }, { "@type": "Place", name: "Remote" }],
+      founder: {
+        "@type": "Person",
+        name: "Phil Patterson",
+        jobTitle: "Founder",
+        worksFor: { "@type": "Organization", name: "Blue Canvas AI", url: "https://bluecanvas.ai" },
+      },
+      knowsAbout: [
+        "OpenClaw setup",
+        "OpenClaw custom skills",
+        "AI agent teams",
+        "Agent workflow automation",
+        "AI agent security",
+        "Business process automation",
+      ],
+      parentOrganization: { "@type": "Organization", name: "Blue Canvas AI", url: "https://bluecanvas.ai" },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://openclawconsultant.co.uk/#website",
+      name: "OpenClaw Consultant UK",
+      url: "https://openclawconsultant.co.uk",
+      publisher: { "@id": "https://openclawconsultant.co.uk/#business" },
+      inLanguage: "en-GB",
+      about: [
+        { "@type": "Thing", name: "OpenClaw" },
+        { "@type": "Thing", name: "AI agents" },
+        { "@type": "Thing", name: "Agentic workflow automation" },
+      ],
+    },
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -77,14 +106,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           gtag('js', new Date());
           gtag('config', 'G-PXMWKB0V2G');`}
         </Script>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        {/* Ahrefs Web Analytics */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
         <Script src="https://analytics.ahrefs.com/analytics.js" data-key="miZ+v/vaRrt1Cck3Osy4KQ" strategy="afterInteractive" />
       </head>
-      <body className="antialiased">
+      <body className={`${inter.variable} ${instrumentSerif.variable} antialiased`}>
         <Navbar />
         <main>{children}</main>
         <Footer />

@@ -76,6 +76,7 @@ const relatedGuides = [
 export default function AIEmployeesForBusinessPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/ai-employees-for-business"
       badge="Commercial Guide 2026"
       title="AI Employees"
       highlight="for Business"

@@ -27,6 +27,7 @@ type TakeawayCard = {
 };
 
 type Props = {
+  canonicalPath?: string;
   badge: string;
   title: string;
   intro: string;
@@ -42,7 +43,12 @@ type Props = {
   takeawayCards: TakeawayCard[];
 };
 
+function stripHtml(value: string) {
+  return value.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+}
+
 export default function GuideLandingPage({
+  canonicalPath,
   badge,
   title,
   intro,
@@ -57,13 +63,64 @@ export default function GuideLandingPage({
   practicalTakeaway,
   takeawayCards,
 }: Props) {
+  const canonicalUrl = canonicalPath ? `https://openclawconsultant.co.uk${canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`}` : undefined;
+  const guideSchema = canonicalUrl
+    ? {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "@id": `${canonicalUrl}#article`,
+            headline: title,
+            description: intro,
+            mainEntityOfPage: canonicalUrl,
+            url: canonicalUrl,
+            inLanguage: "en-GB",
+            publisher: { "@type": "Organization", name: "Blue Canvas AI", url: "https://bluecanvas.ai" },
+            author: { "@type": "Organization", name: "Blue Canvas AI", url: "https://bluecanvas.ai" },
+            isPartOf: { "@type": "WebSite", name: "OpenClaw Consultant UK", url: "https://openclawconsultant.co.uk" },
+          },
+          {
+            "@type": "FAQPage",
+            "@id": `${canonicalUrl}#faq`,
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: stripHtml(faq.answer),
+              },
+            })),
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": `${canonicalUrl}#breadcrumb`,
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://openclawconsultant.co.uk" },
+              { "@type": "ListItem", position: 2, name: "Guides", item: "https://openclawconsultant.co.uk/guides" },
+              { "@type": "ListItem", position: 3, name: title, item: canonicalUrl },
+            ],
+          },
+        ],
+      }
+    : null;
+
   return (
     <>
+      {guideSchema ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(guideSchema).replace(/</g, "\\u003c") }} /> : null}
+
       <section className="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center grain">
         <div className="absolute top-20 right-[10%] w-[400px] h-[400px] bg-orange/5 rounded-full blur-[120px] glow-pulse" />
         <div className="absolute bottom-20 left-[5%] w-[300px] h-[300px] bg-blue/10 rounded-full blur-[100px] glow-pulse" style={{ animationDelay: "3s" }} />
         <div className="max-w-[1140px] mx-auto px-6 relative z-10 py-20">
           <div className="max-w-[780px]">
+            <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-2 text-xs font-semibold text-white/50">
+              <a href="/" className="hover:text-white">Home</a>
+              <span aria-hidden="true">/</span>
+              <a href="/guides" className="hover:text-white">Guides</a>
+              <span aria-hidden="true">/</span>
+              <span className="max-w-[520px] truncate text-white/70">{title}</span>
+            </nav>
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
               <span className="text-white/60 text-sm font-medium">{badge}</span>

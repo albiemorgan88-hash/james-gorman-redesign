@@ -68,6 +68,7 @@ const relatedGuides = [
 export default function AIAgentsForInsuranceBrokersPage() {
   return (
     <GuideLandingPage
+      canonicalPath="/guides/ai-agents-for-insurance-brokers"
       badge="Industry Guide 2026"
       title="AI Agents for Insurance Brokers"
       intro="Brokerages have plenty of repetitive coordination work that AI agents can help with. The sweet spot is better prep, faster triage, and cleaner handoffs, with advice and regulated output still tightly controlled."

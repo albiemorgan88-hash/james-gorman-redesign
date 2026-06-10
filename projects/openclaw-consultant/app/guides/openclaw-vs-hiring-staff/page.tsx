@@ -66,6 +66,7 @@ const relatedGuides = [
 export default function OpenClawVsHiringStaffPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-vs-hiring-staff"
       badge="Commercial Comparison 2026"
       title="OpenClaw vs"
       highlight="Hiring Staff"

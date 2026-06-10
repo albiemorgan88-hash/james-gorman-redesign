@@ -103,6 +103,7 @@ const relatedGuides = [
 export default function OpenClawComplianceChecklistUKPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-compliance-checklist-uk"
       badge="Compliance Guide 2026"
       title="OpenClaw Compliance"
       highlight="Checklist UK"

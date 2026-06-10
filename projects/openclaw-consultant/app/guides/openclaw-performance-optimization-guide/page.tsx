@@ -26,30 +26,30 @@ export const metadata: Metadata = {
 const performanceMetrics = [
   {
     metric: "Response Time",
-    baseline: "2-5 seconds",
-    optimized: "0.5-1.2 seconds",
-    improvement: "75% faster",
+    baseline: "Measure first",
+    optimized: "Tune by workflow",
+    improvement: "Lower latency",
     impact: "Better user experience, higher satisfaction"
   },
   {
     metric: "Throughput",
-    baseline: "50 requests/minute",
-    optimized: "300 requests/minute",
-    improvement: "6x increase",
+    baseline: "Measure first",
+    optimized: "Scale by demand",
+    improvement: "Higher capacity",
     impact: "Handle more simultaneous users and tasks"
   },
   {
     metric: "Memory Usage",
-    baseline: "2-4 GB",
-    optimized: "0.8-1.5 GB",
-    improvement: "62% reduction",
+    baseline: "Measure first",
+    optimized: "Right-size memory",
+    improvement: "Less waste",
     impact: "Lower hosting costs, better scalability"
   },
   {
     metric: "CPU Utilization",
-    baseline: "60-80%",
-    optimized: "25-40%",
-    improvement: "50% reduction",
+    baseline: "Measure first",
+    optimized: "Tune workloads",
+    improvement: "Smoother load",
     impact: "Smoother operation, room for growth"
   }
 ];
@@ -62,19 +62,19 @@ const optimizationTechniques = [
         name: "Context Window Optimization",
         description: "Right-size context windows for specific tasks",
         implementation: "Analyze typical conversation lengths and set optimal context limits",
-        impact: "30-40% memory reduction, 20% faster response times"
+        impact: "Lower memory pressure and cleaner responses"
       },
       {
         name: "Model Selection",
         description: "Choose the right model size for each agent role",
         implementation: "Use smaller models for simple tasks, larger for complex reasoning",
-        impact: "50% cost reduction while maintaining quality"
+        impact: "Better cost control while maintaining quality"
       },
       {
         name: "Prompt Engineering",
         description: "Optimize prompts for efficiency and clarity",
         implementation: "Concise, well-structured prompts with clear instructions",
-        impact: "25% faster processing, more consistent outputs"
+        impact: "Faster processing and more consistent outputs"
       }
     ]
   },
@@ -85,7 +85,7 @@ const optimizationTechniques = [
         name: "Caching Strategies",
         description: "Implement intelligent caching for common queries",
         implementation: "Redis-based caching with TTL policies and cache warming",
-        impact: "80% reduction in repeated calculations"
+        impact: "Fewer repeated calculations"
       },
       {
         name: "Load Balancing",
@@ -97,7 +97,7 @@ const optimizationTechniques = [
         name: "Resource Pooling",
         description: "Share resources efficiently across agents",
         implementation: "Connection pooling, shared memory spaces",
-        impact: "40% reduction in resource overhead"
+        impact: "Lower resource overhead"
       }
     ]
   },
@@ -194,7 +194,7 @@ const commonBottlenecks = [
       "Optimize API endpoint design",
       "Use CDN for static content"
     ],
-    expectedImprovement: "60-80% reduction in response time"
+    expectedImprovement: "Lower response time after measurement and tuning"
   },
   {
     bottleneck: "Memory Leaks",
@@ -216,7 +216,7 @@ const commonBottlenecks = [
       "Optimize context management",
       "Regular health checks"
     ],
-    expectedImprovement: "Stable memory usage, 99.9% uptime"
+    expectedImprovement: "More stable memory usage and fewer avoidable restarts"
   },
   {
     bottleneck: "CPU Spikes",
@@ -238,7 +238,7 @@ const commonBottlenecks = [
       "Load balancing",
       "Resource quotas"
     ],
-    expectedImprovement: "50-70% reduction in CPU usage"
+    expectedImprovement: "Lower CPU spikes under comparable load"
   }
 ];
 
@@ -334,12 +334,12 @@ export default function OpenClawPerformanceOptimizationPage() {
               Master AI agent performance tuning, speed optimization, and efficiency maximization
             </p>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-left max-w-2xl mx-auto">
-              <h3 className="text-lg font-semibold mb-3">Performance Gains Achieved:</h3>
+                <h3 className="text-lg font-semibold mb-3">Performance Gains to Test:</h3>
               <ul className="space-y-2 text-emerald-100">
-                <li>• <strong>75% faster response times</strong> with proper optimization</li>
-                <li>• <strong>6x throughput increase</strong> through architectural improvements</li>
-                <li>• <strong>62% memory reduction</strong> with efficient resource management</li>
-                <li>• <strong>50% lower CPU usage</strong> via smart processing techniques</li>
+                <li>• <strong>Lower response times</strong> with workflow-specific optimization</li>
+                <li>• <strong>Higher throughput</strong> through architectural improvements</li>
+                <li>• <strong>Cleaner memory usage</strong> with efficient resource management</li>
+                <li>• <strong>Smoother CPU load</strong> via smart processing techniques</li>
               </ul>
             </div>
           </div>
@@ -351,7 +351,7 @@ export default function OpenClawPerformanceOptimizationPage() {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-4">Performance Improvement Benchmarks</h2>
           <p className="text-lg text-muted-dark text-center mb-12 max-w-3xl mx-auto">
-            Real-world performance improvements achieved through systematic optimization across multiple client deployments.
+            Example improvement areas to measure before and after systematic optimization.
           </p>
           
           <div className="max-w-6xl mx-auto">

@@ -77,6 +77,7 @@ const relatedGuides = [
 export default function AIAutomationConsultantUKPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/ai-automation-consultant-uk"
       badge="Buyer Guide 2026"
       title="AI Automation"
       highlight="Consultant UK"

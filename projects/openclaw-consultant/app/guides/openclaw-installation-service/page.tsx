@@ -56,6 +56,12 @@ const sections = [
     html:
       "<p>It is worth paying for when the business wants to move fast, avoid setup mistakes, or start with better guardrails than an internal trial-and-error approach is likely to create. That is especially true when the first workflow will touch sensitive data, external channels, or multiple systems.</p><p>It is also worth it when the team wants OpenClaw in place but does not want to burn senior time wrestling through setup details. A focused install can shorten the path to value dramatically if it is tied to a real use case.</p><p>The useful commercial test is simple. Will installation support reduce delay, confusion, or rework enough to justify the spend. In most serious projects, yes.</p>",
   },
+  {
+    id: "service-vs-guide",
+    title: "Guide page or service page: which should you use?",
+    html:
+      "<p>If you are still learning what a good installation should include, stay with this guide. It explains scope, risks, handover, and common mistakes without assuming you are ready to buy.</p><p>If you already know you want help installing OpenClaw, use the <a href=\"/services/openclaw-installation\">OpenClaw installation service</a> page instead. That page is the transactional route for buyers who want Blue Canvas to scope, install, test, and hand over the setup.</p><p>If the work is broader than installation, such as model routing, environment design, tool permissions, memory, and production operating rules, the more relevant page is <a href=\"/services/setup-configuration\">OpenClaw setup and configuration</a>.</p>",
+  },
 ];
 
 const faqs = [
@@ -101,14 +107,15 @@ const relatedGuides = [
 export default function OpenClawInstallationServicePage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-installation-service"
       badge="Setup Guide 2026"
       title="OpenClaw Installation"
       highlight="Service"
       description="A useful OpenClaw install is not just about getting the software running. It is about creating a clean, safe base the business can actually build on."
       primaryCtaLabel="Read the guide"
       primaryCtaHref="#guide"
-      secondaryCtaLabel="Plan our setup"
-      secondaryCtaHref="#assessment"
+      secondaryCtaLabel="See installation service"
+      secondaryCtaHref="/services/openclaw-installation"
       stats={stats}
       sections={sections}
       faqs={faqs}

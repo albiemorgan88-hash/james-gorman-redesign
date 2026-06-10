@@ -68,6 +68,7 @@ const relatedGuides = [
 export default function AIAgentsForProcurementPage() {
   return (
     <GuideLandingPage
+      canonicalPath="/guides/ai-agents-for-procurement"
       badge="Industry Guide 2026"
       title="AI Agents for Procurement"
       intro="Procurement is full of coordination work that AI agents can clean up well. The trick is using them to prepare better buying decisions, not handing over the decision itself."

@@ -103,6 +103,7 @@ const relatedGuides = [
 export default function OpenClawDeploymentServiceUKPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-deployment-service-uk"
       badge="Deployment Guide 2026"
       title="OpenClaw Deployment"
       highlight="Service UK"

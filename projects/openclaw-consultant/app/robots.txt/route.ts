@@ -4,7 +4,6 @@ Allow: /
 
 # Block admin/internal paths
 Disallow: /api/
-Disallow: /_next/
 Disallow: /.well-known/
 
 # Sitemap

@@ -154,7 +154,7 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                       <li>• Smart context awareness and adaptation</li>
                       <li>• Team collaboration and communication hub</li>
                       <li>• Performance analytics and optimisation</li>
-                      <li>• Integration with 200+ enterprise systems</li>
+                      <li>• Integration through APIs, webhooks, and supported connectors</li>
                     </ul>
                   </div>
                   <div>
@@ -427,7 +427,7 @@ export default function OpenClawPinchyEnterpriseStackPage() {
               <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How does the stack integrate with existing enterprise systems?</h3>
                 <p className="text-muted-dark text-sm">
-                  The stack provides extensive integration capabilities through APIs, webhooks, and connectors for 200+ enterprise systems. OpenClaw handles system coordination whilst Pinchy manages data flows and process orchestration. Most integrations complete within 2-8 weeks depending on system complexity.
+                  The stack provides integration capabilities through APIs, webhooks, and supported connectors for common enterprise systems. OpenClaw handles system coordination whilst Pinchy manages data flows and process orchestration. Integration timelines depend on system complexity, access constraints, and testing requirements.
                 </p>
               </div>
 
@@ -441,7 +441,7 @@ export default function OpenClawPinchyEnterpriseStackPage() {
               <div className="bg-surface rounded-lg p-6 border border-border-light">
                 <h3 className="font-semibold text-navy mb-3">How many AI agents can the stack coordinate simultaneously?</h3>
                 <p className="text-muted-dark text-sm">
-                  The stack scales from dozens to hundreds of coordinated agents depending on infrastructure. Typical enterprise deployments run 10-50 specialized agents with burst capacity to 200+. OpenClaw's intelligent load balancing and Pinchy's workflow optimization ensure optimal performance at any scale.
+                  The stack can coordinate multiple specialized agents depending on infrastructure, tool access, and workflow design. Capacity should be planned against real task volume, model routing, approval requirements, and monitoring needs rather than assumed upfront.
                 </p>
               </div>
 

@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import GuideArticleJsonLd from "@/components/GuideArticleJsonLd";
+import SafeSetupLeadMagnet from "@/components/SafeSetupLeadMagnet";
+
+const canonicalPath = "/guides/openclaw-security-compliance";
+const pageTitle = "OpenClaw Security & Compliance Planning Guide";
+const pageDescription =
+  "Practical OpenClaw security and compliance planning guide covering data handling, agent permissions, audit trails, incident response, and evidence to review with compliance specialists.";
 
 export const metadata: Metadata = {
-  title: "OpenClaw Security & Compliance Guide",
-  description: "Complete guide to OpenClaw security and compliance. GDPR compliance, data handling, enterprise security hardening, audit trails, and regulatory frameworks.",
+  title: pageTitle,
+  description: pageDescription,
   keywords: [
     "openclaw security",
     "openclaw compliance",
@@ -14,11 +21,11 @@ export const metadata: Metadata = {
     "openclaw security hardening",
     "ai agent security compliance"
   ],
-  alternates: { canonical: "https://openclawconsultant.co.uk/guides/openclaw-security-compliance" },
+  alternates: { canonical: `https://openclawconsultant.co.uk${canonicalPath}` },
   openGraph: {
-    title: "OpenClaw Security & Compliance Guide",
-    description: "Complete guide to OpenClaw security and compliance. GDPR compliance, data handling, enterprise security hardening, and regulatory frameworks.",
-    url: "https://openclawconsultant.co.uk/guides/openclaw-security-compliance",
+    title: pageTitle,
+    description: pageDescription,
+    url: `https://openclawconsultant.co.uk${canonicalPath}`,
     type: "article",
   },
 };
@@ -62,11 +69,11 @@ const complianceFrameworks = [
       "Breach notification within 72 hours"
     ],
     openclawImplementation: [
-      "Data processing logs with legal basis",
+      "Data processing records with legal-basis review",
       "Personal data inventory and classification",
-      "Automated data subject request handling", 
+      "Data subject request workflow with human review",
       "Privacy-preserving agent design",
-      "Incident response automation"
+      "Incident response playbook and escalation rules"
     ]
   },
   {
@@ -80,11 +87,11 @@ const complianceFrameworks = [
       "Confidentiality safeguards"
     ],
     openclawImplementation: [
-      "Comprehensive security documentation",
+      "Audit-friendly security documentation",
       "Role-based access control (RBAC)",
-      "Continuous monitoring and alerting",
-      "Change management processes", 
-      "Data encryption and classification"
+      "Monitoring and alert records",
+      "Change management records",
+      "Data classification and encryption plan"
     ]
   },
   {
@@ -99,10 +106,10 @@ const complianceFrameworks = [
     ],
     openclawImplementation: [
       "Security governance structure",
-      "Automated risk monitoring",
-      "Security control verification", 
-      "Continuous improvement automation",
-      "Incident detection and response"
+      "Risk review process",
+      "Security control evidence collection",
+      "Continuous improvement process",
+      "Incident detection and response workflow"
     ]
   },
   {
@@ -116,11 +123,11 @@ const complianceFrameworks = [
       "Breach notification procedures"
     ],
     openclawImplementation: [
-      "Healthcare-specific agent policies",
-      "Physical security monitoring",
-      "ePHI encryption and access logs",
-      "Automated compliance reporting",
-      "Breach detection and notification"
+      "Do not process PHI until legal and contractual review is complete",
+      "Dedicated environment and access boundaries",
+      "Encryption, access logs, and minimum necessary access",
+      "Compliance evidence pack for review",
+      "Breach-response process with responsible owners"
     ]
   }
 ];
@@ -192,7 +199,7 @@ const securityHardeningSteps = [
       {
         step: "Audit Trail Integrity",
         description: "Ensure audit logs cannot be tampered with",
-        implementation: "HMAC signatures, immutable storage, blockchain verification"
+        implementation: "Append-only storage where appropriate, restricted admin access, signed exports, and retention policy"
       },
       {
         step: "Compliance Reporting",
@@ -249,7 +256,7 @@ const dataHandlingPractices = [
 const incidentResponse = [
   {
     phase: "Detection",
-    duration: "0-15 minutes",
+    duration: "Immediate triage",
     activities: [
       "Automated monitoring alerts for security events",
       "User reporting mechanisms for suspected incidents", 
@@ -260,7 +267,7 @@ const incidentResponse = [
   },
   {
     phase: "Assessment",
-    duration: "15-60 minutes", 
+    duration: "First response window",
     activities: [
       "Incident classification and severity assessment",
       "Scope determination and impact analysis",
@@ -271,7 +278,7 @@ const incidentResponse = [
   },
   {
     phase: "Containment",
-    duration: "1-4 hours",
+    duration: "Urgent containment",
     activities: [
       "Isolate affected systems and agents",
       "Prevent lateral movement of threats",
@@ -282,7 +289,7 @@ const incidentResponse = [
   },
   {
     phase: "Recovery",
-    duration: "4-24 hours",
+    duration: "Recovery window varies",
     activities: [
       "Restore systems from clean backups",
       "Apply security patches and updates",
@@ -293,12 +300,12 @@ const incidentResponse = [
   },
   {
     phase: "Post-Incident",
-    duration: "1-4 weeks",
+    duration: "Follow-up review",
     activities: [
       "Conduct thorough incident analysis",
       "Update security controls and procedures",
       "Provide training based on lessons learned",
-      "Complete regulatory notifications if required"
+      "Handle regulatory notifications if required after legal review"
     ],
     tools: ["Forensic analysis", "Process improvement", "Training platforms", "Compliance reporting"]
   }
@@ -330,6 +337,8 @@ const auditRequirements = [
 export default function OpenClawSecurityCompliancePage() {
   return (
     <>
+      <GuideArticleJsonLd canonicalPath={canonicalPath} title={pageTitle} description={pageDescription} />
+
       {/* Hero Section */}
       <section className="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center grain">
         <div className="absolute top-20 right-[10%] w-[400px] h-[400px] bg-orange/5 rounded-full blur-[120px] glow-pulse" />
@@ -337,6 +346,13 @@ export default function OpenClawSecurityCompliancePage() {
 
         <div className="max-w-[1140px] mx-auto px-6 relative z-10 py-20">
           <div className="max-w-[720px]">
+            <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-2 text-xs font-semibold text-white/50">
+              <a href="/" className="hover:text-white">Home</a>
+              <span aria-hidden="true">/</span>
+              <a href="/guides" className="hover:text-white">Guides</a>
+              <span aria-hidden="true">/</span>
+              <span className="text-white/70">OpenClaw Security & Compliance</span>
+            </nav>
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
               <span className="text-white/60 text-sm font-medium">Security & Compliance Guide</span>
@@ -349,7 +365,7 @@ export default function OpenClawSecurityCompliancePage() {
             </h1>
 
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
-              Complete guide to securing OpenClaw deployments. GDPR compliance, data protection, enterprise security hardening, and regulatory frameworks.
+              Practical guide to planning secure OpenClaw deployments. Cover data protection, agent permissions, audit trails, incident response, and evidence for specialist compliance review.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -363,13 +379,25 @@ export default function OpenClawSecurityCompliancePage() {
                 href="#contact"
                 className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
               >
-                Get Expert Setup ↓
+                Discuss Controls ↓
+              </a>
+              <a
+                href="/guides/openclaw-safe-setup-checklist"
+                className="inline-flex items-center justify-center bg-white/5 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/10 transition-all border border-white/10"
+              >
+                Use the Checklist
               </a>
             </div>
           </div>
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#fafbfc] to-transparent" />
+      </section>
+
+      <section className="bg-light py-20">
+        <div className="max-w-[1140px] mx-auto px-6">
+          <SafeSetupLeadMagnet />
+        </div>
       </section>
 
       {/* Security Threats Section */}
@@ -426,7 +454,7 @@ export default function OpenClawSecurityCompliancePage() {
               Regulatory Compliance for AI Agents
             </h2>
             <p className="text-muted text-lg max-w-[600px] mx-auto">
-              How to implement OpenClaw to meet major regulatory and compliance requirements.
+              How to plan OpenClaw controls against major regulatory and compliance frameworks before asking specialists to review the final position.
             </p>
           </div>
 
@@ -477,7 +505,7 @@ export default function OpenClawSecurityCompliancePage() {
               Security Hardening Checklist
             </h2>
             <p className="text-muted text-lg max-w-[600px] mx-auto">
-              Essential security controls for protecting OpenClaw deployments from threats and unauthorized access.
+              Security controls that reduce the chance of data exposure, unsafe tool access, configuration drift, and unauthorized actions.
             </p>
           </div>
 
@@ -509,7 +537,7 @@ export default function OpenClawSecurityCompliancePage() {
               Data Handling Best Practices
             </h2>
             <p className="text-muted text-lg max-w-[600px] mx-auto">
-              Privacy-preserving approaches to data processing that meet regulatory requirements while enabling AI capabilities.
+              Privacy-preserving approaches that support regulatory review while still allowing useful agent workflows.
             </p>
           </div>
 
@@ -598,7 +626,7 @@ export default function OpenClawSecurityCompliancePage() {
               Audit Trail Requirements
             </h2>
             <p className="text-muted text-lg max-w-[600px] mx-auto">
-              Comprehensive logging requirements for compliance audits and security investigations.
+              Logging requirements that support compliance audits and security investigations.
             </p>
           </div>
 
@@ -680,10 +708,10 @@ export default function OpenClawSecurityCompliancePage() {
       <section className="bg-orange py-16">
         <div className="max-w-[900px] mx-auto px-6 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-white mb-4">
-            Need Expert Security Implementation?
+            Need Security Planning?
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-[600px] mx-auto">
-            Professional OpenClaw security hardening, compliance implementation, and ongoing security management for enterprise deployments.
+            Practical OpenClaw security hardening, compliance evidence planning, and monitoring design for higher-risk deployments.
           </p>
           <a
             href="#contact"
@@ -701,6 +729,10 @@ export default function OpenClawSecurityCompliancePage() {
         <div className="max-w-[1140px] mx-auto px-6">
           <h2 className="font-heading text-2xl font-bold text-navy mb-8 text-center">Related Guides</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
+            <a href="/guides/openclaw-safe-setup-checklist" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
+              <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">OpenClaw Safe Setup Checklist</h3>
+              <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
+            </a>
             <a href="/guides/openclaw-agent-team" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-border-light">
               <h3 className="font-heading text-lg font-bold text-navy group-hover:text-orange transition-colors">Build an OpenClaw Agent Team</h3>
               <span className="text-orange text-sm font-semibold mt-2 inline-block">Read Guide →</span>
@@ -732,12 +764,12 @@ export default function OpenClawSecurityCompliancePage() {
                 Security Consultation
               </p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-                Get Expert OpenClaw
+                Plan OpenClaw
                 <br />
-                <span className="text-orange">Security Implementation</span>
+                <span className="text-orange">Security Controls</span>
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Professional security hardening, compliance implementation, and ongoing security management for your OpenClaw deployment.
+                Security hardening support, compliance evidence planning, and monitoring design for your OpenClaw deployment.
               </p>
               
               <div className="space-y-4 text-white/50 text-sm">
@@ -747,11 +779,11 @@ export default function OpenClawSecurityCompliancePage() {
                 </div>
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">📋</span>
-                  <span>Compliance framework implementation</span>
+                  <span>Compliance evidence planning</span>
                 </div>
                 <div className="flex gap-3 items-center">
                   <span className="text-orange">🛡️</span>
-                  <span>Ongoing security monitoring and support</span>
+                  <span>Security monitoring plan and support options</span>
                 </div>
               </div>
             </div>

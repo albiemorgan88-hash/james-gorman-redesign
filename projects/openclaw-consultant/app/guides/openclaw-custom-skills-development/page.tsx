@@ -98,6 +98,7 @@ const relatedGuides = [
 export default function OpenClawCustomSkillsDevelopmentPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-custom-skills-development"
       badge="Custom Skills Guide 2026"
       title="OpenClaw Custom Skills"
       highlight="Development"

@@ -66,6 +66,7 @@ const relatedGuides = [
 export default function AIEmployeeVsOutsourcingPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/ai-employee-vs-outsourcing"
       badge="Operating Model Guide 2026"
       title="AI Employee vs"
       highlight="Outsourcing"

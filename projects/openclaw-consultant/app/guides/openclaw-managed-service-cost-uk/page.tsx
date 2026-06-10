@@ -93,6 +93,7 @@ const relatedGuides = [
 export default function OpenClawManagedServiceCostUKPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-managed-service-cost-uk"
       badge="Managed Service Pricing Guide 2026"
       title="OpenClaw Managed Service"
       highlight="Cost UK"

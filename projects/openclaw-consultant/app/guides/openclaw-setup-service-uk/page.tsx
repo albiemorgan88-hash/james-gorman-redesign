@@ -58,6 +58,12 @@ const sections = [
     html:
       "<p>This is usually the cleanest way to judge setup quality. A week after setup, what should the business actually be able to do. If the answer is vague, the setup plan probably is too.</p><p>For most firms, the first win should be one reliable workflow or one clear operating path. That may be a live channel, a structured assistant, or the foundation for a targeted pilot. Whatever it is, it should be concrete enough to test and useful enough to matter.</p><p>That is how setup stops being a technical milestone and starts being the first step toward commercial value. The goal is not an impressive install. It is a working base the business can trust.</p>",
   },
+  {
+    id: "service-vs-guide",
+    title: "Guide page or service page: which should you use?",
+    html:
+      "<p>This guide is the educational route. Use it when you want to understand what a proper OpenClaw setup should include, what to avoid, and how to judge whether a provider is scoping the work properly.</p><p>If you are ready to buy configuration support, use the <a href=\"/services/setup-configuration\">OpenClaw setup and configuration service</a> page. That page is the commercial route for scoping environment, gateway, model routing, permissions, tools, handover, and the first usable workflow.</p><p>If you only need installation handled and the broader configuration choices are already clear, the narrower route is the <a href=\"/services/openclaw-installation\">OpenClaw installation service</a>.</p>",
+  },
 ];
 
 const faqs = [
@@ -103,14 +109,15 @@ const relatedGuides = [
 export default function OpenClawSetupServiceUKPage() {
   return (
     <GuidePageTemplate
+      canonicalPath="/guides/openclaw-setup-service-uk"
       badge="Setup Guide 2026"
       title="OpenClaw Setup"
       highlight="Service UK"
       description="A good OpenClaw setup should leave you with more than software on a machine. It should give the business a usable base, sensible boundaries, and a clean path into real workflow value."
       primaryCtaLabel="Read the guide"
       primaryCtaHref="#guide"
-      secondaryCtaLabel="Plan our setup"
-      secondaryCtaHref="#assessment"
+      secondaryCtaLabel="See setup service"
+      secondaryCtaHref="/services/setup-configuration"
       stats={stats}
       sections={sections}
       faqs={faqs}

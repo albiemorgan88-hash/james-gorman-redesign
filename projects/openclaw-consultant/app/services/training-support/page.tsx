@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import { ServiceBreadcrumb, ServiceSeo } from "@/components/ServiceSeo";
 
 export const metadata: Metadata = {
   title: "OpenClaw Training & Support UK",
@@ -96,14 +97,14 @@ const supportPackages = [
     period: "per month", 
     bestFor: "Large teams (25+ people)",
     features: [
-      "24/7 phone & email support",
+      "Priority phone & email support",
       "Weekly optimization reviews",
       "Unlimited skill development",
       "Advanced monitoring & alerting",
       "Dedicated support engineer",
-      "Emergency response guarantee"
+      "Priority response window"
     ],
-    limits: ["Unlimited support time", "Unlimited skills", "24/7 availability"]
+    limits: ["Support scope agreed in advance", "Skill work prioritized by value", "Priority availability"]
   }
 ];
 
@@ -140,7 +141,7 @@ const supportAreas = [
     services: [
       { name: "Workflow optimization", desc: "Identify new automation opportunities" },
       { name: "Capacity planning", desc: "Scale your system as your business grows" },
-      { name: "ROI analysis", desc: "Measure and improve automation value" },
+      { name: "Value analysis", desc: "Measure and improve automation value" },
       { name: "Technology roadmap", desc: "Plan future enhancements and integrations" }
     ]
   }
@@ -149,23 +150,23 @@ const supportAreas = [
 const trainingOutcomes = [
   {
     outcome: "Agent Communication Mastery",
-    description: "Your team will know exactly how to interact with agents for maximum effectiveness",
-    metrics: ["50% reduction in misunderstood requests", "2x faster task completion", "90% user satisfaction"]
+    description: "Your team will know how to write clearer requests, review outputs, and keep agent work grounded in the right context",
+    metrics: ["Clearer prompts", "Fewer misunderstood requests", "Better review habits"]
   },
   {
     outcome: "Self-Sufficient Skill Development", 
     description: "Build and modify skills internally without external dependencies",
-    metrics: ["Build 1-2 skills per month internally", "80% reduction in external dev costs", "Faster iteration cycles"]
+    metrics: ["Internal skill ownership", "Faster iteration cycles", "Less dependence on outside help"]
   },
   {
     outcome: "Proactive Problem Resolution",
     description: "Identify and resolve issues before they impact business operations", 
-    metrics: ["90% fewer critical incidents", "3x faster issue resolution", "Minimal business disruption"]
+    metrics: ["Earlier issue detection", "Clearer escalation paths", "Less business disruption"]
   },
   {
     outcome: "Optimized Performance",
-    description: "Extract maximum value from your OpenClaw investment through optimization",
-    metrics: ["30% faster response times", "25% lower operating costs", "Higher automation success rates"]
+    description: "Improve the useful value of your OpenClaw setup through careful optimization",
+    metrics: ["Cleaner workflows", "Lower avoidable usage", "Higher automation success rates"]
   }
 ];
 
@@ -205,6 +206,13 @@ const commonIssues = [
 export default function TrainingAndSupportPage() {
   return (
     <>
+      <ServiceSeo
+        name="OpenClaw Training and Support UK"
+        description="OpenClaw training and support services for UK teams that need practical onboarding, troubleshooting, skill development, and ongoing improvement."
+        path="/services/training-support"
+        serviceType="OpenClaw training and support"
+      />
+
       {/* Hero Section */}
       <section className="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center grain">
         <div className="absolute top-20 right-[10%] w-[400px] h-[400px] bg-orange/5 rounded-full blur-[120px] glow-pulse" />
@@ -212,6 +220,7 @@ export default function TrainingAndSupportPage() {
 
         <div className="max-w-[1140px] mx-auto px-6 relative z-10 py-20">
           <div className="max-w-[720px]">
+            <ServiceBreadcrumb current="OpenClaw Training and Support" />
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
               <span className="text-white/60 text-sm font-medium">OpenClaw Training & Ongoing Support</span>
@@ -224,7 +233,7 @@ export default function TrainingAndSupportPage() {
             </h1>
 
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
-              Expert training and ongoing support to maximize your OpenClaw investment. From basic operation to advanced skill development.
+              Practical training and ongoing support to help your team use OpenClaw confidently. From basic operation to advanced skill development.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -255,7 +264,7 @@ export default function TrainingAndSupportPage() {
               Don't Let Your OpenClaw Investment Go to Waste
             </h2>
             <p className="text-muted text-lg leading-relaxed mb-12">
-              Having OpenClaw installed is just the beginning. Without proper training and ongoing optimization, most businesses use less than 30% of their automation potential. We ensure your team gets maximum value from your investment.
+              Having OpenClaw installed is just the beginning. Without proper training and ongoing optimization, teams often leave useful workflows untouched or lose confidence when issues appear.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -477,7 +486,7 @@ export default function TrainingAndSupportPage() {
               Measurable Results from OpenClaw Training
             </h2>
             <p className="text-white/60 text-lg max-w-[600px] mx-auto">
-              Our training programs deliver concrete improvements in team capability and system performance.
+              Training should create practical improvements in team confidence, workflow quality, and system reliability.
             </p>
           </div>
 
@@ -577,7 +586,7 @@ export default function TrainingAndSupportPage() {
               },
               {
                 q: "What's included in monthly support packages?",
-                a: "Support time for troubleshooting, optimization advice, new skill development (depending on package), proactive monitoring, and emergency assistance. Higher tiers include more support time and 24/7 availability."
+                a: "Support time can cover troubleshooting, optimization advice, new skill development depending on package, proactive monitoring, and urgent assistance. Higher tiers include more support time and clearer priority response windows."
               },
               {
                 q: "Do you provide emergency support outside business hours?",
@@ -589,7 +598,7 @@ export default function TrainingAndSupportPage() {
               },
               {
                 q: "How do you handle complex technical issues?",
-                a: "We have direct access to OpenClaw source code and maintain strong relationships with the core development team. Complex issues that require code changes are escalated directly to the project maintainers."
+                a: "Complex issues are diagnosed from logs, configuration, integrations, and reproducible examples first. If an upstream OpenClaw issue is likely, we prepare a clear technical report or patch path for the relevant maintainers."
               }
             ].map((faq, i) => (
               <details key={i} className="group border-b border-border">
@@ -610,7 +619,7 @@ export default function TrainingAndSupportPage() {
       <section className="bg-orange py-16">
         <div className="max-w-[900px] mx-auto px-6 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-white mb-4">
-            Ready to Maximize Your OpenClaw Investment?
+            Ready to Improve Your OpenClaw Setup?
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-[600px] mx-auto">
             Book a training session or set up ongoing support to ensure your team gets the most from OpenClaw.

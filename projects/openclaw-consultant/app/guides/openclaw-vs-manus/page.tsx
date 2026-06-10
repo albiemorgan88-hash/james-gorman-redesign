@@ -68,6 +68,7 @@ const relatedGuides = [
 export default function OpenClawVsManusPage() {
   return (
     <GuideLandingPage
+      canonicalPath="/guides/openclaw-vs-manus"
       badge="Comparison Guide 2026"
       title="OpenClaw vs Manus"
       intro="This comparison only gets useful when you look at operating model. If you need channels, memory, tool control, approvals, and subagents around a real workflow, OpenClaw is playing a different game."
