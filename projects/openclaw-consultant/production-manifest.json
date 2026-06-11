@@ -1,6 +1,6 @@
 {
   "domain": "openclawconsultant.co.uk",
-  "knownGoodDeployment": "openclaw-consultant-ufwoy5spo-albert-morgans-projects.vercel.app",
+  "knownGoodDeployment": "openclaw-consultant-3qupagacq-albert-morgans-projects.vercel.app",
   "knownGoodDate": "2026-06-07T19:56:26+01:00",
   "notes": "June 7 Ahrefs-led SEO content push added six commercial-intent guide pages for AI consultancy UK, AI automation agency UK, AI implementation services UK, AI email automation UK, AI receptionist UK, and OpenClaw alternatives. Deployed after local lint/build, Vercel production deploy, and live URL/sitemap verification. Homepage visual lock remains the May 29 founder-led OpenClaw setup positioning.",
   "visualLock": {
