@@ -63,7 +63,11 @@ if (!sitemapResponse.ok) {
     errors.push("sitemap includes /guides/_content");
   }
 
+  // Noindexed stubs are deliberately excluded from the sitemap until published.
+  const sitemapExcludedStubs = new Set(["/case-studies/voice-in-car-openclaw-setup"]);
+
   for (const route of allDiscoveredRoutes) {
+    if (sitemapExcludedStubs.has(route)) continue;
     if (!sitemapXml.includes(`<loc>${siteUrl}${route}</loc>`)) {
       errors.push(`sitemap is missing ${route}`);
     }
