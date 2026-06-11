@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import GuideArticleJsonLd from "@/components/GuideArticleJsonLd";
+import GuideByline from "@/components/GuideByline";
 import SafeSetupLeadMagnet from "@/components/SafeSetupLeadMagnet";
 
 const canonicalPath = "/guides/openclaw-security-best-practices";
@@ -363,6 +364,7 @@ export default function OpenClawSecurityBestPracticesPage() {
               <br />
               <span className="text-orange">Best Practices</span>
             </h1>
+            <GuideByline canonicalPath={canonicalPath} />
 
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
               Essential security practices for business OpenClaw deployments. Reduce data exposure, define approval boundaries, and collect the evidence needed for compliance review.

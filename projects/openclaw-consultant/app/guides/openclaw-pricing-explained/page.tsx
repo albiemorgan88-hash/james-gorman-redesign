@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import GuideArticleJsonLd from "@/components/GuideArticleJsonLd";
+import GuideByline from "@/components/GuideByline";
 
 export const metadata: Metadata = {
   title: "OpenClaw Pricing & Costs Explained",
@@ -318,6 +319,7 @@ export default function OpenClawPricingExplainedPage() {
               <br />
               <span className="text-orange">Explained</span>
             </h1>
+            <GuideByline canonicalPath={"/guides/openclaw-pricing-explained"} />
 
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
               A planning guide to OpenClaw costs: API usage, hosting, setup, support, and maintenance. Use the examples as assumptions to validate, not promises.

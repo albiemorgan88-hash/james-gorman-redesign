@@ -62,6 +62,8 @@ export async function GET() {
     const entries = readdirSync(csDir, { withFileTypes: true });
     entries
       .filter(d => d.isDirectory() && isRouteDirectory(csDir, d.name))
+      // Noindexed stubs stay out of the sitemap until the owner publishes them.
+      .filter(d => d.name !== 'voice-in-car-openclaw-setup')
       .forEach(d => caseStudies.push(d.name));
   } catch {
     // No case studies directory — skip

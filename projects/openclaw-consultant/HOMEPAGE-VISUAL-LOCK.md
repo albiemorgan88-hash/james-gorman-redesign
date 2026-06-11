@@ -10,7 +10,7 @@ The canonical `openclawconsultant.co.uk` homepage is the dark navy/orange OpenCl
 - Hero headline: `OpenClaw, / Set Up Properly / and Safe to Run. / Founder-Led.`.
 - Orange primary CTA: `Book a discovery call`, linked to the approved Calendly consultation URL.
 - Supporting copy framed around founder-led OpenClaw setup, custom skills and sensible controls.
-- Proof section for real OpenClaw-style workflows, now using the verified `5.0` Blue Canvas Google rating.
+- Proof section for real OpenClaw workflows (wording updated 2026-06-10 on branch seo/consolidate-jun26: "OpenClaw-style" hedge dropped because both linked case studies document work done on OpenClaw itself), still using the verified `5.0` Blue Canvas Google rating.
 - Testimonial section uses public Blue Canvas client review snippets from Stuart Waters, Kyle Martin, and Gavan Wall.
 - Dark contact section near the bottom.
 - Homepage links into the SEO support pages, especially `/openclaw`, `/services/setup-configuration`, and `/guides/openclaw-vs-copilot-studio`.

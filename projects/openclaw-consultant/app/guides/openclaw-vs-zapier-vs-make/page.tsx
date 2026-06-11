@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import GuideArticleJsonLd from "@/components/GuideArticleJsonLd";
+import GuideByline from "@/components/GuideByline";
 
 const canonicalPath = "/guides/openclaw-vs-zapier-vs-make";
 const pageTitle = "OpenClaw vs Zapier vs Make vs n8n: AI Agent or Workflow Automation?";
@@ -280,6 +281,7 @@ export default function OpenClawVsZapierVsMakePage() {
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               <span className="text-orange">OpenClaw</span> vs <span className="text-orange">Zapier</span> vs <span className="text-orange">Make</span> vs <span className="text-orange">n8n</span>
             </h1>
+            <GuideByline canonicalPath={canonicalPath} />
             
             <p className="text-white/70 text-xl leading-relaxed mb-8">
               A practical comparison of agent-led automation and visual workflow platforms.

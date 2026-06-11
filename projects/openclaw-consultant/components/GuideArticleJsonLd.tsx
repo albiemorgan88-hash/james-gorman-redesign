@@ -1,3 +1,5 @@
+import { guideAuthorJsonLd, guideLastModified } from "@/components/GuideByline";
+
 type GuideArticleJsonLdFaq = {
   question: string;
   answer: string;
@@ -21,6 +23,7 @@ export default function GuideArticleJsonLd({
   faqs = [],
 }: GuideArticleJsonLdProps) {
   const canonicalUrl = `https://openclawconsultant.co.uk${canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`}`;
+  const lastModified = guideLastModified(canonicalPath);
   const graph = [
     {
       "@type": "Article",
@@ -30,8 +33,9 @@ export default function GuideArticleJsonLd({
       mainEntityOfPage: canonicalUrl,
       url: canonicalUrl,
       inLanguage: "en-GB",
+      ...(lastModified ? { dateModified: lastModified } : {}),
       publisher: { "@type": "Organization", name: "OpenClaw Consultant UK", url: "https://openclawconsultant.co.uk" },
-      author: { "@type": "Organization", name: "OpenClaw Consultant UK", url: "https://openclawconsultant.co.uk" },
+      author: guideAuthorJsonLd(),
       isPartOf: { "@type": "WebSite", name: "OpenClaw Consultant UK", url: "https://openclawconsultant.co.uk" },
     },
     {

@@ -354,7 +354,7 @@ export default function AIAgentConsultingPage() {
                   How Blue Canvas Uses AI Agents
                 </h2>
                 <p className="text-muted leading-relaxed mb-6">
-                  We use OpenClaw-style agent workflows in our own operations, so the advice is grounded in day-to-day automation practice rather than abstract AI strategy.
+                  We use OpenClaw agent workflows in our own operations, so the advice is grounded in day-to-day automation practice rather than abstract AI strategy.
                 </p>
                 
                 <div className="space-y-4">

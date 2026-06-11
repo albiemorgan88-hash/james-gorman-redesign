@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import GuideArticleJsonLd from "@/components/GuideArticleJsonLd";
+import GuideByline from "@/components/GuideByline";
 
 const canonicalPath = "/guides/openclaw-vs-chatgpt";
 const pageTitle = "OpenClaw vs ChatGPT: Key Differences for Business Use";
@@ -229,6 +230,7 @@ export default function OpenClawVsChatGPTPage() {
               <br />
               <span className="text-orange">What's the Difference?</span>
             </h1>
+            <GuideByline canonicalPath={canonicalPath} />
 
             <p className="text-white/60 text-lg md:text-xl max-w-[540px] mb-10 leading-relaxed">
               Detailed comparison of OpenClaw and ChatGPT for business use. Learn which platform fits your needs and when to use each.

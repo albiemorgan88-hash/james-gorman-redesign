@@ -234,7 +234,7 @@ export default function Home() {
               <br />
               <span className="text-orange">Set Up Properly</span>
               <br />
-              and Safe to Run.
+              and Safe to Run.{" "}
               <span className="block text-white">Founder-Led.</span>
             </h1>
 
@@ -358,7 +358,7 @@ export default function Home() {
           <div className="mb-14 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-orange">Case Studies</p>
-              <h2 className="max-w-[680px] text-3xl font-black tracking-normal text-dark md:text-4xl">Proof from real OpenClaw-style workflows</h2>
+              <h2 className="max-w-[680px] text-3xl font-black tracking-normal text-dark md:text-4xl">Proof from real OpenClaw workflows</h2>
             </div>
             <a href="/case-studies" className="text-sm font-semibold text-orange transition hover:text-orange-hover">
               View all case studies

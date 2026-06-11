@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import ContactForm from "@/components/ContactForm";
+import GuideByline, { guideAuthorJsonLd, guideLastModified } from "@/components/GuideByline";
 
 export interface GuidePageStat {
   value: string;
@@ -102,6 +103,7 @@ export default function GuidePageTemplate({
 }: GuidePageTemplateProps) {
   const fullTitle = highlight ? `${title}: ${highlight}` : title;
   const canonicalUrl = canonicalPath ? `https://openclawconsultant.co.uk${canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`}` : undefined;
+  const lastModified = canonicalPath ? guideLastModified(canonicalPath) : null;
   const guideSchema = canonicalUrl
     ? {
         "@context": "https://schema.org",
@@ -114,22 +116,28 @@ export default function GuidePageTemplate({
             mainEntityOfPage: canonicalUrl,
             url: canonicalUrl,
             inLanguage: "en-GB",
+            ...(lastModified ? { dateModified: lastModified } : {}),
             publisher: { "@type": "Organization", name: "Blue Canvas AI", url: "https://bluecanvas.ai" },
-            author: { "@type": "Organization", name: "Blue Canvas AI", url: "https://bluecanvas.ai" },
+            author: guideAuthorJsonLd(),
             isPartOf: { "@type": "WebSite", name: "OpenClaw Consultant UK", url: "https://openclawconsultant.co.uk" },
           },
-          {
-            "@type": "FAQPage",
-            "@id": `${canonicalUrl}#faq`,
-            mainEntity: faqs.map((faq) => ({
-              "@type": "Question",
-              name: faq.question,
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: stripHtml(faq.answer),
-              },
-            })),
-          },
+          // FAQPage only when the page renders real FAQs.
+          ...(faqs.length > 0
+            ? [
+                {
+                  "@type": "FAQPage",
+                  "@id": `${canonicalUrl}#faq`,
+                  mainEntity: faqs.map((faq) => ({
+                    "@type": "Question",
+                    name: faq.question,
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: stripHtml(faq.answer),
+                    },
+                  })),
+                },
+              ]
+            : []),
           {
             "@type": "BreadcrumbList",
             "@id": `${canonicalUrl}#breadcrumb`,
@@ -175,7 +183,8 @@ export default function GuidePageTemplate({
                 </>
               ) : null}
             </h1>
-            <p className="text-white/70 text-lg md:text-xl max-w-[680px] mb-10 leading-relaxed">{description}</p>
+            <p className="text-white/70 text-lg md:text-xl max-w-[680px] mb-6 leading-relaxed">{description}</p>
+            {canonicalPath ? <GuideByline canonicalPath={canonicalPath} /> : null}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={primaryCtaHref}
