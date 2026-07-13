@@ -1,0 +1,185 @@
+{
+  "date": "2026-05-25T10:54:28.505530+00:00",
+  "source_note": "Selected adjacent school wellbeing / pastoral long-tail opportunities not already covered in previous HIP batches.",
+  "official_sources_used": {
+    "de_wellbeing": "https://www.education-ni.gov.uk/articles/emotional-health-and-wellbeing",
+    "nhs_anxiety": "https://www.nhs.uk/mental-health/children-and-young-adults/advice-for-parents/anxiety-in-children/",
+    "ea_safeguarding": "https://www.eani.org.uk/school-management/safeguarding-and-child-protection/resources",
+    "de_safeguarding": "https://www.education-ni.gov.uk/articles/protecting-and-safeguarding-our-children",
+    "hse_stress": "https://www.hse.gov.uk/stress/",
+    "ccea_sel": "https://ccea.org.uk/document/15055"
+  },
+  "count": 8,
+  "results": [
+    {
+      "slug": "classroom-anxiety-strategies-for-teachers",
+      "title": "Classroom Anxiety Strategies for Teachers: Practical Support During the School Day",
+      "target_keyword": "classroom anxiety strategies teachers",
+      "action": "created",
+      "id": 1865,
+      "status": "publish",
+      "link": "https://hippsychology.com/classroom-anxiety-strategies-for-teachers/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "wellbeing-assemblies-for-schools",
+      "title": "Wellbeing Assemblies for Schools: How to Make Them Practical, Safe and Useful",
+      "target_keyword": "wellbeing assemblies schools",
+      "action": "created",
+      "id": 1866,
+      "status": "publish",
+      "link": "https://hippsychology.com/wellbeing-assemblies-for-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "parent-mental-health-workshops-schools",
+      "title": "Parent Mental Health Workshops in Schools: Building Shared Language Around Pupil Wellbeing",
+      "target_keyword": "parent mental health workshops schools",
+      "action": "created",
+      "id": 1867,
+      "status": "publish",
+      "link": "https://hippsychology.com/parent-mental-health-workshops-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "behaviour-as-communication-in-schools",
+      "title": "Behaviour as Communication in Schools: What Staff Can Notice Before Escalation",
+      "target_keyword": "behaviour as communication schools",
+      "action": "created",
+      "id": 1868,
+      "status": "publish",
+      "link": "https://hippsychology.com/behaviour-as-communication-in-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "restorative-practice-and-wellbeing-schools",
+      "title": "Restorative Practice and Wellbeing in Schools: Repairing Harm Without Losing Boundaries",
+      "target_keyword": "restorative practice wellbeing schools",
+      "action": "created",
+      "id": 1869,
+      "status": "publish",
+      "link": "https://hippsychology.com/restorative-practice-and-wellbeing-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "staff-debriefing-after-school-incidents",
+      "title": "Staff Debriefing After School Incidents: Supporting Adults After Difficult Moments",
+      "target_keyword": "staff debriefing after school incidents",
+      "action": "created",
+      "id": 1870,
+      "status": "publish",
+      "link": "https://hippsychology.com/staff-debriefing-after-school-incidents/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "playground-friendship-support-schools",
+      "title": "Playground Friendship Support in Schools: Early Help for Conflict, Exclusion and Worries",
+      "target_keyword": "playground friendship support schools",
+      "action": "created",
+      "id": 1871,
+      "status": "publish",
+      "link": "https://hippsychology.com/playground-friendship-support-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "sensory-overload-in-the-classroom",
+      "title": "Sensory Overload in the Classroom: Practical Adjustments for Busy School Environments",
+      "target_keyword": "sensory overload classroom",
+      "action": "created",
+      "id": 1872,
+      "status": "publish",
+      "link": "https://hippsychology.com/sensory-overload-in-the-classroom/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    }
+  ],
+  "sitemap_status": 200,
+  "draft_dir": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-05-25"
+}

@@ -1,0 +1,122 @@
+{
+  "date": "2026-06-01T19:22:50.379516+00:00",
+  "source_note": "Selected 5 next HIP school wellbeing keywords from remaining adjacent service-intent opportunities, avoiding prior blast slugs.",
+  "official_sources_used": {
+    "de_wellbeing": "https://www.education-ni.gov.uk/articles/emotional-health-and-wellbeing",
+    "de_safeguarding": "https://www.education-ni.gov.uk/articles/protecting-and-safeguarding-our-children",
+    "nhs_anxiety": "https://www.nhs.uk/mental-health/children-and-young-adults/advice-for-parents/anxiety-in-children/",
+    "nhs_self_harm": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/self-harm/",
+    "hse_stress": "https://www.hse.gov.uk/stress/",
+    "education_support": "https://www.educationsupport.org.uk/get-help/help-for-your-staff/wellbeing-services/professional-supervision/"
+  },
+  "count": 5,
+  "results": [
+    {
+      "slug": "trauma-informed-practice-in-schools",
+      "title": "Trauma-Informed Practice in Schools: Practical Staff Training Without Losing Boundaries",
+      "target_keyword": "trauma informed practice in schools",
+      "action": "created",
+      "id": 1891,
+      "status": "publish",
+      "link": "https://hippsychology.com/trauma-informed-practice-in-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "nurture-groups-in-schools",
+      "title": "Nurture Groups in Schools: How to Make Small-Group Support Work",
+      "target_keyword": "nurture groups in schools",
+      "action": "created",
+      "id": 1892,
+      "status": "publish",
+      "link": "https://hippsychology.com/nurture-groups-in-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "bereavement-support-in-schools",
+      "title": "Bereavement Support in Schools: Helping Pupils After Loss",
+      "target_keyword": "bereavement support in schools",
+      "action": "created",
+      "id": 1893,
+      "status": "publish",
+      "link": "https://hippsychology.com/bereavement-support-in-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "emotional-literacy-programme-schools",
+      "title": "Emotional Literacy Programme for Schools: Building Language Before Behaviour Escalates",
+      "target_keyword": "emotional literacy programme schools",
+      "action": "created",
+      "id": 1894,
+      "status": "publish",
+      "link": "https://hippsychology.com/emotional-literacy-programme-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "anxiety-workshops-for-primary-schools",
+      "title": "Anxiety Workshops for Primary Schools: Practical Early Support for Younger Pupils",
+      "target_keyword": "anxiety workshops for primary schools",
+      "action": "created",
+      "id": 1895,
+      "status": "publish",
+      "link": "https://hippsychology.com/anxiety-workshops-for-primary-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    }
+  ],
+  "sitemap_status": 200,
+  "draft_dir": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-01"
+}

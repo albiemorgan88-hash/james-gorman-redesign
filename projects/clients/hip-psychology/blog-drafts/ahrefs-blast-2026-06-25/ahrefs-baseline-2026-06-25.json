@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-25",
+  "target": "hippsychology.com",
+  "metrics": {
+    "status_code": 200,
+    "body": {
+      "metrics": {
+        "org_keywords": 4,
+        "paid_keywords": 0,
+        "org_keywords_1_3": 1,
+        "org_traffic": 5,
+        "org_cost": 168,
+        "paid_traffic": 0,
+        "paid_cost": null,
+        "paid_pages": 0
+      }
+    }
+  },
+  "domain-rating": {
+    "status_code": 200,
+    "body": {
+      "domain_rating": {
+        "domain_rating": 7.0,
+        "ahrefs_rank": 21794879
+      }
+    }
+  },
+  "backlinks-stats": {
+    "status_code": 200,
+    "body": {
+      "metrics": {
+        "live": 347,
+        "all_time": 639,
+        "live_refdomains": 239,
+        "all_time_refdomains": 355
+      }
+    }
+  }
+}

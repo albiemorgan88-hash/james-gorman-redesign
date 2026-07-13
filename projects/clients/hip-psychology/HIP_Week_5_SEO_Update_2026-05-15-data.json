@@ -1,0 +1,42 @@
+{
+  "generated": "2026-05-15",
+  "site_title": "HIP Psychology | Helping Improve Performance",
+  "logo_url": "https://hippsychology.com/wp-content/uploads/2024/08/hip-ltd-with-green-letters.png",
+  "ahrefs_start": {
+    "date": "2026-04-10",
+    "dr": 7,
+    "org_keywords": 1,
+    "org_traffic": 1,
+    "top3": 1,
+    "live_backlinks": 66,
+    "live_refdomains": 41,
+    "top_keyword": "hip psychology"
+  },
+  "ahrefs_now": {
+    "date": "2026-05-15",
+    "dr": 6,
+    "org_keywords": 1,
+    "org_traffic": 1,
+    "top3": 1,
+    "live_backlinks": 186,
+    "live_refdomains": 99,
+    "top_keyword": "hip psychology"
+  },
+  "wp_posts_total": 56,
+  "wp_pages_total": 92,
+  "new_posts_since_2026_04_10": 52,
+  "byday": {
+    "2026-04-13": 4,
+    "2026-04-15": 4,
+    "2026-04-17": 4,
+    "2026-04-22": 5,
+    "2026-04-27": 4,
+    "2026-04-29": 3,
+    "2026-05-02": 4,
+    "2026-05-04": 8,
+    "2026-05-06": 8,
+    "2026-05-14": 8
+  },
+  "native_post_sitemap_locs": 56,
+  "legacy_sitemap_locs": 67
+}

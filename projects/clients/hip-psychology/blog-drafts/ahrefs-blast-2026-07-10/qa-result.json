@@ -1,0 +1,322 @@
+{
+  "published": [
+    {
+      "action": "created",
+      "id": 2184,
+      "slug": "low-arousal-approach-schools",
+      "title": "Low-Arousal Approach in Schools: Calm Support Before Escalation",
+      "link": "https://hippsychology.com/low-arousal-approach-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2185,
+      "slug": "de-escalation-training-for-school-staff",
+      "title": "De-Escalation Training for School Staff",
+      "link": "https://hippsychology.com/de-escalation-training-for-school-staff/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2186,
+      "slug": "safe-spaces-in-schools",
+      "title": "Safe Spaces in Schools: How to Plan Support Without Isolation",
+      "link": "https://hippsychology.com/safe-spaces-in-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2187,
+      "slug": "breaktime-wellbeing-support-schools",
+      "title": "Breaktime Wellbeing Support for Schools",
+      "link": "https://hippsychology.com/breaktime-wellbeing-support-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2188,
+      "slug": "exam-results-day-wellbeing-support",
+      "title": "Exam Results Day Wellbeing Support for Schools",
+      "link": "https://hippsychology.com/exam-results-day-wellbeing-support/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2189,
+      "slug": "school-readiness-parent-workshop",
+      "title": "School Readiness Parent Workshop: Helping Families Prepare Calmly",
+      "link": "https://hippsychology.com/school-readiness-parent-workshop/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2190,
+      "slug": "perfectionism-workshops-for-schools",
+      "title": "Perfectionism Workshops for Schools: Support for High-Pressure Pupils",
+      "link": "https://hippsychology.com/perfectionism-workshops-for-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2191,
+      "slug": "empathy-workshops-for-schools",
+      "title": "Empathy Workshops for Schools: Building Understanding Between Pupils",
+      "link": "https://hippsychology.com/empathy-workshops-for-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2192,
+      "slug": "kindness-workshops-for-schools",
+      "title": "Kindness Workshops for Schools: Moving Beyond One-Off Assemblies",
+      "link": "https://hippsychology.com/kindness-workshops-for-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2193,
+      "slug": "healthy-masculinity-workshops-schools",
+      "title": "Healthy Masculinity Workshops for Schools",
+      "link": "https://hippsychology.com/healthy-masculinity-workshops-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2194,
+      "slug": "period-wellbeing-workshops-schools",
+      "title": "Period Wellbeing Workshops for Schools",
+      "link": "https://hippsychology.com/period-wellbeing-workshops-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2195,
+      "slug": "social-media-anxiety-support-schools",
+      "title": "Social Media Anxiety Support for Schools",
+      "link": "https://hippsychology.com/social-media-anxiety-support-schools/",
+      "status": "publish"
+    }
+  ],
+  "qa": [
+    {
+      "slug": "low-arousal-approach-schools",
+      "link": "https://hippsychology.com/low-arousal-approach-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "de-escalation-training-for-school-staff",
+      "link": "https://hippsychology.com/de-escalation-training-for-school-staff/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "safe-spaces-in-schools",
+      "link": "https://hippsychology.com/safe-spaces-in-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "breaktime-wellbeing-support-schools",
+      "link": "https://hippsychology.com/breaktime-wellbeing-support-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "exam-results-day-wellbeing-support",
+      "link": "https://hippsychology.com/exam-results-day-wellbeing-support/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "school-readiness-parent-workshop",
+      "link": "https://hippsychology.com/school-readiness-parent-workshop/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "perfectionism-workshops-for-schools",
+      "link": "https://hippsychology.com/perfectionism-workshops-for-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "empathy-workshops-for-schools",
+      "link": "https://hippsychology.com/empathy-workshops-for-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "kindness-workshops-for-schools",
+      "link": "https://hippsychology.com/kindness-workshops-for-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "healthy-masculinity-workshops-schools",
+      "link": "https://hippsychology.com/healthy-masculinity-workshops-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "period-wellbeing-workshops-schools",
+      "link": "https://hippsychology.com/period-wellbeing-workshops-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "social-media-anxiety-support-schools",
+      "link": "https://hippsychology.com/social-media-anxiety-support-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    }
+  ],
+  "sitemap_status": 200,
+  "sitemap_checks": {
+    "low-arousal-approach-schools": true,
+    "de-escalation-training-for-school-staff": true,
+    "safe-spaces-in-schools": true,
+    "breaktime-wellbeing-support-schools": true,
+    "exam-results-day-wellbeing-support": true,
+    "school-readiness-parent-workshop": true,
+    "perfectionism-workshops-for-schools": true,
+    "empathy-workshops-for-schools": true,
+    "kindness-workshops-for-schools": true,
+    "healthy-masculinity-workshops-schools": true,
+    "period-wellbeing-workshops-schools": true,
+    "social-media-anxiety-support-schools": true
+  },
+  "failures": 0
+}

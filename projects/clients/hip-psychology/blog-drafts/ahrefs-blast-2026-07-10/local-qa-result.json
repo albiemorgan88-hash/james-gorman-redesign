@@ -1,0 +1,203 @@
+{
+  "official_link_status": {
+    "https://www.education-ni.gov.uk/articles/emotional-health-and-wellbeing": 200,
+    "https://www.education-ni.gov.uk/publications/safeguarding-and-child-protection-schools-guide-schools": 200,
+    "https://www.education-ni.gov.uk/publications/effective-practice-educational-settings": 200,
+    "https://www.publichealth.hscni.net/publications/take-5-steps-wellbeing-english-and-11-translations": 200
+  },
+  "post_checks": [
+    {
+      "slug": "low-arousal-approach-schools",
+      "checks": {
+        "slug_not_live_duplicate": true,
+        "no_body_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "internal_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "de-escalation-training-for-school-staff",
+      "checks": {
+        "slug_not_live_duplicate": true,
+        "no_body_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "internal_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "safe-spaces-in-schools",
+      "checks": {
+        "slug_not_live_duplicate": true,
+        "no_body_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "internal_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "breaktime-wellbeing-support-schools",
+      "checks": {
+        "slug_not_live_duplicate": true,
+        "no_body_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "internal_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "exam-results-day-wellbeing-support",
+      "checks": {
+        "slug_not_live_duplicate": true,
+        "no_body_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "internal_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "school-readiness-parent-workshop",
+      "checks": {
+        "slug_not_live_duplicate": true,
+        "no_body_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "internal_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "perfectionism-workshops-for-schools",
+      "checks": {
+        "slug_not_live_duplicate": true,
+        "no_body_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "internal_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "empathy-workshops-for-schools",
+      "checks": {
+        "slug_not_live_duplicate": true,
+        "no_body_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "internal_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "kindness-workshops-for-schools",
+      "checks": {
+        "slug_not_live_duplicate": true,
+        "no_body_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "internal_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "healthy-masculinity-workshops-schools",
+      "checks": {
+        "slug_not_live_duplicate": true,
+        "no_body_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "internal_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "period-wellbeing-workshops-schools",
+      "checks": {
+        "slug_not_live_duplicate": true,
+        "no_body_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "internal_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "social-media-anxiety-support-schools",
+      "checks": {
+        "slug_not_live_duplicate": true,
+        "no_body_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "internal_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    }
+  ],
+  "failures": 0
+}

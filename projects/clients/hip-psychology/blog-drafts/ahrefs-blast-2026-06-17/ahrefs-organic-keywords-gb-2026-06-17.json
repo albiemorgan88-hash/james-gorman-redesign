@@ -1,0 +1,52 @@
+{
+  "keywords": [
+    {
+      "keyword": "pupil wellbeing",
+      "volume": 80,
+      "best_position": 10,
+      "best_position_url": "https://hippsychology.com/pupil-wellbeing-strategy-schools/",
+      "sum_traffic": 2,
+      "keyword_difficulty": 1,
+      "cpc": null,
+      "is_branded": false,
+      "is_informational": true,
+      "is_commercial": false
+    },
+    {
+      "keyword": "define pastoral support",
+      "volume": 40,
+      "best_position": 7,
+      "best_position_url": "https://hippsychology.com/pastoral-support-in-schools/",
+      "sum_traffic": 1,
+      "keyword_difficulty": 0,
+      "cpc": null,
+      "is_branded": false,
+      "is_informational": true,
+      "is_commercial": false
+    },
+    {
+      "keyword": "emotion coaching in schools",
+      "volume": 10,
+      "best_position": 6,
+      "best_position_url": "https://hippsychology.com/emotion-coaching-in-schools/",
+      "sum_traffic": 1,
+      "keyword_difficulty": 0,
+      "cpc": 200,
+      "is_branded": false,
+      "is_informational": true,
+      "is_commercial": false
+    },
+    {
+      "keyword": "hip psychology",
+      "volume": 0,
+      "best_position": 1,
+      "best_position_url": "https://hippsychology.com/",
+      "sum_traffic": 1,
+      "keyword_difficulty": 0,
+      "cpc": null,
+      "is_branded": true,
+      "is_informational": true,
+      "is_commercial": false
+    }
+  ]
+}

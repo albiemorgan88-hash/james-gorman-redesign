@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-06-23T08:53:35.102213+00:00",
+  "property": "sc-domain:hippsychology.com",
+  "results": [
+    {
+      "sitemap": "https://hippsychology.com/wp-sitemap.xml",
+      "fetch_ok": true,
+      "fetch_message": "200 application/xml; charset=UTF-8",
+      "submitted": true,
+      "submit_message": "submitted"
+    },
+    {
+      "sitemap": "https://hippsychology.com/wp-sitemap-posts-post-1.xml",
+      "fetch_ok": true,
+      "fetch_message": "200 application/xml; charset=UTF-8",
+      "submitted": true,
+      "submit_message": "submitted"
+    },
+    {
+      "sitemap": "https://hippsychology.com/sitemap.xml",
+      "fetch_ok": true,
+      "fetch_message": "200 application/xml",
+      "submitted": true,
+      "submit_message": "submitted"
+    }
+  ]
+}

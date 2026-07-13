@@ -1,0 +1,115 @@
+{
+  "source_note": "Ahrefs source: unpublished 2026-06-11 HIP keyword pull. Site Explorer showed DR 7, 199 live referring domains, 292 live backlinks, 3 visible GB organic keywords and 4 estimated organic visits. Keyword overview highlights included `senco training` (GB vol 600, KD 1), `pastoral care in schools` (GB vol 600, KD 0), `emotionally based school avoidance` (GB vol 600, KD 2), `school avoidance anxiety` (GB vol 300, KD 11), `trauma informed practice in schools` (GB vol 100, KD 1), `staff wellbeing in schools` (GB vol 100, KD 12), and supporting long-tail staff training, SENCO, trauma-informed classroom and mental-health-first-aid topics.",
+  "results": [
+    {
+      "id": 1968,
+      "slug": "senco-training-for-school-wellbeing",
+      "title": "SENCO Training for School Wellbeing: What Staff Need to Know",
+      "url": "https://hippsychology.com/senco-training-for-school-wellbeing/",
+      "target_keyword": "senco training",
+      "cluster": "SENCO and school wellbeing",
+      "ahrefs_note": "Ahrefs GB volume 600, KD 1, traffic potential 350.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-15/senco-training-for-school-wellbeing.html"
+    },
+    {
+      "id": 1969,
+      "slug": "senco-support-and-pupil-wellbeing",
+      "title": "SENCO Support and Pupil Wellbeing: A Practical School Guide",
+      "url": "https://hippsychology.com/senco-support-and-pupil-wellbeing/",
+      "target_keyword": "senco support",
+      "cluster": "SENCO and school wellbeing",
+      "ahrefs_note": "Ahrefs GB volume 80, KD 22.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-15/senco-support-and-pupil-wellbeing.html"
+    },
+    {
+      "id": 1970,
+      "slug": "mental-health-first-aid-in-schools-guide",
+      "title": "Mental Health First Aid in Schools: What It Can and Cannot Do",
+      "url": "https://hippsychology.com/mental-health-first-aid-in-schools-guide/",
+      "target_keyword": "mental health first aid in schools",
+      "cluster": "Staff training and role clarity",
+      "ahrefs_note": "Ahrefs GB volume 10, CPC 60.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-15/mental-health-first-aid-in-schools-guide.html"
+    },
+    {
+      "id": 1971,
+      "slug": "ebsa-training-for-school-staff",
+      "title": "EBSA Training for School Staff: Building a Calmer Response",
+      "url": "https://hippsychology.com/ebsa-training-for-school-staff/",
+      "target_keyword": "ebsa training schools",
+      "cluster": "Emotionally based school avoidance",
+      "ahrefs_note": "Supports Ahrefs-confirmed `emotionally based school avoidance` at GB volume 600, KD 2.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-15/ebsa-training-for-school-staff.html"
+    },
+    {
+      "id": 1972,
+      "slug": "school-avoidance-anxiety-support",
+      "title": "School Avoidance Anxiety: How Schools Can Respond Early",
+      "url": "https://hippsychology.com/school-avoidance-anxiety-support/",
+      "target_keyword": "school avoidance anxiety",
+      "cluster": "Emotionally based school avoidance",
+      "ahrefs_note": "Ahrefs GB volume 300, KD 11, traffic potential 2400.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-15/school-avoidance-anxiety-support.html"
+    },
+    {
+      "id": 1973,
+      "slug": "trauma-informed-practice-schools-guide",
+      "title": "Trauma-Informed Practice in Schools: A Guide for Staff Teams",
+      "url": "https://hippsychology.com/trauma-informed-practice-schools-guide/",
+      "target_keyword": "trauma informed practice in schools",
+      "cluster": "Trauma-informed school support",
+      "ahrefs_note": "Ahrefs GB volume 100, KD 1, traffic potential 600.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-15/trauma-informed-practice-schools-guide.html"
+    },
+    {
+      "id": 1974,
+      "slug": "trauma-informed-training-for-school-staff",
+      "title": "Trauma-Informed Training for Teachers: What Should Be Included?",
+      "url": "https://hippsychology.com/trauma-informed-training-for-school-staff/",
+      "target_keyword": "trauma informed training for teachers",
+      "cluster": "Trauma-informed school support",
+      "ahrefs_note": "Ahrefs GB volume 40, CPC 50.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-15/trauma-informed-training-for-school-staff.html"
+    },
+    {
+      "id": 1975,
+      "slug": "trauma-informed-classroom-strategies",
+      "title": "Trauma-Informed Classroom Strategies: Practical Steps for Teachers",
+      "url": "https://hippsychology.com/trauma-informed-classroom-strategies/",
+      "target_keyword": "trauma informed classroom",
+      "cluster": "Trauma-informed school support",
+      "ahrefs_note": "Ahrefs GB volume 50, KD 3.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-15/trauma-informed-classroom-strategies.html"
+    },
+    {
+      "id": 1976,
+      "slug": "pastoral-care-in-schools-guide",
+      "title": "Pastoral Care in Schools: What Strong Support Looks Like",
+      "url": "https://hippsychology.com/pastoral-care-in-schools-guide/",
+      "target_keyword": "pastoral care in schools",
+      "cluster": "Pastoral care and wellbeing",
+      "ahrefs_note": "Ahrefs GB volume 600, KD 0, traffic potential 400.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-15/pastoral-care-in-schools-guide.html"
+    },
+    {
+      "id": 1977,
+      "slug": "staff-wellbeing-training-plan-schools",
+      "title": "Staff Wellbeing Training Plan: A Practical Model for Schools",
+      "url": "https://hippsychology.com/staff-wellbeing-training-plan-schools/",
+      "target_keyword": "teacher wellbeing training",
+      "cluster": "Staff wellbeing and training",
+      "ahrefs_note": "Ahrefs GB volume 40; supports `staff wellbeing in schools` at GB volume 100, KD 12.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-15/staff-wellbeing-training-plan-schools.html"
+    }
+  ]
+}

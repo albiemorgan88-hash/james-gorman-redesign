@@ -1,0 +1,37 @@
+{
+  "vaping in schools": {
+    "status": 404,
+    "json": {
+      "text": "Not found"
+    },
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/related-keywords?keyword=vaping+in+schools&country=gb&limit=50&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume&order_by=volume%3Adesc"
+  },
+  "primary to secondary transition": {
+    "status": 404,
+    "json": {
+      "text": "Not found"
+    },
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/related-keywords?keyword=primary+to+secondary+transition&country=gb&limit=50&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume&order_by=volume%3Adesc"
+  },
+  "mental health workshops for schools": {
+    "status": 404,
+    "json": {
+      "text": "Not found"
+    },
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/related-keywords?keyword=mental+health+workshops+for+schools&country=gb&limit=50&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume&order_by=volume%3Adesc"
+  },
+  "school wellbeing workshops": {
+    "status": 404,
+    "json": {
+      "text": "Not found"
+    },
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/related-keywords?keyword=school+wellbeing+workshops&country=gb&limit=50&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume&order_by=volume%3Adesc"
+  },
+  "pastoral support in schools": {
+    "status": 404,
+    "json": {
+      "text": "Not found"
+    },
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/related-keywords?keyword=pastoral+support+in+schools&country=gb&limit=50&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume&order_by=volume%3Adesc"
+  }
+}

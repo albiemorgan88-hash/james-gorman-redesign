@@ -1,0 +1,647 @@
+{
+  "generated": "2026-06-18",
+  "report_title": "HIP Psychology SEO Progress",
+  "report_subtitle": "Week 8 movement report for hippsychology.com",
+  "prepared_for": "Cormac Venney",
+  "site": "hippsychology.com",
+  "logo_url": "https://hippsychology.com/wp-content/uploads/2024/08/hip-ltd-with-green-letters.png",
+  "week6": {
+    "date": "2026-06-01",
+    "wp_posts_total": 95,
+    "wp_pages_total": 92,
+    "site_size": 187,
+    "new_posts_since_2026_04_10": 91,
+    "new_posts_since_week5": 39,
+    "native_post_sitemap_locs": 95,
+    "native_page_sitemap_locs": 92,
+    "legacy_sitemap_locs": 67,
+    "ahrefs": {
+      "source": "Ahrefs Site Explorer UI, hippsychology.com, project 9644726, 1 Jun 2026. API access was present but API units were exhausted, so the UI was used for live Site Explorer data.",
+      "dr": 4.4,
+      "dr_change_last_month": -1.6,
+      "ur": 5,
+      "ahrefs_rank": 30366598,
+      "ahrefs_rank_change": 5931868,
+      "live_backlinks": 280,
+      "live_backlinks_change_last_month": 195,
+      "all_time_backlinks": 565,
+      "live_refdomains": 191,
+      "live_refdomains_change_last_month": 136,
+      "all_time_refdomains": 305,
+      "org_keywords": 3,
+      "org_keywords_change_last_month": 2,
+      "top3": 1,
+      "org_traffic": 4,
+      "org_traffic_change_last_month": 3,
+      "organic_pages": 10,
+      "crawled_pages": 331,
+      "crawled_200": 318,
+      "crawled_redirects": 11,
+      "crawled_404": 1,
+      "crawled_other_4xx": 1,
+      "crawled_5xx": 0,
+      "followed_refdomains": 39,
+      "nofollow_refdomains": 152,
+      "followed_backlinks": 90,
+      "nofollow_backlinks": 190
+    },
+    "ahrefs_keywords": [
+      {
+        "keyword": "pupil wellbeing",
+        "position": 10,
+        "volume": 80,
+        "kd": 1,
+        "traffic": 2,
+        "url": "https://hippsychology.com/pupil-wellbeing-strategy-schools/",
+        "status": "New"
+      },
+      {
+        "keyword": "define pastoral support",
+        "position": 7,
+        "volume": 40,
+        "kd": 0,
+        "traffic": 1,
+        "url": "https://hippsychology.com/pastoral-support-in-schools/",
+        "status": "New"
+      },
+      {
+        "keyword": "hip psychology",
+        "position": 1,
+        "volume": 0,
+        "kd": 0,
+        "traffic": 1,
+        "url": "https://hippsychology.com/",
+        "status": "Existing brand ranking"
+      }
+    ],
+    "gsc": {
+      "source": "Google Search Console API, sc-domain:hippsychology.com, 1 Jun 2026. Reporting window uses 1 May to 30 May 2026 because Search Console has normal data lag.",
+      "last30": {
+        "start": "2026-05-01",
+        "end": "2026-05-30",
+        "clicks": 125,
+        "impressions": 3707,
+        "ctr": 0.0337,
+        "position": 12.61
+      },
+      "week5_period": {
+        "start": "2026-04-16",
+        "end": "2026-05-15",
+        "clicks": 120,
+        "impressions": 2001,
+        "ctr": 0.06,
+        "position": 10.38
+      },
+      "last7": {
+        "start": "2026-05-24",
+        "end": "2026-05-30",
+        "clicks": 32,
+        "impressions": 1029,
+        "ctr": 0.0311,
+        "position": 11.36
+      }
+    }
+  },
+  "week8": {
+    "date": "2026-06-18",
+    "wp_posts_total": 160,
+    "wp_pages_total": 92,
+    "site_size": 252,
+    "new_posts_since_2026_04_10": 156,
+    "new_posts_since_week6": 65,
+    "native_post_sitemap_locs": 160,
+    "native_page_sitemap_locs": 92,
+    "legacy_sitemap_locs": 67,
+    "live_sitemap_urls_checked": 252,
+    "live_sitemap_200": 252,
+    "live_sitemap_failures": 0,
+    "ahrefs": {
+      "source": "Ahrefs API, hippsychology.com, 18 Jun 2026.",
+      "dr": 7.0,
+      "dr_change_since_week6": 2.6,
+      "ahrefs_rank": 22588151,
+      "live_backlinks": 305,
+      "all_time_backlinks": 596,
+      "live_refdomains": 211,
+      "all_time_refdomains": 326,
+      "org_keywords": 4,
+      "top3": 1,
+      "org_traffic": 5,
+      "org_cost": 168,
+      "organic_pages": 9
+    },
+    "ahrefs_keywords": [
+      {
+        "keyword": "pupil wellbeing",
+        "volume": 80,
+        "kd": 1,
+        "position": 10,
+        "traffic": 2,
+        "url": "https://hippsychology.com/pupil-wellbeing-strategy-schools/",
+        "status": "Non-brand ranking"
+      },
+      {
+        "keyword": "hip psychology",
+        "volume": 0,
+        "kd": 0,
+        "position": 1,
+        "traffic": 1,
+        "url": "https://hippsychology.com/",
+        "status": "Existing brand ranking"
+      },
+      {
+        "keyword": "emotion coaching in schools",
+        "volume": 10,
+        "kd": 0,
+        "position": 6,
+        "traffic": 1,
+        "url": "https://hippsychology.com/emotion-coaching-in-schools/",
+        "status": "New since Week 6"
+      },
+      {
+        "keyword": "define pastoral support",
+        "volume": 40,
+        "kd": 0,
+        "position": 7,
+        "traffic": 1,
+        "url": "https://hippsychology.com/pastoral-support-in-schools/",
+        "status": "Non-brand ranking"
+      }
+    ],
+    "gsc": {
+      "week6_window": {
+        "start": "2026-05-01",
+        "end": "2026-05-30",
+        "clicks": 125,
+        "impressions": 3707,
+        "ctr": 0.03371998920960345,
+        "position": 12.614243323442137
+      },
+      "latest_30": {
+        "start": "2026-05-18",
+        "end": "2026-06-16",
+        "clicks": 207,
+        "impressions": 6371,
+        "ctr": 0.032490974729241874,
+        "position": 9.682467430544655
+      },
+      "june_to_date_available": {
+        "start": "2026-06-01",
+        "end": "2026-06-16",
+        "clicks": 131,
+        "impressions": 3976,
+        "ctr": 0.0329476861167002,
+        "position": 8.017102615694165
+      },
+      "latest_7": {
+        "start": "2026-06-10",
+        "end": "2026-06-16",
+        "clicks": 42,
+        "impressions": 1781,
+        "ctr": 0.023582257158899493,
+        "position": 7.877035373385739
+      }
+    }
+  },
+  "batches_since_week6": [
+    {
+      "date": "2026-06-03",
+      "count": 6,
+      "batch": "ahrefs-blast-2026-06-03",
+      "links": [
+        {
+          "title": "Pupil Wellbeing Survey for Schools: Turning Pupil Voice Into Practical Support",
+          "slug": "pupil-wellbeing-survey-schools",
+          "url": "https://hippsychology.com/pupil-wellbeing-survey-schools/",
+          "keyword": "pupil wellbeing survey schools"
+        },
+        {
+          "title": "Pastoral Support Plan for Schools: From Concern to Clear Next Steps",
+          "slug": "pastoral-support-plan-schools",
+          "url": "https://hippsychology.com/pastoral-support-plan-schools/",
+          "keyword": "pastoral support plan schools"
+        },
+        {
+          "title": "Wellbeing Interventions in Schools: Choosing Support That Fits the Need",
+          "slug": "wellbeing-interventions-in-schools",
+          "url": "https://hippsychology.com/wellbeing-interventions-in-schools/",
+          "keyword": "wellbeing interventions in schools"
+        },
+        {
+          "title": "Mental Health Lead in Schools: What the Role Needs Around It to Work",
+          "slug": "mental-health-lead-in-schools",
+          "url": "https://hippsychology.com/mental-health-lead-in-schools/",
+          "keyword": "mental health lead in schools"
+        },
+        {
+          "title": "Educational Psychology Support for Schools in Northern Ireland: When to Ask for Help",
+          "slug": "educational-psychology-support-schools-ni",
+          "url": "https://hippsychology.com/educational-psychology-support-schools-ni/",
+          "keyword": "educational psychology support schools northern ireland"
+        },
+        {
+          "title": "Whole-School Wellbeing Audit: A Practical Starting Point for Better Support",
+          "slug": "whole-school-wellbeing-audit",
+          "url": "https://hippsychology.com/whole-school-wellbeing-audit/",
+          "keyword": "whole school wellbeing audit"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-04",
+      "count": 6,
+      "batch": "ahrefs-blast-2026-06-04",
+      "links": [
+        {
+          "title": "Pupil Wellbeing Action Plan: Turning Concern Into Practical School Steps",
+          "slug": "pupil-wellbeing-action-plan",
+          "url": "https://hippsychology.com/pupil-wellbeing-action-plan/",
+          "keyword": "pupil wellbeing action plan"
+        },
+        {
+          "title": "Pupil Wellbeing Questionnaire for Schools: Asking Questions That Lead to Support",
+          "slug": "pupil-wellbeing-questionnaire-schools",
+          "url": "https://hippsychology.com/pupil-wellbeing-questionnaire-schools/",
+          "keyword": "pupil wellbeing questionnaire schools"
+        },
+        {
+          "title": "Pastoral Interventions in Schools: Choosing Support That Matches the Need",
+          "slug": "pastoral-interventions-in-schools",
+          "url": "https://hippsychology.com/pastoral-interventions-in-schools/",
+          "keyword": "pastoral interventions in schools"
+        },
+        {
+          "title": "Pastoral Care Policy for Schools: Making Support Clear, Practical and Safe",
+          "slug": "pastoral-care-policy-schools",
+          "url": "https://hippsychology.com/pastoral-care-policy-schools/",
+          "keyword": "pastoral care policy schools"
+        },
+        {
+          "title": "School Wellbeing Calendar: Planning Support Without Overloading Staff",
+          "slug": "school-wellbeing-calendar",
+          "url": "https://hippsychology.com/school-wellbeing-calendar/",
+          "keyword": "school wellbeing calendar"
+        },
+        {
+          "title": "Staff Confidence With Pupil Wellbeing: Helping Adults Know What to Do Next",
+          "slug": "staff-confidence-pupil-wellbeing",
+          "url": "https://hippsychology.com/staff-confidence-pupil-wellbeing/",
+          "keyword": "staff confidence pupil wellbeing"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-06",
+      "count": 6,
+      "batch": "ahrefs-blast-2026-06-06",
+      "links": [
+        {
+          "title": "Anti-Bullying Week 2026 for Schools: Planning Around Break the Silence",
+          "slug": "anti-bullying-week-2026-schools",
+          "url": "https://hippsychology.com/anti-bullying-week-2026-schools/",
+          "keyword": "anti bullying week 2026 schools"
+        },
+        {
+          "title": "Anti-Bullying Week Activities for Schools: Making Awareness Practical",
+          "slug": "anti-bullying-week-activities-schools",
+          "url": "https://hippsychology.com/anti-bullying-week-activities-schools/",
+          "keyword": "anti bullying week activities schools"
+        },
+        {
+          "title": "Anti-Bullying Assembly for Schools: Safe Messages That Lead to Action",
+          "slug": "anti-bullying-assembly-schools",
+          "url": "https://hippsychology.com/anti-bullying-assembly-schools/",
+          "keyword": "anti bullying assembly schools"
+        },
+        {
+          "title": "Teacher Wellbeing Workshops: Practical Support That Fits the School Week",
+          "slug": "teacher-wellbeing-workshops",
+          "url": "https://hippsychology.com/teacher-wellbeing-workshops/",
+          "keyword": "teacher wellbeing workshops"
+        },
+        {
+          "title": "Student Wellbeing Workshops: What Schools Should Look For",
+          "slug": "student-wellbeing-workshops",
+          "url": "https://hippsychology.com/student-wellbeing-workshops/",
+          "keyword": "student wellbeing workshops"
+        },
+        {
+          "title": "Emotional Wellbeing for Pupils: Turning Concern Into Practical Support",
+          "slug": "emotional-wellbeing-for-pupils",
+          "url": "https://hippsychology.com/emotional-wellbeing-for-pupils/",
+          "keyword": "emotional wellbeing for pupils"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "count": 13,
+      "batch": "ahrefs-blast-2026-06-08",
+      "links": [
+        {
+          "title": "Vaping Workshops for Schools: What Pupils Need to Hear",
+          "slug": "vaping-workshops-for-schools",
+          "url": "https://hippsychology.com/vaping-workshops-for-schools/",
+          "keyword": "vaping workshops for schools"
+        },
+        {
+          "title": "Vaping Assembly for Schools: Clear Messages Without Scare Tactics",
+          "slug": "vaping-assembly-for-schools",
+          "url": "https://hippsychology.com/vaping-assembly-for-schools/",
+          "keyword": "vaping assembly schools"
+        },
+        {
+          "title": "Vaping Education for Schools: Building a Safer Pupil Conversation",
+          "slug": "vaping-education-for-schools",
+          "url": "https://hippsychology.com/vaping-education-for-schools/",
+          "keyword": "vaping education schools"
+        },
+        {
+          "title": "Vaping Prevention Lessons for Schools: What to Cover Before Problems Grow",
+          "slug": "vaping-prevention-lessons-for-schools",
+          "url": "https://hippsychology.com/vaping-prevention-lessons-for-schools/",
+          "keyword": "vaping prevention schools"
+        },
+        {
+          "title": "The Truth About Vaping Workshop for Schools: A Practical KS3 and KS4 Option",
+          "slug": "truth-about-vaping-workshop-schools",
+          "url": "https://hippsychology.com/truth-about-vaping-workshop-schools/",
+          "keyword": "truth about vaping workshop schools"
+        },
+        {
+          "title": "Primary to Secondary Transition Workshop: Helping Pupils Settle With Confidence",
+          "slug": "primary-to-secondary-transition-workshop",
+          "url": "https://hippsychology.com/primary-to-secondary-transition-workshop/",
+          "keyword": "primary to secondary transition workshop"
+        },
+        {
+          "title": "P7 to Year 8 Transition Workshop: Supporting the Move Into Post-Primary",
+          "slug": "p7-to-year-8-transition-workshop",
+          "url": "https://hippsychology.com/p7-to-year-8-transition-workshop/",
+          "keyword": "p7 to year 8 transition workshop"
+        },
+        {
+          "title": "Year 8 Transition Workshops: What Helps Pupils After the First Few Weeks",
+          "slug": "year-8-transition-workshops",
+          "url": "https://hippsychology.com/year-8-transition-workshops/",
+          "keyword": "year 8 transition workshop"
+        },
+        {
+          "title": "KS3 Wellbeing Workshops: Support for Year 8, Year 9 and Year 10",
+          "slug": "ks3-wellbeing-workshops",
+          "url": "https://hippsychology.com/ks3-wellbeing-workshops/",
+          "keyword": "ks3 wellbeing workshops"
+        },
+        {
+          "title": "Year 10 Wellbeing Workshop: Preparing Pupils for Choices, Pressure and Next Steps",
+          "slug": "year-10-wellbeing-workshop",
+          "url": "https://hippsychology.com/year-10-wellbeing-workshop/",
+          "keyword": "year 10 wellbeing workshop"
+        },
+        {
+          "title": "Peer Pressure Workshops for Schools: Helping Pupils Make Safer Choices",
+          "slug": "peer-pressure-workshops-for-schools",
+          "url": "https://hippsychology.com/peer-pressure-workshops-for-schools/",
+          "keyword": "peer pressure workshops schools"
+        },
+        {
+          "title": "Healthy Relationships Workshops for Schools: Supporting Friendship, Respect and Boundaries",
+          "slug": "healthy-relationships-workshops-for-schools",
+          "url": "https://hippsychology.com/healthy-relationships-workshops-for-schools/",
+          "keyword": "healthy relationships workshops schools"
+        },
+        {
+          "title": "Coping Skills Workshops for Schools: Practical Strategies Pupils Can Actually Use",
+          "slug": "coping-skills-workshops-for-schools",
+          "url": "https://hippsychology.com/coping-skills-workshops-for-schools/",
+          "keyword": "coping skills workshops schools"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-15",
+      "count": 10,
+      "batch": "ahrefs-blast-2026-06-15",
+      "links": [
+        {
+          "title": "SENCO Training for School Wellbeing: What Staff Need to Know",
+          "slug": "senco-training-for-school-wellbeing",
+          "url": "https://hippsychology.com/senco-training-for-school-wellbeing/",
+          "keyword": "senco training"
+        },
+        {
+          "title": "SENCO Support and Pupil Wellbeing: A Practical School Guide",
+          "slug": "senco-support-and-pupil-wellbeing",
+          "url": "https://hippsychology.com/senco-support-and-pupil-wellbeing/",
+          "keyword": "senco support"
+        },
+        {
+          "title": "Mental Health First Aid in Schools: What It Can and Cannot Do",
+          "slug": "mental-health-first-aid-in-schools-guide",
+          "url": "https://hippsychology.com/mental-health-first-aid-in-schools-guide/",
+          "keyword": "mental health first aid in schools"
+        },
+        {
+          "title": "EBSA Training for School Staff: Building a Calmer Response",
+          "slug": "ebsa-training-for-school-staff",
+          "url": "https://hippsychology.com/ebsa-training-for-school-staff/",
+          "keyword": "ebsa training schools"
+        },
+        {
+          "title": "School Avoidance Anxiety: How Schools Can Respond Early",
+          "slug": "school-avoidance-anxiety-support",
+          "url": "https://hippsychology.com/school-avoidance-anxiety-support/",
+          "keyword": "school avoidance anxiety"
+        },
+        {
+          "title": "Trauma-Informed Practice in Schools: A Guide for Staff Teams",
+          "slug": "trauma-informed-practice-schools-guide",
+          "url": "https://hippsychology.com/trauma-informed-practice-schools-guide/",
+          "keyword": "trauma informed practice in schools"
+        },
+        {
+          "title": "Trauma-Informed Training for Teachers: What Should Be Included?",
+          "slug": "trauma-informed-training-for-school-staff",
+          "url": "https://hippsychology.com/trauma-informed-training-for-school-staff/",
+          "keyword": "trauma informed training for teachers"
+        },
+        {
+          "title": "Trauma-Informed Classroom Strategies: Practical Steps for Teachers",
+          "slug": "trauma-informed-classroom-strategies",
+          "url": "https://hippsychology.com/trauma-informed-classroom-strategies/",
+          "keyword": "trauma informed classroom"
+        },
+        {
+          "title": "Pastoral Care in Schools: What Strong Support Looks Like",
+          "slug": "pastoral-care-in-schools-guide",
+          "url": "https://hippsychology.com/pastoral-care-in-schools-guide/",
+          "keyword": "pastoral care in schools"
+        },
+        {
+          "title": "Staff Wellbeing Training Plan: A Practical Model for Schools",
+          "slug": "staff-wellbeing-training-plan-schools",
+          "url": "https://hippsychology.com/staff-wellbeing-training-plan-schools/",
+          "keyword": "teacher wellbeing training"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "count": 12,
+      "batch": "ahrefs-blast-2026-06-17",
+      "links": [
+        {
+          "title": "Behaviour Support in Schools: A Practical Wellbeing Approach",
+          "slug": "behaviour-support-in-schools",
+          "url": "https://hippsychology.com/behaviour-support-in-schools/",
+          "keyword": "behaviour support in schools"
+        },
+        {
+          "title": "Behaviour Management Training for Schools: What Staff Need",
+          "slug": "behaviour-management-training-schools",
+          "url": "https://hippsychology.com/behaviour-management-training-schools/",
+          "keyword": "behaviour management training schools"
+        },
+        {
+          "title": "Positive Behaviour Support in Schools: A Joined-Up Guide",
+          "slug": "positive-behaviour-support-schools",
+          "url": "https://hippsychology.com/positive-behaviour-support-schools/",
+          "keyword": "positive behaviour support schools"
+        },
+        {
+          "title": "Emotion Coaching Training for Schools: Practical Staff Steps",
+          "slug": "emotion-coaching-training-schools",
+          "url": "https://hippsychology.com/emotion-coaching-training-schools/",
+          "keyword": "emotion coaching training schools"
+        },
+        {
+          "title": "Emotional Regulation Activities for Children in School",
+          "slug": "emotional-regulation-activities-for-children",
+          "url": "https://hippsychology.com/emotional-regulation-activities-for-children/",
+          "keyword": "emotional regulation activities for children"
+        },
+        {
+          "title": "Self-Regulation Strategies for Students: A School Guide",
+          "slug": "self-regulation-strategies-for-students",
+          "url": "https://hippsychology.com/self-regulation-strategies-for-students/",
+          "keyword": "self regulation strategies for students"
+        },
+        {
+          "title": "Resilience Activities for Students: What Works in Schools",
+          "slug": "resilience-activities-for-students",
+          "url": "https://hippsychology.com/resilience-activities-for-students/",
+          "keyword": "resilience activities for students"
+        },
+        {
+          "title": "Confidence Workshops for Schools: Planning Support That Lands",
+          "slug": "confidence-workshops-for-schools",
+          "url": "https://hippsychology.com/confidence-workshops-for-schools/",
+          "keyword": "confidence workshops for schools"
+        },
+        {
+          "title": "Self-Esteem Activities for Teenagers: A Practical School Guide",
+          "slug": "self-esteem-activities-for-teenagers",
+          "url": "https://hippsychology.com/self-esteem-activities-for-teenagers/",
+          "keyword": "self esteem activities for teenagers"
+        },
+        {
+          "title": "Supervision for Teachers: Why Reflective Support Matters",
+          "slug": "supervision-for-teachers",
+          "url": "https://hippsychology.com/supervision-for-teachers/",
+          "keyword": "supervision for teachers"
+        },
+        {
+          "title": "Safeguarding Training for Schools: Connecting Policy and Practice",
+          "slug": "safeguarding-training-schools",
+          "url": "https://hippsychology.com/safeguarding-training-schools/",
+          "keyword": "safeguarding training schools"
+        },
+        {
+          "title": "Mental Health Lead Training for Schools: Role Clarity First",
+          "slug": "mental-health-lead-training-schools",
+          "url": "https://hippsychology.com/mental-health-lead-training-schools/",
+          "keyword": "mental health lead training schools"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-18",
+      "count": 12,
+      "batch": "ahrefs-blast-2026-06-18",
+      "links": [
+        {
+          "title": "Anti-Bullying Policy Review for Schools: What to Check",
+          "slug": "anti-bullying-policy-review-schools",
+          "url": "https://hippsychology.com/anti-bullying-policy-review-schools/",
+          "keyword": "anti-bullying policy review schools"
+        },
+        {
+          "title": "Anti-Bullying Policy Checklist for Schools",
+          "slug": "anti-bullying-policy-checklist-schools",
+          "url": "https://hippsychology.com/anti-bullying-policy-checklist-schools/",
+          "keyword": "anti-bullying policy checklist schools"
+        },
+        {
+          "title": "Addressing Bullying Act NI: A Practical School Guide",
+          "slug": "addressing-bullying-act-ni-schools",
+          "url": "https://hippsychology.com/addressing-bullying-act-ni-schools/",
+          "keyword": "Addressing Bullying Act NI schools"
+        },
+        {
+          "title": "Bi Cinealta Procedures for Schools: What Leaders Should Plan",
+          "slug": "bi-cinealta-procedures-schools",
+          "url": "https://hippsychology.com/bi-cinealta-procedures-schools/",
+          "keyword": "Bi Cinealta procedures schools"
+        },
+        {
+          "title": "Anti-Bullying Week 2026: Break the Silence School Planning Guide",
+          "slug": "anti-bullying-week-2026-break-the-silence",
+          "url": "https://hippsychology.com/anti-bullying-week-2026-break-the-silence/",
+          "keyword": "Anti-Bullying Week 2026 Break the Silence"
+        },
+        {
+          "title": "Cyberbullying Training for Teachers: What Staff Need",
+          "slug": "cyberbullying-training-for-teachers",
+          "url": "https://hippsychology.com/cyberbullying-training-for-teachers/",
+          "keyword": "cyberbullying training for teachers"
+        },
+        {
+          "title": "Online Safety Workshops for Schools: Planning Support That Lands",
+          "slug": "online-safety-workshops-for-schools",
+          "url": "https://hippsychology.com/online-safety-workshops-for-schools/",
+          "keyword": "online safety workshops for schools"
+        },
+        {
+          "title": "Bystander Intervention in Bullying: A School Guide",
+          "slug": "bystander-intervention-bullying-schools",
+          "url": "https://hippsychology.com/bystander-intervention-bullying-schools/",
+          "keyword": "bystander intervention bullying schools"
+        },
+        {
+          "title": "Pupil Voice Anti-Bullying Survey: Questions Schools Can Use",
+          "slug": "pupil-voice-anti-bullying-survey",
+          "url": "https://hippsychology.com/pupil-voice-anti-bullying-survey/",
+          "keyword": "pupil voice anti-bullying survey"
+        },
+        {
+          "title": "Restorative Questions After Bullying: When and How to Use Them",
+          "slug": "restorative-questions-after-bullying",
+          "url": "https://hippsychology.com/restorative-questions-after-bullying/",
+          "keyword": "restorative questions after bullying"
+        },
+        {
+          "title": "Friendship Workshops for Schools: Building Healthier Peer Groups",
+          "slug": "friendship-workshops-for-schools",
+          "url": "https://hippsychology.com/friendship-workshops-for-schools/",
+          "keyword": "friendship workshops for schools"
+        },
+        {
+          "title": "School Belonging Activities to Prevent Bullying and Exclusion",
+          "slug": "school-belonging-activities",
+          "url": "https://hippsychology.com/school-belonging-activities/",
+          "keyword": "school belonging activities"
+        }
+      ]
+    }
+  ]
+}

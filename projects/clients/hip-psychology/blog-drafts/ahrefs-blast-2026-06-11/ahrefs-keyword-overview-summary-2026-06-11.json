@@ -1,0 +1,240 @@
+[
+  {
+    "keyword": "senco training",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "senco training for schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "senco support",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "senco wellbeing",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "mental health first aid in schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "mental health first aid training schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "mental health lead training schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "emotionally based school avoidance",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "ebsa training schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "school avoidance anxiety",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "behaviour support in schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "behaviour management training schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "positive behaviour support schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "trauma informed practice in schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "trauma informed training for teachers",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "trauma informed classroom",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "emotion coaching training schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "emotional regulation activities for children",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "self regulation strategies for students",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "resilience activities for students",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "confidence workshops for schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "self esteem activities for teenagers",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "teacher wellbeing training",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "staff wellbeing in schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "supervision for teachers",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "safeguarding training schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "pastoral care training schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "pastoral care in schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "pupil wellbeing questionnaire",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "school wellbeing audit",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "wellbeing action plan schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "parent workshops schools",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "parent mental health workshops",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  },
+  {
+    "keyword": "anxiety workshop for parents",
+    "status": 400,
+    "error": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    }
+  }
+]

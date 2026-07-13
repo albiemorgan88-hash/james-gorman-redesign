@@ -1,0 +1,187 @@
+{
+  "date": "2026-05-19T20:41:10.611550+00:00",
+  "source_note": "Selected from remaining HIP/Ahrefs school wellbeing long-tail opportunities not already covered in the May 4, May 6, May 14 or May 17 batches.",
+  "official_sources_used": {
+    "de_wellbeing": "https://www.education-ni.gov.uk/articles/emotional-health-and-wellbeing",
+    "nhs_anxiety": "https://www.nhs.uk/mental-health/children-and-young-adults/advice-for-parents/anxiety-in-children/",
+    "aba_prevention": "https://anti-bullyingalliance.org.uk/tools-information/all-about-bullying/preventing-bullying",
+    "ccea_sel": "https://ccea.org.uk/document/15054",
+    "ccea_post_primary_sel": "https://ccea.org.uk/document/15055",
+    "ea_safeguarding": "https://www.eani.org.uk/school-management/safeguarding-and-child-protection/resources",
+    "de_safeguarding": "https://www.education-ni.gov.uk/articles/protecting-and-safeguarding-our-children",
+    "hse_stress": "https://www.hse.gov.uk/stress/"
+  },
+  "count": 8,
+  "results": [
+    {
+      "slug": "post-primary-wellbeing-workshops",
+      "title": "Post-Primary Wellbeing Workshops: Supporting Pupils Through Pressure Points",
+      "target_keyword": "post primary wellbeing workshops",
+      "action": "updated",
+      "id": 1815,
+      "status": "publish",
+      "link": "https://hippsychology.com/post-primary-wellbeing-workshops/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "stress-management-workshops-for-teachers",
+      "title": "Stress Management Workshops for Teachers: Practical Support for Busy School Staff",
+      "target_keyword": "stress management workshops for teachers",
+      "action": "updated",
+      "id": 1816,
+      "status": "publish",
+      "link": "https://hippsychology.com/stress-management-workshops-for-teachers/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "positive-mental-health-workshops-schools",
+      "title": "Positive Mental Health Workshops for Schools: What Makes Them Useful?",
+      "target_keyword": "positive mental health workshops schools",
+      "action": "updated",
+      "id": 1817,
+      "status": "publish",
+      "link": "https://hippsychology.com/positive-mental-health-workshops-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "social-emotional-learning-in-schools",
+      "title": "Social and Emotional Learning in Schools: Turning Wellbeing Into Daily Practice",
+      "target_keyword": "social emotional learning schools",
+      "action": "updated",
+      "id": 1818,
+      "status": "publish",
+      "link": "https://hippsychology.com/social-emotional-learning-in-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "pupil-voice-and-wellbeing-schools",
+      "title": "Pupil Voice and Wellbeing: How Schools Can Listen Without Over-Promising",
+      "target_keyword": "pupil voice wellbeing",
+      "action": "updated",
+      "id": 1819,
+      "status": "publish",
+      "link": "https://hippsychology.com/pupil-voice-and-wellbeing-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "anxiety-in-teenagers-at-school",
+      "title": "Anxiety in Teenagers at School: What Staff Can Notice and Do Early",
+      "target_keyword": "anxiety in teenagers school",
+      "action": "updated",
+      "id": 1820,
+      "status": "publish",
+      "link": "https://hippsychology.com/anxiety-in-teenagers-at-school/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "child-anxiety-support-in-school",
+      "title": "Child Anxiety Support in School: Practical First Steps for Staff",
+      "target_keyword": "child anxiety support school",
+      "action": "updated",
+      "id": 1821,
+      "status": "publish",
+      "link": "https://hippsychology.com/child-anxiety-support-in-school/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "safeguarding-and-wellbeing-training-schools-ni",
+      "title": "Safeguarding and Wellbeing Training in NI Schools: Where the Two Connect",
+      "target_keyword": "safeguarding training schools northern ireland",
+      "action": "updated",
+      "id": 1822,
+      "status": "publish",
+      "link": "https://hippsychology.com/safeguarding-and-wellbeing-training-schools-ni/",
+      "checks": {
+        "http_200": true,
+        "one_h1": false,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    }
+  ],
+  "sitemap_status": 200,
+  "draft_dir": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-05-19"
+}

@@ -1,0 +1,225 @@
+{
+  "published": [
+    {
+      "action": "created",
+      "id": 2039,
+      "slug": "school-wellbeing-inset-day",
+      "title": "School Wellbeing INSET Day: Practical Training for Staff",
+      "link": "https://hippsychology.com/school-wellbeing-inset-day/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2040,
+      "slug": "twilight-wellbeing-cpd-schools",
+      "title": "Twilight Wellbeing CPD for Schools: Short Sessions That Stick",
+      "link": "https://hippsychology.com/twilight-wellbeing-cpd-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2041,
+      "slug": "head-of-year-wellbeing-training",
+      "title": "Head of Year Wellbeing Training: Support for Pastoral Leaders",
+      "link": "https://hippsychology.com/head-of-year-wellbeing-training/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2042,
+      "slug": "form-tutor-wellbeing-activities",
+      "title": "Form Tutor Wellbeing Activities: Practical Ideas for Tutor Time",
+      "link": "https://hippsychology.com/form-tutor-wellbeing-activities/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2043,
+      "slug": "september-school-wellbeing-plan",
+      "title": "September School Wellbeing Plan: Start the Year Clearly",
+      "link": "https://hippsychology.com/september-school-wellbeing-plan/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2044,
+      "slug": "back-to-school-wellbeing-workshops",
+      "title": "Back-to-School Wellbeing Workshops: Helping Pupils Settle",
+      "link": "https://hippsychology.com/back-to-school-wellbeing-workshops/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2045,
+      "slug": "parent-wellbeing-evening-schools",
+      "title": "Parent Wellbeing Evening for Schools: Shared Language at Home",
+      "link": "https://hippsychology.com/parent-wellbeing-evening-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2046,
+      "slug": "staff-confidence-pupil-wellbeing-training",
+      "title": "Staff Confidence in Pupil Wellbeing: Training That Helps",
+      "link": "https://hippsychology.com/staff-confidence-pupil-wellbeing-training/",
+      "status": "publish"
+    }
+  ],
+  "qa": [
+    {
+      "slug": "school-wellbeing-inset-day",
+      "link": "https://hippsychology.com/school-wellbeing-inset-day/",
+      "status_code": 200,
+      "h1_count": 1,
+      "h2_count": 11,
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_source_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "twilight-wellbeing-cpd-schools",
+      "link": "https://hippsychology.com/twilight-wellbeing-cpd-schools/",
+      "status_code": 200,
+      "h1_count": 1,
+      "h2_count": 11,
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_source_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "head-of-year-wellbeing-training",
+      "link": "https://hippsychology.com/head-of-year-wellbeing-training/",
+      "status_code": 200,
+      "h1_count": 1,
+      "h2_count": 11,
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_source_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "form-tutor-wellbeing-activities",
+      "link": "https://hippsychology.com/form-tutor-wellbeing-activities/",
+      "status_code": 200,
+      "h1_count": 1,
+      "h2_count": 11,
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_source_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "september-school-wellbeing-plan",
+      "link": "https://hippsychology.com/september-school-wellbeing-plan/",
+      "status_code": 200,
+      "h1_count": 1,
+      "h2_count": 11,
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_source_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "back-to-school-wellbeing-workshops",
+      "link": "https://hippsychology.com/back-to-school-wellbeing-workshops/",
+      "status_code": 200,
+      "h1_count": 1,
+      "h2_count": 11,
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_source_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "parent-wellbeing-evening-schools",
+      "link": "https://hippsychology.com/parent-wellbeing-evening-schools/",
+      "status_code": 200,
+      "h1_count": 1,
+      "h2_count": 11,
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_source_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "staff-confidence-pupil-wellbeing-training",
+      "link": "https://hippsychology.com/staff-confidence-pupil-wellbeing-training/",
+      "status_code": 200,
+      "h1_count": 1,
+      "h2_count": 11,
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_source_leak": true
+      },
+      "ok": true
+    }
+  ],
+  "sitemap_status": 200,
+  "sitemap_checks": {
+    "school-wellbeing-inset-day": true,
+    "twilight-wellbeing-cpd-schools": true,
+    "head-of-year-wellbeing-training": true,
+    "form-tutor-wellbeing-activities": true,
+    "september-school-wellbeing-plan": true,
+    "back-to-school-wellbeing-workshops": true,
+    "parent-wellbeing-evening-schools": true,
+    "staff-confidence-pupil-wellbeing-training": true
+  }
+}

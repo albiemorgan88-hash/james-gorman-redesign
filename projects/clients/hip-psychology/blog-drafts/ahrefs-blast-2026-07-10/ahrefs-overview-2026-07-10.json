@@ -1,0 +1,17 @@
+{
+  "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?country=gb&keywords=low+arousal+approach+schools%2Cde-escalation+training+schools%2Csafe+spaces+in+schools%2Cbreaktime+wellbeing+support%2Cexam+results+day+wellbeing%2Cschool+readiness+workshops+parents%2Cperfectionism+workshops+schools%2Cempathy+workshops+schools%2Ckindness+workshops+schools%2Chealthy+masculinity+workshops+schools%2Cperiod+wellbeing+workshops+schools%2Csocial+media+anxiety+schools&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+  "json": {
+    "keywords": [
+      {
+        "keyword": "safe spaces in schools",
+        "volume": 10,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": null,
+        "intents": {},
+        "global_volume": 40
+      }
+    ]
+  }
+}

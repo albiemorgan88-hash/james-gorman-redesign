@@ -1,0 +1,161 @@
+{
+  "date": "2026-05-06T19:48:20.407434+00:00",
+  "source_note": "Source topic set: HIP SEO baseline + fresh Ahrefs API check on 2026-05-06 (hippsychology.com DR 6, 1 organic keyword/1 est. traffic, 71 live referring domains; baseline opportunities included ADHD assessment Northern Ireland, psychology services Belfast, CBT therapy Northern Ireland and employee wellbeing programme).",
+  "count": 8,
+  "results": [
+    {
+      "slug": "adhd-support-in-schools-northern-ireland",
+      "title": "ADHD Support in Schools Northern Ireland: What Staff Should Know",
+      "target_keyword": "adhd assessment northern ireland / ADHD support schools NI",
+      "action": "created",
+      "id": 1734,
+      "status": "publish",
+      "link": "https://hippsychology.com/adhd-support-in-schools-northern-ireland/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "psychology-services-belfast-schools",
+      "title": "Psychology Services Belfast: What Schools Should Look For",
+      "target_keyword": "psychology services belfast",
+      "action": "created",
+      "id": 1735,
+      "status": "publish",
+      "link": "https://hippsychology.com/psychology-services-belfast-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "cbt-informed-anxiety-strategies-schools",
+      "title": "CBT-Informed Anxiety Strategies for Schools: A Practical Guide",
+      "target_keyword": "cbt therapy northern ireland / anxiety strategies schools",
+      "action": "created",
+      "id": 1736,
+      "status": "publish",
+      "link": "https://hippsychology.com/cbt-informed-anxiety-strategies-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "employee-wellbeing-programme-northern-ireland",
+      "title": "Employee Wellbeing Programme Northern Ireland: What Actually Helps",
+      "target_keyword": "employee wellbeing programme",
+      "action": "created",
+      "id": 1737,
+      "status": "publish",
+      "link": "https://hippsychology.com/employee-wellbeing-programme-northern-ireland/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "workplace-wellbeing-workshops-northern-ireland",
+      "title": "Workplace Wellbeing Workshops Northern Ireland: How to Choose the Right Session",
+      "target_keyword": "workplace wellbeing workshops northern ireland",
+      "action": "created",
+      "id": 1738,
+      "status": "publish",
+      "link": "https://hippsychology.com/workplace-wellbeing-workshops-northern-ireland/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "parent-wellbeing-workshops-schools",
+      "title": "Parent Wellbeing Workshops for Schools: When They Help and What to Cover",
+      "target_keyword": "parent wellbeing workshops schools",
+      "action": "created",
+      "id": 1739,
+      "status": "publish",
+      "link": "https://hippsychology.com/parent-wellbeing-workshops-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "pastoral-care-training-schools",
+      "title": "Pastoral Care Training for Schools: What Staff Need in Practice",
+      "target_keyword": "pastoral care training schools",
+      "action": "created",
+      "id": 1740,
+      "status": "publish",
+      "link": "https://hippsychology.com/pastoral-care-training-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "school-anxiety-workshops-northern-ireland",
+      "title": "School Anxiety Workshops Northern Ireland: Choosing Support That Works",
+      "target_keyword": "anxiety workshops schools northern ireland",
+      "action": "created",
+      "id": 1741,
+      "status": "publish",
+      "link": "https://hippsychology.com/school-anxiety-workshops-northern-ireland/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    }
+  ],
+  "sitemap_status": 200,
+  "draft_dir": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-05-06"
+}

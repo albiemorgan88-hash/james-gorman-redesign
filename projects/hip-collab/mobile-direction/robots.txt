@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://antibullyingni.co.uk/sitemap.xml
+Sitemap: https://antibullyingni.co.uk/sitemap-campaign.xml
+Sitemap: https://antibullyingni.co.uk/sitemap-evergreen.xml
+Sitemap: https://antibullyingni.co.uk/sitemap-blog.xml

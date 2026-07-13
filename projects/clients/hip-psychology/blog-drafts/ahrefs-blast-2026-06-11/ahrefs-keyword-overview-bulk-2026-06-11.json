@@ -1,0 +1,320 @@
+{
+  "status": 200,
+  "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?country=gb&keywords=senco+training%2Csenco+training+for+schools%2Csenco+support%2Csenco+wellbeing%2Cmental+health+first+aid+in+schools%2Cmental+health+first+aid+training+schools%2Cmental+health+lead+training+schools%2Cemotionally+based+school+avoidance%2Cebsa+training+schools%2Cschool+avoidance+anxiety%2Cbehaviour+support+in+schools%2Cbehaviour+management+training+schools%2Cpositive+behaviour+support+schools%2Ctrauma+informed+practice+in+schools%2Ctrauma+informed+training+for+teachers%2Ctrauma+informed+classroom%2Cemotion+coaching+training+schools%2Cemotional+regulation+activities+for+children%2Cself+regulation+strategies+for+students%2Cresilience+activities+for+students%2Cconfidence+workshops+for+schools%2Cself+esteem+activities+for+teenagers%2Cteacher+wellbeing+training%2Cstaff+wellbeing+in+schools%2Csupervision+for+teachers%2Csafeguarding+training+schools%2Cpastoral+care+training+schools%2Cpastoral+care+in+schools%2Cpupil+wellbeing+questionnaire%2Cschool+wellbeing+audit%2Cwellbeing+action+plan+schools%2Cparent+workshops+schools%2Cparent+mental+health+workshops%2Canxiety+workshop+for+parents&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+  "json": {
+    "keywords": [
+      {
+        "keyword": "senco training",
+        "volume": 600,
+        "difficulty": 1,
+        "traffic_potential": 350,
+        "parent_topic": "senco courses online",
+        "cpc": 70,
+        "intents": {
+          "informational": true,
+          "navigational": false,
+          "commercial": false,
+          "transactional": false,
+          "branded": false,
+          "local": false
+        },
+        "global_volume": 700
+      },
+      {
+        "keyword": "self regulation strategies for students",
+        "volume": 0,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": null,
+        "intents": {},
+        "global_volume": 100
+      },
+      {
+        "keyword": "senco support",
+        "volume": 80,
+        "difficulty": 22,
+        "traffic_potential": 10,
+        "parent_topic": "senco support",
+        "cpc": 35,
+        "intents": {
+          "informational": true,
+          "navigational": false,
+          "commercial": false,
+          "transactional": false,
+          "branded": false,
+          "local": false
+        },
+        "global_volume": 90
+      },
+      {
+        "keyword": "teacher wellbeing training",
+        "volume": 40,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": null,
+        "intents": {},
+        "global_volume": 40
+      },
+      {
+        "keyword": "staff wellbeing in schools",
+        "volume": 100,
+        "difficulty": 12,
+        "traffic_potential": 300,
+        "parent_topic": "staff wellbeing",
+        "cpc": 90,
+        "intents": {
+          "informational": true,
+          "navigational": false,
+          "commercial": false,
+          "transactional": false,
+          "branded": false,
+          "local": false
+        },
+        "global_volume": 200
+      },
+      {
+        "keyword": "safeguarding training schools",
+        "volume": 30,
+        "difficulty": 49,
+        "traffic_potential": 3600,
+        "parent_topic": "safeguarding course",
+        "cpc": null,
+        "intents": {
+          "informational": true,
+          "navigational": false,
+          "commercial": false,
+          "transactional": false,
+          "branded": false,
+          "local": false
+        },
+        "global_volume": 30
+      },
+      {
+        "keyword": "pupil wellbeing questionnaire",
+        "volume": 0,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": 130,
+        "intents": {},
+        "global_volume": 0
+      },
+      {
+        "keyword": "pastoral care in schools",
+        "volume": 600,
+        "difficulty": 0,
+        "traffic_potential": 400,
+        "parent_topic": "pastoral support",
+        "cpc": 35,
+        "intents": {
+          "informational": true,
+          "navigational": false,
+          "commercial": false,
+          "transactional": false,
+          "branded": false,
+          "local": false
+        },
+        "global_volume": 800
+      },
+      {
+        "keyword": "trauma informed practice in schools",
+        "volume": 100,
+        "difficulty": 1,
+        "traffic_potential": 600,
+        "parent_topic": "trauma informed practice",
+        "cpc": 25,
+        "intents": {
+          "informational": true,
+          "navigational": false,
+          "commercial": false,
+          "transactional": false,
+          "branded": false,
+          "local": false
+        },
+        "global_volume": 250
+      },
+      {
+        "keyword": "mental health first aid training schools",
+        "volume": 0,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": null,
+        "intents": {},
+        "global_volume": 0
+      },
+      {
+        "keyword": "positive behaviour support schools",
+        "volume": 10,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": null,
+        "intents": {},
+        "global_volume": 10
+      },
+      {
+        "keyword": "emotionally based school avoidance",
+        "volume": 600,
+        "difficulty": 2,
+        "traffic_potential": 4300,
+        "parent_topic": "ebsa",
+        "cpc": null,
+        "intents": {
+          "informational": true,
+          "navigational": false,
+          "commercial": false,
+          "transactional": false,
+          "branded": false,
+          "local": false
+        },
+        "global_volume": 700
+      },
+      {
+        "keyword": "trauma informed training for teachers",
+        "volume": 40,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": 50,
+        "intents": {},
+        "global_volume": 150
+      },
+      {
+        "keyword": "school wellbeing audit",
+        "volume": 0,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": null,
+        "intents": {},
+        "global_volume": 0
+      },
+      {
+        "keyword": "mental health first aid in schools",
+        "volume": 10,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": 60,
+        "intents": {
+          "informational": true,
+          "navigational": false,
+          "commercial": false,
+          "transactional": false,
+          "branded": false,
+          "local": false
+        },
+        "global_volume": 20
+      },
+      {
+        "keyword": "supervision for teachers",
+        "volume": 10,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": null,
+        "intents": {},
+        "global_volume": 10
+      },
+      {
+        "keyword": "trauma informed classroom",
+        "volume": 50,
+        "difficulty": 3,
+        "traffic_potential": 20,
+        "parent_topic": "trauma informed classroom",
+        "cpc": 30,
+        "intents": {
+          "informational": true,
+          "navigational": false,
+          "commercial": false,
+          "transactional": false,
+          "branded": false,
+          "local": false
+        },
+        "global_volume": 350
+      },
+      {
+        "keyword": "resilience activities for students",
+        "volume": 60,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": 60,
+        "intents": {
+          "informational": true,
+          "navigational": false,
+          "commercial": false,
+          "transactional": false,
+          "branded": false,
+          "local": false
+        },
+        "global_volume": 100
+      },
+      {
+        "keyword": "school avoidance anxiety",
+        "volume": 300,
+        "difficulty": 11,
+        "traffic_potential": 2400,
+        "parent_topic": "school avoidance",
+        "cpc": null,
+        "intents": {
+          "informational": true,
+          "navigational": false,
+          "commercial": false,
+          "transactional": false,
+          "branded": false,
+          "local": false
+        },
+        "global_volume": 350
+      },
+      {
+        "keyword": "behaviour support in schools",
+        "volume": 10,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": null,
+        "intents": {
+          "informational": true,
+          "navigational": false,
+          "commercial": false,
+          "transactional": false,
+          "branded": false,
+          "local": false
+        },
+        "global_volume": 20
+      },
+      {
+        "keyword": "self esteem activities for teenagers",
+        "volume": 10,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": null,
+        "intents": {
+          "informational": true,
+          "navigational": false,
+          "commercial": false,
+          "transactional": false,
+          "branded": false,
+          "local": false
+        },
+        "global_volume": 20
+      },
+      {
+        "keyword": "emotional regulation activities for children",
+        "volume": 0,
+        "difficulty": null,
+        "traffic_potential": null,
+        "parent_topic": null,
+        "cpc": null,
+        "intents": {},
+        "global_volume": 50
+      }
+    ]
+  },
+  "text": "{\n  \"keywords\": [\n    {\n      \"keyword\": \"senco training\",\n      \"volume\": 600,\n      \"difficulty\": 1,\n      \"traffic_potential\": 350,\n      \"parent_topic\": \"senco courses online\",\n      \"cpc\": 70,\n      \"intents\": {\n        \"informational\": true,\n        \"navigational\": false,\n        \"commercial\": false,\n        \"transactional\": false,\n        \"branded\": false,\n        \"local\": false\n      },\n      \"global_volume\": 700\n    },\n    {\n      \"keyword\": \"self regulation strategies for students\",\n      \"volume\": 0,\n      \"difficulty\": null,\n      \"traffic_potential\": null,\n      \"parent_topic\": null,\n      \"cpc\": null,\n      \"intents\": {},\n      \"global_volume\": 100\n    },\n    {\n      \"keyword\": \"senco support\",\n      \"volume\": 80,\n      \"difficulty\": 22,\n      \"traffic_potential\": 10,\n      \"parent_topic\": \"senco support\",\n      \"cpc\": 35,\n      \"intents\": {\n        \"informational\": true,\n        \"navigational\": false,\n        \"commercial\": false,\n        \"transactional\": false,\n        \"branded\": false,\n        \"local\": false\n      },\n      \"global_volume\": 90\n    },\n    {\n      \"keyword\": \"teacher wellbeing training\",\n      \"volume\": 40,\n      \"difficulty\": null,\n      \"traffic_potential\": null,\n      \"parent_topic\": null,\n      \"cpc\": null,\n      \"intents\": {},\n      \"global_volume\": 40\n    },\n    {\n      \"keyword\": \"staff wellbeing in schools\",\n      \"volume\": 100,\n      \"difficulty\": 12,\n      \"traffic_potential\": 300,\n      \"parent_topic\": \"staff wellbeing\",\n      \"cpc\": 90,\n      \"intents\": {\n        \"informational\": true,\n        \"navigational\": false,\n        \"commercial\": false,\n        \"transactional\": false,\n        \"branded\": false,\n        \"local\": false\n      },\n      \"global_volume\": 200\n    },\n    {\n      \"keyword\": \"safeguarding training schools\",\n      \"volume\": 30,\n      \"difficulty\": 49,\n      \"traffic_potential\": 3600,\n      \"parent_topic\": \"safeguarding course\",\n      \"cpc\": null,\n      \"intents\": {\n        \"informational\": true,\n        \"navigational\": false,\n        \"commercial\": false,\n        \"transactional\": false,\n        \"branded\": false,\n        \"local\": false\n      },\n      \"global_volume\": 30\n    },\n    {\n      \"keyword\": \"pupil wellbeing questionnaire\",\n      \"volume\": 0,\n      \"difficulty\": null,\n      \"traffic_potential\": null,\n      \"parent_topic\": null,\n      \"cpc\": 130,\n      \"intents\": {},\n      \"global_volume\": 0\n    },\n    {\n      \"keyword\": \"pastoral care in schools\",\n      \"volume\": 600,\n      \"difficulty\": 0,\n      \"traffic_potential\": 400,\n      \"parent_topic\": \"pastoral support\",\n      \"cpc\": 35,\n      \"intents\": {\n        \"informational\": true,\n        \"navigational\": false,\n        \"commercial\": false,\n        \"transactional\": false,\n        \"branded\": false,\n        \"local\": false\n      },\n      \"global_volume\": 800\n    },\n    {\n      \"keyword\": \"trauma informed practice in schools\",\n      \"volume\": 100,\n      \"difficulty\": 1,\n      \"traffic_potential\": 600,\n      \"parent_topic\": \"trauma informed pra"
+}

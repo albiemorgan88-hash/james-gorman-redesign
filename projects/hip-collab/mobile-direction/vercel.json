@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://antibullyingni.co.uk/$1",
+      "has": [{ "type": "host", "value": "www.antibullyingni.co.uk" }],
+      "permanent": true
+    },
+    { "source": "/anti-bullying-week", "destination": "/anti-bullying-week/2026/", "permanent": false },
+    { "source": "/anti-bullying-week/", "destination": "/anti-bullying-week/2026/", "permanent": false },
+    { "source": "/cyberbullying", "destination": "/cyberbullying-in-schools/", "permanent": false },
+    { "source": "/cyberbullying/", "destination": "/cyberbullying-in-schools/", "permanent": false },
+    { "source": "/school-workshops", "destination": "/workshops/anti-bullying/", "permanent": false },
+    { "source": "/school-workshops/", "destination": "/workshops/anti-bullying/", "permanent": false }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "count": 5,
+  "all_passed": true,
+  "results": [
+    {
+      "slug": "emotion-coaching-in-schools",
+      "title": "Emotion Coaching in Schools: Helping Pupils Name, Understand and Regulate Feelings",
+      "target_keyword": "emotion coaching in schools",
+      "link": "https://hippsychology.com/emotion-coaching-in-schools/",
+      "checks": {
+        "http_200": true,
+        "h1_count": 1,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": [],
+        "in_wp_post_sitemap": true,
+        "in_latest_feed": true
+      }
+    },
+    {
+      "slug": "pastoral-leadership-training-schools",
+      "title": "Pastoral Leadership Training for Schools: Building Calm, Consistent Support Systems",
+      "target_keyword": "pastoral leadership training schools",
+      "link": "https://hippsychology.com/pastoral-leadership-training-schools/",
+      "checks": {
+        "http_200": true,
+        "h1_count": 1,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": [],
+        "in_wp_post_sitemap": true,
+        "in_latest_feed": true
+      }
+    },
+    {
+      "slug": "critical-incident-support-schools",
+      "title": "Critical Incident Support for Schools: What Staff and Pupils Need After a Difficult Event",
+      "target_keyword": "critical incident support schools",
+      "link": "https://hippsychology.com/critical-incident-support-schools/",
+      "checks": {
+        "http_200": true,
+        "h1_count": 1,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": [],
+        "in_wp_post_sitemap": true,
+        "in_latest_feed": true
+      }
+    },
+    {
+      "slug": "self-harm-awareness-training-schools",
+      "title": "Self-Harm Awareness Training for Schools: Safe First Responses for Staff",
+      "target_keyword": "self harm awareness training schools",
+      "link": "https://hippsychology.com/self-harm-awareness-training-schools/",
+      "checks": {
+        "http_200": true,
+        "h1_count": 1,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": [],
+        "in_wp_post_sitemap": true,
+        "in_latest_feed": true
+      }
+    },
+    {
+      "slug": "staff-supervision-in-schools",
+      "title": "Staff Supervision in Schools: Supporting Adults Who Carry Pastoral Pressure",
+      "target_keyword": "staff supervision in schools",
+      "link": "https://hippsychology.com/staff-supervision-in-schools/",
+      "checks": {
+        "http_200": true,
+        "h1_count": 1,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": [],
+        "in_wp_post_sitemap": true,
+        "in_latest_feed": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "source_note": "Ahrefs source: live Ahrefs Site Explorer API check on 2026-06-08 shows HIP at DR 7, 198 live referring domains, 292 live backlinks, 3 visible GB organic keywords and 4 estimated organic visits. Current visible wins include `pupil wellbeing` at position 10, `define pastoral support` at position 7, and branded HIP Psychology terms at position 1. Keywords Explorer checks confirmed `mental health workshops for schools` (GB vol 150, global vol 250), `primary to secondary transition` (GB vol 60, KD 0), and `vaping in schools` (GB vol 40, KD 3, global vol 450). The published batch avoids duplicate live slugs and builds bottom-funnel pages around HIP's Truth About Vaping, transition, KS3/KS4 and pastoral workshop offers.",
+  "results": [
+    {
+      "id": 1923,
+      "slug": "vaping-workshops-for-schools",
+      "title": "Vaping Workshops for Schools: What Pupils Need to Hear",
+      "url": "https://hippsychology.com/vaping-workshops-for-schools/",
+      "target_keyword": "vaping workshops for schools",
+      "cluster": "Vaping workshop commercial long-tail",
+      "ahrefs_note": "Commercial support page for Ahrefs-confirmed `vaping in schools` (GB vol 40, KD 3, global vol 450).",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-08/vaping-workshops-for-schools.html"
+    },
+    {
+      "id": 1924,
+      "slug": "vaping-assembly-for-schools",
+      "title": "Vaping Assembly for Schools: Clear Messages Without Scare Tactics",
+      "url": "https://hippsychology.com/vaping-assembly-for-schools/",
+      "target_keyword": "vaping assembly schools",
+      "cluster": "Vaping workshop commercial long-tail",
+      "ahrefs_note": "Supports the `vaping in schools` Ahrefs opportunity with an assembly-specific search intent page.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-08/vaping-assembly-for-schools.html"
+    },
+    {
+      "id": 1925,
+      "slug": "vaping-education-for-schools",
+      "title": "Vaping Education for Schools: Building a Safer Pupil Conversation",
+      "url": "https://hippsychology.com/vaping-education-for-schools/",
+      "target_keyword": "vaping education schools",
+      "cluster": "Vaping education and prevention cluster",
+      "ahrefs_note": "Long-tail support for `vaping in schools`, chosen because HIP already sells a relevant Truth About Vaping programme.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-08/vaping-education-for-schools.html"
+    },
+    {
+      "id": 1926,
+      "slug": "vaping-prevention-lessons-for-schools",
+      "title": "Vaping Prevention Lessons for Schools: What to Cover Before Problems Grow",
+      "url": "https://hippsychology.com/vaping-prevention-lessons-for-schools/",
+      "target_keyword": "vaping prevention schools",
+      "cluster": "Vaping education and prevention cluster",
+      "ahrefs_note": "Prevention-focused companion page for the Ahrefs-confirmed `vaping in schools` topic.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-08/vaping-prevention-lessons-for-schools.html"
+    },
+    {
+      "id": 1927,
+      "slug": "truth-about-vaping-workshop-schools",
+      "title": "The Truth About Vaping Workshop for Schools: A Practical KS3 and KS4 Option",
+      "url": "https://hippsychology.com/truth-about-vaping-workshop-schools/",
+      "target_keyword": "truth about vaping workshop schools",
+      "cluster": "HIP programme support page",
+      "ahrefs_note": "Bottom-funnel branded/programme page built from HIP's active Truth About Vaping offer and the `vaping in schools` Ahrefs opportunity.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-08/truth-about-vaping-workshop-schools.html"
+    },
+    {
+      "id": 1928,
+      "slug": "primary-to-secondary-transition-workshop",
+      "title": "Primary to Secondary Transition Workshop: Helping Pupils Settle With Confidence",
+      "url": "https://hippsychology.com/primary-to-secondary-transition-workshop/",
+      "target_keyword": "primary to secondary transition workshop",
+      "cluster": "Transition Ahrefs cluster",
+      "ahrefs_note": "Commercial long-tail built from Ahrefs-confirmed `primary to secondary transition` (GB vol 60, KD 0).",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-08/primary-to-secondary-transition-workshop.html"
+    },
+    {
+      "id": 1929,
+      "slug": "p7-to-year-8-transition-workshop",
+      "title": "P7 to Year 8 Transition Workshop: Supporting the Move Into Post-Primary",
+      "url": "https://hippsychology.com/p7-to-year-8-transition-workshop/",
+      "target_keyword": "p7 to year 8 transition workshop",
+      "cluster": "Transition Ahrefs cluster",
+      "ahrefs_note": "NI-specific companion page for Ahrefs-confirmed `primary to secondary transition` (GB vol 60, KD 0).",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-08/p7-to-year-8-transition-workshop.html"
+    },
+    {
+      "id": 1930,
+      "slug": "year-8-transition-workshops",
+      "title": "Year 8 Transition Workshops: What Helps Pupils After the First Few Weeks",
+      "url": "https://hippsychology.com/year-8-transition-workshops/",
+      "target_keyword": "year 8 transition workshop",
+      "cluster": "Transition Ahrefs cluster",
+      "ahrefs_note": "Bottom-funnel page supporting HIP's active Year 8 transition and Ready For Action offer.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-08/year-8-transition-workshops.html"
+    },
+    {
+      "id": 1931,
+      "slug": "ks3-wellbeing-workshops",
+      "title": "KS3 Wellbeing Workshops: Support for Year 8, Year 9 and Year 10",
+      "url": "https://hippsychology.com/ks3-wellbeing-workshops/",
+      "target_keyword": "ks3 wellbeing workshops",
+      "cluster": "KS3 wellbeing commercial long-tail",
+      "ahrefs_note": "Commercial long-tail page aligned with HIP's active KS3 offer and the wider Ahrefs `mental health workshops for schools` opportunity.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-08/ks3-wellbeing-workshops.html"
+    },
+    {
+      "id": 1932,
+      "slug": "year-10-wellbeing-workshop",
+      "title": "Year 10 Wellbeing Workshop: Preparing Pupils for Choices, Pressure and Next Steps",
+      "url": "https://hippsychology.com/year-10-wellbeing-workshop/",
+      "target_keyword": "year 10 wellbeing workshop",
+      "cluster": "KS3 and KS4 transition support",
+      "ahrefs_note": "Commercial long-tail page aligned with HIP's Taking The Next Step offer for Year 10 pupils.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-08/year-10-wellbeing-workshop.html"
+    },
+    {
+      "id": 1933,
+      "slug": "peer-pressure-workshops-for-schools",
+      "title": "Peer Pressure Workshops for Schools: Helping Pupils Make Safer Choices",
+      "url": "https://hippsychology.com/peer-pressure-workshops-for-schools/",
+      "target_keyword": "peer pressure workshops schools",
+      "cluster": "Pastoral and decision-making workshop long-tail",
+      "ahrefs_note": "Long-tail support page linking vaping, friendship, confidence and KS3 wellbeing topics into a commercial workshop intent.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-08/peer-pressure-workshops-for-schools.html"
+    },
+    {
+      "id": 1934,
+      "slug": "healthy-relationships-workshops-for-schools",
+      "title": "Healthy Relationships Workshops for Schools: Supporting Friendship, Respect and Boundaries",
+      "url": "https://hippsychology.com/healthy-relationships-workshops-for-schools/",
+      "target_keyword": "healthy relationships workshops schools",
+      "cluster": "Pastoral and relationship education long-tail",
+      "ahrefs_note": "Commercial long-tail page chosen to support existing friendship, bullying and wellbeing content without duplicating live slugs.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-08/healthy-relationships-workshops-for-schools.html"
+    },
+    {
+      "id": 1935,
+      "slug": "coping-skills-workshops-for-schools",
+      "title": "Coping Skills Workshops for Schools: Practical Strategies Pupils Can Actually Use",
+      "url": "https://hippsychology.com/coping-skills-workshops-for-schools/",
+      "target_keyword": "coping skills workshops schools",
+      "cluster": "Pupil wellbeing workshop long-tail",
+      "ahrefs_note": "Workshop-intent long-tail chosen to support HIP's pupil wellbeing and anxiety content with a practical commercial page.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-08/coping-skills-workshops-for-schools.html"
+    }
+  ]
+}

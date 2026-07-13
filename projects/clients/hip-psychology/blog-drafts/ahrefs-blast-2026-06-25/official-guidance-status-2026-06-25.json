@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Department of Education emotional health and wellbeing guidance",
+    "url": "https://www.education-ni.gov.uk/articles/emotional-health-and-wellbeing",
+    "status_code": 200,
+    "final_url": "https://www.education-ni.gov.uk/articles/emotional-health-and-wellbeing"
+  },
+  {
+    "label": "Department of Education effective practice in educational settings",
+    "url": "https://www.education-ni.gov.uk/publications/effective-practice-educational-settings",
+    "status_code": 200,
+    "final_url": "https://www.education-ni.gov.uk/publications/effective-practice-educational-settings"
+  },
+  {
+    "label": "Department of Education safeguarding guidance",
+    "url": "https://www.education-ni.gov.uk/publications/safeguarding-and-child-protection-schools-guide-schools",
+    "status_code": 200,
+    "final_url": "https://www.education-ni.gov.uk/publications/safeguarding-and-child-protection-schools-guide-schools"
+  },
+  {
+    "label": "Department of Education special educational needs code of practice",
+    "url": "https://www.education-ni.gov.uk/articles/special-educational-needs-code-practice",
+    "status_code": 200,
+    "final_url": "https://www.education-ni.gov.uk/articles/special-educational-needs-code-practice"
+  },
+  {
+    "label": "Department of Education social behaviour and emotional wellbeing resource",
+    "url": "https://www.education-ni.gov.uk/articles/social-behaviour-and-emotional-wellbeing",
+    "status_code": 200,
+    "final_url": "https://www.education-ni.gov.uk/articles/social-behaviour-and-emotional-wellbeing"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "generated_at": "2026-06-25T08:53:17.930653+00:00",
+  "property": "sc-domain:hippsychology.com",
+  "results": [],
+  "token_refresh_status": 400,
+  "token_refresh_message": "{\n  \"error\": \"invalid_grant\",\n  \"error_description\": \"Bad Request\"\n}"
+}

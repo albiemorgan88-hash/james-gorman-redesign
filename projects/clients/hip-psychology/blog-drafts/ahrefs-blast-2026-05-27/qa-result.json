@@ -1,0 +1,80 @@
+{
+  "date": "2026-05-27T14:45:02.724459+00:00",
+  "results": [
+    {
+      "slug": "staff-wellbeing-training-for-schools",
+      "url": "https://hippsychology.com/staff-wellbeing-training-for-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_text": "Staff Wellbeing Training for Schools: Practical Support for Busy Teams",
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      }
+    },
+    {
+      "slug": "school-refusal-northern-ireland",
+      "url": "https://hippsychology.com/school-refusal-northern-ireland/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_text": "School Refusal in Northern Ireland: Early Support for Attendance Anxiety",
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      }
+    },
+    {
+      "slug": "school-psychology-support-for-schools",
+      "url": "https://hippsychology.com/school-psychology-support-for-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_text": "School Psychology Support for Schools: Turning Wellbeing Concerns Into Practical Plans",
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      }
+    },
+    {
+      "slug": "mental-health-awareness-in-schools",
+      "url": "https://hippsychology.com/mental-health-awareness-in-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_text": "Mental Health Awareness in Schools: Moving From One-Off Talks to Daily Practice",
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      }
+    },
+    {
+      "slug": "resilience-workshop-for-primary-schools",
+      "url": "https://hippsychology.com/resilience-workshop-for-primary-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_text": "Resilience Workshop for Primary Schools: Building Coping Skills Without Blaming Children",
+        "h1_contains_title": true,
+        "h2_count": 11,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      }
+    }
+  ]
+}

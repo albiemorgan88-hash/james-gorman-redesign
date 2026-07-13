@@ -1,0 +1,124 @@
+{
+  "metrics": {
+    "status": 200,
+    "url": "https://api.ahrefs.com/v3/site-explorer/metrics?date=2026-06-11&target=hippsychology.com&mode=subdomains",
+    "json": {
+      "metrics": {
+        "org_keywords": 3,
+        "paid_keywords": 0,
+        "org_keywords_1_3": 1,
+        "org_traffic": 4,
+        "org_cost": null,
+        "paid_traffic": 0,
+        "paid_cost": null,
+        "paid_pages": 0
+      }
+    },
+    "text": "{\n  \"metrics\": {\n    \"org_keywords\": 3,\n    \"paid_keywords\": 0,\n    \"org_keywords_1_3\": 1,\n    \"org_traffic\": 4,\n    \"org_cost\": null,\n    \"paid_traffic\": 0,\n    \"paid_cost\": null,\n    \"paid_pages\": 0\n  }\n}"
+  },
+  "domain_rating": {
+    "status": 200,
+    "url": "https://api.ahrefs.com/v3/site-explorer/domain-rating?date=2026-06-11&target=hippsychology.com&mode=subdomains",
+    "json": {
+      "domain_rating": {
+        "domain_rating": 7.0,
+        "ahrefs_rank": 22588151
+      }
+    },
+    "text": "{ \"domain_rating\": { \"domain_rating\": 7.0, \"ahrefs_rank\": 22588151 } }"
+  },
+  "backlinks_stats": {
+    "status": 200,
+    "url": "https://api.ahrefs.com/v3/site-explorer/backlinks-stats?date=2026-06-11&target=hippsychology.com&mode=subdomains",
+    "json": {
+      "metrics": {
+        "live": 292,
+        "all_time": 582,
+        "live_refdomains": 199,
+        "all_time_refdomains": 316
+      }
+    },
+    "text": "{\n  \"metrics\": {\n    \"live\": 292,\n    \"all_time\": 582,\n    \"live_refdomains\": 199,\n    \"all_time_refdomains\": 316\n  }\n}"
+  },
+  "top_pages_gb": {
+    "status": 200,
+    "url": "https://api.ahrefs.com/v3/site-explorer/top-pages?date=2026-06-11&target=hippsychology.com&mode=subdomains&country=gb&limit=50&select=url%2Csum_traffic%2Ctop_keyword%2Ctop_keyword_volume%2Ctop_keyword_best_position%2Ckeywords&order_by=sum_traffic%3Adesc",
+    "json": {
+      "pages": [
+        {
+          "url": "https://hippsychology.com/pupil-wellbeing-strategy-schools/",
+          "sum_traffic": 2,
+          "top_keyword": "pupil wellbeing",
+          "top_keyword_volume": 80,
+          "top_keyword_best_position": 10,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/",
+          "sum_traffic": 1,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/pastoral-support-in-schools/",
+          "sum_traffic": 1,
+          "top_keyword": "define pastoral support",
+          "top_keyword_volume": 40,
+          "top_keyword_best_position": 7,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/workshops/ni/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/workshops/ni/ni-post-primary/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/meet-the-team/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/contact-us/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/workshops/ni/ni-primary/p4-p7-hip-n-healthy/hip-n-healthy-overview/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        }
+      ]
+    },
+    "text": "{\n  \"pages\": [\n    {\n      \"url\": \"https://hippsychology.com/pupil-wellbeing-strategy-schools/\",\n      \"sum_traffic\": 2,\n      \"top_keyword\": \"pupil wellbeing\",\n      \"top_keyword_volume\": 80,\n      \"top_keyword_best_position\": 10,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/\",\n      \"sum_traffic\": 1,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/pastoral-support-in-schools/\",\n      \"sum_traffic\": 1,\n      \"top_keyword\": \"define pastoral support\",\n      \"top_keyword_volume\": 40,\n      \"top_keyword_best_position\": 7,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/workshops/ni/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/workshops/ni/ni-post-primary/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/meet-the-team/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/contact-us/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/workshops/ni/ni-primary/p4-p7-hip-n-healthy/hip-n-healthy-overview/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    }\n  ]\n}"
+  },
+  "organic_keywords_gb": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/site-explorer/organic-keywords?date=2026-06-11&target=hippsychology.com&mode=subdomains&country=gb&limit=100&select=keyword%2Cvolume%2Cposition%2Cbest_position%2Curl%2Ctraffic%2Cdifficulty&order_by=traffic%3Adesc",
+    "json": {
+      "error": "select: column 'position' not found. Available columns: cpc, is_best_position_set_top_3, best_position_set, words, is_commercial, is_best_position_set_top_4_10, entities, keyword, serp_features_count, last_update, is_best_position_set_top_11_50, keyword_language, keyword_difficulty, all_positions, serp_features, keyword_country, is_navigational, sum_paid_traffic, is_transactional, volume_mobile_pct, serp_target_positions_count, volume_desktop_pct, serp_target_main_positions_count, volume, best_position, best_position_url, is_local, sum_traffic, best_position_has_video, is_informational, is_branded, best_position_kind, best_position_has_thumbnail, language"
+    },
+    "text": "{\n  \"error\": \"select: column 'position' not found. Available columns: cpc, is_best_position_set_top_3, best_position_set, words, is_commercial, is_best_position_set_top_4_10, entities, keyword, serp_features_count, last_update, is_best_position_set_top_11_50, keyword_language, keyword_difficulty, all_positions, serp_features, keyword_country, is_navigational, sum_paid_traffic, is_transactional, volume_mobile_pct, serp_target_positions_count, volume_desktop_pct, serp_target_main_positions_count, volume, best_position, best_position_url, is_local, sum_traffic, best_position_has_video, is_informational, is_branded, best_position_kind, best_position_has_thumbnail, language\"\n}"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "site": "sc-domain:hippsychology.com",
+  "submitted": [
+    {
+      "sitemap": "https://hippsychology.com/wp-sitemap.xml",
+      "status": 204
+    },
+    {
+      "sitemap": "https://hippsychology.com/wp-sitemap-posts-post-1.xml",
+      "status": 204
+    }
+  ]
+}

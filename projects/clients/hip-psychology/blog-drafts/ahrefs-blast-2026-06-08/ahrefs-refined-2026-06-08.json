@@ -1,0 +1,99 @@
+{
+  "top_pages_gb": {
+    "status": 200,
+    "url": "https://api.ahrefs.com/v3/site-explorer/top-pages?date=2026-06-08&target=hippsychology.com&mode=subdomains&country=gb&limit=50&select=url%2Csum_traffic%2Ctop_keyword%2Ctop_keyword_volume%2Ctop_keyword_best_position%2Ckeywords&order_by=sum_traffic%3Adesc",
+    "json": {
+      "pages": [
+        {
+          "url": "https://hippsychology.com/pupil-wellbeing-strategy-schools/",
+          "sum_traffic": 2,
+          "top_keyword": "pupil wellbeing",
+          "top_keyword_volume": 80,
+          "top_keyword_best_position": 10,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/",
+          "sum_traffic": 1,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/pastoral-support-in-schools/",
+          "sum_traffic": 1,
+          "top_keyword": "define pastoral support",
+          "top_keyword_volume": 40,
+          "top_keyword_best_position": 7,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/workshops/ni/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/workshops/ni/ni-post-primary/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/meet-the-team/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/contact-us/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/workshops/ni/ni-primary/p4-p7-hip-n-healthy/hip-n-healthy-overview/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        }
+      ]
+    },
+    "text": "{\n  \"pages\": [\n    {\n      \"url\": \"https://hippsychology.com/pupil-wellbeing-strategy-schools/\",\n      \"sum_traffic\": 2,\n      \"top_keyword\": \"pupil wellbeing\",\n      \"top_keyword_volume\": 80,\n      \"top_keyword_best_position\": 10,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/\",\n      \"sum_traffic\": 1,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/pastoral-support-in-schools/\",\n      \"sum_traffic\": 1,\n      \"top_keyword\": \"define pastoral support\",\n      \"top_keyword_volume\": 40,\n      \"top_keyword_best_position\": 7,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/workshops/ni/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/workshops/ni/ni-post-primary/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/meet-the-team/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/contact-us/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/workshops/ni/ni-primary/p4-p7-hip-n-healthy/hip-n-healthy-overview/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    }\n  ]\n}"
+  },
+  "organic_keywords_gb": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/site-explorer/organic-keywords?date=2026-06-08&target=hippsychology.com&mode=subdomains&country=gb&limit=100&select=keyword%2Ccountry%2Cvolume%2Ckeyword_difficulty%2Cbest_position%2Clast_position%2Csum_traffic%2Curl&order_by=sum_traffic%3Adesc",
+    "json": {
+      "error": "select: column 'country' not found. Available columns: cpc, is_best_position_set_top_3, best_position_set, words, is_commercial, is_best_position_set_top_4_10, entities, keyword, serp_features_count, last_update, is_best_position_set_top_11_50, keyword_language, keyword_difficulty, all_positions, serp_features, keyword_country, is_navigational, sum_paid_traffic, is_transactional, volume_mobile_pct, serp_target_positions_count, volume_desktop_pct, serp_target_main_positions_count, volume, best_position, best_position_url, is_local, sum_traffic, best_position_has_video, is_informational, is_branded, best_position_kind, best_position_has_thumbnail, language"
+    },
+    "text": "{\n  \"error\": \"select: column 'country' not found. Available columns: cpc, is_best_position_set_top_3, best_position_set, words, is_commercial, is_best_position_set_top_4_10, entities, keyword, serp_features_count, last_update, is_best_position_set_top_11_50, keyword_language, keyword_difficulty, all_positions, serp_features, keyword_country, is_navigational, sum_paid_traffic, is_transactional, volume_mobile_pct, serp_target_positions_count, volume_desktop_pct, serp_target_main_positions_count, volume, best_position, best_position_url, is_local, sum_traffic, best_position_has_video, is_informational, is_branded, best_position_kind, best_position_has_thumbnail, language\"\n}"
+  },
+  "keyword_explorer_candidates": {
+    "keywords-explorer/overview": {
+      "status": 400,
+      "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?country=gb&keywords=vaping+workshops+for+schools%2Cvaping+workshop+schools%2Cvaping+assembly+schools%2Cvaping+education+schools%2Cvaping+in+schools%2Cprimary+to+secondary+transition+workshop%2Ctransition+workshops+for+schools%2Cyear+8+transition+workshop%2Cschool+transition+workshop%2Chealthy+relationships+workshops+schools%2Cpeer+pressure+workshops+schools%2Ccoping+skills+workshops+schools%2Cconfidence+workshops+for+schools%2Cks3+wellbeing+workshops%2Cyear+10+wellbeing+workshop%2Cpastoral+workshops+for+schools%2Cschool+wellbeing+workshops+northern+ireland%2Cmental+health+workshops+for+schools%2Cteacher+wellbeing+workshops%2Cstudent+wellbeing+workshops",
+      "json": {
+        "error": "missing argument 'select'"
+      },
+      "text": "{ \"error\": \"missing argument 'select'\" }"
+    },
+    "keywords-explorer/metrics": {
+      "status": 404,
+      "url": "https://api.ahrefs.com/v3/keywords-explorer/metrics?country=gb&keywords=vaping+workshops+for+schools%2Cvaping+workshop+schools%2Cvaping+assembly+schools%2Cvaping+education+schools%2Cvaping+in+schools%2Cprimary+to+secondary+transition+workshop%2Ctransition+workshops+for+schools%2Cyear+8+transition+workshop%2Cschool+transition+workshop%2Chealthy+relationships+workshops+schools%2Cpeer+pressure+workshops+schools%2Ccoping+skills+workshops+schools%2Cconfidence+workshops+for+schools%2Cks3+wellbeing+workshops%2Cyear+10+wellbeing+workshop%2Cpastoral+workshops+for+schools%2Cschool+wellbeing+workshops+northern+ireland%2Cmental+health+workshops+for+schools%2Cteacher+wellbeing+workshops%2Cstudent+wellbeing+workshops",
+      "json": null,
+      "text": "Not found"
+    }
+  }
+}

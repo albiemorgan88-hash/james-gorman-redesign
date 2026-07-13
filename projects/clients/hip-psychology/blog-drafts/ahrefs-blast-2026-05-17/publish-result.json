@@ -1,0 +1,183 @@
+{
+  "date": "2026-05-17T20:05:56.850958+00:00",
+  "source_note": "Selected from remaining HIP/Ahrefs school wellbeing long-tail opportunities not already covered in the May 4, May 6 or May 14 batches.",
+  "official_sources_used": {
+    "de_wellbeing": "https://www.education-ni.gov.uk/articles/emotional-health-and-wellbeing",
+    "nhs_anxiety": "https://www.nhs.uk/mental-health/children-and-young-adults/advice-for-parents/anxiety-in-children/",
+    "aba_prevention": "https://anti-bullyingalliance.org.uk/tools-information/all-about-bullying/preventing-bullying",
+    "ccea_sel": "https://ccea.org.uk/document/15054"
+  },
+  "count": 8,
+  "results": [
+    {
+      "slug": "emotional-regulation-strategies-schools",
+      "title": "Emotional Regulation Strategies for Schools: A Practical Staff Guide",
+      "target_keyword": "emotional regulation schools",
+      "action": "created",
+      "id": 1807,
+      "status": "publish",
+      "link": "https://hippsychology.com/emotional-regulation-strategies-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "school-attendance-anxiety-northern-ireland",
+      "title": "School Attendance Anxiety in Northern Ireland: What Schools Can Do Early",
+      "target_keyword": "school attendance anxiety northern ireland",
+      "action": "created",
+      "id": 1808,
+      "status": "publish",
+      "link": "https://hippsychology.com/school-attendance-anxiety-northern-ireland/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "transition-workshops-for-schools",
+      "title": "Transition Workshops for Schools: Helping Pupils Move Year, Class or Key Stage",
+      "target_keyword": "transition workshops schools",
+      "action": "created",
+      "id": 1809,
+      "status": "publish",
+      "link": "https://hippsychology.com/transition-workshops-for-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "exam-anxiety-workshops-schools",
+      "title": "Exam Anxiety Workshops for Schools: Practical Support Before Pressure Peaks",
+      "target_keyword": "exam anxiety workshop schools",
+      "action": "created",
+      "id": 1810,
+      "status": "publish",
+      "link": "https://hippsychology.com/exam-anxiety-workshops-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "friendship-issues-in-schools",
+      "title": "Friendship Issues in Schools: How Staff Can Support Pupils Without Escalating Drama",
+      "target_keyword": "friendship issues in schools",
+      "action": "created",
+      "id": 1811,
+      "status": "publish",
+      "link": "https://hippsychology.com/friendship-issues-in-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "self-esteem-workshops-for-schools",
+      "title": "Self-Esteem Workshops for Schools: Building Confidence That Lasts Beyond One Assembly",
+      "target_keyword": "self esteem workshops schools",
+      "action": "created",
+      "id": 1812,
+      "status": "publish",
+      "link": "https://hippsychology.com/self-esteem-workshops-for-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "bullying-prevention-workshops-schools",
+      "title": "Bullying Prevention Workshops for Schools: Moving From Awareness to Action",
+      "target_keyword": "bullying prevention workshops",
+      "action": "created",
+      "id": 1813,
+      "status": "publish",
+      "link": "https://hippsychology.com/bullying-prevention-workshops-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "primary-school-wellbeing-workshops",
+      "title": "Primary School Wellbeing Workshops: What Younger Pupils Need Most",
+      "target_keyword": "primary school wellbeing workshops",
+      "action": "created",
+      "id": 1814,
+      "status": "publish",
+      "link": "https://hippsychology.com/primary-school-wellbeing-workshops/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    }
+  ],
+  "sitemap_status": 200,
+  "draft_dir": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-05-17"
+}

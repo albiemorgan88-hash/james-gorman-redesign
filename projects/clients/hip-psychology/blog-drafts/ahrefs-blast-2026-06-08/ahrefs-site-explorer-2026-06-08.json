@@ -1,0 +1,59 @@
+{
+  "metrics": {
+    "status": 200,
+    "url": "https://api.ahrefs.com/v3/site-explorer/metrics?date=2026-06-08&target=hippsychology.com&mode=subdomains",
+    "json": {
+      "metrics": {
+        "org_keywords": 3,
+        "paid_keywords": 0,
+        "org_keywords_1_3": 1,
+        "org_traffic": 4,
+        "org_cost": null,
+        "paid_traffic": 0,
+        "paid_cost": null,
+        "paid_pages": 0
+      }
+    },
+    "text": "{\n  \"metrics\": {\n    \"org_keywords\": 3,\n    \"paid_keywords\": 0,\n    \"org_keywords_1_3\": 1,\n    \"org_traffic\": 4,\n    \"org_cost\": null,\n    \"paid_traffic\": 0,\n    \"paid_cost\": null,\n    \"paid_pages\": 0\n  }\n}"
+  },
+  "domain_rating": {
+    "status": 200,
+    "url": "https://api.ahrefs.com/v3/site-explorer/domain-rating?date=2026-06-08&target=hippsychology.com&mode=subdomains",
+    "json": {
+      "domain_rating": {
+        "domain_rating": 7.0,
+        "ahrefs_rank": 21895507
+      }
+    },
+    "text": "{ \"domain_rating\": { \"domain_rating\": 7.0, \"ahrefs_rank\": 21895507 } }"
+  },
+  "backlinks_stats": {
+    "status": 200,
+    "url": "https://api.ahrefs.com/v3/site-explorer/backlinks-stats?date=2026-06-08&target=hippsychology.com&mode=subdomains",
+    "json": {
+      "metrics": {
+        "live": 292,
+        "all_time": 579,
+        "live_refdomains": 198,
+        "all_time_refdomains": 313
+      }
+    },
+    "text": "{\n  \"metrics\": {\n    \"live\": 292,\n    \"all_time\": 579,\n    \"live_refdomains\": 198,\n    \"all_time_refdomains\": 313\n  }\n}"
+  },
+  "top_pages": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/site-explorer/top-pages?date=2026-06-08&target=hippsychology.com&mode=subdomains&country=gb&limit=25",
+    "json": {
+      "error": "missing argument 'select'"
+    },
+    "text": "{ \"error\": \"missing argument 'select'\" }"
+  },
+  "organic_keywords_gb": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/site-explorer/organic-keywords?date=2026-06-08&target=hippsychology.com&mode=subdomains&country=gb&limit=100",
+    "json": {
+      "error": "missing argument 'select'"
+    },
+    "text": "{ \"error\": \"missing argument 'select'\" }"
+  }
+}

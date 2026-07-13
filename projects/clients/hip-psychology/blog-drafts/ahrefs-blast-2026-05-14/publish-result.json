@@ -1,0 +1,178 @@
+{
+  "date": "2026-05-14T21:29:12.716580+00:00",
+  "source_note": "Source topic set: HIP SEO baseline audit plus fresh Ahrefs checks on 2026-05-14. hippsychology.com currently shows DR 6, 1 organic keyword and 1 estimated organic visit. Selected topics extend the Ahrefs plan without duplicating the 2026-05-06 batch, using teacher wellbeing, teacher stress, mental health training for teachers, pupil wellbeing, school mental health policy, emotional wellbeing in schools, pastoral support in schools and autism in schools opportunities.",
+  "fresh_ahrefs_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/ahrefs-keyword-overview-2026-05-14.json",
+  "count": 8,
+  "results": [
+    {
+      "slug": "teacher-wellbeing-action-plan-schools",
+      "title": "Teacher Wellbeing Action Plan: What Schools Can Put in Place",
+      "target_keyword": "teacher wellbeing (Ahrefs GB volume 200, KD 4)",
+      "action": "created",
+      "id": 1790,
+      "status": "publish",
+      "link": "https://hippsychology.com/teacher-wellbeing-action-plan-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "teacher-stress-in-schools",
+      "title": "Teacher Stress in Schools: Early Signs Leaders Should Notice",
+      "target_keyword": "teacher stress (Ahrefs GB volume 150, KD 9)",
+      "action": "created",
+      "id": 1791,
+      "status": "publish",
+      "link": "https://hippsychology.com/teacher-stress-in-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "mental-health-training-for-teachers",
+      "title": "Mental Health Training for Teachers: What Should It Include?",
+      "target_keyword": "mental health training for teachers (Ahrefs GB volume 200, KD 0)",
+      "action": "created",
+      "id": 1792,
+      "status": "publish",
+      "link": "https://hippsychology.com/mental-health-training-for-teachers/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "pupil-wellbeing-strategy-schools",
+      "title": "Pupil Wellbeing Strategy: A Practical Guide for Schools",
+      "target_keyword": "pupil wellbeing (Ahrefs GB volume 80, KD 1)",
+      "action": "created",
+      "id": 1793,
+      "status": "publish",
+      "link": "https://hippsychology.com/pupil-wellbeing-strategy-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "school-mental-health-policy-checklist",
+      "title": "School Mental Health Policy Checklist: What to Review",
+      "target_keyword": "school mental health policy (Ahrefs GB volume 10)",
+      "action": "created",
+      "id": 1794,
+      "status": "publish",
+      "link": "https://hippsychology.com/school-mental-health-policy-checklist/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "emotional-wellbeing-in-schools",
+      "title": "Emotional Wellbeing in Schools: What Good Support Looks Like",
+      "target_keyword": "emotional wellbeing in schools (Ahrefs GB volume 30)",
+      "action": "created",
+      "id": 1795,
+      "status": "publish",
+      "link": "https://hippsychology.com/emotional-wellbeing-in-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "pastoral-support-in-schools",
+      "title": "Pastoral Support in Schools: What Pupils and Staff Need",
+      "target_keyword": "pastoral support in schools (Ahrefs GB volume 200, KD 0)",
+      "action": "created",
+      "id": 1796,
+      "status": "publish",
+      "link": "https://hippsychology.com/pastoral-support-in-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    },
+    {
+      "slug": "autism-support-in-schools",
+      "title": "Autism Support in Schools: Practical Steps for Staff",
+      "target_keyword": "autism in schools (Ahrefs GB volume 60, KD 2)",
+      "action": "created",
+      "id": 1797,
+      "status": "publish",
+      "link": "https://hippsychology.com/autism-support-in-schools/",
+      "checks": {
+        "http_200": true,
+        "one_h1": true,
+        "h1_contains_title": true,
+        "h2_count": 9,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "leak_markers_found": []
+      },
+      "in_latest_feed": true,
+      "in_wp_post_sitemap": true
+    }
+  ],
+  "sitemap_status": 200,
+  "draft_dir": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-05-14"
+}

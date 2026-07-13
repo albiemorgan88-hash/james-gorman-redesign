@@ -1,0 +1,962 @@
+{
+  "property": "sc-domain:hippsychology.com",
+  "windows": {
+    "week8_window": {
+      "start": "2026-05-18",
+      "end": "2026-06-16",
+      "status": 200,
+      "clicks": 207,
+      "impressions": 6371,
+      "ctr": 0.032490974729241874,
+      "position": 9.682467430544655
+    },
+    "latest_30": {
+      "start": "2026-06-02",
+      "end": "2026-07-01",
+      "status": 200,
+      "clicks": 215,
+      "impressions": 7386,
+      "ctr": 0.029109125372326024,
+      "position": 8.582047116165718
+    },
+    "latest_7": {
+      "start": "2026-06-25",
+      "end": "2026-07-01",
+      "status": 200,
+      "clicks": 40,
+      "impressions": 1544,
+      "ctr": 0.025906735751295335,
+      "position": 9.31800518134715
+    },
+    "june_full_available": {
+      "start": "2026-06-01",
+      "end": "2026-06-30",
+      "status": 200,
+      "clicks": 223,
+      "impressions": 7372,
+      "ctr": 0.030249593054801953,
+      "position": 8.607569180683669
+    },
+    "week10_publish_window": {
+      "start": "2026-06-23",
+      "end": "2026-07-01",
+      "status": 200,
+      "clicks": 50,
+      "impressions": 2243,
+      "ctr": 0.02229157378510923,
+      "position": 9.096745430227374
+    }
+  },
+  "top_queries": {
+    "status": 200,
+    "rows": [
+      {
+        "keys": [
+          "hip psychology"
+        ],
+        "clicks": 35,
+        "impressions": 96,
+        "ctr": 0.3645833333333333,
+        "position": 1.0833333333333333
+      },
+      {
+        "keys": [
+          "hippsychology"
+        ],
+        "clicks": 3,
+        "impressions": 6,
+        "ctr": 0.5,
+        "position": 1
+      },
+      {
+        "keys": [
+          "educational psychologist northern ireland"
+        ],
+        "clicks": 2,
+        "impressions": 36,
+        "ctr": 0.05555555555555555,
+        "position": 9.416666666666666
+      },
+      {
+        "keys": [
+          "hipp psychology"
+        ],
+        "clicks": 2,
+        "impressions": 3,
+        "ctr": 0.6666666666666666,
+        "position": 1
+      },
+      {
+        "keys": [
+          "anti bullying assembly"
+        ],
+        "clicks": 1,
+        "impressions": 6,
+        "ctr": 0.16666666666666666,
+        "position": 6.333333333333333
+      },
+      {
+        "keys": [
+          "classroom regulation station"
+        ],
+        "clicks": 1,
+        "impressions": 2,
+        "ctr": 0.5,
+        "position": 5
+      },
+      {
+        "keys": [
+          "friendship workshop"
+        ],
+        "clicks": 1,
+        "impressions": 3,
+        "ctr": 0.3333333333333333,
+        "position": 3.6666666666666665
+      },
+      {
+        "keys": [
+          "paul mone"
+        ],
+        "clicks": 1,
+        "impressions": 5,
+        "ctr": 0.2,
+        "position": 8
+      },
+      {
+        "keys": [
+          "relational bullying"
+        ],
+        "clicks": 1,
+        "impressions": 3,
+        "ctr": 0.3333333333333333,
+        "position": 5
+      },
+      {
+        "keys": [
+          "vaping lessons"
+        ],
+        "clicks": 1,
+        "impressions": 1,
+        "ctr": 1,
+        "position": 16
+      },
+      {
+        "keys": [
+          "\"school psychologist as a leader promoting mental health and wellbeing in school\""
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "keys": [
+          "\"st clare's p.s.\""
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 34.333333333333336
+      },
+      {
+        "keys": [
+          "5 rules of improv"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 2
+      },
+      {
+        "keys": [
+          "activities for anti bullying week"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 8
+      },
+      {
+        "keys": [
+          "anti bullying 2026"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 7
+      },
+      {
+        "keys": [
+          "anti bullying assemblies"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "keys": [
+          "anti bullying day uk"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "anti bullying month 2026"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "anti bullying plan"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 7
+      },
+      {
+        "keys": [
+          "anti bullying programme"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 12
+      },
+      {
+        "keys": [
+          "anti bullying programme for schools"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "anti bullying week"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 3.6
+      },
+      {
+        "keys": [
+          "anti bullying week 2026"
+        ],
+        "clicks": 0,
+        "impressions": 443,
+        "ctr": 0,
+        "position": 8.616252821670429
+      },
+      {
+        "keys": [
+          "anti bullying week 2026 theme"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "anti bullying week 2027"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 2
+      },
+      {
+        "keys": [
+          "anti bullying week activities"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 12
+      },
+      {
+        "keys": [
+          "anti bullying week ideas"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "anti bullying week ideas for school"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 15.5
+      },
+      {
+        "keys": [
+          "anti bullying week school activities"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 13.5
+      },
+      {
+        "keys": [
+          "anti bullying workshop"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 12
+      },
+      {
+        "keys": [
+          "anti bullying workshops"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "anti bullying workshops for primary schools"
+        ],
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 8
+      },
+      {
+        "keys": [
+          "anti-bullying week"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 2.333333333333333
+      },
+      {
+        "keys": [
+          "anti-bullying week 2026"
+        ],
+        "clicks": 0,
+        "impressions": 58,
+        "ctr": 0,
+        "position": 8.620689655172413
+      },
+      {
+        "keys": [
+          "anti-bullying week 2026 dates uk"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 8.5
+      },
+      {
+        "keys": [
+          "anti-static packaging solutions"
+        ],
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "antibullying program"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 14
+      },
+      {
+        "keys": [
+          "antibullying week 2026"
+        ],
+        "clicks": 0,
+        "impressions": 39,
+        "ctr": 0,
+        "position": 8.487179487179487
+      },
+      {
+        "keys": [
+          "antibullying week activities"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "keys": [
+          "assembly on bullying"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "ballygowan park banbridge"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 63
+      },
+      {
+        "keys": [
+          "be an upstander not a bystander"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 7.5
+      },
+      {
+        "keys": [
+          "being a bystander"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 27
+      },
+      {
+        "keys": [
+          "belfast psychology"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 11.5
+      },
+      {
+        "keys": [
+          "bleary primary school"
+        ],
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 14.333333333333334
+      },
+      {
+        "keys": [
+          "bleary primary school website"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 12
+      },
+      {
+        "keys": [
+          "bleary ps"
+        ],
+        "clicks": 0,
+        "impressions": 23,
+        "ctr": 0,
+        "position": 9.26086956521739
+      },
+      {
+        "keys": [
+          "bully bystander"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 11.5
+      },
+      {
+        "keys": [
+          "bullying and bystanders"
+        ],
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 9.333333333333334
+      },
+      {
+        "keys": [
+          "bullying assemblies"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 8.25
+      }
+    ]
+  },
+  "top_pages": {
+    "status": 200,
+    "rows": [
+      {
+        "keys": [
+          "https://hippsychology.com/"
+        ],
+        "clicks": 56,
+        "impressions": 618,
+        "ctr": 0.09061488673139159,
+        "position": 6.645631067961165
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/meet-the-team/"
+        ],
+        "clicks": 18,
+        "impressions": 275,
+        "ctr": 0.06545454545454546,
+        "position": 3.72
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/school-refusal-ebsa-ni/"
+        ],
+        "clicks": 8,
+        "impressions": 150,
+        "ctr": 0.05333333333333334,
+        "position": 7.006666666666667
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/emotion-coaching-in-schools/"
+        ],
+        "clicks": 7,
+        "impressions": 147,
+        "ctr": 0.047619047619047616,
+        "position": 7.0272108843537415
+      },
+      {
+        "keys": [
+          "http://www.hippsychology.com/"
+        ],
+        "clicks": 6,
+        "impressions": 263,
+        "ctr": 0.022813688212927757,
+        "position": 5.61596958174905
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/pastoral-support-in-schools/"
+        ],
+        "clicks": 6,
+        "impressions": 490,
+        "ctr": 0.012244897959183673,
+        "position": 8.593877551020409
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/emotional-regulation-strategies-schools/"
+        ],
+        "clicks": 5,
+        "impressions": 61,
+        "ctr": 0.08196721311475409,
+        "position": 7.655737704918033
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/workshops/ni/"
+        ],
+        "clicks": 5,
+        "impressions": 168,
+        "ctr": 0.02976190476190476,
+        "position": 2.333333333333333
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/workshops/ni/ni-post-primary/"
+        ],
+        "clicks": 5,
+        "impressions": 46,
+        "ctr": 0.10869565217391304,
+        "position": 1.4782608695652173
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/year-8-transition-support/"
+        ],
+        "clicks": 5,
+        "impressions": 109,
+        "ctr": 0.045871559633027525,
+        "position": 4.495412844036697
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/anti-bullying-week-2026-schools/"
+        ],
+        "clicks": 4,
+        "impressions": 928,
+        "ctr": 0.004310344827586207,
+        "position": 6.970905172413793
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/friendship-issues-in-schools/"
+        ],
+        "clicks": 4,
+        "impressions": 34,
+        "ctr": 0.11764705882352941,
+        "position": 6.5
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/pastoral-care-in-schools-guide/"
+        ],
+        "clicks": 4,
+        "impressions": 43,
+        "ctr": 0.09302325581395349,
+        "position": 7
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/classroom-anxiety-strategies-for-teachers/"
+        ],
+        "clicks": 3,
+        "impressions": 23,
+        "ctr": 0.13043478260869565,
+        "position": 8.478260869565219
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/parent-wellbeing-workshops-schools/"
+        ],
+        "clicks": 3,
+        "impressions": 33,
+        "ctr": 0.09090909090909091,
+        "position": 5.545454545454546
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/regulation-stations-schools/"
+        ],
+        "clicks": 3,
+        "impressions": 43,
+        "ctr": 0.06976744186046512,
+        "position": 6.4186046511627906
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/relational-bullying/"
+        ],
+        "clicks": 3,
+        "impressions": 27,
+        "ctr": 0.1111111111111111,
+        "position": 19.666666666666668
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/senco-training-for-school-wellbeing/"
+        ],
+        "clicks": 3,
+        "impressions": 60,
+        "ctr": 0.05,
+        "position": 5.783333333333333
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/wellbeing-workshops-for-schools/"
+        ],
+        "clicks": 3,
+        "impressions": 61,
+        "ctr": 0.04918032786885246,
+        "position": 9.049180327868852
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/workshops/ni/ni-post-primary/key-stage-four-year-11-12/"
+        ],
+        "clicks": 3,
+        "impressions": 16,
+        "ctr": 0.1875,
+        "position": 3.3125
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/anti-bullying-assembly-schools/"
+        ],
+        "clicks": 2,
+        "impressions": 46,
+        "ctr": 0.043478260869565216,
+        "position": 8.195652173913043
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/anti-bullying-programme-schools/"
+        ],
+        "clicks": 2,
+        "impressions": 51,
+        "ctr": 0.0392156862745098,
+        "position": 10.03921568627451
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/bystander-behaviour/"
+        ],
+        "clicks": 2,
+        "impressions": 363,
+        "ctr": 0.005509641873278237,
+        "position": 10.1267217630854
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/calm-corners-classrooms/"
+        ],
+        "clicks": 2,
+        "impressions": 16,
+        "ctr": 0.125,
+        "position": 7.5625
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/educational-psychologist-northern-ireland/"
+        ],
+        "clicks": 2,
+        "impressions": 110,
+        "ctr": 0.01818181818181818,
+        "position": 9.00909090909091
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/hip-n-healthy-ni-package-deal/"
+        ],
+        "clicks": 2,
+        "impressions": 13,
+        "ctr": 0.15384615384615385,
+        "position": 2.8461538461538463
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/pastoral-leadership-training-schools/"
+        ],
+        "clicks": 2,
+        "impressions": 47,
+        "ctr": 0.0425531914893617,
+        "position": 5.191489361702128
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/pastoral-support-plan-schools/"
+        ],
+        "clicks": 2,
+        "impressions": 159,
+        "ctr": 0.012578616352201259,
+        "position": 8.30817610062893
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/peer-pressure-workshops-for-schools/"
+        ],
+        "clicks": 2,
+        "impressions": 6,
+        "ctr": 0.3333333333333333,
+        "position": 2.833333333333333
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/phones-in-schools-ni-policy/"
+        ],
+        "clicks": 2,
+        "impressions": 170,
+        "ctr": 0.011764705882352941,
+        "position": 6.152941176470589
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/restorative-practice-and-wellbeing-schools/"
+        ],
+        "clicks": 2,
+        "impressions": 13,
+        "ctr": 0.15384615384615385,
+        "position": 5.846153846153846
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/rse-ni-schools-2026/"
+        ],
+        "clicks": 2,
+        "impressions": 102,
+        "ctr": 0.0196078431372549,
+        "position": 7.1568627450980395
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/sensory-overload-in-the-classroom/"
+        ],
+        "clicks": 2,
+        "impressions": 28,
+        "ctr": 0.07142857142857142,
+        "position": 6.392857142857143
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/supporting-pupils-through-bereavement/"
+        ],
+        "clicks": 2,
+        "impressions": 22,
+        "ctr": 0.09090909090909091,
+        "position": 9.5
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/teacher-wellbeing-workshops/"
+        ],
+        "clicks": 2,
+        "impressions": 34,
+        "ctr": 0.058823529411764705,
+        "position": 7.382352941176471
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/vaping-assembly-for-schools/"
+        ],
+        "clicks": 2,
+        "impressions": 14,
+        "ctr": 0.14285714285714285,
+        "position": 4.357142857142858
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/workshops/ni/ni-post-primary/key-stage-five-year-13-14/"
+        ],
+        "clicks": 2,
+        "impressions": 10,
+        "ctr": 0.2,
+        "position": 2.2
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/workshops/ni/ni-post-primary/key-stage-three-year-8-10/"
+        ],
+        "clicks": 2,
+        "impressions": 9,
+        "ctr": 0.2222222222222222,
+        "position": 3.888888888888889
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/anti-bullying-week-activities-schools/"
+        ],
+        "clicks": 1,
+        "impressions": 38,
+        "ctr": 0.02631578947368421,
+        "position": 10.236842105263158
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/anti-bullying-workshops-schools/"
+        ],
+        "clicks": 1,
+        "impressions": 35,
+        "ctr": 0.02857142857142857,
+        "position": 7.885714285714286
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/child-anxiety-support-in-school/"
+        ],
+        "clicks": 1,
+        "impressions": 14,
+        "ctr": 0.07142857142857142,
+        "position": 7.214285714285714
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/critical-incident-support-schools/"
+        ],
+        "clicks": 1,
+        "impressions": 24,
+        "ctr": 0.041666666666666664,
+        "position": 12.916666666666666
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/cyberbullying-training-for-teachers/"
+        ],
+        "clicks": 1,
+        "impressions": 19,
+        "ctr": 0.05263157894736842,
+        "position": 11.31578947368421
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/designated-teacher-wellbeing-training/"
+        ],
+        "clicks": 1,
+        "impressions": 6,
+        "ctr": 0.16666666666666666,
+        "position": 3.1666666666666665
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/educational-psychology-support-schools-ni/"
+        ],
+        "clicks": 1,
+        "impressions": 62,
+        "ctr": 0.016129032258064516,
+        "position": 8.774193548387096
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/emotional-literacy-in-schools/"
+        ],
+        "clicks": 1,
+        "impressions": 37,
+        "ctr": 0.02702702702702703,
+        "position": 9.81081081081081
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/emotional-support-for-schoolchildren/"
+        ],
+        "clicks": 1,
+        "impressions": 44,
+        "ctr": 0.022727272727272728,
+        "position": 10.409090909090908
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/emotionally-based-school-avoidance/"
+        ],
+        "clicks": 1,
+        "impressions": 31,
+        "ctr": 0.03225806451612903,
+        "position": 12.67741935483871
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/enquiry/"
+        ],
+        "clicks": 1,
+        "impressions": 66,
+        "ctr": 0.015151515151515152,
+        "position": 2
+      },
+      {
+        "keys": [
+          "https://hippsychology.com/friendship-workshops-for-schools/"
+        ],
+        "clicks": 1,
+        "impressions": 28,
+        "ctr": 0.03571428571428571,
+        "position": 4.464285714285714
+      }
+    ]
+  },
+  "token_env_missing": [],
+  "token_status": 200
+}

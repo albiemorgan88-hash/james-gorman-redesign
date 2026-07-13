@@ -1,0 +1,123 @@
+{
+  "generated": "2026-06-01",
+  "report_title": "HIP Psychology SEO Progress",
+  "report_subtitle": "Week 6 movement report for hippsychology.com",
+  "prepared_for": "Cormac Venney",
+  "site": "hippsychology.com",
+  "site_title": "HIP Psychology | Helping Improve Performance",
+  "logo_url": "https://hippsychology.com/wp-content/uploads/2024/08/hip-ltd-with-green-letters.png",
+  "week5": {
+    "date": "2026-05-15",
+    "wp_posts_total": 56,
+    "wp_pages_total": 92,
+    "site_size": 148,
+    "new_posts_since_2026_04_10": 52,
+    "native_post_sitemap_locs": 56,
+    "ahrefs": {
+      "dr": 6,
+      "org_keywords": 1,
+      "org_traffic": 1,
+      "top3": 1,
+      "live_backlinks": 186,
+      "live_refdomains": 99,
+      "top_keyword": "hip psychology"
+    }
+  },
+  "week6": {
+    "date": "2026-06-01",
+    "wp_posts_total": 95,
+    "wp_pages_total": 92,
+    "site_size": 187,
+    "new_posts_since_2026_04_10": 91,
+    "new_posts_since_week5": 39,
+    "native_post_sitemap_locs": 95,
+    "native_page_sitemap_locs": 92,
+    "legacy_sitemap_locs": 67,
+    "ahrefs": {
+      "source": "Ahrefs Site Explorer UI, hippsychology.com, project 9644726, 1 Jun 2026. API access was present but API units were exhausted, so the UI was used for live Site Explorer data.",
+      "dr": 4.4,
+      "dr_change_last_month": -1.6,
+      "ur": 5,
+      "ahrefs_rank": 30366598,
+      "ahrefs_rank_change": 5931868,
+      "live_backlinks": 280,
+      "live_backlinks_change_last_month": 195,
+      "all_time_backlinks": 565,
+      "live_refdomains": 191,
+      "live_refdomains_change_last_month": 136,
+      "all_time_refdomains": 305,
+      "org_keywords": 3,
+      "org_keywords_change_last_month": 2,
+      "top3": 1,
+      "org_traffic": 4,
+      "org_traffic_change_last_month": 3,
+      "organic_pages": 10,
+      "crawled_pages": 331,
+      "crawled_200": 318,
+      "crawled_redirects": 11,
+      "crawled_404": 1,
+      "crawled_other_4xx": 1,
+      "crawled_5xx": 0,
+      "followed_refdomains": 39,
+      "nofollow_refdomains": 152,
+      "followed_backlinks": 90,
+      "nofollow_backlinks": 190
+    },
+    "ahrefs_keywords": [
+      {
+        "keyword": "pupil wellbeing",
+        "position": 10,
+        "volume": 80,
+        "kd": 1,
+        "traffic": 2,
+        "url": "https://hippsychology.com/pupil-wellbeing-strategy-schools/",
+        "status": "New"
+      },
+      {
+        "keyword": "define pastoral support",
+        "position": 7,
+        "volume": 40,
+        "kd": 0,
+        "traffic": 1,
+        "url": "https://hippsychology.com/pastoral-support-in-schools/",
+        "status": "New"
+      },
+      {
+        "keyword": "hip psychology",
+        "position": 1,
+        "volume": 0,
+        "kd": 0,
+        "traffic": 1,
+        "url": "https://hippsychology.com/",
+        "status": "Existing brand ranking"
+      }
+    ],
+    "gsc": {
+      "source": "Google Search Console API, sc-domain:hippsychology.com, 1 Jun 2026. Reporting window uses 1 May to 30 May 2026 because Search Console has normal data lag.",
+      "last30": {
+        "start": "2026-05-01",
+        "end": "2026-05-30",
+        "clicks": 125,
+        "impressions": 3707,
+        "ctr": 0.0337,
+        "position": 12.61
+      },
+      "week5_period": {
+        "start": "2026-04-16",
+        "end": "2026-05-15",
+        "clicks": 120,
+        "impressions": 2001,
+        "ctr": 0.06,
+        "position": 10.38
+      },
+      "last7": {
+        "start": "2026-05-24",
+        "end": "2026-05-30",
+        "clicks": 32,
+        "impressions": 1029,
+        "ctr": 0.0311,
+        "position": 11.36
+      }
+    }
+  }
+}

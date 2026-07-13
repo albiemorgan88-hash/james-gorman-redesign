@@ -1,0 +1,354 @@
+{
+  "metrics": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 03 Jul 2026 17:19:28 GMT",
+      "Content-Type": "application/json",
+      "Transfer-Encoding": "chunked",
+      "Connection": "close",
+      "Server": "cloudflare",
+      "CF-Ray": "a1578e2a0b0e4a6e-LHR",
+      "CF-Cache-Status": "DYNAMIC",
+      "Set-Cookie": "__cflb=02DiuHkbNmZ5PtP1sPhyJnKzbyEcGRZUC3bEnuLhtSsvc; SameSite=Lax; path=/; expires=Sat, 04-Jul-26 16:19:28 GMT; HttpOnly",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "Vary": "X-Client-Version, accept-encoding",
+      "cf-apo-via": "origin,host",
+      "content-security-policy": "frame-ancestors 'self'",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-api-cache": "miss",
+      "x-api-rows": "1",
+      "x-api-units-cost-row": "44",
+      "x-api-units-cost-total": "50",
+      "x-api-units-cost-total-actual": "50",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-request-id": "d809e95505b7b6f2cd014669c18f42b2",
+      "x-request-trace-id": "aa40e0f69d71eee11f3876d8edb01889-2b7cecb866b53fb4",
+      "x-trace-id": "aa40e0f69d71eee11f3876d8edb01889",
+      "x-xss-protection": "0",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "json": {
+      "metrics": {
+        "org_keywords": 6,
+        "paid_keywords": 0,
+        "org_keywords_1_3": 1,
+        "org_traffic": 7,
+        "org_cost": 176,
+        "paid_traffic": 0,
+        "paid_cost": null,
+        "paid_pages": 0
+      }
+    },
+    "text": "{\n  \"metrics\": {\n    \"org_keywords\": 6,\n    \"paid_keywords\": 0,\n    \"org_keywords_1_3\": 1,\n    \"org_traffic\": 7,\n    \"org_cost\": 176,\n    \"paid_traffic\": 0,\n    \"paid_cost\": null,\n    \"paid_pages\": 0\n  }\n}",
+    "url": "https://api.ahrefs.com/v3/site-explorer/metrics?date=2026-07-03&target=hippsychology.com&mode=subdomains&country=gb"
+  },
+  "domain_rating": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 03 Jul 2026 17:19:29 GMT",
+      "Content-Type": "application/json",
+      "Transfer-Encoding": "chunked",
+      "Connection": "close",
+      "Server": "cloudflare",
+      "CF-Ray": "a1578e2dcbf9bd7c-LHR",
+      "CF-Cache-Status": "DYNAMIC",
+      "Set-Cookie": "__cflb=0H28vqPC4cvrzdMCZxGHiocWB6pBXh8HdZM1PvcB8HA; SameSite=Lax; path=/; expires=Sat, 04-Jul-26 16:19:29 GMT; HttpOnly",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "Vary": "Accept-Encoding, X-Client-Version",
+      "cf-apo-via": "origin,host",
+      "content-security-policy": "frame-ancestors 'self'",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-api-cache": "no_cache",
+      "x-api-rows": "1",
+      "x-api-units-cost-row": "2",
+      "x-api-units-cost-total": "50",
+      "x-api-units-cost-total-actual": "50",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-request-id": "db4f80b29db3822ed2156763f63a2973",
+      "x-request-trace-id": "39f55eacac92f5480c00f90df1eef029-0a2bb6dd41648956",
+      "x-trace-id": "39f55eacac92f5480c00f90df1eef029",
+      "x-xss-protection": "0",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "json": {
+      "domain_rating": {
+        "domain_rating": 7.0,
+        "ahrefs_rank": 22006884
+      }
+    },
+    "text": "{ \"domain_rating\": { \"domain_rating\": 7.0, \"ahrefs_rank\": 22006884 } }",
+    "url": "https://api.ahrefs.com/v3/site-explorer/domain-rating?date=2026-07-03&target=hippsychology.com&mode=subdomains"
+  },
+  "backlinks_stats": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 03 Jul 2026 17:19:29 GMT",
+      "Content-Type": "application/json",
+      "Transfer-Encoding": "chunked",
+      "Connection": "close",
+      "Server": "cloudflare",
+      "CF-Ray": "a1578e2f4ab363e3-LHR",
+      "CF-Cache-Status": "DYNAMIC",
+      "Set-Cookie": "__cflb=02DiuHkbNmZ5PtP1sPhyV4rjSMTj2EFwy8XgJwa7LrGh2; SameSite=Lax; path=/; expires=Sat, 04-Jul-26 16:19:29 GMT; HttpOnly",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "Vary": "Accept-Encoding, X-Client-Version",
+      "cf-apo-via": "origin,host",
+      "content-security-policy": "frame-ancestors 'self'",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-api-cache": "miss",
+      "x-api-rows": "1",
+      "x-api-units-cost-row": "12",
+      "x-api-units-cost-total": "50",
+      "x-api-units-cost-total-actual": "50",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-request-id": "db5e305cccf1033feeec2f54bb137b8d",
+      "x-request-trace-id": "d28132ba2987802a6e5641e7a3c0e36d-75d3b7378b34ce8e",
+      "x-trace-id": "d28132ba2987802a6e5641e7a3c0e36d",
+      "x-xss-protection": "0",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "json": {
+      "metrics": {
+        "live": 412,
+        "all_time": 723,
+        "live_refdomains": 282,
+        "all_time_refdomains": 410
+      }
+    },
+    "text": "{\n  \"metrics\": {\n    \"live\": 412,\n    \"all_time\": 723,\n    \"live_refdomains\": 282,\n    \"all_time_refdomains\": 410\n  }\n}",
+    "url": "https://api.ahrefs.com/v3/site-explorer/backlinks-stats?date=2026-07-03&target=hippsychology.com&mode=subdomains"
+  },
+  "top_pages_gb": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 03 Jul 2026 17:19:29 GMT",
+      "Content-Type": "application/json",
+      "Transfer-Encoding": "chunked",
+      "Connection": "close",
+      "Server": "cloudflare",
+      "CF-Ray": "a1578e314e0a7058-LHR",
+      "CF-Cache-Status": "DYNAMIC",
+      "Set-Cookie": "__cflb=0H28vqPC4cvrzdMCZxGHiocWB6pBXh8JNNsCxaESnma; SameSite=Lax; path=/; expires=Sat, 04-Jul-26 16:19:29 GMT; HttpOnly",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "Vary": "X-Client-Version, accept-encoding",
+      "cf-apo-via": "origin,host",
+      "content-security-policy": "frame-ancestors 'self'",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-api-cache": "miss",
+      "x-api-rows": "10",
+      "x-api-units-cost-row": "24",
+      "x-api-units-cost-total": "240",
+      "x-api-units-cost-total-actual": "240",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-request-id": "922efcc613089e154bf933933d7f219f",
+      "x-request-trace-id": "b1831f924930737339f5648544dcf75e-cabe088444c18b08",
+      "x-trace-id": "b1831f924930737339f5648544dcf75e",
+      "x-xss-protection": "0",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "json": {
+      "pages": [
+        {
+          "url": "https://hippsychology.com/bystander-behaviour/",
+          "sum_traffic": 3,
+          "top_keyword": "bystander behaviour",
+          "top_keyword_volume": 50,
+          "top_keyword_best_position": 7,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/pupil-wellbeing-strategy-schools/",
+          "sum_traffic": 2,
+          "top_keyword": "pupil wellbeing",
+          "top_keyword_volume": 80,
+          "top_keyword_best_position": 10,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/",
+          "sum_traffic": 1,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/emotion-coaching-in-schools/",
+          "sum_traffic": 1,
+          "top_keyword": "emotion coaching in schools",
+          "top_keyword_volume": 10,
+          "top_keyword_best_position": 6,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/form-tutor-wellbeing-activities/",
+          "sum_traffic": 0,
+          "top_keyword": "form time activities",
+          "top_keyword_volume": 600,
+          "top_keyword_best_position": 29,
+          "keywords": 2
+        },
+        {
+          "url": "https://hippsychology.com/workshops/ni/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/workshops/ni/ni-post-primary/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/workshops/roi/roi-secondary/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/meet-the-team/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        },
+        {
+          "url": "https://hippsychology.com/contact-us/",
+          "sum_traffic": 0,
+          "top_keyword": "hip psychology",
+          "top_keyword_volume": 0,
+          "top_keyword_best_position": 1,
+          "keywords": 1
+        }
+      ]
+    },
+    "text": "{\n  \"pages\": [\n    {\n      \"url\": \"https://hippsychology.com/bystander-behaviour/\",\n      \"sum_traffic\": 3,\n      \"top_keyword\": \"bystander behaviour\",\n      \"top_keyword_volume\": 50,\n      \"top_keyword_best_position\": 7,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/pupil-wellbeing-strategy-schools/\",\n      \"sum_traffic\": 2,\n      \"top_keyword\": \"pupil wellbeing\",\n      \"top_keyword_volume\": 80,\n      \"top_keyword_best_position\": 10,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/\",\n      \"sum_traffic\": 1,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/emotion-coaching-in-schools/\",\n      \"sum_traffic\": 1,\n      \"top_keyword\": \"emotion coaching in schools\",\n      \"top_keyword_volume\": 10,\n      \"top_keyword_best_position\": 6,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/form-tutor-wellbeing-activities/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"form time activities\",\n      \"top_keyword_volume\": 600,\n      \"top_keyword_best_position\": 29,\n      \"keywords\": 2\n    },\n    {\n      \"url\": \"https://hippsychology.com/workshops/ni/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/workshops/ni/ni-post-primary/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/workshops/roi/roi-secondary/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/meet-the-team/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    },\n    {\n      \"url\": \"https://hippsychology.com/contact-us/\",\n      \"sum_traffic\": 0,\n      \"top_keyword\": \"hip psychology\",\n      \"top_keyword_volume\": 0,\n      \"top_keyword_best_position\": 1,\n      \"keywords\": 1\n    }\n  ]\n}",
+    "url": "https://api.ahrefs.com/v3/site-explorer/top-pages?date=2026-07-03&target=hippsychology.com&mode=subdomains&country=gb&limit=50&select=url,sum_traffic,top_keyword,top_keyword_volume,top_keyword_best_position,keywords&order_by=sum_traffic:desc"
+  },
+  "organic_keywords_gb": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 03 Jul 2026 17:19:30 GMT",
+      "Content-Type": "application/json",
+      "Transfer-Encoding": "chunked",
+      "Connection": "close",
+      "Server": "cloudflare",
+      "CF-Ray": "a1578e3408138898-LHR",
+      "CF-Cache-Status": "DYNAMIC",
+      "Set-Cookie": "__cflb=0H28vqPC4cvrzdMCZxGHiocWB6pBXh8JNNsCxaESnma; SameSite=Lax; path=/; expires=Sat, 04-Jul-26 16:19:30 GMT; HttpOnly",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "Vary": "X-Client-Version, accept-encoding",
+      "cf-apo-via": "origin,host",
+      "content-security-policy": "frame-ancestors 'self'",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-api-cache": "miss",
+      "x-api-rows": "6",
+      "x-api-units-cost-row": "38",
+      "x-api-units-cost-total": "228",
+      "x-api-units-cost-total-actual": "228",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-request-id": "00bfbbf507dc5199c0799fb033372beb",
+      "x-request-trace-id": "33c12c821f8357afb5cab8d8745c77c5-c29eb515d5cfde05",
+      "x-trace-id": "33c12c821f8357afb5cab8d8745c77c5",
+      "x-xss-protection": "0",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "json": {
+      "keywords": [
+        {
+          "keyword": "bystander behaviour",
+          "keyword_country": "GB",
+          "volume": 50,
+          "keyword_difficulty": 22,
+          "best_position": 7,
+          "best_position_url": "https://hippsychology.com/bystander-behaviour/",
+          "sum_traffic": 3,
+          "is_branded": false,
+          "is_commercial": false,
+          "is_informational": true,
+          "is_local": false
+        },
+        {
+          "keyword": "pupil wellbeing",
+          "keyword_country": "GB",
+          "volume": 80,
+          "keyword_difficulty": 1,
+          "best_position": 10,
+          "best_position_url": "https://hippsychology.com/pupil-wellbeing-strategy-schools/",
+          "sum_traffic": 2,
+          "is_branded": false,
+          "is_commercial": false,
+          "is_informational": true,
+          "is_local": false
+        },
+        {
+          "keyword": "hip psychology",
+          "keyword_country": "GB",
+          "volume": 0,
+          "keyword_difficulty": 0,
+          "best_position": 1,
+          "best_position_url": "https://hippsychology.com/",
+          "sum_traffic": 1,
+          "is_branded": true,
+          "is_commercial": false,
+          "is_informational": true,
+          "is_local": false
+        },
+        {
+          "keyword": "emotion coaching in schools",
+          "keyword_country": "GB",
+          "volume": 10,
+          "keyword_difficulty": 0,
+          "best_position": 6,
+          "best_position_url": "https://hippsychology.com/emotion-coaching-in-schools/",
+          "sum_traffic": 1,
+          "is_branded": false,
+          "is_commercial": false,
+          "is_informational": true,
+          "is_local": false
+        },
+        {
+          "keyword": "form time activities",
+          "keyword_country": "GB",
+          "volume": 600,
+          "keyword_difficulty": 0,
+          "best_position": 29,
+          "best_position_url": "https://hippsychology.com/form-tutor-wellbeing-activities/",
+          "sum_traffic": 0,
+          "is_branded": false,
+          "is_commercial": false,
+          "is_informational": true,
+          "is_local": false
+        },
+        {
+          "keyword": "form time ideas",
+          "keyword_country": "GB",
+          "volume": 1800,
+          "keyword_difficulty": 0,
+          "best_position": 24,
+          "best_position_url": "https://hippsychology.com/form-tutor-wellbeing-activities/",
+          "sum_traffic": 0,
+          "is_branded": false,
+          "is_commercial": false,
+          "is_informational": true,
+          "is_local": false
+        }
+      ]
+    },
+    "text": "{\n  \"keywords\": [\n    {\n      \"keyword\": \"bystander behaviour\",\n      \"keyword_country\": \"GB\",\n      \"volume\": 50,\n      \"keyword_difficulty\": 22,\n      \"best_position\": 7,\n      \"best_position_url\": \"https://hippsychology.com/bystander-behaviour/\",\n      \"sum_traffic\": 3,\n      \"is_branded\": false,\n      \"is_commercial\": false,\n      \"is_informational\": true,\n      \"is_local\": false\n    },\n    {\n      \"keyword\": \"pupil wellbeing\",\n      \"keyword_country\": \"GB\",\n      \"volume\": 80,\n      \"keyword_difficulty\": 1,\n      \"best_position\": 10,\n      \"best_position_url\": \"https://hippsychology.com/pupil-wellbeing-strategy-schools/\",\n      \"sum_traffic\": 2,\n      \"is_branded\": false,\n      \"is_commercial\": false,\n      \"is_informational\": true,\n      \"is_local\": false\n    },\n    {\n      \"keyword\": \"hip psychology\",\n      \"keyword_country\": \"GB\",\n      \"volume\": 0,\n      \"keyword_difficulty\": 0,\n      \"best_position\": 1,\n      \"best_position_url\": \"https://hippsychology.com/\",\n      \"sum_traffic\": 1,\n      \"is_branded\": true,\n      \"is_commercial\": false,\n      \"is_informational\": true,\n      \"is_local\": false\n    },\n    {\n      \"keyword\": \"emotion coaching in schools\",\n      \"keyword_country\": \"GB\",\n      \"volume\": 10,\n      \"keyword_difficulty\": 0,\n      \"best_position\": 6,\n      \"best_position_url\": \"https://hippsychology.com/emotion-coaching-in-schools/\",\n      \"sum_traffic\": 1,\n      \"is_branded\": false,\n      \"is_commercial\": false,\n      \"is_informational\": true,\n      \"is_local\": false\n    },\n    {\n      \"keyword\": \"form time activities\",\n      \"keyword_country\": \"GB\",\n      \"volume\": 600,\n      \"keyword_difficulty\": 0,\n      \"best_position\": 29,\n      \"best_position_url\": \"https://hippsychology.com/form-tutor-wellbeing-activities/\",\n      \"sum_traffic\": 0,\n      \"is_branded\": false,\n      \"is_commercial\": false,\n      \"is_informational\": true,\n      \"is_local\": false\n    },\n    {\n      \"keyword\": \"form time ideas\",\n      \"keyword_country\": \"GB\",\n      \"volume\": 1800,\n      \"keyword_difficulty\": 0,\n      \"best_position\": 24,\n      \"best_position_url\": \"https://hippsychology.com/form-tutor-wellbeing-activities/\",\n      \"sum_traffic\": 0,\n      \"is_branded\": false,\n      \"is_commercial\": false,\n      \"is_informational\": true,\n      \"is_local\": false\n    }\n  ]\n}",
+    "url": "https://api.ahrefs.com/v3/site-explorer/organic-keywords?date=2026-07-03&target=hippsychology.com&mode=subdomains&country=gb&limit=100&select=keyword,keyword_country,volume,keyword_difficulty,best_position,best_position_url,sum_traffic,is_branded,is_commercial,is_informational,is_local&order_by=sum_traffic:desc"
+  }
+}

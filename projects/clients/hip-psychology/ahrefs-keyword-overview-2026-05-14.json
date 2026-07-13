@@ -1,0 +1,260 @@
+[
+  {
+    "keyword": "anti bullying week",
+    "volume": 2400,
+    "difficulty": 16,
+    "traffic_potential": 3400,
+    "parent_topic": "anti bullying week 2025",
+    "parent_volume": 6300,
+    "intents": {
+      "informational": true,
+      "navigational": false,
+      "commercial": false,
+      "transactional": false,
+      "branded": false,
+      "local": false
+    }
+  },
+  {
+    "keyword": "mental health in schools",
+    "volume": 300,
+    "difficulty": 22,
+    "traffic_potential": 250,
+    "parent_topic": "mental health in schools",
+    "parent_volume": 300,
+    "intents": {
+      "informational": true,
+      "navigational": false,
+      "commercial": false,
+      "transactional": false,
+      "branded": false,
+      "local": false
+    }
+  },
+  {
+    "keyword": "wellbeing in schools",
+    "volume": 150,
+    "difficulty": 19,
+    "traffic_potential": 350,
+    "parent_topic": "mental health in schools",
+    "parent_volume": 300,
+    "intents": {
+      "informational": true,
+      "navigational": false,
+      "commercial": false,
+      "transactional": false,
+      "branded": false,
+      "local": false
+    }
+  },
+  {
+    "keyword": "school psychology",
+    "volume": 70,
+    "difficulty": 25,
+    "traffic_potential": 20,
+    "parent_topic": "school psychology",
+    "parent_volume": 70,
+    "intents": {
+      "informational": true,
+      "navigational": false,
+      "commercial": false,
+      "transactional": false,
+      "branded": false,
+      "local": false
+    }
+  },
+  {
+    "keyword": "educational psychologist northern ireland",
+    "volume": 50,
+    "difficulty": 1,
+    "traffic_potential": 70,
+    "parent_topic": "educational psychology",
+    "parent_volume": 1800,
+    "intents": {
+      "informational": true,
+      "navigational": false,
+      "commercial": false,
+      "transactional": false,
+      "branded": false,
+      "local": true
+    }
+  },
+  {
+    "keyword": "emotional support schoolchildren",
+    "missing": true
+  },
+  {
+    "keyword": "staff training schools wellbeing",
+    "missing": true
+  },
+  {
+    "keyword": "pupil attainment wellbeing",
+    "missing": true
+  },
+  {
+    "keyword": "anti bullying programme schools",
+    "missing": true
+  },
+  {
+    "keyword": "resilience training schools",
+    "volume": 0,
+    "difficulty": null,
+    "traffic_potential": null,
+    "parent_topic": null,
+    "parent_volume": null,
+    "intents": {}
+  },
+  {
+    "keyword": "school wellbeing programme",
+    "volume": 0,
+    "difficulty": null,
+    "traffic_potential": null,
+    "parent_topic": null,
+    "parent_volume": null,
+    "intents": {}
+  },
+  {
+    "keyword": "student wellbeing workshops",
+    "volume": 0,
+    "difficulty": null,
+    "traffic_potential": null,
+    "parent_topic": null,
+    "parent_volume": null,
+    "intents": {}
+  },
+  {
+    "keyword": "teacher wellbeing workshops",
+    "volume": 0,
+    "difficulty": null,
+    "traffic_potential": null,
+    "parent_topic": null,
+    "parent_volume": null,
+    "intents": {}
+  },
+  {
+    "keyword": "mental health training for teachers",
+    "volume": 200,
+    "difficulty": 0,
+    "traffic_potential": 100,
+    "parent_topic": "mental health training for teachers",
+    "parent_volume": 200,
+    "intents": {
+      "informational": true,
+      "navigational": false,
+      "commercial": false,
+      "transactional": false,
+      "branded": false,
+      "local": false
+    }
+  },
+  {
+    "keyword": "emotional regulation schools",
+    "missing": true
+  },
+  {
+    "keyword": "school attendance anxiety",
+    "volume": 0,
+    "difficulty": null,
+    "traffic_potential": null,
+    "parent_topic": null,
+    "parent_volume": null,
+    "intents": {}
+  },
+  {
+    "keyword": "transition workshops schools",
+    "missing": true
+  },
+  {
+    "keyword": "exam anxiety workshop schools",
+    "missing": true
+  },
+  {
+    "keyword": "friendship issues in schools",
+    "missing": true
+  },
+  {
+    "keyword": "self esteem workshops schools",
+    "missing": true
+  },
+  {
+    "keyword": "bullying prevention workshops",
+    "missing": true
+  },
+  {
+    "keyword": "primary school wellbeing workshops",
+    "missing": true
+  },
+  {
+    "keyword": "post primary wellbeing workshops",
+    "missing": true
+  },
+  {
+    "keyword": "stress management workshops for teachers",
+    "missing": true
+  },
+  {
+    "keyword": "positive mental health workshops schools",
+    "missing": true
+  },
+  {
+    "keyword": "social emotional learning schools",
+    "volume": 0,
+    "difficulty": null,
+    "traffic_potential": null,
+    "parent_topic": null,
+    "parent_volume": null,
+    "intents": {}
+  },
+  {
+    "keyword": "safeguarding training schools northern ireland",
+    "missing": true
+  },
+  {
+    "keyword": "pupil voice wellbeing",
+    "volume": 0,
+    "difficulty": null,
+    "traffic_potential": null,
+    "parent_topic": null,
+    "parent_volume": null,
+    "intents": {}
+  },
+  {
+    "keyword": "anxiety in teenagers school",
+    "missing": true
+  },
+  {
+    "keyword": "resilience workshop primary school",
+    "missing": true
+  },
+  {
+    "keyword": "child anxiety support school",
+    "missing": true
+  },
+  {
+    "keyword": "school refusal northern ireland",
+    "volume": 0,
+    "difficulty": null,
+    "traffic_potential": null,
+    "parent_topic": null,
+    "parent_volume": null,
+    "intents": {}
+  },
+  {
+    "keyword": "staff wellbeing training",
+    "volume": 150,
+    "difficulty": null,
+    "traffic_potential": null,
+    "parent_topic": null,
+    "parent_volume": null,
+    "intents": {}
+  },
+  {
+    "keyword": "mental health awareness schools",
+    "volume": 0,
+    "difficulty": null,
+    "traffic_potential": null,
+    "parent_topic": null,
+    "parent_volume": null,
+    "intents": {}
+  }
+]

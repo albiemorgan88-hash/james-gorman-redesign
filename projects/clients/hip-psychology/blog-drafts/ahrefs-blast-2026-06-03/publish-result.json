@@ -1,0 +1,71 @@
+{
+  "source_note": "Ahrefs source: saved HIP Ahrefs keyword overview from 2026-05-14 plus Week 6 Ahrefs Site Explorer snapshot from 2026-06-01. Fresh Ahrefs API calls on 2026-06-03 were blocked because API units were exhausted.",
+  "results": [
+    {
+      "id": 1896,
+      "slug": "pupil-wellbeing-survey-schools",
+      "title": "Pupil Wellbeing Survey for Schools: Turning Pupil Voice Into Practical Support",
+      "url": "https://hippsychology.com/pupil-wellbeing-survey-schools/",
+      "target_keyword": "pupil wellbeing survey schools",
+      "cluster": "Ahrefs-visible pupil wellbeing cluster",
+      "ahrefs_note": "Supports the early Ahrefs-visible ranking for `pupil wellbeing` at position 10, volume 80, KD 1 on 2026-06-01.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-03/pupil-wellbeing-survey-schools.html"
+    },
+    {
+      "id": 1897,
+      "slug": "pastoral-support-plan-schools",
+      "title": "Pastoral Support Plan for Schools: From Concern to Clear Next Steps",
+      "url": "https://hippsychology.com/pastoral-support-plan-schools/",
+      "target_keyword": "pastoral support plan schools",
+      "cluster": "Ahrefs-visible pastoral support cluster",
+      "ahrefs_note": "Supports the early Ahrefs-visible ranking for `define pastoral support` at position 7, volume 40, KD 0 on 2026-06-01.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-03/pastoral-support-plan-schools.html"
+    },
+    {
+      "id": 1898,
+      "slug": "wellbeing-interventions-in-schools",
+      "title": "Wellbeing Interventions in Schools: Choosing Support That Fits the Need",
+      "url": "https://hippsychology.com/wellbeing-interventions-in-schools/",
+      "target_keyword": "wellbeing interventions in schools",
+      "cluster": "Ahrefs broad wellbeing in schools cluster",
+      "ahrefs_note": "Builds from saved Ahrefs GB data for `wellbeing in schools` volume 150, KD 19, parent topic `mental health in schools`.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-03/wellbeing-interventions-in-schools.html"
+    },
+    {
+      "id": 1899,
+      "slug": "mental-health-lead-in-schools",
+      "title": "Mental Health Lead in Schools: What the Role Needs Around It to Work",
+      "url": "https://hippsychology.com/mental-health-lead-in-schools/",
+      "target_keyword": "mental health lead in schools",
+      "cluster": "Ahrefs mental health in schools cluster",
+      "ahrefs_note": "Builds from saved Ahrefs GB data for `mental health in schools` volume 300, KD 22.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-03/mental-health-lead-in-schools.html"
+    },
+    {
+      "id": 1900,
+      "slug": "educational-psychology-support-schools-ni",
+      "title": "Educational Psychology Support for Schools in Northern Ireland: When to Ask for Help",
+      "url": "https://hippsychology.com/educational-psychology-support-schools-ni/",
+      "target_keyword": "educational psychology support schools northern ireland",
+      "cluster": "Ahrefs educational psychology / Northern Ireland cluster",
+      "ahrefs_note": "Builds from saved Ahrefs GB data for `educational psychologist northern ireland` volume 50, KD 1, parent topic `educational psychology`.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-03/educational-psychology-support-schools-ni.html"
+    },
+    {
+      "id": 1901,
+      "slug": "whole-school-wellbeing-audit",
+      "title": "Whole-School Wellbeing Audit: A Practical Starting Point for Better Support",
+      "url": "https://hippsychology.com/whole-school-wellbeing-audit/",
+      "target_keyword": "whole school wellbeing audit",
+      "cluster": "Ahrefs wellbeing in schools / school wellbeing programme cluster",
+      "ahrefs_note": "Supports saved Ahrefs opportunity around `school wellbeing programme` and the broader `wellbeing in schools` cluster.",
+      "status": "publish",
+      "source_file": "/Users/philsagent/.openclaw/workspace/projects/clients/hip-psychology/blog-drafts/ahrefs-blast-2026-06-03/whole-school-wellbeing-audit.html"
+    }
+  ]
+}

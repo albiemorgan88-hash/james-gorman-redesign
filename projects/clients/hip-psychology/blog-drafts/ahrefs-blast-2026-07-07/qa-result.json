@@ -1,0 +1,322 @@
+{
+  "published": [
+    {
+      "action": "created",
+      "id": 2158,
+      "slug": "primary-school-mental-health-workshops-ni",
+      "title": "Primary School Mental Health Workshops in Northern Ireland",
+      "link": "https://hippsychology.com/primary-school-mental-health-workshops-ni/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2159,
+      "slug": "post-primary-mental-health-workshops-ni",
+      "title": "Post-Primary Mental Health Workshops in Northern Ireland",
+      "link": "https://hippsychology.com/post-primary-mental-health-workshops-ni/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2160,
+      "slug": "school-anxiety-parent-workshop",
+      "title": "School Anxiety Parent Workshop: Helping Families and Schools Work Together",
+      "link": "https://hippsychology.com/school-anxiety-parent-workshop/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2161,
+      "slug": "teacher-mental-health-training-northern-ireland",
+      "title": "Teacher Mental Health Training in Northern Ireland Schools",
+      "link": "https://hippsychology.com/teacher-mental-health-training-northern-ireland/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2162,
+      "slug": "pupil-resilience-workshops-northern-ireland",
+      "title": "Pupil Resilience Workshops for Northern Ireland Schools",
+      "link": "https://hippsychology.com/pupil-resilience-workshops-northern-ireland/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2163,
+      "slug": "emotional-literacy-activities-primary-school",
+      "title": "Emotional Literacy Activities for Primary School Pupils",
+      "link": "https://hippsychology.com/emotional-literacy-activities-primary-school/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2164,
+      "slug": "wellbeing-day-for-schools",
+      "title": "Wellbeing Day for Schools: Planning a Useful Pupil and Staff Programme",
+      "link": "https://hippsychology.com/wellbeing-day-for-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2165,
+      "slug": "pastoral-staff-training-northern-ireland",
+      "title": "Pastoral Staff Training for Northern Ireland Schools",
+      "link": "https://hippsychology.com/pastoral-staff-training-northern-ireland/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2166,
+      "slug": "classroom-wellbeing-activities",
+      "title": "Classroom Wellbeing Activities: Simple Ideas Teachers Can Use Safely",
+      "link": "https://hippsychology.com/classroom-wellbeing-activities/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2167,
+      "slug": "pupil-leadership-wellbeing-programme",
+      "title": "Pupil Leadership Wellbeing Programme for Schools",
+      "link": "https://hippsychology.com/pupil-leadership-wellbeing-programme/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2168,
+      "slug": "school-staff-trauma-debrief-training",
+      "title": "School Staff Trauma Debrief Training After Difficult Incidents",
+      "link": "https://hippsychology.com/school-staff-trauma-debrief-training/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2169,
+      "slug": "parent-workshops-for-schools-northern-ireland",
+      "title": "Parent Workshops for Schools in Northern Ireland",
+      "link": "https://hippsychology.com/parent-workshops-for-schools-northern-ireland/",
+      "status": "publish"
+    }
+  ],
+  "qa": [
+    {
+      "slug": "primary-school-mental-health-workshops-ni",
+      "link": "https://hippsychology.com/primary-school-mental-health-workshops-ni/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "post-primary-mental-health-workshops-ni",
+      "link": "https://hippsychology.com/post-primary-mental-health-workshops-ni/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "school-anxiety-parent-workshop",
+      "link": "https://hippsychology.com/school-anxiety-parent-workshop/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "teacher-mental-health-training-northern-ireland",
+      "link": "https://hippsychology.com/teacher-mental-health-training-northern-ireland/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "pupil-resilience-workshops-northern-ireland",
+      "link": "https://hippsychology.com/pupil-resilience-workshops-northern-ireland/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "emotional-literacy-activities-primary-school",
+      "link": "https://hippsychology.com/emotional-literacy-activities-primary-school/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "wellbeing-day-for-schools",
+      "link": "https://hippsychology.com/wellbeing-day-for-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "pastoral-staff-training-northern-ireland",
+      "link": "https://hippsychology.com/pastoral-staff-training-northern-ireland/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "classroom-wellbeing-activities",
+      "link": "https://hippsychology.com/classroom-wellbeing-activities/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "pupil-leadership-wellbeing-programme",
+      "link": "https://hippsychology.com/pupil-leadership-wellbeing-programme/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "school-staff-trauma-debrief-training",
+      "link": "https://hippsychology.com/school-staff-trauma-debrief-training/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "parent-workshops-for-schools-northern-ireland",
+      "link": "https://hippsychology.com/parent-workshops-for-schools-northern-ireland/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "no_secret_leak": true,
+        "no_source_markers": true
+      },
+      "ok": true
+    }
+  ],
+  "sitemap_status": 200,
+  "sitemap_checks": {
+    "primary-school-mental-health-workshops-ni": true,
+    "post-primary-mental-health-workshops-ni": true,
+    "school-anxiety-parent-workshop": true,
+    "teacher-mental-health-training-northern-ireland": true,
+    "pupil-resilience-workshops-northern-ireland": true,
+    "emotional-literacy-activities-primary-school": true,
+    "wellbeing-day-for-schools": true,
+    "pastoral-staff-training-northern-ireland": true,
+    "classroom-wellbeing-activities": true,
+    "pupil-leadership-wellbeing-programme": true,
+    "school-staff-trauma-debrief-training": true,
+    "parent-workshops-for-schools-northern-ireland": true
+  },
+  "failures": 0
+}

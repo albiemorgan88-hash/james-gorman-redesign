@@ -1,0 +1,250 @@
+{
+  "published": [
+    {
+      "action": "created",
+      "id": 2103,
+      "slug": "form-time-wellbeing-activities",
+      "title": "Form Time Wellbeing Activities: Practical Ideas for Schools",
+      "link": "https://hippsychology.com/form-time-wellbeing-activities/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2104,
+      "slug": "ks3-form-time-activities",
+      "title": "KS3 Form Time Activities for Wellbeing and Belonging",
+      "link": "https://hippsychology.com/ks3-form-time-activities/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2105,
+      "slug": "year-8-form-time-activities",
+      "title": "Year 8 Form Time Activities: Settling, Confidence and Support",
+      "link": "https://hippsychology.com/year-8-form-time-activities/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2106,
+      "slug": "anti-bullying-form-time-activities",
+      "title": "Anti-Bullying Form Time Activities for Schools",
+      "link": "https://hippsychology.com/anti-bullying-form-time-activities/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2107,
+      "slug": "digital-wellbeing-workshops-for-schools",
+      "title": "Digital Wellbeing Workshops for Schools",
+      "link": "https://hippsychology.com/digital-wellbeing-workshops-for-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2108,
+      "slug": "sleep-workshops-for-schools",
+      "title": "Sleep Workshops for Schools: Wellbeing Support for Pupils",
+      "link": "https://hippsychology.com/sleep-workshops-for-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2109,
+      "slug": "body-image-workshops-for-schools",
+      "title": "Body Image Workshops for Schools: Safe Pupil Support",
+      "link": "https://hippsychology.com/body-image-workshops-for-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2110,
+      "slug": "anger-management-workshops-for-schools",
+      "title": "Anger Management Workshops for Schools: Practical Regulation Support",
+      "link": "https://hippsychology.com/anger-management-workshops-for-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2111,
+      "slug": "conflict-resolution-workshops-schools",
+      "title": "Conflict Resolution Workshops for Schools",
+      "link": "https://hippsychology.com/conflict-resolution-workshops-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "created",
+      "id": 2112,
+      "slug": "study-skills-and-wellbeing-workshop",
+      "title": "Study Skills and Wellbeing Workshop for Pupils",
+      "link": "https://hippsychology.com/study-skills-and-wellbeing-workshop/",
+      "status": "publish"
+    }
+  ],
+  "qa": [
+    {
+      "slug": "form-time-wellbeing-activities",
+      "link": "https://hippsychology.com/form-time-wellbeing-activities/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_secret_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "ks3-form-time-activities",
+      "link": "https://hippsychology.com/ks3-form-time-activities/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_secret_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "year-8-form-time-activities",
+      "link": "https://hippsychology.com/year-8-form-time-activities/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_secret_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "anti-bullying-form-time-activities",
+      "link": "https://hippsychology.com/anti-bullying-form-time-activities/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_secret_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "digital-wellbeing-workshops-for-schools",
+      "link": "https://hippsychology.com/digital-wellbeing-workshops-for-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_secret_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "sleep-workshops-for-schools",
+      "link": "https://hippsychology.com/sleep-workshops-for-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_secret_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "body-image-workshops-for-schools",
+      "link": "https://hippsychology.com/body-image-workshops-for-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_secret_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "anger-management-workshops-for-schools",
+      "link": "https://hippsychology.com/anger-management-workshops-for-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_secret_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "conflict-resolution-workshops-schools",
+      "link": "https://hippsychology.com/conflict-resolution-workshops-schools/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_secret_leak": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "study-skills-and-wellbeing-workshop",
+      "link": "https://hippsychology.com/study-skills-and-wellbeing-workshop/",
+      "checks": {
+        "http_200": true,
+        "wp_status_publish": true,
+        "one_h1": true,
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "no_secret_leak": true
+      },
+      "ok": true
+    }
+  ],
+  "sitemap_status": 200,
+  "sitemap_checks": {
+    "form-time-wellbeing-activities": true,
+    "ks3-form-time-activities": true,
+    "year-8-form-time-activities": true,
+    "anti-bullying-form-time-activities": true,
+    "digital-wellbeing-workshops-for-schools": true,
+    "sleep-workshops-for-schools": true,
+    "body-image-workshops-for-schools": true,
+    "anger-management-workshops-for-schools": true,
+    "conflict-resolution-workshops-schools": true,
+    "study-skills-and-wellbeing-workshop": true
+  },
+  "failures": 0
+}

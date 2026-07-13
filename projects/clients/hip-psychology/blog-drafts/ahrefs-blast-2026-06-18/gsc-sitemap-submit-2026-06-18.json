@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-06-18T09:20:26",
+  "site": "sc-domain:hippsychology.com",
+  "results": [
+    {
+      "sitemap": "https://hippsychology.com/wp-sitemap.xml",
+      "status": 204,
+      "body": {}
+    },
+    {
+      "sitemap": "https://hippsychology.com/wp-sitemap-posts-post-1.xml",
+      "status": 204,
+      "body": {}
+    },
+    {
+      "sitemap": "https://hippsychology.com/sitemap.xml",
+      "status": 204,
+      "body": {}
+    }
+  ]
+}

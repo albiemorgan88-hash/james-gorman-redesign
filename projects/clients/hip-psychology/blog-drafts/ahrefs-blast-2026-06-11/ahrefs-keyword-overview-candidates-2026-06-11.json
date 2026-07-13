@@ -1,0 +1,274 @@
+{
+  "senco training": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=senco+training&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "senco training for schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=senco+training+for+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "senco support": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=senco+support&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "senco wellbeing": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=senco+wellbeing&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "mental health first aid in schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=mental+health+first+aid+in+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "mental health first aid training schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=mental+health+first+aid+training+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "mental health lead training schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=mental+health+lead+training+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "emotionally based school avoidance": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=emotionally+based+school+avoidance&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "ebsa training schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=ebsa+training+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "school avoidance anxiety": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=school+avoidance+anxiety&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "behaviour support in schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=behaviour+support+in+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "behaviour management training schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=behaviour+management+training+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "positive behaviour support schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=positive+behaviour+support+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "trauma informed practice in schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=trauma+informed+practice+in+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "trauma informed training for teachers": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=trauma+informed+training+for+teachers&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "trauma informed classroom": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=trauma+informed+classroom&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "emotion coaching training schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=emotion+coaching+training+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "emotional regulation activities for children": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=emotional+regulation+activities+for+children&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "self regulation strategies for students": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=self+regulation+strategies+for+students&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "resilience activities for students": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=resilience+activities+for+students&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "confidence workshops for schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=confidence+workshops+for+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "self esteem activities for teenagers": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=self+esteem+activities+for+teenagers&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "teacher wellbeing training": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=teacher+wellbeing+training&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "staff wellbeing in schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=staff+wellbeing+in+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "supervision for teachers": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=supervision+for+teachers&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "safeguarding training schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=safeguarding+training+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "pastoral care training schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=pastoral+care+training+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "pastoral care in schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=pastoral+care+in+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "pupil wellbeing questionnaire": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=pupil+wellbeing+questionnaire&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "school wellbeing audit": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=school+wellbeing+audit&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "wellbeing action plan schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=wellbeing+action+plan+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "parent workshops schools": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=parent+workshops+schools&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "parent mental health workshops": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=parent+mental+health+workshops&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  },
+  "anxiety workshop for parents": {
+    "status": 400,
+    "url": "https://api.ahrefs.com/v3/keywords-explorer/overview?keyword=anxiety+workshop+for+parents&country=gb&select=keyword%2Cvolume%2Cdifficulty%2Ctraffic_potential%2Cparent_topic%2Ccpc%2Cintents%2Cglobal_volume",
+    "json": {
+      "error": "arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty"
+    },
+    "text": "{\n  \"error\": \"arguments 'keyword_list_id', 'keywords' and 'target' cannot all be empty\"\n}"
+  }
+}
