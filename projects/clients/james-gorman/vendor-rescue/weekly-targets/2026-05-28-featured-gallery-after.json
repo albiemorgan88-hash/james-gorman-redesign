@@ -1,0 +1,530 @@
+{
+  "id": "0880c93f-89ac-435c-af7b-5948fceef70e",
+  "totalItems": 16,
+  "items": [
+    {
+      "id": "04f71e66-40c6-4f25-a4c5-022525e6ba89",
+      "sortOrder": -1601420068665.6562,
+      "title": "68A Coney Road BT48",
+      "description": "FOR SALE!!",
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_43d3a8c455954b81bad827f9116ae165~mv2.jpg",
+          "url": "https://static.wixstatic.com/media/8a0a22_43d3a8c455954b81bad827f9116ae165~mv2.jpg",
+          "height": 1600,
+          "width": 1441,
+          "altText": "",
+          "filename": "8a0a22_43d3a8c455954b81bad827f9116ae165~mv2.jpg"
+        },
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "createdDate": "2026-01-08T11:41:35Z",
+      "updatedDate": "2026-05-23T01:13:10Z",
+      "tags": {
+        "values": [
+          "_fileOrigin_uploaded"
+        ]
+      }
+    },
+    {
+      "id": "1cf0c584-6e65-4ef6-86e7-c37fc5fdb729",
+      "sortOrder": -1434967638880.3125,
+      "title": "SOLD - 21 Merchants View\n",
+      "link": {
+        "type": "INTERNAL",
+        "text": "Go to Page Merchants View 5 Bedroom ",
+        "url": "https://www.jamesgormanproperty.com//blank-11-1-1",
+        "target": "_self",
+        "wixLinkData": {
+          "page": {
+            "pageId": "#q2jt4",
+            "target": "_self",
+            "rel": []
+          }
+        }
+      },
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_eca4d79bfb1e443cba35040d0c85b23c~mv2.png",
+          "url": "https://static.wixstatic.com/media/8a0a22_eca4d79bfb1e443cba35040d0c85b23c~mv2.png",
+          "height": 1507,
+          "width": 1556,
+          "altText": "",
+          "filename": "8a0a22_eca4d79bfb1e443cba35040d0c85b23c~mv2.png"
+        },
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "createdDate": "2026-01-04T10:55:46Z",
+      "updatedDate": "2026-05-23T01:13:11Z",
+      "tags": {
+        "values": [
+          "_fileOrigin_uploaded"
+        ]
+      }
+    },
+    {
+      "id": "a2f7bf24-4107-438f-95d6-d7c5605f084d",
+      "sortOrder": -1102411121662.625,
+      "title": "SOLD.. Beech Hill View",
+      "description": "",
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_f289e0f906fd4ed693d3ab50c280f945~mv2.jpg",
+          "url": "https://static.wixstatic.com/media/8a0a22_f289e0f906fd4ed693d3ab50c280f945~mv2.jpg",
+          "height": 1080,
+          "width": 818,
+          "altText": "",
+          "filename": "8a0a22_f289e0f906fd4ed693d3ab50c280f945~mv2.jpg"
+        },
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "createdDate": "2025-12-17T06:12:12Z",
+      "updatedDate": "2026-05-23T01:13:10Z",
+      "tags": {
+        "values": [
+          "_fileOrigin_uploaded"
+        ]
+      }
+    },
+    {
+      "id": "0316cfdf-ceb7-489d-89b7-3b8356bc8988",
+      "sortOrder": -770640703489.4375,
+      "title": "SOLD.. Carn Manor ",
+      "description": "",
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_3e89e560f82d4f6094b257ce66f3725f~mv2.jpg",
+          "url": "https://static.wixstatic.com/media/8a0a22_3e89e560f82d4f6094b257ce66f3725f~mv2.jpg",
+          "height": 1080,
+          "width": 927,
+          "altText": "",
+          "filename": "8a0a22_3e89e560f82d4f6094b257ce66f3725f~mv2.jpg"
+        },
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "createdDate": "2025-12-17T06:13:35Z",
+      "updatedDate": "2026-05-23T01:13:10Z",
+      "tags": {
+        "values": [
+          "_fileOrigin_uploaded"
+        ]
+      }
+    },
+    {
+      "id": "cbe3da37-cbb1-44d6-a4e5-0ec693111e29",
+      "sortOrder": -604755494402.8438,
+      "title": "The Foxes ",
+      "description": "SOLD !!",
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_3cc8554091be4a6c83f1a1a909716b20~mv2.jpg",
+          "url": "https://static.wixstatic.com/media/8a0a22_3cc8554091be4a6c83f1a1a909716b20~mv2.jpg",
+          "height": 1080,
+          "width": 886,
+          "altText": "",
+          "filename": "8a0a22_3cc8554091be4a6c83f1a1a909716b20~mv2.jpg"
+        },
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "createdDate": "2025-12-17T06:12:49Z",
+      "updatedDate": "2026-05-23T01:13:10Z",
+      "tags": {
+        "values": [
+          "_fileOrigin_uploaded"
+        ]
+      }
+    },
+    {
+      "id": "047324c1-2dfd-4bda-a594-19766ebbbd1e",
+      "sortOrder": -438870285316.25,
+      "title": "114 Barleyfields",
+      "description": "SOLD!!",
+      "link": {
+        "type": "INTERNAL",
+        "text": "Go to Page 114 Barleyfields",
+        "url": "https://www.jamesgormanproperty.com//blank-11-2-1-2",
+        "target": "_self",
+        "wixLinkData": {
+          "page": {
+            "pageId": "#p6947",
+            "target": "_self",
+            "rel": []
+          }
+        }
+      },
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_c4ab24039fcc450780bceba88350a924~mv2.jpg",
+          "url": "https://static.wixstatic.com/media/8a0a22_c4ab24039fcc450780bceba88350a924~mv2.jpg",
+          "height": 630,
+          "width": 640,
+          "altText": "",
+          "filename": "8a0a22_c4ab24039fcc450780bceba88350a924~mv2.jpg"
+        },
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "createdDate": "2025-01-21T11:27:47Z",
+      "updatedDate": "2026-05-23T01:13:11Z",
+      "tags": {
+        "values": [
+          "_fileOrigin_uploaded"
+        ]
+      }
+    },
+    {
+      "id": "5641ceaa-f208-4896-bb9f-40cbaf00015e",
+      "sortOrder": 859718375520.5,
+      "title": "53 Limavady Road",
+      "description": "FOR SALE ",
+      "link": {
+        "type": "INTERNAL",
+        "text": "Go to Page 53 Limavady Road",
+        "url": "https://www.jamesgormanproperty.com//blank-11-2",
+        "target": "_self",
+        "wixLinkData": {
+          "page": {
+            "pageId": "#jfnyc",
+            "target": "_self",
+            "rel": []
+          }
+        }
+      },
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_734554a88ede49e3a14d517a1b8a5548~mv2.png",
+          "url": "https://static.wixstatic.com/media/8a0a22_734554a88ede49e3a14d517a1b8a5548~mv2.png",
+          "height": 1487,
+          "width": 1928,
+          "altText": "",
+          "filename": "8a0a22_734554a88ede49e3a14d517a1b8a5548~mv2.png"
+        }
+      },
+      "createdDate": "2024-08-30T20:31:49Z",
+      "updatedDate": "2026-05-23T01:13:11Z",
+      "tags": {
+        "values": [
+          "_fileOrigin_uploaded"
+        ]
+      }
+    },
+    {
+      "id": "81a4b17d-f53b-4376-80d2-f448c4917061",
+      "sortOrder": 1725050371208.0,
+      "title": "37 Woodside Heights",
+      "description": "SOLD!!",
+      "link": {
+        "type": "INTERNAL",
+        "text": "Go to Page 37 Woodside Heights",
+        "url": "https://www.jamesgormanproperty.com//blank-11-2-1",
+        "target": "_self",
+        "wixLinkData": {
+          "page": {
+            "pageId": "#hep5o",
+            "target": "_self",
+            "rel": []
+          }
+        }
+      },
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_18d21ea2585a49f6942b841daec1c38d~mv2.png",
+          "url": "https://static.wixstatic.com/media/8a0a22_18d21ea2585a49f6942b841daec1c38d~mv2.png",
+          "height": 1469,
+          "width": 1259,
+          "altText": "",
+          "filename": "8a0a22_18d21ea2585a49f6942b841daec1c38d~mv2.png"
+        }
+      },
+      "createdDate": "2024-08-30T20:39:31Z",
+      "updatedDate": "2026-05-23T01:13:11Z",
+      "tags": {
+        "values": [
+          "_fileOrigin_uploaded"
+        ]
+      }
+    },
+    {
+      "id": "77414309-cda0-4eca-97fb-e528a4a0d625",
+      "sortOrder": 1730664086541.0,
+      "title": "12 Oldbridge ",
+      "description": "SOLD!",
+      "link": {
+        "type": "INTERNAL",
+        "text": "Go to Page 12 Oldbridge Drive",
+        "url": "https://www.jamesgormanproperty.com//blank-11-1-2",
+        "target": "_self",
+        "wixLinkData": {
+          "page": {
+            "pageId": "#l93gm",
+            "target": "_self",
+            "rel": []
+          }
+        }
+      },
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_1524c27264ea4776bf73752d1f9f453d~mv2.jpg",
+          "url": "https://static.wixstatic.com/media/8a0a22_1524c27264ea4776bf73752d1f9f453d~mv2.jpg",
+          "height": 1575,
+          "width": 2880,
+          "altText": "",
+          "filename": "8a0a22_1524c27264ea4776bf73752d1f9f453d~mv2.jpg"
+        }
+      },
+      "createdDate": "2024-08-30T20:47:35Z",
+      "updatedDate": "2026-05-23T01:13:11Z",
+      "tags": {
+        "values": [
+          "_fileOrigin_uploaded"
+        ]
+      }
+    },
+    {
+      "id": "eeebba97-5d59-46e7-8069-4ccaa0a29362",
+      "sortOrder": 1733470670008.0,
+      "title": "69 Moyola Drive",
+      "description": "SOLD",
+      "link": {
+        "type": "INTERNAL",
+        "text": "Go to Page 69 Moyola Drive",
+        "url": "https://www.jamesgormanproperty.com//blank-11-2-1-1",
+        "target": "_self",
+        "wixLinkData": {
+          "page": {
+            "pageId": "#u2nn6",
+            "target": "_self",
+            "rel": []
+          }
+        }
+      },
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_eb30583b4c46407ca21a03a9f81ed720~mv2.png",
+          "url": "https://static.wixstatic.com/media/8a0a22_eb30583b4c46407ca21a03a9f81ed720~mv2.png",
+          "height": 1490,
+          "width": 1280,
+          "altText": "",
+          "filename": "8a0a22_eb30583b4c46407ca21a03a9f81ed720~mv2.png"
+        },
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "createdDate": "2024-08-30T20:45:12Z",
+      "updatedDate": "2026-05-23T01:13:11Z",
+      "tags": {
+        "values": [
+          "_fileOrigin_uploaded"
+        ]
+      }
+    },
+    {
+      "id": "6187fe6e-3789-40bd-a2e9-8d3e2d1f6dd5",
+      "sortOrder": 1777974220660.0,
+      "title": "",
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_04361a053a534421afb0556e07c8af40~mv2.jpg",
+          "url": "https://static.wixstatic.com/media/8a0a22_04361a053a534421afb0556e07c8af40~mv2.jpg",
+          "height": 1135,
+          "width": 1293,
+          "altText": "",
+          "filename": "8a0a22_04361a053a534421afb0556e07c8af40~mv2.jpg"
+        }
+      },
+      "createdDate": "2026-05-05T09:43:41Z",
+      "updatedDate": "2026-05-23T01:13:10Z",
+      "tags": {
+        "values": [
+          "_fileOrigin_uploaded"
+        ]
+      }
+    },
+    {
+      "id": "a38dbf99-a860-4371-9c53-0f3d32a3de74",
+      "sortOrder": 1777974220666.0,
+      "title": "",
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_04361a053a534421afb0556e07c8af40~mv2.jpg",
+          "url": "https://static.wixstatic.com/media/8a0a22_04361a053a534421afb0556e07c8af40~mv2.jpg",
+          "height": 1135,
+          "width": 1293,
+          "altText": "",
+          "filename": "8a0a22_04361a053a534421afb0556e07c8af40~mv2.jpg"
+        }
+      },
+      "createdDate": "2026-05-05T09:43:41Z",
+      "updatedDate": "2026-05-23T01:13:10Z",
+      "tags": {
+        "values": [
+          "_fileOrigin_uploaded"
+        ]
+      }
+    },
+    {
+      "id": "d2c023fa-7068-42e7-8008-141d0cb97213",
+      "sortOrder": 1779986371458.0,
+      "title": "194 Barleyfields, Culmore Road",
+      "description": "£350,000 • 4 bed • 4 Bed Semi-detached House",
+      "link": {
+        "type": "EXTERNAL",
+        "text": "View property",
+        "url": "https://www.propertypal.com/194-barleyfields-culmore-road-derrylondonderry/1078357",
+        "target": "_blank"
+      },
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_5ca19438ae114cff927aa0189adf5a25~mv2.jpg",
+          "url": "https://static.wixstatic.com/media/8a0a22_5ca19438ae114cff927aa0189adf5a25~mv2.jpg",
+          "height": 0,
+          "width": 0,
+          "altText": "194 Barleyfields, Culmore Road, Derry/Londonderry, BT48 8TQ",
+          "filename": "194 Barleyfields Culmore Road.jpg"
+        },
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "createdDate": "2026-05-28T16:39:31Z",
+      "updatedDate": "2026-05-28T16:39:31Z"
+    },
+    {
+      "id": "ce2947af-d68b-459e-add9-c5dc8834f43b",
+      "sortOrder": 1779986464612.0,
+      "title": "5 Keery Park, Magheramason, Derry",
+      "description": "£315,000 • 4 bed • 2 bath • 3 reception • 4 Bed Detached House with garage",
+      "link": {
+        "type": "EXTERNAL",
+        "text": "View property",
+        "url": "https://www.propertypal.com/5-keery-park-magheramason-derrylondonderry/1064767",
+        "target": "_blank"
+      },
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_7c55d2a6e72a4952800dabf80a76397f~mv2.jpg",
+          "url": "https://static.wixstatic.com/media/8a0a22_7c55d2a6e72a4952800dabf80a76397f~mv2.jpg",
+          "height": 0,
+          "width": 0,
+          "altText": "5 Keery Park, Magheramason, Derry, BT47 2TD",
+          "filename": "5-keery-park-magheramason-derry-1064767.jpg"
+        },
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "createdDate": "2026-05-28T16:41:05Z",
+      "updatedDate": "2026-05-28T16:41:04Z"
+    },
+    {
+      "id": "7a8e0d12-e7ac-4fb3-8367-47273b665811",
+      "sortOrder": 1779986468260.0,
+      "title": "109 Victoria Gate, Derry",
+      "description": "£549,950 • 5 bed • 5 bath • 2 reception • 5 Bed Detached House",
+      "link": {
+        "type": "EXTERNAL",
+        "text": "View property",
+        "url": "https://www.propertypal.com/109-victoria-gate-derrylondonderry/1062990",
+        "target": "_blank"
+      },
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_14d818ca2b804c48a957f79563a1b26f~mv2.jpg",
+          "url": "https://static.wixstatic.com/media/8a0a22_14d818ca2b804c48a957f79563a1b26f~mv2.jpg",
+          "height": 0,
+          "width": 0,
+          "altText": "109 Victoria Gate, Derry, BT47 2TQ",
+          "filename": "109-victoria-gate-derry-1062990.jpg"
+        },
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "createdDate": "2026-05-28T16:41:08Z",
+      "updatedDate": "2026-05-28T16:41:08Z"
+    },
+    {
+      "id": "953c840f-a48a-4387-b362-3e1a9583b7c6",
+      "sortOrder": 1779986471781.0,
+      "title": "5 Coralmount, Limavady Road, Derry",
+      "description": "£699,950 • 5 bed • 4 bath • 2 reception • 5 Bed Detached House with garage",
+      "link": {
+        "type": "EXTERNAL",
+        "text": "View property",
+        "url": "https://www.propertypal.com/5-coralmount-limavady-road-derrylondonderry/1070650",
+        "target": "_blank"
+      },
+      "type": "IMAGE",
+      "image": {
+        "type": "WIX_MEDIA",
+        "imageInfo": {
+          "id": "8a0a22_272d2b9094ee4c86a47c6cab9cc10108~mv2.jpg",
+          "url": "https://static.wixstatic.com/media/8a0a22_272d2b9094ee4c86a47c6cab9cc10108~mv2.jpg",
+          "height": 0,
+          "width": 0,
+          "altText": "5 Coralmount, Limavady Road, Derry, BT47 6ZQ",
+          "filename": "5-coralmount-limavady-road-derry-1070650.jpg"
+        },
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "createdDate": "2026-05-28T16:41:12Z",
+      "updatedDate": "2026-05-28T16:41:12Z"
+    }
+  ],
+  "createdDate": "2024-06-12T20:11:03Z"
+}

@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-05-28T16:52:00Z",
+  "siteId": "4b8170fd-99cc-45e8-a4fb-e28bb7156d52",
+  "galleryId": "0880c93f-89ac-435c-af7b-5948fceef70e",
+  "hasWixApiKey": true,
+  "apiStatus": "ok",
+  "totalItems": 16,
+  "topTitles": [
+    "194 Barleyfields, Culmore Road",
+    "5 Keery Park, Magheramason, Derry",
+    "109 Victoria Gate, Derry",
+    "5 Coralmount, Limavady Road, Derry",
+    "68A Coney Road BT48",
+    "SOLD - 21 Merchants View",
+    "SOLD.. Beech Hill View",
+    "SOLD.. Carn Manor"
+  ],
+  "matches": {
+    "194 Barleyfields": [
+      0
+    ],
+    "5 Keery Park": [
+      1
+    ],
+    "109 Victoria Gate": [
+      2
+    ],
+    "5 Coralmount": [
+      3
+    ]
+  },
+  "wantedTitlesFound": [
+    "194 Barleyfields, Culmore Road",
+    "5 Keery Park, Magheramason, Derry",
+    "109 Victoria Gate, Derry",
+    "5 Coralmount, Limavady Road, Derry"
+  ],
+  "topFourAreWantedSet": true,
+  "topFour": [
+    {
+      "id": "d2c023fa-7068-42e7-8008-141d0cb97213",
+      "title": "194 Barleyfields, Culmore Road",
+      "sortOrder": -2000000000000.0,
+      "updatedDate": "2026-05-28T16:46:08Z"
+    },
+    {
+      "id": "ce2947af-d68b-459e-add9-c5dc8834f43b",
+      "title": "5 Keery Park, Magheramason, Derry",
+      "sortOrder": -1999000000000.0,
+      "updatedDate": "2026-05-28T16:46:09Z"
+    },
+    {
+      "id": "7a8e0d12-e7ac-4fb3-8367-47273b665811",
+      "title": "109 Victoria Gate, Derry",
+      "sortOrder": -1998000000000.0,
+      "updatedDate": "2026-05-28T16:46:10Z"
+    },
+    {
+      "id": "953c840f-a48a-4387-b362-3e1a9583b7c6",
+      "title": "5 Coralmount, Limavady Road, Derry",
+      "sortOrder": -1997000000000.0,
+      "updatedDate": "2026-05-28T16:46:11Z"
+    }
+  ],
+  "wantedItems": [
+    {
+      "id": "d2c023fa-7068-42e7-8008-141d0cb97213",
+      "title": "194 Barleyfields, Culmore Road",
+      "sortOrder": -2000000000000.0,
+      "updatedDate": "2026-05-28T16:46:08Z"
+    },
+    {
+      "id": "ce2947af-d68b-459e-add9-c5dc8834f43b",
+      "title": "5 Keery Park, Magheramason, Derry",
+      "sortOrder": -1999000000000.0,
+      "updatedDate": "2026-05-28T16:46:09Z"
+    },
+    {
+      "id": "7a8e0d12-e7ac-4fb3-8367-47273b665811",
+      "title": "109 Victoria Gate, Derry",
+      "sortOrder": -1998000000000.0,
+      "updatedDate": "2026-05-28T16:46:10Z"
+    },
+    {
+      "id": "953c840f-a48a-4387-b362-3e1a9583b7c6",
+      "title": "5 Coralmount, Limavady Road, Derry",
+      "sortOrder": -1997000000000.0,
+      "updatedDate": "2026-05-28T16:46:11Z"
+    }
+  ]
+}

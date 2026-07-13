@@ -1,0 +1,95 @@
+{
+  "published_at": "2026-05-25T12:31:58+0100",
+  "domain": "jamesgormanproperty.com",
+  "draft_dir": "/Users/philsagent/.openclaw/workspace/projects/clients/james-gorman/blog-drafts/content-blast-2026-05-25",
+  "official_sources_used": {
+    "epc": "https://www.nidirect.gov.uk/articles/energy-performance-certificates",
+    "buying_home": "https://www.nidirect.gov.uk/information-and-services/buying-selling-and-renting-home/buying-your-home",
+    "selling_home": "https://www.nidirect.gov.uk/information-and-services/buying-selling-and-renting-home/selling-your-home",
+    "land_registry": "https://www.nidirect.gov.uk/articles/searching-land-registry",
+    "rates": "https://www.nidirect.gov.uk/articles/sign-up-for-rates"
+  },
+  "author_note": "Posts are assigned to James' Wix memberId. Because Wix member profile edit is member-only through the API, each new post also includes a visible 'By James Gorman' byline at the top of the body.",
+  "results": [
+    {
+      "title": "Mortgage Agreement in Principle in Derry: What Buyers Should Do Before Viewing",
+      "slug": "mortgage-agreement-in-principle-derry",
+      "url": "https://www.jamesgormanproperty.com/post/mortgage-agreement-in-principle-derry",
+      "post_id": "dc007160-6f26-4f8b-aa77-4c8f75204bd6",
+      "publish_status": 200,
+      "category": "Buyer Guides",
+      "target_keyword": "mortgage agreement in principle Derry",
+      "memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012"
+    },
+    {
+      "title": "Home Surveys in Northern Ireland: What Derry Buyers Should Check Before Completion",
+      "slug": "home-survey-northern-ireland-buyer-guide",
+      "url": "https://www.jamesgormanproperty.com/post/home-survey-northern-ireland-buyer-guide",
+      "post_id": "28cdd2ac-5d86-41bc-9cf4-d264f22cdb1e",
+      "publish_status": 200,
+      "category": "Buyer Guides",
+      "target_keyword": "home survey Northern Ireland buyer guide",
+      "memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012"
+    },
+    {
+      "title": "EPC When Selling a House in Northern Ireland: What Derry Sellers Need to Know",
+      "slug": "epc-selling-house-northern-ireland",
+      "url": "https://www.jamesgormanproperty.com/post/epc-selling-house-northern-ireland",
+      "post_id": "c4b5b426-d0b6-4fcf-b950-436546c97b0f",
+      "publish_status": 200,
+      "category": "Seller Guides",
+      "target_keyword": "EPC selling house Northern Ireland",
+      "memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012"
+    },
+    {
+      "title": "Property Chain in Derry Explained: What Buyers and Sellers Can Do to Keep Moving",
+      "slug": "property-chain-derry-explained",
+      "url": "https://www.jamesgormanproperty.com/post/property-chain-derry-explained",
+      "post_id": "616e387b-ffc3-4aaf-a31d-3f26767141d8",
+      "publish_status": 200,
+      "category": "Seller Guides",
+      "target_keyword": "property chain Derry explained",
+      "memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012"
+    },
+    {
+      "title": "First Viewing Questions in Derry: What to Ask Before You Book a Second Look",
+      "slug": "first-viewing-questions-house-derry",
+      "url": "https://www.jamesgormanproperty.com/post/first-viewing-questions-house-derry",
+      "post_id": "6de78bce-e896-47e9-bd47-428ccdb3c203",
+      "publish_status": 200,
+      "category": "Buyer Guides",
+      "target_keyword": "first viewing questions house Derry",
+      "memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012"
+    },
+    {
+      "title": "Conveyancing in Northern Ireland: A Plain-English Guide for Derry Buyers",
+      "slug": "conveyancing-process-northern-ireland-buyers",
+      "url": "https://www.jamesgormanproperty.com/post/conveyancing-process-northern-ireland-buyers",
+      "post_id": "cd06d182-bb30-4335-8d2f-ce8276496b80",
+      "publish_status": 200,
+      "category": "Buyer Guides",
+      "target_keyword": "conveyancing process Northern Ireland buyers",
+      "memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012"
+    },
+    {
+      "title": "Rates When Buying a House in Northern Ireland: What Derry Buyers Should Remember",
+      "slug": "rates-buying-house-northern-ireland",
+      "url": "https://www.jamesgormanproperty.com/post/rates-buying-house-northern-ireland",
+      "post_id": "55814dd5-56dc-4833-afab-84aadedefb75",
+      "publish_status": 200,
+      "category": "Buyer Guides",
+      "target_keyword": "rates buying house Northern Ireland",
+      "memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012"
+    },
+    {
+      "title": "Property Photography in Derry: How Better Photos Help Sellers Win More Viewings",
+      "slug": "property-photography-selling-house-derry",
+      "url": "https://www.jamesgormanproperty.com/post/property-photography-selling-house-derry",
+      "post_id": "d9d1d4bf-c1bf-45cf-a97c-aca8514ab7f4",
+      "publish_status": 200,
+      "category": "Seller Guides",
+      "target_keyword": "property photography Derry selling house",
+      "memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012"
+    }
+  ]
+}

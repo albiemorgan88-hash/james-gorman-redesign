@@ -1,0 +1,379 @@
+{
+  "keywords": [
+    {
+      "keyword": "houses for sale bt47",
+      "volume": 100,
+      "difficulty": 0,
+      "cpc": null,
+      "traffic_potential": 100,
+      "parent_topic": "houses for sale bt47",
+      "parent_volume": 100,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 150,
+      "serp_features": []
+    },
+    {
+      "keyword": "houses for sale bt48",
+      "volume": 90,
+      "difficulty": 1,
+      "cpc": 110,
+      "traffic_potential": 100,
+      "parent_topic": "property for sale derry bt48",
+      "parent_volume": 100,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 100,
+      "serp_features": [
+        "question"
+      ]
+    },
+    {
+      "keyword": "property for sale bt47",
+      "volume": 90,
+      "difficulty": 0,
+      "cpc": null,
+      "traffic_potential": 100,
+      "parent_topic": "houses for sale bt47",
+      "parent_volume": 100,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 100,
+      "serp_features": []
+    },
+    {
+      "keyword": "property for sale bt48",
+      "volume": 30,
+      "difficulty": 1,
+      "cpc": null,
+      "traffic_potential": 100,
+      "parent_topic": "property for sale derry bt48",
+      "parent_volume": 100,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 40,
+      "serp_features": []
+    },
+    {
+      "keyword": "estate agent bt47"
+    },
+    {
+      "keyword": "estate agent bt48"
+    },
+    {
+      "keyword": "property valuation bt47"
+    },
+    {
+      "keyword": "property valuation bt48"
+    },
+    {
+      "keyword": "houses for sale prehen",
+      "volume": 0,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 0,
+      "serp_features": []
+    },
+    {
+      "keyword": "property for sale prehen"
+    },
+    {
+      "keyword": "estate agent prehen"
+    },
+    {
+      "keyword": "property valuation prehen"
+    },
+    {
+      "keyword": "houses for sale rosemount derry",
+      "volume": 0,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 0,
+      "serp_features": []
+    },
+    {
+      "keyword": "property for sale rosemount derry"
+    },
+    {
+      "keyword": "estate agent rosemount derry"
+    },
+    {
+      "keyword": "houses for sale pennyburn derry",
+      "volume": 0,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 0,
+      "serp_features": []
+    },
+    {
+      "keyword": "property for sale pennyburn derry"
+    },
+    {
+      "keyword": "estate agent pennyburn derry"
+    },
+    {
+      "keyword": "houses for sale foyle springs",
+      "volume": 0,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 0,
+      "serp_features": []
+    },
+    {
+      "keyword": "property for sale foyle springs"
+    },
+    {
+      "keyword": "estate agent foyle springs"
+    },
+    {
+      "keyword": "houses for sale shantallow"
+    },
+    {
+      "keyword": "property for sale shantallow"
+    },
+    {
+      "keyword": "estate agent shantallow"
+    },
+    {
+      "keyword": "houses for sale creggan derry",
+      "volume": 20,
+      "difficulty": 0,
+      "cpc": null,
+      "traffic_potential": 10,
+      "parent_topic": "houses for sale creggan derry",
+      "parent_volume": 10,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 20,
+      "serp_features": []
+    },
+    {
+      "keyword": "property for sale creggan derry"
+    },
+    {
+      "keyword": "estate agent creggan derry"
+    },
+    {
+      "keyword": "houses for sale gobnascale"
+    },
+    {
+      "keyword": "property for sale gobnascale"
+    },
+    {
+      "keyword": "estate agent gobnascale"
+    },
+    {
+      "keyword": "houses for sale maydown",
+      "volume": 0,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 0,
+      "serp_features": []
+    },
+    {
+      "keyword": "property for sale maydown"
+    },
+    {
+      "keyword": "property valuation maydown"
+    },
+    {
+      "keyword": "houses for sale ballyarnett"
+    },
+    {
+      "keyword": "property for sale ballyarnett"
+    },
+    {
+      "keyword": "property valuation ballyarnett"
+    },
+    {
+      "keyword": "property valuation newbuildings"
+    },
+    {
+      "keyword": "sell my house newbuildings"
+    },
+    {
+      "keyword": "property marketing newbuildings"
+    },
+    {
+      "keyword": "houses for sale magheramason",
+      "volume": 30,
+      "difficulty": 0,
+      "cpc": null,
+      "traffic_potential": 10,
+      "parent_topic": "houses for sale magheramason",
+      "parent_volume": 30,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 30,
+      "serp_features": [
+        "video_th"
+      ]
+    },
+    {
+      "keyword": "property valuation magheramason"
+    },
+    {
+      "keyword": "estate agent magheramason"
+    },
+    {
+      "keyword": "houses for sale park derry"
+    },
+    {
+      "keyword": "property for sale park derry"
+    },
+    {
+      "keyword": "estate agent park derry"
+    },
+    {
+      "keyword": "houses for sale greysteel",
+      "volume": 100,
+      "difficulty": 0,
+      "cpc": null,
+      "traffic_potential": 70,
+      "parent_topic": "houses for sale greysteel",
+      "parent_volume": 100,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 150,
+      "serp_features": [
+        "video_th"
+      ]
+    },
+    {
+      "keyword": "property for sale greysteel",
+      "volume": 10,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 10,
+      "serp_features": []
+    },
+    {
+      "keyword": "estate agent greysteel"
+    },
+    {
+      "keyword": "estate agent londonderry"
+    },
+    {
+      "keyword": "houses for sale londonderry",
+      "volume": 150,
+      "difficulty": 1,
+      "cpc": 40,
+      "traffic_potential": 7000,
+      "parent_topic": "houses for sale derry",
+      "parent_volume": 2300,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 250,
+      "serp_features": []
+    },
+    {
+      "keyword": "property for sale londonderry",
+      "volume": 20,
+      "difficulty": 1,
+      "cpc": null,
+      "traffic_potential": 6400,
+      "parent_topic": "houses for sale derry",
+      "parent_volume": 2300,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 40,
+      "serp_features": []
+    },
+    {
+      "keyword": "free house valuation derry"
+    },
+    {
+      "keyword": "online house valuation derry"
+    },
+    {
+      "keyword": "property appraisal derry"
+    },
+    {
+      "keyword": "switch estate agents derry"
+    },
+    {
+      "keyword": "change estate agent derry"
+    },
+    {
+      "keyword": "house on market too long derry"
+    }
+  ]
+}

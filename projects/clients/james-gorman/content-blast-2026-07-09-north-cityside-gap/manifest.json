@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-09",
+  "site": "jamesgormanproperty.com",
+  "status": "draft-only-local-pack",
+  "source_context": [
+    "Reviewed James Gorman Property SEO README, backlog and latest changelog.",
+    "Checked live blog sitemap on 2026-07-09; 178 blog URLs found.",
+    "Avoided direct overlap with the 2026-06-23 BT47/BT48/Londonderry batch, 2026-06-30 Rosemount/Shantallow/Pennyburn/Bogside/Woodbrook/Ardmore batch, and 2026-07-05 Altnagelvin/Gobnascale/Kilfennan/Carnhill/Skeoge valuation batch.",
+    "Ballymagroarty and Galliagh were noted in 2026-07-05 source context but were not included in the final published URLs."
+  ],
+  "posts": [
+    {
+      "title": "Houses for Sale Ballymagroarty Derry: Buyer Checks Before You View",
+      "slug": "houses-for-sale-ballymagroarty-derry-buyer-guide-2026",
+      "primary_keyword": "houses for sale Ballymagroarty Derry",
+      "category": "Buyer Guides"
+    },
+    {
+      "title": "Property Valuation Ballymagroarty Derry: Seller Guide Before Listing",
+      "slug": "property-valuation-ballymagroarty-derry-seller-guide-2026",
+      "primary_keyword": "property valuation Ballymagroarty Derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Houses for Sale Galliagh Derry: A Practical Buyer Guide",
+      "slug": "houses-for-sale-galliagh-derry-buyer-guide-2026",
+      "primary_keyword": "houses for sale Galliagh Derry",
+      "category": "Buyer Guides"
+    },
+    {
+      "title": "Estate Agent Galliagh Derry: Seller Advice for Local Homes",
+      "slug": "estate-agent-galliagh-derry-seller-guide-2026",
+      "primary_keyword": "estate agent Galliagh Derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Houses for Sale Foyle Springs Derry: Buyer Checks and Local Notes",
+      "slug": "houses-for-sale-foyle-springs-derry-buyer-guide-2026",
+      "primary_keyword": "houses for sale Foyle Springs Derry",
+      "category": "Buyer Guides"
+    },
+    {
+      "title": "Property Valuation Foyle Springs Derry: Seller Guide Before You List",
+      "slug": "property-valuation-foyle-springs-derry-seller-guide-2026",
+      "primary_keyword": "property valuation Foyle Springs Derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Property Valuation Ballyarnett Derry: How Sellers Should Price",
+      "slug": "property-valuation-ballyarnett-derry-seller-guide-2026",
+      "primary_keyword": "property valuation Ballyarnett Derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Houses for Sale Skeoge Derry: Buyer Guide for Newer Homes and Family Moves",
+      "slug": "houses-for-sale-skeoge-derry-buyer-guide-2026",
+      "primary_keyword": "houses for sale Skeoge Derry",
+      "category": "Buyer Guides"
+    }
+  ],
+  "publish_notes": [
+    "Draft only. No Wix, Google Business Profile, GSC, email, social, directory or public site changes were made.",
+    "Before live publish, run duplicate-title/slug checks, visible-text leak scan, Wix API publish QA, live HTTP checks, sitemap inclusion checks and GSC submission.",
+    "After publish, add internal links from relevant Derry, Northside, buyer, seller and valuation posts."
+  ]
+}

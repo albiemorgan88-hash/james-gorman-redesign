@@ -1,0 +1,37 @@
+{
+  "galleryId": "0880c93f-89ac-435c-af7b-5948fceef70e",
+  "beforeTotal": 13,
+  "afterTotal": 16,
+  "results": [
+    {
+      "propertyId": "1064767",
+      "title": "5 Keery Park, Magheramason, Derry",
+      "status": "added",
+      "itemId": "ce2947af-d68b-459e-add9-c5dc8834f43b",
+      "imageId": "8a0a22_7c55d2a6e72a4952800dabf80a76397f~mv2.jpg",
+      "url": "https://www.propertypal.com/5-keery-park-magheramason-derrylondonderry/1064767"
+    },
+    {
+      "propertyId": "1062990",
+      "title": "109 Victoria Gate, Derry",
+      "status": "added",
+      "itemId": "7a8e0d12-e7ac-4fb3-8367-47273b665811",
+      "imageId": "8a0a22_14d818ca2b804c48a957f79563a1b26f~mv2.jpg",
+      "url": "https://www.propertypal.com/109-victoria-gate-derrylondonderry/1062990"
+    },
+    {
+      "propertyId": "1070650",
+      "title": "5 Coralmount, Limavady Road, Derry",
+      "status": "added",
+      "itemId": "953c840f-a48a-4387-b362-3e1a9583b7c6",
+      "imageId": "8a0a22_272d2b9094ee4c86a47c6cab9cc10108~mv2.jpg",
+      "url": "https://www.propertypal.com/5-coralmount-limavady-road-derrylondonderry/1070650"
+    },
+    {
+      "propertyId": "1078357",
+      "title": "194 Barleyfields, Culmore Road, Derry",
+      "status": "skipped-existing",
+      "url": "https://www.propertypal.com/194-barleyfields-culmore-road-derrylondonderry/1078357"
+    }
+  ]
+}

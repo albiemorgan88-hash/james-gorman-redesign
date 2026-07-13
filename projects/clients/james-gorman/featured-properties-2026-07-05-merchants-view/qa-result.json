@@ -1,0 +1,29 @@
+{
+  "galleryId": "0880c93f-89ac-435c-af7b-5948fceef70e",
+  "beforeTotal": 25,
+  "afterTotal": 25,
+  "result": {
+    "propertyId": "1087736",
+    "title": "20 Merchant's View",
+    "status": "updated-existing",
+    "itemId": "af235242-a336-48df-a904-18fed446400c",
+    "url": "https://www.propertypal.com/20-merchants-view-derrylondonderry/1087736"
+  },
+  "verification": {
+    "propertyId": "1087736",
+    "title": "20 Merchant's View",
+    "url": "https://www.propertypal.com/20-merchants-view-derrylondonderry/1087736",
+    "found": true,
+    "itemId": "af235242-a336-48df-a904-18fed446400c",
+    "sortOrder": -2103000000000.0,
+    "imageWidth": 958,
+    "imageHeight": 1080
+  },
+  "homepage": {
+    "status": 200,
+    "title_in_html": true,
+    "price_in_html": true,
+    "property_id_in_html": true
+  },
+  "passed": true
+}

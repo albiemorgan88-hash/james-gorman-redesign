@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-05-28T16:52:00Z",
+  "url": "https://www.jamesgormanproperty.com/?cachecheck=featured-properties-20260528-1652",
+  "status": 200,
+  "finalUrl": "https://www.jamesgormanproperty.com/?cachecheck=featured-properties-20260528-1652",
+  "htmlBytes": 1384102,
+  "titlePresence": {
+    "194 Barleyfields": true,
+    "5 Keery Park": true,
+    "109 Victoria Gate": true,
+    "5 Coralmount": true
+  },
+  "snippets": {
+    "194 Barleyfields": "d0cb97213\" class=\"item-action\" tabindex=\"0\" data-hook=\"item-action\" aria-label=\"194 Barleyfields, Culmore Road, Derry/Londonderry, BT48 8TQ\" role=\"button\" aria-haspopup=\"dialog\"></div><div><div data-hook=\"item-wrappe",
+    "5 Keery Park": "8834f43b\" class=\"item-action\" tabindex=\"-1\" data-hook=\"item-action\" aria-label=\"5 Keery Park, Magheramason, Derry, BT47 2TD\" role=\"button\" aria-haspopup=\"dialog\"></div><div><div data-hook=\"item-wrapper\" class=\"ga",
+    "109 Victoria Gate": "3b665811\" class=\"item-action\" tabindex=\"-1\" data-hook=\"item-action\" aria-label=\"109 Victoria Gate, Derry, BT47 2TQ\" role=\"button\" aria-haspopup=\"dialog\"></div><div><div data-hook=\"item-wrapper\" class=\"gallery-item-wra",
+    "5 Coralmount": "9583b7c6\" class=\"item-action\" tabindex=\"-1\" data-hook=\"item-action\" aria-label=\"5 Coralmount, Limavady Road, Derry, BT47 6ZQ\" role=\"button\" aria-haspopup=\"dialog\"></div><div><div data-hook=\"item-wrapper\" class=\"g"
+  }
+}

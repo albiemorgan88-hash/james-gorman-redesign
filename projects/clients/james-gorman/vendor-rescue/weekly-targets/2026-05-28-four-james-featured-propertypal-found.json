@@ -1,0 +1,1686 @@
+[
+  {
+    "__area": "bt47",
+    "__page": 1,
+    "__startUrl": "https://www.propertypal.com/property-for-sale/bt47",
+    "imageUrl": "https://media.propertypal.com/large/p/1063567/41008224.jpg",
+    "images": [
+      "https://media.propertypal.com/large/p/1063567/41008224.jpg",
+      "https://media.propertypal.com/large/p/1063567/40878315.jpg",
+      "https://media.propertypal.com/large/p/1063567/40878316.jpg",
+      "https://media.propertypal.com/large/p/1063567/40878317.jpg",
+      "https://media.propertypal.com/large/p/1063567/40878318.jpg",
+      "https://media.propertypal.com/large/p/1063567/40895731.jpg",
+      "https://media.propertypal.com/large/p/1063567/40878320.jpg",
+      "https://media.propertypal.com/large/p/1063567/40878321.jpg",
+      "https://media.propertypal.com/large/p/1063567/40878322.jpg",
+      "https://media.propertypal.com/large/p/1063567/40878323.jpg",
+      "https://media.propertypal.com/large/p/1063567/40878324.jpg",
+      "https://media.propertypal.com/large/p/1063567/40878325.jpg",
+      "https://media.propertypal.com/large/p/1063567/40878327.jpg",
+      "https://media.propertypal.com/large/p/1063567/40878328.jpg",
+      "https://media.propertypal.com/large/p/1063567/40895732.jpg"
+    ],
+    "imageCount": 15,
+    "url": "https://www.propertypal.com/5-keery-park-magheramason-derrylondonderry/1064767",
+    "propertyId": "1064767",
+    "title": "5 Keery Park, Magheramason, Derry/Londonderry, BT47 2TD",
+    "address": "5 Keery Park, Magheramason, Derry/Londonderry, BT47 2TD",
+    "addressLine1": "5 Keery Park",
+    "addressLine2": "Magheramason, Derry/Londonderry, BT47 2TD",
+    "street": "Keery Park",
+    "town": "Derry/Londonderry",
+    "region": "Londonderry",
+    "postcode": "BT47 2TD",
+    "incode": "2TD",
+    "outcode": "BT47",
+    "country": "Northern Ireland",
+    "price": "£315,000",
+    "pricePrefix": "Offers Around",
+    "priceNumeric": 315000,
+    "currencyCode": "GBP",
+    "priceType": "OFFERS_AROUND",
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "receptions": 3,
+    "propertyType": "4 Bed Detached House with garage",
+    "listingType": "property",
+    "listingsCategory": "Residential",
+    "style": "Detached House with garages",
+    "saleType": "Sale",
+    "status": "For sale",
+    "category": "Added",
+    "epcRating": "E42/D63",
+    "tenure": "Freehold",
+    "heatingType": "Oil",
+    "rates": "£1,893.17 pa",
+    "coordinates": {
+      "latitude": 54.9368020741441,
+      "longitude": -7.3856772209992,
+      "accuracy": "exactlyRight",
+      "mapZoomLevel": 15,
+      "showStreetView": true
+    },
+    "latitude": 54.9368020741441,
+    "longitude": -7.3856772209992,
+    "broadbandSpeed": {
+      "estimated": false,
+      "timeLastCached": "2026-05-26T16:35:04+0100",
+      "maxPredictedDown": "900",
+      "maxPredictedUp": "110",
+      "maxBbPredictedDown": "7",
+      "maxBbPredictedUp": "0.8",
+      "maxSfbbPredictedDown": "64",
+      "maxSfbbPredictedUp": "15",
+      "maxUfbbPredictedDown": "900",
+      "maxUfbbPredictedUp": "110",
+      "maxFibrusDown": null,
+      "maxFibrusUp": null,
+      "fibrusAvailable": false
+    },
+    "broadbandMaxDownload": 900,
+    "broadbandMaxUpload": 110,
+    "agentName": "James Gorman Property",
+    "agentPhone": "028 7161 0402",
+    "agentUrl": "https://www.propertypal.com/estate-agents/james-gorman-property",
+    "agentRef": "ST0524205",
+    "account": {
+      "accountNumber": "ST0524205",
+      "organisation": "James Gorman Property",
+      "organisationBranch": "",
+      "displayAddress": "12 Clearwater, Derry/Londonderry, BT47 6BE",
+      "officePhone": {
+        "countryCode": 44,
+        "displayNumber": "028 7161 0402",
+        "international": "+44 28 7161 0402",
+        "national": "028 7161 0402",
+        "uk": "028 7161 0402"
+      },
+      "psrLicenceNumber": null,
+      "websiteUrl": "https://www.jamesgormanproperty.com",
+      "landingPageUrl": "/estate-agents/james-gorman-property",
+      "groupLandingPageUrl": null,
+      "privateDeveloper": false,
+      "developerPrimaryContact": false,
+      "developer": false,
+      "agent": true,
+      "featuredAgent": false,
+      "detailsEnabled": true,
+      "emailEnabled": true,
+      "showAddress": true,
+      "hasMicrosite": false,
+      "includeFeeCharges": true,
+      "logo": {
+        "standard": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+        "standardBackgroundColour": "#302939",
+        "alternative": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+        "alternativeBackgroundColour": "#302939",
+        "premier": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+        "premierBackgroundColour": "#302939"
+      },
+      "agentLogos": [
+        {
+          "logoType": "STANDARD",
+          "url": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+          "width": 600,
+          "height": 387,
+          "backgroundColour": "#302939",
+          "accountNumber": "ST0524205",
+          "developer": false,
+          "agent": true
+        },
+        {
+          "logoType": "ALTERNATIVE",
+          "url": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+          "width": 600,
+          "height": 387,
+          "backgroundColour": "#302939",
+          "accountNumber": "ST0524205",
+          "developer": false,
+          "agent": true
+        },
+        {
+          "logoType": "PREMIER",
+          "url": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+          "width": 600,
+          "height": 387,
+          "backgroundColour": "#302939",
+          "accountNumber": "ST0524205",
+          "developer": false,
+          "agent": true
+        }
+      ],
+      "colours": {
+        "secondary": "#353535",
+        "srpBrandingTextColour": "#FFFFFF",
+        "pdpBrandingBgColour": "#353535",
+        "pdpBrandingBorderColour": "#353535",
+        "pdpBrandingButtonTextColour": "#FFFFFF",
+        "srpBrandingBgColour": "#353535",
+        "pdpBrandingLinkColour": "#353535",
+        "pdpBrandingButtonBgColour": "#353535",
+        "foreground": "#353535",
+        "primary": "#FFFFFF"
+      },
+      "accreditations": [
+        {
+          "id": 1,
+          "label": "PRS",
+          "textKey": "propertyRedressScheme",
+          "url": "https://www.theprs.co.uk/",
+          "imageUrl": "https://www.propertypal.com/accreditations/propertyRedressScheme2025.png",
+          "type": "ESSENTIAL",
+          "tooltip": "The Property Redress Scheme is open for all Property Professionals who wish to provide added peace of mind to their customers."
+        },
+        {
+          "id": 25,
+          "label": "Information Commissioner's Office",
+          "textKey": "ico",
+          "url": "https://ico.org.uk/",
+          "imageUrl": "https://www.propertypal.com/accreditations/ico.png",
+          "type": "ESSENTIAL",
+          "tooltip": "The ICO regulates data protection in the UK. They offer advice and guidance, promote good practice, monitor breach reports, conduct audits and advisory visits, consider complaints, monitor compliance and take enforcement action where appropriate."
+        }
+      ],
+      "missingAccreditations": null,
+      "propertypalAwards": [],
+      "openingTimes": null,
+      "tier": "CUSTOM",
+      "enhancedBranding": false,
+      "searchUrl": "/search?radius=5.0&runit=m&rlat=54.9368020741441&rlng=-7.3856772209992&sta=forSale&st=sale&term=3829495&pt=residential&min=250000&max=375000&currency=GBP",
+      "searchParams": {
+        "radius": 5,
+        "runit": "m",
+        "rlat": 54.9368020741441,
+        "rlng": -7.3856772209992,
+        "status": [
+          "forSale"
+        ],
+        "saleType": [
+          "sale"
+        ],
+        "term": [
+          "3829495"
+        ],
+        "category": [
+          "residential"
+        ],
+        "minPrice": 250000,
+        "maxPrice": 375000,
+        "currency": "GBP"
+      },
+      "membershipAccount": false
+    },
+    "agents": [
+      {
+        "accountNumber": "ST0524205",
+        "organisation": "James Gorman Property",
+        "organisationBranch": "",
+        "displayAddress": "12 Clearwater, Derry/Londonderry, BT47 6BE",
+        "officePhone": {
+          "countryCode": 44,
+          "displayNumber": "028 7161 0402",
+          "international": "+44 28 7161 0402",
+          "national": "028 7161 0402",
+          "uk": "028 7161 0402"
+        },
+        "psrLicenceNumber": null,
+        "websiteUrl": "https://www.jamesgormanproperty.com",
+        "landingPageUrl": "/estate-agents/james-gorman-property",
+        "groupLandingPageUrl": null,
+        "privateDeveloper": false,
+        "developerPrimaryContact": false,
+        "developer": false,
+        "agent": true,
+        "featuredAgent": false,
+        "detailsEnabled": true,
+        "emailEnabled": true,
+        "showAddress": true,
+        "hasMicrosite": false,
+        "includeFeeCharges": true,
+        "logo": {
+          "standard": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+          "standardBackgroundColour": "#302939",
+          "alternative": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+          "alternativeBackgroundColour": "#302939",
+          "premier": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+          "premierBackgroundColour": "#302939"
+        },
+        "agentLogos": [
+          {
+            "logoType": "STANDARD",
+            "url": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+            "width": 600,
+            "height": 387,
+            "backgroundColour": "#302939",
+            "accountNumber": "ST0524205",
+            "developer": false,
+            "agent": true
+          },
+          {
+            "logoType": "ALTERNATIVE",
+            "url": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+            "width": 600,
+            "height": 387,
+            "backgroundColour": "#302939",
+            "accountNumber": "ST0524205",
+            "developer": false,
+            "agent": true
+          },
+          {
+            "logoType": "PREMIER",
+            "url": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+            "width": 600,
+            "height": 387,
+            "backgroundColour": "#302939",
+            "accountNumber": "ST0524205",
+            "developer": false,
+            "agent": true
+          }
+        ],
+        "colours": {
+          "secondary": "#353535",
+          "srpBrandingTextColour": "#FFFFFF",
+          "pdpBrandingBgColour": "#353535",
+          "pdpBrandingBorderColour": "#353535",
+          "pdpBrandingButtonTextColour": "#FFFFFF",
+          "srpBrandingBgColour": "#353535",
+          "pdpBrandingLinkColour": "#353535",
+          "pdpBrandingButtonBgColour": "#353535",
+          "foreground": "#353535",
+          "primary": "#FFFFFF"
+        },
+        "accreditations": [
+          {
+            "id": 1,
+            "label": "PRS",
+            "textKey": "propertyRedressScheme",
+            "url": "https://www.theprs.co.uk/",
+            "imageUrl": "https://www.propertypal.com/accreditations/propertyRedressScheme2025.png",
+            "type": "ESSENTIAL",
+            "tooltip": "The Property Redress Scheme is open for all Property Professionals who wish to provide added peace of mind to their customers."
+          },
+          {
+            "id": 25,
+            "label": "Information Commissioner's Office",
+            "textKey": "ico",
+            "url": "https://ico.org.uk/",
+            "imageUrl": "https://www.propertypal.com/accreditations/ico.png",
+            "type": "ESSENTIAL",
+            "tooltip": "The ICO regulates data protection in the UK. They offer advice and guidance, promote good practice, monitor breach reports, conduct audits and advisory visits, consider complaints, monitor compliance and take enforcement action where appropriate."
+          }
+        ],
+        "missingAccreditations": null,
+        "propertypalAwards": [],
+        "openingTimes": null,
+        "tier": "CUSTOM",
+        "enhancedBranding": false,
+        "searchUrl": "/search?radius=5.0&runit=m&rlat=54.9368020741441&rlng=-7.3856772209992&sta=forSale&st=sale&term=3829495&pt=residential&min=250000&max=375000&currency=GBP",
+        "searchParams": {
+          "radius": 5,
+          "runit": "m",
+          "rlat": 54.9368020741441,
+          "rlng": -7.3856772209992,
+          "status": [
+            "forSale"
+          ],
+          "saleType": [
+            "sale"
+          ],
+          "term": [
+            "3829495"
+          ],
+          "category": [
+            "residential"
+          ],
+          "minPrice": 250000,
+          "maxPrice": 375000,
+          "currency": "GBP"
+        },
+        "membershipAccount": false
+      }
+    ],
+    "listingTimeType": "Added",
+    "activationTime": "2026-03-20T20:01:43+0000",
+    "publishedOn": "2026-03-20T20:01:43+0000",
+    "updatedAt": "2026-03-30T09:34:01+0100",
+    "description": "<p><strong>Features&nbsp;</strong></p><ul><li>Detached Four-Bedroom Family Home</li><li>Three Reception Rooms</li><li>Two Bathrooms</li><li>Integral Garage</li><li>Large Plot in a Desirable Cul-de-Sac</li><li>Chain Free</li><li>Vacant Possession</li><li>Off-Street Parking for Three to Four Vehicles</li><li>Early Viewing Strongly Recommended</li></ul><p>Looking for more space? A home you can truly make your own? Your forever home?<br/>If so, 5 Keery Park could be exactly what you have been waiting for.</p><p>James Gorman Property is delighted to bring to the sales market this well-maintained four-bedroom detached family home. Occupied and lovingly cared for by the same family for the past 31 years, the property sits on a generous plot with front, side, and rear gardens, along with ample off-street parking.</p><p>Offering excellent accommodation throughout, the home includes three reception rooms, a kitchen-diner, and a separate utility room. While some modernisation would be beneficial, this gives the new owners a great opportunity to put their own stamp on the property and create a superb long-term family home. Early internal inspection is highly recommended.</p><p>On entering the property, you are welcomed by a bright and spacious hallway with rooms to both the left and right. To the right is a generous front reception room featuring a central fireplace (gas). Across the hall, through double doors, is the dining room, an equally spacious room that could also serve as an ideal playroom or second family room.</p><p>At the end of the hallway is the kitchen-diner, the heart of the home, with comfortable dining space for four. Adjacent to the kitchen is the third reception room, offering excellent potential to create an open-plan kitchen, dining, and living area, subject to any necessary approvals. Off the kitchen, via a compact hallway, is the utility room, which provides direct access to the integral garage as well as the rear garden. A convenient ground floor WC is also accessed from the main hallway.</p><p>The first floor comprises four well-proportioned bedrooms and the family bathroom, which includes a separate shower cubicle. The master bedroom benefits from its own en-suite and a separate walk-in wardrobe room. Bedrooms two and three are both comfortable doubles and include built-in wardrobes. Bedroom four overlooks the front of the property and is also a well-proportioned double room.</p><p>The current owners have created a useful home office area on the landing, complete with a large built-in desk. There is also excellent storage on this floor, including a substantial hot press and an additional storage cupboard. Loft access is available from the landing.</p><p>Externally, the mature gardens are a real feature of the home. With lawns to the front, side, and rear, along with a decking area accessed via double doors from the third reception room, the outside space is ideal for family living and entertaining. There is ample parking to the front and side of the property.</p><p>This property is offered for sale chain free and with vacant possession.</p><p>For further information or to arrange a viewing, please contact <strong>James on 028 7161 0402.</strong><br/>Be sure to follow our social media channels for the latest property updates.</p><p>&nbsp;</p><p>Reception One 16&rsquo;10 x 11&rsquo;08 (Front)</p><p>Reception Two 14&rsquo;06 x 11&rsquo;08 (Back)</p><p>Reception Three 11&rsquo;08 x 9&rsquo;08 (Dining)</p><p>Kitchen-Diner 16&rsquo;09 x 9&rsquo;09</p><p>Utility 9&rsquo;04 x 8&rsquo;09</p><p>Bedroom One 13&rsquo; x 12&rsquo; (En-Suite)&nbsp;</p><p>Bedroom Two 11&rsquo;10 x 11&rsquo;10</p><p>Bedroom Three 11&rsquo;08 x 9&rsquo;10</p><p>Bedroom Four 12&rsquo;05 x 11&rsquo;08</p><p>Garage 17&rsquo;10 x 13&rsquo;02&nbsp;</p><p><strong>NB: All measurements taken to widest points</strong></p>",
+    "hasBrochure": false,
+    "hasFloorPlans": false,
+    "videoUrls": [
+      "https://video.propertypal.com/p/1063567/21503/1024x768.mp4"
+    ],
+    "hasVideos": true,
+    "hasVirtualTours": true,
+    "features": [
+      "STATUS: For sale",
+      "STYLE: Detached House with garage",
+      "BEDROOMS: 4",
+      "BATHROOMS: 2",
+      "RECEPTIONROOMS: 3",
+      "TENURE: Freehold",
+      "EPC RATING: E42/D63",
+      "HEATING TYPE: Oil",
+      "BROADBAND: Highest download speed: 900 Mbps Highest upload speed: 110 Mbps",
+      "STAMP DUTY COMPLEX",
+      "RATES: £1,893.17 pa",
+      "VIEWS LAST 7 DAYS: 746",
+      "VIEWS LAST 30 DAYS: 3552",
+      "VIEWS ALL TIME: 12135"
+    ],
+    "history": [
+      {
+        "difference": 0,
+        "priceOnApplication": false,
+        "publishedOnAwp": true,
+        "published": true,
+        "timeModified": "2026-03-23T21:58:47+0000",
+        "price": 315000,
+        "status": {
+          "key": "forSale",
+          "text": "For sale"
+        },
+        "previousStatus": {
+          "key": "forSale",
+          "text": "For sale"
+        },
+        "previousPrice": 315000,
+        "previousPublished": true,
+        "statusChange": false,
+        "priceChange": false,
+        "publishedChange": false,
+        "publishedOnAwpChange": false,
+        "differencePercentage": 0,
+        "pricePrefix": "Offers Around",
+        "priceSuffix": null
+      },
+      {
+        "difference": null,
+        "priceOnApplication": false,
+        "publishedOnAwp": true,
+        "published": true,
+        "timeModified": "2026-03-20T20:01:43+0000",
+        "price": 315000,
+        "status": {
+          "key": "forSale",
+          "text": "For sale"
+        },
+        "previousStatus": null,
+        "previousPrice": null,
+        "previousPublished": false,
+        "statusChange": true,
+        "priceChange": false,
+        "publishedChange": true,
+        "publishedOnAwpChange": true,
+        "differencePercentage": null,
+        "pricePrefix": "Offers Over",
+        "priceSuffix": null
+      }
+    ],
+    "historyCount": 2,
+    "berExempt": false,
+    "coOwnershipEligible": false,
+    "coOwnershipOnly": false,
+    "premiumListing": true,
+    "priceTrackerAvailable": true,
+    "scrapedAt": "2026-05-28T16:31:20.216Z"
+  },
+  {
+    "__area": "bt47",
+    "__page": 3,
+    "__startUrl": "https://www.propertypal.com/property-for-sale/bt47/page-3",
+    "imageUrl": "https://media.propertypal.com/large/p/1061790/40895727.jpg",
+    "images": [
+      "https://media.propertypal.com/large/p/1061790/40895727.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709217.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709218.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709220.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709219.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709221.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709222.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709223.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709224.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709225.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709226.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709227.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709228.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709229.jpg",
+      "https://media.propertypal.com/large/p/1061790/40723860.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709230.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709231.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709232.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709233.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709234.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709235.jpg",
+      "https://media.propertypal.com/large/p/1061790/40895728.jpg",
+      "https://media.propertypal.com/large/p/1061790/40895729.jpg",
+      "https://media.propertypal.com/large/p/1061790/40709236.jpg"
+    ],
+    "imageCount": 24,
+    "url": "https://www.propertypal.com/109-victoria-gate-derrylondonderry/1062990",
+    "propertyId": "1062990",
+    "title": "109 Victoria Gate, Derry/Londonderry, BT47 2TQ",
+    "address": "109 Victoria Gate, Derry/Londonderry, BT47 2TQ",
+    "addressLine1": "109 Victoria Gate",
+    "addressLine2": "Derry/Londonderry, BT47 2TQ",
+    "street": "Victoria Gate",
+    "town": "Derry/Londonderry",
+    "region": "Londonderry",
+    "postcode": "BT47 2TQ",
+    "incode": "2TQ",
+    "outcode": "BT47",
+    "country": "Northern Ireland",
+    "price": "£549,950",
+    "pricePrefix": "Asking Price",
+    "priceNumeric": 549950,
+    "currencyCode": "GBP",
+    "priceType": "ASKING_PRICE",
+    "bedrooms": 5,
+    "bathrooms": 5,
+    "receptions": 2,
+    "propertyType": "5 Bed Detached House",
+    "listingType": "property",
+    "listingsCategory": "Residential",
+    "style": "Detached Houses",
+    "saleType": "Sale",
+    "status": "For sale",
+    "category": "Added",
+    "epcRating": "C71/C75",
+    "tenure": "Freehold",
+    "heatingType": "Oil",
+    "rates": "£2,870.29 pa",
+    "coordinates": {
+      "latitude": 54.9837967930091,
+      "longitude": -7.3248523403161,
+      "accuracy": "exactlyRight",
+      "mapZoomLevel": 15,
+      "showStreetView": true
+    },
+    "latitude": 54.9837967930091,
+    "longitude": -7.3248523403161,
+    "broadbandSpeed": {
+      "estimated": false,
+      "timeLastCached": "2026-05-26T17:12:11+0100",
+      "maxPredictedDown": "900",
+      "maxPredictedUp": "110",
+      "maxBbPredictedDown": "25",
+      "maxBbPredictedUp": "3",
+      "maxSfbbPredictedDown": null,
+      "maxSfbbPredictedUp": null,
+      "maxUfbbPredictedDown": "900",
+      "maxUfbbPredictedUp": "110",
+      "maxFibrusDown": null,
+      "maxFibrusUp": null,
+      "fibrusAvailable": false
+    },
+    "broadbandMaxDownload": 900,
+    "broadbandMaxUpload": 110,
+    "agentName": "James Gorman Property",
+    "agentPhone": "028 7161 0402",
+    "agentUrl": "https://www.propertypal.com/estate-agents/james-gorman-property",
+    "agentRef": "ST0524205",
+    "account": {
+      "accountNumber": "ST0524205",
+      "organisation": "James Gorman Property",
+      "organisationBranch": "",
+      "displayAddress": "12 Clearwater, Derry/Londonderry, BT47 6BE",
+      "officePhone": {
+        "countryCode": 44,
+        "displayNumber": "028 7161 0402",
+        "international": "+44 28 7161 0402",
+        "national": "028 7161 0402",
+        "uk": "028 7161 0402"
+      },
+      "psrLicenceNumber": null,
+      "websiteUrl": "https://www.jamesgormanproperty.com",
+      "landingPageUrl": "/estate-agents/james-gorman-property",
+      "groupLandingPageUrl": null,
+      "privateDeveloper": false,
+      "developerPrimaryContact": false,
+      "developer": false,
+      "agent": true,
+      "featuredAgent": false,
+      "detailsEnabled": true,
+      "emailEnabled": true,
+      "showAddress": true,
+      "hasMicrosite": false,
+      "includeFeeCharges": true,
+      "logo": {
+        "standard": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+        "standardBackgroundColour": "#302939",
+        "alternative": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+        "alternativeBackgroundColour": "#302939",
+        "premier": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+        "premierBackgroundColour": "#302939"
+      },
+      "agentLogos": [
+        {
+          "logoType": "STANDARD",
+          "url": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+          "width": 600,
+          "height": 387,
+          "backgroundColour": "#302939",
+          "accountNumber": "ST0524205",
+          "developer": false,
+          "agent": true
+        },
+        {
+          "logoType": "ALTERNATIVE",
+          "url": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+          "width": 600,
+          "height": 387,
+          "backgroundColour": "#302939",
+          "accountNumber": "ST0524205",
+          "developer": false,
+          "agent": true
+        },
+        {
+          "logoType": "PREMIER",
+          "url": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+          "width": 600,
+          "height": 387,
+          "backgroundColour": "#302939",
+          "accountNumber": "ST0524205",
+          "developer": false,
+          "agent": true
+        }
+      ],
+      "colours": {
+        "secondary": "#353535",
+        "srpBrandingTextColour": "#FFFFFF",
+        "pdpBrandingBgColour": "#353535",
+        "pdpBrandingBorderColour": "#353535",
+        "pdpBrandingButtonTextColour": "#FFFFFF",
+        "srpBrandingBgColour": "#353535",
+        "pdpBrandingLinkColour": "#353535",
+        "pdpBrandingButtonBgColour": "#353535",
+        "foreground": "#353535",
+        "primary": "#FFFFFF"
+      },
+      "accreditations": [
+        {
+          "id": 1,
+          "label": "PRS",
+          "textKey": "propertyRedressScheme",
+          "url": "https://www.theprs.co.uk/",
+          "imageUrl": "https://www.propertypal.com/accreditations/propertyRedressScheme2025.png",
+          "type": "ESSENTIAL",
+          "tooltip": "The Property Redress Scheme is open for all Property Professionals who wish to provide added peace of mind to their customers."
+        },
+        {
+          "id": 25,
+          "label": "Information Commissioner's Office",
+          "textKey": "ico",
+          "url": "https://ico.org.uk/",
+          "imageUrl": "https://www.propertypal.com/accreditations/ico.png",
+          "type": "ESSENTIAL",
+          "tooltip": "The ICO regulates data protection in the UK. They offer advice and guidance, promote good practice, monitor breach reports, conduct audits and advisory visits, consider complaints, monitor compliance and take enforcement action where appropriate."
+        }
+      ],
+      "missingAccreditations": null,
+      "propertypalAwards": [],
+      "openingTimes": null,
+      "tier": "CUSTOM",
+      "enhancedBranding": false,
+      "searchUrl": "/search?radius=5.0&runit=m&rlat=54.9837967930091&rlng=-7.3248523403161&sta=forSale&st=sale&term=3829495&pt=residential&min=425000&max=600000&currency=GBP",
+      "searchParams": {
+        "radius": 5,
+        "runit": "m",
+        "rlat": 54.9837967930091,
+        "rlng": -7.3248523403161,
+        "status": [
+          "forSale"
+        ],
+        "saleType": [
+          "sale"
+        ],
+        "term": [
+          "3829495"
+        ],
+        "category": [
+          "residential"
+        ],
+        "minPrice": 425000,
+        "maxPrice": 600000,
+        "currency": "GBP"
+      },
+      "membershipAccount": false
+    },
+    "agents": [
+      {
+        "accountNumber": "ST0524205",
+        "organisation": "James Gorman Property",
+        "organisationBranch": "",
+        "displayAddress": "12 Clearwater, Derry/Londonderry, BT47 6BE",
+        "officePhone": {
+          "countryCode": 44,
+          "displayNumber": "028 7161 0402",
+          "international": "+44 28 7161 0402",
+          "national": "028 7161 0402",
+          "uk": "028 7161 0402"
+        },
+        "psrLicenceNumber": null,
+        "websiteUrl": "https://www.jamesgormanproperty.com",
+        "landingPageUrl": "/estate-agents/james-gorman-property",
+        "groupLandingPageUrl": null,
+        "privateDeveloper": false,
+        "developerPrimaryContact": false,
+        "developer": false,
+        "agent": true,
+        "featuredAgent": false,
+        "detailsEnabled": true,
+        "emailEnabled": true,
+        "showAddress": true,
+        "hasMicrosite": false,
+        "includeFeeCharges": true,
+        "logo": {
+          "standard": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+          "standardBackgroundColour": "#302939",
+          "alternative": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+          "alternativeBackgroundColour": "#302939",
+          "premier": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+          "premierBackgroundColour": "#302939"
+        },
+        "agentLogos": [
+          {
+            "logoType": "STANDARD",
+            "url": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+            "width": 600,
+            "height": 387,
+            "backgroundColour": "#302939",
+            "accountNumber": "ST0524205",
+            "developer": false,
+            "agent": true
+          },
+          {
+            "logoType": "ALTERNATIVE",
+            "url": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+            "width": 600,
+            "height": 387,
+            "backgroundColour": "#302939",
+            "accountNumber": "ST0524205",
+            "developer": false,
+            "agent": true
+          },
+          {
+            "logoType": "PREMIER",
+            "url": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+            "width": 600,
+            "height": 387,
+            "backgroundColour": "#302939",
+            "accountNumber": "ST0524205",
+            "developer": false,
+            "agent": true
+          }
+        ],
+        "colours": {
+          "secondary": "#353535",
+          "srpBrandingTextColour": "#FFFFFF",
+          "pdpBrandingBgColour": "#353535",
+          "pdpBrandingBorderColour": "#353535",
+          "pdpBrandingButtonTextColour": "#FFFFFF",
+          "srpBrandingBgColour": "#353535",
+          "pdpBrandingLinkColour": "#353535",
+          "pdpBrandingButtonBgColour": "#353535",
+          "foreground": "#353535",
+          "primary": "#FFFFFF"
+        },
+        "accreditations": [
+          {
+            "id": 1,
+            "label": "PRS",
+            "textKey": "propertyRedressScheme",
+            "url": "https://www.theprs.co.uk/",
+            "imageUrl": "https://www.propertypal.com/accreditations/propertyRedressScheme2025.png",
+            "type": "ESSENTIAL",
+            "tooltip": "The Property Redress Scheme is open for all Property Professionals who wish to provide added peace of mind to their customers."
+          },
+          {
+            "id": 25,
+            "label": "Information Commissioner's Office",
+            "textKey": "ico",
+            "url": "https://ico.org.uk/",
+            "imageUrl": "https://www.propertypal.com/accreditations/ico.png",
+            "type": "ESSENTIAL",
+            "tooltip": "The ICO regulates data protection in the UK. They offer advice and guidance, promote good practice, monitor breach reports, conduct audits and advisory visits, consider complaints, monitor compliance and take enforcement action where appropriate."
+          }
+        ],
+        "missingAccreditations": null,
+        "propertypalAwards": [],
+        "openingTimes": null,
+        "tier": "CUSTOM",
+        "enhancedBranding": false,
+        "searchUrl": "/search?radius=5.0&runit=m&rlat=54.9837967930091&rlng=-7.3248523403161&sta=forSale&st=sale&term=3829495&pt=residential&min=425000&max=600000&currency=GBP",
+        "searchParams": {
+          "radius": 5,
+          "runit": "m",
+          "rlat": 54.9837967930091,
+          "rlng": -7.3248523403161,
+          "status": [
+            "forSale"
+          ],
+          "saleType": [
+            "sale"
+          ],
+          "term": [
+            "3829495"
+          ],
+          "category": [
+            "residential"
+          ],
+          "minPrice": 425000,
+          "maxPrice": 600000,
+          "currency": "GBP"
+        },
+        "membershipAccount": false
+      }
+    ],
+    "listingTimeType": "Added",
+    "activationTime": "2026-03-10T16:21:46+0000",
+    "publishedOn": "2026-03-10T16:21:46+0000",
+    "updatedAt": "2026-04-28T10:02:22+0100",
+    "description": "<p><strong>Features</strong></p><ul><li>Four/Five Bedroom Detached Family Home</li><li>Two Spacious Reception Rooms</li><li>Stunning Fitted Kitchen-Diner with Central Island and Quartz Worktops</li><li>Five Bathrooms, Including Three En-Suites</li><li>Integral Garage with Electric Door</li><li>Exquisite Bespoke Home Bar</li><li>Private Home Gym</li><li>Beautifully Landscaped, Low-Maintenance Rear Garden</li><li>Set Across Three Living Levels</li><li>Garden Room &amp; Additional Home Office</li><li>CCTV 360 Security System</li><li>Off-Street Parking for Four Cars</li><li>Early Viewing Highly Advised</li></ul><p>&nbsp;</p><p><strong>Some homes make an impression the moment you see them &mdash; and 109 is certainly one of them. This is a home with wow factor, offering exceptional space, luxury finishes, and a desirable location for family living.</strong></p><p>James Gorman Property are delighted to welcome 109 Victoria Gate to the sales market. This impressive detached four/five-bedroom family home is arranged across three beautifully presented levels and benefits from two spacious reception rooms, an integral garage, and a host of high-end features throughout.</p><p>Substantially refurbished by the current owners in 2020/2021, the property has been thoughtfully upgraded to an exceptional standard. From the stunning modern kitchen-diner and bespoke home bar, to the private gym, garden room, and three en-suite bedrooms, this is a home that offers both style and substance in equal measure. Occupying a prime position within one of the area&rsquo;s most sought-after developments, early viewing is highly advised and is strictly by appointment only.</p><p>On entering the property, you are welcomed into a bright and stylish tiled hallway. To the left is a spacious main lounge featuring a media wall with recessed television and Evonic fire, creating a warm yet contemporary living space. Across the hallway is a home office, ideal for modern working requirements, along with a convenient guest WC. To the rear of the home lies the true heart of the property &mdash; a stunning open-plan kitchen-dining space with central island, flooded with natural light and enjoying superb rear-facing views across the city and River Foyle. The integral garage is accessed directly from the kitchen and benefits from an electric roller door, beam vacuum system, and a recently fitted boiler.</p><p>The first floor offers two exceptionally spacious bedrooms and a truly outstanding family bathroom. Both bedrooms extend to over 20 feet in length and make the most of the beautiful elevated views, each benefitting from charming window seating areas. The master bedroom includes fitted wardrobes, while bedroom two also offers built-in storage and attractive herringbone-style flooring. The landing itself is generously proportioned and could easily serve as an additional home office, reading area, or children&rsquo;s play space. The family bathroom is a standout feature, complete with jacuzzi bath, double vanity unit, bidet, and a striking bespoke shower area cleverly designed within the sloping eaves.</p><p>The lower ground floor continues to impress, offering an abundance of versatile accommodation. Here you will find two further double bedrooms, both with en-suite facilities, along with an exceptional bespoke handcrafted bar &mdash; a real statement room, with double doors opening directly onto the beautifully landscaped rear garden. There is also a fully fitted private gym, an additional guest WC, utility room, and a boot/coats room with direct garden access.</p><p>Externally, the rear garden has been meticulously designed with low maintenance in mind, while still providing an ideal setting for relaxing and entertaining. A raised decking area, accessed by a grand staircase, together with the garden room, creates a superb outdoor space for family enjoyment and social occasions.</p><p>Additional features include double glazed windows and doors throughout, ethernet connectivity throughout the home, EV car charger, bison slab floor to the middle level, seven-camera 360 security system, beam vacuum system, off-street parking for four cars, and the added advantage of being chain free.</p><p>&nbsp;</p><p>For more information or to arrange a private viewing, contact <strong>James on 028 7161 0402</strong> &mdash; and don&rsquo;t forget to follow our social media channels.</p><p>&nbsp;</p><p>Lounge 25&rsquo;06 x 11&rsquo;10 (Middle Floor)</p><p>Kitchen 16&rsquo;08 x 12&rsquo; (Middle Floor)</p><p>Dining Area 11&rsquo;04 x 11&rsquo;04 (Middle Floor)</p><p>Office 9&rsquo;10 X 6&rsquo;08 (Middle Floor)</p><p>Garage 16&rsquo;06 x 11&rsquo;04 (Middle Floor)</p><p>&nbsp;</p><p>Bedroom One 20&rsquo;05 x 12&rsquo; (Top Floor)</p><p>Bedroom Two 20&rsquo;05 x 11&rsquo;10 (Top Floor)</p><p>Bathroom 13&rsquo; x 11&rsquo;10 (Top Floor)</p><p>&nbsp;</p><p>Bedroom Three 11&rsquo;06 x 11&rsquo;06 (Lower Ground Floor)</p><p>En-Suite</p><p>Bedroom Four 23&rsquo;10 x 12&rsquo;02 (Lower Ground Floor)</p><p>En-Suite</p><p>Gym 11&rsquo;08 x 11&rsquo;08 (Lower Ground Floor)</p><p>Bar 13&rsquo;10 x 11&rsquo;04 (Lower Ground Floor)</p><p>Utility 10&rsquo;04 x 7&rsquo;06 (Lower Ground Floor)</p><p><strong>NB: All measurements taken to widest points</strong></p>",
+    "hasBrochure": false,
+    "hasFloorPlans": false,
+    "videoUrls": [
+      "https://video.propertypal.com/p/1061790/21453/1024x768.mp4"
+    ],
+    "hasVideos": true,
+    "hasVirtualTours": true,
+    "features": [
+      "STATUS: For sale",
+      "STYLE: Detached House",
+      "BEDROOMS: 5",
+      "BATHROOMS: 5",
+      "RECEPTIONROOMS: 2",
+      "TENURE: Freehold",
+      "EPC RATING: C71/C75",
+      "HEATING TYPE: Oil",
+      "BROADBAND: Highest download speed: 900 Mbps Highest upload speed: 110 Mbps",
+      "STAMP DUTY COMPLEX",
+      "RATES: £2,870.29 pa",
+      "VIEWS LAST 7 DAYS: 854",
+      "VIEWS LAST 30 DAYS: 5048",
+      "VIEWS ALL TIME: 13828"
+    ],
+    "history": [
+      {
+        "difference": -50000,
+        "priceOnApplication": false,
+        "publishedOnAwp": true,
+        "published": true,
+        "timeModified": "2026-04-28T10:01:38+0100",
+        "price": 549950,
+        "status": {
+          "key": "forSale",
+          "text": "For sale"
+        },
+        "previousStatus": {
+          "key": "forSale",
+          "text": "For sale"
+        },
+        "previousPrice": 599950,
+        "previousPublished": true,
+        "statusChange": false,
+        "priceChange": true,
+        "publishedChange": false,
+        "publishedOnAwpChange": false,
+        "differencePercentage": -0.08334027835652971,
+        "pricePrefix": "Asking Price",
+        "priceSuffix": null
+      },
+      {
+        "difference": -50050,
+        "priceOnApplication": false,
+        "publishedOnAwp": true,
+        "published": true,
+        "timeModified": "2026-03-23T21:58:18+0000",
+        "price": 599950,
+        "status": {
+          "key": "forSale",
+          "text": "For sale"
+        },
+        "previousStatus": {
+          "key": "forSale",
+          "text": "For sale"
+        },
+        "previousPrice": 650000,
+        "previousPublished": true,
+        "statusChange": false,
+        "priceChange": true,
+        "publishedChange": false,
+        "publishedOnAwpChange": false,
+        "differencePercentage": -0.077,
+        "pricePrefix": "Asking Price",
+        "priceSuffix": null
+      },
+      {
+        "difference": null,
+        "priceOnApplication": false,
+        "publishedOnAwp": true,
+        "published": true,
+        "timeModified": "2026-03-10T16:23:37+0000",
+        "price": 650000,
+        "status": {
+          "key": "forSale",
+          "text": "For sale"
+        },
+        "previousStatus": null,
+        "previousPrice": null,
+        "previousPublished": false,
+        "statusChange": true,
+        "priceChange": false,
+        "publishedChange": true,
+        "publishedOnAwpChange": true,
+        "differencePercentage": null,
+        "pricePrefix": "Asking Price",
+        "priceSuffix": null
+      }
+    ],
+    "historyCount": 3,
+    "berExempt": false,
+    "coOwnershipEligible": false,
+    "coOwnershipOnly": false,
+    "premiumListing": true,
+    "priceTrackerAvailable": true,
+    "scrapedAt": "2026-05-28T16:32:08.279Z"
+  },
+  {
+    "__area": "bt47",
+    "__page": 7,
+    "__startUrl": "https://www.propertypal.com/property-for-sale/bt47/page-7",
+    "imageUrl": "https://media.propertypal.com/large/p/1069450/41376872.jpg",
+    "images": [
+      "https://media.propertypal.com/large/p/1069450/41376872.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376871.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376873.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376874.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376875.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376876.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376877.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376878.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376879.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376880.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376881.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376882.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376883.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376884.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376885.jpg",
+      "https://media.propertypal.com/large/p/1069450/41376886.jpg",
+      "https://media.propertypal.com/large/p/1069450/41389682.jpg"
+    ],
+    "imageCount": 17,
+    "url": "https://www.propertypal.com/5-coralmount-limavady-road-derrylondonderry/1070650",
+    "propertyId": "1070650",
+    "title": "5 Coralmount, Limavady Road, Derry/Londonderry, BT47 6ZQ",
+    "address": "5 Coralmount, Limavady Road, Derry/Londonderry, BT47 6ZQ",
+    "addressLine1": "5 Coralmount",
+    "addressLine2": "Limavady Road, Derry/Londonderry, BT47 6ZQ",
+    "street": "Coralmount",
+    "town": "Derry/Londonderry",
+    "region": "Londonderry",
+    "postcode": "BT47 6ZQ",
+    "incode": "6ZQ",
+    "outcode": "BT47",
+    "country": "Northern Ireland",
+    "price": "£699,950",
+    "pricePrefix": "Asking Price",
+    "priceNumeric": 699950,
+    "currencyCode": "GBP",
+    "priceType": "ASKING_PRICE",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "receptions": 2,
+    "propertyType": "5 Bed Detached House with garage",
+    "listingType": "property",
+    "listingsCategory": "Residential",
+    "style": "Detached House with garages",
+    "saleType": "Sale",
+    "status": "For sale",
+    "category": "Added",
+    "epcRating": "B84/B84",
+    "tenure": "Freehold",
+    "heatingType": "Oil",
+    "rates": "£3,053.50 pa",
+    "coordinates": {
+      "latitude": 55.0046634799347,
+      "longitude": -7.286559169683,
+      "accuracy": "exactlyRight",
+      "mapZoomLevel": 15,
+      "showStreetView": true
+    },
+    "latitude": 55.0046634799347,
+    "longitude": -7.286559169683,
+    "broadbandSpeed": {
+      "estimated": false,
+      "timeLastCached": "2026-05-08T14:39:21+0100",
+      "maxPredictedDown": "900",
+      "maxPredictedUp": "110",
+      "maxBbPredictedDown": "6",
+      "maxBbPredictedUp": "0.7",
+      "maxSfbbPredictedDown": "71",
+      "maxSfbbPredictedUp": "18",
+      "maxUfbbPredictedDown": "900",
+      "maxUfbbPredictedUp": "110",
+      "maxFibrusDown": null,
+      "maxFibrusUp": null,
+      "fibrusAvailable": false
+    },
+    "broadbandMaxDownload": 900,
+    "broadbandMaxUpload": 110,
+    "agentName": "James Gorman Property",
+    "agentPhone": "028 7161 0402",
+    "agentUrl": "https://www.propertypal.com/estate-agents/james-gorman-property",
+    "agentRef": "ST0524205",
+    "account": {
+      "accountNumber": "ST0524205",
+      "organisation": "James Gorman Property",
+      "organisationBranch": "",
+      "displayAddress": "12 Clearwater, Derry/Londonderry, BT47 6BE",
+      "officePhone": {
+        "countryCode": 44,
+        "displayNumber": "028 7161 0402",
+        "international": "+44 28 7161 0402",
+        "national": "028 7161 0402",
+        "uk": "028 7161 0402"
+      },
+      "psrLicenceNumber": null,
+      "websiteUrl": "https://www.jamesgormanproperty.com",
+      "landingPageUrl": "/estate-agents/james-gorman-property",
+      "groupLandingPageUrl": null,
+      "privateDeveloper": false,
+      "developerPrimaryContact": false,
+      "developer": false,
+      "agent": true,
+      "featuredAgent": false,
+      "detailsEnabled": true,
+      "emailEnabled": true,
+      "showAddress": true,
+      "hasMicrosite": false,
+      "includeFeeCharges": true,
+      "logo": {
+        "standard": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+        "standardBackgroundColour": "#302939",
+        "alternative": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+        "alternativeBackgroundColour": "#302939",
+        "premier": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+        "premierBackgroundColour": "#302939"
+      },
+      "agentLogos": [
+        {
+          "logoType": "STANDARD",
+          "url": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+          "width": 600,
+          "height": 387,
+          "backgroundColour": "#302939",
+          "accountNumber": "ST0524205",
+          "developer": false,
+          "agent": true
+        },
+        {
+          "logoType": "ALTERNATIVE",
+          "url": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+          "width": 600,
+          "height": 387,
+          "backgroundColour": "#302939",
+          "accountNumber": "ST0524205",
+          "developer": false,
+          "agent": true
+        },
+        {
+          "logoType": "PREMIER",
+          "url": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+          "width": 600,
+          "height": 387,
+          "backgroundColour": "#302939",
+          "accountNumber": "ST0524205",
+          "developer": false,
+          "agent": true
+        }
+      ],
+      "colours": {
+        "secondary": "#353535",
+        "srpBrandingTextColour": "#FFFFFF",
+        "pdpBrandingBgColour": "#353535",
+        "pdpBrandingBorderColour": "#353535",
+        "pdpBrandingButtonTextColour": "#FFFFFF",
+        "srpBrandingBgColour": "#353535",
+        "pdpBrandingLinkColour": "#353535",
+        "pdpBrandingButtonBgColour": "#353535",
+        "foreground": "#353535",
+        "primary": "#FFFFFF"
+      },
+      "accreditations": [
+        {
+          "id": 1,
+          "label": "PRS",
+          "textKey": "propertyRedressScheme",
+          "url": "https://www.theprs.co.uk/",
+          "imageUrl": "https://www.propertypal.com/accreditations/propertyRedressScheme2025.png",
+          "type": "ESSENTIAL",
+          "tooltip": "The Property Redress Scheme is open for all Property Professionals who wish to provide added peace of mind to their customers."
+        },
+        {
+          "id": 25,
+          "label": "Information Commissioner's Office",
+          "textKey": "ico",
+          "url": "https://ico.org.uk/",
+          "imageUrl": "https://www.propertypal.com/accreditations/ico.png",
+          "type": "ESSENTIAL",
+          "tooltip": "The ICO regulates data protection in the UK. They offer advice and guidance, promote good practice, monitor breach reports, conduct audits and advisory visits, consider complaints, monitor compliance and take enforcement action where appropriate."
+        }
+      ],
+      "missingAccreditations": null,
+      "propertypalAwards": [],
+      "openingTimes": null,
+      "tier": "CUSTOM",
+      "enhancedBranding": false,
+      "searchUrl": "/search?radius=5.0&runit=m&rlat=55.0046634799347&rlng=-7.286559169683&sta=forSale&st=sale&term=3829495&pt=residential&min=500000&max=800000&currency=GBP",
+      "searchParams": {
+        "radius": 5,
+        "runit": "m",
+        "rlat": 55.0046634799347,
+        "rlng": -7.286559169683,
+        "status": [
+          "forSale"
+        ],
+        "saleType": [
+          "sale"
+        ],
+        "term": [
+          "3829495"
+        ],
+        "category": [
+          "residential"
+        ],
+        "minPrice": 500000,
+        "maxPrice": 800000,
+        "currency": "GBP"
+      },
+      "membershipAccount": false
+    },
+    "agents": [
+      {
+        "accountNumber": "ST0524205",
+        "organisation": "James Gorman Property",
+        "organisationBranch": "",
+        "displayAddress": "12 Clearwater, Derry/Londonderry, BT47 6BE",
+        "officePhone": {
+          "countryCode": 44,
+          "displayNumber": "028 7161 0402",
+          "international": "+44 28 7161 0402",
+          "national": "028 7161 0402",
+          "uk": "028 7161 0402"
+        },
+        "psrLicenceNumber": null,
+        "websiteUrl": "https://www.jamesgormanproperty.com",
+        "landingPageUrl": "/estate-agents/james-gorman-property",
+        "groupLandingPageUrl": null,
+        "privateDeveloper": false,
+        "developerPrimaryContact": false,
+        "developer": false,
+        "agent": true,
+        "featuredAgent": false,
+        "detailsEnabled": true,
+        "emailEnabled": true,
+        "showAddress": true,
+        "hasMicrosite": false,
+        "includeFeeCharges": true,
+        "logo": {
+          "standard": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+          "standardBackgroundColour": "#302939",
+          "alternative": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+          "alternativeBackgroundColour": "#302939",
+          "premier": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+          "premierBackgroundColour": "#302939"
+        },
+        "agentLogos": [
+          {
+            "logoType": "STANDARD",
+            "url": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+            "width": 600,
+            "height": 387,
+            "backgroundColour": "#302939",
+            "accountNumber": "ST0524205",
+            "developer": false,
+            "agent": true
+          },
+          {
+            "logoType": "ALTERNATIVE",
+            "url": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+            "width": 600,
+            "height": 387,
+            "backgroundColour": "#302939",
+            "accountNumber": "ST0524205",
+            "developer": false,
+            "agent": true
+          },
+          {
+            "logoType": "PREMIER",
+            "url": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+            "width": 600,
+            "height": 387,
+            "backgroundColour": "#302939",
+            "accountNumber": "ST0524205",
+            "developer": false,
+            "agent": true
+          }
+        ],
+        "colours": {
+          "secondary": "#353535",
+          "srpBrandingTextColour": "#FFFFFF",
+          "pdpBrandingBgColour": "#353535",
+          "pdpBrandingBorderColour": "#353535",
+          "pdpBrandingButtonTextColour": "#FFFFFF",
+          "srpBrandingBgColour": "#353535",
+          "pdpBrandingLinkColour": "#353535",
+          "pdpBrandingButtonBgColour": "#353535",
+          "foreground": "#353535",
+          "primary": "#FFFFFF"
+        },
+        "accreditations": [
+          {
+            "id": 1,
+            "label": "PRS",
+            "textKey": "propertyRedressScheme",
+            "url": "https://www.theprs.co.uk/",
+            "imageUrl": "https://www.propertypal.com/accreditations/propertyRedressScheme2025.png",
+            "type": "ESSENTIAL",
+            "tooltip": "The Property Redress Scheme is open for all Property Professionals who wish to provide added peace of mind to their customers."
+          },
+          {
+            "id": 25,
+            "label": "Information Commissioner's Office",
+            "textKey": "ico",
+            "url": "https://ico.org.uk/",
+            "imageUrl": "https://www.propertypal.com/accreditations/ico.png",
+            "type": "ESSENTIAL",
+            "tooltip": "The ICO regulates data protection in the UK. They offer advice and guidance, promote good practice, monitor breach reports, conduct audits and advisory visits, consider complaints, monitor compliance and take enforcement action where appropriate."
+          }
+        ],
+        "missingAccreditations": null,
+        "propertypalAwards": [],
+        "openingTimes": null,
+        "tier": "CUSTOM",
+        "enhancedBranding": false,
+        "searchUrl": "/search?radius=5.0&runit=m&rlat=55.0046634799347&rlng=-7.286559169683&sta=forSale&st=sale&term=3829495&pt=residential&min=500000&max=800000&currency=GBP",
+        "searchParams": {
+          "radius": 5,
+          "runit": "m",
+          "rlat": 55.0046634799347,
+          "rlng": -7.286559169683,
+          "status": [
+            "forSale"
+          ],
+          "saleType": [
+            "sale"
+          ],
+          "term": [
+            "3829495"
+          ],
+          "category": [
+            "residential"
+          ],
+          "minPrice": 500000,
+          "maxPrice": 800000,
+          "currency": "GBP"
+        },
+        "membershipAccount": false
+      }
+    ],
+    "listingTimeType": "Added",
+    "activationTime": "2026-04-22T11:55:01+0100",
+    "publishedOn": "2026-04-22T11:55:01+0100",
+    "updatedAt": "2026-04-22T16:17:54+0100",
+    "description": "<p><strong>Features</strong></p><ul><li>Five bedroom detached house</li><li>Spread over three floors</li><li>Luxury gated development of just six bespoke homes</li><li>Garage plus additional outdoor garden room</li><li>State-of-the-art kitchen-diner with seating for eight</li><li>Master bedroom with walk-in wardrobe and en-suite</li><li>Two top-floor bedrooms with walk-in wardrobes</li><li>Security alarm system</li><li>Parking for two cars</li><li>Viewings by appointment only</li></ul><p><strong>Five Bedroom Detached Home in Exclusive Gated Development</strong></p><p>Are you looking for something exclusive, private, gated, and ready to move straight into? This could be the one for you.</p><p>James Gorman Property are delighted to be instructed to work with the owner on the sale of this spectacular Coralmount home, located just off Limavady Road within a private gated development of six bespoke homes. This is the only five-bedroom property in the development and is also the only home on the site to benefit from a garage.</p><p>Spread across three floors, this impressive family home has been immaculately cared for since the owners moved in during 2020. It truly has the wow factor and must be seen to be fully appreciated. Early enquiry is highly recommended.</p><p>Upon entering the property, you are welcomed into a bright hallway with polished tiled flooring. To the left is a guest W.C. with fitted framed mirrors. Double doors open into a spacious living room, featuring plush soft carpets and a central fireplace with a log-burning stove.</p><p>The heart of the home is the stunning kitchen-diner, offering comfortable dining space for eight. The kitchen includes a built-in fridge and freezer, coffee machine, double hide-and-slide ovens, and a large induction hob set into quartz Emperador worktops. A separate utility room is conveniently positioned just off the kitchen.</p><p>On the first floor, there are three of the five bedrooms, along with a beautifully finished family bathroom featuring a freestanding roll-top bath, large walk-in double shower, and additional framed mirrors throughout.</p><p>The master bedroom is a real showstopper. Measuring approximately 33 feet wide, it offers an impressive sense of space, complete with a large en-suite shower room and full walk-in wardrobe, giving it the feel of a luxury hotel suite. Bedrooms two and three are both comfortable double rooms and also benefit from fitted wardrobes.</p><p>The top floor offers bedrooms four and five, both spacious double rooms with walk-in wardrobes and charming sloped ceilings. The landing also includes a W.C. with wash hand basin and Velux window.</p><p>Externally, the fully paved garden includes a Portuguese-style outdoor log stove fireplace. The garden is fully enclosed, private, and a real sun trap. A large built-in storage unit houses the oil tank, while sliding doors open into an outdoor garden room, playroom, or office space with underfloor heating. This leads seamlessly into the garage area, which is fully tiled and could be used as an additional room if required.</p><p>The property also has the option to be sold fully furnished. It is chain free and ready to move into. Additional features include double glazing throughout, a composite front door, Hive heating system, oil-fired heating, security alarm system, and much more.</p><p>For more information or to arrange a viewing, call <strong>James on 028 7161 0402</strong>. Don&rsquo;t forget to follow our social media channels. Good luck!</p><p>Lounge 19&rsquo; x 12&rsquo;8</p><p>Kitchen-Diner 27&rsquo;2 x 17&rsquo;8</p><p>Master Bedroom &nbsp;33&rsquo;2 x 12&rsquo;8 (Walk in wardrobe &amp; En-Suite) &nbsp;&nbsp;</p><p>Bedroom Two 10&rsquo;5 x 10&rsquo;5 (First Floor)</p><p>Bedroom Three 13&rsquo; x 9&rsquo;2 (First Floor)</p><p>Bedroom Four 12&rsquo;2 x 9&rsquo;2 (Top Floor)</p><p>Bedroom Five 12&rsquo;8 x 12&rsquo;2 (Top Floor)</p><p><strong>NB: All measurements taken to widest points</strong></p>",
+    "hasBrochure": false,
+    "hasFloorPlans": false,
+    "hasVideos": false,
+    "hasVirtualTours": false,
+    "features": [
+      "STATUS: For sale",
+      "STYLE: Detached House with garage",
+      "BEDROOMS: 5",
+      "BATHROOMS: 4",
+      "RECEPTIONROOMS: 2",
+      "TENURE: Freehold",
+      "EPC RATING: B84/B84",
+      "HEATING TYPE: Oil",
+      "BROADBAND: Highest download speed: 900 Mbps Highest upload speed: 110 Mbps",
+      "STAMP DUTY COMPLEX",
+      "RATES: £3,053.50 pa",
+      "VIEWS LAST 7 DAYS: 228",
+      "VIEWS LAST 30 DAYS: 1653",
+      "VIEWS ALL TIME: 5029"
+    ],
+    "history": [
+      {
+        "difference": null,
+        "priceOnApplication": false,
+        "publishedOnAwp": true,
+        "published": true,
+        "timeModified": "2026-04-22T11:55:01+0100",
+        "price": 699950,
+        "status": {
+          "key": "forSale",
+          "text": "For sale"
+        },
+        "previousStatus": null,
+        "previousPrice": null,
+        "previousPublished": false,
+        "statusChange": true,
+        "priceChange": false,
+        "publishedChange": true,
+        "publishedOnAwpChange": true,
+        "differencePercentage": null,
+        "pricePrefix": "Asking Price",
+        "priceSuffix": null
+      }
+    ],
+    "historyCount": 1,
+    "berExempt": false,
+    "coOwnershipEligible": false,
+    "coOwnershipOnly": false,
+    "premiumListing": false,
+    "priceTrackerAvailable": true,
+    "scrapedAt": "2026-05-28T16:33:20.842Z"
+  },
+  {
+    "__area": "bt48",
+    "__page": 1,
+    "__startUrl": "https://www.propertypal.com/property-for-sale/bt48",
+    "imageUrl": "https://media.propertypal.com/large/p/1077157/41956923.jpg",
+    "images": [
+      "https://media.propertypal.com/large/p/1077157/41956923.jpg",
+      "https://media.propertypal.com/large/p/1077157/41956924.jpg",
+      "https://media.propertypal.com/large/p/1077157/41956925.jpg",
+      "https://media.propertypal.com/large/p/1077157/41956926.jpg",
+      "https://media.propertypal.com/large/p/1077157/41956927.jpg",
+      "https://media.propertypal.com/large/p/1077157/41956928.jpg",
+      "https://media.propertypal.com/large/p/1077157/41956933.jpg",
+      "https://media.propertypal.com/large/p/1077157/41956937.jpg",
+      "https://media.propertypal.com/large/p/1077157/41956938.jpg",
+      "https://media.propertypal.com/large/p/1077157/41956940.jpg",
+      "https://media.propertypal.com/large/p/1077157/41956939.jpg",
+      "https://media.propertypal.com/large/p/1077157/41956941.jpg",
+      "https://media.propertypal.com/large/p/1077157/41956980.jpg",
+      "https://media.propertypal.com/large/p/1077157/41956922.jpg"
+    ],
+    "imageCount": 14,
+    "url": "https://www.propertypal.com/194-barleyfields-culmore-road-derrylondonderry/1078357",
+    "propertyId": "1078357",
+    "title": "194 Barleyfields, Culmore Road, Derry/Londonderry, BT48 8TQ",
+    "address": "194 Barleyfields, Culmore Road, Derry/Londonderry, BT48 8TQ",
+    "addressLine1": "194 Barleyfields",
+    "addressLine2": "Culmore Road, Derry/Londonderry, BT48 8TQ",
+    "street": "Barleyfields",
+    "town": "Derry/Londonderry",
+    "region": "Londonderry",
+    "postcode": "BT48 8TQ",
+    "incode": "8TQ",
+    "outcode": "BT48",
+    "country": "Northern Ireland",
+    "price": "£350,000",
+    "pricePrefix": "Asking Price",
+    "priceNumeric": 350000,
+    "currencyCode": "GBP",
+    "priceType": "ASKING_PRICE",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "receptions": 1,
+    "propertyType": "4 Bed Semi-detached House",
+    "listingType": "property",
+    "listingsCategory": "Residential",
+    "style": "Semi-detached Houses",
+    "saleType": "Sale",
+    "status": "For sale",
+    "category": "Added",
+    "epcRating": "B82/B82",
+    "tenure": "Freehold",
+    "heatingType": "Gas",
+    "rates": "£1,954.24 pa",
+    "coordinates": {
+      "latitude": 55.0503184204732,
+      "longitude": -7.2707835467284,
+      "accuracy": "exactlyRight",
+      "mapZoomLevel": 15,
+      "showStreetView": true
+    },
+    "latitude": 55.0503184204732,
+    "longitude": -7.2707835467284,
+    "broadbandSpeed": {
+      "estimated": false,
+      "timeLastCached": "2026-05-19T13:20:48+0100",
+      "maxPredictedDown": "900",
+      "maxPredictedUp": "110",
+      "maxBbPredictedDown": "4",
+      "maxBbPredictedUp": "0.5",
+      "maxSfbbPredictedDown": "80",
+      "maxSfbbPredictedUp": "20",
+      "maxUfbbPredictedDown": "900",
+      "maxUfbbPredictedUp": "110",
+      "maxFibrusDown": null,
+      "maxFibrusUp": null,
+      "fibrusAvailable": false
+    },
+    "broadbandMaxDownload": 900,
+    "broadbandMaxUpload": 110,
+    "agentName": "James Gorman Property",
+    "agentPhone": "028 7161 0402",
+    "agentUrl": "https://www.propertypal.com/estate-agents/james-gorman-property",
+    "agentRef": "ST0524205",
+    "account": {
+      "accountNumber": "ST0524205",
+      "organisation": "James Gorman Property",
+      "organisationBranch": "",
+      "displayAddress": "12 Clearwater, Derry/Londonderry, BT47 6BE",
+      "officePhone": {
+        "countryCode": 44,
+        "displayNumber": "028 7161 0402",
+        "international": "+44 28 7161 0402",
+        "national": "028 7161 0402",
+        "uk": "028 7161 0402"
+      },
+      "psrLicenceNumber": null,
+      "websiteUrl": "https://www.jamesgormanproperty.com",
+      "landingPageUrl": "/estate-agents/james-gorman-property",
+      "groupLandingPageUrl": null,
+      "privateDeveloper": false,
+      "developerPrimaryContact": false,
+      "developer": false,
+      "agent": true,
+      "featuredAgent": false,
+      "detailsEnabled": true,
+      "emailEnabled": true,
+      "showAddress": true,
+      "hasMicrosite": false,
+      "includeFeeCharges": true,
+      "logo": {
+        "standard": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+        "standardBackgroundColour": "#302939",
+        "alternative": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+        "alternativeBackgroundColour": "#302939",
+        "premier": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+        "premierBackgroundColour": "#302939"
+      },
+      "agentLogos": [
+        {
+          "logoType": "STANDARD",
+          "url": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+          "width": 600,
+          "height": 387,
+          "backgroundColour": "#302939",
+          "accountNumber": "ST0524205",
+          "developer": false,
+          "agent": true
+        },
+        {
+          "logoType": "ALTERNATIVE",
+          "url": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+          "width": 600,
+          "height": 387,
+          "backgroundColour": "#302939",
+          "accountNumber": "ST0524205",
+          "developer": false,
+          "agent": true
+        },
+        {
+          "logoType": "PREMIER",
+          "url": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+          "width": 600,
+          "height": 387,
+          "backgroundColour": "#302939",
+          "accountNumber": "ST0524205",
+          "developer": false,
+          "agent": true
+        }
+      ],
+      "colours": {
+        "secondary": "#353535",
+        "srpBrandingTextColour": "#FFFFFF",
+        "pdpBrandingBgColour": "#353535",
+        "pdpBrandingBorderColour": "#353535",
+        "pdpBrandingButtonTextColour": "#FFFFFF",
+        "srpBrandingBgColour": "#353535",
+        "pdpBrandingLinkColour": "#353535",
+        "pdpBrandingButtonBgColour": "#353535",
+        "foreground": "#353535",
+        "primary": "#FFFFFF"
+      },
+      "accreditations": [
+        {
+          "id": 1,
+          "label": "PRS",
+          "textKey": "propertyRedressScheme",
+          "url": "https://www.theprs.co.uk/",
+          "imageUrl": "https://www.propertypal.com/accreditations/propertyRedressScheme2025.png",
+          "type": "ESSENTIAL",
+          "tooltip": "The Property Redress Scheme is open for all Property Professionals who wish to provide added peace of mind to their customers."
+        },
+        {
+          "id": 25,
+          "label": "Information Commissioner's Office",
+          "textKey": "ico",
+          "url": "https://ico.org.uk/",
+          "imageUrl": "https://www.propertypal.com/accreditations/ico.png",
+          "type": "ESSENTIAL",
+          "tooltip": "The ICO regulates data protection in the UK. They offer advice and guidance, promote good practice, monitor breach reports, conduct audits and advisory visits, consider complaints, monitor compliance and take enforcement action where appropriate."
+        }
+      ],
+      "missingAccreditations": null,
+      "propertypalAwards": [],
+      "openingTimes": null,
+      "tier": "CUSTOM",
+      "enhancedBranding": false,
+      "searchUrl": "/search?radius=5.0&runit=m&rlat=55.0503184204732&rlng=-7.2707835467284&sta=forSale&st=sale&term=3829495&pt=residential&min=275000&max=400000&currency=GBP",
+      "searchParams": {
+        "radius": 5,
+        "runit": "m",
+        "rlat": 55.0503184204732,
+        "rlng": -7.2707835467284,
+        "status": [
+          "forSale"
+        ],
+        "saleType": [
+          "sale"
+        ],
+        "term": [
+          "3829495"
+        ],
+        "category": [
+          "residential"
+        ],
+        "minPrice": 275000,
+        "maxPrice": 400000,
+        "currency": "GBP"
+      },
+      "membershipAccount": false
+    },
+    "agents": [
+      {
+        "accountNumber": "ST0524205",
+        "organisation": "James Gorman Property",
+        "organisationBranch": "",
+        "displayAddress": "12 Clearwater, Derry/Londonderry, BT47 6BE",
+        "officePhone": {
+          "countryCode": 44,
+          "displayNumber": "028 7161 0402",
+          "international": "+44 28 7161 0402",
+          "national": "028 7161 0402",
+          "uk": "028 7161 0402"
+        },
+        "psrLicenceNumber": null,
+        "websiteUrl": "https://www.jamesgormanproperty.com",
+        "landingPageUrl": "/estate-agents/james-gorman-property",
+        "groupLandingPageUrl": null,
+        "privateDeveloper": false,
+        "developerPrimaryContact": false,
+        "developer": false,
+        "agent": true,
+        "featuredAgent": false,
+        "detailsEnabled": true,
+        "emailEnabled": true,
+        "showAddress": true,
+        "hasMicrosite": false,
+        "includeFeeCharges": true,
+        "logo": {
+          "standard": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+          "standardBackgroundColour": "#302939",
+          "alternative": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+          "alternativeBackgroundColour": "#302939",
+          "premier": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+          "premierBackgroundColour": "#302939"
+        },
+        "agentLogos": [
+          {
+            "logoType": "STANDARD",
+            "url": "https://media.propertypal.com/logo/240523163426/400x400/ST0524205/master.png",
+            "width": 600,
+            "height": 387,
+            "backgroundColour": "#302939",
+            "accountNumber": "ST0524205",
+            "developer": false,
+            "agent": true
+          },
+          {
+            "logoType": "ALTERNATIVE",
+            "url": "https://media.propertypal.com/logo/240523163446/400x400/ST0524205/master_alt.png",
+            "width": 600,
+            "height": 387,
+            "backgroundColour": "#302939",
+            "accountNumber": "ST0524205",
+            "developer": false,
+            "agent": true
+          },
+          {
+            "logoType": "PREMIER",
+            "url": "https://media.propertypal.com/logo/240523163436/400x400/ST0524205/master_premier.png",
+            "width": 600,
+            "height": 387,
+            "backgroundColour": "#302939",
+            "accountNumber": "ST0524205",
+            "developer": false,
+            "agent": true
+          }
+        ],
+        "colours": {
+          "secondary": "#353535",
+          "srpBrandingTextColour": "#FFFFFF",
+          "pdpBrandingBgColour": "#353535",
+          "pdpBrandingBorderColour": "#353535",
+          "pdpBrandingButtonTextColour": "#FFFFFF",
+          "srpBrandingBgColour": "#353535",
+          "pdpBrandingLinkColour": "#353535",
+          "pdpBrandingButtonBgColour": "#353535",
+          "foreground": "#353535",
+          "primary": "#FFFFFF"
+        },
+        "accreditations": [
+          {
+            "id": 1,
+            "label": "PRS",
+            "textKey": "propertyRedressScheme",
+            "url": "https://www.theprs.co.uk/",
+            "imageUrl": "https://www.propertypal.com/accreditations/propertyRedressScheme2025.png",
+            "type": "ESSENTIAL",
+            "tooltip": "The Property Redress Scheme is open for all Property Professionals who wish to provide added peace of mind to their customers."
+          },
+          {
+            "id": 25,
+            "label": "Information Commissioner's Office",
+            "textKey": "ico",
+            "url": "https://ico.org.uk/",
+            "imageUrl": "https://www.propertypal.com/accreditations/ico.png",
+            "type": "ESSENTIAL",
+            "tooltip": "The ICO regulates data protection in the UK. They offer advice and guidance, promote good practice, monitor breach reports, conduct audits and advisory visits, consider complaints, monitor compliance and take enforcement action where appropriate."
+          }
+        ],
+        "missingAccreditations": null,
+        "propertypalAwards": [],
+        "openingTimes": null,
+        "tier": "CUSTOM",
+        "enhancedBranding": false,
+        "searchUrl": "/search?radius=5.0&runit=m&rlat=55.0503184204732&rlng=-7.2707835467284&sta=forSale&st=sale&term=3829495&pt=residential&min=275000&max=400000&currency=GBP",
+        "searchParams": {
+          "radius": 5,
+          "runit": "m",
+          "rlat": 55.0503184204732,
+          "rlng": -7.2707835467284,
+          "status": [
+            "forSale"
+          ],
+          "saleType": [
+            "sale"
+          ],
+          "term": [
+            "3829495"
+          ],
+          "category": [
+            "residential"
+          ],
+          "minPrice": 275000,
+          "maxPrice": 400000,
+          "currency": "GBP"
+        },
+        "membershipAccount": false
+      }
+    ],
+    "listingTimeType": "Added",
+    "activationTime": "2026-05-22T22:31:43+0100",
+    "publishedOn": "2026-05-22T22:31:43+0100",
+    "updatedAt": "2026-05-26T12:41:57+0100",
+    "description": "<p><strong>Features</strong></p><ul><li>Four bedroom semi-detached townhouse</li><li>Bison slab floors</li><li>Immaculate finish throughout</li><li>Integral garage, already tiled and offering potential for another room</li><li>High-end extras included</li><li>Emperador quartz stone kitchen worktops</li><li>Fully enclosed and paved rear garden</li><li>Attic boarded with drop-down ladder</li><li>Gas central heating and log-burning stove</li><li>Double glazed sash windows and composite front door</li><li>Extended off-street parking for three-plus cars</li><li>Sought-after residential area off the Culmore Road</li><li>Early viewing highly recommended</li></ul><p><strong>Ever Dreamed Of Owning A Farringdon At Barleyfields?</strong></p><p><strong>Well, Now This Is Your Chance! This one is a stunner!</strong></p><p>James Gorman Property are delighted to welcome 194 Barleyfields to the sales market. This luxury four-bedroom townhouse was constructed in 2021 by Taggart Homes and benefits from bison slab flooring to both the first and second floors.</p><p>The current owners have cared for this home exceptionally well, and internally it feels virtually brand new. A superb range of high-end extras are included as part of the sale, with all chandeliers, curtains, radiator covers and wooden shutters remaining.</p><p>The lower ground floor garage has already been tiled and is plumbed for a radiator from the house, offering excellent potential to convert into an additional living room, playroom or home office.</p><p>This property really does tick a lot of boxes and must be viewed to be fully appreciated. Early internal viewing is highly advised.</p><p>Upon entering the home via the grand entrance staircase, you are welcomed into a bright lobby with full-height ceiling, an impressive light fitting and a well-placed storage cupboard, ideal for coats and shoes.</p><p>Up seven steps, you enter the main living area of the home. There is a W.C. to the right and a lounge to the front, complete with beautiful double glazed sash windows. The owners&rsquo; curtains and shutters give this room a warm and comfortable feel. The lounge also benefits from a feature fireplace with log-burning stove insert, along with attractive drop-ceiling lighting.</p><p>To the rear of the property is a modern U-shaped kitchen with built-in appliances, including two ovens. The Emperador quartz worktops are a real feature, while the polished beige floor tiles help create a bright and contemporary space. There is comfortable dining space for four to six people, with patio doors leading directly into a low-maintenance, fully paved rear garden.</p><p>The first floor comprises four bedrooms, three of which benefit from built-in sliderobes. The master bedroom includes an impressive en-suite with a 1200 shower tray and LED Bluetooth mirror.</p><p>Bedrooms two and three, positioned to the rear of the property, are both comfortable double rooms. Bedroom four is currently used as a dressing room, but would also make an ideal home office or nursery.</p><p>The main bathroom, also on this level, has been replaced with a large walk-in shower and is fully tiled from floor to ceiling. It also benefits from an LED Bluetooth mirror.</p><p>Further benefits include gas central heating, double glazed windows and doors throughout, and approximately five years remaining on the original 10-year NHBC structural guarantee. Externally, the home offers extended paved off-street parking to the front, while internally there are built-in wall lights along all staircases.</p><p>This home really does need to be seen to be appreciated.</p><p>Viewings will start week commencing 25/05/26.</p><p>For more information or to arrange a viewing, give <strong>James a call on 028 7161 0402</strong>. Don&rsquo;t forget to follow our social media channels. Good luck!</p><p>&nbsp;</p><p>Lounge 14&rsquo;09 x 11&rsquo;09</p><p>Kitchen-Diner 19&rsquo;11 x 13&rsquo;09</p><p>Bedroom One 11&rsquo;03 x 9&rsquo;07</p><p>Bedroom Two 11&rsquo;04 x 10&rsquo;03</p><p>Bedroom Three 11&rsquo;04 x 9&rsquo;</p><p>Bedroom Four 9&rsquo;10 x 9&rsquo;10</p><p>Garage 21&rsquo;02 x 10&rsquo;10</p><p><strong>NB: All measurements taken to widest points</strong></p>",
+    "hasBrochure": false,
+    "hasFloorPlans": false,
+    "videoUrls": [
+      "https://video.propertypal.com/p/1077157/21814/1024x768.mp4"
+    ],
+    "hasVideos": true,
+    "hasVirtualTours": true,
+    "features": [
+      "STATUS: For sale",
+      "STYLE: Semi-detached House",
+      "BEDROOMS: 4",
+      "BATHROOMS: 3",
+      "RECEPTIONROOMS: 1",
+      "TENURE: Freehold",
+      "EPC RATING: B82/B82",
+      "HEATING TYPE: Gas",
+      "BROADBAND: Highest download speed: 900 Mbps Highest upload speed: 110 Mbps",
+      "STAMP DUTY COMPLEX",
+      "RATES: £1,954.24 pa",
+      "VIEWS ALL TIME: 3864"
+    ],
+    "history": [
+      {
+        "difference": null,
+        "priceOnApplication": false,
+        "publishedOnAwp": true,
+        "published": true,
+        "timeModified": "2026-05-22T22:31:43+0100",
+        "price": 350000,
+        "status": {
+          "key": "forSale",
+          "text": "For sale"
+        },
+        "previousStatus": null,
+        "previousPrice": null,
+        "previousPublished": false,
+        "statusChange": true,
+        "priceChange": false,
+        "publishedChange": true,
+        "publishedOnAwpChange": true,
+        "differencePercentage": null,
+        "pricePrefix": "Asking Price",
+        "priceSuffix": null
+      }
+    ],
+    "historyCount": 1,
+    "berExempt": false,
+    "coOwnershipEligible": false,
+    "coOwnershipOnly": false,
+    "premiumListing": false,
+    "priceTrackerAvailable": true,
+    "scrapedAt": "2026-05-28T16:35:25.101Z"
+  }
+]

@@ -1,0 +1,379 @@
+{
+  "published_at": "2026-05-06T21:22:49+0100",
+  "domain": "jamesgormanproperty.com",
+  "ahrefs_snapshot": {
+    "date": "2026-05-06",
+    "domain_rating": 6,
+    "organic_keywords": 3,
+    "organic_traffic": 25,
+    "live_refdomains": 66
+  },
+  "source_reports": [
+    "ahrefs-keyword-research-2026-03-19.md",
+    "keyword-research-export-2026-03-19.md",
+    "content-blast-2026-04-23-ahrefs.md"
+  ],
+  "draft_dir": "/Users/philsagent/.openclaw/workspace/projects/clients/james-gorman/blog-drafts/ahrefs-blast-2026-05-06",
+  "results": [
+    {
+      "title": "Houses for Sale Waterside Derry: 2026 Buyer Guide",
+      "slug": "houses-for-sale-waterside-derry-buyer-guide-2026",
+      "url": "https://www.jamesgormanproperty.com/post/houses-for-sale-waterside-derry-buyer-guide-2026",
+      "draft_id": "ea089894-0974-4848-9dc3-2fdc31dba8cf",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Buyer Guides",
+      "category_status": "created",
+      "tags": [
+        "Waterside Derry",
+        "Houses for Sale Derry",
+        "Buyer Guide"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/post/estate-agent-waterside-derry",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/houses-for-sale-derry-complete-guide-2026",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [
+        "title:"
+      ],
+      "ahrefs_note": "Ahrefs March export: 45 monthly volume, KD 3; John Varthur visible around page one, beatable with local content."
+    },
+    {
+      "title": "Property for Sale Cityside Derry: Local Buyer Guide 2026",
+      "slug": "property-for-sale-cityside-derry-buyer-guide-2026",
+      "url": "https://www.jamesgormanproperty.com/post/property-for-sale-cityside-derry-buyer-guide-2026",
+      "draft_id": "2ede629b-b712-4288-b46b-09e66ca22ba8",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Buyer Guides",
+      "category_status": "existing",
+      "tags": [
+        "Cityside Derry",
+        "Property for Sale Derry",
+        "Buyer Guide"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/post/property-valuation-cityside-derry",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/estate-agent-cityside-derry",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [
+        "title:"
+      ],
+      "ahrefs_note": "Ahrefs March export: 25 monthly volume, KD 1; weak SERP with portal-heavy results."
+    },
+    {
+      "title": "Property for Sale Derry City: What Buyers Should Know in 2026",
+      "slug": "property-for-sale-derry-city-guide-2026",
+      "url": "https://www.jamesgormanproperty.com/post/property-for-sale-derry-city-guide-2026",
+      "draft_id": "ecb37340-b19f-46fe-bd93-054dda8d9ce7",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Buyer Guides",
+      "category_status": "existing",
+      "tags": [
+        "Derry City Property",
+        "Property for Sale Derry",
+        "Buyer Guide"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/post/houses-for-sale-derry-complete-guide-2026",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/first-time-buyer-guide-derry-everything-you-need-to-know-2026",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [
+        "title:"
+      ],
+      "ahrefs_note": "Ahrefs March export: 80 monthly volume, KD 2; James was previously visible but low, with portal-heavy competition."
+    },
+    {
+      "title": "Bungalows for Sale Derry: Buyer and Downsizer Guide 2026",
+      "slug": "bungalows-for-sale-derry-guide-2026",
+      "url": "https://www.jamesgormanproperty.com/post/bungalows-for-sale-derry-guide-2026",
+      "draft_id": "063dc3d6-e78a-4eca-b5a9-33527694306d",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 200,
+      "h1": "Bungalows for Sale Derry: What Buyers and Downsizers Should Watch for in 2026",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Buyer Guides",
+      "category_status": "existing",
+      "tags": [
+        "Bungalows Derry",
+        "Downsizing Derry",
+        "Houses for Sale Derry"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/post/downsizing-in-derry-a-guide-for-empty-nesters",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/houses-for-sale-derry-complete-guide-2026",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [
+        "title:"
+      ],
+      "ahrefs_note": "Ahrefs competitor gap: 25 monthly volume, KD 6; competitor visibility noted, no dedicated James page live."
+    },
+    {
+      "title": "House Valuation Derry: How to Price Your Home Properly",
+      "slug": "house-valuation-derry-guide-2026",
+      "url": "https://www.jamesgormanproperty.com/post/house-valuation-derry-guide-2026",
+      "draft_id": "668a2b57-4f74-4be7-88c9-601cb48c2547",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Seller Guides",
+      "category_status": "created",
+      "tags": [
+        "House Valuation Derry",
+        "Property Valuation Derry",
+        "Selling Derry"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/free-property-valuation-derry",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/property-valuation-derry-what-is-your-home-worth-in-2026",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [
+        "title:"
+      ],
+      "ahrefs_note": "Ahrefs valuation cluster: house valuation Derry 45 monthly volume, KD 2; free property valuation Derry 30 monthly volume, KD 1."
+    },
+    {
+      "title": "Property Valuer Derry: What to Expect From a Local Valuation",
+      "slug": "property-valuer-derry-guide-2026",
+      "url": "https://www.jamesgormanproperty.com/post/property-valuer-derry-guide-2026",
+      "draft_id": "891b019d-ac8a-4e14-963a-ebe0f9e512a5",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Seller Guides",
+      "category_status": "existing",
+      "tags": [
+        "Property Valuer Derry",
+        "Property Valuation",
+        "Seller Advice"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/free-property-valuation-derry",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/prepare-house-for-valuation-derry",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [
+        "title:"
+      ],
+      "ahrefs_note": "Ahrefs valuation cluster: property valuer Derry 20 monthly volume, KD 3; low competition, high seller intent."
+    },
+    {
+      "title": "No Sale No Fee Estate Agent Derry: What Sellers Should Check",
+      "slug": "no-sale-no-fee-estate-agent-derry-guide",
+      "url": "https://www.jamesgormanproperty.com/post/no-sale-no-fee-estate-agent-derry-guide",
+      "draft_id": "275a9f5e-4db4-418d-940b-d8f7459b4223",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Seller Guides",
+      "category_status": "existing",
+      "tags": [
+        "Estate Agent Fees Derry",
+        "Selling Derry",
+        "No Sale No Fee"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/post/estate-agent-fees-derry",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/how-to-choose-estate-agent-derry",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [
+        "title:"
+      ],
+      "ahrefs_note": "Ahrefs selling-services cluster: 20 monthly volume, KD 6; commercial seller intent and useful FAQ angle."
+    },
+    {
+      "title": "Property Derry Northern Ireland: Buyer Guide for Local Moves",
+      "slug": "property-derry-northern-ireland-buyer-guide",
+      "url": "https://www.jamesgormanproperty.com/post/property-derry-northern-ireland-buyer-guide",
+      "draft_id": "f5abc833-7d58-4c44-ab64-a1d414ad396a",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Buyer Guides",
+      "category_status": "existing",
+      "tags": [
+        "Property Derry Northern Ireland",
+        "Derry Property",
+        "Buyer Guide"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/post/moving-to-derry-complete-relocation-guide-2026",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/best-areas-to-live-in-derry-your-complete-guide-2026",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [
+        "title:"
+      ],
+      "ahrefs_note": "Ahrefs competitor gap: property Derry Northern Ireland 35 monthly volume; useful geographic expansion around Derry/North West terms."
+    }
+  ]
+}

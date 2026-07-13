@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sell With More Buyer Demand | James Gorman Property Showcase</title>
+  <meta name="description" content="A James Gorman Property QR showcase concept showing sellers how premium presentation, sharper buyer positioning and proactive follow-up can create stronger viewing demand.">
+  <meta property="og:title" content="Sell With More Buyer Demand | James Gorman Property">
+  <meta property="og:description" content="A seller-focused showcase built around 9 Millgrove Park, Eglinton.">
+  <meta property="og:image" content="assets/hero.jpg">
+  <meta name="theme-color" content="#111111">
+  <style>
+    :root {
+      --ink: #111111;
+      --muted: #62605a;
+      --line: #ded9cf;
+      --paper: #faf8f3;
+      --cream: #f2eee5;
+      --gold: #b88a35;
+      --gold-dark: #8d6726;
+      --green: #164b3f;
+      --green-soft: #e7efe9;
+      --white: #ffffff;
+      --shadow: 0 18px 50px rgba(17, 17, 17, .12);
+      --radius: 8px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    .topbar {
+      position: fixed;
+      z-index: 20;
+      inset: 0 0 auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px max(16px, env(safe-area-inset-left)) 10px max(16px, env(safe-area-inset-right));
+      background: rgba(250, 248, 243, .88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(222, 217, 207, .7);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+    .brand img {
+      width: 46px;
+      height: 34px;
+      object-fit: contain;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 3px;
+    }
+    .brand strong { display: block; font-size: 13px; line-height: 1.05; }
+    .brand span { display: block; color: var(--muted); font-size: 11px; margin-top: 1px; }
+    .top-actions { display: flex; gap: 8px; align-items: center; }
+    .icon-btn, .pill-btn {
+      min-height: 42px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--white);
+      color: var(--ink);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 13px;
+      box-shadow: 0 8px 22px rgba(17,17,17,.08);
+    }
+    .icon-btn { width: 42px; font-size: 18px; }
+    .pill-btn { padding: 0 16px; background: var(--ink); color: var(--white); border-color: var(--ink); }
+
+    .hero {
+      min-height: 96svh;
+      position: relative;
+      display: grid;
+      align-items: end;
+      isolation: isolate;
+      overflow: hidden;
+      background: #111;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,.08) 32%, rgba(0,0,0,.78) 100%),
+        url('assets/hero.jpg') center / cover no-repeat;
+      z-index: -2;
+      transform: scale(1.02);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 18vh;
+      background: linear-gradient(180deg, rgba(250,248,243,0), var(--paper));
+      z-index: -1;
+    }
+    .hero-inner {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      padding: 96px 20px 42px;
+      color: white;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 11px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.14);
+      border: 1px solid rgba(255,255,255,.28);
+      backdrop-filter: blur(10px);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0;
+      max-width: 780px;
+      font-size: clamp(42px, 8vw, 84px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    .hero-copy {
+      margin: 18px 0 0;
+      max-width: 620px;
+      color: rgba(255,255,255,.9);
+      font-size: clamp(17px, 2.8vw, 22px);
+    }
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 28px;
+      max-width: 720px;
+    }
+    .meta-tile {
+      min-height: 74px;
+      padding: 13px;
+      border: 1px solid rgba(255,255,255,.24);
+      background: rgba(255,255,255,.12);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius);
+    }
+    .meta-tile strong { display: block; font-size: 21px; }
+    .meta-tile span { display: block; color: rgba(255,255,255,.78); font-size: 12px; margin-top: 2px; }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .btn {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border-radius: 999px;
+      padding: 0 18px;
+      border: 1px solid rgba(255,255,255,.28);
+      font-weight: 900;
+      font-size: 14px;
+      background: var(--white);
+      color: var(--ink);
+    }
+    .btn.secondary { background: rgba(255,255,255,.1); color: white; backdrop-filter: blur(10px); }
+
+    section {
+      padding: 58px 20px;
+    }
+    .wrap { width: min(1120px, 100%); margin: 0 auto; }
+    .section-kicker {
+      margin: 0 0 10px;
+      color: var(--gold-dark);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    h2 {
+      margin: 0;
+      max-width: 780px;
+      font-size: clamp(30px, 5vw, 54px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+    .lead {
+      margin: 16px 0 0;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .proof-band {
+      padding: 24px 20px;
+      background: var(--ink);
+      color: white;
+    }
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .proof-item {
+      min-height: 108px;
+      padding: 18px;
+      background: var(--ink);
+    }
+    .proof-item strong { display: block; color: #f4d58c; font-size: 28px; line-height: 1; }
+    .proof-item span { display: block; margin-top: 8px; color: rgba(255,255,255,.72); font-size: 13px; }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+    .feature-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .feature {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 13px;
+      align-items: start;
+    }
+    .feature b {
+      width: 42px;
+      height: 42px;
+      border-radius: 999px;
+      display: inline-grid;
+      place-items: center;
+      background: var(--green-soft);
+      color: var(--green);
+      border: 1px solid #cbdccb;
+    }
+    .feature strong { display: block; font-size: 17px; }
+    .feature p { margin: 4px 0 0; color: var(--muted); }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 26px;
+    }
+    .photo {
+      position: relative;
+      min-height: 230px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: #ddd;
+      box-shadow: var(--shadow);
+    }
+    .photo img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; filter: saturate(1.06) contrast(1.04) brightness(1.03); }
+    .photo span {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      padding: 7px 10px;
+      background: rgba(17,17,17,.72);
+      color: white;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      backdrop-filter: blur(10px);
+    }
+    .photo.large { min-height: 360px; }
+
+    .social-stage {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .phone {
+      background: #101010;
+      border-radius: 28px;
+      padding: 10px;
+      box-shadow: var(--shadow);
+      border: 1px solid #2b2b2b;
+    }
+    .phone-screen {
+      min-height: 520px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: end;
+      background: #000;
+      color: white;
+    }
+    .phone-screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .9; }
+    .phone-screen::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.78)); }
+    .reel-copy { position: relative; z-index: 1; padding: 18px; }
+    .reel-copy small { display: block; color: rgba(255,255,255,.72); font-weight: 800; margin-bottom: 7px; }
+    .reel-copy strong { display: block; font-size: 24px; line-height: 1.05; }
+    .reel-copy p { margin: 8px 0 0; color: rgba(255,255,255,.85); }
+    .campaign {
+      display: grid;
+      gap: 12px;
+    }
+    .campaign-row {
+      padding: 18px;
+      border-top: 1px solid var(--line);
+      background: rgba(255,255,255,.45);
+    }
+    .campaign-row:first-child { border-top: 0; }
+    .campaign-row strong { display: block; font-size: 18px; }
+    .campaign-row p { margin: 7px 0 0; color: var(--muted); }
+
+    .timeline {
+      margin-top: 28px;
+      border-top: 1px solid var(--line);
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 76px 1fr;
+      gap: 16px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .step time {
+      color: var(--gold-dark);
+      font-weight: 900;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    .step strong { display: block; font-size: 20px; }
+    .step p { margin: 6px 0 0; color: var(--muted); }
+
+    .quote-section {
+      background: var(--green);
+      color: white;
+    }
+    .quotes {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 26px;
+    }
+    blockquote {
+      margin: 0;
+      padding: 22px;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.08);
+    }
+    blockquote p { margin: 0; font-size: 19px; line-height: 1.35; }
+    blockquote footer { margin-top: 12px; color: rgba(255,255,255,.72); font-size: 13px; }
+
+    .cta {
+      position: relative;
+      overflow: hidden;
+      background: var(--ink);
+      color: white;
+    }
+    .cta::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(17,17,17,.95), rgba(17,17,17,.65)), url('assets/garden.jpg') center / cover no-repeat;
+      opacity: .95;
+    }
+    .cta .wrap { position: relative; }
+    .cta h2 { max-width: 700px; }
+    .cta .lead { color: rgba(255,255,255,.78); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 26px;
+      max-width: 760px;
+    }
+    .contact-link {
+      min-height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 14px 16px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.18);
+      backdrop-filter: blur(10px);
+      font-weight: 900;
+    }
+    .contact-link span { color: rgba(255,255,255,.68); font-size: 13px; font-weight: 700; }
+    .notice {
+      margin-top: 24px;
+      color: rgba(255,255,255,.58);
+      font-size: 12px;
+      max-width: 760px;
+    }
+
+    footer.page-foot {
+      padding: 24px 20px 90px;
+      color: var(--muted);
+      font-size: 12px;
+      background: var(--paper);
+    }
+
+    .sticky-cta {
+      position: fixed;
+      z-index: 30;
+      left: 12px;
+      right: 12px;
+      bottom: max(12px, env(safe-area-inset-bottom));
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .sticky-cta a {
+      min-height: 50px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 14px;
+      box-shadow: 0 12px 30px rgba(17,17,17,.2);
+    }
+    .sticky-cta a:first-child { background: var(--white); color: var(--ink); border: 1px solid var(--line); }
+    .sticky-cta a:last-child { background: var(--gold); color: var(--ink); border: 1px solid var(--gold); }
+
+    @media (max-width: 759px) {
+      h1 { font-size: 40px; max-width: 350px; }
+      .hero-copy { max-width: 340px; font-size: 16px; }
+      .top-actions { flex-shrink: 0; gap: 6px; }
+      .icon-btn { width: 40px; min-height: 40px; }
+      .pill-btn { min-height: 40px; padding: 0 13px; font-size: 12px; }
+      .hero-cta { display: none; }
+    }
+
+    @media (min-width: 760px) {
+      .topbar { padding: 12px 28px; }
+      .brand img { width: 58px; height: 42px; }
+      .brand strong { font-size: 15px; }
+      .hero-inner { padding-left: 32px; padding-right: 32px; padding-bottom: 70px; }
+      .hero-meta { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .proof-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .split { grid-template-columns: .92fr 1.08fr; gap: 48px; }
+      .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 190px; }
+      .photo { min-height: auto; }
+      .photo.large { grid-column: span 2; grid-row: span 2; min-height: auto; }
+      .social-stage { grid-template-columns: 360px 1fr; align-items: stretch; gap: 22px; }
+      .campaign { align-content: stretch; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+      .quotes { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .contact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .sticky-cta { width: 390px; left: auto; right: 18px; grid-template-columns: 1fr 1fr; }
+      footer.page-foot { padding-bottom: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar" aria-label="Site header">
+    <a class="brand" href="#top" aria-label="James Gorman Property showcase home">
+      <img src="assets/jgp-logo.png" alt="James Gorman Property logo">
+      <span><strong>James Gorman Property</strong><span>Premium seller showcase</span></span>
+    </a>
+    <nav class="top-actions" aria-label="Primary actions">
+      <a class="icon-btn" href="tel:02871610402" aria-label="Call James Gorman Property">☎</a>
+      <a class="pill-btn" href="#valuation">Valuation</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="9 Millgrove Park property showcase">
+      <div class="hero-inner">
+        <div class="eyebrow">Sample QR showcase · Eglinton</div>
+        <h1>Make serious buyers choose your home.</h1>
+        <p class="hero-copy">Using 9 Millgrove Park as the example: show the lifestyle clearly, put the strongest features in front of the right local buyers, and keep interested people moving toward a viewing.</p>
+        <div class="hero-meta" aria-label="Property summary">
+          <div class="meta-tile"><strong>£425k</strong><span>Guide price</span></div>
+          <div class="meta-tile"><strong>4 bed</strong><span>Detached family home</span></div>
+          <div class="meta-tile"><strong>2,497 sq ft</strong><span>Large internal footprint</span></div>
+          <div class="meta-tile"><strong>4,359</strong><span>Listing views captured</span></div>
+        </div>
+        <div class="hero-cta">
+          <a class="btn" href="#valuation">Ask James about selling</a>
+          <a class="btn secondary" href="#campaign">See what buyers see</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-band" aria-label="James Gorman Property proof points">
+      <div class="wrap proof-grid">
+        <div class="proof-item"><strong>4.9/5</strong><span>Trustpilot rating for James Gorman Property</span></div>
+        <div class="proof-item"><strong>75</strong><span>Trustpilot reviews currently visible</span></div>
+        <div class="proof-item"><strong>BT47+</strong><span>Local Derry and surrounding area coverage</span></div>
+        <div class="proof-item"><strong>1:1</strong><span>Direct communication with James</span></div>
+      </div>
+    </section>
+
+    <section aria-label="Listing upgrade concept">
+      <div class="wrap split">
+        <div>
+          <p class="section-kicker">The seller problem</p>
+          <h2>Most homes get uploaded. Better homes need to be wanted.</h2>
+          <p class="lead">A premium family home should not rely on buyers spotting it by chance. It needs the right first impression, a clear reason to view, and follow-up that keeps serious buyers warm instead of letting interest fade.</p>
+          <div class="feature-list">
+            <div class="feature"><b>1</b><div><strong>Make buyers remember the home</strong><p>Lead with the reasons people move: privacy, family space, village life, garden quality, double garage and flexible reception rooms.</p></div></div>
+            <div class="feature"><b>2</b><div><strong>Make the property feel premium</strong><p>Use the strongest shots in the right order, with richer crops and cleaner contrast, so the home feels worth the price before the viewing.</p></div></div>
+            <div class="feature"><b>3</b><div><strong>Turn interest into conversations</strong><p>Every QR scan, social click and enquiry should give a motivated buyer an easy next step toward a viewing or direct conversation with James.</p></div></div>
+          </div>
+        </div>
+        <div class="gallery" aria-label="Enhanced image gallery">
+          <figure class="photo large"><img src="assets/exterior.jpg" alt="Exterior view of 9 Millgrove Park"><span>Hero exterior crop</span></figure>
+          <figure class="photo"><img src="assets/kitchen.jpg" alt="Kitchen at 9 Millgrove Park"><span>Kitchen detail</span></figure>
+          <figure class="photo"><img src="assets/living.jpg" alt="Living space at 9 Millgrove Park"><span>Reception space</span></figure>
+          <figure class="photo"><img src="assets/garden.jpg" alt="Private garden at 9 Millgrove Park"><span>Private garden</span></figure>
+          <figure class="photo"><img src="assets/sunroom.jpg" alt="Sunroom at 9 Millgrove Park"><span>Sunroom to patio</span></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="campaign" aria-label="Social campaign concept">
+      <div class="wrap">
+        <p class="section-kicker">What buyers see</p>
+        <h2>Put the best reasons to view in front of buyers all week.</h2>
+        <p class="lead">This is the part that matters to a seller: your home is not just sitting on a portal. Buyers see the strongest lifestyle angles repeatedly, and the people who show interest are nudged back toward booking a viewing.</p>
+        <div class="social-stage">
+          <div class="phone" aria-label="Mock social reel">
+            <div class="phone-screen">
+              <img src="assets/garden.jpg" alt="Garden social reel background">
+              <div class="reel-copy">
+                <small>@james_gorman_property · Buyer hook</small>
+                <strong>Privacy, space and a garden built for family life in Eglinton.</strong>
+                <p>30-second viewing prompt: “This is the bit buyers will remember after the viewing.”</p>
+              </div>
+            </div>
+          </div>
+          <div class="campaign">
+            <div class="campaign-row"><strong>Make your home impossible to scroll past</strong><p>A fast vertical tour gives buyers the exterior, kitchen, garden and lifestyle feel before they have even opened a property portal.</p></div>
+            <div class="campaign-row"><strong>Show different buyers why it fits them</strong><p>Families, upsizers, hybrid workers and privacy-led buyers each see the part of the home most likely to make them book a viewing.</p></div>
+            <div class="campaign-row"><strong>Learn what buyers care about early</strong><p>Garden, garage, sunroom or village setting: simple prompts reveal which features are getting attention before viewings begin.</p></div>
+            <div class="campaign-row"><strong>Keep interested buyers coming back</strong><p>People who scan, click or watch can be reminded of the property and pushed toward the next practical step while interest is warm.</p></div>
+            <div class="campaign-row"><strong>Give sellers evidence, not guesswork</strong><p>Views, clicks, comments and viewing requests show whether the launch is creating real buyer attention.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Seven day launch plan">
+      <div class="wrap">
+        <p class="section-kicker">First week plan</p>
+        <h2>Here is what happens when your home is properly launched.</h2>
+        <p class="lead">For sellers receiving the letter, the point is simple: James can make the home look stronger, reach more relevant buyers, and keep the best prospects engaged beyond the first click.</p>
+        <div class="timeline">
+          <div class="step"><time>Day 1</time><div><strong>Find the reason buyers will remember it</strong><p>Shape the lead angle around the emotional reasons people move: privacy, scale, family flexibility and Eglinton convenience.</p></div></div>
+          <div class="step"><time>Day 2</time><div><strong>Create the premium first impression</strong><p>Build the hero gallery, mobile page, social cuts and direct enquiry links so every buyer lands on a stronger version of the home.</p></div></div>
+          <div class="step"><time>Day 3</time><div><strong>Put the home in front of local buyers</strong><p>Launch short video, Facebook posts and Instagram stories before the weekend window, with each post giving people a reason to view.</p></div></div>
+          <div class="step"><time>Day 4-5</time><div><strong>Follow up while interest is warm</strong><p>Contact active buyers, previous valuation leads and people who interacted with the campaign before they move on to another home.</p></div></div>
+          <div class="step"><time>Day 6-7</time><div><strong>Show the seller what is working</strong><p>Report views, clicks, viewing requests, comments and buyer feedback so the seller can see the launch is being actively managed.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section" aria-label="Seller proof">
+      <div class="wrap">
+        <p class="section-kicker" style="color:#f4d58c">Proof</p>
+        <h2>People already talk about James the way sellers want their agent to behave.</h2>
+        <div class="quotes">
+          <blockquote><p>“Proactive... kept us updated at every stage.”</p><footer>Trustpilot review theme</footer></blockquote>
+          <blockquote><p>“Our home was marketed beautifully and sold quickly.”</p><footer>Trustpilot review theme</footer></blockquote>
+          <blockquote><p>“Professional, responsive, and always willing to help.”</p><footer>Trustpilot review theme</footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="valuation" class="cta" aria-label="Contact James Gorman Property">
+      <div class="wrap">
+        <p class="section-kicker" style="color:#f4d58c">Seller CTA</p>
+        <h2>Thinking of selling? Ask James what your home could do with a proper launch.</h2>
+        <p class="lead">No pressure. Get a direct view on pricing, presentation, buyer demand and the quickest route to serious interest.</p>
+        <div class="contact-grid">
+          <a class="contact-link" href="tel:02871610402"><span>Office</span>028 7161 0402</a>
+          <a class="contact-link" href="tel:07786910768"><span>Mobile</span>07786 910 768</a>
+          <a class="contact-link" href="mailto:sales@jamesgormanproperty.com"><span>Email</span>Sales@jamesgormanproperty.com</a>
+        </div>
+        <p class="notice">Concept showcase for James Gorman Property. Property example uses public listing information for 9 Millgrove Park, Eglinton. This page does not state that James Gorman Property is the current selling agent for that property.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-foot">
+    <div class="wrap">James Gorman Property seller showcase concept · Built for QR letter campaigns · Source facts checked 29 April 2026.</div>
+  </footer>
+
+  <div class="sticky-cta" aria-label="Sticky contact actions">
+    <a href="tel:07786910768">Call James</a>
+    <a href="#valuation">Value my home</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "chain-free-house-sale-derry",
+    "title": "Chain-Free House Sale in Derry: What It Means for Sellers and Buyers",
+    "draftId": "ac4bf75f-04fc-4f0f-8e0a-8e790c8cca1e",
+    "createStatus": 200,
+    "patchStatus": 200,
+    "publishStatus": 200,
+    "published": true
+  },
+  {
+    "slug": "estate-agent-ballyarnett-derry",
+    "title": "Estate Agent Ballyarnett Derry: Selling a Home with a Clear Local Plan",
+    "draftId": "a4570e98-65aa-4ce9-be6b-6ddbca97f57b",
+    "createStatus": 200,
+    "patchStatus": 200,
+    "publishStatus": 200,
+    "published": true
+  },
+  {
+    "slug": "estate-agent-maydown-derry",
+    "title": "Estate Agent Maydown Derry: Selling Well on the City Edge",
+    "draftId": "c9da5fb6-12a7-450a-9809-e89595bbbeae",
+    "createStatus": 200,
+    "patchStatus": 200,
+    "publishStatus": 200,
+    "published": true
+  },
+  {
+    "slug": "estate-agent-newbuildings-derry",
+    "title": "Estate Agent Newbuildings Derry: A Practical Seller Guide for Local Homes",
+    "draftId": "cc26c76f-c53c-4716-86f0-c51a29fa4685",
+    "createStatus": 200,
+    "patchStatus": 200,
+    "publishStatus": 200,
+    "published": true
+  },
+  {
+    "slug": "prepare-house-for-valuation-derry",
+    "title": "How to Prepare Your House for a Valuation in Derry",
+    "draftId": "7890832e-1732-4a34-9a44-a1a6514bfa32",
+    "createStatus": 200,
+    "patchStatus": 200,
+    "publishStatus": 200,
+    "published": true
+  },
+  {
+    "slug": "property-valuation-cityside-derry",
+    "title": "Property Valuation Cityside Derry: A Seller Guide to Pricing with Confidence",
+    "draftId": "d1e1e071-58a6-44af-b3c4-412b747f3154",
+    "createStatus": 200,
+    "patchStatus": 200,
+    "publishStatus": 200,
+    "published": true
+  },
+  {
+    "slug": "property-valuation-waterside-derry",
+    "title": "Property Valuation Waterside Derry: What Sellers Should Check Before Listing",
+    "draftId": "5b0a09ad-dccd-463b-80af-ebd9b09b750c",
+    "createStatus": 200,
+    "patchStatus": 200,
+    "publishStatus": 200,
+    "published": true
+  },
+  {
+    "slug": "selling-rental-property-derry",
+    "title": "Selling a Rental Property in Derry: What Landlords Should Think About",
+    "draftId": "511c3a0a-4321-455d-a448-a0f56872aed7",
+    "createStatus": 200,
+    "patchStatus": 200,
+    "publishStatus": 200,
+    "published": true
+  }
+]

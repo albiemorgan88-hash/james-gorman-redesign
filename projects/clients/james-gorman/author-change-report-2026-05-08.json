@@ -1,0 +1,791 @@
+{
+  "updated_at": "2026-05-08T13:50:26+0100",
+  "target_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+  "previous_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+  "attempted": 78,
+  "succeeded": 78,
+  "failed": [],
+  "remaining_phil_draft_count": 0,
+  "results": [
+    {
+      "id": "275a9f5e-4db4-418d-940b-d8f7459b4223",
+      "title": "No Sale No Fee Estate Agent Derry: What Sellers Should Check",
+      "slug": "no-sale-no-fee-estate-agent-derry-guide",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "891b019d-ac8a-4e14-963a-ebe0f9e512a5",
+      "title": "Property Valuer Derry: What to Expect From a Local Valuation",
+      "slug": "property-valuer-derry-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "668a2b57-4f74-4be7-88c9-601cb48c2547",
+      "title": "House Valuation Derry: How to Price Your Home Properly",
+      "slug": "house-valuation-derry-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "063dc3d6-e78a-4eca-b5a9-33527694306d",
+      "title": "Bungalows for Sale Derry: Buyer and Downsizer Guide 2026",
+      "slug": "bungalows-for-sale-derry-guide-2026-1",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "ecb37340-b19f-46fe-bd93-054dda8d9ce7",
+      "title": "Property for Sale Derry City: What Buyers Should Know in 2026",
+      "slug": "property-for-sale-derry-city-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "2ede629b-b712-4288-b46b-09e66ca22ba8",
+      "title": "Property for Sale Cityside Derry: Local Buyer Guide 2026",
+      "slug": "property-for-sale-cityside-derry-buyer-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "ea089894-0974-4848-9dc3-2fdc31dba8cf",
+      "title": "Houses for Sale Waterside Derry: 2026 Buyer Guide",
+      "slug": "houses-for-sale-waterside-derry-buyer-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "511c3a0a-4321-455d-a448-a0f56872aed7",
+      "title": "Selling a Rental Property in Derry: What Landlords Should Think About",
+      "slug": "selling-rental-property-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "5b0a09ad-dccd-463b-80af-ebd9b09b750c",
+      "title": "Property Valuation Waterside Derry: What Sellers Should Check Before Listing",
+      "slug": "property-valuation-waterside-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "d1e1e071-58a6-44af-b3c4-412b747f3154",
+      "title": "Property Valuation Cityside Derry: A Seller Guide to Pricing with Confidence",
+      "slug": "property-valuation-cityside-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "7890832e-1732-4a34-9a44-a1a6514bfa32",
+      "title": "How to Prepare Your House for a Valuation in Derry",
+      "slug": "prepare-house-for-valuation-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "cc26c76f-c53c-4716-86f0-c51a29fa4685",
+      "title": "Estate Agent Newbuildings Derry: A Practical Seller Guide for Local Homes",
+      "slug": "estate-agent-newbuildings-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "c9da5fb6-12a7-450a-9809-e89595bbbeae",
+      "title": "Estate Agent Maydown Derry: Selling Well on the City Edge",
+      "slug": "estate-agent-maydown-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "a4570e98-65aa-4ce9-be6b-6ddbca97f57b",
+      "title": "Estate Agent Ballyarnett Derry: Selling a Home with a Clear Local Plan",
+      "slug": "estate-agent-ballyarnett-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "ac4bf75f-04fc-4f0f-8e0a-8e790c8cca1e",
+      "title": "Chain-Free House Sale in Derry: What It Means for Sellers and Buyers",
+      "slug": "chain-free-house-sale-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "f4ee914a-1a58-4f92-8b3d-de02c822ee85",
+      "title": "Help to Buy NI 2026: What Buyers Actually Get",
+      "slug": "help-to-buy-ni-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "522fcc6c-ee5d-414b-83f6-8cee12fb947b",
+      "title": "Probate Property Sales in Derry: A Practical Guide for Executors",
+      "slug": "probate-property-sales-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "881db549-e333-4a3b-adda-867e11a4cbed",
+      "title": "Bridging Loans in Northern Ireland: When They Help, When They Hurt",
+      "slug": "bridging-loans-ni-explained",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "d5474ba7-4e4e-4793-8c95-9fdf1f9be8d3",
+      "title": "Selling Your Home in Spring 2026: A Derry Market Read",
+      "slug": "selling-derry-spring-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "a0e4d268-a8d3-47c5-ad98-482d74b3f59f",
+      "title": "Estate Agent Eglinton: Pricing, Presenting and Selling Well in a Small but Strong Market",
+      "slug": "estate-agent-eglinton-1",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "4e87b370-9e26-4247-8fe7-bc2c52d6154c",
+      "title": "Stamp Duty Northern Ireland 2026: What Buyers Actually Pay (With Worked Examples)",
+      "slug": "stamp-duty-northern-ireland-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "f72fe44e-d242-46e2-9139-cfb336ff3a2e",
+      "title": "Selling an Inherited House in Derry: A 2026 Guide to Probate, Tax and Practical Next Steps",
+      "slug": "selling-inherited-house-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "e4f17b95-ab8b-4ef1-9401-7b3c55afbb15",
+      "title": "First-Time Buyer Derry: The 2026 Step-by-Step Guide to Getting Your First Home",
+      "slug": "first-time-buyer-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "9edfde90-f2d5-48f9-beb0-9d3dccb4f040",
+      "title": "When Is the Best Time to Sell a House in Derry?",
+      "slug": "best-time-to-sell-house-derry-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "824c8544-3c1a-4e0c-be1e-0c79c34bdc08",
+      "title": "Derry House Prices: What Buyers and Sellers Should Look At in 2026",
+      "slug": "derry-house-prices-local-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "9e090c39-5169-476a-a9c1-c7b32ed09bfc",
+      "title": "House Hunting in Derry: A Practical Buyer Checklist for 2026",
+      "slug": "house-hunting-derry-checklist-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "f4d862f6-3b30-497c-b764-a6f02e5f7563",
+      "title": "Property Finder Derry: How Local Buyer Support Helps You Move Smarter",
+      "slug": "property-finder-derry-buyer-service-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "7c175717-de52-4a3a-a126-bb3193da6e44",
+      "title": "Buy to Let Derry: A Practical 2026 Guide for Investors Looking at Yield, Area Fit and Tenant Demand",
+      "slug": "buy-to-let-derry-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "8a7d150a-d4fd-4238-9ef0-bd04857de90e",
+      "title": "Bungalows for Sale Derry: What Buyers and Downsizers Should Watch for in 2026",
+      "slug": "bungalows-for-sale-derry-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "5afc37c1-61a9-434a-898c-3a87e32876df",
+      "title": "Sell My House Fast Derry: A Practical 2026 Guide to Pricing, Presentation and Speed Without Panic",
+      "slug": "sell-my-house-fast-derry-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "399cc961-6d3b-44eb-9762-eba7e7ee8f1a",
+      "title": "New Builds Derry: What Buyers Should Check on Price, Spec, Location and Long-Term Value in 2026",
+      "slug": "new-builds-derry-buyer-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "809070b9-6069-4093-b751-1a4eb678d39d",
+      "title": "Derry Property Market 2026: Complete Analysis of Northern Ireland's Strongest Performing Region",
+      "slug": "derry-property-market-2026-analysis-trends",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "e5b61c14-715a-4d2c-a1a4-5a5a51a65cb8",
+      "title": "Moving to Derry Guide: Everything You Need to Know About Relocating to Derry in 2026",
+      "slug": "moving-to-derry-complete-relocation-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "03f18447-cc0e-45f7-8ae4-58a06c2d59a8",
+      "title": "Estate Agent Derry: Your Complete Guide to Professional Property Services in 2026",
+      "slug": "estate-agent-derry-professional-services-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "fb093ed0-9664-4510-932a-201a76ca2f1f",
+      "title": "Houses for Sale Derry: Your Complete Guide to Finding Your Dream Home in 2026",
+      "slug": "houses-for-sale-derry-complete-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "519a0bd3-db5b-4efc-a6e9-9b17619262fd",
+      "title": "Property Valuation Derry: Complete Guide to Getting Your Home Valued in 2026",
+      "slug": "property-valuation-derry-complete-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "376f2ca3-dc29-4ace-bb2b-30a6f31e6aef",
+      "title": "How to Choose an Estate Agent in Derry: Your Complete 2026 Guide",
+      "slug": "how-to-choose-an-estate-agent-in-derry-your-complete-2026-guide",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "e629e6f1-f941-460a-8378-75041f473412",
+      "title": "New Build Homes Derry: Merchant's View and Other Developments 2026",
+      "slug": "new-build-homes-derry-merchant-s-view-and-other-developments-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "c05e62ef-f839-4e95-bf2c-0271f11d931b",
+      "title": "Downsizing in Derry: A Guide for Empty Nesters",
+      "slug": "downsizing-in-derry-a-guide-for-empty-nesters",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "aa78fb5e-0a53-4a67-8c52-62b0273bfbcd",
+      "title": "Property Survey Guide: What Northern Ireland Buyers Need to Know",
+      "slug": "property-survey-guide-what-northern-ireland-buyers-need-to-know",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "9a74b0e8-d16d-4e66-b897-0dd8234f096d",
+      "title": "Investment Property Derry: A Guide to Buy-to-Let in 2026",
+      "slug": "investment-property-derry-a-guide-to-buy-to-let-in-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "6eac2b9c-e4b1-4d5f-af39-2e2af0c536da",
+      "title": "Moving to Derry from England: What You Need to Know",
+      "slug": "moving-to-derry-from-england-what-you-need-to-know",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "3661a57a-aa4a-44e9-a2ba-3f640a2e539f",
+      "title": "Landlord Guide to Letting Property in Derry: Complete 2026 Legal and Practical Guide",
+      "slug": "landlord-guide-to-letting-property-in-derry-complete-2026-legal-and-practical-guide",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "7187b8ba-4cd7-4cac-825f-dfe3abc71c2a",
+      "title": "What Does an Estate Agent Actually Do? A Derry Guide to Professional Property Services",
+      "slug": "what-does-an-estate-agent-actually-do-a-derry-guide-to-professional-property-services",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "f19ca18a-f79a-4e6b-829e-2689b5f925fc",
+      "title": "Top 5 Areas to Live in Derry for Families: The Complete 2026 Guide",
+      "slug": "top-5-areas-to-live-in-derry-for-families-the-complete-2026-guide",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "e1060832-a206-4065-ad1f-420f4f7730c4",
+      "title": "Renting vs Buying in Derry 2026: The Complete Guide to Making the Right Choice",
+      "slug": "renting-vs-buying-in-derry-2026-the-complete-guide-to-making-the-right-choice",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "f9365d30-d94f-423c-845d-6df5aad88651",
+      "title": "How to Sell Your House Fast in Derry - Expert Quick Sale Guide 2026",
+      "slug": "how-to-sell-your-house-fast-in-derry-expert-quick-sale-guide-2026-1",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "5207a8ca-bf8d-40b0-af84-faa3e397a749",
+      "title": "Derry Property Market Update March 2026 - Latest Trends & Analysis",
+      "slug": "derry-property-market-update-march-2026-latest-trends-analysis-1",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "8ccd2624-999a-4b5f-96ca-1f8783169a44",
+      "title": "Professional Property Valuation Services Derry - Complete Guide 2026",
+      "slug": "professional-property-valuation-services-derry-complete-guide-2026-1",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "bb3f8029-0b49-4e3e-a11d-d7a6b527fd11",
+      "title": "Houses for Sale Eglinton - Beautiful Village Properties Near Derry",
+      "slug": "houses-for-sale-eglinton-beautiful-village-properties-near-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "2915a62b-b149-4cdb-be57-586463be2c70",
+      "title": "Lettings Agent Derry - Professional Property Management & Rental Services",
+      "slug": "lettings-agent-derry-professional-property-management-rental-services",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "0445b292-91b5-4a85-acd0-b8726dadfcbb",
+      "title": "Estate Agent Limavady - Professional Property Services in North West NI",
+      "slug": "estate-agent-limavady-professional-property-services-in-north-west-ni",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "4b14d9f3-be67-4e7f-bfc3-85cb6558273d",
+      "title": "Derry Property Market Update March 2026 - Latest Trends & Analysis",
+      "slug": "derry-property-market-update-march-2026-latest-trends-analysis",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "8e49a42d-cca4-4e2a-9bcb-21ecfed92c7b",
+      "title": "How to Sell Your House Fast in Derry - Expert Quick Sale Guide 2026",
+      "slug": "how-to-sell-your-house-fast-in-derry-expert-quick-sale-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "fdf5f683-78b3-4c86-812d-f0b2c8eb2f8a",
+      "title": "Professional Property Valuation Services Derry - Complete Guide 2026",
+      "slug": "professional-property-valuation-services-derry-complete-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "c5012382-2722-4cb2-9707-5d4803897a2d",
+      "title": "Properties for Sale in Strathfoyle, Derry",
+      "slug": "properties-for-sale-in-strathfoyle-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "9a19e0a3-f47f-45e1-b401-92d87095efd7",
+      "title": "Properties for Sale in Drumahoe, Derry",
+      "slug": "properties-for-sale-in-drumahoe-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "7ac8b9d9-7276-41da-a3a5-60768fa295a5",
+      "title": "Properties for Sale in Eglinton, Derry",
+      "slug": "properties-for-sale-in-eglinton-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "e809af73-e700-4d95-906b-465138c0b5c6",
+      "title": "Properties for Sale in Culmore, Derry",
+      "slug": "properties-for-sale-in-culmore-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "0c332085-63ef-423e-91af-aaf628ae335c",
+      "title": "Properties for Sale in Cityside, Derry",
+      "slug": "properties-for-sale-in-cityside-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "8b451c12-5806-4f12-95bd-6a89b2ce5c47",
+      "title": "Properties for Sale in Waterside, Derry",
+      "slug": "properties-for-sale-in-waterside-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "7ea5ff8c-b1b7-4723-9ff2-c8c37a9edbad",
+      "title": "Derry Property Market 2026: Prices, Trends & Expert Analysis",
+      "slug": "derry-property-market-2026-prices-trends-expert-analysis",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "fde2fe40-63a1-4bac-a856-c64d00b10983",
+      "title": "First Time Buyer Guide Derry: Everything You Need to Know 2026",
+      "slug": "first-time-buyer-guide-derry-everything-you-need-to-know-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "d901c4e8-2ccb-4a87-b79b-e15700a08493",
+      "title": "How to Sell Your House in Derry: Complete Expert Guide 2026",
+      "slug": "how-to-sell-your-house-in-derry-complete-expert-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "1e966639-978e-44b6-86a2-15a6c74185d2",
+      "title": "Best Areas to Live in Derry: Your Complete Guide 2026",
+      "slug": "best-areas-to-live-in-derry-your-complete-guide-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "213f5282-806d-47bb-af53-9f4a6e059da9",
+      "title": "Property Valuation Derry: What Is Your Home Worth in 2026?",
+      "slug": "property-valuation-derry-what-is-your-home-worth-in-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "c775bea0-d79a-4611-bbd8-81f05653e876",
+      "title": "What Affects Property Value in BT47 and BT48?",
+      "slug": "property-value-bt47-bt48-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "614dd305-8e14-4f8e-b633-079241f96cc8",
+      "title": "First-Time Buyer Guide: Buying Property in the Derry Area",
+      "slug": "first-time-buyer-guide-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "ff7edbe0-18cc-4d56-bd30-a4ca1279c8df",
+      "title": "Thinking of Selling in Limavady? Start With a Proper Valuation",
+      "slug": "selling-limavady-property-valuation",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "fa57cd14-26be-4724-9935-f03c972b3e77",
+      "title": "How to Choose the Right Estate Agent in Derry",
+      "slug": "how-to-choose-estate-agent-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "edb0a7b6-f7a9-441f-a853-f2d228c579e9",
+      "title": "Thinking of Selling in Limavady? Start With a Proper Valuation",
+      "slug": "thinking-of-selling-in-limavady-start-with-a-proper-valuation",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "aa5bfe68-8713-43f3-857e-d1751485910d",
+      "title": "How to Choose the Right Estate Agent in Derry",
+      "slug": "how-to-choose-the-right-estate-agent-in-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "f7d01693-ddda-41c3-a5af-c887df1f16ac",
+      "title": "Selling a Home in Dungiven: 7 Mistakes That Slow Down a Sale",
+      "slug": "selling-a-home-in-dungiven-7-mistakes-that-slow-down-a-sale",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "657ec5d6-f4e0-45b6-b324-5db516a58082",
+      "title": "Buying in Eglinton: What to Know About Schools, Commute and Local Demand",
+      "slug": "buying-in-eglinton-what-to-know-about-schools-commute-and-local-demand",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "ed7cde7c-3fa9-4987-ba4b-3133a7e4b5d0",
+      "title": "Estate Agent Dungiven",
+      "slug": "estate-agent-dungiven",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "513dd472-ed94-4ebb-98e1-0559f22292f3",
+      "title": "Estate Agent Eglinton",
+      "slug": "estate-agent-eglinton",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "84a13bc8-72fa-43a5-838d-3c4856d98987",
+      "title": "Estate Agent Limavady",
+      "slug": "estate-agent-limavady",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    },
+    {
+      "id": "734c8e6f-c721-43f4-8a6e-270a291cabb6",
+      "title": "Estate Agent DerryJames Gorman Property \u2014 Location Page Draft",
+      "slug": "estate-agent-derryjames-gorman-property-location-page-draft",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "ok": true,
+      "after_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+      "hasUnpublishedChanges": false,
+      "status": "PUBLISHED"
+    }
+  ]
+}

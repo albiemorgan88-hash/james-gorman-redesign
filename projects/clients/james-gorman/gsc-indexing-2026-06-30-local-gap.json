@@ -1,0 +1,311 @@
+{
+  "checked_at": "2026-06-30T12:18:15.341828+00:00",
+  "site": "sc-domain:jamesgormanproperty.com",
+  "sitemap": "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+  "sitemap_submit": {
+    "ok": true,
+    "status": 204,
+    "json": {}
+  },
+  "inspections": [
+    {
+      "url": "https://www.jamesgormanproperty.com/post/houses-for-sale-rosemount-derry-buyer-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=9kbydt54bS5L-Z1LPGDawQ&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/property-valuation-rosemount-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=FC05yUouP2cAuJTsW2dxsw&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Discovered - currently not indexed",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+              "sitemap": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+                "https://www.jamesgormanproperty.com/sitemap.xml"
+              ],
+              "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/houses-for-sale-shantallow-derry-buyer-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=oKpJccXmsTW-9A_5_riOaw&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Discovered - currently not indexed",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+              "sitemap": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+                "https://www.jamesgormanproperty.com/sitemap.xml"
+              ],
+              "referringUrls": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml"
+              ],
+              "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/house-not-selling-shantallow-derry-what-to-do-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=0sbGnMW9uptAVII73Se2PA&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/houses-for-sale-pennyburn-derry-buyer-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=GG_yUS1pvQrygvSUsLXZgg&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Discovered - currently not indexed",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+              "sitemap": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+                "https://www.jamesgormanproperty.com/sitemap.xml"
+              ],
+              "referringUrls": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml"
+              ],
+              "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/property-valuation-pennyburn-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=FksvZnd8-B74MZdXSIgitQ&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Discovered - currently not indexed",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+              "sitemap": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+                "https://www.jamesgormanproperty.com/sitemap.xml"
+              ],
+              "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/houses-for-sale-bogside-derry-buyer-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=FExSeJn72uR5LVAsSkoNyg&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Discovered - currently not indexed",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+              "sitemap": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+                "https://www.jamesgormanproperty.com/sitemap.xml"
+              ],
+              "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/selling-terrace-house-derry-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=v6senwW2UZStDDyvNJmblQ&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Discovered - currently not indexed",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+              "sitemap": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+                "https://www.jamesgormanproperty.com/sitemap.xml"
+              ],
+              "referringUrls": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml"
+              ],
+              "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/property-valuation-woodbrook-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=IUeoRn6Hdu5oOOoaAHuglw&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/houses-for-sale-ardmore-derry-buyer-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=LtsvbgohbD_hDUeXVE8bAA&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

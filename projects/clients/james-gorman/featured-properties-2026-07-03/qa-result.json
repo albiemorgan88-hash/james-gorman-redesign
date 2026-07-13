@@ -1,0 +1,164 @@
+{
+  "galleryId": "0880c93f-89ac-435c-af7b-5948fceef70e",
+  "beforeTotal": 19,
+  "afterTotal": 24,
+  "results": [
+    {
+      "propertyId": "1085549",
+      "title": "35 Coleraine Road, Portrush",
+      "status": "updated-existing",
+      "itemId": "5869caf2-0b6d-4362-8d29-a41193397421",
+      "url": "https://www.propertypal.com/35-coleraine-road-portrush/1085549"
+    },
+    {
+      "propertyId": "1083049",
+      "title": "11 Oaktree Manor, Eglinton",
+      "status": "updated-existing",
+      "itemId": "afe15b11-58b4-4450-bd6a-c3ad5fdf6e70",
+      "url": "https://www.propertypal.com/11-oaktree-manor-coolafinny-road-eglinton-derrylondonderry/1083049"
+    },
+    {
+      "propertyId": "1077344",
+      "title": "Lisowen, Limavady Road",
+      "status": "updated-existing",
+      "itemId": "7d4125fb-28c2-4910-9b49-397645e2ece5",
+      "url": "https://www.propertypal.com/lisowen-limavady-road-derrylondonderry/1077344"
+    },
+    {
+      "propertyId": "1081490",
+      "title": "91 Good Shepherd Glen",
+      "status": "added",
+      "itemId": "3c37b0b9-cbd1-41fc-a61b-1c6d18cc6e48",
+      "imageId": "8a0a22_1042ce230865494880e0d8c6579459ec~mv2.jpg",
+      "url": "https://www.propertypal.com/91-good-shepherd-glen-derrylondonderry/1081490"
+    },
+    {
+      "propertyId": "1080605",
+      "title": "24 Culmore Square",
+      "status": "added",
+      "itemId": "6e1e3cff-9627-4e03-92ee-4a3e36575971",
+      "imageId": "8a0a22_566a4eb1a003408ab0cb971d22880514~mv2.jpg",
+      "url": "https://www.propertypal.com/24-culmore-square-derrylondonderry/1080605"
+    },
+    {
+      "propertyId": "1077343",
+      "title": "18 Clearwater",
+      "status": "added",
+      "itemId": "685901b1-7096-4c5e-88dc-68e4f6fdacfe",
+      "imageId": "8a0a22_b960d59ec0f041f6bffc3950045bdc3b~mv2.jpg",
+      "url": "https://www.propertypal.com/18-clearwater-derrylondonderry/1077343"
+    },
+    {
+      "propertyId": "1058022",
+      "title": "25 Summer Meadows Park",
+      "status": "added",
+      "itemId": "b2afc157-6490-4ded-911e-7eb1ce639e4c",
+      "imageId": "8a0a22_e47ad8a1ee38491794a546547c6b7135~mv2.jpg",
+      "url": "https://www.propertypal.com/25-summer-meadows-park-derrylondonderry/1058022"
+    },
+    {
+      "propertyId": "1028267",
+      "title": "33 Tulacorr Gardens, Strabane",
+      "status": "added",
+      "itemId": "e0524e3b-9b55-406e-9a6a-042acf974294",
+      "imageId": "8a0a22_7a1dbb58fd2b4c2984bab8a24935946d~mv2.jpg",
+      "url": "https://www.propertypal.com/33-tulacorr-gardens-strabane/1028267"
+    }
+  ],
+  "verification": [
+    {
+      "propertyId": "1085549",
+      "title": "35 Coleraine Road, Portrush",
+      "url": "https://www.propertypal.com/35-coleraine-road-portrush/1085549",
+      "found": true,
+      "itemId": "5869caf2-0b6d-4362-8d29-a41193397421",
+      "sortOrder": -2100000000000.0,
+      "imageWidth": 586,
+      "imageHeight": 768
+    },
+    {
+      "propertyId": "1083049",
+      "title": "11 Oaktree Manor, Eglinton",
+      "url": "https://www.propertypal.com/11-oaktree-manor-coolafinny-road-eglinton-derrylondonderry/1083049",
+      "found": true,
+      "itemId": "afe15b11-58b4-4450-bd6a-c3ad5fdf6e70",
+      "sortOrder": -2099000000000.0,
+      "imageWidth": 622,
+      "imageHeight": 768
+    },
+    {
+      "propertyId": "1077344",
+      "title": "Lisowen, Limavady Road",
+      "url": "https://www.propertypal.com/lisowen-limavady-road-derrylondonderry/1077344",
+      "found": true,
+      "itemId": "7d4125fb-28c2-4910-9b49-397645e2ece5",
+      "sortOrder": -2098000000000.0,
+      "imageWidth": 690,
+      "imageHeight": 768
+    },
+    {
+      "propertyId": "1081490",
+      "title": "91 Good Shepherd Glen",
+      "url": "https://www.propertypal.com/91-good-shepherd-glen-derrylondonderry/1081490",
+      "found": true,
+      "itemId": "3c37b0b9-cbd1-41fc-a61b-1c6d18cc6e48",
+      "sortOrder": -2097000000000.0,
+      "imageWidth": 942,
+      "imageHeight": 1080
+    },
+    {
+      "propertyId": "1080605",
+      "title": "24 Culmore Square",
+      "url": "https://www.propertypal.com/24-culmore-square-derrylondonderry/1080605",
+      "found": true,
+      "itemId": "6e1e3cff-9627-4e03-92ee-4a3e36575971",
+      "sortOrder": -2096000000000.0,
+      "imageWidth": 698,
+      "imageHeight": 1080
+    },
+    {
+      "propertyId": "1077343",
+      "title": "18 Clearwater",
+      "url": "https://www.propertypal.com/18-clearwater-derrylondonderry/1077343",
+      "found": true,
+      "itemId": "685901b1-7096-4c5e-88dc-68e4f6fdacfe",
+      "sortOrder": -2095000000000.0,
+      "imageWidth": 997,
+      "imageHeight": 1080
+    },
+    {
+      "propertyId": "1058022",
+      "title": "25 Summer Meadows Park",
+      "url": "https://www.propertypal.com/25-summer-meadows-park-derrylondonderry/1058022",
+      "found": true,
+      "itemId": "b2afc157-6490-4ded-911e-7eb1ce639e4c",
+      "sortOrder": -2094000000000.0,
+      "imageWidth": 826,
+      "imageHeight": 1080
+    },
+    {
+      "propertyId": "1028267",
+      "title": "33 Tulacorr Gardens, Strabane",
+      "url": "https://www.propertypal.com/33-tulacorr-gardens-strabane/1028267",
+      "found": true,
+      "itemId": "e0524e3b-9b55-406e-9a6a-042acf974294",
+      "sortOrder": -2093000000000.0,
+      "imageWidth": 775,
+      "imageHeight": 1080
+    }
+  ],
+  "homepage": {
+    "status": 200,
+    "titles_in_html": {
+      "35 Coleraine Road, Portrush": true,
+      "11 Oaktree Manor, Eglinton": true,
+      "Lisowen, Limavady Road": true,
+      "91 Good Shepherd Glen": true,
+      "24 Culmore Square": true,
+      "18 Clearwater": true,
+      "25 Summer Meadows Park": true,
+      "33 Tulacorr Gardens, Strabane": true
+    }
+  },
+  "passed": true
+}

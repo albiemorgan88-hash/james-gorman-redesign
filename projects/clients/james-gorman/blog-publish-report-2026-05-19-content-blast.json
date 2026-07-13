@@ -1,0 +1,351 @@
+{
+  "published_at": "2026-05-19T21:33:37+0100",
+  "domain": "jamesgormanproperty.com",
+  "draft_dir": "/Users/philsagent/.openclaw/workspace/projects/clients/james-gorman/blog-drafts/content-blast-2026-05-19",
+  "results": [
+    {
+      "title": "Downsizing in Derry: How to Sell Well Before Your Next Move",
+      "slug": "downsizing-and-selling-house-derry",
+      "url": "https://www.jamesgormanproperty.com/post/downsizing-and-selling-house-derry",
+      "draft_id": "b875fa8c-02e5-4035-af28-a7baaa0a2343",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": false,
+      "category": "Seller Guides",
+      "category_status": "existing",
+      "tags": [
+        "Derry Property",
+        "Seller",
+        "Seller Advice"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/downsizing-in-derry-a-guide-for-empty-nesters",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/house-valuation-derry-guide-2026",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [],
+      "source_file": "blog-drafts/content-blast-2026-05-19/2026-05-19-downsizing-and-selling-house-derry.md"
+    },
+    {
+      "title": "Estate Agent Contracts in Derry: What Sellers Should Check Before Signing",
+      "slug": "estate-agent-contracts-derry-sellers-guide",
+      "url": "https://www.jamesgormanproperty.com/post/estate-agent-contracts-derry-sellers-guide",
+      "draft_id": "42755fe2-4e1e-40a7-9bf8-1e637ff0bf1c",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Seller Guides",
+      "category_status": "existing",
+      "tags": [
+        "Derry Property",
+        "Seller",
+        "Seller Advice"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/estate-agent-fees-derry",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/how-to-price-your-house-for-sale-derry",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [],
+      "source_file": "blog-drafts/content-blast-2026-05-19/2026-05-19-estate-agent-contracts-derry-sellers-guide.md"
+    },
+    {
+      "title": "Online Estate Agent vs Local Estate Agent in Derry: Which Is Better for Sellers?",
+      "slug": "online-estate-agent-vs-local-estate-agent-derry",
+      "url": "https://www.jamesgormanproperty.com/post/online-estate-agent-vs-local-estate-agent-derry",
+      "draft_id": "91a984b4-1878-4db0-b46a-58ab81bc09da",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Seller Guides",
+      "category_status": "existing",
+      "tags": [
+        "Derry Property",
+        "Seller",
+        "Seller Advice"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/choosing-between-estate-agent-valuations-derry",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/estate-agent-fees-derry",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [],
+      "source_file": "blog-drafts/content-blast-2026-05-19/2026-05-19-online-estate-agent-vs-local-estate-agent-derry.md"
+    },
+    {
+      "title": "What a Good Property Marketing Plan Should Include for a Derry Home",
+      "slug": "property-marketing-plan-derry-sellers-guide",
+      "url": "https://www.jamesgormanproperty.com/post/property-marketing-plan-derry-sellers-guide",
+      "draft_id": "7cd560b4-2a95-4d63-a0e3-618f14991589",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Seller Guides",
+      "category_status": "existing",
+      "tags": [
+        "Derry Property",
+        "Seller",
+        "Seller Advice"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/house-not-selling-derry-what-to-do",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/preparing-for-house-viewings-derry",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [],
+      "source_file": "blog-drafts/content-blast-2026-05-19/2026-05-19-property-marketing-plan-derry-sellers-guide.md"
+    },
+    {
+      "title": "What to Ask an Estate Agent Before Selling Your House in Derry",
+      "slug": "questions-to-ask-estate-agent-before-selling-derry",
+      "url": "https://www.jamesgormanproperty.com/post/questions-to-ask-estate-agent-before-selling-derry",
+      "draft_id": "70948378-79e9-4f42-a48f-562eb3c0c915",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Seller Guides",
+      "category_status": "existing",
+      "tags": [
+        "Derry Property",
+        "Seller",
+        "Seller Advice"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/choosing-between-estate-agent-valuations-derry",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/preparing-for-house-viewings-derry",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [],
+      "source_file": "blog-drafts/content-blast-2026-05-19/2026-05-19-questions-to-ask-estate-agent-before-selling-derry.md"
+    },
+    {
+      "title": "Should You Sell Your House Before Buying the Next One in Derry?",
+      "slug": "sell-house-before-buying-next-derry",
+      "url": "https://www.jamesgormanproperty.com/post/sell-house-before-buying-next-derry",
+      "draft_id": "86b1cdd2-a9f3-4c33-a95d-6a32280e9fd1",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Seller Guides",
+      "category_status": "existing",
+      "tags": [
+        "Derry Property",
+        "Seller",
+        "Seller Advice"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/how-to-price-your-house-for-sale-derry",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [],
+      "source_file": "blog-drafts/content-blast-2026-05-19/2026-05-19-sell-house-before-buying-next-derry.md"
+    },
+    {
+      "title": "Selling a House With Tenants in Derry: Options for Landlords",
+      "slug": "selling-a-house-with-tenants-derry",
+      "url": "https://www.jamesgormanproperty.com/post/selling-a-house-with-tenants-derry",
+      "draft_id": "f1afa926-8356-41df-a2eb-48062f13596b",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Landlord Guides",
+      "category_status": "created",
+      "tags": [
+        "Derry Property",
+        "Landlord",
+        "Seller Advice"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/buy-to-let-derry-guide-2026",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/selling-rental-property-derry",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [],
+      "source_file": "blog-drafts/content-blast-2026-05-19/2026-05-19-selling-a-house-with-tenants-derry.md"
+    },
+    {
+      "title": "Selling a Vacant House in Derry: How to Keep It Presentable and Moving",
+      "slug": "selling-a-vacant-house-derry",
+      "url": "https://www.jamesgormanproperty.com/post/selling-a-vacant-house-derry",
+      "draft_id": "cb0568d5-695a-4fb5-85a5-d2f915353006",
+      "publish_response_keys": [
+        "postId"
+      ],
+      "http_status": 404,
+      "h1": "",
+      "h1_matches": false,
+      "excerpt_present": false,
+      "sitemap_status": 200,
+      "sitemap_includes_url": true,
+      "category": "Seller Guides",
+      "category_status": "existing",
+      "tags": [
+        "Derry Property",
+        "Seller",
+        "Seller Advice"
+      ],
+      "tag_statuses": [
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}",
+        "failed: POST https://www.wixapis.com/v3/tags failed 400: {\"message\":\"label has size 0, expected 1 or more,label must not be empty\",\"details\":{\"validationError\":{\"fieldViolations\":[{\"field\":\"label\",\"description\":\"has size 0, expected 1 or more\",\"violatedRule\":\"MIN_LENGTH\",\"data\":{\"threshold\":1.0}},{\"field\":\"label\",\"description\":\"must not be empty\",\"violatedRule\":\"REQUIRED_FIELD\"}]}}}"
+      ],
+      "internal_link_checks": [
+        {
+          "url": "https://www.jamesgormanproperty.com/contact",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/preparing-for-house-viewings-derry",
+          "http_status": 200
+        },
+        {
+          "url": "https://www.jamesgormanproperty.com/post/selling-inherited-house-derry",
+          "http_status": 200
+        }
+      ],
+      "leak_markers_found": [],
+      "source_file": "blog-drafts/content-blast-2026-05-19/2026-05-19-selling-a-vacant-house-derry.md"
+    }
+  ]
+}

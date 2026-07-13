@@ -1,0 +1,286 @@
+{
+  "updated_at": "2026-05-25T12:28:15+0100",
+  "target_memberId": "8a0a22b4-bf7d-4b83-9347-5d4ae7d25012",
+  "target_member_profile_note": "API-visible nickname is james51251; Wix member profile update to James Gorman was blocked by member-only permission, so posts are assigned to James memberId and new bodies include visible By James Gorman line.",
+  "previous_phil_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+  "attempted": 15,
+  "succeeded": 15,
+  "remaining_phil_published_count": 0,
+  "remaining_phil_published": [],
+  "results": [
+    {
+      "id": "f1afa926-8356-41df-a2eb-48062f13596b",
+      "title": "Selling a House With Tenants in Derry: Options for Landlords",
+      "slug": "selling-a-house-with-tenants-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "86b1cdd2-a9f3-4c33-a95d-6a32280e9fd1",
+      "title": "Should You Sell Your House Before Buying the Next One in Derry?",
+      "slug": "sell-house-before-buying-next-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "70948378-79e9-4f42-a48f-562eb3c0c915",
+      "title": "What to Ask an Estate Agent Before Selling Your House in Derry",
+      "slug": "questions-to-ask-estate-agent-before-selling-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "7cd560b4-2a95-4d63-a0e3-618f14991589",
+      "title": "What a Good Property Marketing Plan Should Include for a Derry Home",
+      "slug": "property-marketing-plan-derry-sellers-guide",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "91a984b4-1878-4db0-b46a-58ab81bc09da",
+      "title": "Online Estate Agent vs Local Estate Agent in Derry: Which Is Better for Sellers?",
+      "slug": "online-estate-agent-vs-local-estate-agent-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "42755fe2-4e1e-40a7-9bf8-1e637ff0bf1c",
+      "title": "Estate Agent Contracts in Derry: What Sellers Should Check Before Signing",
+      "slug": "estate-agent-contracts-derry-sellers-guide",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "b875fa8c-02e5-4035-af28-a7baaa0a2343",
+      "title": "Downsizing in Derry: How to Sell Well Before Your Next Move",
+      "slug": "downsizing-and-selling-house-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "3991966a-f156-4452-a8bb-1ddc65ff9b98",
+      "title": "Viewing a House in Derry: Buyer Checklist for 2026",
+      "slug": "viewing-a-house-in-derry-checklist-2026",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "c8dbc321-5eac-4848-a3bf-a06421d97d57",
+      "title": "Should I Sell or Rent Out My House in Derry?",
+      "slug": "sell-or-rent-out-house-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "0c50d150-3fb7-423e-ba00-c36b49dc7510",
+      "title": "Sale Agreed in Northern Ireland: What Happens Next?",
+      "slug": "sale-agreed-northern-ireland-derry-guide",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "0deec74d-1069-41e8-a46a-61550ecb28e1",
+      "title": "Preparing for House Viewings in Derry: Seller Checklist",
+      "slug": "preparing-for-house-viewings-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "6da3ce92-fa0b-44a0-a991-dc6e7bb35328",
+      "title": "Making an Offer on a House in Derry: What Buyers Should Know",
+      "slug": "making-an-offer-on-a-house-in-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "5b49bffe-a013-49ef-a10f-6463af974de6",
+      "title": "How to Price Your House for Sale in Derry",
+      "slug": "how-to-price-your-house-for-sale-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "e579411f-57b9-42f1-a3fe-b212f5b44e0e",
+      "title": "House Not Selling in Derry? What to Check Before Reducing the Price",
+      "slug": "house-not-selling-derry-what-to-do",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    },
+    {
+      "id": "59abd796-2970-4595-acd1-a7a2a0d90744",
+      "title": "Choosing Between Estate Agent Valuations in Derry",
+      "slug": "choosing-between-estate-agent-valuations-derry",
+      "before_memberId": "f3b674df-ae78-41ec-a299-1fd0ca0dc0f8",
+      "patch_status": 200,
+      "publish_status": 200,
+      "patch_ok": true,
+      "publish_ok": true
+    }
+  ],
+  "public_recheck_at": "2026-05-25T12:38:44+0100",
+  "public_recheck_results": [
+    {
+      "slug": "selling-a-house-with-tenants-derry",
+      "url": "https://www.jamesgormanproperty.com/post/selling-a-house-with-tenants-derry",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "sell-house-before-buying-next-derry",
+      "url": "https://www.jamesgormanproperty.com/post/sell-house-before-buying-next-derry",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "questions-to-ask-estate-agent-before-selling-derry",
+      "url": "https://www.jamesgormanproperty.com/post/questions-to-ask-estate-agent-before-selling-derry",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "property-marketing-plan-derry-sellers-guide",
+      "url": "https://www.jamesgormanproperty.com/post/property-marketing-plan-derry-sellers-guide",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "online-estate-agent-vs-local-estate-agent-derry",
+      "url": "https://www.jamesgormanproperty.com/post/online-estate-agent-vs-local-estate-agent-derry",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "estate-agent-contracts-derry-sellers-guide",
+      "url": "https://www.jamesgormanproperty.com/post/estate-agent-contracts-derry-sellers-guide",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "downsizing-and-selling-house-derry",
+      "url": "https://www.jamesgormanproperty.com/post/downsizing-and-selling-house-derry",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "viewing-a-house-in-derry-checklist-2026",
+      "url": "https://www.jamesgormanproperty.com/post/viewing-a-house-in-derry-checklist-2026",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "sell-or-rent-out-house-derry",
+      "url": "https://www.jamesgormanproperty.com/post/sell-or-rent-out-house-derry",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "sale-agreed-northern-ireland-derry-guide",
+      "url": "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "preparing-for-house-viewings-derry",
+      "url": "https://www.jamesgormanproperty.com/post/preparing-for-house-viewings-derry",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "making-an-offer-on-a-house-in-derry",
+      "url": "https://www.jamesgormanproperty.com/post/making-an-offer-on-a-house-in-derry",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "how-to-price-your-house-for-sale-derry",
+      "url": "https://www.jamesgormanproperty.com/post/how-to-price-your-house-for-sale-derry",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "house-not-selling-derry-what-to-do",
+      "url": "https://www.jamesgormanproperty.com/post/house-not-selling-derry-what-to-do",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    },
+    {
+      "slug": "choosing-between-estate-agent-valuations-derry",
+      "url": "https://www.jamesgormanproperty.com/post/choosing-between-estate-agent-valuations-derry",
+      "http_status": 200,
+      "public_contains_phil_patterson": false,
+      "schema_author_name": "james51251",
+      "schema_author_contains_james": true
+    }
+  ],
+  "public_recheck_failures": []
+}

@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "url": "https://www.jamesgormanproperty.com/merchants-view",
+      "sum_traffic": 38,
+      "top_keyword": "merchants view derry",
+      "top_keyword_volume": 100,
+      "top_keyword_best_position": 1,
+      "keywords": 1
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/",
+      "sum_traffic": 20,
+      "top_keyword": "estate agents derry",
+      "top_keyword_volume": 100,
+      "top_keyword_best_position": 7,
+      "keywords": 2
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide",
+      "sum_traffic": 2,
+      "top_keyword": "sale agreed",
+      "top_keyword_volume": 70,
+      "top_keyword_best_position": 9,
+      "keywords": 1
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026",
+      "sum_traffic": 1,
+      "top_keyword": "estate agent fees northern ireland",
+      "top_keyword_volume": 50,
+      "top_keyword_best_position": 11,
+      "keywords": 1
+    }
+  ]
+}

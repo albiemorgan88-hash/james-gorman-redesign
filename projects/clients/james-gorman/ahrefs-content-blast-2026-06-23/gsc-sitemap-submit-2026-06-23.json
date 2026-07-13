@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-06-23T09:09:48.922377+00:00",
+  "property": "sc-domain:jamesgormanproperty.com",
+  "results": [
+    {
+      "sitemap": "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+      "fetch_ok": true,
+      "fetch_message": "200 text/xml; charset=utf-8",
+      "submitted": true,
+      "submit_message": "submitted"
+    },
+    {
+      "sitemap": "https://www.jamesgormanproperty.com/sitemap.xml",
+      "fetch_ok": true,
+      "fetch_message": "200 text/xml; charset=utf-8",
+      "submitted": true,
+      "submit_message": "submitted"
+    },
+    {
+      "sitemap": "https://www.jamesgormanproperty.com/sitemap_index.xml",
+      "fetch_ok": false,
+      "fetch_message": "HTTPError: HTTP Error 400: Bad Request",
+      "submitted": false,
+      "submit_message": null
+    }
+  ]
+}

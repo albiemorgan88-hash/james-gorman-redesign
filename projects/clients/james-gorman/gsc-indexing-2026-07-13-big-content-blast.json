@@ -1,0 +1,361 @@
+{
+  "checked_at": "2026-07-13T09:30:09.156857+00:00",
+  "site": "sc-domain:jamesgormanproperty.com",
+  "sitemap": "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+  "sitemap_submit": {
+    "ok": true,
+    "status": 204,
+    "json": {}
+  },
+  "inspections": [
+    {
+      "url": "https://www.jamesgormanproperty.com/post/free-house-valuation-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=FfGX-PcZuPkZaoHrG5RZ8Q&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/online-house-valuation-derry-local-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=e_J4JNEbVYJkGq2dP2CYkg&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/property-appraisal-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=siLcpUl8Z9q6diPj7HtL7Q&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/switch-estate-agents-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=7k1hslsT6BGEscnpoW0oXQ&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/change-estate-agent-derry-checklist-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=OtQG-BlXNqwwdCNzT9Hyxg&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/house-on-market-too-long-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=7TuFclKttXLKyRHBlkexMg&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Discovered - currently not indexed",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+              "sitemap": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+                "https://www.jamesgormanproperty.com/sitemap.xml"
+              ],
+              "referringUrls": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml"
+              ],
+              "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/property-valuation-newbuildings-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=JS3ipYutH3u0Zp8avJxCtw&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/sell-my-house-newbuildings-derry-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=jGX_H2EB6x_y2g-aYbe2wQ&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Discovered - currently not indexed",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+              "sitemap": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+                "https://www.jamesgormanproperty.com/sitemap.xml"
+              ],
+              "referringUrls": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml"
+              ],
+              "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/property-marketing-newbuildings-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=zcV53y2Accebzhdi2qBeGg&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/property-valuation-magheramason-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=ZxuW6bA_sQATDtgrr_-22w&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Discovered - currently not indexed",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+              "sitemap": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+                "https://www.jamesgormanproperty.com/sitemap.xml"
+              ],
+              "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/estate-agent-magheramason-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=IGNM9JyZAiV2fN7LPoI1yg&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Discovered - currently not indexed",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+              "sitemap": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+                "https://www.jamesgormanproperty.com/sitemap.xml"
+              ],
+              "referringUrls": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml"
+              ],
+              "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/property-valuation-greysteel-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=sCIi5GNDmNH-fzwtcDYXxw&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Discovered - currently not indexed",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+              "sitemap": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+                "https://www.jamesgormanproperty.com/sitemap.xml"
+              ],
+              "referringUrls": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml"
+              ],
+              "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

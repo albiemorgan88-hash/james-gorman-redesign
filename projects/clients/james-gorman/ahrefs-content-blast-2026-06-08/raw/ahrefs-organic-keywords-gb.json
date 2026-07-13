@@ -1,0 +1,40 @@
+{
+  "keywords": [
+    {
+      "keyword": "merchants view derry",
+      "keyword_country": "GB",
+      "volume": 100,
+      "keyword_difficulty": 0,
+      "best_position": 1,
+      "best_position_url": "https://www.jamesgormanproperty.com/merchants-view",
+      "sum_traffic": 38,
+      "is_commercial": true,
+      "is_transactional": false,
+      "is_informational": true
+    },
+    {
+      "keyword": "estate agents derry",
+      "keyword_country": "GB",
+      "volume": 100,
+      "keyword_difficulty": 13,
+      "best_position": 9,
+      "best_position_url": "https://www.jamesgormanproperty.com/",
+      "sum_traffic": 10,
+      "is_commercial": true,
+      "is_transactional": false,
+      "is_informational": true
+    },
+    {
+      "keyword": "property derry",
+      "keyword_country": "GB",
+      "volume": 200,
+      "keyword_difficulty": 2,
+      "best_position": 9,
+      "best_position_url": "https://www.jamesgormanproperty.com/",
+      "sum_traffic": 6,
+      "is_commercial": true,
+      "is_transactional": false,
+      "is_informational": true
+    }
+  ]
+}

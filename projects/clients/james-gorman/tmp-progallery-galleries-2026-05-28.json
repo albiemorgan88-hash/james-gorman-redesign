@@ -1,0 +1,1666 @@
+{
+  "totalGalleries": 10,
+  "galleries": [
+    {
+      "id": "b1b7984e-5123-4603-bab4-9d7b8247cb94",
+      "totalItems": 18,
+      "items": [
+        {
+          "id": "2790b7c0-2339-48ea-9ee1-9e48b439064b",
+          "sortOrder": 1766234995295.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_822382522abb4f15a43882f27ec88cf1~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_822382522abb4f15a43882f27ec88cf1~mv2.jpg",
+              "height": 1920,
+              "width": 3840,
+              "altText": "",
+              "filename": "8a0a22_822382522abb4f15a43882f27ec88cf1~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-12-20T12:49:56Z",
+          "updatedDate": "2025-12-20T13:19:50Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "fcc06eee-58a9-46a5-becb-fc8c30b59a84",
+          "sortOrder": 1766235004832.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_d6c3bc3a6d5d44f2a290def93152bf84~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_d6c3bc3a6d5d44f2a290def93152bf84~mv2.jpg",
+              "height": 1920,
+              "width": 3840,
+              "altText": "",
+              "filename": "8a0a22_d6c3bc3a6d5d44f2a290def93152bf84~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-12-20T12:51:24Z",
+          "updatedDate": "2025-12-20T13:19:50Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "bb2d8338-8521-409f-b581-8e5da863b08e",
+          "sortOrder": 1766235009600.5,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_37d6b8f905194cdcb4d05e72932143cc~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_37d6b8f905194cdcb4d05e72932143cc~mv2.jpg",
+              "height": 1440,
+              "width": 2560,
+              "altText": "",
+              "filename": "8a0a22_37d6b8f905194cdcb4d05e72932143cc~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-12-20T12:53:10Z",
+          "updatedDate": "2025-12-20T13:19:50Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "f09fd4e3-349e-4d74-8ab7-7c1745d2bc0b",
+          "sortOrder": 1766235014369.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_9e723daedded4c6aa487a9ba97070de8~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_9e723daedded4c6aa487a9ba97070de8~mv2.jpg",
+              "height": 1440,
+              "width": 2560,
+              "altText": "",
+              "filename": "8a0a22_9e723daedded4c6aa487a9ba97070de8~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-12-20T12:50:15Z",
+          "updatedDate": "2025-12-20T13:19:50Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "dff4744e-2684-4bdc-a6d7-9d571b063f5c",
+          "sortOrder": 1766235019631.5,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_2483355d169b480994e73f3075432164~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_2483355d169b480994e73f3075432164~mv2.jpg",
+              "height": 1440,
+              "width": 2560,
+              "altText": "",
+              "filename": "8a0a22_2483355d169b480994e73f3075432164~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-12-20T12:54:00Z",
+          "updatedDate": "2025-12-20T13:19:50Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "83678058-29d6-4588-9b03-f3eeff5734b2",
+          "sortOrder": 1766235024894.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_75a7ff98051e438c93fbe086bf7e120d~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_75a7ff98051e438c93fbe086bf7e120d~mv2.jpg",
+              "height": 1440,
+              "width": 2560,
+              "altText": "",
+              "filename": "8a0a22_75a7ff98051e438c93fbe086bf7e120d~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-12-20T12:50:25Z",
+          "updatedDate": "2025-12-20T13:19:50Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "da518320-01a7-4299-b69f-12c085eb159f",
+          "sortOrder": 1766235044675.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_d2d3425da5724e2db407ef4e2d2a6098~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_d2d3425da5724e2db407ef4e2d2a6098~mv2.jpg",
+              "height": 1440,
+              "width": 2560,
+              "altText": "",
+              "filename": "8a0a22_d2d3425da5724e2db407ef4e2d2a6098~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-12-20T12:55:42Z",
+          "updatedDate": "2025-12-20T13:19:50Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "b698c0d3-3549-4856-9605-aebb8cef6506",
+          "sortOrder": 1766235064456.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_850eb298832649b8b745112f82b2470b~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_850eb298832649b8b745112f82b2470b~mv2.jpg",
+              "height": 1440,
+              "width": 2560,
+              "altText": "",
+              "filename": "8a0a22_850eb298832649b8b745112f82b2470b~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-12-20T12:51:06Z",
+          "updatedDate": "2025-12-20T13:19:50Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "d0a98712-b9c2-48f4-ac84-be8196ff8cdd",
+          "sortOrder": 1766235200419.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_2a525317f4324d19930b8f4dc141e027~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_2a525317f4324d19930b8f4dc141e027~mv2.jpg",
+              "height": 1440,
+              "width": 2560,
+              "altText": "",
+              "filename": "8a0a22_2a525317f4324d19930b8f4dc141e027~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-12-20T12:53:21Z",
+          "updatedDate": "2025-12-20T13:19:50Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "703747a7-54da-48d4-8ad9-bfd90279ee80",
+          "sortOrder": 1766235258264.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_37d6b8f905194cdcb4d05e72932143cc~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_37d6b8f905194cdcb4d05e72932143cc~mv2.jpg",
+              "height": 1440,
+              "width": 2560,
+              "altText": "",
+              "filename": "8a0a22_37d6b8f905194cdcb4d05e72932143cc~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-12-20T12:54:19Z",
+          "updatedDate": "2025-12-20T13:19:50Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        }
+      ],
+      "createdDate": "2025-12-20T12:22:25Z"
+    },
+    {
+      "id": "08210386-2cf1-4a0b-8a70-20f487cccdd3",
+      "totalItems": 1,
+      "items": [
+        {
+          "id": "130abc39-7fa3-41e5-a45e-fe5dfa0f79e7",
+          "sortOrder": 1736959102392.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_c4ab24039fcc450780bceba88350a924~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_c4ab24039fcc450780bceba88350a924~mv2.jpg",
+              "height": 630,
+              "width": 640,
+              "altText": "",
+              "filename": "8a0a22_c4ab24039fcc450780bceba88350a924~mv2.jpg"
+            }
+          },
+          "createdDate": "2025-01-15T16:38:23Z",
+          "updatedDate": "2025-01-15T16:43:17Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        }
+      ],
+      "createdDate": "2025-01-15T16:32:13Z"
+    },
+    {
+      "id": "6c6b145c-4816-4359-97a0-b3e9f2f2bbcd",
+      "totalItems": 3,
+      "items": [
+        {
+          "id": "d7385251-0752-4e11-bfa0-8b6a3d086599",
+          "sortOrder": 1725050661185.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_eb30583b4c46407ca21a03a9f81ed720~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_eb30583b4c46407ca21a03a9f81ed720~mv2.png",
+              "height": 1490,
+              "width": 1280,
+              "altText": "",
+              "filename": "8a0a22_eb30583b4c46407ca21a03a9f81ed720~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:44:21Z",
+          "updatedDate": "2024-08-30T20:46:18Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "7935a0a5-fd68-48ab-8609-9e2992e6e487",
+          "sortOrder": 1725050667564.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_b1d1fb6dddfd4a29b55894876385de14~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_b1d1fb6dddfd4a29b55894876385de14~mv2.png",
+              "height": 1502,
+              "width": 1100,
+              "altText": "",
+              "filename": "8a0a22_b1d1fb6dddfd4a29b55894876385de14~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:44:28Z",
+          "updatedDate": "2024-08-30T20:46:18Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "929fac9a-002c-490f-b03a-8e506cedc6ef",
+          "sortOrder": 1725050673943.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_7e9ae6c0909d46c7b10000aaf5cc4b5b~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_7e9ae6c0909d46c7b10000aaf5cc4b5b~mv2.png",
+              "height": 1486,
+              "width": 1095,
+              "altText": "",
+              "filename": "8a0a22_7e9ae6c0909d46c7b10000aaf5cc4b5b~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:44:34Z",
+          "updatedDate": "2024-08-30T20:46:18Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        }
+      ],
+      "createdDate": "2024-08-30T20:40:29Z"
+    },
+    {
+      "id": "6076c7ff-b606-4d69-a16c-8c085766cc55",
+      "totalItems": 5,
+      "items": [
+        {
+          "id": "f95128ca-e2ce-4155-b185-9c3a626c1561",
+          "sortOrder": 1725050264210.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_18d21ea2585a49f6942b841daec1c38d~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_18d21ea2585a49f6942b841daec1c38d~mv2.png",
+              "height": 1469,
+              "width": 1259,
+              "altText": "",
+              "filename": "8a0a22_18d21ea2585a49f6942b841daec1c38d~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:37:44Z",
+          "updatedDate": "2024-08-30T20:39:06Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "510c4930-ff77-4095-ad5a-70c413777e97",
+          "sortOrder": 1725050283984.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_8ece470128e34bc9b5c3990c140cee0f~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_8ece470128e34bc9b5c3990c140cee0f~mv2.png",
+              "height": 1489,
+              "width": 1110,
+              "altText": "",
+              "filename": "8a0a22_8ece470128e34bc9b5c3990c140cee0f~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:38:04Z",
+          "updatedDate": "2024-08-30T20:39:06Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "2bc7dc6f-90ef-432e-a41e-26ca098cdf7e",
+          "sortOrder": 1725050290334.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_8e7272ba12994a8ebef56f034e0078da~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_8e7272ba12994a8ebef56f034e0078da~mv2.png",
+              "height": 1487,
+              "width": 1117,
+              "altText": "",
+              "filename": "8a0a22_8e7272ba12994a8ebef56f034e0078da~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:38:10Z",
+          "updatedDate": "2024-08-30T20:39:06Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "a5180a8f-51d8-4043-b943-b0a2da2975f7",
+          "sortOrder": 1725050296421.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_0e04a568c87e400d8d75f252d9d5ff92~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_0e04a568c87e400d8d75f252d9d5ff92~mv2.png",
+              "height": 1477,
+              "width": 1097,
+              "altText": "",
+              "filename": "8a0a22_0e04a568c87e400d8d75f252d9d5ff92~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:38:16Z",
+          "updatedDate": "2024-08-30T20:39:06Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "ffcdca4c-203d-4a09-9e0f-85d5f47625fd",
+          "sortOrder": 1725050303653.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_f4dcb6a127fd40469712e8c041492c2f~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_f4dcb6a127fd40469712e8c041492c2f~mv2.png",
+              "height": 1484,
+              "width": 1244,
+              "altText": "",
+              "filename": "8a0a22_f4dcb6a127fd40469712e8c041492c2f~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:38:24Z",
+          "updatedDate": "2024-08-30T20:39:06Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        }
+      ],
+      "createdDate": "2024-08-30T20:33:16Z"
+    },
+    {
+      "id": "028656c5-3aff-4280-98a4-d5c2e4ee7f0e",
+      "totalItems": 7,
+      "items": [
+        {
+          "id": "6795c065-a4b9-49b3-8fe6-d3100fbf15ec",
+          "sortOrder": 1725049582535.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_8ac17258d41d4b7ba1149613651d22ee~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_8ac17258d41d4b7ba1149613651d22ee~mv2.png",
+              "height": 1490,
+              "width": 1169,
+              "altText": "",
+              "filename": "8a0a22_8ac17258d41d4b7ba1149613651d22ee~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:26:23Z",
+          "updatedDate": "2024-08-30T20:30:24Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "d824d6c7-51df-4ac9-a3c6-f33c8ba4b466",
+          "sortOrder": 1725049600000.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_48c0f18b60e5423abcdfc65fa5f152c1~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_48c0f18b60e5423abcdfc65fa5f152c1~mv2.png",
+              "height": 1486,
+              "width": 1184,
+              "altText": "",
+              "filename": "8a0a22_48c0f18b60e5423abcdfc65fa5f152c1~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:26:40Z",
+          "updatedDate": "2024-08-30T20:30:24Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "afacd003-1ffd-4ca8-9703-3fbd9145264a",
+          "sortOrder": 1725049606059.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_378ae52245274961b843506d14273db8~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_378ae52245274961b843506d14273db8~mv2.png",
+              "height": 1480,
+              "width": 1154,
+              "altText": "",
+              "filename": "8a0a22_378ae52245274961b843506d14273db8~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:26:46Z",
+          "updatedDate": "2024-08-30T20:30:24Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "9fee2ca3-31a5-4a8c-8e54-7d2bfab14521",
+          "sortOrder": 1725049613318.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_665f06f03e4d428bb0c7716d63324f1a~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_665f06f03e4d428bb0c7716d63324f1a~mv2.png",
+              "height": 1487,
+              "width": 1105,
+              "altText": "",
+              "filename": "8a0a22_665f06f03e4d428bb0c7716d63324f1a~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:26:53Z",
+          "updatedDate": "2024-08-30T20:30:24Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "30b34558-2661-4366-92ce-11328c9453dc",
+          "sortOrder": 1725049619086.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_7a659e7fc6ff4379b6abeeb902fcf9e4~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_7a659e7fc6ff4379b6abeeb902fcf9e4~mv2.png",
+              "height": 1484,
+              "width": 1237,
+              "altText": "",
+              "filename": "8a0a22_7a659e7fc6ff4379b6abeeb902fcf9e4~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:26:59Z",
+          "updatedDate": "2024-08-30T20:30:24Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "f5509c38-b340-405d-afc7-238c121fc125",
+          "sortOrder": 1725049625039.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_8b41fe823e8e4efe8dab6c804df098d1~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_8b41fe823e8e4efe8dab6c804df098d1~mv2.png",
+              "height": 1483,
+              "width": 1284,
+              "altText": "",
+              "filename": "8a0a22_8b41fe823e8e4efe8dab6c804df098d1~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:27:05Z",
+          "updatedDate": "2024-08-30T20:30:24Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "e4c8d3eb-fd79-4cac-a426-5018fa153415",
+          "sortOrder": 1725049629786.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_734554a88ede49e3a14d517a1b8a5548~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_734554a88ede49e3a14d517a1b8a5548~mv2.png",
+              "height": 1487,
+              "width": 1928,
+              "altText": "",
+              "filename": "8a0a22_734554a88ede49e3a14d517a1b8a5548~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:27:10Z",
+          "updatedDate": "2024-08-30T20:30:24Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        }
+      ],
+      "createdDate": "2024-08-30T20:21:28Z"
+    },
+    {
+      "id": "b97ba7d5-a50d-499c-a069-ac370f770444",
+      "totalItems": 14,
+      "items": [
+        {
+          "id": "622b2c03-ecaf-418c-95a7-e9ddcda2abd3",
+          "sortOrder": -1503744438645.75,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_9502387bebe540c78fea3bc4eae108b6~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_9502387bebe540c78fea3bc4eae108b6~mv2.jpg",
+              "height": 1582,
+              "width": 2880,
+              "altText": "",
+              "filename": "8a0a22_9502387bebe540c78fea3bc4eae108b6~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-07-25T21:26:03Z",
+          "updatedDate": "2024-07-25T21:40:58Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "451f252a-b371-4f6f-bcc2-29dcf0daab1c",
+          "sortOrder": 844792578030.5,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_e71c914d839f4620829be3071aa4392c~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_e71c914d839f4620829be3071aa4392c~mv2.jpg",
+              "height": 3648,
+              "width": 5472,
+              "altText": "",
+              "filename": "8a0a22_e71c914d839f4620829be3071aa4392c~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-07-25T21:29:53Z",
+          "updatedDate": "2024-07-25T21:40:58Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "2091004a-94cf-4b59-a8c1-cfd477c21b34",
+          "sortOrder": 1267189010674.75,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_4c513c16901842e58dbb227aed36253a~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_4c513c16901842e58dbb227aed36253a~mv2.jpg",
+              "height": 3648,
+              "width": 5472,
+              "altText": "",
+              "filename": "8a0a22_4c513c16901842e58dbb227aed36253a~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-07-25T21:30:08Z",
+          "updatedDate": "2024-07-25T21:40:58Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "b8344102-fe95-4e70-97de-138901799bd3",
+          "sortOrder": 1717529521383.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_1d53c733de774e0a96af2c4121caf540~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_1d53c733de774e0a96af2c4121caf540~mv2.jpg",
+              "height": 3648,
+              "width": 5472,
+              "altText": "",
+              "filename": "8a0a22_1d53c733de774e0a96af2c4121caf540~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-07-25T21:30:21Z",
+          "updatedDate": "2024-07-25T21:40:58Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "5986ccfd-2e40-48fe-a719-56ab5110e31b",
+          "sortOrder": 1721943034216.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_97b8ec779a464bf0a1f2119683e657c5~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_97b8ec779a464bf0a1f2119683e657c5~mv2.jpg",
+              "height": 3648,
+              "width": 5472,
+              "altText": "",
+              "filename": "8a0a22_97b8ec779a464bf0a1f2119683e657c5~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-07-25T21:30:34Z",
+          "updatedDate": "2024-07-25T21:40:58Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "ed11a1ae-5e4f-40e3-a4ef-8df66e6bbcd8",
+          "sortOrder": 1721943050040.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_ec5aa687af5c4b998d901586d0c143f7~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_ec5aa687af5c4b998d901586d0c143f7~mv2.jpg",
+              "height": 3648,
+              "width": 5472,
+              "altText": "",
+              "filename": "8a0a22_ec5aa687af5c4b998d901586d0c143f7~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-07-25T21:30:50Z",
+          "updatedDate": "2024-07-25T21:40:58Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "964b1dc4-7444-4845-987b-2024829ee444",
+          "sortOrder": 1721943060737.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_9e546b1e5bd14e78bee11f28c0919483~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_9e546b1e5bd14e78bee11f28c0919483~mv2.jpg",
+              "height": 3648,
+              "width": 5472,
+              "altText": "",
+              "filename": "8a0a22_9e546b1e5bd14e78bee11f28c0919483~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-07-25T21:31:01Z",
+          "updatedDate": "2024-07-25T21:40:58Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "af1be57c-2c81-46e0-9a66-3232ae0f0fa1",
+          "sortOrder": 1721943093291.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_d09ae3e723434b9d921c3b9b09304875~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_d09ae3e723434b9d921c3b9b09304875~mv2.jpg",
+              "height": 3648,
+              "width": 5472,
+              "altText": "",
+              "filename": "8a0a22_d09ae3e723434b9d921c3b9b09304875~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-07-25T21:31:33Z",
+          "updatedDate": "2024-07-25T21:40:58Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "93227210-bfbc-4b74-b3d2-620de79bd773",
+          "sortOrder": 1721943104127.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_4f01005c161c4074b51680086d641f53~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_4f01005c161c4074b51680086d641f53~mv2.jpg",
+              "height": 3648,
+              "width": 5472,
+              "altText": "",
+              "filename": "8a0a22_4f01005c161c4074b51680086d641f53~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-07-25T21:31:44Z",
+          "updatedDate": "2024-07-25T21:40:58Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "c8107957-b4d6-4b50-b22f-ff8b3ce61700",
+          "sortOrder": 1721943114407.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_76028b774633469c88e3890895c3139d~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_76028b774633469c88e3890895c3139d~mv2.jpg",
+              "height": 3648,
+              "width": 5472,
+              "altText": "",
+              "filename": "8a0a22_76028b774633469c88e3890895c3139d~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-07-25T21:31:54Z",
+          "updatedDate": "2024-07-25T21:40:58Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        }
+      ],
+      "createdDate": "2024-07-25T21:25:07Z"
+    },
+    {
+      "id": "0880c93f-89ac-435c-af7b-5948fceef70e",
+      "totalItems": 12,
+      "items": [
+        {
+          "id": "04f71e66-40c6-4f25-a4c5-022525e6ba89",
+          "sortOrder": -1601420068665.6562,
+          "title": "68A Coney Road BT48",
+          "description": "FOR SALE!!",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_43d3a8c455954b81bad827f9116ae165~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_43d3a8c455954b81bad827f9116ae165~mv2.jpg",
+              "height": 1600,
+              "width": 1441,
+              "altText": "",
+              "filename": "8a0a22_43d3a8c455954b81bad827f9116ae165~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2026-01-08T11:41:35Z",
+          "updatedDate": "2026-05-23T01:13:10Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "1cf0c584-6e65-4ef6-86e7-c37fc5fdb729",
+          "sortOrder": -1434967638880.3125,
+          "title": "SOLD - 21 Merchants View\n",
+          "link": {
+            "type": "INTERNAL",
+            "text": "Go to Page Merchants View 5 Bedroom ",
+            "url": "https://www.jamesgormanproperty.com//blank-11-1-1",
+            "target": "_self",
+            "wixLinkData": {
+              "page": {
+                "pageId": "#q2jt4",
+                "target": "_self",
+                "rel": []
+              }
+            }
+          },
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_eca4d79bfb1e443cba35040d0c85b23c~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_eca4d79bfb1e443cba35040d0c85b23c~mv2.png",
+              "height": 1507,
+              "width": 1556,
+              "altText": "",
+              "filename": "8a0a22_eca4d79bfb1e443cba35040d0c85b23c~mv2.png"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2026-01-04T10:55:46Z",
+          "updatedDate": "2026-05-23T01:13:11Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "a2f7bf24-4107-438f-95d6-d7c5605f084d",
+          "sortOrder": -1102411121662.625,
+          "title": "SOLD.. Beech Hill View",
+          "description": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_f289e0f906fd4ed693d3ab50c280f945~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_f289e0f906fd4ed693d3ab50c280f945~mv2.jpg",
+              "height": 1080,
+              "width": 818,
+              "altText": "",
+              "filename": "8a0a22_f289e0f906fd4ed693d3ab50c280f945~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-12-17T06:12:12Z",
+          "updatedDate": "2026-05-23T01:13:10Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "0316cfdf-ceb7-489d-89b7-3b8356bc8988",
+          "sortOrder": -770640703489.4375,
+          "title": "SOLD.. Carn Manor ",
+          "description": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_3e89e560f82d4f6094b257ce66f3725f~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_3e89e560f82d4f6094b257ce66f3725f~mv2.jpg",
+              "height": 1080,
+              "width": 927,
+              "altText": "",
+              "filename": "8a0a22_3e89e560f82d4f6094b257ce66f3725f~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-12-17T06:13:35Z",
+          "updatedDate": "2026-05-23T01:13:10Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "cbe3da37-cbb1-44d6-a4e5-0ec693111e29",
+          "sortOrder": -604755494402.8438,
+          "title": "The Foxes ",
+          "description": "SOLD !!",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_3cc8554091be4a6c83f1a1a909716b20~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_3cc8554091be4a6c83f1a1a909716b20~mv2.jpg",
+              "height": 1080,
+              "width": 886,
+              "altText": "",
+              "filename": "8a0a22_3cc8554091be4a6c83f1a1a909716b20~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-12-17T06:12:49Z",
+          "updatedDate": "2026-05-23T01:13:10Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "047324c1-2dfd-4bda-a594-19766ebbbd1e",
+          "sortOrder": -438870285316.25,
+          "title": "114 Barleyfields",
+          "description": "SOLD!!",
+          "link": {
+            "type": "INTERNAL",
+            "text": "Go to Page 114 Barleyfields",
+            "url": "https://www.jamesgormanproperty.com//blank-11-2-1-2",
+            "target": "_self",
+            "wixLinkData": {
+              "page": {
+                "pageId": "#p6947",
+                "target": "_self",
+                "rel": []
+              }
+            }
+          },
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_c4ab24039fcc450780bceba88350a924~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_c4ab24039fcc450780bceba88350a924~mv2.jpg",
+              "height": 630,
+              "width": 640,
+              "altText": "",
+              "filename": "8a0a22_c4ab24039fcc450780bceba88350a924~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2025-01-21T11:27:47Z",
+          "updatedDate": "2026-05-23T01:13:11Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "5641ceaa-f208-4896-bb9f-40cbaf00015e",
+          "sortOrder": 859718375520.5,
+          "title": "53 Limavady Road",
+          "description": "FOR SALE ",
+          "link": {
+            "type": "INTERNAL",
+            "text": "Go to Page 53 Limavady Road",
+            "url": "https://www.jamesgormanproperty.com//blank-11-2",
+            "target": "_self",
+            "wixLinkData": {
+              "page": {
+                "pageId": "#jfnyc",
+                "target": "_self",
+                "rel": []
+              }
+            }
+          },
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_734554a88ede49e3a14d517a1b8a5548~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_734554a88ede49e3a14d517a1b8a5548~mv2.png",
+              "height": 1487,
+              "width": 1928,
+              "altText": "",
+              "filename": "8a0a22_734554a88ede49e3a14d517a1b8a5548~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:31:49Z",
+          "updatedDate": "2026-05-23T01:13:11Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "81a4b17d-f53b-4376-80d2-f448c4917061",
+          "sortOrder": 1725050371208.0,
+          "title": "37 Woodside Heights",
+          "description": "SOLD!!",
+          "link": {
+            "type": "INTERNAL",
+            "text": "Go to Page 37 Woodside Heights",
+            "url": "https://www.jamesgormanproperty.com//blank-11-2-1",
+            "target": "_self",
+            "wixLinkData": {
+              "page": {
+                "pageId": "#hep5o",
+                "target": "_self",
+                "rel": []
+              }
+            }
+          },
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_18d21ea2585a49f6942b841daec1c38d~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_18d21ea2585a49f6942b841daec1c38d~mv2.png",
+              "height": 1469,
+              "width": 1259,
+              "altText": "",
+              "filename": "8a0a22_18d21ea2585a49f6942b841daec1c38d~mv2.png"
+            }
+          },
+          "createdDate": "2024-08-30T20:39:31Z",
+          "updatedDate": "2026-05-23T01:13:11Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "77414309-cda0-4eca-97fb-e528a4a0d625",
+          "sortOrder": 1730664086541.0,
+          "title": "12 Oldbridge ",
+          "description": "SOLD!",
+          "link": {
+            "type": "INTERNAL",
+            "text": "Go to Page 12 Oldbridge Drive",
+            "url": "https://www.jamesgormanproperty.com//blank-11-1-2",
+            "target": "_self",
+            "wixLinkData": {
+              "page": {
+                "pageId": "#l93gm",
+                "target": "_self",
+                "rel": []
+              }
+            }
+          },
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_1524c27264ea4776bf73752d1f9f453d~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_1524c27264ea4776bf73752d1f9f453d~mv2.jpg",
+              "height": 1575,
+              "width": 2880,
+              "altText": "",
+              "filename": "8a0a22_1524c27264ea4776bf73752d1f9f453d~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-08-30T20:47:35Z",
+          "updatedDate": "2026-05-23T01:13:11Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "eeebba97-5d59-46e7-8069-4ccaa0a29362",
+          "sortOrder": 1733470670008.0,
+          "title": "69 Moyola Drive",
+          "description": "SOLD",
+          "link": {
+            "type": "INTERNAL",
+            "text": "Go to Page 69 Moyola Drive",
+            "url": "https://www.jamesgormanproperty.com//blank-11-2-1-1",
+            "target": "_self",
+            "wixLinkData": {
+              "page": {
+                "pageId": "#u2nn6",
+                "target": "_self",
+                "rel": []
+              }
+            }
+          },
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_eb30583b4c46407ca21a03a9f81ed720~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_eb30583b4c46407ca21a03a9f81ed720~mv2.png",
+              "height": 1490,
+              "width": 1280,
+              "altText": "",
+              "filename": "8a0a22_eb30583b4c46407ca21a03a9f81ed720~mv2.png"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2024-08-30T20:45:12Z",
+          "updatedDate": "2026-05-23T01:13:11Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        }
+      ],
+      "createdDate": "2024-06-12T20:11:03Z"
+    },
+    {
+      "id": "857360f2-f8c4-42b1-9cd7-2f3fa9f661dd",
+      "totalItems": 6,
+      "items": [
+        {
+          "id": "2b701e43-acaf-438b-a3cb-5868ca68a4cf",
+          "sortOrder": 1767524494318.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_eca4d79bfb1e443cba35040d0c85b23c~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_eca4d79bfb1e443cba35040d0c85b23c~mv2.png",
+              "height": 1507,
+              "width": 1556,
+              "altText": "",
+              "filename": "8a0a22_eca4d79bfb1e443cba35040d0c85b23c~mv2.png"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2026-01-04T11:01:35Z",
+          "updatedDate": "2026-01-04T11:09:42Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "3e319669-4e53-45e5-be66-771695d0fa43",
+          "sortOrder": 1767524500775.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_568b3e151daa4faeb8ffb65262cd1de7~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_568b3e151daa4faeb8ffb65262cd1de7~mv2.png",
+              "height": 1495,
+              "width": 1205,
+              "altText": "",
+              "filename": "8a0a22_568b3e151daa4faeb8ffb65262cd1de7~mv2.png"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2026-01-04T11:01:14Z",
+          "updatedDate": "2026-01-04T11:09:42Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "67ebacd1-69c0-4462-951e-3e12aee93fc5",
+          "sortOrder": 1767524507232.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_fde0cf5e2a5d4b90b4a56b1368a92b32~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_fde0cf5e2a5d4b90b4a56b1368a92b32~mv2.png",
+              "height": 1505,
+              "width": 1263,
+              "altText": "",
+              "filename": "8a0a22_fde0cf5e2a5d4b90b4a56b1368a92b32~mv2.png"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2026-01-04T11:01:48Z",
+          "updatedDate": "2026-01-04T11:09:42Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "056c91fd-0b0e-4813-a703-8714ebd07840",
+          "sortOrder": 1767524521518.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_86211bde1aab446d9dd6960dda74447c~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_86211bde1aab446d9dd6960dda74447c~mv2.png",
+              "height": 1502,
+              "width": 1207,
+              "altText": "",
+              "filename": "8a0a22_86211bde1aab446d9dd6960dda74447c~mv2.png"
+            }
+          },
+          "createdDate": "2026-01-04T11:02:02Z",
+          "updatedDate": "2026-01-04T11:09:42Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "2608d697-ed6f-4bd3-ae0f-836c46bea27e",
+          "sortOrder": 1767524530647.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_8fb899dbc2984444b87c01302bf66d62~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_8fb899dbc2984444b87c01302bf66d62~mv2.png",
+              "height": 1496,
+              "width": 1281,
+              "altText": "",
+              "filename": "8a0a22_8fb899dbc2984444b87c01302bf66d62~mv2.png"
+            }
+          },
+          "createdDate": "2026-01-04T11:02:11Z",
+          "updatedDate": "2026-01-04T11:09:42Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "4ed78342-731a-47d7-b050-8ccac9211a12",
+          "sortOrder": 1767524539440.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_3a35b51f3ccd48b0a1e28de2c7d5f54e~mv2.png",
+              "url": "https://static.wixstatic.com/media/8a0a22_3a35b51f3ccd48b0a1e28de2c7d5f54e~mv2.png",
+              "height": 1487,
+              "width": 1214,
+              "altText": "",
+              "filename": "8a0a22_3a35b51f3ccd48b0a1e28de2c7d5f54e~mv2.png"
+            }
+          },
+          "createdDate": "2026-01-04T11:02:20Z",
+          "updatedDate": "2026-01-04T11:09:42Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        }
+      ],
+      "createdDate": "2024-06-04T19:37:18Z"
+    },
+    {
+      "id": "3b003b44-8242-48d6-816a-bf90f9099f5b",
+      "totalItems": 4,
+      "items": [
+        {
+          "id": "0f6ca19d-e94d-49b7-a697-9affa6059872",
+          "sortOrder": -1503744438645.75,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_99cb65fcfcfa46188ad9a673dc992805~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_99cb65fcfcfa46188ad9a673dc992805~mv2.jpg",
+              "height": 1304,
+              "width": 1049,
+              "altText": "",
+              "filename": "8a0a22_99cb65fcfcfa46188ad9a673dc992805~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2024-06-16T19:10:23Z",
+          "updatedDate": "2024-06-19T08:54:23Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "75087580-5d78-43a7-862d-d715bf13c56c",
+          "sortOrder": 844792578030.5,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_961bd9efc79e4375a09dc0a63e9c90cd~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_961bd9efc79e4375a09dc0a63e9c90cd~mv2.jpg",
+              "height": 640,
+              "width": 490,
+              "altText": "",
+              "filename": "8a0a22_961bd9efc79e4375a09dc0a63e9c90cd~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-06-04T19:31:43Z",
+          "updatedDate": "2024-06-19T08:54:23Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "66cf3cff-07c7-408b-aa94-766a532deacb",
+          "sortOrder": 1267189010674.75,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_e4e3b0cf25ea4e7b9bb6bbd0f159b89e~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_e4e3b0cf25ea4e7b9bb6bbd0f159b89e~mv2.jpg",
+              "height": 640,
+              "width": 487,
+              "altText": "",
+              "filename": "8a0a22_e4e3b0cf25ea4e7b9bb6bbd0f159b89e~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-06-04T19:31:52Z",
+          "updatedDate": "2024-06-19T08:54:23Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "144a4832-ece6-4314-a452-9b89545a062f",
+          "sortOrder": 1717529521383.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_4d8d69912ed94d61b06d80afd3d036fc~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_4d8d69912ed94d61b06d80afd3d036fc~mv2.jpg",
+              "height": 640,
+              "width": 481,
+              "altText": "",
+              "filename": "8a0a22_4d8d69912ed94d61b06d80afd3d036fc~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-06-04T19:32:01Z",
+          "updatedDate": "2024-06-19T08:54:23Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        }
+      ],
+      "createdDate": "2024-06-04T19:30:49Z"
+    },
+    {
+      "id": "58dc2fd2-4060-490f-a4e8-2d7152338c11",
+      "totalItems": 3,
+      "items": [
+        {
+          "id": "29613dc5-df83-4bc6-b445-36efd81d9d1d",
+          "sortOrder": 1718565173970.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_bf7c37e886604c838ede3fe1b30631f9~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_bf7c37e886604c838ede3fe1b30631f9~mv2.jpg",
+              "height": 1600,
+              "width": 1200,
+              "altText": "",
+              "filename": "8a0a22_bf7c37e886604c838ede3fe1b30631f9~mv2.jpg"
+            },
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "createdDate": "2024-06-16T19:12:54Z",
+          "updatedDate": "2024-06-16T19:20:39Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "472488fe-eebc-4088-8b2d-3292f8674831",
+          "sortOrder": 1718565175452.0,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_c80212c802de414a9b2abcf24ef04217~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_c80212c802de414a9b2abcf24ef04217~mv2.jpg",
+              "height": 640,
+              "width": 480,
+              "altText": "",
+              "filename": "8a0a22_c80212c802de414a9b2abcf24ef04217~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-06-04T17:14:24Z",
+          "updatedDate": "2024-06-16T19:20:39Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        },
+        {
+          "id": "3e234770-0b2e-4478-9100-0d62ad1ab771",
+          "sortOrder": 1718565177251.5,
+          "title": "",
+          "type": "IMAGE",
+          "image": {
+            "type": "WIX_MEDIA",
+            "imageInfo": {
+              "id": "8a0a22_fb5676aee88041adb99dcc2ed2266407~mv2.jpg",
+              "url": "https://static.wixstatic.com/media/8a0a22_fb5676aee88041adb99dcc2ed2266407~mv2.jpg",
+              "height": 640,
+              "width": 634,
+              "altText": "",
+              "filename": "8a0a22_fb5676aee88041adb99dcc2ed2266407~mv2.jpg"
+            }
+          },
+          "createdDate": "2024-06-04T17:14:34Z",
+          "updatedDate": "2024-06-16T19:20:39Z",
+          "tags": {
+            "values": [
+              "_fileOrigin_uploaded"
+            ]
+          }
+        }
+      ],
+      "createdDate": "2024-06-04T17:12:34Z"
+    }
+  ]
+}

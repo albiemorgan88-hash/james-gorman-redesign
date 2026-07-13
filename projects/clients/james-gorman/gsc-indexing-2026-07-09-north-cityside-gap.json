@@ -1,0 +1,236 @@
+{
+  "checked_at": "2026-07-09T18:21:04.667346+00:00",
+  "site": "sc-domain:jamesgormanproperty.com",
+  "sitemap": "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+  "sitemap_submit": {
+    "ok": true,
+    "status": 204,
+    "json": {}
+  },
+  "inspections": [
+    {
+      "url": "https://www.jamesgormanproperty.com/post/houses-for-sale-ballymagroarty-derry-buyer-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=EzhnvHwonS9xTic8fElMQQ&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/property-valuation-ballymagroarty-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=Cs1IfBsI5BkQVxyz7fxzoQ&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/houses-for-sale-galliagh-derry-buyer-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=rxwFpP6jxRVjJ0bUkE6TLQ&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/estate-agent-galliagh-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=2nsCXSswQkYgArz6GRKKsA&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/houses-for-sale-foyle-springs-derry-buyer-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=3cEwFzYCHUbKIs7hRWG0Jg&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/property-valuation-foyle-springs-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=Ht50UTy_YLYtDB0wlHgWig&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Discovered - currently not indexed",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+              "sitemap": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+                "https://www.jamesgormanproperty.com/sitemap.xml"
+              ],
+              "referringUrls": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml"
+              ],
+              "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/property-valuation-ballyarnett-derry-seller-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=o2DTBl6YiFbDTzrV4tRjcA&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "URL is unknown to Google",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.jamesgormanproperty.com/post/houses-for-sale-skeoge-derry-buyer-guide-2026",
+      "ok": true,
+      "status": 200,
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "raw": {
+        "ok": true,
+        "status": 200,
+        "json": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:jamesgormanproperty.com&id=IUohBjKbwzlk10EIAQByRQ&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Discovered - currently not indexed",
+              "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+              "indexingState": "INDEXING_STATE_UNSPECIFIED",
+              "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+              "sitemap": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml",
+                "https://www.jamesgormanproperty.com/sitemap.xml"
+              ],
+              "referringUrls": [
+                "https://www.jamesgormanproperty.com/blog-posts-sitemap.xml"
+              ],
+              "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

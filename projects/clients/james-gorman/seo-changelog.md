@@ -1,5 +1,633 @@
 # James Gorman Property - SEO Changelog
 
+## 13th July 2026 - BIG SELLER-INTENT CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Published 12 new Wix blog posts via the Wix Blog Draft Posts API create -> publish flow after Phil requested a big James Gorman Property website content blast:
+  - `https://www.jamesgormanproperty.com/post/free-house-valuation-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/online-house-valuation-derry-local-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-appraisal-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/switch-estate-agents-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/change-estate-agent-derry-checklist-2026`
+  - `https://www.jamesgormanproperty.com/post/house-on-market-too-long-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-newbuildings-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/sell-my-house-newbuildings-derry-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-marketing-newbuildings-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-magheramason-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-magheramason-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-greysteel-seller-guide-2026`
+- Content focus: seller-intent and valuation gaps around free/online valuations, property appraisal, switching estate agents, stale listings, Newbuildings, Magheramason and Greysteel.
+- Ahrefs context pulled on 13 July 2026: Ahrefs showed 5 organic keywords, 2 ranking positions 1-3, homepage around position 7 for `estate agents derry`, and `merchants view derry` ranking position 1.
+- Added publish/QA/indexing artefacts:
+  - `publish_james_big_blast_2026_07_13.py`
+  - `content-blast-2026-07-13-big/manifest.json`
+  - `content-blast-2026-07-13-big/content-blast-2026-07-13-big-draft-pack.md`
+  - `content-blast-2026-07-13-big/raw/ahrefs-metrics-2026-07-13.json`
+  - `content-blast-2026-07-13-big/raw/ahrefs-top-pages-2026-07-13.json`
+  - `blog-publish-report-2026-07-13-big-content-blast.md`
+  - `blog-publish-report-2026-07-13-big-content-blast.json`
+  - `blog-publish-api-qa-2026-07-13-big-content-blast.json`
+  - `gsc-submit-inspect-2026-07-13-big-content-blast.py`
+  - `gsc-indexing-2026-07-13-big-content-blast.md`
+  - `gsc-indexing-2026-07-13-big-content-blast.json`
+
+### QA
+
+- Publish QA passed with 0 failures.
+- All 12 public URLs returned `200`.
+- All 12 are `PUBLISHED` in Wix API and assigned to James' member ID.
+- All 12 H1s matched, include visible `By James Gorman`, and are included in `blog-posts-sitemap.xml`.
+- Public visible-text checks found no wrong-name leaks and no draft/SEO leak markers.
+- Submitted `blog-posts-sitemap.xml` to GSC and inspected all 12 new URLs on `sc-domain:jamesgormanproperty.com`; GSC calls returned no errors.
+- URL Inspection showed the fresh URLs are either `URL is unknown to Google` or `Discovered - currently not indexed`, which is expected immediately after publishing.
+- No outreach, email, social posting, client-facing message or featured-image work was done.
+
+## 9th July 2026 - NORTH/CITYSIDE GAP CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Published 8 new Wix blog posts via the Wix Blog Draft Posts API create -> publish flow after Phil approved publishing:
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-ballymagroarty-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-ballymagroarty-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-galliagh-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-galliagh-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-foyle-springs-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-foyle-springs-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-ballyarnett-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-skeoge-derry-buyer-guide-2026`
+- Content focus: North/Cityside local-intent gaps around Ballymagroarty, Galliagh, Foyle Springs, Ballyarnett and Skeoge, avoiding direct overlap with the 23 June, 30 June and 5 July published batches.
+- Added publish/QA/indexing artefacts:
+  - `publish_james_north_cityside_gap_2026_07_09.py`
+  - `blog-publish-report-2026-07-09-north-cityside-gap.md`
+  - `blog-publish-report-2026-07-09-north-cityside-gap.json`
+  - `blog-publish-api-qa-2026-07-09-north-cityside-gap.json`
+  - `gsc-submit-inspect-2026-07-09-north-cityside-gap.py`
+  - `gsc-indexing-2026-07-09-north-cityside-gap.md`
+  - `gsc-indexing-2026-07-09-north-cityside-gap.json`
+
+### QA
+
+- Publish QA passed with 0 failures after visible-text name scanning.
+- All 8 public URLs returned `200`.
+- All 8 are `PUBLISHED` in Wix API and assigned to James' member ID.
+- All 8 H1s matched, include visible `By James Gorman`, and are included in `blog-posts-sitemap.xml`.
+- Public visible-text checks found no wrong-name leaks and no draft/SEO leak markers.
+- Submitted `blog-posts-sitemap.xml` to GSC and inspected all 8 new URLs on `sc-domain:jamesgormanproperty.com`; GSC calls returned no errors.
+- No outreach, email, social posting, client-facing message or featured-image work was done.
+
+## 5th July 2026 - LOCAL INTENT CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Published 8 new Wix blog posts via the Wix Blog Draft Posts API create -> publish flow after Phil approved a James Gorman Property website content blast:
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-altnagelvin-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-altnagelvin-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-gobnascale-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-gobnascale-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-kilfennan-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-kilfennan-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-carnhill-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-skeoge-derry-seller-guide-2026`
+- Content focus: fresh Derry local-intent gaps around Altnagelvin, Gobnascale, Kilfennan, Carnhill and Skeoge, avoiding the 30 June Rosemount, Shantallow, Pennyburn, Bogside, Woodbrook and Ardmore batch.
+- Added publish/QA/indexing artefacts:
+  - `publish_james_july5_local_intent_2026.py`
+  - `blog-publish-report-2026-07-05-local-intent.md`
+  - `blog-publish-report-2026-07-05-local-intent.json`
+  - `blog-publish-api-qa-2026-07-05-local-intent.json`
+  - `gsc-submit-inspect-2026-07-05-local-intent.py`
+  - `gsc-indexing-2026-07-05-local-intent.md`
+  - `gsc-indexing-2026-07-05-local-intent.json`
+
+### QA
+
+- Publish QA passed with 0 failures after visible-text name scanning.
+- All 8 public URLs returned `200`.
+- All 8 are `PUBLISHED` in Wix API and assigned to James' member ID.
+- All 8 H1s matched, include visible `By James Gorman`, and are included in `blog-posts-sitemap.xml`.
+- Public visible-text checks found no wrong-name leaks and no draft/SEO leak markers.
+- Submitted `blog-posts-sitemap.xml` to GSC and inspected all 8 new URLs on `sc-domain:jamesgormanproperty.com`; GSC calls returned no errors.
+- No outreach, email, social posting, client-facing message or featured-image work was done.
+
+## 3rd July 2026 - FEATURED PROPERTIES GALLERY UPDATED LIVE ✅
+
+### CHANGED LIVE
+
+- Added/verified eight PropertyPal listings in the live Wix Pro Gallery Featured Properties section (`0880c93f-89ac-435c-af7b-5948fceef70e`):
+  - `35 Coleraine Road, Portrush` — Offers Around £450,000 — 6 bed — `https://www.propertypal.com/35-coleraine-road-portrush/1085549`
+  - `11 Oaktree Manor, Eglinton` — Asking Price £180,000 — 2 bed — `https://www.propertypal.com/11-oaktree-manor-coolafinny-road-eglinton-derrylondonderry/1083049`
+  - `Lisowen, Limavady Road` — Asking Price £485,000 — 4 bed — `https://www.propertypal.com/lisowen-limavady-road-derrylondonderry/1077344`
+  - `91 Good Shepherd Glen` — Sale agreed — 3 bed — `https://www.propertypal.com/91-good-shepherd-glen-derrylondonderry/1081490`
+  - `24 Culmore Square` — Sale agreed — 3 bed — `https://www.propertypal.com/24-culmore-square-derrylondonderry/1080605`
+  - `18 Clearwater` — Sale agreed — 4 bed — `https://www.propertypal.com/18-clearwater-derrylondonderry/1077343`
+  - `25 Summer Meadows Park` — Sale agreed — 2 bed — `https://www.propertypal.com/25-summer-meadows-park-derrylondonderry/1058022`
+  - `33 Tulacorr Gardens, Strabane` — Sale agreed — 3 bed — `https://www.propertypal.com/33-tulacorr-gardens-strabane/1028267`
+- Imported one main image per new card into Wix Media where needed, updated the three partially added cards from the first interrupted run, and ordered all eight cards at the top of the gallery.
+- Added run artefacts under `featured-properties-2026-07-03/`: script, before/after gallery snapshots, Wix import result JSON, and QA result JSON.
+
+### QA
+
+- Wix Pro Gallery API reports 24 total gallery items after the run.
+- API verification found all eight requested cards with non-zero image dimensions and matching PropertyPal links.
+- Public homepage returned HTTP 200 and raw page HTML contains all eight new property titles.
+- No emails, DMs, social posts, or public client comms were sent.
+
+## 30th June 2026 - LOCAL GAP CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Reviewed James Gorman Property SEO operating files, current backlog and latest changelog.
+- Checked the live Wix blog sitemap on 30 June 2026; 160 blog URLs were found, with the latest sitemap update dated 23 June 2026.
+- Avoided repeating the most recent live content blast topics covering BT47, BT48, Londonderry, Prehen, Creggan, Magheramason and Greysteel.
+- Drafted a 10-post local gap content pack under `content-blast-2026-06-30-local-gap/`:
+  - `houses-for-sale-rosemount-derry-buyer-guide-2026`
+  - `property-valuation-rosemount-derry-seller-guide-2026`
+  - `houses-for-sale-shantallow-derry-buyer-guide-2026`
+  - `house-not-selling-shantallow-derry-what-to-do-2026`
+  - `houses-for-sale-pennyburn-derry-buyer-guide-2026`
+  - `property-valuation-pennyburn-derry-seller-guide-2026`
+  - `houses-for-sale-bogside-derry-buyer-guide-2026`
+  - `selling-terrace-house-derry-guide-2026`
+  - `property-valuation-woodbrook-derry-seller-guide-2026`
+  - `houses-for-sale-ardmore-derry-buyer-guide-2026`
+- Created `manifest.json` and `content-blast-2026-06-30-local-gap-draft-pack.md`.
+- Published all 10 posts via the Wix Blog Draft Posts API create -> publish flow after Phil explicitly approved publishing the James Gorman links:
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-rosemount-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-rosemount-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-shantallow-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/house-not-selling-shantallow-derry-what-to-do-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-pennyburn-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-pennyburn-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-bogside-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/selling-terrace-house-derry-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-woodbrook-derry-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-ardmore-derry-buyer-guide-2026`
+- Added publish script/report/QA artefacts:
+  - `publish_james_local_gap_2026_06_30.py`
+  - `blog-publish-report-2026-06-30-local-gap.md`
+  - `blog-publish-report-2026-06-30-local-gap.json`
+  - `blog-publish-api-qa-2026-06-30-local-gap.json`
+  - `gsc-indexing-2026-06-30-local-gap.md`
+  - `gsc-indexing-2026-06-30-local-gap.json`
+
+### QA
+
+- Publish QA passed with 0 failures after visible-text recheck.
+- All 10 public URLs returned `200`.
+- All 10 are `PUBLISHED` in Wix API and assigned to James' member ID.
+- All 10 H1s matched, include visible `By James Gorman`, and are included in `blog-posts-sitemap.xml`.
+- Public visible-text checks found no wrong-name leaks and no draft/SEO leak markers.
+- Submitted `blog-posts-sitemap.xml` to GSC and inspected all 10 new URLs on `sc-domain:jamesgormanproperty.com`; GSC calls returned no errors.
+- No outreach, email, social posting, client-facing message or featured-image work was done.
+
+## 23rd June 2026 - SEO CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Pulled fresh Ahrefs context for `jamesgormanproperty.com` and confirmed current visibility around `merchants view derry`, `estate agents derry` and `property derry`.
+- Ran Keyword Explorer checks for fresh low-difficulty local opportunities. Strongest selected gaps included `houses for sale BT47`, `houses for sale BT48`, `property for sale BT47`, `property for sale BT48`, `houses for sale Creggan Derry`, `houses for sale Magheramason`, `houses for sale Greysteel`, and Londonderry wording variants.
+- Published 12 new Wix blog posts via the Wix Blog Draft Posts API create -> publish flow after Phil explicitly approved the SEO-driven James content blast in this run:
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-bt47-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-bt48-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-for-sale-bt47-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-for-sale-bt48-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-creggan-derry-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-magheramason-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-greysteel-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-londonderry-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-for-sale-londonderry-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-for-sale-prehen-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-bt47-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-bt48-seller-guide-2026`
+- Saved draft/source pack and Ahrefs raw data under `ahrefs-content-blast-2026-06-23/`.
+- Added publish script/report/QA artefacts:
+  - `publish_james_seo_blast_2026_06_23.py`
+  - `blog-publish-report-2026-06-23-seo-blast.md`
+  - `blog-publish-report-2026-06-23-seo-blast.json`
+  - `blog-publish-api-qa-2026-06-23-seo-blast.json`
+
+### QA
+
+- Publish QA passed with 0 failures after visible-text recheck.
+- All 12 public URLs returned `200`.
+- All 12 are `PUBLISHED` in Wix API and assigned to James' member ID.
+- All 12 H1s matched, include visible `By James Gorman`, and are included in `blog-posts-sitemap.xml`.
+- Public visible-text checks found no `Phil Patterson`, `PJ` or `Albie`, and no draft/SEO leak markers.
+- Submitted `blog-posts-sitemap.xml` and `sitemap.xml` to GSC. Wix `sitemap_index.xml` returned 400 and was skipped.
+- No outreach, email, social posting, client-facing message or featured-image work was done.
+
+## 8th June 2026 - AHREFS CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Pulled fresh Ahrefs context for `jamesgormanproperty.com`:
+  - Domain Rating: 2.1
+  - Organic keywords: 4 in metrics, with 3 GB keyword rows exported
+  - Estimated organic traffic: 55
+  - Estimated organic traffic value: 733
+  - Live referring domains: 187
+  - Live backlinks: 2,852
+- Reviewed the live blog sitemap before drafting; 135 blog URLs were present, so the batch deliberately avoided another simple repeat of existing Derry, Eglinton, Claudy, Limavady, Culmore, Drumahoe and Strathfoyle pages.
+- Created 13 draft-only content assets under `ahrefs-content-blast-2026-06-08/drafts/`.
+- Published all 13 posts via the Wix Blog Draft Posts API create -> publish flow after Phil explicitly approved publish in this run:
+  - `https://www.jamesgormanproperty.com/post/apartments-for-sale-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/estate-agents-derry-comparison-checklist-2026`
+  - `https://www.jamesgormanproperty.com/post/first-time-buyer-northern-ireland-derry-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/house-not-selling-cityside-derry-checklist-2026`
+  - `https://www.jamesgormanproperty.com/post/house-not-selling-waterside-derry-checklist-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-newbuildings-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/merchants-view-derry-buyer-questions-2026`
+  - `https://www.jamesgormanproperty.com/post/new-homes-waterside-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/probate-property-sale-northern-ireland-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-culmore-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-drumahoe-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-strathfoyle-seller-guide-2026`
+- Created the handoff/report pack:
+  - `ahrefs-content-blast-2026-06-08/content-blast-2026-06-08-ahrefs-draft-pack.md`
+  - `ahrefs-content-blast-2026-06-08/manifest.json`
+  - `ahrefs-content-blast-2026-06-08/raw/`
+- Added publish script/report/QA artefacts:
+  - `publish_james_ahrefs_blast_2026_06_08.py`
+  - `blog-publish-report-2026-06-08-ahrefs-blast.md`
+  - `blog-publish-report-2026-06-08-ahrefs-blast.json`
+  - `blog-publish-api-qa-2026-06-08-ahrefs-blast.json`
+- Priority topics drafted:
+  - `estate-agents-derry-comparison-checklist-2026`
+  - `apartments-for-sale-derry-buyer-guide-2026`
+  - `estate-agent-fees-northern-ireland-seller-guide-2026`
+  - `first-time-buyer-northern-ireland-derry-guide-2026`
+  - `merchants-view-derry-buyer-questions-2026`
+  - `new-homes-waterside-derry-buyer-guide-2026`
+  - `houses-for-sale-newbuildings-buyer-guide-2026`
+  - Waterside/Cityside house-not-selling vendor-rescue support
+  - Culmore/Drumahoe/Strathfoyle valuation support
+  - Probate property sale Northern Ireland guide
+
+### QA
+
+- Local draft QA passed: 13 draft files created, all include meta/excerpt guidance, suggested internal links, FAQ sections and `By James Gorman`.
+- Local content scan found no `Phil Patterson`, `PJ` or `Albie` strings in the draft pack.
+- Publish QA passed with 0 failures.
+- All 13 public URLs returned `200`.
+- All 13 are `PUBLISHED` in Wix API and assigned to James' member ID.
+- All 13 H1s matched, include visible `By James Gorman`, and are included in `blog-posts-sitemap.xml`.
+- Public visible-text checks found no `Phil Patterson`, `PJ` or `Albie`, and no draft/SEO leak markers.
+- No outreach, email, social posting, GSC submission or featured-image work was done in this pass.
+
+## 3rd June 2026 - EGLINTON / CLAUDY / LIMAVADY CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Reviewed the current James Gorman Property local-content footprint before drafting:
+  - local backlog/changelog
+  - existing local `blog-drafts/`
+  - live `https://www.jamesgormanproperty.com/blog-posts-sitemap.xml`
+- Confirmed the obvious Eglinton, Claudy and Limavady terms are already heavily covered live, including estate agent, houses for sale, property for sale, selling, valuation and broad area-guide pages.
+- Published 6 new local companion posts via the Wix Blog Draft Posts API create -> publish flow after Phil explicitly approved publish in this run:
+  - `https://www.jamesgormanproperty.com/post/buying-countryside-home-claudy-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/first-time-buyer-limavady-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/house-not-selling-eglinton-what-to-do-2026`
+  - `https://www.jamesgormanproperty.com/post/house-not-selling-limavady-what-to-do-2026`
+  - `https://www.jamesgormanproperty.com/post/property-marketing-claudy-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-eglinton-seller-guide-2026`
+- Local source drafts remain saved under:
+  - `blog-drafts/content-blast-2026-06-03-eglinton-claudy-limavady/2026-06-03-property-valuation-eglinton-seller-guide-2026.md`
+  - `blog-drafts/content-blast-2026-06-03-eglinton-claudy-limavady/2026-06-03-house-not-selling-eglinton-what-to-do-2026.md`
+  - `blog-drafts/content-blast-2026-06-03-eglinton-claudy-limavady/2026-06-03-property-marketing-claudy-seller-guide-2026.md`
+  - `blog-drafts/content-blast-2026-06-03-eglinton-claudy-limavady/2026-06-03-buying-countryside-home-claudy-guide-2026.md`
+  - `blog-drafts/content-blast-2026-06-03-eglinton-claudy-limavady/2026-06-03-house-not-selling-limavady-what-to-do-2026.md`
+  - `blog-drafts/content-blast-2026-06-03-eglinton-claudy-limavady/2026-06-03-first-time-buyer-limavady-guide-2026.md`
+- Added handoff/publish plan: `content-blast-2026-06-03-eglinton-claudy-limavady.md`.
+- Added publish script/report/QA artefacts:
+  - `publish_james_local_blast_2026_06_03.py`
+  - `blog-publish-report-2026-06-03-eglinton-claudy-limavady.md`
+  - `blog-publish-report-2026-06-03-eglinton-claudy-limavady.json`
+  - `blog-publish-api-qa-2026-06-03-eglinton-claudy-limavady.json`
+
+### QA
+
+- QA passed with 0 failures.
+- All 6 public URLs returned `200`.
+- All 6 are `PUBLISHED` in Wix API and assigned to James' member ID.
+- All 6 H1s matched, include visible `By James Gorman`, and are included in `blog-posts-sitemap.xml`.
+- Public checks found no `Phil Patterson` and no draft/SEO leak markers.
+- No outreach, email, social posting, GSC submission or featured-image work was done in this pass.
+
+## 29th May 2026 - FEATURED PROPERTIES REMINDER TRIAGED
+
+### INTERNAL / NO LIVE CHANGES
+
+- Heartbeat reminder surfaced the older “resume Featured Properties upload tomorrow” task. Checked current backlog/changelog state and confirmed the four Featured Properties cards were already completed on 2026-05-28.
+- Marked the stale checklist items for showcase DNS and Featured Properties upload as completed in `backlog.md`.
+- Re-tested browser control for visual QA; OpenClaw browser start still times out with gateway restart message, so visual mobile/desktop QA remains a manual/browser-control follow-up.
+
+### NEXT ACTIONS
+
+- Rotate the exposed Apify token before future Apify work.
+- Complete manual/browser visual QA of the James homepage Featured Properties section when browser control is healthy.
+
+## 28th May 2026 - THREE POSTCODE-GATED VENDOR-RESCUE CASE STUDIES DEPLOYED ✅
+
+### CHANGED LIVE
+
+- Added three new custom James Gorman Property vendor-rescue showcase pages to `projects/james-gorman-property-showcases`, modelled on the existing postcode-gated relaunch showcase flow:
+  - `https://showcase.jamesgormanproperty.com/6-oak-country-green` — password/postcode `BT47 6FU`
+  - `https://showcase.jamesgormanproperty.com/12-church-road-altnagelvin` — password/postcode `BT47 3QB`
+  - `https://showcase.jamesgormanproperty.com/17-rossdowney-park` — password/postcode `BT47 5NR`
+- Updated the postcode gate so those postcodes route to the matching case studies.
+- Deployed production to Vercel and aliased to `https://showcase.jamesgormanproperty.com`.
+
+### QA
+
+- Local `npm run build` passed.
+- Production HTTP checks passed for `/`, `/6-oak-country-green`, `/12-church-road-altnagelvin`, and `/17-rossdowney-park`.
+- Each production page returned `200`, contained the expected property title, and retained `noindex` robots metadata.
+- Browser visual QA could not be completed because local browser control / Playwright browser binary was unavailable, but build + production HTML checks passed.
+
+### IMPORTANT NOTES
+
+- Source details/images came from the Apify PropertyPal scrape; facts were not guessed.
+- These are private/noindex showcase links intended for targeted review/QR-style use, not broad SEO landing pages.
+
+## 28th May 2026 - BT47 60+ DAYS VENDOR-RESCUE SHORTLIST DRAFTED 🧭
+
+### DRAFT / INTERNAL ONLY
+
+- Filtered the 2026-05-28 Apify PropertyPal pull to BT47 listings that appear 60+ days live, excluding James Gorman Property's own listings.
+- Candidate pool found: 59 BT47 listings at 60+ days.
+- Saved curated four-candidate shortlist: `vendor-rescue/weekly-targets/2026-05-28-bt47-60days-four-shortlist.md`.
+- Selected fresh candidates without repeating previous pilot showcase targets Cregg Lodge / 52 Tirbracken:
+  - 37 Goshaden Road — ~342 days live — £750,000 — Oakland Estate Agents.
+  - 6 Oak Country Green — ~290 days live — £385,000 — Pauline Elliott Estate Agents — approx £14,500 reduction.
+  - 12 Church Road, Altnagelvin — ~300 days live — £350,000 — Robert Quigley Estate Agents — approx £25,000 reduction.
+  - 17 Rossdowney Park — ~315 days live — £259,950 — Pauline Elliott Estate Agents — approx £15,050 reduction.
+
+### IMPORTANT NOTES
+
+- No public Wix/site changes were made for this shortlist.
+- Next step is to turn the chosen candidates into showcase/letter/QR angles if Phil confirms.
+
+## 28th May 2026 - FEATURED PROPERTIES GALLERY UPDATED LIVE ✅
+
+### CHANGED LIVE
+
+- Added/verified four live James Gorman Property listings in the Wix Pro Gallery Featured Properties section (`0880c93f-89ac-435c-af7b-5948fceef70e`):
+  - `194 Barleyfields, Culmore Road` — £350,000 — 4 bed — `https://www.propertypal.com/194-barleyfields-culmore-road-derrylondonderry/1078357`
+  - `5 Keery Park, Magheramason, Derry` — £315,000 — 4 bed — `https://www.propertypal.com/5-keery-park-magheramason-derrylondonderry/1064767`
+  - `109 Victoria Gate, Derry` — £549,950 — 5 bed — `https://www.propertypal.com/109-victoria-gate-derrylondonderry/1062990`
+  - `5 Coralmount, Limavady Road, Derry` — £699,950 — 5 bed — `https://www.propertypal.com/5-coralmount-limavady-road-derrylondonderry/1070650`
+- Source data came from Apify PropertyPal scrape/export, not guessed page content.
+- Imported one main image per property into Wix Media and linked each gallery card back to the matching PropertyPal listing.
+- Added run artefacts under `vendor-rescue/weekly-targets/`: raw PropertyPal data, before/after gallery snapshots, and Wix add result JSON.
+
+### QA
+
+- Wix Pro Gallery API now reports 16 total gallery items.
+- API verification found exactly one matching card for each of the four requested properties.
+- Public homepage returned HTTP 200 and raw page HTML contains all four new property titles.
+- After Phil could not see the new cards, the four items were moved to the top of the gallery order and image dimensions were patched from source media to avoid Wix rendering them as 0x0.
+- Browser visual QA was attempted but local browser control timed out; API + public HTML checks passed.
+
+### IMPORTANT NOTES
+
+- Phil pasted an Apify API token in Telegram during setup; rotate that token after this work and keep future tokens in local env/secrets only.
+- The separate BT47 60+ days candidate pull remains next, after the Featured Properties update.
+
+## 26th May 2026 - 8-POST LOCAL AREA CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Published 8 new James Gorman Property Wix blog posts focused on Eglinton, Claudy, Limavady and Dungiven long-tail buyer/seller keywords:
+  - `https://www.jamesgormanproperty.com/post/estate-agent-claudy-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-claudy-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-claudy-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-dungiven-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-dungiven-seller-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-limavady-buyer-guide-2026-1`
+  - `https://www.jamesgormanproperty.com/post/selling-home-eglinton-local-market-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/eglinton-claudy-limavady-dungiven-property-guide-2026`
+- Added local source drafts under `blog-drafts/content-blast-2026-05-26-local-areas/`.
+- Added reports: `blog-publish-report-2026-05-26-local-area-blast.md`, `blog-publish-report-2026-05-26-local-area-blast.json`, `blog-publish-api-qa-2026-05-26-local-area-blast.json`, `gsc-indexing-2026-05-26-local-area-blast.md`, and `gsc-indexing-2026-05-26-local-area-blast.json`.
+- Resubmitted `https://www.jamesgormanproperty.com/blog-posts-sitemap.xml` to GSC property `sc-domain:jamesgormanproperty.com` and inspected all 8 new URLs.
+
+### IMPORTANT NOTES
+
+- Final QA passed: all 8 public URLs returned `200`, all 8 are `PUBLISHED` in Wix API, H1s match, sitemap includes all 8 URLs, posts are assigned to James' Wix member ID, visible `By James Gorman` appears in the body, public HTML does not contain `Phil Patterson`, and no draft/SEO leak markers were found.
+- GSC URL Inspection worked for all 8 URLs; all are currently `URL is unknown to Google`, expected immediately after publishing fresh pages.
+- Wix auto-suffixed the Limavady buyer guide to `/houses-for-sale-limavady-buyer-guide-2026-1` because the unsuffixed URL already existed.
+- No outbound promotion, emails, social posting, or featured-image work was run in this pass.
+
+## 25th May 2026 - 8-POST BUYER/SELLER CONTENT BLAST + AUTHOR FIX PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Reassigned 15 recently published Wix posts from Phil's member ID to James' Wix member ID and re-published them before the new batch. Public recheck passed with 0 remaining `Phil Patterson` author leaks.
+- Published 8 new James Gorman Property Wix blog posts:
+  - `https://www.jamesgormanproperty.com/post/mortgage-agreement-in-principle-derry`
+  - `https://www.jamesgormanproperty.com/post/home-survey-northern-ireland-buyer-guide`
+  - `https://www.jamesgormanproperty.com/post/epc-selling-house-northern-ireland`
+  - `https://www.jamesgormanproperty.com/post/property-chain-derry-explained`
+  - `https://www.jamesgormanproperty.com/post/first-viewing-questions-house-derry`
+  - `https://www.jamesgormanproperty.com/post/conveyancing-process-northern-ireland-buyers`
+  - `https://www.jamesgormanproperty.com/post/rates-buying-house-northern-ireland`
+  - `https://www.jamesgormanproperty.com/post/property-photography-selling-house-derry`
+- Added local source drafts under `blog-drafts/content-blast-2026-05-25/`.
+- Added reports: `blog-publish-report-2026-05-25-content-blast.md`, `blog-publish-report-2026-05-25-content-blast.json`, `blog-publish-api-qa-2026-05-25-content-blast.json`, and `author-fix-report-2026-05-25.json`.
+
+### IMPORTANT NOTES
+
+- Topics target practical buyer/seller support around mortgage readiness, surveys, EPCs, property chains, first-viewing questions, conveyancing, rates, and property photography.
+- Final QA passed: all 8 new public URLs returned `200`, all 8 are `PUBLISHED` in Wix API, H1s match, sitemap includes all 8 URLs, posts are assigned to James' Wix member ID, visible `By James Gorman` appears in the body, and public HTML does not contain `Phil Patterson`.
+- Wix member profile nickname still renders as `james51251` in schema because the member profile edit endpoint is blocked by member-only permission; visible body bylines and member assignment were used as the safe workaround.
+- No GSC indexing, outbound promotion, emails, or featured-image work was run in this pass.
+
+## 19th May 2026 - 8-POST SELLER/LANDLORD CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Published 8 new James Gorman Property Wix blog posts after Phil requested/confirmed the content blast:
+  - `https://www.jamesgormanproperty.com/post/downsizing-and-selling-house-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-contracts-derry-sellers-guide`
+  - `https://www.jamesgormanproperty.com/post/online-estate-agent-vs-local-estate-agent-derry`
+  - `https://www.jamesgormanproperty.com/post/property-marketing-plan-derry-sellers-guide`
+  - `https://www.jamesgormanproperty.com/post/questions-to-ask-estate-agent-before-selling-derry`
+  - `https://www.jamesgormanproperty.com/post/sell-house-before-buying-next-derry`
+  - `https://www.jamesgormanproperty.com/post/selling-a-house-with-tenants-derry`
+  - `https://www.jamesgormanproperty.com/post/selling-a-vacant-house-derry`
+- Added local source drafts under `blog-drafts/content-blast-2026-05-19/`.
+- Added reports: `blog-publish-report-2026-05-19-content-blast.md`, `blog-publish-report-2026-05-19-content-blast.json`, and `blog-publish-api-qa-2026-05-19-content-blast.json`.
+
+### IMPORTANT NOTES
+
+- Topics focus on high-intent seller/landlord/mover decisions: online vs local agent, estate-agent contracts, questions before instructing, vacant homes, tenanted landlord sales, downsizing, sell-before-buying, and property marketing plans.
+- Final QA passed after Wix propagation delay: all 8 public URLs returned `200`, all 8 are `PUBLISHED` in Wix API, H1s match, sitemap includes URLs, Wix rich content contains body nodes, and no planning/metadata leak markers were found in API rich content or public raw HTML checks.
+- Wix tag API still returned validation errors, so posts are category-assigned but not tag-enriched; content/publish QA passed.
+- No GSC indexing, outbound promotion, or featured-image work was run in this pass.
+
+## 15th May 2026 - THREE VENDOR RESCUE SHOWCASES DEPLOYED ✅
+
+### CHANGED LIVE
+
+- Built and deployed a new public preview app for James Gorman Property vendor-rescue QR showcases:
+  - Index: `https://james-gorman-property-showcases.vercel.app/`
+  - `https://james-gorman-property-showcases.vercel.app/270-culmore-road`
+  - `https://james-gorman-property-showcases.vercel.app/cregg-lodge-claudy`
+  - `https://james-gorman-property-showcases.vercel.app/52-tirbracken-road`
+- No Wix edits were made.
+- No outreach, emails, DMs, or social posts were sent.
+
+### IMPORTANT NOTES
+
+- Source checked: PropertyPal BT47/BT48 live sale pages.
+- Filter: live `For sale` listings with `activationTime` older than 60 days as of 2026-05-15.
+- Candidate pool found: 196 unique BT47/BT48 listings, 72 matching 60+ days live.
+- Selected three pilot targets based on age, photos, story angle, relaunch hook, and QR suitability:
+  - 270 Culmore Road — 350 days live, price reduced from £825,000 to £750,000.
+  - Cregg Lodge — 346 days live, strong premium family-home/story angle.
+  - 52 Tirbracken Road — 332 days live, fresh reduction from £485,000 to £399,950 and live-work/investment angle.
+- Build passed: `npm run build` in `projects/james-gorman-property-showcases`.
+- Production smoke passed: index and all three showcase URLs returned 200 after redirects were followed.
+- Remote image check passed: 24/24 PropertyPal media URLs returned HTTP 200.
+- Handoff note saved: `vendor-rescue/weekly-targets/2026-05-15-three-showcase-pilot.md`.
+
+## 14th May 2026 - 8-POST PRACTICAL BUYER/SELLER CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Published 8 new James Gorman Property Wix blog posts after Phil explicitly approved live publishing (`All good to publish bro`):
+  - `https://www.jamesgormanproperty.com/post/choosing-between-estate-agent-valuations-derry`
+  - `https://www.jamesgormanproperty.com/post/house-not-selling-derry-what-to-do`
+  - `https://www.jamesgormanproperty.com/post/how-to-price-your-house-for-sale-derry`
+  - `https://www.jamesgormanproperty.com/post/making-an-offer-on-a-house-in-derry`
+  - `https://www.jamesgormanproperty.com/post/preparing-for-house-viewings-derry`
+  - `https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide`
+  - `https://www.jamesgormanproperty.com/post/sell-or-rent-out-house-derry`
+  - `https://www.jamesgormanproperty.com/post/viewing-a-house-in-derry-checklist-2026`
+- Added local source drafts under `blog-drafts/content-blast-2026-05-14/`.
+- Added reports: `blog-publish-report-2026-05-14-content-blast.md`, `blog-publish-report-2026-05-14-content-blast.json`, and `blog-publish-api-qa-2026-05-14-content-blast.json`.
+
+### IMPORTANT NOTES
+
+- Topics widen practical mid-funnel coverage for Derry buyers and sellers: viewing checklist, making an offer, sale agreed, pricing, viewings prep, sell-or-rent, stale listings, and choosing between estate-agent valuations.
+- Final QA passed: all 8 public URLs returned `200`, all 8 are `PUBLISHED` in Wix API, sitemap includes all 8 URLs, Wix rich content contains body nodes/excerpts, and no planning/metadata leak markers were found in API rich content or public raw HTML checks.
+- First immediate live check saw transient Wix `404`s during propagation; final follow-up QA is clean.
+- Wix tag API returned validation errors during publish, so posts are category-assigned but not tag-enriched; content/publish QA passed.
+- No GSC indexing, outbound promotion, or featured-image work was run in this pass.
+
+## 6th May 2026 - 8-POST AHREFS CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Published 8 new James Gorman Property Wix blog posts after Phil asked for a James content blast using the SEO/Ahrefs reports:
+  - `https://www.jamesgormanproperty.com/post/houses-for-sale-waterside-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-for-sale-cityside-derry-buyer-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-for-sale-derry-city-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/bungalows-for-sale-derry-guide-2026-1`
+  - `https://www.jamesgormanproperty.com/post/house-valuation-derry-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/property-valuer-derry-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/no-sale-no-fee-estate-agent-derry-guide`
+  - `https://www.jamesgormanproperty.com/post/property-derry-northern-ireland-buyer-guide`
+- Added local source drafts under `blog-drafts/ahrefs-blast-2026-05-06/`.
+- Added reports: `blog-publish-report-2026-05-06-ahrefs-blast.md`, `blog-publish-report-2026-05-06-ahrefs-blast.json`, and `blog-publish-api-qa-2026-05-06-ahrefs-blast.json`.
+
+### IMPORTANT NOTES
+
+- Fresh Ahrefs API snapshot on 2026-05-06: DR 6, 3 organic keywords, estimated organic traffic 25, and 66 live referring domains.
+- Topics were selected from the Ahrefs/SEO reports to target low-difficulty Waterside, Cityside, Derry city, bungalow/downsizer, valuation, no-sale-no-fee and geographic Derry/Northern Ireland search intent while avoiding obvious duplication.
+- Final QA passed: all 8 public URLs returned `200`, all 8 are `PUBLISHED` in Wix API, sitemap includes all 8 URLs, Wix rich content contains body nodes, and no planning/metadata leak markers were found in API rich content or public raw HTML checks.
+- Wix automatically used `bungalows-for-sale-derry-guide-2026-1` because the original requested bungalow slug already existed from the April batch.
+- No GSC indexing, outbound promotion, or featured-image work was run in this pass.
+
+## 5th May 2026 - VENDOR RESCUE SHOWCASE WORKFLOW DESIGNED 🧭
+
+### CHANGED LIVE
+
+- No public James website edit was applied in this pass.
+- No external outreach was sent.
+
+### WORKFLOW / STRATEGY CREATED
+
+- Captured James' positive feedback on the personalised property showcase and his requested target segment: BT47/BT48 homes on market 60+ days.
+- Designed a weekly Vendor Rescue Pipeline: source candidates, score stale listings, generate personalised relaunch showcases, produce QR/letter/door-knock packs, and track valuation/instruction outcomes.
+- Added full workflow brief: `vendor-rescue-workflow-2026-05-05.md`.
+
+### IMPORTANT NOTES
+
+- PropertyPal `robots.txt` currently disallows `/search`; avoid building a bot that scrapes PropertyPal search results unless permission/API/approved source is obtained.
+- Recommended MVP is manual-source first: James/Phil provides candidate URLs or CSV from saved searches, then the agent handles scoring, showcase generation, QR/letter assets, and follow-up tracking.
+
+## 4th May 2026 - 8-POST JAMES CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Published 8 new James Gorman Property Wix blog posts after Phil explicitly approved live publish in this run (`feel free to publish`):
+  - `https://www.jamesgormanproperty.com/post/chain-free-house-sale-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-ballyarnett-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-maydown-derry`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-newbuildings-derry`
+  - `https://www.jamesgormanproperty.com/post/prepare-house-for-valuation-derry`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-cityside-derry`
+  - `https://www.jamesgormanproperty.com/post/property-valuation-waterside-derry`
+  - `https://www.jamesgormanproperty.com/post/selling-rental-property-derry`
+- Added publish report: `blog-publish-report-2026-05-04-content-blast.md`.
+- Added supporting QA/output files: `james-content-blast-publish-2026-05-04.json`, `blog-publish-report-2026-05-04-content-blast.json`, and `blog-publish-api-qa-2026-05-04-content-blast.json`.
+
+### IMPORTANT NOTES
+
+- Topics were chosen to avoid duplicating the recent April/early-May live clusters and widen seller/service intent coverage around Newbuildings, Maydown, Ballyarnett, valuation prep, Cityside, Waterside, chain-free sales, and rental-property sales.
+- Final public QA confirmed all 8 URLs returned `200` and the Wix blog sitemap includes all 8 new URLs.
+- Wix API QA confirmed all 8 are `PUBLISHED`, expected `seoSlug` values are set, excerpts are present, and rich-content bodies contain no draft metadata leak markers.
+- A temporary unpublished API debug draft was deleted after validation.
+- No featured images were added in this pass.
+
+## 30th April 2026 - EDDIE 4-POST BLOG BATCH VERIFIED LIVE ✅
+
+### CHANGED LIVE
+
+- Published / verified 4 new James Gorman blog posts from Eddie's 29 April draft batch:
+  - `https://www.jamesgormanproperty.com/post/first-time-buyer-derry`
+  - `https://www.jamesgormanproperty.com/post/selling-inherited-house-derry`
+  - `https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026`
+  - `https://www.jamesgormanproperty.com/post/estate-agent-eglinton-1`
+- Added publish QA report:
+  - `blog-publish-report-2026-04-30-eddie-batch.md`
+
+### IMPORTANT NOTES
+
+- Publish approval in this run was explicit from Phil: `can you publish the blogs eddie wrote for you on james' site?`
+- Wix already had a live `/post/estate-agent-eglinton` page, so the new full Eglinton article landed at `/post/estate-agent-eglinton-1`.
+- Final public QA confirmed all 4 live URLs returned `200`, H1s matched the intended titles, and no visible draft metadata/leak markers were found.
+- No featured images were added in this pass.
+
+## 27th April 2026 - 4-POST JAMES SEO-PLAN CONTENT BLAST PUBLISHED LIVE ✅
+
+### CHANGED LIVE
+
+- Published 4 new James Gorman blog posts live via the Wix Blog Draft Posts API create -> publish flow:
+  - `https://www.jamesgormanproperty.com/post/property-finder-derry-buyer-service-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/house-hunting-derry-checklist-2026`
+  - `https://www.jamesgormanproperty.com/post/derry-house-prices-local-guide-2026`
+  - `https://www.jamesgormanproperty.com/post/best-time-to-sell-house-derry-2026`
+- Wix post / draft IDs:
+  - `f4d862f6-3b30-497c-b764-a6f02e5f7563` -> `property-finder-derry-buyer-service-guide-2026`
+  - `9e090c39-5169-476a-a9c1-c7b32ed09bfc` -> `house-hunting-derry-checklist-2026`
+  - `824c8544-3c1a-4e0c-be1e-0c79c34bdc08` -> `derry-house-prices-local-guide-2026`
+  - `9edfde90-f2d5-48f9-beb0-9d3dccb4f040` -> `best-time-to-sell-house-derry-2026`
+- Reviewed the current James SEO working state and existing local draft inventory before selecting topics.
+- Used the remaining SEO-plan/Ahrefs opportunities while avoiding overlap with the recently published or drafted April clusters.
+- Added batch summary / handoff note:
+  - `content-blast-2026-04-27-seo-plan.md`
+- Added publish QA report:
+  - `tmp/content-blast-publish-final-2026-04-27.json`
+
+### IMPORTANT NOTES
+
+- Publish approval in this run was explicit from Phil: `Publish please`.
+- First live check saw a transient Wix 404 on the `property-finder` URL, but the post was present in the Wix API and sitemap; final public verification passed after propagation.
+- Final public QA confirmed all 4 URLs returned `200`, H1s matched expected titles, and no draft metadata/leak markers were present.
+- No featured images were added in this pass.
+
 ## 23rd April 2026 - 4-POST JAMES AHREFS BATCH PUBLISHED LIVE ✅
 
 ### CHANGED LIVE
@@ -2427,3 +3055,119 @@ curl -X POST "https://www.wixapis.com/blog/v3/draft-posts/{id}/publish" \
 ### Follow-up note
 
 Wix draft creation is now confirmed working in this runtime. These posts are staged for Phil review and manual publish only.
+
+## 2 May 2026 - Eddie blog batch pre-publish QA
+
+- Reviewed 4 James Gorman draft posts from `/Users/philsagent/shared-albie-eddie/eddie/2026-05-02/james-gorman-blog-batch/`.
+- Patched `04-help-to-buy-ni-2026.md` to update Co-Ownership PVL to £215,000 effective 14 April 2026 and avoid overstating Help to Buy closure wording.
+- Patched `03-probate-property-sales-derry.md` to use current CGT annual exempt amount/rate wording for personal representatives.
+- No publish action taken; James Gorman remains draft-only until explicit live-publish approval and live-render QA.
+
+## 2 May 2026 - Published 4 Eddie blog posts live
+
+- Published the corrected 2026-05-02 James Gorman blog batch via Wix Blog API after explicit approval.
+- Live URLs:
+  - https://www.jamesgormanproperty.com/post/selling-derry-spring-2026
+  - https://www.jamesgormanproperty.com/post/bridging-loans-ni-explained
+  - https://www.jamesgormanproperty.com/post/probate-property-sales-derry
+  - https://www.jamesgormanproperty.com/post/help-to-buy-ni-2026
+- QA: all four return HTTP 200, expected titles present, meta descriptions present, RSS feed includes all four, and corrected internal links resolve.
+- Report saved: `tmp/james-gorman-blog-batch-publish-2026-05-02.json`.
+
+## 28 May 2026 - Showcase subdomain started
+
+- Added `showcase.jamesgormanproperty.com` to the Vercel project `james-gorman-property-showcases` for the QR/postcode-gated property showcase prototype.
+- No Wix edits, emails, DMs, social posts, or client-facing messages were sent.
+- DNS is still pending at the domain provider. Current nameservers are GoDaddy/domaincontrol (`ns11.domaincontrol.com`, `ns12.domaincontrol.com`).
+- Vercel required DNS record: `A showcase.jamesgormanproperty.com 76.76.21.21`.
+- Next step: add the DNS A record in GoDaddy, then verify `https://showcase.jamesgormanproperty.com/` returns 200 and preserves the current `noindex,nofollow` behaviour.
+
+## 28 May 2026 - Showcase DNS record confirmed
+
+- Confirmed DNS for `showcase.jamesgormanproperty.com` now resolves to Vercel (`A 76.76.21.21`).
+- Confirmed Vercel alias exists and HTTP returns `200` for the showcase app.
+- HTTPS certificate/TLS is not ready yet; `https://showcase.jamesgormanproperty.com/` currently fails TLS handshake, likely pending Vercel certificate provisioning after DNS change.
+- Do not print final QR materials until HTTPS returns `200`.
+
+## 28 May 2026 - Showcase subdomain HTTPS verified
+
+- `https://showcase.jamesgormanproperty.com/` now returns HTTP/2 `200` on Vercel.
+- Plain HTTP now redirects to HTTPS with `308 Permanent Redirect`.
+- Status: subdomain is safe to use for QR/printed materials.
+
+## 28 May 2026 - Featured properties upload paused
+
+- Request: add four PropertyPal listings to James Gorman Property Featured Properties.
+- Wix API access works; confirmed Featured Properties Pro Gallery ID `0880c93f-89ac-435c-af7b-5948fceef70e` with 12 existing items.
+- PropertyPal direct pages/API are blocked from this runtime; Apify runner exists but current shell does not expose `APIFY_TOKEN`/`APIFY_API_TOKEN`.
+- Paused until tomorrow per Phil; next step is restore Apify token/access or use original listing assets, then publish gallery items and QA.
+
+## 15 June 2026 - Added 3 fresh postcode-gated showcase pages
+
+- Added three fresh PropertyPal-derived showcase entries to `projects/james-gorman-property-showcases/app/data.ts`:
+  - `18-ashthorpe` / postcode `BT47 2DH`
+  - `101-templegrove` / postcode `BT48 0RF`
+  - `13-florence-street` / postcode `BT48 0HA`
+- Source details were taken from rendered PropertyPal listing data in browser: current agent, price, listing dates, view counts, rankings, postcodes and image URLs.
+- Built the Next static export successfully: 22 static pages generated.
+- Deployed to Vercel production and aliased to `https://showcase.jamesgormanproperty.com`.
+- Live QA passed: `/`, `/18-ashthorpe`, `/101-templegrove`, `/13-florence-street`, and `/robots.txt` all returned HTTP 200; exported pages retain `noindex,nofollow`.
+- No Wix edits, emails, DMs, social posts, or public client comms were sent.
+
+## 30 June 2026 - Added 5 fresh postcode-gated showcase pages
+
+- Added five fresh PropertyPal-derived showcase entries to `projects/james-gorman-property-showcases/app/data.ts`:
+  - `1-fir-road` / postcode `BT48 8NB`
+  - `38-whitehill-road` / postcode `BT47 3JT`
+  - `silver-springs-hinton-park` / postcode `BT47 6HX`
+  - `1-bramhall-crescent` / postcode `BT47 5HE`
+  - `2-malone-park` / postcode `BT47 5PE`
+- Source details were taken from rendered PropertyPal listing pages in browser: current agent, price, view counts, rankings, postcodes and image URLs.
+- Built the Next static export successfully: 27 static pages generated.
+- Deployed to Vercel production and aliased to `https://showcase.jamesgormanproperty.com`.
+- Live QA passed for all five new URLs: HTTP 200, expected titles, `noindex,nofollow`, CTAs and PropertyPal images present.
+- No Wix edits, emails, DMs, social posts, or public client comms were sent.
+
+## 30 June 2026 - Corrected showcase batch to 60+ day / circa £250k filter
+
+- Phil clarified the showcase pull should use the stricter usual parameters: PropertyPal sale listings around £250k and live for 60+ days.
+- Removed the five earlier fresh/high-activity pages from the showcase app: `1-fir-road`, `38-whitehill-road`, `silver-springs-hinton-park`, `1-bramhall-crescent`, and `2-malone-park`.
+- Rechecked current PropertyPal listing activation dates in browser and refreshed the strict-fit set:
+  - `17-rossdowney-park` - £259,950, 348 days live
+  - `29-mallory-park` - £249,950, 173 days live
+  - `14-clarendon-street` - £250,000, 72 days live
+  - `25-lenamore-park` - £242,500, 67 days live
+  - `98-duncastle-park` - £255,000, 61 days live
+- Added `98-duncastle-park` as the missing strict-fit showcase page and refreshed current day/view data for the existing strict-fit pages.
+- Built the Next static export successfully: 23 static pages generated.
+- Deployed to Vercel production and aliased to `https://showcase.jamesgormanproperty.com`.
+- Live QA passed: all five corrected URLs return HTTP 200 with expected titles, `noindex,nofollow`, CTAs and PropertyPal images present; the five earlier fresh-listing URLs now return 404.
+- Report saved: `reports/james-showcase-blast-2026-06-30-60day-correction.md`.
+- No Wix edits, emails, DMs, social posts, or public client comms were sent.
+
+## 30 June 2026 - Replaced duplicate correction with 40+ day non-duplicate showcase batch
+
+- Phil spotted that the 60+ day correction reused existing showcase pages, including `17-rossdowney-park`.
+- Re-ran the PropertyPal pull with the updated brief: current sale listings, non-James, not already in the showcase app before this correction, 40+ days live, and a widened circa-£250k price window.
+- Kept `98-duncastle-park` as the only genuinely new page from the previous correction and added four further fresh, unused showcase pages:
+  - `3-sycamore-gardens` - £269,950, 40 days live
+  - `14-carmoney-court` - £225,000, 45 days live
+  - `4-daisyhill-park` - £279,950, 54 days live
+  - `14-oakfield-road` - £299,950, 152 days live
+  - `98-duncastle-park` - £255,000, 61 days live
+- Confirmed no duplicate slugs or PropertyPal source IDs in `app/data.ts`.
+- Built the Next static export successfully: 27 static pages generated.
+- Deployed to Vercel production and aliased to `https://showcase.jamesgormanproperty.com`.
+- Live QA passed: all five final URLs return HTTP 200 with expected titles, `noindex,nofollow`, CTAs and PropertyPal images present.
+- Report saved: `reports/james-showcase-blast-2026-06-30-40day-nonduplicate.md`.
+- No Wix edits, emails, DMs, social posts, or public client comms were sent.
+
+## 5 July 2026 - Added 20 Merchant's View to Featured Properties
+
+- Added PropertyPal listing `1087736` to the live James Gorman Property Featured Properties Wix Pro Gallery.
+- Listing details: `20 Merchant's View`, Derry/Londonderry, BT47 6PN; Offers Over £535,000; 4 Bed Detached House.
+- Imported the PropertyPal hero image into Wix media and created/updated gallery item `af235242-a336-48df-a904-18fed446400c`.
+- Moved the card to the front of the Featured Properties carousel.
+- QA passed: gallery API item found, public homepage HTTP 200, and browser render with cache-busting URL shows the card as the first visible Featured Properties item.
+- Report saved: `featured-properties-2026-07-05-merchants-view/report.md`.
+- No email, DM, social post, or client message was sent.

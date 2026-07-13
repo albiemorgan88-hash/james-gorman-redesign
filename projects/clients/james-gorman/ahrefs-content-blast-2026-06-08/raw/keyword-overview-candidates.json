@@ -1,0 +1,550 @@
+{
+  "keywords": [
+    {
+      "keyword": "conveyancing northern ireland",
+      "volume": 70,
+      "difficulty": null,
+      "cpc": 500,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 100,
+      "serp_features": []
+    },
+    {
+      "keyword": "estate agents derry",
+      "volume": 100,
+      "difficulty": 13,
+      "cpc": 50,
+      "traffic_potential": 500,
+      "parent_topic": "oakland estate agents",
+      "parent_volume": 400,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 100,
+      "serp_features": [
+        "local_pack"
+      ]
+    },
+    {
+      "keyword": "property for sale derry",
+      "volume": 1500,
+      "difficulty": 2,
+      "cpc": 2,
+      "traffic_potential": 7000,
+      "parent_topic": "houses for sale derry",
+      "parent_volume": 2300,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 1800,
+      "serp_features": [
+        "video_th"
+      ]
+    },
+    {
+      "keyword": "houses for sale culmore",
+      "volume": 20,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 20,
+      "serp_features": []
+    },
+    {
+      "keyword": "sell my house fast derry",
+      "volume": 0,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 20,
+      "serp_features": []
+    },
+    {
+      "keyword": "estate agent derry",
+      "volume": 10,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 10,
+      "serp_features": []
+    },
+    {
+      "keyword": "houses for sale cityside derry",
+      "volume": 10,
+      "difficulty": 0,
+      "cpc": null,
+      "traffic_potential": 70,
+      "parent_topic": "houses for sale in derry cityside",
+      "parent_volume": 80,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 10,
+      "serp_features": [
+        "sitelink"
+      ]
+    },
+    {
+      "keyword": "houses for sale eglinton",
+      "volume": 300,
+      "difficulty": 0,
+      "cpc": 200,
+      "traffic_potential": 300,
+      "parent_topic": "houses for sale eglinton",
+      "parent_volume": 300,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 500,
+      "serp_features": []
+    },
+    {
+      "keyword": "houses for sale strathfoyle",
+      "volume": 30,
+      "difficulty": 0,
+      "cpc": null,
+      "traffic_potential": 10,
+      "parent_topic": "houses for sale strathfoyle",
+      "parent_volume": 30,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 30,
+      "serp_features": [
+        "video_th"
+      ]
+    },
+    {
+      "keyword": "estate agent limavady",
+      "volume": 0,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 0,
+      "serp_features": []
+    },
+    {
+      "keyword": "houses for sale claudy",
+      "volume": 100,
+      "difficulty": 0,
+      "cpc": 90,
+      "traffic_potential": 100,
+      "parent_topic": "houses for sale claudy",
+      "parent_volume": 100,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 100,
+      "serp_features": []
+    },
+    {
+      "keyword": "houses for sale newbuildings",
+      "volume": 40,
+      "difficulty": 0,
+      "cpc": null,
+      "traffic_potential": 20,
+      "parent_topic": "houses for sale newbuildings",
+      "parent_volume": 40,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 50,
+      "serp_features": []
+    },
+    {
+      "keyword": "houses for sale derry",
+      "volume": 2300,
+      "difficulty": 0,
+      "cpc": 40,
+      "traffic_potential": 7000,
+      "parent_topic": "houses for sale derry",
+      "parent_volume": 2300,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 2900,
+      "serp_features": [
+        "video_th"
+      ]
+    },
+    {
+      "keyword": "houses for sale dungiven",
+      "volume": 250,
+      "difficulty": 0,
+      "cpc": 8,
+      "traffic_potential": 150,
+      "parent_topic": "houses for sale dungiven",
+      "parent_volume": 250,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 250,
+      "serp_features": []
+    },
+    {
+      "keyword": "new builds derry",
+      "volume": 50,
+      "difficulty": 0,
+      "cpc": null,
+      "traffic_potential": 20,
+      "parent_topic": "new builds derry",
+      "parent_volume": 50,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 50,
+      "serp_features": []
+    },
+    {
+      "keyword": "merchants view derry",
+      "volume": 80,
+      "difficulty": 0,
+      "cpc": null,
+      "traffic_potential": 20,
+      "parent_topic": "merchants view derry",
+      "parent_volume": 90,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 90,
+      "serp_features": [
+        "image_th",
+        "image",
+        "video_th"
+      ]
+    },
+    {
+      "keyword": "houses for sale limavady",
+      "volume": 1200,
+      "difficulty": 0,
+      "cpc": 3,
+      "traffic_potential": 1900,
+      "parent_topic": "houses for sale limavady",
+      "parent_volume": 1200,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 1200,
+      "serp_features": [
+        "video_th"
+      ]
+    },
+    {
+      "keyword": "selling a house northern ireland",
+      "volume": 0,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 0,
+      "serp_features": []
+    },
+    {
+      "keyword": "home survey northern ireland",
+      "volume": 30,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 30,
+      "serp_features": []
+    },
+    {
+      "keyword": "estate agent fees northern ireland",
+      "volume": 50,
+      "difficulty": 0,
+      "cpc": 45,
+      "traffic_potential": 20,
+      "parent_topic": "estate agent fees northern ireland",
+      "parent_volume": 50,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": false,
+        "transactional": false,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 50,
+      "serp_features": [
+        "ai_overview",
+        "ai_overview_sitelink",
+        "image_th",
+        "question",
+        "discussion"
+      ]
+    },
+    {
+      "keyword": "new homes derry city",
+      "volume": 0,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 0,
+      "serp_features": []
+    },
+    {
+      "keyword": "houses for sale drumahoe",
+      "volume": 30,
+      "difficulty": 0,
+      "cpc": null,
+      "traffic_potential": 20,
+      "parent_topic": "houses for sale drumahoe",
+      "parent_volume": 30,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 30,
+      "serp_features": [
+        "video_th"
+      ]
+    },
+    {
+      "keyword": "property valuation derry",
+      "volume": 0,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 0,
+      "serp_features": []
+    },
+    {
+      "keyword": "first time buyer northern ireland",
+      "volume": 60,
+      "difficulty": 0,
+      "cpc": 25,
+      "traffic_potential": 40,
+      "parent_topic": "first time buyer northern ireland",
+      "parent_volume": 60,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": false,
+        "transactional": false,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 70,
+      "serp_features": [
+        "ai_overview",
+        "ai_overview_sitelink",
+        "image_th",
+        "sitelink",
+        "question"
+      ]
+    },
+    {
+      "keyword": "property derry",
+      "volume": 200,
+      "difficulty": 2,
+      "cpc": 40,
+      "traffic_potential": 7000,
+      "parent_topic": "houses for sale derry",
+      "parent_volume": 2300,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 200,
+      "serp_features": []
+    },
+    {
+      "keyword": "apartments for sale derry",
+      "volume": 150,
+      "difficulty": 0,
+      "cpc": 4,
+      "traffic_potential": 70,
+      "parent_topic": "apartments for sale derry",
+      "parent_volume": 150,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 150,
+      "serp_features": []
+    },
+    {
+      "keyword": "estate agent eglinton",
+      "volume": 0,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 0,
+      "serp_features": []
+    },
+    {
+      "keyword": "bungalows for sale derry",
+      "volume": 100,
+      "difficulty": 0,
+      "cpc": 60,
+      "traffic_potential": 70,
+      "parent_topic": "bungalows for sale derry",
+      "parent_volume": 100,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 100,
+      "serp_features": []
+    },
+    {
+      "keyword": "houses for sale waterside derry",
+      "volume": 350,
+      "difficulty": 0,
+      "cpc": 45,
+      "traffic_potential": 250,
+      "parent_topic": "houses for sale waterside derry",
+      "parent_volume": 350,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": true,
+        "branded": false,
+        "local": true
+      },
+      "global_volume": 350,
+      "serp_features": [
+        "sitelink"
+      ]
+    },
+    {
+      "keyword": "house valuation derry",
+      "volume": 0,
+      "difficulty": null,
+      "cpc": null,
+      "traffic_potential": null,
+      "parent_topic": null,
+      "parent_volume": null,
+      "intents": {},
+      "global_volume": 0,
+      "serp_features": []
+    }
+  ]
+}

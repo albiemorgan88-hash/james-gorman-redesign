@@ -1,0 +1,90 @@
+{
+  "date": "2026-07-13",
+  "site": "jamesgormanproperty.com",
+  "status": "drafted-and-publish-approved-by-phil-request",
+  "source_context": [
+    "Reviewed James Gorman SEO README, backlog and latest changelog.",
+    "Checked live blog sitemap on 2026-07-13; 186 live blog URLs found before publishing.",
+    "Pulled Ahrefs metrics/top-pages on 2026-07-13; Ahrefs showed 5 organic keywords, 2 in positions 1-3, and homepage ranking around position 7 for estate agents derry.",
+    "Selected seller-intent terms and under-covered local service pages, avoiding duplicate live slugs."
+  ],
+  "posts": [
+    {
+      "title": "Free House Valuation Derry: What Sellers Should Expect Before Listing",
+      "slug": "free-house-valuation-derry-seller-guide-2026",
+      "primary_keyword": "free house valuation derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Online House Valuation Derry: Why a Local Check Still Matters",
+      "slug": "online-house-valuation-derry-local-guide-2026",
+      "primary_keyword": "online house valuation derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Property Appraisal Derry: Seller Guide to Pricing Your Home",
+      "slug": "property-appraisal-derry-seller-guide-2026",
+      "primary_keyword": "property appraisal derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Switch Estate Agents Derry: When a Fresh Plan Makes Sense",
+      "slug": "switch-estate-agents-derry-seller-guide-2026",
+      "primary_keyword": "switch estate agents derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Change Estate Agent Derry: What to Check Before You Move",
+      "slug": "change-estate-agent-derry-checklist-2026",
+      "primary_keyword": "change estate agent derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "House on Market Too Long Derry: How to Regain Buyer Interest",
+      "slug": "house-on-market-too-long-derry-seller-guide-2026",
+      "primary_keyword": "house on market too long derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Property Valuation Newbuildings Derry: Seller Guide Before Listing",
+      "slug": "property-valuation-newbuildings-derry-seller-guide-2026",
+      "primary_keyword": "property valuation Newbuildings Derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Sell My House Newbuildings Derry: Pricing, Timing and Launch Advice",
+      "slug": "sell-my-house-newbuildings-derry-guide-2026",
+      "primary_keyword": "sell my house Newbuildings Derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Property Marketing Newbuildings Derry: How to Make a Listing Stand Out",
+      "slug": "property-marketing-newbuildings-derry-seller-guide-2026",
+      "primary_keyword": "property marketing Newbuildings Derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Property Valuation Magheramason Derry: Seller Guide Before Listing",
+      "slug": "property-valuation-magheramason-derry-seller-guide-2026",
+      "primary_keyword": "property valuation Magheramason Derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Estate Agent Magheramason Derry: Seller Advice for Village Homes",
+      "slug": "estate-agent-magheramason-derry-seller-guide-2026",
+      "primary_keyword": "estate agent Magheramason Derry",
+      "category": "Seller Guides"
+    },
+    {
+      "title": "Property Valuation Greysteel: Seller Guide Before Listing",
+      "slug": "property-valuation-greysteel-seller-guide-2026",
+      "primary_keyword": "property valuation Greysteel",
+      "category": "Seller Guides"
+    }
+  ],
+  "publish_notes": [
+    "Metadata/planning notes must not be included in the public article body.",
+    "After publish, run Wix API, live URL, byline, sitemap and leak-marker QA.",
+    "No email, social, GBP, directory or client-facing message is part of this batch."
+  ]
+}
