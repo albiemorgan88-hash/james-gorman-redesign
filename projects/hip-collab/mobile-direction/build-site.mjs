@@ -63,11 +63,11 @@ function breadcrumbSchema(page) {
 }
 
 function articleSchema(page) {
-  return { '@context': 'https://schema.org', '@type': 'Article', headline: page.h1, description: page.description, author: { '@type': 'Organization', name: 'HIP Psychology' }, publisher: { '@type': 'Organization', name: 'HIP Psychology' }, datePublished: today, dateModified: today, mainEntityOfPage: `${site}${page.slug}` };
+  return { '@context': 'https://schema.org', '@type': 'Article', headline: page.h1, description: page.description, author: { '@type': 'Organization', name: 'HIP Psychology' }, publisher: { '@type': 'Organization', name: 'HIP Psychology' }, datePublished: page.datePublished ?? today, dateModified: page.dateModified ?? today, mainEntityOfPage: `${site}${page.slug}` };
 }
 
 function blogPostingSchema(page) {
-  return { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: page.h1, description: page.description, author: { '@type': 'Organization', name: 'HIP Psychology' }, publisher: { '@type': 'Organization', name: 'HIP Psychology' }, datePublished: today, dateModified: today, mainEntityOfPage: `${site}${page.slug}` };
+  return { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: page.h1, description: page.description, author: { '@type': 'Organization', name: 'HIP Psychology' }, publisher: { '@type': 'Organization', name: 'HIP Psychology' }, datePublished: page.datePublished ?? today, dateModified: page.dateModified ?? today, mainEntityOfPage: `${site}${page.slug}` };
 }
 
 function collectionSchema(page, items) {
@@ -642,6 +642,132 @@ const blogPosts = [
     ],
     faqs: [['When is Anti-Bullying Week 2026?', 'It runs from Monday 16 to Friday 20 November.'], ['What is the 2026 theme?', 'The theme is Break the Silence.'], ['What should schools do after the week?', 'Review feedback, reinforce reporting routes and connect the campaign to policy and pastoral systems.']],
   },
+  {
+    slug: '/blog/anti-bullying-policy-review-new-school-year/',
+    title: 'Anti-Bullying Policy Review for the New School Year | HIP Psychology',
+    description: 'A practical anti-bullying policy review for the new school year, covering reporting routes, recording, pupil voice, staff confidence and follow-up.',
+    eyebrow: 'Back-to-school planning',
+    category: 'Policy planning',
+    datePublished: '2026-07-20',
+    dateModified: '2026-07-20',
+    h1: 'Anti-Bullying Policy Review for the New School Year',
+    lead: 'The weeks before a new school year are a useful time to check whether an anti-bullying policy matches what pupils, families and staff will actually experience when a concern is raised.',
+    cta: 'pack',
+    links: ['ea', 'abs', 'aba'],
+    related: ['/blog/pupil-voice-survey-before-new-school-year/', '/blog/anti-bullying-staff-briefing-first-month/', '/blog/parent-communication-anti-bullying-new-school-year/'],
+    sections: [
+      { id: 'route', title: 'Start with the real reporting route', html: '<p>Check that the policy names the people and places pupils can use when they need help. A reporting route should be easy to explain in an assembly, a parent message and a private conversation with a member of staff.</p><p>Test the route with a simple question: if a pupil reports repeated exclusion today, would every adult know who receives the concern, how it is recorded and what happens next?</p>' },
+      { id: 'recording', title: 'Review definitions, recording and follow-up', html: '<p>Make sure the policy uses clear language around bullying behaviour, impact, repetition, power imbalance, prejudice-based harm and online behaviour. Staff do not need identical wording in every conversation, but they do need a shared understanding of the process.</p><p>Check that recording includes follow-up dates. A response is not complete when the first conversation ends; the school should know how it will check whether the behaviour has stopped and whether the pupil feels safer.</p>' },
+      { id: 'consultation', title: 'Use pupil, parent and staff feedback', html: '<p>Policy review is stronger when it includes the people who use the system. Ask pupils whether they know where to go, ask families whether the communication is understandable and ask staff where the process feels unclear or difficult to apply.</p><p>Keep consultation focused on improving routes and consistency. Do not ask pupils to disclose personal incidents in a group activity or public survey.</p>' },
+      { id: 'termly', title: 'Turn the review into a termly habit', html: '<p>Choose a small number of review points across the year: before term starts, after the first half term and after any campaign activity. Compare anonymised patterns, staff confidence and pupil understanding rather than waiting for a serious incident to expose a gap.</p><p>Use the <a href="/resources/anti-bullying-policy-checklist-ni/">NI policy checklist</a> or the <a href="/resources/anti-bullying-policy-checklist-roi/">ROI policy checklist</a> to structure the conversation for your setting.</p>' },
+    ],
+    faqs: [['When should a school review its anti-bullying policy?', 'Before the new school year is a useful point, followed by shorter reviews during the year.'], ['What should a policy review check?', 'It should check definitions, reporting routes, recording, communication, pupil voice, staff confidence and follow-up.'], ['Does a checklist replace official guidance?', 'No. Use official guidance and the school policy as the source of truth; a checklist simply helps structure review.']],
+  },
+  {
+    slug: '/blog/pupil-voice-survey-before-new-school-year/',
+    title: 'Pupil Voice Survey Before the New School Year | HIP Psychology',
+    description: 'Use a safe pupil voice survey before the new school year to review belonging, reporting routes, bystander confidence and school support.',
+    eyebrow: 'Back-to-school planning',
+    category: 'Pupil voice',
+    datePublished: '2026-07-20',
+    dateModified: '2026-07-20',
+    h1: 'Pupil Voice Survey Before the New School Year',
+    lead: 'A short, carefully designed pupil voice survey can show whether pupils understand help-seeking, feel connected to school and know what to do when bullying behaviour affects them or a peer.',
+    cta: 'pack',
+    links: ['aba', 'ea', 'ncca'],
+    related: ['/blog/anti-bullying-policy-review-new-school-year/', '/blog/friendship-belonging-first-weeks-school/', '/blog/anti-bullying-staff-briefing-first-month/'],
+    sections: [
+      { id: 'purpose', title: 'Ask questions that lead to action', html: '<p>The best survey questions connect to a decision the school can make. Ask whether pupils know a trusted adult, understand how to report a concern, feel safe asking for help and know how to support a peer without escalating risk.</p><p>Avoid collecting information simply because it is interesting. Decide in advance who will review the responses, what themes will be shared and what will trigger a private follow-up.</p>' },
+      { id: 'questions', title: 'Useful question areas', html: '<ul><li>Which adults or spaces feel easiest to approach?</li><li>How confident are pupils that a report will be taken seriously?</li><li>Do pupils know what happens after they tell an adult?</li><li>What makes it harder to speak up for themselves or someone else?</li><li>Where do friendship, exclusion or group-chat concerns most often appear?</li></ul><p>Use age-appropriate formats. Younger pupils may need simple choices and visual prompts, while older pupils can respond to short scenarios about bystanders, online pressure and reporting.</p>' },
+      { id: 'act', title: 'Close the feedback loop', html: '<p>Pupils should hear what the school learned and what it will do next. The response does not need to publish sensitive details; it can say that reporting routes will be made clearer, staff will receive a reminder or a particular space will receive more support.</p><p>Closing the loop helps pupils see that voice is part of school improvement rather than a one-off campaign exercise.</p>' },
+      { id: 'safe', title: 'Keep the survey safe and proportionate', html: '<p>Do not ask pupils to name people or describe personal incidents in a general survey. Include a separate private route for anyone who needs help, and make sure staff know how to respond if a survey answer raises a safeguarding concern.</p><p>Pair the survey with the <a href="/blog/anti-bullying-week-2026-planning-checklist/">Anti-Bullying Week planning checklist</a> so the findings feed into practical preparation.</p>' },
+    ],
+    faqs: [['What should a pupil voice survey measure?', 'It can measure belonging, help-seeking confidence, awareness of reporting routes and how safe pupils feel supporting peers.'], ['Should pupils name people in the survey?', 'No. Keep the general survey anonymous and provide a separate private route for individual concerns.'], ['What should happen after the survey?', 'Share an age-appropriate summary, set actions and explain how pupils can raise further concerns.']],
+  },
+  {
+    slug: '/blog/anti-bullying-staff-briefing-first-month/',
+    title: 'Anti-Bullying Staff Briefing for the First Month | HIP Psychology',
+    description: 'A practical first-month anti-bullying staff briefing covering shared language, reporting, online behaviour, safeguarding and follow-up.',
+    eyebrow: 'Back-to-school planning',
+    category: 'Staff guidance',
+    datePublished: '2026-07-20',
+    dateModified: '2026-07-20',
+    h1: 'Anti-Bullying Staff Briefing for the First Month',
+    lead: 'A short staff briefing at the start of term can make reporting routes, response language and follow-up more consistent before patterns become harder to see.',
+    cta: 'workshop',
+    links: ['ea', 'abs', 'aba'],
+    related: ['/blog/anti-bullying-policy-review-new-school-year/', '/blog/parent-communication-anti-bullying-new-school-year/', '/blog/group-chat-online-safety-school-year/'],
+    sections: [
+      { id: 'shared', title: 'Agree the shared language', html: '<p>Remind staff how the school describes bullying behaviour, repeated harm, exclusion, prejudice-based bullying and online incidents. The aim is not to turn every interaction into a label; it is to help adults notice patterns and respond without minimising impact.</p><p>Use two or three fictional examples so staff can discuss the difference between conflict, unkind behaviour and a pattern that needs a formal response.</p>' },
+      { id: 'response', title: 'Make the first response clear', html: '<p>Staff should know what to do when a pupil tells them something: listen calmly, thank the pupil for speaking, avoid promising secrecy, record the concern through the agreed route and pass it to the named person.</p><p>Make the next step visible. A pupil is more likely to report again when adults can explain what will happen after the first conversation and when they will check back in.</p>' },
+      { id: 'online', title: 'Include online behaviour and safeguarding', html: '<p>Group chats, screenshots, anonymous accounts and online exclusion can affect school life even when the original message was sent outside school. Staff do not need to investigate alone, but they do need to know how to preserve information, report the concern and escalate when risk is serious.</p><p>Revisit safeguarding routes so staff understand when an anti-bullying concern may also require the school safeguarding process.</p>' },
+      { id: 'follow-up', title: 'Schedule a follow-up check', html: '<p>Put a short review in the calendar after the first month. Ask whether staff are using the route consistently, whether pupils understand who to approach and whether any year group or setting needs additional support.</p><p>For live support, see the <a href="/workshops/anti-bullying/">anti-bullying workshop options</a> for staff CPD and pupil sessions.</p>' },
+    ],
+    faqs: [['How long should a first-month briefing be?', 'A focused 20 to 30 minute briefing can cover the essential route, followed by a short review later in the term.'], ['What should staff do when a pupil reports bullying?', 'Listen calmly, thank the pupil, avoid promising secrecy, record through the agreed route and pass the concern to the named person.'], ['Should online behaviour be included?', 'Yes. Online behaviour can affect school safety, attendance and wellbeing even when it begins outside school.']],
+  },
+  {
+    slug: '/blog/parent-communication-anti-bullying-new-school-year/',
+    title: 'Parent Communication for Anti-Bullying at the Start of the School Year | HIP Psychology',
+    description: 'A practical parent communication plan for anti-bullying support at the start of the school year, including reporting routes and follow-up.',
+    eyebrow: 'Back-to-school planning',
+    category: 'Parent communication',
+    datePublished: '2026-07-20',
+    dateModified: '2026-07-20',
+    h1: 'Parent Communication for Anti-Bullying at the Start of the School Year',
+    lead: 'A clear welcome message helps families understand how the school prevents bullying, how to raise a concern and what support looks like after a report.',
+    cta: 'pack',
+    links: ['eaParents', 'aba', 'abs'],
+    related: ['/blog/anti-bullying-policy-review-new-school-year/', '/blog/pupil-voice-survey-before-new-school-year/', '/blog/group-chat-online-safety-school-year/'],
+    sections: [
+      { id: 'welcome', title: 'Set a calm, practical tone', html: '<p>Start with the school commitment to respectful relationships, safe reporting and consistent follow-up. Avoid language that suggests bullying can be solved by telling children to be tougher or by asking families to manage school concerns alone.</p><p>A short message can explain that the school will listen, record concerns appropriately, keep communication proportionate and work with families when support is needed.</p>' },
+      { id: 'route', title: 'Make the reporting route easy to find', html: '<p>Tell families who they should contact, which route is monitored during the school day and what information is useful. Include a direct link or named role rather than asking parents to search the whole website.</p><p>Explain that urgent safeguarding concerns should follow the school safeguarding route and that social media discussion is not a substitute for private reporting.</p>' },
+      { id: 'after', title: 'Explain what happens after a concern', html: '<p>Families do not need a promise of a particular outcome, but they do need a realistic explanation of the process. Describe how the school listens, checks information, speaks with pupils, records the concern and agrees follow-up.</p><p>Be careful with confidentiality. The school can explain its process without sharing private information about another child.</p>' },
+      { id: 'partnership', title: 'Invite useful partnership', html: '<p>Give parents practical ways to support children: listen without leading, keep relevant messages or screenshots, encourage safe help-seeking and tell the school if a concern is affecting attendance, sleep or wellbeing.</p><p>Link the message to the <a href="/blog/parent-letter-anti-bullying-week-template/">parent letter template</a> and the <a href="/resources/free-anti-bullying-classroom-pack/">free classroom pack</a> for wider campaign planning.</p>' },
+    ],
+    faqs: [['What should a parent anti-bullying message include?', 'It should include the school commitment, reporting route, response process, confidentiality boundaries and practical ways families can support children.'], ['Should parents report concerns through social media?', 'No. Use the school private reporting route so the concern can be handled safely and proportionately.'], ['How can parents help after a concern is raised?', 'Listen calmly, keep relevant information, encourage safe help-seeking and share changes in wellbeing or attendance with the school.']],
+  },
+  {
+    slug: '/blog/friendship-belonging-first-weeks-school/',
+    title: 'Friendship and Belonging in the First Weeks of School | HIP Psychology',
+    description: 'Practical friendship and belonging activities for the first weeks of school, helping pupils connect, include others and seek help safely.',
+    eyebrow: 'Back-to-school planning',
+    category: 'Belonging and prevention',
+    datePublished: '2026-07-20',
+    dateModified: '2026-07-20',
+    h1: 'Friendship and Belonging in the First Weeks of School',
+    lead: 'The first weeks of a new school year shape routines, friendship groups and belonging. Small, planned activities can help pupils notice exclusion early and make it easier to ask for support.',
+    cta: 'pack',
+    links: ['aba', 'ea', 'ncca'],
+    related: ['/blog/pupil-voice-survey-before-new-school-year/', '/blog/anti-bullying-staff-briefing-first-month/', '/blog/bystander-activities-anti-bullying-week/'],
+    sections: [
+      { id: 'routines', title: 'Build inclusive routines', html: '<p>Use predictable starts, mixed small-group tasks and clear transitions so pupils are not left to negotiate every social moment alone. Activities should give pupils different ways to participate rather than rewarding the loudest or most confident voices.</p><p>Staff can watch for repeated isolation, sudden friendship changes and pupils who are regularly excluded from informal spaces without making assumptions about the cause.</p>' },
+      { id: 'language', title: 'Teach language for joining in and speaking up', html: '<p>Practise simple sentences pupils can use: Can I join you?, That is not okay, I think we should get help, and I noticed someone is being left out. Role-play should stay fictional and give pupils more than one safe choice.</p><p>Older pupils can explore the pressure to stay silent, protect a friendship group or avoid being called a tell-tale. The goal is to make help-seeking feel possible without asking pupils to become investigators.</p>' },
+      { id: 'check-ins', title: 'Use low-pressure check-ins', html: '<p>Short tutor-time or class check-ins can ask what is helping pupils feel connected, where they feel uncertain and which adults are easiest to approach. Keep the format proportionate and provide a private route for individual concerns.</p><p>Use themes from the check-ins to adjust seating, supervision, transition support or pastoral conversations before problems become entrenched.</p>' },
+      { id: 'follow-through', title: 'Connect belonging to the wider plan', html: '<p>Belonging work is part of prevention, but it does not replace a clear response to bullying behaviour. Link class activities to the school reporting route, staff briefing and pupil voice process.</p><p>The <a href="/blog/anti-bullying-week-2026-primary-activities/">primary activities guide</a> and <a href="/blog/anti-bullying-week-2026-post-primary-activities/">post-primary activities guide</a> offer age-specific follow-up ideas.</p>' },
+    ],
+    faqs: [['Why focus on belonging at the start of the year?', 'Early routines and friendship patterns can affect whether pupils feel connected and whether they seek help when something goes wrong.'], ['What should staff watch for?', 'Watch for repeated isolation, sudden friendship changes and exclusion from informal spaces, while avoiding assumptions about the cause.'], ['Does belonging work replace anti-bullying procedures?', 'No. It supports prevention and early help alongside clear reporting, response and safeguarding procedures.']],
+  },
+  {
+    slug: '/blog/group-chat-online-safety-school-year/',
+    title: 'Group Chats and Online Safety for the New School Year | HIP Psychology',
+    description: 'Help pupils and families prepare for group-chat pressure, screenshots, online reporting and safer digital communication at the start of term.',
+    eyebrow: 'Back-to-school planning',
+    category: 'Online safety',
+    datePublished: '2026-07-20',
+    dateModified: '2026-07-20',
+    h1: 'Group Chats and Online Safety for the New School Year',
+    lead: 'A new school year often brings new group chats, new devices and new social pressure. Schools can prepare pupils and families with calm guidance about screenshots, reporting and support-seeking.',
+    cta: 'workshop',
+    links: ['webwise', 'ea', 'abs'],
+    related: ['/blog/anti-bullying-staff-briefing-first-month/', '/blog/parent-communication-anti-bullying-new-school-year/', '/blog/group-chat-bullying-how-schools-can-respond/'],
+    sections: [
+      { id: 'before', title: 'Prepare before problems escalate', html: '<p>Use the start of term to remind pupils that group chats can affect school relationships and wellbeing. Discuss respectful posting, exclusion, pressure to respond, image sharing and what it means to pause before forwarding or reacting.</p><p>Keep the message practical. Pupils should know which trusted adult they can approach, how the school handles concerns and when they should ask for help rather than trying to solve a conflict alone.</p>' },
+      { id: 'evidence', title: 'Talk about screenshots and reporting', html: '<p>Explain that saving relevant information may help an adult understand what happened, but pupils should not circulate harmful material or build a public case against another pupil. The safest route is usually to keep the evidence private and show it to a trusted adult.</p><p>Staff should know how to receive concerns, record them appropriately and follow school safeguarding procedures where there is serious risk, threats, coercion or significant harm.</p>' },
+      { id: 'families', title: 'Give families a simple support script', html: '<p>Parents can start by listening calmly, asking what support their child wants and checking whether the issue is affecting sleep, attendance, friendships or wellbeing. They can keep relevant information and contact the school through the private reporting route.</p><p>Families should avoid replying in anger, contacting other children directly or escalating the conversation through social media. Those actions can make a difficult situation harder to resolve.</p>' },
+      { id: 'classroom', title: 'Use age-appropriate classroom discussion', html: '<p>Primary pupils may need simple language around kindness, trusted adults and not sharing hurtful content. Post-primary pupils can explore group-chat dynamics, bystander choices, screenshots, anonymous accounts and the pressure to stay silent.</p><p>For deeper support, see the <a href="/cyberbullying-in-schools/">cyberbullying guidance</a> and the <a href="/workshops/anti-bullying/">anti-bullying workshop options</a>.</p>' },
+    ],
+    faqs: [['What should pupils do if a group chat becomes harmful?', 'They should avoid forwarding or escalating the material, keep relevant information private and tell a trusted adult through the school or family reporting route.'], ['Should parents contact other pupils directly?', 'No. Parents should use the school reporting route and avoid public or direct confrontation.'], ['When might safeguarding procedures be needed?', 'Follow school safeguarding procedures where there are threats, coercion, serious harm, image-based abuse or other significant risks.']],
+  },
 ];
 
 const leadPages = [
@@ -728,7 +854,7 @@ function writeSitemaps(allPages) {
   const urls = allPages.map((page) => `  <url><loc>${site}${page.slug}</loc></url>`).join('\n');
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
   fs.writeFileSync('sitemap.xml', xml);
-  const campaignSlugs = ['/', '/anti-bullying-week/2026/', '/anti-bullying-week/odd-socks-day-2026/', '/blog/anti-bullying-week-2026-assembly-ideas/', '/blog/anti-bullying-week-2026-primary-activities/', '/blog/anti-bullying-week-2026-post-primary-activities/', '/blog/odd-socks-day-2026-assembly-script/', '/blog/anti-bullying-week-2026-planning-checklist/', '/resources/free-anti-bullying-classroom-pack/'];
+  const campaignSlugs = ['/', '/anti-bullying-week/2026/', '/anti-bullying-week/odd-socks-day-2026/', '/blog/anti-bullying-week-2026-assembly-ideas/', '/blog/anti-bullying-week-2026-primary-activities/', '/blog/anti-bullying-week-2026-post-primary-activities/', '/blog/odd-socks-day-2026-assembly-script/', '/blog/anti-bullying-week-2026-planning-checklist/', '/blog/anti-bullying-policy-review-new-school-year/', '/blog/pupil-voice-survey-before-new-school-year/', '/blog/anti-bullying-staff-briefing-first-month/', '/blog/parent-communication-anti-bullying-new-school-year/', '/blog/friendship-belonging-first-weeks-school/', '/blog/group-chat-online-safety-school-year/', '/resources/free-anti-bullying-classroom-pack/'];
   const blogSlugs = allPages.filter((page) => page.slug.startsWith('/blog/')).map((page) => page.slug);
   fs.writeFileSync('sitemap-campaign.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${allPages.filter((page) => campaignSlugs.includes(page.slug)).map((page) => `  <url><loc>${site}${page.slug}</loc></url>`).join('\n')}\n</urlset>\n`);
   fs.writeFileSync('sitemap-evergreen.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${allPages.filter((page) => !campaignSlugs.includes(page.slug)).map((page) => `  <url><loc>${site}${page.slug}</loc></url>`).join('\n')}\n</urlset>\n`);
