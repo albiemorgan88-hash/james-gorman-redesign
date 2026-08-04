@@ -6,11 +6,23 @@
       "has": [{ "type": "host", "value": "www.antibullyingni.co.uk" }],
       "permanent": true
     },
-    { "source": "/anti-bullying-week", "destination": "/anti-bullying-week/2026/", "permanent": false },
-    { "source": "/anti-bullying-week/", "destination": "/anti-bullying-week/2026/", "permanent": false },
-    { "source": "/cyberbullying", "destination": "/cyberbullying-in-schools/", "permanent": false },
-    { "source": "/cyberbullying/", "destination": "/cyberbullying-in-schools/", "permanent": false },
-    { "source": "/school-workshops", "destination": "/workshops/anti-bullying/", "permanent": false },
-    { "source": "/school-workshops/", "destination": "/workshops/anti-bullying/", "permanent": false }
+    { "source": "/anti-bullying-week", "destination": "/anti-bullying-week/2026/", "permanent": true },
+    { "source": "/anti-bullying-week/", "destination": "/anti-bullying-week/2026/", "permanent": true },
+    { "source": "/cyberbullying", "destination": "/cyberbullying-in-schools/", "permanent": true },
+    { "source": "/cyberbullying/", "destination": "/cyberbullying-in-schools/", "permanent": true },
+    { "source": "/school-workshops", "destination": "/workshops/anti-bullying/", "permanent": true },
+    { "source": "/school-workshops/", "destination": "/workshops/anti-bullying/", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; base-uri 'self'; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; upgrade-insecure-requests" },
+        { "key": "Permissions-Policy", "value": "camera=(), geolocation=(), microphone=()" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" }
+      ]
+    }
   ]
 }

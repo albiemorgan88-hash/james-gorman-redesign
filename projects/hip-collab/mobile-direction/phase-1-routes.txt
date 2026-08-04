@@ -37,8 +37,11 @@
 /blog/parent-communication-anti-bullying-new-school-year/ Parent Communication for Anti-Bullying at the Start of the School Year
 /blog/friendship-belonging-first-weeks-school/ Friendship and Belonging in the First Weeks of School
 /blog/group-chat-online-safety-school-year/ Group Chats and Online Safety for the New School Year
-/workshops/anti-bullying/ Anti-bullying workshops for schools
+/workshops/anti-bullying/ Anti-bullying workshops for schools in Northern Ireland and Ireland
+/resources/ Anti-bullying resources for school teams
 /resources/free-anti-bullying-classroom-pack/ Free Anti-Bullying Week classroom pack
 /resources/anti-bullying-policy-checklist/ Anti-bullying policy checklist for school leaders
 /resources/anti-bullying-policy-checklist-ni/ NI Anti-Bullying Policy Checklist
 /resources/anti-bullying-policy-checklist-roi/ ROI Anti-Bullying Policy Checklist
+/support-and-safeguarding/ Support and safeguarding information
+/privacy/ Privacy notice for website enquiries
