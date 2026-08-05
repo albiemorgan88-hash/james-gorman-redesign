@@ -370,10 +370,6 @@ export default function OpenClawPinchyEnterpriseStackPage() {
                       </div>
                       <div className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
-                        <span>Connect with workforce impacts via <a href="https://uktradejobs.com" className="text-orange hover:text-orange-hover">UK Trade Jobs</a></span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span>Showcase capabilities through <a href="https://clawroster.io" className="text-orange hover:text-orange-hover">ClawRoster profiles</a></span>
                       </div>
                     </div>

@@ -319,10 +319,6 @@ export default function AIForFinancialServicesUKPage() {
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas AI consultancy</a> for financial services AI strategy</span>
                       </div>
-                      <div className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
-                        <span>Connect with workforce impacts via <a href="https://uktradejobs.com" className="text-orange hover:text-orange-hover">UK Trade Jobs, our careers platform</a></span>
-                      </div>
                     </div>
                   </div>
                 </div>

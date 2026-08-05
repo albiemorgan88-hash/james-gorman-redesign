@@ -130,7 +130,7 @@ const faqs = [
   },
   {
     question: "How does this work for temp and contract recruitment?",
-    answer: "Temp and contract recruitment is actually where AI delivers the fastest ROI. Speed is everything — the agent that matches and submits first wins the placement. AI agents can match candidates to requirements and send submissions within minutes of receiving a job order, 24/7. For agencies placing trades or industrial workers, check out <a href='https://uktradejobs.com' class='text-orange hover:underline'>UK Trade Jobs</a> for complementary job board reach."
+    answer: "Temp and contract recruitment is actually where AI delivers the fastest ROI. Speed is everything — the agent that matches and submits first wins the placement. AI agents can match candidates to requirements and send submissions within minutes of receiving a job order, 24/7."
   }
 ];
 

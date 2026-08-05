@@ -318,10 +318,6 @@ export default function OpenClawVsCrewAIPage() {
                       <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                       <span>Browse pre-built agent teams and capabilities on <a href="https://clawroster.io" className="text-orange hover:text-orange-hover">ClawRoster</a>.</span>
                     </div>
-                    <div className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
-                      <span>For trade businesses exploring AI, check out industry-specific guidance at <a href="https://uktradejobs.com" className="text-orange hover:text-orange-hover">UK Trade Jobs</a>.</span>
-                    </div>
                   </div>
                 </div>
               </div>

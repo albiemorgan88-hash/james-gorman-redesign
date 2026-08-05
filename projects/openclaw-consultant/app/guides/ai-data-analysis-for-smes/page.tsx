@@ -359,10 +359,6 @@ export default function AIDataAnalysisForSMEsPage() {
                         <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
                         <span><a href="https://bluecanvas.ai" className="text-orange hover:text-orange-hover">Blue Canvas AI consultancy</a> for SME analytics strategy</span>
                       </div>
-                      <div className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-orange rounded-full mt-2 flex-shrink-0" />
-                        <span>Connect workforce via <a href="https://uktradejobs.com" className="text-orange hover:text-orange-hover">UK Trade Jobs</a> platform</span>
-                      </div>
                     </div>
                   </div>
                 </div>

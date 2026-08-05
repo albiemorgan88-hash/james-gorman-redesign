@@ -171,7 +171,6 @@ export const enterpriseCapabilities = ["SSO + RBAC", "Audit logging", "BYOK rout
 
 export const networkLinks = [
   { name: "Blue Canvas", href: "https://bluecanvas.ai", blurb: "AI consultancy in Northern Ireland" },
-  { name: "UK Trade Jobs", href: "https://uktradejobs.com", blurb: "Specialist UK trades jobs" },
   { name: "ClawRoster", href: "https://clawroster.io", blurb: "Public proof pages for agent teams" },
   { name: "Learn Blue Canvas", href: "https://learn.bluecanvas.ai", blurb: "Practical AI guides and playbooks" },
 ];
