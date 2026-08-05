@@ -29,7 +29,6 @@ const columns = [
     "Network",
     [
       ["Blue Canvas AI", "https://bluecanvas.ai"],
-      ["UK Trade Jobs", "https://uktradejobs.com"],
       ["ClawRoster", "https://clawroster.io"],
       ["Learn Blue Canvas", "https://learn.bluecanvas.ai"],
     ],

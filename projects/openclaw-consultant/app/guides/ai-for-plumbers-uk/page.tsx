@@ -68,7 +68,7 @@ export default function AIForPlumbersUKPage() {
             </p>
             
             <p className="text-muted-dark leading-relaxed mb-8">
-              This guide covers practical AI applications for UK plumbers and trade businesses — from one-person operations to teams of 10+. No jargon, no hype, just tools that are working for tradespeople right now. If you&apos;re looking to break into the trades or understand the industry better, <a href="https://uktradejobs.com" className="text-orange hover:text-orange-hover">UK Trade Jobs</a> has comprehensive career guides covering everything from apprenticeships to salaries.
+              This guide covers practical AI applications for UK plumbers and trade businesses — from one-person operations to teams of 10+. No jargon, no hype, just tools that are working for tradespeople right now.
             </p>
           </div>
 
@@ -360,10 +360,6 @@ export default function AIForPlumbersUKPage() {
                     <div className="border-l-4 border-blue pl-4">
                       <h4 className="font-medium text-dark mb-1">WhatsApp Automation</h4>
                       <p className="text-muted-dark text-sm">Automate customer communication on WhatsApp with <a href="https://heypinchy.com" className="text-orange hover:text-orange-hover">Pinchy</a> — send quotes, confirmations, and updates without lifting a finger.</p>
-                    </div>
-                    <div className="border-l-4 border-green-500 pl-4">
-                      <h4 className="font-medium text-dark mb-1">Trade Career Resources</h4>
-                      <p className="text-muted-dark text-sm">Growing your team? <a href="https://uktradejobs.com" className="text-orange hover:text-orange-hover">UK Trade Jobs</a> has salary guides, apprenticeship info, and career pathways for every trade.</p>
                     </div>
                   </div>
                 </div>
