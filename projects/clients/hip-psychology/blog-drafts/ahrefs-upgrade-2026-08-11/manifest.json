@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-11",
+  "site": "hippsychology.com",
+  "status": "approved-for-live-update",
+  "strategy": "Strengthen six existing Search Console opportunity pages; create no duplicate URLs.",
+  "pages": [
+    {
+      "id": 1922,
+      "slug": "emotional-wellbeing-for-pupils",
+      "title": "Emotional Wellbeing for Pupils: Turning Concern Into Practical Support",
+      "published": "2026-06-06",
+      "keyword": "emotional wellbeing for pupils",
+      "evidence": "95 Search Console impressions at an average position of 12.9; Ahrefs UK volume 80."
+    },
+    {
+      "id": 1795,
+      "slug": "emotional-wellbeing-in-schools",
+      "title": "Emotional Wellbeing in Schools: What Good Support Looks Like",
+      "published": "2026-05-14",
+      "keyword": "emotional wellbeing in schools",
+      "evidence": "More than 100 relevant Search Console impressions across spelling variants; Ahrefs UK volume 50."
+    },
+    {
+      "id": 2039,
+      "slug": "school-wellbeing-inset-day",
+      "title": "School Wellbeing INSET Day: Practical Training for Staff",
+      "published": "2026-06-30",
+      "keyword": "teacher wellbeing inset",
+      "evidence": "62 Search Console impressions around positions 4-5; Ahrefs UK volume 50 for teacher wellbeing INSET."
+    },
+    {
+      "id": 1817,
+      "slug": "positive-mental-health-workshops-schools",
+      "title": "Positive Mental Health Workshops for Schools: What Makes Them Useful?",
+      "published": "2026-05-19",
+      "keyword": "mental health workshops for schools",
+      "evidence": "More than 70 relevant Search Console impressions around positions 7-10; Ahrefs UK volume 150."
+    },
+    {
+      "id": 2008,
+      "slug": "mental-health-assembly-schools",
+      "title": "Mental Health Assembly for Schools: How to Make It Useful",
+      "published": "2026-06-23",
+      "keyword": "mental health assembly for schools",
+      "evidence": "13 Search Console impressions at an average position of 15.8, with scope to strengthen the existing URL."
+    },
+    {
+      "id": 2017,
+      "slug": "designated-teacher-wellbeing-training",
+      "title": "Designated Teacher Wellbeing Training: Linking Care and Safeguarding",
+      "published": "2026-06-23",
+      "keyword": "designated teacher training",
+      "evidence": "18 Search Console impressions at position 6.6; Ahrefs UK volume 40."
+    }
+  ]
+}

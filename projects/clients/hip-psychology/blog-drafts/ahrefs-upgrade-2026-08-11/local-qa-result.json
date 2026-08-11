@@ -1,0 +1,107 @@
+{
+  "pages": [
+    {
+      "slug": "emotional-wellbeing-for-pupils",
+      "word_count": 1024,
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "no_h1_in_content": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "emotional-wellbeing-in-schools",
+      "word_count": 937,
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "no_h1_in_content": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "school-wellbeing-inset-day",
+      "word_count": 929,
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "no_h1_in_content": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "positive-mental-health-workshops-schools",
+      "word_count": 966,
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "no_h1_in_content": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "mental-health-assembly-schools",
+      "word_count": 906,
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "no_h1_in_content": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "designated-teacher-wellbeing-training",
+      "word_count": 928,
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "no_h1_in_content": true
+      },
+      "ok": true
+    }
+  ],
+  "failures": 0
+}

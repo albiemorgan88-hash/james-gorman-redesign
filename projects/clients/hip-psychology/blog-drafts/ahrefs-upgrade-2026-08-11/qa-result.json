@@ -1,0 +1,167 @@
+{
+  "checked_at": "2026-08-11T10:31:38+0100",
+  "updated": [
+    {
+      "action": "updated",
+      "id": 1922,
+      "slug": "emotional-wellbeing-for-pupils",
+      "link": "https://hippsychology.com/emotional-wellbeing-for-pupils/",
+      "status": "publish"
+    },
+    {
+      "action": "updated",
+      "id": 1795,
+      "slug": "emotional-wellbeing-in-schools",
+      "link": "https://hippsychology.com/emotional-wellbeing-in-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "updated",
+      "id": 2039,
+      "slug": "school-wellbeing-inset-day",
+      "link": "https://hippsychology.com/school-wellbeing-inset-day/",
+      "status": "publish"
+    },
+    {
+      "action": "updated",
+      "id": 1817,
+      "slug": "positive-mental-health-workshops-schools",
+      "link": "https://hippsychology.com/positive-mental-health-workshops-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "updated",
+      "id": 2008,
+      "slug": "mental-health-assembly-schools",
+      "link": "https://hippsychology.com/mental-health-assembly-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "updated",
+      "id": 2017,
+      "slug": "designated-teacher-wellbeing-training",
+      "link": "https://hippsychology.com/designated-teacher-wellbeing-training/",
+      "status": "publish"
+    }
+  ],
+  "live_qa": [
+    {
+      "slug": "emotional-wellbeing-for-pupils",
+      "url": "https://hippsychology.com/emotional-wellbeing-for-pupils/",
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "one_h1": true,
+        "http_200": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "emotional-wellbeing-in-schools",
+      "url": "https://hippsychology.com/emotional-wellbeing-in-schools/",
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "one_h1": true,
+        "http_200": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "school-wellbeing-inset-day",
+      "url": "https://hippsychology.com/school-wellbeing-inset-day/",
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "one_h1": true,
+        "http_200": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "positive-mental-health-workshops-schools",
+      "url": "https://hippsychology.com/positive-mental-health-workshops-schools/",
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "one_h1": true,
+        "http_200": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "mental-health-assembly-schools",
+      "url": "https://hippsychology.com/mental-health-assembly-schools/",
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "one_h1": true,
+        "http_200": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "designated-teacher-wellbeing-training",
+      "url": "https://hippsychology.com/designated-teacher-wellbeing-training/",
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "one_h1": true,
+        "http_200": true
+      },
+      "ok": true
+    }
+  ],
+  "sitemap_status": 200,
+  "sitemap_checks": {
+    "emotional-wellbeing-for-pupils": true,
+    "emotional-wellbeing-in-schools": true,
+    "school-wellbeing-inset-day": true,
+    "positive-mental-health-workshops-schools": true,
+    "mental-health-assembly-schools": true,
+    "designated-teacher-wellbeing-training": true
+  },
+  "failures": 0
+}
