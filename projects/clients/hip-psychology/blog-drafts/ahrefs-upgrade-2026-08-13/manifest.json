@@ -1,0 +1,48 @@
+{
+  "date": "2026-08-13",
+  "site": "hippsychology.com",
+  "status": "approved-for-live-update",
+  "strategy": "Strengthen five existing Search Console and Ahrefs opportunity pages; create no duplicate URLs.",
+  "pages": [
+    {
+      "id": 1689,
+      "slug": "educational-psychologist-northern-ireland",
+      "title": "Educational Psychologist Northern Ireland: What Schools Should Look For",
+      "published": "2026-04-13",
+      "keyword": "educational psychologist northern ireland",
+      "evidence": "28 Search Console impressions at position 9.0; Ahrefs UK volume 60, KD 1 and traffic potential 250."
+    },
+    {
+      "id": 1989,
+      "slug": "resilience-activities-for-students",
+      "title": "Resilience Activities for Students: What Works in Schools",
+      "published": "2026-06-17",
+      "keyword": "resilience workshops for schools",
+      "evidence": "55 page impressions, including position 6.9 for resilience workshops; Ahrefs UK volume 90 for workshops and 50 for activities."
+    },
+    {
+      "id": 1899,
+      "slug": "mental-health-lead-in-schools",
+      "title": "Mental Health Lead in Schools: What the Role Needs Around It to Work",
+      "published": "2026-06-03",
+      "keyword": "mental health lead in schools",
+      "evidence": "36 page impressions, with the main term at position 19.2; Ahrefs UK volume 40, KD 3 and traffic potential 300."
+    },
+    {
+      "id": 1716,
+      "slug": "bystander-behaviour",
+      "title": "Bystander Behaviour and Bullying: Helping Pupils Become Upstanders",
+      "published": "2026-04-27",
+      "keyword": "upstander vs bystander",
+      "evidence": "135 page impressions; Ahrefs UK volume 30 for upstander versus bystander and 20 for bystander bullying."
+    },
+    {
+      "id": 2184,
+      "slug": "low-arousal-approach-schools",
+      "title": "Low-Arousal Approach in Schools: Calm Support Before Escalation",
+      "published": "2026-07-10",
+      "keyword": "low arousal approach",
+      "evidence": "38 page impressions with relevant visibility; Ahrefs UK volume 20."
+    }
+  ]
+}

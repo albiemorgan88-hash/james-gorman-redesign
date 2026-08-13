@@ -1,0 +1,141 @@
+{
+  "checked_at": "2026-08-13T11:36:54+0100",
+  "updated": [
+    {
+      "action": "updated",
+      "id": 1689,
+      "slug": "educational-psychologist-northern-ireland",
+      "link": "https://hippsychology.com/educational-psychologist-northern-ireland/",
+      "status": "publish"
+    },
+    {
+      "action": "updated",
+      "id": 1989,
+      "slug": "resilience-activities-for-students",
+      "link": "https://hippsychology.com/resilience-activities-for-students/",
+      "status": "publish"
+    },
+    {
+      "action": "updated",
+      "id": 1899,
+      "slug": "mental-health-lead-in-schools",
+      "link": "https://hippsychology.com/mental-health-lead-in-schools/",
+      "status": "publish"
+    },
+    {
+      "action": "updated",
+      "id": 1716,
+      "slug": "bystander-behaviour",
+      "link": "https://hippsychology.com/bystander-behaviour/",
+      "status": "publish"
+    },
+    {
+      "action": "updated",
+      "id": 2184,
+      "slug": "low-arousal-approach-schools",
+      "link": "https://hippsychology.com/low-arousal-approach-schools/",
+      "status": "publish"
+    }
+  ],
+  "live_qa": [
+    {
+      "slug": "educational-psychologist-northern-ireland",
+      "url": "https://hippsychology.com/educational-psychologist-northern-ireland/",
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "one_h1": true,
+        "http_200": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "resilience-activities-for-students",
+      "url": "https://hippsychology.com/resilience-activities-for-students/",
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "one_h1": true,
+        "http_200": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "mental-health-lead-in-schools",
+      "url": "https://hippsychology.com/mental-health-lead-in-schools/",
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "one_h1": true,
+        "http_200": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "bystander-behaviour",
+      "url": "https://hippsychology.com/bystander-behaviour/",
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "one_h1": true,
+        "http_200": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "low-arousal-approach-schools",
+      "url": "https://hippsychology.com/low-arousal-approach-schools/",
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "one_h1": true,
+        "http_200": true
+      },
+      "ok": true
+    }
+  ],
+  "sitemap_status": 200,
+  "sitemap_checks": {
+    "educational-psychologist-northern-ireland": true,
+    "resilience-activities-for-students": true,
+    "mental-health-lead-in-schools": true,
+    "bystander-behaviour": true,
+    "low-arousal-approach-schools": true
+  },
+  "failures": 0
+}

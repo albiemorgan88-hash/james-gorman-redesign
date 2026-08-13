@@ -1,0 +1,90 @@
+{
+  "pages": [
+    {
+      "slug": "educational-psychologist-northern-ireland",
+      "word_count": 1074,
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "no_h1_in_content": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "resilience-activities-for-students",
+      "word_count": 1009,
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "no_h1_in_content": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "mental-health-lead-in-schools",
+      "word_count": 1001,
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "no_h1_in_content": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "bystander-behaviour",
+      "word_count": 1029,
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "no_h1_in_content": true
+      },
+      "ok": true
+    },
+    {
+      "slug": "low-arousal-approach-schools",
+      "word_count": 993,
+      "checks": {
+        "h2_sections": true,
+        "faq_schema": true,
+        "article_schema": true,
+        "contact_cta": true,
+        "official_links": true,
+        "substantial_copy": true,
+        "no_secret_markers": true,
+        "no_source_markers": true,
+        "no_prohibited_names": true,
+        "no_h1_in_content": true
+      },
+      "ok": true
+    }
+  ],
+  "failures": 0
+}
