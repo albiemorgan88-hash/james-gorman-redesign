@@ -1045,3 +1045,9 @@ Live site inspection confirmed:
 ## Added 5 July 2026
 
 - [x] Add `20 Merchant's View` PropertyPal listing to the live James Gorman Property Featured Properties gallery. Completed 2026-07-05: listing `1087736` added/updated via Wix Pro Gallery API, moved to the front of the carousel, image imported to Wix, and live homepage/browser QA passed.
+
+## Added 14 August 2026
+
+- [x] Publish a five-post buyer and seller transaction guide content blast covering under offer, valuation timing, property searches, title deeds and selling with a mortgage. Completed 2026-08-14: Wix API, live page, byline, sitemap, no-leak and browser QA passed with zero failures.
+- [x] Submit the live Wix blog sitemap and inspect the five new URLs in Google Search Console. Completed 2026-08-14 with no API errors.
+- [ ] Review early impressions and internal-link clicks for the five transaction guides after enough GSC data has accumulated. Priority P2, agent analysis only.

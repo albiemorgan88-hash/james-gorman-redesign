@@ -3171,3 +3171,19 @@ Wix draft creation is now confirmed working in this runtime. These posts are sta
 - QA passed: gallery API item found, public homepage HTTP 200, and browser render with cache-busting URL shows the card as the first visible Featured Properties item.
 - Report saved: `featured-properties-2026-07-05-merchants-view/report.md`.
 - No email, DM, social post, or client message was sent.
+
+## 14 August 2026 - Published transaction guide content blast
+
+- Reviewed fresh GSC, Ahrefs and live Wix sitemap evidence before drafting, and rejected topics with direct live slug collisions.
+- Created and published five Wix articles under `content-blast-2026-08-14-transaction-guides/`:
+  - `under-offer-meaning-northern-ireland`
+  - `how-long-does-house-valuation-take`
+  - `property-searches-buying-house-northern-ireland`
+  - `title-deeds-northern-ireland`
+  - `selling-house-with-mortgage-northern-ireland`
+- Used Northern Ireland process guidance from nidirect and the Law Society of Northern Ireland, with visible `By James Gorman` authorship and local valuation or property-search links.
+- Wix API and live QA passed with zero failures: all five are `PUBLISHED`, assigned to James' member ID, return HTTP 200, show the expected title and byline, appear in `blog-posts-sitemap.xml`, and contain no visible wrong-name or SEO-planning leaks.
+- Browser render QA passed on the valuation article, including visible body copy, source links and valuation/contact links.
+- Submitted `blog-posts-sitemap.xml` to GSC and inspected all five URLs with no API errors.
+- Reports: `blog-publish-report-2026-08-14-transaction-guides.md`, `blog-publish-api-qa-2026-08-14-transaction-guides.json`, and `gsc-indexing-2026-08-14-transaction-guides.md`.
+- No featured images, email, social, GBP, directory, outreach or client-facing message work was performed.

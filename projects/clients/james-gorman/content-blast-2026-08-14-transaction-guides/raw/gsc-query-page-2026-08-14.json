@@ -1,0 +1,5009 @@
+{
+  "collectedAt": "2026-08-14T17:21:16.055Z",
+  "endDate": "2026-08-12",
+  "provider": "GSC",
+  "rows": [
+    {
+      "keys": [
+        "james gorman property",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 429,
+      "impressions": 761,
+      "ctr": 0.5637319316688568,
+      "position": 1.216819973718791
+    },
+    {
+      "keys": [
+        "james gorman property",
+        "https://www.jamesgormanproperty.com/property-for-sale-derry"
+      ],
+      "clicks": 119,
+      "impressions": 736,
+      "ctr": 0.16168478260869565,
+      "position": 1.1372282608695652
+    },
+    {
+      "keys": [
+        "merchants view derry",
+        "https://www.jamesgormanproperty.com/merchants-view"
+      ],
+      "clicks": 86,
+      "impressions": 265,
+      "ctr": 0.32452830188679244,
+      "position": 2.6150943396226416
+    },
+    {
+      "keys": [
+        "estate agents derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 67,
+      "impressions": 652,
+      "ctr": 0.10276073619631902,
+      "position": 6.641104294478527
+    },
+    {
+      "keys": [
+        "james gorman property derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 65,
+      "impressions": 125,
+      "ctr": 0.52,
+      "position": 1.04
+    },
+    {
+      "keys": [
+        "james gorman property",
+        "https://www.jamesgormanproperty.com/property-to-rent-derry"
+      ],
+      "clicks": 51,
+      "impressions": 672,
+      "ctr": 0.07589285714285714,
+      "position": 1.0119047619047619
+    },
+    {
+      "keys": [
+        "james gorman property",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 36,
+      "impressions": 689,
+      "ctr": 0.05224963715529753,
+      "position": 1.0885341074020318
+    },
+    {
+      "keys": [
+        "james gorman estate agent derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 25,
+      "impressions": 33,
+      "ctr": 0.7575757575757576,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 23,
+      "impressions": 35,
+      "ctr": 0.6571428571428571,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman property derry",
+        "https://www.jamesgormanproperty.com/property-for-sale-derry"
+      ],
+      "clicks": 12,
+      "impressions": 123,
+      "ctr": 0.0975609756097561,
+      "position": 1.3577235772357723
+    },
+    {
+      "keys": [
+        "derry estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 10,
+      "impressions": 131,
+      "ctr": 0.07633587786259542,
+      "position": 8.526717557251908
+    },
+    {
+      "keys": [
+        "james gorman estate agent derry",
+        "https://www.jamesgormanproperty.com/property-for-sale-derry"
+      ],
+      "clicks": 9,
+      "impressions": 32,
+      "ctr": 0.28125,
+      "position": 1
+    },
+    {
+      "keys": [
+        "meadowbank court derry",
+        "https://www.jamesgormanproperty.com/blank-11"
+      ],
+      "clicks": 9,
+      "impressions": 66,
+      "ctr": 0.13636363636363635,
+      "position": 3
+    },
+    {
+      "keys": [
+        "merchant view derry",
+        "https://www.jamesgormanproperty.com/merchants-view"
+      ],
+      "clicks": 9,
+      "impressions": 43,
+      "ctr": 0.20930232558139536,
+      "position": 3.13953488372093
+    },
+    {
+      "keys": [
+        "james gorman property",
+        "https://www.jamesgormanproperty.com/contact"
+      ],
+      "clicks": 8,
+      "impressions": 717,
+      "ctr": 0.011157601115760111,
+      "position": 1.2510460251046025
+    },
+    {
+      "keys": [
+        "gorman properties",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 7,
+      "impressions": 27,
+      "ctr": 0.25925925925925924,
+      "position": 1.1851851851851851
+    },
+    {
+      "keys": [
+        "james gorman property derry",
+        "https://www.jamesgormanproperty.com/property-to-rent-derry"
+      ],
+      "clicks": 7,
+      "impressions": 111,
+      "ctr": 0.06306306306306306,
+      "position": 1.2972972972972974
+    },
+    {
+      "keys": [
+        "letting agents derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 7,
+      "impressions": 36,
+      "ctr": 0.19444444444444445,
+      "position": 7.722222222222222
+    },
+    {
+      "keys": [
+        "estate agent derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 6,
+      "impressions": 102,
+      "ctr": 0.058823529411764705,
+      "position": 7.196078431372549
+    },
+    {
+      "keys": [
+        "houses for sale derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 6,
+      "impressions": 8,
+      "ctr": 0.75,
+      "position": 24
+    },
+    {
+      "keys": [
+        "merchants view",
+        "https://www.jamesgormanproperty.com/merchants-view"
+      ],
+      "clicks": 6,
+      "impressions": 151,
+      "ctr": 0.039735099337748346,
+      "position": 6
+    },
+    {
+      "keys": [
+        "estate agent fees northern ireland",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 5,
+      "impressions": 106,
+      "ctr": 0.04716981132075472,
+      "position": 6.188679245283019
+    },
+    {
+      "keys": [
+        "james gorman property",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 5,
+      "impressions": 584,
+      "ctr": 0.008561643835616438,
+      "position": 1
+    },
+    {
+      "keys": [
+        "estate agents in derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 4,
+      "impressions": 58,
+      "ctr": 0.06896551724137931,
+      "position": 7.896551724137931
+    },
+    {
+      "keys": [
+        "estate agents londonderry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 4,
+      "impressions": 40,
+      "ctr": 0.1,
+      "position": 6.15
+    },
+    {
+      "keys": [
+        "james gorman derry",
+        "https://www.jamesgormanproperty.com/property-for-sale-derry"
+      ],
+      "clicks": 4,
+      "impressions": 35,
+      "ctr": 0.11428571428571428,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman property",
+        "https://www.jamesgormanproperty.com/merchants-view"
+      ],
+      "clicks": 4,
+      "impressions": 640,
+      "ctr": 0.00625,
+      "position": 1.0671875
+    },
+    {
+      "keys": [
+        "woodside heights derry",
+        "https://www.jamesgormanproperty.com/blank-11-2-1"
+      ],
+      "clicks": 4,
+      "impressions": 62,
+      "ctr": 0.06451612903225806,
+      "position": 7.870967741935484
+    },
+    {
+      "keys": [
+        "gorman property management",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 3,
+      "impressions": 4,
+      "ctr": 0.75,
+      "position": 1.5
+    },
+    {
+      "keys": [
+        "how long from sale agreed to completion",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 3,
+      "impressions": 20,
+      "ctr": 0.15,
+      "position": 3.6
+    },
+    {
+      "keys": [
+        "londonderry estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 3,
+      "impressions": 16,
+      "ctr": 0.1875,
+      "position": 5.9375
+    },
+    {
+      "keys": [
+        "sale agreed",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 3,
+      "impressions": 43,
+      "ctr": 0.06976744186046512,
+      "position": 4.465116279069767
+    },
+    {
+      "keys": [
+        "contact form",
+        "https://www.jamesgormanproperty.com/contact"
+      ],
+      "clicks": 2,
+      "impressions": 2,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "keys": [
+        "estate agents derry houses for sale",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 2,
+      "impressions": 27,
+      "ctr": 0.07407407407407407,
+      "position": 7.37037037037037
+    },
+    {
+      "keys": [
+        "estate sales near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 2,
+      "impressions": 16,
+      "ctr": 0.125,
+      "position": 4.6875
+    },
+    {
+      "keys": [
+        "house rent agents near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 2,
+      "impressions": 2,
+      "ctr": 1,
+      "position": 3.5
+    },
+    {
+      "keys": [
+        "james gorman derry",
+        "https://www.jamesgormanproperty.com/property-to-rent-derry"
+      ],
+      "clicks": 2,
+      "impressions": 35,
+      "ctr": 0.05714285714285714,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman property derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 2,
+      "impressions": 119,
+      "ctr": 0.01680672268907563,
+      "position": 1.2184873949579833
+    },
+    {
+      "keys": [
+        "property derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 2,
+      "impressions": 95,
+      "ctr": 0.021052631578947368,
+      "position": 12.073684210526316
+    },
+    {
+      "keys": [
+        "property for sale derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 2,
+      "impressions": 12,
+      "ctr": 0.16666666666666666,
+      "position": 23.916666666666668
+    },
+    {
+      "keys": [
+        "property to rent derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 2,
+      "impressions": 3,
+      "ctr": 0.6666666666666666,
+      "position": 6.666666666666667
+    },
+    {
+      "keys": [
+        "230k",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 9
+    },
+    {
+      "keys": [
+        "91 thornhill park",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 1,
+      "impressions": 22,
+      "ctr": 0.045454545454545456,
+      "position": 10.681818181818182
+    },
+    {
+      "keys": [
+        "derry houses",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 0.5,
+      "position": 25.5
+    },
+    {
+      "keys": [
+        "estate agents derry city",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 1,
+      "impressions": 21,
+      "ctr": 0.047619047619047616,
+      "position": 7.761904761904762
+    },
+    {
+      "keys": [
+        "estate agents near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 1,
+      "impressions": 26,
+      "ctr": 0.038461538461538464,
+      "position": 5.538461538461538
+    },
+    {
+      "keys": [
+        "gorman properties",
+        "https://www.jamesgormanproperty.com/property-to-rent-derry"
+      ],
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 26
+    },
+    {
+      "keys": [
+        "gorman property",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 1,
+      "impressions": 6,
+      "ctr": 0.16666666666666666,
+      "position": 1.8333333333333335
+    },
+    {
+      "keys": [
+        "houses for sale in derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 0.5,
+      "position": 19.5
+    },
+    {
+      "keys": [
+        "how long does sale agreed last",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 1,
+      "impressions": 6,
+      "ctr": 0.16666666666666666,
+      "position": 3
+    },
+    {
+      "keys": [
+        "is sale agreed legally binding",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 0.3333333333333333,
+      "position": 2
+    },
+    {
+      "keys": [
+        "james gorman derry",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 1,
+      "impressions": 31,
+      "ctr": 0.03225806451612903,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman derry",
+        "https://www.jamesgormanproperty.com/merchants-view"
+      ],
+      "clicks": 1,
+      "impressions": 33,
+      "ctr": 0.030303030303030304,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 1,
+      "impressions": 33,
+      "ctr": 0.030303030303030304,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman estate agent derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 1,
+      "impressions": 33,
+      "ctr": 0.030303030303030304,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman property",
+        "https://www.jamesgormanproperty.com/post/properties-for-sale-in-culmore-derry"
+      ],
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 0.5,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman property derry",
+        "https://www.jamesgormanproperty.com/contact"
+      ],
+      "clicks": 1,
+      "impressions": 117,
+      "ctr": 0.008547008547008548,
+      "position": 1.2222222222222223
+    },
+    {
+      "keys": [
+        "james gorman property derry",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 1,
+      "impressions": 101,
+      "ctr": 0.009900990099009901,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman property derry",
+        "https://www.jamesgormanproperty.com/merchants-view"
+      ],
+      "clicks": 1,
+      "impressions": 106,
+      "ctr": 0.009433962264150943,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james property",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 2
+    },
+    {
+      "keys": [
+        "locate estate agents derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 1,
+      "impressions": 52,
+      "ctr": 0.019230769230769232,
+      "position": 7.211538461538462
+    },
+    {
+      "keys": [
+        "meadowbank apartments",
+        "https://www.jamesgormanproperty.com/blank-11"
+      ],
+      "clicks": 1,
+      "impressions": 4,
+      "ctr": 0.25,
+      "position": 2.75
+    },
+    {
+      "keys": [
+        "merchants view derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 1,
+      "impressions": 9,
+      "ctr": 0.1111111111111111,
+      "position": 14.777777777777779
+    },
+    {
+      "keys": [
+        "property rent derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 0.5,
+      "position": 6
+    },
+    {
+      "keys": [
+        "property rental",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 2
+    },
+    {
+      "keys": [
+        "property to rent derry",
+        "https://www.jamesgormanproperty.com/property-to-rent-derry"
+      ],
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 47
+    },
+    {
+      "keys": [
+        "property to rent in derry",
+        "https://www.jamesgormanproperty.com/property-to-rent-derry"
+      ],
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 37
+    },
+    {
+      "keys": [
+        "sale agreed what next",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 1,
+      "impressions": 4,
+      "ctr": 0.25,
+      "position": 10.25
+    },
+    {
+      "keys": [
+        "stamp duty northern ireland",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 1,
+      "impressions": 72,
+      "ctr": 0.013888888888888888,
+      "position": 4.75
+    },
+    {
+      "keys": [
+        "what does sale agreed mean",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 1,
+      "impressions": 109,
+      "ctr": 0.009174311926605505,
+      "position": 12.01834862385321
+    },
+    {
+      "keys": [
+        "woodside heights",
+        "https://www.jamesgormanproperty.com/blank-11-2-1"
+      ],
+      "clicks": 1,
+      "impressions": 25,
+      "ctr": 0.04,
+      "position": 8.24
+    },
+    {
+      "keys": [
+        "yes",
+        "https://www.jamesgormanproperty.com/merchants-view"
+      ],
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 7
+    },
+    {
+      "keys": [
+        "11 carlisle road derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 39
+    },
+    {
+      "keys": [
+        "11 larcom drive derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 26
+    },
+    {
+      "keys": [
+        "13 james street",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "keys": [
+        "18 clearwater derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "2 north meadows derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 37
+    },
+    {
+      "keys": [
+        "25 james street",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "keys": [
+        "39 james street",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "keys": [
+        "43 ashburn avenue, kilfennan, l'derry, bt47 5qe",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "keys": [
+        "5 coralmount derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "51 glen road",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "95 victoria gate derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 26
+    },
+    {
+      "keys": [
+        "academy road derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "keys": [
+        "agents near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "agreed.ie",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "airbnb derry",
+        "https://www.jamesgormanproperty.com/post/properties-for-sale-in-culmore-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "airbnb derry",
+        "https://www.jamesgormanproperty.com/post/top-5-areas-to-live-in-derry-for-families-the-complete-2026-guide"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "alexander gourley",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 53
+    },
+    {
+      "keys": [
+        "alexander gourley derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 42
+    },
+    {
+      "keys": [
+        "alexander gourley estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 36
+    },
+    {
+      "keys": [
+        "amelia court derry",
+        "https://www.jamesgormanproperty.com/blank-11"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 52
+    },
+    {
+      "keys": [
+        "any property for rent near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "apartments for sale near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "keys": [
+        "appraisal",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "appraisals",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "ard grange",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "keys": [
+        "ard grange derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 55.666666666666664
+    },
+    {
+      "keys": [
+        "ardgrange derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "keys": [
+        "ardgrange derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "keys": [
+        "ardnamoyle park derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25
+    },
+    {
+      "keys": [
+        "are there any currently for sale",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "balliniska heights derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 36
+    },
+    {
+      "keys": [
+        "ballyarnett house",
+        "https://www.jamesgormanproperty.com/post/houses-for-sale-ballyarnett-derry-buyer-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "ballygomartin",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "keys": [
+        "ballykelly",
+        "https://www.jamesgormanproperty.com/post/houses-for-sale-ballykelly-buyer-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "ballykelly houses for sale",
+        "https://www.jamesgormanproperty.com/post/houses-for-sale-ballykelly-buyer-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "keys": [
+        "ballymagroarty derry",
+        "https://www.jamesgormanproperty.com/post/houses-for-sale-ballymagroarty-derry-buyer-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "bann drive derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "keys": [
+        "bann drive derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 49
+    },
+    {
+      "keys": [
+        "bards hill derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 38
+    },
+    {
+      "keys": [
+        "barleyfields derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 34
+    },
+    {
+      "keys": [
+        "barleyfields derry for sale",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "belmont derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 42.5
+    },
+    {
+      "keys": [
+        "best estate agent in my area",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "best estate agent insurance",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "best estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "best real estate",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 63,
+      "ctr": 0,
+      "position": 10.507936507936508
+    },
+    {
+      "keys": [
+        "best real estate agent",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "bl3 5ea",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "keys": [
+        "bl3 5el",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "keys": [
+        "blackthorn manor derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "keys": [
+        "bonds glen road",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "keys": [
+        "bonds glen road",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "keys": [
+        "bowerman court",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "keys": [
+        "bridgman road",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "keys": [
+        "brookview glen eglinton",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 39
+    },
+    {
+      "keys": [
+        "brookview glen eglinton",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "keys": [
+        "bt48",
+        "https://www.jamesgormanproperty.com/post/property-value-bt47-bt48-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "buying",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "buying",
+        "https://www.jamesgormanproperty.com/post/property-in-eglinton-why-buyers-are-looking-beyond-the-city"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "buying a house in northern ireland",
+        "https://www.jamesgormanproperty.com/post/rates-buying-house-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 41.5
+    },
+    {
+      "keys": [
+        "buying a house northern ireland",
+        "https://www.jamesgormanproperty.com/post/rates-buying-house-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 45
+    },
+    {
+      "keys": [
+        "carn manor derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "chapman street",
+        "https://www.jamesgormanproperty.com/merchants-view"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 76.25
+    },
+    {
+      "keys": [
+        "cheapest estate agent fees near me",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "cheapest estate agent fees near me",
+        "https://www.jamesgormanproperty.com/post/no-sale-no-fee-estate-agent-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "city estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 8.428571428571429
+    },
+    {
+      "keys": [
+        "city letting derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5.833333333333333
+    },
+    {
+      "keys": [
+        "city properties derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 14.25
+    },
+    {
+      "keys": [
+        "city property derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "keys": [
+        "cityside house",
+        "https://www.jamesgormanproperty.com/post/house-not-selling-cityside-derry-checklist-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 24
+    },
+    {
+      "keys": [
+        "cityside house",
+        "https://www.jamesgormanproperty.com/post/property-valuation-cityside-derry"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 72.5
+    },
+    {
+      "keys": [
+        "claremont manse derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "keys": [
+        "claremont manse derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "keys": [
+        "clarendon manor derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 52
+    },
+    {
+      "keys": [
+        "clearwater derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 8.666666666666668
+    },
+    {
+      "keys": [
+        "coachman ridge",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "keys": [
+        "coleman property",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "keys": [
+        "college glen derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 35
+    },
+    {
+      "keys": [
+        "colman avenue",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "keys": [
+        "colman gardens",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "keys": [
+        "commercial building for rent",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "commercial building for sale",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "commercial property",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "commercial property derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 10.6
+    },
+    {
+      "keys": [
+        "commercial property for rent",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "commercial property for rent derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9.5
+    },
+    {
+      "keys": [
+        "commercial property for rent northern ireland",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "commercial property for sale northern ireland",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "commercial property near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "commercial property sales",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "commercial real estate",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "commercial units to rent",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "commerical property",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "coney road derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 27
+    },
+    {
+      "keys": [
+        "contact form",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "keys": [
+        "conveyancing deeds northern ireland",
+        "https://www.jamesgormanproperty.com/post/conveyancing-process-northern-ireland-buyers"
+      ],
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 30.23076923076923
+    },
+    {
+      "keys": [
+        "conveyancing derry",
+        "https://www.jamesgormanproperty.com/post/conveyancing-process-northern-ireland-buyers"
+      ],
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 33.166666666666664
+    },
+    {
+      "keys": [
+        "conveyancing northern ireland",
+        "https://www.jamesgormanproperty.com/post/conveyancing-process-northern-ireland-buyers"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 39.5
+    },
+    {
+      "keys": [
+        "coralmount derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "cornshell fields derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "keys": [
+        "creggan heights derry",
+        "https://www.jamesgormanproperty.com/post/top-5-areas-to-live-in-derry-for-families-the-complete-2026-guide"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "culmore",
+        "https://www.jamesgormanproperty.com/post/properties-for-sale-in-culmore-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "culmore gardens",
+        "https://www.jamesgormanproperty.com/post/properties-for-sale-in-culmore-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 29
+    },
+    {
+      "keys": [
+        "current stamp duty rates ireland residential property 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "de11 9dl",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 97
+    },
+    {
+      "keys": [
+        "de13 9sd",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "keys": [
+        "derry avenue",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 40.5
+    },
+    {
+      "keys": [
+        "derry city",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "derry estate agent",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 8.071428571428571
+    },
+    {
+      "keys": [
+        "derry estates",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 16
+    },
+    {
+      "keys": [
+        "derry for sale",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 24
+    },
+    {
+      "keys": [
+        "derry homes",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 17.5
+    },
+    {
+      "keys": [
+        "derry ireland real estate",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18
+    },
+    {
+      "keys": [
+        "derry james",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "derry mansions",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "keys": [
+        "derry northern ireland",
+        "https://www.jamesgormanproperty.com/post/derry-property-market-2026-analysis-trends"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "derry property",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 13.088235294117647
+    },
+    {
+      "keys": [
+        "derry property for sale",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 24.5
+    },
+    {
+      "keys": [
+        "derry real estate",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 7.4
+    },
+    {
+      "keys": [
+        "derry strand road",
+        "https://www.jamesgormanproperty.com/post/strand-road-derry-property-buyer-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "derryman",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "keys": [
+        "dervock place derry",
+        "https://www.jamesgormanproperty.com/post/properties-for-sale-in-culmore-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "dmg estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 21.333333333333332
+    },
+    {
+      "keys": [
+        "dmg property",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "do i need an epc to sell my house",
+        "https://www.jamesgormanproperty.com/post/epc-selling-house-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "does sale agreed mean sold",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 7.75
+    },
+    {
+      "keys": [
+        "double glazing portrush",
+        "https://www.jamesgormanproperty.com/blank-11-1-1"
+      ],
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 54.59090909090909
+    },
+    {
+      "keys": [
+        "drumard park derry",
+        "https://www.jamesgormanproperty.com/post/properties-for-sale-in-culmore-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "drummond manor limavady",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "keys": [
+        "drummond park derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "keys": [
+        "dungiven population",
+        "https://www.jamesgormanproperty.com/post/dungiven-property-a-hidden-gem-in-the-north-west"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "dy9 8el",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 69.5
+    },
+    {
+      "keys": [
+        "eastbank court",
+        "https://www.jamesgormanproperty.com/blank-11"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "keys": [
+        "eglington village",
+        "https://www.jamesgormanproperty.com/post/property-in-eglinton-why-buyers-are-looking-beyond-the-city"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "eglinton",
+        "https://www.jamesgormanproperty.com/post/property-in-eglinton-why-buyers-are-looking-beyond-the-city"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "eglinton property",
+        "https://www.jamesgormanproperty.com/post/property-in-eglinton-why-buyers-are-looking-beyond-the-city"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 34
+    },
+    {
+      "keys": [
+        "eglinton village",
+        "https://www.jamesgormanproperty.com/post/property-in-eglinton-why-buyers-are-looking-beyond-the-city"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 9.75
+    },
+    {
+      "keys": [
+        "epc estate agents",
+        "https://www.jamesgormanproperty.com/post/epc-selling-house-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "epc house selling",
+        "https://www.jamesgormanproperty.com/post/epc-selling-house-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "epc selling house",
+        "https://www.jamesgormanproperty.com/post/epc-selling-house-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 29
+    },
+    {
+      "keys": [
+        "estate agent",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 7.2
+    },
+    {
+      "keys": [
+        "estate agent claudy",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 21.8
+    },
+    {
+      "keys": [
+        "estate agent claudy",
+        "https://www.jamesgormanproperty.com/post/houses-for-sale-claudy"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 14.5
+    },
+    {
+      "keys": [
+        "estate agent fees",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "keys": [
+        "estate agent fees ballyhackamore",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 15.428571428571429
+    },
+    {
+      "keys": [
+        "estate agent fees belfast",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 56,
+      "ctr": 0,
+      "position": 18.732142857142858
+    },
+    {
+      "keys": [
+        "estate agent fees dublin",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "keys": [
+        "estate agent fees glengormley",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 11.166666666666666
+    },
+    {
+      "keys": [
+        "estate agent fees ireland",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 13.285714285714286
+    },
+    {
+      "keys": [
+        "estate agent fees lisburn",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 11.285714285714286
+    },
+    {
+      "keys": [
+        "estate agent fees near me",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "estate agent fees newtownards",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 11.925925925925926
+    },
+    {
+      "keys": [
+        "estate agent fees ni",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "estate agent ireland",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 16
+    },
+    {
+      "keys": [
+        "estate agent londonderry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "estate agent near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1.5
+    },
+    {
+      "keys": [
+        "estate agent selling fees near me",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "estate agent selling fees northern ireland",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 6.533333333333333
+    },
+    {
+      "keys": [
+        "estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 6.962962962962963
+    },
+    {
+      "keys": [
+        "estate agents co down",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "estate agents derry",
+        "https://www.jamesgormanproperty.com/property-for-sale-derry"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 1.6
+    },
+    {
+      "keys": [
+        "estate agents derry city",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "keys": [
+        "estate agents derry londonderry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "estate agents derry londonderry",
+        "https://www.jamesgormanproperty.com/property-for-sale-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "keys": [
+        "estate agents derry northern ireland",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 4.666666666666666
+    },
+    {
+      "keys": [
+        "estate agents douglas",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "estate agents fees ireland",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 15.666666666666666
+    },
+    {
+      "keys": [
+        "estate agents fees northern ireland",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 3.7777777777777777
+    },
+    {
+      "keys": [
+        "estate agents free valuation near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "estate agents house",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "estate agents in derry",
+        "https://www.jamesgormanproperty.com/property-for-sale-derry"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "estate agents in derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "estate agents in derry northern ireland",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 3.84
+    },
+    {
+      "keys": [
+        "estate agents in derry northern ireland",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 52
+    },
+    {
+      "keys": [
+        "estate agents in londonderry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 12.235294117647058
+    },
+    {
+      "keys": [
+        "estate agents in northern ireland",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 1.8
+    },
+    {
+      "keys": [
+        "estate agents ni",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "estate homes",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "estate management",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "keys": [
+        "estate management services",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "estate sale",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "estate sales near me",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "estate. sales near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "estates agents near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "ex39 3du",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "keys": [
+        "fall back as per sale renegotiated",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "feedback after house viewing examples",
+        "https://www.jamesgormanproperty.com/post/house-viewing-feedback-derry-sellers"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "fees for estate agents",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 45
+    },
+    {
+      "keys": [
+        "fees please",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "fenman gardens",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 53.5
+    },
+    {
+      "keys": [
+        "ferguson street derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "keys": [
+        "first time buyer",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "first time buyer northern ireland",
+        "https://www.jamesgormanproperty.com/post/first-time-buyer-northern-ireland-derry-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 18.25
+    },
+    {
+      "keys": [
+        "first time buyer stamp duty northern ireland",
+        "https://www.jamesgormanproperty.com/blog/categories/buying"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "keys": [
+        "first time buyer stamp duty northern ireland",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "keys": [
+        "first-time buyer checklist ni",
+        "https://www.jamesgormanproperty.com/post/first-time-buyer-northern-ireland-derry-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "first-time buyer checklist ni",
+        "https://www.jamesgormanproperty.com/post/home-survey-northern-ireland-buyer-guide"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 28.5
+    },
+    {
+      "keys": [
+        "fixed fee estate agents for sale",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "fixed price estate agents",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "foyle springs",
+        "https://www.jamesgormanproperty.com/post/estate-agent-foyle-springs-derry-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 10.6
+    },
+    {
+      "keys": [
+        "foyle springs",
+        "https://www.jamesgormanproperty.com/post/houses-for-sale-foyle-springs-derry-buyer-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "foyle springs",
+        "https://www.jamesgormanproperty.com/post/property-valuation-foyle-springs-derry-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 89
+    },
+    {
+      "keys": [
+        "foyle springs derry",
+        "https://www.jamesgormanproperty.com/post/houses-for-sale-foyle-springs-derry-buyer-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 9.933333333333334
+    },
+    {
+      "keys": [
+        "foyle springs photos",
+        "https://www.jamesgormanproperty.com/post/houses-for-sale-foyle-springs-derry-buyer-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "freehold house vacant possession",
+        "https://www.jamesgormanproperty.com/post/vacant-possession-house-sale-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "keys": [
+        "from sale agreed to keys",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "keys": [
+        "full vacant possession",
+        "https://www.jamesgormanproperty.com/post/vacant-possession-house-sale-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "keys": [
+        "garden city derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 48.666666666666664
+    },
+    {
+      "keys": [
+        "gazumpin",
+        "https://www.jamesgormanproperty.com/post/what-is-gazumping-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "gazumping ireland",
+        "https://www.jamesgormanproperty.com/post/what-is-gazumping-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "gazumping northern ireland",
+        "https://www.jamesgormanproperty.com/post/what-is-gazumping-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "george derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "keys": [
+        "gerry o'connor estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "keys": [
+        "gilman homes for sale",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "keys": [
+        "gilman rd",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25
+    },
+    {
+      "keys": [
+        "gilman real estate",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "keys": [
+        "gladman house",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 45
+    },
+    {
+      "keys": [
+        "glen road derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 41
+    },
+    {
+      "keys": [
+        "glenbank road derry",
+        "https://www.jamesgormanproperty.com/blank-11"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 35.5
+    },
+    {
+      "keys": [
+        "goodman estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "keys": [
+        "goodman realty",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "keys": [
+        "gore road",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 77.75
+    },
+    {
+      "keys": [
+        "gorman",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 3.142857142857143
+    },
+    {
+      "keys": [
+        "gorman apartments",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "gorman close greenisland",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18
+    },
+    {
+      "keys": [
+        "gorman close greenisland",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18
+    },
+    {
+      "keys": [
+        "gorman family",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "gorman homes",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 8.666666666666668
+    },
+    {
+      "keys": [
+        "gorman house",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "keys": [
+        "gorman houses for sale",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "gorman properties",
+        "https://www.jamesgormanproperty.com/contact"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "gorman properties",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "keys": [
+        "gorman properties",
+        "https://www.jamesgormanproperty.com/merchants-view"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "keys": [
+        "gorman properties",
+        "https://www.jamesgormanproperty.com/property-for-sale-derry"
+      ],
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 7.230769230769231
+    },
+    {
+      "keys": [
+        "gorman properties",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 7.888888888888889
+    },
+    {
+      "keys": [
+        "gorman property",
+        "https://www.jamesgormanproperty.com/contact"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "gorman property",
+        "https://www.jamesgormanproperty.com/property-for-sale-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 42
+    },
+    {
+      "keys": [
+        "gorman property",
+        "https://www.jamesgormanproperty.com/property-to-rent-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "keys": [
+        "gorman property management",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5.75
+    },
+    {
+      "keys": [
+        "gorman property management",
+        "https://www.jamesgormanproperty.com/property-to-rent-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "gorman real estate",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 1.8
+    },
+    {
+      "keys": [
+        "gorman real estate",
+        "https://www.jamesgormanproperty.com/contact"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 90.5
+    },
+    {
+      "keys": [
+        "gorman real estate",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 50.333333333333336
+    },
+    {
+      "keys": [
+        "gorman real estate",
+        "https://www.jamesgormanproperty.com/property-for-sale-derry"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 26.666666666666668
+    },
+    {
+      "keys": [
+        "gorman real estate",
+        "https://www.jamesgormanproperty.com/property-to-rent-derry"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 78.25
+    },
+    {
+      "keys": [
+        "gorman rentals",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "gorman rentals",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "keys": [
+        "gorman rentals",
+        "https://www.jamesgormanproperty.com/property-to-rent-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 28
+    },
+    {
+      "keys": [
+        "gorman residential",
+        "https://www.jamesgormanproperty.com/contact"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 24
+    },
+    {
+      "keys": [
+        "gorman road",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "keys": [
+        "gorman st",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 41
+    },
+    {
+      "keys": [
+        "gorman street",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 16
+    },
+    {
+      "keys": [
+        "gorman's near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "keys": [
+        "gormans real estate",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "gortnessy meadows",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 53
+    },
+    {
+      "keys": [
+        "gourley estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 39.5
+    },
+    {
+      "keys": [
+        "gov.uk sdlt residential property rates england northern ireland 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8.5
+    },
+    {
+      "keys": [
+        "gov.uk stamp duty land tax rates 2026 england northern ireland",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "gov.uk stamp duty land tax rates residential property 2026 england northern ireland",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "gov.uk stamp duty land tax rates residential property england northern ireland 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 6.142857142857143
+    },
+    {
+      "keys": [
+        "gov.uk stamp duty land tax residential property rates 2026 england northern ireland",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 8.75
+    },
+    {
+      "keys": [
+        "gov.uk stamp duty land tax residential property rates england northern ireland 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 8.3125
+    },
+    {
+      "keys": [
+        "gov.uk stamp duty land tax residential rates 2026 england northern ireland",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9.5
+    },
+    {
+      "keys": [
+        "governor road derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "keys": [
+        "grafton street derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "keys": [
+        "graham estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "grangemore park derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 35.25
+    },
+    {
+      "keys": [
+        "grangemore park derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "keys": [
+        "great james street derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 71.5
+    },
+    {
+      "keys": [
+        "green estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "grove place derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 49
+    },
+    {
+      "keys": [
+        "guy rd",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 19
+    },
+    {
+      "keys": [
+        "hawthorn grove derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "keys": [
+        "hayman road",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 49
+    },
+    {
+      "keys": [
+        "hollybank court",
+        "https://www.jamesgormanproperty.com/blank-11"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "keys": [
+        "home agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "home buyers report northern ireland",
+        "https://www.jamesgormanproperty.com/post/home-survey-northern-ireland-buyer-guide"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "keys": [
+        "home buyers survey northern ireland",
+        "https://www.jamesgormanproperty.com/post/home-survey-northern-ireland-buyer-guide"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 42
+    },
+    {
+      "keys": [
+        "home estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "keys": [
+        "home valuation swinton",
+        "https://www.jamesgormanproperty.com/post/property-valuation-eglinton-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 17.625
+    },
+    {
+      "keys": [
+        "homepage derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25
+    },
+    {
+      "keys": [
+        "homes derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 24
+    },
+    {
+      "keys": [
+        "house buying process northern ireland",
+        "https://www.jamesgormanproperty.com/post/first-time-buyer-northern-ireland-derry-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "keys": [
+        "house derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 27.333333333333332
+    },
+    {
+      "keys": [
+        "house for rent derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "house for sale culmore",
+        "https://www.jamesgormanproperty.com/post/properties-for-sale-in-culmore-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "keys": [
+        "house for sale derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 26
+    },
+    {
+      "keys": [
+        "house for sale near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "house for sale pinetrees derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "keys": [
+        "house of value derry",
+        "https://www.jamesgormanproperty.com/merchants-view"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 27.066666666666666
+    },
+    {
+      "keys": [
+        "house sales derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "keys": [
+        "house showing feedback",
+        "https://www.jamesgormanproperty.com/post/house-viewing-feedback-derry-sellers"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 6.6
+    },
+    {
+      "keys": [
+        "house vacant possession",
+        "https://www.jamesgormanproperty.com/post/vacant-possession-house-sale-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 14.5
+    },
+    {
+      "keys": [
+        "house valuation in stanmore",
+        "https://www.jamesgormanproperty.com/post/property-valuation-culmore-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 45.583333333333336
+    },
+    {
+      "keys": [
+        "house valuation wigmore",
+        "https://www.jamesgormanproperty.com/post/property-valuation-culmore-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 55.2
+    },
+    {
+      "keys": [
+        "houses derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "keys": [
+        "houses for sale culmore derry",
+        "https://www.jamesgormanproperty.com/post/properties-for-sale-in-culmore-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25
+    },
+    {
+      "keys": [
+        "houses for sale in ballykelly",
+        "https://www.jamesgormanproperty.com/post/houses-for-sale-ballykelly-buyer-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "keys": [
+        "houses for sale in culmore derry",
+        "https://www.jamesgormanproperty.com/post/properties-for-sale-in-culmore-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "keys": [
+        "houses for sale in derry city",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "keys": [
+        "houses for sale magheramason",
+        "https://www.jamesgormanproperty.com/post/houses-for-sale-magheramason-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "keys": [
+        "houses for sale near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 10.25
+    },
+    {
+      "keys": [
+        "houses to rent derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "housing agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "how does stamp duty work",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "how long after sale agreed to completion",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "how long after sale agreed to completion ireland",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 5.4
+    },
+    {
+      "keys": [
+        "how long between sale agreed and completion",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "how long does a house sale take in ireland",
+        "https://www.jamesgormanproperty.com/post/how-long-does-house-sale-take-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "how long does conveyancing take in northern ireland",
+        "https://www.jamesgormanproperty.com/post/conveyancing-process-northern-ireland-buyers"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 41.5
+    },
+    {
+      "keys": [
+        "how long does it take from sale agreed to completion",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 3.7
+    },
+    {
+      "keys": [
+        "how long does it take from sale agreed to sold",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "how long does it take to buy a house in ireland",
+        "https://www.jamesgormanproperty.com/post/how-long-does-house-sale-take-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "how long does it take to sell a house in ireland",
+        "https://www.jamesgormanproperty.com/post/how-long-does-house-sale-take-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "keys": [
+        "how long does it take to sell a house in northern ireland",
+        "https://www.jamesgormanproperty.com/post/how-long-does-house-sale-take-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "how long from sale agreed to keys",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "how long from sale agreed to moving in",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 5.217391304347826
+    },
+    {
+      "keys": [
+        "how long from sale agreed to signing contracts",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "keys": [
+        "how long from sale agreed to sold",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 8.666666666666668
+    },
+    {
+      "keys": [
+        "how long from sale agreed to sold ireland",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "keys": [
+        "how much are estate agent fees in ireland",
+        "https://www.jamesgormanproperty.com/post/estate-agent-fees-northern-ireland-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "how much is stamp duty",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "how much is stamp duty in northern ireland",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "how much is stamp duty ni",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "how stamp duty works ni",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 12.555555555555555
+    },
+    {
+      "keys": [
+        "how to buy a house in northern ireland",
+        "https://www.jamesgormanproperty.com/post/first-time-buyer-northern-ireland-derry-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 19
+    },
+    {
+      "keys": [
+        "https://agreed.ie",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "huntsman road",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "keys": [
+        "i am the seller",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "keys": [
+        "if a house is sale agreed can you still make an offer",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5.166666666666667
+    },
+    {
+      "keys": [
+        "in derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "in nir",
+        "https://www.jamesgormanproperty.com/post/rates-buying-house-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "in northern ireland",
+        "https://www.jamesgormanproperty.com/post/probate-property-sales-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "inch view derry",
+        "https://www.jamesgormanproperty.com/merchants-view"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 11.666666666666666
+    },
+    {
+      "keys": [
+        "independent estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 1.25
+    },
+    {
+      "keys": [
+        "ireland residential property stamp duty rate 1% 2% 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "ireland residential property stamp duty rate 2026 1% 2% threshold",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "ireland residential property stamp duty rates 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "ireland residential stamp duty rate 1% 2% 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "keys": [
+        "ireland residential stamp duty rate 1% 2% threshold 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 8.5
+    },
+    {
+      "keys": [
+        "ireland residential stamp duty rate 1% 2% thresholds 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 7.2
+    },
+    {
+      "keys": [
+        "ireland residential stamp duty rate 1% up to 1 million 2% above 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "ireland residential stamp duty rate 2026 1% 2%",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "ireland residential stamp duty rate 2026 1% 2% threshold",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "ireland residential stamp duty rate 2026 1% 2% thresholds",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 8.076923076923077
+    },
+    {
+      "keys": [
+        "ireland residential stamp duty rates 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 10.333333333333334
+    },
+    {
+      "keys": [
+        "ireland stamp duty first time buyer 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "ireland stamp duty rates 2026 residential property",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "ireland stamp duty rates residential property 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 9.5
+    },
+    {
+      "keys": [
+        "ireland stamp duty residential property 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "ireland stamp duty residential property 2026 rates",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "ireland stamp duty residential property rate 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 10.666666666666666
+    },
+    {
+      "keys": [
+        "ireland stamp duty residential property rates 2026",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "keys": [
+        "is eglinton a good investment",
+        "https://www.jamesgormanproperty.com/post/property-in-eglinton-why-buyers-are-looking-beyond-the-city"
+      ],
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 17.875
+    },
+    {
+      "keys": [
+        "is eglinton a good suburb",
+        "https://www.jamesgormanproperty.com/post/property-in-eglinton-why-buyers-are-looking-beyond-the-city"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "is he any good",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "is it better to use a local estate agent or an online one?",
+        "https://www.jamesgormanproperty.com/post/online-estate-agent-vs-local-estate-agent-derry"
+      ],
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 13.105263157894736
+    },
+    {
+      "keys": [
+        "is it better to use a local estate agent or online agent?",
+        "https://www.jamesgormanproperty.com/post/online-estate-agent-vs-local-estate-agent-derry"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 11.333333333333334
+    },
+    {
+      "keys": [
+        "is it better to use a property portal or go direct to estate agents when buying?",
+        "https://www.jamesgormanproperty.com/post/online-estate-agent-vs-local-estate-agent-derry"
+      ],
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 10.892857142857142
+    },
+    {
+      "keys": [
+        "is it worth to buy",
+        "https://www.jamesgormanproperty.com/post/buy-to-let-derry-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "is the property being sold with vacant possession",
+        "https://www.jamesgormanproperty.com/post/vacant-possession-house-sale-northern-ireland"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 35
+    },
+    {
+      "keys": [
+        "i’m a first time buyer",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "james derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "james estate",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "james estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "james estate agents",
+        "https://www.jamesgormanproperty.com/property-for-sale-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "james estate agents property for sale",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "keys": [
+        "james gor",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "james gorman",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 9.125
+    },
+    {
+      "keys": [
+        "james gorman",
+        "https://www.jamesgormanproperty.com/post/estate-agent-greysteel-seller-guide-2026"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "james gorman",
+        "https://www.jamesgormanproperty.com/post/first-viewing-questions-house-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "james gorman",
+        "https://www.jamesgormanproperty.com/post/property-chain-derry-explained"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "james gorman belfast",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 5.375
+    },
+    {
+      "keys": [
+        "james gorman derry",
+        "https://www.jamesgormanproperty.com/contact"
+      ],
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman estate agent derry",
+        "https://www.jamesgormanproperty.com/blog"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman estate agent derry",
+        "https://www.jamesgormanproperty.com/contact"
+      ],
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman estate agent derry",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 0,
+      "impressions": 32,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman estate agent derry",
+        "https://www.jamesgormanproperty.com/free-property-valuation-derry"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman estate agent derry",
+        "https://www.jamesgormanproperty.com/merchants-view"
+      ],
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman estate agent derry",
+        "https://www.jamesgormanproperty.com/post/choosing-between-estate-agent-valuations-derry"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman estate agent derry",
+        "https://www.jamesgormanproperty.com/property-to-rent-derry"
+      ],
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman house",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 3.24
+    },
+    {
+      "keys": [
+        "james gorman house",
+        "https://www.jamesgormanproperty.com/blank-14"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 19.066666666666666
+    },
+    {
+      "keys": [
+        "james gorman house",
+        "https://www.jamesgormanproperty.com/blank-6"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "keys": [
+        "james gorman house",
+        "https://www.jamesgormanproperty.com/contact"
+      ],
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 29.727272727272727
+    },
+    {
+      "keys": [
+        "james gorman house",
+        "https://www.jamesgormanproperty.com/items-1/i-am-a-title-02"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 31
+    },
+    {
+      "keys": [
+        "james gorman house",
+        "https://www.jamesgormanproperty.com/merchants-view"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "keys": [
+        "james gorman linkedin",
+        "https://www.jamesgormanproperty.com/blank-14"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 36
+    },
+    {
+      "keys": [
+        "james gorman property",
+        "https://www.jamesgormanproperty.com/blank-6"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman property",
+        "https://www.jamesgormanproperty.com/free-property-valuation-derry"
+      ],
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gorman property",
+        "https://www.jamesgormanproperty.com/items-1/i-am-a-title-02"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "james gotman",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6.833333333333333
+    },
+    {
+      "keys": [
+        "james norman estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8.5
+    },
+    {
+      "keys": [
+        "james norman estate agents",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "james properties",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "james real estate",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "james road",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 46.25
+    },
+    {
+      "keys": [
+        "jamie gorman",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "jd estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "keys": [
+        "jkg tenant finder services",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "keys": [
+        "john gorman real estate",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "keys": [
+        "john minnis",
+        "https://www.jamesgormanproperty.com/post/sale-agreed-northern-ireland-derry-guide"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "john v arthur",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 38
+    },
+    {
+      "keys": [
+        "john v arthur estate agents derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 19.5
+    },
+    {
+      "keys": [
+        "judge properties",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "keys": [
+        "judge properties manchester",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "keys": [
+        "keys mcmahon derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 44.666666666666664
+    },
+    {
+      "keys": [
+        "kingsmere gardens derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 26
+    },
+    {
+      "keys": [
+        "kingsmere gardens derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 58.5
+    },
+    {
+      "keys": [
+        "land sale agents near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "land tax uk",
+        "https://www.jamesgormanproperty.com/post/stamp-duty-northern-ireland-2026"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "keys": [
+        "larkhill derry",
+        "https://www.jamesgormanproperty.com/post/top-5-areas-to-live-in-derry-for-families-the-complete-2026-guide"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "keys": [
+        "lease out leased out property",
+        "https://www.jamesgormanproperty.com/post/sell-or-rent-out-house-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "letting agency",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "letting agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "letting agents derry",
+        "https://www.jamesgormanproperty.com/estate-agent-services-derry"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 52.5
+    },
+    {
+      "keys": [
+        "letting agents derry",
+        "https://www.jamesgormanproperty.com/property-to-rent-derry"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "keys": [
+        "letting agents near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "keys": [
+        "letting agents ross-shire",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "keys": [
+        "lettings agency",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "lettings agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "limewood street derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 45.5
+    },
+    {
+      "keys": [
+        "limewood street derry",
+        "https://www.jamesgormanproperty.com/search-homes-derry"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "keys": [
+        "list of estate agents near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1.5
+    },
+    {
+      "keys": [
+        "local estate agents",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "keys": [
+        "local estate agents near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "keys": [
+        "local selling sites near me",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "keys": [
+        "locate derry",
+        "https://www.jamesgormanproperty.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 33.5
+    }
+  ],
+  "site": "sc-domain:jamesgormanproperty.com",
+  "startDate": "2026-05-14"
+}

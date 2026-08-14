@@ -1,0 +1,39 @@
+{
+  "batch": "content-blast-2026-08-14-transaction-guides",
+  "domain": "jamesgormanproperty.com",
+  "publishedAuthor": "James Gorman",
+  "createdAt": "2026-08-14",
+  "approval": "Phil explicitly requested a James Gorman Property and HousePriceDerry content blast on 14 August 2026.",
+  "posts": [
+    {
+      "title": "What Does Under Offer Mean in Northern Ireland?",
+      "slug": "under-offer-meaning-northern-ireland",
+      "primaryKeyword": "what does under offer mean",
+      "category": "buyer"
+    },
+    {
+      "title": "How Long Does a House Valuation Take?",
+      "slug": "how-long-does-house-valuation-take",
+      "primaryKeyword": "how long does a house valuation take",
+      "category": "seller"
+    },
+    {
+      "title": "What Searches Are Done When Buying a House in Northern Ireland?",
+      "slug": "property-searches-buying-house-northern-ireland",
+      "primaryKeyword": "what searches are done when buying a house",
+      "category": "buyer"
+    },
+    {
+      "title": "What Are Title Deeds in Northern Ireland?",
+      "slug": "title-deeds-northern-ireland",
+      "primaryKeyword": "what are title deeds",
+      "category": "buyer"
+    },
+    {
+      "title": "Selling a House With a Mortgage in Northern Ireland",
+      "slug": "selling-house-with-mortgage-northern-ireland",
+      "primaryKeyword": "selling a house with a mortgage",
+      "category": "seller"
+    }
+  ]
+}
