@@ -1,0 +1,141 @@
+{
+  "checkedAt": "2026-08-25T08:58:31.234Z",
+  "draftCount": 5,
+  "failures": [],
+  "linkChecks": [
+    {
+      "href": "https://www.finance-ni.gov.uk/articles/energy-performance-certificates",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "href": "https://www.jamesgormanproperty.com/free-property-valuation-derry",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "href": "https://www.nidirect.gov.uk/articles/how-apply-building-regulations-approval",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "href": "https://www.nidirect.gov.uk/articles/how-find-property-and-land-information",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "href": "https://www.nidirect.gov.uk/articles/planning-permission-when-apply",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "href": "https://www.uregni.gov.uk/news-centre/decision-generation-and-export-electricity-by-micro-generators-published",
+      "ok": true,
+      "status": 200
+    }
+  ],
+  "results": [
+    {
+      "errors": [],
+      "file": "01-selling-house-solar-panels-northern-ireland.md",
+      "links": [
+        {
+          "href": "https://www.uregni.gov.uk/news-centre/decision-generation-and-export-electricity-by-micro-generators-published",
+          "label": "Utility Regulator's micro-generation information"
+        },
+        {
+          "href": "https://www.finance-ni.gov.uk/articles/energy-performance-certificates",
+          "label": "Northern Ireland EPC guidance"
+        },
+        {
+          "href": "/free-property-valuation-derry",
+          "label": "free Derry property valuation"
+        }
+      ],
+      "metaDescriptionLength": 135,
+      "slug": "selling-house-solar-panels-northern-ireland",
+      "title": "Selling a House with Solar Panels in Northern Ireland",
+      "words": 711
+    },
+    {
+      "errors": [],
+      "file": "02-selling-leasehold-apartment-northern-ireland.md",
+      "links": [
+        {
+          "href": "https://www.nidirect.gov.uk/articles/how-find-property-and-land-information",
+          "label": "nidirect guide to property and land information"
+        },
+        {
+          "href": "https://www.finance-ni.gov.uk/articles/energy-performance-certificates",
+          "label": "Northern Ireland EPC guidance"
+        },
+        {
+          "href": "/free-property-valuation-derry",
+          "label": "free Derry property valuation"
+        }
+      ],
+      "metaDescriptionLength": 145,
+      "slug": "selling-leasehold-apartment-northern-ireland",
+      "title": "Selling a Leasehold Apartment in Northern Ireland",
+      "words": 703
+    },
+    {
+      "errors": [],
+      "file": "03-selling-house-extension-building-control-northern-ireland.md",
+      "links": [
+        {
+          "href": "https://www.nidirect.gov.uk/articles/planning-permission-when-apply",
+          "label": "nidirect planning guidance"
+        },
+        {
+          "href": "https://www.nidirect.gov.uk/articles/how-apply-building-regulations-approval",
+          "label": "Building Regulations approval guide"
+        },
+        {
+          "href": "/free-property-valuation-derry",
+          "label": "free Derry property valuation"
+        }
+      ],
+      "metaDescriptionLength": 147,
+      "slug": "selling-house-extension-building-control-northern-ireland",
+      "title": "Selling a House with an Extension in Northern Ireland",
+      "words": 671
+    },
+    {
+      "errors": [],
+      "file": "04-selling-house-shared-driveway-right-of-way-northern-ireland.md",
+      "links": [
+        {
+          "href": "https://www.nidirect.gov.uk/articles/how-find-property-and-land-information",
+          "label": "nidirect property and land information guide"
+        },
+        {
+          "href": "/free-property-valuation-derry",
+          "label": "free Derry property valuation"
+        }
+      ],
+      "metaDescriptionLength": 142,
+      "slug": "selling-house-shared-driveway-right-of-way-northern-ireland",
+      "title": "Selling a House with a Shared Driveway in Northern Ireland",
+      "words": 681
+    },
+    {
+      "errors": [],
+      "file": "05-selling-oil-heated-house-northern-ireland.md",
+      "links": [
+        {
+          "href": "https://www.finance-ni.gov.uk/articles/energy-performance-certificates",
+          "label": "Northern Ireland EPC guidance"
+        },
+        {
+          "href": "/free-property-valuation-derry",
+          "label": "free Derry property valuation"
+        }
+      ],
+      "metaDescriptionLength": 137,
+      "slug": "selling-oil-heated-house-northern-ireland",
+      "title": "Selling an Oil-Heated House in Northern Ireland",
+      "words": 676
+    }
+  ]
+}
