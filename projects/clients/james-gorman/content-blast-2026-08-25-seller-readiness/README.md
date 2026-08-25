@@ -1,6 +1,6 @@
 # James Gorman seller-readiness content blast - 2026-08-25
 
-Five draft seller guides built from the current Search Console review and a collision check against the live Wix blog sitemap.
+Five seller guides built from the current Search Console review and a collision check against the live Wix blog sitemap.
 
 ## Intent
 
@@ -11,6 +11,6 @@ Five draft seller guides built from the current Search Console review and a coll
 
 ## Status
 
-- Drafted only.
-- No Wix post has been created or published.
-- No email, social post, GSC submission, outreach or client message has been sent.
+- Published to Wix on 25 August 2026 after Phil's explicit approval.
+- All five posts passed API, public-page, byline and sitemap QA with zero failures.
+- No email, social post, outreach, client message or featured-image work was performed.
